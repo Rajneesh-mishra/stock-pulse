@@ -83,5 +83,17 @@
         "telegram": "WTI $100 + Bab al-Mandeb alert sent. Coal India, IndiGo short, PE hedge positioning reinforced."
       }
     }
+  ,
+    {
+      "timestamp": "2026-04-12T22:53:00+05:30",
+      "trigger": "none",
+      "reason": "Quiet overnight tick. Sentinel false positive — conflated already-alerted events. WTI pulled back to $96.57 from $100.25 peak (mildly positive, no change to positioning). No new kinetic action at Hormuz or Bab al-Mandeb.",
+      "details": "WTI $96.57 (down from $100.25 21:12 alert). Blockade in effect. Bab al-Mandeb coordination reported but no closure confirmed. Pre-market tomorrow 8:30 IST. CPI data Apr 13.",
+      "market_status": "weekend",
+      "agents_used": 1,
+      "pipeline": "sentinel_only",
+      "telegram_sent": false,
+      "forward_scan_done": false
+    }
   ]
 }
