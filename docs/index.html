@@ -302,11 +302,11 @@
         meta.appendChild(time);
 
         const badgeSpan = document.createElement('span');
-        const colors = { reactive: '#ef4444', predictive: '#a855f7', calendar: '#f59e0b', none: '#4b5563', forward_scan: '#3b82f6' };
-        const icons = { reactive: '\u26a0\ufe0f', predictive: '\u{1F52E}', calendar: '\u{1F4C5}', none: '\u2022', forward_scan: '\u{1F4E1}' };
-        const bColor = colors[tick.trigger] || '#4b5563';
+        const badgeColors = { reactive: '#ef4444', predictive: '#a855f7', calendar: '#f59e0b', none: '#4b5563', forward_scan: '#3b82f6' };
+        const badgeIcons = { reactive: '\u26a0\ufe0f', predictive: '\u{1F52E}', calendar: '\u{1F4C5}', none: '\u2022', forward_scan: '\u{1F4E1}' };
+        const bColor = badgeColors[tick.trigger] || '#4b5563';
         badgeSpan.style.cssText = 'color:' + bColor + ';background:' + bColor + '20;padding:1px 6px;border-radius:4px;font-size:11px';
-        badgeSpan.textContent = (icons[tick.trigger] || '\u2022') + ' ' + (tick.trigger || 'none');
+        badgeSpan.textContent = (badgeIcons[tick.trigger] || '\u2022') + ' ' + (tick.trigger || 'none');
         meta.appendChild(badgeSpan);
 
         if (tick.agents_used) {
