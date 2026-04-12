@@ -19,5 +19,15 @@
       "telegram_sent": true,
       "agent_trace": "Sentinel (predictive trigger) → Synthesis → Flash alert sent to Telegram"
     }
+  ,
+    {
+      "timestamp": "2026-04-12T18:50:08+05:30",
+      "trigger": "reactive",
+      "reason": "Trump ordered formal US Navy blockade of Strait of Hormuz — new escalation beyond talks collapse already alerted at 17:48.",
+      "details": "Active military choke on 20% of global oil/LNG. WTI $96.57, expect $100-110 at Asian open. Ceasefire holds probability 5%. Wednesday gap risk extreme (2-day closure + F&O expiry). Scenarios updated, signals updated, Telegram alert sent.",
+      "agents_used": 1,
+      "telegram_sent": true,
+      "agent_trace": "Sentinel (reactive) → Telegram alert sent directly"
+    }
   ]
 }

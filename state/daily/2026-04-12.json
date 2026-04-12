@@ -36,5 +36,22 @@
         "synthesis": "Composed 90-word flash alert. Flagged OMC pain, ONGC mixed, 23,500 key level. Sent to Telegram."
       }
     }
+  ,
+    {
+      "timestamp": "2026-04-12T18:50:08+05:30",
+      "trigger": "reactive",
+      "reason": "Trump ordered formal US Navy blockade of Strait of Hormuz — distinct escalation from talks collapse already alerted at 17:48 IST.",
+      "details": "Active military choke on 20% of global oil/LNG. WTI $96.57 → expect $100-110. Ceasefire holds 5%. Wednesday gap risk extreme. Scenarios updated: blockade escalates 75%+. HDFC 3→2, IndiGo short 4→5, PE hedge extended to 23,000.",
+      "market_status": "weekend",
+      "agents_used": 1,
+      "pipeline": "sentinel+reactive",
+      "telegram_sent": true,
+      "telegram_type": "reactive_alert",
+      "forward_scan_done": false,
+      "agent_trace": {
+        "sentinel": "Reactive trigger. Trump formal Hormuz blockade order post ~18:00 IST. Distinct from 17:48 talks collapse alert. Ceasefire cracks probability 75%+.",
+        "synthesis": "Alert composed and sent directly — blockade, WTI spike expectation, Wednesday gap levels, PE hedge upgrade."
+      }
+    }
   ]
 }

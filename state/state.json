@@ -1,15 +1,16 @@
 {
   "last_scan": {
-    "timestamp": "2026-04-12T17:48:45+05:30",
+    "timestamp": "2026-04-12T18:50:08+05:30",
     "nifty_level": 24050,
-    "trigger": "predictive",
-    "last_telegram_summary": "FLASH UPDATE: US-Iran Pakistan talks collapsed (Vance confirmed, Apr 12). Ceasefire cracks scenario 30%→60%+. WTI $96.57, physical Brent $131.97. OMC pain at Wednesday open. Watch Nifty 23,500. Check Tue night for Hormuz incident.",
+    "trigger": "reactive",
+    "last_telegram_summary": "MAJOR ESCALATION: Trump ordered formal US Navy blockade of Hormuz, effective immediately. WTI $96.57 → expect $100-110. Ceasefire holds 5%, cracks 75%+. Wednesday gap extreme. 23,500 PE max conviction, add 23,000 PE tail risk. Watch Iran response Tuesday.",
     "last_full_pipeline": "2026-04-12T15:50:00+05:30",
     "last_forward_scan": "2026-04-12T15:50:00+05:30"
   },
   "alert_cooldowns": {
     "weekly_predictive_brief": "2026-04-12T15:50:00+05:30",
-    "ceasefire_talks_flash": "2026-04-12T17:48:45+05:30"
+    "ceasefire_talks_flash": "2026-04-12T17:48:45+05:30",
+    "hormuz_blockade_reactive": "2026-04-12T18:50:08+05:30"
   },
   "calendar": [
     {"date": "2026-04-13", "event": "India March CPI inflation data release", "impact_level": 4, "days_until": 1, "expected": "Previous 3.21% in Feb; market expects benign, but March captured peak crude", "sectors_affected": ["Banking", "NBFC", "Real Estate"]},
@@ -23,7 +24,7 @@
     {"date": "2026-06-03", "event": "RBI MPC meeting (June 3-5)", "impact_level": 4, "days_until": 52, "expected": "Potential rate cut from 5.25% if inflation stays benign", "sectors_affected": ["Banking", "NBFC", "Real Estate", "Auto"]}
   ],
   "tracker": [
-    {"title": "US-Iran Ceasefire & Strait of Hormuz", "status": "escalating", "last_updated": "2026-04-12T17:48:45+05:30", "india_impact": "Islamabad talks COLLAPSED (Vance, Apr 12) — no deal after 21 hrs. Iran demanded Hormuz control + reparations. Two-week ceasefire still nominal but breakdown risk high. Ceasefire cracks probability 60%+. Crude WTI $96.57, physical Brent $131.97. OMCs (BPCL/HPCL) under pressure; ONGC mixed (crude up, marketing drag). 23,500 PE hedge validity increasing.", "watch_for": "Any Hormuz military incident Mon/Tue. Crude futures breaking $100. Tuesday night/Wednesday pre-market for gap risk assessment."},
+    {"title": "US-Iran Ceasefire & Strait of Hormuz", "status": "escalating", "last_updated": "2026-04-12T18:50:08+05:30", "india_impact": "CRITICAL: Trump ordered formal US Navy blockade of Hormuz (Apr 12, post-18:00 IST) — active military choke on 20% of global oil/LNG. Talks already collapsed at ~17:00 IST. Ceasefire holds probability now 5%. WTI $96.57 (expect spike to $100-110 at Asian open). OMCs maximum pain. Wednesday gap risk extreme (2-day closure + F&O expiry). Nifty key support: 23,500 → 23,200 → 22,800.", "watch_for": "Iran response to blockade. WTI crossing $100. Wednesday Nifty open level. Any Hormuz incident Mon/Tue = gap to 22,800."},
     {"title": "Q4 FY26 Earnings Season", "status": "watching", "last_updated": "2026-04-12T15:50:00+05:30", "india_impact": "TCS kicked off with 29% profit beat but stock fell 2% — sell-the-news pattern. HDFC Bank Apr 18 is the critical event. Market needs earnings to justify 6% rally.", "watch_for": "HDFC Bank NIM >3.65%. Infosys FY27 guidance. Banking NPA trends."},
     {"title": "Crude Oil Volatility", "status": "escalating", "last_updated": "2026-04-12T15:50:00+05:30", "india_impact": "Brent $95-97 still elevated vs pre-war $75-80. Singapore GRMs collapsed to negative $9.4 — devastating for refiners. Any ceasefire breakdown sends crude to $110+.", "watch_for": "Hormuz shipping lanes. OPEC+ supply response. Weekly inventory data."},
     {"title": "RBI Monetary Policy Path", "status": "watching", "last_updated": "2026-04-12T15:50:00+05:30", "india_impact": "Held at 5.25% on Apr 8. CPI 3.21% in Feb gives room for cuts. March CPI (Mon) is critical — hot print kills June cut hopes.", "watch_for": "March CPI release Apr 13. Crude trajectory. Global bond yields."},
