@@ -1,0 +1,33 @@
+{
+  "last_updated": "2026-04-12T15:50:00+05:30",
+  "status": "active",
+  "market_status": "weekend",
+  "market": {
+    "nifty_level": 24050,
+    "nifty_change": "+6% weekly (best in 5 years)",
+    "sensex": "~79,200",
+    "banknifty": "~52,000",
+    "vix": "~18.85 (-7.73%)",
+    "fii_net": "+672 Cr (provisional Apr 10)",
+    "dii_net": "+7,979 Cr",
+    "crude_brent": "$95-97",
+    "usdinr": "93.0-93.1"
+  },
+  "calendar": [
+    {"date": "2026-04-13", "event": "India March CPI inflation data", "impact_level": 4, "sectors_affected": ["Banking", "NBFC", "Real Estate"]},
+    {"date": "2026-04-14", "event": "Market Holiday — Ambedkar Jayanti", "impact_level": 2, "sectors_affected": ["All"]},
+    {"date": "2026-04-15", "event": "Weekly F&O expiry (shifted)", "impact_level": 3, "sectors_affected": ["Derivatives-heavy large caps"]},
+    {"date": "2026-04-16", "event": "Wipro Q4 FY26 results", "impact_level": 3, "sectors_affected": ["IT"]},
+    {"date": "2026-04-18", "event": "HDFC Bank + ICICI Bank Q4 results", "impact_level": 5, "sectors_affected": ["Banking", "Financials"]},
+    {"date": "2026-04-23", "event": "Infosys Q4 + FY27 guidance", "impact_level": 5, "sectors_affected": ["IT"]},
+    {"date": "2026-04-28", "event": "F&O monthly expiry", "impact_level": 4, "sectors_affected": ["All"]},
+    {"date": "2026-06-03", "event": "RBI MPC meeting", "impact_level": 4, "sectors_affected": ["Banking", "NBFC", "Real Estate", "Auto"]}
+  ],
+  "tracker": [
+    {"title": "US-Iran Ceasefire & Strait of Hormuz", "status": "escalating", "india_impact": "Drove 6% rally. Now fragile — US Navy in Hormuz, Iran threatened retaliation. Crude could spike to $110+ if cracks.", "watch_for": "Islamabad talks outcome. Hormuz incidents. Monday crude futures."},
+    {"title": "Q4 FY26 Earnings Season", "status": "watching", "india_impact": "TCS beat but stock fell 2%. HDFC Bank Apr 18 is critical. Market needs earnings to justify rally.", "watch_for": "HDFC Bank NIM >3.65%. Infosys FY27 guidance."},
+    {"title": "Crude Oil Volatility", "status": "escalating", "india_impact": "Brent $95-97 still elevated. Singapore GRMs collapsed to -$9.4. Devastating for refiners.", "watch_for": "Hormuz status. OPEC+ response."},
+    {"title": "RBI Monetary Policy", "status": "watching", "india_impact": "Held at 5.25%. March CPI tomorrow is key for June cut hopes.", "watch_for": "March CPI Apr 13. Crude trajectory."},
+    {"title": "FII Flows & Rupee", "status": "watching", "india_impact": "Rally suggests FII return. USD/INR stable at 93.", "watch_for": "Daily FII/DII data. USD/INR."}
+  ]
+}

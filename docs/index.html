@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Pulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.6/dist/purify.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dark: { 900: '#0a0a0f', 800: '#12121a', 700: '#1a1a25', 600: '#24243a' },
+            pulse: { green: '#22c55e', red: '#ef4444', amber: '#f59e0b', blue: '#3b82f6', purple: '#a855f7' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background: #0a0a0f; font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace; }
+    .glow-green { box-shadow: 0 0 20px rgba(34, 197, 94, 0.15); }
+    .glow-red { box-shadow: 0 0 20px rgba(239, 68, 68, 0.15); }
+    .pulse-dot { animation: pulse 2s ease-in-out infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #12121a; }
+    ::-webkit-scrollbar-thumb { background: #24243a; border-radius: 3px; }
+  </style>
+</head>
+<body class="text-gray-300 min-h-screen">
+
+  <header class="border-b border-dark-600 px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-2 h-2 rounded-full bg-pulse-green pulse-dot" id="status-dot"></div>
+      <h1 class="text-lg font-bold text-white tracking-tight">STOCK PULSE</h1>
+      <span class="text-xs text-gray-500 ml-2">Indian Market Intelligence</span>
+    </div>
+    <div class="flex items-center gap-4 text-xs text-gray-500">
+      <span id="last-updated">--</span>
+      <span id="market-status" class="px-2 py-1 rounded bg-dark-700">--</span>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto p-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+    <div class="space-y-6">
+      <section class="bg-dark-800 rounded-lg border border-dark-600 p-5">
+        <h2 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Market Snapshot</h2>
+        <div id="market-snapshot" class="space-y-3">
+          <div class="text-center text-gray-500 text-sm py-8">Waiting for first scan...</div>
+        </div>
+      </section>
+
+      <section class="bg-dark-800 rounded-lg border border-dark-600 p-5">
+        <h2 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Tracking</h2>
+        <div id="tracker-list" class="space-y-3">
+          <div class="text-center text-gray-500 text-sm py-4">No active situations</div>
+        </div>
+      </section>
+
+      <section class="bg-dark-800 rounded-lg border border-dark-600 p-5">
+        <h2 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Calendar</h2>
+        <div id="calendar-list" class="space-y-2">
+          <div class="text-center text-gray-500 text-sm py-4">No upcoming events</div>
+        </div>
+      </section>
+    </div>
+
+    <div class="lg:col-span-2 space-y-6">
+      <div class="grid grid-cols-4 gap-3">
+        <div class="bg-dark-800 rounded-lg border border-dark-600 p-4 text-center">
+          <div class="text-2xl font-bold text-white" id="stat-ticks">0</div>
+          <div class="text-xs text-gray-500 mt-1">Scans</div>
+        </div>
+        <div class="bg-dark-800 rounded-lg border border-dark-600 p-4 text-center">
+          <div class="text-2xl font-bold text-pulse-red" id="stat-alerts">0</div>
+          <div class="text-xs text-gray-500 mt-1">Alerts</div>
+        </div>
+        <div class="bg-dark-800 rounded-lg border border-dark-600 p-4 text-center">
+          <div class="text-2xl font-bold text-pulse-purple" id="stat-predictions">0</div>
+          <div class="text-xs text-gray-500 mt-1">Predictions</div>
+        </div>
+        <div class="bg-dark-800 rounded-lg border border-dark-600 p-4 text-center">
+          <div class="text-2xl font-bold text-pulse-blue" id="stat-agents">0</div>
+          <div class="text-xs text-gray-500 mt-1">Agents Run</div>
+        </div>
+      </div>
+
+      <section class="bg-dark-800 rounded-lg border border-dark-600 p-5">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Decision Timeline</h2>
+          <select id="date-picker" class="bg-dark-700 border border-dark-600 text-xs text-gray-400 rounded px-2 py-1">
+            <option value="today">Today</option>
+          </select>
+        </div>
+        <div id="timeline" class="space-y-4 max-h-[600px] overflow-y-auto pr-2">
+          <div class="text-center text-gray-500 text-sm py-12">No activity yet. Start the loop to begin scanning.</div>
+        </div>
+      </section>
+
+      <section class="bg-dark-800 rounded-lg border border-dark-600 p-5">
+        <h2 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Agent Traces</h2>
+        <div id="agent-traces" class="space-y-3 max-h-[400px] overflow-y-auto pr-2">
+          <div class="text-center text-gray-500 text-sm py-8">No pipeline runs yet</div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const DATA_BASE = 'data/';
+    const S = DOMPurify.sanitize;
+
+    async function fetchJSON(url) {
+      try {
+        const res = await fetch(url + '?t=' + Date.now());
+        if (!res.ok) return null;
+        return await res.json();
+      } catch { return null; }
+    }
+
+    function timeAgo(ts) {
+      if (!ts) return '--';
+      const diff = (Date.now() - new Date(ts).getTime()) / 1000;
+      if (diff < 60) return Math.floor(diff) + 's ago';
+      if (diff < 3600) return Math.floor(diff / 60) + 'm ago';
+      if (diff < 86400) return Math.floor(diff / 3600) + 'h ago';
+      return Math.floor(diff / 86400) + 'd ago';
+    }
+
+    function formatTime(ts) {
+      if (!ts) return '--';
+      return new Date(ts).toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', hour12: true, timeZone: 'Asia/Kolkata' });
+    }
+
+    function esc(str) { return S(String(str || '')); }
+
+    function triggerBadge(trigger) {
+      const colors = { reactive: '#ef4444', predictive: '#a855f7', calendar: '#f59e0b', none: '#4b5563', forward_scan: '#3b82f6' };
+      const icons = { reactive: '\u26a0\ufe0f', predictive: '\u{1F52E}', calendar: '\u{1F4C5}', none: '\u2022', forward_scan: '\u{1F4E1}' };
+      const color = colors[trigger] || '#4b5563';
+      const icon = icons[trigger] || '\u2022';
+      return `<span style="color:${color};background:${color}20;padding:1px 6px;border-radius:4px;font-size:11px">${icon} ${esc(trigger)}</span>`;
+    }
+
+    function buildRow(label, value, colorClass) {
+      const div = document.createElement('div');
+      div.className = 'flex justify-between items-center py-2 border-b border-dark-600';
+      const lbl = document.createElement('span');
+      lbl.className = 'text-gray-400 text-sm';
+      lbl.textContent = label;
+      const val = document.createElement('span');
+      val.className = 'font-bold ' + (colorClass || 'text-white');
+      val.textContent = value;
+      div.appendChild(lbl);
+      div.appendChild(val);
+      return div;
+    }
+
+    function renderMarketSnapshot(data) {
+      const el = document.getElementById('market-snapshot');
+      el.replaceChildren();
+      if (!data || !data.market || !data.market.nifty_level) {
+        const p = document.createElement('div');
+        p.className = 'text-center text-gray-500 text-sm py-8';
+        p.textContent = 'Waiting for first scan...';
+        el.appendChild(p);
+        return;
+      }
+      const m = data.market;
+      el.appendChild(buildRow('Nifty 50', m.nifty_level));
+      if (m.sensex) el.appendChild(buildRow('Sensex', m.sensex));
+      if (m.banknifty) el.appendChild(buildRow('Bank Nifty', m.banknifty));
+      if (m.vix) el.appendChild(buildRow('India VIX', m.vix));
+      if (m.fii_net) el.appendChild(buildRow('FII Net', m.fii_net, parseFloat(String(m.fii_net).replace(/[^0-9.-]/g,'')) >= 0 ? 'text-pulse-green' : 'text-pulse-red'));
+      if (m.dii_net) el.appendChild(buildRow('DII Net', m.dii_net, parseFloat(String(m.dii_net).replace(/[^0-9.-]/g,'')) >= 0 ? 'text-pulse-green' : 'text-pulse-red'));
+    }
+
+    function renderTracker(data) {
+      const el = document.getElementById('tracker-list');
+      el.replaceChildren();
+      if (!data || !data.tracker || data.tracker.length === 0) {
+        const p = document.createElement('div');
+        p.className = 'text-center text-gray-500 text-sm py-4';
+        p.textContent = 'No active situations';
+        el.appendChild(p);
+        return;
+      }
+      data.tracker.forEach(s => {
+        const card = document.createElement('div');
+        card.className = 'bg-dark-700 rounded p-3 border-l-2';
+        const statusColors = { watching: '#f59e0b', escalating: '#ef4444', 'de-escalating': '#22c55e', resolved: '#6b7280' };
+        card.style.borderLeftColor = statusColors[s.status] || '#6b7280';
+
+        const header = document.createElement('div');
+        header.className = 'flex justify-between items-start';
+        const title = document.createElement('span');
+        title.className = 'text-sm text-white font-medium';
+        title.textContent = s.title;
+        const badge = document.createElement('span');
+        badge.className = 'text-xs px-1.5 py-0.5 rounded';
+        badge.style.background = (statusColors[s.status] || '#6b7280') + '20';
+        badge.style.color = statusColors[s.status] || '#6b7280';
+        badge.textContent = s.status;
+        header.appendChild(title);
+        header.appendChild(badge);
+        card.appendChild(header);
+
+        if (s.india_impact) {
+          const impact = document.createElement('div');
+          impact.className = 'text-xs text-gray-500 mt-1';
+          impact.textContent = s.india_impact;
+          card.appendChild(impact);
+        }
+        if (s.watch_for) {
+          const watch = document.createElement('div');
+          watch.className = 'text-xs text-gray-400 mt-1';
+          watch.textContent = 'Watch: ' + s.watch_for;
+          card.appendChild(watch);
+        }
+        el.appendChild(card);
+      });
+    }
+
+    function renderCalendar(data) {
+      const el = document.getElementById('calendar-list');
+      el.replaceChildren();
+      if (!data || !data.calendar || data.calendar.length === 0) {
+        const p = document.createElement('div');
+        p.className = 'text-center text-gray-500 text-sm py-4';
+        p.textContent = 'No upcoming events';
+        el.appendChild(p);
+        return;
+      }
+      data.calendar.sort((a, b) => new Date(a.date) - new Date(b.date)).forEach(e => {
+        const daysUntil = Math.ceil((new Date(e.date) - Date.now()) / 86400000);
+        const row = document.createElement('div');
+        row.className = 'flex items-center gap-3 py-2 border-b border-dark-700';
+
+        const days = document.createElement('span');
+        days.className = 'text-xs w-16 shrink-0 ' + (daysUntil <= 3 ? 'text-pulse-red' : daysUntil <= 7 ? 'text-pulse-amber' : 'text-gray-400');
+        days.textContent = daysUntil <= 0 ? 'TODAY' : daysUntil + 'd';
+
+        const info = document.createElement('div');
+        const name = document.createElement('div');
+        name.className = 'text-sm text-white';
+        name.textContent = e.event;
+        const sub = document.createElement('div');
+        sub.className = 'text-xs text-gray-500';
+        sub.textContent = e.date + (e.sectors_affected ? ' \u00b7 ' + e.sectors_affected.join(', ') : '');
+        info.appendChild(name);
+        info.appendChild(sub);
+
+        const dots = document.createElement('div');
+        dots.className = 'ml-auto flex gap-0.5';
+        for (let i = 0; i < (e.impact_level || 0); i++) {
+          const dot = document.createElement('div');
+          dot.className = 'w-1.5 h-1.5 rounded-full bg-pulse-amber';
+          dots.appendChild(dot);
+        }
+
+        row.appendChild(days);
+        row.appendChild(info);
+        row.appendChild(dots);
+        el.appendChild(row);
+      });
+    }
+
+    function renderTimeline(data) {
+      const el = document.getElementById('timeline');
+      el.replaceChildren();
+      if (!data || !data.ticks || data.ticks.length === 0) {
+        const p = document.createElement('div');
+        p.className = 'text-center text-gray-500 text-sm py-12';
+        p.textContent = 'No activity yet. Start the loop to begin scanning.';
+        el.appendChild(p);
+        return;
+      }
+      const ticks = data.ticks;
+      document.getElementById('stat-ticks').textContent = ticks.length;
+      document.getElementById('stat-alerts').textContent = ticks.filter(t => t.trigger === 'reactive').length;
+      document.getElementById('stat-predictions').textContent = ticks.filter(t => t.trigger === 'predictive').length;
+      document.getElementById('stat-agents').textContent = ticks.reduce((sum, t) => sum + (t.agents_used || 0), 0);
+
+      ticks.slice().reverse().forEach(tick => {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'flex gap-3';
+
+        const rail = document.createElement('div');
+        rail.className = 'flex flex-col items-center';
+        const dot = document.createElement('div');
+        dot.className = 'w-6 h-6 rounded-full bg-dark-700 border border-dark-600 flex items-center justify-center text-xs';
+        const icons = { reactive: '\u26a0\ufe0f', predictive: '\u{1F52E}', calendar: '\u{1F4C5}', none: '\u2022', forward_scan: '\u{1F4E1}' };
+        dot.textContent = icons[tick.trigger] || '\u2022';
+        const line = document.createElement('div');
+        line.className = 'w-px flex-1 bg-dark-600 mt-1';
+        rail.appendChild(dot);
+        rail.appendChild(line);
+
+        const content = document.createElement('div');
+        content.className = 'pb-4 flex-1';
+
+        const meta = document.createElement('div');
+        meta.className = 'flex items-center gap-2 flex-wrap';
+        const time = document.createElement('span');
+        time.className = 'text-xs text-gray-500';
+        time.textContent = formatTime(tick.timestamp);
+        meta.appendChild(time);
+
+        const badgeSpan = document.createElement('span');
+        badgeSpan.className = 'text-xs';
+        badgeSpan.innerHTML = S(triggerBadge(tick.trigger));
+        meta.appendChild(badgeSpan);
+
+        if (tick.agents_used) {
+          const agents = document.createElement('span');
+          agents.className = 'text-xs text-gray-600';
+          agents.textContent = tick.agents_used + ' agents';
+          meta.appendChild(agents);
+        }
+        content.appendChild(meta);
+
+        const reason = document.createElement('div');
+        reason.className = 'text-sm text-gray-300 mt-1';
+        reason.textContent = tick.reason || 'Scan complete';
+        content.appendChild(reason);
+
+        if (tick.details) {
+          const details = document.createElement('div');
+          details.className = 'text-xs text-gray-500 mt-1';
+          details.textContent = tick.details;
+          content.appendChild(details);
+        }
+
+        if (tick.telegram_sent) {
+          const tg = document.createElement('div');
+          tg.className = 'text-xs text-pulse-green mt-1';
+          tg.textContent = 'Telegram sent';
+          content.appendChild(tg);
+        }
+
+        if (tick.agent_trace) {
+          const det = document.createElement('details');
+          det.className = 'mt-2';
+          const sum = document.createElement('summary');
+          sum.className = 'text-xs text-pulse-blue cursor-pointer';
+          sum.textContent = 'View agent trace';
+          const pre = document.createElement('pre');
+          pre.className = 'text-xs text-gray-500 mt-2 bg-dark-900 rounded p-3 overflow-x-auto whitespace-pre-wrap';
+          pre.textContent = typeof tick.agent_trace === 'string' ? tick.agent_trace : JSON.stringify(tick.agent_trace, null, 2);
+          det.appendChild(sum);
+          det.appendChild(pre);
+          content.appendChild(det);
+        }
+
+        wrapper.appendChild(rail);
+        wrapper.appendChild(content);
+        el.appendChild(wrapper);
+      });
+    }
+
+    async function refresh() {
+      const currentData = await fetchJSON(DATA_BASE + 'current.json');
+      const timelineData = await fetchJSON(DATA_BASE + 'timeline.json');
+
+      if (currentData) {
+        document.getElementById('last-updated').textContent = 'Updated ' + timeAgo(currentData.last_updated);
+        document.getElementById('market-status').textContent = currentData.market_status || currentData.status || '--';
+        const dot = document.getElementById('status-dot');
+        dot.className = currentData.status === 'active'
+          ? 'w-2 h-2 rounded-full bg-pulse-green pulse-dot'
+          : 'w-2 h-2 rounded-full bg-gray-600';
+        renderMarketSnapshot(currentData);
+        renderTracker(currentData);
+        renderCalendar(currentData);
+      }
+      if (timelineData) {
+        renderTimeline(timelineData);
+      }
+    }
+
+    refresh();
+    setInterval(refresh, 120000);
+  </script>
+</body>
+</html>

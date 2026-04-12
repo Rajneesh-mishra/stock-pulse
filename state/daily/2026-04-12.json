@@ -1,0 +1,23 @@
+{
+  "date": "2026-04-12",
+  "ticks": [
+    {
+      "timestamp": "2026-04-12T15:50:00+05:30",
+      "trigger": "predictive",
+      "reason": "First scan. Critical week ahead: fragile US-Iran ceasefire, CPI data Monday, Tuesday holiday gap into Wednesday expiry, Q4 FY26 earnings season ramping up.",
+      "details": "Nifty 24,050 after 6% weekly rally (best in 5 years). Brent $95-97. Ceasefire escalating (US Navy in Hormuz). March CPI tomorrow. HDFC Bank results Friday.",
+      "market_status": "weekend",
+      "agents_used": 4,
+      "pipeline": "predictive",
+      "telegram_sent": true,
+      "telegram_type": "predictive_brief",
+      "forward_scan_done": true,
+      "agent_trace": {
+        "sentinel": "Triggered predictive. Found fragile ceasefire, CPI release, compressed trading week, earnings season. Forward scan populated calendar (9 events) and tracker (5 situations).",
+        "scenario_geopolitical": "3 scenarios: S1 ceasefire holds (30%) Nifty 24200-24800, S2 ceasefire cracks (40%) Nifty 22800-23600, S3 CPI surprise (30%) Nifty 23400-24000. Asymmetric plays: ITC (all scenarios), ONGC/BPCL pair, 23500 PE tail hedge. Tuesday holiday gap is structural unpriced risk.",
+        "scenario_earnings": "HDFC Bank best risk/reward (9/10): down 38%, targets 1200-1400 vs 731, NIM >3.65% is trigger. Sell-the-news risk 7/10. TCS fell 2% on 29% beat. Wipro low bar (7/10). Infosys binary on FY27 guidance (5/10). HCL richest valuation (4.5/10). AVOID refiners — GRM collapsed.",
+        "synthesis": "Composed predictive brief with scenarios, positioning, earnings watch, and calendar. Sent to both Telegram chats."
+      }
+    }
+  ]
+}

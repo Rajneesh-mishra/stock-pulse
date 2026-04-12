@@ -1,0 +1,31 @@
+{
+  "last_scan": {
+    "timestamp": "2026-04-12T15:50:00+05:30",
+    "nifty_level": 24050,
+    "trigger": "predictive",
+    "last_telegram_summary": "Weekly predictive brief: 3 scenarios (ceasefire holds 30%, cracks 40%, CPI surprise 30%). Positioning: ITC long, ONGC/BPCL pair, 23500 PE hedge. HDFC Bank best earnings risk/reward. Sell-the-news risk high. Tuesday holiday gap into Wednesday expiry is structural risk.",
+    "last_full_pipeline": "2026-04-12T15:50:00+05:30",
+    "last_forward_scan": "2026-04-12T15:50:00+05:30"
+  },
+  "alert_cooldowns": {
+    "weekly_predictive_brief": "2026-04-12T15:50:00+05:30"
+  },
+  "calendar": [
+    {"date": "2026-04-13", "event": "India March CPI inflation data release", "impact_level": 4, "days_until": 1, "expected": "Previous 3.21% in Feb; market expects benign, but March captured peak crude", "sectors_affected": ["Banking", "NBFC", "Real Estate"]},
+    {"date": "2026-04-14", "event": "Market Holiday — Ambedkar Jayanti", "impact_level": 2, "days_until": 2, "expected": "Full-day closure. Gap risk for Wednesday.", "sectors_affected": ["All"]},
+    {"date": "2026-04-15", "event": "Weekly F&O expiry (shifted from Thursday)", "impact_level": 3, "days_until": 3, "expected": "Expiry-day volatility amplified by holiday-compressed week", "sectors_affected": ["Derivatives-heavy large caps"]},
+    {"date": "2026-04-16", "event": "Wipro Q4 FY26 results", "impact_level": 3, "days_until": 4, "expected": "Muted 0.5-1.5% QoQ revenue growth; low bar to clear", "sectors_affected": ["IT"]},
+    {"date": "2026-04-18", "event": "HDFC Bank Q4 FY26 results", "impact_level": 5, "days_until": 6, "expected": "NIM recovery >3.65% is key trigger. Deposits +14.4% YoY.", "sectors_affected": ["Banking", "Financials"]},
+    {"date": "2026-04-18", "event": "ICICI Bank Q4 FY26 results", "impact_level": 4, "days_until": 6, "expected": "Strong lending growth. Credit cost normalization key watch.", "sectors_affected": ["Banking", "Financials"]},
+    {"date": "2026-04-23", "event": "Infosys Q4 FY26 results + FY27 guidance", "impact_level": 5, "days_until": 11, "expected": "FY27 guidance range 2-6% across brokerages. Binary outcome.", "sectors_affected": ["IT"]},
+    {"date": "2026-04-28", "event": "F&O monthly expiry", "impact_level": 4, "days_until": 16, "expected": "Monthly expiry with heightened OI rollover", "sectors_affected": ["All"]},
+    {"date": "2026-06-03", "event": "RBI MPC meeting (June 3-5)", "impact_level": 4, "days_until": 52, "expected": "Potential rate cut from 5.25% if inflation stays benign", "sectors_affected": ["Banking", "NBFC", "Real Estate", "Auto"]}
+  ],
+  "tracker": [
+    {"title": "US-Iran Ceasefire & Strait of Hormuz", "status": "escalating", "last_updated": "2026-04-12T15:50:00+05:30", "india_impact": "Ceasefire drove 6% Nifty rally. Now fragile: US Navy in Hormuz, Iran threatened retaliation. Crude at $95-97, could spike to $110+ if cracks. OMCs, inflation, RBI path all at risk.", "watch_for": "Islamabad peace talks outcome. Any Hormuz military incident. Monday crude oil futures."},
+    {"title": "Q4 FY26 Earnings Season", "status": "watching", "last_updated": "2026-04-12T15:50:00+05:30", "india_impact": "TCS kicked off with 29% profit beat but stock fell 2% — sell-the-news pattern. HDFC Bank Apr 18 is the critical event. Market needs earnings to justify 6% rally.", "watch_for": "HDFC Bank NIM >3.65%. Infosys FY27 guidance. Banking NPA trends."},
+    {"title": "Crude Oil Volatility", "status": "escalating", "last_updated": "2026-04-12T15:50:00+05:30", "india_impact": "Brent $95-97 still elevated vs pre-war $75-80. Singapore GRMs collapsed to negative $9.4 — devastating for refiners. Any ceasefire breakdown sends crude to $110+.", "watch_for": "Hormuz shipping lanes. OPEC+ supply response. Weekly inventory data."},
+    {"title": "RBI Monetary Policy Path", "status": "watching", "last_updated": "2026-04-12T15:50:00+05:30", "india_impact": "Held at 5.25% on Apr 8. CPI 3.21% in Feb gives room for cuts. March CPI (Mon) is critical — hot print kills June cut hopes.", "watch_for": "March CPI release Apr 13. Crude trajectory. Global bond yields."},
+    {"title": "FII Flows & Rupee", "status": "watching", "last_updated": "2026-04-12T15:50:00+05:30", "india_impact": "6% rally suggests FII buying returning. USD/INR at 93.0-93.1 stable. Continued inflows depend on ceasefire holding.", "watch_for": "Daily FII/DII data. USD/INR movements. Global risk sentiment."}
+  ]
+}

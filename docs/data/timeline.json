@@ -1,0 +1,14 @@
+{
+  "date": "2026-04-12",
+  "ticks": [
+    {
+      "timestamp": "2026-04-12T15:50:00+05:30",
+      "trigger": "predictive",
+      "reason": "First scan. Fragile ceasefire + CPI Monday + Tuesday holiday gap + earnings season = critical week ahead.",
+      "details": "Nifty 24,050 (+6% weekly). Brent $95-97. 3 scenarios mapped: ceasefire holds (30%), cracks (40%), CPI surprise (30%). Asymmetric plays: ITC, ONGC/BPCL pair, 23500 PE hedge. HDFC Bank best earnings setup.",
+      "agents_used": 4,
+      "telegram_sent": true,
+      "agent_trace": "Sentinel (forward scan) → 2x Scenario Mappers (geopolitical + earnings) → Synthesis → Telegram sent to both chats"
+    }
+  ]
+}
