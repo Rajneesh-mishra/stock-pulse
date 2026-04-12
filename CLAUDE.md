@@ -30,6 +30,8 @@ This file contains invariants that MUST survive context compaction. The `/loop` 
 8. **Dedup**: read `last_scan.last_telegram_summary` before composing. Don't repeat the same alert. Check `alert_cooldowns` for per-category throttling.
 9. **Web search for Indian data**: FII/DII only returns net figures (accept this). For sector data, use WebFetch on `https://www.icicidirect.com/research/equity/nse-bse-sector` specifically.
 10. **Daily log**: append to today's file only. Read yesterday's file ONLY when a tracked situation or prediction explicitly references it.
+11. **ALWAYS update `docs/data/current.json` and `docs/data/timeline.json`** every tick that modifies state — these are what the dashboard reads. Failing to update them leaves the dashboard showing stale data. current.json must reflect latest scenarios, tracker, and market data. timeline.json must have a new tick entry appended.
+12. **ALWAYS git push after every tick** — `git add docs/ state/ && git commit -m "tick: $(date +%H:%M) {trigger_type}" && git push origin main`. No confirmation needed. All permissions are pre-granted.
 
 ## Agent Prompt Templates
 
