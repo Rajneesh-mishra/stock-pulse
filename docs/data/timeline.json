@@ -9,6 +9,15 @@
       "agents_used": 4,
       "telegram_sent": true,
       "agent_trace": "Sentinel (forward scan) → 2x Scenario Mappers (geopolitical + earnings) → Synthesis → Telegram sent to both chats"
+    },
+    {
+      "timestamp": "2026-04-12T17:48:45+05:30",
+      "trigger": "predictive",
+      "reason": "US-Iran Islamabad talks collapsed — named watch trigger. Ceasefire cracks probability 40% → 60%+.",
+      "details": "Vance confirmed no deal after 21 hrs. Iran demanded Hormuz control + reparations. WTI $96.57, physical Brent $131.97. Flash alert sent. 23,500 PE hedge conviction raised to 5.",
+      "agents_used": 2,
+      "telegram_sent": true,
+      "agent_trace": "Sentinel (predictive trigger) → Synthesis → Flash alert sent to Telegram"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-12T15:50:00+05:30",
+  "last_updated": "2026-04-12T17:48:45+05:30",
   "status": "active",
   "market_status": "weekend",
   "market": {
@@ -10,24 +10,24 @@
     "vix": "~18.85 (-7.73%)",
     "fii_net": "+672 Cr (provisional Apr 10)",
     "dii_net": "+7,979 Cr",
-    "crude_brent": "$95-97",
+    "crude_brent": "$95-97 (WTI $96.57; physical $131.97)",
     "usdinr": "93.0-93.1"
   },
   "scenarios": [
-    {"name": "Ceasefire Holds + CPI Benign", "probability": "30%", "nifty_range": "24,200 – 24,800", "direction": "up", "summary": "Rally extends slowly. Crude drifts to $88-92. Banks and OMCs benefit."},
-    {"name": "Ceasefire Cracks + Crude Spikes", "probability": "40%", "nifty_range": "22,800 – 23,600", "direction": "down", "summary": "MOST PROBABLE. Sharp selloff. Tuesday holiday gap into Wednesday expiry. Crude back to $105-115."},
-    {"name": "CPI Surprise Higher", "probability": "30%", "nifty_range": "23,400 – 24,000", "direction": "down", "summary": "Rate cut hopes crushed. Banks and real estate sell off. IT relatively resilient."}
+    {"name": "Ceasefire Holds + CPI Benign", "probability": "20%", "nifty_range": "24,200 – 24,800", "direction": "up", "summary": "Rally extends slowly. Crude drifts to $88-92. Banks and OMCs benefit."},
+    {"name": "Ceasefire Cracks + Crude Spikes", "probability": "60%+", "nifty_range": "22,800 – 23,600", "direction": "down", "summary": "MOST PROBABLE. Islamabad talks failed — no deal. Tuesday holiday gap into Wednesday expiry. Crude back to $105-115. Watch 23,500."},
+    {"name": "CPI Surprise Higher", "probability": "20%", "nifty_range": "23,400 – 24,000", "direction": "down", "summary": "Rate cut hopes crushed. Banks and real estate sell off. IT relatively resilient. CPI drops Apr 13."}
   ],
   "signals": [
     {"action": "BUY", "stock": "ITC", "conviction": 5, "rationale": "Works in ALL 3 scenarios. Defensive + pricing power. Zero crude sensitivity. 3%+ dividend yield floor.", "risk": "Lower beta in bull case"},
-    {"action": "PAIR", "stock": "ONGC Long / BPCL Short", "conviction": 4, "rationale": "Asymmetric crude bet. Makes 2-3x what it loses. ONGC benefits from high crude, BPCL gets crushed.", "risk": "Mild loss if ceasefire holds and crude drops"},
-    {"action": "HEDGE", "stock": "Nifty 23500 PE (Wed expiry)", "conviction": 4, "rationale": "Cheap tail hedge. 6-16x payout if ceasefire cracks over Tuesday holiday. Sized at 0.5-1% of portfolio.", "risk": "Total premium loss if market stays flat/up"},
+    {"action": "PAIR", "stock": "ONGC Long / BPCL Short", "conviction": 4, "rationale": "Asymmetric crude bet. Makes 2-3x what it loses. ONGC benefits from high crude, BPCL gets crushed by negative GRMs.", "risk": "Mild loss if ceasefire holds and crude drops"},
+    {"action": "HEDGE", "stock": "Nifty 23500 PE (Wed expiry)", "conviction": 5, "rationale": "Talks failed — hedge value increasing. 6-16x payout if ceasefire cracks over Tuesday holiday. Sized at 0.5-1% of portfolio.", "risk": "Total premium loss if market stays flat/up"},
     {"action": "BUY", "stock": "HDFC Bank", "conviction": 4, "rationale": "Best earnings risk/reward. Down 38% in 1yr. Targets Rs 1,200-1,400 vs Rs 731. NIM >3.65% on Apr 18 is trigger.", "risk": "Governance overhang from chairman resignation"},
     {"action": "BUY", "stock": "TCS / Infosys basket", "conviction": 3, "rationale": "Works in S1 (risk-on) and S3 (rotation from rate-sensitives). Dollar earners, INR weakness tailwind.", "risk": "Global risk-off in S2 hurts"}
   ],
   "avoid": [
-    {"stock": "BPCL / HPCL / IOC (long)", "reason": "Singapore GRM collapsed from $44 to -$9.4. Structural margin destruction. Not cyclical."},
-    {"stock": "Chasing the rally aggressively", "reason": "After 6% weekly gain, asymmetry has flipped. More room to fall than rise. Sell-the-news risk 7/10."}
+    {"stock": "BPCL / HPCL / IOC (long)", "reason": "Singapore GRM collapsed from $44 to -$9.4. Structural margin destruction. Talks failure adds more pressure."},
+    {"stock": "Chasing the rally aggressively", "reason": "After 6% weekly gain, asymmetry has flipped. Talks failed — ceasefire cracks scenario now 60%+. Sell-the-news risk 8/10."}
   ],
   "calendar": [
     {"date": "2026-04-13", "event": "India March CPI inflation data", "impact_level": 4, "sectors_affected": ["Banking", "NBFC", "Real Estate"]},
@@ -40,10 +40,10 @@
     {"date": "2026-06-03", "event": "RBI MPC meeting", "impact_level": 4, "sectors_affected": ["Banking", "NBFC", "Real Estate", "Auto"]}
   ],
   "tracker": [
-    {"title": "US-Iran Ceasefire & Strait of Hormuz", "status": "escalating", "india_impact": "Drove 6% rally. Now fragile — US Navy in Hormuz, Iran threatened retaliation. Crude could spike to $110+ if cracks.", "watch_for": "Islamabad talks outcome. Hormuz incidents. Monday crude futures."},
-    {"title": "Q4 FY26 Earnings Season", "status": "watching", "india_impact": "TCS beat but stock fell 2%. HDFC Bank Apr 18 is critical. Market needs earnings to justify rally.", "watch_for": "HDFC Bank NIM >3.65%. Infosys FY27 guidance."},
-    {"title": "Crude Oil Volatility", "status": "escalating", "india_impact": "Brent $95-97 still elevated. Singapore GRMs collapsed to -$9.4. Devastating for refiners.", "watch_for": "Hormuz status. OPEC+ response."},
-    {"title": "RBI Monetary Policy", "status": "watching", "india_impact": "Held at 5.25%. March CPI tomorrow is key for June cut hopes.", "watch_for": "March CPI Apr 13. Crude trajectory."},
-    {"title": "FII Flows & Rupee", "status": "watching", "india_impact": "Rally suggests FII return. USD/INR stable at 93.", "watch_for": "Daily FII/DII data. USD/INR."}
+    {"title": "US-Iran Ceasefire & Strait of Hormuz", "status": "escalating", "india_impact": "Islamabad talks COLLAPSED (Vance, Apr 12) — no deal after 21 hrs. Iran demanded Hormuz control + war reparations. Ceasefire cracks probability now 60%+. Crude WTI $96.57, physical Brent $131.97. OMCs under severe pressure at Wednesday open.", "watch_for": "Any Hormuz military incident Mon/Tue. Crude breaking $100 futures. Wed pre-market gap assessment."},
+    {"title": "Q4 FY26 Earnings Season", "status": "watching", "india_impact": "TCS beat but stock fell 2% — sell-the-news pattern confirmed. HDFC Bank Apr 18 is critical. Market needs earnings to justify 6% rally.", "watch_for": "HDFC Bank NIM >3.65% on Apr 18. Infosys FY27 guidance Apr 23."},
+    {"title": "Crude Oil Volatility", "status": "escalating", "india_impact": "Brent futures $95-97. Physical dated Brent $131.97 — extreme spot/futures divergence showing real supply stress. GRMs collapsed to -$9.4. Talks failure adds upside crude risk.", "watch_for": "Crude futures breaking $100. Hormuz shipping lanes. OPEC+ supply response."},
+    {"title": "RBI Monetary Policy", "status": "watching", "india_impact": "Held at 5.25%. March CPI release Apr 13 (tomorrow) is key for June cut hopes. Consensus 3.4%.", "watch_for": "March CPI print Apr 13. Hot print (>3.6%) kills rate cut path."},
+    {"title": "FII Flows & Rupee", "status": "watching", "india_impact": "6% weekly rally suggests FII return. USD/INR stable at 93. Talks failure may pressure rupee at Wednesday open.", "watch_for": "Daily FII/DII data. USD/INR at Wednesday open."}
   ]
 }
