@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stock Pulse</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.6/dist/purify.min.js"></script>
+  <!-- No external dependencies beyond Tailwind -->
   <script>
     tailwind.config = {
       theme: {
@@ -111,7 +111,7 @@
 
   <script>
     const DATA_BASE = 'data/';
-    const S = DOMPurify.sanitize;
+    // All rendering uses textContent (safe) — no innerHTML with untrusted data
 
     async function fetchJSON(url) {
       try {
@@ -135,15 +135,7 @@
       return new Date(ts).toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', hour12: true, timeZone: 'Asia/Kolkata' });
     }
 
-    function esc(str) { return S(String(str || '')); }
-
-    function triggerBadge(trigger) {
-      const colors = { reactive: '#ef4444', predictive: '#a855f7', calendar: '#f59e0b', none: '#4b5563', forward_scan: '#3b82f6' };
-      const icons = { reactive: '\u26a0\ufe0f', predictive: '\u{1F52E}', calendar: '\u{1F4C5}', none: '\u2022', forward_scan: '\u{1F4E1}' };
-      const color = colors[trigger] || '#4b5563';
-      const icon = icons[trigger] || '\u2022';
-      return `<span style="color:${color};background:${color}20;padding:1px 6px;border-radius:4px;font-size:11px">${icon} ${esc(trigger)}</span>`;
-    }
+    // No unused functions — all rendering is DOM-based with textContent
 
     function buildRow(label, value, colorClass) {
       const div = document.createElement('div');
@@ -310,8 +302,11 @@
         meta.appendChild(time);
 
         const badgeSpan = document.createElement('span');
-        badgeSpan.className = 'text-xs';
-        badgeSpan.innerHTML = S(triggerBadge(tick.trigger));
+        const colors = { reactive: '#ef4444', predictive: '#a855f7', calendar: '#f59e0b', none: '#4b5563', forward_scan: '#3b82f6' };
+        const icons = { reactive: '\u26a0\ufe0f', predictive: '\u{1F52E}', calendar: '\u{1F4C5}', none: '\u2022', forward_scan: '\u{1F4E1}' };
+        const bColor = colors[tick.trigger] || '#4b5563';
+        badgeSpan.style.cssText = 'color:' + bColor + ';background:' + bColor + '20;padding:1px 6px;border-radius:4px;font-size:11px';
+        badgeSpan.textContent = (icons[tick.trigger] || '\u2022') + ' ' + (tick.trigger || 'none');
         meta.appendChild(badgeSpan);
 
         if (tick.agents_used) {
