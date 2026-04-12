@@ -29,5 +29,15 @@
       "telegram_sent": true,
       "agent_trace": "Sentinel (reactive) → Telegram alert sent directly"
     }
+  ,
+    {
+      "timestamp": "2026-04-12T21:12:13+05:30",
+      "trigger": "reactive",
+      "reason": "WTI crossed $100.25 (threshold hit) + Iran threatening Bab al-Mandeb (2nd chokepoint). Forward scan also run — added Reliance Apr 15, HCL/TechM, FOMC+F&O double event, US Tariff tracker.",
+      "details": "WTI $100.25 confirmed sustained. 230 tankers stranded. Bab al-Mandeb closure threat. Coal India upgraded to conviction 5. Forward scan added 3 calendar events, 1 new tracker item (US Tariff). Telegram alert sent.",
+      "agents_used": 2,
+      "telegram_sent": true,
+      "agent_trace": "Sentinel (reactive — WTI $100+, Bab al-Mandeb) + Forward Scan (calendar/tracker refresh) run in parallel → Telegram alert sent → full state + dashboard update"
+    }
   ]
 }

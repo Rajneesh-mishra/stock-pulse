@@ -65,5 +65,23 @@
       "telegram_sent": false,
       "forward_scan_done": false
     }
+  ,
+    {
+      "timestamp": "2026-04-12T21:12:13+05:30",
+      "trigger": "reactive",
+      "reason": "WTI crossed $100.25 (explicit threshold). Iran threatening Bab al-Mandeb — second major chokepoint. Forward scan run (overdue at 21:12, threshold 21:50).",
+      "details": "WTI $100.25 sustained. 230 tankers stranded. Bab al-Mandeb threat. New tracker: US Tariff & India Trade Dynamics (26% tariff, Nifty -5.9% Apr 7). Calendar additions: Reliance Apr 15, HCL Tech Apr 21, TechM Apr 22, FOMC+F&O monthly Apr 28. Coal India conviction 4→5.",
+      "market_status": "weekend",
+      "agents_used": 2,
+      "pipeline": "sentinel+forward_scan",
+      "telegram_sent": true,
+      "telegram_type": "reactive_alert",
+      "forward_scan_done": true,
+      "agent_trace": {
+        "sentinel": "Reactive. WTI $100.25 confirmed. Bab al-Mandeb threat new. Distinct from 18:50 blockade alert.",
+        "forward_scan": "Added Reliance Apr 15 (double catalyst with F&O expiry), HCL Tech Apr 21, TechM Apr 22, FOMC+F&O monthly Apr 28 (impact 5). New tracker: US Tariff & India Trade Dynamics. Updated all existing trackers with latest data.",
+        "telegram": "WTI $100 + Bab al-Mandeb alert sent. Coal India, IndiGo short, PE hedge positioning reinforced."
+      }
+    }
   ]
 }
