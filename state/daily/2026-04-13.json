@@ -1,0 +1,16 @@
+{
+  "date": "2026-04-13",
+  "ticks": [
+    {
+      "timestamp": "2026-04-13T00:56:10+05:30",
+      "trigger": "none",
+      "reason": "Overnight init tick. WTI $96.57, no new escalation. Hormuz blockade in effect, Bab al-Mandeb threatened but no closure. CPI data due today ~17:30 IST. Pre-market starts 8:30 IST.",
+      "details": "Carrying forward from Apr 12: WTI $96.57 (pulled back from $100.25 peak). Ceasefire nominal but blockade active. 230 tankers stranded. India March CPI consensus 3.4% — hot print risk elevated given WTI $96-100 range during March.",
+      "market_status": "pre_market",
+      "agents_used": 1,
+      "pipeline": "sentinel_only",
+      "telegram_sent": false,
+      "forward_scan_done": false
+    }
+  ]
+}
