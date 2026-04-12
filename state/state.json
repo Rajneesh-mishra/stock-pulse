@@ -1,14 +1,15 @@
 {
   "last_scan": {
-    "timestamp": "2026-04-12T15:50:00+05:30",
+    "timestamp": "2026-04-12T17:48:45+05:30",
     "nifty_level": 24050,
     "trigger": "predictive",
-    "last_telegram_summary": "Weekly predictive brief: 3 scenarios (ceasefire holds 30%, cracks 40%, CPI surprise 30%). Positioning: ITC long, ONGC/BPCL pair, 23500 PE hedge. HDFC Bank best earnings risk/reward. Sell-the-news risk high. Tuesday holiday gap into Wednesday expiry is structural risk.",
+    "last_telegram_summary": "FLASH UPDATE: US-Iran Pakistan talks collapsed (Vance confirmed, Apr 12). Ceasefire cracks scenario 30%→60%+. WTI $96.57, physical Brent $131.97. OMC pain at Wednesday open. Watch Nifty 23,500. Check Tue night for Hormuz incident.",
     "last_full_pipeline": "2026-04-12T15:50:00+05:30",
     "last_forward_scan": "2026-04-12T15:50:00+05:30"
   },
   "alert_cooldowns": {
-    "weekly_predictive_brief": "2026-04-12T15:50:00+05:30"
+    "weekly_predictive_brief": "2026-04-12T15:50:00+05:30",
+    "ceasefire_talks_flash": "2026-04-12T17:48:45+05:30"
   },
   "calendar": [
     {"date": "2026-04-13", "event": "India March CPI inflation data release", "impact_level": 4, "days_until": 1, "expected": "Previous 3.21% in Feb; market expects benign, but March captured peak crude", "sectors_affected": ["Banking", "NBFC", "Real Estate"]},
@@ -22,7 +23,7 @@
     {"date": "2026-06-03", "event": "RBI MPC meeting (June 3-5)", "impact_level": 4, "days_until": 52, "expected": "Potential rate cut from 5.25% if inflation stays benign", "sectors_affected": ["Banking", "NBFC", "Real Estate", "Auto"]}
   ],
   "tracker": [
-    {"title": "US-Iran Ceasefire & Strait of Hormuz", "status": "escalating", "last_updated": "2026-04-12T15:50:00+05:30", "india_impact": "Ceasefire drove 6% Nifty rally. Now fragile: US Navy in Hormuz, Iran threatened retaliation. Crude at $95-97, could spike to $110+ if cracks. OMCs, inflation, RBI path all at risk.", "watch_for": "Islamabad peace talks outcome. Any Hormuz military incident. Monday crude oil futures."},
+    {"title": "US-Iran Ceasefire & Strait of Hormuz", "status": "escalating", "last_updated": "2026-04-12T17:48:45+05:30", "india_impact": "Islamabad talks COLLAPSED (Vance, Apr 12) — no deal after 21 hrs. Iran demanded Hormuz control + reparations. Two-week ceasefire still nominal but breakdown risk high. Ceasefire cracks probability 60%+. Crude WTI $96.57, physical Brent $131.97. OMCs (BPCL/HPCL) under pressure; ONGC mixed (crude up, marketing drag). 23,500 PE hedge validity increasing.", "watch_for": "Any Hormuz military incident Mon/Tue. Crude futures breaking $100. Tuesday night/Wednesday pre-market for gap risk assessment."},
     {"title": "Q4 FY26 Earnings Season", "status": "watching", "last_updated": "2026-04-12T15:50:00+05:30", "india_impact": "TCS kicked off with 29% profit beat but stock fell 2% — sell-the-news pattern. HDFC Bank Apr 18 is the critical event. Market needs earnings to justify 6% rally.", "watch_for": "HDFC Bank NIM >3.65%. Infosys FY27 guidance. Banking NPA trends."},
     {"title": "Crude Oil Volatility", "status": "escalating", "last_updated": "2026-04-12T15:50:00+05:30", "india_impact": "Brent $95-97 still elevated vs pre-war $75-80. Singapore GRMs collapsed to negative $9.4 — devastating for refiners. Any ceasefire breakdown sends crude to $110+.", "watch_for": "Hormuz shipping lanes. OPEC+ supply response. Weekly inventory data."},
     {"title": "RBI Monetary Policy Path", "status": "watching", "last_updated": "2026-04-12T15:50:00+05:30", "india_impact": "Held at 5.25% on Apr 8. CPI 3.21% in Feb gives room for cuts. March CPI (Mon) is critical — hot print kills June cut hopes.", "watch_for": "March CPI release Apr 13. Crude trajectory. Global bond yields."},

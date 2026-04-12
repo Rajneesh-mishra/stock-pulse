@@ -19,5 +19,22 @@
         "synthesis": "Composed predictive brief with scenarios, positioning, earnings watch, and calendar. Sent to both Telegram chats."
       }
     }
+  ,
+    {
+      "timestamp": "2026-04-12T17:48:45+05:30",
+      "trigger": "predictive",
+      "reason": "US-Iran Islamabad talks collapsed — named watch trigger from 15:50 brief. Ceasefire cracks scenario probability elevated to 60%+.",
+      "details": "Vance confirmed no deal after 21 hours. Iran demanded Hormuz control + reparations + Lebanon ceasefire — all rejected. WTI $96.57, Brent $95.20, physical dated Brent $131.97. Ceasefire still technically in force but high breakdown risk. CPI release tomorrow Apr 13.",
+      "market_status": "weekend",
+      "agents_used": 2,
+      "pipeline": "sentinel+synthesis",
+      "telegram_sent": true,
+      "telegram_type": "flash_alert",
+      "forward_scan_done": false,
+      "agent_trace": {
+        "sentinel": "Triggered predictive. US-Iran Pakistan talks collapsed (Vance Apr 12). Ceasefire cracks probability 60%+. Crude $96.57 WTI. CPI consensus 3.4% unchanged. Forward scan not yet due (due 21:50 IST).",
+        "synthesis": "Composed 90-word flash alert. Flagged OMC pain, ONGC mixed, 23,500 key level. Sent to Telegram."
+      }
+    }
   ]
 }
