@@ -95,5 +95,16 @@
       "telegram_sent": false,
       "forward_scan_done": false
     }
+  ,
+    {
+      "timestamp": "2026-04-12T23:54:16+05:30",
+      "trigger": "none",
+      "reason": "Quiet overnight. WTI $96.57, no Iranian military action, no Bab al-Mandeb closure. Hourly surveillance continuing.",
+      "market_status": "weekend",
+      "agents_used": 1,
+      "pipeline": "sentinel_only",
+      "telegram_sent": false,
+      "forward_scan_done": false
+    }
   ]
 }
