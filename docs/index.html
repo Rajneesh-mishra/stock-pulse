@@ -69,6 +69,31 @@
     </div>
 
     <div class="lg:col-span-2 space-y-6">
+
+      <!-- Scenarios -->
+      <section class="bg-dark-800 rounded-lg border border-dark-600 p-5">
+        <h2 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Scenarios</h2>
+        <div id="scenarios-list" class="space-y-3">
+          <div class="text-center text-gray-500 text-sm py-4">No active scenarios</div>
+        </div>
+      </section>
+
+      <!-- Signals -->
+      <section class="bg-dark-800 rounded-lg border border-pulse-green p-5 glow-green">
+        <h2 class="text-xs font-semibold text-pulse-green uppercase tracking-wider mb-4">Active Signals</h2>
+        <div id="signals-list" class="space-y-3">
+          <div class="text-center text-gray-500 text-sm py-4">No active signals</div>
+        </div>
+      </section>
+
+      <!-- Avoid -->
+      <section class="bg-dark-800 rounded-lg border border-pulse-red p-5 glow-red">
+        <h2 class="text-xs font-semibold text-pulse-red uppercase tracking-wider mb-4">Avoid</h2>
+        <div id="avoid-list" class="space-y-2">
+          <div class="text-center text-gray-500 text-sm py-4">Nothing flagged</div>
+        </div>
+      </section>
+
       <div class="grid grid-cols-4 gap-3">
         <div class="bg-dark-800 rounded-lg border border-dark-600 p-4 text-center">
           <div class="text-2xl font-bold text-white" id="stat-ticks">0</div>
@@ -260,6 +285,132 @@
       });
     }
 
+    function renderScenarios(data) {
+      const el = document.getElementById('scenarios-list');
+      el.replaceChildren();
+      if (!data || !data.scenarios || data.scenarios.length === 0) {
+        const p = document.createElement('div');
+        p.className = 'text-center text-gray-500 text-sm py-4';
+        p.textContent = 'No active scenarios';
+        el.appendChild(p);
+        return;
+      }
+      data.scenarios.forEach(s => {
+        const card = document.createElement('div');
+        card.className = 'bg-dark-700 rounded-lg p-4 border-l-2';
+        card.style.borderLeftColor = s.direction === 'up' ? '#22c55e' : '#ef4444';
+
+        const header = document.createElement('div');
+        header.className = 'flex justify-between items-center mb-2';
+        const name = document.createElement('span');
+        name.className = 'text-sm text-white font-medium';
+        name.textContent = s.name;
+        const prob = document.createElement('span');
+        prob.className = 'text-sm font-bold';
+        prob.style.color = s.direction === 'up' ? '#22c55e' : '#ef4444';
+        prob.textContent = s.probability;
+        header.appendChild(name);
+        header.appendChild(prob);
+        card.appendChild(header);
+
+        const range = document.createElement('div');
+        range.className = 'text-xs text-gray-400 mb-1';
+        range.textContent = 'Nifty ' + s.nifty_range;
+        card.appendChild(range);
+
+        const summary = document.createElement('div');
+        summary.className = 'text-xs text-gray-500';
+        summary.textContent = s.summary;
+        card.appendChild(summary);
+
+        el.appendChild(card);
+      });
+    }
+
+    function renderSignals(data) {
+      const el = document.getElementById('signals-list');
+      el.replaceChildren();
+      if (!data || !data.signals || data.signals.length === 0) {
+        const p = document.createElement('div');
+        p.className = 'text-center text-gray-500 text-sm py-4';
+        p.textContent = 'No active signals';
+        el.appendChild(p);
+        return;
+      }
+      data.signals.forEach(s => {
+        const card = document.createElement('div');
+        card.className = 'bg-dark-700 rounded-lg p-4';
+
+        const header = document.createElement('div');
+        header.className = 'flex items-center gap-2 mb-2';
+
+        const badge = document.createElement('span');
+        const actionColors = { BUY: '#22c55e', SELL: '#ef4444', PAIR: '#3b82f6', HEDGE: '#f59e0b' };
+        const ac = actionColors[s.action] || '#6b7280';
+        badge.style.cssText = 'color:' + ac + ';background:' + ac + '20;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600';
+        badge.textContent = s.action;
+        header.appendChild(badge);
+
+        const stock = document.createElement('span');
+        stock.className = 'text-sm text-white font-bold';
+        stock.textContent = s.stock;
+        header.appendChild(stock);
+
+        const stars = document.createElement('span');
+        stars.className = 'ml-auto text-xs';
+        stars.textContent = '\u2605'.repeat(s.conviction || 0) + '\u2606'.repeat(5 - (s.conviction || 0));
+        stars.style.color = '#f59e0b';
+        header.appendChild(stars);
+
+        card.appendChild(header);
+
+        const rationale = document.createElement('div');
+        rationale.className = 'text-xs text-gray-400 mb-1';
+        rationale.textContent = s.rationale;
+        card.appendChild(rationale);
+
+        if (s.risk) {
+          const risk = document.createElement('div');
+          risk.className = 'text-xs text-pulse-red mt-1';
+          risk.textContent = 'Risk: ' + s.risk;
+          card.appendChild(risk);
+        }
+
+        el.appendChild(card);
+      });
+    }
+
+    function renderAvoid(data) {
+      const el = document.getElementById('avoid-list');
+      el.replaceChildren();
+      if (!data || !data.avoid || data.avoid.length === 0) {
+        const p = document.createElement('div');
+        p.className = 'text-center text-gray-500 text-sm py-4';
+        p.textContent = 'Nothing flagged';
+        el.appendChild(p);
+        return;
+      }
+      data.avoid.forEach(a => {
+        const row = document.createElement('div');
+        row.className = 'flex gap-2 py-2 border-b border-dark-700';
+        const icon = document.createElement('span');
+        icon.textContent = '\u{1F6AB}';
+        icon.className = 'shrink-0';
+        const info = document.createElement('div');
+        const name = document.createElement('div');
+        name.className = 'text-sm text-white font-medium';
+        name.textContent = a.stock;
+        const reason = document.createElement('div');
+        reason.className = 'text-xs text-gray-500';
+        reason.textContent = a.reason;
+        info.appendChild(name);
+        info.appendChild(reason);
+        row.appendChild(icon);
+        row.appendChild(info);
+        el.appendChild(row);
+      });
+    }
+
     function renderTimeline(data) {
       const el = document.getElementById('timeline');
       el.replaceChildren();
@@ -368,6 +519,9 @@
           ? 'w-2 h-2 rounded-full bg-pulse-green pulse-dot'
           : 'w-2 h-2 rounded-full bg-gray-600';
         renderMarketSnapshot(currentData);
+        renderScenarios(currentData);
+        renderSignals(currentData);
+        renderAvoid(currentData);
         renderTracker(currentData);
         renderCalendar(currentData);
       }

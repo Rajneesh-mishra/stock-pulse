@@ -13,6 +13,22 @@
     "crude_brent": "$95-97",
     "usdinr": "93.0-93.1"
   },
+  "scenarios": [
+    {"name": "Ceasefire Holds + CPI Benign", "probability": "30%", "nifty_range": "24,200 – 24,800", "direction": "up", "summary": "Rally extends slowly. Crude drifts to $88-92. Banks and OMCs benefit."},
+    {"name": "Ceasefire Cracks + Crude Spikes", "probability": "40%", "nifty_range": "22,800 – 23,600", "direction": "down", "summary": "MOST PROBABLE. Sharp selloff. Tuesday holiday gap into Wednesday expiry. Crude back to $105-115."},
+    {"name": "CPI Surprise Higher", "probability": "30%", "nifty_range": "23,400 – 24,000", "direction": "down", "summary": "Rate cut hopes crushed. Banks and real estate sell off. IT relatively resilient."}
+  ],
+  "signals": [
+    {"action": "BUY", "stock": "ITC", "conviction": 5, "rationale": "Works in ALL 3 scenarios. Defensive + pricing power. Zero crude sensitivity. 3%+ dividend yield floor.", "risk": "Lower beta in bull case"},
+    {"action": "PAIR", "stock": "ONGC Long / BPCL Short", "conviction": 4, "rationale": "Asymmetric crude bet. Makes 2-3x what it loses. ONGC benefits from high crude, BPCL gets crushed.", "risk": "Mild loss if ceasefire holds and crude drops"},
+    {"action": "HEDGE", "stock": "Nifty 23500 PE (Wed expiry)", "conviction": 4, "rationale": "Cheap tail hedge. 6-16x payout if ceasefire cracks over Tuesday holiday. Sized at 0.5-1% of portfolio.", "risk": "Total premium loss if market stays flat/up"},
+    {"action": "BUY", "stock": "HDFC Bank", "conviction": 4, "rationale": "Best earnings risk/reward. Down 38% in 1yr. Targets Rs 1,200-1,400 vs Rs 731. NIM >3.65% on Apr 18 is trigger.", "risk": "Governance overhang from chairman resignation"},
+    {"action": "BUY", "stock": "TCS / Infosys basket", "conviction": 3, "rationale": "Works in S1 (risk-on) and S3 (rotation from rate-sensitives). Dollar earners, INR weakness tailwind.", "risk": "Global risk-off in S2 hurts"}
+  ],
+  "avoid": [
+    {"stock": "BPCL / HPCL / IOC (long)", "reason": "Singapore GRM collapsed from $44 to -$9.4. Structural margin destruction. Not cyclical."},
+    {"stock": "Chasing the rally aggressively", "reason": "After 6% weekly gain, asymmetry has flipped. More room to fall than rise. Sell-the-news risk 7/10."}
+  ],
   "calendar": [
     {"date": "2026-04-13", "event": "India March CPI inflation data", "impact_level": 4, "sectors_affected": ["Banking", "NBFC", "Real Estate"]},
     {"date": "2026-04-14", "event": "Market Holiday — Ambedkar Jayanti", "impact_level": 2, "sectors_affected": ["All"]},
