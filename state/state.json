@@ -1,9 +1,9 @@
 {
   "last_scan": {
-    "timestamp": "2026-04-13T01:58:09+05:30",
+    "timestamp": "2026-04-13T02:59:55+05:30",
     "nifty_level": 24050,
-    "trigger": "none",
-    "last_telegram_summary": "WTI crosses $100.25. Iran threatening Bab al-Mandeb (second chokepoint). 230 tankers stranded. Rupee 93.73. OMC losses deepening. 23,500+23,000 PE max conviction. IndiGo short validated. Coal India gaining urgency.",
+    "trigger": "reactive",
+    "last_telegram_summary": "KINETIC ESCALATION: IRGC attacked 21+ merchant vessels in Hormuz. Sea mines reported. WTI $104.32 (hit $105.62). Market opens 9:15 IST today — gap-down near-certain. CPI tonight likely 3.6-3.8%. 23,500+23,000 PE still live.",
     "last_full_pipeline": "2026-04-12T15:50:00+05:30",
     "last_forward_scan": "2026-04-12T21:12:13+05:30"
   },
@@ -11,7 +11,8 @@
     "weekly_predictive_brief": "2026-04-12T15:50:00+05:30",
     "ceasefire_talks_flash": "2026-04-12T17:48:45+05:30",
     "hormuz_blockade_reactive": "2026-04-12T18:50:08+05:30",
-    "wti_100_crossed": "2026-04-12T21:12:13+05:30"
+    "wti_100_crossed": "2026-04-12T21:12:13+05:30",
+    "irgc_ship_attacks_kinetic": "2026-04-13T02:59:55+05:30"
   },
   "calendar": [
     {"date": "2026-04-13", "event": "India March CPI inflation data release", "impact_level": 4, "days_until": 1, "expected": "Consensus ~3.4% (up from 3.21% Feb). WTI $100+ makes hot print more likely. Instant market reaction — opens same day.", "sectors_affected": ["Banking", "NBFC", "Real Estate", "Auto"]},
@@ -27,9 +28,9 @@
     {"date": "2026-06-03", "event": "RBI MPC meeting (June 3-5)", "impact_level": 4, "days_until": 52, "expected": "Potential 25 bps cut from 5.25% if CPI benign and crude stabilises. June cut probability collapses if Hormuz stays closed.", "sectors_affected": ["Banking", "NBFC", "Real Estate", "Auto"]}
   ],
   "tracker": [
-    {"title": "US-Iran Ceasefire & Strait of Hormuz", "status": "escalating", "last_updated": "2026-04-12T21:12:13+05:30", "india_impact": "CRITICAL: Trump formal Hormuz blockade (Apr 12). Talks collapsed. WTI $100.25 confirmed. 230 tankers stranded in Gulf. Iran now threatening Bab al-Mandeb closure (Red Sea) — second major chokepoint. India imports 85% crude — every $10 rise = $12-14bn import bill, +0.4% CAD. OMCs maximum pain at Wednesday open. Nifty support: 23,500 → 23,200 → 22,800.", "watch_for": "Iran action on Bab al-Mandeb. WTI $105 next level. Wednesday Nifty open. Any tanker incident Mon/Tue. Back-channel US-Iran talks resuming."},
+    {"title": "US-Iran Ceasefire & Strait of Hormuz", "status": "escalating", "last_updated": "2026-04-13T02:59:55+05:30", "india_impact": "CRITICAL: IRGC attacked 21+ merchant vessels overnight (Apr 12-13). Sea mines planted in strait. Hormuz now functionally closed — not just blockaded. WTI $104.32 (intraday $105.62). Market opens 9:15 IST today into this. OMC maximum pain. CPI tonight likely 3.6-3.8% (above consensus). Wednesday gap (holiday Apr 14) into F&O expiry (Apr 15) = extreme structural risk.", "watch_for": "Today Nifty open — gap-down magnitude. WTI $110 next level. IRGC further attacks. US military response. CPI print ~17:30 IST."},
     {"title": "Q4 FY26 Earnings Season", "status": "watching", "last_updated": "2026-04-12T21:12:13+05:30", "india_impact": "TCS beat 29% but fell 2% — sell-the-news confirmed. Reliance Apr 15, Wipro Apr 16, HCL Tech Apr 21, TechM Apr 22, Infosys Apr 23. HDFC Bank/ICICI Bank Apr 18 (react Apr 20) are critical banking events. Earnings need to justify any recovery from crude/tariff lows.", "watch_for": "HDFC Bank NIM >3.65% (Apr 18). Infosys FY27 guidance (Apr 23) — 2-6% wide range signals uncertainty. Reliance Jio/Retail growth (Apr 15)."},
-    {"title": "Crude Oil Volatility", "status": "escalating", "last_updated": "2026-04-12T21:12:13+05:30", "india_impact": "WTI $100.25 confirmed. Brent $98+. Bloomberg analysts: $110+ if Hormuz fully closes. India imports 85% crude — structural CAD pressure. Singapore GRMs -$9.4 — refiner devastation. Bab al-Mandeb threat adds second chokepoint risk to LNG imports. Aviation ATF cost shock ongoing.", "watch_for": "WTI $105 level. OPEC+ emergency supply response. Bab al-Mandeb closure. India govt OMC subsidy decision. Weekly US crude inventory."},
+    {"title": "Crude Oil Volatility", "status": "escalating", "last_updated": "2026-04-13T02:59:55+05:30", "india_impact": "WTI $104.32 (hit $105.62 intraday). Hormuz functionally closed (IRGC attacks + mines). Bloomberg: $110-120 if closure persists. GRMs -$9.4 — refiners in structural loss. Every Rs 10 crude rise = Rs 8-10/litre OMC subsidy pressure. Aviation ATF confirmed cost shock.", "watch_for": "WTI $110 level. OPEC+ emergency supply. US military response to IRGC attacks. India OMC pricing decision."},
     {"title": "US Tariff & India Trade Dynamics", "status": "escalating", "last_updated": "2026-04-12T21:12:13+05:30", "india_impact": "26% reciprocal tariff on Indian goods effective Apr 9. Nifty fell 5.9% on Apr 7 (second-largest single-day fall in a decade). FIIs sold Rs 22,000 cr in one week. Pharma, gems/jewellery, textiles, auto components exposed. IT services largely insulated. Combined with Hormuz blockade = double structural headwind.", "watch_for": "US-India tariff negotiation progress. Pharma exemption. FII flow reversal. Rupee past 94 USD/INR."},
     {"title": "RBI Monetary Policy Path", "status": "watching", "last_updated": "2026-04-12T21:12:13+05:30", "india_impact": "Held at 5.25% on Apr 8. March CPI (Apr 13) is immediate trigger — consensus 3.4%, WTI $100 makes hot print more likely. Hot print (>3.6%) kills June cut. Next MPC June 3-5. RBI lowered FY27 growth outlook due to tariff/crude headwinds.", "watch_for": "March CPI Apr 13 — 3.4% neutral, >3.6% bearish rate-cut odds. Crude trajectory. June MPC cut probability."},
     {"title": "FII Flows & Rupee", "status": "watching", "last_updated": "2026-04-12T21:12:13+05:30", "india_impact": "FIIs pulled Rs 1.04 lakh cr YTD. Rupee Rs 93.73/USD. 6% Nifty rally suggested tentative FII return but blockade + tariff = double headwind. DIIs counter-buying. Rupee past 94 would accelerate exits.", "watch_for": "Wednesday NSE FII/DII data. USD/INR past 94. FOMC Apr 28-29 hawkish surprise. Indo-US trade deal."}

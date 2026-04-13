@@ -14,5 +14,17 @@
     }
   ,
     {"timestamp":"2026-04-13T01:58:09+05:30","trigger":"none","reason":"Overnight quiet. WTI $96.57, no kinetic action.","market_status":"pre_market","agents_used":1,"telegram_sent":false}
+  ,
+    {
+      "timestamp": "2026-04-13T02:59:55+05:30",
+      "trigger": "reactive",
+      "reason": "IRGC attacked 21+ merchant vessels in Hormuz overnight. Sea mines planted. WTI $104.32 (hit $105.62). Hormuz functionally closed — kinetic escalation above all prior alerts.",
+      "details": "Market opens 9:15 IST today — first pricing of blockade + attacks. CPI ~17:30 IST likely 3.6-3.8% (hot). Holiday gap Apr 14 into F&O expiry Apr 15. Sent reactive alert to Telegram. Scenarios updated: dominant now 80%+.",
+      "market_status": "pre_market",
+      "agents_used": 1,
+      "pipeline": "sentinel+reactive",
+      "telegram_sent": true,
+      "telegram_type": "reactive_alert"
+    }
   ]
 }

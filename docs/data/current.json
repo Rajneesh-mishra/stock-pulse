@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-12T21:12:13+05:30",
+  "last_updated": "2026-04-13T02:59:55+05:30",
   "status": "active",
   "market_status": "weekend",
   "market": {
@@ -10,12 +10,12 @@
     "vix": "~18.85 (-7.73%)",
     "fii_net": "+672 Cr (provisional Apr 10)",
     "dii_net": "+7,979 Cr",
-    "crude_brent": "WTI $100.25 ✓ threshold crossed",
-    "usdinr": "93.73"
+    "crude_brent": "WTI $104.32 (hit $105.62 overnight)",
+    "usdinr": "93.73 → pressure toward 95+"
   },
   "scenarios": [
     {"name": "Ceasefire Holds + Blockade Reversed", "probability": "5%", "nifty_range": "24,200 – 24,800", "direction": "up", "summary": "Near-impossible. Requires Trump to reverse blockade AND Iran to stand down. Not the base case."},
-    {"name": "Blockade Holds — Crude $100-110", "probability": "75%+", "nifty_range": "22,800 – 23,600", "direction": "down", "summary": "DOMINANT. WTI $100.25 confirmed. 230 tankers stranded. Iran threatening Bab al-Mandeb (2nd chokepoint). 2-day gap into Wed F&O expiry. OMCs maximum pain. 23,500 → 23,200 → 22,800."},
+    {"name": "Hormuz Closed — Crude $105-120", "probability": "80%+", "nifty_range": "22,000 – 23,200", "direction": "down", "summary": "DOMINANT. IRGC attacked 21+ ships overnight. Sea mines in strait. WTI $104.32, hit $105.62. Hormuz functionally closed. Today's open = first pricing. Holiday gap (Apr 14) into F&O expiry (Apr 15). CPI tonight likely 3.6-3.8%."},
     {"name": "CPI Surprise + Rate Cut Killed", "probability": "20%", "nifty_range": "23,400 – 24,000", "direction": "down", "summary": "CPI prints hot today (Apr 13). WTI $100 makes it more likely. Compounds the bear case — banks, NBFCs, real estate all hit. Secondary to geopolitical but additive."}
   ],
   "signals": [
@@ -47,10 +47,10 @@
     {"date": "2026-06-03", "event": "RBI MPC meeting (June 3-5)", "impact_level": 4, "sectors_affected": ["Banking", "NBFC", "Real Estate", "Auto"]}
   ],
   "tracker": [
-    {"title": "US-Iran Ceasefire & Strait of Hormuz", "status": "escalating", "india_impact": "CRITICAL: Trump formal Hormuz blockade (Apr 12). Talks collapsed. WTI $100.25 confirmed. 230 tankers stranded. Iran threatening Bab al-Mandeb (Red Sea) — 2nd major chokepoint. India imports 85% crude — every $10 rise = $12-14bn import bill, +0.4% CAD. OMCs maximum pain at Wednesday open. Nifty: 23,500 → 23,200 → 22,800.", "watch_for": "Iran action on Bab al-Mandeb. WTI $105 next level. Wednesday Nifty open. Tanker incidents Mon/Tue. US-Iran back-channel."},
+    {"title": "US-Iran Ceasefire & Strait of Hormuz", "status": "escalating", "india_impact": "CRITICAL: IRGC attacked 21+ merchant vessels overnight (Apr 12-13). Sea mines in strait. Hormuz functionally closed. WTI $104.32 (hit $105.62). Market opens 9:15 IST today into this. OMC maximum pain. CPI tonight 3.6-3.8% likely. Apr 14 holiday gap into Apr 15 F&O expiry = structural risk.", "watch_for": "Today Nifty open magnitude. WTI $110. IRGC further attacks. US military response. CPI print ~17:30 IST."},
     {"title": "US Tariff & India Trade Dynamics", "status": "escalating", "india_impact": "26% reciprocal tariff on Indian goods effective Apr 9. Nifty -5.9% on Apr 7. FIIs sold Rs 22,000 cr in one week. Pharma, gems/jewellery, textiles, auto components exposed. Combined with Hormuz = double structural headwind on Indian growth.", "watch_for": "US-India negotiation progress. Pharma exemptions. FII flow reversal. Rupee past 94."},
     {"title": "Q4 FY26 Earnings Season", "status": "watching", "india_impact": "TCS 29% beat, fell 2% — sell-the-news. Reliance Apr 15, Wipro Apr 16, HCL Tech Apr 21, TechM Apr 22, Infosys Apr 23. HDFC/ICICI Bank Apr 18 (react Apr 20). Earnings must justify recovery rally against crude/tariff headwinds.", "watch_for": "HDFC Bank NIM >3.65%. Infosys FY27 guidance. Reliance Jio/Retail growth."},
-    {"title": "Crude Oil Volatility", "status": "escalating", "india_impact": "WTI $100.25 confirmed. Bloomberg: $110+ if Hormuz fully closes. India imports 85% crude. GRMs -$9.4 — refiner losses. Bab al-Mandeb threat adds LNG import risk. Aviation ATF compounding.", "watch_for": "WTI $105. OPEC+ emergency supply. Bab al-Mandeb. India OMC subsidy decision."},
+    {"title": "Crude Oil Volatility", "status": "escalating", "india_impact": "WTI $104.32, hit $105.62 overnight. Hormuz closed (IRGC attacks + mines). Bloomberg: $110-120 if closure persists. GRMs -$9.4 — structural refiner losses. Aviation ATF shock confirmed. Every $10 crude rise = Rs 8-10/litre OMC subsidy pressure.", "watch_for": "WTI $110. OPEC+ emergency supply. US military response to IRGC. India OMC pricing decision."},
     {"title": "RBI Monetary Policy Path", "status": "watching", "india_impact": "Held at 5.25%. March CPI (Apr 13) is immediate trigger. Consensus 3.4% but WTI $100 pushes print higher. Hot print (>3.6%) kills June cut. Next MPC June 3-5.", "watch_for": "CPI Apr 13. Crude trajectory. June cut probability."},
     {"title": "FII Flows & Rupee", "status": "watching", "india_impact": "FIIs pulled Rs 1.04 lakh cr YTD. Rupee Rs 93.73/USD. Blockade + tariff = double headwind. DIIs counter-buying. Past 94 = accelerated exits.", "watch_for": "Wednesday FII/DII data. USD/INR past 94. FOMC Apr 28-29."}
   ]

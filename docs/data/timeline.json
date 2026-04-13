@@ -39,5 +39,15 @@
       "telegram_sent": true,
       "agent_trace": "Sentinel (reactive — WTI $100+, Bab al-Mandeb) + Forward Scan (calendar/tracker refresh) run in parallel → Telegram alert sent → full state + dashboard update"
     }
+  ,
+    {
+      "timestamp": "2026-04-13T02:59:55+05:30",
+      "trigger": "reactive",
+      "reason": "IRGC attacks on 21+ merchant vessels + sea mines in Hormuz overnight. WTI $104.32, hit $105.62. Hormuz functionally closed.",
+      "details": "Kinetic escalation above all prior alerts. Market opens 9:15 IST today. CPI tonight. Scenarios updated to 80%+. Telegram alert sent.",
+      "agents_used": 1,
+      "telegram_sent": true,
+      "agent_trace": "Sentinel (reactive — IRGC attacks, WTI $104) → Telegram alert sent → tracker/scenarios updated"
+    }
   ]
 }
