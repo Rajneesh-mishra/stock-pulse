@@ -1,0 +1,18 @@
+{
+  "date": "2026-04-14",
+  "market_status": "holiday",
+  "holiday": "Ambedkar Jayanti",
+  "ticks": [
+    {
+      "timestamp": "2026-04-14T01:52:00+05:30",
+      "trigger": "none",
+      "reason": "Holiday sentinel tick. No new escalation. WTI flat ~$104.35. Ceasefire nominally intact despite violations. Bab el-Mandeb threatened but not closed. No US strike on Iran.",
+      "details": "WTI $104.35-104.56 (flat). US blockade of Iranian ports ongoing (no new military action). Bab el-Mandeb open. Apr 15 preview: F&O expiry + Reliance Q4 post-market (PAT est Rs 19,200-21,000 cr, dividend likely). Gap open risk from 2-day holiday overhang.",
+      "market_status": "holiday",
+      "agents_used": 1,
+      "pipeline": "sentinel_only",
+      "telegram_sent": false,
+      "forward_scan_done": false
+    }
+  ]
+}
