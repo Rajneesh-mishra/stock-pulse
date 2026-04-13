@@ -49,5 +49,20 @@
       "telegram_sent": true,
       "agent_trace": "Sentinel (reactive — IRGC attacks, WTI $104) → Telegram alert sent → tracker/scenarios updated"
     }
+  ,
+    {
+      "timestamp": "2026-04-13T20:30:00+05:30",
+      "trigger": "daily_wrap",
+      "reason": "Apr 13 session complete. Nifty -0.87% close (better than feared). CPI 3.4% benign. Signals confirmed. Holiday Apr 14. Setting up Apr 15 F&O expiry + Reliance Q4.",
+      "details": "Nifty opened 23,573 (gap-down 477 pts), recovered to 23,842 (-0.87%). VIX 20.70. CPI 3.4% — June cut alive but WTI $104 is risk. Signals working: ITC ✅, IndiGo SHORT -6% ✅, BPCL SHORT -4% ✅, 23,500 PE in the money ✅. ONGC partial (windfall tax risk). HDFC Bank conviction upgraded to 3 — accumulate before Apr 18. Daily wrap Telegram sent. Scenarios, signals, avoid, tracker all updated.",
+      "agents_used": 1,
+      "telegram_sent": true,
+      "telegram_type": "daily_wrap",
+      "agent_trace": "Synthesis agent → daily wrap composed → state + current.json + timeline.json updated → git push",
+      "nifty_close": 23842,
+      "vix_close": 20.70,
+      "wti": 104.35,
+      "cpi_march_2026": 3.4
+    }
   ]
 }

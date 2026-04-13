@@ -1,38 +1,44 @@
 {
-  "last_updated": "2026-04-13T02:59:55+05:30",
+  "last_updated": "2026-04-13T20:30:00+05:30",
   "status": "active",
-  "market_status": "weekend",
+  "market_status": "holiday",
   "market": {
-    "nifty_level": 24050,
-    "nifty_change": "+6% weekly (best in 5 years)",
-    "sensex": "~79,200",
-    "banknifty": "~52,000",
-    "vix": "~18.85 (-7.73%)",
-    "fii_net": "+672 Cr (provisional Apr 10)",
-    "dii_net": "+7,979 Cr",
-    "crude_brent": "WTI $104.32 (hit $105.62 overnight)",
-    "usdinr": "93.73 → pressure toward 95+"
+    "nifty_level": 23842,
+    "nifty_open": 23573,
+    "nifty_change": "-0.87% (Apr 13 close vs Apr 10)",
+    "nifty_session_note": "Opened gap-down 477 pts to 23,573; recovered 269 pts to close 23,842. Better than feared.",
+    "sensex": "Crashed 1,653 pts at open, partial recovery",
+    "banknifty": "~55,605",
+    "vix": "20.70 (+9.81%; intraday peak ~+14% at open)",
+    "fii_net": "data pending (holiday Apr 14)",
+    "dii_net": "data pending",
+    "crude_wti": "$104.35",
+    "crude_brent": "$102.26",
+    "usdinr": "92.60",
+    "gold": "$4,717",
+    "cpi_march_2026": "3.4% (benign; below feared 3.6-3.8%; within RBI comfort zone)"
   },
   "scenarios": [
-    {"name": "Ceasefire Holds + Blockade Reversed", "probability": "5%", "nifty_range": "24,200 – 24,800", "direction": "up", "summary": "Near-impossible. Requires Trump to reverse blockade AND Iran to stand down. Not the base case."},
-    {"name": "Hormuz Closed — Crude $105-120", "probability": "80%+", "nifty_range": "22,000 – 23,200", "direction": "down", "summary": "DOMINANT. IRGC attacked 21+ ships overnight. Sea mines in strait. WTI $104.32, hit $105.62. Hormuz functionally closed. Today's open = first pricing. Holiday gap (Apr 14) into F&O expiry (Apr 15). CPI tonight likely 3.6-3.8%."},
-    {"name": "CPI Surprise + Rate Cut Killed", "probability": "20%", "nifty_range": "23,400 – 24,000", "direction": "down", "summary": "CPI prints hot today (Apr 13). WTI $100 makes it more likely. Compounds the bear case — banks, NBFCs, real estate all hit. Secondary to geopolitical but additive."}
+    {"name": "Ceasefire Holds + Blockade Reversed", "probability": "5%", "nifty_range": "24,200 – 24,800", "direction": "up", "summary": "Near-impossible. Requires Trump to reverse blockade AND Iran to stand down. Not the base case. Market recovery to 23,842 not driven by geopolitical resolution."},
+    {"name": "Hormuz Closed — Crude $105-120", "probability": "75%", "nifty_range": "22,500 – 23,800", "direction": "down", "summary": "DOMINANT. Nifty held 23,842 on Apr 13 (better than feared 22,000-23,200 — market priced some resilience). WTI $104.35. Holiday gap (Apr 14) into F&O expiry (Apr 15) = next binary. If crude spikes to $110+ over holiday, Apr 15 opens gap-down again."},
+    {"name": "CPI Benign + Crude Plateau — Stabilisation", "probability": "20%", "nifty_range": "23,800 – 24,400", "direction": "neutral", "summary": "CPI 3.4% was the benign scenario — confirmed Apr 13. If crude plateaus at $100-105 and no new kinetic action, market can stabilise 23,800-24,200. Reliance Q4 beat would add fuel. June rate cut odds stay alive. Defensive base case."}
   ],
   "signals": [
-    {"action": "BUY", "stock": "ITC", "conviction": 5, "rationale": "Works in ALL scenarios. Defensive FMCG, zero crude sensitivity, 3%+ dividend yield floor. Natural anchor in risk-off Wednesday gap. Zero import cost exposure.", "risk": "Lower beta — lags cyclicals if scenario reverses. Accept as cost of insurance."},
-    {"action": "PAIR", "stock": "ONGC Long / BPCL Short", "conviction": 5, "rationale": "WTI $100.25 confirms thesis. ONGC: every $1 crude rise = ~Rs 400-500 Cr EBITDA. BPCL: GRMs -$9.4, losing money on every barrel, deepening with $100+ crude. Long 2 ONGC : 1 BPCL short.", "risk": "Surprise blockade reversal (low probability). Crude drop on OPEC+ supply surge."},
-    {"action": "HEDGE", "stock": "Nifty 23500 PE + 23000 PE (Wed expiry)", "conviction": 5, "rationale": "WTI $100 + Bab al-Mandeb threat = maximum urgency. 72-hour holiday gap before Wednesday open. 23,500 PE for base case gap. 23,000 PE for Hormuz/Bab al-Mandeb incident tail. Payout 8-20x. Cost 0.5-1% of portfolio.", "risk": "Total premium loss only if blockade reversed. Decay accelerates after Tuesday night."},
-    {"action": "BUY", "stock": "Coal India", "conviction": 5, "rationale": "Upgraded 4→5. WTI $100 + Bab al-Mandeb threat confirms energy security thesis. Domestic coal = zero import cost, zero Hormuz exposure. Govt pricing support. ~6% dividend yield. One of very few large-caps where $100 crude is a tailwind, not headwind.", "risk": "Regulatory overhang on coal pricing. ESG exclusion limits re-rating ceiling."},
-    {"action": "SHORT", "stock": "IndiGo (InterGlobe Aviation)", "conviction": 5, "rationale": "WTI $100.25 = ATF cost shock confirmed. Jet fuel 35-40% of operating cost — quarterly PAT flips to loss at $100+. USD/INR pressure adds aircraft lease cost. Wednesday gap down is entry point — wait for gap to establish, then add full position.", "risk": "Partial fuel hedges may cushion one quarter. Crude reversal on surprise blockade reversal is tail risk."},
-    {"action": "BUY", "stock": "TCS / Infosys basket", "conviction": 3, "rationale": "USD/INR at 93.73, heading toward 94-95. Every 1% INR depreciation = +0.8-1% IT revenue in INR. Hold existing. Do not add before Infosys Apr 23 guidance — that's the binary.", "risk": "Global risk-off hits IT discretionary spend. US tariffs (26%) compound macro headwinds."},
-    {"action": "BUY", "stock": "HDFC Bank", "conviction": 2, "rationale": "Earnings thesis intact (NIM >3.65%, Apr 18). But Wednesday gap-down = banking sector sold regardless of fundamentals. Do not add before Wednesday open. Revisit Apr 16-17 after gap settles.", "risk": "Gap-down to Rs 680-700 range possible. Hot CPI compounds rate-sensitive pain."}
+    {"action": "BUY", "stock": "ITC", "conviction": 5, "rationale": "CONFIRMED WORKING. Apr 13: held up as defensive anchor while market sold -0.87%. Thesis intact — zero crude sensitivity, 3%+ dividend yield floor. HOLD through holiday gap. Zero reason to trim.", "risk": "Lags if market stages sharp recovery. Accept as insurance cost.", "status": "active_confirmed"},
+    {"action": "PAIR", "stock": "ONGC Long / BPCL Short", "conviction": 4, "rationale": "PARTIALLY WORKING. BPCL -4% (short leg ✅). ONGC only -2% (long leg underperformed — windfall tax re-imposition risk caps upside despite WTI $104). Downgrade long leg conviction to 4. Maintain pair but watch OMC pricing policy update.", "risk": "Windfall tax re-imposition on ONGC above $75/bbl — already threatening. Crude drop on OPEC+ surprise.", "status": "active_partial"},
+    {"action": "HEDGE", "stock": "Nifty 23500 PE (Apr 15 expiry)", "conviction": 5, "rationale": "IN THE MONEY at Apr 13 open (Nifty hit 23,573). Payout confirmed. ACTION REQUIRED: Book 50-75% of position before Apr 15 open (theta decay overnight holiday). Hold remaining 25-50% for gap risk if crude spikes $110+ over holiday weekend.", "risk": "If Reliance Q4 blows out estimates + crude stabilises, Nifty could gap up Apr 15, eroding remaining position.", "status": "take_partial_profit"},
+    {"action": "BUY", "stock": "Coal India", "conviction": 5, "rationale": "Energy security thesis confirmed. WTI $104 + Hormuz closed = coal demand locked in for winter season. Domestic coal = zero import cost, zero Hormuz exposure. ~6% dividend yield. Status update pending — watch Apr 15 session.", "risk": "Regulatory overhang on coal pricing. ESG exclusion limits re-rating ceiling.", "status": "active_monitor"},
+    {"action": "SHORT", "stock": "IndiGo (InterGlobe Aviation)", "conviction": 5, "rationale": "CONFIRMED WORKING. Apr 13: -6% ✅. ATF cost shock confirmed at WTI $104. Jet fuel 35-40% of operating cost — Q4 margins under severe pressure. Q1 FY27 likely reports PAT loss if crude stays $100+. HOLD short. Add on any bounce.", "risk": "Fuel hedges may partially cushion one quarter. Crude reversal is tail risk.", "status": "active_confirmed"},
+    {"action": "BUY", "stock": "TCS / Infosys basket", "conviction": 3, "rationale": "USD/INR 92.60 (slightly stronger than 93.73 — some Rupee recovery). Hold existing positions. Do not add before Infosys Apr 23 guidance (binary event — 2-6% growth range signals uncertainty). Wipro Apr 16 results first read.", "risk": "Global risk-off hits IT discretionary spend. US tariffs (26%) compound macro headwinds.", "status": "hold_watch"},
+    {"action": "BUY", "stock": "HDFC Bank", "conviction": 3, "rationale": "CPI 3.4% benign = June rate cut still alive = banking thesis intact. Conviction upgrade 2→3. Banking sector sold Apr 13 on broad macro — NOT earnings-specific. Q4 results Apr 18 (react Apr 20). NIM >3.65% is the trigger. Start accumulating NOW on weakness before Apr 18.", "risk": "Holiday gap into Apr 15 F&O expiry could see another leg down. Size carefully.", "status": "accumulate_before_results"}
   ],
   "avoid": [
-    {"stock": "BPCL / HPCL / IOC (long)", "reason": "GRMs -$9.4, now WTI $100+ = losses deepening on every barrel. Bab al-Mandeb threat adds shipping cost. No recovery catalyst until credible new talks OR GRMs recover above $4-5. Structural short, not a dip to buy."},
-    {"stock": "Asian Paints / Berger Paints (long)", "reason": "Crude derivatives (TiO2, pigments, solvents) = 55-60% of raw material costs. WTI $100 = margin compression guaranteed. Avoid new longs until crude trajectory clarifies."},
-    {"stock": "Real Estate (DLF, Godrej Properties, Prestige)", "reason": "Double headwind: hot CPI kills June rate cut + geopolitical risk-off. Most rate-sensitive sector. Wrong timing to add ahead of CPI + Wednesday gap."},
-    {"stock": "NBFCs — high wholesale funding (Bajaj Finance, Shriram, Muthoot)", "reason": "Hot CPI (WTI $100 makes it more likely) removes rate cut catalyst. Rallied on cut anticipation — sharpest correction if RBI signals pause. Reassess post-CPI."},
-    {"stock": "Chasing any bounce before Wednesday", "reason": "WTI $100 + blockade + Bab al-Mandeb threat = market cannot rally until geopolitical clarity. Asymmetry firmly negative from 24,050. Any pre-Wednesday rally is a sell, not a buy."}
+    {"stock": "BPCL / HPCL / IOC (long)", "reason": "CONFIRMED. Apr 13: -4%. WTI $104.35 = GRM losses deepening further. Under-recovery fears real. OMC pricing decision pending. Structural short, not a dip to buy. BPCL short (via pair) working ✅."},
+    {"stock": "Asian Paints / Berger Paints (long)", "reason": "Crude derivatives (TiO2, pigments, solvents) = 55-60% of raw material costs. WTI $104 = margin compression locked in for Q1 FY27. Avoid new longs."},
+    {"stock": "Real Estate (DLF, Godrej Properties, Prestige)", "reason": "CPI 3.4% was benign — partially lifts the immediate bear case. BUT WTI $104 will push CPI higher in coming months. June cut now uncertain, not cancelled. Avoid adding; wait for crude clarity post Apr 15."},
+    {"stock": "NBFCs — high wholesale funding (Bajaj Finance, Shriram, Muthoot)", "reason": "CPI 3.4% benign is a mild positive. But crude $104 trajectory = inflation risk persists. June cut probability maybe 40% (not 60%). Don't chase NBFC longs yet — wait for Apr 28 FOMC + RBI June policy clarity."},
+    {"stock": "Aviation sector except IndiGo short", "reason": "ATF cost shock confirmed (WTI $104). IndiGo -6% Apr 13. SpiceJet, Akasa also structurally impaired. Avoid all aviation longs; IndiGo short is active."},
+    {"stock": "Chasing F&O expiry rallies on Apr 15", "reason": "Apr 15 = F&O expiry + Reliance results. Any gap-up on Reliance beat will be a sell-the-news. WTI $104 macro backdrop unchanged. Any rally into expiry is a hedged sell, not a momentum buy."}
   ],
   "calendar": [
     {"date": "2026-04-13", "event": "India March CPI inflation data", "impact_level": 4, "sectors_affected": ["Banking", "NBFC", "Real Estate", "Auto"]},
@@ -47,11 +53,11 @@
     {"date": "2026-06-03", "event": "RBI MPC meeting (June 3-5)", "impact_level": 4, "sectors_affected": ["Banking", "NBFC", "Real Estate", "Auto"]}
   ],
   "tracker": [
-    {"title": "US-Iran Ceasefire & Strait of Hormuz", "status": "escalating", "india_impact": "CRITICAL: IRGC attacked 21+ merchant vessels overnight (Apr 12-13). Sea mines in strait. Hormuz functionally closed. WTI $104.32 (hit $105.62). Market opens 9:15 IST today into this. OMC maximum pain. CPI tonight 3.6-3.8% likely. Apr 14 holiday gap into Apr 15 F&O expiry = structural risk.", "watch_for": "Today Nifty open magnitude. WTI $110. IRGC further attacks. US military response. CPI print ~17:30 IST."},
-    {"title": "US Tariff & India Trade Dynamics", "status": "escalating", "india_impact": "26% reciprocal tariff on Indian goods effective Apr 9. Nifty -5.9% on Apr 7. FIIs sold Rs 22,000 cr in one week. Pharma, gems/jewellery, textiles, auto components exposed. Combined with Hormuz = double structural headwind on Indian growth.", "watch_for": "US-India negotiation progress. Pharma exemptions. FII flow reversal. Rupee past 94."},
-    {"title": "Q4 FY26 Earnings Season", "status": "watching", "india_impact": "TCS 29% beat, fell 2% — sell-the-news. Reliance Apr 15, Wipro Apr 16, HCL Tech Apr 21, TechM Apr 22, Infosys Apr 23. HDFC/ICICI Bank Apr 18 (react Apr 20). Earnings must justify recovery rally against crude/tariff headwinds.", "watch_for": "HDFC Bank NIM >3.65%. Infosys FY27 guidance. Reliance Jio/Retail growth."},
-    {"title": "Crude Oil Volatility", "status": "escalating", "india_impact": "WTI $104.32, hit $105.62 overnight. Hormuz closed (IRGC attacks + mines). Bloomberg: $110-120 if closure persists. GRMs -$9.4 — structural refiner losses. Aviation ATF shock confirmed. Every $10 crude rise = Rs 8-10/litre OMC subsidy pressure.", "watch_for": "WTI $110. OPEC+ emergency supply. US military response to IRGC. India OMC pricing decision."},
-    {"title": "RBI Monetary Policy Path", "status": "watching", "india_impact": "Held at 5.25%. March CPI (Apr 13) is immediate trigger. Consensus 3.4% but WTI $100 pushes print higher. Hot print (>3.6%) kills June cut. Next MPC June 3-5.", "watch_for": "CPI Apr 13. Crude trajectory. June cut probability."},
-    {"title": "FII Flows & Rupee", "status": "watching", "india_impact": "FIIs pulled Rs 1.04 lakh cr YTD. Rupee Rs 93.73/USD. Blockade + tariff = double headwind. DIIs counter-buying. Past 94 = accelerated exits.", "watch_for": "Wednesday FII/DII data. USD/INR past 94. FOMC Apr 28-29."}
+    {"title": "US-Iran Ceasefire & Strait of Hormuz", "status": "escalating", "last_updated": "2026-04-13T20:30:00+05:30", "india_impact": "CRITICAL. IRGC attacked 21+ merchant vessels (Apr 12-13). Sea mines planted. Hormuz functionally closed. WTI $104.35 (Brent $102.26). Apr 13: Nifty absorbed shock, closed -0.87% vs feared -2%+. Holiday gap Apr 14 into F&O expiry Apr 15 = next binary. OMC structural losses ongoing.", "watch_for": "WTI $110 (next escalation tier). IRGC further kinetic action. US military response. OPEC+ emergency supply. India OMC pricing review."},
+    {"title": "US Tariff & India Trade Dynamics", "status": "escalating", "last_updated": "2026-04-12T21:12:13+05:30", "india_impact": "26% reciprocal tariff on Indian goods effective Apr 9. Nifty fell 5.9% Apr 7. FIIs sold Rs 22,000 cr in one week. Pharma, gems/jewellery, textiles, auto components exposed. Combined with Hormuz = double structural headwind.", "watch_for": "US-India negotiation. Pharma exemption. FII flow reversal. Rupee past 94."},
+    {"title": "Q4 FY26 Earnings Season", "status": "active", "last_updated": "2026-04-13T20:30:00+05:30", "india_impact": "TCS +29% beat, fell 2% post results — sell-the-news confirmed. Reliance Q4 Apr 15 (IMMINENT). HDFC Bank + ICICI Bank Apr 18 (react Apr 20). Wipro Apr 16, HCL Tech Apr 21, Infosys Apr 23. CPI 3.4% benign = banking NIM thesis alive.", "watch_for": "Reliance Apr 15 — Jio 5G subscribers + Retail EBITDA margin. HDFC Bank NIM >3.65% (Apr 18). Infosys FY27 guidance (Apr 23) — binary."},
+    {"title": "Crude Oil Volatility", "status": "escalating", "last_updated": "2026-04-13T20:30:00+05:30", "india_impact": "WTI $104.35. Hormuz closed. Bloomberg $110-120 if closure persists. GRMs -$9.4 — refiners in structural losses. IndiGo -6% Apr 13 confirms ATF cost shock. Rupee at 92.60. Every $10 crude rise = Rs 8-10/litre OMC subsidy pressure.", "watch_for": "WTI $110. OPEC+ emergency supply call. India OMC pricing decision. Holiday news flow (Apr 14)."},
+    {"title": "RBI Monetary Policy Path", "status": "watching", "last_updated": "2026-04-13T20:30:00+05:30", "india_impact": "UPDATED: CPI 3.4% benign (Apr 13) — June cut still alive. BUT WTI $104 will push forward CPI higher. June cut probability ~40%. RBI held at 5.25%. Next MPC June 3-5.", "watch_for": "Crude trajectory through May (determines June CPI). April CPI release (mid-May). FOMC Apr 28-29."},
+    {"title": "FII Flows & Rupee", "status": "watching", "last_updated": "2026-04-13T20:30:00+05:30", "india_impact": "FIIs pulled Rs 1.04 lakh cr YTD. Rupee 92.60 (slight improvement from 93.73 pre-session). CPI 3.4% benign = mild positive for FII return. But crude $104 + tariffs = structural headwind. Past 94 = accelerated exits.", "watch_for": "Apr 15 FII/DII provisional data. USD/INR past 94. FOMC Apr 28-29."}
   ]
 }

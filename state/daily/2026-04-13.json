@@ -62,5 +62,20 @@
       "telegram_sent": false,
       "forward_scan_done": false
     }
+  ,
+    {
+      "timestamp": "2026-04-13T20:30:00+05:30",
+      "trigger": "daily_wrap",
+      "reason": "April 13 session complete. Nifty closed -0.87% (23,842) — far better than feared gap-down. CPI 3.4% benign. Holiday tomorrow Apr 14. Setting up Apr 15 F&O expiry + Reliance Q4.",
+      "details": "Nifty opened 23,573 (gap-down 477 pts), recovered to close 23,842 (-208 pts / -0.87%). VIX 20.70 (+9.8%). CPI March 3.4% vs feared 3.6-3.8% — benign, June cut still alive but crude $104 is risk. Signals: ITC BUY ✅, IndiGo SHORT -6% ✅, BPCL SHORT -4% ✅, 23,500 PE in the money ✅, ONGC -2% only (windfall tax risk). Daily wrap Telegram sent.",
+      "market_status": "post_market",
+      "agents_used": 1,
+      "pipeline": "synthesis_daily_wrap",
+      "telegram_sent": true,
+      "telegram_type": "daily_wrap",
+      "nifty_close": 23842,
+      "vix_close": 20.70,
+      "cpi_march_2026": 3.4
+    }
   ]
 }
