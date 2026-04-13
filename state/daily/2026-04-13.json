@@ -50,5 +50,17 @@
       "telegram_sent": false,
       "forward_scan_done": false
     }
+  ,
+    {
+      "timestamp": "2026-04-13T06:00:00+05:30",
+      "trigger": "none",
+      "reason": "Quiet. No new escalation. WTI reconciliation: Friday close was ~$95.5 (overnight spike to $104-105 faded on ceasefire hope). GIFT Nifty 24,091 (+0.3%, range 23,884-24,119). Mildly positive pre-market vs prior gap-down fears.",
+      "details": "WTI ~$95.5 (Apr 12 Friday close, not $104+ spike). GIFT Nifty steady. No US strike on Iran, no Bab el-Mandeb closure. Market opens 9:15 IST. CPI ~17:30 IST. Shifting to 30-min cadence.",
+      "market_status": "pre_market",
+      "agents_used": 1,
+      "pipeline": "sentinel_only",
+      "telegram_sent": false,
+      "forward_scan_done": false
+    }
   ]
 }
