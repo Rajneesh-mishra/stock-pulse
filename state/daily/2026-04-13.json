@@ -26,5 +26,17 @@
       "telegram_sent": true,
       "telegram_type": "reactive_alert"
     }
+  ,
+    {
+      "timestamp": "2026-04-13T04:00:00+05:30",
+      "trigger": "none",
+      "reason": "Quiet hourly tick. Sentinel re-detected already-alerted events (Hormuz blockade, talks collapse). No new kinetic action. Pre-market signal: GIFT Nifty 23,748 (gap-down ~1.25% vs 24,050). WTI ~$106.5 (marginal uptick from $104.32).",
+      "details": "All major alerts already sent. Carrying forward dominant scenario: Hormuz closed 80%+. Market opens 9:15 IST. CPI ~17:30 IST. Next meaningful signal: Nifty open magnitude.",
+      "market_status": "pre_market",
+      "agents_used": 1,
+      "pipeline": "sentinel_only",
+      "telegram_sent": false,
+      "forward_scan_done": false
+    }
   ]
 }
