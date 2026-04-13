@@ -38,5 +38,17 @@
       "telegram_sent": false,
       "forward_scan_done": false
     }
+  ,
+    {
+      "timestamp": "2026-04-13T05:00:00+05:30",
+      "trigger": "none",
+      "reason": "Quiet hourly tick. GIFT Nifty partially recovered to ~24,091 (+0.3%, range 23,883-24,123) from earlier 23,748 gap-down signal. WTI data conflicting ($95.5 vs $104.32 confirmed earlier — likely stale weekend source). No new kinetic action.",
+      "details": "CENTCOM executing already-announced Hormuz blockade (continuation, not new trigger). No new IRGC kinetic action. Market opens 9:15 IST. Full pipeline run due at open. CPI data ~17:30 IST.",
+      "market_status": "pre_market",
+      "agents_used": 1,
+      "pipeline": "sentinel_only",
+      "telegram_sent": false,
+      "forward_scan_done": false
+    }
   ]
 }
