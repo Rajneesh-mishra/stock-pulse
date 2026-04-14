@@ -1,12 +1,15 @@
 {
-  "last_tick": "2026-04-14T21:59:00+05:30",
+  "last_tick": "2026-04-14T22:57:00+05:30",
   "regime": "TRANSITIONAL",
+  "regime_note": "Moving from CRUDE_SHOCK toward NEUTRAL. WTI dropped from $93.70 to $89 (-4%). Gold diverging upward (safe haven demand separate from energy). Yen strengthening. Dollar weakening.",
+
   "open_positions": [
     {
       "dealId": "00000000-4dc9-2417-044a-beb40055311e",
       "instrument": "GOLD",
       "direction": "BUY",
       "entry_price": 4818.99,
+      "current_price": 4828.70,
       "sl": 4785.0,
       "tp": 4900.0,
       "size": 1.0,
@@ -15,16 +18,94 @@
       "theme": "geopolitical",
       "opened_at": "2026-04-14T21:59:25+05:30",
       "thesis": "Gold broke day high ($4,817.75) while WTI dumps -4.4%. Divergence signals macro hedging demand beyond energy fear. Fresh breakout with geopolitical backdrop (Hormuz tense, dollar weak). R:R 2.38:1.",
+      "current_pnl": 9.71,
       "trailing_active": false,
-      "swap_nights": 0
+      "trailing_trigger": 4859.0,
+      "trailing_note": "Activate trailing stop when Gold hits $4,859 (50% of TP distance). Until then, keep SL at $4,785.",
+      "swap_nights": 0,
+      "management_rules": "Do NOT move SL to breakeven yet — too early (only 12% to TP). Normal pullbacks of $10-15 are expected in a $90 daily range. Only tighten stop after $4,859."
     }
   ],
+
+  "watchlist": [
+    {
+      "instrument": "USDJPY",
+      "direction": "SELL",
+      "trigger": "Break below 158.60 (current day low)",
+      "current_price": 158.758,
+      "entry_plan": "Short at ~158.50 on confirmed break",
+      "sl": 159.20,
+      "tp": 157.80,
+      "size_plan": "Calculate via risk_guard at entry time",
+      "thesis": "Yen safe haven bid accelerating — USD/JPY down -0.42% and grinding lower. Aligns with Gold strength (both risk-off). Day low 158.598 is the trigger. Break = fresh momentum.",
+      "theme": "geopolitical",
+      "invalidation": "If USD/JPY bounces above 159.00, cancel this setup."
+    },
+    {
+      "instrument": "OIL_CRUDE",
+      "direction": "SELL",
+      "trigger": "Bounce to $91-92 zone (sell the bounce, don't chase the dump)",
+      "current_price": 89.57,
+      "entry_plan": "Short at ~$91.50 on retest of broken support",
+      "sl": 93.50,
+      "tp": 86.00,
+      "thesis": "WTI dropped 4%+ today. De-escalation pricing. But don't short at $89 after a 5% dump — wait for a bounce to $91-92 where old support becomes resistance.",
+      "theme": "geopolitical",
+      "invalidation": "If WTI reclaims $93 (today's high), thesis is dead — Hormuz re-escalation."
+    },
+    {
+      "instrument": "BTCUSD",
+      "direction": "BUY",
+      "trigger": "Break above $76,100 (today's high) — NOT active, momentum fading",
+      "current_price": 74761,
+      "entry_plan": "Long at ~$76,200 on confirmed breakout",
+      "sl": 74000,
+      "tp": 80000,
+      "thesis": "BTC was +3% earlier but now fading to +2.16%. Momentum lost. Only enter if fresh breakout above day high. Otherwise skip.",
+      "theme": "crypto_macro",
+      "invalidation": "If BTC drops below $73,000 (today's low), setup is dead."
+    },
+    {
+      "instrument": "EURUSD",
+      "direction": "BUY",
+      "trigger": "Break above 1.18109 (day high)",
+      "current_price": 1.17992,
+      "entry_plan": "Long at ~1.1815 on confirmed break",
+      "sl": 1.1780,
+      "tp": 1.1860,
+      "thesis": "Dollar weakness building (+0.34%). EUR/USD creeping toward day high. Break above 1.1811 = confirmed dollar sell. Aligns with Gold strength and yen bid.",
+      "theme": "dollar_macro",
+      "invalidation": "If EUR/USD drops below 1.1770, cancel."
+    }
+  ],
+
+  "market_context": {
+    "date": "2026-04-14",
+    "session": "Asian (quiet)",
+    "key_events_upcoming": [
+      "Apr 15: India market reopens (F&O expiry + Reliance Q4)",
+      "Apr 22: US-Iran ceasefire deadline",
+      "Apr 28-29: FOMC meeting"
+    ],
+    "hormuz_status": "Blockade ongoing, ceasefire nominally holds to Apr 22. IRGC attacked ships Apr 12-13. WTI pulling back suggests market pricing de-escalation.",
+    "dominant_theme": "De-escalation pricing (WTI dump) BUT safe haven demand persists (Gold bid, yen bid). Market is hedging tail risk while base-casing resolution."
+  },
+
   "trade_history": [],
   "consecutive_losses": 0,
-  "daily_pnl": 0,
-  "weekly_pnl": 0,
-  "total_pnl": 0,
+  "daily_pnl": 9.71,
+  "weekly_pnl": 9.71,
+  "total_pnl": 9.71,
   "total_trades": 1,
   "wins": 0,
-  "losses": 0
+  "losses": 0,
+  "account_balance": 10000,
+
+  "loop_config": {
+    "active_market_interval": "10 min",
+    "quiet_interval": "30 min",
+    "overnight_interval": "2 hours",
+    "telegram_on_trade": true,
+    "telegram_chat_ids": "6838758759,849258319"
+  }
 }
