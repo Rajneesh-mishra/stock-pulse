@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-15T04:03:00+05:30",
+  "last_tick": "2026-04-15T04:26:00+05:30",
   "regime": "TRANSITIONAL",
-  "regime_note": "Gold tested $4,850.78 (only $8 from trailing trigger) but pulled back to $4,841. Resistance at $4,850-4,860. Higher highs pattern intact. BTC nearing $73k invalidation. Tokyo at 05:30 IST may provide the catalyst for Gold to break through.",
+  "regime_note": "Pre-Tokyo dead zone. Gold drifting lower to $4,835 (normal retracement from $4,850 high). SL $4,785 safe ($50 away). Waiting for Tokyo open 05:30 IST to bring volume. USDJPY SHORT setup fading (wrong direction). BTC near $73k invalidation.",
 
   "open_positions": [
     {
@@ -9,7 +9,7 @@
       "instrument": "GOLD",
       "direction": "BUY",
       "entry_price": 4818.99,
-      "current_price": 4840.80,
+      "current_price": 4835.49,
       "sl": 4785.0,
       "tp": 4900.0,
       "size": 1.0,
@@ -18,7 +18,7 @@
       "theme": "geopolitical",
       "opened_at": "2026-04-14T21:59:25+05:30",
       "thesis": "Gold broke day high ($4,817.75) while WTI dumps -4.4%. Divergence signals macro hedging demand beyond energy fear. Fresh breakout with geopolitical backdrop (Hormuz tense, dollar weak). R:R 2.38:1.",
-      "current_pnl": 21.96,
+      "current_pnl": 16.61,
       "trailing_active": false,
       "trailing_trigger": 4859.0,
       "trailing_note": "Activate trailing stop when Gold hits $4,859 (50% of TP distance). Until then, keep SL at $4,785.",
@@ -93,9 +93,9 @@
 
   "trade_history": [],
   "consecutive_losses": 0,
-  "daily_pnl": 21.96,
-  "weekly_pnl": 21.96,
-  "total_pnl": 21.96,
+  "daily_pnl": 16.61,
+  "weekly_pnl": 16.61,
+  "total_pnl": 16.61,
   "total_trades": 1,
   "wins": 0,
   "losses": 0,
