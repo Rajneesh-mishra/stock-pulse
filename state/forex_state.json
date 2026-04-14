@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-15T02:38:00+05:30",
+  "last_tick": "2026-04-15T03:40:00+05:30",
   "regime": "TRANSITIONAL",
-  "regime_note": "Markets in daily close. Gold closed at $4,841 (+$22.55). NEWS: Trump says Iran talks may resume in 2 days, Iran mulling Hormuz shipment pause. De-escalation building but not confirmed. Apr 22 ceasefire deadline is the pivot. USDJPY SHORT setup losing conviction (de-escalation = risk-on = yen weak).",
+  "regime_note": "Markets reopened — Gold gapped UP to $4,847 (+$28.56). Safe haven demand persists despite de-escalation signals. Trailing trigger $4,859 only $12 away. Tokyo session starts 05:30 IST. Iran talks may resume in 2 days — Apr 22 ceasefire deadline is pivot.",
 
   "open_positions": [
     {
@@ -9,7 +9,7 @@
       "instrument": "GOLD",
       "direction": "BUY",
       "entry_price": 4818.99,
-      "current_price": 4841.54,
+      "current_price": 4847.38,
       "sl": 4785.0,
       "tp": 4900.0,
       "size": 1.0,
@@ -18,7 +18,7 @@
       "theme": "geopolitical",
       "opened_at": "2026-04-14T21:59:25+05:30",
       "thesis": "Gold broke day high ($4,817.75) while WTI dumps -4.4%. Divergence signals macro hedging demand beyond energy fear. Fresh breakout with geopolitical backdrop (Hormuz tense, dollar weak). R:R 2.38:1.",
-      "current_pnl": 22.55,
+      "current_pnl": 28.56,
       "trailing_active": false,
       "trailing_trigger": 4859.0,
       "trailing_note": "Activate trailing stop when Gold hits $4,859 (50% of TP distance). Until then, keep SL at $4,785.",
@@ -32,7 +32,7 @@
       "instrument": "USDJPY",
       "direction": "SELL",
       "trigger": "Break below 158.60 (current day low)",
-      "current_price": 158.774,
+      "current_price": 158.762,
       "entry_plan": "Short at ~158.50 on confirmed break",
       "sl": 159.20,
       "tp": 157.80,
@@ -57,7 +57,7 @@
       "instrument": "BTCUSD",
       "direction": "BUY",
       "trigger": "Break above $76,100 (today's high) — NOT active, momentum fading",
-      "current_price": 74210,
+      "current_price": 74328,
       "entry_plan": "Long at ~$76,200 on confirmed breakout",
       "sl": 74000,
       "tp": 80000,
@@ -81,7 +81,7 @@
 
   "market_context": {
     "date": "2026-04-14",
-    "session": "Daily close (21:00-22:00 UTC). Reopens ~03:30 IST. Tokyo 05:30. India 09:15.",
+    "session": "Reopened. Pre-Tokyo thin liquidity. Tokyo 05:30 IST. India 09:15 IST.",
     "key_events_upcoming": [
       "Apr 15: India market reopens (F&O expiry + Reliance Q4)",
       "Apr 22: US-Iran ceasefire deadline",
@@ -93,9 +93,9 @@
 
   "trade_history": [],
   "consecutive_losses": 0,
-  "daily_pnl": 22.55,
-  "weekly_pnl": 22.55,
-  "total_pnl": 22.55,
+  "daily_pnl": 28.56,
+  "weekly_pnl": 28.56,
+  "total_pnl": 28.56,
   "total_trades": 1,
   "wins": 0,
   "losses": 0,
