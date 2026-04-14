@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-15T04:35:00+05:30",
+  "last_tick": "2026-04-15T04:57:00+05:30",
   "regime": "TRANSITIONAL",
-  "regime_note": "De-escalation pricing continues. WTI steady at $89.6 (off lows but no bounce). Gold grinding higher $4,831 (+1.9%). Yen holding bid at 158.76. Dollar weak. Asian session — Tokyo active.",
+  "regime_note": "Gold accelerating — new day high $4,841. WTI flat $89.5. Yen grinding lower 158.73 (13 pips from trigger). Safe haven bid strengthening in Asian session.",
 
   "open_positions": [
     {
@@ -9,7 +9,7 @@
       "instrument": "GOLD",
       "direction": "BUY",
       "entry_price": 4818.99,
-      "current_price": 4830.93,
+      "current_price": 4834.49,
       "sl": 4785.0,
       "tp": 4900.0,
       "size": 1.0,
@@ -18,7 +18,7 @@
       "theme": "geopolitical",
       "opened_at": "2026-04-14T21:59:25+05:30",
       "thesis": "Gold broke day high ($4,817.75) while WTI dumps -4.4%. Divergence signals macro hedging demand beyond energy fear. Fresh breakout with geopolitical backdrop (Hormuz tense, dollar weak). R:R 2.38:1.",
-      "current_pnl": 11.82,
+      "current_pnl": 15.79,
       "trailing_active": false,
       "trailing_trigger": 4859.0,
       "trailing_note": "Activate trailing stop when Gold hits $4,859 (50% of TP distance). Until then, keep SL at $4,785.",
@@ -32,7 +32,7 @@
       "instrument": "USDJPY",
       "direction": "SELL",
       "trigger": "Break below 158.60 (current day low)",
-      "current_price": 158.757,
+      "current_price": 158.734,
       "entry_plan": "Short at ~158.50 on confirmed break",
       "sl": 159.20,
       "tp": 157.80,
@@ -57,7 +57,7 @@
       "instrument": "BTCUSD",
       "direction": "BUY",
       "trigger": "Break above $76,100 (today's high) — NOT active, momentum fading",
-      "current_price": 74365,
+      "current_price": 74773,
       "entry_plan": "Long at ~$76,200 on confirmed breakout",
       "sl": 74000,
       "tp": 80000,
@@ -93,9 +93,9 @@
 
   "trade_history": [],
   "consecutive_losses": 0,
-  "daily_pnl": 11.82,
-  "weekly_pnl": 11.82,
-  "total_pnl": 11.82,
+  "daily_pnl": 15.79,
+  "weekly_pnl": 15.79,
+  "total_pnl": 15.79,
   "total_trades": 1,
   "wins": 0,
   "losses": 0,
