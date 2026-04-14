@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-15T00:11:00+05:30",
+  "last_tick": "2026-04-15T00:33:00+05:30",
   "regime": "TRANSITIONAL",
-  "regime_note": "Gold consolidating $4,837 after day high $4,843. Normal pullback. WTI hit new low $88.60 then bounced to $89.09. USDJPY bouncing away from trigger (158.80). BTC fading hard. US session winding down — expect thin liquidity after 02:30 IST until Tokyo 05:30.",
+  "regime_note": "Flat consolidation. Gold stable $4,839, WTI $89.07, USDJPY 158.81 (drifting from trigger). BTC fading toward invalidation. US session last 2 hrs, then thin overnight until Tokyo 05:30 IST. India opens 09:15 — F&O expiry + Reliance Q4.",
 
   "open_positions": [
     {
@@ -9,7 +9,7 @@
       "instrument": "GOLD",
       "direction": "BUY",
       "entry_price": 4818.99,
-      "current_price": 4836.58,
+      "current_price": 4838.64,
       "sl": 4785.0,
       "tp": 4900.0,
       "size": 1.0,
@@ -18,7 +18,7 @@
       "theme": "geopolitical",
       "opened_at": "2026-04-14T21:59:25+05:30",
       "thesis": "Gold broke day high ($4,817.75) while WTI dumps -4.4%. Divergence signals macro hedging demand beyond energy fear. Fresh breakout with geopolitical backdrop (Hormuz tense, dollar weak). R:R 2.38:1.",
-      "current_pnl": 17.67,
+      "current_pnl": 19.49,
       "trailing_active": false,
       "trailing_trigger": 4859.0,
       "trailing_note": "Activate trailing stop when Gold hits $4,859 (50% of TP distance). Until then, keep SL at $4,785.",
@@ -32,7 +32,7 @@
       "instrument": "USDJPY",
       "direction": "SELL",
       "trigger": "Break below 158.60 (current day low)",
-      "current_price": 158.799,
+      "current_price": 158.808,
       "entry_plan": "Short at ~158.50 on confirmed break",
       "sl": 159.20,
       "tp": 157.80,
@@ -57,7 +57,7 @@
       "instrument": "BTCUSD",
       "direction": "BUY",
       "trigger": "Break above $76,100 (today's high) — NOT active, momentum fading",
-      "current_price": 74295,
+      "current_price": 74261,
       "entry_plan": "Long at ~$76,200 on confirmed breakout",
       "sl": 74000,
       "tp": 80000,
@@ -93,9 +93,9 @@
 
   "trade_history": [],
   "consecutive_losses": 0,
-  "daily_pnl": 17.67,
-  "weekly_pnl": 17.67,
-  "total_pnl": 17.67,
+  "daily_pnl": 19.49,
+  "weekly_pnl": 19.49,
+  "total_pnl": 19.49,
   "total_trades": 1,
   "wins": 0,
   "losses": 0,
