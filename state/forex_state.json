@@ -1,0 +1,30 @@
+{
+  "last_tick": "2026-04-14T21:59:00+05:30",
+  "regime": "TRANSITIONAL",
+  "open_positions": [
+    {
+      "dealId": "00000000-4dc9-2417-044a-beb40055311e",
+      "instrument": "GOLD",
+      "direction": "BUY",
+      "entry_price": 4818.99,
+      "sl": 4785.0,
+      "tp": 4900.0,
+      "size": 1.0,
+      "risk_amount": 34.0,
+      "risk_pct": 0.0034,
+      "theme": "geopolitical",
+      "opened_at": "2026-04-14T21:59:25+05:30",
+      "thesis": "Gold broke day high ($4,817.75) while WTI dumps -4.4%. Divergence signals macro hedging demand beyond energy fear. Fresh breakout with geopolitical backdrop (Hormuz tense, dollar weak). R:R 2.38:1.",
+      "trailing_active": false,
+      "swap_nights": 0
+    }
+  ],
+  "trade_history": [],
+  "consecutive_losses": 0,
+  "daily_pnl": 0,
+  "weekly_pnl": 0,
+  "total_pnl": 0,
+  "total_trades": 1,
+  "wins": 0,
+  "losses": 0
+}
