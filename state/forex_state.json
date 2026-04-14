@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-14T22:57:00+05:30",
+  "last_tick": "2026-04-15T04:35:00+05:30",
   "regime": "TRANSITIONAL",
-  "regime_note": "Moving from CRUDE_SHOCK toward NEUTRAL. WTI dropped from $93.70 to $89 (-4%). Gold diverging upward (safe haven demand separate from energy). Yen strengthening. Dollar weakening.",
+  "regime_note": "De-escalation pricing continues. WTI steady at $89.6 (off lows but no bounce). Gold grinding higher $4,831 (+1.9%). Yen holding bid at 158.76. Dollar weak. Asian session — Tokyo active.",
 
   "open_positions": [
     {
@@ -9,7 +9,7 @@
       "instrument": "GOLD",
       "direction": "BUY",
       "entry_price": 4818.99,
-      "current_price": 4828.70,
+      "current_price": 4830.93,
       "sl": 4785.0,
       "tp": 4900.0,
       "size": 1.0,
@@ -18,7 +18,7 @@
       "theme": "geopolitical",
       "opened_at": "2026-04-14T21:59:25+05:30",
       "thesis": "Gold broke day high ($4,817.75) while WTI dumps -4.4%. Divergence signals macro hedging demand beyond energy fear. Fresh breakout with geopolitical backdrop (Hormuz tense, dollar weak). R:R 2.38:1.",
-      "current_pnl": 9.71,
+      "current_pnl": 11.82,
       "trailing_active": false,
       "trailing_trigger": 4859.0,
       "trailing_note": "Activate trailing stop when Gold hits $4,859 (50% of TP distance). Until then, keep SL at $4,785.",
@@ -32,7 +32,7 @@
       "instrument": "USDJPY",
       "direction": "SELL",
       "trigger": "Break below 158.60 (current day low)",
-      "current_price": 158.758,
+      "current_price": 158.757,
       "entry_plan": "Short at ~158.50 on confirmed break",
       "sl": 159.20,
       "tp": 157.80,
@@ -45,7 +45,7 @@
       "instrument": "OIL_CRUDE",
       "direction": "SELL",
       "trigger": "Bounce to $91-92 zone (sell the bounce, don't chase the dump)",
-      "current_price": 89.57,
+      "current_price": 89.62,
       "entry_plan": "Short at ~$91.50 on retest of broken support",
       "sl": 93.50,
       "tp": 86.00,
@@ -57,7 +57,7 @@
       "instrument": "BTCUSD",
       "direction": "BUY",
       "trigger": "Break above $76,100 (today's high) — NOT active, momentum fading",
-      "current_price": 74761,
+      "current_price": 74365,
       "entry_plan": "Long at ~$76,200 on confirmed breakout",
       "sl": 74000,
       "tp": 80000,
@@ -69,7 +69,7 @@
       "instrument": "EURUSD",
       "direction": "BUY",
       "trigger": "Break above 1.18109 (day high)",
-      "current_price": 1.17992,
+      "current_price": 1.17952,
       "entry_plan": "Long at ~1.1815 on confirmed break",
       "sl": 1.1780,
       "tp": 1.1860,
@@ -80,22 +80,22 @@
   ],
 
   "market_context": {
-    "date": "2026-04-14",
-    "session": "Asian (quiet)",
+    "date": "2026-04-15",
+    "session": "Asian (Tokyo active)",
     "key_events_upcoming": [
       "Apr 15: India market reopens (F&O expiry + Reliance Q4)",
       "Apr 22: US-Iran ceasefire deadline",
       "Apr 28-29: FOMC meeting"
     ],
     "hormuz_status": "Blockade ongoing, ceasefire nominally holds to Apr 22. IRGC attacked ships Apr 12-13. WTI pulling back suggests market pricing de-escalation.",
-    "dominant_theme": "De-escalation pricing (WTI dump) BUT safe haven demand persists (Gold bid, yen bid). Market is hedging tail risk while base-casing resolution."
+    "dominant_theme": "De-escalation pricing holds overnight. WTI steady ~$89.6, Gold grinding $4,831 (+1.9%), yen bid intact. Tokyo session — USDJPY near trigger (158.76 vs 158.60 break level). No new catalysts overnight."
   },
 
   "trade_history": [],
   "consecutive_losses": 0,
-  "daily_pnl": 9.71,
-  "weekly_pnl": 9.71,
-  "total_pnl": 9.71,
+  "daily_pnl": 11.82,
+  "weekly_pnl": 11.82,
+  "total_pnl": 11.82,
   "total_trades": 1,
   "wins": 0,
   "losses": 0,
