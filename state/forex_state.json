@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-14T23:51:00+05:30",
+  "last_tick": "2026-04-15T00:11:00+05:30",
   "regime": "TRANSITIONAL",
-  "regime_note": "Gold accelerating — 3 consecutive new day highs to $4,843 (+2.1%). WTI dumping to new low $88.79 (-4.5%). Divergence widening = Gold demand is macro/safe-haven, not energy. USDJPY stalling at 158.75. Trailing trigger $4,859 imminent.",
+  "regime_note": "Gold consolidating $4,837 after day high $4,843. Normal pullback. WTI hit new low $88.60 then bounced to $89.09. USDJPY bouncing away from trigger (158.80). BTC fading hard. US session winding down — expect thin liquidity after 02:30 IST until Tokyo 05:30.",
 
   "open_positions": [
     {
@@ -9,7 +9,7 @@
       "instrument": "GOLD",
       "direction": "BUY",
       "entry_price": 4818.99,
-      "current_price": 4839.62,
+      "current_price": 4836.58,
       "sl": 4785.0,
       "tp": 4900.0,
       "size": 1.0,
@@ -18,7 +18,7 @@
       "theme": "geopolitical",
       "opened_at": "2026-04-14T21:59:25+05:30",
       "thesis": "Gold broke day high ($4,817.75) while WTI dumps -4.4%. Divergence signals macro hedging demand beyond energy fear. Fresh breakout with geopolitical backdrop (Hormuz tense, dollar weak). R:R 2.38:1.",
-      "current_pnl": 20.85,
+      "current_pnl": 17.67,
       "trailing_active": false,
       "trailing_trigger": 4859.0,
       "trailing_note": "Activate trailing stop when Gold hits $4,859 (50% of TP distance). Until then, keep SL at $4,785.",
@@ -32,7 +32,7 @@
       "instrument": "USDJPY",
       "direction": "SELL",
       "trigger": "Break below 158.60 (current day low)",
-      "current_price": 158.748,
+      "current_price": 158.799,
       "entry_plan": "Short at ~158.50 on confirmed break",
       "sl": 159.20,
       "tp": 157.80,
@@ -57,7 +57,7 @@
       "instrument": "BTCUSD",
       "direction": "BUY",
       "trigger": "Break above $76,100 (today's high) — NOT active, momentum fading",
-      "current_price": 74751,
+      "current_price": 74295,
       "entry_plan": "Long at ~$76,200 on confirmed breakout",
       "sl": 74000,
       "tp": 80000,
@@ -69,7 +69,7 @@
       "instrument": "EURUSD",
       "direction": "BUY",
       "trigger": "Break above 1.18109 (day high)",
-      "current_price": 1.17944,
+      "current_price": 1.17940,
       "entry_plan": "Long at ~1.1815 on confirmed break",
       "sl": 1.1780,
       "tp": 1.1860,
@@ -81,7 +81,7 @@
 
   "market_context": {
     "date": "2026-04-14",
-    "session": "Late evening IST (London close, US late session)",
+    "session": "US session active (closes ~02:30 IST), thin overnight after",
     "key_events_upcoming": [
       "Apr 15: India market reopens (F&O expiry + Reliance Q4)",
       "Apr 22: US-Iran ceasefire deadline",
@@ -93,9 +93,9 @@
 
   "trade_history": [],
   "consecutive_losses": 0,
-  "daily_pnl": 20.85,
-  "weekly_pnl": 20.85,
-  "total_pnl": 20.85,
+  "daily_pnl": 17.67,
+  "weekly_pnl": 17.67,
+  "total_pnl": 17.67,
   "total_trades": 1,
   "wins": 0,
   "losses": 0,
