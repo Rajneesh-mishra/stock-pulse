@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-13T20:30:00+05:30",
+  "last_updated": "2026-04-14T02:52:00+05:30",
   "status": "active",
   "market_status": "holiday",
   "market": {
@@ -12,16 +12,16 @@
     "vix": "20.70 (+9.81%; intraday peak ~+14% at open)",
     "fii_net": "data pending (holiday Apr 14)",
     "dii_net": "data pending",
-    "crude_wti": "$104.35",
-    "crude_brent": "$102.26",
+    "crude_wti": "$97.22 (pulled back from $104.35 — 2nd-round talks signal, ceasefire holds to Apr 22)",
+    "crude_brent": "~$95 est.",
     "usdinr": "92.60",
     "gold": "$4,717",
     "cpi_march_2026": "3.4% (benign; below feared 3.6-3.8%; within RBI comfort zone)"
   },
   "scenarios": [
-    {"name": "Ceasefire Holds + Blockade Reversed", "probability": "5%", "nifty_range": "24,200 – 24,800", "direction": "up", "summary": "Near-impossible. Requires Trump to reverse blockade AND Iran to stand down. Not the base case. Market recovery to 23,842 not driven by geopolitical resolution."},
-    {"name": "Hormuz Closed — Crude $105-120", "probability": "75%", "nifty_range": "22,500 – 23,800", "direction": "down", "summary": "DOMINANT. Nifty held 23,842 on Apr 13 (better than feared 22,000-23,200 — market priced some resilience). WTI $104.35. Holiday gap (Apr 14) into F&O expiry (Apr 15) = next binary. If crude spikes to $110+ over holiday, Apr 15 opens gap-down again."},
-    {"name": "CPI Benign + Crude Plateau — Stabilisation", "probability": "20%", "nifty_range": "23,800 – 24,400", "direction": "neutral", "summary": "CPI 3.4% was the benign scenario — confirmed Apr 13. If crude plateaus at $100-105 and no new kinetic action, market can stabilise 23,800-24,200. Reliance Q4 beat would add fuel. June rate cut odds stay alive. Defensive base case."}
+    {"name": "Ceasefire Holds + Blockade Reversed", "probability": "15%", "nifty_range": "24,200 – 24,800", "direction": "up", "summary": "Upgraded from 5%. WTI pulled back to $97 on holiday — 2nd-round talks being explored, ceasefire nominally holds to Apr 22. Still not base case but probability raised. Requires formal blockade reversal."},
+    {"name": "Hormuz Tense — Crude $95-110", "probability": "65%", "nifty_range": "23,000 – 24,200", "direction": "neutral", "summary": "DOMINANT (revised). WTI $97 (down from $104.35) signals partial de-escalation pricing. Blockade in effect but ceasefire technical hold. Market likely to stabilise unless new kinetic action. Nifty range widens — less bearish than $104+ scenario."},
+    {"name": "CPI Benign + Crude Plateau — Stabilisation", "probability": "20%", "nifty_range": "23,800 – 24,400", "direction": "up", "summary": "CPI 3.4% confirmed benign Apr 13. WTI pullback to $97 = inflation relief for May/June prints. If crude stays $90-100 range, June RBI cut odds recover to 50%+. Reliance Q4 beat could catalyse recovery leg."}
   ],
   "signals": [
     {"action": "BUY", "stock": "ITC", "conviction": 5, "rationale": "CONFIRMED WORKING. Apr 13: held up as defensive anchor while market sold -0.87%. Thesis intact — zero crude sensitivity, 3%+ dividend yield floor. HOLD through holiday gap. Zero reason to trim.", "risk": "Lags if market stages sharp recovery. Accept as insurance cost.", "status": "active_confirmed"},

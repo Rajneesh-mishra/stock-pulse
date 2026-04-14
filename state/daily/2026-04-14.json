@@ -14,5 +14,17 @@
       "telegram_sent": false,
       "forward_scan_done": false
     }
+  ,
+    {
+      "timestamp": "2026-04-14T02:52:00+05:30",
+      "trigger": "none",
+      "reason": "Holiday sentinel. WTI pulled back to $97.22 (down ~$7 from $104.35). 2nd-round US-Iran talks being explored; ceasefire nominally holds to Apr 22. De-escalation signal. No new kinetic action.",
+      "details": "WTI $97.22 (range $92-98 today). Ceasefire holds Apr 22 technical deadline. No US strike, no Bab el-Mandeb closure. Updated scenarios on dashboard: Hormuz tense $95-110 = 65% dominant, ceasefire reversal 15%. Positive for Apr 15 open vs earlier fears.",
+      "market_status": "holiday",
+      "agents_used": 1,
+      "pipeline": "sentinel_only",
+      "telegram_sent": false,
+      "forward_scan_done": false
+    }
   ]
 }

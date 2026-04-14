@@ -64,5 +64,14 @@
       "wti": 104.35,
       "cpi_march_2026": 3.4
     }
+  ,
+    {
+      "timestamp": "2026-04-14T02:52:00+05:30",
+      "trigger": "none",
+      "reason": "Holiday sentinel (Apr 14). WTI pulled back to $97.22 from $104.35 — 2nd-round talks signal, ceasefire holds to Apr 22. Scenarios updated on dashboard.",
+      "details": "WTI $97.22 (down ~$7). De-escalation signals emerging. Blockade ongoing but no new kinetic action. Scenarios revised: Hormuz tense $95-110 = 65% dominant, ceasefire reversal 15%. No Telegram on holiday.",
+      "agents_used": 1,
+      "telegram_sent": false
+    }
   ]
 }
