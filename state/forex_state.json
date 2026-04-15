@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-15T06:15:00+05:30",
+  "last_tick": "2026-04-15T07:18:00+05:30",
   "regime": "TRANSITIONAL",
-  "regime_note": "Slow drift on thin Tokyo liquidity. Gold $4,830 (-$20 from high, SL $4,785 safe). WTI $88.22 (bounce stalled below $89-90 entry). USDJPY 15 pips from invalidation. Next catalyst: India open 09:15 (F&O expiry + Reliance Q4 + crude $85 tailwind).",
+  "regime_note": "TRAILING STOP ACTIVATED. Gold spiked to $4,871 (broke $4,859 trigger), SL moved to $4,820 (breakeven). Risk-free trade now. USDJPY 4 pips from invalidation. GIFT Nifty +1-1.5% gap-up on crude crash. India opens 09:15.",
 
   "open_positions": [
     {
@@ -9,8 +9,8 @@
       "instrument": "GOLD",
       "direction": "BUY",
       "entry_price": 4818.99,
-      "current_price": 4830.46,
-      "sl": 4785.0,
+      "current_price": 4844.40,
+      "sl": 4820.0,
       "tp": 4900.0,
       "size": 1.0,
       "risk_amount": 34.0,
@@ -18,12 +18,12 @@
       "theme": "geopolitical",
       "opened_at": "2026-04-14T21:59:25+05:30",
       "thesis": "Gold broke day high ($4,817.75) while WTI dumps -4.4%. Divergence signals macro hedging demand beyond energy fear. Fresh breakout with geopolitical backdrop (Hormuz tense, dollar weak). R:R 2.38:1.",
-      "current_pnl": 11.53,
-      "trailing_active": false,
+      "current_pnl": 25.41,
+      "trailing_active": true,
       "trailing_trigger": 4859.0,
-      "trailing_note": "Activate trailing stop when Gold hits $4,859 (50% of TP distance). Until then, keep SL at $4,785.",
+      "trailing_note": "ACTIVATED at $4,871. SL moved to $4,820 (breakeven). Next: tighten SL to $4,840 if Gold breaks above $4,871 again. Trail $30 below price.",
       "swap_nights": 0,
-      "management_rules": "Do NOT move SL to breakeven yet — too early (only 12% to TP). Normal pullbacks of $10-15 are expected in a $90 daily range. Only tighten stop after $4,859."
+      "management_rules": "Trailing ACTIVE. SL at $4,820 (breakeven). Risk = $0. Trail $30 below price — if Gold makes new high above $4,871, tighten SL to $4,840+. Let it run toward $4,900 TP."
     }
   ],
 
@@ -32,7 +32,7 @@
       "instrument": "USDJPY",
       "direction": "SELL",
       "trigger": "Break below 158.60 (current day low)",
-      "current_price": 158.847,
+      "current_price": 158.957,
       "entry_plan": "Short at ~158.50 on confirmed break",
       "sl": 159.20,
       "tp": 157.80,
@@ -45,7 +45,7 @@
       "instrument": "OIL_CRUDE",
       "direction": "SELL",
       "trigger": "Bounce to $89-90 zone (revised down from $91-92 after further dump to $85)",
-      "current_price": 88.22,
+      "current_price": 88.43,
       "entry_plan": "Short at ~$89.50 on retest of broken support (was $91-92, lowered after WTI crashed to $85.12)",
       "sl": 91.50,
       "tp": 82.00,
@@ -57,7 +57,7 @@
       "instrument": "BTCUSD",
       "direction": "BUY",
       "trigger": "Break above $76,100 (today's high) — NOT active, momentum fading",
-      "current_price": 74578,
+      "current_price": 74633,
       "entry_plan": "Long at ~$76,200 on confirmed breakout",
       "sl": 74000,
       "tp": 80000,
@@ -69,7 +69,7 @@
       "instrument": "EURUSD",
       "direction": "BUY",
       "trigger": "Break above 1.18109 (day high)",
-      "current_price": 1.17985,
+      "current_price": 1.17897,
       "entry_plan": "Long at ~1.1815 on confirmed break",
       "sl": 1.1780,
       "tp": 1.1860,
@@ -81,7 +81,7 @@
 
   "market_context": {
     "date": "2026-04-14",
-    "session": "Tokyo OPEN. India pre-market 08:30, open 09:15 (F&O expiry + Reliance Q4).",
+    "session": "Tokyo mid-morning. India pre-market 08:30, open 09:15 (F&O expiry + Reliance Q4). GIFT Nifty +1-1.5% gap-up.",
     "key_events_upcoming": [
       "Apr 15: India market reopens (F&O expiry + Reliance Q4)",
       "Apr 22: US-Iran ceasefire deadline",
@@ -93,9 +93,9 @@
 
   "trade_history": [],
   "consecutive_losses": 0,
-  "daily_pnl": 11.53,
-  "weekly_pnl": 11.53,
-  "total_pnl": 11.53,
+  "daily_pnl": 25.41,
+  "weekly_pnl": 25.41,
+  "total_pnl": 25.41,
   "total_trades": 1,
   "wins": 0,
   "losses": 0,
