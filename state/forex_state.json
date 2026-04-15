@@ -1,31 +1,9 @@
 {
-  "last_tick": "2026-04-15T08:30:00+05:30",
+  "last_tick": "2026-04-15T08:44:00+05:30",
   "regime": "TRANSITIONAL",
-  "regime_note": "REGIME SHIFT to risk-on. Gold crashed $4,871→$4,824 ($3 from SL). USD strengthening — USDJPY broke 159 (invalidated). De-escalation pricing winning. WTI bouncing to $89 (near short entry). India opens 09:15 — F&O expiry, crude crash tailwind, OMC bounce potential.",
+  "regime_note": "RISK-ON dominant. Gold stopped out at breakeven ($4,820). No open positions. De-escalation winning — USD strong, Gold/crude selling. WTI at $89 (short entry zone). India 09:15 in 30 min — F&O expiry + Reliance Q4 + crude tailwind.",
 
-  "open_positions": [
-    {
-      "dealId": "00000000-4dc9-2417-044a-beb40055311e",
-      "instrument": "GOLD",
-      "direction": "BUY",
-      "entry_price": 4818.99,
-      "current_price": 4823.59,
-      "sl": 4820.0,
-      "tp": 4900.0,
-      "size": 1.0,
-      "risk_amount": 34.0,
-      "risk_pct": 0.0034,
-      "theme": "geopolitical",
-      "opened_at": "2026-04-14T21:59:25+05:30",
-      "thesis": "Gold broke day high ($4,817.75) while WTI dumps -4.4%. Divergence signals macro hedging demand beyond energy fear. Fresh breakout with geopolitical backdrop (Hormuz tense, dollar weak). R:R 2.38:1.",
-      "current_pnl": 4.49,
-      "trailing_active": true,
-      "trailing_trigger": 4859.0,
-      "trailing_note": "ACTIVATED at $4,871. SL moved to $4,820 (breakeven). Next: tighten SL to $4,840 if Gold breaks above $4,871 again. Trail $30 below price.",
-      "swap_nights": 0,
-      "management_rules": "Trailing ACTIVE. SL at $4,820 (breakeven). Risk = $0. Trail $30 below price — if Gold makes new high above $4,871, tighten SL to $4,840+. Let it run toward $4,900 TP."
-    }
-  ],
+  "open_positions": [],
 
   "watchlist": [
     {
@@ -91,11 +69,24 @@
     "dominant_theme": "De-escalation pricing holds overnight. WTI steady ~$89.6, Gold grinding $4,831 (+1.9%), yen bid intact. Tokyo session — USDJPY near trigger (158.76 vs 158.60 break level). No new catalysts overnight."
   },
 
-  "trade_history": [],
+  "trade_history": [
+    {
+      "instrument": "GOLD",
+      "direction": "BUY",
+      "entry_price": 4818.99,
+      "exit_price": 4820.00,
+      "pnl": 1.01,
+      "result": "breakeven",
+      "opened_at": "2026-04-14T21:59:25+05:30",
+      "closed_at": "2026-04-15T08:40:00+05:30",
+      "exit_reason": "SL hit (trailing stop at breakeven). De-escalation regime shift killed Gold rally. Peak unrealized +$52.20 at $4,871.",
+      "lessons": "Trailing stop worked as designed. Entry thesis was correct (Gold diverged from crude). Exit was regime-driven, not thesis failure. Would take same trade again."
+    }
+  ],
   "consecutive_losses": 0,
-  "daily_pnl": 4.49,
-  "weekly_pnl": 4.49,
-  "total_pnl": 4.49,
+  "daily_pnl": 1.01,
+  "weekly_pnl": 1.01,
+  "total_pnl": 1.01,
   "total_trades": 1,
   "wins": 0,
   "losses": 0,
