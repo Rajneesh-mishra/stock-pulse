@@ -1,9 +1,30 @@
 {
-  "last_tick": "2026-04-15T13:47:00+05:30",
+  "last_tick": "2026-04-15T14:50:00+05:30",
   "regime": "TRANSITIONAL",
-  "regime_note": "London session — consolidation. USDJPY dropped to 158.72 (yen buying). Gold flat $4,811. WTI $88.89 (below $89 entry). No forex triggers. India Nifty +1.57% sustained. Close 15:30, Reliance Q4 after-hours tonight. US session 18:30 IST.",
+  "regime_note": "TRADE #2 OPEN: WTI SHORT @ $89.978. Double-top $89.77/$90.20 confirmed. De-escalation thesis. R:R 5.25:1. Gold $4,805 new lows. India Nifty +1.65% into close (15:30). Reliance Q4 after-hours tonight.",
 
-  "open_positions": [],
+  "open_positions": [
+    {
+      "dealId": "00000000-4dc9-e951-044a-beb40055311e",
+      "instrument": "OIL_CRUDE",
+      "direction": "SELL",
+      "entry_price": 89.978,
+      "current_price": 89.986,
+      "sl": 91.50,
+      "tp": 82.00,
+      "size": 1.0,
+      "risk_amount": 1.52,
+      "risk_pct": 0.0002,
+      "theme": "geopolitical",
+      "opened_at": "2026-04-15T14:50:00+05:30",
+      "thesis": "Double-top at $89.77/$90.20 — resistance confirmed. De-escalation thesis: Trump says Iran ready to deal, WTI crashed $104→$85, bounced to $90, now rejecting. R:R 5.25:1.",
+      "current_pnl": -0.04,
+      "trailing_active": false,
+      "trailing_trigger": 87.00,
+      "trailing_note": "Activate trailing stop when WTI drops to $87 (50% of TP distance from entry). Move SL to breakeven ($90.00).",
+      "management_rules": "Do NOT tighten SL yet. Let the trade breathe — WTI has $2-3 daily ranges. Only tighten after $87. Key risk: Apr 22 ceasefire deadline failure = crude spike."
+    }
+  ],
 
   "watchlist": [
     {
