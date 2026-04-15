@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-15T07:18:00+05:30",
+  "last_tick": "2026-04-15T07:42:00+05:30",
   "regime": "TRANSITIONAL",
-  "regime_note": "TRAILING STOP ACTIVATED. Gold spiked to $4,871 (broke $4,859 trigger), SL moved to $4,820 (breakeven). Risk-free trade now. USDJPY 4 pips from invalidation. GIFT Nifty +1-1.5% gap-up on crude crash. India opens 09:15.",
+  "regime_note": "Gold rallying back $4,847 (+$27.71), risk-free (SL $4,820). If breaks $4,871 day high, tighten SL to $4,840. USDJPY near invalidation. India 09:15 — GIFT Nifty gap-up +1-1.5%, crude crash tailwind, F&O expiry + Reliance Q4 tonight.",
 
   "open_positions": [
     {
@@ -9,7 +9,7 @@
       "instrument": "GOLD",
       "direction": "BUY",
       "entry_price": 4818.99,
-      "current_price": 4844.40,
+      "current_price": 4846.84,
       "sl": 4820.0,
       "tp": 4900.0,
       "size": 1.0,
@@ -18,7 +18,7 @@
       "theme": "geopolitical",
       "opened_at": "2026-04-14T21:59:25+05:30",
       "thesis": "Gold broke day high ($4,817.75) while WTI dumps -4.4%. Divergence signals macro hedging demand beyond energy fear. Fresh breakout with geopolitical backdrop (Hormuz tense, dollar weak). R:R 2.38:1.",
-      "current_pnl": 25.41,
+      "current_pnl": 27.71,
       "trailing_active": true,
       "trailing_trigger": 4859.0,
       "trailing_note": "ACTIVATED at $4,871. SL moved to $4,820 (breakeven). Next: tighten SL to $4,840 if Gold breaks above $4,871 again. Trail $30 below price.",
@@ -32,7 +32,7 @@
       "instrument": "USDJPY",
       "direction": "SELL",
       "trigger": "Break below 158.60 (current day low)",
-      "current_price": 158.957,
+      "current_price": 158.913,
       "entry_plan": "Short at ~158.50 on confirmed break",
       "sl": 159.20,
       "tp": 157.80,
@@ -93,9 +93,9 @@
 
   "trade_history": [],
   "consecutive_losses": 0,
-  "daily_pnl": 25.41,
-  "weekly_pnl": 25.41,
-  "total_pnl": 25.41,
+  "daily_pnl": 27.71,
+  "weekly_pnl": 27.71,
+  "total_pnl": 27.71,
   "total_trades": 1,
   "wins": 0,
   "losses": 0,
