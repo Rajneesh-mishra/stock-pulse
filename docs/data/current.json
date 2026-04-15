@@ -1,27 +1,27 @@
 {
-  "last_updated": "2026-04-14T02:52:00+05:30",
+  "last_updated": "2026-04-15T09:31:00+05:30",
   "status": "active",
-  "market_status": "holiday",
+  "market_status": "open",
   "market": {
-    "nifty_level": 23842,
-    "nifty_open": 23573,
-    "nifty_change": "-0.87% (Apr 13 close vs Apr 10)",
-    "nifty_session_note": "Opened gap-down 477 pts to 23,573; recovered 269 pts to close 23,842. Better than feared.",
-    "sensex": "Crashed 1,653 pts at open, partial recovery",
-    "banknifty": "~55,605",
-    "vix": "20.70 (+9.81%; intraday peak ~+14% at open)",
-    "fii_net": "data pending (holiday Apr 14)",
+    "nifty_level": 24198,
+    "nifty_open": 24054,
+    "nifty_change": "+1.49% (+356 pts from 23,842 Apr 13 close)",
+    "nifty_session_note": "Gap-up open at 24,054 (+212 pts). Rallied to 24,198 in first 15 min. Crude crash $104→$88 + Iran de-escalation driving massive risk-on.",
+    "sensex": "78,074 (+1,226, +1.60%)",
+    "banknifty": "data pending",
+    "vix": "data pending (expect sharp drop from 20.70 on rally)",
+    "fii_net": "data pending (first 30 min)",
     "dii_net": "data pending",
-    "crude_wti": "$97.22 (pulled back from $104.35 — 2nd-round talks signal, ceasefire holds to Apr 22)",
-    "crude_brent": "~$95 est.",
+    "crude_wti": "$88.66 (CRASHED from $104→$85 low, bounced to $88. Trump: Iran ready to deal. De-escalation.)",
+    "crude_brent": "~$90 est.",
     "usdinr": "92.60",
-    "gold": "$4,717",
-    "cpi_march_2026": "3.4% (benign; below feared 3.6-3.8%; within RBI comfort zone)"
+    "gold": "$4,822 (sold off from $4,871 high on de-escalation. Risk-off premium evaporating.)",
+    "cpi_march_2026": "3.4% (benign + crude crash = June RBI cut probability RISING to 60%+)"
   },
   "scenarios": [
-    {"name": "Ceasefire Holds + Blockade Reversed", "probability": "15%", "nifty_range": "24,200 – 24,800", "direction": "up", "summary": "Upgraded from 5%. WTI pulled back to $97 on holiday — 2nd-round talks being explored, ceasefire nominally holds to Apr 22. Still not base case but probability raised. Requires formal blockade reversal."},
-    {"name": "Hormuz Tense — Crude $95-110", "probability": "65%", "nifty_range": "23,000 – 24,200", "direction": "neutral", "summary": "DOMINANT (revised). WTI $97 (down from $104.35) signals partial de-escalation pricing. Blockade in effect but ceasefire technical hold. Market likely to stabilise unless new kinetic action. Nifty range widens — less bearish than $104+ scenario."},
-    {"name": "CPI Benign + Crude Plateau — Stabilisation", "probability": "20%", "nifty_range": "23,800 – 24,400", "direction": "up", "summary": "CPI 3.4% confirmed benign Apr 13. WTI pullback to $97 = inflation relief for May/June prints. If crude stays $90-100 range, June RBI cut odds recover to 50%+. Reliance Q4 beat could catalyse recovery leg."}
+    {"name": "De-escalation + Deal — Crude $80-90", "probability": "45%", "nifty_range": "24,200 – 25,000", "direction": "up", "summary": "NOW DOMINANT. Trump says Iran ready to deal. WTI crashed $104→$85 (bounced to $88). Round 2 Pakistan talks expected within days. If deal materializes, crude to $80. Nifty targets 25,000. June RBI cut near-certain."},
+    {"name": "Stalemate — Crude $85-95", "probability": "35%", "nifty_range": "23,800 – 24,400", "direction": "neutral", "summary": "Talks stall but no re-escalation. Crude stabilises $85-95 range. Nifty consolidates around 24,000-24,400. F&O expiry + Reliance Q4 drive volatility. June RBI cut 50/50."},
+    {"name": "Talks Fail + Re-escalation — Crude $100+", "probability": "20%", "nifty_range": "22,500 – 23,500", "direction": "down", "summary": "TAIL RISK. If round 2 talks fail and IRGC escalates before Apr 22 deadline, crude spikes back to $100+. Nifty would gap down sharply. OMCs, aviation hammered again. This is the hedge scenario."}
   ],
   "signals": [
     {"action": "BUY", "stock": "ITC", "conviction": 5, "rationale": "CONFIRMED WORKING. Apr 13: held up as defensive anchor while market sold -0.87%. Thesis intact — zero crude sensitivity, 3%+ dividend yield floor. HOLD through holiday gap. Zero reason to trim.", "risk": "Lags if market stages sharp recovery. Accept as insurance cost.", "status": "active_confirmed"},
@@ -53,11 +53,11 @@
     {"date": "2026-06-03", "event": "RBI MPC meeting (June 3-5)", "impact_level": 4, "sectors_affected": ["Banking", "NBFC", "Real Estate", "Auto"]}
   ],
   "tracker": [
-    {"title": "US-Iran Ceasefire & Strait of Hormuz", "status": "escalating", "last_updated": "2026-04-13T20:30:00+05:30", "india_impact": "CRITICAL. IRGC attacked 21+ merchant vessels (Apr 12-13). Sea mines planted. Hormuz functionally closed. WTI $104.35 (Brent $102.26). Apr 13: Nifty absorbed shock, closed -0.87% vs feared -2%+. Holiday gap Apr 14 into F&O expiry Apr 15 = next binary. OMC structural losses ongoing.", "watch_for": "WTI $110 (next escalation tier). IRGC further kinetic action. US military response. OPEC+ emergency supply. India OMC pricing review."},
+    {"title": "US-Iran Ceasefire & Strait of Hormuz", "status": "de-escalating", "last_updated": "2026-04-15T09:31:00+05:30", "india_impact": "MAJOR DE-ESCALATION. Trump says Iran contacted Washington, ready to deal. Round 2 Pakistan talks expected in days. Iran mulling Hormuz shipment pause. WTI crashed from $104 to $85 (now $88). Nifty rallying +1.49% on Apr 15 open. OMC pressure easing. June RBI cut hopes revived.", "watch_for": "Round 2 talks date confirmation. Iran Hormuz shipment pause. Apr 22 ceasefire deadline. WTI below $85 (full de-escalation) vs above $95 (talks failed)."},
     {"title": "US Tariff & India Trade Dynamics", "status": "escalating", "last_updated": "2026-04-12T21:12:13+05:30", "india_impact": "26% reciprocal tariff on Indian goods effective Apr 9. Nifty fell 5.9% Apr 7. FIIs sold Rs 22,000 cr in one week. Pharma, gems/jewellery, textiles, auto components exposed. Combined with Hormuz = double structural headwind.", "watch_for": "US-India negotiation. Pharma exemption. FII flow reversal. Rupee past 94."},
     {"title": "Q4 FY26 Earnings Season", "status": "active", "last_updated": "2026-04-13T20:30:00+05:30", "india_impact": "TCS +29% beat, fell 2% post results — sell-the-news confirmed. Reliance Q4 Apr 15 (IMMINENT). HDFC Bank + ICICI Bank Apr 18 (react Apr 20). Wipro Apr 16, HCL Tech Apr 21, Infosys Apr 23. CPI 3.4% benign = banking NIM thesis alive.", "watch_for": "Reliance Apr 15 — Jio 5G subscribers + Retail EBITDA margin. HDFC Bank NIM >3.65% (Apr 18). Infosys FY27 guidance (Apr 23) — binary."},
-    {"title": "Crude Oil Volatility", "status": "escalating", "last_updated": "2026-04-13T20:30:00+05:30", "india_impact": "WTI $104.35. Hormuz closed. Bloomberg $110-120 if closure persists. GRMs -$9.4 — refiners in structural losses. IndiGo -6% Apr 13 confirms ATF cost shock. Rupee at 92.60. Every $10 crude rise = Rs 8-10/litre OMC subsidy pressure.", "watch_for": "WTI $110. OPEC+ emergency supply call. India OMC pricing decision. Holiday news flow (Apr 14)."},
-    {"title": "RBI Monetary Policy Path", "status": "watching", "last_updated": "2026-04-13T20:30:00+05:30", "india_impact": "UPDATED: CPI 3.4% benign (Apr 13) — June cut still alive. BUT WTI $104 will push forward CPI higher. June cut probability ~40%. RBI held at 5.25%. Next MPC June 3-5.", "watch_for": "Crude trajectory through May (determines June CPI). April CPI release (mid-May). FOMC Apr 28-29."},
+    {"title": "Crude Oil Volatility", "status": "de-escalating", "last_updated": "2026-04-15T09:31:00+05:30", "india_impact": "REGIME SHIFT. WTI crashed from $104 to $85 low (now $88). Iran deal signals driving collapse. OMC losses easing. ATF cost shock reduced. Rupee stable 92.60. If crude stays $85-90, June RBI cut probability rises to 60%+. India is biggest beneficiary of crude crash in EM.", "watch_for": "WTI below $85 (deal confirmed) vs bounce above $95 (talks failed). OMC stock reaction Apr 15. Aviation bounce."},
+    {"title": "RBI Monetary Policy Path", "status": "bullish", "last_updated": "2026-04-15T09:31:00+05:30", "india_impact": "UPGRADED. CPI 3.4% benign + crude crash $104→$88 = June cut probability now 60%+. If crude stays $85-90, April/May CPI prints will be benign, giving RBI room. Rate-sensitive sectors (banking, NBFC, real estate) benefit. RBI held at 5.25%, next MPC June 3-5.", "watch_for": "Crude trajectory (must stay below $95). FOMC Apr 28-29 (Fed hold expected). May CPI print."},
     {"title": "FII Flows & Rupee", "status": "watching", "last_updated": "2026-04-13T20:30:00+05:30", "india_impact": "FIIs pulled Rs 1.04 lakh cr YTD. Rupee 92.60 (slight improvement from 93.73 pre-session). CPI 3.4% benign = mild positive for FII return. But crude $104 + tariffs = structural headwind. Past 94 = accelerated exits.", "watch_for": "Apr 15 FII/DII provisional data. USD/INR past 94. FOMC Apr 28-29."}
   ]
 }
