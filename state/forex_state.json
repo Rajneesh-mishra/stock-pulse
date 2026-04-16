@@ -1,29 +1,9 @@
 {
-  "last_tick": "2026-04-16T13:25:00+05:30",
+  "last_tick": "2026-04-16T13:56:00+05:30",
   "regime": "TRANSITIONAL",
-  "regime_note": "3 positions. WTI +$0.46 (risk-free). USDJPY -$0.09 (flat). EURUSD -$19.20 (underwater, dollar bouncing). Portfolio -$18.83. All within SL range. London afternoon. Hold.",
+  "regime_note": "WTI STOPPED OUT at breakeven ($90 SL hit). EURUSD -$104 (5.5 pips from SL!). USDJPY -$0.29 (ok). Dollar bouncing hard — counter-trend. Portfolio -$104.67. SL handles risk.",
 
   "open_positions": [
-    {
-      "dealId": "00000000-4dc9-e951-044a-beb40055311e",
-      "instrument": "OIL_CRUDE",
-      "direction": "SELL",
-      "entry_price": 89.978,
-      "current_price": 89.986,
-      "sl": 91.50,
-      "tp": 82.00,
-      "size": 1.0,
-      "risk_amount": 1.52,
-      "risk_pct": 0.0002,
-      "theme": "geopolitical",
-      "opened_at": "2026-04-15T14:50:00+05:30",
-      "thesis": "Double-top at $89.77/$90.20 — resistance confirmed. De-escalation thesis: Trump says Iran ready to deal, WTI crashed $104→$85, bounced to $90, now rejecting. R:R 5.25:1.",
-      "current_pnl": -0.04,
-      "trailing_active": true,
-      "trailing_trigger": 85.00,
-      "trailing_note": "ACTIVATED at $87.79. SL moved to $90.00 (breakeven). Next: tighten SL to $88 if WTI drops to $85. Trail $3 below price.",
-      "management_rules": "Trailing ACTIVE. SL at $90.00 (breakeven). Risk = $0. Next tighten at $85 → move SL to $88. Let it run toward $82 TP. Key risk: Apr 22 deadline failure."
-    },
     {
       "dealId": "00000000-4dca-e488-044a-beb40055311e",
       "instrument": "USDJPY",
@@ -161,7 +141,19 @@
       "opened_at": "2026-04-14T21:59:25+05:30",
       "closed_at": "2026-04-15T08:40:00+05:30",
       "exit_reason": "SL hit (trailing stop at breakeven). De-escalation regime shift killed Gold rally. Peak unrealized +$52.20 at $4,871.",
-      "lessons": "Trailing stop worked as designed. Entry thesis was correct (Gold diverged from crude). Exit was regime-driven, not thesis failure. Would take same trade again."
+      "lessons": "Trailing stop worked as designed."
+    },
+    {
+      "instrument": "OIL_CRUDE",
+      "direction": "SELL",
+      "entry_price": 89.978,
+      "exit_price": 90.00,
+      "pnl": 0.02,
+      "result": "breakeven",
+      "opened_at": "2026-04-15T14:50:00+05:30",
+      "closed_at": "2026-04-16T13:50:00+05:30",
+      "exit_reason": "SL hit (trailing stop at breakeven $90). WTI bounced from $87.79 back above $90. Peak unrealized +$1.74 at $88.20.",
+      "lessons": "Trailing stop saved us from a reversal. Entry thesis correct (double-top held). WTI just had more bounce left."
     }
   ],
   "consecutive_losses": 0,
