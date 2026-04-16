@@ -1,0 +1,534 @@
+{
+  "version": "1.0",
+  "created": "2026-04-14",
+  "account_size": 10000,
+  "account_currency": "USD",
+  "platform": "Capital.com demo",
+
+  "___SECTION_1___": "=== PRE-TRADE CHECKLIST (run EVERY trade) ===",
+
+  "pre_trade_checklist": {
+    "description": "MUST pass ALL 7 gates before entering. If any gate fails, NO TRADE.",
+    "gates": [
+      {
+        "gate": 1,
+        "name": "STRUCTURAL BIAS (4H chart)",
+        "question": "What is the 4H trend? Higher highs + higher lows = bullish. Lower highs + lower lows = bearish.",
+        "rule": "Only trade WITH the 4H structure. If 4H is bearish, only look for shorts. If bullish, only longs. If choppy/unclear, SKIP.",
+        "how": "Mark the last 3-4 swing highs and lows on 4H. Is there a clear pattern? If you have to squint, it's not clear enough."
+      },
+      {
+        "gate": 2,
+        "name": "KEY LEVEL IDENTIFIED (4H/1H)",
+        "question": "Is price at a significant level? Order block, FVG, previous support/resistance, or liquidity zone?",
+        "rule": "Entry must be AT or NEAR a key level. 'Near my target' is not good enough. The level must be specific to the pip.",
+        "how": "On 4H: mark order blocks (last opposing candle before impulsive move), fair value gaps (3-candle imbalances), and previous swing highs/lows. On 1H: refine these zones."
+      },
+      {
+        "gate": 3,
+        "name": "CONFIRMATION SIGNAL (1H/15M)",
+        "question": "Has price given a confirmation signal at the key level?",
+        "rule": "NEVER enter just because price reached your level. Wait for: (a) rejection candle (pin bar, engulfing, or hammer WITH close), (b) BOS on lower timeframe, (c) liquidity sweep + reversal, or (d) FVG fill + rejection.",
+        "how": "Drop to 15M at your level. Wait for: a sweep of the level's liquidity (wicks beyond), then a strong displacement candle back inside, creating a new 15M order block. Enter on the retest of that 15M OB.",
+        "critical": "The candle must CLOSE before it counts. A wick alone is not confirmation."
+      },
+      {
+        "gate": 4,
+        "name": "RISK:REWARD >= 2:1",
+        "question": "Is the distance to TP at least 2x the distance to SL?",
+        "rule": "Minimum R:R of 2:1. Preferred 3:1. Below 1.5:1 is an automatic SKIP no matter how good the setup looks.",
+        "how": "Measure SL distance (entry to invalidation level, NOT arbitrary pips). Measure TP distance (entry to next opposing key level). TP/SL must be >= 2.0."
+      },
+      {
+        "gate": 5,
+        "name": "RISK SIZING (max 1.5% per trade)",
+        "question": "Is the position sized correctly?",
+        "rule": "Risk per trade: 1.0% standard, 1.5% max for high-conviction (4-5) setups. NEVER exceed 1.5%.",
+        "how": "Use ATR-based formula: Position Size = (Account * Risk%) / (SL distance in pips * pip value). See position_sizing section below."
+      },
+      {
+        "gate": 6,
+        "name": "CORRELATION CHECK",
+        "question": "Am I already exposed to this same move?",
+        "rule": "Max 2 positions in the same direction on the same underlying driver. EURUSD long + GBPUSD long + AUDUSD long = 3 USD-short trades = VIOLATION. Pick the best one.",
+        "how": "Check open positions. Group by theme (dollar_macro, risk_on, etc.). If adding this trade makes 3+ in the same theme, SKIP or close the weakest existing one.",
+        "max_total_correlated_risk": "3% of account on any single theme/driver"
+      },
+      {
+        "gate": 7,
+        "name": "SESSION + TIMING",
+        "question": "Is this the right time to enter?",
+        "rule": "Best entries: London open (12:30-16:30 IST), NY open (18:00-22:00 IST), London-NY overlap (18:00-20:30 IST). AVOID: Asian session lows (unless trading JPY), pre-news (30 min before high-impact), Friday afternoon.",
+        "how": "Check economic calendar. If high-impact news in next 2 hours, either wait for post-news reaction or ensure SL accounts for news volatility (use 2x ATR)."
+      }
+    ]
+  },
+
+  "___SECTION_2___": "=== SMART MONEY CONCEPTS (SMC) FRAMEWORK ===",
+
+  "smc_framework": {
+    "market_structure": {
+      "description": "The foundation. Determine trend BEFORE anything else.",
+      "bullish_structure": "Higher highs (HH) and higher lows (HL). Each push up makes a new high, each pullback holds above the previous low.",
+      "bearish_structure": "Lower highs (LH) and lower lows (LL). Each push down makes a new low, each rally fails below the previous high.",
+      "BOS": {
+        "definition": "Break of Structure. Price breaks a swing high (bullish BOS) or swing low (bearish BOS), CONFIRMING trend continuation.",
+        "how_to_identify": "In uptrend: price closes above the most recent swing high. In downtrend: price closes below the most recent swing low.",
+        "trading_rule": "BOS = trend continuation signal. Look for entries on the pullback AFTER the BOS, not on the BOS candle itself.",
+        "confirmation": "Must be a candle CLOSE beyond the level, not just a wick."
+      },
+      "CHoCH": {
+        "definition": "Change of Character. The FIRST break against the prevailing trend. Signals potential reversal.",
+        "how_to_identify": "In uptrend: price breaks below the most recent higher low (HL). In downtrend: price breaks above the most recent lower high (LH).",
+        "trading_rule": "CHoCH = caution signal. Don't immediately reverse. Wait for the new trend to establish (need at least one BOS in the new direction before trading it).",
+        "warning": "A single CHoCH is not enough to reverse your bias. You need CHoCH + BOS in new direction + pullback to key level."
+      }
+    },
+
+    "order_blocks": {
+      "definition": "The last opposing candle before a strong impulsive move. Represents where institutions placed orders.",
+      "bullish_OB": "The last bearish (red) candle before a strong bullish impulse that breaks structure. Mark the candle's body (open to close) as the zone.",
+      "bearish_OB": "The last bullish (green) candle before a strong bearish impulse that breaks structure. Mark the candle's body as the zone.",
+      "validation_criteria": [
+        "Must be followed by a displacement (strong move with large-body candles)",
+        "The move after the OB must break structure (create BOS)",
+        "Ideally leaves a Fair Value Gap immediately after",
+        "Higher timeframe OBs are stronger than lower timeframe ones",
+        "An OB that has already been tested once is weaker (mitigated)"
+      ],
+      "trading_rule": "Wait for price to return to the OB zone. Look for rejection (pin bar, engulfing) on the 15M at the OB. Enter with SL beyond the OB. TP at the next opposing OB or key level.",
+      "invalidation": "If price closes THROUGH the entire OB zone, it is broken/invalid. Do not trade it."
+    },
+
+    "fair_value_gaps": {
+      "definition": "A 3-candle pattern where the middle candle is so impulsive that candle 1's high and candle 3's low don't overlap (bullish FVG) or candle 1's low and candle 3's high don't overlap (bearish FVG). Represents imbalance.",
+      "bullish_FVG": "Gap between candle 1's high and candle 3's low in an up-move. Price tends to return to fill this gap.",
+      "bearish_FVG": "Gap between candle 1's low and candle 3's high in a down-move.",
+      "statistics": "~70% of FVGs get filled within the next few trading sessions.",
+      "trading_rule": "Use FVGs as entry zones. When price pulls back into a bullish FVG (especially one inside a bullish OB), look for rejection for a long entry. The midpoint (50% of FVG) is often the sweet spot.",
+      "confluence": "FVG inside an OB = highest probability zone. FVG with no other confluence = lower probability."
+    },
+
+    "liquidity_concepts": {
+      "what_is_liquidity": "Clusters of stop losses and pending orders. Retail traders place stops at obvious levels (round numbers, swing highs/lows, trendlines). Institutions need this liquidity to fill large orders.",
+      "buy_side_liquidity": "Stop losses above swing highs (from shorts) + breakout buy orders. When price sweeps above a swing high, it grabs this liquidity.",
+      "sell_side_liquidity": "Stop losses below swing lows (from longs) + breakout sell orders. When price sweeps below a swing low, it grabs this liquidity.",
+      "liquidity_sweep_trade": {
+        "setup": "Price sweeps beyond a key high/low (grabs liquidity), then immediately reverses.",
+        "entry_process": [
+          "1. Identify obvious liquidity pools (equal highs/lows, trendline touches, round numbers)",
+          "2. Wait for price to sweep beyond the level (wick or brief break)",
+          "3. Watch for IMMEDIATE reversal: strong rejection candle, or BOS on the 15M in opposite direction",
+          "4. Enter on the reversal with SL just beyond the sweep's extreme",
+          "5. TP at the opposing liquidity pool"
+        ],
+        "key_distinction": "Sweep = wick beyond level + quick reversal. Breakout = candle CLOSES beyond level + holds. If the candle closes beyond, it's likely a real breakout, not a sweep."
+      },
+      "stop_hunt_recognition": [
+        "Occurs most often at session opens (London, NY)",
+        "Price briefly breaks a level then snaps back within 1-3 candles on 15M",
+        "Volume spikes on the sweep candle",
+        "Long wicks / pin bars at the extreme",
+        "Commonly happens before the 'real' move of the session"
+      ]
+    }
+  },
+
+  "___SECTION_3___": "=== MULTI-TIMEFRAME ANALYSIS (MTF) ===",
+
+  "multi_timeframe_analysis": {
+    "philosophy": "Higher timeframe sets the DIRECTION. Lower timeframe sets the ENTRY. Never fight the higher timeframe.",
+    "timeframe_roles": {
+      "daily": {
+        "role": "Overall bias. Identify the macro trend and major key levels.",
+        "what_to_mark": "Major swing highs/lows, order blocks, FVGs, support/resistance zones. These are your 'no-trade' zones (levels where you expect reactions).",
+        "frequency": "Review once per day, before trading session starts."
+      },
+      "4H": {
+        "role": "Trade direction and key structure. This is your PRIMARY analysis timeframe.",
+        "what_to_mark": "Market structure (HH/HL or LH/LL), order blocks, FVGs, BOS/CHoCH levels. This determines if you're looking for longs or shorts TODAY.",
+        "frequency": "Review every 4 hours or when a new 4H candle closes."
+      },
+      "1H": {
+        "role": "Refine zones and identify session structure. Bridge between 4H bias and 15M entry.",
+        "what_to_mark": "Session highs/lows, 1H order blocks within 4H zones, 1H FVGs, intraday structure.",
+        "frequency": "Monitor during active sessions."
+      },
+      "15M": {
+        "role": "ENTRY timeframe. This is where you pull the trigger.",
+        "what_to_mark": "Entry confirmation: rejection candles, 15M BOS at key levels, 15M order blocks for precise entries.",
+        "frequency": "Only when price is AT a key level from higher TFs. Don't stare at 15M all day."
+      }
+    },
+    "top_down_process": [
+      "Step 1: DAILY — What is the macro trend? Where are the major levels?",
+      "Step 2: 4H — Is price approaching a key daily level? What is the 4H structure?",
+      "Step 3: 1H — How is price behaving at the 4H zone? Any session structure to note?",
+      "Step 4: 15M — Is there a confirmation entry? OB + FVG + rejection?",
+      "Step 5: ENTER only if all timeframes align. If 4H is bullish but 1H just made a CHoCH bearish, WAIT."
+    ],
+    "critical_rule": "If 4H and 1H disagree, DO NOT TRADE. Wait for alignment. Forcing a trade in conflicting timeframes is the #1 cause of losses."
+  },
+
+  "___SECTION_4___": "=== TECHNICAL INDICATORS (use for CONFLUENCE, not primary signals) ===",
+
+  "indicators": {
+    "philosophy": "Indicators CONFIRM, they don't predict. Price action and structure come FIRST. Indicators add confluence.",
+    "primary_indicators": {
+      "RSI_14": {
+        "settings": "14-period, on 4H and 1H",
+        "use": "Identify divergences and extreme conditions. NOT for overbought/oversold entries alone.",
+        "signals": {
+          "bullish_divergence": "Price makes lower low, RSI makes higher low. Signals weakening bearish momentum. Combine with bullish OB/FVG for entry.",
+          "bearish_divergence": "Price makes higher high, RSI makes lower high. Signals weakening bullish momentum. Combine with bearish OB/FVG for entry.",
+          "hidden_divergence": "Bullish: price makes HL, RSI makes LL = trend continuation. This is often more reliable than regular divergence.",
+          "extreme_levels": "Below 30 or above 70 on 4H = be cautious entering in that direction. NOT an automatic reversal signal."
+        },
+        "mistake_to_avoid": "Do NOT short just because RSI is overbought. In strong trends, RSI stays overbought for days. Use divergence, not absolute levels."
+      },
+      "ATR_14": {
+        "settings": "14-period, on 4H for swing trades, 1H for day trades",
+        "use": "Position sizing and stop loss placement. NOT a directional indicator.",
+        "application": {
+          "stop_loss": "Minimum SL distance = 1.0x ATR. This accounts for normal market noise. SL tighter than 1x ATR will get stopped out by noise.",
+          "position_sizing": "See position_sizing section. ATR determines your lot size.",
+          "volatility_filter": "If current ATR is >1.5x the 20-day average ATR, reduce position size by 50%. Market is unusually volatile.",
+          "trailing_stop": "Trail by 1.5x ATR once in profit. This gives the trade room to breathe while protecting gains."
+        }
+      },
+      "EMA_21_50": {
+        "settings": "21 EMA and 50 EMA on 4H",
+        "use": "Trend confirmation and dynamic support/resistance.",
+        "signals": {
+          "trend_confirmation": "Price above both EMAs + 21 above 50 = bullish. Price below both + 21 below 50 = bearish.",
+          "pullback_zone": "In an uptrend, pullbacks to the 21 EMA are shallow entries. Pullbacks to 50 EMA are deeper, higher R:R entries.",
+          "golden_cross": "21 EMA crosses above 50 EMA = bullish signal (but often late — use as confirmation, not entry).",
+          "death_cross": "21 EMA crosses below 50 EMA = bearish signal."
+        }
+      }
+    },
+    "secondary_indicators": {
+      "MACD": {
+        "use": "Momentum confirmation on 4H. When MACD histogram is growing + your setup is in that direction = added confidence.",
+        "warning": "MACD is a lagging indicator. By the time MACD confirms, the move may be 50% done. Use for confluence, not timing."
+      },
+      "volume_or_tick_volume": {
+        "use": "Confirm breakouts and identify exhaustion. True breakouts have 50%+ higher volume than the 20-bar average. Low-volume breakouts = likely fakeouts.",
+        "on_capital_com": "Use tick volume as proxy. Look for volume spikes at key levels."
+      },
+      "bollinger_bands": {
+        "use": "Identify squeezes (low volatility before expansion) and mean reversion in ranges. Band squeeze = big move coming. Useful for timing entries, not direction."
+      }
+    },
+    "confluence_scoring": {
+      "description": "Before entering, count your confluence factors. Minimum score of 3 required.",
+      "factors": [
+        {"factor": "4H trend alignment", "points": 1},
+        {"factor": "Price at key level (OB, FVG, S/R)", "points": 1},
+        {"factor": "15M confirmation candle (rejection, engulfing)", "points": 1},
+        {"factor": "RSI divergence supporting direction", "points": 1},
+        {"factor": "EMA alignment supporting direction", "points": 1},
+        {"factor": "Liquidity sweep before entry", "points": 1},
+        {"factor": "FVG inside OB (nested)", "points": 1},
+        {"factor": "Session timing favorable", "points": 1}
+      ],
+      "minimum_score": 3,
+      "high_conviction_score": 5
+    }
+  },
+
+  "___SECTION_5___": "=== ENTRY CONFIRMATION RULES ===",
+
+  "entry_confirmation": {
+    "philosophy": "The difference between 'price is near my level' and a real entry is CONFIRMATION. Confirmation means the market has SHOWN you something at the level, not just arrived there.",
+
+    "what_counts_as_confirmation": {
+      "tier_1_strongest": [
+        {
+          "name": "Liquidity sweep + displacement",
+          "description": "Price sweeps beyond a key level (grabs stops), then a strong displacement candle reverses back inside. This is the highest-probability SMC entry.",
+          "example": "Price sweeps below support with a wick, then a massive bullish engulfing candle closes well above the level."
+        },
+        {
+          "name": "15M BOS at key level",
+          "description": "Price reaches your 4H/1H level, then on 15M makes a break of structure in your trade direction. Enter on the pullback after the 15M BOS.",
+          "example": "Price pulls back to 4H bullish OB. On 15M, price makes a lower low (sweep), then breaks above the most recent 15M swing high (BOS). Enter on retest of the 15M OB that caused the BOS."
+        }
+      ],
+      "tier_2_good": [
+        {
+          "name": "Engulfing candle at level",
+          "description": "A candle that completely engulfs the previous candle at your key level. The bigger the engulfing relative to recent candles, the better.",
+          "requirements": "Must close at or near its extreme (small wick). Body must be at least 2x the average candle size."
+        },
+        {
+          "name": "Pin bar / hammer at level",
+          "description": "A candle with a long wick rejecting the key level and a small body on the opposite side.",
+          "requirements": "Wick must be at least 2x the body length. The wick must penetrate the key zone. Close must be on the side of your trade direction."
+        }
+      ],
+      "tier_3_weak_needs_more_confluence": [
+        {
+          "name": "Doji at level",
+          "description": "Indecision candle. Shows the level is being respected but doesn't confirm direction. Need additional confluence (RSI divergence, EMA nearby)."
+        },
+        {
+          "name": "Slow stall at level",
+          "description": "Small candles clustering at a level. Better than nothing, but not a strong reversal signal. Often precedes a range before the real move."
+        }
+      ]
+    },
+
+    "what_does_NOT_count": [
+      "Price reaching your predefined number (e.g., 'I want to buy at 1.1800') with no reaction",
+      "A single wick touching the level without a reversal candle completing",
+      "Moving average 'should act as support' without actual price rejection",
+      "Gut feeling that 'it should bounce here'",
+      "Another position in the same pair that you want to average into"
+    ],
+
+    "breakout_vs_fakeout": {
+      "real_breakout_signs": [
+        "Candle closes convincingly beyond the level (body, not wick)",
+        "Follow-through: the NEXT candle continues in the breakout direction",
+        "Volume spike (50%+ above 20-bar average tick volume)",
+        "Breakout candle body is 2x+ average candle size",
+        "Occurs during high-volume sessions (London, NY overlap)"
+      ],
+      "fakeout_signs": [
+        "Long wick beyond the level but close back inside",
+        "Small-body candle at the breakout level",
+        "Occurs during low-volume sessions (Asian, late NY)",
+        "No follow-through: next candle reverses or stalls",
+        "Level has been tested 3+ times already (liquidity is drained)"
+      ],
+      "strategy": "When in doubt, use the RETEST method: don't enter on the breakout candle. Wait for price to break, pull back to retest the broken level, and enter on the retest if it holds. You sacrifice some R:R but dramatically increase win rate."
+    }
+  },
+
+  "___SECTION_6___": "=== POSITION SIZING & RISK MANAGEMENT ===",
+
+  "position_sizing": {
+    "base_formula": "Position Size = (Account Equity * Risk%) / (SL distance in pips * Pip Value per unit)",
+    "risk_tiers": {
+      "standard": {"risk_pct": 1.0, "when": "Normal setups, conviction 3"},
+      "high_conviction": {"risk_pct": 1.5, "when": "Conviction 4-5, multiple confluences, strong setup"},
+      "reduced": {"risk_pct": 0.5, "when": "First trade after a loss streak, uncertain market, low-conviction idea, binary event risk"},
+      "maximum_ever": {"risk_pct": 1.5, "when": "NEVER exceed 1.5% per trade, EVER"}
+    },
+
+    "atr_based_stop_loss": {
+      "method": "SL should be placed at a structural level (beyond the OB, beyond the swing high/low), but must be at MINIMUM 1.0x ATR(14) from entry.",
+      "reasoning": "A stop loss tighter than 1x ATR will be hit by normal market noise ~68% of the time. You need room for the trade to breathe.",
+      "calculation_example": {
+        "scenario": "EURUSD swing trade. Account $10,000. Risk 1%. 4H ATR = 45 pips. Structural SL = 50 pips away.",
+        "risk_amount": "$100 (1% of $10,000)",
+        "sl_pips": "50 pips (structural level, > 1x ATR of 45 -- GOOD)",
+        "pip_value_eurusd": "$10 per pip per standard lot (100,000 units)",
+        "position_size": "$100 / (50 pips * $10) = 0.20 standard lots = 20,000 units",
+        "check": "If SL was only 25 pips (< 1x ATR), either widen the SL to structural level or SKIP the trade."
+      }
+    },
+
+    "volatility_adjustment": {
+      "rule": "When ATR is >1.5x its 20-period average, cut position size by 50%.",
+      "reasoning": "High volatility = wider stops needed = smaller positions. This prevents outsized losses during volatile events.",
+      "example": "Normal EURUSD 4H ATR: 45 pips. Current ATR: 75 pips (1.67x normal). Risk reduced from 1.0% to 0.5%. Position size roughly halved."
+    }
+  },
+
+  "risk_management": {
+    "per_trade_rules": {
+      "max_risk_per_trade": "1.5% of account equity",
+      "min_reward_to_risk": "2:1",
+      "sl_placement": "At structural invalidation level (beyond OB, beyond swing point), minimum 1x ATR"
+    },
+
+    "portfolio_rules": {
+      "max_open_positions": 3,
+      "max_correlated_positions": 2,
+      "max_total_risk_at_once": "3% of account (sum of all open trade risks)",
+      "max_single_theme_risk": "3% of account",
+      "correlation_groups": {
+        "usd_short": ["EURUSD long", "GBPUSD long", "AUDUSD long", "USDCAD short", "USDCHF short"],
+        "usd_long": ["EURUSD short", "GBPUSD short", "AUDUSD short", "USDCAD long", "USDCHF long"],
+        "risk_on": ["AUDUSD long", "USDJPY long", "equities long", "BTC long"],
+        "risk_off": ["USDJPY short (yen strength)", "Gold long", "USDCHF short (CHF strength)"],
+        "note": "If you have EURUSD long and want GBPUSD long, they are BOTH usd_short. Combined risk must not exceed 3%."
+      }
+    },
+
+    "daily_weekly_limits": {
+      "max_daily_loss": "2% of account ($200 on $10K). Hit this = STOP TRADING for the day. No exceptions.",
+      "max_weekly_loss": "4% of account ($400 on $10K). Hit this = reduce to 0.5% risk per trade for rest of week.",
+      "consecutive_loss_rules": {
+        "2_losses_in_a_row": "Reduce next trade to 0.5% risk. Review what went wrong before the next entry.",
+        "3_losses_in_a_row": "STOP trading for 24 hours minimum. Full review of last 3 trades. What pattern are you repeating?",
+        "5_losses_in_a_row": "STOP trading for 48 hours. Complete strategy review. Something is fundamentally wrong with either the strategy or its execution."
+      }
+    },
+
+    "trailing_stop_rules": {
+      "when_to_trail": "TRENDING markets (price is making HH/HL or LH/LL with momentum). Use ATR-based trail.",
+      "when_to_use_fixed_tp": "RANGING markets or when trading to a specific level (opposing OB, S/R zone). Price is unlikely to run far.",
+      "hybrid_approach": {
+        "recommended": true,
+        "method": "Split the trade: take 50% off at TP1 (fixed target, typically 1:1 or the midpoint), trail the remaining 50% with 1.5x ATR trailing stop.",
+        "breakeven_rule": "Once TP1 is hit (50% closed), move SL to breakeven on the remaining 50%. This makes the trade risk-free.",
+        "trailing_method": "After breakeven, trail the stop below each new swing low (for longs) or above each new swing high (for shorts) on the 1H chart."
+      },
+      "never_trail_with": "An arbitrary pip distance (e.g., 'trail by 20 pips'). Always use structure or ATR."
+    }
+  },
+
+  "___SECTION_7___": "=== COMMON MISTAKES TO STOP MAKING ===",
+
+  "mistakes_to_eliminate": {
+    "mistake_1_entering_without_confirmation": {
+      "what_you_did": "Entered EURUSD long because 'price was near my target level' and 'DXY was falling'. No candle confirmation, no 15M structure confirmation.",
+      "fix": "Gate 3 in the checklist. Price at level is step 1. Confirmation at level is step 2. You were skipping step 2.",
+      "rule": "Write in your journal before EVERY entry: 'My confirmation signal is: ___'. If you can't fill in the blank, don't enter."
+    },
+    "mistake_2_correlated_overexposure": {
+      "what_you_did": "Had EURUSD long + AUDUSD watchlist long + USDCAD short + GBPUSD watchlist = 4 USD-short trades. If dollar bounced (which it did), all lose simultaneously.",
+      "fix": "Gate 6 in the checklist. Maximum 2 correlated positions. Pick the BEST setup from correlated options, not all of them.",
+      "rule": "Before adding a new trade, list all open positions and group by driver. If this new trade makes 3+ in one group, PASS."
+    },
+    "mistake_3_thesis_based_on_macro_alone": {
+      "what_you_did": "Entered because 'DXY is falling' or 'de-escalation is happening'. Macro gives you direction but NOT timing or entry.",
+      "fix": "Macro sets your BIAS (Gate 1). Technical setup gives you ENTRY (Gates 2-4). You need BOTH. A correct macro thesis with a bad entry still loses money (your EURUSD -$150 loss proves this).",
+      "rule": "Even with the best macro thesis, wait for the chart to give you an entry. The market can stay irrational longer than your stop loss."
+    },
+    "mistake_4_chasing_missed_entries": {
+      "what_you_did": "When a pair moved without you, the temptation was to enter late 'because the trend is still going'.",
+      "fix": "If you miss the entry, WAIT for a pullback to a key level. The best trades always give a second chance. If no pullback comes, the move was too extended to chase safely.",
+      "rule": "Never enter a trade where the closest structural SL is more than 2x ATR away. This means you're too late."
+    },
+    "mistake_5_entering_at_market_open": {
+      "what_you_did": "Placing trades at session open before the session establishes its direction.",
+      "fix": "Wait 30-60 minutes after session open. Let the session make its initial liquidity sweep (stop hunt), THEN look for the real move.",
+      "rule": "First 30 minutes of London and NY sessions are for WATCHING, not trading. The smart money hunts stops first, then shows direction."
+    }
+  },
+
+  "___SECTION_8___": "=== TRADE MANAGEMENT AFTER ENTRY ===",
+
+  "trade_management": {
+    "immediately_after_entry": {
+      "step_1": "SL and TP must be set BEFORE or simultaneously with entry. Never enter without stops.",
+      "step_2": "Record the trade: instrument, direction, entry price, SL, TP, thesis, confirmation signal, confluence score.",
+      "step_3": "Set price alerts at: (a) 50% to TP (for breakeven move), (b) SL level, (c) any news events."
+    },
+
+    "while_in_trade": {
+      "do_not": [
+        "Move your stop loss further away from entry (widening risk)",
+        "Add to a losing position (averaging down)",
+        "Close early because of fear when nothing has changed",
+        "Check the trade every 5 minutes — set alerts and walk away"
+      ],
+      "do": [
+        "Monitor on the timeframe you entered on (15M or 1H). Not lower.",
+        "If price reaches 50% of TP: consider moving SL to breakeven",
+        "If a CHoCH occurs on your entry timeframe against your position: tighten stop or close",
+        "If high-impact news is about to hit: either close before or accept the volatility"
+      ]
+    },
+
+    "exit_rules": {
+      "take_profit_hit": "Close position. Do NOT re-enter immediately. Analyze whether there's a new setup.",
+      "stop_loss_hit": "Accept it. Record the loss. Review if the setup was valid (bad luck) or if you broke rules (bad process). If rules were followed, it's just a cost of business.",
+      "time_based_exit": "If a trade has been open for 3x the expected timeframe with no significant movement, close at market. Dead trades tie up margin and mental capital.",
+      "thesis_invalidation": "If the fundamental reason for the trade changes (e.g., news reverses the macro backdrop), close immediately regardless of P&L."
+    }
+  },
+
+  "___SECTION_9___": "=== SPECIFIC PAIR NOTES ===",
+
+  "pair_specific_notes": {
+    "EURUSD": {
+      "avg_daily_range": "60-80 pips",
+      "best_sessions": "London, London-NY overlap",
+      "key_characteristic": "Respects round numbers and institutional levels well. Good for FVG trading.",
+      "typical_atr_4h": "35-50 pips",
+      "sl_minimum": "40 pips for swing trades"
+    },
+    "USDJPY": {
+      "avg_daily_range": "50-70 pips (can be 100+ during intervention)",
+      "best_sessions": "Tokyo, London",
+      "key_characteristic": "Prone to sudden BoJ intervention. Very sensitive to US-Japan rate differential. Long wicks common.",
+      "typical_atr_4h": "30-45 pips",
+      "sl_minimum": "50 pips for swing trades (account for intervention risk)",
+      "special_rule": "Near 160 level: reduce size to 0.5% risk. Binary intervention risk."
+    },
+    "AUDUSD": {
+      "avg_daily_range": "50-70 pips",
+      "best_sessions": "Tokyo, London",
+      "key_characteristic": "Risk-on/risk-off barometer. Highly correlated to commodity prices and China data. Tends to trend well.",
+      "typical_atr_4h": "30-40 pips",
+      "sl_minimum": "35 pips for swing trades"
+    },
+    "GOLD_XAUUSD": {
+      "avg_daily_range": "Variable, $20-50 (200-500 pips)",
+      "best_sessions": "London, NY",
+      "key_characteristic": "Very impulsive. Big FVGs. Stops get hunted aggressively. Need wider stops.",
+      "typical_atr_4h": "Very variable. Check before each trade.",
+      "sl_minimum": "Use 1.5x ATR for gold. It's more volatile than forex."
+    },
+    "OIL_CRUDE": {
+      "avg_daily_range": "$1.50-3.00",
+      "best_sessions": "NY, London",
+      "key_characteristic": "Driven by geopolitics and inventory data. Can gap. Very momentum-driven.",
+      "typical_atr_4h": "Check before each trade. Currently elevated due to Hormuz situation.",
+      "special_rule": "During geopolitical events: reduce size to 0.5% risk. Headlines can move oil $5 in minutes."
+    }
+  },
+
+  "___SECTION_10___": "=== TRADE SCORING TEMPLATE ===",
+
+  "trade_scoring_template": {
+    "description": "Fill this out BEFORE every trade. If total score < 3, do NOT take the trade.",
+    "fields": {
+      "instrument": "",
+      "direction": "",
+      "date_time": "",
+      "session": "",
+
+      "gate_1_4H_trend": {"aligned": false, "notes": ""},
+      "gate_2_key_level": {"identified": false, "level": "", "type": "OB/FVG/SR/liquidity"},
+      "gate_3_confirmation": {"signal": "", "tier": "1/2/3", "candle_closed": false},
+      "gate_4_risk_reward": {"entry": 0, "sl": 0, "tp": 0, "rr_ratio": 0},
+      "gate_5_position_size": {"risk_pct": 0, "lots": 0, "risk_amount_usd": 0},
+      "gate_6_correlation": {"existing_positions_same_theme": 0, "total_theme_risk_pct": 0, "pass": false},
+      "gate_7_session_timing": {"current_session": "", "high_impact_news_nearby": false, "pass": false},
+
+      "confluence_score": 0,
+      "conviction": "1-5",
+      "thesis": "",
+      "invalidation": "",
+      "what_could_go_wrong": ""
+    }
+  },
+
+  "___SECTION_11___": "=== WEEKLY REVIEW PROCESS ===",
+
+  "weekly_review": {
+    "when": "Every Sunday evening before the week starts",
+    "steps": [
+      "1. Review all trades from the past week: entries, exits, P&L, rule compliance",
+      "2. For each loss: Was the setup valid? Did I follow my rules? If yes, it's an acceptable loss. If no, identify which rule I broke.",
+      "3. For each win: Was it a good process win or a lucky win? Lucky wins are as dangerous as losses if they reinforce bad habits.",
+      "4. Calculate: win rate, average R:R achieved, rule compliance rate",
+      "5. Identify the ONE biggest improvement to focus on this week",
+      "6. Review macro calendar for the upcoming week and mark key events",
+      "7. Set the week's risk budget: how many trades, what's the max weekly loss I'll accept?"
+    ],
+    "metrics_to_track": {
+      "total_trades": "target: 3-5 per week max",
+      "win_rate": "target: 45%+ (with 2:1 R:R, 45% win rate is profitable)",
+      "average_rr_achieved": "target: 2.0+",
+      "rule_compliance": "target: 100%. Every rule break must be documented.",
+      "max_drawdown_from_peak": "stop trading if drawdown exceeds 10% from peak balance"
+    }
+  }
+}
