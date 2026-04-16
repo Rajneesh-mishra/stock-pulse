@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-16T04:11:00+05:30",
+  "last_tick": "2026-04-16T12:27:00+05:30",
   "regime": "TRANSITIONAL",
-  "regime_note": "NEW DAY — WTI SHORT +$1.74 (new high). Gapped down $88.62→$88.20. Trailing $87 only $1.20 away. News: Iran talks round 2 expected, Hormuz at 10% flow. BTC $75,202 risk-on. Apr 16: Wipro Q4, India 09:15.",
+  "regime_note": "TRAILING ACTIVATED — WTI hit $87.79, SL moved to $90.00 breakeven. RISK-FREE. Current $88.55 (+$1.42). Gold bouncing $4,828. USDJPY 158.79 (yen stronger). London open. Next trail: $85 → SL $88.",
 
   "open_positions": [
     {
@@ -19,10 +19,10 @@
       "opened_at": "2026-04-15T14:50:00+05:30",
       "thesis": "Double-top at $89.77/$90.20 — resistance confirmed. De-escalation thesis: Trump says Iran ready to deal, WTI crashed $104→$85, bounced to $90, now rejecting. R:R 5.25:1.",
       "current_pnl": -0.04,
-      "trailing_active": false,
-      "trailing_trigger": 87.00,
-      "trailing_note": "Activate trailing stop when WTI drops to $87 (50% of TP distance from entry). Move SL to breakeven ($90.00).",
-      "management_rules": "Do NOT tighten SL yet. Let the trade breathe — WTI has $2-3 daily ranges. Only tighten after $87. Key risk: Apr 22 ceasefire deadline failure = crude spike."
+      "trailing_active": true,
+      "trailing_trigger": 85.00,
+      "trailing_note": "ACTIVATED at $87.79. SL moved to $90.00 (breakeven). Next: tighten SL to $88 if WTI drops to $85. Trail $3 below price.",
+      "management_rules": "Trailing ACTIVE. SL at $90.00 (breakeven). Risk = $0. Next tighten at $85 → move SL to $88. Let it run toward $82 TP. Key risk: Apr 22 deadline failure."
     }
   ],
 
