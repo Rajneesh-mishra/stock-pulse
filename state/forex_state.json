@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-17T18:52:00+05:30",
+  "last_tick": "2026-04-17T18:59:00+05:30",
   "regime": "DXY_WEAK_RISK_ON",
-  "regime_note": "DXY 98.27 (near lows). Gold pulled back to $4,798 from $4,882 peak. WTI spiked to $95+ on Hormuz fears then crashed to $90.79 (at short trigger zone). Iran ceasefire extension 'agreed in principle' but Apr 22 binary overhangs everything. RBA 70% May hike bets boosting AUD. EURUSD testing 1.1811 breakout. NO POSITIONS into weekend — Friday + binary event risk.",
+  "regime_note": "DXY near lows. Philly Fed 26.7 (vs 17 est) + claims 207k beat = USD data supportive but DXY not recovering yet. Israel-Lebanon 10-day ceasefire (extra risk-on). Fed speakers Barkin+Waller today — USD risk. Iran Apr 22 binary remains. EURUSD pulled to 1.1780 (no breakout), USDJPY 158.84 (drifting from 160). WTI $90.79 at short zone, no confirmation. NO ENTRIES today — Friday + binary + Fed speakers.",
 
   "open_positions": [],
 
@@ -24,7 +24,7 @@
       "instrument": "USDJPY",
       "direction": "SELL",
       "trigger": "Rally to 160.00-160.20 (intervention risk zone)",
-      "current_price": 159.24,
+      "current_price": 158.84,
       "entry_plan": "Short at ~160.00-160.10 anticipating BoJ/MoF intervention (Japan intervened at 159.23 in Jan 2026, 191-pip crash in 5 min)",
       "sl": 160.50,
       "tp": 158.50,
@@ -51,7 +51,7 @@
       "instrument": "EURUSD",
       "direction": "BUY",
       "trigger": "Break above 1.1811 (day high)",
-      "current_price": 1.1798,
+      "current_price": 1.1780,
       "entry_plan": "Long at ~1.1815 on confirmed break above day high",
       "sl": 1.1770,
       "tp": 1.1860,
@@ -78,7 +78,7 @@
 
   "market_context": {
     "date": "2026-04-17",
-    "session": "NY session open (18:52 IST). Friday. Weekend + Apr 22 binary = NO NEW POSITIONS.",
+    "session": "NY session (18:59 IST). Friday. NO NEW POSITIONS — weekend + Apr 22 binary + Fed speakers today.",
     "key_events_upcoming": [
       "Apr 18-19: BoJ policy meeting (hold at 0.75% expected — USDJPY binary)",
       "Apr 22: US-Iran ceasefire EXPIRY (CRITICAL — talks failed Apr 12-13 but extension 'agreed in principle')",
