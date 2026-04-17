@@ -36,7 +36,7 @@
         "gate": 4,
         "name": "RISK:REWARD >= 2:1",
         "question": "Is the distance to TP at least 2x the distance to SL?",
-        "rule": "Minimum R:R of 2:1. Preferred 3:1. Below 1.5:1 is an automatic SKIP no matter how good the setup looks.",
+        "rule": "Minimum R:R of 2:1. Preferred 3:1. Below 1.5:1 is automatic SKIP. EXCEPTION: 1.8:1 acceptable when conviction 4-5 AND all other 6 gates pass. This prevents over-rigidity on strong setups.",
         "how": "Measure SL distance (entry to invalidation level, NOT arbitrary pips). Measure TP distance (entry to next opposing key level). TP/SL must be >= 2.0."
       },
       {
