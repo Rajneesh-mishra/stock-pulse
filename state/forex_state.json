@@ -1,5 +1,5 @@
 {
-  "last_tick": "2026-04-17T18:59:00+05:30",
+  "last_tick": "2026-04-17T19:03:00+05:30",
   "regime": "DXY_WEAK_RISK_ON",
   "regime_note": "DXY near lows. Philly Fed 26.7 (vs 17 est) + claims 207k beat = USD data supportive but DXY not recovering yet. Israel-Lebanon 10-day ceasefire (extra risk-on). Fed speakers Barkin+Waller today — USD risk. Iran Apr 22 binary remains. EURUSD pulled to 1.1780 (no breakout), USDJPY 158.84 (drifting from 160). WTI $90.79 at short zone, no confirmation. NO ENTRIES today — Friday + binary + Fed speakers.",
 
@@ -51,7 +51,7 @@
       "instrument": "EURUSD",
       "direction": "BUY",
       "trigger": "Break above 1.1811 (day high)",
-      "current_price": 1.1780,
+      "current_price": 1.1798,
       "entry_plan": "Long at ~1.1815 on confirmed break above day high",
       "sl": 1.1770,
       "tp": 1.1860,
@@ -65,14 +65,14 @@
       "instrument": "OIL_CRUDE",
       "direction": "SELL",
       "trigger": "Bounce to $89-90 zone",
-      "current_price": 90.79,
-      "entry_plan": "Short at ~$89.50 on retest of broken support — WAIT FOR WEEKEND + APR 22 RESOLUTION before entering",
+      "current_price": 92.00,
+      "entry_plan": "SHORT THESIS WEAKENING — WTI at $92, approaching $92.40 invalidation. Iran deal doubts + inventory draw driving crude higher. Wait for clear pullback below $91 before re-considering entry.",
       "sl": 91.50,
       "tp": 82.00,
       "size_plan": "Calculate via risk_guard. Reduce to 0.5% risk (geopolitical event)",
-      "thesis": "De-escalation play (Conv 3). WTI crashed $104→$83, spiked to $95 on Hormuz fears, now at $90.79. If Iran extension confirmed, crude heads to $82-85. Short the bounce, don't chase. CONTEXT CHANGED — spike to $95 shows oil can move violently on Iran headlines.",
+      "thesis": "WEAKENING (Conv 2). WTI was at $90.79 short zone but moved to $92 on Iran deal doubts + inventory draw. Approaching $92.40 invalidation. If WTI closes above $92.40, REMOVE this setup.",
       "theme": "geopolitical",
-      "invalidation": "If WTI reclaims $92.40 (IC Markets pivot), cancel. Or if Iran talks collapse (oil to $100+)."
+      "invalidation": "⚠️ APPROACHING INVALIDATION — If WTI reclaims $92.40 (IC Markets pivot), CANCEL setup. Currently at $92.00."
     }
   ],
 
