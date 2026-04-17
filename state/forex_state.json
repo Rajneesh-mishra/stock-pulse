@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-17T18:45:00+05:30",
-  "regime": "TRANSITIONAL",
-  "regime_note": "EXPLOSIVE: Gold $4,882 (RSI 75 overbought), WTI $81.60 (-9.45%!), USD collapsing. Missed Gold — framework R:R gate too rigid at 1.86:1. LESSON: 1.8:1 ok when conv 4-5 + all other gates pass. Adjusting. Now too extended to enter anything. Wait for dust to settle.",
+  "last_tick": "2026-04-17T18:52:00+05:30",
+  "regime": "DXY_WEAK_RISK_ON",
+  "regime_note": "DXY 98.27 (near lows). Gold pulled back to $4,798 from $4,882 peak. WTI spiked to $95+ on Hormuz fears then crashed to $90.79 (at short trigger zone). Iran ceasefire extension 'agreed in principle' but Apr 22 binary overhangs everything. RBA 70% May hike bets boosting AUD. EURUSD testing 1.1811 breakout. NO POSITIONS into weekend — Friday + binary event risk.",
 
   "open_positions": [],
 
@@ -10,7 +10,7 @@
       "instrument": "AUDUSD",
       "direction": "BUY",
       "trigger": "Pullback to 0.7080-0.7090 zone",
-      "current_price": 0.7137,
+      "current_price": 0.7186,
       "entry_plan": "Long at ~0.7085 on pullback to broken resistance (now support)",
       "sl": 0.7030,
       "tp": 0.7187,
@@ -24,7 +24,7 @@
       "instrument": "USDJPY",
       "direction": "SELL",
       "trigger": "Rally to 160.00-160.20 (intervention risk zone)",
-      "current_price": 158.97,
+      "current_price": 159.24,
       "entry_plan": "Short at ~160.00-160.10 anticipating BoJ/MoF intervention (Japan intervened at 159.23 in Jan 2026, 191-pip crash in 5 min)",
       "sl": 160.50,
       "tp": 158.50,
@@ -37,7 +37,7 @@
       "instrument": "USDCAD",
       "direction": "SELL",
       "trigger": "Bounce to 1.3810-1.3830",
-      "current_price": 1.3769,
+      "current_price": 1.3688,
       "entry_plan": "Short at ~1.3820 on bounce to resistance",
       "sl": 1.3880,
       "tp": 1.3730,
@@ -51,7 +51,7 @@
       "instrument": "EURUSD",
       "direction": "BUY",
       "trigger": "Break above 1.1811 (day high)",
-      "current_price": 1.17863,
+      "current_price": 1.1798,
       "entry_plan": "Long at ~1.1815 on confirmed break above day high",
       "sl": 1.1770,
       "tp": 1.1860,
@@ -65,27 +65,27 @@
       "instrument": "OIL_CRUDE",
       "direction": "SELL",
       "trigger": "Bounce to $89-90 zone",
-      "current_price": 88.66,
-      "entry_plan": "Short at ~$89.50 on retest of broken support",
+      "current_price": 90.79,
+      "entry_plan": "Short at ~$89.50 on retest of broken support — WAIT FOR WEEKEND + APR 22 RESOLUTION before entering",
       "sl": 91.50,
       "tp": 82.00,
-      "size_plan": "Calculate via risk_guard",
-      "thesis": "De-escalation play (Conv 3). WTI crashed $104→$85. Bouncing to $88-89. If talks resume, crude heads to $80. Short the bounce, don't chase the dump.",
+      "size_plan": "Calculate via risk_guard. Reduce to 0.5% risk (geopolitical event)",
+      "thesis": "De-escalation play (Conv 3). WTI crashed $104→$83, spiked to $95 on Hormuz fears, now at $90.79. If Iran extension confirmed, crude heads to $82-85. Short the bounce, don't chase. CONTEXT CHANGED — spike to $95 shows oil can move violently on Iran headlines.",
       "theme": "geopolitical",
-      "invalidation": "If WTI reclaims $91, cancel."
+      "invalidation": "If WTI reclaims $92.40 (IC Markets pivot), cancel. Or if Iran talks collapse (oil to $100+)."
     }
   ],
 
   "market_context": {
-    "date": "2026-04-15",
-    "session": "India OPEN (+1.49%). London opens 12:30 IST. F&O expiry. Reliance Q4 after-hours.",
+    "date": "2026-04-17",
+    "session": "NY session open (18:52 IST). Friday. Weekend + Apr 22 binary = NO NEW POSITIONS.",
     "key_events_upcoming": [
-      "Apr 15: F&O expiry + Reliance Q4 results (after hours)",
-      "Apr 22: US-Iran ceasefire deadline (CRITICAL)",
+      "Apr 18-19: BoJ policy meeting (hold at 0.75% expected — USDJPY binary)",
+      "Apr 22: US-Iran ceasefire EXPIRY (CRITICAL — talks failed Apr 12-13 but extension 'agreed in principle')",
       "Apr 28-29: FOMC meeting (Fed hold expected)"
     ],
-    "hormuz_status": "DE-ESCALATION DOMINANT. Trump: Iran ready to deal. Round 2 Pakistan talks in days. WTI crashed $104→$85 (now $88). Ceasefire holds to Apr 22.",
-    "dominant_theme": "DXY WEAKENING (98.13, 7 straight down sessions). Risk-on global rally. De-escalation driving: crude down, gold down, equities up. All new setups are DXY-short or risk-on aligned. Key risk = Apr 22 deadline — if talks fail, violent reversal.",
+    "hormuz_status": "BINARY RISK. Iran talks in Islamabad FAILED Apr 12-13. Ceasefire extension 'agreed in principle' but key issues unresolved (nuclear program, Hormuz, Lebanon). WTI spiked $95+ on Hormuz fears then fell to $90.79 on optimism. If extension confirmed = crude $82-85. If talks collapse = crude $100-110.",
+    "dominant_theme": "DXY WEAKENING (98.27, near lows). Risk-on. AUD strongest G10 (+2.31% month, RBA hike 70% May). Gold pulled back $84 to $4,798 from $4,882 peak. EURUSD testing 1.1811 breakout. USDJPY 159.24 approaching 160 intervention zone. Apr 22 Iran ceasefire = massive binary event overhanging all setups.",
     "instruments_tracked": ["EURUSD", "USDJPY", "GOLD", "OIL_CRUDE", "BTCUSD", "AUDUSD", "USDCAD", "GBPUSD", "USDCHF"]
   },
 
