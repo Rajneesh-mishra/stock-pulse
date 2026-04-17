@@ -1,5 +1,5 @@
 {
-  "last_tick": "2026-04-17T20:15:00+05:30",
+  "last_tick": "2026-04-17T21:22:00+05:30",
   "monday_prep": {
     "key_questions": [
       "1. Did Iran confirm ceasefire extension before Apr 22? (Risk-on = YES / Risk-off = NO)",
@@ -7,7 +7,7 @@
     ],
     "setup_priority": [
       "1. AUDUSD: Buy pullback to 0.7085 — BEST setup (Conv 4, R:R ~2-3:1). Entry ONLY if Iran extension confirmed.",
-      "2. USDJPY: Sell at 160 — wait post-BoJ. If BoJ hikes, skip (USDJPY will drop on its own). If hold, wait for 160 approach.",
+      "2. USDJPY: Sell at 160 — BoJ is Apr 27-28 (not this weekend). More time for drift. Setup window: Mon-Fri next week before BoJ. Reduce size near BoJ date.",
       "3. USDCAD: Sell bounce to 1.3820 — Entry any time (less Iran/BoJ sensitive). DXY weakness play.",
       "4. EURUSD: RESET — needs new structure above 1.1811. Watch for clean breakout with volume Monday."
     ],
@@ -91,9 +91,8 @@
     "date": "2026-04-17",
     "session": "WEEKEND MODE. Friday close 19:46 IST. 0 trades. Capital intact. Next action: Monday open post-Iran/BoJ.",
     "key_events_upcoming": [
-      "TODAY: Fed Barkin + Waller speaking (not yet spoken)",
-      "Apr 18-19: BoJ policy meeting (hold at 0.75% expected)",
-      "Apr 22: US-Iran ceasefire EXPIRY (CRITICAL — doubts resurfacing, WTI spiking to $93.74)",
+      "Apr 22: US-Iran ceasefire EXPIRY (CRITICAL — extension being negotiated)",
+      "Apr 27-28: BoJ policy meeting (CORRECTED — hold at 0.75%, 82% Polymarket odds. NOT Apr 18-19)",
       "Apr 28-29: FOMC meeting (Fed hold expected)"
     ],
     "hormuz_status": "PARTIAL DE-ESCALATION. Hormuz declared open for remaining ceasefire period. Israel-Lebanon ceasefire started. WTI dropped from $93.74 spike back to $90.79. Trump says US-Iran deal 'possible soon' — talks could resume this weekend. BUT Iran deputy FM rejects temporary deal, wants comprehensive settlement. Gap still wide (nuclear terms, enrichment, 20yr vs 5yr). Deal in months, not days. Apr 22 = critical — if ceasefire expires without extension, Hormuz risk returns.",
