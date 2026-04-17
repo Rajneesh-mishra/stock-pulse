@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-17T19:03:00+05:30",
-  "regime": "DXY_WEAK_RISK_ON",
-  "regime_note": "DXY near lows. Philly Fed 26.7 (vs 17 est) + claims 207k beat = USD data supportive but DXY not recovering yet. Israel-Lebanon 10-day ceasefire (extra risk-on). Fed speakers Barkin+Waller today — USD risk. Iran Apr 22 binary remains. EURUSD pulled to 1.1780 (no breakout), USDJPY 158.84 (drifting from 160). WTI $90.79 at short zone, no confirmation. NO ENTRIES today — Friday + binary + Fed speakers.",
+  "last_tick": "2026-04-17T19:08:00+05:30",
+  "regime": "RISK_ON_BUT_IRAN_DOUBT_RISING",
+  "regime_note": "WTI $93.74 — spiked above $92.40 invalidation on Iran deal doubts resurfacing. OIL short CANCELLED. Risk-on regime INTACT but developing a crack: if Iran talks fully collapse before Apr 22, expect oil $100+, gold up, AUD/EUR down. EURUSD 1.1798 stable. USDJPY 158.84 drifting. DXY still near lows. Fed Barkin+Waller not yet spoken. Monitor AUDUSD and EURUSD longs — Iran escalation = risk-off = these setups FAIL.",
 
   "open_positions": [],
 
@@ -64,28 +64,24 @@
     {
       "instrument": "OIL_CRUDE",
       "direction": "SELL",
-      "trigger": "Bounce to $89-90 zone",
-      "current_price": 92.00,
-      "entry_plan": "SHORT THESIS WEAKENING — WTI at $92, approaching $92.40 invalidation. Iran deal doubts + inventory draw driving crude higher. Wait for clear pullback below $91 before re-considering entry.",
-      "sl": 91.50,
-      "tp": 82.00,
-      "size_plan": "Calculate via risk_guard. Reduce to 0.5% risk (geopolitical event)",
-      "thesis": "WEAKENING (Conv 2). WTI was at $90.79 short zone but moved to $92 on Iran deal doubts + inventory draw. Approaching $92.40 invalidation. If WTI closes above $92.40, REMOVE this setup.",
-      "theme": "geopolitical",
-      "invalidation": "⚠️ APPROACHING INVALIDATION — If WTI reclaims $92.40 (IC Markets pivot), CANCEL setup. Currently at $92.00."
+      "status": "INVALIDATED",
+      "invalidated_at": "2026-04-17T19:08:00+05:30",
+      "invalidation_reason": "WTI broke above $92.40 pivot (now $93.74) on Iran deal doubts + inventory draw. Pre-set invalidation rule triggered. Do NOT short here — thesis has reversed.",
+      "monitor_for_re-entry": "If Iran extension CONFIRMED and WTI drops back below $89, a new short setup may form. Do not chase."
     }
   ],
 
   "market_context": {
     "date": "2026-04-17",
-    "session": "NY session (18:59 IST). Friday. NO NEW POSITIONS — weekend + Apr 22 binary + Fed speakers today.",
+    "session": "NY session (19:08 IST). Friday. OIL SHORT INVALIDATED. NO NEW POSITIONS.",
     "key_events_upcoming": [
-      "Apr 18-19: BoJ policy meeting (hold at 0.75% expected — USDJPY binary)",
-      "Apr 22: US-Iran ceasefire EXPIRY (CRITICAL — talks failed Apr 12-13 but extension 'agreed in principle')",
+      "TODAY: Fed Barkin + Waller speaking (not yet spoken)",
+      "Apr 18-19: BoJ policy meeting (hold at 0.75% expected)",
+      "Apr 22: US-Iran ceasefire EXPIRY (CRITICAL — doubts resurfacing, WTI spiking to $93.74)",
       "Apr 28-29: FOMC meeting (Fed hold expected)"
     ],
-    "hormuz_status": "BINARY RISK. Iran talks in Islamabad FAILED Apr 12-13. Ceasefire extension 'agreed in principle' but key issues unresolved (nuclear program, Hormuz, Lebanon). WTI spiked $95+ on Hormuz fears then fell to $90.79 on optimism. If extension confirmed = crude $82-85. If talks collapse = crude $100-110.",
-    "dominant_theme": "DXY WEAKENING (98.27, near lows). Risk-on. AUD strongest G10 (+2.31% month, RBA hike 70% May). Gold pulled back $84 to $4,798 from $4,882 peak. EURUSD testing 1.1811 breakout. USDJPY 159.24 approaching 160 intervention zone. Apr 22 Iran ceasefire = massive binary event overhanging all setups.",
+    "hormuz_status": "ESCALATING DOUBTS. WTI spiked back to $93.74 on Iran deal doubts. Extension was 'agreed in principle' but talks may be breaking down again ahead of Apr 22. Watch for news — if deal confirmed = crude $82-85, all risk-on setups live. If collapse = crude $100-110, risk-off, AUDUSD/EURUSD fail.",
+    "dominant_theme": "CAUTIOUS RISK-ON. DXY near lows but WTI spiking ($93.74) on Iran doubts signals possible regime crack. EURUSD 1.1798 stable. USDJPY 158.84 drifting. OIL short INVALIDATED. 4 active setups remain (AUDUSD, USDJPY, USDCAD, EURUSD) — all contingent on Iran not collapsing.",
     "instruments_tracked": ["EURUSD", "USDJPY", "GOLD", "OIL_CRUDE", "BTCUSD", "AUDUSD", "USDCAD", "GBPUSD", "USDCHF"]
   },
 
