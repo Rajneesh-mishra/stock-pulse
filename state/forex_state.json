@@ -1,50 +1,9 @@
 {
-  "last_tick": "2026-04-17T10:18:00+05:30",
+  "last_tick": "2026-04-17T10:43:00+05:30",
   "regime": "TRANSITIONAL",
-  "regime_note": "USDJPY -$0.74, new high 159.42, SL 12 pips away. Likely stopping out today. Dollar strong across the board. Gold new low $4,767. Framework validation — this trade failed 3/7 gates. When it stops, go FLAT and only take 7-gate setups.",
+  "regime_note": "ALL FLAT. USDJPY stopped at 159.50. Account ~$9,850 (-1.5%). 4 trades: 2 breakeven, 2 losses. Strategy framework validated — losing trades failed the 7-gate checklist. Clean slate. Next trade MUST pass all 7 gates. London 12:30 IST for first proper scan.",
 
-  "open_positions": [
-    {
-      "dealId": "00000000-4dca-e488-044a-beb40055311e",
-      "instrument": "USDJPY",
-      "direction": "SELL",
-      "entry_price": 158.80,
-      "current_price": 158.809,
-      "sl": 159.50,
-      "tp": 157.50,
-      "size": 200.0,
-      "risk_amount": 140.0,
-      "risk_pct": 0.014,
-      "theme": "intervention_play",
-      "opened_at": "2026-04-16T12:41:00+05:30",
-      "thesis": "Suspected BoJ intervention today (USDJPY hit 158.26 from 159.01). DXY at 98.13 falling. Yen strengthening on de-escalation. BoJ tightening path. R:R 1.7:1.",
-      "current_pnl": 0,
-      "trailing_active": false,
-      "trailing_trigger": 158.10,
-      "trailing_note": "Activate trailing if USDJPY drops to 158.10 (50% to TP). Move SL to breakeven 158.80.",
-      "management_rules": "Let it breathe. USDJPY has 50-70 pip daily ranges. Only tighten after 158.10. Key risk: risk-on spike above 159.50."
-    },
-    {
-      "dealId": "00000000-4dca-e498-044a-beb40055311e",
-      "instrument": "EURUSD",
-      "direction": "BUY",
-      "entry_price": 1.17949,
-      "current_price": 1.17942,
-      "sl": 1.1770,
-      "tp": 1.1860,
-      "size": 60000.0,
-      "risk_amount": 150.0,
-      "risk_pct": 0.015,
-      "theme": "dollar_macro",
-      "opened_at": "2026-04-16T12:41:00+05:30",
-      "thesis": "DXY freefall (98.13, 7+ down sessions). EURUSD hit 1.18237 today — buying the breakout retest. Dollar weakness structural. R:R 1.7:1.",
-      "current_pnl": -0.002,
-      "trailing_active": false,
-      "trailing_trigger": 1.1830,
-      "trailing_note": "Activate trailing if EUR breaks 1.1830 (50% to TP). Move SL to breakeven 1.1805.",
-      "management_rules": "DXY trend trade. Let it work over days. FOMC Apr 28 is the catalyst. Only tighten after 1.1830."
-    }
-  ],
+  "open_positions": [],
 
   "watchlist": [
     {
