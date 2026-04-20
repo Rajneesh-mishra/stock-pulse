@@ -1,0 +1,9 @@
+[
+  {
+    "ts_utc": "2026-04-20T18:32:00Z",
+    "trigger": "forex_auto",
+    "events_processed": 18,
+    "actions": "3 bar_close SKIP, 15 news_flash Iran-repeat SKIP, 0 trades",
+    "notes": "AUDUSD 0.71759, USDJPY 158.755, GOLD 4813.28; flat $1000; T-29.5h to Apr 22 ceasefire expiry"
+  }
+]
