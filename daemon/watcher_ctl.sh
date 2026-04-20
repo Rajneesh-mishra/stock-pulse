@@ -15,14 +15,30 @@
 set -euo pipefail
 
 REPO="/Users/rajneeshmishra/Downloads/stock-pulse"
-LABEL="com.stockpulse.forexwatcher"
-PLIST_SRC="$REPO/daemon/com.stockpulse.forexwatcher.plist"
+
+# Which daemon? Second arg (default: watcher)
+# Usage: watcher_ctl.sh <cmd> [watcher|posync]
+DAEMON="${2:-watcher}"
+case "$DAEMON" in
+  watcher)
+    LABEL="com.stockpulse.forexwatcher"
+    CONTROL="$REPO/state/forex_watcher.control"
+    STATUS="$REPO/state/forex_watcher_status.json"
+    LOG_OUT="$REPO/logs/forex_watcher.out.log"
+    LOG_ERR="$REPO/logs/forex_watcher.err.log"
+    ;;
+  posync|positionsync)
+    LABEL="com.stockpulse.forexpositionsync"
+    CONTROL="$REPO/state/forex_position_sync.control"
+    STATUS="$REPO/state/forex_position_sync_status.json"
+    LOG_OUT="$REPO/logs/forex_position_sync.out.log"
+    LOG_ERR="$REPO/logs/forex_position_sync.err.log"
+    ;;
+  *) echo "Unknown daemon: $DAEMON (use 'watcher' or 'posync')"; exit 1 ;;
+esac
+PLIST_SRC="$REPO/daemon/$LABEL.plist"
 PLIST_DST="$HOME/Library/LaunchAgents/$LABEL.plist"
-CONTROL="$REPO/state/forex_watcher.control"
-STATUS="$REPO/state/forex_watcher_status.json"
 EVENTS="$REPO/state/forex_events.jsonl"
-LOG_OUT="$REPO/logs/forex_watcher.out.log"
-LOG_ERR="$REPO/logs/forex_watcher.err.log"
 
 cmd="${1:-help}"
 
@@ -103,7 +119,24 @@ except Exception as e:
     ;;
 
   help|*)
-    echo "Usage: $0 {install|uninstall|start|stop|pause|run|status|logs|errlog|events}"
+    cat <<USAGE
+Usage: $0 <cmd> [watcher|posync]
+  install        copy plist to LaunchAgents + load (default: watcher)
+  uninstall      unload + remove plist
+  start          start/kickstart
+  stop           set control file to "stop" (graceful exit)
+  pause          set control file to "pause"
+  run            set control file to "run"
+  status         show launchd state + status.json
+  logs           tail -f stdout log
+  errlog         tail -f stderr log
+  events         tail -f events.jsonl (human-readable, watcher only)
+
+Examples:
+  $0 install           # install watcher
+  $0 install posync    # install position-sync
+  $0 status posync
+USAGE
     exit 1
     ;;
 esac

@@ -10,8 +10,11 @@
 state/.capital_session.json
 # Daemon logs
 logs/
-# Watcher control file
+# Daemon control files + runtime caches (local-only)
 state/forex_watcher.control
+state/forex_position_sync.control
+state/.watcher_runtime.json
+state/.position_sync_runtime.json
 # Claude session stuff
 .claude/
 .playwright-mcp/
