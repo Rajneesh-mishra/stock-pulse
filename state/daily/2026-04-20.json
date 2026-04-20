@@ -7,5 +7,13 @@
     "reason": "AUDUSD counter-regime bull; USDJPY 22p from risk-off break; GOLD neutral no BOS",
     "news": "Trump extension 'highly unlikely'; WTI $89; Brent $95.50",
     "positions": "flat $1000"
+  },
+  {
+    "ts_ist": "2026-04-20T23:33",
+    "trigger": "level_enter",
+    "instrument": "GOLD",
+    "action": "SKIP",
+    "reason": "no M15 BOS + no rejection wick + composite 7.0 aligned=false + DAY -0.15 + dollar bid -0.46% contradicts safe-haven",
+    "price": 4810.6
   }
 ]

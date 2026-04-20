@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-20T23:20:00+05:30",
+  "last_tick": "2026-04-20T23:33:00+05:30",
   "regime": "ESCALATION_CONFIRMED_BLOCKADE_BITING",
-  "regime_note": "MONDAY 2026-04-20 23:20 IST. 3 M15 bar_close SKIP repeat (AUDUSD 0.7173 counter-regime bull; USDJPY 158.71 21p from 158.50 break; GOLD 4808 in buy zone no rejection wick). Prices ~flat vs 23:09 tick. Flat broker $1000. Trump Apr 20 'ceasefire extension highly unlikely' \u2014 WTI $89, Brent $95.50, Hormuz re-closed. Wed Apr 22 expiry = primary catalyst. Watchlist 5 alerts + 8 queries all KEEP.",
+  "regime_note": "MONDAY 2026-04-20 23:33 IST. 1 GOLD level_enter SKIP \u2014 price 4810 at zone top edge BUT no M15 BOS (last_bos=null), composite 7.0 aligned=false, DAY -0.15, no rejection wick, -0.46% day on dollar bid contradicts safe-haven. Trump: ceasefire extension 'highly unlikely', expires Wed 0000 GMT. Iran says 'no plans' for more talks. Flat broker $1000. All 5 watchlist + 8 queries KEEP.",
   "open_positions": [],
   "watchlist": [
     {
@@ -149,7 +149,7 @@
     "telegram_on_trade": true,
     "telegram_chat_ids": "6838758759,849258319"
   },
-  "last_tick_ts": "2026-04-20T16:31:47.767067+00:00",
+  "last_tick_ts": "2026-04-20T18:04:31.936234+00:00",
   "tracker": [
     {
       "situation": "US Navy Blockade of Iran \u2014 day 4",
@@ -159,7 +159,7 @@
       "note": "15 fresh news_flash headlines this tick: CNBC (blockade day 4), AP/BBC/WaPo/Reuters (Hormuz fully closed, ships attacked), NYT (blockade status unclear, some transits), USNI (US seized Iranian container ship), Jerusalem Post (Indian-flagged vessel hit), Al Jazeera (sanctioned tankers still transit + Trump confirms seizure), Maritime Executive (IRGC fired on containership/tanker/cruise ship). Apr 22 ceasefire effectively dead. Binary risk: escalation ladder (Iran retaliatory strike on US asset) or de-escalation shock (surprise deal)."
     }
   ],
-  "last_tick_utc": "2026-04-20T16:55:49.012851Z",
+  "last_tick_utc": "2026-04-20T18:04:31.936234+00:00",
   "tick_history": [
     {
       "ts_utc": "2026-04-20T14:45:29.961114Z",
@@ -192,6 +192,14 @@
       "closed": 0,
       "skipped": 3,
       "note": "bar_close triage \u2014 AUDUSD 39 bull vs SELL, USDJPY -40 below zone, EURUSD 46 below breakout; none aligned; all KEEP watchlist"
+    },
+    {
+      "ts_utc": "2026-04-20T18:04:31.936234+00:00",
+      "events_in": 1,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 1,
+      "note": "GOLD level_enter SKIP \u2014 no M15 BOS, no rejection wick, aligned=false, dollar-bid contradicts safe-haven"
     }
   ],
   "recent_skips": [
@@ -209,6 +217,13 @@
       "event_id": "evt_1776699689518_bar_close",
       "ts_utc": "2026-04-20T15:41",
       "reason": "EURUSD 15M bar_close: score 46 bullish, 1.1788 below 1.1815 breakout trigger"
+    },
+    {
+      "event_id": "evt_1776708155880_level_enter",
+      "ts_utc": "2026-04-20T18:04:31.936234+00:00",
+      "instrument": "GOLD",
+      "reason": "No M15 BOS + no rejection wick + composite neutral 7.0 aligned=false + DAY -0.15 + -0.46% day on dollar bid",
+      "price": 4810.6
     }
   ],
   "last_tick_summary": "22:55 IST auto \u2014 1 GOLD level_enter SKIP (4809 in zone, composite 7 neutral aligned=False, M15 trend unknown, inside bear FVG); REGIME FLIP: Hormuz re-closed Apr 18, WTI $89.94 +7.14%, Brent $95.71, gold -0.7% on dollar bid; watchlist removed oil_85 (thesis dead), oil_90 imminent 6p away conv 4; queries 8/8 KEEP; positions flat",
