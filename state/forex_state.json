@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-20T21:30:00+05:30",
   "regime": "ESCALATION_CONFIRMED",
-  "regime_note": "MONDAY 2026-04-20 21:40 IST. ESCALATION_CONFIRMED intact. This tick: 11 bar_close events (AUDUSD x3, USDJPY x2, GOLD x3, USDCAD x1, OIL_CRUDE x2). ALL SKIPPED. Confluence snapshot: AUDUSD +50 bullish all-TF-agree (contradicts SELL watchlist breakdown <0.707); USDJPY -40 bearish aligned=False, price 158.68 \u2014 158.50 break trigger 18 pips away (MOST ACTIONABLE); GOLD neutral -8, px 4798.91 inside buy zone (4780-4810) but no rejection wick; OIL_CRUDE -20 bearish (broker 87.38 vs news WTI $88.3 \u2014 pullback despite Hormuz CLOSED Apr 18); USDCAD -31 bearish aligned=False, px 1.36465 below bounce zone. News: Hormuz re-closed Apr 18, US Navy seized Iran-flagged vessel, Brent $96 +6.3%, WTI $88.3 +7%, Iran suspends talks. Watchlist: 7 alerts all KEEP. News queries: 8 all KEEP.",
+  "regime_note": "MONDAY 2026-04-20 21:55 IST. ESCALATION_CONFIRMED intact. Tick: 3 bar_close events (AUDUSD/USDJPY/GOLD M15) \u2014 ALL SKIPPED. AUDUSD 0.7174 +12 bull, 100p above 0.707 breakdown \u2014 cannot sell. USDJPY 158.657 \u2014 only 15 pips above 158.50 risk-off break (IMMINENT, wait for cross_down + retest). GOLD 4797 NOW IN buy zone 4780-4810, but confluence -8 neutral, not aligned \u2192 7-gate fails, skip. WTI 87.33 +4.29% (Reuters: US crude 90.33 Brent 96.88 +7%), approaching $90 trigger. USDCAD 1.364 below 1.37 bounce zone. Hormuz closed, ship seized, Iran vows retaliation. Watchlist 7/7 KEEP, queries 8/8 KEEP. No trades, 0 open.",
   "open_positions": [],
   "watchlist": [
     {
@@ -159,7 +159,7 @@
       "note": "15 fresh news_flash headlines this tick: CNBC (blockade day 4), AP/BBC/WaPo/Reuters (Hormuz fully closed, ships attacked), NYT (blockade status unclear, some transits), USNI (US seized Iranian container ship), Jerusalem Post (Indian-flagged vessel hit), Al Jazeera (sanctioned tankers still transit + Trump confirms seizure), Maritime Executive (IRGC fired on containership/tanker/cruise ship). Apr 22 ceasefire effectively dead. Binary risk: escalation ladder (Iran retaliatory strike on US asset) or de-escalation shock (surprise deal)."
     }
   ],
-  "last_tick_utc": "2026-04-20T16:13:51.526569Z",
+  "last_tick_utc": "2026-04-20T16:26:56.848209Z",
   "tick_history": [
     {
       "ts_utc": "2026-04-20T14:45:29.961114Z",
