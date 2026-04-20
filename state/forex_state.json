@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-21T02:03:00+05:30",
+  "last_tick": "2026-04-21T02:12:00+05:30",
   "regime": "ESCALATION_CONFIRMED_BLOCKADE_BITING",
-  "regime_note": "2026-04-21 ~20:33 UTC forex auto \u2014 15 news_flash (mostly Feb-Mar 2026 backfill on us_iran_military query; no regime shift) + 1 USDCAD level_enter (zone 1.36503-1.36612 retest) SKIPPED: regime ESCALATION contradicts USD-short, no M15 BOS confirmation in payload, R:R 1.5:1 < 2:1, oil $87.02 still NOT pricing escalation. Current: USDCAD 1.3651 (bid 1.3650/offer 1.3652) just at zone floor; AUDUSD 0.71785 85p above 0.707; USDJPY 158.873 37p above 158.50; GOLD 4817.11 above zone top 4810; OIL 87.022 298p below 90; T-~27h Wed Apr 22 00:00 GMT expiry. Flat broker $1000.",
+  "regime_note": "2026-04-21 ~20:42 UTC forex auto \u2014 8 M15 bar_close all SKIP (no BOS/ChoCh/fresh FVG; routine closes). Prices nearly flat vs 20:33: AUDUSD 0.71788 (+3p, 85p above 0.707); USDJPY 158.891 (+1.8p, 39p above 158.50, drifting UP not flushing); GOLD 4815.21 (-1.9, 5.21 above zone top 4810); OIL 86.737 (-28p, 326p below 90, still NOT pricing escalation); USDCAD 1.36488 (-2.2p, 1.5p below bear FVG zone 1.36503-612 \u2014 closest to action); EURUSD 1.17863; GBPUSD 1.35347; USDCHF 0.77836. T-~27h Wed Apr 22 00:00 GMT ceasefire expiry. 5 watchlist + 9 structure + 8 news queries all KEEP. Flat broker $1000.",
   "open_positions": [],
   "watchlist": [
     {
