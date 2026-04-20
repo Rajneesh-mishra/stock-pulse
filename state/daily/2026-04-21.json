@@ -19,5 +19,12 @@
       "positions": 0
     },
     "audit": "5 watchlist + 8 queries all KEEP"
+  },
+  {
+    "ts_utc": "2026-04-20T19:00:00Z",
+    "trigger": "forex_auto",
+    "events_processed": 5,
+    "actions": "5 bar_close SKIP (USDJPY M15, GOLD M15, USDCAD H1, EURUSD H1+M15), 0 trades. Added usdcad_short_fvg_retest watchlist alert (H1 bear FVG 1.36503-1.36612 unmitigated, Conv 3)",
+    "notes": "USDJPY 158.906 (drifted +18p away from 158.50 break), GOLD 4814.69 (above zone top, bull FVG mitigated), USDCAD 1.36439 (new bear FVG + bear BOS), EURUSD 1.178 (chop). Flat broker $1000. Watchlist 5\u21926 alerts. T-~29h to Apr 22 0000 GMT ceasefire expiry."
   }
 ]

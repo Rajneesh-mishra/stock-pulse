@@ -1,10 +1,11 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-20T23:07:00+05:30",
-  "pruned_at": "2026-04-20T23:07:00+05:30",
-  "pruned_by": "Trump Apr 20 said ceasefire extension 'highly unlikely'; WTI back to ~$89, Brent $95.50. Hormuz re-closed by Iran military control. All 5 watchlist alerts KEEP — each tests actively at current levels. No new additions.",
-  "pruned_removed": [
-    "usdjpy_intervention_zone (price 158.72, 108p below 160; risk-off regime bids yen not USD — direction contradicts thesis; keep riskoff_break instead)"
+  "last_updated_by_claude": "2026-04-21T00:35:00+05:30",
+  "pruned_at": "2026-04-21T00:35:00+05:30",
+  "pruned_by": "USDCAD H1 bar_close 1.36439 revealed fresh bear FVG 1.36503-1.36612 + unmitigated, bear BOS 30 bars ago still valid. Oil strength (Iran ceasefire expiry Wed Apr 22) favors CAD bid >USD safehaven on this pair per H1 structure. ADDED usdcad_short_fvg_retest (Conv 3). All 5 prior alerts KEEP — levels still live.",
+  "pruned_removed": [],
+  "pruned_added": [
+    "usdcad_short_fvg_retest (new H1 bear FVG 1.36503-1.36612 unmitigated; short on retest; Conv 3; SL 1.3685, TP 1.3580; oil+CAD thesis)"
   ],
   "instruments": [
     "EURUSD",
@@ -36,7 +37,7 @@
       "level": 158.5,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break 158.50 = risk-off yen flight confirmed. Short on retest from below. Price 158.72, 22p away. H1+M15 bearish BOS/ChoCh stacked — imminent. SL 159.20, TP 157.00."
+      "note": "Break 158.50 = risk-off yen flight confirmed. Short on retest from below. Price 158.91, 41p away — drifted up this tick, bull FVG 158.824-158.9005 formed M15. H1+M15 bearish BOS/ChoCh stacked still — imminent on risk-off flush. SL 159.20, TP 157.00."
     },
     {
       "id": "oil_crude_escalation_90",
@@ -53,7 +54,7 @@
       "zone_high": 4810.0,
       "emit_on": "enter",
       "cooldown_sec": 900,
-      "note": "Safe-haven long on pullback into zone. Price 4808 IN zone but -0.5% day on dollar bid. Needs rejection wick + M15 bullish BOS before entry. SL 4745, TP 4900/5000. Conv 3."
+      "note": "Safe-haven long on pullback into zone. Price 4814.69 just ABOVE zone top 4810 (bull FVG 4809.89-4812.01 now mitigated). Needs rejection wick + M15 bullish BOS inside zone before entry. SL 4745, TP 4900/5000. Conv 3."
     },
     {
       "id": "gold_5000_psych",
@@ -62,6 +63,15 @@
       "emit_on": "cross_up",
       "cooldown_sec": 3600,
       "note": "Psych level — exit zone for any gold longs; profit-take / partial. Not an entry."
+    },
+    {
+      "id": "usdcad_short_fvg_retest",
+      "instrument": "USDCAD",
+      "zone_low": 1.36503,
+      "zone_high": 1.36612,
+      "emit_on": "enter",
+      "cooldown_sec": 1800,
+      "note": "H1 bear FVG unmitigated after bear BOS 30 bars ago; price 1.36439 just below. Short on retest into zone with M15 bear confirmation. Thesis: oil strength + bearish H1 structure > USD safe-haven bid for this pair. SL 1.3685 (above bear OB 1.37026), TP1 1.3600, TP2 1.3550. Conv 3."
     }
   ],
   "structure_watch": [
