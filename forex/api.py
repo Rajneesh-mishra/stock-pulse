@@ -42,16 +42,54 @@ INSTRUMENTS = {
     "BTCUSD":    {"epic": "BTCUSD",    "name": "Bitcoin/USD",  "type": "crypto"},
 }
 
-# ── Session ──────────────────────────────────────────────────────────────────
+# ── Session (disk-cached, 8-min TTL, shared with technicals.py) ──────────────
+_SESSION_FILE = Path(__file__).parent.parent / "state" / ".capital_session.json"
+_SESSION_TTL_SEC = 480  # 8 min (server TTL is 10 min; refresh early)
+
+
 def create_session():
-    r = requests.post(f"{BASE}/api/v1/session",
-        headers={"X-CAP-API-KEY": API_KEY, "Content-Type": "application/json"},
-        json={"identifier": EMAIL, "password": PASSWORD, "encryptedPassword": False},
-        timeout=15)
+    """Return (CST, X-SECURITY-TOKEN). Reuses disk cache across processes to
+    avoid hammering the 1-req/sec /session endpoint when multiple daemons +
+    CLI calls run concurrently."""
+    import time
+    # Disk cache hit?
+    if _SESSION_FILE.exists():
+        try:
+            cached = json.loads(_SESSION_FILE.read_text())
+            if (time.time() - cached.get("ts", 0) < _SESSION_TTL_SEC
+                    and cached.get("base") == BASE):
+                return cached["cst"], cached["tok"]
+        except Exception:
+            pass
+
+    # Create fresh session with retry on 429
+    for attempt in range(4):
+        r = requests.post(f"{BASE}/api/v1/session",
+            headers={"X-CAP-API-KEY": API_KEY, "Content-Type": "application/json"},
+            json={"identifier": EMAIL, "password": PASSWORD, "encryptedPassword": False},
+            timeout=15)
+        if r.status_code == 200:
+            break
+        if r.status_code == 429:
+            time.sleep(2 + attempt * 2)
+            continue
+        print(json.dumps({"error": f"Session failed: {r.status_code}", "body": r.text[:300]}))
+        sys.exit(1)
+
     if r.status_code != 200:
         print(json.dumps({"error": f"Session failed: {r.status_code}", "body": r.text[:300]}))
         sys.exit(1)
-    return r.headers["CST"], r.headers["X-SECURITY-TOKEN"]
+
+    cst, tok = r.headers["CST"], r.headers["X-SECURITY-TOKEN"]
+    try:
+        _SESSION_FILE.parent.mkdir(parents=True, exist_ok=True)
+        _SESSION_FILE.write_text(json.dumps({
+            "cst": cst, "tok": tok, "base": BASE, "ts": time.time(),
+        }))
+        _SESSION_FILE.chmod(0o600)
+    except Exception:
+        pass
+    return cst, tok
 
 def h(cst, tok):
     return {"CST": cst, "X-SECURITY-TOKEN": tok, "Content-Type": "application/json"}
