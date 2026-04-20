@@ -33,7 +33,7 @@
         "trigger": "heartbeat",
         "events_processed": 0,
         "action": "SKIP",
-        "summary": "Heartbeat — 0 events. Broker flat $1000. NEWS: Tehran SKIPPED round 2 Islamabad talks Apr 20 calling US demands 'childish', cited US naval blockade as ceasefire breach. Hormuz still closed. USD/JPY 158.72 verbal BoJ escalation only (Katayama G7, Akazawa hike talk), no intervention. Tuned iran_ceasefire and boj_intervention queries. Watchlist 5 KEEP.",
+        "summary": "Heartbeat \u2014 0 events. Broker flat $1000. NEWS: Tehran SKIPPED round 2 Islamabad talks Apr 20 calling US demands 'childish', cited US naval blockade as ceasefire breach. Hormuz still closed. USD/JPY 158.72 verbal BoJ escalation only (Katayama G7, Akazawa hike talk), no intervention. Tuned iran_ceasefire and boj_intervention queries. Watchlist 5 KEEP.",
         "watchlist_audit": "5 KEEP",
         "queries_audit": "6 KEEP, 2 TUNE"
       },
@@ -50,7 +50,7 @@
       {
         "ts_utc": "2026-04-20T19:15:00Z",
         "events_in": 8,
-        "action": "SKIP all 8 bar_close — no level hits, no structure breaks",
+        "action": "SKIP all 8 bar_close \u2014 no level hits, no structure breaks",
         "prices": {
           "AUDUSD_H1": 0.71785,
           "USDJPY_H1": 158.828,
@@ -74,7 +74,7 @@
       {
         "ts": "2026-04-20T19:44:00Z",
         "trigger": "8 M15 bar_close",
-        "action": "all SKIP — no fresh BOS/ChoCh any pair, bull FVGs mitigated on AUDUSD/USDJPY/GOLD/USDCAD/GBPUSD, price away from all 6 alert levels",
+        "action": "all SKIP \u2014 no fresh BOS/ChoCh any pair, bull FVGs mitigated on AUDUSD/USDJPY/GOLD/USDCAD/GBPUSD, price away from all 6 alert levels",
         "positions": 0,
         "balance": 1000.0,
         "pnl": 0,
@@ -92,7 +92,7 @@
         "ts": "2026-04-20T20:14:36.918015Z",
         "trigger": "bar_close_batch",
         "events_processed": 21,
-        "actions": "all SKIP — no fresh structure, prices unchanged from 20:01 tick, all 6 alert levels out of reach",
+        "actions": "all SKIP \u2014 no fresh structure, prices unchanged from 20:01 tick, all 6 alert levels out of reach",
         "news": "Bloomberg: US-Iran weighing 2wk ceasefire extension; Hormuz still shut; Trump says extension highly unlikely",
         "audit": "6 watchlist + 9 structure + 8 queries all KEEP"
       }
@@ -111,12 +111,20 @@
   {
     "ts": "2026-04-20T22:08Z",
     "type": "forex_auto",
-    "summary": "17 bar_close events post-maintenance reopen — all SKIP. Mild risk-on drift: USDJPY +6p (28p above 158.50), GOLD +$8 ($18 above 4780-4810 zone). Flat $1000. T-22h to Wed Apr 22 ceasefire. Audit all KEEP."
+    "summary": "17 bar_close events post-maintenance reopen \u2014 all SKIP. Mild risk-on drift: USDJPY +6p (28p above 158.50), GOLD +$8 ($18 above 4780-4810 zone). Flat $1000. T-22h to Wed Apr 22 ceasefire. Audit all KEEP."
   },
   {
     "ts_utc": "2026-04-20T23:21:00Z",
     "events": 9,
     "action": "SKIP_ALL_HEARTBEAT",
-    "summary": "9 bar_close all SKIP. Risk-on drift: USDJPY +7p away from 158.50 trigger (35p buffer), EURUSD -4p off day high. GOLD/OIL/AUDUSD/USDCAD flat. Iran ceasefire Wed expiry intact — CNN Trump 'extension highly unlikely', Vance→Pakistan Tue, nuclear enrichment sticking point. All 5+9+8 KEEP. MODIFIED usdjpy+gold notes."
+    "summary": "9 bar_close all SKIP. Risk-on drift: USDJPY +7p away from 158.50 trigger (35p buffer), EURUSD -4p off day high. GOLD/OIL/AUDUSD/USDCAD flat. Iran ceasefire Wed expiry intact \u2014 CNN Trump 'extension highly unlikely', Vance\u2192Pakistan Tue, nuclear enrichment sticking point. All 5+9+8 KEEP. MODIFIED usdjpy+gold notes."
+  },
+  {
+    "t": "2026-04-20T23:34:28Z",
+    "trigger": "news_backfill_heartbeat",
+    "summary": "15 news_flash all historical backfill (us_iran_military\u00d79 + iran_ceasefire\u00d71 + rba_hike\u00d74 + rba\u00d71, Dec 2025-Apr 13 publish dates) no delta. Broker $1000 flat 0 pos. Prices drift: USDJPY 158.846 flat 34.6p above 158.50, GOLD 4822.79 -2p 13p above zone top, OIL 86.33 flat 3.67 below 90, EURUSD 1.17839 7p off day high. Regime KINETIC_EXCHANGE intact. MODIFIED usdjpy+gold notes. 5+9+8 all KEEP. SKIP heartbeat.",
+    "opened": 0,
+    "closed": 0,
+    "skipped": 15
   }
 ]

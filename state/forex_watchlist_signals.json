@@ -1,135 +1,135 @@
 {
-  "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T04:51:30+05:30",
-  "pruned_at": "2026-04-21T04:51:30+05:30",
-  "pruned_by": "23:21 UTC tick — 9 bar_close (H1 GBPUSD + M15 on 7 pairs + GBPUSD M15) ALL SKIP heartbeat. Broker $1000 flat 0 pos reconciled. Prices now: USDJPY 158.847 drifted 7p FURTHER from 158.50 (now 35p above vs 27p last tick, session low 158.546 held 30p buffer), GOLD 4824.79 flat (8p from day high 4833, 15p above 4810 zone top), OIL 86.41 flat (3.6 below 90 trigger), EURUSD 1.17848 drifted 4p off day high 1.17908, AUDUSD 0.7178 at day high, USDCAD 1.3641 flat 7p below 1.36503 zone_low, GBPUSD 1.3533 flat, USDCHF 0.7784 flat. Iran ceasefire Apr 21 expiry confirmed: Trump 'extension highly unlikely', Vance→Pakistan Tue for Wed talks, Trump threat knock-out Iranian power plants/bridges, nuclear enrichment = key sticking point — no material delta vs 23:06. Regime KINETIC_EXCHANGE intact. MODIFIED usdjpy note (price drift). All 5 alerts + 9 structure + 8 queries KEEP.",
-  "pruned_removed": [],
-  "pruned_added": [],
-  "instruments": [
-    "EURUSD",
-    "USDJPY",
-    "GOLD",
-    "OIL_CRUDE",
-    "BTCUSD",
-    "AUDUSD",
-    "USDCAD",
-    "GBPUSD",
-    "USDCHF"
-  ],
-  "poll_cadence_sec": {
-    "active_market": 30,
-    "quiet": 120
-  },
-  "level_alerts": [
-    {
-      "id": "audusd_breakdown_trigger",
-      "instrument": "AUDUSD",
-      "level": 0.707,
-      "emit_on": "cross_down",
-      "cooldown_sec": 1800,
-      "note": "Break of 0.707 = prior pivot gone. Short on retest of 0.707 from below. SL 0.713, TP 0.700. Risk-off + AUD first-to-bleed. Currently 0.7172 (52p+ above) with bull BOS — needs regime shift (ceasefire expiry Wed could flip it)."
+    "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
+    "last_updated_by_claude": "2026-04-21T05:05:00+05:30",
+    "pruned_at": "2026-04-21T05:05:00+05:30",
+    "pruned_by": "23:34 UTC tick \u2014 15 news_flash events all historical backfill (Dec 2025-Apr 13 published dates, us_iran_military/iran_ceasefire/rba_hike) no material delta. Broker $1000 flat 0 pos reconciled. Prices at 05:05 IST: USDJPY 158.846 (34.6p above 158.50 trigger, session low 158.546 held 30p), GOLD 4822.79 (13p above zone top 4810, 10p off day high 4833.07), EURUSD 1.17839 (7p off day high), OIL 86.33 (3.67 below 90), AUDUSD 0.71761 near day high, USDCAD 1.36431 flat 7p below zone_low 1.36503, GBPUSD 1.3532 near day high, USDCHF flat. Nothing actionable. Regime KINETIC_EXCHANGE intact. MODIFIED gold + usdjpy notes (price drift). All 5 alerts + 9 structure + 8 queries KEEP.",
+    "pruned_removed": [],
+    "pruned_added": [],
+    "instruments": [
+        "EURUSD",
+        "USDJPY",
+        "GOLD",
+        "OIL_CRUDE",
+        "BTCUSD",
+        "AUDUSD",
+        "USDCAD",
+        "GBPUSD",
+        "USDCHF"
+    ],
+    "poll_cadence_sec": {
+        "active_market": 30,
+        "quiet": 120
     },
-    {
-      "id": "usdjpy_riskoff_break",
-      "instrument": "USDJPY",
-      "level": 158.5,
-      "emit_on": "cross_down",
-      "cooldown_sec": 1800,
-      "note": "Break 158.50 = risk-off yen flight confirmed. Short on retest from below. Last 158.847 drifted 7p FURTHER (35p away vs 27p last tick; session low 158.546 held 30p buffer). H1+M15 bearish BOS/ChoCh stacked. Catalyst intact: Trump 'extension highly unlikely' (CNN), Vance→Pakistan Tue for Wed talks T-~24h, Iran FM 'ceasefire violations', US seized vessel, Iran skipped Islamabad round 2 calling US demands 'childish'. SL 159.20, TP 157.00. If 159.20 breaks without intervention, re-evaluate."
-    },
-    {
-      "id": "oil_crude_escalation_90",
-      "instrument": "OIL_CRUDE",
-      "level": 90.0,
-      "emit_on": "cross_up",
-      "cooldown_sec": 1800,
-      "note": "WTI last ~85.91 on Iran Hormuz-open narrative — but FRESH: Iran drone strikes on US vessels Apr 20 confirmed (CNN/AJ/Malay Mail). If Asia session confirms strikes are sustained, crude could gap $4-5 higher toward 90 trigger on reopen. Alert armed ABOVE 90 for break-retest + M15 bull BOS. SL 87.50, TP1 94, TP2 98. Conv raised 3→4 given drone-strike catalyst."
-    },
-    {
-      "id": "gold_escalation_buy_zone",
-      "instrument": "GOLD",
-      "zone_low": 4780.0,
-      "zone_high": 4810.0,
-      "emit_on": "enter",
-      "cooldown_sec": 900,
-      "note": "Safe-haven long on pullback into 4780-4810 zone. Last 4824.79 flat (15p above zone top, 8p from day high 4833.07, 88p above day low 4736.99). Kinetic escalation catalyst remains live (Iran ceasefire Apr 21 expiry confirmed, Trump 'highly unlikely' extension). If breaks 4835 cleanly with M15 bull BOS consider MODIFY to chase. Zone entry cleaner R:R. SL 4745, TP 4900/5000. Conv 4."
-    },
-    {
-      "id": "usdcad_short_fvg_retest",
-      "instrument": "USDCAD",
-      "zone_low": 1.36503,
-      "zone_high": 1.36612,
-      "emit_on": "enter",
-      "cooldown_sec": 1800,
-      "note": "H1 bear FVG unmitigated after bear BOS 30 bars ago. Short on retest ONLY IF (a) M15 bearish BOS + rejection wick inside zone AND (b) oil spikes or risk-off news catalyst confirms CAD bid > USD safehaven. Regime ESCALATION currently contradicts so default=SKIP. SL 1.3685, TP1 1.3600, TP2 1.3550. Conv 3 (needs catalyst to become actionable)."
-    }
-  ],
-  "structure_watch": [
-    {
-      "instrument": "AUDUSD",
-      "timeframes": [
-        "HOUR_4",
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "USDJPY",
-      "timeframes": [
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "GOLD",
-      "timeframes": [
-        "HOUR_4",
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "OIL_CRUDE",
-      "timeframes": [
-        "HOUR_4",
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "USDCAD",
-      "timeframes": [
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "EURUSD",
-      "timeframes": [
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "GBPUSD",
-      "timeframes": [
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "USDCHF",
-      "timeframes": [
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "BTCUSD",
-      "timeframes": [
-        "HOUR_4",
-        "HOUR"
-      ]
-    }
-  ]
+    "level_alerts": [
+        {
+            "id": "audusd_breakdown_trigger",
+            "instrument": "AUDUSD",
+            "level": 0.707,
+            "emit_on": "cross_down",
+            "cooldown_sec": 1800,
+            "note": "Break of 0.707 = prior pivot gone. Short on retest of 0.707 from below. SL 0.713, TP 0.700. Risk-off + AUD first-to-bleed. Currently 0.7172 (52p+ above) with bull BOS \u2014 needs regime shift (ceasefire expiry Wed could flip it)."
+        },
+        {
+            "id": "usdjpy_riskoff_break",
+            "instrument": "USDJPY",
+            "level": 158.5,
+            "emit_on": "cross_down",
+            "cooldown_sec": 1800,
+            "note": "Break 158.50 = risk-off yen flight confirmed. Short on retest from below. Last 158.846 (34.6p above 158.50 trigger; session low 158.546 held 30p buffer \u2014 price essentially flat vs 23:21 tick 158.847). H1+M15 bearish BOS/ChoCh stacked. Catalyst intact: Trump 'extension highly unlikely' (CNN), Vance\u2192Pakistan Tue for Wed talks T-~23h, Iran FM 'ceasefire violations', US seized vessel, Iran skipped Islamabad round 2 calling US demands 'childish'. SL 159.20, TP 157.00. If 159.20 breaks without intervention, re-evaluate."
+        },
+        {
+            "id": "oil_crude_escalation_90",
+            "instrument": "OIL_CRUDE",
+            "level": 90.0,
+            "emit_on": "cross_up",
+            "cooldown_sec": 1800,
+            "note": "WTI last ~85.91 on Iran Hormuz-open narrative \u2014 but FRESH: Iran drone strikes on US vessels Apr 20 confirmed (CNN/AJ/Malay Mail). If Asia session confirms strikes are sustained, crude could gap $4-5 higher toward 90 trigger on reopen. Alert armed ABOVE 90 for break-retest + M15 bull BOS. SL 87.50, TP1 94, TP2 98. Conv raised 3\u21924 given drone-strike catalyst."
+        },
+        {
+            "id": "gold_escalation_buy_zone",
+            "instrument": "GOLD",
+            "zone_low": 4780.0,
+            "zone_high": 4810.0,
+            "emit_on": "enter",
+            "cooldown_sec": 900,
+            "note": "Safe-haven long on pullback into 4780-4810 zone. Last 4822.79 (13p above zone top 4810, 10p off day high 4833.07, 86p above day low 4736.99). Slight pullback of 2p vs 23:21 4824.79 \u2014 not enough to reach zone. Kinetic escalation catalyst remains live (Iran ceasefire Apr 21 expiry tomorrow \u2014 Trump 'highly unlikely' extension). If breaks 4835 cleanly with M15 bull BOS consider MODIFY to chase. Zone entry cleaner R:R. SL 4745, TP 4900/5000. Conv 4."
+        },
+        {
+            "id": "usdcad_short_fvg_retest",
+            "instrument": "USDCAD",
+            "zone_low": 1.36503,
+            "zone_high": 1.36612,
+            "emit_on": "enter",
+            "cooldown_sec": 1800,
+            "note": "H1 bear FVG unmitigated after bear BOS 30 bars ago. Short on retest ONLY IF (a) M15 bearish BOS + rejection wick inside zone AND (b) oil spikes or risk-off news catalyst confirms CAD bid > USD safehaven. Regime ESCALATION currently contradicts so default=SKIP. SL 1.3685, TP1 1.3600, TP2 1.3550. Conv 3 (needs catalyst to become actionable)."
+        }
+    ],
+    "structure_watch": [
+        {
+            "instrument": "AUDUSD",
+            "timeframes": [
+                "HOUR_4",
+                "HOUR",
+                "MINUTE_15"
+            ]
+        },
+        {
+            "instrument": "USDJPY",
+            "timeframes": [
+                "HOUR",
+                "MINUTE_15"
+            ]
+        },
+        {
+            "instrument": "GOLD",
+            "timeframes": [
+                "HOUR_4",
+                "HOUR",
+                "MINUTE_15"
+            ]
+        },
+        {
+            "instrument": "OIL_CRUDE",
+            "timeframes": [
+                "HOUR_4",
+                "HOUR",
+                "MINUTE_15"
+            ]
+        },
+        {
+            "instrument": "USDCAD",
+            "timeframes": [
+                "HOUR",
+                "MINUTE_15"
+            ]
+        },
+        {
+            "instrument": "EURUSD",
+            "timeframes": [
+                "HOUR",
+                "MINUTE_15"
+            ]
+        },
+        {
+            "instrument": "GBPUSD",
+            "timeframes": [
+                "HOUR",
+                "MINUTE_15"
+            ]
+        },
+        {
+            "instrument": "USDCHF",
+            "timeframes": [
+                "HOUR",
+                "MINUTE_15"
+            ]
+        },
+        {
+            "instrument": "BTCUSD",
+            "timeframes": [
+                "HOUR_4",
+                "HOUR"
+            ]
+        }
+    ]
 }
