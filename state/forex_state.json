@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-20T22:45:00+05:30",
-  "regime": "ESCALATION_CONFIRMED_OIL_DISBELIEF",
-  "regime_note": "MONDAY 2026-04-20 22:45 IST. ESCALATION_CONFIRMED but OIL MARKET DISBELIEVING: WTI at 87.28 on day-4 blockade, H1 bearish BOS/ChoCh — supply ample or traders calling Iran's bluff. Iran struck US military comms, US death toll 6, Trump 5-week campaign. Bar_close tick: 8 events processed, all SKIP. AUDUSD 0.7172 bull BOS +100p above 0.707 breakdown (counter-regime, waiting for risk-off flip). USDJPY 158.67 bear BOS stacked H1+M15, only 17p above 158.50 — break imminent. GOLD 4808 in buy zone but H1 trend unknown + bear FVG 9 bars ago — weak confluence, no entry. USDCAD 1.3646 broke through 1.370-1.374 short-bounce zone (removed from watchlist — trade gone). OIL_CRUDE 87.28 → added 85.00 breakdown trigger (prior bear BOS at 85.161 untested). Positions flat, balance $1000. Watchlist now 7 alerts (removed usdcad_sell_bounce, added oil_85_breakdown, modified oil_90 conv down). Queries 8/8 KEEP. No entries without 7-gate pass.",
+  "last_tick": "2026-04-20T22:55:00+05:30",
+  "regime": "ESCALATION_CONFIRMED_BLOCKADE_BITING",
+  "regime_note": "MONDAY 2026-04-20 22:55 IST. REGIME FLIP: Hormuz CLOSED AGAIN Apr 18 (Iran response to US refusing to lift blockade). WTI spiked to $89.94 (+7.14%), Brent $95.71 (+5.9%). Gold $4796 (-0.7%, dollar firming). Narrative flipped: no longer 'market disbelieving' — blockade now biting. 1 event processed: GOLD level_enter at 4809.66 → SKIP (composite 7, aligned=False, M15 trend unknown, inside bear FVG 4807-4810). Positions flat, balance $1000. Watchlist: removed oil_85_breakdown (thesis dead), raised oil_90 conv 3→4 (6p from firing). Queries 8/8 KEEP. No entries without 7-gate pass.",
   "open_positions": [],
   "watchlist": [
     {
@@ -211,5 +211,5 @@
       "reason": "EURUSD 15M bar_close: score 46 bullish, 1.1788 below 1.1815 breakout trigger"
     }
   ],
-  "last_tick_summary": "22:23 IST auto \u2014 3 bar_close SKIP (AUDUSD 0.7173 +50 bullish counter-regime not aligned; USDJPY 158.65 -40 bearish 15p above 158.50 break not through; GOLD 4804 in buy zone conf +2 neutral not aligned); WTI 87.04 +3.94% below $90; blockade persists Iran vows retaliation post-ship-seizure but no new catalyst; positions flat; watchlist 7/7 KEEP queries 8/8 KEEP"
+  "last_tick_summary": "22:55 IST auto — 1 GOLD level_enter SKIP (4809 in zone, composite 7 neutral aligned=False, M15 trend unknown, inside bear FVG); REGIME FLIP: Hormuz re-closed Apr 18, WTI $89.94 +7.14%, Brent $95.71, gold -0.7% on dollar bid; watchlist removed oil_85 (thesis dead), oil_90 imminent 6p away conv 4; queries 8/8 KEEP; positions flat"
 }
