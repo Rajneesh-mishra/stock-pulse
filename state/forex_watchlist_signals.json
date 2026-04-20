@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T02:12:00+05:30",
-  "pruned_at": "2026-04-21T02:12:00+05:30",
-  "pruned_by": "8 M15 bar_close events all SKIP (no BOS/ChoCh/fresh FVG). Prices flat vs 20:33. All 5 alerts audited KEEP: each trigger still expresses a live edge with Apr 22 ceasefire binary T-~27h. USDCAD nearest (1.5p below bear FVG) but M15 bear BOS + risk-off catalyst gating holds.",
+  "last_updated_by_claude": "2026-04-21T02:49:00+05:30",
+  "pruned_at": "2026-04-21T02:49:00+05:30",
+  "pruned_by": "Heartbeat tick 21:19 UTC \u2014 0 unconsumed events. News scan confirmed: Trump 'highly unlikely' extension, Iran 'no plans' for talks. All 5 alerts remain actionable with Apr 22 ceasefire binary T-~20.5h. No alert triggers moved; levels/notes unchanged.",
   "pruned_removed": [
     "gold_5000_psych (pure informational with no gold position \u2014 remove until we're long)"
   ],
