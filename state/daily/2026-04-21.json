@@ -97,5 +97,17 @@
       "AUDUSD": 0.71744,
       "USDCAD": 1.36471
     }
+  },
+  {
+    "ts_utc": "2026-04-20T22:37:00Z",
+    "ts_ist": "2026-04-21T04:07:00+05:30",
+    "trigger": "bar_close_batch",
+    "events": 8,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 8,
+    "positions_after": 0,
+    "balance_usd": 1000.0,
+    "note": "8 M15 bar_close all SKIP; heartbeat. USDJPY 158.797 30p above 158.50 (1p closer), GOLD 4830 20p above zone top (3p from day high 4833 \u2014 breakout approaching), USDCAD 1.3644 + USDCHF 0.77813 at day lows confirming DXY weakness, AUDUSD+EURUSD near day highs, OIL 86.36 sideways. No news delta."
   }
 ]

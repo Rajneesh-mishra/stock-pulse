@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T04:05:00+05:30",
-  "pruned_at": "2026-04-21T04:05:00+05:30",
-  "pruned_by": "22:34 UTC tick — 8 M15 bar_close (all pairs) + 15 news_flash ALL SKIP. Broker reopened post-maintenance 22:00 UTC; account $1000 flat 0 positions. News_flash: 1 iran_ceasefire (Islamabad negotiators backgrounder), 2 us_iran_military (Hormuz + US asset tracking, already-known), 12 fed_fomc (historical Fed-hold backfill; FOMC Apr 28-29 a week out). Web: Trump 'Wed evening Washington time' T-~25h expiry; Vance to Pakistan Tue; Tehran vowed retaliation for vessel seizure. Prices: mild risk-on drift — USDJPY 158.809 (31p above 158.50 trigger, drifted AWAY from 22p), GOLD 4827.66 (18p above 4810 zone top, moving further from buy zone), OIL 86.313 (+0.9 off 85.45 low, 3.7 below 90), AUDUSD 0.71775 (70p+ above breakdown), EURUSD 1.17855 (near day high 1.17902, approaching 1.1811 breakout). MODIFIED usdjpy_riskoff_break (22p→31p, drift REVERSED) and gold_escalation_buy_zone (distance 10p→18p). All 5 alerts + 9 structure + 8 queries KEEP.",
+  "last_updated_by_claude": "2026-04-21T04:08:00+05:30",
+  "pruned_at": "2026-04-21T04:08:00+05:30",
+  "pruned_by": "22:37 UTC tick — 8 M15 bar_close (all pairs) ALL SKIP, heartbeat-style. Broker $1000 flat 0 positions reconciled. No news delta vs 22:34 (Trump Wed evening T-~25h unchanged, Vance→Pakistan Tue, Iran skipping Islamabad round 2, Tehran retaliation vowed). Prices: USDJPY 158.797 (30p above 158.50 trigger, drifted 1p CLOSER vs 31p last), GOLD 4830.0 (20p above 4810 zone top, drifted 2p FURTHER from buy zone), OIL 86.359 (+0.05 sideways, 3.6 below 90), AUDUSD 0.71776 (near day high 0.71798), EURUSD 1.17863 (near day high 1.17902, 1.1811 breakout close), USDCAD 1.3644 (AT DAY LOW — DXY weakness extending, price now 6p BELOW 1.36503 zone_low so a rally back INTO 1.36503-1.36612 FVG is required to fire the short — not invalidated, just repositioned), USDCHF 0.77813 (AT DAY LOW — DXY weakness confirming). MODIFIED usdjpy_riskoff_break (31p→30p) and gold_escalation_buy_zone (distance 18p→20p). All 5 alerts + 9 structure + 8 queries KEEP.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -35,7 +35,7 @@
       "level": 158.5,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break 158.50 = risk-off yen flight confirmed. Short on retest from below. Last known 158.809 (31p away — drift REVERSED from 22p last tick; broker reopen 22:00 UTC mild risk-on tape). H1+M15 bearish BOS/ChoCh stacked. Catalyst intact: kinetic escalation ladder (Iran drone strikes on US vessels Sea of Oman, Salalah port hit, vessel seizure with retaliation vowed). Trump 'Wed evening Washington time' T-~25h to ceasefire expiry. Katayama urgency language unchanged. SL 159.20, TP 157.00. If 159.20 breaks without intervention, re-evaluate."
+      "note": "Break 158.50 = risk-off yen flight confirmed. Short on retest from below. Last 158.797 (30p away, drifted 1p CLOSER vs 31p last tick — choppy, late-session tape). H1+M15 bearish BOS/ChoCh stacked. Catalyst intact: kinetic escalation (Iran drone strikes Sea of Oman, Salalah port, vessel seizure w/ retaliation vowed) AND Trump 'Wed evening Washington time' T-~25h. Katayama urgency unchanged. SL 159.20, TP 157.00. If 159.20 breaks without intervention, re-evaluate."
     },
     {
       "id": "oil_crude_escalation_90",
@@ -52,7 +52,7 @@
       "zone_high": 4810.0,
       "emit_on": "enter",
       "cooldown_sec": 900,
-      "note": "Safe-haven long on pullback into 4780-4810 zone. Last 4827.66 (18p above zone top, moving FURTHER away from buy zone across last 3 ticks: 10p→17p→18p). Kinetic escalation catalyst remains live. If price continues away (breakout) rather than pulling back, consider MODIFY to chase above 4835 with M15 bull BOS. For now, zone entry still the cleanest R:R. SL 4745, TP 4900/5000. Conv 4."
+      "note": "Safe-haven long on pullback into 4780-4810 zone. Last 4830.0 (20p above zone top, moving FURTHER away from buy zone across last 4 ticks: 10p→17p→18p→20p). Kinetic escalation catalyst remains live. Price now 3p from day high 4833.07 — if price breaks above 4835 cleanly with M15 bull BOS, consider MODIFY to chase. For now zone entry is cleaner R:R. SL 4745, TP 4900/5000. Conv 4."
     },
     {
       "id": "usdcad_short_fvg_retest",
