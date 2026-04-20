@@ -86,6 +86,14 @@
       "positions": 0,
       "balance": 1000.0,
       "note": "prices barely moved vs 19:44 tick; USDCAD closest to action at 3.5p below bear FVG zone floor; waiting for rally"
+    },
+    {
+      "ts": "2026-04-20T20:14:36.918015Z",
+      "trigger": "bar_close_batch",
+      "events_processed": 21,
+      "actions": "all SKIP \u2014 no fresh structure, prices unchanged from 20:01 tick, all 6 alert levels out of reach",
+      "news": "Bloomberg: US-Iran weighing 2wk ceasefire extension; Hormuz still shut; Trump says extension highly unlikely",
+      "audit": "6 watchlist + 9 structure + 8 queries all KEEP"
     }
   ]
 }
