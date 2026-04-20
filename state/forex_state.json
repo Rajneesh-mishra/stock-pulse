@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-20T21:08:00+05:30",
+  "last_tick": "2026-04-20T21:12:00+05:30",
   "regime": "ESCALATION_CONFIRMED",
-  "regime_note": "MONDAY 2026-04-20 21:08 IST. ESCALATION_CONFIRMED intact. This tick: 2 level_enter events (AUDUSD bounce into 0.714-0.718 SELL zone @0.7175, GOLD into 4780-4810 BUY zone @4806). Both SKIPPED: no rejection wick confirmation, mid-zone entries = chasing. News re-verified: CNN/NPR/WaPo confirm Iran vows retaliation over ship seizure, Hormuz closed again, talks broken down, 2 Indian ships fired on. Regime unchanged. 0 positions, $1000 intact. Watchlist all KEEP \u2014 setups still express the right edge; awaiting confirmation candles. Next triggers: (1) AUDUSD rejection wick in 0.714-0.718 for SELL entry, (2) GOLD pullback to 4780-4785 with wick for BUY, (3) USDJPY rally to 159.8-160.2 for intervention short, (4) OIL >90 break/retest.",
+  "regime_note": "MONDAY 2026-04-20 21:12 IST. ESCALATION_CONFIRMED intact. This tick: 3 bar_close events (AUDUSD/USDJPY/EURUSD 15M). All SKIPPED. Confluence: AUDUSD score 39 bullish (contradicts SELL watchlist), USDJPY score -40 bearish but price 158.58 below 159.8 zone, EURUSD score 46 bullish but 1.1788 below 1.1815 breakout. None aligned. News re-verified: Iran vows retaliation against US forces after ship seizure, Hormuz closed, Tehran 'no date for talks'. Brent $96, WTI $88.3. Regime unchanged. 0 positions, $1000 intact. Watchlist all KEEP \u2014 thesis aligned with blockade regime; awaiting clean level touch + confirmation. Key watch: USDJPY 158.50 imminent cross_down (price 158.58, 8 pips away) = risk-off yen flight confirmation trigger.",
   "open_positions": [],
   "watchlist": [
     {
@@ -159,7 +159,7 @@
       "note": "15 fresh news_flash headlines this tick: CNBC (blockade day 4), AP/BBC/WaPo/Reuters (Hormuz fully closed, ships attacked), NYT (blockade status unclear, some transits), USNI (US seized Iranian container ship), Jerusalem Post (Indian-flagged vessel hit), Al Jazeera (sanctioned tankers still transit + Trump confirms seizure), Maritime Executive (IRGC fired on containership/tanker/cruise ship). Apr 22 ceasefire effectively dead. Binary risk: escalation ladder (Iran retaliatory strike on US asset) or de-escalation shock (surprise deal)."
     }
   ],
-  "last_tick_utc": "2026-04-20T15:32",
+  "last_tick_utc": "2026-04-20T15:42",
   "tick_history": [
     {
       "ts_utc": "2026-04-20T14:45:29.961114Z",
@@ -184,24 +184,32 @@
       "closed": 0,
       "skipped": 15,
       "note": "news_flash burst \u2014 US blockade of Iran day 4 \u2192 regime flipped ESCALATION_CONFIRMED, watchlist pivoted (AUD BUY\u2192SELL, added GOLD long, USDJPY short strengthened)"
+    },
+    {
+      "ts_utc": "2026-04-20T15:42:00Z",
+      "events_in": 3,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 3,
+      "note": "bar_close triage \u2014 AUDUSD 39 bull vs SELL, USDJPY -40 below zone, EURUSD 46 below breakout; none aligned; all KEEP watchlist"
     }
   ],
   "recent_skips": [
     {
-      "event_id": "evt_1776698834160_bar_close",
-      "ts_utc": "2026-04-20T15:27",
-      "reason": "score<60 aligned=False + Iran ambiguity"
+      "event_id": "evt_1776699681618_bar_close",
+      "ts_utc": "2026-04-20T15:41",
+      "reason": "AUDUSD 15M bar_close: score 39 bullish, contradicts SELL watchlist; aligned=False"
     },
     {
-      "event_id": "evt_1776698836169_bar_close",
-      "ts_utc": "2026-04-20T15:27",
-      "reason": "score<60 aligned=False + Iran ambiguity"
+      "event_id": "evt_1776699683548_bar_close",
+      "ts_utc": "2026-04-20T15:41",
+      "reason": "USDJPY 15M bar_close: score -40 bearish but price 158.58 below 159.8 entry zone"
     },
     {
-      "event_id": "evt_1776698838743_bar_close",
-      "ts_utc": "2026-04-20T15:27",
-      "reason": "score<60 aligned=False + Iran ambiguity"
+      "event_id": "evt_1776699689518_bar_close",
+      "ts_utc": "2026-04-20T15:41",
+      "reason": "EURUSD 15M bar_close: score 46 bullish, 1.1788 below 1.1815 breakout trigger"
     }
   ],
-  "last_tick_summary": "15 news_flash (all Hormuz/US blockade day 4 \u2014 escalation CONFIRMED); regime flipped DE-ESCALATION_UNCONFIRMED \u2192 ESCALATION_CONFIRMED; 0 trades; watchlist flipped AUDUSD BUY\u2192SELL, added GOLD long 4780-4810, tightened USDJPY short (double tailwind), oil escalation 90/95; news queries +us_iran_military."
+  "last_tick_summary": "3 bar_close (AUDUSD/USDJPY/EURUSD 15M) all skipped: confluence <60 or price outside trigger zones. Regime ESCALATION_CONFIRMED unchanged (Iran vows retaliation, Hormuz closed, no peace-talk date). Watchlist all KEEP. USDJPY 158.50 cross_down trigger 8 pips away."
 }
