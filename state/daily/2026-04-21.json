@@ -81,5 +81,21 @@
       "skipped": 13
     },
     "notes": "7 bar_close visible at Step 1 + 6 more concurrent, all SKIP. Flat $1000. Broker matches state. Audit: all 5 watchlist + 9 structure + 8 queries KEEP (same as 20:56 tick, 14min ago)."
+  },
+  {
+    "ts_utc": "2026-04-20 21:41 UTC",
+    "trigger": "bar_close x6 M15 all pairs",
+    "action": "SKIP all (broker CLOSED maintenance + no structural change)",
+    "events_consumed": 6,
+    "open_positions": 0,
+    "balance": 1000.0,
+    "audit": "watchlist 5 KEEP, queries 8 KEEP, structure 9 KEEP",
+    "prices": {
+      "USDJPY": 158.75,
+      "GOLD": 4820.63,
+      "OIL_CRUDE": 85.87,
+      "AUDUSD": 0.71744,
+      "USDCAD": 1.36471
+    }
   }
 ]
