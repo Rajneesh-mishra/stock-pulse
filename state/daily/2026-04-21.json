@@ -5,5 +5,19 @@
     "events_processed": 18,
     "actions": "3 bar_close SKIP, 15 news_flash Iran-repeat SKIP, 0 trades",
     "notes": "AUDUSD 0.71759, USDJPY 158.755, GOLD 4813.28; flat $1000; T-29.5h to Apr 22 ceasefire expiry"
+  },
+  {
+    "ts_utc": "2026-04-20T18:46:00Z",
+    "ts_ist": "2026-04-21T00:16:00+05:30",
+    "events_in": 3,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 3,
+    "note": "M15 bar_close: AUDUSD 0.71748 / USDJPY 158.826 (bull FVG unmitigated) / GOLD 4815.19 all untriggered. Trump extension 'highly unlikely' \u2014 ~29h to Apr 22 expiry.",
+    "broker": {
+      "balance": 1000.0,
+      "positions": 0
+    },
+    "audit": "5 watchlist + 8 queries all KEEP"
   }
 ]
