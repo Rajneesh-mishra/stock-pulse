@@ -54,7 +54,14 @@ if needs_daemon "$cmd"; then
       LOG_OUT="$REPO/logs/claude_heartbeat.log"
       LOG_ERR="$REPO/logs/claude_heartbeat.err.log"
       ;;
-    *) echo "Unknown daemon: $DAEMON (use 'watcher', 'posync', 'waker', or 'heartbeat')"; exit 1 ;;
+    dashboard)
+      LABEL="com.stockpulse.dashboard"
+      CONTROL=""  # dashboard has no pause control — stop via uninstall
+      STATUS=""
+      LOG_OUT="$REPO/logs/dashboard.out.log"
+      LOG_ERR="$REPO/logs/dashboard.err.log"
+      ;;
+    *) echo "Unknown daemon: $DAEMON (use watcher|posync|waker|heartbeat|dashboard)"; exit 1 ;;
   esac
   PLIST_SRC="$REPO/daemon/$LABEL.plist"
   PLIST_DST="$HOME/Library/LaunchAgents/$LABEL.plist"
@@ -66,12 +73,12 @@ case "$cmd" in
     cp "$PLIST_SRC" "$PLIST_DST"
     launchctl bootstrap "gui/$UID" "$PLIST_DST" 2>/dev/null \
       || launchctl load -w "$PLIST_DST"
-    echo run > "$CONTROL"
+    [ -n "$CONTROL" ] && echo run > "$CONTROL"
     echo "installed + loaded: $LABEL"
     ;;
 
   uninstall)
-    echo stop > "$CONTROL"
+    [ -n "$CONTROL" ] && echo stop > "$CONTROL"
     sleep 2
     launchctl bootout "gui/$UID/$LABEL" 2>/dev/null \
       || launchctl unload -w "$PLIST_DST" 2>/dev/null || true
@@ -327,7 +334,7 @@ PY
     ;;
 
   all-install)
-    for d in watcher posync waker heartbeat; do
+    for d in watcher posync waker heartbeat dashboard; do
       echo "==> $d"
       "$0" install "$d"
     done
@@ -336,12 +343,13 @@ PY
   all-status)
     set +e  # grep-no-match must not abort the loop
     printf "%-12s %-10s %-22s %s\n" "daemon" "pid" "control" "launchd"
-    for d in watcher posync waker heartbeat; do
+    for d in watcher posync waker heartbeat dashboard; do
       case "$d" in
         watcher)   L="com.stockpulse.forexwatcher"        C="$REPO/state/forex_watcher.control" ;;
         posync)    L="com.stockpulse.forexpositionsync"   C="$REPO/state/forex_position_sync.control" ;;
         waker)     L="com.stockpulse.claudewaker"         C="$REPO/state/forex_event_waker.control" ;;
         heartbeat) L="com.stockpulse.claudeheartbeat"     C="$REPO/state/forex_heartbeat.control" ;;
+        dashboard) L="com.stockpulse.dashboard"           C="" ;;
       esac
       line=$(launchctl list 2>/dev/null | grep -E "[[:space:]]${L}$" | head -1)
       pid=$(echo "$line" | awk '{print $1}')
