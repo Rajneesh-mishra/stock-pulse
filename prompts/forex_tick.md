@@ -106,7 +106,49 @@ bash send_telegram.sh "*TRADE EXECUTED* ..."
 - Scan 2-3 web searches relevant to open positions / watchlist (gold, crude, USD/JPY, DXY, Iran, BoJ — rotate)
 - If a regime-changing headline is found, update `forex_state.json.regime_note` and telegram if material
 
-## Step 7 — Mark events consumed
+## Step 7 — Keep your eyes current (MANDATORY EVERY TICK)
+
+Before persisting, audit **every** item the daemons are watching. Do this as a mechanical walk — one verdict per item. You MUST produce output for this step; skipping it is not allowed.
+
+### 7a. Watchlist audit — `state/forex_watchlist_signals.json`
+
+For each entry in `level_alerts` and each pair in `structure_watch`, assign one verdict:
+
+- **KEEP** — the trigger still expresses a real edge given what you know right now (price action, news, positions, broader context). The level is reachable on a plausible catalyst path. The direction is still the right call. The note still describes reality.
+- **MODIFY** — the idea survives but the numbers are stale. Update zone/level/SL/TP/note/direction. Produce the new JSON fields.
+- **REMOVE** — the setup is invalidated (price has moved through it and kept going, the underlying narrative broke, a better opportunity replaces it). Remove the entry.
+- **ADD** — a setup you now see but aren't watching. Add the new entry.
+
+Treat any ONE of these as grounds to not-KEEP:
+- Current price has moved so far from the trigger that a hit requires a new catalyst that doesn't exist
+- The direction contradicts what the last bar_close / structure events / news events tell you
+- The `note` references a situation (deal, catalyst, zone identity) that isn't true anymore
+- A structurally sharper level has formed (order block, swept liquidity, new FVG) that wasn't in the alert when it was written
+- You opened or closed a position on this instrument — management alerts (break-even trigger, TP1 partial, trailing levels) may need to be added or retired
+
+### 7b. News-query audit — `state/news_queries.json`
+
+For each entry in `queries`:
+
+- **KEEP** — query + keywords still cover a theme you need to be awake for
+- **TUNE** — keywords missing terms that showed up in real headlines this tick (or earlier); add/remove keywords
+- **REMOVE** — the theme has played out or stopped mattering; drop it
+- **ADD** — a theme is active that no current query covers (if you did news searches during this tick and found relevant stories, at least one of those themes probably deserves a query)
+
+### 7c. Write the updates
+
+If any item in 7a or 7b is not KEEP, rewrite the file(s) atomically. Preserve all other entries. Claim the changes in your tick summary with one short sentence per change — e.g. `"removed AUDUSD pullback zone: price broke through without catalyst"`, `"added query iran_strikes: headlines showed up that iran_ceasefire didn't catch"`.
+
+**Output a compact audit table to stdout** (not the full JSON — just verdict per id):
+
+```
+audit watchlist:  audusd_pullback_buy_zone=KEEP  usdjpy_intervention_zone=KEEP  oil_crude_sub_85=MODIFY(level 85→83)  eurusd_breakout_level=REMOVE
+audit queries:    iran_ceasefire=KEEP  hormuz_strait=TUNE(+"cargo","ship")  fed_fomc=KEEP  rba_hike=KEEP
+```
+
+If every item is KEEP, still print: `audit: all items KEEP (N watchlist, M queries)`.
+
+## Step 8 — Mark events consumed
 
 For **every** event you processed in Step 4 (acted on OR skipped), append its `event_id` to `state/forex_events_consumed.txt`:
 
@@ -120,18 +162,18 @@ with open("state/forex_events_consumed.txt", "a") as f:
 PY
 ```
 
-**If you do not mark an event consumed, it will wake you up again.** Every event you read in Step 1 must be in Step 7's list.
+**If you do not mark an event consumed, it will wake you up again.** Every event you read in Step 1 must be in this list.
 
-## Step 8 — Persist
+## Step 9 — Persist
 
 ```bash
 cd /Users/rajneeshmishra/Downloads/stock-pulse
 git add state/ docs/ && git commit -m "tick: $(date +%H:%M) forex auto — <one-line summary>" && git push origin main
 ```
 
-Update `state/forex_state.json` with any regime changes, new positions, trade outcomes, alerts sent. Also update daily log `state/daily/$(date +%Y-%m-%d).json`.
+Update `state/forex_state.json` with any new positions, trade outcomes, alerts sent, and the current read of conditions. Also update daily log `state/daily/$(date +%Y-%m-%d).json`.
 
-## Step 9 — Done
+## Step 10 — Done
 
 Print a single-line summary of the tick outcome to stdout:
 `tick done: processed N events, opened M, closed K, skipped S`
@@ -146,5 +188,6 @@ Exit. Do not loop.
 2. Every trade passes `risk_guard` first.
 3. 7 gates all green, or skip.
 4. Mark every event consumed.
-5. Commit + push at end (even if no action — state changes matter).
-6. No background tools. No asking for confirmation. No scheduling wakeups.
+5. Run the Step 7 audit every tick. Not optional. Every item gets a verdict.
+6. Commit + push at end (even if no action — state changes matter).
+7. No background tools. No asking for confirmation. No scheduling wakeups.
