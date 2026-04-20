@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-20T19:40:00+05:30",
+  "last_tick": "2026-04-20T20:00:00+05:30",
   "regime": "DE-ESCALATION_UNCONFIRMED",
-  "regime_note": "MONDAY 2026-04-20 14:20 UTC / 19:50 IST. REGIME FLIP: Iran ceasefire thesis INVALIDATED. US Navy fired on/seized Iranian cargo vessel in Gulf of Oman. Crude gapped to ~$89.20 (+6.38%). USD index bullish pin-bar gap-up. Prior 'peace deal / USD-weak' regime flipped to risk-off / USD-strong. Open positions: 0. Watchlist NOT near trigger zones (AUDUSD 0.7165 vs 0.7075-95 buy; USDJPY 158.76 vs 159.8-160.2 short; EURUSD 1.1772 vs 1.1815 breakout; OIL_CRUDE 86.47 at Capital.com, market ref $89.20). INVALIDATIONS: oil_crude_sub_85 short thesis DEAD (escalation). usdcad DXY-weakness short questionable. REMAINING VALID: usdjpy intervention short (risk-off USD strength could push to 160 fast). audusd pullback buy still possible if risk-off deepens, but wait for 7-gate confirmation. Events this tick: 6 bar_close (AUDUSD M15, USDJPY H1+M15, EURUSD H1+M15, OIL_CRUDE H1) \u2014 all SKIPPED, no zone triggers. Action: updated thesis, no trades, telegram sent.",
+  "regime_note": "MONDAY 2026-04-20 14:30 UTC / 20:00 IST. Tick processed 15 news_flash events (4 unique IDs) — Iran/US ceasefire cracking: US attacked Iranian cargo ship; Iran reimposed Hormuz closure; Al Jazeera 'still far from breakthrough'; CNBC 'resumption of hostilities'. All confirm existing escalation regime flipped in prior tick — no thesis change. Broker verified: 0 positions, $1000 balance intact. Watchlist levels NOT hit (AUDUSD 0.7156 vs 0.7075-95 buy; USDJPY 158.91 vs 159.8-160.2 short; EURUSD 1.1764 vs 1.1815 breakout; USDCAD 1.3692 vs 1.3810-30 sell). ACTIVE TAIL RISK: Apr 22 original ceasefire expiry is Wed — binary event 2 days away. Stance: defensive, no new entries until either (a) formal Iran extension signed → risk-on re-engages, or (b) watchlist zone actually touches with 7-gate confirm. Opened 0, closed 0, skipped entries (no level triggers).",
   "open_positions": [],
   "watchlist": [
     {
@@ -149,14 +149,14 @@
     "telegram_on_trade": true,
     "telegram_chat_ids": "6838758759,849258319"
   },
-  "last_tick_ts": "2026-04-20T14:17:46.194799Z",
+  "last_tick_ts": "2026-04-20T14:30:00Z",
   "tracker": [
     {
-      "situation": "US-Iran escalation (Gulf of Oman naval incident)",
+      "situation": "US-Iran escalation (Hormuz reclosed, US vs Iranian vessel)",
       "status": "escalating",
       "impact": "risk-off, USD-strong, oil bid",
-      "last_update": "2026-04-20T14:17:46.194799Z",
-      "note": "US Navy fired on/seized Iranian cargo vessel. Crude +6.38% to ~$89.20."
+      "last_update": "2026-04-20T14:30:00Z",
+      "note": "Confirmed over 15 news flashes: CBS/NPR/PBS/CNBC/Reuters/Al Jazeera/NYT/Politico/Times of Israel. Iran reimposed Hormuz closure, IRGC gunboats fired at ships. US attacked Iranian cargo vessel. Al Jazeera 20 Apr: 'still far from breakthrough'. Apr 22 original ceasefire expiry live — binary event."
     }
   ]
 }

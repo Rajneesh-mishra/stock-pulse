@@ -1,6 +1,6 @@
 {
   "date": "2026-04-20",
-  "session_notes": "Monday — Iran de-escalation partial, Apr 22 formal signing pending. DXY sub-98, WTI -4% to $87, risk-on but entries unfavorable.",
+  "session_notes": "Monday — Iran ceasefire INVALIDATED intra-day. US hit Iranian cargo vessel; Iran reimposed Hormuz closure; crude +6% to ~$89; DXY bullish. Regime flipped risk-on → risk-off. Apr 22 binary event 2 days out.",
   "ticks": [
     {
       "ts": "2026-04-20T19:40:00+05:30",
@@ -17,6 +17,25 @@
         "EURUSD": 1.17720,
         "USDCAD": 1.36783
       },
+      "open_positions": 0,
+      "capital": 1000.0
+    },
+    {
+      "ts": "2026-04-20T20:00:00+05:30",
+      "trigger": "event-driven (15 news_flash, 4 unique IDs — Iran escalation bundle)",
+      "events_processed": 15,
+      "events_consumed": 15,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "skips": 15,
+      "skip_reasons": "All news confirms existing escalation regime flipped in prior tick — no incremental thesis shift. No watchlist zone hit (AUDUSD 0.7156, USDJPY 158.91, EURUSD 1.1764, USDCAD 1.3692). Stance defensive ahead of Apr 22 binary — wait for zone + 7-gate confirm or formal extension signal.",
+      "news_highlights": [
+        "CNBC: 'Resumption of hostilities' — seized ship + vessel attacks push ceasefire to brink",
+        "Times of Israel: Iran reimposes Hormuz closure, IRGC gunboats fire at ships",
+        "Al Jazeera (20 Apr): Iran, US still 'far' from breakthrough",
+        "NYT: US attacks Iranian cargo ship, both claim cease-fire violations"
+      ],
+      "broker_check": {"positions": 0, "balance": 1000.0, "reconciled": true},
       "open_positions": 0,
       "capital": 1000.0
     }
