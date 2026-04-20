@@ -1,5 +1,5 @@
 {
-  "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. Keep it tight: one primary entry per directional thesis per instrument. Management alerts (trail, partial, exit) are separate.",
+  "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
   "last_updated_by_claude": "2026-04-20T21:25:00+05:30",
   "pruned_at": "2026-04-20T21:25:00+05:30",
   "pruned_by": "interactive Claude (user-requested cleanup after 12-alert clutter)",

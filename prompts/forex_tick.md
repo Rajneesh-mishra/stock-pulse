@@ -126,18 +126,23 @@ Treat any ONE of these as grounds to not-KEEP:
 - A structurally sharper level has formed (order block, swept liquidity, new FVG) that wasn't in the alert when it was written
 - You opened or closed a position on this instrument — management alerts (break-even trigger, TP1 partial, trailing levels) may need to be added or retired
 
-### One-in, one-out discipline (HARD RULE)
+### Every alert must be actively useful NOW — no cap, no stale entries
 
-The watchlist is a scarce resource, not a logbook. Cap: **≤ 8 total `level_alerts`**, **≤ 2 entry alerts per instrument per direction** (a second alert on the same instrument+direction must serve a genuinely different purpose — e.g. management/exit, not just a second entry level).
+There is NO numeric limit on how many alerts can exist. If 15 alerts are all actionably live, keep all 15. The constraint is quality, not quantity.
 
-Before every `ADD`:
-1. Identify which existing alert this replaces or retires. If none — justify why the watchlist genuinely needs to grow.
-2. If your audit produces a net alert count higher than before, the tick summary must include a one-sentence reason for the growth.
-3. "Signal-only, no entry here" alerts count against the cap. If something is signal-only and far from price, `REMOVE` it — the news daemon + web search already catches far-field moves.
-4. Entries noted as "REMOTE" or "low probability" get `REMOVE`, not `KEEP`. Watchlist alerts exist to fire actionably; if they're not expected to fire, they're noise.
-5. Two alerts on the same instrument+direction at different levels (e.g. "pullback zone" + "breakout trigger") are allowed ONLY if one is for pullback-entry and the other is for breakout-continuation — pick the cleaner one otherwise.
+But every alert must pass this test each tick: **"If this fires in the next hour, am I prepared to act on it right now with real money?"** If the honest answer is "no, probably not" — the alert is stale and gets `REMOVE`, regardless of how recently it was written.
 
-Before every `MODIFY` or `REMOVE`, also re-check whether a replacement `ADD` is needed in the opposite direction (a breakdown zone replacing a breakout zone, for example).
+Specific stale patterns that must be removed:
+
+1. **"Signal-only" / "no entry here"** — if the note says you're just watching, you're using a slot for journaling. Remove it. The news daemon and your own web search already catch far-field moves.
+2. **"REMOTE" / "low probability" / "requires X AND Y"** — watchlist alerts exist to fire actionably. If you've already called it unlikely, it's noise.
+3. **Duplicates of the same idea in different words** — two alerts on the same instrument+direction that fire on different levels for the same underlying thesis should collapse to the one cleaner entry. Exception: one entry-alert + one management/exit-alert at a different level is fine (they do different jobs).
+4. **Alerts whose note references a situation that's no longer true** — covered above, listed again because it's the most common stale form.
+5. **Alerts whose direction contradicts the current read** — flip via MODIFY or REMOVE. Don't leave both directions armed "just in case" unless you have a concrete hedge rationale written in the note.
+
+Before every `ADD`, sanity-check: is this a genuinely new idea, or am I just restating an existing alert with different numbers? If the latter, `MODIFY` the existing one instead of `ADD`ing.
+
+Before every `MODIFY` or `REMOVE`, also consider whether a replacement `ADD` is needed in the opposite direction (a breakdown zone replacing a breakout zone, for example).
 
 ### 7b. News-query audit — `state/news_queries.json`
 
