@@ -4,9 +4,9 @@
     {
       "id": "iran_ceasefire",
       "query": "Iran US ceasefire deal",
-      "keywords_required": ["signed", "formal", "collapse", "rejected", "extended", "strike", "attack", "breakdown", "breakthrough", "announce"],
+      "keywords_required": ["signed", "formal", "collapse", "rejected", "extended", "extension", "expire", "expiry", "unlikely", "strike", "attack", "breakdown", "breakthrough", "announce"],
       "cooldown_min": 30,
-      "note": "Apr 22 original expiry — now effectively dead (US imposed naval blockade). Watching for surprise de-escalation headline."
+      "note": "Apr 22 expiry imminent — Trump Apr 20 said extension 'highly unlikely'. Added unlikely/expire/extension keywords to catch statement variants."
     },
     {
       "id": "hormuz_strait",

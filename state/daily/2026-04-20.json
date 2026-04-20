@@ -1,105 +1,11 @@
-{
-  "date": "2026-04-20",
-  "ticks": [
-    {
-      "ts_utc": "2026-04-20T15:28",
-      "type": "forex_tick",
-      "trigger": "bar_close x3",
-      "action": "skip_all",
-      "reason": "scores 39/-40/46 below 60, aligned=False, Iran ambiguity",
-      "positions": 0
-    },
-    {
-      "ts_utc": "2026-04-20T15:32",
-      "type": "forex_tick",
-      "trigger": "news_flash x15 (Hormuz/blockade)",
-      "action": "skip_all_trades_regime_pivot",
-      "reason": "15 news_flash all confirm US Navy blockade of Iran day 4 + Hormuz fully closed + ships attacked. Regime flipped DE-ESCALATION_UNCONFIRMED \u2192 ESCALATION_CONFIRMED. No level triggers hit; no 7-gate checks run. Watchlist pivoted: AUDUSD BUY\u2192SELL (bounce 0.714-0.718 + breakdown 0.707), GOLD long zone added 4780-4810, USDJPY short thesis strengthened (MoF + risk-off double tailwind), OIL escalation alerts 90/95 kept. Added news query us_iran_military.",
-      "positions": 0
-    },
-    {
-      "ts_utc": "2026-04-20T15:38",
-      "type": "forex_tick",
-      "trigger": "level_enter x2",
-      "action": "skip_all",
-      "events": [
-        "AUDUSD@0.7175 mid-zone SELL",
-        "GOLD@4806 mid-zone BUY"
-      ],
-      "reason": "no rejection-wick confirmation; mid-zone chasing under ESCALATION_CONFIRMED is poor R:R",
-      "positions": 0,
-      "regime": "ESCALATION_CONFIRMED",
-      "news_check": "Iran vows retaliation, Hormuz closed again, talks broken, 2 Indian ships fired on"
-    },
-    {
-      "ts": "2026-04-20T21:30:00+05:30",
-      "tick_type": "forex_auto",
-      "events_processed": 3,
-      "events_skipped": 3,
-      "trades": 0,
-      "summary": "3 bar_close 15M skipped: AUDUSD +39 bull contradicts SELL watchlist & risk-off regime; USDJPY -40 bear but HTF unaligned; GOLD -8 neutral in buy zone but no confirmation. Brent $95.42 +5.58%, WTI ~$89 +6%. Iran reinstates Hormuz closure, US blockade day 6, no negotiations. Watchlist 7 alerts all KEEP."
-    },
-    {
-      "t": "2026-04-20T21:40+05:30",
-      "type": "forex_auto",
-      "events_in": 11,
-      "skipped": 11,
-      "opened": 0,
-      "closed": 0,
-      "note": "11 bar_close (AUDUSD x3 bullish +50 vs SELL, USDJPY x2 bearish -40 px 158.68 (158.50 break 18p away), GOLD x3 neutral in 4780-4810 zone no wick, USDCAD x1 below bounce, OIL x2 below $90). All SKIP. Hormuz closed Apr 18, US Navy seized Iran vessel, WTI $88.3 +7%, Brent $96 +6.3%, Iran suspends talks. Watchlist 7/7 KEEP, queries 8/8 KEEP."
-    },
-    {
-      "ts": "2026-04-20T16:27:01.738622+00:00",
-      "events": 3,
-      "skipped": 3,
-      "opened": 0,
-      "closed": 0,
-      "summary": "3 bar_close skips; USDJPY 15p from risk-off break; GOLD in zone but confluence neutral; WTI approaching $90"
-    },
-    {
-      "ts": "2026-04-20T16:31:47.764428+00:00",
-      "events": 15,
-      "skipped": 15,
-      "opened": 0,
-      "closed": 0,
-      "summary": "15 news_flash (us_iran_military) \u2014 all SKIP: Iran retaliated hitting US comms, US death toll 6, Trump 5-week campaign. Regime ESCALATION already priced; no new price trigger fired. All 7 level_alerts remain KEEP."
-    },
-    {
-      "ts": "2026-04-20T22:40:01",
-      "trigger": "bar_close x8",
-      "action": "all SKIP",
-      "summary": "AUDUSD 0.7172 +100p above 0.707 bull counter-regime; USDJPY 158.67 +17p above 158.50 bear BOS stacked imminent; GOLD 4808 in zone weak confluence; USDCAD 1.3646 broke through 1.370 zone (REMOVED); OIL 87.28 disbelieving blockade (added 85 breakdown, lowered 90 conv). Positions flat.",
-      "events_consumed": 8,
-      "trades": 0,
-      "watchlist_changes": "removed usdcad_sell_bounce_zone; added oil_crude_breakdown_85; modified oil_crude_escalation_90 (conv 2-3)"
-    },
-    {
-      "ts": "2026-04-20T23:00+05:30",
-      "trigger": "bar_close x3 (AUDUSD/USDJPY/GOLD M15)",
-      "action": "SKIP all 3 \u2014 counter-regime bull, 22p from break, weak confluence in buy zone respectively",
-      "watchlist_changes": [
-        "REMOVED usdjpy_intervention_zone (direction contradicts risk-off regime, 108p away)",
-        "MODIFIED oil_crude_escalation_90 note (pullback $89.94\u2192$87.44, ceasefire expiry Wed noted)"
-      ],
-      "news": "ceasefire expires Wed Apr 22; Trump called Hormuz closure a 'violation'; oil partial pullback",
-      "positions": "flat"
-    },
-    {
-      "ts": "2026-04-20T23:02:00+05:30",
-      "trigger": "news_heartbeat",
-      "events_consumed": 15,
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "positions_flat": true,
-      "regime": "ESCALATION_CONFIRMED_BLOCKADE_BITING",
-      "note": "15 news_flash (14 US/Iran mil re-indexed older; 1 fresh CNBC: Hormuz traffic rose then slowed after weekend attacks \u2014 consistent with oil .94\u2192.44 partial absorption). Watchlist audit all KEEP (5 alerts, 8 queries). No thesis shift, ceasefire expiry Wed Apr 22 remains key catalyst."
-    },
-    {
-      "time": "23:03 IST",
-      "trigger": "level_enter gold_escalation_buy_zone",
-      "outcome": "SKIP \u2014 R:R TP1 1.46:1 fails, no M15 BOS, day -0.5% dollar bid contradicts risk-off gold",
-      "positions": "flat",
-      "regime": "ESCALATION_CONFIRMED_BLOCKADE_BITING"
-    }
-  ]
-}
+[
+  {
+    "ts": "2026-04-20T23:07:00+05:30",
+    "tick": "forex_auto",
+    "events": 3,
+    "action": "SKIP",
+    "reason": "AUDUSD counter-regime bull; USDJPY 22p from risk-off break; GOLD neutral no BOS",
+    "news": "Trump extension 'highly unlikely'; WTI $89; Brent $95.50",
+    "positions": "flat $1000"
+  }
+]

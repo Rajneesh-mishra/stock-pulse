@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-20T23:00:00+05:30",
-  "pruned_at": "2026-04-20T23:00:00+05:30",
-  "pruned_by": "Oil pulled back $89.94→$87.44 (+4.42% vs +7.14% earlier) — market partially absorbed blockade. Ceasefire expires Wed Apr 22; Trump called Iran's Hormuz closure a 'violation'. USDJPY intervention zone removed: 108p below, risk-off regime bids yen (contradicts USD strength to 160). oil_90 note updated.",
+  "last_updated_by_claude": "2026-04-20T23:07:00+05:30",
+  "pruned_at": "2026-04-20T23:07:00+05:30",
+  "pruned_by": "Trump Apr 20 said ceasefire extension 'highly unlikely'; WTI back to ~$89, Brent $95.50. Hormuz re-closed by Iran military control. All 5 watchlist alerts KEEP — each tests actively at current levels. No new additions.",
   "pruned_removed": [
     "usdjpy_intervention_zone (price 158.72, 108p below 160; risk-off regime bids yen not USD — direction contradicts thesis; keep riskoff_break instead)"
   ],
