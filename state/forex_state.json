@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-20T20:00:00+05:30",
   "regime": "DE-ESCALATION_UNCONFIRMED",
-  "regime_note": "MONDAY 2026-04-20 14:30 UTC / 20:00 IST. Tick processed 15 news_flash events (4 unique IDs) — Iran/US ceasefire cracking: US attacked Iranian cargo ship; Iran reimposed Hormuz closure; Al Jazeera 'still far from breakthrough'; CNBC 'resumption of hostilities'. All confirm existing escalation regime flipped in prior tick — no thesis change. Broker verified: 0 positions, $1000 balance intact. Watchlist levels NOT hit (AUDUSD 0.7156 vs 0.7075-95 buy; USDJPY 158.91 vs 159.8-160.2 short; EURUSD 1.1764 vs 1.1815 breakout; USDCAD 1.3692 vs 1.3810-30 sell). ACTIVE TAIL RISK: Apr 22 original ceasefire expiry is Wed — binary event 2 days away. Stance: defensive, no new entries until either (a) formal Iran extension signed → risk-on re-engages, or (b) watchlist zone actually touches with 7-gate confirm. Opened 0, closed 0, skipped entries (no level triggers).",
+  "regime_note": "MONDAY 2026-04-20 14:45 UTC. Iran/US ceasefire cracking \u2014 Hormuz empty 3rd day, US seized Iranian ship Sunday, Trump threatens strikes, ceasefire expires Wed. Risk-off bias persists. Tick processed 3 bar_close events (AUDUSD/USDJPY/EURUSD 15M) \u2014 all skipped: news ambiguity per Step 4 default. 0 positions, $1000 base intact.",
   "open_positions": [],
   "watchlist": [
     {
@@ -156,7 +156,18 @@
       "status": "escalating",
       "impact": "risk-off, USD-strong, oil bid",
       "last_update": "2026-04-20T14:30:00Z",
-      "note": "Confirmed over 15 news flashes: CBS/NPR/PBS/CNBC/Reuters/Al Jazeera/NYT/Politico/Times of Israel. Iran reimposed Hormuz closure, IRGC gunboats fired at ships. US attacked Iranian cargo vessel. Al Jazeera 20 Apr: 'still far from breakthrough'. Apr 22 original ceasefire expiry live — binary event."
+      "note": "Confirmed over 15 news flashes: CBS/NPR/PBS/CNBC/Reuters/Al Jazeera/NYT/Politico/Times of Israel. Iran reimposed Hormuz closure, IRGC gunboats fired at ships. US attacked Iranian cargo vessel. Al Jazeera 20 Apr: 'still far from breakthrough'. Apr 22 original ceasefire expiry live \u2014 binary event."
+    }
+  ],
+  "last_tick_utc": "2026-04-20T14:45:29.961114Z",
+  "tick_history": [
+    {
+      "ts_utc": "2026-04-20T14:45:29.961114Z",
+      "events_in": 3,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 3,
+      "note": "bar_close triage \u2014 Iran ambiguity \u2192 skip all"
     }
   ]
 }
