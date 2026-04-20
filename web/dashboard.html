@@ -153,12 +153,42 @@
     max-height: 140px; overflow-y: auto; padding: 8px 10px;
     background: var(--panel-soft); border-radius: 4px; border: 1px solid var(--border);
   }
+
+  .chart-controls {
+    display: flex; align-items: center; gap: 14px;
+    margin-bottom: 10px; flex-wrap: wrap;
+  }
+  .chart-controls button {
+    background: transparent; border: 1px solid var(--border); color: var(--fg-dim);
+    padding: 4px 10px; font: inherit; font-size: 11px; border-radius: 3px;
+    cursor: pointer; letter-spacing: 1px;
+  }
+  .chart-controls button:hover { border-color: var(--fg-dim); color: var(--fg); }
+  .chart-controls button.active {
+    border-color: var(--blue); color: var(--blue); background: rgba(108, 182, 255, 0.08);
+  }
+  .chart-controls .label { color: var(--fg-faint); font-size: 10px; text-transform: uppercase; letter-spacing: 1px; }
+
+  #chartContainer {
+    position: relative; height: 420px; width: 100%;
+    background: var(--bg); border: 1px solid var(--border); border-radius: 4px;
+  }
+  #chartLegend {
+    margin-top: 8px; display: flex; flex-wrap: wrap; gap: 14px;
+    font-size: 11px; color: var(--fg-dim);
+  }
+  #chartLegend .item { display: inline-flex; align-items: center; gap: 6px; }
+  #chartLegend .sw { width: 14px; height: 3px; display: inline-block; }
+  #chartLegend .sw.dashed {
+    background: repeating-linear-gradient(90deg, currentColor 0 4px, transparent 4px 7px);
+  }
   .regime-tag {
     display: inline-block; padding: 2px 8px; border-radius: 3px;
     background: rgba(108, 182, 255, 0.15); color: var(--blue);
     font-size: 10px; letter-spacing: 1px; margin-bottom: 6px;
   }
 </style>
+<script src="https://unpkg.com/lightweight-charts@4.2.0/dist/lightweight-charts.standalone.production.js"></script>
 </head>
 <body>
 <div class="shell">
@@ -202,6 +232,23 @@
       <div id="regimeNote" class="regime-note">—</div>
     </section>
   </div>
+
+  <section>
+    <h2>Charts <span class="count" id="chartHint">— pick an instrument</span></h2>
+    <div class="chart-controls">
+      <span class="label">instrument</span>
+      <div id="chartInstruments" style="display:inline-flex;gap:4px"></div>
+      <span class="label" style="margin-left:12px">timeframe</span>
+      <div style="display:inline-flex;gap:4px">
+        <button data-tf="MINUTE_15">15m</button>
+        <button data-tf="HOUR" class="active">H1</button>
+        <button data-tf="HOUR_4">H4</button>
+        <button data-tf="DAY">D</button>
+      </div>
+    </div>
+    <div id="chartContainer"></div>
+    <div id="chartLegend"></div>
+  </section>
 
   <section>
     <h2>Live event stream <span class="count"><span id="eventsTotal">0</span> total, <span id="eventsUnconsumed">0</span> unconsumed</span></h2>
@@ -299,6 +346,7 @@ async function fetchSnapshot() {
     renderWatchlist(s.watchlist);
     renderState(s.state_file);
     renderWsTag(s.ws_stats);
+    updateInstrumentTabs(s.watchlist);
     document.getElementById('eventsTotal').textContent = s.events_total ?? 0;
     document.getElementById('eventsUnconsumed').textContent = s.events_unconsumed ?? 0;
     const age = s.broker?.cache_age_sec ?? 0;
@@ -495,6 +543,7 @@ function connectTickStream() {
       const mid = (t.bid + t.ofr) / 2;
       liveTicks[t.epic] = { bid: t.bid, ofr: t.ofr, mid, ts: t.ts_ms };
       updateWatchlistRow(t.epic, mid);
+      onTickForChart(t);
     } catch (e) { /* ignore */ }
   };
   es.onerror = () => {
@@ -641,6 +690,204 @@ async function fetchTicks() {
       ));
     }
   } catch (e) { /* ignore */ }
+}
+
+// ── Charts (TradingView lightweight-charts) ─────────────────────────
+let chart = null, candleSeries = null;
+let currentEpic = null, currentTF = 'HOUR';
+let chartBars = [];        // last loaded bars (for live-update of last close)
+let priceLines = [];       // currently drawn price lines (for removal)
+
+function initChart() {
+  if (typeof LightweightCharts === 'undefined') return false;
+  const container = document.getElementById('chartContainer');
+  chart = LightweightCharts.createChart(container, {
+    width: container.clientWidth,
+    height: 420,
+    layout: {
+      background: { type: 'solid', color: '#0a0e14' },
+      textColor: '#8599a8',
+      fontFamily: 'SF Mono, ui-monospace, Menlo, monospace',
+    },
+    grid: {
+      vertLines: { color: '#141b23' },
+      horzLines: { color: '#141b23' },
+    },
+    timeScale: { timeVisible: true, borderColor: '#1e2730', rightOffset: 4 },
+    rightPriceScale: { borderColor: '#1e2730' },
+    crosshair: { mode: 1 },
+  });
+  candleSeries = chart.addCandlestickSeries({
+    upColor: '#7ce38b', downColor: '#ff6b6b',
+    borderUpColor: '#7ce38b', borderDownColor: '#ff6b6b',
+    wickUpColor: '#7ce38b', wickDownColor: '#ff6b6b',
+  });
+  new ResizeObserver(() => {
+    if (chart) chart.applyOptions({ width: container.clientWidth });
+  }).observe(container);
+  return true;
+}
+
+function _parseBarTime(t) {
+  // Capital.com returns ISO like "2026-04-20T13:00:00Z" or with .000 fractional
+  const d = new Date(t);
+  return Math.floor(d.getTime() / 1000);
+}
+
+function clearPriceLines() {
+  for (const pl of priceLines) {
+    try { candleSeries.removePriceLine(pl); } catch (e) {}
+  }
+  priceLines = [];
+}
+
+function addLine(price, color, opts = {}) {
+  const pl = candleSeries.createPriceLine({
+    price: Number(price),
+    color: color,
+    lineWidth: opts.lineWidth || 1,
+    lineStyle: opts.lineStyle || LightweightCharts.LineStyle.Solid,
+    axisLabelVisible: true,
+    title: opts.title || '',
+  });
+  priceLines.push(pl);
+  return pl;
+}
+
+async function loadChart(epic, tf) {
+  if (!chart) {
+    if (!initChart()) {
+      document.getElementById('chartContainer').textContent = 'Loading chart library…';
+      return;
+    }
+  }
+  currentEpic = epic;
+  currentTF = tf;
+  document.getElementById('chartHint').textContent = `— ${epic} · ${tf}`;
+
+  // Highlight active instrument tab
+  document.querySelectorAll('#chartInstruments button').forEach(b => {
+    b.classList.toggle('active', b.dataset.epic === epic);
+  });
+  // Highlight active TF button
+  document.querySelectorAll('.chart-controls [data-tf]').forEach(b => {
+    b.classList.toggle('active', b.dataset.tf === tf);
+  });
+
+  try {
+    const [candleRes, ctxRes] = await Promise.all([
+      fetch(`/api/candles?epic=${encodeURIComponent(epic)}&resolution=${encodeURIComponent(tf)}`),
+      fetch(`/api/chart_context?epic=${encodeURIComponent(epic)}`),
+    ]);
+    const candleData = await candleRes.json();
+    const ctx = await ctxRes.json();
+
+    chartBars = (candleData.candles || [])
+      .filter(c => c.time && c.open != null)
+      .map(c => ({
+        time: _parseBarTime(c.time),
+        open: c.open, high: c.high, low: c.low, close: c.close,
+      }))
+      .sort((a, b) => a.time - b.time);
+    candleSeries.setData(chartBars);
+
+    clearPriceLines();
+    const legend = [];
+
+    // Watchlist overlays (purple zones, amber levels)
+    for (const a of ctx.alerts || []) {
+      if ('zone_low' in a && 'zone_high' in a) {
+        addLine(a.zone_low, '#b083f0', { title: `${a.id} ▲`, lineStyle: LightweightCharts.LineStyle.Solid });
+        addLine(a.zone_high, '#b083f0', { title: `${a.id} ▼`, lineStyle: LightweightCharts.LineStyle.Solid });
+        legend.push({ swatch: '#b083f0', label: `${a.id}  zone ${fmtPrice(a.zone_low, epic)}–${fmtPrice(a.zone_high, epic)}` });
+      } else if ('level' in a) {
+        addLine(a.level, '#ffcf70', { title: a.id, lineStyle: LightweightCharts.LineStyle.Dashed });
+        legend.push({ swatch: '#ffcf70', dashed: true, label: `${a.id}  ${a.emit_on} @ ${fmtPrice(a.level, epic)}` });
+      }
+    }
+
+    // Position overlays (bright green/red, thick lines)
+    for (const p of ctx.positions || []) {
+      const isLong = (p.direction || '').toUpperCase() === 'BUY';
+      const entryColor = isLong ? '#7ce38b' : '#ff6b6b';
+      addLine(p.level, entryColor, { title: `${p.direction} entry`, lineWidth: 2 });
+      legend.push({ swatch: entryColor, label: `${p.direction} ${p.size}  entry ${fmtPrice(p.level, epic)}` });
+      if (p.stopLevel != null) {
+        addLine(p.stopLevel, '#ff6b6b', { title: 'SL', lineWidth: 2, lineStyle: LightweightCharts.LineStyle.Dashed });
+        legend.push({ swatch: '#ff6b6b', dashed: true, label: `SL  ${fmtPrice(p.stopLevel, epic)}` });
+      }
+      if (p.profitLevel != null) {
+        addLine(p.profitLevel, '#7ce38b', { title: 'TP', lineWidth: 2, lineStyle: LightweightCharts.LineStyle.Dashed });
+        legend.push({ swatch: '#7ce38b', dashed: true, label: `TP  ${fmtPrice(p.profitLevel, epic)}` });
+      }
+    }
+
+    // Current price line (blue, thin) — live-updated from WS tick stream
+    if (ctx.tick && ctx.tick.bid != null && ctx.tick.ofr != null) {
+      const mid = (ctx.tick.bid + ctx.tick.ofr) / 2;
+      addLine(mid, '#6cb6ff', { title: 'live', lineWidth: 1 });
+      legend.push({ swatch: '#6cb6ff', label: `live  ${fmtPrice(mid, epic)}` });
+    }
+
+    renderChartLegend(legend);
+  } catch (e) {
+    console.error('loadChart failed', e);
+    document.getElementById('chartHint').textContent = `— ${epic} load failed: ${e.message}`;
+  }
+}
+
+function renderChartLegend(items) {
+  const el = document.getElementById('chartLegend');
+  el.replaceChildren();
+  for (const it of items) {
+    const wrap = h('span', { className: 'item' });
+    const sw = h('span', {
+      className: 'sw' + (it.dashed ? ' dashed' : ''),
+      style: { background: it.dashed ? 'transparent' : it.swatch, color: it.swatch }
+    });
+    wrap.appendChild(sw);
+    wrap.appendChild(document.createTextNode(it.label));
+    el.appendChild(wrap);
+  }
+}
+
+function updateInstrumentTabs(watchlist) {
+  const el = document.getElementById('chartInstruments');
+  if (!watchlist || !watchlist.alerts) return;
+  const instruments = [...new Set(watchlist.alerts.map(a => a.instrument))].sort();
+  const existing = [...el.querySelectorAll('button')].map(b => b.dataset.epic);
+  if (instruments.length === existing.length && instruments.every(i => existing.includes(i))) return;
+  el.replaceChildren();
+  for (const ep of instruments) {
+    const btn = document.createElement('button');
+    btn.textContent = ep;
+    btn.dataset.epic = ep;
+    btn.className = ep === currentEpic ? 'active' : '';
+    btn.addEventListener('click', () => loadChart(ep, currentTF));
+    el.appendChild(btn);
+  }
+  if (!currentEpic && instruments.length > 0) {
+    loadChart(instruments[0], currentTF);
+  }
+}
+
+// Wire timeframe buttons
+document.querySelectorAll('.chart-controls [data-tf]').forEach(b => {
+  b.addEventListener('click', () => {
+    if (currentEpic) loadChart(currentEpic, b.dataset.tf);
+  });
+});
+
+// Live-update chart on each tick for the currently-viewed instrument
+function onTickForChart(tick) {
+  if (!chart || !candleSeries || tick.epic !== currentEpic) return;
+  if (chartBars.length === 0) return;
+  const mid = (tick.bid + tick.ofr) / 2;
+  const last = chartBars[chartBars.length - 1];
+  last.close = mid;
+  last.high = Math.max(last.high, mid);
+  last.low = Math.min(last.low, mid);
+  try { candleSeries.update(last); } catch (e) {}
 }
 
 // ── Boot ────────────────────────────────────────────────────────────

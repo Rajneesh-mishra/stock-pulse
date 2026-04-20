@@ -38,6 +38,8 @@ except ImportError:
 REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "forex"))
 
+from technicals import get_full_candles  # noqa: E402
+
 PORT = int(os.environ.get("DASHBOARD_PORT", "8787"))
 HTML_FILE = REPO / "web" / "dashboard.html"
 EVENTS_FILE = REPO / "state" / "forex_events.jsonl"
@@ -50,6 +52,11 @@ STATE_FILE = REPO / "state" / "forex_state.json"
 # Broker call cache — thread-safe, 3-sec TTL
 _broker_cache = {"ts": 0, "positions": None, "account": None, "prices": {}}
 _broker_lock = threading.Lock()
+
+# Candle cache — {(epic, resolution): {ts, candles}}, 30-sec TTL
+_candle_cache = {}
+_candle_cache_lock = threading.Lock()
+CANDLE_CACHE_TTL = 30
 
 # Live tick stream state
 WS_URL = "wss://api-streaming-capital.backend-capital.com/connect"
@@ -268,6 +275,55 @@ def recent_ticks(n=15):
         return out
     except Exception:
         return []
+
+
+# ── Candles (cached) ─────────────────────────────────────────────────────────
+
+def fetch_candles(epic, resolution, count=200):
+    """Return OHLC bars for charting. Cached 30s per (epic, resolution)."""
+    key = (epic, resolution)
+    now = time.time()
+    with _candle_cache_lock:
+        cached = _candle_cache.get(key)
+        if cached and now - cached["ts"] < CANDLE_CACHE_TTL:
+            return cached["candles"]
+    try:
+        candles = get_full_candles(epic, resolution, count)
+    except Exception as e:
+        log(f"fetch_candles({epic},{resolution}) failed: {e}")
+        candles = []
+    with _candle_cache_lock:
+        _candle_cache[key] = {"ts": now, "candles": candles}
+    return candles
+
+
+def chart_context(epic):
+    """Aggregate all overlay data for one instrument: alerts, positions, tick."""
+    alerts = []
+    try:
+        signals = json.loads(SIGNALS_FILE.read_text())
+        for a in signals.get("level_alerts", []):
+            if a.get("instrument") == epic:
+                alerts.append(a)
+    except Exception:
+        pass
+
+    positions = []
+    broker = broker_snapshot()
+    pos_data = (broker.get("positions") or {}).get("positions") or []
+    for p in pos_data:
+        if p.get("epic") == epic:
+            positions.append(p)
+
+    with _ticks_lock:
+        tick = _latest_ticks.get(epic)
+
+    return {
+        "epic": epic,
+        "alerts": alerts,
+        "positions": positions,
+        "tick": tick,
+    }
 
 
 # ── WebSocket tick streamer ──────────────────────────────────────────────────
@@ -504,6 +560,23 @@ class Handler(BaseHTTPRequestHandler):
                 self._stream_events()
             elif u.path == "/api/ticks/stream":
                 self._stream_ticks()
+            elif u.path == "/api/candles":
+                epic = q.get("epic", [""])[0]
+                resolution = q.get("resolution", ["HOUR"])[0]
+                count = int(q.get("count", ["200"])[0])
+                if not epic:
+                    self._json({"error": "epic required"}, status=400)
+                else:
+                    self._json({
+                        "epic": epic, "resolution": resolution,
+                        "candles": fetch_candles(epic, resolution, count),
+                    })
+            elif u.path == "/api/chart_context":
+                epic = q.get("epic", [""])[0]
+                if not epic:
+                    self._json({"error": "epic required"}, status=400)
+                else:
+                    self._json(chart_context(epic))
             elif u.path == "/api/ticks":
                 self._json({"ticks": recent_ticks(15)})
             elif u.path == "/api/control":
