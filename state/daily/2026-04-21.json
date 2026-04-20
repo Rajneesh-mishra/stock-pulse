@@ -70,5 +70,16 @@
       "positions": 0
     },
     "audit": "5 watchlist + 9 structure + 8 queries all KEEP"
+  },
+  {
+    "ts_utc": "2026-04-20T21:11:55Z",
+    "trigger": "heartbeat_events",
+    "events_processed": 13,
+    "actions": {
+      "opened": 0,
+      "closed": 0,
+      "skipped": 13
+    },
+    "notes": "7 bar_close visible at Step 1 + 6 more concurrent, all SKIP. Flat $1000. Broker matches state. Audit: all 5 watchlist + 9 structure + 8 queries KEEP (same as 20:56 tick, 14min ago)."
   }
 ]
