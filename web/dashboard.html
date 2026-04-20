@@ -40,6 +40,11 @@
     box-shadow: 0 0 8px var(--green);
     animation: pulse 2s ease-in-out infinite;
   }
+  header .ws-tag {
+    font-size: 10px; letter-spacing: 1px; padding: 2px 6px; border-radius: 3px;
+    background: rgba(108, 182, 255, 0.12); color: var(--blue);
+  }
+  header .ws-tag.off { background: rgba(255, 107, 107, 0.12); color: var(--red); }
   @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
 
   .grid { display: grid; gap: 14px; grid-template-columns: 1fr 1fr; }
@@ -102,6 +107,12 @@
   .watchlist td.dist { color: var(--fg-dim); font-variant-numeric: tabular-nums; }
   .watchlist tr.inside td.dist { color: var(--green); font-weight: 600; }
   .watchlist tr.close td.dist { color: var(--amber); }
+  .watchlist td.price { position: relative; transition: background-color 0.3s ease-out; }
+  .watchlist td.price.up   { background: rgba(124, 227, 139, 0.12); }
+  .watchlist td.price.down { background: rgba(255, 107, 107, 0.12); }
+  .watchlist .price-marker {
+    transition: left 0.3s ease-out;
+  }
 
   .events-feed { max-height: 520px; overflow-y: auto; font-size: 12px; }
   .events-feed::-webkit-scrollbar { width: 8px; }
@@ -156,6 +167,7 @@
     <span class="dot" id="liveDot"></span>
     <h1>FOREX PULSE</h1>
     <span class="sub" id="status">connecting…</span>
+    <span class="ws-tag off" id="wsTag">WS ◦</span>
     <span class="clock" id="clock"></span>
   </header>
 
@@ -208,6 +220,14 @@
 const SNAPSHOT_INTERVAL_MS = 5000;
 const EVENTS_INITIAL_LOAD = 50;
 const MAX_EVENTS_IN_DOM = 100;
+
+// Latest ticks per epic — updated by WS stream, used by watchlist renderer
+const liveTicks = {};
+// Track previous mid per epic to colorize up/down flashes
+const prevMid = {};
+// Keep last-rendered alert data so we can re-render rows without fresh snapshot
+let lastWatchlist = null;
+let lastBrokerPrices = {};
 
 // ── Helpers: safe DOM construction (no innerHTML with untrusted data) ─────
 function h(tag, props, ...kids) {
@@ -266,8 +286,19 @@ async function fetchSnapshot() {
     lastSnapshotOk = Date.now();
     renderBroker(s.broker);
     renderDaemons(s.daemons);
+    lastBrokerPrices = s.broker?.prices || {};
+    lastWatchlist = s.watchlist;
+    // Seed liveTicks from snapshot (first load, before WS fills it)
+    if (s.live_ticks) {
+      for (const [epic, t] of Object.entries(s.live_ticks)) {
+        if (t && t.bid != null && t.ofr != null) {
+          liveTicks[epic] = { bid: t.bid, ofr: t.ofr, mid: (t.bid + t.ofr) / 2, ts: t.ts_ms };
+        }
+      }
+    }
     renderWatchlist(s.watchlist);
     renderState(s.state_file);
+    renderWsTag(s.ws_stats);
     document.getElementById('eventsTotal').textContent = s.events_total ?? 0;
     document.getElementById('eventsUnconsumed').textContent = s.events_unconsumed ?? 0;
     const age = s.broker?.cache_age_sec ?? 0;
@@ -363,7 +394,9 @@ function renderWatchlist(w) {
   if (!w || !w.alerts) return;
 
   for (const a of w.alerts) {
-    const mid = a.current_price;
+    // Prefer WS live tick over 3-sec-cached broker snapshot
+    const live = liveTicks[a.instrument];
+    const mid = live ? live.mid : a.current_price;
     const price = mid != null ? fmtPrice(mid, a.instrument) : '—';
     let target = '—', distClass = '';
 
@@ -376,7 +409,10 @@ function renderWatchlist(w) {
       h('div', { style: { color: 'var(--fg-faint)', fontSize: '10px' } }, a.id)
     );
     tr.appendChild(instCell);
-    tr.appendChild(txt('td', 'n', price));
+
+    // Price cell — tagged with epic so the tick handler can recolor it fast
+    const priceCell = h('td', { className: 'n price', dataset: { epic: a.instrument } }, price);
+    tr.appendChild(priceCell);
 
     // Target + distance
     if (a.kind === 'zone') {
@@ -392,8 +428,8 @@ function renderWatchlist(w) {
     const distTxt = a.inside ? 'IN ZONE' : a.distance_pips != null ? fmtPips(a.distance_pips) : '—';
     tr.appendChild(txt('td', 'dist n', distTxt));
 
-    // Bar (computed positions only, no data interpolation into HTML)
-    const barCell = h('td', { className: 'bar' });
+    // Bar — tagged for fast in-place updates from tick stream
+    const barCell = h('td', { className: 'bar', dataset: { epic: a.instrument } });
     if (mid != null) {
       if (a.kind === 'zone') {
         const windowLow = Math.min(a.zone_low, mid) * 0.995;
@@ -428,6 +464,109 @@ function renderState(s) {
   if (!s) return;
   document.getElementById('regimeTag').textContent = s.regime || '—';
   document.getElementById('regimeNote').textContent = s.regime_note || '—';
+}
+
+function renderWsTag(ws) {
+  const tag = document.getElementById('wsTag');
+  if (!ws || ws.status === 'unavailable') {
+    tag.textContent = 'WS off';
+    tag.classList.add('off');
+    return;
+  }
+  if (ws.status === 'connected') {
+    tag.textContent = `WS live · ${ws.ticks_received} ticks`;
+    tag.classList.remove('off');
+  } else if (ws.status === 'connecting') {
+    tag.textContent = 'WS connecting…';
+    tag.classList.add('off');
+  } else {
+    tag.textContent = `WS ${ws.status} · ${ws.reconnects} reconnects`;
+    tag.classList.add('off');
+  }
+}
+
+// ── Live tick stream (WebSocket via server SSE proxy) ───────────────
+function connectTickStream() {
+  const es = new EventSource('/api/ticks/stream');
+  es.onmessage = (m) => {
+    try {
+      const t = JSON.parse(m.data);
+      if (!t.epic || t.bid == null || t.ofr == null) return;
+      const mid = (t.bid + t.ofr) / 2;
+      liveTicks[t.epic] = { bid: t.bid, ofr: t.ofr, mid, ts: t.ts_ms };
+      updateWatchlistRow(t.epic, mid);
+    } catch (e) { /* ignore */ }
+  };
+  es.onerror = () => {
+    document.getElementById('wsTag').textContent = 'WS SSE dropped';
+    document.getElementById('wsTag').classList.add('off');
+    setTimeout(connectTickStream, 5000);
+  };
+}
+
+function updateWatchlistRow(epic, mid) {
+  // Flash color based on direction vs last mid
+  const prev = prevMid[epic];
+  const dir = prev != null ? (mid > prev ? 'up' : mid < prev ? 'down' : null) : null;
+  prevMid[epic] = mid;
+
+  // Update price cell text + flash
+  const priceCell = document.querySelector(`td.price[data-epic="${epic}"]`);
+  if (priceCell) {
+    priceCell.textContent = fmtPrice(mid, epic);
+    priceCell.classList.remove('up', 'down');
+    if (dir) {
+      priceCell.classList.add(dir);
+      // Remove flash class after transition
+      setTimeout(() => priceCell.classList.remove(dir), 600);
+    }
+  }
+
+  // Recompute distance + redraw bar + row class
+  if (!lastWatchlist || !lastWatchlist.alerts) return;
+  const alert = lastWatchlist.alerts.find(a => a.instrument === epic);
+  if (!alert) return;
+
+  const row = priceCell ? priceCell.parentElement : null;
+  if (!row) return;
+
+  let distPips = null, inside = false, cls = '';
+  if (alert.kind === 'zone') {
+    inside = alert.zone_low <= mid && mid <= alert.zone_high;
+    const dist = inside ? 0 : Math.min(Math.abs(mid - alert.zone_low), Math.abs(mid - alert.zone_high));
+    const scale = epic === 'USDJPY' ? 100 : (epic === 'OIL_CRUDE' || epic === 'GOLD' || epic === 'BTCUSD') ? 1 : 10000;
+    distPips = dist * scale;
+    if (inside) cls = 'inside';
+  } else {
+    const dist = Math.abs(mid - alert.level);
+    const scale = epic === 'USDJPY' ? 100 : (epic === 'OIL_CRUDE' || epic === 'GOLD' || epic === 'BTCUSD') ? 1 : 10000;
+    distPips = dist * scale;
+    if (distPips < 10) cls = 'close';
+  }
+  row.className = cls;
+  const distCell = row.querySelector('td.dist');
+  if (distCell) distCell.textContent = inside ? 'IN ZONE' : (distPips != null ? fmtPips(distPips) : '—');
+
+  // Redraw bar — just move the price marker
+  const barCell = row.querySelector(`td.bar[data-epic="${epic}"]`);
+  if (barCell) {
+    const marker = barCell.querySelector('.price-marker');
+    if (marker) {
+      let windowLow, windowHigh;
+      if (alert.kind === 'zone') {
+        windowLow = Math.min(alert.zone_low, mid) * 0.995;
+        windowHigh = Math.max(alert.zone_high, mid) * 1.005;
+      } else {
+        windowLow = Math.min(alert.level, mid) * 0.99;
+        windowHigh = Math.max(alert.level, mid) * 1.01;
+      }
+      const span = windowHigh - windowLow;
+      if (span > 0) {
+        const pPct = Math.max(0, Math.min(100, ((mid - windowLow) / span) * 100));
+        marker.style.left = pPct + '%';
+      }
+    }
+  }
 }
 
 // ── Events ──────────────────────────────────────────────────────────
@@ -508,6 +647,7 @@ async function fetchTicks() {
 fetchSnapshot();
 loadInitialEvents();
 connectEventStream();
+connectTickStream();
 fetchTicks();
 setInterval(fetchSnapshot, SNAPSHOT_INTERVAL_MS);
 setInterval(fetchTicks, 30000);

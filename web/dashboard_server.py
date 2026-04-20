@@ -18,14 +18,22 @@ Listen: http://localhost:8787  (override with DASHBOARD_PORT env var)
 
 import json
 import os
+import queue
 import subprocess
 import sys
 import threading
 import time
+import traceback
 from datetime import datetime, timezone
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlparse, parse_qs
+
+try:
+    from websockets.sync.client import connect as ws_connect
+    WS_AVAILABLE = True
+except ImportError:
+    WS_AVAILABLE = False
 
 REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "forex"))
@@ -42,6 +50,22 @@ STATE_FILE = REPO / "state" / "forex_state.json"
 # Broker call cache — thread-safe, 3-sec TTL
 _broker_cache = {"ts": 0, "positions": None, "account": None, "prices": {}}
 _broker_lock = threading.Lock()
+
+# Live tick stream state
+WS_URL = "wss://api-streaming-capital.backend-capital.com/connect"
+WS_PING_SEC = 540  # 9 min (server expires WS session at 10 min)
+_latest_ticks = {}          # {epic: {"bid": ..., "ofr": ..., "ts_ms": ..., "rcv_ts": ...}}
+_ticks_lock = threading.Lock()
+_tick_subs = []             # list[queue.Queue] — SSE subscribers
+_subs_lock = threading.Lock()
+_ws_stats = {
+    "status": "init",
+    "reconnects": 0,
+    "ticks_received": 0,
+    "last_tick_at": None,
+    "subscribed_epics": [],
+    "last_error": None,
+}
 
 DAEMON_META = [
     {"name": "watcher",   "label": "com.stockpulse.forexwatcher",
@@ -246,10 +270,143 @@ def recent_ticks(n=15):
         return []
 
 
+# ── WebSocket tick streamer ──────────────────────────────────────────────────
+
+def _ws_subscribed_epics():
+    """All epics we care about — union of watchlist alerts + structure watch."""
+    try:
+        signals = json.loads(SIGNALS_FILE.read_text())
+        epics = set()
+        for a in signals.get("level_alerts", []):
+            epics.add(a["instrument"])
+        for s in signals.get("structure_watch", []):
+            epics.add(s["instrument"])
+        for i in signals.get("instruments", []):
+            epics.add(i)
+        return sorted(epics)[:40]  # WS limit
+    except Exception:
+        return ["EURUSD", "USDJPY", "GOLD", "OIL_CRUDE", "BTCUSD",
+                "AUDUSD", "USDCAD", "GBPUSD", "USDCHF"]
+
+
+def _ws_broadcast(tick):
+    """Non-blocking fan-out to SSE subscribers. Drops slow consumers."""
+    dead = []
+    with _subs_lock:
+        for q in _tick_subs:
+            try:
+                q.put_nowait(tick)
+            except queue.Full:
+                dead.append(q)
+        for d in dead:
+            try:
+                _tick_subs.remove(d)
+            except ValueError:
+                pass
+
+
+def _ws_connection_loop():
+    """Background thread: connect to Capital WS, subscribe, relay ticks.
+    Reconnects on failure with backoff. Refreshes session on 401-style drops."""
+    from technicals import _ensure_session  # noqa: E402
+
+    corr = [0]
+    def next_corr():
+        corr[0] += 1
+        return str(corr[0])
+
+    while True:
+        try:
+            s = _ensure_session()
+            _ws_stats["status"] = "connecting"
+            with ws_connect(WS_URL, open_timeout=15, close_timeout=5,
+                            max_size=2**20) as ws:
+                epics = _ws_subscribed_epics()
+                ws.send(json.dumps({
+                    "destination": "marketData.subscribe",
+                    "correlationId": next_corr(),
+                    "cst": s["cst"], "securityToken": s["tok"],
+                    "payload": {"epics": epics},
+                }))
+                _ws_stats["status"] = "connected"
+                _ws_stats["subscribed_epics"] = epics
+                _ws_stats["last_error"] = None
+                log(f"WS connected, subscribed to {len(epics)} epics: {epics}")
+
+                last_ping = time.time()
+
+                while True:
+                    # Periodic ping (don't wait for new messages to trigger)
+                    if time.time() - last_ping > WS_PING_SEC:
+                        try:
+                            ws.send(json.dumps({
+                                "destination": "ping",
+                                "correlationId": f"ping-{next_corr()}",
+                                "cst": s["cst"], "securityToken": s["tok"],
+                            }))
+                            last_ping = time.time()
+                        except Exception as e:
+                            raise RuntimeError(f"ping failed: {e}")
+
+                    try:
+                        msg = ws.recv(timeout=30)
+                    except TimeoutError:
+                        continue  # loop back to ping check
+
+                    try:
+                        d = json.loads(msg)
+                    except Exception:
+                        continue
+
+                    dest = d.get("destination")
+                    if dest == "quote":
+                        p = d.get("payload", {}) or {}
+                        epic = p.get("epic")
+                        if not epic:
+                            continue
+                        tick = {
+                            "epic": epic,
+                            "bid": p.get("bid"),
+                            "ofr": p.get("ofr"),
+                            "ts_ms": p.get("timestamp"),
+                            "rcv_ts": int(time.time() * 1000),
+                        }
+                        with _ticks_lock:
+                            _latest_ticks[epic] = tick
+                        _ws_stats["ticks_received"] += 1
+                        _ws_stats["last_tick_at"] = datetime.now(timezone.utc).isoformat()
+                        _ws_broadcast(tick)
+                    elif dest == "ping":
+                        pass  # ack
+                    elif dest == "marketData.subscribe":
+                        pass  # subscribe ack
+                    # Other destinations ignored
+        except Exception as e:
+            _ws_stats["status"] = "reconnecting"
+            _ws_stats["reconnects"] += 1
+            _ws_stats["last_error"] = str(e)[:200]
+            log(f"WS loop error: {e} — reconnecting in 10s")
+            time.sleep(10)
+
+
+def start_ws_streamer():
+    if not WS_AVAILABLE:
+        log("websockets library unavailable — live ticks disabled")
+        _ws_stats["status"] = "unavailable"
+        _ws_stats["last_error"] = "websockets library not installed"
+        return
+    t = threading.Thread(target=_ws_connection_loop, daemon=True,
+                         name="capital-ws-streamer")
+    t.start()
+    log("WS streamer thread started")
+
+
 # ── Full snapshot ────────────────────────────────────────────────────────────
 
 def full_snapshot():
     broker = broker_snapshot()
+    with _ticks_lock:
+        live_ticks = dict(_latest_ticks)
     return {
         "ts": datetime.now(timezone.utc).isoformat(),
         "daemons": daemon_snapshot(),
@@ -258,6 +415,8 @@ def full_snapshot():
         "events_total": _count_events(),
         "events_unconsumed": _count_unconsumed(),
         "state_file": _read_state_minimal(),
+        "live_ticks": live_ticks,
+        "ws_stats": _ws_stats,
     }
 
 
@@ -343,6 +502,8 @@ class Handler(BaseHTTPRequestHandler):
                 self._json({"events": recent_events(n)})
             elif u.path == "/api/events/stream":
                 self._stream_events()
+            elif u.path == "/api/ticks/stream":
+                self._stream_ticks()
             elif u.path == "/api/ticks":
                 self._json({"ticks": recent_ticks(15)})
             elif u.path == "/api/control":
@@ -403,6 +564,47 @@ class Handler(BaseHTTPRequestHandler):
         except (BrokenPipeError, ConnectionResetError):
             pass
 
+    def _stream_ticks(self):
+        """SSE — push every new Capital.com tick to browser.
+        On connect, send current snapshot so the UI has data immediately."""
+        self.send_response(200)
+        self.send_header("Content-Type", "text/event-stream")
+        self.send_header("Cache-Control", "no-cache")
+        self.send_header("X-Accel-Buffering", "no")
+        self.end_headers()
+
+        q = queue.Queue(maxsize=500)
+        with _subs_lock:
+            _tick_subs.append(q)
+
+        try:
+            self.wfile.write(b": connected\n\n")
+            self.wfile.flush()
+
+            # Initial snapshot of what we already know
+            with _ticks_lock:
+                snap = list(_latest_ticks.values())
+            for tick in snap:
+                self.wfile.write(f"data: {json.dumps(tick, default=str)}\n\n".encode())
+            self.wfile.flush()
+
+            while True:
+                try:
+                    tick = q.get(timeout=15)
+                    self.wfile.write(f"data: {json.dumps(tick, default=str)}\n\n".encode())
+                    self.wfile.flush()
+                except queue.Empty:
+                    self.wfile.write(b": keepalive\n\n")
+                    self.wfile.flush()
+        except (BrokenPipeError, ConnectionResetError):
+            pass
+        finally:
+            with _subs_lock:
+                try:
+                    _tick_subs.remove(q)
+                except ValueError:
+                    pass
+
     def _set_control(self, daemon_name, action):
         meta = next((d for d in DAEMON_META if d["name"] == daemon_name), None)
         if not meta:
@@ -417,6 +619,7 @@ class Handler(BaseHTTPRequestHandler):
 def main():
     if not HTML_FILE.exists():
         log(f"WARN: {HTML_FILE} missing")
+    start_ws_streamer()
     log(f"dashboard listening on http://localhost:{PORT}  (repo={REPO})")
     server = ThreadingHTTPServer(("127.0.0.1", PORT), Handler)
     try:
