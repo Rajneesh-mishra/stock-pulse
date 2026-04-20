@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-20T19:40:00+05:30",
   "regime": "DE-ESCALATION_UNCONFIRMED",
-  "regime_note": "MONDAY LONDON 14:00 UTC / 19:40 IST. Events-driven tick: 6 events processed (5 bar_close + 1 TEST), ALL SKIPPED — no watchlist triggers hit. SNAPSHOT at 14:00 UTC bar close: AUDUSD 0.71674 (H1 bullish trend, fresh bull FVG 0.71631-0.71674 unmitigated right under price — structure intact but M15 bearish suggests shallow pullback possible; trigger 0.7080-0.7090 NOT hit, breakout 0.7190 NOT hit); USDJPY 158.679 (M15 bearish, fresh bear FVG 158.694-158.783 unfilled — price dropping, far below 160 short zone); EURUSD 1.17720 (M15 bearish CHoCH, below 1.1815 breakout trigger); USDCAD 1.36783 (H1 bearish, fresh bear FVG — price making new lows, nowhere near 1.381 short bounce). All 4 directional theses ALIGNED with market but no quality entry levels. Iran Apr 22 expiry 2 days away — binary risk live. 0 positions, $1000 capital intact.",
+  "regime_note": "MONDAY 2026-04-20 14:20 UTC / 19:50 IST. REGIME FLIP: Iran ceasefire thesis INVALIDATED. US Navy fired on/seized Iranian cargo vessel in Gulf of Oman. Crude gapped to ~$89.20 (+6.38%). USD index bullish pin-bar gap-up. Prior 'peace deal / USD-weak' regime flipped to risk-off / USD-strong. Open positions: 0. Watchlist NOT near trigger zones (AUDUSD 0.7165 vs 0.7075-95 buy; USDJPY 158.76 vs 159.8-160.2 short; EURUSD 1.1772 vs 1.1815 breakout; OIL_CRUDE 86.47 at Capital.com, market ref $89.20). INVALIDATIONS: oil_crude_sub_85 short thesis DEAD (escalation). usdcad DXY-weakness short questionable. REMAINING VALID: usdjpy intervention short (risk-off USD strength could push to 160 fast). audusd pullback buy still possible if risk-off deepens, but wait for 7-gate confirmation. Events this tick: 6 bar_close (AUDUSD M15, USDJPY H1+M15, EURUSD H1+M15, OIL_CRUDE H1) \u2014 all SKIPPED, no zone triggers. Action: updated thesis, no trades, telegram sent.",
   "open_positions": [],
   "watchlist": [
     {
@@ -11,11 +11,11 @@
       "current_price": 0.71558,
       "day_range": "0.71142 - 0.71652",
       "entry_plan": "PRIMARY: Long at ~0.7085 on pullback with rejection confirmation. SECONDARY: If breaks above Fri high 0.7186 with volume + 15M BOS, enter on retest.",
-      "sl": 0.7030,
+      "sl": 0.703,
       "tp": 0.7187,
-      "tp2": 0.7250,
+      "tp2": 0.725,
       "size_plan": "Calculate via risk_guard on trigger",
-      "thesis": "TOP PICK (Conv 4 → 5 pending confirmation). Multi-factor tailwind: (1) Hawkish RBA pricing 3rd hike in May to 4.35% (highest in G10), (2) Dovish Fed repricing — year-end cut odds 50%, (3) Hormuz reopen + OPEC+ supply = risk-on, (4) Solid China Q1 supports AUD. AUDUSD at multi-year highs. DXY broke 98 lowest since Iran war.",
+      "thesis": "TOP PICK (Conv 4 \u2192 5 pending confirmation). Multi-factor tailwind: (1) Hawkish RBA pricing 3rd hike in May to 4.35% (highest in G10), (2) Dovish Fed repricing \u2014 year-end cut odds 50%, (3) Hormuz reopen + OPEC+ supply = risk-on, (4) Solid China Q1 supports AUD. AUDUSD at multi-year highs. DXY broke 98 lowest since Iran war.",
       "theme": "risk_on_dollar_weak",
       "invalidation": "If AUDUSD drops below 0.7000 OR Iran deal formally fails by Apr 22, cancel.",
       "status": "ACTIVE_WAITING"
@@ -26,10 +26,10 @@
       "trigger": "Rally to 160.00-160.20 (intervention red line)",
       "current_price": 158.91,
       "day_range": "158.72 - 159.20",
-      "entry_plan": "Short at ~160.00-160.10. Japan intervened at 159.23 in Jan 2026 — 160 is the red line. MoF Katayama escalated verbal intervention at G7 this weekend, said 'high sense of urgency' on FX.",
-      "sl": 160.50,
-      "tp": 158.50,
-      "size_plan": "Calculate via risk_guard — keep small given binary risk",
+      "entry_plan": "Short at ~160.00-160.10. Japan intervened at 159.23 in Jan 2026 \u2014 160 is the red line. MoF Katayama escalated verbal intervention at G7 this weekend, said 'high sense of urgency' on FX.",
+      "sl": 160.5,
+      "tp": 158.5,
+      "size_plan": "Calculate via risk_guard \u2014 keep small given binary risk",
       "thesis": "ASYMMETRIC TRADE (Conv 3). MoF verbal intervention active. Daily RSI overbought. BoJ Apr 27-28 priced for hold at 0.75% (~5bps of hike). MoF forced to jawbone due to BoJ delay. R:R ~3:1 to 5:1.",
       "theme": "intervention_play",
       "invalidation": "If USDJPY breaks 160.50 cleanly without intervention, cancel.",
@@ -42,11 +42,11 @@
       "current_price": 1.36919,
       "day_range": "1.36727 - 1.37089",
       "entry_plan": "Short at ~1.3820 on bounce to resistance.",
-      "sl": 1.3880,
-      "tp": 1.3730,
-      "tp2": 1.3650,
+      "sl": 1.388,
+      "tp": 1.373,
+      "tp2": 1.365,
       "size_plan": "Calculate via risk_guard on trigger",
-      "thesis": "DXY weakness play (Conv 3). DXY sub-98 now — strongest signal yet. Oil at $87 is a drag but still above pre-crisis $75. CAD PM Carney majority = stability. R:R ~1.5:1 to 2.5:1.",
+      "thesis": "DXY weakness play (Conv 3). DXY sub-98 now \u2014 strongest signal yet. Oil at $87 is a drag but still above pre-crisis $75. CAD PM Carney majority = stability. R:R ~1.5:1 to 2.5:1.",
       "theme": "dollar_macro",
       "invalidation": "If USDCAD breaks above 1.3900, cancel.",
       "status": "ACTIVE_WAITING"
@@ -57,7 +57,7 @@
       "status": "CANCELLED_FAKEOUT_RESET",
       "current_price": 1.17639,
       "day_range": "1.17284 - 1.17753",
-      "re_entry_conditions": "Need new base above 1.1780 + fresh push above 1.1811 with volume + 15M BOS + retest. Day high 1.17753 is close — watch.",
+      "re_entry_conditions": "Need new base above 1.1780 + fresh push above 1.1811 with volume + 15M BOS + retest. Day high 1.17753 is close \u2014 watch.",
       "invalidation_original": "Fri fakeout at 1.1834, retest rule saved entry."
     },
     {
@@ -67,22 +67,32 @@
       "current_price": 87.13,
       "day_range": "86.50 - 89.62",
       "change_today": "-4.0%",
-      "re_entry_logic": "Original rule required 'Iran extension CONFIRMED' before short re-entry below $89. Reuters explicitly denies formal signing. Apr 22 expiry live. NO SHORT here — if deal unravels, WTI explodes back to $95-100+ in hours. Wait for formal confirmation.",
+      "re_entry_logic": "Original rule required 'Iran extension CONFIRMED' before short re-entry below $89. Reuters explicitly denies formal signing. Apr 22 expiry live. NO SHORT here \u2014 if deal unravels, WTI explodes back to $95-100+ in hours. Wait for formal confirmation.",
       "catalyst_today": "Strait of Hormuz temporarily reopened + OPEC+ +206k bpd May increase + ceasefire extension optimism."
     }
   ],
   "market_context": {
     "date": "2026-04-20",
-    "session": "MONDAY LONDON SESSION. Apr 20 18:35 IST / 13:05 UTC. 0 positions open. Capital $10,000 intact. First tick of Monday week. No triggers hit yet — all 3 active watchlist setups waiting for level touch.",
+    "session": "MONDAY LONDON SESSION. Apr 20 18:35 IST / 13:05 UTC. 0 positions open. Capital $10,000 intact. First tick of Monday week. No triggers hit yet \u2014 all 3 active watchlist setups waiting for level touch.",
     "key_events_upcoming": [
-      "Apr 22 (Wed): US-Iran ceasefire ORIGINAL EXPIRY — formal extension still pending. Binary risk event.",
-      "Apr 27-28: BoJ policy meeting (hold at 0.75%, 82% odds) — USDJPY short window closing",
+      "Apr 22 (Wed): US-Iran ceasefire ORIGINAL EXPIRY \u2014 formal extension still pending. Binary risk event.",
+      "Apr 27-28: BoJ policy meeting (hold at 0.75%, 82% odds) \u2014 USDJPY short window closing",
       "Apr 28-29: FOMC meeting (Fed hold expected, but 50% year-end cut priced)",
       "Any day: Formal Iran extension announcement (in-principle since Fri)"
     ],
     "hormuz_status": "TEMPORARY REOPEN over weekend. Apr 22 original ceasefire expiry still live. Reuters: senior US official DENIES formal extension signed. Round 2 Pakistan talks ongoing. Mediators (Qatar, Saudi, Turkey via Pakistan PM) active. Headline risk in both directions this week.",
-    "dominant_theme": "RISK-ON PARTIALLY CONFIRMED. Multi-asset moves align — DXY sub-98, WTI -4%, Gold -0.62%, AUD multi-year highs, BTC +0.89%. AUDUSD long thesis strengthening from Conv 4 → potentially 5 on entry. But missing formal Iran signature keeps tail risk live. Discipline: no chasing, wait for clean level touch + confirmation.",
-    "instruments_tracked": ["EURUSD", "USDJPY", "GOLD", "OIL_CRUDE", "BTCUSD", "AUDUSD", "USDCAD", "GBPUSD", "USDCHF"],
+    "dominant_theme": "RISK-ON PARTIALLY CONFIRMED. Multi-asset moves align \u2014 DXY sub-98, WTI -4%, Gold -0.62%, AUD multi-year highs, BTC +0.89%. AUDUSD long thesis strengthening from Conv 4 \u2192 potentially 5 on entry. But missing formal Iran signature keeps tail risk live. Discipline: no chasing, wait for clean level touch + confirmation.",
+    "instruments_tracked": [
+      "EURUSD",
+      "USDJPY",
+      "GOLD",
+      "OIL_CRUDE",
+      "BTCUSD",
+      "AUDUSD",
+      "USDCAD",
+      "GBPUSD",
+      "USDCHF"
+    ],
     "live_snapshot_1830_ist": {
       "EURUSD": 1.17639,
       "USDJPY": 158.91,
@@ -101,7 +111,7 @@
       "instrument": "GOLD",
       "direction": "BUY",
       "entry_price": 4818.99,
-      "exit_price": 4820.00,
+      "exit_price": 4820.0,
       "pnl": 1.01,
       "result": "breakeven",
       "opened_at": "2026-04-14T21:59:25+05:30",
@@ -113,7 +123,7 @@
       "instrument": "OIL_CRUDE",
       "direction": "SELL",
       "entry_price": 89.978,
-      "exit_price": 90.00,
+      "exit_price": 90.0,
       "pnl": 0.02,
       "result": "breakeven",
       "opened_at": "2026-04-15T14:50:00+05:30",
@@ -138,5 +148,15 @@
     "overnight_interval": "2 hours",
     "telegram_on_trade": true,
     "telegram_chat_ids": "6838758759,849258319"
-  }
+  },
+  "last_tick_ts": "2026-04-20T14:17:46.194799Z",
+  "tracker": [
+    {
+      "situation": "US-Iran escalation (Gulf of Oman naval incident)",
+      "status": "escalating",
+      "impact": "risk-off, USD-strong, oil bid",
+      "last_update": "2026-04-20T14:17:46.194799Z",
+      "note": "US Navy fired on/seized Iranian cargo vessel. Crude +6.38% to ~$89.20."
+    }
+  ]
 }
