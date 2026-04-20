@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T04:08:00+05:30",
-  "pruned_at": "2026-04-21T04:08:00+05:30",
-  "pruned_by": "22:37 UTC tick — 8 M15 bar_close (all pairs) ALL SKIP, heartbeat-style. Broker $1000 flat 0 positions reconciled. No news delta vs 22:34 (Trump Wed evening T-~25h unchanged, Vance→Pakistan Tue, Iran skipping Islamabad round 2, Tehran retaliation vowed). Prices: USDJPY 158.797 (30p above 158.50 trigger, drifted 1p CLOSER vs 31p last), GOLD 4830.0 (20p above 4810 zone top, drifted 2p FURTHER from buy zone), OIL 86.359 (+0.05 sideways, 3.6 below 90), AUDUSD 0.71776 (near day high 0.71798), EURUSD 1.17863 (near day high 1.17902, 1.1811 breakout close), USDCAD 1.3644 (AT DAY LOW — DXY weakness extending, price now 6p BELOW 1.36503 zone_low so a rally back INTO 1.36503-1.36612 FVG is required to fire the short — not invalidated, just repositioned), USDCHF 0.77813 (AT DAY LOW — DXY weakness confirming). MODIFIED usdjpy_riskoff_break (31p→30p) and gold_escalation_buy_zone (distance 18p→20p). All 5 alerts + 9 structure + 8 queries KEEP.",
+  "last_updated_by_claude": "2026-04-21T04:23:00+05:30",
+  "pruned_at": "2026-04-21T04:23:00+05:30",
+  "pruned_by": "22:51 UTC tick — 8 M15 bar_close (all pairs) ALL SKIP. Broker $1000 flat 0 positions reconciled. NEW since 22:37: US seized Iranian container vessel (escalation vector beyond drone strikes, oil ticked but contained), Iran FM Baghaei citing blockade+seizure as explicit 'ceasefire violations'. No breakthrough in Islamabad — Trump 'extension highly unlikely' confirmed Wed ~T-24h. USDJPY 158.777 (27.7p above 158.50 trigger, drifted 2.3p CLOSER vs 30p last; day low 158.546 held, 4.6p buffer). DXY weakness continuing — EURUSD 1.17897 (0.5p from day high 1.17902, knocking 1.1811 breakout), AUDUSD 0.71788 (1p from day high), GBPUSD 1.35376 (0.6p from day high), USDCAD 1.36424 (10p BELOW 1.36503 zone_low, FVG retest requires rally), USDCHF 0.77808 (still near day low). GOLD 4829.84 stable, 3p from day high 4833.07, 20p above zone. OIL 86.15 sideways. MODIFIED usdjpy note (27.7p) + gold (4829) + usdcad (10p below). All 5 alerts + 9 structure + 8 queries KEEP.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -35,7 +35,7 @@
       "level": 158.5,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break 158.50 = risk-off yen flight confirmed. Short on retest from below. Last 158.797 (30p away, drifted 1p CLOSER vs 31p last tick — choppy, late-session tape). H1+M15 bearish BOS/ChoCh stacked. Catalyst intact: kinetic escalation (Iran drone strikes Sea of Oman, Salalah port, vessel seizure w/ retaliation vowed) AND Trump 'Wed evening Washington time' T-~25h. Katayama urgency unchanged. SL 159.20, TP 157.00. If 159.20 breaks without intervention, re-evaluate."
+      "note": "Break 158.50 = risk-off yen flight confirmed. Short on retest from below. Last 158.777 (27.7p away, drifted 2.3p CLOSER vs 30p last tick; session low 158.546 held 4.6p buffer). H1+M15 bearish BOS/ChoCh stacked. Catalyst intact: US vessel seizure adds fresh escalation vector, Iran FM explicitly citing 'ceasefire violations', Trump 'Wed evening' T-~24h, Katayama urgency unchanged. SL 159.20, TP 157.00. If 159.20 breaks without intervention, re-evaluate."
     },
     {
       "id": "oil_crude_escalation_90",

@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-21T04:08:00+05:30",
   "regime": "ESCALATION_CONFIRMED_KINETIC_EXCHANGE",
-  "regime_note": "2026-04-20 22:37 UTC auto \u2014 8 M15 bar_close (all 8 pairs) ALL SKIP, heartbeat. Broker $1000 flat 0 positions reconciled. No news delta vs 22:34 (Trump Wed evening T-~25h, Vance\u2192Pakistan Tue, Iran skipping Islamabad round 2, Tehran retaliation vowed \u2014 all known). Prices mild mixed: USDJPY 158.797 (30p above 158.50 trigger, drifted 1p CLOSER), GOLD 4830.0 (20p above 4810 zone top, 3p from day high 4833 \u2014 approaching breakout), OIL 86.36 sideways (3.6 below 90), AUDUSD 0.71776 near day high, EURUSD 1.17863 near day high approaching 1.1811 breakout, USDCAD 1.3644 AT DAY LOW (DXY weakness extending, price 6p BELOW 1.36503 FVG zone \u2014 now needs rally up to fire short), USDCHF 0.77813 AT DAY LOW (DXY weakness). Regime KINETIC_EXCHANGE intact. MODIFIED usdjpy + gold notes. All 5 alerts + 9 structure + 8 queries KEEP.",
+  "regime_note": "2026-04-20 22:51 UTC auto \u2014 8 M15 bar_close ALL SKIP. Broker $1000 flat 0 pos reconciled. NEW: US seized Iranian container vessel (fresh escalation beat), Iran FM citing blockade+seizure as 'ceasefire violations'. Trump Wed evening T-~24h. USDJPY 158.777 (27.7p above 158.50, drifted 2.3p closer; low 158.546 held). DXY weakness \u2014 EURUSD/GBPUSD/AUDUSD pressing day highs, USDCAD/USDCHF at/near day lows. GOLD 4829 stable. OIL 86.15 sideways. Regime KINETIC_EXCHANGE intact.",
   "open_positions": [],
   "watchlist": [
     {
@@ -306,5 +306,5 @@
   "last_updated": "2026-04-20T22:34:00Z",
   "capital_base": 1000.0,
   "last_tick_ts_utc": "2026-04-20T22:34:00Z",
-  "last_tick_utc": "2026-04-20 22:34 UTC"
+  "last_tick_utc": "2026-04-20 22:51 UTC"
 }
