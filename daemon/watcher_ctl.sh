@@ -15,32 +15,36 @@
 set -euo pipefail
 
 REPO="/Users/rajneeshmishra/Downloads/stock-pulse"
-
-# Which daemon? Second arg (default: watcher)
-# Usage: watcher_ctl.sh <cmd> [watcher|posync]
-DAEMON="${2:-watcher}"
-case "$DAEMON" in
-  watcher)
-    LABEL="com.stockpulse.forexwatcher"
-    CONTROL="$REPO/state/forex_watcher.control"
-    STATUS="$REPO/state/forex_watcher_status.json"
-    LOG_OUT="$REPO/logs/forex_watcher.out.log"
-    LOG_ERR="$REPO/logs/forex_watcher.err.log"
-    ;;
-  posync|positionsync)
-    LABEL="com.stockpulse.forexpositionsync"
-    CONTROL="$REPO/state/forex_position_sync.control"
-    STATUS="$REPO/state/forex_position_sync_status.json"
-    LOG_OUT="$REPO/logs/forex_position_sync.out.log"
-    LOG_ERR="$REPO/logs/forex_position_sync.err.log"
-    ;;
-  *) echo "Unknown daemon: $DAEMON (use 'watcher' or 'posync')"; exit 1 ;;
-esac
-PLIST_SRC="$REPO/daemon/$LABEL.plist"
-PLIST_DST="$HOME/Library/LaunchAgents/$LABEL.plist"
 EVENTS="$REPO/state/forex_events.jsonl"
-
 cmd="${1:-help}"
+
+# Daemon selector only matters for daemon-specific commands. Commands that
+# read the shared events file (recent/events/tally) ignore $2 entirely.
+DAEMON_COMMANDS="install uninstall start stop pause run status logs errlog"
+needs_daemon() { [[ " $DAEMON_COMMANDS " == *" $1 "* ]]; }
+
+if needs_daemon "$cmd"; then
+  DAEMON="${2:-watcher}"
+  case "$DAEMON" in
+    watcher)
+      LABEL="com.stockpulse.forexwatcher"
+      CONTROL="$REPO/state/forex_watcher.control"
+      STATUS="$REPO/state/forex_watcher_status.json"
+      LOG_OUT="$REPO/logs/forex_watcher.out.log"
+      LOG_ERR="$REPO/logs/forex_watcher.err.log"
+      ;;
+    posync|positionsync)
+      LABEL="com.stockpulse.forexpositionsync"
+      CONTROL="$REPO/state/forex_position_sync.control"
+      STATUS="$REPO/state/forex_position_sync_status.json"
+      LOG_OUT="$REPO/logs/forex_position_sync.out.log"
+      LOG_ERR="$REPO/logs/forex_position_sync.err.log"
+      ;;
+    *) echo "Unknown daemon: $DAEMON (use 'watcher' or 'posync')"; exit 1 ;;
+  esac
+  PLIST_SRC="$REPO/daemon/$LABEL.plist"
+  PLIST_DST="$HOME/Library/LaunchAgents/$LABEL.plist"
+fi
 
 case "$cmd" in
   install)
@@ -105,7 +109,7 @@ case "$cmd" in
       echo "(no events yet)"
       exit 0
     fi
-    # Pretty-print each event line
+    # Pretty-print each event line (streaming)
     tail -f "$EVENTS" | while read -r line; do
       echo "$line" | python3 -c "
 import json, sys
@@ -116,6 +120,74 @@ except Exception as e:
     print(line)
 "
     done
+    ;;
+
+  recent)
+    # One-shot pretty-print of the last N events (default 20). No follow.
+    # Usage: watcher_ctl.sh recent [N]
+    N="${2:-20}"
+    if [ ! -f "$EVENTS" ]; then
+      echo "(no events yet)"
+      exit 0
+    fi
+    python3 - "$EVENTS" "$N" <<'PY'
+import json, sys
+path, n = sys.argv[1], int(sys.argv[2])
+with open(path) as f:
+    lines = [l for l in f if l.strip()][-n:]
+rows = []
+for line in lines:
+    try:
+        d = json.loads(line)
+        consumed = "✓" if d.get("consumed_by_claude") else " "
+        p = d.get("payload", {})
+        price = p.get("price") or p.get("last_close") or p.get("current_bid") or ""
+        detail = (d.get("alert_id") or d.get("timeframe")
+                  or p.get("tier") or p.get("direction") or "")
+        rows.append(f"  {consumed} [{d['ts_utc'][:19]}Z] {d['type']:20s} "
+                    f"{d.get('instrument','-'):10s} {detail:35s} {price}")
+    except Exception:
+        rows.append(f"  ? {line.rstrip()}")
+print(f"Last {len(rows)} events (✓ = consumed by Claude):")
+for r in rows:
+    print(r)
+PY
+    ;;
+
+  tally)
+    # Event counts by type (quick "what fired most today?" view)
+    if [ ! -f "$EVENTS" ]; then
+      echo "(no events yet)"
+      exit 0
+    fi
+    python3 - "$EVENTS" <<'PY'
+import json, sys, collections
+from datetime import datetime, timezone, timedelta
+path = sys.argv[1]
+c_total = collections.Counter()
+c_24h = collections.Counter()
+cutoff = datetime.now(timezone.utc) - timedelta(hours=24)
+unconsumed = 0
+with open(path) as f:
+    for line in f:
+        if not line.strip():
+            continue
+        try:
+            d = json.loads(line)
+            c_total[d['type']] += 1
+            ts = datetime.fromisoformat(d['ts_utc'].replace('Z','+00:00'))
+            if ts >= cutoff:
+                c_24h[d['type']] += 1
+            if not d.get('consumed_by_claude'):
+                unconsumed += 1
+        except Exception:
+            pass
+print(f"  Total events:     {sum(c_total.values())} (unconsumed by Claude: {unconsumed})")
+print(f"  Last 24h:         {sum(c_24h.values())}")
+print("  By type:")
+for t, n in sorted(c_total.items(), key=lambda x: -x[1]):
+    print(f"    {t:24s} {n:>4d}  (24h: {c_24h.get(t,0)})")
+PY
     ;;
 
   help|*)
@@ -130,7 +202,9 @@ Usage: $0 <cmd> [watcher|posync]
   status         show launchd state + status.json
   logs           tail -f stdout log
   errlog         tail -f stderr log
-  events         tail -f events.jsonl (human-readable, watcher only)
+  events         tail -f events.jsonl (stream, pretty, all daemons)
+  recent [N]     last N events (default 20, one-shot, pretty)
+  tally          count of events by type (all-time + last 24h)
 
 Examples:
   $0 install           # install watcher
