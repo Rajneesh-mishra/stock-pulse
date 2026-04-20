@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-21T03:24:00+05:30",
   "regime": "ESCALATION_CONFIRMED_KINETIC_EXCHANGE",
-  "regime_note": "2026-04-20 21:54 UTC forex auto \u2014 6 M15 bar_close (all 6 pairs) all SKIP, broker CLOSED 21:00-22:00 UTC maintenance. Flat $1000 0 positions. USDJPY drifted DOWN 158.75\u2192158.718 (22p above 158.50 risk-off trigger, 3p CLOSER vs 21:42 tick \u2014 sequence 29p\u219225p\u219222p, mild but monotonic). OIL 85.874 (-0.25%) sideways. GOLD 4820.63 unchanged 10p above buy zone. EURUSD 1.17856 -0.01%. BTCUSD 75948 -0.45%. Fresh escalation widening: Salalah port (Oman) hit per Argus Media, Iranian drone approached US aircraft carrier (shot down) per PBS, 2026 Iran war timeline now active on Wikipedia. Covered by existing us_iran_military query. Regime KINETIC_EXCHANGE unchanged (market still pricing 'managed' escalation not full war). T~24h Wed Apr 22 00:00 UTC ceasefire expiry. 5 watchlist + 9 structure + 8 queries KEEP (usdjpy note MODIFIED for 22p distance).",
+  "regime_note": "2026-04-20 22:08 UTC forex auto \u2014 17 bar_close events (all 8 pairs M15+H1 + BTC H1) post-broker-maintenance reopen; all SKIP. Prices drifted mildly risk-on: USDJPY 158.781 (+6p, 28p above 158.50 short trigger \u2014 FURTHER), GOLD 4828.57 (+$8, $18+ above 4780-4810 buy zone \u2014 further away), OIL 86.18 (+$0.30 bounce, 3.82 below 90 short trigger), BTCUSD 76059 (+$110), AUDUSD 0.71788, EURUSD 1.17873, USDCAD 1.36441, GBPUSD 1.35344, USDCHF 0.77802. Flat $1000 0 positions. Regime KINETIC_EXCHANGE intact. Ceasefire expires Wed Apr 22 Washington evening (~T-22h); Trump 'lots of bombs' if no deal; Iran pulled from Islamabad round 2; no fresh material delta vs 21:54. 5 watchlist + 9 structure + 8 queries all KEEP.",
   "open_positions": [],
   "watchlist": [
     {
@@ -159,7 +159,7 @@
       "note": "15 fresh news_flash headlines this tick: CNBC (blockade day 4), AP/BBC/WaPo/Reuters (Hormuz fully closed, ships attacked), NYT (blockade status unclear, some transits), USNI (US seized Iranian container ship), Jerusalem Post (Indian-flagged vessel hit), Al Jazeera (sanctioned tankers still transit + Trump confirms seizure), Maritime Executive (IRGC fired on containership/tanker/cruise ship). Apr 22 ceasefire effectively dead. Binary risk: escalation ladder (Iran retaliatory strike on US asset) or de-escalation shock (surprise deal)."
     }
   ],
-  "last_tick_utc": "2026-04-20 21:41 UTC",
+  "last_tick_utc": "2026-04-20 22:08 UTC",
   "tick_history": [
     {
       "ts_utc": "2026-04-20T14:45:29.961114Z",

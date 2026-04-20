@@ -107,5 +107,10 @@
     "positions": 0,
     "balance": 1000.0,
     "note": "USDJPY drift 29p->25p->22p closer to 158.50 trigger across last 3 ticks. Salalah port hit + US carrier drone intercepted. Regime KINETIC_EXCHANGE intact. 5/9/8 audit all KEEP (usdjpy MODIFY note 22p)."
+  },
+  {
+    "ts": "2026-04-20T22:08Z",
+    "type": "forex_auto",
+    "summary": "17 bar_close events post-maintenance reopen \u2014 all SKIP. Mild risk-on drift: USDJPY +6p (28p above 158.50), GOLD +$8 ($18 above 4780-4810 zone). Flat $1000. T-22h to Wed Apr 22 ceasefire. Audit all KEEP."
   }
 ]
