@@ -1,10 +1,10 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-20T22:55:00+05:30",
-  "pruned_at": "2026-04-20T22:55:00+05:30",
-  "pruned_by": "Hormuz CLOSED AGAIN Apr 18 — oil spiked to $89.94 (+7.14%), narrative flipped from 'disbelieving blockade' to 'blockade biting'. oil_85_breakdown removed (thesis dead). oil_90 conv raised (6p from firing).",
+  "last_updated_by_claude": "2026-04-20T23:00:00+05:30",
+  "pruned_at": "2026-04-20T23:00:00+05:30",
+  "pruned_by": "Oil pulled back $89.94→$87.44 (+4.42% vs +7.14% earlier) — market partially absorbed blockade. Ceasefire expires Wed Apr 22; Trump called Iran's Hormuz closure a 'violation'. USDJPY intervention zone removed: 108p below, risk-off regime bids yen (contradicts USD strength to 160). oil_90 note updated.",
   "pruned_removed": [
-    "oil_crude_breakdown_85 (oil spiked $87→$89.94 after Hormuz re-closure Apr 18; breakdown thesis is dead. WTI now testing $90 upside instead.)"
+    "usdjpy_intervention_zone (price 158.72, 108p below 160; risk-off regime bids yen not USD — direction contradicts thesis; keep riskoff_break instead)"
   ],
   "instruments": [
     "EURUSD",
@@ -28,16 +28,7 @@
       "level": 0.707,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break of 0.707 = prior pivot gone. Short on retest of 0.707 from below. SL 0.713, TP 0.700. Risk-off + AUD first-to-bleed regime. Currently 100p+ above at 0.7172 with bull BOS — needs regime shift."
-    },
-    {
-      "id": "usdjpy_intervention_zone",
-      "instrument": "USDJPY",
-      "zone_low": 159.8,
-      "zone_high": 160.2,
-      "emit_on": "enter",
-      "cooldown_sec": 600,
-      "note": "DOUBLE TAILWIND: MoF intervention red line 160.00 + risk-off yen safe-haven bid from US-Iran escalation. Short on entry. Thesis STRONGER under blockade regime."
+      "note": "Break of 0.707 = prior pivot gone. Short on retest of 0.707 from below. SL 0.713, TP 0.700. Risk-off + AUD first-to-bleed. Currently 0.7172 (52p+ above) with bull BOS — needs regime shift (ceasefire expiry Wed could flip it)."
     },
     {
       "id": "usdjpy_riskoff_break",
@@ -45,7 +36,7 @@
       "level": 158.5,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break 158.50 = risk-off yen flight confirmed. Short on retest from below (no intervention needed — pure flow). Price 158.67, 17p away. H1+M15 bearish BOS/ChoCh stacked — imminent."
+      "note": "Break 158.50 = risk-off yen flight confirmed. Short on retest from below. Price 158.72, 22p away. H1+M15 bearish BOS/ChoCh stacked — imminent. SL 159.20, TP 157.00."
     },
     {
       "id": "oil_crude_escalation_90",
@@ -53,7 +44,7 @@
       "level": 90.0,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
-      "note": "WTI $89.94 (+7.14%) IMMINENT. Hormuz closed again Apr 18 — blockade now biting. >90 = risk premium accelerating. Entry on break-retest. SL 87.50, TP1 94, TP2 98. Conv 4."
+      "note": "WTI pulled back $89.94→$87.44 intraday but ceasefire expires Wed Apr 22 + Trump labeled Iran closure 'violation'. >90 = risk-premium accelerating. Entry on break-retest. SL 87.50, TP1 94, TP2 98. Conv 4."
     },
     {
       "id": "gold_escalation_buy_zone",
@@ -62,7 +53,7 @@
       "zone_high": 4810.0,
       "emit_on": "enter",
       "cooldown_sec": 900,
-      "note": "Safe-haven long on pullback into zone. Price 4808 IN zone. Needs rejection wick + M15 bullish BOS confirmation before entry. SL 4745, TP 4900/5000. Conv 3-4."
+      "note": "Safe-haven long on pullback into zone. Price 4808 IN zone but -0.5% day on dollar bid. Needs rejection wick + M15 bullish BOS before entry. SL 4745, TP 4900/5000. Conv 3."
     },
     {
       "id": "gold_5000_psych",

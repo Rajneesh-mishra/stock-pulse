@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-20T22:55:00+05:30",
   "regime": "ESCALATION_CONFIRMED_BLOCKADE_BITING",
-  "regime_note": "MONDAY 2026-04-20 22:55 IST. REGIME FLIP: Hormuz CLOSED AGAIN Apr 18 (Iran response to US refusing to lift blockade). WTI spiked to $89.94 (+7.14%), Brent $95.71 (+5.9%). Gold $4796 (-0.7%, dollar firming). Narrative flipped: no longer 'market disbelieving' — blockade now biting. 1 event processed: GOLD level_enter at 4809.66 → SKIP (composite 7, aligned=False, M15 trend unknown, inside bear FVG 4807-4810). Positions flat, balance $1000. Watchlist: removed oil_85_breakdown (thesis dead), raised oil_90 conv 3→4 (6p from firing). Queries 8/8 KEEP. No entries without 7-gate pass.",
+  "regime_note": "MONDAY 2026-04-20 23:00 IST. Hormuz CLOSED Apr 18; ceasefire EXPIRES WED Apr 22 \u2014 Trump labeled Iran closure 'violation'. Oil pulled back $89.94\u2192$87.44 intraday (market partially absorbed blockade). GOLD 4808 (-0.5% on dollar bid). USDJPY 158.72 (22p from 158.50 break). AUDUSD 0.7172 bull counter-regime. Flat. Watchlist pruned: usdjpy_intervention_zone REMOVED (108p away, direction contradicts risk-off regime).",
   "open_positions": [],
   "watchlist": [
     {
@@ -211,5 +211,9 @@
       "reason": "EURUSD 15M bar_close: score 46 bullish, 1.1788 below 1.1815 breakout trigger"
     }
   ],
-  "last_tick_summary": "22:55 IST auto — 1 GOLD level_enter SKIP (4809 in zone, composite 7 neutral aligned=False, M15 trend unknown, inside bear FVG); REGIME FLIP: Hormuz re-closed Apr 18, WTI $89.94 +7.14%, Brent $95.71, gold -0.7% on dollar bid; watchlist removed oil_85 (thesis dead), oil_90 imminent 6p away conv 4; queries 8/8 KEEP; positions flat"
+  "last_tick_summary": "22:55 IST auto \u2014 1 GOLD level_enter SKIP (4809 in zone, composite 7 neutral aligned=False, M15 trend unknown, inside bear FVG); REGIME FLIP: Hormuz re-closed Apr 18, WTI $89.94 +7.14%, Brent $95.71, gold -0.7% on dollar bid; watchlist removed oil_85 (thesis dead), oil_90 imminent 6p away conv 4; queries 8/8 KEEP; positions flat",
+  "last_scan": {
+    "timestamp": "2026-04-20T23:00:00+05:30",
+    "trigger": "bar_close_x3_auto"
+  }
 }

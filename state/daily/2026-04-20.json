@@ -72,6 +72,17 @@
       "events_consumed": 8,
       "trades": 0,
       "watchlist_changes": "removed usdcad_sell_bounce_zone; added oil_crude_breakdown_85; modified oil_crude_escalation_90 (conv 2-3)"
+    },
+    {
+      "ts": "2026-04-20T23:00+05:30",
+      "trigger": "bar_close x3 (AUDUSD/USDJPY/GOLD M15)",
+      "action": "SKIP all 3 \u2014 counter-regime bull, 22p from break, weak confluence in buy zone respectively",
+      "watchlist_changes": [
+        "REMOVED usdjpy_intervention_zone (direction contradicts risk-off regime, 108p away)",
+        "MODIFIED oil_crude_escalation_90 note (pullback $89.94\u2192$87.44, ceasefire expiry Wed noted)"
+      ],
+      "news": "ceasefire expires Wed Apr 22; Trump called Hormuz closure a 'violation'; oil partial pullback",
+      "positions": "flat"
     }
   ]
 }
