@@ -1,6 +1,15 @@
 {
-  "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick.",
-  "last_updated_by_claude": "2026-04-20T21:02:00+05:30",
+  "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. Keep it tight: one primary entry per directional thesis per instrument. Management alerts (trail, partial, exit) are separate.",
+  "last_updated_by_claude": "2026-04-20T21:25:00+05:30",
+  "pruned_at": "2026-04-20T21:25:00+05:30",
+  "pruned_by": "interactive Claude (user-requested cleanup after 12-alert clutter)",
+  "pruned_removed": [
+    "audusd_breakdown_sell_zone (redundant with breakdown_trigger — break-and-retest is the cleaner entry)",
+    "eurusd_breakout_level (bullish thesis dead in risk-off regime; USD safe-haven bid caps EUR)",
+    "oil_crude_95_escalation_2 (same thesis as $90 entry, just further out — $90 is actionable, $95 is signal-only)",
+    "oil_crude_deescalation_83 (self-noted REMOTE — requires blockade lifted AND Iran signing, neither in sight)",
+    "gold_break_4900 (redundant with buy_zone — one primary long entry per directional thesis)"
+  ],
   "instruments": [
     "EURUSD",
     "USDJPY",
@@ -18,21 +27,12 @@
   },
   "level_alerts": [
     {
-      "id": "audusd_breakdown_sell_zone",
-      "instrument": "AUDUSD",
-      "zone_low": 0.714,
-      "zone_high": 0.718,
-      "emit_on": "enter",
-      "cooldown_sec": 900,
-      "note": "FLIPPED from BUY → SELL. US blockade of Iran day 4 = risk-off, AUD first to bleed. Short on bounce into this zone with rejection confirmation."
-    },
-    {
       "id": "audusd_breakdown_trigger",
       "instrument": "AUDUSD",
       "level": 0.707,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break of 0.707 = prior pivot gone. Short on retest of 0.707 from below. Target 0.700."
+      "note": "Break of 0.707 = prior pivot gone. Short on retest of 0.707 from below. SL 0.713, TP 0.700. Risk-off + AUD first-to-bleed regime."
     },
     {
       "id": "usdjpy_intervention_zone",
@@ -61,36 +61,12 @@
       "note": "CAD oil-linked — US blockade → oil rip → CAD strong. Short USDCAD on bounce. Caveat: USD safe-haven bid could cap move; if DXY >99 abort."
     },
     {
-      "id": "eurusd_breakout_level",
-      "instrument": "EURUSD",
-      "level": 1.1815,
-      "emit_on": "cross_up",
-      "cooldown_sec": 1800,
-      "note": "Above Fri fakeout high = new breakout (retest rule). Note: under risk-off USD bid, EURUSD likely capped — low probability now."
-    },
-    {
       "id": "oil_crude_escalation_90",
       "instrument": "OIL_CRUDE",
       "level": 90.0,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
-      "note": "WTI >$90 = blockade priced harder. US Navy blockade day 4, Hormuz fully closed, ships attacked. Monitor; do NOT chase — wait for pullback to break-retest."
-    },
-    {
-      "id": "oil_crude_95_escalation_2",
-      "instrument": "OIL_CRUDE",
-      "level": 95.0,
-      "emit_on": "cross_up",
-      "cooldown_sec": 3600,
-      "note": "WTI $95 = war-premium re-pricing. Brent $100+ scenario. Signal only, no entry here."
-    },
-    {
-      "id": "oil_crude_deescalation_83",
-      "instrument": "OIL_CRUDE",
-      "level": 83.0,
-      "emit_on": "cross_down",
-      "cooldown_sec": 1800,
-      "note": "WTI <$83 = de-escalation. REMOTE — requires blockade lifted AND Iran ceasefire formally signed. Signal only."
+      "note": "WTI >$90 = blockade priced harder. US Navy blockade day 4, Hormuz fully closed, ships attacked. Primary entry — wait for pullback to break-retest."
     },
     {
       "id": "gold_escalation_buy_zone",
@@ -99,15 +75,7 @@
       "zone_high": 4810.0,
       "emit_on": "enter",
       "cooldown_sec": 900,
-      "note": "NEW — safe-haven long on pullback into zone. Blockade + closed Hormuz + ship attacks = gold bid. Entry ~4800 with rejection wick, SL 4745, TP 4900/5000. Conv 3-4."
-    },
-    {
-      "id": "gold_break_4900",
-      "instrument": "GOLD",
-      "level": 4900.0,
-      "emit_on": "cross_up",
-      "cooldown_sec": 1800,
-      "note": "Break 4900 = momentum leg. Secondary entry on retest. Do NOT chase."
+      "note": "Safe-haven long on pullback into zone. Blockade + closed Hormuz + ship attacks = gold bid. Entry ~4800 with rejection wick, SL 4745, TP 4900/5000. Conv 3-4."
     },
     {
       "id": "gold_5000_psych",
@@ -115,52 +83,14 @@
       "level": 5000.0,
       "emit_on": "cross_up",
       "cooldown_sec": 3600,
-      "note": "Psych level — exit zone for any gold longs; profit-take / partial."
+      "note": "Psych level — exit zone for any gold longs; profit-take / partial. Not an entry."
     }
   ],
   "structure_watch": [
-    {
-      "instrument": "AUDUSD",
-      "timeframes": [
-        "HOUR_4",
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "USDJPY",
-      "timeframes": [
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "GOLD",
-      "timeframes": [
-        "HOUR_4",
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "EURUSD",
-      "timeframes": [
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "USDCAD",
-      "timeframes": [
-        "HOUR"
-      ]
-    },
-    {
-      "instrument": "OIL_CRUDE",
-      "timeframes": [
-        "HOUR_4",
-        "HOUR"
-      ]
-    }
+    {"instrument": "AUDUSD",    "timeframes": ["HOUR_4", "HOUR", "MINUTE_15"]},
+    {"instrument": "USDJPY",    "timeframes": ["HOUR", "MINUTE_15"]},
+    {"instrument": "GOLD",      "timeframes": ["HOUR_4", "HOUR", "MINUTE_15"]},
+    {"instrument": "USDCAD",    "timeframes": ["HOUR"]},
+    {"instrument": "OIL_CRUDE", "timeframes": ["HOUR_4", "HOUR"]}
   ]
 }

@@ -126,6 +126,19 @@ Treat any ONE of these as grounds to not-KEEP:
 - A structurally sharper level has formed (order block, swept liquidity, new FVG) that wasn't in the alert when it was written
 - You opened or closed a position on this instrument — management alerts (break-even trigger, TP1 partial, trailing levels) may need to be added or retired
 
+### One-in, one-out discipline (HARD RULE)
+
+The watchlist is a scarce resource, not a logbook. Cap: **≤ 8 total `level_alerts`**, **≤ 2 entry alerts per instrument per direction** (a second alert on the same instrument+direction must serve a genuinely different purpose — e.g. management/exit, not just a second entry level).
+
+Before every `ADD`:
+1. Identify which existing alert this replaces or retires. If none — justify why the watchlist genuinely needs to grow.
+2. If your audit produces a net alert count higher than before, the tick summary must include a one-sentence reason for the growth.
+3. "Signal-only, no entry here" alerts count against the cap. If something is signal-only and far from price, `REMOVE` it — the news daemon + web search already catches far-field moves.
+4. Entries noted as "REMOTE" or "low probability" get `REMOVE`, not `KEEP`. Watchlist alerts exist to fire actionably; if they're not expected to fire, they're noise.
+5. Two alerts on the same instrument+direction at different levels (e.g. "pullback zone" + "breakout trigger") are allowed ONLY if one is for pullback-entry and the other is for breakout-continuation — pick the cleaner one otherwise.
+
+Before every `MODIFY` or `REMOVE`, also re-check whether a replacement `ADD` is needed in the opposite direction (a breakdown zone replacing a breakout zone, for example).
+
 ### 7b. News-query audit — `state/news_queries.json`
 
 For each entry in `queries`:
