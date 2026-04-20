@@ -11,6 +11,17 @@ Usage:
 
 import json, sys, subprocess
 
+# Optional SMC dependency — degrade gracefully if missing.
+# smc prints a thank-you banner on import; silence it so JSON output stays clean.
+try:
+    import contextlib, io
+    import pandas as pd
+    with contextlib.redirect_stdout(io.StringIO()):
+        from smartmoneyconcepts import smc
+    SMC_AVAILABLE = True
+except ImportError:
+    SMC_AVAILABLE = False
+
 def get_candles(epic, resolution="HOUR_4", count=200):
     """Fetch candles from Capital.com API."""
     result = subprocess.run(
@@ -28,45 +39,120 @@ def get_candles(epic, resolution="HOUR_4", count=200):
     data = json.loads(result.stdout)
     return data.get("candles", [])
 
-def get_full_candles(epic, resolution="HOUR", count=200):
-    """Get full candle data (not just last 10) by calling API directly."""
-    import requests, os
-    from pathlib import Path
+_SESSION_CACHE = {"cst": None, "tok": None, "api_key": None, "base": None}
 
-    env_path = Path(__file__).parent.parent / ".env"
+# Capital.com sessions live 10 minutes. Cache on disk so multiple scripts
+# (confluence, watcher, Claude's ticks) share the same token and avoid 429.
+from pathlib import Path as _Path
+_SESSION_FILE = _Path(__file__).parent.parent / "state" / ".capital_session.json"
+_SESSION_TTL_SEC = 480  # 8 min — refresh before the 10-min server expiry
+
+
+def _load_env():
+    import os
+    env_path = _Path(__file__).parent.parent / ".env"
     for line in env_path.read_text().splitlines():
         if "=" in line and not line.startswith("#"):
             k, v = line.split("=", 1)
             os.environ[k.strip()] = v.strip()
 
-    API_KEY = os.environ["CAPITAL_API_KEY"]
-    EMAIL = os.environ["CAPITAL_EMAIL"]
-    PASSWORD = os.environ["CAPITAL_PASSWORD"]
-    BASE = "https://demo-api-capital.backend-capital.com"
 
-    # Create session
-    r = requests.post(f"{BASE}/api/v1/session",
-        headers={"X-CAP-API-KEY": API_KEY, "Content-Type": "application/json"},
-        json={"identifier": EMAIL, "password": PASSWORD, "encryptedPassword": False},
-        timeout=15)
-    cst = r.headers.get("CST")
-    tok = r.headers.get("X-SECURITY-TOKEN")
+def _ensure_session():
+    """Get-or-create a Capital.com session with disk cache (8-min TTL).
+    Survives across separate Python process invocations."""
+    import requests, os, json, time
 
-    # Get candles
-    r = requests.get(f"{BASE}/api/v1/prices/{epic}",
-        headers={"X-CAP-API-KEY": API_KEY, "CST": cst, "X-SECURITY-TOKEN": tok,
-                 "Content-Type": "application/json"},
-        params={"resolution": resolution, "max": count},
-        timeout=15).json()
+    if _SESSION_CACHE["cst"] and _SESSION_CACHE["tok"]:
+        return _SESSION_CACHE
 
+    _load_env()
+    api_key = os.environ["CAPITAL_API_KEY"]
+    email = os.environ["CAPITAL_EMAIL"]
+    password = os.environ["CAPITAL_PASSWORD"]
+    base = ("https://api-capital.backend-capital.com"
+            if os.environ.get("CAPITAL_ENV") == "live"
+            else "https://demo-api-capital.backend-capital.com")
+
+    # Try disk cache first
+    if _SESSION_FILE.exists():
+        try:
+            cached = json.loads(_SESSION_FILE.read_text())
+            if (time.time() - cached.get("ts", 0) < _SESSION_TTL_SEC
+                    and cached.get("base") == base):
+                _SESSION_CACHE.update({
+                    "cst": cached["cst"], "tok": cached["tok"],
+                    "api_key": api_key, "base": base,
+                })
+                return _SESSION_CACHE
+        except Exception:
+            pass
+
+    # Create fresh session with retry on 429
+    for attempt in range(4):
+        r = requests.post(f"{base}/api/v1/session",
+            headers={"X-CAP-API-KEY": api_key, "Content-Type": "application/json"},
+            json={"identifier": email, "password": password, "encryptedPassword": False},
+            timeout=15)
+        if r.status_code == 200:
+            break
+        if r.status_code == 429:
+            time.sleep(2 + attempt * 2)
+            continue
+        r.raise_for_status()
+    r.raise_for_status()
+
+    cst, tok = r.headers["CST"], r.headers["X-SECURITY-TOKEN"]
+    _SESSION_CACHE.update({"cst": cst, "tok": tok, "api_key": api_key, "base": base})
+    try:
+        _SESSION_FILE.parent.mkdir(parents=True, exist_ok=True)
+        _SESSION_FILE.write_text(json.dumps({
+            "cst": cst, "tok": tok, "base": base, "ts": time.time(),
+        }))
+        _SESSION_FILE.chmod(0o600)
+    except Exception:
+        pass
+    return _SESSION_CACHE
+
+
+def get_full_candles(epic, resolution="HOUR", count=200):
+    """Fetch candles using the cached session (safe for many sequential calls)."""
+    import requests, time
+
+    s = _ensure_session()
+    for attempt in range(3):
+        r = requests.get(f"{s['base']}/api/v1/prices/{epic}",
+            headers={"X-CAP-API-KEY": s["api_key"], "CST": s["cst"],
+                     "X-SECURITY-TOKEN": s["tok"], "Content-Type": "application/json"},
+            params={"resolution": resolution, "max": count}, timeout=15)
+        if r.status_code == 429:
+            time.sleep(1 + attempt)
+            continue
+        if r.status_code == 401:
+            # Session died — reset (disk + memory) and retry once
+            _SESSION_CACHE.update({"cst": None, "tok": None})
+            try:
+                _SESSION_FILE.unlink(missing_ok=True)
+            except Exception:
+                pass
+            s = _ensure_session()
+            continue
+        break
+
+    if r.status_code != 200:
+        return []
+
+    data = r.json()
     candles = []
-    for p in r.get("prices", []):
+    for p in data.get("prices", []):
+        if "openPrice" not in p or "closePrice" not in p:
+            continue
+        op, hp, lp, cp = p["openPrice"], p["highPrice"], p["lowPrice"], p["closePrice"]
         candles.append({
             "time": p.get("snapshotTimeUTC"),
-            "open": (p["openPrice"]["bid"] + p["openPrice"]["ask"]) / 2 if "openPrice" in p else None,
-            "high": (p["highPrice"]["bid"] + p["highPrice"]["ask"]) / 2 if "highPrice" in p else None,
-            "low": (p["lowPrice"]["bid"] + p["lowPrice"]["ask"]) / 2 if "lowPrice" in p else None,
-            "close": (p["closePrice"]["bid"] + p["closePrice"]["ask"]) / 2 if "closePrice" in p else None,
+            "open": (op["bid"] + op["ask"]) / 2,
+            "high": (hp["bid"] + hp["ask"]) / 2,
+            "low": (lp["bid"] + lp["ask"]) / 2,
+            "close": (cp["bid"] + cp["ask"]) / 2,
             "volume": p.get("lastTradedVolume", 0),
         })
     return candles
@@ -191,6 +277,109 @@ def check_divergence(closes, period=14):
         return "BEARISH DIVERGENCE (price higher, RSI lower)"
     return "none"
 
+def _candles_to_df(candles):
+    """Convert our candle dicts into an OHLC DataFrame smc expects."""
+    df = pd.DataFrame(candles)
+    if df.empty:
+        return df
+    df = df.rename(columns={"time": "date"})
+    df["date"] = pd.to_datetime(df["date"])
+    df = df.set_index("date")
+    return df[["open", "high", "low", "close", "volume"]].dropna()
+
+
+def _last_signal(col_df, direction_col, level_col, df_index):
+    """Find the most recent non-null signal. smc returns RangeIndex frames —
+    map back to df_index for timestamps."""
+    sig = col_df[col_df[direction_col].notna()]
+    if sig.empty:
+        return None
+    pos = int(sig.index[-1])
+    row = col_df.iloc[pos]
+    bars_ago = len(col_df) - 1 - pos
+    out = {
+        "direction": "bull" if row[direction_col] == 1 else "bear",
+        "bars_ago": bars_ago,
+        "bar_ts": df_index[pos].isoformat() if pos < len(df_index) else None,
+    }
+    if level_col and pd.notna(row[level_col]):
+        out["level"] = round(float(row[level_col]), 5)
+    return out
+
+
+def smc_analyze(candles, swing_length=20):
+    """Run smartmoneyconcepts detectors; return a flat summary dict.
+
+    Returns None if SMC unavailable or not enough data."""
+    if not SMC_AVAILABLE or len(candles) < swing_length * 2:
+        return None
+
+    df = _candles_to_df(candles)
+    if len(df) < swing_length * 2:
+        return None
+
+    current_price = float(df["close"].iloc[-1])
+
+    swings = smc.swing_highs_lows(df, swing_length=swing_length)
+    bos_df = smc.bos_choch(df, swings, close_break=True)
+    fvg_df = smc.fvg(df, join_consecutive=False)
+    ob_df = smc.ob(df, swings, close_mitigation=False)
+
+    # Last BOS and CHoCH separately
+    last_bos = _last_signal(bos_df, "BOS", "Level", df.index)
+    last_choch = _last_signal(bos_df, "CHOCH", "Level", df.index)
+
+    # Most recent FVG and whether it's still unmitigated (MitigatedIndex == 0)
+    last_fvg = None
+    fvg_active = fvg_df[fvg_df["FVG"].notna()]
+    if not fvg_active.empty:
+        pos = int(fvg_active.index[-1])
+        row = fvg_df.iloc[pos]
+        last_fvg = {
+            "direction": "bull" if row["FVG"] == 1 else "bear",
+            "top": round(float(row["Top"]), 5),
+            "bottom": round(float(row["Bottom"]), 5),
+            "mitigated": bool(row["MitigatedIndex"] != 0),
+            "bars_ago": len(df) - 1 - pos,
+        }
+
+    # Nearest unmitigated bullish + bearish OBs to current price
+    nearest_bull_ob = nearest_bear_ob = None
+    unmitigated = ob_df[(ob_df["OB"].notna()) & (ob_df["MitigatedIndex"] == 0)]
+    for idx_pos in unmitigated.index:
+        row = ob_df.iloc[int(idx_pos)]
+        direction = "bull" if row["OB"] == 1 else "bear"
+        entry = {
+            "top": round(float(row["Top"]), 5),
+            "bottom": round(float(row["Bottom"]), 5),
+            "volume": int(row["OBVolume"]) if pd.notna(row["OBVolume"]) else None,
+            "bars_ago": len(df) - 1 - int(idx_pos),
+        }
+        if direction == "bull" and entry["top"] < current_price:
+            if nearest_bull_ob is None or entry["top"] > nearest_bull_ob["top"]:
+                nearest_bull_ob = entry
+        elif direction == "bear" and entry["bottom"] > current_price:
+            if nearest_bear_ob is None or entry["bottom"] < nearest_bear_ob["bottom"]:
+                nearest_bear_ob = entry
+
+    # HTF bias from most recent BOS (best mechanical trend read available)
+    trend = "unknown"
+    if last_bos:
+        trend = "bullish" if last_bos["direction"] == "bull" else "bearish"
+    elif last_choch:
+        trend = "bullish" if last_choch["direction"] == "bull" else "bearish"
+
+    return {
+        "trend_from_bos": trend,
+        "last_bos": last_bos,
+        "last_choch": last_choch,
+        "last_fvg": last_fvg,
+        "nearest_bull_ob": nearest_bull_ob,
+        "nearest_bear_ob": nearest_bear_ob,
+        "swing_length": swing_length,
+    }
+
+
 def analyze(epic, resolution="HOUR"):
     """Full technical analysis for an instrument."""
     candles = get_full_candles(epic, resolution, 200)
@@ -242,6 +431,7 @@ def analyze(epic, resolution="HOUR"):
         "recent_20_high": recent_high,
         "recent_20_low": recent_low,
         "range_position": round((current - recent_low) / (recent_high - recent_low) * 100, 1) if recent_high != recent_low else 50,
+        "smc": smc_analyze(candles),
     }
     return result
 

@@ -1,2 +1,9 @@
-.env
-.DS_Store
+# Cached Capital.com session token (8-min TTL, regenerated on demand)
+state/.capital_session.json
+# Daemon logs
+logs/
+# Watcher control file
+state/forex_watcher.control
+# Claude session stuff
+.claude/
+.playwright-mcp/
