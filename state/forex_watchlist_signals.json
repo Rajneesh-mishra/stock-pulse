@@ -68,6 +68,11 @@
     {"instrument": "AUDUSD",    "timeframes": ["HOUR_4", "HOUR", "MINUTE_15"]},
     {"instrument": "USDJPY",    "timeframes": ["HOUR", "MINUTE_15"]},
     {"instrument": "GOLD",      "timeframes": ["HOUR_4", "HOUR", "MINUTE_15"]},
-    {"instrument": "OIL_CRUDE", "timeframes": ["HOUR_4", "HOUR"]}
+    {"instrument": "OIL_CRUDE", "timeframes": ["HOUR_4", "HOUR", "MINUTE_15"]},
+    {"instrument": "USDCAD",    "timeframes": ["HOUR", "MINUTE_15"]},
+    {"instrument": "EURUSD",    "timeframes": ["HOUR", "MINUTE_15"]},
+    {"instrument": "GBPUSD",    "timeframes": ["HOUR", "MINUTE_15"]},
+    {"instrument": "USDCHF",    "timeframes": ["HOUR", "MINUTE_15"]},
+    {"instrument": "BTCUSD",    "timeframes": ["HOUR_4", "HOUR"]}
   ]
 }

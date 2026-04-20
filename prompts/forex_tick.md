@@ -112,6 +112,8 @@ Before persisting, audit **every** item the daemons are watching. Do this as a m
 
 ### 7a. Watchlist audit — `state/forex_watchlist_signals.json`
 
+Every pair in `instruments` (the root array) should have a corresponding entry in `structure_watch` so bar_close and structure events fire for the full universe — otherwise you are blind to opportunities on un-watched pairs. Verify this every tick. Default timeframes for a passive "coverage" pair (no active `level_alerts`): `["HOUR", "MINUTE_15"]`. Pairs with active setups may merit `HOUR_4` as well. Slow-moving crypto (BTC) gets `["HOUR_4", "HOUR"]` (M15 is mostly noise).
+
 For each entry in `level_alerts` and each pair in `structure_watch`, assign one verdict:
 
 - **KEEP** — the trigger still expresses a real edge given what you know right now (price action, news, positions, broader context). The level is reachable on a plausible catalyst path. The direction is still the right call. The note still describes reality.
