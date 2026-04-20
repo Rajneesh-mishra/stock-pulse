@@ -122,6 +122,123 @@ except Exception as e:
     done
     ;;
 
+  live|snapshot)
+    # Full dashboard. `live` loops every 10s, `snapshot` is one-shot.
+    _render() {
+      clear
+      echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      echo "  FOREX SYSTEM — $(date '+%Y-%m-%d %H:%M:%S %Z')"
+      echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      echo
+      echo "▸ DAEMONS (launchd, KeepAlive):"
+      launchctl list | grep stockpulse | awk '{printf "    %-35s  pid=%s\n", $3, $1}'
+      echo
+      python3 - <<'PY'
+import json, datetime as dt, subprocess
+def age(ts):
+    t = dt.datetime.fromisoformat(ts.replace("Z","+00:00"))
+    return int((dt.datetime.now(dt.timezone.utc)-t).total_seconds())
+
+# Heartbeats
+for name, path in [("WATCHER", "state/forex_watcher_status.json"),
+                   ("POSYNC ", "state/forex_position_sync_status.json")]:
+    try:
+        s = json.load(open(path))
+        pos = f"open={s.get('open_position_count')}" if 'open_position_count' in s else ''
+        print(f"▸ {name}: {s['status']}  {age(s['last_poll'])}s ago  "
+              f"polls={s['polls_total']}  events={s.get('events_emitted',0)}  "
+              f"errors={s.get('errors',0)}  {pos}")
+    except Exception as e:
+        print(f"▸ {name}: ERROR {e}")
+
+# Broker
+print()
+try:
+    r = subprocess.run(["python3","forex/api.py","account"], capture_output=True, text=True, timeout=8)
+    d = json.loads(r.stdout)
+    print(f"▸ BROKER: balance=${d['balance']}  available=${d['available']}  pnl=${d['profit_loss']}")
+except Exception as e:
+    print(f"▸ BROKER: ERROR {e}")
+
+# Positions
+try:
+    r = subprocess.run(["python3","forex/api.py","positions"], capture_output=True, text=True, timeout=8)
+    d = json.loads(r.stdout)
+    if d["count"] == 0:
+        print(f"▸ POSITIONS: none")
+    else:
+        print(f"▸ POSITIONS: {d['count']} open")
+        for p in d["positions"]:
+            print(f"    {p['direction']} {p['size']} {p['epic']}  entry={p['level']}  sl={p['stopLevel']}  tp={p['profitLevel']}  upl=${p['upl']}")
+except Exception as e:
+    print(f"▸ POSITIONS: ERROR {e}")
+
+# Live prices + distance to nearest alert
+print()
+print("▸ WATCHLIST — distance to nearest alert:")
+try:
+    signals = json.load(open("state/forex_watchlist_signals.json"))
+    epics = sorted(set(a['instrument'] for a in signals['level_alerts']))
+    for e in epics:
+        try:
+            r = subprocess.run(["python3","forex/api.py","price",e], capture_output=True, text=True, timeout=8)
+            p = json.loads(r.stdout)['prices'][0]
+            mid = (p['bid']+p['offer'])/2
+            alerts = [a for a in signals['level_alerts'] if a['instrument']==e]
+            nearest=None
+            for a in alerts:
+                if 'zone_low' in a:
+                    inside = a['zone_low']<=mid<=a['zone_high']
+                    dist = 0 if inside else min(abs(mid-a['zone_low']),abs(mid-a['zone_high']))
+                else:
+                    dist = abs(mid-a['level'])
+                if nearest is None or dist < nearest[0]:
+                    nearest = (dist, a, inside if 'zone_low' in a else None)
+            if nearest:
+                pips = nearest[0] * (100 if e=='USDJPY' else 1 if e in ('OIL_CRUDE','GOLD','BTCUSD') else 10000)
+                marker = "🎯 IN ZONE" if nearest[2] is True else f"{pips:>7.1f} pips"
+                print(f"    {e:10s}  mid={mid:>10.5f}   {marker}   '{nearest[1]['id']}'")
+        except Exception as ex:
+            print(f"    {e}: ERROR {ex}")
+except Exception as e:
+    print(f"    ERROR {e}")
+
+# Recent events
+print()
+print("▸ RECENT EVENTS (last 5):")
+try:
+    with open("state/forex_events.jsonl") as f:
+        lines = [l for l in f if l.strip()][-5:]
+    if not lines:
+        print("    (none yet — watchlist zones all away from current prices)")
+    for line in lines:
+        d = json.loads(line)
+        c = "✓" if d.get("consumed_by_claude") else " "
+        p = d.get("payload",{})
+        price = p.get("price") or p.get("last_close") or ""
+        detail = d.get("alert_id") or d.get("timeframe") or p.get("tier") or ""
+        print(f"    {c} [{d['ts_utc'][:19]}Z] {d['type']:20s} {d.get('instrument','-'):10s} {detail:30s} {price}")
+except FileNotFoundError:
+    print("    (no events file yet)")
+except Exception as e:
+    print(f"    ERROR {e}")
+PY
+      echo
+      if [ "$cmd" = "live" ]; then
+        echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+        echo "  refreshing every 10s  (Ctrl-C to quit)"
+        echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+      fi
+    }
+
+    if [ "$cmd" = "snapshot" ]; then
+      _render
+    else
+      trap 'echo; echo "live dashboard stopped"; exit 0' INT
+      while true; do _render; sleep 10; done
+    fi
+    ;;
+
   recent)
     # One-shot pretty-print of the last N events (default 20). No follow.
     # Usage: watcher_ctl.sh recent [N]
@@ -205,6 +322,8 @@ Usage: $0 <cmd> [watcher|posync]
   events         tail -f events.jsonl (stream, pretty, all daemons)
   recent [N]     last N events (default 20, one-shot, pretty)
   tally          count of events by type (all-time + last 24h)
+  live           full dashboard, refreshes every 10s (Ctrl-C to quit)
+  snapshot       one-shot dashboard (same as live, no refresh)
 
 Examples:
   $0 install           # install watcher
