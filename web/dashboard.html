@@ -173,6 +173,42 @@
     position: relative; height: 420px; width: 100%;
     background: var(--bg); border: 1px solid var(--border); border-radius: 4px;
   }
+
+  .gates-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .gates-table th, .gates-table td {
+    text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border);
+  }
+  .gates-table th {
+    color: var(--fg-faint); font-weight: normal; font-size: 10px;
+    text-transform: uppercase; letter-spacing: 1px;
+  }
+  .gate-pill {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 22px; height: 22px; border-radius: 3px;
+    font-size: 10px; font-weight: 600; margin-right: 2px;
+    font-variant-numeric: tabular-nums;
+  }
+  .gate-pill.PASS { background: rgba(124, 227, 139, 0.15); color: var(--green); border: 1px solid rgba(124, 227, 139, 0.4); }
+  .gate-pill.FAIL { background: rgba(255, 107, 107, 0.12); color: var(--red);   border: 1px solid rgba(255, 107, 107, 0.35); }
+  .gate-pill.PARTIAL { background: rgba(255, 207, 112, 0.12); color: var(--amber); border: 1px solid rgba(255, 207, 112, 0.35); }
+  .gate-pill.N\/A, .gate-pill.NA { background: var(--panel-soft); color: var(--fg-faint); border: 1px solid var(--border); }
+  .gate-pill.ERR { background: rgba(176, 131, 240, 0.12); color: var(--purple); border: 1px solid rgba(176, 131, 240, 0.35); }
+  .verdict {
+    padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .verdict.READY { background: rgba(124, 227, 139, 0.18); color: var(--green); }
+  .verdict.WAIT  { background: rgba(255, 207, 112, 0.15); color: var(--amber); }
+  .verdict.SKIP  { background: rgba(255, 107, 107, 0.12); color: var(--red); }
+  .gates-detail {
+    font-size: 11px; color: var(--fg-dim);
+    padding: 6px 12px; background: var(--panel-soft); border-radius: 4px;
+    margin-top: 4px; display: none;
+  }
+  .gates-detail.open { display: block; }
+  .gates-detail .row { display: grid; grid-template-columns: 26px 120px 1fr; gap: 6px; padding: 2px 0; }
+  .gates-row { cursor: pointer; }
+  .gates-row:hover td { background: rgba(108, 182, 255, 0.04); }
   #chartLegend {
     margin-top: 8px; display: flex; flex-wrap: wrap; gap: 14px;
     font-size: 11px; color: var(--fg-dim);
@@ -234,6 +270,24 @@
   </div>
 
   <section>
+    <h2>Setup gates <span class="count" id="gatesHint">— live 7-gate readiness per instrument</span></h2>
+    <table class="gates-table">
+      <thead><tr>
+        <th>Instrument</th><th>Verdict</th>
+        <th title="HTF bias aligned (confluence ≥60)">G1 HTF</th>
+        <th title="Price at real structure (zone/level/OB/FVG)">G2 Struct</th>
+        <th title="Rejection wick on last closed M15 in bias direction">G3 Conf</th>
+        <th title="R:R ≥ 2:1 (requires structured SL/TP in alert)">G4 R:R</th>
+        <th title="Position capacity remaining (max 4)">G5 Cap</th>
+        <th title="Correlated theme exposure (max 2)">G6 Corr</th>
+        <th title="Session / liquidity window">G7 Sess</th>
+        <th>Summary</th>
+      </tr></thead>
+      <tbody id="gatesBody"></tbody>
+    </table>
+  </section>
+
+  <section>
     <h2>Charts <span class="count" id="chartHint">— pick an instrument</span></h2>
     <div class="chart-controls">
       <span class="label">instrument</span>
@@ -265,6 +319,7 @@
 <script>
 // Constants
 const SNAPSHOT_INTERVAL_MS = 5000;
+const GATES_INTERVAL_MS = 30000;
 const EVENTS_INITIAL_LOAD = 50;
 const MAX_EVENTS_IN_DOM = 100;
 
@@ -692,7 +747,72 @@ async function fetchTicks() {
   } catch (e) { /* ignore */ }
 }
 
-// ── Charts (TradingView lightweight-charts) ─────────────────────────
+// ── Setup gates panel ───────────────────────────────────────────────
+async function fetchGates() {
+  try {
+    const r = await fetch('/api/gates/all');
+    const j = await r.json();
+    renderGates(j.instruments || []);
+  } catch (e) {
+    console.error('gates fetch failed', e);
+  }
+}
+
+function renderGates(list) {
+  const body = document.getElementById('gatesBody');
+  body.replaceChildren();
+  // Order: READY first, then WAIT, then SKIP
+  const order = { READY: 0, WAIT: 1, SKIP: 2 };
+  list.sort((a, b) => (order[a.verdict] ?? 9) - (order[b.verdict] ?? 9));
+
+  for (const inst of list) {
+    const tr = h('tr', { className: 'gates-row' });
+    tr.appendChild(h('td', null, h('b', null, inst.epic),
+      h('div', { style: { color: 'var(--fg-faint)', fontSize: '10px' } },
+        `mid ${fmtPrice(inst.mid, inst.epic)}  pass ${inst.pass_count}/7`)));
+    tr.appendChild(h('td', null,
+      h('span', { className: 'verdict ' + inst.verdict }, inst.verdict)));
+
+    // 7 gate pills
+    for (const g of inst.gates) {
+      const label = g.status === 'PASS' ? '✓' : g.status === 'FAIL' ? '✗'
+                  : g.status === 'PARTIAL' ? '~' : g.status === 'ERR' ? '!' : '—';
+      const pill = h('span', { className: 'gate-pill ' + (g.status === 'N/A' ? 'NA' : g.status) }, label);
+      pill.title = `${g.name}: ${g.detail}`;
+      tr.appendChild(h('td', null, pill));
+    }
+
+    // Summary — failing gates' reasons
+    const fails = inst.gates.filter(g => g.status === 'FAIL' || g.status === 'PARTIAL')
+                            .map(g => `${g.name}: ${g.detail}`);
+    const summary = fails.length ? fails.slice(0, 2).join(' · ') : 'all systems go';
+    tr.appendChild(h('td', { style: { color: 'var(--fg-dim)', fontSize: '11px' } }, summary));
+
+    // Detail row (hidden by default)
+    const detailRow = h('tr');
+    const detailCell = h('td', { colSpan: 10, style: { padding: 0, border: 'none' } });
+    const detail = h('div', { className: 'gates-detail' });
+    for (const g of inst.gates) {
+      const pill = h('span', { className: 'gate-pill ' + (g.status === 'N/A' ? 'NA' : g.status) },
+        g.status === 'PASS' ? '✓' : g.status === 'FAIL' ? '✗'
+          : g.status === 'PARTIAL' ? '~' : g.status === 'ERR' ? '!' : '—');
+      detail.appendChild(h('div', { className: 'row' },
+        pill,
+        h('span', null, `Gate ${g.id} · ${g.name}`),
+        h('span', null, g.detail || '')
+      ));
+    }
+    detailCell.appendChild(detail);
+    detailRow.appendChild(detailCell);
+
+    tr.addEventListener('click', () => {
+      detail.classList.toggle('open');
+    });
+
+    body.appendChild(tr);
+    body.appendChild(detailRow);
+  }
+}
 let chart = null, candleSeries = null;
 let currentEpic = null, currentTF = 'HOUR';
 let chartBars = [];        // last loaded bars (for live-update of last close)
@@ -896,8 +1016,10 @@ loadInitialEvents();
 connectEventStream();
 connectTickStream();
 fetchTicks();
+fetchGates();
 setInterval(fetchSnapshot, SNAPSHOT_INTERVAL_MS);
 setInterval(fetchTicks, 30000);
+setInterval(fetchGates, GATES_INTERVAL_MS);
 setInterval(() => {
   if (Date.now() - lastSnapshotOk > 20000) setStatus('dead', 'snapshot stale');
 }, 3000);

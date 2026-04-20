@@ -38,7 +38,8 @@ except ImportError:
 REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "forex"))
 
-from technicals import get_full_candles  # noqa: E402
+from technicals import get_full_candles, calc_atr, smc_analyze  # noqa: E402
+from confluence import scan as confluence_scan  # noqa: E402
 
 PORT = int(os.environ.get("DASHBOARD_PORT", "8787"))
 HTML_FILE = REPO / "web" / "dashboard.html"
@@ -57,6 +58,18 @@ _broker_lock = threading.Lock()
 _candle_cache = {}
 _candle_cache_lock = threading.Lock()
 CANDLE_CACHE_TTL = 30
+
+# Gates cache — {epic: {ts, result}}, 60-sec TTL
+_gates_cache = {}
+_gates_lock = threading.Lock()
+GATES_CACHE_TTL = 60
+
+# Theme map for correlation gate
+THEME_MAP = {
+    "GOLD": "geopolitical", "OIL_CRUDE": "geopolitical", "USDJPY": "geopolitical",
+    "EURUSD": "dollar_macro", "USDCAD": "dollar_macro", "USDCHF": "dollar_macro",
+    "GBPUSD": "dollar_macro", "AUDUSD": "risk_on_dollar", "BTCUSD": "crypto_macro",
+}
 
 # Live tick stream state
 WS_URL = "wss://api-streaming-capital.backend-capital.com/connect"
@@ -326,6 +339,234 @@ def chart_context(epic):
     }
 
 
+# ── 7-gate setup evaluation ──────────────────────────────────────────────────
+
+def _bullish_rejection(candle):
+    """Hammer / bullish pin bar — body in upper half, lower wick dominant."""
+    o, h, l, c = candle["open"], candle["high"], candle["low"], candle["close"]
+    body = abs(c - o)
+    full = h - l
+    if full == 0:
+        return False
+    lower_wick = min(o, c) - l
+    upper_wick = h - max(o, c)
+    return (c >= o) and (lower_wick > 1.5 * body) and (lower_wick > upper_wick * 1.5)
+
+
+def _bearish_rejection(candle):
+    o, h, l, c = candle["open"], candle["high"], candle["low"], candle["close"]
+    body = abs(c - o)
+    full = h - l
+    if full == 0:
+        return False
+    lower_wick = min(o, c) - l
+    upper_wick = h - max(o, c)
+    return (c <= o) and (upper_wick > 1.5 * body) and (upper_wick > lower_wick * 1.5)
+
+
+def evaluate_gates(epic):
+    """Compute the 7-gate status for one instrument. Cached 60s."""
+    now = time.time()
+    with _gates_lock:
+        cached = _gates_cache.get(epic)
+        if cached and now - cached["ts"] < GATES_CACHE_TTL:
+            return cached["result"]
+
+    gates = []
+    alerts = []
+    mid = None
+    atr_m15 = None
+    try:
+        signals = json.loads(SIGNALS_FILE.read_text())
+        alerts = [a for a in signals.get("level_alerts", []) if a.get("instrument") == epic]
+    except Exception:
+        pass
+
+    with _ticks_lock:
+        tick = _latest_ticks.get(epic)
+    if tick and tick.get("bid") and tick.get("ofr"):
+        mid = (tick["bid"] + tick["ofr"]) / 2
+
+    # ── Gate 1: HTF bias aligned ──
+    try:
+        conf = confluence_scan(epic)
+        comp = conf.get("composite_score", 0)
+        aligned = conf.get("aligned", False)
+        call = conf.get("directional_call", "neutral")
+        if aligned:
+            g1 = {"status": "PASS", "value": comp, "detail": f"aligned {call} ({comp:+.1f})"}
+        elif abs(comp) >= 40 and conf.get("all_tfs_agree"):
+            g1 = {"status": "PARTIAL", "value": comp, "detail": f"{call} {comp:+.1f} — TFs agree but weak"}
+        else:
+            g1 = {"status": "FAIL", "value": comp, "detail": f"{call} {comp:+.1f} not aligned"}
+        gates.append({"id": 1, "name": "HTF bias", **g1})
+        direction_bias = 1 if comp > 10 else -1 if comp < -10 else 0
+    except Exception as e:
+        gates.append({"id": 1, "name": "HTF bias", "status": "ERR", "detail": str(e)[:60]})
+        direction_bias = 0
+
+    # ── Gate 2: At real structure ──
+    at_structure = False
+    struct_detail = []
+    for a in alerts:
+        if "zone_low" in a and mid is not None:
+            if a["zone_low"] <= mid <= a["zone_high"]:
+                at_structure = True
+                struct_detail.append(f"in {a['id']}")
+        elif "level" in a and mid is not None:
+            scale = 100 if epic == "USDJPY" else 1 if epic in ("OIL_CRUDE", "GOLD", "BTCUSD") else 10000
+            if abs(mid - a["level"]) * scale < 10:
+                at_structure = True
+                struct_detail.append(f"near {a['id']} ({abs(mid-a['level'])*scale:.1f}p)")
+    # Also check unmitigated OB/FVG on H1
+    if not at_structure:
+        try:
+            h1 = get_full_candles(epic, "HOUR", 120)
+            if h1 and mid is not None:
+                smc = smc_analyze(h1)
+                if smc:
+                    for ob in [smc.get("nearest_bull_ob"), smc.get("nearest_bear_ob")]:
+                        if ob and ob["bottom"] <= mid <= ob["top"]:
+                            at_structure = True
+                            struct_detail.append("in unmit H1 OB")
+                    fvg = smc.get("last_fvg")
+                    if fvg and not fvg.get("mitigated") and fvg["bottom"] <= mid <= fvg["top"]:
+                        at_structure = True
+                        struct_detail.append(f"in H1 FVG ({fvg['direction']})")
+        except Exception:
+            pass
+    gates.append({
+        "id": 2, "name": "At structure",
+        "status": "PASS" if at_structure else "FAIL",
+        "detail": "; ".join(struct_detail) if struct_detail else "not at any zone/level/OB/FVG",
+    })
+
+    # ── Gate 3: Confirmation on M15 (rejection wick / bullish or bearish) ──
+    try:
+        m15 = get_full_candles(epic, "MINUTE_15", 60)
+        if m15 and len(m15) >= 3:
+            last_closed = m15[-2]  # second-last is last fully closed bar
+            atr_m15 = calc_atr(m15)
+            bull_rej = _bullish_rejection(last_closed)
+            bear_rej = _bearish_rejection(last_closed)
+            if direction_bias > 0 and bull_rej:
+                g3 = {"status": "PASS", "detail": f"bullish rejection last bar @ {last_closed['close']}"}
+            elif direction_bias < 0 and bear_rej:
+                g3 = {"status": "PASS", "detail": f"bearish rejection last bar @ {last_closed['close']}"}
+            elif bull_rej or bear_rej:
+                # Rejection but wrong direction vs bias
+                d = "bullish" if bull_rej else "bearish"
+                g3 = {"status": "PARTIAL", "detail": f"{d} rejection but bias says {call}"}
+            else:
+                g3 = {"status": "FAIL", "detail": "no rejection wick on last closed M15"}
+        else:
+            g3 = {"status": "ERR", "detail": "insufficient M15 data"}
+    except Exception as e:
+        g3 = {"status": "ERR", "detail": str(e)[:60]}
+    gates.append({"id": 3, "name": "Confirmation", **g3})
+
+    # ── Gate 4: R:R ≥ 2:1 (requires structured SL/TP in alert — most don't have them yet) ──
+    rr_found = False
+    for a in alerts:
+        if all(k in a for k in ("sl", "tp", "level")) or all(k in a for k in ("sl", "tp", "zone_low")):
+            entry = a.get("level") or (a["zone_low"] + a["zone_high"]) / 2
+            sl, tp = a["sl"], a["tp"]
+            risk = abs(entry - sl)
+            reward = abs(tp - entry)
+            rr = reward / risk if risk > 0 else 0
+            if rr >= 2:
+                gates.append({"id": 4, "name": "R:R ≥ 2:1", "status": "PASS",
+                              "detail": f"{rr:.1f}:1 from {a['id']}"})
+            elif rr >= 1.5:
+                gates.append({"id": 4, "name": "R:R ≥ 2:1", "status": "PARTIAL",
+                              "detail": f"{rr:.1f}:1 from {a['id']}"})
+            else:
+                gates.append({"id": 4, "name": "R:R ≥ 2:1", "status": "FAIL",
+                              "detail": f"{rr:.1f}:1 from {a['id']}"})
+            rr_found = True
+            break
+    if not rr_found:
+        gates.append({"id": 4, "name": "R:R ≥ 2:1", "status": "N/A",
+                      "detail": "SL/TP not structured — computed at trade time"})
+
+    # ── Gate 5: Position count (room for new trade) ──
+    try:
+        broker = broker_snapshot()
+        pos_list = (broker.get("positions") or {}).get("positions") or []
+        n_open = len(pos_list)
+        gates.append({
+            "id": 5, "name": "Capacity",
+            "status": "PASS" if n_open < 4 else "FAIL",
+            "detail": f"{n_open}/4 positions open",
+        })
+    except Exception as e:
+        gates.append({"id": 5, "name": "Capacity", "status": "ERR", "detail": str(e)[:60]})
+        n_open = 0
+        pos_list = []
+
+    # ── Gate 6: Correlation (≤ 2 in same theme) ──
+    my_theme = THEME_MAP.get(epic, "other")
+    same_theme = sum(1 for p in pos_list if THEME_MAP.get(p.get("epic"), "other") == my_theme)
+    gates.append({
+        "id": 6, "name": "Correlation",
+        "status": "PASS" if same_theme < 2 else "FAIL",
+        "detail": f"{same_theme}/2 {my_theme}",
+    })
+
+    # ── Gate 7: Session / timing ──
+    now_utc = datetime.now(timezone.utc)
+    h = now_utc.hour
+    # London 07-15 UTC, NY 12-20 UTC, overlap 12-15 = best
+    if 12 <= h < 16:
+        session = "London+NY overlap (best)"
+        session_status = "PASS"
+    elif 7 <= h < 12 or 16 <= h < 20:
+        session = "London or NY (good)"
+        session_status = "PASS"
+    elif 20 <= h < 22:
+        session = "NY late (thin)"
+        session_status = "PARTIAL"
+    else:
+        session = "Asia / overnight (thin)"
+        session_status = "PARTIAL"
+    gates.append({"id": 7, "name": "Session", "status": session_status, "detail": session})
+
+    # ── Overall verdict ──
+    statuses = [g["status"] for g in gates]
+    n_pass = sum(1 for s in statuses if s == "PASS")
+    n_fail = sum(1 for s in statuses if s == "FAIL")
+    must_pass = [g["status"] for g in gates if g["id"] in (1, 2, 3)]
+    if all(s == "PASS" for s in must_pass) and n_fail == 0:
+        verdict = "READY"
+    elif gates[1]["status"] == "PASS" and n_fail <= 2:
+        verdict = "WAIT"  # at structure, near ready
+    else:
+        verdict = "SKIP"
+
+    result = {
+        "epic": epic,
+        "ts": datetime.now(timezone.utc).isoformat(),
+        "mid": mid,
+        "atr_m15": atr_m15,
+        "verdict": verdict,
+        "pass_count": n_pass,
+        "gates": gates,
+    }
+    with _gates_lock:
+        _gates_cache[epic] = {"ts": now, "result": result}
+    return result
+
+
+def gates_all():
+    """Evaluate gates for every instrument in the watchlist."""
+    try:
+        signals = json.loads(SIGNALS_FILE.read_text())
+        epics = sorted({a["instrument"] for a in signals.get("level_alerts", [])})
+    except Exception:
+        return []
+    return [evaluate_gates(e) for e in epics]
+
+
 # ── WebSocket tick streamer ──────────────────────────────────────────────────
 
 def _ws_subscribed_epics():
@@ -577,6 +818,14 @@ class Handler(BaseHTTPRequestHandler):
                     self._json({"error": "epic required"}, status=400)
                 else:
                     self._json(chart_context(epic))
+            elif u.path == "/api/gates":
+                epic = q.get("epic", [""])[0]
+                if not epic:
+                    self._json({"error": "epic required"}, status=400)
+                else:
+                    self._json(evaluate_gates(epic))
+            elif u.path == "/api/gates/all":
+                self._json({"instruments": gates_all()})
             elif u.path == "/api/ticks":
                 self._json({"ticks": recent_ticks(15)})
             elif u.path == "/api/control":
