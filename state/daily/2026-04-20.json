@@ -1,0 +1,27 @@
+{
+  "date": "2026-04-20",
+  "session_notes": "Monday — Iran de-escalation partial, Apr 22 formal signing pending. DXY sub-98, WTI -4% to $87, risk-on but entries unfavorable.",
+  "ticks": [
+    {
+      "ts": "2026-04-20T19:40:00+05:30",
+      "trigger": "event-driven (5 bar_close + 1 TEST level_enter)",
+      "events_processed": 6,
+      "events_consumed": 6,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "skips": 6,
+      "skip_reasons": "All watchlist triggers unmet. AUDUSD 0.7167 (needs 0.7080 pullback or >0.7190 break). USDJPY 158.68 (needs 160 rally — price dropping instead). EURUSD 1.1772 (needs >1.1815 breakout). USDCAD 1.3678 (needs 1.381 bounce). TEST event intentional skip.",
+      "market_snapshot": {
+        "AUDUSD": 0.71674,
+        "USDJPY": 158.679,
+        "EURUSD": 1.17720,
+        "USDCAD": 1.36783
+      },
+      "open_positions": 0,
+      "capital": 1000.0
+    }
+  ],
+  "trades": [],
+  "open_eod": [],
+  "daily_pnl": 0.0
+}
