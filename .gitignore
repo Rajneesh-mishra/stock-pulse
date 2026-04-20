@@ -22,3 +22,5 @@ state/forex_events_consumed.txt
 state/forex_event_waker.control
 state/forex_heartbeat.control
 state/.forex_claude.lock
+state/.news_runtime.json
+state/forex_news.control

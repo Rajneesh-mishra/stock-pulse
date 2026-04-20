@@ -61,7 +61,14 @@ if needs_daemon "$cmd"; then
       LOG_OUT="$REPO/logs/dashboard.out.log"
       LOG_ERR="$REPO/logs/dashboard.err.log"
       ;;
-    *) echo "Unknown daemon: $DAEMON (use watcher|posync|waker|heartbeat|dashboard)"; exit 1 ;;
+    news)
+      LABEL="com.stockpulse.forexnews"
+      CONTROL="$REPO/state/forex_news.control"
+      STATUS="$REPO/state/forex_news_status.json"
+      LOG_OUT="$REPO/logs/forex_news.out.log"
+      LOG_ERR="$REPO/logs/forex_news.err.log"
+      ;;
+    *) echo "Unknown daemon: $DAEMON (use watcher|posync|waker|heartbeat|dashboard|news)"; exit 1 ;;
   esac
   PLIST_SRC="$REPO/daemon/$LABEL.plist"
   PLIST_DST="$HOME/Library/LaunchAgents/$LABEL.plist"
@@ -334,7 +341,7 @@ PY
     ;;
 
   all-install)
-    for d in watcher posync waker heartbeat dashboard; do
+    for d in watcher posync waker heartbeat dashboard news; do
       echo "==> $d"
       "$0" install "$d"
     done
@@ -343,13 +350,14 @@ PY
   all-status)
     set +e  # grep-no-match must not abort the loop
     printf "%-12s %-10s %-22s %s\n" "daemon" "pid" "control" "launchd"
-    for d in watcher posync waker heartbeat dashboard; do
+    for d in watcher posync waker heartbeat dashboard news; do
       case "$d" in
         watcher)   L="com.stockpulse.forexwatcher"        C="$REPO/state/forex_watcher.control" ;;
         posync)    L="com.stockpulse.forexpositionsync"   C="$REPO/state/forex_position_sync.control" ;;
         waker)     L="com.stockpulse.claudewaker"         C="$REPO/state/forex_event_waker.control" ;;
         heartbeat) L="com.stockpulse.claudeheartbeat"     C="$REPO/state/forex_heartbeat.control" ;;
         dashboard) L="com.stockpulse.dashboard"           C="" ;;
+        news)      L="com.stockpulse.forexnews"           C="$REPO/state/forex_news.control" ;;
       esac
       line=$(launchctl list 2>/dev/null | grep -E "[[:space:]]${L}$" | head -1)
       pid=$(echo "$line" | awk '{print $1}')
