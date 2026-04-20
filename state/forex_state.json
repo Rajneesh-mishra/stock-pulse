@@ -1,106 +1,101 @@
 {
-  "last_tick": "2026-04-17T22:45:00+05:30",
-  "monday_prep": {
-    "key_questions": [
-      "1. Did Iran FORMALLY confirm ceasefire extension before Monday open? (In-principle agreed Fri night — formal deal = RISK-ON confirmed. Extension likely ~Apr 22 + 2 weeks = May 5)",
-      "2. BoJ Apr 27-28 (confirmed): hold at 0.75% expected (82% odds). USDJPY setup window Mon-Fri before BoJ. No binary this weekend."
-    ],
-    "setup_priority": [
-      "1. AUDUSD: Buy pullback to 0.7085 — BEST setup (Conv 4, R:R ~2-3:1). Entry ONLY if Iran extension confirmed.",
-      "2. USDJPY: Sell at 160 — BoJ is Apr 27-28 (not this weekend). More time for drift. Setup window: Mon-Fri next week before BoJ. Reduce size near BoJ date.",
-      "3. USDCAD: Sell bounce to 1.3820 — Entry any time (less Iran/BoJ sensitive). DXY weakness play.",
-      "4. EURUSD: RESET — needs new structure above 1.1811. Watch for clean breakout with volume Monday."
-    ],
-    "monday_open_plan": "Wait 30-60 min after Sydney/Tokyo open for gap to stabilize. Check AUDUSD first — if risk-on gap up, wait for the 0.7085 pullback before entering. Size down first trade (0.5% risk) until direction confirmed."
-  },
-  "regime": "CEASEFIRE_EXTENSION_PROBABLE",
-  "regime_note": "WEEKEND SCAN 22:45 IST: IN-PRINCIPLE CEASEFIRE EXTENSION AGREED. Both sides gave 'in principle' agreement to extend ceasefire ~2 more weeks past Apr 22. No formal deal yet — US hasn't officially signed. Round 2 talks expected in coming days in Pakistan. Trump says war 'very close to over'. Sticking points: nuclear program, Hormuz, war compensation. WTI closed $90.79 (confirmed). Gold $4,878 holding near ATH. AUDUSD long thesis STRENGTHENED — extension likely = risk-on bias into Monday. But formal confirmation still needed before entry. EURUSD fakeout setup reset pending. BoJ Apr 27-28 confirmed. No change to setups — no entries until Monday open confirmation.",
-
+  "last_tick": "2026-04-20T18:35:00+05:30",
+  "regime": "DE-ESCALATION_UNCONFIRMED",
+  "regime_note": "MONDAY LONDON SESSION 18:35 IST. De-escalation signals STRENGTHENED but formal Iran extension STILL NOT SIGNED. KEY DEVELOPMENTS: (1) Strait of Hormuz TEMPORARILY REOPENED over weekend, (2) OPEC+ approved +206k bpd May increase, (3) WTI crashed to $87.13 (-4% today, was $90.79 Fri close), (4) DXY broke below 98 to 97.63 intraday — lowest since Iran war began, (5) Reuters cites senior US official EXPLICITLY DENYING formal ceasefire extension. Apr 22 original expiry still live. Round 2 Pakistan talks ongoing. Fed year-end cut odds jumped to ~50% (from ~30%) on crude crash. AUDUSD thesis STRENGTHENED (hawkish RBA pricing May hike to 4.35% + China Q1 solid + DXY weak + risk-on) but no pullback to 0.7085 trigger — market gave no entry. No trades executed. Capital $10,000 intact.",
   "open_positions": [],
-
   "watchlist": [
     {
       "instrument": "AUDUSD",
       "direction": "BUY",
-      "trigger": "Pullback to 0.7080-0.7090 zone",
-      "current_price": 0.7186,
-      "entry_plan": "Long at ~0.7085 on pullback to broken resistance (now support)",
+      "trigger": "Pullback to 0.7080-0.7090 zone OR clean break >0.7190 with volume",
+      "current_price": 0.71558,
+      "day_range": "0.71142 - 0.71652",
+      "entry_plan": "PRIMARY: Long at ~0.7085 on pullback with rejection confirmation. SECONDARY: If breaks above Fri high 0.7186 with volume + 15M BOS, enter on retest.",
       "sl": 0.7030,
       "tp": 0.7187,
       "tp2": 0.7250,
-      "size_plan": "Calculate via risk_guard",
-      "thesis": "TOP PICK (Conv 4). Golden Cross on 4H. De-escalation = risk-on = AUD is the quintessential risk currency. DXY at 98.13 (7 straight down sessions). 0.7000 flipped from resistance to support. Best R:R of all setups (~2:1 to 3:1).",
+      "size_plan": "Calculate via risk_guard on trigger",
+      "thesis": "TOP PICK (Conv 4 → 5 pending confirmation). Multi-factor tailwind: (1) Hawkish RBA pricing 3rd hike in May to 4.35% (highest in G10), (2) Dovish Fed repricing — year-end cut odds 50%, (3) Hormuz reopen + OPEC+ supply = risk-on, (4) Solid China Q1 supports AUD. AUDUSD at multi-year highs. DXY broke 98 lowest since Iran war.",
       "theme": "risk_on_dollar_weak",
-      "invalidation": "If AUDUSD drops below 0.7000, cancel."
+      "invalidation": "If AUDUSD drops below 0.7000 OR Iran deal formally fails by Apr 22, cancel.",
+      "status": "ACTIVE_WAITING"
     },
     {
       "instrument": "USDJPY",
       "direction": "SELL",
-      "trigger": "Rally to 160.00-160.20 (intervention risk zone)",
-      "current_price": 158.84,
-      "entry_plan": "Short at ~160.00-160.10 anticipating BoJ/MoF intervention (Japan intervened at 159.23 in Jan 2026, 191-pip crash in 5 min)",
+      "trigger": "Rally to 160.00-160.20 (intervention red line)",
+      "current_price": 158.91,
+      "day_range": "158.72 - 159.20",
+      "entry_plan": "Short at ~160.00-160.10. Japan intervened at 159.23 in Jan 2026 — 160 is the red line. MoF Katayama escalated verbal intervention at G7 this weekend, said 'high sense of urgency' on FX.",
       "sl": 160.50,
       "tp": 158.50,
       "size_plan": "Calculate via risk_guard — keep small given binary risk",
-      "thesis": "ASYMMETRIC TRADE (Conv 3). Japan intervened at 159.23 in Jan — 160 is the red line. Daily RSI 76 = overbought + bearish divergence. BoJ on tightening path. Risk-on doesn't help yen but intervention overrides everything. R:R ~3:1 to 5:1.",
+      "thesis": "ASYMMETRIC TRADE (Conv 3). MoF verbal intervention active. Daily RSI overbought. BoJ Apr 27-28 priced for hold at 0.75% (~5bps of hike). MoF forced to jawbone due to BoJ delay. R:R ~3:1 to 5:1.",
       "theme": "intervention_play",
-      "invalidation": "If USDJPY breaks 160.50 cleanly (no intervention), cancel."
+      "invalidation": "If USDJPY breaks 160.50 cleanly without intervention, cancel.",
+      "status": "ACTIVE_WAITING"
     },
     {
       "instrument": "USDCAD",
       "direction": "SELL",
       "trigger": "Bounce to 1.3810-1.3830",
-      "current_price": 1.3688,
-      "entry_plan": "Short at ~1.3820 on bounce to resistance",
+      "current_price": 1.36919,
+      "day_range": "1.36727 - 1.37089",
+      "entry_plan": "Short at ~1.3820 on bounce to resistance.",
       "sl": 1.3880,
       "tp": 1.3730,
       "tp2": 1.3650,
-      "size_plan": "Calculate via risk_guard",
-      "thesis": "DXY weakness play (Conv 3). DXY 98.13, 7 straight down days. CAD PM Carney won majority (stability). Oil $88 still above pre-crisis ($75) = supportive for CAD. R:R ~1.5:1 to 2.5:1.",
+      "size_plan": "Calculate via risk_guard on trigger",
+      "thesis": "DXY weakness play (Conv 3). DXY sub-98 now — strongest signal yet. Oil at $87 is a drag but still above pre-crisis $75. CAD PM Carney majority = stability. R:R ~1.5:1 to 2.5:1.",
       "theme": "dollar_macro",
-      "invalidation": "If USDCAD breaks above 1.3900, cancel."
+      "invalidation": "If USDCAD breaks above 1.3900, cancel.",
+      "status": "ACTIVE_WAITING"
     },
     {
       "instrument": "EURUSD",
       "direction": "BUY",
-      "trigger": "Break above 1.1811 (day high)",
-      "status": "FAKEOUT — CANCELLED",
-      "current_price": 1.1787,
-      "cancelled_at": "2026-04-17T19:37:00+05:30",
-      "cancel_reason": "FAILED BREAKOUT. Price broke to 1.1834 with confirmed close, but then reversed -47 pips back to 1.1787 — below the 1.1811 breakout level. Classic fakeout. Retest rule saved us (did not enter at 1.1834). Breakout failed, do not trade.",
-      "lesson": "Retest discipline works. Not entering on the breakout candle saved ~47 pips of immediate loss.",
-      "re_entry_conditions": "Wait for new session structure. Valid re-entry: if EURUSD builds a new base above 1.1780 and makes another push above 1.1811 with fresh momentum — look for new setup Monday.",
-      "sl": 1.1770,
-      "tp": 1.1860,
-      "tp2": 1.1900,
-      "thesis": "CANCELLED. De-escalation + DXY weakness macro thesis intact, but today's breakout failed. Setup resets for Monday.",
-      "theme": "dollar_macro",
-      "invalidation": "Setup cancelled — fakeout confirmed."
+      "status": "CANCELLED_FAKEOUT_RESET",
+      "current_price": 1.17639,
+      "day_range": "1.17284 - 1.17753",
+      "re_entry_conditions": "Need new base above 1.1780 + fresh push above 1.1811 with volume + 15M BOS + retest. Day high 1.17753 is close — watch.",
+      "invalidation_original": "Fri fakeout at 1.1834, retest rule saved entry."
     },
     {
       "instrument": "OIL_CRUDE",
       "direction": "SELL",
-      "status": "INVALIDATED",
-      "invalidated_at": "2026-04-17T19:08:00+05:30",
-      "invalidation_reason": "WTI broke above $92.40 pivot (now $93.74) on Iran deal doubts + inventory draw. Pre-set invalidation rule triggered. Do NOT short here — thesis has reversed.",
-      "monitor_for_re-entry": "If Iran extension CONFIRMED and WTI drops back below $89, a new short setup may form. Do not chase."
+      "status": "SHORT_RE-ENTRY_BLOCKED",
+      "current_price": 87.13,
+      "day_range": "86.50 - 89.62",
+      "change_today": "-4.0%",
+      "re_entry_logic": "Original rule required 'Iran extension CONFIRMED' before short re-entry below $89. Reuters explicitly denies formal signing. Apr 22 expiry live. NO SHORT here — if deal unravels, WTI explodes back to $95-100+ in hours. Wait for formal confirmation.",
+      "catalyst_today": "Strait of Hormuz temporarily reopened + OPEC+ +206k bpd May increase + ceasefire extension optimism."
     }
   ],
-
   "market_context": {
-    "date": "2026-04-17",
-    "session": "WEEKEND. Fri close 19:46 IST. 0 trades. Capital $10,000 intact. Weekend scan 22:45 — CEASEFIRE EXTENSION PROBABLE. Next action: Monday open.",
+    "date": "2026-04-20",
+    "session": "MONDAY LONDON SESSION. Apr 20 18:35 IST / 13:05 UTC. 0 positions open. Capital $10,000 intact. First tick of Monday week. No triggers hit yet — all 3 active watchlist setups waiting for level touch.",
     "key_events_upcoming": [
-      "Apr 21 (Mon): Markets reopen — watch for formal Iran ceasefire extension announcement (in-principle agreed)",
-      "Apr 22: US-Iran ceasefire EXPIRY (likely extended ~2 weeks to ~May 5 based on in-principle deal)",
-      "Apr 27-28: BoJ policy meeting (hold at 0.75%, 82% odds — USDJPY short window Mon-Fri next week)",
-      "Apr 28-29: FOMC meeting (Fed hold expected)"
+      "Apr 22 (Wed): US-Iran ceasefire ORIGINAL EXPIRY — formal extension still pending. Binary risk event.",
+      "Apr 27-28: BoJ policy meeting (hold at 0.75%, 82% odds) — USDJPY short window closing",
+      "Apr 28-29: FOMC meeting (Fed hold expected, but 50% year-end cut priced)",
+      "Any day: Formal Iran extension announcement (in-principle since Fri)"
     ],
-    "hormuz_status": "EXTENSION PROBABLE. Both sides gave 'in principle' agreement to extend ceasefire 2+ weeks. Round 2 Pakistan talks expected before Apr 22. US mil blockade 'fully implemented.' Sticking points remain (nuclear, Hormuz, compensation). Trump says war 'very close to over.' Pakistan PM traveling to Saudi/Qatar/Turkey to mediate. No formal deal signed yet — treat as likely but unconfirmed. WTI $90.79. Gold $4,878.",
-    "dominant_theme": "CEASEFIRE EXTENSION LIKELY. In-principle deal for 2-week extension exists as of Fri evening. AUDUSD long thesis at 0.7085 is the top priority Monday — if formal extension confirmed, enter on pullback. DXY weak. Gold ATH. BoJ no surprise this weekend. Risk-on bias strong going into Monday open.",
-    "instruments_tracked": ["EURUSD", "USDJPY", "GOLD", "OIL_CRUDE", "BTCUSD", "AUDUSD", "USDCAD", "GBPUSD", "USDCHF"]
+    "hormuz_status": "TEMPORARY REOPEN over weekend. Apr 22 original ceasefire expiry still live. Reuters: senior US official DENIES formal extension signed. Round 2 Pakistan talks ongoing. Mediators (Qatar, Saudi, Turkey via Pakistan PM) active. Headline risk in both directions this week.",
+    "dominant_theme": "RISK-ON PARTIALLY CONFIRMED. Multi-asset moves align — DXY sub-98, WTI -4%, Gold -0.62%, AUD multi-year highs, BTC +0.89%. AUDUSD long thesis strengthening from Conv 4 → potentially 5 on entry. But missing formal Iran signature keeps tail risk live. Discipline: no chasing, wait for clean level touch + confirmation.",
+    "instruments_tracked": ["EURUSD", "USDJPY", "GOLD", "OIL_CRUDE", "BTCUSD", "AUDUSD", "USDCAD", "GBPUSD", "USDCHF"],
+    "live_snapshot_1830_ist": {
+      "EURUSD": 1.17639,
+      "USDJPY": 158.91,
+      "GOLD": 4803.59,
+      "OIL_CRUDE": 87.13,
+      "BTCUSD": 75298,
+      "AUDUSD": 0.71558,
+      "USDCAD": 1.36919,
+      "GBPUSD": 1.35162,
+      "USDCHF": 0.78098,
+      "DXY_reported": 97.63
+    }
   },
-
   "trade_history": [
     {
       "instrument": "GOLD",
@@ -128,14 +123,13 @@
     }
   ],
   "consecutive_losses": 0,
-  "daily_pnl": 1.01,
-  "weekly_pnl": 1.01,
+  "daily_pnl": 0,
+  "weekly_pnl": 0,
   "total_pnl": 1.01,
   "total_trades": 1,
   "wins": 0,
   "losses": 0,
   "account_balance": 10000,
-
   "loop_config": {
     "active_market_interval": "10 min",
     "quiet_interval": "30 min",
