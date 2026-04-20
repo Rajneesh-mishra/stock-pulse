@@ -18,3 +18,7 @@ state/.position_sync_runtime.json
 # Claude session stuff
 .claude/
 .playwright-mcp/
+state/forex_events_consumed.txt
+state/forex_event_waker.control
+state/forex_heartbeat.control
+state/.forex_claude.lock

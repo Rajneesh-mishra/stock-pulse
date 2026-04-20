@@ -40,7 +40,21 @@ if needs_daemon "$cmd"; then
       LOG_OUT="$REPO/logs/forex_position_sync.out.log"
       LOG_ERR="$REPO/logs/forex_position_sync.err.log"
       ;;
-    *) echo "Unknown daemon: $DAEMON (use 'watcher' or 'posync')"; exit 1 ;;
+    waker)
+      LABEL="com.stockpulse.claudewaker"
+      CONTROL="$REPO/state/forex_event_waker.control"
+      STATUS=""  # waker has no status.json; shows via log tail
+      LOG_OUT="$REPO/logs/claude_waker.log"
+      LOG_ERR="$REPO/logs/claude_waker.err.log"
+      ;;
+    heartbeat)
+      LABEL="com.stockpulse.claudeheartbeat"
+      CONTROL="$REPO/state/forex_heartbeat.control"
+      STATUS=""
+      LOG_OUT="$REPO/logs/claude_heartbeat.log"
+      LOG_ERR="$REPO/logs/claude_heartbeat.err.log"
+      ;;
+    *) echo "Unknown daemon: $DAEMON (use 'watcher', 'posync', 'waker', or 'heartbeat')"; exit 1 ;;
   esac
   PLIST_SRC="$REPO/daemon/$LABEL.plist"
   PLIST_DST="$HOME/Library/LaunchAgents/$LABEL.plist"
@@ -92,8 +106,13 @@ case "$cmd" in
     launchctl list | grep -E "$LABEL" || echo "(not loaded)"
     echo "--- control file ---"
     cat "$CONTROL" 2>/dev/null || echo "(absent → defaults to run)"
-    echo "--- status file ---"
-    cat "$STATUS" 2>/dev/null || echo "(no status yet)"
+    if [ -n "$STATUS" ]; then
+      echo "--- status file ---"
+      cat "$STATUS" 2>/dev/null || echo "(no status yet)"
+    else
+      echo "--- recent log tail ---"
+      tail -n 5 "$LOG_OUT" 2>/dev/null || echo "(no log yet)"
+    fi
     ;;
 
   logs)
@@ -307,16 +326,49 @@ for t, n in sorted(c_total.items(), key=lambda x: -x[1]):
 PY
     ;;
 
+  all-install)
+    for d in watcher posync waker heartbeat; do
+      echo "==> $d"
+      "$0" install "$d"
+    done
+    ;;
+
+  all-status)
+    set +e  # grep-no-match must not abort the loop
+    printf "%-12s %-10s %-22s %s\n" "daemon" "pid" "control" "launchd"
+    for d in watcher posync waker heartbeat; do
+      case "$d" in
+        watcher)   L="com.stockpulse.forexwatcher"        C="$REPO/state/forex_watcher.control" ;;
+        posync)    L="com.stockpulse.forexpositionsync"   C="$REPO/state/forex_position_sync.control" ;;
+        waker)     L="com.stockpulse.claudewaker"         C="$REPO/state/forex_event_waker.control" ;;
+        heartbeat) L="com.stockpulse.claudeheartbeat"     C="$REPO/state/forex_heartbeat.control" ;;
+      esac
+      line=$(launchctl list 2>/dev/null | grep -E "[[:space:]]${L}$" | head -1)
+      pid=$(echo "$line" | awk '{print $1}')
+      [ -z "$pid" ] && pid="-"
+      ctrl=""
+      [ -f "$C" ] && ctrl=$(tr -d '[:space:]' < "$C")
+      [ -z "$ctrl" ] && ctrl="run(default)"
+      if [ -n "$line" ]; then
+        loaded="loaded"
+      else
+        loaded="NOT LOADED"
+      fi
+      printf "%-12s %-10s %-22s %s\n" "$d" "$pid" "$ctrl" "$loaded"
+    done
+    set -e
+    ;;
+
   help|*)
     cat <<USAGE
-Usage: $0 <cmd> [watcher|posync]
+Usage: $0 <cmd> [watcher|posync|waker|heartbeat]
   install        copy plist to LaunchAgents + load (default: watcher)
   uninstall      unload + remove plist
   start          start/kickstart
   stop           set control file to "stop" (graceful exit)
   pause          set control file to "pause"
   run            set control file to "run"
-  status         show launchd state + status.json
+  status         show launchd state + status.json (or log tail for waker/heartbeat)
   logs           tail -f stdout log
   errlog         tail -f stderr log
   events         tail -f events.jsonl (stream, pretty, all daemons)
@@ -324,11 +376,14 @@ Usage: $0 <cmd> [watcher|posync]
   tally          count of events by type (all-time + last 24h)
   live           full dashboard, refreshes every 10s (Ctrl-C to quit)
   snapshot       one-shot dashboard (same as live, no refresh)
+  all-install    install all 4 daemons (watcher + posync + waker + heartbeat)
+  all-status     status line for each daemon
 
-Examples:
-  $0 install           # install watcher
-  $0 install posync    # install position-sync
-  $0 status posync
+Daemons:
+  watcher     prices + SMC structure (Phase 1)
+  posync      positions + trails + daily P&L (Phase 3)
+  waker       Claude invoked on every new event (autonomous brain)
+  heartbeat   Claude invoked hourly (safety-net tick)
 USAGE
     exit 1
     ;;

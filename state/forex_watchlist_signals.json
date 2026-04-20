@@ -18,15 +18,6 @@
   },
   "level_alerts": [
     {
-      "id": "TEST_CHAIN_VALIDATION",
-      "instrument": "EURUSD",
-      "zone_low": 1.1,
-      "zone_high": 1.25,
-      "emit_on": "enter",
-      "cooldown_sec": 60,
-      "note": "TEST \u2014 validate full event\u2192claude chain end to end. Claude should skip and mark consumed."
-    },
-    {
       "id": "audusd_pullback_buy_zone",
       "instrument": "AUDUSD",
       "zone_low": 0.7075,
