@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-20T23:33:00+05:30",
+  "last_tick": "2026-04-20T23:37:00+05:30",
   "regime": "ESCALATION_CONFIRMED_BLOCKADE_BITING",
-  "regime_note": "MONDAY 2026-04-20 23:33 IST. 1 GOLD level_enter SKIP \u2014 price 4810 at zone top edge BUT no M15 BOS (last_bos=null), composite 7.0 aligned=false, DAY -0.15, no rejection wick, -0.46% day on dollar bid contradicts safe-haven. Trump: ceasefire extension 'highly unlikely', expires Wed 0000 GMT. Iran says 'no plans' for more talks. Flat broker $1000. All 5 watchlist + 8 queries KEEP.",
+  "regime_note": "MONDAY 2026-04-20 23:37 IST. 6 bar_close events \u2014 all SKIP. AUDUSD H1 0.7174 (bull BOS 0.71974 63bars, bear ChoCh 0.71522 49bars \u2014 messy, 74p above 0.707 short trigger). USDJPY M15 158.717 bear BOS at 158.728 (at level, 22p from 158.50 trigger \u2014 wait for break). GOLD H1 4807.7 bull FVG unmitigated @4806.5-4806.9 (top-of-zone) but no BOS/ChoCh; M15 4811.96 above zone top 4810, bear FVG mitigated. OIL_CRUDE H1 87.54 ($2.46 below 90 trigger, bear BOS 86.55). Flat broker $1000. All 5 watchlist + 8 queries KEEP. Wed Apr 22 ceasefire expiry = primary catalyst.",
   "open_positions": [],
   "watchlist": [
     {
@@ -149,7 +149,7 @@
     "telegram_on_trade": true,
     "telegram_chat_ids": "6838758759,849258319"
   },
-  "last_tick_ts": "2026-04-20T18:04:31.936234+00:00",
+  "last_tick_ts": "2026-04-20T18:07:00+00:00",
   "tracker": [
     {
       "situation": "US Navy Blockade of Iran \u2014 day 4",
@@ -159,7 +159,7 @@
       "note": "15 fresh news_flash headlines this tick: CNBC (blockade day 4), AP/BBC/WaPo/Reuters (Hormuz fully closed, ships attacked), NYT (blockade status unclear, some transits), USNI (US seized Iranian container ship), Jerusalem Post (Indian-flagged vessel hit), Al Jazeera (sanctioned tankers still transit + Trump confirms seizure), Maritime Executive (IRGC fired on containership/tanker/cruise ship). Apr 22 ceasefire effectively dead. Binary risk: escalation ladder (Iran retaliatory strike on US asset) or de-escalation shock (surprise deal)."
     }
   ],
-  "last_tick_utc": "2026-04-20T18:04:31.936234+00:00",
+  "last_tick_utc": "2026-04-20T18:07:00+00:00",
   "tick_history": [
     {
       "ts_utc": "2026-04-20T14:45:29.961114Z",
@@ -200,6 +200,14 @@
       "closed": 0,
       "skipped": 1,
       "note": "GOLD level_enter SKIP \u2014 no M15 BOS, no rejection wick, aligned=false, dollar-bid contradicts safe-haven"
+    },
+    {
+      "ts_utc": "2026-04-20T18:07:00+00:00",
+      "events_in": 6,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 6,
+      "note": "6 bar_close SKIP \u2014 AUDUSD messy structure, USDJPY 22p from break, GOLD zone edge no confirmation, OIL_CRUDE no trigger"
     }
   ],
   "recent_skips": [
