@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T03:03:00+05:30",
-  "pruned_at": "2026-04-21T03:03:00+05:30",
-  "pruned_by": "21:33 UTC tick \u2014 15 news_flash events from us_iran_military query. 14 are old RSS backfill (Feb-Apr 2026 dated); 1 fresh: Iran launched drone strikes on US military vessels in Gulf/Sea of Oman retaliating Spruance-Touska seizure (confirmed across CNN, Malay Mail, The National, Al Jazeera, BusinessToday). KINETIC ESCALATION LADDER STEP confirmed. Broker maintenance window (21:00-22:00 UTC) so no trade possible this tick. All 5 alerts + 9 structure + 8 queries KEEP. MODIFIED oil_crude_escalation_90 + usdjpy_riskoff_break + gold_escalation_buy_zone notes to reflect drone-strike catalyst.",
+  "last_updated_by_claude": "2026-04-21T03:24:00+05:30",
+  "pruned_at": "2026-04-21T03:24:00+05:30",
+  "pruned_by": "21:54 UTC tick \u2014 6 M15 bar_close events all SKIP (broker CLOSED maintenance 21:00-22:00). Fresh news confirms kinetic escalation widening: Salalah port (Oman) hit, Iranian drone approached US aircraft carrier + shot down, 2026 Iran war timeline active. Covered by existing us_iran_military query (navy keyword). All 5 alerts + 9 structure + 8 queries KEEP. MODIFIED usdjpy_riskoff_break note: distance updated 29p \u2192 22p (158.718 current, drift continues toward 158.50 trigger).",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -35,7 +35,7 @@
       "level": 158.5,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break 158.50 = risk-off yen flight confirmed. Short on retest from below. Last known 158.788 (29p away). H1+M15 bearish BOS/ChoCh stacked. FRESH CATALYST: Iran launched drone strikes on US military vessels in Sea of Oman retaliating Touska seizure \u2014 kinetic escalation ladder step confirmed. Expect Asia open flush when broker reopens 22:00 UTC. Katayama urgency language unchanged. SL 159.20, TP 157.00."
+      "note": "Break 158.50 = risk-off yen flight confirmed. Short on retest from below. Last known 158.718 (22p away, drift continues closer from 29p→25p→22p across last 3 ticks). H1+M15 bearish BOS/ChoCh stacked. CATALYST WIDENING: Iran drone strikes on US vessels Sea of Oman + Salalah port (Oman) hit + US carrier approached (drone shot down) \u2014 kinetic escalation ladder stepping UP. Expect Asia open flush when broker reopens 22:00 UTC. Katayama urgency language unchanged. SL 159.20, TP 157.00."
     },
     {
       "id": "oil_crude_escalation_90",
