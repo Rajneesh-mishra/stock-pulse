@@ -39,5 +39,20 @@
     "trades_closed": 0,
     "outcome": "all SKIP \u2014 GBPUSD bull FVG mitigated (bear intact), USDCHF bear FVG unmitigated (no setup); news confirms Iran ceasefire failing \u2014 T-28h; flat $1000",
     "audit": "all 6 watchlist + all 9 structure_watch + all 8 queries KEEP"
+  },
+  {
+    "ts_utc": "2026-04-20T20:17:00Z",
+    "ts_ist": "2026-04-21T01:47:00+05:30",
+    "trigger": "heartbeat",
+    "events_in": 0,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 0,
+    "note": "Heartbeat tick \u2014 0 unconsumed events. Prices virtually flat vs 20:14 (AUDUSD 0.71794, USDJPY 158.860 -1.6p, GOLD 4813.35 -$1, OIL 86.973 +7p, USDCAD 1.36476 +1p). Iran ceasefire T-~27.5h. Flat broker $1000.",
+    "broker": {
+      "balance": 1000.0,
+      "positions": 0
+    },
+    "audit": "6 watchlist + 9 structure + 8 queries all KEEP"
   }
 ]
