@@ -6,5 +6,13 @@
     "action": "skip_all",
     "reason": "scores 39/-40/46 below 60, aligned=False, Iran ambiguity",
     "positions": 0
+  },
+  {
+    "ts_utc": "2026-04-20T15:32",
+    "type": "forex_tick",
+    "trigger": "news_flash x15 (Hormuz/blockade)",
+    "action": "skip_all_trades_regime_pivot",
+    "reason": "15 news_flash all confirm US Navy blockade of Iran day 4 + Hormuz fully closed + ships attacked. Regime flipped DE-ESCALATION_UNCONFIRMED → ESCALATION_CONFIRMED. No level triggers hit; no 7-gate checks run. Watchlist pivoted: AUDUSD BUY→SELL (bounce 0.714-0.718 + breakdown 0.707), GOLD long zone added 4780-4810, USDJPY short thesis strengthened (MoF + risk-off double tailwind), OIL escalation alerts 90/95 kept. Added news query us_iran_military.",
+    "positions": 0
   }
 ]

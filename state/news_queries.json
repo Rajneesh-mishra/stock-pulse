@@ -6,42 +6,49 @@
       "query": "Iran US ceasefire deal",
       "keywords_required": ["signed", "formal", "collapse", "rejected", "extended", "strike", "attack", "breakdown", "breakthrough", "announce"],
       "cooldown_min": 30,
-      "note": "Apr 22 original expiry — in-principle extension pending. Binary event."
+      "note": "Apr 22 original expiry — now effectively dead (US imposed naval blockade). Watching for surprise de-escalation headline."
     },
     {
       "id": "hormuz_strait",
       "query": "Strait Hormuz tanker vessel",
-      "keywords_required": ["attack", "mine", "blockade", "closed", "reopen", "strike", "incident", "sanction"],
+      "keywords_required": ["attack", "mine", "blockade", "closed", "reopen", "strike", "incident", "sanction", "seized", "fired"],
       "cooldown_min": 30,
-      "note": "Direct crude oil catalyst — tanker attacks reopen Iran war premium."
+      "note": "Direct crude oil catalyst — fired 15 events this tick confirming blockade. Hormuz fully closed, ships attacked."
+    },
+    {
+      "id": "us_iran_military",
+      "query": "US Iran military strike naval",
+      "keywords_required": ["strike", "blockade", "navy", "bomb", "missile", "casualty", "escalate", "war", "Israel", "IRGC"],
+      "cooldown_min": 45,
+      "note": "NEW — broader escalation coverage beyond Hormuz: US Navy actions, Israel involvement, Houthi resumption, regional ally responses."
     },
     {
       "id": "opec_supply",
       "query": "OPEC crude oil production",
       "keywords_required": ["emergency", "cut", "hike", "increase", "announce", "surprise", "meeting"],
       "cooldown_min": 60,
-      "note": "OPEC+ approved +206k bpd May. Any surprise supply move = WTI whipsaw."
+      "note": "OPEC+ approved +206k bpd May. Any surprise supply move = WTI whipsaw. Emergency meeting possible under blockade."
     },
     {
       "id": "boj_intervention",
       "query": "Bank of Japan yen intervention MoF",
       "keywords_required": ["intervene", "intervention", "FX", "sold", "bought", "verbal", "surprise", "hike", "decision"],
       "cooldown_min": 60,
-      "note": "USDJPY near 158-160 intervention zone. MoF escalating verbal. BoJ Apr 27-28."
+      "note": "USDJPY near 158-160 intervention zone. MoF escalating verbal. BoJ Apr 27-28. Risk-off may bid yen before MoF even acts."
     },
     {
       "id": "fed_fomc",
       "query": "Federal Reserve FOMC rate",
       "keywords_required": ["cut", "hike", "hold", "pivot", "dovish", "hawkish", "surprise", "statement"],
       "cooldown_min": 120,
-      "note": "FOMC Apr 28-29 — Fed hold expected. Year-end cut odds 50%. Any shift = DXY reaction."
+      "note": "FOMC Apr 28-29 — Fed hold expected. Oil shock could push dovish (growth risk) or hawkish (inflation)."
     },
     {
       "id": "rba_hike",
       "query": "Reserve Bank Australia RBA rate",
       "keywords_required": ["hike", "hold", "cut", "surprise", "statement", "decision"],
       "cooldown_min": 120,
-      "note": "Market pricing May hike to 4.35% — highest G10. Key to AUDUSD thesis."
+      "note": "Market pricing May hike to 4.35%. Risk-off may force RBA to pause — AUD bid thesis broken under blockade."
     },
     {
       "id": "us_tariff",
