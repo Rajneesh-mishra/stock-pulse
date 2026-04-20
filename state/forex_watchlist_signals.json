@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T02:56:00+05:30",
-  "pruned_at": "2026-04-21T02:56:00+05:30",
-  "pruned_by": "21:25 UTC tick \u2014 6 M15 bar_close events all SKIP (no BOS/ChoCh/fresh FVG; broker maintenance window all CLOSED). USDJPY drifted DOWN 12p to 158.788 (now 29p above 158.50 trigger, closer by 12p). GOLD +$6 to 4820.88 moving AWAY from 4780-4810 buy zone. Oil 85.91 small bounce. Others flat. News scan confirmed no delta: Iran Islamabad skip + Spruance Touska seizure + Katayama urgency language unchanged. T-~26-50h Wed Apr 22 ceasefire expiry (Trump 'Wed evening Washington time'). MODIFIED usdjpy note to reflect 29p distance. All 5 alerts + 9 structure + 8 queries KEEP.",
+  "last_updated_by_claude": "2026-04-21T03:03:00+05:30",
+  "pruned_at": "2026-04-21T03:03:00+05:30",
+  "pruned_by": "21:33 UTC tick \u2014 15 news_flash events from us_iran_military query. 14 are old RSS backfill (Feb-Apr 2026 dated); 1 fresh: Iran launched drone strikes on US military vessels in Gulf/Sea of Oman retaliating Spruance-Touska seizure (confirmed across CNN, Malay Mail, The National, Al Jazeera, BusinessToday). KINETIC ESCALATION LADDER STEP confirmed. Broker maintenance window (21:00-22:00 UTC) so no trade possible this tick. All 5 alerts + 9 structure + 8 queries KEEP. MODIFIED oil_crude_escalation_90 + usdjpy_riskoff_break + gold_escalation_buy_zone notes to reflect drone-strike catalyst.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -35,7 +35,7 @@
       "level": 158.5,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break 158.50 = risk-off yen flight confirmed. Short on retest from below. Price 158.788, 29p away \u2014 drifted DOWN 12p this tick (toward trigger). H1+M15 bearish BOS/ChoCh stacked \u2014 imminent on risk-off flush (Iran Spruance seizure + Wed ceasefire expiry catalyst). Katayama urgency language unchanged. SL 159.20, TP 157.00."
+      "note": "Break 158.50 = risk-off yen flight confirmed. Short on retest from below. Last known 158.788 (29p away). H1+M15 bearish BOS/ChoCh stacked. FRESH CATALYST: Iran launched drone strikes on US military vessels in Sea of Oman retaliating Touska seizure \u2014 kinetic escalation ladder step confirmed. Expect Asia open flush when broker reopens 22:00 UTC. Katayama urgency language unchanged. SL 159.20, TP 157.00."
     },
     {
       "id": "oil_crude_escalation_90",
@@ -43,7 +43,7 @@
       "level": 90.0,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
-      "note": "WTI collapsed to $85.72 on Iran Hormuz-open + US-Iran talks \u2014 market pricing DE-escalation even with ceasefire expiry Wed Apr 22 00:00 GMT (~27h). Alert remains armed ABOVE 90 for binary escalation reversal (Iran pulls out + Hormuz reclosure + US vessel retaliation). Entry on break-retest of 90 w/ M15 bull BOS confirm. SL 87.50, TP1 94, TP2 98. Conv 3 (lowered \u2014 price needs to rally 5% just to reach trigger)."
+      "note": "WTI last ~85.91 on Iran Hormuz-open narrative \u2014 but FRESH: Iran drone strikes on US vessels Apr 20 confirmed (CNN/AJ/Malay Mail). If Asia session confirms strikes are sustained, crude could gap $4-5 higher toward 90 trigger on reopen. Alert armed ABOVE 90 for break-retest + M15 bull BOS. SL 87.50, TP1 94, TP2 98. Conv raised 3\u21924 given drone-strike catalyst."
     },
     {
       "id": "gold_escalation_buy_zone",
@@ -52,7 +52,7 @@
       "zone_high": 4810.0,
       "emit_on": "enter",
       "cooldown_sec": 900,
-      "note": "Safe-haven long on pullback into zone. Price 4814.69 just ABOVE zone top 4810 (bull FVG 4809.89-4812.01 now mitigated). Needs rejection wick + M15 bullish BOS inside zone before entry. SL 4745, TP 4900/5000. Conv 3."
+      "note": "Safe-haven long on pullback into zone. Last known 4820.88 just ABOVE zone top 4810. FRESH CATALYST: Iran drone strikes on US vessels Apr 20 \u2014 kinetic escalation likely prints a gold bid on Asia reopen. If price moves AWAY (up) rather than pulling back, consider MODIFY to chase breakout entry above 4830 w/ M15 bull BOS. For now, waiting for pullback rejection + M15 bull BOS inside 4780-4810. SL 4745, TP 4900/5000. Conv 3\u21924."
     },
     {
       "id": "usdcad_short_fvg_retest",
