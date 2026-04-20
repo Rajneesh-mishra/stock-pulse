@@ -12,7 +12,21 @@
     "type": "forex_tick",
     "trigger": "news_flash x15 (Hormuz/blockade)",
     "action": "skip_all_trades_regime_pivot",
-    "reason": "15 news_flash all confirm US Navy blockade of Iran day 4 + Hormuz fully closed + ships attacked. Regime flipped DE-ESCALATION_UNCONFIRMED → ESCALATION_CONFIRMED. No level triggers hit; no 7-gate checks run. Watchlist pivoted: AUDUSD BUY→SELL (bounce 0.714-0.718 + breakdown 0.707), GOLD long zone added 4780-4810, USDJPY short thesis strengthened (MoF + risk-off double tailwind), OIL escalation alerts 90/95 kept. Added news query us_iran_military.",
+    "reason": "15 news_flash all confirm US Navy blockade of Iran day 4 + Hormuz fully closed + ships attacked. Regime flipped DE-ESCALATION_UNCONFIRMED \u2192 ESCALATION_CONFIRMED. No level triggers hit; no 7-gate checks run. Watchlist pivoted: AUDUSD BUY\u2192SELL (bounce 0.714-0.718 + breakdown 0.707), GOLD long zone added 4780-4810, USDJPY short thesis strengthened (MoF + risk-off double tailwind), OIL escalation alerts 90/95 kept. Added news query us_iran_military.",
     "positions": 0
+  },
+  {
+    "ts_utc": "2026-04-20T15:38",
+    "type": "forex_tick",
+    "trigger": "level_enter x2",
+    "action": "skip_all",
+    "events": [
+      "AUDUSD@0.7175 mid-zone SELL",
+      "GOLD@4806 mid-zone BUY"
+    ],
+    "reason": "no rejection-wick confirmation; mid-zone chasing under ESCALATION_CONFIRMED is poor R:R",
+    "positions": 0,
+    "regime": "ESCALATION_CONFIRMED",
+    "news_check": "Iran vows retaliation, Hormuz closed again, talks broken, 2 Indian ships fired on"
   }
 ]
