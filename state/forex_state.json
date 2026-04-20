@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-21T01:47:00+05:30",
   "regime": "ESCALATION_CONFIRMED_BLOCKADE_BITING",
-  "regime_note": "2026-04-21 ~20:17 UTC heartbeat tick \u2014 0 unconsumed events, broker flat $1000, prices virtually unchanged vs 20:14 tick (AUDUSD 0.71794 87p above 0.707; USDJPY 158.860 36p above 158.50 drifted down 1.6p; GOLD 4813.35 3.35 above zone top 4810 down $1; OIL 86.973 303p below 90 trigger up 7p; USDCAD 1.36476 2.7p below bear FVG 1.36503-612 closest to action; EURUSD 1.17867 / GBPUSD 1.35337 / USDCHF 0.77838 no alerts; BTCUSD 76370). Quiet session outside London close, US pre-close drift. NEWS unchanged from prior tick: T-~27.5h to Wed Apr 22 0000 GMT Iran ceasefire expiry; Bloomberg US-Iran 2wk extension being weighed despite Trump 'highly unlikely'; Hormuz shut 5d; Iran vessel seized Apr 19. All 6 watchlist + 9 structure + 8 queries KEEP \u2014 audit walked every item.",
+  "regime_note": "2026-04-21 ~20:27 UTC forex auto \u2014 8 M15 bar_close all SKIP (no BOS/ChoCh/fresh FVG; prices virtually inert vs 20:17 heartbeat). AUDUSD 0.71785 85p above 0.707; USDJPY 158.873 37p above 158.50 drifting up bull FVG mitigated; GOLD 4817.11 drifted +$3 $7.11 above zone top 4810 bear trend; OIL 87.022 298p below 90 market still NOT pricing Iran escalation (key tell); USDCAD 1.36479 2.4p below bear FVG 1.36503-612 \u2014 closest to action; EURUSD 1.178505 / GBPUSD 1.35334 / USDCHF 0.778485 no alerts. NEWS: Trump sending Vance+Witkoff+Kushner to Islamabad but Iran FM Khatibzadeh says no meeting organized US still maximalist; Hormuz closed multiple ship attacks reported; Iranian cargo ship seizure called 'ceasefire violation' by Tehran. T-~27h to Wed Apr 22 00:00 GMT expiry. 6 watchlist + 9 structure + 8 queries all KEEP. Flat broker $1000 / available $1000.",
   "open_positions": [],
   "watchlist": [
     {
@@ -149,7 +149,7 @@
     "telegram_on_trade": true,
     "telegram_chat_ids": "6838758759,849258319"
   },
-  "last_tick_ts": "2026-04-20T20:01:56.709580+00:00",
+  "last_tick_ts": "2026-04-21T20:27:00+00:00",
   "tracker": [
     {
       "situation": "US Navy Blockade of Iran \u2014 day 4",
