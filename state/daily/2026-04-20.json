@@ -45,6 +45,24 @@
       "closed": 0,
       "skipped": 4,
       "reason": "4 bar_close SKIP: AUDUSD 0.7178 70p from 0.707 breakdown; USDJPY 158.69 19p from 158.50 break (H1+M15 stack imminent); GOLD 4813.68 above zone top no rejection. Prices flat vs 23:37 tick. Flat broker $1000. All 5 watchlist + 8 queries KEEP."
+    },
+    {
+      "ts_utc": "2026-04-20T19:15:00Z",
+      "events_in": 8,
+      "action": "SKIP all 8 bar_close \u2014 no level hits, no structure breaks",
+      "prices": {
+        "AUDUSD_H1": 0.71785,
+        "USDJPY_H1": 158.828,
+        "GOLD_H1": 4820.045,
+        "OIL_H1": 87.358,
+        "EURUSD_H1": 1.178535,
+        "USDCHF_H1": 0.77842,
+        "BTC_H1": 76382.5
+      },
+      "news": "Iran confirms escalation: Tehran skipped Islamabad round 2, Trump 'highly unlikely' Apr 22 extension",
+      "watchlist_verdict": "all 6 KEEP",
+      "queries_verdict": "all 8 KEEP",
+      "broker": "flat $1000"
     }
   ]
 }
