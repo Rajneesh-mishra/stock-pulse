@@ -78,6 +78,14 @@
       "balance": 1000.0,
       "pnl": 0,
       "audit": "6 watchlist + 8 queries all KEEP"
+    },
+    {
+      "ts_utc": "2026-04-20T19:59Z",
+      "trigger": "6 bar_close events",
+      "action": "SKIP all",
+      "positions": 0,
+      "balance": 1000.0,
+      "note": "prices barely moved vs 19:44 tick; USDCAD closest to action at 3.5p below bear FVG zone floor; waiting for rally"
     }
   ]
 }
