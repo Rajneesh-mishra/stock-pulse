@@ -36,5 +36,14 @@
     "events_skipped": 3,
     "trades": 0,
     "summary": "3 bar_close 15M skipped: AUDUSD +39 bull contradicts SELL watchlist & risk-off regime; USDJPY -40 bear but HTF unaligned; GOLD -8 neutral in buy zone but no confirmation. Brent $95.42 +5.58%, WTI ~$89 +6%. Iran reinstates Hormuz closure, US blockade day 6, no negotiations. Watchlist 7 alerts all KEEP."
+  },
+  {
+    "t": "2026-04-20T21:40+05:30",
+    "type": "forex_auto",
+    "events_in": 11,
+    "skipped": 11,
+    "opened": 0,
+    "closed": 0,
+    "note": "11 bar_close (AUDUSD x3 bullish +50 vs SELL, USDJPY x2 bearish -40 px 158.68 (158.50 break 18p away), GOLD x3 neutral in 4780-4810 zone no wick, USDCAD x1 below bounce, OIL x2 below $90). All SKIP. Hormuz closed Apr 18, US Navy seized Iran vessel, WTI $88.3 +7%, Brent $96 +6.3%, Iran suspends talks. Watchlist 7/7 KEEP, queries 8/8 KEEP."
   }
 ]
