@@ -1,10 +1,10 @@
 {
-  "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
+  "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
   "last_updated_by_claude": "2026-04-21T02:12:00+05:30",
   "pruned_at": "2026-04-21T02:12:00+05:30",
   "pruned_by": "8 M15 bar_close events all SKIP (no BOS/ChoCh/fresh FVG). Prices flat vs 20:33. All 5 alerts audited KEEP: each trigger still expresses a live edge with Apr 22 ceasefire binary T-~27h. USDCAD nearest (1.5p below bear FVG) but M15 bear BOS + risk-off catalyst gating holds.",
   "pruned_removed": [
-    "gold_5000_psych (pure informational with no gold position — remove until we're long)"
+    "gold_5000_psych (pure informational with no gold position \u2014 remove until we're long)"
   ],
   "pruned_added": [],
   "instruments": [
@@ -29,7 +29,7 @@
       "level": 0.707,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break of 0.707 = prior pivot gone. Short on retest of 0.707 from below. SL 0.713, TP 0.700. Risk-off + AUD first-to-bleed. Currently 0.7172 (52p+ above) with bull BOS — needs regime shift (ceasefire expiry Wed could flip it)."
+      "note": "Break of 0.707 = prior pivot gone. Short on retest of 0.707 from below. SL 0.713, TP 0.700. Risk-off + AUD first-to-bleed. Currently 0.7172 (52p+ above) with bull BOS \u2014 needs regime shift (ceasefire expiry Wed could flip it)."
     },
     {
       "id": "usdjpy_riskoff_break",
@@ -37,7 +37,7 @@
       "level": 158.5,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break 158.50 = risk-off yen flight confirmed. Short on retest from below. Price 158.91, 41p away — drifted up this tick, bull FVG 158.824-158.9005 formed M15. H1+M15 bearish BOS/ChoCh stacked still — imminent on risk-off flush. SL 159.20, TP 157.00."
+      "note": "Break 158.50 = risk-off yen flight confirmed. Short on retest from below. Price 158.91, 41p away \u2014 drifted up this tick, bull FVG 158.824-158.9005 formed M15. H1+M15 bearish BOS/ChoCh stacked still \u2014 imminent on risk-off flush. SL 159.20, TP 157.00."
     },
     {
       "id": "oil_crude_escalation_90",
@@ -45,7 +45,7 @@
       "level": 90.0,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
-      "note": "WTI pulled back $89.94→$87.44 intraday but ceasefire expires Wed Apr 22 + Trump labeled Iran closure 'violation'. >90 = risk-premium accelerating. Entry on break-retest. SL 87.50, TP1 94, TP2 98. Conv 4."
+      "note": "WTI collapsed to $85.72 on Iran Hormuz-open + US-Iran talks \u2014 market pricing DE-escalation even with ceasefire expiry Wed Apr 22 00:00 GMT (~27h). Alert remains armed ABOVE 90 for binary escalation reversal (Iran pulls out + Hormuz reclosure + US vessel retaliation). Entry on break-retest of 90 w/ M15 bull BOS confirm. SL 87.50, TP1 94, TP2 98. Conv 3 (lowered \u2014 price needs to rally 5% just to reach trigger)."
     },
     {
       "id": "gold_escalation_buy_zone",
@@ -67,14 +67,71 @@
     }
   ],
   "structure_watch": [
-    {"instrument": "AUDUSD",    "timeframes": ["HOUR_4", "HOUR", "MINUTE_15"]},
-    {"instrument": "USDJPY",    "timeframes": ["HOUR", "MINUTE_15"]},
-    {"instrument": "GOLD",      "timeframes": ["HOUR_4", "HOUR", "MINUTE_15"]},
-    {"instrument": "OIL_CRUDE", "timeframes": ["HOUR_4", "HOUR", "MINUTE_15"]},
-    {"instrument": "USDCAD",    "timeframes": ["HOUR", "MINUTE_15"]},
-    {"instrument": "EURUSD",    "timeframes": ["HOUR", "MINUTE_15"]},
-    {"instrument": "GBPUSD",    "timeframes": ["HOUR", "MINUTE_15"]},
-    {"instrument": "USDCHF",    "timeframes": ["HOUR", "MINUTE_15"]},
-    {"instrument": "BTCUSD",    "timeframes": ["HOUR_4", "HOUR"]}
+    {
+      "instrument": "AUDUSD",
+      "timeframes": [
+        "HOUR_4",
+        "HOUR",
+        "MINUTE_15"
+      ]
+    },
+    {
+      "instrument": "USDJPY",
+      "timeframes": [
+        "HOUR",
+        "MINUTE_15"
+      ]
+    },
+    {
+      "instrument": "GOLD",
+      "timeframes": [
+        "HOUR_4",
+        "HOUR",
+        "MINUTE_15"
+      ]
+    },
+    {
+      "instrument": "OIL_CRUDE",
+      "timeframes": [
+        "HOUR_4",
+        "HOUR",
+        "MINUTE_15"
+      ]
+    },
+    {
+      "instrument": "USDCAD",
+      "timeframes": [
+        "HOUR",
+        "MINUTE_15"
+      ]
+    },
+    {
+      "instrument": "EURUSD",
+      "timeframes": [
+        "HOUR",
+        "MINUTE_15"
+      ]
+    },
+    {
+      "instrument": "GBPUSD",
+      "timeframes": [
+        "HOUR",
+        "MINUTE_15"
+      ]
+    },
+    {
+      "instrument": "USDCHF",
+      "timeframes": [
+        "HOUR",
+        "MINUTE_15"
+      ]
+    },
+    {
+      "instrument": "BTCUSD",
+      "timeframes": [
+        "HOUR_4",
+        "HOUR"
+      ]
+    }
   ]
 }
