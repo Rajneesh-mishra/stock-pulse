@@ -24,5 +24,14 @@
     "reason": "AUDUSD messy H1/M15 structure counter-regime; USDJPY 22p from 158.50 break; GOLD zone edge no rejection/BOS; OIL 87.54 below 90 trigger",
     "positions": "flat $1000",
     "audit": "all 5 watchlist + 8 queries KEEP"
+  },
+  {
+    "ts": "2026-04-20T18:14:00Z",
+    "trigger": "heartbeat",
+    "events_processed": 0,
+    "action": "SKIP",
+    "summary": "Heartbeat \u2014 0 events. Broker flat $1000. NEWS: Tehran SKIPPED round 2 Islamabad talks Apr 20 calling US demands 'childish', cited US naval blockade as ceasefire breach. Hormuz still closed. USD/JPY 158.72 verbal BoJ escalation only (Katayama G7, Akazawa hike talk), no intervention. Tuned iran_ceasefire and boj_intervention queries. Watchlist 5 KEEP.",
+    "watchlist_audit": "5 KEEP",
+    "queries_audit": "6 KEEP, 2 TUNE"
   }
 ]

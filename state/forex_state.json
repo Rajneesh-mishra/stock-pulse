@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-20T23:37:00+05:30",
   "regime": "ESCALATION_CONFIRMED_BLOCKADE_BITING",
-  "regime_note": "MONDAY 2026-04-20 23:37 IST. 6 bar_close events \u2014 all SKIP. AUDUSD H1 0.7174 (bull BOS 0.71974 63bars, bear ChoCh 0.71522 49bars \u2014 messy, 74p above 0.707 short trigger). USDJPY M15 158.717 bear BOS at 158.728 (at level, 22p from 158.50 trigger \u2014 wait for break). GOLD H1 4807.7 bull FVG unmitigated @4806.5-4806.9 (top-of-zone) but no BOS/ChoCh; M15 4811.96 above zone top 4810, bear FVG mitigated. OIL_CRUDE H1 87.54 ($2.46 below 90 trigger, bear BOS 86.55). Flat broker $1000. All 5 watchlist + 8 queries KEEP. Wed Apr 22 ceasefire expiry = primary catalyst.",
+  "regime_note": "2026-04-20 18:14 UTC: Iran-US ceasefire expires Wed Apr 22 0000 GMT. Trump Apr 20 extension 'highly unlikely'. Tehran SKIPPED round 2 Islamabad talks Apr 20, called US demands 'childish', cited US naval blockade as direct ceasefire breach. Both sides frozen on nuclear/Hezbollah/Hormuz. Strait remains closed. Talks-collapse trajectory ~52h before expiry. USD/JPY 158.72, verbal-only BoJ escalation (Katayama G7 urgency, Akazawa floated hike). Gold 4808 zone-top, WTI ~$87. Primary catalyst window: Iran military movement or Trump Truth Social post overnight Apr 20-21.",
   "open_positions": [],
   "watchlist": [
     {
@@ -238,5 +238,6 @@
   "last_scan": {
     "timestamp": "2026-04-20T23:00:00+05:30",
     "trigger": "bar_close_x3_auto"
-  }
+  },
+  "last_updated": "2026-04-20T18:14:00Z"
 }

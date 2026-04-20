@@ -3,10 +3,10 @@
   "queries": [
     {
       "id": "iran_ceasefire",
-      "query": "Iran US ceasefire deal",
-      "keywords_required": ["signed", "formal", "collapse", "rejected", "extended", "extension", "expire", "expiry", "unlikely", "strike", "attack", "breakdown", "breakthrough", "announce"],
+      "query": "Iran US ceasefire deal Islamabad talks",
+      "keywords_required": ["signed", "formal", "collapse", "rejected", "extended", "extension", "expire", "expiry", "unlikely", "strike", "attack", "breakdown", "breakthrough", "announce", "skip", "walkout", "freeze", "Islamabad", "childish"],
       "cooldown_min": 30,
-      "note": "Apr 22 expiry imminent — Trump Apr 20 said extension 'highly unlikely'. Added unlikely/expire/extension keywords to catch statement variants."
+      "note": "Apr 22 expiry imminent. Trump Apr 20 extension 'highly unlikely'. Tehran skipped round 2 Islamabad talks Apr 20 calling US demands 'childish'. Added skip/walkout/Islamabad/childish keywords for talks-collapse signal."
     },
     {
       "id": "hormuz_strait",
@@ -31,10 +31,10 @@
     },
     {
       "id": "boj_intervention",
-      "query": "Bank of Japan yen intervention MoF",
-      "keywords_required": ["intervene", "intervention", "FX", "sold", "bought", "verbal", "surprise", "hike", "decision"],
+      "query": "Bank of Japan yen intervention MoF Katayama",
+      "keywords_required": ["intervene", "intervention", "FX", "sold", "bought", "verbal", "surprise", "hike", "decision", "Katayama", "Akazawa", "rate check", "urgency", "excessive"],
       "cooldown_min": 60,
-      "note": "USDJPY near 158-160 intervention zone. MoF escalating verbal. BoJ Apr 27-28. Risk-off may bid yen before MoF even acts."
+      "note": "USDJPY 158.72 near 160 intervention line. FinMin Katayama G7 'high sense of urgency'. EconMin Akazawa floated BoJ hike as yen tool. BoJ Apr 27-28. Added Katayama/Akazawa/rate-check/urgency — pre-intervention verbal signals."
     },
     {
       "id": "fed_fomc",
