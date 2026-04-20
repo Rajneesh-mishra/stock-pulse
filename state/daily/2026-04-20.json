@@ -14,7 +14,7 @@
       "type": "forex_tick",
       "trigger": "news_flash x15 (Hormuz/blockade)",
       "action": "skip_all_trades_regime_pivot",
-      "reason": "15 news_flash all confirm US Navy blockade of Iran day 4 + Hormuz fully closed + ships attacked. Regime flipped DE-ESCALATION_UNCONFIRMED → ESCALATION_CONFIRMED. No level triggers hit; no 7-gate checks run. Watchlist pivoted: AUDUSD BUY→SELL (bounce 0.714-0.718 + breakdown 0.707), GOLD long zone added 4780-4810, USDJPY short thesis strengthened (MoF + risk-off double tailwind), OIL escalation alerts 90/95 kept. Added news query us_iran_military.",
+      "reason": "15 news_flash all confirm US Navy blockade of Iran day 4 + Hormuz fully closed + ships attacked. Regime flipped DE-ESCALATION_UNCONFIRMED \u2192 ESCALATION_CONFIRMED. No level triggers hit; no 7-gate checks run. Watchlist pivoted: AUDUSD BUY\u2192SELL (bounce 0.714-0.718 + breakdown 0.707), GOLD long zone added 4780-4810, USDJPY short thesis strengthened (MoF + risk-off double tailwind), OIL escalation alerts 90/95 kept. Added news query us_iran_military.",
       "positions": 0
     },
     {
@@ -62,7 +62,7 @@
       "skipped": 15,
       "opened": 0,
       "closed": 0,
-      "summary": "15 news_flash (us_iran_military) — all SKIP: Iran retaliated hitting US comms, US death toll 6, Trump 5-week campaign. Regime ESCALATION already priced; no new price trigger fired. All 7 level_alerts remain KEEP."
+      "summary": "15 news_flash (us_iran_military) \u2014 all SKIP: Iran retaliated hitting US comms, US death toll 6, Trump 5-week campaign. Regime ESCALATION already priced; no new price trigger fired. All 7 level_alerts remain KEEP."
     },
     {
       "ts": "2026-04-20T22:40:01",
@@ -76,10 +76,10 @@
     {
       "ts": "2026-04-20T23:00+05:30",
       "trigger": "bar_close x3 (AUDUSD/USDJPY/GOLD M15)",
-      "action": "SKIP all 3 — counter-regime bull, 22p from break, weak confluence in buy zone respectively",
+      "action": "SKIP all 3 \u2014 counter-regime bull, 22p from break, weak confluence in buy zone respectively",
       "watchlist_changes": [
         "REMOVED usdjpy_intervention_zone (direction contradicts risk-off regime, 108p away)",
-        "MODIFIED oil_crude_escalation_90 note (pullback $89.94→$87.44, ceasefire expiry Wed noted)"
+        "MODIFIED oil_crude_escalation_90 note (pullback $89.94\u2192$87.44, ceasefire expiry Wed noted)"
       ],
       "news": "ceasefire expires Wed Apr 22; Trump called Hormuz closure a 'violation'; oil partial pullback",
       "positions": "flat"
@@ -92,7 +92,14 @@
       "trades_closed": 0,
       "positions_flat": true,
       "regime": "ESCALATION_CONFIRMED_BLOCKADE_BITING",
-      "note": "15 news_flash (14 US/Iran mil re-indexed older; 1 fresh CNBC: Hormuz traffic rose then slowed after weekend attacks — consistent with oil .94→.44 partial absorption). Watchlist audit all KEEP (5 alerts, 8 queries). No thesis shift, ceasefire expiry Wed Apr 22 remains key catalyst."
+      "note": "15 news_flash (14 US/Iran mil re-indexed older; 1 fresh CNBC: Hormuz traffic rose then slowed after weekend attacks \u2014 consistent with oil .94\u2192.44 partial absorption). Watchlist audit all KEEP (5 alerts, 8 queries). No thesis shift, ceasefire expiry Wed Apr 22 remains key catalyst."
+    },
+    {
+      "time": "23:03 IST",
+      "trigger": "level_enter gold_escalation_buy_zone",
+      "outcome": "SKIP \u2014 R:R TP1 1.46:1 fails, no M15 BOS, day -0.5% dollar bid contradicts risk-off gold",
+      "positions": "flat",
+      "regime": "ESCALATION_CONFIRMED_BLOCKADE_BITING"
     }
   ]
 }
