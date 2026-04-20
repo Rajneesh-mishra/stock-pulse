@@ -49,6 +49,15 @@
       "events": 3,
       "action": "skip_all",
       "reason": "Iran ambiguity + no level triggers on bar_close"
+    },
+    {
+      "ts_utc": "2026-04-20T15:00:24.943235Z",
+      "events_in": 3,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 3,
+      "regime": "DE-ESCALATION_UNCONFIRMED",
+      "summary": "bar_close AUDUSD/USDJPY/EURUSD 15M \u2014 skipped. AUDUSD confluence 39 aligned=False; prices not at trigger zones; Iran Apr 22 still binary. Web: Reuters denies formal extension, Round 2 Islamabad talks today."
     }
   ],
   "trades": [],
