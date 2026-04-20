@@ -159,7 +159,7 @@
       "note": "Confirmed over 15 news flashes: CBS/NPR/PBS/CNBC/Reuters/Al Jazeera/NYT/Politico/Times of Israel. Iran reimposed Hormuz closure, IRGC gunboats fired at ships. US attacked Iranian cargo vessel. Al Jazeera 20 Apr: 'still far from breakthrough'. Apr 22 original ceasefire expiry live \u2014 binary event."
     }
   ],
-  "last_tick_utc": "2026-04-20T15:15:00Z",
+  "last_tick_utc": "2026-04-20T15:28",
   "tick_history": [
     {
       "ts_utc": "2026-04-20T14:45:29.961114Z",
@@ -177,5 +177,23 @@
       "skipped": 3,
       "note": "bar_close triage \u2014 Iran ambiguity + confluence 39 \u2192 skip all"
     }
-  ]
+  ],
+  "recent_skips": [
+    {
+      "event_id": "evt_1776698834160_bar_close",
+      "ts_utc": "2026-04-20T15:27",
+      "reason": "score<60 aligned=False + Iran ambiguity"
+    },
+    {
+      "event_id": "evt_1776698836169_bar_close",
+      "ts_utc": "2026-04-20T15:27",
+      "reason": "score<60 aligned=False + Iran ambiguity"
+    },
+    {
+      "event_id": "evt_1776698838743_bar_close",
+      "ts_utc": "2026-04-20T15:27",
+      "reason": "score<60 aligned=False + Iran ambiguity"
+    }
+  ],
+  "last_tick_summary": "3 bar_close skipped (AUDUSD 39/USDJPY -40/EURUSD 46, all aligned=False); Iran re-escalation bias; no trades; all watchlist KEEP"
 }
