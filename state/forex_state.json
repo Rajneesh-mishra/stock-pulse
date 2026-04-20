@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-20T21:12:00+05:30",
+  "last_tick": "2026-04-20T21:30:00+05:30",
   "regime": "ESCALATION_CONFIRMED",
-  "regime_note": "MONDAY 2026-04-20 21:12 IST. ESCALATION_CONFIRMED intact. This tick: 3 bar_close events (AUDUSD/USDJPY/EURUSD 15M). All SKIPPED. Confluence: AUDUSD score 39 bullish (contradicts SELL watchlist), USDJPY score -40 bearish but price 158.58 below 159.8 zone, EURUSD score 46 bullish but 1.1788 below 1.1815 breakout. None aligned. News re-verified: Iran vows retaliation against US forces after ship seizure, Hormuz closed, Tehran 'no date for talks'. Brent $96, WTI $88.3. Regime unchanged. 0 positions, $1000 intact. Watchlist all KEEP \u2014 thesis aligned with blockade regime; awaiting clean level touch + confirmation. Key watch: USDJPY 158.50 imminent cross_down (price 158.58, 8 pips away) = risk-off yen flight confirmation trigger.",
+  "regime_note": "MONDAY 2026-04-20 21:30 IST. ESCALATION_CONFIRMED intact. This tick: 3 bar_close 15M (AUDUSD/USDJPY/GOLD). All SKIPPED. Confluence: AUDUSD +39 bullish (contradicts SELL watchlist + regime), USDJPY -40 bearish but aligned=False (HTF disagrees), GOLD -8 neutral despite price 4799.98 IN buy zone (no rejection wick, no alignment). News re-verified: Iran reinstates Hormuz closure, US blockade Apr 14 day 6, Iran 'no plans for next round' of talks, US seized Iranian cargo ship engine room fire. Brent $95.42 (+5.58%), WTI ~$89 (+6%). Regime unchanged. 0 positions, $1000 intact. All 7 watchlist alerts KEEP. Imminent triggers: USDJPY 158.50 cross_down (14 pips away), WTI $90 cross_up (1 pip away).",
   "open_positions": [],
   "watchlist": [
     {

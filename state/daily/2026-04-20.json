@@ -28,5 +28,13 @@
     "positions": 0,
     "regime": "ESCALATION_CONFIRMED",
     "news_check": "Iran vows retaliation, Hormuz closed again, talks broken, 2 Indian ships fired on"
+  },
+  {
+    "ts": "2026-04-20T21:30:00+05:30",
+    "tick_type": "forex_auto",
+    "events_processed": 3,
+    "events_skipped": 3,
+    "trades": 0,
+    "summary": "3 bar_close 15M skipped: AUDUSD +39 bull contradicts SELL watchlist & risk-off regime; USDJPY -40 bear but HTF unaligned; GOLD -8 neutral in buy zone but no confirmation. Brent $95.42 +5.58%, WTI ~$89 +6%. Iran reinstates Hormuz closure, US blockade day 6, no negotiations. Watchlist 7 alerts all KEEP."
   }
 ]
