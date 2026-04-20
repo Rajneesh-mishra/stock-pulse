@@ -63,6 +63,12 @@
       "watchlist_verdict": "all 6 KEEP",
       "queries_verdict": "all 8 KEEP",
       "broker": "flat $1000"
+    },
+    {
+      "ts_utc": "2026-04-20T19:29Z",
+      "trigger": "bar_close_x8",
+      "action": "all_skip",
+      "summary": "8 M15 bar_close all SKIP: no level touch, no trigger, no material change vs 19:15 tick (prices moved <30p across pairs). USDJPY bull FVG 158.753-806 mitigated but no risk-off break of 158.50. Watchlist 6 + queries 8 all KEEP. Flat broker $1000."
     }
   ]
 }

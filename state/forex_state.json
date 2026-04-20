@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-21T00:35:00+05:30",
   "regime": "ESCALATION_CONFIRMED_BLOCKADE_BITING",
-  "regime_note": "2026-04-20 19:15 UTC: 8 bar_close all SKIP \u2014 AUDUSD H1/M15 0.71785/0.71789 (78p above 0.707 breakdown), USDJPY H1 158.828 (33p above 158.50 break, drifted UP from 158.69), GOLD H1 4820.045 (10p above zone top 4810, drifted AWAY from 4780-4810 buy zone), OIL_CRUDE H1 87.358 (264p below 90 escalation trigger), EURUSD H1 1.178535 no alert, USDCHF H1 0.77842 (-26p from 0.78098 last tick \u2014 risk-off CHF bid consistent but no alert level), BTCUSD H1 76382.5. No structure breaks (bos/choch None on all). Iran NEWS CONFIRMS escalation: Tehran skipped round 2 Islamabad, Trump 'highly unlikely' extension, Apr 22 Wed evening expiry \u2014 cites naval blockade as 'direct breach'. Flat broker $1000. All 6 watchlist + 8 queries KEEP. T-~28h to ceasefire expiry.",
+  "regime_note": "2026-04-20 19:29 UTC: 8 M15 bar_close all SKIP \u2014 AUDUSD 0.71774 (71p above 0.707 breakdown, bull FVG unmitigated but no trigger), USDJPY 158.824 (32p above 158.50 break, bull FVG 158.753-806 just mitigated \u2014 risk-off not confirmed), GOLD 4816.79 (above zone top 4810 NOT in 4780-4810 buy zone, trend=bear, bull FVG mitigated), OIL 87.197 (280p below 90 escalation), USDCAD 1.36424 (below bear FVG retest zone 1.36503-612 \u2014 waiting rally), EURUSD 1.17858/GBPUSD 1.3538/USDCHF 0.77836 no alerts. T-~28h to Wed Apr 22 0000 GMT Iran ceasefire expiry. 6 watchlist + 8 queries all KEEP. Flat broker $1000.",
   "open_positions": [],
   "watchlist": [
     {
@@ -159,7 +159,7 @@
       "note": "15 fresh news_flash headlines this tick: CNBC (blockade day 4), AP/BBC/WaPo/Reuters (Hormuz fully closed, ships attacked), NYT (blockade status unclear, some transits), USNI (US seized Iranian container ship), Jerusalem Post (Indian-flagged vessel hit), Al Jazeera (sanctioned tankers still transit + Trump confirms seizure), Maritime Executive (IRGC fired on containership/tanker/cruise ship). Apr 22 ceasefire effectively dead. Binary risk: escalation ladder (Iran retaliatory strike on US asset) or de-escalation shock (surprise deal)."
     }
   ],
-  "last_tick_utc": "2026-04-20T19:15:00Z",
+  "last_tick_utc": "2026-04-20T19:29:00Z",
   "tick_history": [
     {
       "ts_utc": "2026-04-20T14:45:29.961114Z",
