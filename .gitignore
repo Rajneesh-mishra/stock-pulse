@@ -1,3 +1,11 @@
+# Secrets — never commit
+.env
+
+# System noise
+.DS_Store
+**/__pycache__/
+*.pyc
+
 # Cached Capital.com session token (8-min TTL, regenerated on demand)
 state/.capital_session.json
 # Daemon logs

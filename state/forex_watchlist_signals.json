@@ -1,0 +1,117 @@
+{
+  "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick.",
+  "last_updated_by_claude": "2026-04-20T18:55:00+05:30",
+  "instruments": [
+    "EURUSD",
+    "USDJPY",
+    "GOLD",
+    "OIL_CRUDE",
+    "BTCUSD",
+    "AUDUSD",
+    "USDCAD",
+    "GBPUSD",
+    "USDCHF"
+  ],
+  "poll_cadence_sec": {
+    "active_market": 30,
+    "quiet": 120
+  },
+  "level_alerts": [
+    {
+      "id": "audusd_pullback_buy_zone",
+      "instrument": "AUDUSD",
+      "zone_low": 0.7075,
+      "zone_high": 0.7095,
+      "emit_on": "enter",
+      "cooldown_sec": 900,
+      "note": "Top buy pick \u2014 wait for rejection confirmation on entry"
+    },
+    {
+      "id": "audusd_fri_high_breakout",
+      "instrument": "AUDUSD",
+      "level": 0.719,
+      "emit_on": "cross_up",
+      "cooldown_sec": 1800,
+      "note": "Above Fri high = continuation confirmation. Secondary entry."
+    },
+    {
+      "id": "usdjpy_intervention_zone",
+      "instrument": "USDJPY",
+      "zone_low": 159.8,
+      "zone_high": 160.2,
+      "emit_on": "enter",
+      "cooldown_sec": 600,
+      "note": "MoF intervention red line. Short on entry."
+    },
+    {
+      "id": "usdcad_sell_bounce_zone",
+      "instrument": "USDCAD",
+      "zone_low": 1.38,
+      "zone_high": 1.384,
+      "emit_on": "enter",
+      "cooldown_sec": 900,
+      "note": "DXY-weakness short \u2014 bounce-sell zone"
+    },
+    {
+      "id": "eurusd_breakout_level",
+      "instrument": "EURUSD",
+      "level": 1.1815,
+      "emit_on": "cross_up",
+      "cooldown_sec": 1800,
+      "note": "Above Fri fakeout high = new breakout (retest rule applies)"
+    },
+    {
+      "id": "oil_crude_sub_85",
+      "instrument": "OIL_CRUDE",
+      "level": 85.0,
+      "emit_on": "cross_down",
+      "cooldown_sec": 1800,
+      "note": "Break $85 = full de-escalation. Likely over-extension short candidate ONLY if Iran formally confirmed."
+    },
+    {
+      "id": "gold_5000_psych",
+      "instrument": "GOLD",
+      "level": 5000.0,
+      "emit_on": "cross_up",
+      "cooldown_sec": 3600,
+      "note": "Psych level \u2014 monitor risk regime only"
+    }
+  ],
+  "structure_watch": [
+    {
+      "instrument": "AUDUSD",
+      "timeframes": [
+        "HOUR_4",
+        "HOUR",
+        "MINUTE_15"
+      ]
+    },
+    {
+      "instrument": "USDJPY",
+      "timeframes": [
+        "HOUR",
+        "MINUTE_15"
+      ]
+    },
+    {
+      "instrument": "EURUSD",
+      "timeframes": [
+        "HOUR",
+        "MINUTE_15"
+      ]
+    },
+    {
+      "instrument": "USDCAD",
+      "timeframes": [
+        "HOUR"
+      ]
+    },
+    {
+      "instrument": "OIL_CRUDE",
+      "timeframes": [
+        "HOUR_4",
+        "HOUR"
+      ]
+    }
+  ]
+}
