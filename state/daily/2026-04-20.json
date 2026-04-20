@@ -58,6 +58,18 @@
       "skipped": 3,
       "regime": "DE-ESCALATION_UNCONFIRMED",
       "summary": "bar_close AUDUSD/USDJPY/EURUSD 15M \u2014 skipped. AUDUSD confluence 39 aligned=False; prices not at trigger zones; Iran Apr 22 still binary. Web: Reuters denies formal extension, Round 2 Islamabad talks today."
+    },
+    {
+      "ts": "2026-04-20T15:15:00Z",
+      "trigger": "bar_close x8 (auto)",
+      "action": "skip_all",
+      "reason": "all confluence <60 aligned=False; Iran re-escalation bias intensifying (no 2nd round talks, Hormuz closed, WTI +5.6%)",
+      "watchlist_changes": [
+        "usdcad_sell_bounce_zone: MODIFY 1.38-1.384 -> 1.370-1.374 (price 1.366, stale zone)",
+        "oil_crude_sub_85: REMOVE (regime flipped); ADD oil_crude_escalation_90 cross_up, oil_crude_deescalation_83 cross_down"
+      ],
+      "positions": 0,
+      "balance": 1000
     }
   ],
   "trades": [],

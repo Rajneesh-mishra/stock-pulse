@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick.",
-  "last_updated_by_claude": "2026-04-20T18:55:00+05:30",
+  "last_updated_by_claude": "2026-04-20T20:45:00+05:30",
   "instruments": [
     "EURUSD",
     "USDJPY",
@@ -46,11 +46,11 @@
     {
       "id": "usdcad_sell_bounce_zone",
       "instrument": "USDCAD",
-      "zone_low": 1.38,
-      "zone_high": 1.384,
+      "zone_low": 1.37,
+      "zone_high": 1.374,
       "emit_on": "enter",
       "cooldown_sec": 900,
-      "note": "DXY-weakness short \u2014 bounce-sell zone"
+      "note": "CAD-strength short \u2014 oil rally + DXY weak. Price 1.366; bounce-sell on pullback."
     },
     {
       "id": "eurusd_breakout_level",
@@ -61,12 +61,20 @@
       "note": "Above Fri fakeout high = new breakout (retest rule applies)"
     },
     {
-      "id": "oil_crude_sub_85",
+      "id": "oil_crude_escalation_90",
       "instrument": "OIL_CRUDE",
-      "level": 85.0,
+      "level": 90.0,
+      "emit_on": "cross_up",
+      "cooldown_sec": 1800,
+      "note": "WTI >$90 = re-escalation confirmed (Iran denies 2nd round; Hormuz closed). Monitor; do NOT chase."
+    },
+    {
+      "id": "oil_crude_deescalation_83",
+      "instrument": "OIL_CRUDE",
+      "level": 83.0,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break $85 = full de-escalation. Likely over-extension short candidate ONLY if Iran formally confirmed."
+      "note": "WTI <$83 = de-escalation. Only tradeable if Iran ceasefire formally extended."
     },
     {
       "id": "gold_5000_psych",
