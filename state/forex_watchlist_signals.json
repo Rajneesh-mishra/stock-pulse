@@ -1,8 +1,8 @@
 {
-  "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T04:36:30+05:30",
-  "pruned_at": "2026-04-21T04:36:30+05:30",
-  "pruned_by": "23:06 UTC tick \u2014 15 bar_close (H1+M15 across 7 pairs) ALL SKIP. Broker $1000 flat 0 pos reconciled. Prices at H1 close: USDJPY 158.77 (27p above 158.50, day low 158.546 held), GOLD 4826 (pulled 3.5p from 4829.84, 16p above zone top), OIL 86.33 (+18p vs 22:51), EURUSD 1.17887 AT DAY HIGH 1.17902 (0.15p, knocking 1.1811 breakout), AUDUSD 0.718 AT DAY HIGH 0.71811, USDCAD 1.36425 near day low 1.36339 (8p BELOW 1.36503 zone_low \u2014 retest needs rally), GBPUSD 1.3536 near day high 1.35438, USDCHF 0.77813 near day low 0.77699, BTCUSD 75767. Web search confirmed Iran ceasefire Apr 21 expiry no deal + Iran not sending negotiators + US seized vessel + Tehran vowed retaliation \u2014 no material delta vs 22:51. MODIFIED usdjpy + gold notes (prices refreshed). All 5 alerts + 9 structure + 8 queries KEEP.",
+  "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
+  "last_updated_by_claude": "2026-04-21T04:51:30+05:30",
+  "pruned_at": "2026-04-21T04:51:30+05:30",
+  "pruned_by": "23:21 UTC tick — 9 bar_close (H1 GBPUSD + M15 on 7 pairs + GBPUSD M15) ALL SKIP heartbeat. Broker $1000 flat 0 pos reconciled. Prices now: USDJPY 158.847 drifted 7p FURTHER from 158.50 (now 35p above vs 27p last tick, session low 158.546 held 30p buffer), GOLD 4824.79 flat (8p from day high 4833, 15p above 4810 zone top), OIL 86.41 flat (3.6 below 90 trigger), EURUSD 1.17848 drifted 4p off day high 1.17908, AUDUSD 0.7178 at day high, USDCAD 1.3641 flat 7p below 1.36503 zone_low, GBPUSD 1.3533 flat, USDCHF 0.7784 flat. Iran ceasefire Apr 21 expiry confirmed: Trump 'extension highly unlikely', Vance→Pakistan Tue for Wed talks, Trump threat knock-out Iranian power plants/bridges, nuclear enrichment = key sticking point — no material delta vs 23:06. Regime KINETIC_EXCHANGE intact. MODIFIED usdjpy note (price drift). All 5 alerts + 9 structure + 8 queries KEEP.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -27,7 +27,7 @@
       "level": 0.707,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break of 0.707 = prior pivot gone. Short on retest of 0.707 from below. SL 0.713, TP 0.700. Risk-off + AUD first-to-bleed. Currently 0.7172 (52p+ above) with bull BOS \u2014 needs regime shift (ceasefire expiry Wed could flip it)."
+      "note": "Break of 0.707 = prior pivot gone. Short on retest of 0.707 from below. SL 0.713, TP 0.700. Risk-off + AUD first-to-bleed. Currently 0.7172 (52p+ above) with bull BOS — needs regime shift (ceasefire expiry Wed could flip it)."
     },
     {
       "id": "usdjpy_riskoff_break",
@@ -35,7 +35,7 @@
       "level": 158.5,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break 158.50 = risk-off yen flight confirmed. Short on retest from below. Last 158.77 (27p away, essentially unchanged vs 22:51 \u2014 drifted ~0.7p closer; session low 158.546 held 4.4p buffer). H1+M15 bearish BOS/ChoCh stacked. Catalyst intact: US vessel seizure fresh escalation vector, Iran FM explicit 'ceasefire violations' + Iran not sending negotiators to Islamabad (Al Jazeera confirms), Trump 'Wed evening' T-~24h, Katayama urgency unchanged. SL 159.20, TP 157.00. If 159.20 breaks without intervention, re-evaluate."
+      "note": "Break 158.50 = risk-off yen flight confirmed. Short on retest from below. Last 158.847 drifted 7p FURTHER (35p away vs 27p last tick; session low 158.546 held 30p buffer). H1+M15 bearish BOS/ChoCh stacked. Catalyst intact: Trump 'extension highly unlikely' (CNN), Vance→Pakistan Tue for Wed talks T-~24h, Iran FM 'ceasefire violations', US seized vessel, Iran skipped Islamabad round 2 calling US demands 'childish'. SL 159.20, TP 157.00. If 159.20 breaks without intervention, re-evaluate."
     },
     {
       "id": "oil_crude_escalation_90",
@@ -43,7 +43,7 @@
       "level": 90.0,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
-      "note": "WTI last ~85.91 on Iran Hormuz-open narrative \u2014 but FRESH: Iran drone strikes on US vessels Apr 20 confirmed (CNN/AJ/Malay Mail). If Asia session confirms strikes are sustained, crude could gap $4-5 higher toward 90 trigger on reopen. Alert armed ABOVE 90 for break-retest + M15 bull BOS. SL 87.50, TP1 94, TP2 98. Conv raised 3\u21924 given drone-strike catalyst."
+      "note": "WTI last ~85.91 on Iran Hormuz-open narrative — but FRESH: Iran drone strikes on US vessels Apr 20 confirmed (CNN/AJ/Malay Mail). If Asia session confirms strikes are sustained, crude could gap $4-5 higher toward 90 trigger on reopen. Alert armed ABOVE 90 for break-retest + M15 bull BOS. SL 87.50, TP1 94, TP2 98. Conv raised 3→4 given drone-strike catalyst."
     },
     {
       "id": "gold_escalation_buy_zone",
@@ -52,7 +52,7 @@
       "zone_high": 4810.0,
       "emit_on": "enter",
       "cooldown_sec": 900,
-      "note": "Safe-haven long on pullback into 4780-4810 zone. Last 4826 (16p above zone top, pulled 3.5p from 4829.84 last tick \u2014 first pullback in 5 ticks, still far from zone). Kinetic escalation catalyst remains live (Iran ceasefire Apr 21 expiry confirmed, Iran not sending negotiators). Price 7p from day high 4833.07. If breaks 4835 cleanly with M15 bull BOS consider MODIFY to chase. Zone entry cleaner R:R. SL 4745, TP 4900/5000. Conv 4."
+      "note": "Safe-haven long on pullback into 4780-4810 zone. Last 4824.79 flat (15p above zone top, 8p from day high 4833.07, 88p above day low 4736.99). Kinetic escalation catalyst remains live (Iran ceasefire Apr 21 expiry confirmed, Trump 'highly unlikely' extension). If breaks 4835 cleanly with M15 bull BOS consider MODIFY to chase. Zone entry cleaner R:R. SL 4745, TP 4900/5000. Conv 4."
     },
     {
       "id": "usdcad_short_fvg_retest",
