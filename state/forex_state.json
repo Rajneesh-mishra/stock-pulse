@@ -129,7 +129,9 @@
   "total_trades": 1,
   "wins": 0,
   "losses": 0,
-  "account_balance": 10000,
+  "broker_balance": 9849.07,
+  "effective_capital_usd": 1000,
+  "capital_base_note": "Operating on $1k working capital. Broker shows ~$9,849 (after one earlier losing trade not in trade_history above). Risk %s apply to $1k, margin availability to broker balance.",
   "loop_config": {
     "active_market_interval": "10 min",
     "quiet_interval": "30 min",

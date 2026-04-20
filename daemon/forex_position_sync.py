@@ -38,6 +38,10 @@ TRAIL_R_MULTIPLE = 2.0     # trail candidate when unrealized P&L ≥ 2× initial
 DAILY_LOSS_WARN_PCT = -1.0  # warn at -1% daily P&L (before -2% hard stop)
 DAILY_LOSS_STOP_PCT = -2.0
 
+# Working capital base — pct thresholds apply to this, not broker balance.
+# Broker shows ~$9,849 but we're operating on $1k. See risk_guard.py.
+EFFECTIVE_CAPITAL_USD = 1000.0
+
 
 def log(msg):
     print(f"[{datetime.now(timezone.utc).isoformat()}] {msg}", flush=True)
@@ -239,11 +243,14 @@ def detect_position_changes(prev_positions, cur_positions, account, runtime):
                 })
                 runtime["trail_fired"][deal_id] = tier
 
-    # Daily P&L thresholds (relative to start-of-day balance snapshot)
+    # Daily P&L thresholds — percentage applied to WORKING CAPITAL, not broker
+    # balance. That way a -$20 drawdown on $1k working capital fires 2% stop
+    # instead of silently sliding past (would be 0.2% of $9,849 real balance).
     balance = account.get("balance")
     pnl = account.get("profit_loss")
-    if balance is not None and pnl is not None and balance > 0:
-        pnl_pct = (pnl / balance) * 100
+    capital_base = min(balance or 0, EFFECTIVE_CAPITAL_USD) if balance else None
+    if capital_base and pnl is not None and capital_base > 0:
+        pnl_pct = (pnl / capital_base) * 100
         prev_tier = runtime.get("daily_pnl_tier")
         cur_tier = None
         if pnl_pct <= DAILY_LOSS_STOP_PCT:
@@ -254,8 +261,9 @@ def detect_position_changes(prev_positions, cur_positions, account, runtime):
             append_event({
                 "type": "daily_pnl_threshold",
                 "payload": {
-                    "tier": cur_tier, "pnl": pnl, "balance": balance,
-                    "pnl_pct": round(pnl_pct, 2),
+                    "tier": cur_tier, "pnl": pnl,
+                    "broker_balance": balance, "capital_base": capital_base,
+                    "pnl_pct_of_capital": round(pnl_pct, 2),
                     "threshold_pct": DAILY_LOSS_STOP_PCT if cur_tier == "stop" else DAILY_LOSS_WARN_PCT,
                     "note": ("Daily loss limit HIT — stop trading today"
                              if cur_tier == "stop"

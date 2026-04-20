@@ -27,6 +27,15 @@ BASE = ("https://api-capital.backend-capital.com" if ENV == "live"
         else "https://demo-api-capital.backend-capital.com")
 
 FOREX_STATE_PATH = Path(__file__).parent.parent / "state" / "forex_state.json"
+_SESSION_FILE = Path(__file__).parent.parent / "state" / ".capital_session.json"
+_SESSION_TTL_SEC = 480  # 8 min (same pattern as api.py + technicals.py)
+
+# ── Effective capital base ───────────────────────────────────────────────────
+# The broker shows ~$9,849 but we're operating on $1k working capital.
+# All pct-of-capital risk checks use min(broker_balance, EFFECTIVE_CAPITAL_USD)
+# as the denominator so sizing matches the intended risk budget.
+# Broker balance is still used for available-margin checks (real constraint).
+EFFECTIVE_CAPITAL_USD = 1000.0
 
 # ── HARD LIMITS ──────────────────────────────────────────────────────────────
 MAX_RISK_PER_TRADE_PCT = 0.02       # 2% of capital per trade
@@ -53,11 +62,39 @@ THEME_MAP = {
 # ── Helpers ──────────────────────────────────────────────────────────────────
 
 def create_session():
-    r = requests.post(f"{BASE}/api/v1/session",
-        headers={"X-CAP-API-KEY": API_KEY, "Content-Type": "application/json"},
-        json={"identifier": EMAIL, "password": PASSWORD, "encryptedPassword": False},
-        timeout=15)
-    return r.headers["CST"], r.headers["X-SECURITY-TOKEN"]
+    """Reuses disk-cached session if fresh (<8 min), else creates new with
+    429 retry. Shared with api.py + technicals.py to avoid rate limits."""
+    import time
+    if _SESSION_FILE.exists():
+        try:
+            cached = json.loads(_SESSION_FILE.read_text())
+            if (time.time() - cached.get("ts", 0) < _SESSION_TTL_SEC
+                    and cached.get("base") == BASE):
+                return cached["cst"], cached["tok"]
+        except Exception:
+            pass
+    for attempt in range(4):
+        r = requests.post(f"{BASE}/api/v1/session",
+            headers={"X-CAP-API-KEY": API_KEY, "Content-Type": "application/json"},
+            json={"identifier": EMAIL, "password": PASSWORD, "encryptedPassword": False},
+            timeout=15)
+        if r.status_code == 200:
+            break
+        if r.status_code == 429:
+            time.sleep(2 + attempt * 2)
+            continue
+        r.raise_for_status()
+    r.raise_for_status()
+    cst, tok = r.headers["CST"], r.headers["X-SECURITY-TOKEN"]
+    try:
+        _SESSION_FILE.parent.mkdir(parents=True, exist_ok=True)
+        _SESSION_FILE.write_text(json.dumps({
+            "cst": cst, "tok": tok, "base": BASE, "ts": time.time(),
+        }))
+        _SESSION_FILE.chmod(0o600)
+    except Exception:
+        pass
+    return cst, tok
 
 def h(cst, tok):
     return {"CST": cst, "X-SECURITY-TOKEN": tok}
@@ -85,8 +122,11 @@ def check_order(epic, direction, size, sl, tp):
     """Run all risk checks. Returns (approved: bool, reasons: list)"""
     cst, tok = create_session()
     acc = get_account(cst, tok)["accounts"][0]
-    balance = acc["balance"]["balance"]
+    broker_balance = acc["balance"]["balance"]
     available = acc["balance"]["available"]
+    # Sizing denominator — smaller of real broker balance and intended working
+    # capital. Keeps pct-of-capital limits meaningful when demo balance != WC.
+    capital_base = min(broker_balance, EFFECTIVE_CAPITAL_USD)
     positions = get_positions(cst, tok).get("positions", [])
     bid, offer = get_price(cst, tok, epic)
     state = load_forex_state()
@@ -112,11 +152,12 @@ def check_order(epic, direction, size, sl, tp):
     # 3. Per-trade risk
     risk_per_unit = abs(entry_price - sl)
     risk_amount = risk_per_unit * size
-    risk_pct = risk_amount / balance if balance > 0 else 1.0
+    risk_pct = risk_amount / capital_base if capital_base > 0 else 1.0
     if risk_pct > MAX_RISK_PER_TRADE_PCT:
         rejections.append(
             f"REJECT: Trade risk {risk_pct:.1%} exceeds {MAX_RISK_PER_TRADE_PCT:.0%} limit. "
-            f"Risk=${risk_amount:.2f} on ${balance:.2f} balance. Reduce size or widen stop.")
+            f"Risk=${risk_amount:.2f} on ${capital_base:.2f} capital base "
+            f"(broker=${broker_balance:.2f}). Reduce size or widen stop.")
 
     # 4. Total open exposure
     total_open_risk = 0
@@ -127,7 +168,7 @@ def check_order(epic, direction, size, sl, tp):
             pos_risk = abs(pos["level"] - pos["stopLevel"]) * pos["size"]
             total_open_risk += pos_risk
     new_total = total_open_risk + risk_amount
-    new_total_pct = new_total / balance if balance > 0 else 1.0
+    new_total_pct = new_total / capital_base if capital_base > 0 else 1.0
     if new_total_pct > MAX_TOTAL_EXPOSURE_PCT:
         rejections.append(
             f"REJECT: Total exposure would be {new_total_pct:.1%} (>${MAX_TOTAL_EXPOSURE_PCT:.0%}). "
@@ -162,7 +203,7 @@ def check_order(epic, direction, size, sl, tp):
                     f"Trading halted until {halt_until.isoformat()}")
 
     # 9. Daily loss halt
-    daily_loss_pct = abs(state.get("daily_pnl", 0)) / balance if balance > 0 and state.get("daily_pnl", 0) < 0 else 0
+    daily_loss_pct = abs(state.get("daily_pnl", 0)) / capital_base if capital_base > 0 and state.get("daily_pnl", 0) < 0 else 0
     if daily_loss_pct >= MAX_DAILY_LOSS_PCT:
         rejections.append(f"REJECT: Daily loss {daily_loss_pct:.1%} hit {MAX_DAILY_LOSS_PCT:.0%} limit. No more trades today.")
 
@@ -191,7 +232,8 @@ def check_order(epic, direction, size, sl, tp):
         "risk_pct": round(risk_pct, 4),
         "total_exposure_pct": round(new_total_pct, 4),
         "theme": theme,
-        "balance": balance,
+        "broker_balance": broker_balance,
+        "capital_base": capital_base,
         "available": available,
         "open_positions": len(positions),
         "rejections": rejections,
@@ -221,21 +263,23 @@ def cmd_status(cst, tok):
             "upl": pos.get("upl"),
         })
 
-    balance = bal["balance"]
+    broker_balance = bal["balance"]
+    capital_base = min(broker_balance, EFFECTIVE_CAPITAL_USD)
     print(json.dumps({
-        "balance": balance,
+        "broker_balance": broker_balance,
+        "capital_base": capital_base,
         "available": bal["available"],
         "open_pnl": bal.get("profitLoss", 0),
         "total_open_risk": round(total_risk, 2),
-        "total_risk_pct": round(total_risk / balance, 4) if balance > 0 else 0,
+        "total_risk_pct": round(total_risk / capital_base, 4) if capital_base > 0 else 0,
         "positions": pos_summary,
         "consecutive_losses": state.get("consecutive_losses", 0),
         "daily_pnl": state.get("daily_pnl", 0),
         "limits": {
-            "max_per_trade": f"{MAX_RISK_PER_TRADE_PCT:.0%}",
-            "max_total": f"{MAX_TOTAL_EXPOSURE_PCT:.0%}",
+            "max_per_trade": f"{MAX_RISK_PER_TRADE_PCT:.0%} of ${capital_base:.0f}",
+            "max_total": f"{MAX_TOTAL_EXPOSURE_PCT:.0%} of ${capital_base:.0f}",
             "max_positions": MAX_TOTAL_POSITIONS,
-            "max_daily_loss": f"{MAX_DAILY_LOSS_PCT:.0%}",
+            "max_daily_loss": f"{MAX_DAILY_LOSS_PCT:.0%} of ${capital_base:.0f}",
         }
     }, indent=2))
 
