@@ -1,14 +1,10 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-20T21:25:00+05:30",
-  "pruned_at": "2026-04-20T21:25:00+05:30",
-  "pruned_by": "interactive Claude (user-requested cleanup after 12-alert clutter)",
+  "last_updated_by_claude": "2026-04-20T22:45:00+05:30",
+  "pruned_at": "2026-04-20T22:45:00+05:30",
+  "pruned_by": "tick audit — USDCAD zone stale (price broke to 1.3646, 60p below entry), OIL disbelieving blockade (87.28 falling despite day-4 blockade) — added downside breakdown",
   "pruned_removed": [
-    "audusd_breakdown_sell_zone (redundant with breakdown_trigger — break-and-retest is the cleaner entry)",
-    "eurusd_breakout_level (bullish thesis dead in risk-off regime; USD safe-haven bid caps EUR)",
-    "oil_crude_95_escalation_2 (same thesis as $90 entry, just further out — $90 is actionable, $95 is signal-only)",
-    "oil_crude_deescalation_83 (self-noted REMOTE — requires blockade lifted AND Iran signing, neither in sight)",
-    "gold_break_4900 (redundant with buy_zone — one primary long entry per directional thesis)"
+    "usdcad_sell_bounce_zone (price at 1.36457, 60p+ below 1.370-1.374 zone, H1 bearish BOS/ChoCh confirmed — trade already gone without us; a bounce back 60p unlikely without USD risk-off reversal which contradicts oil-weak CAD-weak setup)"
   ],
   "instruments": [
     "EURUSD",
@@ -32,7 +28,7 @@
       "level": 0.707,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break of 0.707 = prior pivot gone. Short on retest of 0.707 from below. SL 0.713, TP 0.700. Risk-off + AUD first-to-bleed regime."
+      "note": "Break of 0.707 = prior pivot gone. Short on retest of 0.707 from below. SL 0.713, TP 0.700. Risk-off + AUD first-to-bleed regime. Currently 100p+ above at 0.7172 with bull BOS — needs regime shift."
     },
     {
       "id": "usdjpy_intervention_zone",
@@ -49,16 +45,7 @@
       "level": 158.5,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break 158.50 = risk-off yen flight confirmed. Short on retest from below (no intervention needed — pure flow)."
-    },
-    {
-      "id": "usdcad_sell_bounce_zone",
-      "instrument": "USDCAD",
-      "zone_low": 1.37,
-      "zone_high": 1.374,
-      "emit_on": "enter",
-      "cooldown_sec": 900,
-      "note": "CAD oil-linked — US blockade → oil rip → CAD strong. Short USDCAD on bounce. Caveat: USD safe-haven bid could cap move; if DXY >99 abort."
+      "note": "Break 158.50 = risk-off yen flight confirmed. Short on retest from below (no intervention needed — pure flow). Price 158.67, 17p away. H1+M15 bearish BOS/ChoCh stacked — imminent."
     },
     {
       "id": "oil_crude_escalation_90",
@@ -66,7 +53,15 @@
       "level": 90.0,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
-      "note": "WTI >$90 = blockade priced harder. US Navy blockade day 4, Hormuz fully closed, ships attacked. Primary entry — wait for pullback to break-retest."
+      "note": "WTI >$90 = blockade priced harder. Currently 87.28 with H1 bear trend — market DISBELIEVING blockade on day 4. A recovery to $90 requires fresh catalyst (tanker hit, Iran retaliation kinetic). Entry still valid on break-retest. Conv lowered to 2-3."
+    },
+    {
+      "id": "oil_crude_breakdown_85",
+      "instrument": "OIL_CRUDE",
+      "level": 85.0,
+      "emit_on": "cross_down",
+      "cooldown_sec": 1800,
+      "note": "NEW: break below 85.00 = oil definitively rejecting blockade risk premium (prior bear BOS at 85.161 untested). Short on retest from below. SL 86.50, TP 82.50. Thesis: supply ample, market calls Iran's bluff. Conv 3."
     },
     {
       "id": "gold_escalation_buy_zone",
@@ -75,7 +70,7 @@
       "zone_high": 4810.0,
       "emit_on": "enter",
       "cooldown_sec": 900,
-      "note": "Safe-haven long on pullback into zone. Blockade + closed Hormuz + ship attacks = gold bid. Entry ~4800 with rejection wick, SL 4745, TP 4900/5000. Conv 3-4."
+      "note": "Safe-haven long on pullback into zone. Price 4808 IN zone. Needs rejection wick + M15 bullish BOS confirmation before entry. SL 4745, TP 4900/5000. Conv 3-4."
     },
     {
       "id": "gold_5000_psych",
@@ -90,7 +85,6 @@
     {"instrument": "AUDUSD",    "timeframes": ["HOUR_4", "HOUR", "MINUTE_15"]},
     {"instrument": "USDJPY",    "timeframes": ["HOUR", "MINUTE_15"]},
     {"instrument": "GOLD",      "timeframes": ["HOUR_4", "HOUR", "MINUTE_15"]},
-    {"instrument": "USDCAD",    "timeframes": ["HOUR"]},
     {"instrument": "OIL_CRUDE", "timeframes": ["HOUR_4", "HOUR"]}
   ]
 }
