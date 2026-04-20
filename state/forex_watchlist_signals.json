@@ -1,11 +1,9 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T02:49:00+05:30",
-  "pruned_at": "2026-04-21T02:49:00+05:30",
-  "pruned_by": "Heartbeat tick 21:19 UTC \u2014 0 unconsumed events. News scan confirmed: Trump 'highly unlikely' extension, Iran 'no plans' for talks. All 5 alerts remain actionable with Apr 22 ceasefire binary T-~20.5h. No alert triggers moved; levels/notes unchanged.",
-  "pruned_removed": [
-    "gold_5000_psych (pure informational with no gold position \u2014 remove until we're long)"
-  ],
+  "last_updated_by_claude": "2026-04-21T02:56:00+05:30",
+  "pruned_at": "2026-04-21T02:56:00+05:30",
+  "pruned_by": "21:25 UTC tick \u2014 6 M15 bar_close events all SKIP (no BOS/ChoCh/fresh FVG; broker maintenance window all CLOSED). USDJPY drifted DOWN 12p to 158.788 (now 29p above 158.50 trigger, closer by 12p). GOLD +$6 to 4820.88 moving AWAY from 4780-4810 buy zone. Oil 85.91 small bounce. Others flat. News scan confirmed no delta: Iran Islamabad skip + Spruance Touska seizure + Katayama urgency language unchanged. T-~26-50h Wed Apr 22 ceasefire expiry (Trump 'Wed evening Washington time'). MODIFIED usdjpy note to reflect 29p distance. All 5 alerts + 9 structure + 8 queries KEEP.",
+  "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
     "EURUSD",
@@ -37,7 +35,7 @@
       "level": 158.5,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break 158.50 = risk-off yen flight confirmed. Short on retest from below. Price 158.91, 41p away \u2014 drifted up this tick, bull FVG 158.824-158.9005 formed M15. H1+M15 bearish BOS/ChoCh stacked still \u2014 imminent on risk-off flush. SL 159.20, TP 157.00."
+      "note": "Break 158.50 = risk-off yen flight confirmed. Short on retest from below. Price 158.788, 29p away \u2014 drifted DOWN 12p this tick (toward trigger). H1+M15 bearish BOS/ChoCh stacked \u2014 imminent on risk-off flush (Iran Spruance seizure + Wed ceasefire expiry catalyst). Katayama urgency language unchanged. SL 159.20, TP 157.00."
     },
     {
       "id": "oil_crude_escalation_90",
