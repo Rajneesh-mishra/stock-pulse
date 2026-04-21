@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T13:20:00+00:00",
-  "pruned_at": "2026-04-21T13:20:00+00:00",
-  "pruned_by": "13:20 UTC tick (12 bar_close all SKIP T-~10.4h binary). Drift vs 13:05: AUDUSD 0.71643 (+1.5p 92p above 0.707), USDJPY 159.121 (-5p 0.33 below 159.45 fade), GOLD 4770.53 (-13.1p slight risk-on drift), OIL 86.993 (-3.7c flat 3.01 below 90), EUR/CAD/GBP/CHF flat. WebSearch CNN/CNBC/AlJaz/NPR Apr 20-21: 'highly unlikely to extend' Trump Wed eve, Vance+Witkoff+Kushner departing Islamabad Rd2 'mixed signals on Iran attendance', Iran MFA reiterates US breached first via blockade+Touska. T-~10.4h to 0000 GMT Wed Apr 22. Priced-in-optimism intact. 3 MODIFY price refresh all level_alerts, 9 structure_watch KEEP, 8 queries KEEP, broker $1000/0 pos matches state, 12 events consumed, 0 trades (binary no edge).",
+  "last_updated_by_claude": "2026-04-21T13:45:00+00:00",
+  "pruned_at": "2026-04-21T13:45:00+00:00",
+  "pruned_by": "13:45 UTC tick (15 news_flash all SKIP dupe Iran/US Touska+Islamabad stories already mapped). Fresh narrative angles: AlJaz Apr 21 'Pakistan eyes narrow window to resuscitate US-Iran talks AFTER BREAKDOWN', TRT Apr 21 'Qatar backs extending if collapse', Jerusalem Post Apr 21 'Trump doesn't want to extend'. Binary uncertainty intact — breakdown-vs-resuscitation framing now explicit. T-~10.3h to 0000 GMT Wed Apr 22. 3 level_alerts KEEP (no price fetch this tick), 9 structure_watch KEEP, 8 news_queries KEEP. Broker $1000/0 pos matches state. 15 events consumed, 0 trades (binary no edge).",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -118,5 +118,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-21T19:03:00Z"
+  "last_updated_utc": "2026-04-21T13:45:00Z"
 }

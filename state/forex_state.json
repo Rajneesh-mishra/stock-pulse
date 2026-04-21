@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-21T13:05:00Z",
+  "last_tick": "2026-04-21T13:45:00Z",
   "regime": "PRE_BINARY_COMPRESSION_CONFLICTING_NARRATIVE",
-  "regime_note": "2026-04-21 13:35 UTC - 8 M15 bar_close all SKIP T-~10.4h binary to 0000 GMT Wed Apr 22 expiry. Drift vs 13:20: AUDUSD 0.71691 (+4.8p, 98p above 0.707), USDJPY 159.069 (-5.2p, 0.38 below 159.45 fade), GOLD 4777.22 (+6.7p), OIL 86.803 (-19p, 3.2 below 90 fade), USDCAD/EUR/GBP/CHF flat. WebSearch CNN/CNBC/AlJaz/Euronews Apr 21: Vance+Witkoff+Kushner departing Islamabad but Iran state TV explicitly 'no delegation has departed for Islamabad'; Trump Tue 'little appetite to extend', won't open Hormuz until deal, threatens resume bombing. Tehran refuses talks under threat. Priced-in-optimism persists but binary uncertainty amplified. 3 MODIFY price refresh all level_alerts (AUDUSD 0.707 buy, USDJPY 159.45 sell, OIL 90 sell), 9 structure_watch KEEP (full instrument coverage), 8 news_queries KEEP. Broker $1000/0 pos matches state. 0 trades (binary no edge T-~10h).",
+  "regime_note": "2026-04-21 13:45 UTC - 15 news_flash all SKIP: Iran/US Touska+Islamabad dupes already mapped. Fresh angles: AlJaz 'Pakistan eyes narrow window to resuscitate talks AFTER BREAKDOWN', TRT 'Qatar backs extending if collapse', JPost 'Trump doesn't want to extend'. Binary uncertainty intact \u2014 breakdown-vs-resuscitation framing now explicit. T-~10.3h to 0000 GMT Wed Apr 22. No price fetch this tick to preserve budget. 3 level_alerts KEEP, 9 structure_watch KEEP, 8 queries KEEP. Broker $1000/0 pos matches. 15 events consumed (12 unique IDs), 0 trades.",
   "open_positions": [],
   "watchlist": [
     {
@@ -300,6 +300,14 @@
       "closed": 0,
       "skipped": 12,
       "note": "12 bar_close 13:00 all SKIP \u2014 routine heartbeat, prices flat \u00b13p vs 12:50, narrative intact priced-in-optimism vs Tehran refusal. T-~10.9h."
+    },
+    {
+      "ts_utc": "2026-04-21T13:45:00Z",
+      "events_in": 15,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 15,
+      "note": "15 news_flash all SKIP \u2014 Touska seizure dupes (Apr 19-20) + Islamabad talks. Fresh: AlJaz Apr 21 'resuscitate talks after BREAKDOWN', TRT 'Qatar backs extending if collapse', JPost 'Trump doesn\u2019t want to extend'. Binary T-~10.3h breakdown-vs-resuscitation framing explicit. No price fetch (budget). 3+9+8 KEEP. 12 unique IDs consumed."
     }
   ],
   "recent_skips": [
@@ -335,14 +343,14 @@
   ],
   "last_tick_summary": "2026-04-21 12:30 UTC - 12 bar_close (3xH1, 1xH4, 8xM15) all SKIP, T-~11.3h to 0000 GMT Wed Apr 22 ceasefire expiry. Mild risk-on reversal vs 12:25: GOLD 4783.86 (-7.9p reversing lower), AUDUSD 0.71581 (-6.9p but 74p above 0.707), USDJPY 159.102 (+5.4p bounce 0.35 below 159.45 fade), OIL 87.56 flat new session hi 87.617. EUR/CAD/GBP/CHF <6p drift. News unchanged: Iran MFA no plans Rd2, vessels stranded, Trump bombs threat, extension 'highly unlikely'. Broker $1000/0 pos matches. 3 MODIFY (all alerts price refresh), 8 queries KEEP, 9 structure_watch KEEP, 12 events consumed, 0 trades (binary no edge).",
   "last_scan": {
-    "timestamp": "2026-04-21T12:40:00Z",
+    "timestamp": "2026-04-21T13:45:00Z",
     "events_processed_last_tick": 15,
     "events_acted_last_tick": 0
   },
-  "last_updated": "2026-04-21T13:20:00+00:00",
+  "last_updated": "2026-04-21T13:45:00Z",
   "capital_base": 1000.0,
-  "last_tick_ts_utc": "2026-04-21T11:25:00+00:00",
-  "last_tick_utc": "2026-04-21T19:03:00Z",
+  "last_tick_ts_utc": "2026-04-21T13:45:00Z",
+  "last_tick_utc": "2026-04-21T13:45:00Z",
   "last_scan_ts": "2026-04-21T01:30:00Z",
   "tick_log": [
     {
