@@ -506,6 +506,13 @@
       "ts": "2026-04-21T07:38:00Z",
       "trigger": "level_enter + news_flash flood",
       "summary": "USDCAD FVG re-fire SKIPPED (oil fading). 15 stale RSS news_flashes consumed + 2 queries TUNED. Fresh web search CONFIRMED collapse: Iran walkout of Islamabad, Touska seized, Trump 'unlikely' extend, T-16h. 4 conv-upgrades (gold 5, oil 4, usdjpy 4, audusd 3), usdcad conditional. 0 trades."
+    },
+    {
+      "ts": "2026-04-21T07:45:00Z",
+      "trigger": "heartbeat",
+      "events_processed": 8,
+      "trades": 0,
+      "summary": "8 M15 bar_close SKIP, no delta since 07:38 narrative-collapse audit, 5+9+8 all KEEP"
     }
   ],
   "entries": [
