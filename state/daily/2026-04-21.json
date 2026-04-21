@@ -45,5 +45,24 @@
     "summary": "14 bar_close M15/H1 all SKIP. T-~8.75h binary to 0000 GMT Wed Apr 22 Iran deadline. USDJPY 159.307 now only 14p below 159.45 fade (VERY close, H1 bull FVG just mitigated). OIL 88.574 (+77p vs 14:46, 1.43 below 90 fade, M15 bullish BOS). AUDUSD 0.71692 99p above 0.707 buy. 3 level_alerts MODIFY, 9 structure_watch KEEP, 8 queries KEEP. 0 trades (binary zero edge).",
     "trades": 0,
     "events_consumed": 14
+  },
+  {
+    "ts_utc": "2026-04-21T15:32:59.558724Z",
+    "summary": "15:31 UTC \u2014 8 bar_close M15 SKIP. USDJPY 159.422 AT 159.45 fade (3p). OIL 89.648 +107p spike near 90 fade (35p). Binary T-~8.5h Iran deadline. No trade. 3 alerts MODIFY price_refs. 0 positions.",
+    "prices": {
+      "AUDUSD": 0.71617,
+      "USDJPY": 159.422,
+      "GOLD": 4743.15,
+      "OIL_CRUDE": 89.648,
+      "USDCAD": 1.36494,
+      "EURUSD": 1.17474,
+      "GBPUSD": 1.35066,
+      "USDCHF": 0.78024
+    },
+    "actions": {
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8
+    }
   }
 ]
