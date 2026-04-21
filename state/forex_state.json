@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-21T06:47:00Z",
   "regime": "PRE_BINARY_COMPRESSION_DEAL_OPTIMISM",
-  "regime_note": "2026-04-21 07:09 UTC \u2014 1 GOLD level_enter re-fire 4781.195 (4th in ~50min same zone) SKIPPED (no M15 bull BOS). News narrative shifting: CNBC Apr 20-21 'gold falls on stronger dollar amid RENEWED US-Iran tensions', FXStreet 'ceasefire uncertainty', 'war trade dynamics' returning per multiple outlets. Spot gold ~$4,796 -0.7% still pinned by USD bid + rates despite geopolitical acknowledgement \u2014 disconnect narrowing. Ceasefire T-~17h (0000 GMT WED Apr 22). 0 trades, broker $1000 unchanged. Watchlist 1 MODIFY (gold note upgraded to reflect narrative shift) + 4 KEEP. Structure 9 KEEP. News queries 8 KEEP.",
+  "regime_note": "2026-04-21 07:14 UTC \u2014 8 bar_close M15+H1 heartbeat (16 events) all SKIP, no BOS/CHoCH/level_enter. Last substantive audit 07:10 UTC (~4min ago) covered CNBC narrative shift 'ceasefire breaking down' + 'war trade returning' with gold still pinned -0.7% by USD/rates. No new signals in 4-min window. Broker $1000/0 positions matches state. Ceasefire T-~17h (0000 GMT WED Apr 22). 5 alerts + 9 structure + 8 queries all KEEP (delta since 07:10 = none).",
   "open_positions": [],
   "watchlist": [
     {
@@ -428,6 +428,6 @@
   "last_updated": "2026-04-21T05:33:00Z",
   "capital_base": 1000.0,
   "last_tick_ts_utc": "2026-04-21T05:39:09.646128Z",
-  "last_tick_utc": "2026-04-21T07:10:00Z",
+  "last_tick_utc": "2026-04-21T07:14:55Z",
   "last_scan_ts": "2026-04-21T01:30:00Z"
 }

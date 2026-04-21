@@ -475,6 +475,15 @@
       "edits": "watchlist MODIFY gold note; regime_note updated",
       "trades": 0,
       "broker_balance": 1000.0
+    },
+    {
+      "utc": "2026-04-21T07:15:00Z",
+      "trigger": "bar_close_heartbeat",
+      "events_processed": 16,
+      "events_opened": 0,
+      "events_closed": 0,
+      "events_skipped": 16,
+      "note": "8 bar_close M15+H1 (16 total) all SKIP \u2014 no BOS/CHoCH/level_enter since 07:10 UTC audit. Broker $1000/0 pos. Last audit 4min prior covered narrative. All 5 alerts + 9 structure + 8 queries KEEP."
     }
   ],
   "entries": [
