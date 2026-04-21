@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-21T08:27:00Z",
   "regime": "PRE_BINARY_COMPRESSION_DEAL_OPTIMISM",
-  "regime_note": "2026-04-21 08:27 UTC \u2014 8 M15 bar_close heartbeat, all SKIP (no BOS/CHoCH/level_enter). Prices drifted minimally since 08:15: GOLD 4785 (-0.74%, day lo 4772), WTI 86.16 (+0.34%, day lo 85.62), USDJPY 159.19, AUDUSD 0.7154. Web search (CNN/AlJazeera/NPR Apr 21) confirms ceasefire T-~15h (expires 00:00 GMT Wed Apr 22): Iran still won't confirm Islamabad attendance, Vance/Witkoff/Kushner departing today, Trump 'highly unlikely' to extend, US navy blockade Hormuz since Apr 13 + Touska seizure ongoing, Iran demands vessel release. Narrative unchanged. 3 level_alerts (audusd 0.707 cross_down, usdjpy 158.5 cross_down, oil 90 cross_up) + 9 structure_watch + 8 news queries all KEEP. 0 trades. Broker $1000 / 0 positions matches.",
+  "regime_note": "2026-04-21 14:06 UTC \u2014 heartbeat tick, 0 unconsumed events, 0 positions, broker $1000 matches. Prices: GOLD 4786.67 (-0.70%, day lo 4772.41 hi 4833) still capped below 4800 bear FVG; WTI 86.47 (+0.69%, day hi 87.40 intraday spike faded, day lo 85.62) descending trend still resists; USDJPY 159.17 (+0.24%, day hi 159.21 lo 158.70) NOW PUSHING INTO 159.45-161.95 intervention zone, Katayama 'bold action' (MoF/JapanTimes); AUDUSD 0.71545 (-0.31%) holding above 0.707 breakdown trigger. Ceasefire T-~10h (expires 0000 GMT WED Apr 22): Hormuz IRGC formal blockade, only 16 ships Monday (CNN/Al Jazeera Apr 19-20), tankers being fired on, US seized Iranian cargo ship, Iran may or may not attend Islamabad talks. Old USDJPY riskoff-break alert at 158.50 went STALE (price advanced above it w/o yen bid) \u2014 MODIFIED to usdjpy_intervention_fade_zone@159.45 SELL. 2 KEEP (audusd/oil). Regime unchanged: oil/rates dominance > safe-haven; cliff-edge binary in ~10h.",
   "open_positions": [],
   "watchlist": [
     {
@@ -436,7 +436,7 @@
   "last_updated": "2026-04-21T07:34:00Z",
   "capital_base": 1000.0,
   "last_tick_ts_utc": "2026-04-21T05:39:09.646128Z",
-  "last_tick_utc": "2026-04-21T08:15Z",
+  "last_tick_utc": "2026-04-21T14:06:00Z",
   "last_scan_ts": "2026-04-21T01:30:00Z",
   "tick_log": [
     {

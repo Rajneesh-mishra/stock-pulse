@@ -1,13 +1,14 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T13:45:00+05:30",
-  "pruned_at": "2026-04-21T13:45:00+05:30",
-  "pruned_by": "08:15 UTC tick — 22 bar_close events (all HEARTBEAT, no BOS/CHoCH/level_enter). Material read: GOLD BROKE BELOW 4780 (now 4777, day low 4772.41) — 5th re-fire zone torched, price outside 4780-4810 buy zone. Web search confirms regime: rising oil → inflation → rates dominates, overwhelming safe-haven bid (Bloomberg/Investing.com Apr 21). WTI bouncing $85.6→$86.65 (+0.9%) but capped by descending trend resistance. USDCAD 1.36607 drifting UP thru top of FVG 1.36503-1.36612 — FVG fully mitigated + oil bounce breaks CAD-strength precondition. 2 REMOVE (gold_escalation_buy_zone invalidated, usdcad_short_fvg_retest mitigated). 1 MODIFY (oil price refresh $88→$86.65). 3 KEEP. News queries: 8 all KEEP. Structure_watch: 9 all covered. Broker $1000 / 0 positions matches state.",
+  "last_updated_by_claude": "2026-04-21T14:10:00+05:30",
+  "pruned_at": "2026-04-21T14:10:00+05:30",
+  "pruned_by": "14:06 UTC tick (heartbeat, 0 unconsumed events, 0 positions, broker $1000 matches). Material read: USDJPY 159.17 NOW TRADING ABOVE the 158.50 risk-off trigger — old alert thesis (break DOWN into risk-off) inverted. Web search (MarketPulse/FXStreet/JapanTimes Apr 16-21) shows USDJPY now inside the 159.45-161.95 intervention risk zone; Katayama (MoF) explicitly flagged 'bold action' after Bessent talks. Ceasefire expires 0000 GMT WED Apr 22 = T-~10h; Hormuz blockaded (IRGC formal), only 16 ships Monday, tankers being fired on, US seized Iranian cargo ship. Oil 86.47 day HI 87.40 (intraday spike faded), GOLD 4786 capped below 4800 bear FVG. 1 MODIFY (usdjpy_riskoff_break → usdjpy_intervention_fade_zone flipped direction + level + SL/TP). 2 KEEP. News queries: 8 all KEEP. Structure_watch: 9 all covered. Conditions: regime unchanged (oil/rates > safe-haven), cliff-edge binary T-10h.",
   "pruned_removed": [
-    "gold_escalation_buy_zone (price broke below 4780 to 4772.41 low; 5 re-fires all SKIPPED no M15 bull BOS; regime-wise safe-haven bid not functioning under oil/rates dominance per fresh websearch; 2-way Iran risk still live but no buy-level edge left. Will re-add post-ceasefire-expiry if structure forms.)",
-    "usdcad_short_fvg_retest (H1 bear FVG 1.36503-1.36612 fully traded through; price 1.36607 at upper edge drifting up; oil bouncing +0.9% breaks CAD-strength precondition. Re-add only if WTI breaks $90 + M15 bear BOS on USDCAD.)"
+    "usdjpy_riskoff_break@158.50 cross_down (price 159.17 already trading ABOVE 158.50 — yen did NOT bid on Iran risk-off; instead USDJPY advanced into intervention zone. Break-below thesis invalidated; replaced with fade-zone SELL inside 159.45-161.95.)"
   ],
-  "pruned_added": [],
+  "pruned_added": [
+    "usdjpy_intervention_fade_zone@159.45 cross_up SELL (Katayama bold-action warning + formal intervention zone 159.45-161.95 per MarketPulse/MUFG Apr 16-21; fade spikes into zone w/ SL 161.00 TP 157.00.)"
+  ],
   "instruments": [
     "EURUSD",
     "USDJPY",
@@ -30,15 +31,16 @@
       "level": 0.707,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break of 0.707 = prior pivot gone. Short on retest from below. SL 0.713, TP 0.700. Risk-off + AUD first-to-bleed. Catalyst HARDENED Apr 21 07:38 UTC: Iran walkout + Touska seizure + Hormuz blockade = risk-off proper. Level 0.707 still ~1.0% below current 0.71466 (08:15 UTC, day low 0.71452) — requires real trigger not drift. Need M15 bear BOS + rejection wick on retest. Conv 3."
+      "note": "Break of 0.707 = prior pivot gone. Short on retest from below. SL 0.713, TP 0.700. Risk-off + AUD first-to-bleed. Catalyst LIVE Apr 21 14:06 UTC: Iran walkout + Touska/cargo seizure + Hormuz blockade (IRGC formal, only 16 ships Monday, tankers being fired on) + T-~10h to ceasefire expiry. Level 0.707 still ~1.1% below current 0.71545 (14:06 UTC, day lo 0.71434) — needs the ceasefire cliff to break it. Need M15 bear BOS + rejection wick on retest. Conv 3."
     },
     {
-      "id": "usdjpy_riskoff_break",
+      "id": "usdjpy_intervention_fade_zone",
       "instrument": "USDJPY",
-      "level": 158.5,
-      "emit_on": "cross_down",
+      "level": 159.45,
+      "emit_on": "cross_up",
       "cooldown_sec": 1800,
-      "note": "Break 158.50 = risk-off yen flight AND aligns w/ MoF pain threshold 158 (FXEmpire/MUFG Apr 16). Short on retest from below. Catalyst HARDENED Apr 21 07:38 UTC: Iran pulled out of Islamabad + Touska seized by US Navy. Ceasefire T-~15.5h (expires 0000 GMT WED Apr 22). Price 159.16 (08:15 UTC), day low 158.695 — didn't quite reach trigger overnight. If risk-off flip before US session → yen bid triggers. SL 159.20, TP 157.00. Conv 4."
+      "direction": "sell",
+      "note": "Price 159.17 (14:06 UTC, day hi 159.21 day lo 158.70) pushing INTO the 159.45-161.95 intervention risk zone (MarketPulse/OANDA Apr 2026). Katayama post-Bessent said MoF ready for 'bold action' (JapanTimes Apr 16). Fade SELL on entry into zone — historical precedent: MoF intervened at similar handles in prev cycles. Needs M15 bear BOS + rejection wick on first touch of 159.45+ for 7-gate greenlight. SL 161.00 (above 160-handle stop-runs), TP1 158.70, TP2 157.20. Conv 3. Iran risk-off flip could still bid yen (2-way) — monitor M15 structure. Replaces old riskoff_break alert at 158.50 which went stale after price advanced above it."
     },
     {
       "id": "oil_crude_escalation_90",
@@ -46,7 +48,7 @@
       "level": 90.0,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
-      "note": "WTI $86.65 (08:15 UTC, day lo $85.62) BOUNCING +0.9% off descending trend-line resistance per fxdailyreport/Investing.com Apr 21 — trend still capping gains since early April. Thesis STRENGTHENED Apr 21 07:38 UTC: Iran walkout of Islamabad + Touska seizure + Hormuz blockade + T-~15.5h to expiry = real tail risk. Break $90 WTI + M15 bull BOS signals collapse fully priced. SL 87.50, TP1 94, TP2 98. Conv 4."
+      "note": "WTI $86.47 (14:06 UTC) — intraday spike to $87.40 (day hi) FADED, day lo $85.62, descending trend still capping. Thesis HARDENED Apr 21 14:06 UTC: Iran formal IRGC Hormuz blockade + US seized Iranian cargo ship + only 16 ships Monday + tankers being fired on + T-~10h ceasefire expiry 0000 GMT WED Apr 22 (per CNN/Al Jazeera/WaPo/NPR Apr 19-20). Break $90 + M15 bull BOS signals collapse fully priced — gap-open on ceasefire collapse plausible. SL 87.50, TP1 94, TP2 98. Conv 4."
     }
   ],
   "structure_watch": [

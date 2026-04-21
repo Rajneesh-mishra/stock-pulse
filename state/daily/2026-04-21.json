@@ -564,6 +564,31 @@
         "AUDUSD": 0.7154
       },
       "trades": 0
+    },
+    {
+      "ts_utc": "2026-04-21T14:06:00Z",
+      "tick_type": "heartbeat",
+      "unconsumed_events": 0,
+      "positions": 0,
+      "broker_balance": 1000.0,
+      "trades": {
+        "opened": 0,
+        "closed": 0,
+        "modified": 0
+      },
+      "audit": {
+        "watchlist": "audusd_breakdown_trigger=KEEP | usdjpy_riskoff_break=MODIFY->usdjpy_intervention_fade_zone@159.45 SELL (price 159.17 advanced through 158.50 trigger, new thesis: fade into 159.45-161.95 MoF zone) | oil_crude_escalation_90=KEEP",
+        "queries": "all 8 KEEP"
+      },
+      "material_news": "Ceasefire T-~10h (expires 0000 GMT WED Apr 22); Hormuz IRGC formal blockade, only 16 ships Monday, tankers being fired on, US seized Iranian cargo ship; USDJPY 159.17 now inside 159.45-161.95 MoF intervention zone per Katayama 'bold action' (JapanTimes Apr 16).",
+      "prices": {
+        "GOLD": 4786.67,
+        "OIL_CRUDE": 86.47,
+        "OIL_day_hi": 87.4,
+        "USDJPY": 159.17,
+        "AUDUSD": 0.71545
+      },
+      "regime": "oil/rates dominate safe-haven; cliff-edge binary T-10h; no trades, no events"
     }
   ],
   "entries": [
