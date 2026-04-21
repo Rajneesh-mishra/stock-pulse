@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-21T01:36:08Z",
+  "last_tick": "2026-04-21T02:14:00Z",
   "regime": "ESCALATION_CONFIRMED_KINETIC_EXCHANGE",
-  "regime_note": "2026-04-21 ~02:00 UTC auto tick \u2014 8 bar_close M15 events (all pairs) routine heartbeat, no structural shift. Prior tick 01:55 already SKIPPED GOLD level_enter (composite 10.5, aligned=false, M15 bear FVG unmitig). 0 positions. $1000 bal. Iran ceasefire T-18h watching, DXY firming mild headwind for gold longs. Audit: all 5 level_alerts + 9 structure_watch + 8 news queries KEEP.",
+  "regime_note": "2026-04-21 ~02:14 UTC auto tick \u2014 16 bar_close events (H1+M15 x 8 pairs) routine heartbeat, no structural shift. GOLD re-checked: composite 10.5 aligned=false, M15 bear FVG 2 bars ago 4814.27-4814.55 unmitig. Price 4806.55 inside zone 4780-4810 but setup unchanged from 01:55 SKIP. USDJPY 158.96 (session low 158.546 briefly tested 158.50 trigger, +46p). OIL 86.66 (trigger 90). USDCAD 1.36426 below zone 1.36503-1.36612 (low 1.36339 \u2014 moved DOWN not UP; needs UP-retest). 0 positions. $1000 bal. Iran ceasefire T-~18h intact (Trump 'highly unlikely', Iran skipped Islamabad round 2). Audit: all 5 alerts + 9 watch KEEP.",
   "open_positions": [],
   "watchlist": [
     {

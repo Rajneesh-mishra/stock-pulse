@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T07:06:08+05:30",
-  "pruned_at": "2026-04-21T07:06:08+05:30",
-  "pruned_by": "01:36 UTC tick \u2014 15 news_flash events: 14 stale RBA RSS (URL-dedup flush, non-actionable) + 1 marginal fresh Crypto Briefing 'Iran Supreme Leader approves Islamabad talks' (Apr 21 01:30 GMT, single low-tier source, no corroboration). Broker $1000 flat 0 pos reconciled. Iran ceasefire Apr 22 Wed expiry T-~18h intact. Audit: all 5 level_alerts + 9 structure_watch KEEP \u2014 price drift negligible from 01:30 tick, catalysts unchanged, no new setups formed, USDCAD still contradicted by regime ESCALATION.",
+  "last_updated_by_claude": "2026-04-21T07:44:00+05:30",
+  "pruned_at": "2026-04-21T07:44:00+05:30",
+  "pruned_by": "02:14 UTC tick \u2014 16 bar_close events (H1+M15 x 8 pairs) routine heartbeat. GOLD rechecked composite 10.5 aligned=false M15 bear FVG 4814.27-4814.55 unmitig price 4806.55 in zone setup unchanged from 01:55 SKIP. USDJPY 158.96 low 158.546 brushed 158.50. OIL 86.66 (trigger 90). USDCAD 1.36426 BELOW zone low 1.36503 (low 1.36339) \u2014 price moved DOWN not UP; short-retest thesis unchanged, needs UP retest + catalyst. 0 pos. All 5 alerts + 9 structure_watch KEEP.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [

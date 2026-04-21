@@ -217,6 +217,16 @@
       "events_processed": 8,
       "events_acted": 0,
       "summary": "8 bar_close M15 heartbeat \u2014 no action. All watchlist/queries KEEP."
+    },
+    {
+      "ts_utc": "2026-04-21T02:14:00Z",
+      "trigger": "auto_bar_close",
+      "events_processed": 16,
+      "events_summary": "16 bar_close (H1+M15 x 8 pairs) heartbeat",
+      "decision": "SKIP_ALL",
+      "open_positions": 0,
+      "balance": 1000.0,
+      "notes": "GOLD composite 10.5 aligned=false M15 bear FVG unmitig, zone still active, no entry. USDJPY low 158.546 near 158.50 trigger, no break. Iran ceasefire T-~18h."
     }
   ],
   "entries": [
