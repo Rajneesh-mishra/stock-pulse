@@ -167,6 +167,12 @@
       "trigger": "bar_close x12",
       "action": "SKIP heartbeat",
       "note": "flat-drift across all pairs; no level hit; catalyst stack (Iran ceasefire T-19h) unchanged; all audit items KEEP"
+    },
+    {
+      "ts_utc": "2026-04-21T01:18:04Z",
+      "trigger": "bar_close x12",
+      "action": "SKIP_HEARTBEAT",
+      "note": "Flat-drift vs 01:02. USDJPY 158.955 -0.7p. GOLD 4814.94 -3.9p. OIL 86.66 +9.8p. EURUSD 1.17824 flat. USDCAD 1.36439 flat (6.4p below zone_low 1.36503). AUDUSD 0.71743 +1.6p. Iran T-~19h no material delta. Broker $1k flat 0 pos. All KEEP."
     }
   ],
   "entries": [
