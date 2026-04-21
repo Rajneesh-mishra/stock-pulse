@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-21T08:41:00Z",
   "regime": "PRE_BINARY_COMPRESSION_DEAL_OPTIMISM",
-  "regime_note": "2026-04-21 08:41 UTC \u2014 tick processed 19 events (15 news_flash Touska/Hormuz dupes already integrated + 4 M15 bar_close AUDUSD/USDJPY/GOLD/OIL_CRUDE all SKIP). Prices at tick: AUDUSD 0.71548 (trend unknown, bear FVG mitigated, 0.707 trigger ~1.2% away), USDJPY 159.187 (bearish M15 BOS 158.728 101 bars ago, bull FVG 159.02-159.115 unmitigated 2 bars ago, approaching 159.45 intervention zone but not yet crossed), GOLD 4787.395 (still capped below 4800 bear FVG unmitigated 21 bars ago), WTI 86.285 (still bearish below 90 escalation trigger, bear FVG mitigated 4 bars ago). 0 positions, broker $1000/0pos matches. Ceasefire expires 0000 GMT WED Apr 22 = T-~15.3h. Hormuz IRGC formal blockade + Touska seized + Iran vows retaliation + Trump 'highly unlikely' extension. Tape disconnect persists: oil+gold not bidding risk-off, market still pricing deal-by-deadline. Binary stays. 3 watchlist all KEEP, 8 news queries all KEEP.",
+  "regime_note": "2026-04-21 08:55 UTC \u2014 tick processed 8 M15 bar_close events, all SKIP (trend unknown on 6/8, no BOS/CHoCH, no level touches). Prices: AUDUSD 0.71551 (bear FVG mitigated), USDJPY 159.167 (bearish BOS 158.728 102 bars ago, bull FVG 159.022-159.115 unmitigated; still below 159.45 fade zone), GOLD 4788.55 (capped below unmitigated bear FVG 4800.03-4800.50 22 bars), OIL_CRUDE 86.364 (bearish BOS 86.621 99 bars ago), USDCAD 1.3659, EURUSD 1.1763, GBPUSD 1.35046, USDCHF 0.78036. NEWS NEW: Vance+US officials flying to Islamabad Tue Apr 21 for 2nd-round talks ahead of Wed 00:00 GMT expiry (de-escalation tail, T-~15h); IRGC 'target any ship' + sea-mines + 21 merchant attacks (escalation tail). Net thesis intact 2-way-wider tail \u2014 MODIFY usdjpy & oil_crude watchlist notes, KEEP all 3 level_alerts + 9 structure_watch + 8 news queries. 0 trades, broker $1000/0pos matches, daily_pnl 0, consecutive_losses 0.",
   "open_positions": [],
   "watchlist": [
     {
@@ -149,7 +149,7 @@
     "telegram_on_trade": true,
     "telegram_chat_ids": "6838758759,849258319"
   },
-  "last_tick_ts": "2026-04-21T08:41:00Z",
+  "last_tick_ts": "2026-04-21T08:58:11.611072Z",
   "tracker": [
     {
       "situation": "US Navy Blockade of Iran \u2014 day 4",

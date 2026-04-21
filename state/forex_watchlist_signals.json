@@ -1,8 +1,8 @@
 {
-  "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T14:11:00+05:30",
-  "pruned_at": "2026-04-21T14:11:00+05:30",
-  "pruned_by": "08:41 UTC tick (19 events, 0 positions, broker $1000 matches). Material: USDJPY 159.187 approaching but not yet in 159.45 zone; AUDUSD 0.71548 well above 0.707; WTI 86.285 well below 90; GOLD 4787 capped below 4800 bear FVG. No bar_close setups cleared 7-gate. All 3 level_alerts KEEP (audusd_breakdown_trigger, usdjpy_intervention_fade_zone, oil_crude_escalation_90). All 8 news queries KEEP. Structure_watch covers all 9 instruments. T-15.3h to ceasefire 0000 GMT Wed Apr 22.",
+  "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
+  "last_updated_by_claude": "2026-04-21T14:25:00+05:30",
+  "pruned_at": "2026-04-21T14:25:00+05:30",
+  "pruned_by": "08:55 UTC tick (8 M15 bar_close events, all SKIP). Prices: AUDUSD 0.71551, USDJPY 159.167, GOLD 4788.55 (capped 4800 bear FVG unmitigated 22 bars), OIL_CRUDE 86.364, USDCAD 1.3659, EURUSD 1.1763, GBPUSD 1.35046, USDCHF 0.78036. NEW news: Vance+US officials flying to Islamabad Tue for 2nd-round talks ahead of Wed 00:00 GMT expiry (de-escalation tail, T-~15h); IRGC explicit 'target any ship' + sea-mines reported + 21 merchant attacks (escalation tail). Net thesis intact but 2-way tail widened. MODIFY usdjpy_intervention_fade_zone + oil_crude_escalation_90 notes to capture Islamabad tail + mine-laying. audusd_breakdown_trigger KEEP unchanged. 0 positions. Broker $1000 matches.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -27,7 +27,7 @@
       "level": 0.707,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break of 0.707 = prior pivot gone. Short on retest from below. SL 0.713, TP 0.700. Risk-off + AUD first-to-bleed. Catalyst LIVE Apr 21 14:06 UTC: Iran walkout + Touska/cargo seizure + Hormuz blockade (IRGC formal, only 16 ships Monday, tankers being fired on) + T-~10h to ceasefire expiry. Level 0.707 still ~1.1% below current 0.71545 (14:06 UTC, day lo 0.71434) \u2014 needs the ceasefire cliff to break it. Need M15 bear BOS + rejection wick on retest. Conv 3."
+      "note": "Break of 0.707 = prior pivot gone. Short on retest from below. SL 0.713, TP 0.700. Risk-off + AUD first-to-bleed. Catalyst LIVE Apr 21 08:55 UTC: Iran walkout + Touska/cargo seizure + Hormuz IRGC formal blockade (+ sea-mines + 'target any ship' per Al Jazeera Apr 18) + T-~15h to ceasefire expiry 00:00 GMT Wed. OFFSET: Vance+US officials flying to Islamabad Tue for 2nd-round talks — deal tail widens. Level 0.707 still ~1.2% below current 0.71551 — needs the ceasefire cliff to break (or talks-fail confirm). Need M15 bear BOS + rejection wick on retest. Conv 3."
     },
     {
       "id": "usdjpy_intervention_fade_zone",
@@ -36,7 +36,7 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "Price 159.17 (14:06 UTC, day hi 159.21 day lo 158.70) pushing INTO the 159.45-161.95 intervention risk zone (MarketPulse/OANDA Apr 2026). Katayama post-Bessent said MoF ready for 'bold action' (JapanTimes Apr 16). Fade SELL on entry into zone \u2014 historical precedent: MoF intervened at similar handles in prev cycles. Needs M15 bear BOS + rejection wick on first touch of 159.45+ for 7-gate greenlight. SL 161.00 (above 160-handle stop-runs), TP1 158.70, TP2 157.20. Conv 3. Iran risk-off flip could still bid yen (2-way) \u2014 monitor M15 structure. Replaces old riskoff_break alert at 158.50 which went stale after price advanced above it."
+      "note": "Price 159.167 (08:55 UTC, bearish M15 BOS 158.728 102 bars ago, bull FVG 159.022-159.115 unmitigated). Pushing INTO the 159.45-161.95 intervention risk zone (MarketPulse/OANDA Apr 2026). Katayama post-Bessent 'bold action' (JapanTimes Apr 16). No fresh MoF verbal today. Fade SELL on entry into zone — needs M15 bear BOS + rejection wick on first touch of 159.45+ for 7-gate greenlight. SL 161.00, TP1 158.70, TP2 157.20. Conv 3. 2-WAY RISK: (a) Iran risk-off flip bids yen (ceasefire collapse → yen as funding-unwind safe-haven), (b) Islamabad talks success → USD bid back into zone but intervention risk caps upside. Monitor M15 structure."
     },
     {
       "id": "oil_crude_escalation_90",
@@ -44,7 +44,7 @@
       "level": 90.0,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
-      "note": "WTI $86.47 (14:06 UTC) \u2014 intraday spike to $87.40 (day hi) FADED, day lo $85.62, descending trend still capping. Thesis HARDENED Apr 21 14:06 UTC: Iran formal IRGC Hormuz blockade + US seized Iranian cargo ship + only 16 ships Monday + tankers being fired on + T-~10h ceasefire expiry 0000 GMT WED Apr 22 (per CNN/Al Jazeera/WaPo/NPR Apr 19-20). Break $90 + M15 bull BOS signals collapse fully priced \u2014 gap-open on ceasefire collapse plausible. SL 87.50, TP1 94, TP2 98. Conv 4."
+      "note": "WTI 86.364 (08:55 UTC M15 close, bearish M15 BOS 86.621 99 bars ago, descending trend still capping). Thesis HARDENED: Iran formal IRGC Hormuz blockade + sea-mines reported + IRGC 'target any ship' explicit + 21 merchant attacks + T-~15h ceasefire expiry 00:00 GMT Wed Apr 22 (CNN/Al Jazeera/The Hill/Euronews Apr 18-20). OFFSET: Vance+US officials flying to Islamabad Tue for 2nd-round talks — deal tail = gap-down risk if deal emerges overnight. Break $90 + M15 bull BOS signals collapse fully priced — gap-open on talks-fail + ceasefire collapse plausible. SL 87.50, TP1 94, TP2 98. Conv 4 (collapse) / downside gap tail if talks succeed."
     }
   ],
   "structure_watch": [

@@ -597,6 +597,19 @@
       "closed": 0,
       "skipped": 19,
       "summary": "08:41 UTC heartbeat \u2014 15 Touska/Hormuz news dupes + 4 M15 bar_close all SKIP; USDJPY 159.19 approaching 159.45 fade zone but bull FVG unmitigated first; WTI<90, AUDUSD>0.707, GOLD<4800 FVG; regime unchanged T-15.3h to ceasefire expiry; 3 watchlist + 8 queries all KEEP; 0 trades."
+    },
+    {
+      "ts_utc": "2026-04-21T08:55Z",
+      "events_processed": 8,
+      "events_type": "8x M15 bar_close AUDUSD/USDJPY/GOLD/OIL_CRUDE/USDCAD/EURUSD/GBPUSD/USDCHF",
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "all_skipped": true,
+      "reason": "No BOS/CHoCH/level touches; 6/8 trend unknown; no 7-gate greenlights",
+      "news_new": "Vance Islamabad 2nd-round talks (de-esc tail) + IRGC sea-mines/target-any-ship (esc tail), 2-way tail widened T-~15h to Wed 00:00 GMT expiry",
+      "watchlist_changes": "MODIFY usdjpy_intervention_fade_zone + oil_crude_escalation_90 notes (+Islamabad tail, +mine-laying). audusd_breakdown_trigger KEEP.",
+      "audit": "3 level_alerts (2 MODIFY, 1 KEEP) + 9 structure_watch KEEP + 8 news queries KEEP",
+      "broker": "$1000 balance / 0 positions (matches state)"
     }
   ],
   "entries": [
