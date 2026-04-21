@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-21T13:05:00Z",
   "regime": "PRE_BINARY_COMPRESSION_CONFLICTING_NARRATIVE",
-  "regime_note": "2026-04-21 13:05 UTC - 12 bar_close 13:00 close all SKIP T-~10.9h binary. Drift vs 12:50: AUDUSD 0.71628 (+3.2p 92p above 0.707), USDJPY 159.171 (+3.4p 0.28 below 159.45), GOLD 4783.66 (+1p flat), OIL 87.03 (-10c flat 2.97 below 90), EUR/CAD/GBP/CHF all flat. WebSearch CNN/CNBC/AlJaz Apr 20-21: Vance+Witkoff+Kushner departing Islamabad Rd2 but Iran MFA Baghaei 'Washington violated ceasefire' citing blockade+Touska seizure; Trump Wed eve 'highly unlikely to extend'. Priced-in-optimism intact. 3 MODIFY price refresh, 9 structure_watch KEEP, 8 queries KEEP, broker $1000/0 matches, 0 trades (binary no edge T-10.9h).",
+  "regime_note": "2026-04-21 13:20 UTC - 12 bar_close all SKIP T-~10.4h binary. Drift vs 13:05: AUDUSD 0.71643 (+1.5p 92p above 0.707), USDJPY 159.121 (-5p 0.33 below 159.45 fade), GOLD 4770.53 (-13.1p slight risk-on drift <4800), OIL 86.993 (-3.7c flat 3.01 below 90), EUR/CAD/GBP/CHF flat. WebSearch CNN/CNBC/AlJaz/NPR Apr 20-21: Trump Wed eve 'highly unlikely to extend', Vance+Witkoff+Kushner departing Islamabad 'mixed signals on Iran attendance', Iran MFA reiterates US breached first via blockade+Touska. Priced-in-optimism narrative intact. 3 MODIFY price refresh all level_alerts, 9 structure_watch KEEP, 8 queries KEEP, broker $1000/0 pos matches state, 12 events consumed, 0 trades (binary no edge T-10.4h).",
   "open_positions": [],
   "watchlist": [
     {
@@ -339,7 +339,7 @@
     "events_processed_last_tick": 15,
     "events_acted_last_tick": 0
   },
-  "last_updated": "2026-04-21T11:24:02.916114Z",
+  "last_updated": "2026-04-21T13:20:00+00:00",
   "capital_base": 1000.0,
   "last_tick_ts_utc": "2026-04-21T11:25:00+00:00",
   "last_tick_utc": "2026-04-21T12:10:00Z",

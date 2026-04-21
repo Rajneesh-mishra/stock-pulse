@@ -752,6 +752,15 @@
       "closed": 0,
       "skipped": 8,
       "summary": "8 M15 bar_close all SKIP T-~11h binary; WebSearch confirms Tehran refusal to talk + Trump Wed eve expiry unlikely extend; watchlist price refresh only; no trades (binary no edge)."
+    },
+    {
+      "ts": "2026-04-21T13:20:00+00:00",
+      "trigger": "bar_close_batch",
+      "summary": "12 bar_close all SKIP T-~10.4h. AUDUSD 0.71643 flat, USDJPY 159.121 (-5p fade -0.33 below), GOLD 4770.53 (-13.1p risk-on drift), OIL 86.993 flat -3.01 below 90, EUR/CAD/GBP/CHF flat. News Apr 20-21: priced-in-optimism intact, Trump Wed eve 'unlikely extend', mixed Iran Rd2 signals.",
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "events_consumed": 12,
+      "watchlist": "3 MODIFY price refresh, 9 structure_watch KEEP, 8 queries KEEP"
     }
   ],
   "entries": [
