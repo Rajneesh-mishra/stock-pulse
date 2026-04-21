@@ -12,7 +12,7 @@
     "events_processed": 8,
     "events_types": "8x bar_close M15",
     "trades": 0,
-    "skip_reason": "binary T-~9h Iran deadline 0000 GMT Wed Apr 22 \u2014 no directional edge pre-event",
+    "skip_reason": "binary T-~9h Iran deadline 0000 GMT Wed Apr 22 — no directional edge pre-event",
     "drift": {
       "AUDUSD": 0.71769,
       "USDJPY": 159.153,
@@ -33,7 +33,7 @@
     "ts_utc": "2026-04-21T20:32:00Z",
     "trigger": "bar_close batch (11)",
     "action": "SKIP_ALL",
-    "reason": "T-~3.5h binary to 0000 GMT Wed Apr 22 Iran deadline \u2014 zero edge",
+    "reason": "T-~3.5h binary to 0000 GMT Wed Apr 22 Iran deadline — zero edge",
     "notable": "USDJPY 159.382 only 7p below 159.45 intervention fade; OIL 88.822 creep to 90 fade continues",
     "trades": 0,
     "broker_balance": 1000.0,
@@ -48,7 +48,7 @@
   },
   {
     "ts_utc": "2026-04-21T15:32:59.558724Z",
-    "summary": "15:31 UTC \u2014 8 bar_close M15 SKIP. USDJPY 159.422 AT 159.45 fade (3p). OIL 89.648 +107p spike near 90 fade (35p). Binary T-~8.5h Iran deadline. No trade. 3 alerts MODIFY price_refs. 0 positions.",
+    "summary": "15:31 UTC — 8 bar_close M15 SKIP. USDJPY 159.422 AT 159.45 fade (3p). OIL 89.648 +107p spike near 90 fade (35p). Binary T-~8.5h Iran deadline. No trade. 3 alerts MODIFY price_refs. 0 positions.",
     "prices": {
       "AUDUSD": 0.71617,
       "USDJPY": 159.422,
@@ -70,7 +70,7 @@
     "trigger": "news_flash_batch",
     "events_consumed": 15,
     "event_breakdown": "news_flash(iran_ceasefire 2 + hormuz_strait 4 + us_iran_military 9)",
-    "decision": "ALL SKIP \u2014 dupes of tracked Iran narrative T-~8.3h binary",
+    "decision": "ALL SKIP — dupes of tracked Iran narrative T-~8.3h binary",
     "trades": 0,
     "audit_watchlist": "3 level_alerts MODIFY (timing), 9 structure_watch KEEP",
     "audit_queries": "8 queries KEEP",
@@ -83,7 +83,7 @@
     "events_types": "6x bar_close M15 (GOLD, OIL_CRUDE, USDCAD, EURUSD, GBPUSD, USDCHF)",
     "events_consumed": 6,
     "trades": 0,
-    "skip_reason": "binary T-~8.25h Iran deadline 0000 GMT Wed Apr 22 \u2014 no directional edge pre-event",
+    "skip_reason": "binary T-~8.25h Iran deadline 0000 GMT Wed Apr 22 — no directional edge pre-event",
     "drift": {
       "GOLD_M15": 4745.835,
       "OIL_CRUDE_M15": 89.75,
@@ -93,13 +93,28 @@
       "USDCHF_M15": 0.78012
     },
     "audit": "3 level_alerts MODIFY (oil proximity 35p->25p at 89.75, audusd + usdjpy refreshed T-~8.25h), 9 structure_watch KEEP, 8 queries KEEP",
-    "notes": "OIL tightening to 90 fade \u2014 25p below, bull FVG 88.91-89.548 unmitigated, BOS 85 bars ago. GOLD bear FVG 4745.78-4769.95 mitigated, bear OB 4791.95-4798.16. Budget ~$0.77 remaining. Broker $1000/0 matches state."
+    "notes": "OIL tightening to 90 fade — 25p below, bull FVG 88.91-89.548 unmitigated, BOS 85 bars ago. GOLD bear FVG 4745.78-4769.95 mitigated, bear OB 4791.95-4798.16. Budget ~$0.77 remaining. Broker $1000/0 matches state."
   },
   {
     "ts": "2026-04-21T16:00:00Z",
     "trigger": "bar_close",
-    "summary": "2 bar_close M15 (AUDUSD 0.71634, USDJPY 159.382) both SKIP. T-~8h Iran binary. USDJPY day high 159.439 tapped intervention zone 159.45 but pulled back \u2014 armed. 3 level_alerts MODIFY, all structure_watch/queries KEEP. 0 trades.",
+    "summary": "2 bar_close M15 (AUDUSD 0.71634, USDJPY 159.382) both SKIP. T-~8h Iran binary. USDJPY day high 159.439 tapped intervention zone 159.45 but pulled back — armed. 3 level_alerts MODIFY, all structure_watch/queries KEEP. 0 trades.",
     "trades": 0,
     "events_consumed": 2
+  },
+  {
+    "ts_utc": "2026-04-21T16:14:00Z",
+    "trigger": "level_cross OIL_CRUDE oil_crude_escalation_90",
+    "action": "SKIP",
+    "reason": "Wick-only liquidity sweep (tagged 90.003, rejected to 89.983 bid, day high 89.985). News bearish oil (US-Iran talks expected proceed → more supply — CNBC/Reuters Apr 21), contradicts momentum-buy flip. Binary T-~7.75h to 0000 GMT Wed Apr 22.",
+    "prices": {
+      "OIL_CRUDE": 89.983,
+      "AUDUSD": 0.71609,
+      "USDJPY": 159.403
+    },
+    "events_processed": 1,
+    "trades": 0,
+    "balance": 1000.0,
+    "open_positions": 0
   }
 ]
