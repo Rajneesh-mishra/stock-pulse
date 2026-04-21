@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-21T06:22:00Z",
+  "last_tick": "2026-04-21T06:37:00Z",
   "regime": "PRE_BINARY_COMPRESSION_DEAL_OPTIMISM",
-  "regime_note": "2026-04-21 06:31 UTC \u2014 8 bar_close M15 heartbeats (AUDUSD, USDJPY, GOLD, OIL_CRUDE, USDCAD, EURUSD, GBPUSD, USDCHF). All SKIP \u2014 no BOS, no entry triggers. Broker unchanged (0 pos, $1000). NEW intel: ceasefire expires 0000 GMT WED Apr 22 (corrected from Tue). Euronews: Iran PULLED OUT of Islamabad talks post US vessel seizure, vowed swift response. Bloomberg contradicts: oil -1.1% Brent $94.44 on signs Iran WILL attend before deadline (vs +5.6% Mon). Trump: extension 'highly unlikely'. Tape deal-optimism still compressing (gold -0.79%, USD bid). Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM intact with slight escalation tilt. Gold note MODIFIED, iran_ceasefire query TUNED (+pulled/withdraw/boycott). 4 alerts KEEP, 9 struct KEEP, 7 queries KEEP.",
+  "regime_note": "2026-04-21 06:37 UTC \u2014 15 news_flash events (iran_ceasefire 1, us_iran_military 8, fed_fomc 2, us_tariff 4). 0 level/structure/bar_close events, 0 trades, broker unchanged 0 pos $1000. MATERIAL INTEL (Anadolu/TRT/Fox/NBC/CNN web-confirmed): Iran launched DRONE STRIKES on US vessels Sun Apr 19 retaliating USS Spruance seizure of M/V Touska in Gulf of Oman. Tasnim confirms Iranian drone deployment; US CENTCOM confirms seizure but has NOT confirmed any vessels hit. Iran not yet formally agreed Islamabad talks resume. Escalation ladder one rung higher (threat\u2192kinetic) \u2014 but tape still pricing deal optimism (oil -1.1%, USD bid, gold -0.79%). Also BusinessLine Apr 21: India-US bilateral trade deal talks resumed on finer details (stock-pulse side, not forex-pair direct). Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM intact but escalation tilt stronger. All alerts KEEP numerically, gold note MODIFIED to reflect kinetic action. All 8 news queries KEEP \u2014 each caught real stories.",
   "open_positions": [],
   "watchlist": [
     {
@@ -149,14 +149,14 @@
     "telegram_on_trade": true,
     "telegram_chat_ids": "6838758759,849258319"
   },
-  "last_tick_ts": "2026-04-21T06:17:00Z",
+  "last_tick_ts": "2026-04-21T06:37:00Z",
   "tracker": [
     {
       "situation": "US Navy Blockade of Iran \u2014 day 4",
       "status": "escalating",
       "impact": "risk-off confirmed; USD/JPY/CHF/GOLD bid; oil bid; AUD/EM bleed",
-      "last_update": "2026-04-20T15:32:00Z",
-      "note": "15 fresh news_flash headlines this tick: CNBC (blockade day 4), AP/BBC/WaPo/Reuters (Hormuz fully closed, ships attacked), NYT (blockade status unclear, some transits), USNI (US seized Iranian container ship), Jerusalem Post (Indian-flagged vessel hit), Al Jazeera (sanctioned tankers still transit + Trump confirms seizure), Maritime Executive (IRGC fired on containership/tanker/cruise ship). Apr 22 ceasefire effectively dead. Binary risk: escalation ladder (Iran retaliatory strike on US asset) or de-escalation shock (surprise deal)."
+      "last_update": "2026-04-21T06:37:00Z",
+      "note": "Apr 20-21: Iran DRONE STRIKES on US vessels confirmed by Tasnim via Anadolu/TRT after USS Spruance seized M/V Touska (CENTCOM confirmed seizure, Marines rappelled after 6hr warnings + propulsion disable). US has NOT confirmed any vessels hit. Iran not formally agreed Islamabad talks restart. Trump: extension 'highly unlikely'. Escalation ladder: threat\u2192kinetic action (one rung up). Tape disconnect: oil -1.1%, gold -0.79%, USD bid \u2014 market still pricing deal-by-deadline. Binary remains: confirmed US damage\u2192spike, formal deal\u2192collapse."
     }
   ],
   "last_tick_utc_prev": "2026-04-20 23:06 UTC",
@@ -380,6 +380,14 @@
       "closed": 0,
       "skipped": 16,
       "note": "16 bar_close heartbeat (H1+M15 across 8 pairs) all SKIP \u2014 no level hits, no structure shifts. Broker $1000 flat 0 pos reconciled. Last full news sweep 06:07 UTC (9 min ago) \u2014 skipped fresh web search (budget + no new data window). Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM intact, ceasefire expires TODAY, Vance/Witkoff/Kushner flying Islamabad. 5 level_alerts + 9 structure + 8 queries all KEEP."
+    },
+    {
+      "ts_utc": "2026-04-21T06:37:00Z",
+      "events_in": 15,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 15,
+      "note": "news_flash burst 15 events \u2014 Iran drone strikes on US vessels (Tasnim) confirmed post Touska seizure. India-US trade deal talks restart. No entry triggers, no trades. Gold note MODIFIED; all alerts/queries KEEP."
     }
   ],
   "recent_skips": [
