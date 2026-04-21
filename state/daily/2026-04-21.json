@@ -64,5 +64,16 @@
       "closed": 0,
       "skipped": 8
     }
+  },
+  {
+    "ts_utc": "2026-04-21T15:43:30Z",
+    "trigger": "news_flash_batch",
+    "events_consumed": 15,
+    "event_breakdown": "news_flash(iran_ceasefire 2 + hormuz_strait 4 + us_iran_military 9)",
+    "decision": "ALL SKIP \u2014 dupes of tracked Iran narrative T-~8.3h binary",
+    "trades": 0,
+    "audit_watchlist": "3 level_alerts MODIFY (timing), 9 structure_watch KEEP",
+    "audit_queries": "8 queries KEEP",
+    "broker_state": "$1000 balance, 0 positions (matches state)"
   }
 ]

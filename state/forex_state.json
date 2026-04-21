@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-21T20:32:00Z",
   "regime": "PRE_BINARY_COMPRESSION_CONFLICTING_NARRATIVE",
-  "regime_note": "2026-04-21 15:31 UTC - 8 bar_close M15 all SKIP T-~8.5h binary to 0000 GMT Wed Apr 22 Iran deadline. Drift vs 15:15: USDJPY 159.307->159.422 (+11.5p AT 159.45 fade \u2014 3p below, intervention zone armed), OIL 88.574->89.648 (+107p SPIKE near 90 fade 35p below), AUDUSD 0.71692->0.71617 (-7.5p 91p above 0.707), GOLD 4748->4743.15 (-5 risk-off mild), USDCAD 1.36420->1.36494 (+7p), EURUSD/GBPUSD/USDCHF mild. Not trading \u2014 binary T-~8.5h, news ambiguous (Iran pullout vs attending), zones armed but need rejection confirmation. Price_refs refreshed. 3 level_alerts MODIFY, 9 structure_watch KEEP, 8 queries KEEP. Broker $1000/0 pos matches. 8 events consumed. 0 trades.",
+  "regime_note": "2026-04-21 15:43 UTC \u2014 15 news_flash all SKIP (iran_ceasefire 2, hormuz_strait 4, us_iran_military 9). Same narrative: Trump refuses ceasefire extend / 'expects to be bombing' / Tuesday Islamabad talks / US seized TOUSKA / Iran closes Hormuz / 27 vessels redirected. Binary T-~8.3h to 0000 GMT Wed Apr 22. No price/news fetch (budget $1.05). Broker $1000/0 pos matches state. 3 level_alerts MODIFY (timing refreshed T-~8.3h), 9 structure_watch KEEP, 8 queries KEEP. 0 trades (binary zero-edge).",
   "open_positions": [],
   "watchlist": [
     {
@@ -350,7 +350,7 @@
   "last_updated": "2026-04-21T13:45:00Z",
   "capital_base": 1000.0,
   "last_tick_ts_utc": "2026-04-21T13:45:00Z",
-  "last_tick_utc": "2026-04-21T15:32:52.147885Z",
+  "last_tick_utc": "2026-04-21T15:43:30Z",
   "last_scan_ts": "2026-04-21T01:30:00Z",
   "tick_log": [
     {

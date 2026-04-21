@@ -28,14 +28,15 @@
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "buy AUDUSD near 0.707 support on ceasefire-fail spike \u2014 99p above, binary T-~8.75h to 0000 GMT Wed Apr 22",
+      "note": "buy AUDUSD near 0.707 support on ceasefire-fail spike \u2014 last 0.71617 (~91p above), binary T-~8.3h to 0000 GMT Wed Apr 22. Wait for rejection candle on 0.707 touch; skip naked level hits.",
       "current_price_ref": 0.71692,
       "price_ref": {
         "ts": "2026-04-21T15:32:37.999485Z",
         "price": 0.71617
       },
       "last_updated": "2026-04-21T15:32:37.999485Z",
-      "proximity": "91p above 0.707 buy zone \u2014 drifting down mildly"
+      "proximity": "91p above 0.707 buy zone \u2014 drifting down mildly",
+      "updated_utc": "2026-04-21 15:43 UTC"
     },
     {
       "id": "usdjpy_intervention_fade_zone",
@@ -44,14 +45,15 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "sell USDJPY at 159.45 fade \u2014 only 14p below (VERY close), H1 bull FVG 159.20-159.28 just mitigated, BoJ intervention tail risk, binary T-~8.75h",
+      "note": "sell USDJPY 159.45 intervention fade \u2014 last 159.422 (only 3p below, zone armed), H1 bull FVG 159.20-159.28 mitigated, BoJ/MoF tail risk, binary T-~8.3h. Need rejection wick on 159.45 touch.",
       "current_price_ref": 159.307,
       "price_ref": {
         "ts": "2026-04-21T15:32:37.999485Z",
         "price": 159.422
       },
       "last_updated": "2026-04-21T15:32:37.999485Z",
-      "proximity": "AT ZONE \u2014 3p below 159.45 fade. Not trading (binary T-~8.5h, news ambiguous). Alert armed if clean rejection wick forms."
+      "proximity": "AT ZONE \u2014 3p below 159.45 fade. Not trading (binary T-~8.5h, news ambiguous). Alert armed if clean rejection wick forms.",
+      "updated_utc": "2026-04-21 15:43 UTC"
     },
     {
       "id": "oil_crude_escalation_90",
@@ -60,14 +62,15 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "sell OIL 90 fade on ceasefire hold \u2014 1.43 below (M15 bullish BOS 83 bars ago, creep continuing), binary T-~8.75h, needs deal clarity",
+      "note": "sell OIL 90 fade on ceasefire hold \u2014 last 89.648 (35p below, M15 bullish BOS creep continuing \u2014 spike ~107p this tick vs 15:15), binary T-~8.3h, needs deal clarity. If breaks 90 on Iran-hold news, switch to momentum buy.",
       "current_price_ref": 88.574,
       "price_ref": {
         "ts": "2026-04-21T15:32:37.999485Z",
         "price": 89.648
       },
       "last_updated": "2026-04-21T15:32:37.999485Z",
-      "proximity": "VERY close \u2014 35p below 90 fade, +107p in 15min spike. Not trading (binary T-~8.5h). Wait for rejection confirmation if 90 tested."
+      "proximity": "VERY close \u2014 35p below 90 fade, +107p in 15min spike. Not trading (binary T-~8.5h). Wait for rejection confirmation if 90 tested.",
+      "updated_utc": "2026-04-21 15:43 UTC"
     }
   ],
   "structure_watch": [
@@ -138,5 +141,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-21T15:15:00Z"
+  "last_updated_utc": "2026-04-21 15:43 UTC"
 }
