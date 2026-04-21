@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T15:45:00+00:00",
-  "pruned_at": "2026-04-21T15:45:00+00:00",
-  "pruned_by": "15:45 UTC tick (6 bar_close M15 all SKIP T-~8.25h binary to 0000 GMT Wed Apr 22 Iran deadline). Drift vs 15:31: GOLD 4745.835 (-2.4, bear FVG 4745.78-4769.95 mitigated, bear OB 4791.95-4798.16 16 bars ago), OIL 89.75 (+10p mild creep vs 15:31 but 25p below 90 fade — VERY close, bull FVG 88.91-89.548 UNMITIGATED 2 bars ago, bull BOS 85 bars ago), USDCAD 1.36466 (flat), EURUSD 1.174825 (flat, bear OB 1.17861-1.17912 67 bars ago), GBPUSD 1.350845 (flat), USDCHF 0.78012 (flat, bull FVG 0.77916-0.77931 unmitigated 4 bars ago). No AUDUSD/USDJPY M15 bar_close this tick — last known 0.71617 / 159.422. No news fetch (budget $1.02 remaining, prior tick dupes, drift modest). 3 level_alerts MODIFY (refreshed price_refs + T-8.25h proximity — oil 25p below 90 fade), 9 structure_watch KEEP, 8 queries KEEP. Broker $1000/0 pos matches. 6 events consumed. 0 trades (binary T-~8.25h zero edge).",
+  "last_updated_by_claude": "2026-04-21T16:00:00+00:00",
+  "pruned_at": "2026-04-21T16:00:00+00:00",
+  "pruned_by": "16:00 UTC tick (2 bar_close M15 AUDUSD+USDJPY both SKIP T-~8h binary to 0000 GMT Wed Apr 22 Iran deadline). Fresh prices: AUDUSD 0.71634 bid (+1.7p vs 15:31, -0.18% day, 93p above 0.707 zone), USDJPY 159.382 bid (-4p vs 15:45, +0.37% day high 159.439, 7p below 159.45 fade — still armed), OIL/GOLD/etc no bar_close this tick. No news fetch (budget $1.14 remaining, prior ticks dupe-saturated, drift modest). 3 level_alerts MODIFY (refreshed price_refs + T-~8h timing), 9 structure_watch KEEP, 8 queries KEEP. Broker $1000/0 pos matches state. 2 events consumed. 0 trades (binary T-~8h zero edge — need catalyst confirmation on deadline).",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -28,15 +28,15 @@
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "buy AUDUSD near 0.707 support on ceasefire-fail spike — last 0.71617 (~91p above), binary T-~8.25h to 0000 GMT Wed Apr 22. Wait for rejection candle on 0.707 touch; skip naked level hits.",
-      "current_price_ref": 0.71692,
+      "note": "buy AUDUSD near 0.707 support on ceasefire-fail spike — last 0.71634 (~93p above), binary T-~8h to 0000 GMT Wed Apr 22. Wait for rejection candle on 0.707 touch; skip naked level hits.",
+      "current_price_ref": 0.71634,
       "price_ref": {
-        "ts": "2026-04-21T15:32:37.999485Z",
-        "price": 0.71617
+        "ts": "2026-04-21T16:00:03Z",
+        "price": 0.71634
       },
-      "last_updated": "2026-04-21T15:32:37.999485Z",
-      "proximity": "91p above 0.707 buy zone — last read 0.71617 (no M15 bar_close this tick)",
-      "updated_utc": "2026-04-21 15:45 UTC"
+      "last_updated": "2026-04-21T16:00:03Z",
+      "proximity": "93p above 0.707 buy zone — last read 0.71634 bid (M15 bar_close fired, -0.18% day, no structural change)",
+      "updated_utc": "2026-04-21 16:00 UTC"
     },
     {
       "id": "usdjpy_intervention_fade_zone",
@@ -45,15 +45,15 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "sell USDJPY 159.45 intervention fade — last 159.422 (only 3p below, zone armed), H1 bull FVG 159.20-159.28 mitigated, BoJ/MoF tail risk, binary T-~8.25h. Need rejection wick on 159.45 touch.",
-      "current_price_ref": 159.307,
+      "note": "sell USDJPY 159.45 intervention fade — last 159.382 (7p below, day high 159.439 touched then rejected, zone armed), H1 bull FVG 159.20-159.28 mitigated, BoJ/MoF tail risk, binary T-~8h. Need rejection wick on 159.45 touch.",
+      "current_price_ref": 159.382,
       "price_ref": {
-        "ts": "2026-04-21T15:32:37.999485Z",
-        "price": 159.422
+        "ts": "2026-04-21T16:00:05Z",
+        "price": 159.382
       },
-      "last_updated": "2026-04-21T15:32:37.999485Z",
-      "proximity": "AT ZONE — 3p below 159.45 fade (no M15 bar_close this tick). Not trading (binary T-~8.25h, news ambiguous). Alert armed if clean rejection wick forms.",
-      "updated_utc": "2026-04-21 15:45 UTC"
+      "last_updated": "2026-04-21T16:00:05Z",
+      "proximity": "VERY close — 7p below 159.45 fade, day high 159.439 tested zone already then pulled back. Not trading (binary T-~8h, news ambiguous). Alert armed if clean rejection wick forms.",
+      "updated_utc": "2026-04-21 16:00 UTC"
     },
     {
       "id": "oil_crude_escalation_90",
@@ -62,15 +62,15 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "sell OIL 90 fade on ceasefire hold — last 89.75 (25p below, M15 bull FVG 88.91-89.548 UNMITIGATED 2 bars ago, bullish BOS 85 bars ago), +10p since 15:31, binary T-~8.25h, needs deal clarity. If breaks 90 on Iran-hold news, switch to momentum buy.",
+      "note": "sell OIL 90 fade on ceasefire hold — last 89.75 (25p below, M15 bull FVG 88.91-89.548 UNMITIGATED, bullish BOS 85 bars ago), no OIL bar_close this tick, binary T-~8h, needs deal clarity. If breaks 90 on Iran-hold news, switch to momentum buy.",
       "current_price_ref": 89.75,
       "price_ref": {
         "ts": "2026-04-21T15:45:18Z",
         "price": 89.75
       },
-      "last_updated": "2026-04-21T15:45:18Z",
-      "proximity": "VERY close — 25p below 90 fade, +10p mild creep vs 15:31. Not trading (binary T-~8.25h). Wait for rejection confirmation if 90 tested.",
-      "updated_utc": "2026-04-21 15:45 UTC"
+      "last_updated": "2026-04-21T16:00:00Z",
+      "proximity": "VERY close — 25p below 90 fade, no M15 bar_close this tick (last 89.75 at 15:45). Not trading (binary T-~8h). Wait for rejection confirmation if 90 tested.",
+      "updated_utc": "2026-04-21 16:00 UTC"
     }
   ],
   "structure_watch": [
