@@ -149,7 +149,7 @@
         "telegram_on_trade": true,
         "telegram_chat_ids": "6838758759,849258319"
     },
-    "last_tick_ts": "2026-04-21T05:33:00Z",
+    "last_tick_ts": "2026-04-21T06:17:00Z",
     "tracker": [
         {
             "situation": "US Navy Blockade of Iran \u2014 day 4",
@@ -372,6 +372,14 @@
         {
             "ts_utc": "2026-04-21T05:39:09.646128Z",
             "summary": "05:37 UTC \u2014 15 news_flash consumed (hormuz/opec/us_tariff backlog), 0 trades, oil_crude MODIFIED (price $86.27\u2192$88.26), 4 alerts KEEP, 9 structure_watch KEEP, 8 queries KEEP"
+        },
+        {
+            "ts_utc": "2026-04-21T06:17:00Z",
+            "events_in": 16,
+            "opened": 0,
+            "closed": 0,
+            "skipped": 16,
+            "note": "16 bar_close heartbeat (H1+M15 across 8 pairs) all SKIP \u2014 no level hits, no structure shifts. Broker $1000 flat 0 pos reconciled. Last full news sweep 06:07 UTC (9 min ago) \u2014 skipped fresh web search (budget + no new data window). Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM intact, ceasefire expires TODAY, Vance/Witkoff/Kushner flying Islamabad. 5 level_alerts + 9 structure + 8 queries all KEEP."
         }
     ],
     "recent_skips": [
