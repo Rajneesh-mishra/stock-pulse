@@ -447,6 +447,19 @@
       "new_intel": "ceasefire expires 0000 GMT WED Apr 22 (corrected); Euronews Iran pulled out of Islamabad post vessel seizure; Bloomberg oil -1.1% on signs Iran will attend; Trump says extension highly unlikely",
       "positions": 0,
       "pnl": 0
+    },
+    {
+      "t": "2026-04-21T12:16:00+05:30",
+      "trigger": "level_enter_refire",
+      "instrument": "GOLD",
+      "events_processed": 1,
+      "trades": {
+        "opened": 0,
+        "closed": 0,
+        "skipped": 1
+      },
+      "summary": "GOLD zone re-fire 4780.87 SKIP (3rd re-fire same 30min zone). No M15 bull BOS, gold -0.79%, tape pricing deal optimism. Ceasefire T-12h. No watchlist/query changes.",
+      "audit": "5 level_alerts KEEP, 9 structure_watch KEEP, 8 queries KEEP"
     }
   ],
   "entries": [

@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-21T06:37:00Z",
   "regime": "PRE_BINARY_COMPRESSION_DEAL_OPTIMISM",
-  "regime_note": "2026-04-21 06:37 UTC \u2014 15 news_flash events (iran_ceasefire 1, us_iran_military 8, fed_fomc 2, us_tariff 4). 0 level/structure/bar_close events, 0 trades, broker unchanged 0 pos $1000. MATERIAL INTEL (Anadolu/TRT/Fox/NBC/CNN web-confirmed): Iran launched DRONE STRIKES on US vessels Sun Apr 19 retaliating USS Spruance seizure of M/V Touska in Gulf of Oman. Tasnim confirms Iranian drone deployment; US CENTCOM confirms seizure but has NOT confirmed any vessels hit. Iran not yet formally agreed Islamabad talks resume. Escalation ladder one rung higher (threat\u2192kinetic) \u2014 but tape still pricing deal optimism (oil -1.1%, USD bid, gold -0.79%). Also BusinessLine Apr 21: India-US bilateral trade deal talks resumed on finer details (stock-pulse side, not forex-pair direct). Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM intact but escalation tilt stronger. All alerts KEEP numerically, gold note MODIFIED to reflect kinetic action. All 8 news queries KEEP \u2014 each caught real stories.",
+  "regime_note": "2026-04-21 06:44 UTC \u2014 1 GOLD level_enter re-fire 4780.87 (3rd re-fire of same zone inside 30min) SKIP, same thesis as 06:22/06:04: no M15 bull BOS, gold -0.79% day on USD bid, tape pricing DEAL optimism (oil -1.1% Bloomberg, USD bounce). Kinetic one rung hotter Tue (Tasnim drones on US vessels unconfirmed by CENTCOM), ceasefire T-~12h (0000 GMT WED Apr 22). 0 trades, broker unchanged 0 pos $1000. Binary catalyst pattern: wait M15 bull BOS + rejection wick on retest OR news flash (US vessel hit confirmation / Iran talks withdrawal / strike on US assets confirmed). No change to watchlist or queries since 06:37 tick \u2014 all KEEP (5 level_alerts, 9 structure_watch, 8 queries).",
   "open_positions": [],
   "watchlist": [
     {
@@ -423,8 +423,7 @@
   ],
   "last_tick_summary": "05:33 UTC \u2014 8 M15 bar_close heartbeat all SKIP. 0 news_flash. Broker $1000 flat 0 pos. Web: Iran ceasefire T-0h Apr 21 \u2014 no deal, Iran refusing talks but delegation rumored Tue. WTI ~$86.27 (down from $88.50) continues fade-escalation. Oil alert MODIFIED new price. All else KEEP.",
   "last_scan": {
-    "timestamp": "2026-04-21T11:05:00+05:30",
-    "trigger": "bar_close_heartbeat"
+    "timestamp": "2026-04-21T12:16:00+05:30"
   },
   "last_updated": "2026-04-21T05:33:00Z",
   "capital_base": 1000.0,
