@@ -734,6 +734,15 @@
       "events": 8,
       "trades": 0,
       "note": "8 M15 bar_close all SKIP. OIL 86.877 -68p pullback from session hi 87.617 (profit-taking), USDJPY 159.168 +6.6p continuing bounce 0.28 below 159.45, AUDUSD 0.71606 +2.5p 90p>0.707, GOLD 4786.61 +2.75p, EUR/CAD/GBP/CHF flat. T-~11.3h to 0000 GMT Wed Apr 22. News: Tehran skip Rd2, 'childish', vessel standoff, won't negotiate under threat. 3 MODIFY watchlist price refresh, 8 queries KEEP, broker $1000/0 pos matches."
+    },
+    {
+      "ts": "2026-04-21T12:40:00Z",
+      "trigger": "news_flash x15 (iran_ceasefire 9 + us_iran_military 6)",
+      "action": "SKIP all",
+      "summary": "Narrative split: AP/DailyExpress confirm Iran attendance Rd2 talks; Euronews counters no Iran delegation sent yet. TOUSKA ship seizure ongoing. T-~11.3h to 0000 GMT Wed Apr 22 ceasefire expiry. Priced-in-optimism holds but uncertainty amplified. Zero trade edge (binary event). Broker $1000/0 matches state.",
+      "positions": 0,
+      "events": 15,
+      "alerts_audit": "3 level_alerts KEEP, 9 structure_watch KEEP, 8 news_queries KEEP"
     }
   ],
   "entries": [

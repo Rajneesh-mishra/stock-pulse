@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-21T12:35:00Z",
-  "regime": "PRE_BINARY_COMPRESSION_RISKOFF_CREEP",
-  "regime_note": "2026-04-21 12:35 UTC - 8 M15 bar_close all SKIP, T-~11.3h to 0000 GMT Wed Apr 22. OIL notable pullback 87.560\u219286.877 (-68p from session hi 87.617, profit-taking), USDJPY 159.168 continuing bounce (+6.6p 0.28 below 159.45 fade), AUDUSD 0.71606 (+2.5p still 90p >0.707), GOLD 4786.61 (+2.75p mild bounce <4800), EUR/CAD/GBP/CHF all <3p flat. WebSearch CNBC/Euronews/CNN Apr 21: 'talks in limbo', Iran won't negotiate 'under threat', vessel standoff, BusinessToday 'Tehran skip Rd2 calls demands childish'. 3 MODIFY alerts price refresh, 8 queries KEEP, 9 structure_watch KEEP, broker $1000/0 pos matches, no trades (binary no edge).",
+  "last_tick": "2026-04-21T12:40:00Z",
+  "regime": "PRE_BINARY_COMPRESSION_CONFLICTING_NARRATIVE",
+  "regime_note": "2026-04-21 12:40 UTC - 15 news_flash all Iran-themed (9 iran_ceasefire + 6 us_iran_military Touska dupes), all SKIP. Narrative genuinely SPLIT this batch: AP/DailyExpress/CryptoBriefing say US+Iran 'confirm attendance / will return' for Rd2 Islamabad talks; Euronews counters 'No Iran delegation sent yet'; Trump 'Iran violated ceasefire numerous times'; Qatar backs EXTENSION if no deal; China Daily 'Hormuz tensions cloud talks'. TOUSKA seizure + 27 ships turned back ongoing. T-~11.3h to 0000 GMT Wed Apr 22 expiry. Market priced-in-optimism holds. Zero new trade edge (binary uncertainty amplified, not resolved). Broker $1000/0 pos matches state. 3 level_alerts KEEP (no price action this tick: OIL 86.877, USDJPY 159.168, AUDUSD 0.71606). 9 structure_watch KEEP. 8 news_queries KEEP (iran_ceasefire firing as designed, us_iran_military cooldown 60min holding, both queries capturing walkout-vs-attend split accurately).",
   "open_positions": [],
   "watchlist": [
     {
@@ -319,7 +319,9 @@
   ],
   "last_tick_summary": "2026-04-21 12:30 UTC - 12 bar_close (3xH1, 1xH4, 8xM15) all SKIP, T-~11.3h to 0000 GMT Wed Apr 22 ceasefire expiry. Mild risk-on reversal vs 12:25: GOLD 4783.86 (-7.9p reversing lower), AUDUSD 0.71581 (-6.9p but 74p above 0.707), USDJPY 159.102 (+5.4p bounce 0.35 below 159.45 fade), OIL 87.56 flat new session hi 87.617. EUR/CAD/GBP/CHF <6p drift. News unchanged: Iran MFA no plans Rd2, vessels stranded, Trump bombs threat, extension 'highly unlikely'. Broker $1000/0 pos matches. 3 MODIFY (all alerts price refresh), 8 queries KEEP, 9 structure_watch KEEP, 12 events consumed, 0 trades (binary no edge).",
   "last_scan": {
-    "timestamp": "2026-04-21T17:25:00+05:30"
+    "timestamp": "2026-04-21T12:40:00Z",
+    "events_processed_last_tick": 15,
+    "events_acted_last_tick": 0
   },
   "last_updated": "2026-04-21T11:24:02.916114Z",
   "capital_base": 1000.0,
