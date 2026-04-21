@@ -610,6 +610,30 @@
       "watchlist_changes": "MODIFY usdjpy_intervention_fade_zone + oil_crude_escalation_90 notes (+Islamabad tail, +mine-laying). audusd_breakdown_trigger KEEP.",
       "audit": "3 level_alerts (2 MODIFY, 1 KEEP) + 9 structure_watch KEEP + 8 news queries KEEP",
       "broker": "$1000 balance / 0 positions (matches state)"
+    },
+    {
+      "tick_utc": "2026-04-21T09:10:00Z",
+      "trigger": "bar_close_heartbeat",
+      "events_processed": 17,
+      "events_type": "bar_close (8 H1 + 8 M15 + BTC H1)",
+      "decisions": "all SKIP \u2014 no BOS/CHoCH flips, no level touches",
+      "prices": {
+        "AUDUSD": 0.715,
+        "USDJPY": 159.245,
+        "GOLD": 4785.92,
+        "OIL_CRUDE": 87.146,
+        "USDCAD": 1.3661,
+        "EURUSD": 1.1758,
+        "GBPUSD": 1.35,
+        "USDCHF": 0.78057,
+        "BTC": 76448
+      },
+      "news": "Iran MFA confirms no Islamabad attendance; Vance 21hr no-agreement prior round; Trump extension 'highly unlikely'; Brent $95 per Euronews",
+      "audit_watchlist": "audusd_breakdown_trigger=MODIFY(note refresh w/ Iran-no-show) usdjpy_intervention_fade_zone=MODIFY(price 159.245 0.20 from zone) oil_crude_escalation_90=MODIFY(WTI $87 Brent $95 + Iran walkout)",
+      "audit_queries": "all 8 KEEP",
+      "trades": 0,
+      "positions_open": 0,
+      "balance": 1000.0
     }
   ],
   "entries": [

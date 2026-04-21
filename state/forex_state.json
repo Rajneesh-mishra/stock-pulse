@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-21T08:41:00Z",
   "regime": "PRE_BINARY_COMPRESSION_DEAL_OPTIMISM",
-  "regime_note": "2026-04-21 08:55 UTC \u2014 tick processed 8 M15 bar_close events, all SKIP (trend unknown on 6/8, no BOS/CHoCH, no level touches). Prices: AUDUSD 0.71551 (bear FVG mitigated), USDJPY 159.167 (bearish BOS 158.728 102 bars ago, bull FVG 159.022-159.115 unmitigated; still below 159.45 fade zone), GOLD 4788.55 (capped below unmitigated bear FVG 4800.03-4800.50 22 bars), OIL_CRUDE 86.364 (bearish BOS 86.621 99 bars ago), USDCAD 1.3659, EURUSD 1.1763, GBPUSD 1.35046, USDCHF 0.78036. NEWS NEW: Vance+US officials flying to Islamabad Tue Apr 21 for 2nd-round talks ahead of Wed 00:00 GMT expiry (de-escalation tail, T-~15h); IRGC 'target any ship' + sea-mines + 21 merchant attacks (escalation tail). Net thesis intact 2-way-wider tail \u2014 MODIFY usdjpy & oil_crude watchlist notes, KEEP all 3 level_alerts + 9 structure_watch + 8 news queries. 0 trades, broker $1000/0pos matches, daily_pnl 0, consecutive_losses 0.",
+  "regime_note": "2026-04-21 09:09 UTC \u2014 17 bar_close events (8 H1 + 8 M15 + 1 BTC H1) all SKIP. Prices: AUDUSD 0.7150 (H1 bullish but H1 bear FVG 0.71578-0.71593 unmit; M15 trend unknown), USDJPY 159.245 (bearish M15 BOS 103 bars ago, pushing into 159.45 fade zone only 0.20 away), GOLD 4785.92 (capped below unmit 4800 bear FVG), OIL_CRUDE 87.146 M15 / 87.282 H1 (+0.8 vs prior \u2014 Brent $95 per Euronews), USDCAD 1.3661, EURUSD 1.1758, GBPUSD 1.3500, USDCHF 0.78057, BTC 76448. NEWS: Iran MFA Baghaei confirms 'no plans to send negotiators' to Islamabad, says US 'violated ceasefire from beginning' (Hormuz blockade + overnight container-ship seizure). Vance: 'no agreement after 21 hrs' in prior round. Trump: extension 'highly unlikely'. De-escalation tail thinning fast; escalation dominant. T-~15h to 00:00 GMT Wed ceasefire expiry. 3 watchlist alerts MODIFY (price+context refresh), all 8 queries KEEP. 0 trades, broker $1000/0pos matches.",
   "open_positions": [],
   "watchlist": [
     {
@@ -444,7 +444,7 @@
   "last_updated": "2026-04-21T07:34:00Z",
   "capital_base": 1000.0,
   "last_tick_ts_utc": "2026-04-21T05:39:09.646128Z",
-  "last_tick_utc": "2026-04-21T14:06:00Z",
+  "last_tick_utc": "2026-04-21T09:10:00Z",
   "last_scan_ts": "2026-04-21T01:30:00Z",
   "tick_log": [
     {
