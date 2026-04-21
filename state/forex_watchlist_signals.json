@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T11:07:00+05:30",
-  "pruned_at": "2026-04-21T11:07:00+05:30",
-  "pruned_by": "05:37 UTC tick — 15 news_flash (6 hormuz_strait recycled, 6 opec_supply backlog, 3 us_tariff India-US trade talks) all already-known themes, no new action. Broker $1000 flat 0 pos reconciled. Web search: WTI $88.26 (CNBC) up from $86.27 intraday, Brent $94.87, Iran ceasefire expires TODAY Tue Apr 21, Trump 'deal still possible'. Crude firmed slightly into expiry but still below pre-ceasefire $94.41. 4/5 alerts KEEP, 1 MODIFY (oil_crude price $86.27→$88.26). All 9 structure_watch KEEP. All 8 news queries KEEP.",
+  "last_updated_by_claude": "2026-04-21T11:20:00+05:30",
+  "pruned_at": "2026-04-21T11:20:00+05:30",
+  "pruned_by": "05:47 UTC tick — 8 M15 bar_close heartbeats all majors, 0 news, 0 pos flat. Web search ratifies escalation flip: Brent +5.58% $95.42, WTI +6% toward $89 (Fortune/OilPrice/TradingEconomics Apr 20-21), US seized Iranian ship weekend, Iran re-closed Hormuz+fired on vessels, US fired on Iran-linked ship Gulf of Oman, ceasefire T-0 today Trump 'extension highly unlikely', Vance enroute Islamabad after Iran last-min clearance. Fade-escalation hypothesis BROKEN — market ratifying war premium. 5/5 alerts MODIFIED (thesis flipped from fade to escalate). Structure_watch KEEP 9. News queries KEEP 8.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -27,7 +27,7 @@
       "level": 0.707,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break of 0.707 = prior pivot gone. Short on retest of 0.707 from below. SL 0.713, TP 0.700. Risk-off + AUD first-to-bleed. Last 0.7169 (62p above) with bull BOS — needs regime shift (Iran ceasefire Wed Apr 22 T-~18h could flip it)."
+      "note": "Break of 0.707 = prior pivot gone. Short on retest from below. SL 0.713, TP 0.700. Risk-off + AUD first-to-bleed. Catalyst STRENGTHENING Apr 21: Hormuz re-closed, US-Iran naval clashes, Brent +5.58%, WTI +6%, ceasefire T-0 today Trump 'extension highly unlikely'. AUD should bleed on confirmed escalation. Need M15 bear BOS + rejection wick on retest. Conv 3."
     },
     {
       "id": "usdjpy_riskoff_break",
@@ -35,7 +35,7 @@
       "level": 158.5,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break 158.50 = risk-off yen flight confirmed AND aligns with MoF pain threshold which per FXEmpire/MUFG (Apr 16) tightened to 158 (vs 160 prior). Short on retest from below. Last 158.981 (48p above trigger; session low 158.695 — missed by 19p). Catalysts: Trump 'extension highly unlikely', Iran 'no plans to reengage', Vance/Witkoff/Kushner→Pakistan Tue. NEW Apr 21: Hormuz headlines — CNBC/Guardian/WaPo/CNN/Jerusalem Post report Iran reclosed Strait + fired on vessels incl Indian-flagged ship. BUT USDJPY unchanged (+0.12%) — market not ratifying risk-off yen flight YET. Need actual break to confirm. SL 159.20, TP 157.00. If 159.20 breaks without intervention, re-evaluate."
+      "note": "Break 158.50 = risk-off yen flight AND aligns w/ MoF pain threshold 158 (FXEmpire/MUFG Apr 16). Short on retest from below. Catalyst RATIFIED Apr 21: Hormuz re-closed, US-Iran kinetic events, crude +6%, ceasefire expires TODAY Trump 'highly unlikely' extension — classic risk-off yen bid setup. Market had not ratified previous tick but conditions sharper now. SL 159.20, TP 157.00. Conv 4 (was 3). If 159.20 breaks without intervention re-evaluate."
     },
     {
       "id": "oil_crude_escalation_90",
@@ -43,7 +43,7 @@
       "level": 90.0,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
-      "note": "WTI last $88.26 (CNBC Apr 21 05:37 UTC; up from $86.27 earlier intraday; Brent $94.87; 1.74 below 90 trigger). Ceasefire expires TODAY Tue Apr 21, Trump 'deal still possible'. Crude firming slightly into expiry but still below pre-ceasefire $94.41 reference (Apr 7 one-day -16% plunge on ceasefire announcement). Alert armed ABOVE 90 for break-retest + M15 bull BOS. Escalation scenario: talks collapse → 90 → 94 → 98. Default side right now = FADE escalation (market leaning that way). SL 87.50, TP1 94, TP2 98. Conv 3."
+      "note": "WTI ~$89 (Fortune/OilPrice Apr 20-21; +6% d/d), Brent $95.42 (+5.58% TradingEconomics). Thesis FLIPPED from fade to ESCALATE: US seized Iranian ship weekend, Iran re-closed Hormuz, US fired on Iran-linked vessel Gulf of Oman, ceasefire T-0 today Trump says extension 'highly unlikely'. Break-retest long at 90 with M15 bull BOS. Escalation path: 90→94→98. Default side = LONG escalation. SL 87.50, TP1 94, TP2 98. Conv 4."
     },
     {
       "id": "gold_escalation_buy_zone",
@@ -52,7 +52,7 @@
       "zone_high": 4810.0,
       "emit_on": "enter",
       "cooldown_sec": 900,
-      "note": "Safe-haven long on pullback into 4780-4810 zone. Last 4798.75 NOW IN ZONE (mid of 4780-4810; day high 4833.07, day low 4736.99; -0.46%). Daemon did not fire level_enter this tick — either already-in-zone at bar open or cooldown. Needs M15 bull BOS + rejection wick + catalyst (Iran ceasefire Apr 22 Wed expiry T-~18h — Trump 'highly unlikely' extension, Iran refusing talks) before entry. Skip until confluence confirmed. If breaks 4835 cleanly consider MODIFY to chase. SL 4745, TP 4900/5000. Conv 4."
+      "note": "Safe-haven long on pullback into 4780-4810. Catalyst STRENGTHENING Apr 21: oil +6%, Hormuz re-closed, US-Iran kinetic, ceasefire T-0. Gold should bid on confirmed escalation + safe-haven flight. Needs M15 bull BOS + rejection wick on zone touch. If breaks 4835 cleanly chase via MODIFY. SL 4745, TP 4900/5000. Conv 5 (was 4)."
     },
     {
       "id": "usdcad_short_fvg_retest",
@@ -61,7 +61,7 @@
       "zone_high": 1.36612,
       "emit_on": "enter",
       "cooldown_sec": 1800,
-      "note": "H1 bear FVG unmitigated after bear BOS 30 bars ago. Short on retest ONLY IF (a) M15 bearish BOS + rejection wick inside zone AND (b) oil spikes or risk-off news catalyst confirms CAD bid > USD safehaven. Regime ESCALATION currently contradicts so default=SKIP. SL 1.3685, TP1 1.3600, TP2 1.3550. Conv 3 (needs catalyst to become actionable)."
+      "note": "H1 bear FVG unmitigated after bear BOS. CAD bid thesis ACTIVATED: crude +6% Apr 21, Hormuz re-closed. Short on retest IF M15 bear BOS + rejection wick inside zone. Oil catalyst now live (vs prior tick 'needs catalyst'). SL 1.3685, TP1 1.3600, TP2 1.3550. Conv 4 (was 3 — catalyst now present)."
     }
   ],
   "structure_watch": [

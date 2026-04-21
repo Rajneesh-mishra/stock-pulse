@@ -388,6 +388,16 @@
       "events_processed": 15,
       "trades": 0,
       "summary": "15 news_flash (6 hormuz_strait recycled, 6 opec_supply, 3 us_tariff) all already in existing theses; WTI $88.26 firmed from $86.27, Brent $94.87, Iran ceasefire T-0 expires TODAY Trump 'deal still possible'; 0 trades, oil_crude alert price MODIFIED, rest KEEP"
+    },
+    {
+      "ts_utc": "2026-04-21T05:47Z",
+      "trigger": "auto_forex",
+      "events_consumed": 8,
+      "events_types": "8x bar_close M15",
+      "trades": 0,
+      "positions_open": 0,
+      "daily_pnl": 0.0,
+      "note": "8 M15 bar_close heartbeat all majors, thesis FLIP: Brent +5.58% $95.42, WTI ~$89 +6% on US-Iran kinetic escalation, Hormuz re-closed, ceasefire T-0 expiry today Apr 21. Fade-escalation hypothesis broken. 5 alerts MODIFIED (oil_crude flip FADE\u2192LONG conv 4, usdcad conv 4, gold conv 5, usdjpy conv 4, audusd note). 9 structure_watch KEEP. 8 news queries KEEP."
     }
   ],
   "entries": [
