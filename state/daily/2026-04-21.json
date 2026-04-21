@@ -278,6 +278,15 @@
       "closed": 0,
       "skipped": 17,
       "summary": "bar_close H1+M15 all majors routine + BTC H1; GOLD 4801 in 4780-4810 zone but composite 10.5 aligned=false SKIP; USDJPY -19.5 44p above 158.50 trigger; 0 pos; all alerts/queries KEEP"
+    },
+    {
+      "ts": "2026-04-21T03:27:00Z",
+      "trigger": "bar_close_m15_batch",
+      "events_processed": 7,
+      "opened": 0,
+      "closed": 0,
+      "skipped_trades": 5,
+      "note": "Routine M15 bar_close heartbeat all majors+metals+crude. USDJPY 158.99 still 48.9p above 158.50. GOLD 4796 in zone but score -2.5. OIL 86.71 bearish. USDCAD 1.36488 below zone. AUDUSD 0.71675 far from trigger. All alerts/queries KEEP. Broker reconciled flat $1000. Iran T-~18h."
     }
   ],
   "entries": [

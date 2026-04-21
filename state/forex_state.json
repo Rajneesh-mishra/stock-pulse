@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-21T03:11:30Z",
+  "last_tick": "2026-04-21T03:27:00Z",
   "regime": "ESCALATION_CONFIRMED_KINETIC_EXCHANGE",
-  "regime_note": "2026-04-21 ~03:11 UTC auto tick \u2014 17 unconsumed all routine bar_close (AUDUSD USDJPY GOLD OIL_CRUDE USDCAD EURUSD GBPUSD USDCHF H1+M15 + BTCUSD H1). USDJPY composite -19.5 aligned=false price 158.944 (44p above 158.50 trigger). GOLD composite 10.5 aligned=false bullish weak \u2014 price 4801.49 IS inside 4780-4810 zone but score too low (need >60 aligned=true) SKIP. OIL 86.63 (3.4 below 90 trigger). USDCAD 1.3647 below 1.36503 zone low. Broker $1000 flat 0 pos reconciled. Regime carried: Iran T~18h Wed-22UTC expiry, Vance\u2192Pak Tue, kinetic exchange confirmed. All 5 level_alerts + 9 structure_watch + 8 news_queries KEEP (audit delta vs 02:56 tick: GOLD entered zone but confluence 10.5 not 60 \u2192 still SKIP; no MODIFY needed). No trade. Flat.",
+  "regime_note": "2026-04-21 ~03:25 UTC auto tick \u2014 7 unconsumed bar_close M15 (AUDUSD USDJPY GOLD OIL_CRUDE USDCAD EURUSD GBPUSD). Broker $1000 flat 0 pos reconciled. USDJPY 158.99 composite -19.5 aligned=false (48.9p above 158.50 trigger) SKIP. GOLD 4796.22 IS INSIDE 4780-4810 zone but composite -2.5 neutral aligned=false (<60 threshold) SKIP. OIL 86.71 score -28.5 bearish (3.29 below 90 cross_up trigger \u2014 moving away) SKIP. USDCAD 1.36488 score -25.5 bearish (1.5p BELOW zone low 1.36503 \u2014 not 'enter') SKIP. AUDUSD 0.71675 score +24.5 bullish (97p above 0.707 breakdown trigger) SKIP. Regime carried: Iran ceasefire Apr 22 22UTC expiry T-~18-19h, Trump 'highly unlikely' extension, Tehran skipped Islamabad round 2. News daemon hourly cap used 15/15 \u2014 no new news_flash this tick. Audit: all 5 level_alerts + 9 structure_watch + 8 news_queries KEEP (no MODIFY needed, price drifts <10p from 03:11 tick). No trade. Flat.",
   "open_positions": [],
   "watchlist": [
     {
