@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T10:22:00+05:30",
-  "pruned_at": "2026-04-21T10:22:00+05:30",
-  "pruned_by": "04:51 UTC tick — 8 bar_close M15 heartbeat-only (all majors). 0 news_flash. Broker $1000 flat 0 pos reconciled. Prices coiling since 04:36 tick: WTI 86.44 (+0.66%) 3.56 below 90 / Gold 4789.89 (-0.64%) NOW AT bottom of 4780-4810 zone day_low 4789.49 / USDJPY 158.958 (+0.11%) 45p above 158.50 / AUDUSD 0.71667 62p above 0.707 / USDCAD 1.36467 session_high 1.36504 JUST touched zone_low 1.36503 (1p retest) but oil flat = no catalyst. Iran ceasefire T-~17h Apr 22 Wed expiry live. All 5 alerts KEEP. All 9 structure_watch KEEP. All 8 news_queries KEEP.",
+  "last_updated_by_claude": "2026-04-21T10:36:00+05:30",
+  "pruned_at": "2026-04-21T10:36:00+05:30",
+  "pruned_by": "05:05 UTC tick — 12 bar_close heartbeat (M15 on AUD/USDJPY/GOLD/OIL/USDCAD + H1+M15 on EUR/GBP/USDCHF + H1 on BTC). 0 news_flash. Broker $1000 flat 0 pos reconciled. Web search clarified Iran ceasefire EXPIRES TODAY Apr 21 Tue (state previously said Apr 22 — corrected). Vance/Witkoff/Kushner expected in Islamabad today, Iran says 'no talks for now'. Weekend: US Navy seized Iranian vessel; Iran vows retaliation. Market still not ratifying escalation — prices unchanged from 04:51: WTI ~86 / Gold ~4790 / USDJPY ~159 / AUDUSD ~0.7167 / USDCAD ~1.3647. All 5 alerts KEEP (no catalyst shift since last tick). All 9 structure_watch KEEP. News queries: iran_ceasefire note TUNED to reflect expiry=today.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
