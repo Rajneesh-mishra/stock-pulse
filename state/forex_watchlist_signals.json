@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T17:55:00+05:30",
-  "pruned_at": "2026-04-21T17:55:00+05:30",
-  "pruned_by": "12:25 UTC tick (15 H4+H1+M15 bar_close all SKIP). RISK-OFF CREEP starting: OIL 87.547 (+19.1c vs 12:10, NEW session hi 87.608, +1.94% day, 2.45 below 90), EURUSD 1.17664 (+6.9p DXY weakness), GOLD 4791.75 (-4.45p <4800 mixed), USDJPY 159.048 (-0.08p flat 0.40 below 159.45 fade), AUDUSD 0.71650 (+1.6p still 95p >0.707), USDCAD 1.36549 (-3.7p), GBPUSD 1.35203, USDCHF 0.77923. WebSearch CNN/Al Jazeera/ABC Apr 21: Iran officially pulled out Islamabad Rd2, state TV 'no delegation departed', Iran REDECLARED Hormuz closure warning ships targeted, hundreds vessels stranded. Trump 'extension highly unlikely'. WH said Vance+Witkoff+Kushner still going to Islamabad. T-~11.5h to 0000 GMT Wed Apr 22. 3 MODIFY (price refresh all 3 alerts), 8 queries KEEP, broker $1000/0 pos matches, no trades (binary event no edge).",
+  "last_updated_by_claude": "2026-04-21T18:00:00+05:30",
+  "pruned_at": "2026-04-21T18:00:00+05:30",
+  "pruned_by": "12:30 UTC tick (12 bar_close H4+H1+M15 all SKIP). Price 5-min drift vs 12:25: OIL 87.560 (+1.3p flat, new hi 87.617 only 1p above prior 87.608), USDJPY 159.102 (+5.4p bounce 0.35 below 159.45), GOLD 4783.86 (-7.9p reverse lower, mild risk-on), AUDUSD 0.71581 (-6.9p toward 0.707 still 74p away), EURUSD 1.17623 (-4.1p), USDCAD 1.36567 (+1.8p), GBPUSD 1.35177, USDCHF 0.77974 (+5.1p). WebSearch CNBC/CNN Apr 20-21: Tehran 'no plans for Rd2', Iran MFA denies Islamabad, vessels stranded, Trump bombs threat extension 'highly unlikely'. T-~11.3h 0000 GMT Wed Apr 22. 3 MODIFY (price refresh all), 8 queries KEEP, broker $1000/0 pos matches, no trades (binary event no edge).",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -27,7 +27,7 @@
       "level": 0.707,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "AUDUSD 0.71650 (+1.6p vs 12:10). Still ~95p above 0.707 breakdown. Armed for risk-off dump on Iran deal failure / Hormuz re-closure. T-~11.5h to 0000 GMT Wed Apr 22. Iran officially pulled out Islamabad Rd2, state TV 'no delegation departed'. Iran redeclared Hormuz closure, vessels stranded."
+      "note": "AUDUSD 0.71581 (-6.9p vs 12:25). Still ~74p above 0.707 breakdown. Armed for risk-off dump on Iran deal failure / Hormuz re-closure. T-~11.3h to 0000 GMT Wed Apr 22. Iran MFA 'no plans for Rd2', vessels stranded, Trump 'bombs highly likely'."
     },
     {
       "id": "usdjpy_intervention_fade_zone",
@@ -36,7 +36,7 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "USDJPY 159.048 flat (-0.08p vs 12:10), 0.40 below 159.45 fade. Armed if bounce back into zone. T-~11.5h to 0000 GMT Wed Apr 22 ceasefire expiry. Yen safe-haven bid if Iran deal fails + Hormuz re-closure holds \u2192 fade setup triggers on bounce."
+      "note": "USDJPY 159.102 (+5.4p vs 12:25), 0.35 below 159.45 fade. Armed if bounce into zone. T-~11.3h to 0000 GMT Wed Apr 22. Yen safe-haven bid if Iran deal fails + Hormuz holds re-closed \u2192 fade triggers on bounce back through 159.45."
     },
     {
       "id": "oil_crude_escalation_90",
@@ -44,7 +44,7 @@
       "level": 90.0,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
-      "note": "Oil 87.547 (+19.1c vs 12:10, NEW session hi 87.608, +1.94% day). 2.45 below 90 escalation trigger. T-~11.5h to 0000 GMT Wed Apr 22. Iran redeclared Hormuz closure, vessels stranded. Trump 'extension highly unlikely'. Risk-off creep live. Armed for gap-up on collapse."
+      "note": "Oil 87.560 (+1.3p vs 12:25, flat near new session hi 87.617, +1.94% day). 2.44 below 90 escalation trigger. T-~11.3h. Iran redeclared Hormuz closure, vessels stranded, Trump extension 'highly unlikely'. Risk-off creep ongoing. Armed for gap-up on collapse."
     }
   ],
   "structure_watch": [
