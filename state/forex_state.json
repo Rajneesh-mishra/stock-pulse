@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-21T01:25:50Z",
   "regime": "ESCALATION_CONFIRMED_KINETIC_EXCHANGE",
-  "regime_note": "2026-04-21 ~01:26 UTC auto heartbeat \u2014 0 pending events (last events consumed at 01:17 tick). Broker $1000 flat 0 pos reconciled. Iran ceasefire Apr 22 Wed expiry T-~19h intact; Trump 'highly unlikely' extension, Vance\u2192Pakistan Tue, Tehran skipped Islamabad round 2 calling US demands 'childish'. All 5 alerts + 9 structure_watch + 8 queries KEEP. Regime KINETIC_EXCHANGE intact.",
+  "regime_note": "2026-04-21 ~01:30 UTC auto tick \u2014 8 bar_close M15 events all SKIP (heartbeat flat-drift, no material delta). Broker $1000 flat 0 pos reconciled. Iran ceasefire Apr 22 Wed expiry T-~18h intact; Trump 'highly unlikely' extension, Vance\u2192Pakistan Tue, Hormuz closed, Tehran skipped round 2. USDJPY 158.941 (44p above 158.50 trigger, MOF verbal threshold 158 live), GOLD 4816.96 (6.96p above 4810 zone top), OIL 86.559 (3.44 below 90 escalation trigger), AUDUSD 0.71806 at day high (50p above 0.707), USDCAD 1.36421 (below FVG zone \u2014 regime ESCALATION contradicts short). All 5 level_alerts + 9 structure_watch + 8 news_queries KEEP. No action.",
   "open_positions": [],
   "watchlist": [
     {
@@ -330,5 +330,6 @@
   "last_updated": "2026-04-21T00:47:30Z",
   "capital_base": 1000.0,
   "last_tick_ts_utc": "2026-04-21T00:18:40Z",
-  "last_tick_utc": "2026-04-21T01:02:00Z"
+  "last_tick_utc": "2026-04-21T01:02:00Z",
+  "last_scan_ts": "2026-04-21T01:30:00Z"
 }

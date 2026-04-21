@@ -173,6 +173,26 @@
       "trigger": "bar_close x12",
       "action": "SKIP_HEARTBEAT",
       "note": "Flat-drift vs 01:02. USDJPY 158.955 -0.7p. GOLD 4814.94 -3.9p. OIL 86.66 +9.8p. EURUSD 1.17824 flat. USDCAD 1.36439 flat (6.4p below zone_low 1.36503). AUDUSD 0.71743 +1.6p. Iran T-~19h no material delta. Broker $1k flat 0 pos. All KEEP."
+    },
+    {
+      "ts_utc": "2026-04-21T01:30:00Z",
+      "trigger": "bar_close M15 x8 auto",
+      "events_processed": 8,
+      "events_acted": 0,
+      "events_skipped": 8,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "summary": "Heartbeat flat-drift. 8 M15 bar_close SKIP. Broker $1000 flat 0 pos. Iran T-~18h Wed intact. All alerts/queries KEEP.",
+      "prices": {
+        "USDJPY": 158.941,
+        "GOLD": 4816.96,
+        "OIL": 86.559,
+        "EURUSD": 1.17843,
+        "AUDUSD": 0.71806,
+        "USDCAD": 1.36421,
+        "GBPUSD": 1.35264,
+        "USDCHF": 0.77855
+      }
     }
   ],
   "entries": [
