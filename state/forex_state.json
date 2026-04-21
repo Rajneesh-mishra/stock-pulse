@@ -429,13 +429,13 @@
       "price": 4809.28
     }
   ],
-  "last_tick_summary": "07:45 UTC heartbeat \u2014 8 M15 bar_close all SKIP, no BOS/CHoCH/level_enter since 07:38 audit, 0 trades, broker $1000/0pos matches, 5+9+8 all KEEP, T-16h ceasefire",
+  "last_tick_summary": "07:57 UTC heartbeat \u2014 8 M15 bar_close all pairs SKIP, no BOS/CHoCH/level_enter, 0 trades, 5+9+8 all KEEP, T-16h ceasefire",
   "last_scan": {
     "timestamp": "2026-04-21T12:16:00+05:30"
   },
   "last_updated": "2026-04-21T07:34:00Z",
   "capital_base": 1000.0,
   "last_tick_ts_utc": "2026-04-21T05:39:09.646128Z",
-  "last_tick_utc": "2026-04-21T07:45:00Z",
+  "last_tick_utc": "2026-04-21T07:57Z",
   "last_scan_ts": "2026-04-21T01:30:00Z"
 }

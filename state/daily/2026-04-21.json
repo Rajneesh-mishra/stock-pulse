@@ -513,6 +513,13 @@
       "events_processed": 8,
       "trades": 0,
       "summary": "8 M15 bar_close SKIP, no delta since 07:38 narrative-collapse audit, 5+9+8 all KEEP"
+    },
+    {
+      "ts": "07:57Z",
+      "type": "heartbeat",
+      "events_processed": 8,
+      "trades": 0,
+      "note": "8 M15 bar_close all SKIP; broker $1000/0 matches state; 5 watchlist + 9 struct_watch + 8 queries all KEEP (delta=0 since 07:45 audit); budget conservation no web searches"
     }
   ],
   "entries": [
