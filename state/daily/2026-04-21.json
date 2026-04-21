@@ -5,5 +5,28 @@
     "summary": "15 news_flash all SKIP (iran/hormuz/touska dupes). Binary T-~9.3h. 0 trades. Broker $1000/0 matches.",
     "trades": 0,
     "events_consumed": 15
+  },
+  {
+    "ts_utc": "2026-04-21T14:49:44.365186+00:00",
+    "trigger": "forex_auto",
+    "events_processed": 8,
+    "events_types": "8x bar_close M15",
+    "trades": 0,
+    "skip_reason": "binary T-~9h Iran deadline 0000 GMT Wed Apr 22 \u2014 no directional edge pre-event",
+    "drift": {
+      "AUDUSD": 0.71769,
+      "USDJPY": 159.153,
+      "GOLD": 4731.57,
+      "OIL_CRUDE": 88.321,
+      "USDCAD": 1.36438,
+      "EURUSD": 1.17654,
+      "GBPUSD": 1.35282,
+      "USDCHF": 0.77954,
+      "BTCUSD": 76305.85
+    },
+    "notable": "GOLD -41p (risk-sentiment mixed + DXY drift), OIL +52p (only 1.68 below 90 fade, creep accelerating)",
+    "watchlist_audit": "3 level_alerts MODIFY (refreshed price_refs + 90-fade proximity), 9 structure_watch KEEP, 8 queries KEEP",
+    "broker_balance": 1000.0,
+    "open_positions": 0
   }
 ]

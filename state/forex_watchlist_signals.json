@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T14:32:00+00:00",
-  "pruned_at": "2026-04-21T14:32:00+00:00",
-  "pruned_by": "14:32 UTC tick (7 bar_close M15 all SKIP T-~9.5h binary). Drift vs 14:16: AUDUSD 0.71799 (+3p, 111p above 0.707), USDJPY 159.152 (+6.7p, 0.30 below 159.45 fade — closing gap), GOLD 4772.97 (-5p mild risk-on intact), OIL 87.805 (+20p, 2.2 below 90 fade — creep continues), USDCAD/EURUSD/GBPUSD flat. No news fetch (budget $1.05). 3 level_alerts MODIFY (refreshed current_price_ref + proximity), 9 structure_watch KEEP, 8 queries KEEP. Broker $1000/0 pos matches. 7 events consumed. 0 trades (binary no edge T-~9.5h).",
+  "last_updated_by_claude": "2026-04-21T14:46:00+00:00",
+  "pruned_at": "2026-04-21T14:46:00+00:00",
+  "pruned_by": "14:46 UTC tick (8 bar_close M15 all SKIP T-~9.2h binary). Drift vs 14:42: AUDUSD 0.71769 (-3p, 108p above 0.707), USDJPY 159.153 (flat, 0.30 below 159.45 fade), GOLD 4731.57 (-41p notable risk-off-ish + DXY drift), OIL 88.321 (+52p — only 1.68 below 90 fade, creep accelerating), USDCAD/EURUSD/GBPUSD/USDCHF flat-to-mild. No news fetch (budget $0.87). 3 level_alerts MODIFY (refreshed current_price_ref), 9 structure_watch KEEP, 8 queries KEEP. Broker $1000/0 pos matches. 8 events consumed. 0 trades (binary no edge T-~9h).",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -27,8 +27,8 @@
       "level": 0.707,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "buy AUDUSD near 0.707 support on ceasefire fail spike — 111p above, binary T-~9.5h",
-      "current_price_ref": 0.71799
+      "note": "buy AUDUSD near 0.707 support on ceasefire fail spike — 108p above, binary T-~9h",
+      "current_price_ref": 0.71769
     },
     {
       "id": "usdjpy_intervention_fade_zone",
@@ -37,8 +37,8 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "sell USDJPY at 159.45 fade — 0.30 below (closing gap), binary T-~9.5h, BoJ intervention tail risk",
-      "current_price_ref": 159.152
+      "note": "sell USDJPY at 159.45 fade — 0.30 below, binary T-~9h, BoJ intervention tail risk",
+      "current_price_ref": 159.153
     },
     {
       "id": "oil_crude_escalation_90",
@@ -46,8 +46,8 @@
       "level": 90.0,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
-      "note": "sell OIL 90 fade on ceasefire hold — 2.2 below (creep continues), binary T-~9.5h, needs deal clarity",
-      "current_price_ref": 87.805
+      "note": "sell OIL 90 fade on ceasefire hold — 1.68 below (creep accelerating), binary T-~9h, needs deal clarity",
+      "current_price_ref": 88.321
     }
   ],
   "structure_watch": [
@@ -118,5 +118,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-21T14:32:00Z"
+  "last_updated_utc": "2026-04-21T14:46:00Z"
 }

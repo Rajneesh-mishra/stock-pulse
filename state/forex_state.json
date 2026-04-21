@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-21T14:02:00Z",
   "regime": "PRE_BINARY_COMPRESSION_CONFLICTING_NARRATIVE",
-  "regime_note": "2026-04-21 14:42 UTC - 15 news_flash all SKIP (iran_ceasefire/hormuz/touska dupes across 6+ prior ticks). New framing: Fortune 'Hormuz resembles combat zone', Barron's 'Oil jumps as Touska seizure jeopardizes peace talks', TRT 'Trump unlikely to extend', MSN 'Tehran calls US demands childish \u2014 to skip Rd2'. Narrative stable: binary T-~9.3h to 0000 GMT Wed Apr 22. No price/news fetch (budget $1.13, duplicates). 3 level_alerts KEEP (AUDUSD 0.707, USDJPY 159.45, OIL 90), 9 structure_watch KEEP, 8 queries KEEP. Broker $1000/0 pos matches state. 15 events consumed. 0 trades (binary no edge T-~9h).",
+  "regime_note": "2026-04-21 14:46 UTC - 8 bar_close M15 all SKIP T-~9h binary. Drift vs 14:42: AUDUSD 0.71769 (-3p 108p above 0.707), USDJPY 159.153 (flat 0.30 below 159.45 fade), GOLD 4731.57 (-41p notable \u2014 risk-sentiment mixed / DXY drift), OIL 88.321 (+52p \u2014 only 1.68 below 90 fade creep accelerating), USDCAD/EURUSD/GBPUSD/USDCHF flat-to-mild. BTCUSD 76306 flat. 3 level_alerts MODIFY, 9 structure_watch KEEP, 8 queries KEEP. Broker $1000/0 pos matches. No news fetch (budget $0.87). 0 trades (binary no edge T-~9h to 0000 GMT Wed Apr 22 Iran deadline).",
   "open_positions": [],
   "watchlist": [
     {
@@ -350,7 +350,7 @@
   "last_updated": "2026-04-21T13:45:00Z",
   "capital_base": 1000.0,
   "last_tick_ts_utc": "2026-04-21T13:45:00Z",
-  "last_tick_utc": "2026-04-21T14:32:00Z",
+  "last_tick_utc": "2026-04-21T14:49:27.633341+00:00",
   "last_scan_ts": "2026-04-21T01:30:00Z",
   "tick_log": [
     {
