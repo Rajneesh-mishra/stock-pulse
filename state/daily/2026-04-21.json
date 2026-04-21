@@ -161,6 +161,12 @@
       "opened": 0,
       "closed": 0,
       "skipped": 8
+    },
+    {
+      "utc": "01:02",
+      "trigger": "bar_close x12",
+      "action": "SKIP heartbeat",
+      "note": "flat-drift across all pairs; no level hit; catalyst stack (Iran ceasefire T-19h) unchanged; all audit items KEEP"
     }
   ],
   "entries": [
