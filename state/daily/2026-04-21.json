@@ -132,6 +132,26 @@
       "closed": 0,
       "skipped": 0,
       "summary": "0 events heartbeat; flat-drift no material delta Iran T-22h Trump 'highly unlikely' + Katayama 'bold' intervention rhetoric; 5+9+8 all KEEP"
+    },
+    {
+      "ts": "2026-04-21T00:32 UTC",
+      "trigger": "8 bar_close M15 (AUDUSD USDJPY GOLD OIL_CRUDE USDCAD EURUSD GBPUSD USDCHF)",
+      "action": "SKIP heartbeat",
+      "regime": "ESCALATION_CONFIRMED_KINETIC_EXCHANGE",
+      "prices": {
+        "USDJPY": 158.964,
+        "GOLD": 4817.42,
+        "OIL_CRUDE": 86.431,
+        "EURUSD": 1.17824,
+        "AUDUSD": 0.71704,
+        "USDCAD": 1.36453,
+        "GBPUSD": 1.3525,
+        "USDCHF": 0.77878,
+        "BTCUSD": 75926.65
+      },
+      "news": "no material delta \u2014 Iran ceasefire T-~21h Trump 'lots of bombs' threat if no deal; Katayama no fresh verbal; OIL Brent-$100 narrative IRGC Hormuz re-blocked ~3.8mb/d no fresh closure/reopen headline",
+      "broker": "$1000 flat 0 pos",
+      "audit": "5 alerts + 9 structure + 8 queries all KEEP"
     }
   ]
 }
