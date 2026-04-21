@@ -260,6 +260,15 @@
       "closed": 0,
       "skipped": 8,
       "note": "8 routine M15 bar_close all majors no structure shift; flat; Iran T-18h; audit all KEEP"
+    },
+    {
+      "ts_utc": "2026-04-21T02:56:30Z",
+      "type": "auto_bar_close",
+      "events": 8,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8,
+      "note": "M15 heartbeat all 8 majors, no structure shift, USDJPY -19.5 weak bear above trigger, all alerts+queries KEEP, 0 pos"
     }
   ],
   "entries": [

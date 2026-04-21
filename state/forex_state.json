@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-21T02:26:29Z",
+  "last_tick": "2026-04-21T02:56:30Z",
   "regime": "ESCALATION_CONFIRMED_KINETIC_EXCHANGE",
-  "regime_note": "2026-04-21 ~02:42 UTC auto tick \u2014 8 unconsumed all routine M15 bar_close (AUDUSD USDJPY GOLD OIL_CRUDE USDCAD EURUSD GBPUSD USDCHF) no structure shift, no level enters. Broker $1000 flat, 0 pos, reconciled. Regime carried from 02:40: Iran T~18h Trump Wed-22UTC expiry, Vance\u2192Pak Tue round-2, Iran FM 'no plans reengage', Islamabad collapsed enrichment/proxies/Hormuz, violations both sides. GOLD ~4807 in 4780-4810 zone but confluence weak 10.5 DXY firming (prior skip). USDJPY ~158.97 above 158.50 short trigger. OIL_CRUDE ~86.55 bearish BOS persists. Audit 5 level_alerts + 9 structure_watch + 8 news_queries all KEEP. No trade. Flat.",
+  "regime_note": "2026-04-21 ~02:56 UTC auto tick \u2014 8 unconsumed all routine M15 bar_close (AUDUSD USDJPY GOLD OIL_CRUDE USDCAD EURUSD GBPUSD USDCHF). USDJPY composite -19.5 aligned=false price 158.942 (44p above 158.50 trigger). Broker $1000 flat 0 pos reconciled. Regime carried: Iran T~18h Trump Wed-22UTC expiry, Vance\u2192Pak Tue round-2, Iran FM 'no plans reengage', Islamabad collapsed, violations both sides. All 5 level_alerts + 9 structure_watch + 8 news_queries KEEP (audit at 02:42 unchanged). No trade. Flat.",
   "open_positions": [],
   "watchlist": [
     {
@@ -149,7 +149,7 @@
     "telegram_on_trade": true,
     "telegram_chat_ids": "6838758759,849258319"
   },
-  "last_tick_ts": "2026-04-21T02:40:00Z",
+  "last_tick_ts": "2026-04-21T02:56:30Z",
   "tracker": [
     {
       "situation": "US Navy Blockade of Iran \u2014 day 4",
@@ -320,6 +320,14 @@
       "events_closed": 0,
       "events_skipped": 23,
       "note": "auto tick \u2014 8 bar_close routine + 15 news_flash stale URL-flushes, no action"
+    },
+    {
+      "ts_utc": "2026-04-21T02:56:30Z",
+      "events_in": 8,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8,
+      "note": "bar_close heartbeat M15 all \u2014 USDJPY composite -19.5 aligned=false, no structure shift; all KEEP"
     }
   ],
   "recent_skips": [
