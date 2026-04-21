@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-21T08:41:00Z",
+  "last_tick": "2026-04-21T09:24:00Z",
   "regime": "PRE_BINARY_COMPRESSION_DEAL_OPTIMISM",
-  "regime_note": "2026-04-21 09:09 UTC \u2014 17 bar_close events (8 H1 + 8 M15 + 1 BTC H1) all SKIP. Prices: AUDUSD 0.7150 (H1 bullish but H1 bear FVG 0.71578-0.71593 unmit; M15 trend unknown), USDJPY 159.245 (bearish M15 BOS 103 bars ago, pushing into 159.45 fade zone only 0.20 away), GOLD 4785.92 (capped below unmit 4800 bear FVG), OIL_CRUDE 87.146 M15 / 87.282 H1 (+0.8 vs prior \u2014 Brent $95 per Euronews), USDCAD 1.3661, EURUSD 1.1758, GBPUSD 1.3500, USDCHF 0.78057, BTC 76448. NEWS: Iran MFA Baghaei confirms 'no plans to send negotiators' to Islamabad, says US 'violated ceasefire from beginning' (Hormuz blockade + overnight container-ship seizure). Vance: 'no agreement after 21 hrs' in prior round. Trump: extension 'highly unlikely'. De-escalation tail thinning fast; escalation dominant. T-~15h to 00:00 GMT Wed ceasefire expiry. 3 watchlist alerts MODIFY (price+context refresh), all 8 queries KEEP. 0 trades, broker $1000/0pos matches.",
+  "regime_note": "2026-04-21 09:24 UTC \u2014 8 M15 bar_close all SKIP, no BOS/CHoCH/level touches. Prices flat-drift vs 09:09: AUDUSD 0.7152, USDJPY 159.1765 (-6.85p, drifted AWAY from 159.45 fade zone \u2014 now 0.27 below + approaching bull FVG 159.022-159.115 from above; BOS 103 bars ago intact), GOLD 4786.27 (flat, <4800 bear FVG), OIL_CRUDE 86.971 (-0.18, reversed earlier 87.15 pop; <90), USDCAD 1.36604, EURUSD 1.175875, GBPUSD 1.350105, USDCHF 0.78029. 1 web search Iran/Islamabad \u2014 NO MATERIAL DELTA: Iran MFA 'no negotiators', US 'violated ceasefire from beginning', Vance flying Tue, Trump 'highly unlikely' extend, T-~14.5h to Wed 00:00 GMT expiry. Regime intact. 1 alert MODIFY (usdjpy), 2 alerts KEEP. 8 queries KEEP. 0 trades, broker $1000/0pos matches.",
   "open_positions": [],
   "watchlist": [
     {
@@ -149,7 +149,7 @@
     "telegram_on_trade": true,
     "telegram_chat_ids": "6838758759,849258319"
   },
-  "last_tick_ts": "2026-04-21T08:58:11.611072Z",
+  "last_tick_ts": "2026-04-21T09:25:00Z",
   "tracker": [
     {
       "situation": "US Navy Blockade of Iran \u2014 day 4",
@@ -404,6 +404,14 @@
       "closed": 0,
       "skipped": 19,
       "note": "08:41 UTC \u2014 15 news_flash Touska/Hormuz dupes + 4 M15 bar_close all SKIP (no BOS/rejection into 159.45 USDJPY zone; WTI<90; AUDUSD>0.707; GOLD<4800 FVG). Regime unchanged. T-15.3h to ceasefire expiry."
+    },
+    {
+      "ts_utc": "2026-04-21T09:25:00Z",
+      "events_in": 8,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8,
+      "note": "8 M15 bar_close all SKIP heartbeat \u2014 flat-drift, USDJPY drifted 6.85p away from 159.45, oil reversed pop, no structure shifts. 1 web search Iran: no material delta vs 09:09. MODIFIED usdjpy note. Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM intact. 3+9+8 audit: 1 MODIFY 2+9+8 KEEP."
     }
   ],
   "recent_skips": [
@@ -437,14 +445,14 @@
       "price": 4809.28
     }
   ],
-  "last_tick_summary": "07:57 UTC heartbeat \u2014 8 M15 bar_close all pairs SKIP, no BOS/CHoCH/level_enter, 0 trades, 5+9+8 all KEEP, T-16h ceasefire",
+  "last_tick_summary": "09:24 UTC heartbeat \u2014 8 M15 bar_close all SKIP, no BOS/CHoCH/level touches. USDJPY drifted 6.85p AWAY from 159.45 fade. 0 trades, 1 MODIFY (usdjpy), 2 alerts+8 queries KEEP, T-14.5h ceasefire.",
   "last_scan": {
     "timestamp": "2026-04-21T12:16:00+05:30"
   },
-  "last_updated": "2026-04-21T07:34:00Z",
+  "last_updated": "2026-04-21T09:25:00Z",
   "capital_base": 1000.0,
   "last_tick_ts_utc": "2026-04-21T05:39:09.646128Z",
-  "last_tick_utc": "2026-04-21T09:10:00Z",
+  "last_tick_utc": "2026-04-21T09:25:00Z",
   "last_scan_ts": "2026-04-21T01:30:00Z",
   "tick_log": [
     {

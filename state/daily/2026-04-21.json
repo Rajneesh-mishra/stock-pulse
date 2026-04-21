@@ -634,6 +634,14 @@
       "trades": 0,
       "positions_open": 0,
       "balance": 1000.0
+    },
+    {
+      "ts_utc": "2026-04-21T09:25:00Z",
+      "events_in": 8,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8,
+      "summary": "09:24 UTC \u2014 8 M15 bar_close all SKIP flat-drift. USDJPY 159.245\u2192159.1765 drifted AWAY from 159.45 fade zone. Oil 87.15\u219286.97 reversed pop. 1 Iran search no delta. 1 MODIFY usdjpy note, 2+9+8 KEEP. T-14.5h expiry."
     }
   ],
   "entries": [
