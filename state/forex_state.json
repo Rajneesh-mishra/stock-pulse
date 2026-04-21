@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-21T04:51:30+05:30",
+  "last_tick": "2026-04-21T05:48:55+05:30",
   "regime": "ESCALATION_CONFIRMED_KINETIC_EXCHANGE",
-  "regime_note": "2026-04-21 06:05 UTC auto — 11 bar_close (backlog 00:03 UTC Apr 21 Asia open M15/H1/H4 on AUDUSD/USDJPY/GOLD/OIL/USDCAD/EURUSD/GBPUSD/USDCHF) all SKIP heartbeat; flat-drift vs 05:49 USDJPY 158.88 +3.6p (38p above 158.50 trigger session low 158.546 held 33.4p buffer), GOLD 4823.29 +2.7p (13.3p above zone top 4810 9.8p off day high 4833.07), OIL 86.40 +7p (3.6 below 90), EURUSD 1.1782 -1.9p (8.8p off day high), AUDUSD 0.71736 flat, USDCAD 1.36422 -2p (8p below zone_low 1.36503), GBPUSD 1.3527 flat, USDCHF 0.77862 near day low; Iran ceasefire Apr 22 Wed expiry T-~22h Trump 'extension highly unlikely' Vance→Pakistan Tue for Wed talks nuclear/Hormuz/Hezbollah unresolved; broker $1000 flat 0 pos reconciled; regime KINETIC_EXCHANGE intact; MODIFIED usdjpy+gold+oil notes; 5 alerts + 9 structure + 8 queries all KEEP; SKIP heartbeat",
+  "regime_note": "2026-04-21 00:18 UTC auto — 16 bar_close (H1+M15+BTC H1 on AUDUSD/USDJPY/GOLD/OIL/USDCAD/EURUSD/GBPUSD/USDCHF/BTCUSD) all SKIP heartbeat; flat-drift vs 06:05 UTC USDJPY 158.895 +1.5p (38.95p above 158.50 trigger session low 158.546 held 34.6p buffer), GOLD 4827.91 +4.6p (17.91p above zone top 4810 5.2p off day high 4833.07), OIL 86.303 -10p (3.70 below 90 trigger, 85.1p off day low 85.454), EURUSD 1.17842 +2.2p (6.6p off day high 1.17908), AUDUSD 0.71746 +1p (52p+ above 0.707 breakdown trigger), USDCAD 1.36408 -1.4p (9.5p below zone_low 1.36503 moved through without catalyst), GBPUSD 1.3528 flat, USDCHF 0.77856 near day low, BTCUSD 75874 -0.55%; Iran ceasefire Apr 22 Wed eve expiry T-~24h Trump 'extension highly unlikely' Vance→Pakistan Tue despite Iran FM 'no immediate plans round 2' sticking point quantified US 20y enrichment pause vs Iran 5y — no material delta; broker $1000 flat 0 pos reconciled; regime KINETIC_EXCHANGE intact; 5 alerts + 9 structure + 8 queries all KEEP; SKIP heartbeat",
   "open_positions": [],
   "watchlist": [
     {
@@ -149,7 +149,7 @@
     "telegram_on_trade": true,
     "telegram_chat_ids": "6838758759,849258319"
   },
-  "last_tick_ts": "2026-04-20T23:21:00+00:00",
+  "last_tick_ts": "2026-04-21T00:18:40+00:00",
   "tracker": [
     {
       "situation": "US Navy Blockade of Iran — day 4",
@@ -280,6 +280,14 @@
       "closed": 0,
       "skipped": 9,
       "note": "bar_close triage — risk-on drift (USDJPY +7p away from 158.50 trigger, EURUSD slipped 4p off day high); no level hits; 5+9+8 KEEP; MODIFIED usdjpy+gold notes"
+    },
+    {
+      "ts_utc": "2026-04-21T00:18:40Z",
+      "events_in": 16,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 16,
+      "note": "16 bar_close (H1+M15 on 8 pairs + BTC H1) all SKIP heartbeat. Broker $1000 flat reconciled. Prices flat-drift vs 06:05 UTC: USDJPY 158.895 34.6p buffer, GOLD 4827.91 18p above zone, OIL 86.303 3.7 below 90, USDCAD 1.36408 9.5p below zone_low (moved through no catalyst). News: no material delta Iran/BoJ/oil. T-~24h ceasefire expiry Trump 'highly unlikely' ext. Regime KINETIC_EXCHANGE intact. 5+9+8 all KEEP."
     }
   ],
   "recent_skips": [
@@ -306,13 +314,13 @@
       "price": 4810.6
     }
   ],
-  "last_tick_summary": "22:34 UTC auto — 8 M15 bar_close + 15 news_flash ALL SKIP. Broker $1000 flat 0 positions. News_flash: 1 iran_ceasefire backgrounder, 2 us_iran_military already-known, 12 fed_fomc historical backfill. Web: Trump 'Wed evening Washington time' T-~25h expiry; Vance→Pakistan Tue; Tehran vowed retaliation. Prices mild risk-on drift: USDJPY 158.809 (31p above trigger, drifted AWAY from 22p), GOLD 4827.66 (18p above zone), OIL 86.313 (3.7 below 90), EURUSD 1.17855 (near day high). MODIFIED usdjpy + gold notes. 5 alerts + 9 structure + 8 queries KEEP.",
+  "last_tick_summary": "00:18 UTC auto — 16 bar_close (H1+M15+BTC H1 across 9 pairs) all SKIP heartbeat. Broker $1000 flat 0 pos reconciled. Flat-drift prices: USDJPY 158.895 (+1.5p, 34.6p buffer above session low 158.546, 38.95p above 158.50 trigger), GOLD 4827.91 (+4.6p, 17.91p above zone top 4810, 5.2p off day high 4833.07), OIL 86.303 (-10p, 3.70 below 90 trigger), EURUSD 1.17842 (6.6p off day high), USDCAD 1.36408 (9.5p below zone_low 1.36503 — moved through sans catalyst), BTCUSD 75874 (-0.55%). News pulse (Iran/BoJ/oil): no material delta vs 06:05 UTC — Trump 'extension highly unlikely' T-~24h, Vance→Pakistan Tue despite Iran 'no immediate plans round 2', enrichment gap 20y vs 5y. Katayama 'bold steps' stance intact no action. Regime KINETIC_EXCHANGE intact. 5 alerts + 9 structure + 8 queries KEEP.",
   "last_scan": {
-    "timestamp": "2026-04-21T04:05:00+05:30",
-    "trigger": "bar_close+news_backfill"
+    "timestamp": "2026-04-21T05:48:55+05:30",
+    "trigger": "bar_close"
   },
-  "last_updated": "2026-04-20T22:34:00Z",
+  "last_updated": "2026-04-21T00:18:40Z",
   "capital_base": 1000.0,
-  "last_tick_ts_utc": "2026-04-20T22:34:00Z",
-  "last_tick_utc": "2026-04-21T06:05:00Z"
+  "last_tick_ts_utc": "2026-04-21T00:18:40Z",
+  "last_tick_utc": "2026-04-21T00:18:40Z"
 }
