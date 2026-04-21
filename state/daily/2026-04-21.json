@@ -650,6 +650,32 @@
       "opened": 0,
       "closed": 0,
       "skipped": 23
+    },
+    {
+      "ts_utc": "2026-04-21T10:23:00Z",
+      "tick_id": "10:23_forex_auto",
+      "trigger": "M15 bar_close heartbeat (8 pairs)",
+      "events_processed": 8,
+      "events_acted": 0,
+      "events_skipped": 8,
+      "trades": 0,
+      "audit": "1 MODIFY (oil_crude price 86.617\u219286.456), 2 KEEP alerts, 8 queries KEEP",
+      "prices": {
+        "USDJPY": 159.186,
+        "OIL_CRUDE": 86.456,
+        "GOLD": 4783.81,
+        "AUDUSD": 0.71553,
+        "EURUSD": 1.17584,
+        "GBPUSD": 1.35062,
+        "USDCAD": 1.36564,
+        "USDCHF": 0.77983
+      },
+      "regime": "PRE_BINARY_COMPRESSION_DEAL_OPTIMISM",
+      "news": "Iran refusing Islamabad, Vance departing today, Trump unlikely extend \u2014 unchanged vs 10:08, T-~13.5h to 00:00 GMT Wed expiry",
+      "broker": {
+        "balance": 1000.0,
+        "positions": 0
+      }
     }
   ],
   "entries": [

@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-21T10:08:00Z",
   "regime": "PRE_BINARY_COMPRESSION_DEAL_OPTIMISM",
-  "regime_note": "2026-04-21 10:08 UTC \u2014 12 bar_close H1+M15 across 6 pairs all SKIP (no BOS/CHoCH/level touches). USDJPY fresh bid 159.189 (+1p vs 09:54's 159.179, still 0.26 below 159.45 fade, day range 158.695-159.251). Other pairs flat-drift <3p. WebSearch (CNN/AJ/NBC Apr 21): no deal in place, Vance departing today for Islamabad, Iran MFA 'no negotiators + US violated ceasefire from beginning' (Hormuz blockade since Apr 13 + overnight container-ship seizure), Trump 'highly unlikely' extend, Iran warning 'new cards on the battlefield' (NBC) mild-esc tone. Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM intact, T-~13.8h to Wed 00:00 GMT Apr 22 ceasefire expiry, market priced-in/fatigued. 0 positions, $1000 matches broker. 1 alert MODIFY (usdjpy price refresh), 2 KEEP. 9 structure KEEP. 8 queries KEEP.",
+  "regime_note": "2026-04-21 10:23 UTC \u2014 8 M15 bar_close across 8 pairs all SKIP (no BOS/CHoCH/level touches). Fresh prices: USDJPY 159.186 (flat -0.3p vs 10:08, still 0.26 below 159.45 fade), OIL_CRUDE 86.456 (-0.16 vs 10:08 continuing bearish reversal), GOLD 4783.81 (-3.4 vs 10:08, <4800 bear FVG), AUDUSD 0.71553 (flat), EURUSD 1.17584, GBPUSD 1.35062, USDCAD 1.36564, USDCHF 0.77983 \u2014 all <3p drift. News unchanged: Iran refusing Islamabad per CNN/AJ/CNBC Apr 21, Vance departing today, Trump 'highly unlikely' extend, Iran MFA 'US violated ceasefire from beginning' (Hormuz blockade Apr 13 + container-ship seizure). Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM intact. T-~13.5h to 00:00 GMT Wed Apr 22 expiry. 1 MODIFY (oil price refresh) 2 KEEP. 8 queries KEEP. 0 trades, broker $1000/0 positions matches.",
   "open_positions": [],
   "watchlist": [
     {
@@ -453,14 +453,14 @@
       "price": 4809.28
     }
   ],
-  "last_tick_summary": "10:08 UTC heartbeat \u2014 12 bar_close H1+M15 across 6 pairs all SKIP, flat-drift, no BOS. WebSearch: no Iran deal, Vance flying Islamabad, Iran refusing negotiators, T-~13.8h ceasefire expiry. 0 trades, 1 MODIFY (usdjpy price refresh), 2 alerts+9 structure+8 queries KEEP. $1000/0 pos matches broker.",
+  "last_tick_summary": "10:23 UTC 8 M15 bar_close all SKIP, 0 trades",
   "last_scan": {
     "timestamp": "2026-04-21T12:16:00+05:30"
   },
   "last_updated": "2026-04-21T10:08:00Z",
   "capital_base": 1000.0,
-  "last_tick_ts_utc": "2026-04-21T10:08:00Z",
-  "last_tick_utc": "2026-04-21T10:08:00Z",
+  "last_tick_ts_utc": "2026-04-21T10:23:00Z",
+  "last_tick_utc": "2026-04-21T10:23:00Z",
   "last_scan_ts": "2026-04-21T01:30:00Z",
   "tick_log": [
     {
@@ -476,6 +476,14 @@
       ],
       "audit_queries_changes": [],
       "summary": "Heartbeat tick; gold zone invalidated by breakdown+regime; USDCAD FVG mitigated; 3 alerts remain"
+    },
+    {
+      "ts_utc": "2026-04-21T10:23:00Z",
+      "summary": "10:23 UTC 8 M15 bar_close all SKIP flat drift; 1 oil price refresh MODIFY; 0 trades; $1000/0 pos",
+      "events_processed": 8,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8
     }
   ]
 }

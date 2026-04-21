@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T15:39:00+05:30",
-  "pruned_at": "2026-04-21T15:39:00+05:30",
-  "pruned_by": "10:08 UTC tick (12 bar_close H1+M15 across 6 pairs, all SKIP no BOS/CHoCH/level touches). USDJPY fresh price 159.189 (+1p vs 09:54's 159.179, still 0.26 below 159.45 fade zone, day range 158.695-159.251). Other pairs price-drift negligible (<3p vs 09:54). WebSearch confirmed (CNN/AJ/NBC live blogs Apr 21): no deal in place, Vance departing today for Islamabad, Iran MFA 'no negotiators + US violated ceasefire from beginning' (Hormuz blockade Apr 13 + overnight container-ship seizure), Trump 'highly unlikely' extend. Iran warned 'new cards on the battlefield' (NBC) — mild esc tone. Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM intact, T-~13.8h to 00:00 GMT Wed Apr 22 expiry. 1 alert MODIFY (usdjpy price refresh) 2 KEEP. 8 queries KEEP. 0 positions, $1000 matches broker.",
+  "last_updated_by_claude": "2026-04-21T15:54:00+05:30",
+  "pruned_at": "2026-04-21T15:54:00+05:30",
+  "pruned_by": "10:23 UTC tick (8 M15 bar_close across 8 pairs all SKIP — no BOS/CHoCH/level touches). Fresh prices: USDJPY 159.186 (flat -0.3p vs 10:08's 159.189, still 0.26 below 159.45 fade), OIL_CRUDE 86.456 (-0.16 vs 10:08's 86.617 continuing bearish reversal), GOLD 4783.81 (-3.4 vs prior 4787.21, <4800), AUDUSD 0.71553 (flat), others flat <3p. WebSearch confirmed (CNN/AJ/NBC/CNBC Apr 21): no deal, Iran not sending negotiators to Islamabad, Vance departing today, Trump 'highly unlikely' extend, Iran MFA 'US violated ceasefire from beginning' (Hormuz blockade Apr 13 + container-ship seizure). Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM intact, T-~13.5h to 00:00 GMT Wed Apr 22 expiry. 1 MODIFY (oil_crude price refresh 86.617→86.456), 2 KEEP. 8 queries KEEP. 0 positions, $1000 matches broker.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -44,7 +44,7 @@
       "level": 90.0,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
-      "note": "WTI 86.617 (09:54 UTC, -0.19 vs 09:40, continuing reversal of earlier 87.15 pop; bearish M15 BOS 86.621 still intact — no bull BOS yet). Thesis HARDENING but market fatigued: Vance departing today for Islamabad (confirmed WebSearch Apr 21) + Iran MFA 'no negotiators' + 'US violated ceasefire from beginning' (Hormuz blockade since Apr 13 + overnight container-ship seizure) + Trump 'highly unlikely' extend. T-~13.5h to ceasefire expiry 00:00 GMT Wed Apr 22. Market flat-to-down despite catalyst cascade = already priced-in. Break $90 + M15 bull BOS signals new demand leg (Iran retaliation / strike / mines). SL 88.00, TP1 94, TP2 98. Conv 4."
+      "note": "WTI 86.456 (10:23 UTC bid, -0.16 vs 10:08's 86.617, continuing reversal of earlier 87.15 pop; bearish M15 BOS intact — no bull BOS yet, day range 85.622-87.407). Thesis HARDENING but market fatigued: Vance departing today for Islamabad (Apr 21 WebSearch) + Iran MFA 'no negotiators' + 'US violated ceasefire from beginning' (Hormuz blockade since Apr 13 + overnight container-ship seizure) + Trump 'highly unlikely' extend. T-~13.5h to ceasefire expiry 00:00 GMT Wed Apr 22. Market flat-to-down despite catalyst cascade = already priced-in. Break $90 + M15 bull BOS signals new demand leg (Iran retaliation / strike / mines). SL 88.00, TP1 94, TP2 98. Conv 4."
     }
   ],
   "structure_watch": [
