@@ -153,5 +153,17 @@
       "broker": "$1000 flat 0 pos",
       "audit": "5 alerts + 9 structure + 8 queries all KEEP"
     }
+  ],
+  "entries": [
+    {
+      "ts_utc": "2026-04-21T00:37:00Z",
+      "trigger": "auto_forex_tick",
+      "events_processed": 15,
+      "events_type": "news_flash (Iran/Fed/Hormuz backfill)",
+      "actions": "none",
+      "open_positions": 0,
+      "balance": 1000.0,
+      "note": "15 backfill news_flash events all SKIP \u2014 Iran war Mar-Apr historical, Fed Williams no-guidance Apr 15 known, Hormuz Chinese tanker Apr 14 known; flat drift across 9 instruments; 5 alerts+9 structure+8 queries all KEEP"
+    }
   ]
 }
