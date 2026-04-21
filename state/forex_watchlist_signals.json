@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T12:50:00+05:30",
-  "pruned_at": "2026-04-21T12:50:00+05:30",
-  "pruned_by": "12:50 UTC tick (8 M15 bar_close 12:45 close all SKIP). Drift vs 12:35: OIL 87.126 (+25c bounce from 86.877 2.87 below 90), USDJPY 159.1375 (-3.1p drift down 0.31 below 159.45 fade), AUDUSD 0.71596 (-1p flat 90p above 0.707 brk), GOLD 4782.63 (-4.0p), EURUSD 1.17604 flat, USDCAD 1.36555 flat, GBPUSD 1.35147 flat, USDCHF 0.77983 flat. WebSearch CNBC/AlJaz/NPR/ABC/CNN Apr 21 confirms: Iran NOT sending to Islamabad ('no talks with US for now'), Trump 'Wed eve' expiry 'unlikely to extend', Tehran cites US blockade+Touska seizure as truce breaches. T-~11h to 0000 GMT Wed Apr 22. Narrative intact: market priced-in-optimism despite Tehran refusal. 3 MODIFY price refresh, 8 queries KEEP, 9 structure_watch KEEP, broker $1000/0 pos matches state, no trades (binary no edge T-11h).",
+  "last_updated_by_claude": "2026-04-21T13:05:00+00:00",
+  "pruned_at": "2026-04-21T13:05:00+00:00",
+  "pruned_by": "13:05 UTC tick (12 bar_close 13:00 close all SKIP). Drift vs 12:50: AUDUSD 0.71628 (+3.2p flat 92p above 0.707), USDJPY 159.171 (+3.4p 0.28 below 159.45 fade), GOLD 4783.66 (+1p flat), OIL 87.03 (-10c flat 2.97 below 90), USDCAD 1.36524 flat, EURUSD 1.17614 flat, GBPUSD 1.35177 flat, USDCHF 0.77999 flat. WebSearch CNN/CNBC/AlJaz Apr 20-21: Vance+Witkoff+Kushner departing for Islamabad Rd2, but Iran MFA Baghaei 'Washington violated ceasefire from beginning' citing US blockade+Touska seizure as breaches. Trump Wed eve 'highly unlikely to extend'. T-~10.9h to 0000 GMT Wed Apr 22. Narrative intact: priced-in-optimism despite Tehran refusal. 3 MODIFY price refresh, 9 structure_watch KEEP, 8 queries KEEP, broker $1000/0 pos matches state, no trades (binary no edge T-10.9h).",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -27,7 +27,7 @@
       "level": 0.707,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "AUDUSD 0.71596 (-1p vs 12:35 flat). Still ~90p above 0.707 breakdown. Armed for risk-off dump on Iran deal failure / Hormuz re-closure. T-~11h to 0000 GMT Wed Apr 22. Iran 'no talks with US for now' per AlJaz/NPR Apr 21, Trump Wed eve expiry 'unlikely to extend', vessel standoff intact."
+      "note": "AUDUSD 0.71628 (+3.2p vs 12:50 flat). Still ~92p above 0.707 breakdown. Armed for risk-off dump on Iran deal failure / Hormuz re-closure. T-~10.9h to 0000 GMT Wed Apr 22. Vance+Witkoff+Kushner departing for Islamabad Rd2, but Iran MFA 'Washington violated ceasefire' citing blockade+Touska seizure. Trump Wed eve 'highly unlikely to extend'."
     },
     {
       "id": "usdjpy_intervention_fade_zone",
@@ -36,7 +36,7 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "USDJPY 159.1375 (-3.1p vs 12:35 drift down), 0.31 below 159.45 fade. Armed for bounce into zone. T-~11h to 0000 GMT Wed Apr 22. Yen safe-haven bid if Iran deal fails + Hormuz re-closed \u2192 fade triggers on bounce through 159.45."
+      "note": "USDJPY 159.171 (+3.4p vs 12:50), 0.28 below 159.45 fade. Armed for bounce into zone. T-~10.9h to 0000 GMT Wed Apr 22. Yen safe-haven bid if Iran deal fails + Hormuz re-closed \u2192 fade triggers on bounce through 159.45. MoF pain threshold 158 per MUFG."
     },
     {
       "id": "oil_crude_escalation_90",
@@ -44,7 +44,7 @@
       "level": 90.0,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
-      "note": "Oil 87.126 (+25c bounce vs 12:35 from 86.877). 2.87 below 90 escalation trigger. T-~11h. Mid-session bid returning (Tehran refusal reported). Trump won't open Hormuz 'until deal reached'. Armed for gap-up on collapse."
+      "note": "Oil 87.03 (-10c flat vs 12:50). 2.97 below 90 escalation trigger. T-~10.9h. Trump 'won't reopen Hormuz until deal'. Iran refusing Islamabad Rd2 attendance. Armed for gap-up on collapse."
     }
   ],
   "structure_watch": [

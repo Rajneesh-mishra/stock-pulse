@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-21T12:50:00Z",
+  "last_tick": "2026-04-21T13:05:00Z",
   "regime": "PRE_BINARY_COMPRESSION_CONFLICTING_NARRATIVE",
-  "regime_note": "2026-04-21 12:50 UTC - 8 M15 bar_close 12:45 close all SKIP, T-~11h binary. Drift vs 12:35: OIL 87.126 (+25c bounce 2.87 below 90), USDJPY 159.1375 (-3.1p 0.31 below 159.45 fade), AUDUSD 0.71596 flat (90p above 0.707), GOLD 4782.63 (-4.0p), others <2p flat. WebSearch CNBC/AlJaz/NPR/ABC/CNN Apr 21 confirms Tehran 'no talks with US for now' (cites US blockade + Touska seizure as truce breaches), Trump 'Wed eve' expiry 'unlikely to extend', won't reopen Hormuz until deal. Market still priced-in-optimism despite Tehran refusal (conflicting narrative sustained from prior tick). Broker $1000/0 pos matches state. 3 level_alerts MODIFY (price refresh: OIL 87.126, USDJPY 159.1375, AUDUSD 0.71596). 9 structure_watch KEEP. 8 news_queries KEEP (iran_ceasefire firing as designed on walkout-vs-attend split, us_iran_military 60min cooldown holding). 0 trades (binary no edge T-~11h).",
+  "regime_note": "2026-04-21 13:05 UTC - 12 bar_close 13:00 close all SKIP T-~10.9h binary. Drift vs 12:50: AUDUSD 0.71628 (+3.2p 92p above 0.707), USDJPY 159.171 (+3.4p 0.28 below 159.45), GOLD 4783.66 (+1p flat), OIL 87.03 (-10c flat 2.97 below 90), EUR/CAD/GBP/CHF all flat. WebSearch CNN/CNBC/AlJaz Apr 20-21: Vance+Witkoff+Kushner departing Islamabad Rd2 but Iran MFA Baghaei 'Washington violated ceasefire' citing blockade+Touska seizure; Trump Wed eve 'highly unlikely to extend'. Priced-in-optimism intact. 3 MODIFY price refresh, 9 structure_watch KEEP, 8 queries KEEP, broker $1000/0 matches, 0 trades (binary no edge T-10.9h).",
   "open_positions": [],
   "watchlist": [
     {
@@ -149,7 +149,7 @@
     "telegram_on_trade": true,
     "telegram_chat_ids": "6838758759,849258319"
   },
-  "last_tick_ts": "2026-04-21T12:50:00Z",
+  "last_tick_ts": "2026-04-21T13:05:00Z",
   "tracker": [
     {
       "situation": "US Navy Blockade of Iran \u2014 day 4",
@@ -292,6 +292,14 @@
       "closed": 0,
       "skipped": 8,
       "note": "8 M15 bar_close all SKIP T-~11h binary; WebSearch Tehran 'no talks for now' confirmed, Trump Wed eve expiry unlikely extend; OIL 87.126 (+25c) USDJPY 159.1375 (-3.1p) AUDUSD 0.71596 flat GOLD 4782.63 (-4p); 3 MODIFY price refresh, all queries/structure KEEP, broker $1000/0 pos matches; no trades"
+    },
+    {
+      "ts_utc": "2026-04-21T13:05:00Z",
+      "events_in": 12,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 12,
+      "note": "12 bar_close 13:00 all SKIP \u2014 routine heartbeat, prices flat \u00b13p vs 12:50, narrative intact priced-in-optimism vs Tehran refusal. T-~10.9h."
     }
   ],
   "recent_skips": [
