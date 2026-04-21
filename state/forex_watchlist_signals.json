@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T17:25:00+05:30",
-  "pruned_at": "2026-04-21T17:25:00+05:30",
-  "pruned_by": "11:55 UTC tick (15 news_flash events — 4 iran_ceasefire + 11 us_iran_military Touska-seizure duplicates, all SKIP). TIMELINE RE-CORRECTED via WebSearch Al Jazeera/ABC/PRIO/Wikipedia/BusinessToday Apr 21: ceasefire expires 0000 GMT Wed Apr 22 = T-~12h (not Thu Apr 23 02:00 UTC as prior ticks assumed — that was misread of Trump 'Wed eve Washington' which is Tue eve DC ≈ 0000 GMT Wed UTC). Iran PULLED OUT Islamabad Round 2 per Al Jazeera/BusinessToday, citing US seizure of Touska + Hormuz blockade as truce breaches. Al Jazeera 4/19 'Tehran vows retaliation'. Current prices 11:55 UTC: USDJPY 159.161 (+0.024 flat, 0.29 below 159.45 fade), GOLD 4791.74 (+1.7p bounce <4800 fade), OIL 87.187 (+7.4c drift, 2.81 below 90 escalation), AUDUSD 0.71627 (-0.4p flat, 92p >0.707 breakdown), EURUSD 1.17655/USDCAD 1.36549/GBPUSD 1.35192/USDCHF 0.77952 all <3p. Market still priced-in-deal-optimism despite T-12h. 3 MODIFY (all 3 alerts timeline correction to T-12h), 8 queries KEEP, broker $1000/0 pos matches, no trades (binary event, no edge).",
+  "last_updated_by_claude": "2026-04-21T17:40:00+05:30",
+  "pruned_at": "2026-04-21T17:40:00+05:30",
+  "pruned_by": "12:10 UTC tick (8 M15 bar_close all SKIP). Prices flat-drift vs 11:55: USDJPY 159.130 (-3.1p, 0.32 below 159.45 fade), GOLD 4796.2 (+4.5p bounce <4800), OIL 87.356 (+16.9c drift, M15 hi 87.475 flat, 2.64 below 90 escalation), AUDUSD 0.71634 (+0.7p, 93p >0.707), USDCAD/EURUSD/GBPUSD/USDCHF all <2p drift. WebSearch CNBC/ABC confirms ceasefire expires Tue eve Apr 22 = 0000 GMT Wed Apr 22 UTC = T-~12h. Trump threatens 'lots of bombs' if no deal. Iran MFA 'no plans for new talks'. Market still priced-in-optimism despite T-12h binary. 3 MODIFY (price refresh all 3), 8 queries KEEP, broker $1000/0 pos matches, no trades.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -27,7 +27,7 @@
       "level": 0.707,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "AUDUSD 0.71627 flat (-0.4p vs 11:40). Still ~92p above 0.707 breakdown. Armed for risk-off dump on Iran deal failure / Hormuz escalation. Ceasefire expires 0000 GMT Wed Apr 22 = T-~12h (RE-CORRECTED per Al Jazeera/ABC/PRIO/BusinessToday Apr 21, not Thu Apr 23 as prior ticks). Iran pulled out of Islamabad Rd2."
+      "note": "AUDUSD 0.71634 flat (+0.7p vs 11:55). Still ~93p above 0.707 breakdown. Armed for risk-off dump on Iran deal failure / Hormuz escalation. Ceasefire expires 0000 GMT Wed Apr 22 = T-~12h. Iran pulled out of Islamabad Rd2, 'no plans for new talks' per MFA."
     },
     {
       "id": "usdjpy_intervention_fade_zone",
@@ -36,7 +36,7 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "USDJPY 159.161 flat (+0.024 vs 11:40), 0.29 below 159.45 fade. Armed if bounce back into zone. Ceasefire expires 0000 GMT Wed Apr 22 = T-~12h (RE-CORRECTED). Yen safe-haven bid if Iran deal fails → fade setup triggers on bounce."
+      "note": "USDJPY 159.130 flat (-3.1p vs 11:55), 0.32 below 159.45 fade. Armed if bounce back into zone. Ceasefire expires 0000 GMT Wed Apr 22 = T-~12h. Yen safe-haven bid if Iran deal fails \u2192 fade setup triggers on bounce."
     },
     {
       "id": "oil_crude_escalation_90",
@@ -44,7 +44,7 @@
       "level": 90.0,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
-      "note": "Oil 87.187 (+7.4c vs 11:40, M15 hi 87.475). 2.81 below 90 escalation trigger. Ceasefire expires 0000 GMT Wed Apr 22 = T-~12h (RE-CORRECTED — prior ticks wrongly had Thu Apr 23 02:00 UTC; 'Wed eve Washington' = Tue eve DC ≈ 0000 GMT Wed). Iran pulled out of Islamabad Rd2, vowed retaliation. Armed for gap-up on collapse."
+      "note": "Oil 87.356 (+16.9c vs 11:55, M15 hi 87.475 flat). 2.64 below 90 escalation trigger. Ceasefire expires 0000 GMT Wed Apr 22 = T-~12h. Trump 'lots of bombs' threat, Iran MFA 'no plans for new talks'. Armed for gap-up on collapse."
     }
   ],
   "structure_watch": [
