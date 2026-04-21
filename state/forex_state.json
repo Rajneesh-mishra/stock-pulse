@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-21T01:36:08Z",
   "regime": "ESCALATION_CONFIRMED_KINETIC_EXCHANGE",
-  "regime_note": "2026-04-21 ~01:36 UTC auto tick \u2014 15 news_flash events: 14 stale RBA rate RSS articles (query 'rba_hike' URL-dedup flush, keywords 'hike'/'hold' matched 2025/Q1-2026 historical headlines, won't re-fire) + 1 marginal fresh: Crypto Briefing 'Iran Supreme Leader approves Islamabad talks before US-Iran ceasefire deadline' (Apr 21 01:30 GMT, SINGLE LOW-TIER SOURCE unverified, ceasefire-favorable IF real \u2014 contradicts confirmed Tehran round 2 skip Apr 20). No corroboration \u2192 no action. Broker $1000 flat 0 pos reconciled (bal/avail/dep 1000.0, P&L 0). Iran ceasefire Apr 22 Wed expiry T-~18h intact. All 5 level_alerts + 9 structure_watch + 8 news_queries KEEP. No trade.",
+  "regime_note": "2026-04-21 ~01:55 UTC auto tick \u2014 1 GOLD level_enter evt_1776736478305 (price 4809.28 IN zone 4780-4810) SKIP: confluence composite 10.5 (<60), aligned=false, all_tfs_agree=false, M15 bear FVG unmitigated 1 bar ago, DAY score -0.15 mixed, no M15 bull BOS, no rejection wick. News pulse: AP 'in principle' extension vs Reuters 'not formally agreed' \u2014 no regime shift, no signature, DXY firming 99.8-100 = headwind for safe-haven long. Marginally bearish delta for gold long. Broker $1000 flat 0 pos reconciled. Iran ceasefire Apr 22 Wed expiry T-~22h. Audit: all 5 level_alerts + 9 structure_watch + 8 news_queries KEEP \u2014 zone catalyst live, waiting for deeper pullback or failed-talks tape.",
   "open_positions": [],
   "watchlist": [
     {
@@ -149,7 +149,7 @@
     "telegram_on_trade": true,
     "telegram_chat_ids": "6838758759,849258319"
   },
-  "last_tick_ts": "2026-04-21T01:17:50+00:00",
+  "last_tick_ts": "2026-04-21T01:56:55Z",
   "tracker": [
     {
       "situation": "US Navy Blockade of Iran \u2014 day 4",
@@ -296,6 +296,14 @@
       "closed": 0,
       "skipped": 12,
       "note": "12 bar_close all SKIP \u2014 flat-drift, no material Iran/Hormuz/BoJ delta, watchlist all KEEP"
+    },
+    {
+      "ts_utc": "2026-04-21T01:56:55Z",
+      "events_in": 1,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 1,
+      "note": "GOLD level_enter 4809.28 SKIP \u2014 confluence 10.5 aligned=false M15 bear FVG no BOS no wick DXY firming headwind. Audit all KEEP."
     }
   ],
   "recent_skips": [
@@ -320,16 +328,23 @@
       "instrument": "GOLD",
       "reason": "No M15 BOS + no rejection wick + composite neutral 7.0 aligned=false + DAY -0.15 + -0.46% day on dollar bid",
       "price": 4810.6
+    },
+    {
+      "event_id": "evt_1776736478305_level_enter",
+      "ts_utc": "2026-04-21T01:56:55Z",
+      "instrument": "GOLD",
+      "reason": "Composite 10.5 <60, aligned=false, M15 bear FVG unmitigated, DAY -0.15, DXY firming 99.8-100 headwind, no M15 BOS no rejection wick",
+      "price": 4809.28
     }
   ],
-  "last_tick_summary": "00:18 UTC auto \u2014 16 bar_close (H1+M15+BTC H1 across 9 pairs) all SKIP heartbeat. Broker $1000 flat 0 pos reconciled. Flat-drift prices: USDJPY 158.895 (+1.5p, 34.6p buffer above session low 158.546, 38.95p above 158.50 trigger), GOLD 4827.91 (+4.6p, 17.91p above zone top 4810, 5.2p off day high 4833.07), OIL 86.303 (-10p, 3.70 below 90 trigger), EURUSD 1.17842 (6.6p off day high), USDCAD 1.36408 (9.5p below zone_low 1.36503 \u2014 moved through sans catalyst), BTCUSD 75874 (-0.55%). News pulse (Iran/BoJ/oil): no material delta vs 06:05 UTC \u2014 Trump 'extension highly unlikely' T-~24h, Vance\u2192Pakistan Tue despite Iran 'no immediate plans round 2', enrichment gap 20y vs 5y. Katayama 'bold steps' stance intact no action. Regime KINETIC_EXCHANGE intact. 5 alerts + 9 structure + 8 queries KEEP.",
+  "last_tick_summary": "01:55 UTC auto \u2014 1 GOLD level_enter 4809.28 IN zone SKIP (composite 10.5 aligned=false M15 bear FVG no BOS no wick). Broker $1000 flat 0 pos reconciled. News: AP 'in principle' vs Reuters 'not formally agreed' no regime shift, DXY 99.8-100 firming = gold headwind. T-~22h Apr 22 ceasefire expiry. All 5 alerts + 9 structure + 8 queries KEEP.",
   "last_scan": {
-    "timestamp": "2026-04-21T05:48:55+05:30",
-    "trigger": "bar_close"
+    "timestamp": "2026-04-21T07:26:55.584335+05:30",
+    "trigger": "level_enter"
   },
-  "last_updated": "2026-04-21T00:47:30Z",
+  "last_updated": "2026-04-21T01:56:55Z",
   "capital_base": 1000.0,
-  "last_tick_ts_utc": "2026-04-21T00:18:40Z",
-  "last_tick_utc": "2026-04-21T01:02:00Z",
+  "last_tick_ts_utc": "2026-04-21T01:56:55Z",
+  "last_tick_utc": "2026-04-21T01:56:55Z",
   "last_scan_ts": "2026-04-21T01:30:00Z"
 }
