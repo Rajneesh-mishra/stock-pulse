@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T11:05:00+05:30",
-  "pruned_at": "2026-04-21T11:05:00+05:30",
-  "pruned_by": "05:33 UTC tick — 8 M15 bar_close (all majors) heartbeat, 0 news_flash. Broker $1000 flat 0 pos reconciled. Web searches: Iran ceasefire expires TODAY Apr 21 Tue confirmed (first Islamabad round 21h no-deal, Iran FM 'no talks for now' but Tue delegation rumored, Trump threatens if no deal). WTI ~$86.27 (TradingEconomics/fxdailyreport) down from $88.50 — market continues fade-escalation. No level touches, no structure breaks. 4/5 alerts KEEP, 1 MODIFY (oil_crude price $88.50→$86.27). All 9 structure_watch KEEP. All 8 news queries KEEP.",
+  "last_updated_by_claude": "2026-04-21T11:07:00+05:30",
+  "pruned_at": "2026-04-21T11:07:00+05:30",
+  "pruned_by": "05:37 UTC tick — 15 news_flash (6 hormuz_strait recycled, 6 opec_supply backlog, 3 us_tariff India-US trade talks) all already-known themes, no new action. Broker $1000 flat 0 pos reconciled. Web search: WTI $88.26 (CNBC) up from $86.27 intraday, Brent $94.87, Iran ceasefire expires TODAY Tue Apr 21, Trump 'deal still possible'. Crude firmed slightly into expiry but still below pre-ceasefire $94.41. 4/5 alerts KEEP, 1 MODIFY (oil_crude price $86.27→$88.26). All 9 structure_watch KEEP. All 8 news queries KEEP.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -43,7 +43,7 @@
       "level": 90.0,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
-      "note": "WTI last ~$86.27 (down from $88.50 intraday; 3.73 below 90 trigger). Apr 21 05:33 UTC: oil continues fade-escalation as expiry approaches. Iran FM said 'no talks for now' but sources hint delegation in Islamabad Tue. Market pricing 'talks will proceed' over collapse. Hormuz still tanker-restricted; US blockade + seized Iranian cargo ship per Baghaei = breach claims. Alert armed ABOVE 90 for break-retest + M15 bull BOS. Escalation scenario: talks collapse → 90 → 94 → 98 (Brent already near 95). Default side right now = FADE escalation (market is). SL 87.50, TP1 94, TP2 98. Conv 3."
+      "note": "WTI last $88.26 (CNBC Apr 21 05:37 UTC; up from $86.27 earlier intraday; Brent $94.87; 1.74 below 90 trigger). Ceasefire expires TODAY Tue Apr 21, Trump 'deal still possible'. Crude firming slightly into expiry but still below pre-ceasefire $94.41 reference (Apr 7 one-day -16% plunge on ceasefire announcement). Alert armed ABOVE 90 for break-retest + M15 bull BOS. Escalation scenario: talks collapse → 90 → 94 → 98. Default side right now = FADE escalation (market leaning that way). SL 87.50, TP1 94, TP2 98. Conv 3."
     },
     {
       "id": "gold_escalation_buy_zone",
