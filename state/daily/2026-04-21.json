@@ -152,6 +152,15 @@
       "news": "no material delta \u2014 Iran ceasefire T-~21h Trump 'lots of bombs' threat if no deal; Katayama no fresh verbal; OIL Brent-$100 narrative IRGC Hormuz re-blocked ~3.8mb/d no fresh closure/reopen headline",
       "broker": "$1000 flat 0 pos",
       "audit": "5 alerts + 9 structure + 8 queries all KEEP"
+    },
+    {
+      "ts_utc": "2026-04-21T00:47:30Z",
+      "tick_type": "forex_auto",
+      "summary": "8 bar_close M15 all SKIP; flat-drift no material delta; broker flat $1000 reconciled; Iran ceasefire T-20h no fresh; all alerts+queries KEEP",
+      "events_processed": 8,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8
     }
   ],
   "entries": [
