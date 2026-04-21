@@ -589,6 +589,14 @@
         "AUDUSD": 0.71545
       },
       "regime": "oil/rates dominate safe-haven; cliff-edge binary T-10h; no trades, no events"
+    },
+    {
+      "ts_utc": "2026-04-21T08:41:00+00:00",
+      "events_in": 19,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 19,
+      "summary": "08:41 UTC heartbeat \u2014 15 Touska/Hormuz news dupes + 4 M15 bar_close all SKIP; USDJPY 159.19 approaching 159.45 fade zone but bull FVG unmitigated first; WTI<90, AUDUSD>0.707, GOLD<4800 FVG; regime unchanged T-15.3h to ceasefire expiry; 3 watchlist + 8 queries all KEEP; 0 trades."
     }
   ],
   "entries": [

@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-21T08:27:00Z",
+  "last_tick": "2026-04-21T08:41:00Z",
   "regime": "PRE_BINARY_COMPRESSION_DEAL_OPTIMISM",
-  "regime_note": "2026-04-21 14:06 UTC \u2014 heartbeat tick, 0 unconsumed events, 0 positions, broker $1000 matches. Prices: GOLD 4786.67 (-0.70%, day lo 4772.41 hi 4833) still capped below 4800 bear FVG; WTI 86.47 (+0.69%, day hi 87.40 intraday spike faded, day lo 85.62) descending trend still resists; USDJPY 159.17 (+0.24%, day hi 159.21 lo 158.70) NOW PUSHING INTO 159.45-161.95 intervention zone, Katayama 'bold action' (MoF/JapanTimes); AUDUSD 0.71545 (-0.31%) holding above 0.707 breakdown trigger. Ceasefire T-~10h (expires 0000 GMT WED Apr 22): Hormuz IRGC formal blockade, only 16 ships Monday (CNN/Al Jazeera Apr 19-20), tankers being fired on, US seized Iranian cargo ship, Iran may or may not attend Islamabad talks. Old USDJPY riskoff-break alert at 158.50 went STALE (price advanced above it w/o yen bid) \u2014 MODIFIED to usdjpy_intervention_fade_zone@159.45 SELL. 2 KEEP (audusd/oil). Regime unchanged: oil/rates dominance > safe-haven; cliff-edge binary in ~10h.",
+  "regime_note": "2026-04-21 08:41 UTC \u2014 tick processed 19 events (15 news_flash Touska/Hormuz dupes already integrated + 4 M15 bar_close AUDUSD/USDJPY/GOLD/OIL_CRUDE all SKIP). Prices at tick: AUDUSD 0.71548 (trend unknown, bear FVG mitigated, 0.707 trigger ~1.2% away), USDJPY 159.187 (bearish M15 BOS 158.728 101 bars ago, bull FVG 159.02-159.115 unmitigated 2 bars ago, approaching 159.45 intervention zone but not yet crossed), GOLD 4787.395 (still capped below 4800 bear FVG unmitigated 21 bars ago), WTI 86.285 (still bearish below 90 escalation trigger, bear FVG mitigated 4 bars ago). 0 positions, broker $1000/0pos matches. Ceasefire expires 0000 GMT WED Apr 22 = T-~15.3h. Hormuz IRGC formal blockade + Touska seized + Iran vows retaliation + Trump 'highly unlikely' extension. Tape disconnect persists: oil+gold not bidding risk-off, market still pricing deal-by-deadline. Binary stays. 3 watchlist all KEEP, 8 news queries all KEEP.",
   "open_positions": [],
   "watchlist": [
     {
@@ -149,7 +149,7 @@
     "telegram_on_trade": true,
     "telegram_chat_ids": "6838758759,849258319"
   },
-  "last_tick_ts": "2026-04-21T06:37:00Z",
+  "last_tick_ts": "2026-04-21T08:41:00Z",
   "tracker": [
     {
       "situation": "US Navy Blockade of Iran \u2014 day 4",
@@ -159,7 +159,7 @@
       "note": "Apr 20-21: Iran DRONE STRIKES on US vessels confirmed by Tasnim via Anadolu/TRT after USS Spruance seized M/V Touska (CENTCOM confirmed seizure, Marines rappelled after 6hr warnings + propulsion disable). US has NOT confirmed any vessels hit. Iran not formally agreed Islamabad talks restart. Trump: extension 'highly unlikely'. Escalation ladder: threat\u2192kinetic action (one rung up). Tape disconnect: oil -1.1%, gold -0.79%, USD bid \u2014 market still pricing deal-by-deadline. Binary remains: confirmed US damage\u2192spike, formal deal\u2192collapse."
     }
   ],
-  "last_tick_utc_prev": "2026-04-20 23:06 UTC",
+  "last_tick_utc_prev": "2026-04-21T08:41:00Z",
   "tick_history": [
     {
       "ts_utc": "2026-04-20T14:45:29.961114Z",
@@ -396,6 +396,14 @@
       "closed": 0,
       "skipped": 0,
       "note": "Heartbeat \u2014 0 unconsumed events. Broker $1000 flat 0 pos reconciled. 1 web search: Bloomberg 'Iran set to attend Islamabad' (Brent -1.1% $94.44 fading 5.6% Mon gain) vs AJ 'Iran says no talks for now' \u2014 conflicting narrative continues, no regime shift. Trump ext 'highly unlikely' intact, T-~17h. 5+9+8 all KEEP (no delta since 07:09)."
+    },
+    {
+      "ts_utc": "2026-04-21T08:41:00+00:00",
+      "events_in": 19,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 19,
+      "note": "08:41 UTC \u2014 15 news_flash Touska/Hormuz dupes + 4 M15 bar_close all SKIP (no BOS/rejection into 159.45 USDJPY zone; WTI<90; AUDUSD>0.707; GOLD<4800 FVG). Regime unchanged. T-15.3h to ceasefire expiry."
     }
   ],
   "recent_skips": [
