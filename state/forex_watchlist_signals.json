@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T22:10:00+00:00",
-  "pruned_at": "2026-04-21T22:10:00+00:00",
-  "pruned_by": "22:08 UTC tick — 1 level_cross USDJPY 159.45 (cross_UP to 159.453 at 16:37 UTC, sustained break — price now 159.463 bid / 159.475 offer at 22:08 UTC, day high 159.475). SKIP: setup required rejection wick, got clean break-through instead. USD safe-haven bid on Touska seizure + Iran ceasefire expiry T-~1h52m to 0000 GMT Wed Apr 22. MODIFY usdjpy fade level 159.45→160.00 (BoJ/MoF intervention red line — Japan intervened at 159.23 in Jan 2026, Katayama G7 'high urgency' signals). AUDUSD/OIL alerts timing-refreshed T-~1h52m pre-binary (no new prices this tick; last refs 16:14 UTC). 8 queries KEEP. Broker $1000/0 pos matches state.",
+  "last_updated_by_claude": "2026-04-21T17:10:00+00:00",
+  "pruned_at": "2026-04-21T17:10:00+00:00",
+  "pruned_by": "17:09 UTC tick — 8 M15 bar_close full-universe all SKIP. MATERIAL SHIFT: OIL_CRUDE 16:30 M15 closed 90.205 (SUSTAINED above 90 psychological, +23p vs 89.972 prior) — prior 90 fade alert invalidated by clean break-through. Bull FVG 88.91-89.548 mitigated 5 bars ago, bull BOS at 87.99 from 88 bars ago. News conflict: mainstream (CNBC/Reuters 21 Apr) reports oil FALLING on US-Iran talks proceeding, but our feed spiked — may be stale feed, wick, or late-session headline. USDJPY 159.485 M15 close (+51.5p still below 160 intervention, bull FVG 159.419-159.421 1 bar ago, bull BOS 158.997 57 bars ago — trend intact). AUDUSD 0.71535 (-82p vs 0.71617, bear FVG 0.71594-0.71604 overhead, now 83.5p above 0.707 target). GOLD 4724.15 (-21.7 — less safe-haven bid than expected, bear FVG 4734.235-4738.96 overhead). EURUSD 1.17435 (bear trend from BOS 1.17473, bear FVG 1.17484-1.17517). USDCAD 1.36569 (+10p bull FVG 1.36451-1.3649 — USD-dominant despite oil up, oil-CAD divergence). USDCHF 0.78077 (+6p bull FVG). GBPUSD 1.350075 (-77p bear FVG). Binary T-~6h51m to 0000 GMT Wed Apr 22 Iran deadline. MODIFY all 3 level_alerts (oil thesis flipped — fade killed, wait for 90.5+ sustained close or 88.91 FVG pullback; usdjpy & audusd refreshed prices + correct T-timing). 9 structure_watch KEEP. 8 queries KEEP.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -28,15 +28,15 @@
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "buy AUDUSD near 0.707 support on ceasefire-fail spike — M15 close 0.71617 (91p above, ref 16:14 UTC; no refresh this tick). Binary T-~1h52m to 0000 GMT Wed Apr 22. USD safe-haven bid strengthening (USDJPY pushed through 159.45) — if ceasefire collapses, AUDUSD likely spikes down to 0.707 zone. Wait for rejection candle on 0.707 touch; skip naked level hits.",
-      "current_price_ref": 0.71617,
+      "note": "buy AUDUSD 0.707 support on ceasefire-fail spike — M15 16:30 close 0.71535 (-82p vs prior 0.71617, 83.5p above zone). Bear FVG 0.71594-0.71604 overhead (unmitigated, 1 bar ago) — short-term pressure toward zone. Binary T-~6h51m to 0000 GMT Wed Apr 22. USD safe-haven bid broad (USDJPY/USDCAD/USDCHF all bull) — AUD already softening pre-event. If ceasefire collapses, AUDUSD likely spikes down to 0.707 for liquidity sweep. Wait for rejection wick on 0.707 touch; skip naked level hits.",
+      "current_price_ref": 0.71535,
       "price_ref": {
-        "ts": "2026-04-21T16:14:12Z",
-        "price": 0.71617
+        "ts": "2026-04-21T16:30:00Z",
+        "price": 0.71535
       },
-      "last_updated": "2026-04-21T22:10:00+00:00",
-      "proximity": "91p above 0.707 buy zone (ref M15 16:14 UTC 0.71617, no refresh this tick). T-~1h52m to 0000 GMT Wed Apr 22 — USD-bid strengthening raises odds of AUD down-spike to zone on ceasefire-fail.",
-      "updated_utc": "2026-04-21 22:10 UTC"
+      "last_updated": "2026-04-21T17:10:00+00:00",
+      "proximity": "83.5p above 0.707 buy zone (M15 close 16:30 UTC 0.71535). T-~6h51m to 0000 GMT Wed Apr 22. Bear FVG 0.71594-0.71604 overhead, USD-bid broad — pressure toward zone building pre-binary.",
+      "updated_utc": "2026-04-21 17:10 UTC"
     },
     {
       "id": "usdjpy_intervention_fade_zone",
@@ -45,32 +45,32 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "sell USDJPY 160.00 intervention red-line fade — 159.45 broke clean up (cross at 16:37 UTC, now 159.463 bid / 159.475 offer at 22:08 UTC, day high 159.475). Prior fade level invalidated by sustained break on Touska/Iran tensions. New level = 160.00 MoF/BoJ red line (Japan intervened at 159.23 in Jan 2026; Katayama G7 'high urgency'). T-~1h52m to 0000 GMT Wed Apr 22 deadline. Short ONLY on rejection wick at 160.00, preferably post-binary resolution; skip naked touches pre-expiry.",
-      "current_price_ref": 159.475,
+      "note": "sell USDJPY 160.00 intervention red-line fade — M15 16:30 close 159.485 (51.5p below 160, bull FVG 159.419-159.421 1 bar ago acting as support, bull BOS 158.997 57 bars ago — trend intact). Japan intervened at 159.23 in Jan 2026; Katayama G7 'high urgency' verbal. T-~6h51m to 0000 GMT Wed Apr 22 deadline. Short ONLY on rejection wick at 160.00, preferably post-binary resolution — skip naked touches pre-expiry (intervention risk both ways).",
+      "current_price_ref": 159.485,
       "price_ref": {
-        "ts": "2026-04-21T22:08:10Z",
-        "price": 159.475
+        "ts": "2026-04-21T16:30:00Z",
+        "price": 159.485
       },
-      "last_updated": "2026-04-21T22:10:00+00:00",
-      "proximity": "~52p below 160.00 intervention red line (day high 159.475, bid 159.463). 159.45 fade died — USD pushed through on Touska/Iran tensions. 160.00 armed, T-~1h52m pre-binary expiry.",
-      "updated_utc": "2026-04-21 22:10 UTC"
+      "last_updated": "2026-04-21T17:10:00+00:00",
+      "proximity": "51.5p below 160.00 intervention red line (M15 close 16:30 UTC 159.485). Trend bullish from BOS 158.997, bull FVG acting as support — momentum intact. T-~6h51m pre-binary.",
+      "updated_utc": "2026-04-21 17:10 UTC"
     },
     {
       "id": "oil_crude_escalation_90",
       "instrument": "OIL_CRUDE",
-      "level": 90.0,
+      "level": 90.5,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
-      "direction": "sell",
-      "note": "sell OIL 90 fade — 90.003 tagged & rejected earlier (wick-only sweep), M15 close 89.972 at 16:14 UTC (no refresh this tick). Binary T-~1h52m to 0000 GMT Wed Apr 22. USD-bid strengthening (USDJPY +) typically crude-neutral at best. Sell fade on 2nd-test WITH rejection wick is cleaner. FLIP to buy ONLY on SUSTAINED close >90.5 w/ ceasefire-fail headline. M15 bull FVG 88.91-89.548 UNMITIGATED, bullish BOS earlier.",
-      "current_price_ref": 89.972,
+      "direction": "buy",
+      "note": "FLIPPED from fade-sell to momentum-buy — 90 fade INVALIDATED by sustained M15 16:30 close 90.205 (clean break-through, not wick rejection). Bullish structure: bull BOS 87.99 (88 bars ago), bull FVG 88.91-89.548 just mitigated (5 bars ago) as support. Buy on SUSTAINED M15/H1 close >90.50 WITH ceasefire-fail headline confirmation (catalyst-conditional). Alt buy-zone: 88.91-89.548 FVG pullback if price retests (but risk of range continuation). SKIP IF news confirms ceasefire-proceed (contradicts long — CNBC/Reuters 21 Apr reports oil falling on talks optimism; our feed spike may be noise). T-~6h51m to 0000 GMT Wed Apr 22.",
+      "current_price_ref": 90.205,
       "price_ref": {
-        "ts": "2026-04-21T16:14:20Z",
-        "price": 89.972
+        "ts": "2026-04-21T16:30:00Z",
+        "price": 90.205
       },
-      "last_updated": "2026-04-21T22:10:00+00:00",
-      "proximity": "NEAR-ZONE ref M15 16:14 UTC 89.972 (3p below 90). No refresh this tick. T-~1h52m pre-binary. 90 still armed for 2nd-test sell OR sustained close >90.5 = flip to momentum buy on ceasefire-fail confirm.",
-      "updated_utc": "2026-04-21 22:10 UTC"
+      "last_updated": "2026-04-21T17:10:00+00:00",
+      "proximity": "20.5p above 90 (M15 close 16:30 UTC 90.205), 29.5p below 90.50 momentum trigger. Prior fade dead. T-~6h51m pre-binary. Buy ONLY on 90.50+ sustained + ceasefire-fail confirm.",
+      "updated_utc": "2026-04-21 17:10 UTC"
     }
   ],
   "structure_watch": [
@@ -141,5 +141,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-21 22:10 UTC"
+  "last_updated_utc": "2026-04-21 17:10 UTC"
 }
