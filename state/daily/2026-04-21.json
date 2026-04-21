@@ -676,6 +676,26 @@
         "balance": 1000.0,
         "positions": 0
       }
+    },
+    {
+      "ts_utc": "2026-04-21T10:52Z",
+      "tick_type": "forex_auto",
+      "trigger": "8 M15 bar_close",
+      "action": "all SKIP (no BOS/CHoCH/level touches)",
+      "prices": {
+        "USDJPY": 159.197,
+        "OIL_CRUDE": 86.313,
+        "GOLD": 4789.01,
+        "AUDUSD": 0.71584,
+        "EURUSD": 1.176045,
+        "USDCAD": 1.36578,
+        "GBPUSD": 1.35106,
+        "USDCHF": 0.77996
+      },
+      "events_consumed": 8,
+      "trades": 0,
+      "broker_match": true,
+      "audit": "3 alerts MODIFY (price refresh), 8 queries KEEP, 9 structure_watch KEEP"
     }
   ],
   "entries": [
