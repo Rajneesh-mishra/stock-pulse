@@ -492,6 +492,15 @@
       "trades": 0,
       "balance": 1000.0,
       "note": "8 M15 bar_close heartbeats all SKIP. 5+9+8 all KEEP. Ceasefire T-17h, no new catalyst."
+    },
+    {
+      "ts_utc": "2026-04-21T07:34:00Z",
+      "type": "heartbeat",
+      "events_in": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "note": "Heartbeat \u2014 0 unconsumed events, 0 trades, broker $1000/0 pos. 1 web search Iran ceasefire/oil: Bloomberg 'Iran set to attend Islamabad' (oil -1.1% Brent $94.44 fading 5.6% Mon spike) vs AJ 'Iran says no talks for now' \u2014 conflicting, no regime shift. T-~17h. 5+9+8 all KEEP."
     }
   ],
   "entries": [
