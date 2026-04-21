@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-21T05:33:00Z",
   "regime": "ESCALATION_CONFIRMED_KINETIC_EXCHANGE",
-  "regime_note": "2026-04-21 05:47 UTC \u2014 8 M15 bar_close heartbeat all majors (0 levels, 0 structure). Web search FLIPS thesis: Brent $95.42 +5.58%, WTI ~$89 +6% d/d (Fortune/OilPrice/TradingEconomics Apr 20-21), US seized Iranian ship weekend, Iran re-closed Hormuz & fired on vessels, US fired on Iran-linked ship Gulf of Oman. Ceasefire T-0 today Apr 21 Trump 'extension highly unlikely'. Vance enroute Islamabad after Iran last-min clearance. Market RATIFYING war premium \u2014 fade-escalation hypothesis BROKEN. Watchlist flipped: oil_crude FADE\u2192LONG (conv 3\u21924), usdcad conv 3\u21924 catalyst now live, gold conv 4\u21925, usdjpy 3\u21924. AUD breakdown thesis strengthening. Broker $1000 flat 0 pos. 8 events consumed.",
+  "regime_note": "2026-04-21 06:02 UTC \u2014 10 events (1 USDCAD level_enter SKIPPED + 9 M15/H1 bar_close). USDCAD short alert fired passively at zone low 1.36503 but explicit condition 'M15 bear BOS + rejection wick' NOT met (no BOS, bull FVG below). Web reality-check flips prior tick's narrative: WTI $88.26 CNBC Apr 21 (NOT +6% $89), broker crude $86.24 M15-bearish, oil FADING Tue on peace-talk optimism. Iran ceasefire T-0 today, Vance to Islamabad, Iran 'no talks under threats' \u2192 MIXED not purely escalating. Watchlist corrected: oil_crude conv 4\u21923, gold 5\u21924, usdcad 4\u21922. AUDUSD+USDJPY KEEP. 0 trades, 0 positions, balance $1000. No Telegram (nothing new vs prior tick).",
   "open_positions": [],
   "watchlist": [
     {
@@ -413,6 +413,6 @@
   "last_updated": "2026-04-21T05:33:00Z",
   "capital_base": 1000.0,
   "last_tick_ts_utc": "2026-04-21T05:39:09.646128Z",
-  "last_tick_utc": "2026-04-21T05:50:37Z",
+  "last_tick_utc": "2026-04-21T06:02:00Z",
   "last_scan_ts": "2026-04-21T01:30:00Z"
 }

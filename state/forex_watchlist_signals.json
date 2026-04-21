@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T11:20:00+05:30",
-  "pruned_at": "2026-04-21T11:20:00+05:30",
-  "pruned_by": "05:47 UTC tick — 8 M15 bar_close heartbeats all majors, 0 news, 0 pos flat. Web search ratifies escalation flip: Brent +5.58% $95.42, WTI +6% toward $89 (Fortune/OilPrice/TradingEconomics Apr 20-21), US seized Iranian ship weekend, Iran re-closed Hormuz+fired on vessels, US fired on Iran-linked ship Gulf of Oman, ceasefire T-0 today Trump 'extension highly unlikely', Vance enroute Islamabad after Iran last-min clearance. Fade-escalation hypothesis BROKEN — market ratifying war premium. 5/5 alerts MODIFIED (thesis flipped from fade to escalate). Structure_watch KEEP 9. News queries KEEP 8.",
+  "last_updated_by_claude": "2026-04-21T11:35:00+05:30",
+  "pruned_at": "2026-04-21T11:35:00+05:30",
+  "pruned_by": "06:02 UTC tick — 10 events (1 level_enter USDCAD SKIPPED + 9 bar_close). USDCAD short: zone entered passively at 1.36503 but alert's own condition 'M15 bear BOS + rejection wick' NOT met (M15 bar_close: no BOS, bull FVG below). Web search reality-check: WTI $88.26 (CNBC Apr 21, not +6% $89 as prior tick claimed), broker crude $86.24 bearish M15, oil FADING on Tue peace-talk uncertainty. Iran T-0 today, Vance to Islamabad, Iran 'no talks under threats' — MIXED not purely escalating. 3 alerts MODIFIED (oil/gold/usdcad — corrected stale '+6% $89' to '$86-88 fading, mixed'), 2 KEEP (audusd/usdjpy directions still valid). Structure_watch KEEP 9, news queries KEEP 8.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -43,7 +43,7 @@
       "level": 90.0,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
-      "note": "WTI ~$89 (Fortune/OilPrice Apr 20-21; +6% d/d), Brent $95.42 (+5.58% TradingEconomics). Thesis FLIPPED from fade to ESCALATE: US seized Iranian ship weekend, Iran re-closed Hormuz, US fired on Iran-linked vessel Gulf of Oman, ceasefire T-0 today Trump says extension 'highly unlikely'. Break-retest long at 90 with M15 bull BOS. Escalation path: 90→94→98. Default side = LONG escalation. SL 87.50, TP1 94, TP2 98. Conv 4."
+      "note": "WTI $88.26 (CNBC Apr 21 -1.51%), Brent $94.87 (-0.68%), broker shows WTI $86.24 bearish M15. Oil FADING Tue on peace-talk optimism, NOT +6% as prior tick. Thesis MIXED: Iran T-0 today, Vance to Islamabad, Iran 'no talks under threats' — could flip either way. Break of $90 + M15 bull BOS signals ceasefire collapse. SL 87.50, TP1 94, TP2 98. Conv 3 (was 4 — oil not ratifying escalation as previously claimed)."
     },
     {
       "id": "gold_escalation_buy_zone",
@@ -52,7 +52,7 @@
       "zone_high": 4810.0,
       "emit_on": "enter",
       "cooldown_sec": 900,
-      "note": "Safe-haven long on pullback into 4780-4810. Catalyst STRENGTHENING Apr 21: oil +6%, Hormuz re-closed, US-Iran kinetic, ceasefire T-0. Gold should bid on confirmed escalation + safe-haven flight. Needs M15 bull BOS + rejection wick on zone touch. If breaks 4835 cleanly chase via MODIFY. SL 4745, TP 4900/5000. Conv 5 (was 4)."
+      "note": "Safe-haven long on pullback into 4780-4810. Price at $4779.475 (just below zone). Thesis MIXED Apr 21: WTI fading to $88, ceasefire T-0 today Iran 'no talks under threats', could spike if talks collapse tonight. Needs M15 bull BOS + rejection wick on zone touch. SL 4745, TP 4900/5000. Conv 4 (was 5 — escalation path less certain with oil fading on peace optimism)."
     },
     {
       "id": "usdcad_short_fvg_retest",
@@ -61,7 +61,7 @@
       "zone_high": 1.36612,
       "emit_on": "enter",
       "cooldown_sec": 1800,
-      "note": "H1 bear FVG unmitigated after bear BOS. CAD bid thesis ACTIVATED: crude +6% Apr 21, Hormuz re-closed. Short on retest IF M15 bear BOS + rejection wick inside zone. Oil catalyst now live (vs prior tick 'needs catalyst'). SL 1.3685, TP1 1.3600, TP2 1.3550. Conv 4 (was 3 — catalyst now present)."
+      "note": "H1 bear FVG zone. Alert FIRED passively 06:02 UTC at 1.36503 — SKIPPED: M15 bar_close showed NO bear BOS, bull FVG forming below. Oil catalyst WEAKENED: WTI $88.26 fading (not +6% $89 as prior tick). USDCAD actually RISING toward 1.3647 on weaker oil = CAD weak. Short thesis requires oil to RESUME rally (WTI break $90) AND M15 bear BOS. SL 1.3685, TP1 1.3600, TP2 1.3550. Conv 2 (was 4 — direction contradicted by current oil fade, kept as conditional only)."
     }
   ],
   "structure_watch": [
