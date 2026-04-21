@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T11:35:00+05:30",
-  "pruned_at": "2026-04-21T11:35:00+05:30",
-  "pruned_by": "06:02 UTC tick — 10 events (1 level_enter USDCAD SKIPPED + 9 bar_close). USDCAD short: zone entered passively at 1.36503 but alert's own condition 'M15 bear BOS + rejection wick' NOT met (M15 bar_close: no BOS, bull FVG below). Web search reality-check: WTI $88.26 (CNBC Apr 21, not +6% $89 as prior tick claimed), broker crude $86.24 bearish M15, oil FADING on Tue peace-talk uncertainty. Iran T-0 today, Vance to Islamabad, Iran 'no talks under threats' — MIXED not purely escalating. 3 alerts MODIFIED (oil/gold/usdcad — corrected stale '+6% $89' to '$86-88 fading, mixed'), 2 KEEP (audusd/usdjpy directions still valid). Structure_watch KEEP 9, news queries KEEP 8.",
+  "last_updated_by_claude": "2026-04-21T11:37:00+05:30",
+  "pruned_at": "2026-04-21T11:37:00+05:30",
+  "pruned_by": "06:07 UTC tick — 1 unconsumed event (GOLD level_enter gold_escalation_buy_zone 4781.94 at 06:04). SKIPPED: zone swept (day low 4777 < zone bottom 4780), gold -0.79% day on USD bounce (DXY stronger limiting safe-haven bid), no M15 bull BOS confirmation available (bar_close close/high/low payloads are None). Web reality-check Apr 21 tick: Gold ~$4800 mild negative bias; ceasefire expires TODAY (Apr 21 per European Biz Mag/ABC, NOT Apr 22); Vance+Kushner+Witkoff flying Islamabad today (Iran 'no talks under threats' but supreme leader last-minute cleared delegates); US Navy seized Iranian vessel weekend. Market currently pricing DEAL OPTIMISM (gold weak, USD up) — classic pre-binary compression. Alerts on audusd (short on risk-off) and usdjpy (short on risk-off) carry STALE 'STRENGTHENING/RATIFIED' language from earlier ticks — price action today contradicts (risk-on posture). Updated audusd+usdjpy notes to reflect current mixed read. Gold alert kept (binary resolves 24h), note refreshed to reflect sweep + wait for BOS. 3 alerts MODIFIED (gold/audusd/usdjpy), 2 KEEP (oil/usdcad). Structure_watch KEEP 9, news queries KEEP 8.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -27,7 +27,7 @@
       "level": 0.707,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break of 0.707 = prior pivot gone. Short on retest from below. SL 0.713, TP 0.700. Risk-off + AUD first-to-bleed. Catalyst STRENGTHENING Apr 21: Hormuz re-closed, US-Iran naval clashes, Brent +5.58%, WTI +6%, ceasefire T-0 today Trump 'extension highly unlikely'. AUD should bleed on confirmed escalation. Need M15 bear BOS + rejection wick on retest. Conv 3."
+      "note": "Break of 0.707 = prior pivot gone. Short on retest from below. SL 0.713, TP 0.700. Risk-off + AUD first-to-bleed. Catalyst MIXED Apr 21 06:07 UTC (corrected): ceasefire expires TODAY, Vance/Witkoff/Kushner flying Islamabad, supreme leader cleared delegates at last minute — market pricing DEAL optimism (USD bid, gold -0.79%). Risk-off trigger requires TALKS COLLAPSE tonight (Iran vowed retaliation for seized tanker). Level 0.707 is ~1.1% below current 0.7178 — requires real catalyst not just drift. Need M15 bear BOS + rejection wick on retest. Conv 2 (was 3 — catalyst not ratifying on Tue)."
     },
     {
       "id": "usdjpy_riskoff_break",
@@ -35,7 +35,7 @@
       "level": 158.5,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break 158.50 = risk-off yen flight AND aligns w/ MoF pain threshold 158 (FXEmpire/MUFG Apr 16). Short on retest from below. Catalyst RATIFIED Apr 21: Hormuz re-closed, US-Iran kinetic events, crude +6%, ceasefire expires TODAY Trump 'highly unlikely' extension — classic risk-off yen bid setup. Market had not ratified previous tick but conditions sharper now. SL 159.20, TP 157.00. Conv 4 (was 3). If 159.20 breaks without intervention re-evaluate."
+      "note": "Break 158.50 = risk-off yen flight AND aligns w/ MoF pain threshold 158 (FXEmpire/MUFG Apr 16). Short on retest from below. Catalyst MIXED Apr 21 06:07 UTC (corrected from 'RATIFIED'): ceasefire expires TODAY but Vance/Witkoff/Kushner flying Islamabad, last-minute Iran clearance — market pricing DEAL optimism (USD bid ON, gold -0.79%, DXY bouncing). Yen flight requires TALKS COLLAPSE or retaliation on seized tanker. If deal optimism holds, USDJPY floats — no reason for 158.50 break. SL 159.20, TP 157.00. Conv 3 (was 4 — catalyst not ratifying today)."
     },
     {
       "id": "oil_crude_escalation_90",
@@ -52,7 +52,7 @@
       "zone_high": 4810.0,
       "emit_on": "enter",
       "cooldown_sec": 900,
-      "note": "Safe-haven long on pullback into 4780-4810. Price at $4779.475 (just below zone). Thesis MIXED Apr 21: WTI fading to $88, ceasefire T-0 today Iran 'no talks under threats', could spike if talks collapse tonight. Needs M15 bull BOS + rejection wick on zone touch. SL 4745, TP 4900/5000. Conv 4 (was 5 — escalation path less certain with oil fading on peace optimism)."
+      "note": "Safe-haven long on pullback into 4780-4810. Zone just SWEPT 06:04 UTC — day low 4777.56 poked BELOW zone bottom 4780, now $4782.4. FIRED at 4781.94, SKIPPED: no M15 bull BOS confirmation, gold -0.79% day on USD bounce, market pricing DEAL optimism Tue. Binary catalyst 24h out: Vance to Islamabad today, ceasefire expires TODAY (Apr 21 per ABC/EBM, corrected from Apr 22). If talks COLLAPSE tonight → gold rips $4900+. If deal struck → $4700s. Wait for M15 bull BOS + clean rejection wick on re-test, NOT on first sweep. SL 4745, TP 4900/5000. Conv 4."
     },
     {
       "id": "usdcad_short_fvg_retest",
