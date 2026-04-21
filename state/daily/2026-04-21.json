@@ -12,7 +12,7 @@
     "events_processed": 8,
     "events_types": "8x bar_close M15",
     "trades": 0,
-    "skip_reason": "binary T-~9h Iran deadline 0000 GMT Wed Apr 22 \u2014 no directional edge pre-event",
+    "skip_reason": "binary T-~9h Iran deadline 0000 GMT Wed Apr 22 — no directional edge pre-event",
     "drift": {
       "AUDUSD": 0.71769,
       "USDJPY": 159.153,
@@ -26,6 +26,16 @@
     },
     "notable": "GOLD -41p (risk-sentiment mixed + DXY drift), OIL +52p (only 1.68 below 90 fade, creep accelerating)",
     "watchlist_audit": "3 level_alerts MODIFY (refreshed price_refs + 90-fade proximity), 9 structure_watch KEEP, 8 queries KEEP",
+    "broker_balance": 1000.0,
+    "open_positions": 0
+  },
+  {
+    "ts_utc": "2026-04-21T20:32:00Z",
+    "trigger": "bar_close batch (11)",
+    "action": "SKIP_ALL",
+    "reason": "T-~3.5h binary to 0000 GMT Wed Apr 22 Iran deadline — zero edge",
+    "notable": "USDJPY 159.382 only 7p below 159.45 intervention fade; OIL 88.822 creep to 90 fade continues",
+    "trades": 0,
     "broker_balance": 1000.0,
     "open_positions": 0
   }
