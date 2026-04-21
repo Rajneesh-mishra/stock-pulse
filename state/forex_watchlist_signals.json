@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T11:37:00+05:30",
-  "pruned_at": "2026-04-21T11:37:00+05:30",
-  "pruned_by": "06:07 UTC tick — 1 unconsumed event (GOLD level_enter gold_escalation_buy_zone 4781.94 at 06:04). SKIPPED: zone swept (day low 4777 < zone bottom 4780), gold -0.79% day on USD bounce (DXY stronger limiting safe-haven bid), no M15 bull BOS confirmation available (bar_close close/high/low payloads are None). Web reality-check Apr 21 tick: Gold ~$4800 mild negative bias; ceasefire expires TODAY (Apr 21 per European Biz Mag/ABC, NOT Apr 22); Vance+Kushner+Witkoff flying Islamabad today (Iran 'no talks under threats' but supreme leader last-minute cleared delegates); US Navy seized Iranian vessel weekend. Market currently pricing DEAL OPTIMISM (gold weak, USD up) — classic pre-binary compression. Alerts on audusd (short on risk-off) and usdjpy (short on risk-off) carry STALE 'STRENGTHENING/RATIFIED' language from earlier ticks — price action today contradicts (risk-on posture). Updated audusd+usdjpy notes to reflect current mixed read. Gold alert kept (binary resolves 24h), note refreshed to reflect sweep + wait for BOS. 3 alerts MODIFIED (gold/audusd/usdjpy), 2 KEEP (oil/usdcad). Structure_watch KEEP 9, news queries KEEP 8.",
+  "last_updated_by_claude": "2026-04-21T11:53:00+05:30",
+  "pruned_at": "2026-04-21T11:53:00+05:30",
+  "pruned_by": "06:22 UTC tick — 1 unconsumed event (GOLD level_enter gold_escalation_buy_zone RE-FIRE at 4781.765, 15 min after 06:07 fire). SKIPPED AGAIN same thesis: still no M15 bull BOS, gold still -0.79% day, market still pricing DEAL optimism into T-0 binary. NEW intel from Apr 21 web scan: US Navy SEIZED Iranian-flagged vessel defying Hormuz blockade over weekend — Tehran vowed retaliation (NPR/Axios/EBM). Iran MFA spokesman Baghaei says US 'violated ceasefire from beginning' citing blockade since Apr 13 + vessel seizure. Talks sticking points: enrichment + Hormuz long-term status, BOTH unresolved. Vance departs Tuesday morning. Escalation signals STRONGER than 15 min ago (vessel + retaliation vow) but gold tape still shows deal-optimism compression. Gold note refreshed with vessel intel. Other alerts unchanged — same binary, same conv. 1 alert MODIFIED (gold note), 4 KEEP (audusd/usdjpy/oil/usdcad). Structure_watch KEEP 9, news queries KEEP 8.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -52,7 +52,7 @@
       "zone_high": 4810.0,
       "emit_on": "enter",
       "cooldown_sec": 900,
-      "note": "Safe-haven long on pullback into 4780-4810. Zone just SWEPT 06:04 UTC — day low 4777.56 poked BELOW zone bottom 4780, now $4782.4. FIRED at 4781.94, SKIPPED: no M15 bull BOS confirmation, gold -0.79% day on USD bounce, market pricing DEAL optimism Tue. Binary catalyst 24h out: Vance to Islamabad today, ceasefire expires TODAY (Apr 21 per ABC/EBM, corrected from Apr 22). If talks COLLAPSE tonight → gold rips $4900+. If deal struck → $4700s. Wait for M15 bull BOS + clean rejection wick on re-test, NOT on first sweep. SL 4745, TP 4900/5000. Conv 4."
+      "note": "Safe-haven long on pullback into 4780-4810. Zone re-entered 06:22 UTC at 4781.765 (re-fire after 06:04 sweep). SKIPPED both fires: no M15 bull BOS yet, gold -0.79% on USD bounce, tape still pricing deal optimism into T-0. NEW Apr 21: US Navy SEIZED Iranian vessel weekend, Tehran vowed retaliation; Iran MFA calls US already in violation (blockade + seizure). Sticking points (enrichment + Hormuz) unresolved, Vance departs Tuesday morning. Escalation background STRONGER but tape not ratifying yet. Wait for M15 bull BOS + rejection wick on re-test, or news flash (collapse/retaliation). If deal struck → $4700s (SL bleed). SL 4745, TP 4900/5000. Conv 4."
     },
     {
       "id": "usdcad_short_fvg_retest",
