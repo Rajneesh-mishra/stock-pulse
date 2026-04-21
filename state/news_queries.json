@@ -34,7 +34,7 @@
       "query": "Bank of Japan yen intervention MoF Katayama",
       "keywords_required": ["intervene", "intervention", "FX", "sold", "bought", "verbal", "surprise", "hike", "decision", "Katayama", "Akazawa", "rate check", "urgency", "excessive"],
       "cooldown_min": 60,
-      "note": "USDJPY 158.72 near 160 intervention line. FinMin Katayama G7 'high sense of urgency'. EconMin Akazawa floated BoJ hike as yen tool. BoJ Apr 27-28. Added Katayama/Akazawa/rate-check/urgency — pre-intervention verbal signals."
+      "note": "MoF pain threshold tightened to 158 per FXEmpire/MUFG (Apr 16) — vs 160 prior. USDJPY 158.969 with session low 158.27 overnight on verbal intervention. Katayama-Bessent FX talks Apr 16 affirm 'bold action' option per Sept Japan-US FX agreement. BoJ Apr 27-28. Pre-intervention verbal signals at peak."
     },
     {
       "id": "fed_fomc",
@@ -46,9 +46,9 @@
     {
       "id": "rba_hike",
       "query": "Reserve Bank Australia RBA rate",
-      "keywords_required": ["hike", "hold", "cut", "surprise", "statement", "decision"],
-      "cooldown_min": 120,
-      "note": "Market pricing May hike to 4.35%. Risk-off may force RBA to pause — AUD bid thesis broken under blockade."
+      "keywords_required": ["hike", "surprise", "shock", "unexpected", "hawkish", "dovish", "May meeting", "Bullock"],
+      "cooldown_min": 240,
+      "note": "TUNED 2026-04-21: dropped 'cut'/'hold'/'decision'/'statement' (matched too many 2024-2025 archive RSS items causing 10-event flood this tick). Raised cooldown to 240. Now requires action-specific or person-specific terms (Bullock=RBA Gov). Market pricing May hike to 4.35%. Risk-off may force RBA to pause — AUD bid thesis broken under blockade."
     },
     {
       "id": "us_tariff",

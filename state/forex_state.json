@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-21T03:31:00Z",
+  "last_tick": "2026-04-21T03:37:00Z",
   "regime": "ESCALATION_CONFIRMED_KINETIC_EXCHANGE",
-  "regime_note": "2026-04-21 ~03:30 UTC heartbeat tick (0 unconsumed events). Broker $1000 flat 0 pos reconciled. GOLD 4798.75 NOW IN ZONE 4780-4810 (daemon did not fire enter event, probably already-in-zone across tick) — awaiting M15 BOS + catalyst + confluence, SKIP for now. USDJPY 158.969 (47p above 158.5, low 158.546 tagged 4.6p buffer). AUDUSD 0.7169 (62p above 0.707). OIL 86.56 (3.44 below 90). USDCAD 1.3648 below zone. BTCUSD 75652 -0.87%. Iran ceasefire T-~18h Wed Apr 22 — Trump 'highly unlikely' extension, Iran refusing Pakistan round 2 calling US demands 'childish', US seized Iran vessel, Hormuz blockade in day 8+. Regime ESCALATION. 3 alerts MODIFIED fresh numbers, 2 KEEP, 9 structure_watch KEEP, 8 news queries KEEP.",
+  "regime_note": "2026-04-21 03:37 UTC tick — 24 news_flash events consumed (2 iran_ceasefire bg, 2 us_iran_military old archive, 1 opec_supply old, 10 rba_hike archive flood, plus interim drips). Broker $1000 flat 0 pos reconciled. NEW: MoF pain threshold per FXEmpire/MUFG (Apr 16) tightened to 158 (vs 160 prior); USDJPY session low 158.27 overnight; our 158.50 trigger now at-threshold. Iran ceasefire T-~20h Wed Apr 22 — Trump 'highly unlikely' extension, Iran 'no plans to reengage', Vance/Witkoff/Kushner→Pakistan Tue, US seized Iran vessel, Hormuz day 8+. Regime KINETIC_EXCHANGE intact. usdjpy alert MODIFIED (158 threshold note), boj_intervention query MODIFIED (158 note), rba_hike TUNED (dropped 'cut'/'hold' broad keywords + raised cooldown 120→240 to throttle archive flood). 0 trades — all events skipped, no level fills.",
   "open_positions": [],
   "watchlist": [
     {
@@ -336,6 +336,14 @@
       "closed": 0,
       "skipped": 17,
       "note": "routine bar_close heartbeat — GOLD in zone 4801 but composite 10.5 aligned=false SKIP; USDJPY -19.5 44p above trigger SKIP; all KEEP"
+    },
+    {
+      "ts_utc": "2026-04-21T03:37:00Z",
+      "events_in": 24,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 24,
+      "note": "24 news_flash all SKIP — 2 iran_ceasefire bg confirming Trump/Vance Pakistan trip, 2 us_iran_military Mar 6 ISW + Feb 19 BBC scenario backgrounder (old), 1 opec_supply Sep archive, 10 rba_hike 2024-2025 archive flood (TUNED query keywords + raised cooldown), plus interim drips. NEW INFO from web search: MoF pain threshold tightened to 158 (vs 160) per FXEmpire/MUFG Apr 16; usdjpy_riskoff_break note MODIFIED to reflect. boj_intervention query note MODIFIED. Regime KINETIC_EXCHANGE intact. Broker $1000 flat 0 pos."
     }
   ],
   "recent_skips": [
@@ -369,12 +377,12 @@
       "price": 4809.28
     }
   ],
-  "last_tick_summary": "02:26 UTC heartbeat — 0 unconsumed events. Broker $1000 flat 0 pos reconciled. 2 web searches (Iran + USDJPY/Katayama): no material delta — Iran ceasefire T-~18h 'highly unlikely' extension, Islamabad talks collapsed, USDJPY ~159.00 Katayama 'bold action'. All 5 alerts + 9 structure + 8 queries KEEP.",
+  "last_tick_summary": "03:37 UTC tick — 24 news_flash all SKIP (mostly RBA archive flood + Iran/OPEC bg). Broker $1000 flat 0 pos. NEW: MoF pain threshold tightened to 158 (FXEmpire/MUFG Apr 16) — usdjpy 158.50 trigger now at-threshold. Iran T-~20h Wed Apr 22 expiry. usdjpy alert MODIFIED, boj_intervention query MODIFIED, rba_hike TUNED.",
   "last_scan": {
-    "timestamp": "2026-04-21T07:26:55.584335+05:30",
-    "trigger": "level_enter"
+    "timestamp": "2026-04-21T09:10:00+05:30",
+    "trigger": "news_flash"
   },
-  "last_updated": "2026-04-21T02:26:29Z",
+  "last_updated": "2026-04-21T03:37:00Z",
   "capital_base": 1000.0,
   "last_tick_ts_utc": "2026-04-21T02:26:29Z",
   "last_tick_utc": "2026-04-21T02:44:02Z",

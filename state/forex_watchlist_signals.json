@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T09:00:00+05:30",
-  "pruned_at": "2026-04-21T09:00:00+05:30",
-  "pruned_by": "03:30 UTC heartbeat (0 pending events). Broker $1000 flat 0 pos reconciled. GOLD 4798.75 NOW IN ZONE 4780-4810 (was 4823 last tick, -24.5p) — awaiting catalyst + M15 BOS confirm, no event fired. USDJPY 158.969 (47p above 158.5, low 158.546 tagged). AUDUSD 0.7169 (62p above 0.707). OIL 86.56 (3.44 below 90). USDCAD 1.3648 still below zone 1.36503. BTCUSD 75652 (-0.87%). Iran ceasefire T-~18h (Apr 22 Wed expiry) Trump extension 'highly unlikely', Iran refusing Pakistan talks, US vessel seized. 3 alerts MODIFIED (fresh numbers), 2 KEEP, all 9 structure_watch KEEP, 8 news queries KEEP.",
+  "last_updated_by_claude": "2026-04-21T09:10:00+05:30",
+  "pruned_at": "2026-04-21T09:10:00+05:30",
+  "pruned_by": "03:36 UTC tick — 15 news_flash events (2 iran_ceasefire bg, 2 us_iran_military old archive, 1 opec_supply old, 10 rba_hike archive flood). Broker $1000 flat 0 pos reconciled. NEW INFO: MoF pain threshold per FXEmpire/MUFG tightened to 158 (vs 160 prior). USDJPY 158.969 unchanged but trigger 158.50 now sits at-threshold. Iran ceasefire T-~20h Apr 22 expiry Trump 'highly unlikely' ext, Iran 'no plans' to reengage. Regime KINETIC_EXCHANGE intact. 1 alert MODIFIED (usdjpy note), 4 KEEP, all 9 structure_watch KEEP. News queries: rba_hike TUNED (drop 'cut'/'hold' broad keywords to throttle archive flood, raise cooldown to 240), boj_intervention MODIFIED (158 threshold), 6 KEEP.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -35,7 +35,7 @@
       "level": 158.5,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break 158.50 = risk-off yen flight confirmed. Short on retest from below. Last 158.969 (47p above trigger; session low 158.546 tagged — 4.6p buffer). H1+M15 bearish BOS/ChoCh stacked. Catalyst intact: Trump 'extension highly unlikely' (CNN/Bloomberg), Vance→Pakistan Tue for Wed talks T-~18h, Iran FM 'ceasefire violations', US seized Iranian vessel, Iran refusing Pakistan round 2 calling US demands 'childish'. SL 159.20, TP 157.00. If 159.20 breaks without intervention, re-evaluate."
+      "note": "Break 158.50 = risk-off yen flight confirmed AND aligns with MoF pain threshold which per FXEmpire/MUFG (Apr 16) tightened to 158 (vs 160 prior). Short on retest from below. Last 158.969 (47p above trigger; session low 158.546 tagged — 4.6p buffer). H1+M15 bearish BOS/ChoCh stacked. Catalyst intact: Trump 'extension highly unlikely' (Bloomberg/CNN), Vance/Witkoff/Kushner→Pakistan Tue for Wed talks T-~20h, Iran 'no plans to reengage', US seized Iranian vessel. Katayama-Bessent FX talks Apr 16 affirm 'bold action' option open. SL 159.20, TP 157.00. If 159.20 breaks without intervention, re-evaluate."
     },
     {
       "id": "oil_crude_escalation_90",
