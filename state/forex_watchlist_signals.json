@@ -1,8 +1,8 @@
 {
-  "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T16:14:00+00:00",
-  "pruned_at": "2026-04-21T16:14:00+00:00",
-  "pruned_by": "16:14 UTC tick — level_cross OIL 90 fired (tick tag 90.003, day high 89.985, immediate rejection back to 89.983 bid, classic liquidity sweep). News narrative bearish oil on US-Iran talks proceeding (CNBC/Reuters: 'oil falls on expectations talks proceed'), contradicts momentum-buy flip condition. SKIP entry (wick-only sweep + bearish news + binary T-~8h to 0000 GMT Wed Apr 22). 3 level_alerts MODIFY (refreshed all price_refs + oil thesis sharpened to 'sell fade on retest w/ rejection, flip to buy only on SUSTAINED close >90.5 with ceasefire-fail confirmation'), 9 structure_watch KEEP, 8 queries KEEP. Broker $1000/0 pos matches state.",
+  "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
+  "last_updated_by_claude": "2026-04-21T16:18:00+00:00",
+  "pruned_at": "2026-04-21T16:18:00+00:00",
+  "pruned_by": "16:18 UTC tick \u2014 21 bar_close M15/H1/H4 (full universe sweep post-16:14) all SKIP T-~7.7h binary to 0000 GMT Wed Apr 22. Small drift vs 16:14 tick (3 min old): OIL M15 89.972 (-11p from 89.983, bar-close retreat from wick), AUDUSD 0.71617 (-2p), USDJPY 159.406 (+3p flat), GOLD H1 4734.295 / M15 4727.41 (mild -5 risk-off), USDCAD/EURUSD/GBPUSD/USDCHF/BTCUSD all flat. Confluence scores not emitted by daemon this tick. No news_flash events this tick (news queries unchanged, 0 headlines passed keyword filter). 3 level_alerts MODIFY (refreshed prices + T-~7.7h), 9 structure_watch KEEP (full instrument coverage), 8 queries KEEP. Broker $1000/0 pos matches state.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -28,15 +28,15 @@
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "buy AUDUSD near 0.707 support on ceasefire-fail spike — last 0.71609 bid (~91p above), binary T-~7.75h to 0000 GMT Wed Apr 22. Wait for rejection candle on 0.707 touch; skip naked level hits.",
-      "current_price_ref": 0.71609,
+      "note": "buy AUDUSD near 0.707 support on ceasefire-fail spike \u2014 last M15 close 0.71617 (~91p above), binary T-~7.7h to 0000 GMT Wed Apr 22. Wait for rejection candle on 0.707 touch; skip naked level hits.",
+      "current_price_ref": 0.71617,
       "price_ref": {
-        "ts": "2026-04-21T16:14:00Z",
-        "price": 0.71609
+        "ts": "2026-04-21T16:14:12Z",
+        "price": 0.71617
       },
-      "last_updated": "2026-04-21T16:14:00Z",
-      "proximity": "91p above 0.707 buy zone — last 0.71609 bid (-0.22% day, range 0.71434-0.71856, no AUDUSD bar_close this tick)",
-      "updated_utc": "2026-04-21 16:14 UTC"
+      "last_updated": "2026-04-21T16:18:00+00:00",
+      "proximity": "91p above 0.707 buy zone \u2014 M15 close 0.71617 (drift -2p vs prior tick, no trend change), binary T-~7.7h to 0000 GMT Wed Apr 22",
+      "updated_utc": "2026-04-21 16:18 UTC"
     },
     {
       "id": "usdjpy_intervention_fade_zone",
@@ -45,15 +45,15 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "sell USDJPY 159.45 intervention fade — last 159.403 bid (4.7p below, day high 159.439 tagged and rejected earlier — zone armed), H1 bull FVG 159.20-159.28 mitigated, BoJ/MoF tail risk, binary T-~7.75h. Need rejection wick on 159.45 touch.",
-      "current_price_ref": 159.403,
+      "note": "sell USDJPY 159.45 intervention fade \u2014 last M15 close 159.406 (4.4p below, day high 159.439 tagged/rejected earlier \u2014 zone armed), H1 bull FVG 159.20-159.28 mitigated, BoJ/MoF tail risk, binary T-~7.7h. Need rejection wick on 159.45 touch.",
+      "current_price_ref": 159.406,
       "price_ref": {
-        "ts": "2026-04-21T16:14:00Z",
-        "price": 159.403
+        "ts": "2026-04-21T16:14:14Z",
+        "price": 159.406
       },
-      "last_updated": "2026-04-21T16:14:00Z",
-      "proximity": "VERY close — 4.7p below 159.45 fade (tightening vs 7p prior tick), day high 159.439 already tapped zone and pulled back. Not trading (binary T-~7.75h, news ambiguous). Alert armed if clean rejection wick forms.",
-      "updated_utc": "2026-04-21 16:14 UTC"
+      "last_updated": "2026-04-21T16:18:00+00:00",
+      "proximity": "VERY close \u2014 4.4p below 159.45 fade (M15 close 159.406), day high 159.439 already tapped zone earlier and rejected. Zone armed if clean rejection wick forms. Not trading pre-binary.",
+      "updated_utc": "2026-04-21 16:18 UTC"
     },
     {
       "id": "oil_crude_escalation_90",
@@ -62,15 +62,15 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "sell OIL 90 fade — 90.003 tagged this tick (level_cross fired), IMMEDIATELY rejected back to 89.983 bid (day high 89.985, wick-only sweep). News narrative bearish (CNBC/Reuters 21 Apr: 'oil falls on expectations US-Iran talks proceed → more supply'), contradicts momentum-buy flip. Sell the fade on retest WITH rejection wick is the cleaner entry. FLIP to momentum buy ONLY if SUSTAINED close >90.5 on confirmed ceasefire-fail headline. Binary T-~7.75h. M15 bull FVG 88.91-89.548 UNMITIGATED, bullish BOS earlier.",
-      "current_price_ref": 89.983,
+      "note": "sell OIL 90 fade \u2014 90.003 tagged & rejected earlier (day high 89.985, wick-only sweep), now M15 close 89.972 (3p below). News bearish oil (CNBC/Reuters 21 Apr: 'oil falls on US-Iran talks proceeding \u2192 more supply'), contradicts momentum-buy flip. Sell fade on 2nd-test WITH rejection wick is cleaner. FLIP to buy ONLY on SUSTAINED close >90.5 w/ ceasefire-fail headline. Binary T-~7.7h. M15 bull FVG 88.91-89.548 UNMITIGATED, bullish BOS earlier.",
+      "current_price_ref": 89.972,
       "price_ref": {
-        "ts": "2026-04-21T16:14:00Z",
-        "price": 89.983
+        "ts": "2026-04-21T16:14:20Z",
+        "price": 89.972
       },
-      "last_updated": "2026-04-21T16:14:00Z",
-      "proximity": "AT-ZONE — 90.003 tick tag rejected (day high 89.985), now 89.983 bid, +4.78% day range 85.622-89.985. Not trading this wick (need sustained break + news confirmation). Second test of 90 with rejection wick = sell entry; sustained close >90.5 w/ ceasefire-fail = flip to buy.",
-      "updated_utc": "2026-04-21 16:14 UTC"
+      "last_updated": "2026-04-21T16:18:00+00:00",
+      "proximity": "NEAR-ZONE \u2014 M15 close 89.972 (3p below 90 fade), H1 close 89.770, H4 close 89.728. Day high 89.985 earlier with wick to 90.003 rejected back. 90 still armed for 2nd-test sell (rejection wick) OR sustained close >90.5 = flip to momentum buy on ceasefire-fail confirm.",
+      "updated_utc": "2026-04-21 16:18 UTC"
     }
   ],
   "structure_watch": [
