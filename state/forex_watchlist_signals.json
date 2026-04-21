@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T15:24:00+05:30",
-  "pruned_at": "2026-04-21T15:24:00+05:30",
-  "pruned_by": "09:54 UTC tick (8 M15 bar_close all SKIP no BOS/CHoCH/level touches). Prices flat-drift vs 09:40: AUDUSD 0.71524 (flat), USDJPY 159.179 (+1.2p, still 0.27 below 159.45 fade, bull FVG 159.02-159.115 unmitigated below), GOLD 4787.21 (+3.02, still <4800 bear FVG), OIL_CRUDE 86.617 (-0.19, continuing reversal of earlier 87.15 pop), USDCAD 1.36573 (flat), EURUSD 1.17594 (flat), GBPUSD 1.3505 (flat), USDCHF 0.77965 (-0.08). NEWS: WebSearch confirmed Vance departing today for Islamabad + Iran MFA 'no negotiators' + 'US violated ceasefire from beginning' (Hormuz blockade Apr 13 + overnight container-ship seizure). No material delta vs 09:40 — same compressed regime PRE_BINARY_COMPRESSION, T-~13.5h to Wed 00:00 GMT Apr 22 ceasefire expiry, market fatigued/priced-in. 2 alerts MODIFY (usdjpy+oil price refresh), 1 KEEP. 8 queries KEEP. 0 positions, $1000 matches.",
+  "last_updated_by_claude": "2026-04-21T15:39:00+05:30",
+  "pruned_at": "2026-04-21T15:39:00+05:30",
+  "pruned_by": "10:08 UTC tick (12 bar_close H1+M15 across 6 pairs, all SKIP no BOS/CHoCH/level touches). USDJPY fresh price 159.189 (+1p vs 09:54's 159.179, still 0.26 below 159.45 fade zone, day range 158.695-159.251). Other pairs price-drift negligible (<3p vs 09:54). WebSearch confirmed (CNN/AJ/NBC live blogs Apr 21): no deal in place, Vance departing today for Islamabad, Iran MFA 'no negotiators + US violated ceasefire from beginning' (Hormuz blockade Apr 13 + overnight container-ship seizure), Trump 'highly unlikely' extend. Iran warned 'new cards on the battlefield' (NBC) — mild esc tone. Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM intact, T-~13.8h to 00:00 GMT Wed Apr 22 expiry. 1 alert MODIFY (usdjpy price refresh) 2 KEEP. 8 queries KEEP. 0 positions, $1000 matches broker.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -36,7 +36,7 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "Price 159.179 (09:54 UTC, +1.2p vs 09:40, still 0.27 below 159.45 fade zone 159.45-161.95 per MarketPulse/OANDA; bearish M15 BOS intact, bull FVG 159.02-159.115 unmitigated below). Katayama post-Bessent 'bold action' (JapanTimes Apr 16). Fade SELL on entry into zone — needs M15 bear BOS + rejection wick on first touch of 159.45+ for 7-gate. SL 161.00, TP1 158.70, TP2 157.20. Conv 3. 2-WAY RISK: (a) Iran risk-off flip bids yen (ceasefire collapse → safe-haven bid — T-~13.5h to Wed 00:00 GMT expiry, Iran pulled out per Euronews + Vance flying Tue), (b) Islamabad surprise deal → USD bid but intervention risk caps. Monitor M15 for first touch OR mitigation of 159.02-159.115 bull FVG from above."
+      "note": "Price 159.189 (10:08 UTC bid, +1p vs 09:54's 159.179, still 0.26 below 159.45 fade zone 159.45-161.95 per MarketPulse/OANDA; day range 158.695-159.251; bearish M15 BOS intact, bull FVG 159.02-159.115 unmitigated below). Katayama post-Bessent 'bold action' (JapanTimes Apr 16). Fade SELL on entry into zone — needs M15 bear BOS + rejection wick on first touch of 159.45+ for 7-gate. SL 161.00, TP1 158.70, TP2 157.20. Conv 3. 2-WAY RISK: (a) Iran risk-off flip bids yen (ceasefire collapse → safe-haven bid — T-~13.8h to Wed 00:00 GMT Apr 22 expiry, Iran refusing Islamabad per AJ/CNN + Vance flying today), (b) Islamabad surprise deal → USD bid but intervention risk caps. Monitor M15 for first touch OR mitigation of 159.02-159.115 bull FVG from above."
     },
     {
       "id": "oil_crude_escalation_90",
