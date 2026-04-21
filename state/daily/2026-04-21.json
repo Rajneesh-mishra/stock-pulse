@@ -12,7 +12,7 @@
     "events_processed": 8,
     "events_types": "8x bar_close M15",
     "trades": 0,
-    "skip_reason": "binary T-~9h Iran deadline 0000 GMT Wed Apr 22 — no directional edge pre-event",
+    "skip_reason": "binary T-~9h Iran deadline 0000 GMT Wed Apr 22 \u2014 no directional edge pre-event",
     "drift": {
       "AUDUSD": 0.71769,
       "USDJPY": 159.153,
@@ -33,10 +33,17 @@
     "ts_utc": "2026-04-21T20:32:00Z",
     "trigger": "bar_close batch (11)",
     "action": "SKIP_ALL",
-    "reason": "T-~3.5h binary to 0000 GMT Wed Apr 22 Iran deadline — zero edge",
+    "reason": "T-~3.5h binary to 0000 GMT Wed Apr 22 Iran deadline \u2014 zero edge",
     "notable": "USDJPY 159.382 only 7p below 159.45 intervention fade; OIL 88.822 creep to 90 fade continues",
     "trades": 0,
     "broker_balance": 1000.0,
     "open_positions": 0
+  },
+  {
+    "ts": "2026-04-21T15:18Z",
+    "trigger": "events_14_bar_close",
+    "summary": "14 bar_close M15/H1 all SKIP. T-~8.75h binary to 0000 GMT Wed Apr 22 Iran deadline. USDJPY 159.307 now only 14p below 159.45 fade (VERY close, H1 bull FVG just mitigated). OIL 88.574 (+77p vs 14:46, 1.43 below 90 fade, M15 bullish BOS). AUDUSD 0.71692 99p above 0.707 buy. 3 level_alerts MODIFY, 9 structure_watch KEEP, 8 queries KEEP. 0 trades (binary zero edge).",
+    "trades": 0,
+    "events_consumed": 14
   }
 ]
