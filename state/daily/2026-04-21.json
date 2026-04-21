@@ -543,6 +543,27 @@
       "trades": 0,
       "summary": "22 bar_close events. GOLD broke below 4780 buy zone (now 4777, day lo 4772.41); web confirms regime where oil\u2192rates dominates safe-haven bid. WTI bouncing $86.65 at trend resistance. Watchlist pruned to 3 alerts (removed gold_buy_zone invalidated + usdcad FVG mitigated).",
       "broker": "$1000 / 0 positions"
+    },
+    {
+      "ts_utc": "2026-04-21T08:27:00Z",
+      "trigger": "bar_close_heartbeat",
+      "events_processed": 8,
+      "events_type": "bar_close M15 all 8 pairs (AUDUSD/USDJPY/GOLD/OIL_CRUDE/USDCAD/EURUSD/GBPUSD/USDCHF)",
+      "verdict": "all SKIP \u2014 no BOS/CHoCH/level_enter",
+      "broker": {
+        "balance": 1000.0,
+        "positions": 0,
+        "match": true
+      },
+      "audit": "all 3 level_alerts + 9 structure_watch + 8 news queries KEEP",
+      "news": "CNN/AlJazeera/NPR Apr 21: ceasefire T-~15h (expires 00:00 GMT Wed Apr 22), Iran won't confirm Islamabad, Vance/Witkoff/Kushner en route, Trump 'highly unlikely' to extend, Hormuz blockade + Touska seizure ongoing",
+      "prices": {
+        "GOLD": 4785.0,
+        "OIL_CRUDE": 86.16,
+        "USDJPY": 159.19,
+        "AUDUSD": 0.7154
+      },
+      "trades": 0
     }
   ],
   "entries": [

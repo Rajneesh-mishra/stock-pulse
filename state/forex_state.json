@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-21T08:09:00Z",
+  "last_tick": "2026-04-21T08:27:00Z",
   "regime": "PRE_BINARY_COMPRESSION_DEAL_OPTIMISM",
-  "regime_note": "2026-04-21 08:15 UTC \u2014 22 bar_close heartbeat (no BOS/CHoCH/level_enter). MATERIAL: GOLD broke BELOW 4780 zone to 4772.41 day low (now 4777, -0.91%); 5th re-fire torched. Web search (Bloomberg/Investing.com Apr 21) confirms regime: rising oil \u2192 inflation \u2192 rates overwhelms safe-haven bid. WTI bouncing $85.62\u2192$86.65 (+0.9%) but capped by descending trend resistance (fxdailyreport). Iran CNN/NPR Apr 20-21: Iran refusing Islamabad, demanding Touska release, ceasefire T-~15.5h (expires 0000 GMT WED Apr 22), extension 'highly unlikely'. Watchlist: REMOVED gold_escalation_buy_zone (invalidated) + usdcad_short_fvg_retest (FVG mitigated, oil bounce breaks precondition). 3 alerts remain: audusd_breakdown 0.707 (conv 3), usdjpy_riskoff 158.50 (conv 4, overnight low 158.695 didn't quite hit), oil_crude_escalation $90 (conv 4). Broker $1000 / 0 positions matches state. No trades. Ceasefire expiry = primary T-15.5h catalyst.",
+  "regime_note": "2026-04-21 08:27 UTC \u2014 8 M15 bar_close heartbeat, all SKIP (no BOS/CHoCH/level_enter). Prices drifted minimally since 08:15: GOLD 4785 (-0.74%, day lo 4772), WTI 86.16 (+0.34%, day lo 85.62), USDJPY 159.19, AUDUSD 0.7154. Web search (CNN/AlJazeera/NPR Apr 21) confirms ceasefire T-~15h (expires 00:00 GMT Wed Apr 22): Iran still won't confirm Islamabad attendance, Vance/Witkoff/Kushner departing today, Trump 'highly unlikely' to extend, US navy blockade Hormuz since Apr 13 + Touska seizure ongoing, Iran demands vessel release. Narrative unchanged. 3 level_alerts (audusd 0.707 cross_down, usdjpy 158.5 cross_down, oil 90 cross_up) + 9 structure_watch + 8 news queries all KEEP. 0 trades. Broker $1000 / 0 positions matches.",
   "open_positions": [],
   "watchlist": [
     {
