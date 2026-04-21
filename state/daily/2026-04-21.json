@@ -791,6 +791,22 @@
       "events_processed": 8,
       "trades": 0,
       "summary": "8 M15 bar_close all SKIP T-~10.2h binary. Drift minimal except GOLD +14p risk-off creep. 3 alerts / 9 structure / 8 queries all KEEP. Broker $1000/0 pos matches."
+    },
+    {
+      "time": "14:02 UTC",
+      "trigger": "bar_close x10",
+      "prices": {
+        "AUDUSD": 0.71739,
+        "USDJPY": 159.116,
+        "GOLD": 4778.24,
+        "OIL_CRUDE": 87.064,
+        "USDCAD": 1.36393,
+        "EURUSD": 1.17663,
+        "GBPUSD": 1.3523
+      },
+      "action": "all SKIP binary T-~10h no edge",
+      "trades": 0,
+      "audit": "3 level_alerts KEEP, 9 structure_watch KEEP, 8 queries KEEP"
     }
   ],
   "entries": [
