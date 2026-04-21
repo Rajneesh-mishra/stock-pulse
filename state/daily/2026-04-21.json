@@ -484,6 +484,14 @@
       "events_closed": 0,
       "events_skipped": 16,
       "note": "8 bar_close M15+H1 (16 total) all SKIP \u2014 no BOS/CHoCH/level_enter since 07:10 UTC audit. Broker $1000/0 pos. Last audit 4min prior covered narrative. All 5 alerts + 9 structure + 8 queries KEEP."
+    },
+    {
+      "ts_utc": "2026-04-21T07:28Z",
+      "type": "heartbeat",
+      "events_consumed": 8,
+      "trades": 0,
+      "balance": 1000.0,
+      "note": "8 M15 bar_close heartbeats all SKIP. 5+9+8 all KEEP. Ceasefire T-17h, no new catalyst."
     }
   ],
   "entries": [
