@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-21T01:36:08Z",
   "regime": "ESCALATION_CONFIRMED_KINETIC_EXCHANGE",
-  "regime_note": "2026-04-21 ~01:55 UTC auto tick \u2014 1 GOLD level_enter evt_1776736478305 (price 4809.28 IN zone 4780-4810) SKIP: confluence composite 10.5 (<60), aligned=false, all_tfs_agree=false, M15 bear FVG unmitigated 1 bar ago, DAY score -0.15 mixed, no M15 bull BOS, no rejection wick. News pulse: AP 'in principle' extension vs Reuters 'not formally agreed' \u2014 no regime shift, no signature, DXY firming 99.8-100 = headwind for safe-haven long. Marginally bearish delta for gold long. Broker $1000 flat 0 pos reconciled. Iran ceasefire Apr 22 Wed expiry T-~22h. Audit: all 5 level_alerts + 9 structure_watch + 8 news_queries KEEP \u2014 zone catalyst live, waiting for deeper pullback or failed-talks tape.",
+  "regime_note": "2026-04-21 ~02:00 UTC auto tick \u2014 8 bar_close M15 events (all pairs) routine heartbeat, no structural shift. Prior tick 01:55 already SKIPPED GOLD level_enter (composite 10.5, aligned=false, M15 bear FVG unmitig). 0 positions. $1000 bal. Iran ceasefire T-18h watching, DXY firming mild headwind for gold longs. Audit: all 5 level_alerts + 9 structure_watch + 8 news queries KEEP.",
   "open_positions": [],
   "watchlist": [
     {
@@ -345,6 +345,6 @@
   "last_updated": "2026-04-21T01:56:55Z",
   "capital_base": 1000.0,
   "last_tick_ts_utc": "2026-04-21T01:56:55Z",
-  "last_tick_utc": "2026-04-21T01:56:55Z",
+  "last_tick_utc": "2026-04-21T02:00:05Z",
   "last_scan_ts": "2026-04-21T01:30:00Z"
 }

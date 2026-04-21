@@ -210,6 +210,13 @@
       "opened": 0,
       "closed": 0,
       "note": "GOLD 4809.28 IN zone SKIP \u2014 confluence 10.5 aligned=false M15 bear FVG"
+    },
+    {
+      "ts_utc": "2026-04-21T02:00:05Z",
+      "trigger": "auto",
+      "events_processed": 8,
+      "events_acted": 0,
+      "summary": "8 bar_close M15 heartbeat \u2014 no action. All watchlist/queries KEEP."
     }
   ],
   "entries": [
