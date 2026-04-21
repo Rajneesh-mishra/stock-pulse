@@ -2,7 +2,7 @@
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
   "last_updated_by_claude": "2026-04-21T13:45:00+00:00",
   "pruned_at": "2026-04-21T13:45:00+00:00",
-  "pruned_by": "13:45 UTC tick (15 news_flash all SKIP dupe Iran/US Touska+Islamabad stories already mapped). Fresh narrative angles: AlJaz Apr 21 'Pakistan eyes narrow window to resuscitate US-Iran talks AFTER BREAKDOWN', TRT Apr 21 'Qatar backs extending if collapse', Jerusalem Post Apr 21 'Trump doesn't want to extend'. Binary uncertainty intact — breakdown-vs-resuscitation framing now explicit. T-~10.3h to 0000 GMT Wed Apr 22. 3 level_alerts KEEP (no price fetch this tick), 9 structure_watch KEEP, 8 news_queries KEEP. Broker $1000/0 pos matches state. 15 events consumed, 0 trades (binary no edge).",
+  "pruned_by": "13:45 UTC tick (15 news_flash all SKIP dupe Iran/US Touska+Islamabad stories already mapped). Fresh narrative angles: AlJaz Apr 21 'Pakistan eyes narrow window to resuscitate US-Iran talks AFTER BREAKDOWN', TRT Apr 21 'Qatar backs extending if collapse', Jerusalem Post Apr 21 'Trump doesn't want to extend'. Binary uncertainty intact \u2014 breakdown-vs-resuscitation framing now explicit. T-~10.3h to 0000 GMT Wed Apr 22. 3 level_alerts KEEP (no price fetch this tick), 9 structure_watch KEEP, 8 news_queries KEEP. Broker $1000/0 pos matches state. 15 events consumed, 0 trades (binary no edge).",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -27,8 +27,8 @@
       "level": 0.707,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "buy AUDUSD near 0.707 support on ceasefire fail spike \u2014 92p above, binary T-~10h",
-      "current_price_ref": 0.71691
+      "note": "buy AUDUSD near 0.707 support on ceasefire fail spike \u2014 108p above, binary T-~10h",
+      "current_price_ref": 0.71769
     },
     {
       "id": "usdjpy_intervention_fade_zone",
@@ -37,8 +37,8 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "sell USDJPY at 159.45 fade \u2014 0.38 below, binary T-~10h, BoJ intervention tail risk",
-      "current_price_ref": 159.069
+      "note": "sell USDJPY at 159.45 fade \u2014 0.37 below, binary T-~10h, BoJ intervention tail risk",
+      "current_price_ref": 159.085
     },
     {
       "id": "oil_crude_escalation_90",
@@ -46,8 +46,8 @@
       "level": 90.0,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
-      "note": "sell OIL 90 fade on ceasefire hold \u2014 3.2 below, binary T-~10h, needs deal clarity",
-      "current_price_ref": 86.803
+      "note": "sell OIL 90 fade on ceasefire hold \u2014 2.4 below, binary T-~10h, needs deal clarity",
+      "current_price_ref": 87.604
     }
   ],
   "structure_watch": [

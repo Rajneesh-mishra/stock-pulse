@@ -807,6 +807,14 @@
       "action": "all SKIP binary T-~10h no edge",
       "trades": 0,
       "audit": "3 level_alerts KEEP, 9 structure_watch KEEP, 8 queries KEEP"
+    },
+    {
+      "ts_utc": "2026-04-21T14:16Z",
+      "trigger": "bar_close_batch",
+      "events_consumed": 12,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "summary": "14:16 UTC forex \u2014 12 bar_close SKIP T-~9.8h binary. Drift: AUDUSD 0.71769, USDJPY 159.085, GOLD 4778.10, OIL 87.604 (+54p notable). 3 level_alerts MODIFY proximity, rest KEEP. $1000/0 pos."
     }
   ],
   "entries": [
