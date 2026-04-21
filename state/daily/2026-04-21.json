@@ -815,6 +815,20 @@
       "trades_opened": 0,
       "trades_closed": 0,
       "summary": "14:16 UTC forex \u2014 12 bar_close SKIP T-~9.8h binary. Drift: AUDUSD 0.71769, USDJPY 159.085, GOLD 4778.10, OIL 87.604 (+54p notable). 3 level_alerts MODIFY proximity, rest KEEP. $1000/0 pos."
+    },
+    {
+      "ts_utc": "2026-04-21T14:32:00Z",
+      "type": "forex_auto_tick",
+      "events_consumed": 8,
+      "events_type": "bar_close M15 x8 (AUD/USDJPY/GOLD/OIL/USDCAD/EUR/GBP/CHF)",
+      "trades": 0,
+      "decisions": "all SKIP \u2014 T-~9.5h to 0000 GMT Wed Apr 22 binary (Iran-US ceasefire). Drift vs 14:16: AUDUSD +3p to 0.71799 (111p above 0.707); USDJPY +6.7p to 159.152 (0.30 below 159.45 fade \u2014 closing gap); OIL +20p to 87.805 (2.2 below 90 fade \u2014 creep continues); GOLD -5p (mild risk-on intact); EUR/CAD/GBP/CHF flat.",
+      "audit": "level_alerts: 3 MODIFY (refreshed price_ref + proximity text for AUDUSD/USDJPY/OIL); structure_watch: 9 KEEP; queries: 8 KEEP.",
+      "budget_remaining": "/bin/zsh.81",
+      "broker": {
+        "balance": 1000.0,
+        "open_positions": 0
+      }
     }
   ],
   "entries": [

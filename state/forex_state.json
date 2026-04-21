@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-21T14:02:00Z",
   "regime": "PRE_BINARY_COMPRESSION_CONFLICTING_NARRATIVE",
-  "regime_note": "2026-04-21 14:16 UTC - 12 bar_close all SKIP T-~9.8h binary. Drift vs 14:02: AUDUSD 0.71769 (+3p, 108p above 0.707), USDJPY 159.085 (-3p, 0.37 below 159.45 fade), GOLD 4778.10 flat (-14p risk-on bias intact), OIL 87.604 (+54p notable \u2014 now 2.4 below 90 fade, risk-on acceleration creeping), USDCAD/EURUSD/GBPUSD/BTC flat. No web search (budget $1.05). 3 level_alerts MODIFY (refreshed proximity), 9 structure_watch KEEP, 8 queries KEEP. Broker $1000/0 pos matches. 12 events consumed. 0 trades (binary no edge T-~10h).",
+  "regime_note": "2026-04-21 14:32 UTC - 8 bar_close M15 all SKIP T-~9.5h binary. Drift vs 14:16: AUDUSD 0.71799 (+3p 111p above 0.707), USDJPY 159.152 (+6.7p 0.30 below 159.45 fade \u2014 closing gap), GOLD 4772.97 (-5p mild risk-on intact), OIL 87.805 (+20p 2.2 below 90 fade \u2014 creep continues), USDCAD/EURUSD/GBPUSD/USDCHF flat. No news fetch (budget $0.85). 3 level_alerts MODIFY (refreshed current_price_ref + proximity text), 9 structure_watch KEEP, 8 queries KEEP. Broker $1000/0 pos matches. 8 events consumed. 0 trades (binary no edge T-~9.5h).",
   "open_positions": [],
   "watchlist": [
     {
@@ -350,7 +350,7 @@
   "last_updated": "2026-04-21T13:45:00Z",
   "capital_base": 1000.0,
   "last_tick_ts_utc": "2026-04-21T13:45:00Z",
-  "last_tick_utc": "2026-04-21T13:45:00Z",
+  "last_tick_utc": "2026-04-21T14:32:00Z",
   "last_scan_ts": "2026-04-21T01:30:00Z",
   "tick_log": [
     {
