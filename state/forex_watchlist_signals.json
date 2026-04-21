@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T10:10:00+05:30",
-  "pruned_at": "2026-04-21T10:10:00+05:30",
-  "pruned_by": "04:36 UTC tick — 13 events (8 bar_close M15 all majors heartbeat, 5 news_flash including HORMUZ CLOSED headlines: Iran says Strait of Hormuz closed again + vessels under fire incl Indian-flagged + CNBC/Guardian/WaPo/CNN/Jerusalem Post). Broker $1000 flat 0 pos reconciled. Crude +0.71% @ 86.48 (well below 90 trigger), Gold -0.58% @ 4792 (now in 4780-4810 zone), USDJPY +0.12% @ 158.98 (48p above 158.50), AUDUSD -0.14% @ 0.7166. Prices NOT ratifying Hormuz headlines — either already priced or headlines re-cycling earlier news. No confluence = SKIP all. 2 alerts MODIFIED (usdjpy + oil notes to add Hormuz context), 3 KEEP, all structure_watch KEEP. News queries all KEEP.",
+  "last_updated_by_claude": "2026-04-21T10:22:00+05:30",
+  "pruned_at": "2026-04-21T10:22:00+05:30",
+  "pruned_by": "04:51 UTC tick — 8 bar_close M15 heartbeat-only (all majors). 0 news_flash. Broker $1000 flat 0 pos reconciled. Prices coiling since 04:36 tick: WTI 86.44 (+0.66%) 3.56 below 90 / Gold 4789.89 (-0.64%) NOW AT bottom of 4780-4810 zone day_low 4789.49 / USDJPY 158.958 (+0.11%) 45p above 158.50 / AUDUSD 0.71667 62p above 0.707 / USDCAD 1.36467 session_high 1.36504 JUST touched zone_low 1.36503 (1p retest) but oil flat = no catalyst. Iran ceasefire T-~17h Apr 22 Wed expiry live. All 5 alerts KEEP. All 9 structure_watch KEEP. All 8 news_queries KEEP.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
