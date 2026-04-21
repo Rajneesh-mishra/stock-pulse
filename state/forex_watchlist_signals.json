@@ -1,8 +1,8 @@
 {
-  "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T12:40:00+05:30",
-  "pruned_at": "2026-04-21T12:40:00+05:30",
-  "pruned_by": "07:09 UTC tick — 1 GOLD level_enter re-fire at 4781.195 (4th re-fire same zone inside ~50min, SKIPPED: still no M15 bull BOS). 0 positions, broker $1000. NEW narrative shift (CNBC/FXStreet Apr 20-21): 'war trade dynamics' returning, ceasefire 'appears to be breaking down' (CNBC), gold HOLDING above $4,800 despite USD strength — disconnect narrowing but not closed. Gold still pinned -0.7% by USD bid + rates, not bid yet on risk-off. Spot ~$4,796. Thesis INTACT — wait M15 bull BOS or US-confirmed vessel-hit headline. 1 MODIFY (gold note: upgrade to 'ceasefire breaking down per CNBC, war trade returning, waiting BOS catalyst'). 4 KEEP (audusd/usdjpy/oil/usdcad). Structure_watch 9 KEEP, news queries 8 KEEP.",
+  "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
+  "last_updated_by_claude": "2026-04-21T13:10:00+05:30",
+  "pruned_at": "2026-04-21T13:10:00+05:30",
+  "pruned_by": "07:38 UTC tick \u2014 MATERIAL narrative shift confirmed via fresh web search (Euronews/CNN/NPR Apr 21): Iran PULLED OUT of Islamabad talks (was conflicting; now clear walkout). Touska seized in Strait of Hormuz by US (Trump confirmed). Iran FM demanding vessel release. Trump ext 'highly unlikely' intact. Ceasefire T-~16h (expires 0000 GMT WED Apr 22). 16 unconsumed events (1 USDCAD level_enter, 15 stale Google News RSS \u2014 5 us_iran_military June-2025 war articles Feb-Mar pub dates, 10 rba_hike archive articles). USDCAD re-fire SKIPPED (M15 oil still fading, no BOS). 4 MODIFY (conv upgrades: gold 4\u21925, oil 3\u21924, usdjpy 3\u21924, audusd 2\u21923) + 1 KEEP (usdcad conditional). 9 structure_watch KEEP. News queries: 2 MODIFY (us_iran_military + rba_hike keyword tighten \u2014 stale June-war articles kept slipping through old broad keywords). 6 KEEP.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -27,7 +27,7 @@
       "level": 0.707,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break of 0.707 = prior pivot gone. Short on retest from below. SL 0.713, TP 0.700. Risk-off + AUD first-to-bleed. Catalyst MIXED Apr 21 06:07 UTC (corrected): ceasefire expires TODAY, Vance/Witkoff/Kushner flying Islamabad, supreme leader cleared delegates at last minute — market pricing DEAL optimism (USD bid, gold -0.79%). Risk-off trigger requires TALKS COLLAPSE tonight (Iran vowed retaliation for seized tanker). Level 0.707 is ~1.1% below current 0.7178 — requires real catalyst not just drift. Need M15 bear BOS + rejection wick on retest. Conv 2 (was 3 — catalyst not ratifying on Tue)."
+      "note": "Break of 0.707 = prior pivot gone. Short on retest from below. SL 0.713, TP 0.700. Risk-off + AUD first-to-bleed. Catalyst HARDENED Apr 21 07:38 UTC: Iran walkout + Touska seizure + Hormuz blockade = risk-off proper. Level 0.707 still ~1.1% below current 0.7178 \u2014 requires real trigger not drift. Need M15 bear BOS + rejection wick on retest. Conv 3 (was 2 \u2014 walkout confirmed)."
     },
     {
       "id": "usdjpy_riskoff_break",
@@ -35,7 +35,7 @@
       "level": 158.5,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break 158.50 = risk-off yen flight AND aligns w/ MoF pain threshold 158 (FXEmpire/MUFG Apr 16). Short on retest from below. Catalyst MIXED Apr 21 06:07 UTC (corrected from 'RATIFIED'): ceasefire expires TODAY but Vance/Witkoff/Kushner flying Islamabad, last-minute Iran clearance — market pricing DEAL optimism (USD bid ON, gold -0.79%, DXY bouncing). Yen flight requires TALKS COLLAPSE or retaliation on seized tanker. If deal optimism holds, USDJPY floats — no reason for 158.50 break. SL 159.20, TP 157.00. Conv 3 (was 4 — catalyst not ratifying today)."
+      "note": "Break 158.50 = risk-off yen flight AND aligns w/ MoF pain threshold 158 (FXEmpire/MUFG Apr 16). Short on retest from below. Catalyst HARDENED Apr 21 07:38 UTC: Iran pulled out of Islamabad + Touska seized by US Navy. If risk-off flip before US session \u2192 yen bid triggers. SL 159.20, TP 157.00. Conv 4 (was 3)."
     },
     {
       "id": "oil_crude_escalation_90",
@@ -43,7 +43,7 @@
       "level": 90.0,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
-      "note": "WTI $88.26 (CNBC Apr 21 -1.51%), Brent $94.87 (-0.68%), broker shows WTI $86.24 bearish M15. Oil FADING Tue on peace-talk optimism, NOT +6% as prior tick. Thesis MIXED: Iran T-0 today, Vance to Islamabad, Iran 'no talks under threats' — could flip either way. Break of $90 + M15 bull BOS signals ceasefire collapse. SL 87.50, TP1 94, TP2 98. Conv 3 (was 4 — oil not ratifying escalation as previously claimed)."
+      "note": "WTI ~$88, Brent ~$94.44 FADING on interim stale peace-talk optimism. Thesis STRENGTHENED Apr 21 07:38 UTC: Iran walkout of Islamabad + Touska seizure + Hormuz blockade + T-~16h to expiry = real tail risk. Break $90 WTI + M15 bull BOS signals collapse fully priced. SL 87.50, TP1 94, TP2 98. Conv 4 (was 3 \u2014 catalyst hardened, walkout confirmed, no longer conflicting)."
     },
     {
       "id": "gold_escalation_buy_zone",
@@ -52,7 +52,7 @@
       "zone_high": 4810.0,
       "emit_on": "enter",
       "cooldown_sec": 900,
-      "note": "Safe-haven long on pullback into 4780-4810. Zone re-entered 4x in ~50min (06:14/06:22/06:44/07:09 UTC) — ALL SKIPPED: no M15 bull BOS at any re-entry. Spot ~$4,796 -0.7% pinned by USD bid + rates despite geopolitical tension. Ceasefire expires 0000 GMT WED Apr 22 (~T-17h). NARRATIVE SHIFT Apr 20-21: CNBC headline 'gold falls on stronger dollar amid RENEWED US-Iran tensions', FXStreet 'ceasefire uncertainty', war-trade dynamics returning. Intel stack: (a) CENTCOM confirms USS Spruance seized M/V Touska Sun. (b) Iran Tasnim confirms drone strikes on US vessels retaliating (US hasn't confirmed hits). (c) Iran not formally agreed to Islamabad talks. (d) Trump: extension 'highly unlikely'. Disconnect narrowing: narrative now ACKNOWLEDGES breakdown but price mechanics (rates/DXY) delay the bid. Wait M15 bull BOS + rejection wick on retest, OR US-confirmed vessel hit / retaliatory strike / Iran skip confirmed. If deal struck → $4700s SL bleed. SL 4745, TP 4900/5000. Conv 4."
+      "note": "Safe-haven long on pullback into 4780-4810. Zone re-entered 4x in ~50min (06:14/06:22/06:44/07:09 UTC) all SKIPPED (no M15 bull BOS). Ceasefire T-~16h (expires 0000 GMT WED Apr 22). CONFIRMED collapse catalyst Apr 21 07:38 UTC (Euronews/CNN/NPR): Iran PULLED OUT of Islamabad talks after Touska seizure \u2014 no longer conflicting narrative. Iran FM demanding vessel release. Trump 'highly unlikely' to extend. US naval blockade since Apr 13. Gold still pinned -0.7% by USD bid + rates but war-trade bid should arrive on first risk-off flip. Wait M15 bull BOS + rejection wick, OR walk-out / expiry-missed / retaliation strike. If late-moment deal struck \u2192 $4700s SL bleed. SL 4745, TP 4900/5000. Conv 5 (was 4 \u2014 walkout now confirmed, no longer conditional)."
     },
     {
       "id": "usdcad_short_fvg_retest",
@@ -61,7 +61,7 @@
       "zone_high": 1.36612,
       "emit_on": "enter",
       "cooldown_sec": 1800,
-      "note": "H1 bear FVG zone. Alert FIRED passively 06:02 UTC at 1.36503 — SKIPPED: M15 bar_close showed NO bear BOS, bull FVG forming below. Oil catalyst WEAKENED: WTI $88.26 fading (not +6% $89 as prior tick). USDCAD actually RISING toward 1.3647 on weaker oil = CAD weak. Short thesis requires oil to RESUME rally (WTI break $90) AND M15 bear BOS. SL 1.3685, TP1 1.3600, TP2 1.3550. Conv 2 (was 4 — direction contradicted by current oil fade, kept as conditional only)."
+      "note": "H1 bear FVG zone. Alert RE-FIRED 07:35 UTC at 1.36506 \u2014 SKIPPED AGAIN: oil still fading (WTI $88 Brent $94.44), no WTI break $90, no M15 bear BOS. USDCAD thesis conditional on oil resumption \u2014 walkout catalyst not yet in oil price. SL 1.3685, TP1 1.3600, TP2 1.3550. Conv 2 \u2014 kept conditional. Promote to 3 if WTI breaks 90."
     }
   ],
   "structure_watch": [

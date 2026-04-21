@@ -501,6 +501,11 @@
       "closed": 0,
       "skipped": 0,
       "note": "Heartbeat \u2014 0 unconsumed events, 0 trades, broker $1000/0 pos. 1 web search Iran ceasefire/oil: Bloomberg 'Iran set to attend Islamabad' (oil -1.1% Brent $94.44 fading 5.6% Mon spike) vs AJ 'Iran says no talks for now' \u2014 conflicting, no regime shift. T-~17h. 5+9+8 all KEEP."
+    },
+    {
+      "ts": "2026-04-21T07:38:00Z",
+      "trigger": "level_enter + news_flash flood",
+      "summary": "USDCAD FVG re-fire SKIPPED (oil fading). 15 stale RSS news_flashes consumed + 2 queries TUNED. Fresh web search CONFIRMED collapse: Iran walkout of Islamabad, Touska seized, Trump 'unlikely' extend, T-16h. 4 conv-upgrades (gold 5, oil 4, usdjpy 4, audusd 3), usdcad conditional. 0 trades."
     }
   ],
   "entries": [

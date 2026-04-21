@@ -17,10 +17,10 @@
     },
     {
       "id": "us_iran_military",
-      "query": "US Iran military strike naval",
-      "keywords_required": ["strike", "blockade", "navy", "bomb", "missile", "casualty", "escalate", "war", "Israel", "IRGC"],
+      "query": "US Iran naval blockade Touska Hormuz",
+      "keywords_required": ["Touska", "blockade", "Vance", "Witkoff", "Kushner", "Islamabad", "seized", "Hormuz"],
       "cooldown_min": 45,
-      "note": "NEW — broader escalation coverage beyond Hormuz: US Navy actions, Israel involvement, Houthi resumption, regional ally responses."
+      "note": "TUNED 2026-04-21 07:38 UTC — PRIOR keywords (strike/bomb/war/Israel/missile) flooded 5 stale June-2025 war articles (pub Feb-Mar 2026 from Google News RSS replay) matching 'Operation Epic Fury'/'bomb Tehran'/'retaliatory strikes'. NOW narrowed to current-narrative-specific terms: Touska tanker, Islamabad talks cast (Vance/Witkoff/Kushner), blockade. Query body also narrowed to exclude generic 'strike' recall."
     },
     {
       "id": "opec_supply",
@@ -46,9 +46,9 @@
     {
       "id": "rba_hike",
       "query": "Reserve Bank Australia RBA rate",
-      "keywords_required": ["hike", "surprise", "shock", "unexpected", "hawkish", "dovish", "May meeting", "Bullock"],
+      "keywords_required": ["Bullock", "May meeting", "surprise", "unexpected"],
       "cooldown_min": 240,
-      "note": "TUNED 2026-04-21: dropped 'cut'/'hold'/'decision'/'statement' (matched too many 2024-2025 archive RSS items causing 10-event flood this tick). Raised cooldown to 240. Now requires action-specific or person-specific terms (Bullock=RBA Gov). Market pricing May hike to 4.35%. Risk-off may force RBA to pause — AUD bid thesis broken under blockade."
+      "note": "RE-TUNED 2026-04-21 07:38 UTC — prior keywords 'hike'/'shock'/'hawkish'/'dovish' still matched 10 stale archive articles (pub Dec 2025 — Mar 2026) this tick. Further narrowed to action/person specific. Market pricing May hike to 4.35%. Risk-off may force RBA to pause — AUD bid thesis broken under blockade."
     },
     {
       "id": "us_tariff",
