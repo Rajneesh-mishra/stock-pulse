@@ -193,6 +193,14 @@
         "GBPUSD": 1.35264,
         "USDCHF": 0.77855
       }
+    },
+    {
+      "ts": "2026-04-21T01:36:08Z",
+      "trigger": "15 news_flash events (14 stale RBA RSS URL-dedup flush + 1 marginal Iran Islamabad headline)",
+      "action": "no trade \u2014 $1000 flat, marginal single-source ceasefire-favorable headline lacks corroboration, T-~18h to Apr 22 expiry",
+      "audit": "all 5 level_alerts + 9 structure_watch + 8 news_queries KEEP",
+      "positions": 0,
+      "daily_pnl": 0
     }
   ],
   "entries": [

@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-21T01:25:50Z",
+  "last_tick": "2026-04-21T01:36:08Z",
   "regime": "ESCALATION_CONFIRMED_KINETIC_EXCHANGE",
-  "regime_note": "2026-04-21 ~01:30 UTC auto tick \u2014 8 bar_close M15 events all SKIP (heartbeat flat-drift, no material delta). Broker $1000 flat 0 pos reconciled. Iran ceasefire Apr 22 Wed expiry T-~18h intact; Trump 'highly unlikely' extension, Vance\u2192Pakistan Tue, Hormuz closed, Tehran skipped round 2. USDJPY 158.941 (44p above 158.50 trigger, MOF verbal threshold 158 live), GOLD 4816.96 (6.96p above 4810 zone top), OIL 86.559 (3.44 below 90 escalation trigger), AUDUSD 0.71806 at day high (50p above 0.707), USDCAD 1.36421 (below FVG zone \u2014 regime ESCALATION contradicts short). All 5 level_alerts + 9 structure_watch + 8 news_queries KEEP. No action.",
+  "regime_note": "2026-04-21 ~01:36 UTC auto tick \u2014 15 news_flash events: 14 stale RBA rate RSS articles (query 'rba_hike' URL-dedup flush, keywords 'hike'/'hold' matched 2025/Q1-2026 historical headlines, won't re-fire) + 1 marginal fresh: Crypto Briefing 'Iran Supreme Leader approves Islamabad talks before US-Iran ceasefire deadline' (Apr 21 01:30 GMT, SINGLE LOW-TIER SOURCE unverified, ceasefire-favorable IF real \u2014 contradicts confirmed Tehran round 2 skip Apr 20). No corroboration \u2192 no action. Broker $1000 flat 0 pos reconciled (bal/avail/dep 1000.0, P&L 0). Iran ceasefire Apr 22 Wed expiry T-~18h intact. All 5 level_alerts + 9 structure_watch + 8 news_queries KEEP. No trade.",
   "open_positions": [],
   "watchlist": [
     {

@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T07:03:25+05:30",
-  "pruned_at": "2026-04-21T07:03:25+05:30",
-  "pruned_by": "01:30 UTC tick \u2014 8 bar_close M15 (AUDUSD/USDJPY/GOLD/OIL/USDCAD/EURUSD/GBPUSD/USDCHF) all SKIP heartbeat. Broker $1000 flat 0 pos reconciled. Flat-drift vs 01:17: USDJPY 158.941 (-0.9p, 44.1p above 158.50), GOLD 4816.96 (+2.0p, 6.96p above zone top 4810, 16.11p off day high 4833.07), OIL 86.559 (-1.0p, 3.44 below 90), EURUSD 1.17843 (+1.9p, 6.5p off day high 1.17908), AUDUSD 0.71806 (+6.3p at day high, 50p above 0.707), USDCAD 1.36421 (-1.8p, 8.2p below zone_low 1.36503 \u2014 regime ESCALATION contradicts short re-entry still), GBPUSD 1.35264, USDCHF 0.77855. News scan: no material delta \u2014 Iran ceasefire T-~18h Wed eve intact, Trump 'extension highly unlikely', Vance\u2192Pakistan Tue, Hormuz closed, no BoJ intervention beyond verbal. All 5 alerts + 9 structure + 8 queries KEEP.",
+  "last_updated_by_claude": "2026-04-21T07:06:08+05:30",
+  "pruned_at": "2026-04-21T07:06:08+05:30",
+  "pruned_by": "01:36 UTC tick \u2014 15 news_flash events: 14 stale RBA RSS (URL-dedup flush, non-actionable) + 1 marginal fresh Crypto Briefing 'Iran Supreme Leader approves Islamabad talks' (Apr 21 01:30 GMT, single low-tier source, no corroboration). Broker $1000 flat 0 pos reconciled. Iran ceasefire Apr 22 Wed expiry T-~18h intact. Audit: all 5 level_alerts + 9 structure_watch KEEP \u2014 price drift negligible from 01:30 tick, catalysts unchanged, no new setups formed, USDCAD still contradicted by regime ESCALATION.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
