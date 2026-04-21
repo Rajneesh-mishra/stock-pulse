@@ -784,6 +784,13 @@
       "trades": 0,
       "balance": 1000.0,
       "open_positions": 0
+    },
+    {
+      "ts_utc": "2026-04-21T13:47:00Z",
+      "type": "forex_auto",
+      "events_processed": 8,
+      "trades": 0,
+      "summary": "8 M15 bar_close all SKIP T-~10.2h binary. Drift minimal except GOLD +14p risk-off creep. 3 alerts / 9 structure / 8 queries all KEEP. Broker $1000/0 pos matches."
     }
   ],
   "entries": [
