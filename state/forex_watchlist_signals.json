@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T15:54:00+05:30",
-  "pruned_at": "2026-04-21T15:54:00+05:30",
-  "pruned_by": "10:23 UTC tick (8 M15 bar_close across 8 pairs all SKIP — no BOS/CHoCH/level touches). Fresh prices: USDJPY 159.186 (flat -0.3p vs 10:08's 159.189, still 0.26 below 159.45 fade), OIL_CRUDE 86.456 (-0.16 vs 10:08's 86.617 continuing bearish reversal), GOLD 4783.81 (-3.4 vs prior 4787.21, <4800), AUDUSD 0.71553 (flat), others flat <3p. WebSearch confirmed (CNN/AJ/NBC/CNBC Apr 21): no deal, Iran not sending negotiators to Islamabad, Vance departing today, Trump 'highly unlikely' extend, Iran MFA 'US violated ceasefire from beginning' (Hormuz blockade Apr 13 + container-ship seizure). Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM intact, T-~13.5h to 00:00 GMT Wed Apr 22 expiry. 1 MODIFY (oil_crude price refresh 86.617→86.456), 2 KEEP. 8 queries KEEP. 0 positions, $1000 matches broker.",
+  "last_updated_by_claude": "2026-04-21T16:08:00+05:30",
+  "pruned_at": "2026-04-21T16:08:00+05:30",
+  "pruned_by": "10:38 UTC tick (8 M15 bar_close across 8 pairs all SKIP — no BOS/CHoCH/level touches). Prices flat-drift vs 10:23: USDJPY 159.186 (0p flat, still 0.26 below 159.45 fade), OIL_CRUDE 86.135 (-0.32 continuing bearish reversal now below 86.5), GOLD 4787.68 (+3.87 bounce still <4800), AUDUSD 0.71561 (+0.8p flat), others <2p. TIMELINE CORRECTION via CNBC Apr 21: Trump said ceasefire expires 'Wednesday evening Washington time' = Wed Apr 22 ~22:00 ET = Thu Apr 23 ~02:00 UTC → T-~39h from now, NOT T-13.5h as prior ticks assumed. Explains the flat / 'priced-in' market action: expiry still far enough that traders aren't forced to position yet. Iran still refusing Islamabad, Trump sending US delegation anyway, BusinessToday Apr 20 'Tehran calls US demands childish'. Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM intact with corrected horizon. 1 MODIFY (oil_crude price+timeline), 2 KEEP (timeline-refreshed). 8 queries KEEP. 0 positions, $1000 matches broker.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -27,7 +27,7 @@
       "level": 0.707,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break of 0.707 = prior pivot gone. Short on retest from below. SL 0.713, TP 0.700. Risk-off + AUD first-to-bleed. Catalyst HARDENING Apr 21 09:09 UTC: Iran MFA explicit 'no plans to send negotiators' to Islamabad + 'US violated ceasefire from beginning' (Hormuz blockade since Apr 13 + overnight US seizure of Iranian container ship); Vance: '21 hrs talks, no agreement' prior round; Trump: extension 'highly unlikely'. De-escalation tail thinning. T-~15h to ceasefire expiry 00:00 GMT Wed. Level 0.707 still ~1.2% below current 0.7150 — needs the ceasefire cliff to break (or talks-fail confirm). Need M15 bear BOS + rejection wick on retest. Conv 3."
+      "note": "Break of 0.707 = prior pivot gone. Short on retest from below. SL 0.713, TP 0.700. Risk-off + AUD first-to-bleed. Catalyst still HARDENING Apr 21: Iran MFA 'no plans to send negotiators' to Islamabad + 'US violated ceasefire from beginning' (Hormuz blockade Apr 13 + container-ship seizure); BusinessToday Apr 20 'Tehran calls US demands childish'; Trump sending US delegation anyway. TIMELINE CORRECTED: Trump said expiry is 'Wed evening Washington' = Wed Apr 22 ~22:00 ET = Thu Apr 23 ~02:00 UTC (T-~39h from 10:38 UTC Apr 21), NOT 00:00 GMT Wed. Market fatigue / flat action makes sense — expiry still 1.5+ days out. Level 0.707 is ~1.2% below current 0.71561; needs ceasefire cliff to break or talks-fail confirm. Need M15 bear BOS + rejection wick on retest. Conv 3."
     },
     {
       "id": "usdjpy_intervention_fade_zone",
@@ -36,7 +36,7 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "Price 159.189 (10:08 UTC bid, +1p vs 09:54's 159.179, still 0.26 below 159.45 fade zone 159.45-161.95 per MarketPulse/OANDA; day range 158.695-159.251; bearish M15 BOS intact, bull FVG 159.02-159.115 unmitigated below). Katayama post-Bessent 'bold action' (JapanTimes Apr 16). Fade SELL on entry into zone — needs M15 bear BOS + rejection wick on first touch of 159.45+ for 7-gate. SL 161.00, TP1 158.70, TP2 157.20. Conv 3. 2-WAY RISK: (a) Iran risk-off flip bids yen (ceasefire collapse → safe-haven bid — T-~13.8h to Wed 00:00 GMT Apr 22 expiry, Iran refusing Islamabad per AJ/CNN + Vance flying today), (b) Islamabad surprise deal → USD bid but intervention risk caps. Monitor M15 for first touch OR mitigation of 159.02-159.115 bull FVG from above."
+      "note": "Price 159.186 (10:38 UTC bid, flat 0p vs 10:23, still 0.26 below 159.45 fade zone 159.45-161.95 per MarketPulse/OANDA; day range 158.695-159.251; bearish M15 BOS intact, bull FVG 159.02-159.115 unmitigated below). Katayama post-Bessent 'bold action' (JapanTimes Apr 16). Fade SELL on entry into zone — needs M15 bear BOS + rejection wick on first touch of 159.45+ for 7-gate. SL 161.00, TP1 158.70, TP2 157.20. Conv 3. TIMELINE CORRECTED: ceasefire expiry is Wed Apr 22 evening Washington = Thu Apr 23 ~02:00 UTC (T-~39h), NOT Wed 00:00 GMT. 2-WAY RISK: (a) Iran risk-off flip bids yen (ceasefire collapse → safe-haven bid, Iran refusing Islamabad per AJ/CNN/BusinessToday), (b) Islamabad surprise deal → USD bid but intervention risk caps. Monitor M15 for first touch OR mitigation of 159.02-159.115 bull FVG from above."
     },
     {
       "id": "oil_crude_escalation_90",
@@ -44,7 +44,7 @@
       "level": 90.0,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
-      "note": "WTI 86.456 (10:23 UTC bid, -0.16 vs 10:08's 86.617, continuing reversal of earlier 87.15 pop; bearish M15 BOS intact — no bull BOS yet, day range 85.622-87.407). Thesis HARDENING but market fatigued: Vance departing today for Islamabad (Apr 21 WebSearch) + Iran MFA 'no negotiators' + 'US violated ceasefire from beginning' (Hormuz blockade since Apr 13 + overnight container-ship seizure) + Trump 'highly unlikely' extend. T-~13.5h to ceasefire expiry 00:00 GMT Wed Apr 22. Market flat-to-down despite catalyst cascade = already priced-in. Break $90 + M15 bull BOS signals new demand leg (Iran retaliation / strike / mines). SL 88.00, TP1 94, TP2 98. Conv 4."
+      "note": "WTI 86.135 (10:38 UTC bid, -0.32 vs 10:23's 86.456 continuing reversal of earlier 87.15 pop, now below 86.5; bearish M15 BOS intact — no bull BOS yet, day range 85.622-87.407). Thesis still HARDENING but market fatigued: Iran MFA 'no negotiators', BusinessToday Apr 20 'Tehran calls US demands childish', Trump sending delegation anyway. TIMELINE CORRECTED: Trump said expiry is 'Wed evening Washington' = Thu Apr 23 ~02:00 UTC (T-~39h from now, NOT 13.5h). Market flat-to-down despite catalyst cascade = expiry still 1.5+ days out + priced-in. Break $90 + M15 bull BOS signals new demand leg (Iran retaliation / strike / mines) — likely catalyst is post-expiry Thu Apr 23. SL 88.00, TP1 94, TP2 98. Conv 4."
     }
   ],
   "structure_watch": [
