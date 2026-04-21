@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T11:53:00+05:30",
-  "pruned_at": "2026-04-21T11:53:00+05:30",
-  "pruned_by": "06:22 UTC tick — 1 unconsumed event (GOLD level_enter gold_escalation_buy_zone RE-FIRE at 4781.765, 15 min after 06:07 fire). SKIPPED AGAIN same thesis: still no M15 bull BOS, gold still -0.79% day, market still pricing DEAL optimism into T-0 binary. NEW intel from Apr 21 web scan: US Navy SEIZED Iranian-flagged vessel defying Hormuz blockade over weekend — Tehran vowed retaliation (NPR/Axios/EBM). Iran MFA spokesman Baghaei says US 'violated ceasefire from beginning' citing blockade since Apr 13 + vessel seizure. Talks sticking points: enrichment + Hormuz long-term status, BOTH unresolved. Vance departs Tuesday morning. Escalation signals STRONGER than 15 min ago (vessel + retaliation vow) but gold tape still shows deal-optimism compression. Gold note refreshed with vessel intel. Other alerts unchanged — same binary, same conv. 1 alert MODIFIED (gold note), 4 KEEP (audusd/usdjpy/oil/usdcad). Structure_watch KEEP 9, news queries KEEP 8.",
+  "last_updated_by_claude": "2026-04-21T12:02:00+05:30",
+  "pruned_at": "2026-04-21T12:02:00+05:30",
+  "pruned_by": "06:31 UTC tick — 8 bar_close M15 heartbeat events (all 9 instruments except BTC), NO entry triggers / structure BOS. All SKIP. Broker unchanged 0 pos $1000. NEW Apr 21 web intel: (1) ceasefire expires 0000 GMT WEDNESDAY Apr 22 (corrected — was stating Tuesday; per NPR/ABC). (2) Euronews: Iran PULLED OUT of Islamabad talks after US seized Iranian-flagged vessel, Tehran vowed swift response. (3) Conflicting Bloomberg: oil -1.1% Brent $94.44 on signs Iran WILL attend negotiations before ceasefire ends (after Mon +5.6%). (4) Trump says extension 'highly unlikely'. Net: market reading deal-still-possible despite walkout headline (oil fade, USD bid). Escalation tilt slightly stronger; tape not ratifying. Gold note refreshed with pulled-out + corrected timeline. iran_ceasefire query tuned (+pulled/withdraw/boycott). Other alerts unchanged. 1 alert MODIFIED (gold note), 4 KEEP (audusd/usdjpy/oil/usdcad). Structure_watch KEEP 9, news queries 1 TUNE 7 KEEP.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -52,7 +52,7 @@
       "zone_high": 4810.0,
       "emit_on": "enter",
       "cooldown_sec": 900,
-      "note": "Safe-haven long on pullback into 4780-4810. Zone re-entered 06:22 UTC at 4781.765 (re-fire after 06:04 sweep). SKIPPED both fires: no M15 bull BOS yet, gold -0.79% on USD bounce, tape still pricing deal optimism into T-0. NEW Apr 21: US Navy SEIZED Iranian vessel weekend, Tehran vowed retaliation; Iran MFA calls US already in violation (blockade + seizure). Sticking points (enrichment + Hormuz) unresolved, Vance departs Tuesday morning. Escalation background STRONGER but tape not ratifying yet. Wait for M15 bull BOS + rejection wick on re-test, or news flash (collapse/retaliation). If deal struck → $4700s (SL bleed). SL 4745, TP 4900/5000. Conv 4."
+      "note": "Safe-haven long on pullback into 4780-4810. Zone re-entered 06:22 UTC at 4781.765 (2x re-fire post 06:04 sweep). BOTH fires SKIPPED: no M15 bull BOS, gold -0.79%, tape pricing deal optimism. Ceasefire expires 0000 GMT WED Apr 22 (corrected from Tue). Apr 21 intel: (a) Euronews Iran PULLED OUT of Islamabad talks post US vessel seizure, vowed swift response. (b) Bloomberg contradicts: oil -1.1% on signs Iran WILL attend — market reading deal-still-possible. (c) Trump: extension 'highly unlikely'. Escalation tilt stronger, tape unconvinced. Wait for M15 bull BOS + rejection wick on retest, OR news flash (collapse/strike/retaliation). If deal struck → $4700s SL bleed. SL 4745, TP 4900/5000. Conv 4."
     },
     {
       "id": "usdcad_short_fvg_retest",
