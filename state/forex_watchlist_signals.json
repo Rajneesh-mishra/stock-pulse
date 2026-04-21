@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T14:55:00+05:30",
-  "pruned_at": "2026-04-21T14:55:00+05:30",
-  "pruned_by": "09:24 UTC tick (8 M15 bar_close all SKIP, no BOS/CHoCH/level touches). Prices flat-drift vs 09:09: AUDUSD 0.7152, USDJPY 159.1765 (-6.85p, drifted AWAY from 159.45 fade, now 0.27 below + approaching bull FVG 159.02-159.115), GOLD 4786.27 (flat, still <4800 bear FVG), OIL_CRUDE 86.971 (-0.18, reversed small pop, still <90), USDCAD 1.36604, EURUSD 1.175875, GBPUSD 1.350105, USDCHF 0.78029. NEWS unchanged from 09:09 — web search confirmed: Iran MFA 'no negotiators', US 'violated ceasefire from beginning', Vance flying Tue, Trump 'highly unlikely' ext, ceasefire expires Wed eve Washington / 00:00 GMT Wed Apr 22 (T-~14.5h). Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM intact. 1 alert MODIFY (usdjpy price+FVG context); 2 alerts KEEP. 8 queries all KEEP. 0 positions, $1000 matches.",
+  "last_updated_by_claude": "2026-04-21T15:10:00+05:30",
+  "pruned_at": "2026-04-21T15:10:00+05:30",
+  "pruned_by": "09:40 UTC tick (8 M15 bar_close all SKIP no BOS/CHoCH/level touches + 15 news_flash Touska/Islamabad dupes — thesis already hardened). Prices flat-drift vs 09:24: AUDUSD 0.715205 (flat), USDJPY 159.167 (-0.95p, drifted 0.28 below 159.45 fade — still approaching 159.022-159.115 bull FVG from above), GOLD 4784.19 (-2.08), OIL_CRUDE 86.807 (-0.16 — continued reversal of earlier 87.15 pop despite Touska escalation), USDCAD 1.36595, EURUSD 1.175795, GBPUSD 1.350285, USDCHF 0.780475. NEWS CONFIRMED (WebSearch): NPR 'No Deal' + Euronews 'Iran pulled out of Islamabad' + CNN 'ceasefire deadline looms' + AlJazeera 'Iran no talks with US for now' + Iran MFA 'immediate release' demand. Ceasefire expires Wed night ET (~T-14h to Wed 00:00 GMT Apr 22). Market ALREADY PRICING these (flat despite cascade) — positioned/fatigued. Regime PRE_BINARY_COMPRESSION intact but deal_optimism leg thinning. 2 alerts MODIFY (usdjpy+oil price refresh), 1 KEEP. 1 query TUNE (us_iran_military cooldown 45→60, Touska fired 11/15 same-story). 7 queries KEEP. 0 positions, $1000 matches.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -36,7 +36,7 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "Price 159.1765 (09:24 UTC M15, -6.85p vs 09:09; bearish M15 BOS 103 bars ago intact, bull FVG 159.022-159.115 unmitigated below and approaching). Now 0.27 below 159.45 fade zone (159.45-161.95 per MarketPulse/OANDA). Katayama post-Bessent 'bold action' (JapanTimes Apr 16). No fresh MoF verbal. Fade SELL on entry into zone — needs M15 bear BOS + rejection wick on first touch of 159.45+ for 7-gate. SL 161.00, TP1 158.70, TP2 157.20. Conv 3. 2-WAY RISK: (a) Iran risk-off flip bids yen (ceasefire collapse → yen as funding-unwind safe-haven — this is the path hardening now that Iran refuses Islamabad), (b) Islamabad deal surprise → USD bid but intervention risk caps. Monitor M15 for first touch OR mitigation of 159.02-159.115 bull FVG from above (could trigger re-push into zone)."
+      "note": "Price 159.167 (09:38 UTC M15, -0.95p vs 09:24; bearish M15 BOS intact, bull FVG 159.022-159.115 unmitigated below and approaching — now only ~0.05 above top of FVG). 0.28 below 159.45 fade zone (159.45-161.95 per MarketPulse/OANDA). Katayama post-Bessent 'bold action' (JapanTimes Apr 16). No fresh MoF verbal. Fade SELL on entry into zone — needs M15 bear BOS + rejection wick on first touch of 159.45+ for 7-gate. SL 161.00, TP1 158.70, TP2 157.20. Conv 3. 2-WAY RISK: (a) Iran risk-off flip bids yen (ceasefire collapse → yen safe-haven — path hardening now that Iran 'pulled out' of Islamabad per Euronews + NPR 'No Deal'), (b) Islamabad surprise deal → USD bid but intervention risk caps. Monitor M15 for first touch OR mitigation of 159.02-159.115 bull FVG from above (could trigger re-push into zone)."
     },
     {
       "id": "oil_crude_escalation_90",
@@ -44,7 +44,7 @@
       "level": 90.0,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
-      "note": "WTI 87.146 M15 / 87.282 H1 (09:09 UTC, +0.8 vs prior tick 86.364; Brent $95 per Euronews Apr 21 confirms). Bearish M15 BOS 86.621 100 bars ago still intact — no bull BOS yet despite pop. Thesis HARDENING: Iran MFA 'no plans to send negotiators' + 'US violated ceasefire from beginning' (Hormuz blockade since Apr 13 + overnight US container-ship seizure) + Vance 'no agreement after 21 hrs' prior round + Trump extension 'highly unlikely'. De-escalation tail thinning fast. T-~15h to ceasefire expiry 00:00 GMT Wed Apr 22. Break $90 + M15 bull BOS signals collapse fully priced — gap-open on talks-fail + ceasefire collapse plausible. SL 88.00, TP1 94, TP2 98. Conv 4."
+      "note": "WTI 86.807 M15 (09:38 UTC, -0.16 vs 09:24; continuing reversal of earlier 87.15 pop despite Touska escalation). Bearish M15 BOS 86.621 still intact — no bull BOS yet. Thesis HARDENING but market fatigued: Iran pulled out of Islamabad (Euronews) + NPR 'No Deal' + Iran MFA 'immediate release Touska' demand + Vance '21 hrs no agreement' + Trump 'highly unlikely' extend. De-escalation tail thinning fast. T-~14h to ceasefire expiry 00:00 GMT Wed Apr 22. Market flat-to-down despite catalyst cascade = already priced. Break $90 + M15 bull BOS signals new demand leg (Iran retaliation / strike / mines). SL 88.00, TP1 94, TP2 98. Conv 4."
     }
   ],
   "structure_watch": [

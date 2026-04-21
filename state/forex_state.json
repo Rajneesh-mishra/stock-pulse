@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-21T09:24:00Z",
   "regime": "PRE_BINARY_COMPRESSION_DEAL_OPTIMISM",
-  "regime_note": "2026-04-21 09:24 UTC \u2014 8 M15 bar_close all SKIP, no BOS/CHoCH/level touches. Prices flat-drift vs 09:09: AUDUSD 0.7152, USDJPY 159.1765 (-6.85p, drifted AWAY from 159.45 fade zone \u2014 now 0.27 below + approaching bull FVG 159.022-159.115 from above; BOS 103 bars ago intact), GOLD 4786.27 (flat, <4800 bear FVG), OIL_CRUDE 86.971 (-0.18, reversed earlier 87.15 pop; <90), USDCAD 1.36604, EURUSD 1.175875, GBPUSD 1.350105, USDCHF 0.78029. 1 web search Iran/Islamabad \u2014 NO MATERIAL DELTA: Iran MFA 'no negotiators', US 'violated ceasefire from beginning', Vance flying Tue, Trump 'highly unlikely' extend, T-~14.5h to Wed 00:00 GMT expiry. Regime intact. 1 alert MODIFY (usdjpy), 2 alerts KEEP. 8 queries KEEP. 0 trades, broker $1000/0pos matches.",
+  "regime_note": "2026-04-21 09:40 UTC \u2014 8 M15 bar_close all SKIP (no BOS/CHoCH/level touches) + 15 news_flash Touska/Islamabad dupes. Prices: AUDUSD 0.7152 (flat), USDJPY 159.167 (-0.95p, 0.28 below 159.45 fade, approaching bull FVG 159.02-159.115 from above), GOLD 4784.19 (-2.08, <4800 bear FVG), OIL_CRUDE 86.807 (-0.16, continuing reversal of earlier 87.15 pop despite Touska escalation), USDCAD 1.36595, EURUSD 1.175795, GBPUSD 1.350285, USDCHF 0.780475. WebSearch CONFIRMED: NPR 'No Deal'+Euronews 'Iran pulled out of Islamabad'+CNN 'ceasefire deadline looms'+AlJazeera 'Iran no talks with US for now'+Iran MFA 'immediate release Touska' demand+Trump 'highly unlikely' extend. T-~14h to Wed 00:00 GMT Apr 22 ceasefire expiry. Market FLAT-to-DOWN despite cascade = already priced. Regime PRE_BINARY_COMPRESSION intact; deal-optimism leg thinning. 2 MODIFY (usdjpy+oil price refresh), 1 KEEP, 1 query TUNE (us_iran_military 45\u219260min, 11 Touska dupes), 7 queries KEEP. 0 trades, broker $1000/0pos matches.",
   "open_positions": [],
   "watchlist": [
     {
@@ -452,7 +452,7 @@
   "last_updated": "2026-04-21T09:25:00Z",
   "capital_base": 1000.0,
   "last_tick_ts_utc": "2026-04-21T05:39:09.646128Z",
-  "last_tick_utc": "2026-04-21T09:25:00Z",
+  "last_tick_utc": "2026-04-21T09:40:00Z",
   "last_scan_ts": "2026-04-21T01:30:00Z",
   "tick_log": [
     {

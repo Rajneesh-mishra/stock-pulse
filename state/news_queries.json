@@ -19,8 +19,8 @@
       "id": "us_iran_military",
       "query": "US Iran naval blockade Touska Hormuz",
       "keywords_required": ["Touska", "blockade", "Vance", "Witkoff", "Kushner", "Islamabad", "seized", "Hormuz"],
-      "cooldown_min": 45,
-      "note": "TUNED 2026-04-21 07:38 UTC — PRIOR keywords (strike/bomb/war/Israel/missile) flooded 5 stale June-2025 war articles (pub Feb-Mar 2026 from Google News RSS replay) matching 'Operation Epic Fury'/'bomb Tehran'/'retaliatory strikes'. NOW narrowed to current-narrative-specific terms: Touska tanker, Islamabad talks cast (Vance/Witkoff/Kushner), blockade. Query body also narrowed to exclude generic 'strike' recall."
+      "cooldown_min": 60,
+      "note": "TUNED 2026-04-21 09:40 UTC — cooldown 45→60min: this tick fired 11 news_flash all on same Touska-seizure story (TOI/Sun/HindustanTimes/Mathrubhumi/GulfNews/ABP/Aus/BT/Impressive/SundayGuardian/CENTCOM). Narrative-unchanged duplicates. 60min gives breathing room without blocking materially-new escalation (retaliation strike / mines / casualties)."
     },
     {
       "id": "opec_supply",
