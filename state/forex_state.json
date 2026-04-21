@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-21T11:25:00Z",
   "regime": "PRE_BINARY_COMPRESSION_DEAL_OPTIMISM",
-  "regime_note": "2026-04-21 11:40 UTC - H1+M15 heartbeat. 8 M15 bar_close SKIP all (drift/bounce, no confluence). AUDUSD 0.71631 (+2.7p bounce, still >>0.707), USDJPY 159.137 (-6p, 0.31 below 159.45 fade), GOLD 4790.01 (+7p bounce <4800), OIL 87.113 (-9c pullback from M15 hi 87.47, still <90 by 2.9), others <3p drift. WebSearch Apr 21: Trump ceasefire expires 'Wed eve Washington' = Thu ~02 UTC (T-38h), BUT Europeanbusinessmag/WaPo say 'Apr 21 Tuesday'. Iran MFA 'no plans attend Islamabad' vs NYT 'delegation heading Tue'. Trump 'extension highly unlikely'. 3 alerts all KEEP/price-refresh, regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM intact.",
+  "regime_note": "2026-04-21 11:55 UTC - 15 news_flash processed (4 iran_ceasefire + 11 us_iran_military Touska-seizure duplicates) all SKIP. TIMELINE RE-CORRECTION via WebSearch Al Jazeera/ABC/PRIO/Wikipedia/BusinessToday Apr 21: ceasefire expires 0000 GMT Wed Apr 22 = T-~12h from now, NOT Thu Apr 23 02:00 UTC as prior 11:10-11:40 ticks wrongly assumed. 'Wed eve Washington' per Trump = Tue eve DC \u2248 0000 GMT Wed UTC. Iran PULLED OUT of Islamabad Round 2 (Al Jazeera/BusinessToday Apr 21) citing Hormuz blockade + Touska seizure as breaches; Tehran vowed swift retaliation (Al Jazeera Apr 19). Prices still priced-in-deal-optimism despite T-12h: USDJPY 159.161 (+0.024 flat, 0.29 below 159.45 fade), GOLD 4791.74 (+1.7p <4800), OIL 87.187 (+7.4c drift, 2.81 below 90 escalation, M15 hi 87.475), AUDUSD 0.71627 (-0.4p, 92p >0.707 bkd), EURUSD 1.17655/USDCAD 1.36549/GBPUSD 1.35192/USDCHF 0.77952 all <3p drift. No positions opened (T-12h binary, volatility trap, no edge). 3 alerts MODIFIED (all timeline-corrected), 8 queries KEEP, broker $1000/0 pos matches.",
   "open_positions": [],
   "watchlist": [
     {
@@ -463,7 +463,7 @@
   ],
   "last_tick_summary": "11:25 UTC 8 M15 bar_close all SKIP. Prices vs 11:10: USDJPY 159.197 (+0.9p, 0.253 below 159.45), OIL 87.202 (+34c continuing bounce H1 hi 87.407 still <90), GOLD 4783.05 (-4.6p), AUDUSD 0.71604 (+1.8p), EURUSD 1.17623/USDCAD 1.36563/GBPUSD 1.35132/USDCHF 0.77982 all <3p. TIMELINE CORRECTION: WaPo/CNBC Apr 21 confirm expiry TODAY Tue evening ~22:00 UTC T-~10-11h (not Thu as prior ticks). Iran MFA refusing Islamabad Rd2 citing Hormuz blockade + ship capture. Trump 'bombs start going off' threat. 3 MODIFY (price + timeline), 8 queries KEEP, 0 trades, broker $1000/0 pos matches.",
   "last_scan": {
-    "timestamp": "2026-04-21T12:16:00+05:30"
+    "timestamp": "2026-04-21T17:25:00+05:30"
   },
   "last_updated": "2026-04-21T11:24:02.916114Z",
   "capital_base": 1000.0,

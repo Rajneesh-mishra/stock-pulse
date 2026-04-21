@@ -717,6 +717,11 @@
       "closed": 0,
       "skipped": 8,
       "note": "All 8 M15 bar_close SKIP. Drift/bounce. Oil pulled back from 87.47 hi to 87.113. USDJPY drifted 6p lower to 159.137. 3 alerts price-refreshed. T-10.5h or T-38h ceasefire expiry - timeline still ambiguous."
+    },
+    {
+      "t": "11:55 UTC",
+      "type": "forex_auto",
+      "summary": "15 news_flash processed (4 iran_ceasefire + 11 us_iran_military Touska duplicates), all SKIP. TIMELINE RE-CORRECTED: ceasefire expires 0000 GMT Wed Apr 22 = T-~12h (Al Jazeera/ABC/PRIO/Wikipedia/BusinessToday Apr 21), prior ticks' Thu Apr 23 02:00 UTC was misread. Iran pulled out of Islamabad Rd2, vowed retaliation. Prices flat-drift: USDJPY 159.161, GOLD 4791.74, OIL 87.187, AUDUSD 0.71627. 3 alerts MODIFIED with T-12h notes, 8 queries KEEP. 0 trades (binary event, no edge). broker $1000/0 pos matches."
     }
   ],
   "entries": [
