@@ -14,7 +14,7 @@
       "opened": 0,
       "closed": 0,
       "skipped": 3,
-      "note": "M15 bar_close: AUDUSD 0.71748 / USDJPY 158.826 (bull FVG unmitigated) / GOLD 4815.19 all untriggered. Trump extension 'highly unlikely' — ~29h to Apr 22 expiry.",
+      "note": "M15 bar_close: AUDUSD 0.71748 / USDJPY 158.826 (bull FVG unmitigated) / GOLD 4815.19 all untriggered. Trump extension 'highly unlikely' \u2014 ~29h to Apr 22 expiry.",
       "broker": {
         "balance": 1000.0,
         "positions": 0
@@ -26,7 +26,7 @@
       "trigger": "forex_auto",
       "events_processed": 5,
       "actions": "5 bar_close SKIP (USDJPY M15, GOLD M15, USDCAD H1, EURUSD H1+M15), 0 trades. Added usdcad_short_fvg_retest watchlist alert (H1 bear FVG 1.36503-1.36612 unmitigated, Conv 3)",
-      "notes": "USDJPY 158.906 (drifted +18p away from 158.50 break), GOLD 4814.69 (above zone top, bull FVG mitigated), USDCAD 1.36439 (new bear FVG + bear BOS), EURUSD 1.178 (chop). Flat broker $1000. Watchlist 5→6 alerts. T-~29h to Apr 22 0000 GMT ceasefire expiry."
+      "notes": "USDJPY 158.906 (drifted +18p away from 158.50 break), GOLD 4814.69 (above zone top, bull FVG mitigated), USDCAD 1.36439 (new bear FVG + bear BOS), EURUSD 1.178 (chop). Flat broker $1000. Watchlist 5\u21926 alerts. T-~29h to Apr 22 0000 GMT ceasefire expiry."
     },
     {
       "ts": "2026-04-21T20:01:00+00:00",
@@ -38,7 +38,7 @@
       ],
       "trades_opened": 0,
       "trades_closed": 0,
-      "outcome": "all SKIP — GBPUSD bull FVG mitigated (bear intact), USDCHF bear FVG unmitigated (no setup); news confirms Iran ceasefire failing — T-28h; flat $1000",
+      "outcome": "all SKIP \u2014 GBPUSD bull FVG mitigated (bear intact), USDCHF bear FVG unmitigated (no setup); news confirms Iran ceasefire failing \u2014 T-28h; flat $1000",
       "audit": "all 6 watchlist + all 9 structure_watch + all 8 queries KEEP"
     },
     {
@@ -49,7 +49,7 @@
       "opened": 0,
       "closed": 0,
       "skipped": 0,
-      "note": "Heartbeat tick — 0 unconsumed events. Prices virtually flat vs 20:14 (AUDUSD 0.71794, USDJPY 158.860 -1.6p, GOLD 4813.35 -$1, OIL 86.973 +7p, USDCAD 1.36476 +1p). Iran ceasefire T-~27.5h. Flat broker $1000.",
+      "note": "Heartbeat tick \u2014 0 unconsumed events. Prices virtually flat vs 20:14 (AUDUSD 0.71794, USDJPY 158.860 -1.6p, GOLD 4813.35 -$1, OIL 86.973 +7p, USDCAD 1.36476 +1p). Iran ceasefire T-~27.5h. Flat broker $1000.",
       "broker": {
         "balance": 1000.0,
         "positions": 0
@@ -64,7 +64,7 @@
       "opened": 0,
       "closed": 0,
       "skipped": 8,
-      "note": "8 M15 bar_close all SKIP (no BOS/ChoCh/fresh FVG; routine closes). Prices flat vs 20:33: AUDUSD 0.71788 85p above 0.707; USDJPY 158.891 39p above 158.50 drifting UP; GOLD 4815.21 5.21 above zone top 4810; OIL 86.737 326p below 90 market still NOT pricing escalation; USDCAD 1.36488 closest to action 1.5p below bear FVG 1.36503-612 — needs M15 bear BOS + risk-off catalyst. T-~27h Apr 22 ceasefire expiry.",
+      "note": "8 M15 bar_close all SKIP (no BOS/ChoCh/fresh FVG; routine closes). Prices flat vs 20:33: AUDUSD 0.71788 85p above 0.707; USDJPY 158.891 39p above 158.50 drifting UP; GOLD 4815.21 5.21 above zone top 4810; OIL 86.737 326p below 90 market still NOT pricing escalation; USDCAD 1.36488 closest to action 1.5p below bear FVG 1.36503-612 \u2014 needs M15 bear BOS + risk-off catalyst. T-~27h Apr 22 ceasefire expiry.",
       "broker": {
         "balance": 1000.0,
         "pnl": 0.0,
@@ -109,7 +109,7 @@
       "skipped": 8,
       "positions_after": 0,
       "balance_usd": 1000.0,
-      "note": "8 M15 bar_close all SKIP; heartbeat. USDJPY 158.797 30p above 158.50 (1p closer), GOLD 4830 20p above zone top (3p from day high 4833 — breakout approaching), USDCAD 1.3644 + USDCHF 0.77813 at day lows confirming DXY weakness, AUDUSD+EURUSD near day highs, OIL 86.36 sideways. No news delta."
+      "note": "8 M15 bar_close all SKIP; heartbeat. USDJPY 158.797 30p above 158.50 (1p closer), GOLD 4830 20p above zone top (3p from day high 4833 \u2014 breakout approaching), USDCAD 1.3644 + USDCHF 0.77813 at day lows confirming DXY weakness, AUDUSD+EURUSD near day highs, OIL 86.36 sideways. No news delta."
     },
     {
       "ts_utc": "2026-04-21T05:49:00Z",
@@ -123,6 +123,15 @@
       "events_processed": 11,
       "action": "SKIP_ALL_HEARTBEAT",
       "summary": "11 bar_close (Apr 21 Asia open backlog across 8 pairs on M15/H1/H4) all SKIP heartbeat; prices flat-drift vs 05:49 USDJPY 158.88 +3.6p (38p above 158.50, low 158.546 held), GOLD 4823.29 +2.7p (13.3p above zone top), OIL 86.40 +7p (3.6 below 90), others flat; Iran ceasefire Apr 22 Wed expiry T-~22h; broker $1000 flat 0 pos; MODIFIED usdjpy+gold+oil notes; 5+9+8 all KEEP"
+    },
+    {
+      "utc": "2026-04-21 00:24 UTC",
+      "trigger": "heartbeat",
+      "events": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "summary": "0 events heartbeat; flat-drift no material delta Iran T-22h Trump 'highly unlikely' + Katayama 'bold' intervention rhetoric; 5+9+8 all KEEP"
     }
   ]
 }
