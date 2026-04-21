@@ -743,6 +743,15 @@
       "positions": 0,
       "events": 15,
       "alerts_audit": "3 level_alerts KEEP, 9 structure_watch KEEP, 8 news_queries KEEP"
+    },
+    {
+      "ts_utc": "2026-04-21T12:50:00Z",
+      "type": "auto_forex_tick",
+      "events_in": 8,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8,
+      "summary": "8 M15 bar_close all SKIP T-~11h binary; WebSearch confirms Tehran refusal to talk + Trump Wed eve expiry unlikely extend; watchlist price refresh only; no trades (binary no edge)."
     }
   ],
   "entries": [

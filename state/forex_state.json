@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-21T12:40:00Z",
+  "last_tick": "2026-04-21T12:50:00Z",
   "regime": "PRE_BINARY_COMPRESSION_CONFLICTING_NARRATIVE",
-  "regime_note": "2026-04-21 12:40 UTC - 15 news_flash all Iran-themed (9 iran_ceasefire + 6 us_iran_military Touska dupes), all SKIP. Narrative genuinely SPLIT this batch: AP/DailyExpress/CryptoBriefing say US+Iran 'confirm attendance / will return' for Rd2 Islamabad talks; Euronews counters 'No Iran delegation sent yet'; Trump 'Iran violated ceasefire numerous times'; Qatar backs EXTENSION if no deal; China Daily 'Hormuz tensions cloud talks'. TOUSKA seizure + 27 ships turned back ongoing. T-~11.3h to 0000 GMT Wed Apr 22 expiry. Market priced-in-optimism holds. Zero new trade edge (binary uncertainty amplified, not resolved). Broker $1000/0 pos matches state. 3 level_alerts KEEP (no price action this tick: OIL 86.877, USDJPY 159.168, AUDUSD 0.71606). 9 structure_watch KEEP. 8 news_queries KEEP (iran_ceasefire firing as designed, us_iran_military cooldown 60min holding, both queries capturing walkout-vs-attend split accurately).",
+  "regime_note": "2026-04-21 12:50 UTC - 8 M15 bar_close 12:45 close all SKIP, T-~11h binary. Drift vs 12:35: OIL 87.126 (+25c bounce 2.87 below 90), USDJPY 159.1375 (-3.1p 0.31 below 159.45 fade), AUDUSD 0.71596 flat (90p above 0.707), GOLD 4782.63 (-4.0p), others <2p flat. WebSearch CNBC/AlJaz/NPR/ABC/CNN Apr 21 confirms Tehran 'no talks with US for now' (cites US blockade + Touska seizure as truce breaches), Trump 'Wed eve' expiry 'unlikely to extend', won't reopen Hormuz until deal. Market still priced-in-optimism despite Tehran refusal (conflicting narrative sustained from prior tick). Broker $1000/0 pos matches state. 3 level_alerts MODIFY (price refresh: OIL 87.126, USDJPY 159.1375, AUDUSD 0.71596). 9 structure_watch KEEP. 8 news_queries KEEP (iran_ceasefire firing as designed on walkout-vs-attend split, us_iran_military 60min cooldown holding). 0 trades (binary no edge T-~11h).",
   "open_positions": [],
   "watchlist": [
     {
@@ -149,7 +149,7 @@
     "telegram_on_trade": true,
     "telegram_chat_ids": "6838758759,849258319"
   },
-  "last_tick_ts": "2026-04-21T12:35:00Z",
+  "last_tick_ts": "2026-04-21T12:50:00Z",
   "tracker": [
     {
       "situation": "US Navy Blockade of Iran \u2014 day 4",
@@ -159,7 +159,7 @@
       "note": "Apr 20-21: Iran DRONE STRIKES on US vessels confirmed by Tasnim via Anadolu/TRT after USS Spruance seized M/V Touska (CENTCOM confirmed seizure, Marines rappelled after 6hr warnings + propulsion disable). US has NOT confirmed any vessels hit. Iran not formally agreed Islamabad talks restart. Trump: extension 'highly unlikely'. Escalation ladder: threat\u2192kinetic action (one rung up). Tape disconnect: oil -1.1%, gold -0.79%, USD bid \u2014 market still pricing deal-by-deadline. Binary remains: confirmed US damage\u2192spike, formal deal\u2192collapse."
     }
   ],
-  "last_tick_utc_prev": "2026-04-21T12:30:00Z",
+  "last_tick_utc_prev": "2026-04-21T12:40:00Z",
   "tick_history": [
     {
       "ts": "2026-04-21T02:40:00Z",
@@ -284,6 +284,14 @@
       "closed": 0,
       "skipped": 8,
       "note": "8 M15 bar_close all SKIP \u2014 T-~11.3h binary, OIL -68p pullback from hi 87.617, USDJPY +6.6p bounce, others flat"
+    },
+    {
+      "ts_utc": "2026-04-21T12:50:00Z",
+      "events_in": 8,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8,
+      "note": "8 M15 bar_close all SKIP T-~11h binary; WebSearch Tehran 'no talks for now' confirmed, Trump Wed eve expiry unlikely extend; OIL 87.126 (+25c) USDJPY 159.1375 (-3.1p) AUDUSD 0.71596 flat GOLD 4782.63 (-4p); 3 MODIFY price refresh, all queries/structure KEEP, broker $1000/0 pos matches; no trades"
     }
   ],
   "recent_skips": [
