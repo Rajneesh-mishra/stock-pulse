@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T09:10:00+05:30",
-  "pruned_at": "2026-04-21T09:10:00+05:30",
-  "pruned_by": "03:36 UTC tick — 15 news_flash events (2 iran_ceasefire bg, 2 us_iran_military old archive, 1 opec_supply old, 10 rba_hike archive flood). Broker $1000 flat 0 pos reconciled. NEW INFO: MoF pain threshold per FXEmpire/MUFG tightened to 158 (vs 160 prior). USDJPY 158.969 unchanged but trigger 158.50 now sits at-threshold. Iran ceasefire T-~20h Apr 22 expiry Trump 'highly unlikely' ext, Iran 'no plans' to reengage. Regime KINETIC_EXCHANGE intact. 1 alert MODIFIED (usdjpy note), 4 KEEP, all 9 structure_watch KEEP. News queries: rba_hike TUNED (drop 'cut'/'hold' broad keywords to throttle archive flood, raise cooldown to 240), boj_intervention MODIFIED (158 threshold), 6 KEEP.",
+  "last_updated_by_claude": "2026-04-21T10:10:00+05:30",
+  "pruned_at": "2026-04-21T10:10:00+05:30",
+  "pruned_by": "04:36 UTC tick — 13 events (8 bar_close M15 all majors heartbeat, 5 news_flash including HORMUZ CLOSED headlines: Iran says Strait of Hormuz closed again + vessels under fire incl Indian-flagged + CNBC/Guardian/WaPo/CNN/Jerusalem Post). Broker $1000 flat 0 pos reconciled. Crude +0.71% @ 86.48 (well below 90 trigger), Gold -0.58% @ 4792 (now in 4780-4810 zone), USDJPY +0.12% @ 158.98 (48p above 158.50), AUDUSD -0.14% @ 0.7166. Prices NOT ratifying Hormuz headlines — either already priced or headlines re-cycling earlier news. No confluence = SKIP all. 2 alerts MODIFIED (usdjpy + oil notes to add Hormuz context), 3 KEEP, all structure_watch KEEP. News queries all KEEP.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -35,7 +35,7 @@
       "level": 158.5,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "Break 158.50 = risk-off yen flight confirmed AND aligns with MoF pain threshold which per FXEmpire/MUFG (Apr 16) tightened to 158 (vs 160 prior). Short on retest from below. Last 158.969 (47p above trigger; session low 158.546 tagged — 4.6p buffer). H1+M15 bearish BOS/ChoCh stacked. Catalyst intact: Trump 'extension highly unlikely' (Bloomberg/CNN), Vance/Witkoff/Kushner→Pakistan Tue for Wed talks T-~20h, Iran 'no plans to reengage', US seized Iranian vessel. Katayama-Bessent FX talks Apr 16 affirm 'bold action' option open. SL 159.20, TP 157.00. If 159.20 breaks without intervention, re-evaluate."
+      "note": "Break 158.50 = risk-off yen flight confirmed AND aligns with MoF pain threshold which per FXEmpire/MUFG (Apr 16) tightened to 158 (vs 160 prior). Short on retest from below. Last 158.981 (48p above trigger; session low 158.695 — missed by 19p). Catalysts: Trump 'extension highly unlikely', Iran 'no plans to reengage', Vance/Witkoff/Kushner→Pakistan Tue. NEW Apr 21: Hormuz headlines — CNBC/Guardian/WaPo/CNN/Jerusalem Post report Iran reclosed Strait + fired on vessels incl Indian-flagged ship. BUT USDJPY unchanged (+0.12%) — market not ratifying risk-off yen flight YET. Need actual break to confirm. SL 159.20, TP 157.00. If 159.20 breaks without intervention, re-evaluate."
     },
     {
       "id": "oil_crude_escalation_90",
@@ -43,7 +43,7 @@
       "level": 90.0,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
-      "note": "WTI last 86.56 (3.44 below 90 trigger, day high 89.62, day low 85.45, +0.78%). Iran drone strikes on US vessels Apr 20 confirmed (CNN/AJ). Ceasefire Wed Apr 22 T-~18h expiry — if kinetic escalation on expiry, crude could gap toward 90 trigger. Alert armed ABOVE 90 for break-retest + M15 bull BOS. SL 87.50, TP1 94, TP2 98. Conv 4."
+      "note": "WTI last 86.48 (3.52 below 90 trigger, day high 86.76, day low 85.73, +0.71%). Apr 21 HORMUZ CLOSED headlines — CNBC/Guardian/WaPo report Iran reclosed Strait + attacked vessels incl Indian-flagged ship. Market NOT ratifying (+0.71% only) — either priced in or RSS re-cycling older stories. If Hormuz closure materially holds, crude gaps. Alert armed ABOVE 90 for break-retest + M15 bull BOS. Ceasefire Wed Apr 22 T-~18h expiry still live risk. SL 87.50, TP1 94, TP2 98. Conv 4."
     },
     {
       "id": "gold_escalation_buy_zone",

@@ -333,6 +333,14 @@
       "positions_open": 0,
       "balance": 1000.0,
       "summary": "0 events heartbeat \u2014 Iran T-?d ceasefire expiring 'in days' Pakistan retry today Iran undecided, BOJ Apr 28 T-7d, all 5 alerts + 8 queries KEEP"
+    },
+    {
+      "ts": "2026-04-21T04:36Z",
+      "trigger": "news_flash + bar_close heartbeat",
+      "events_processed": 13,
+      "trades": 0,
+      "summary": "Hormuz closure headlines but price unconfirm. Alerts KEEP, 2 notes MODIFIED (usdjpy/oil). Flat.",
+      "balance": 1000.0
     }
   ],
   "entries": [
