@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-21T02:26:29Z",
   "regime": "ESCALATION_CONFIRMED_KINETIC_EXCHANGE",
-  "regime_note": "2026-04-21 ~02:40 UTC auto tick \u2014 23 unconsumed: 8 bar_close M15 (all majors routine, no structure shift), 15 news_flash (all stale RSS URL-flushes Feb-Mar dates: us_iran_military 6 items Feb-Mar war coverage, fed_fomc 8 items Jan-Apr rate-hold/cut commentary, iran_ceasefire 1 Apr20 Islamabad negotiators piece). No new material info vs 02:26 tick. Broker $1000 flat 0 positions reconciled. Iran status unchanged: Trump T-18h Wed-evening-DC ceasefire expiry (Apr 22 ~22 UTC), Vance\u2192Pak Tue round-2, Iran FM 'no plans to reengage', Islamabad collapsed over enrichment/proxies/Hormuz, violations both sides. GOLD close 4807.53 in 4780-4810 zone but confluence weak (skipped 01:55 at 10.5, DXY firming). USDJPY 158.977 (47p above 158.50 short trigger). OIL_CRUDE 86.552 bearish BOS 73 bars. Watchlist audit: 5 level_alerts + 9 structure_watch all KEEP. News queries: 8/8 KEEP. SKIP all events \u2014 no trade. Flat. T-18h to Iran expiry.",
+  "regime_note": "2026-04-21 ~02:42 UTC auto tick \u2014 8 unconsumed all routine M15 bar_close (AUDUSD USDJPY GOLD OIL_CRUDE USDCAD EURUSD GBPUSD USDCHF) no structure shift, no level enters. Broker $1000 flat, 0 pos, reconciled. Regime carried from 02:40: Iran T~18h Trump Wed-22UTC expiry, Vance\u2192Pak Tue round-2, Iran FM 'no plans reengage', Islamabad collapsed enrichment/proxies/Hormuz, violations both sides. GOLD ~4807 in 4780-4810 zone but confluence weak 10.5 DXY firming (prior skip). USDJPY ~158.97 above 158.50 short trigger. OIL_CRUDE ~86.55 bearish BOS persists. Audit 5 level_alerts + 9 structure_watch + 8 news_queries all KEEP. No trade. Flat.",
   "open_positions": [],
   "watchlist": [
     {
@@ -361,6 +361,6 @@
   "last_updated": "2026-04-21T02:26:29Z",
   "capital_base": 1000.0,
   "last_tick_ts_utc": "2026-04-21T02:26:29Z",
-  "last_tick_utc": "2026-04-21T02:26:29Z",
+  "last_tick_utc": "2026-04-21T02:44:02Z",
   "last_scan_ts": "2026-04-21T01:30:00Z"
 }
