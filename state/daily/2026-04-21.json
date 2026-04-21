@@ -708,6 +708,15 @@
         "balance": 1000.0,
         "positions": 0
       }
+    },
+    {
+      "ts": "2026-04-21T11:38:04.518053Z",
+      "trigger": "bar_close_batch",
+      "events_processed": 8,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8,
+      "note": "All 8 M15 bar_close SKIP. Drift/bounce. Oil pulled back from 87.47 hi to 87.113. USDJPY drifted 6p lower to 159.137. 3 alerts price-refreshed. T-10.5h or T-38h ceasefire expiry - timeline still ambiguous."
     }
   ],
   "entries": [
