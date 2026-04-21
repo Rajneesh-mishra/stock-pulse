@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T17:40:00+05:30",
-  "pruned_at": "2026-04-21T17:40:00+05:30",
-  "pruned_by": "12:10 UTC tick (8 M15 bar_close all SKIP). Prices flat-drift vs 11:55: USDJPY 159.130 (-3.1p, 0.32 below 159.45 fade), GOLD 4796.2 (+4.5p bounce <4800), OIL 87.356 (+16.9c drift, M15 hi 87.475 flat, 2.64 below 90 escalation), AUDUSD 0.71634 (+0.7p, 93p >0.707), USDCAD/EURUSD/GBPUSD/USDCHF all <2p drift. WebSearch CNBC/ABC confirms ceasefire expires Tue eve Apr 22 = 0000 GMT Wed Apr 22 UTC = T-~12h. Trump threatens 'lots of bombs' if no deal. Iran MFA 'no plans for new talks'. Market still priced-in-optimism despite T-12h binary. 3 MODIFY (price refresh all 3), 8 queries KEEP, broker $1000/0 pos matches, no trades.",
+  "last_updated_by_claude": "2026-04-21T17:55:00+05:30",
+  "pruned_at": "2026-04-21T17:55:00+05:30",
+  "pruned_by": "12:25 UTC tick (15 H4+H1+M15 bar_close all SKIP). RISK-OFF CREEP starting: OIL 87.547 (+19.1c vs 12:10, NEW session hi 87.608, +1.94% day, 2.45 below 90), EURUSD 1.17664 (+6.9p DXY weakness), GOLD 4791.75 (-4.45p <4800 mixed), USDJPY 159.048 (-0.08p flat 0.40 below 159.45 fade), AUDUSD 0.71650 (+1.6p still 95p >0.707), USDCAD 1.36549 (-3.7p), GBPUSD 1.35203, USDCHF 0.77923. WebSearch CNN/Al Jazeera/ABC Apr 21: Iran officially pulled out Islamabad Rd2, state TV 'no delegation departed', Iran REDECLARED Hormuz closure warning ships targeted, hundreds vessels stranded. Trump 'extension highly unlikely'. WH said Vance+Witkoff+Kushner still going to Islamabad. T-~11.5h to 0000 GMT Wed Apr 22. 3 MODIFY (price refresh all 3 alerts), 8 queries KEEP, broker $1000/0 pos matches, no trades (binary event no edge).",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -27,7 +27,7 @@
       "level": 0.707,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
-      "note": "AUDUSD 0.71634 flat (+0.7p vs 11:55). Still ~93p above 0.707 breakdown. Armed for risk-off dump on Iran deal failure / Hormuz escalation. Ceasefire expires 0000 GMT Wed Apr 22 = T-~12h. Iran pulled out of Islamabad Rd2, 'no plans for new talks' per MFA."
+      "note": "AUDUSD 0.71650 (+1.6p vs 12:10). Still ~95p above 0.707 breakdown. Armed for risk-off dump on Iran deal failure / Hormuz re-closure. T-~11.5h to 0000 GMT Wed Apr 22. Iran officially pulled out Islamabad Rd2, state TV 'no delegation departed'. Iran redeclared Hormuz closure, vessels stranded."
     },
     {
       "id": "usdjpy_intervention_fade_zone",
@@ -36,7 +36,7 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "USDJPY 159.130 flat (-3.1p vs 11:55), 0.32 below 159.45 fade. Armed if bounce back into zone. Ceasefire expires 0000 GMT Wed Apr 22 = T-~12h. Yen safe-haven bid if Iran deal fails \u2192 fade setup triggers on bounce."
+      "note": "USDJPY 159.048 flat (-0.08p vs 12:10), 0.40 below 159.45 fade. Armed if bounce back into zone. T-~11.5h to 0000 GMT Wed Apr 22 ceasefire expiry. Yen safe-haven bid if Iran deal fails + Hormuz re-closure holds \u2192 fade setup triggers on bounce."
     },
     {
       "id": "oil_crude_escalation_90",
@@ -44,7 +44,7 @@
       "level": 90.0,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
-      "note": "Oil 87.356 (+16.9c vs 11:55, M15 hi 87.475 flat). 2.64 below 90 escalation trigger. Ceasefire expires 0000 GMT Wed Apr 22 = T-~12h. Trump 'lots of bombs' threat, Iran MFA 'no plans for new talks'. Armed for gap-up on collapse."
+      "note": "Oil 87.547 (+19.1c vs 12:10, NEW session hi 87.608, +1.94% day). 2.45 below 90 escalation trigger. T-~11.5h to 0000 GMT Wed Apr 22. Iran redeclared Hormuz closure, vessels stranded. Trump 'extension highly unlikely'. Risk-off creep live. Armed for gap-up on collapse."
     }
   ],
   "structure_watch": [

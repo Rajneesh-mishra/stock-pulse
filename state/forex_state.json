@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-21T11:25:00Z",
-  "regime": "PRE_BINARY_COMPRESSION_DEAL_OPTIMISM",
-  "regime_note": "2026-04-21 12:10 UTC - 8 M15 bar_close all SKIP, prices flat-drift vs 11:55 (USDJPY 159.130 -3.1p 0.32 below 159.45 fade, GOLD 4796.2 +4.5p bounce <4800, OIL 87.356 +16.9c drift M15 hi 87.475 flat 2.64 below 90, AUDUSD 0.71634 +0.7p 93p >0.707, USDCAD/EURUSD/GBPUSD/USDCHF all <2p). WebSearch CNBC/ABC Apr 21: ceasefire expires Tue eve Apr 22 = 0000 GMT Wed Apr 22 UTC = T-~12h. Trump 'lots of bombs' threat, Iran MFA 'no plans for new talks'. Market still priced-in-optimism despite T-12h binary. 3 MODIFY (price refresh), 8 queries KEEP, 9 structure KEEP, broker $1000/0 pos matches, no trades (binary event no edge).",
+  "last_tick": "2026-04-21T12:25:00Z",
+  "regime": "PRE_BINARY_COMPRESSION_RISKOFF_CREEP",
+  "regime_note": "2026-04-21 12:25 UTC - 15 bar_close events (H4+H1+M15 across 8 pairs) all SKIP, T-~11.5h to 0000 GMT Wed Apr 22 ceasefire expiry. RISK-OFF CREEP starting: OIL 87.547 (+19.1c vs 12:10, NEW session hi 87.608, +1.94% day, 2.45 below 90 escalation), EURUSD 1.17664 (+6.9p, risk-off DXY weakness), GOLD 4791.75 (-4.45p <4800 - mixed signal), USDJPY 159.048 (-0.08p flat 0.40 below 159.45 fade), AUDUSD 0.71650 (+1.6p still 95p >0.707), USDCAD 1.36549 (-3.7p), GBPUSD 1.35203, USDCHF 0.77923. WebSearch CNN/ABC/Al Jazeera Apr 21: Iran officially pulled out of Islamabad Rd2, state TV 'no delegation departed', Iran REDECLARED Hormuz closure warning ships targeted, hundreds of vessels stranded. Trump 'extension highly unlikely'. But WH said Vance+Witkoff+Kushner still going to Islamabad. Priced-in-deal-optimism partially cracking via oil+EUR bid. 3 MODIFY (price refresh all alerts), 8 queries KEEP, 9 structure KEEP, broker $1000/0 pos matches, no trades (binary event T-11.5h no edge).",
   "open_positions": [],
   "watchlist": [
     {
