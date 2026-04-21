@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-21T10:38:00Z",
+  "last_tick": "2026-04-21T11:25:00Z",
   "regime": "PRE_BINARY_COMPRESSION_DEAL_OPTIMISM",
-  "regime_note": "2026-04-21 11:10 UTC \u2014 H1+M15 heartbeat. Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM with oscillation: Bloomberg 'Iran WILL attend Islamabad' vs Euronews/CNBC 'brink of collapse'. Oil showing mild bounce (+54c) above prior bear BOS swing but no confirmed bull BOS. T-~39h to Thu Apr 23 ~02:00 UTC ceasefire expiry. Market fatigued/priced-in pre-expiry. 0 positions, $1000. Watching: USDJPY 159.45 fade, OIL_CRUDE 90 escalation, AUDUSD 0.707 breakdown.",
+  "regime_note": "2026-04-21 11:25 UTC - H1+M15 heartbeat. Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM. TIMELINE CORRECTION: WaPo/CNBC Apr 21 confirm ceasefire expires TODAY Apr 21 Tuesday evening (~22:00 UTC), T-~10-11h NOT Thu as prior ticks stated (Apr 7 ceasefire + 14d = Apr 21). Iran MFA: NO negotiators to Islamabad Round 2, cites Hormuz blockade + container ship capture as truce breaches. Trump 'highly unlikely' extension + 'lots of bombs start going off' threat. WTI 87.202 (+34c bouncing toward 90 still 2.8 away). USDJPY 159.197 (0.253 below 159.45 fade). Gold 4783 drift <4800. AUDUSD 0.71604 flat well above 0.707. 0 pos, $1000. Watching oil breakout, USDJPY 159.45 fade, AUDUSD 0.707 breakdown.",
   "open_positions": [],
   "watchlist": [
     {
@@ -420,6 +420,14 @@
       "closed": 0,
       "skipped": 12,
       "note": "12 bar_close H1+M15 (AUDUSD/USDJPY/GOLD/OIL_CRUDE/USDCAD/EURUSD) all SKIP heartbeat. USDJPY fresh bid 159.189 +1p vs 09:54, 0.26 below 159.45 fade zone, day range 158.695-159.251. 1 WebSearch: no Iran deal, Vance flying Islamabad today, Iran refusing talks + 'new cards on battlefield', Trump 'highly unlikely' extend, T-~13.8h to Wed 00:00 GMT Apr 22 expiry. 1 MODIFY (usdjpy price refresh), 2+9+8 KEEP."
+    },
+    {
+      "ts_utc": "2026-04-21T11:25:00Z",
+      "events_in": 8,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8,
+      "note": "8 M15 bar_close SKIP heartbeat. TIMELINE CORRECTION via WaPo/CNBC Apr 21: ceasefire expires TODAY Tue evening ~22:00 UTC T-~10-11h (Apr 7+14d=Apr 21), NOT Thu. Iran MFA refusing Islamabad Rd2 citing blockade+container ship seizure as breaches. Trump 'bombs start going off' threat. WTI 87.2 (+34c bounce toward 90 still 2.8 away), USDJPY 159.197 (0.253 below 159.45 fade), all other pairs <3p drift. 3 MODIFY (price + timeline on all alerts), 2+9+8 KEEP otherwise."
     }
   ],
   "recent_skips": [
@@ -453,14 +461,14 @@
       "price": 4809.28
     }
   ],
-  "last_tick_summary": "11:10 UTC H1+M15 close \u2014 17 bar_close across 9 pairs all SKIP (no BOS flip confirmed, no level touches). Prices vs 10:52: USDJPY 159.188 (-0.9p flat), OIL 86.857 (+54c bounce above M15 bear BOS swing 86.621 but no bull BOS, H1 hi 87.407 still <90), GOLD 4787.7 (-1.3 flat), AUDUSD 0.71586 (flat), others <3p drift. News: Bloomberg 'Iran WILL attend' vs Euronews/CNBC 'ceasefire brink of collapse' \u2014 conflicting/oscillating. T-~39h to Thu Apr 23 ~02:00 UTC expiry. 3 MODIFY, 8 queries KEEP, 0 trades, broker $1000/0 pos matches.",
+  "last_tick_summary": "11:25 UTC 8 M15 bar_close all SKIP. Prices vs 11:10: USDJPY 159.197 (+0.9p, 0.253 below 159.45), OIL 87.202 (+34c continuing bounce H1 hi 87.407 still <90), GOLD 4783.05 (-4.6p), AUDUSD 0.71604 (+1.8p), EURUSD 1.17623/USDCAD 1.36563/GBPUSD 1.35132/USDCHF 0.77982 all <3p. TIMELINE CORRECTION: WaPo/CNBC Apr 21 confirm expiry TODAY Tue evening ~22:00 UTC T-~10-11h (not Thu as prior ticks). Iran MFA refusing Islamabad Rd2 citing Hormuz blockade + ship capture. Trump 'bombs start going off' threat. 3 MODIFY (price + timeline), 8 queries KEEP, 0 trades, broker $1000/0 pos matches.",
   "last_scan": {
     "timestamp": "2026-04-21T12:16:00+05:30"
   },
-  "last_updated": "2026-04-21T10:08:00Z",
+  "last_updated": "2026-04-21T11:24:02.916114Z",
   "capital_base": 1000.0,
-  "last_tick_ts_utc": "2026-04-21T11:10:09+00:00",
-  "last_tick_utc": "2026-04-21T10:23:00Z",
+  "last_tick_ts_utc": "2026-04-21T11:25:00+00:00",
+  "last_tick_utc": "2026-04-21T11:25:00Z",
   "last_scan_ts": "2026-04-21T01:30:00Z",
   "tick_log": [
     {
