@@ -1,118 +1,118 @@
 {
-  "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T16:23:00+05:30",
-  "pruned_at": "2026-04-21T16:23:00+05:30",
-  "pruned_by": "10:52 UTC tick (8 M15 bar_close across 8 pairs all SKIP — no BOS/CHoCH/level touches). Prices flat-drift vs 10:38: USDJPY 159.197 (+1.1p, still 0.25 below 159.45 fade; new tight bull FVG 159.187-159.192 unmitigated on current bar), OIL_CRUDE 86.313 (+1.78 mild bounce from 86.135 but M15 bear BOS intact, still below 86.5 former support), GOLD 4789.01 (+1.3 flat <4800), AUDUSD 0.71584 (+2.3p flat), EURUSD 1.176045/USDCAD 1.36578/GBPUSD 1.35106/USDCHF 0.77996 all <3p drift. Ceasefire T-~39h to Thu Apr 23 ~02:00 UTC. WebSearch Apr 21 confirmed: Iran MFA 'no negotiators to Islamabad', Trump unlikely extend, 'new cards on battlefield' (CNBC) — no material delta vs 10:38. Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM intact, market fatigued/priced-in pre-expiry. 3 MODIFY (all 3 alerts price refresh), 8 queries KEEP. 0 positions, $1000 matches broker.",
-  "pruned_removed": [],
-  "pruned_added": [],
-  "instruments": [
-    "EURUSD",
-    "USDJPY",
-    "GOLD",
-    "OIL_CRUDE",
-    "BTCUSD",
-    "AUDUSD",
-    "USDCAD",
-    "GBPUSD",
-    "USDCHF"
-  ],
-  "poll_cadence_sec": {
-    "active_market": 30,
-    "quiet": 120
-  },
-  "level_alerts": [
-    {
-      "id": "audusd_breakdown_trigger",
-      "instrument": "AUDUSD",
-      "level": 0.707,
-      "emit_on": "cross_down",
-      "cooldown_sec": 1800,
-      "note": "Break of 0.707 = prior pivot gone. Short on retest from below. SL 0.713, TP 0.700. Risk-off + AUD first-to-bleed. Catalyst HARDENING Apr 21 10:52 UTC: Iran MFA 'no negotiators to Islamabad' + 'US violated ceasefire from beginning' (Hormuz blockade + container-ship seizure); Trump 'new cards on battlefield' rhetoric (CNBC Apr 21). Ceasefire expiry T-~39h to Thu Apr 23 ~02:00 UTC (Wed evening Washington). Market fatigue = priced-in, expiry still 1.5+ days out. Level 0.707 is ~1.2% below current 0.71584; needs ceasefire cliff to break or talks-fail confirm. Need M15 bear BOS + rejection wick on retest. Conv 3."
+    "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
+    "last_updated_by_claude": "2026-04-21T16:39:53+05:30",
+    "pruned_at": "2026-04-21T16:39:53+05:30",
+    "pruned_by": "11:10 UTC tick (H1+M15 close \u2014 17 bar_close across 9 pairs all SKIP). Prices vs 10:52: USDJPY 159.188 (-0.9p flat, 0.26 below 159.45 fade; H1 hi 159.251/lo 158.695), OIL 86.857 (+54c notable bounce now ABOVE prior M15 bear BOS swing 86.621, H1 hi 87.407 still below 90 trigger \u2014 bear BOS weakening, no bull BOS confirmed yet), GOLD 4787.7 (-1.3 flat <4800), AUDUSD 0.71586 (flat), EURUSD 1.17624/USDCAD 1.36581/GBPUSD 1.35137/USDCHF 0.77979 all <3p drift, BTCUSD 76704.7. Bloomberg Apr 21: oil -1.1% on signs Iran WILL attend Islamabad; Euronews/CNBC Apr 21 conflicting: 'ceasefire on brink of collapse, talks stall'. Ceasefire expiry T-~39h to Thu Apr 23 ~02:00 UTC (Wed eve Washington). Market oscillating. 3 MODIFY (price/structure refresh), 8 queries KEEP, 0 positions, $1000 matches broker.",
+    "pruned_removed": [],
+    "pruned_added": [],
+    "instruments": [
+        "EURUSD",
+        "USDJPY",
+        "GOLD",
+        "OIL_CRUDE",
+        "BTCUSD",
+        "AUDUSD",
+        "USDCAD",
+        "GBPUSD",
+        "USDCHF"
+    ],
+    "poll_cadence_sec": {
+        "active_market": 30,
+        "quiet": 120
     },
-    {
-      "id": "usdjpy_intervention_fade_zone",
-      "instrument": "USDJPY",
-      "level": 159.45,
-      "emit_on": "cross_up",
-      "cooldown_sec": 1800,
-      "direction": "sell",
-      "note": "Price 159.197 (10:52 UTC bid, +1.1p vs 10:38, still 0.25 below 159.45 fade zone 159.45-161.95 per MarketPulse/OANDA; bearish M15 BOS intact 158.728 from Apr 20 07:15; tight bull FVG 159.187-159.192 on current bar unmitigated; deeper bull FVG 159.02-159.115 still unmitigated below). Katayama post-Bessent 'bold action' (JapanTimes Apr 16). Fade SELL on entry into zone — needs M15 bear BOS + rejection wick on first touch of 159.45+ for 7-gate. SL 161.00, TP1 158.70, TP2 157.20. Conv 3. Ceasefire expiry T-~39h to Thu Apr 23 ~02:00 UTC. 2-WAY RISK: (a) Iran risk-off flip bids yen (ceasefire collapse → safe-haven bid, Iran refusing Islamabad per CNN/AJ/CNBC), (b) Islamabad surprise deal → USD bid but intervention risk caps. Monitor M15 for first touch OR mitigation of 159.02-159.115 bull FVG from above."
-    },
-    {
-      "id": "oil_crude_escalation_90",
-      "instrument": "OIL_CRUDE",
-      "level": 90.0,
-      "emit_on": "cross_up",
-      "cooldown_sec": 1800,
-      "note": "WTI 86.313 (10:52 UTC bid, +1.78 mild bounce from 86.135 vs 10:38, M15 bear BOS intact 86.621 from Apr 20 07:00 — no bull BOS yet, still below 86.5 former support). Thesis HARDENING but market fatigued: Iran MFA 'no negotiators', Trump 'new cards on battlefield' (CNBC Apr 21), US delegation still traveling. Ceasefire expiry T-~39h to Thu Apr 23 ~02:00 UTC (Wed evening Washington). Market flat-to-down despite catalyst cascade = priced-in pre-expiry. Break $90 + M15 bull BOS signals new demand leg (Iran retaliation / strike / mines) — likely catalyst post-expiry Thu Apr 23. SL 88.00, TP1 94, TP2 98. Conv 4."
-    }
-  ],
-  "structure_watch": [
-    {
-      "instrument": "AUDUSD",
-      "timeframes": [
-        "HOUR_4",
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "USDJPY",
-      "timeframes": [
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "GOLD",
-      "timeframes": [
-        "HOUR_4",
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "OIL_CRUDE",
-      "timeframes": [
-        "HOUR_4",
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "USDCAD",
-      "timeframes": [
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "EURUSD",
-      "timeframes": [
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "GBPUSD",
-      "timeframes": [
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "USDCHF",
-      "timeframes": [
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "BTCUSD",
-      "timeframes": [
-        "HOUR_4",
-        "HOUR"
-      ]
-    }
-  ]
+    "level_alerts": [
+        {
+            "id": "audusd_breakdown_trigger",
+            "instrument": "AUDUSD",
+            "level": 0.707,
+            "emit_on": "cross_down",
+            "cooldown_sec": 1800,
+            "note": "Price 0.71586 (11:10 UTC bid, flat vs 10:52). Break of 0.707 = prior pivot gone. Short on retest from below. SL 0.713, TP 0.700. Risk-off + AUD first-to-bleed. Catalyst: Iran MFA 'no negotiators to Islamabad' + 'US violated ceasefire' (Hormuz blockade + Touska seizure); Trump 'new cards on battlefield' (CNBC Apr 21). Bloomberg Apr 21: conflicting signals \u2014 'oil slipped on signs Iran WILL attend'. Euronews/CNBC Apr 21: 'ceasefire on brink of collapse, talks stall'. Expiry T-~39h to Thu Apr 23 ~02:00 UTC. Level 0.707 ~1.2% below current; needs ceasefire cliff to break or talks-fail confirm. Need M15 bear BOS + rejection wick. Conv 3."
+        },
+        {
+            "id": "usdjpy_intervention_fade_zone",
+            "instrument": "USDJPY",
+            "level": 159.45,
+            "emit_on": "cross_up",
+            "cooldown_sec": 1800,
+            "direction": "sell",
+            "note": "Price 159.188 (11:10 UTC bid, -0.9p vs 10:52, still 0.26 below 159.45 fade zone 159.45-161.95 per MarketPulse/OANDA; H1 hi 159.251/lo 158.695 range-bound; M15 bear BOS intact 158.728 from Apr 20 07:15; deeper bull FVG 159.02-159.115 still unmitigated below). Katayama post-Bessent 'bold action' (JapanTimes Apr 16). Fade SELL on entry \u2014 M15 bear BOS + rejection wick on first touch of 159.45+ for 7-gate. SL 161.00, TP1 158.70, TP2 157.20. Conv 3. Ceasefire expiry T-~39h to Thu Apr 23 ~02:00 UTC. 2-WAY: (a) Iran risk-off bids yen, (b) Islamabad deal surprise \u2192 USD bid but intervention caps. Monitor M15 first touch OR mitigation of 159.02-159.115 bull FVG."
+        },
+        {
+            "id": "oil_crude_escalation_90",
+            "instrument": "OIL_CRUDE",
+            "level": 90.0,
+            "emit_on": "cross_up",
+            "cooldown_sec": 1800,
+            "note": "WTI 86.857 (11:10 UTC bid, +54c bounce from 86.313 vs 10:52 \u2014 H1 hi 87.407/lo 85.622; price now ABOVE prior M15 bear BOS swing 86.621, bear structure weakening but NO bull BOS confirmed yet; still below 90 trigger). Thesis: Iran MFA 'no negotiators' + Trump 'new cards on battlefield' (CNBC Apr 21) conflicts with Bloomberg 'oil slipped on signs Iran WILL attend Islamabad'. Ceasefire expiry T-~39h to Thu Apr 23 ~02:00 UTC. Brent ~$95 quoted (Euronews Apr 21), WTI 86.85 range-bound. Break $90 + M15 bull BOS signals new demand leg (retaliation/strike/mines) \u2014 catalyst likely post-expiry. SL 88.00, TP1 94, TP2 98. Conv 4."
+        }
+    ],
+    "structure_watch": [
+        {
+            "instrument": "AUDUSD",
+            "timeframes": [
+                "HOUR_4",
+                "HOUR",
+                "MINUTE_15"
+            ]
+        },
+        {
+            "instrument": "USDJPY",
+            "timeframes": [
+                "HOUR",
+                "MINUTE_15"
+            ]
+        },
+        {
+            "instrument": "GOLD",
+            "timeframes": [
+                "HOUR_4",
+                "HOUR",
+                "MINUTE_15"
+            ]
+        },
+        {
+            "instrument": "OIL_CRUDE",
+            "timeframes": [
+                "HOUR_4",
+                "HOUR",
+                "MINUTE_15"
+            ]
+        },
+        {
+            "instrument": "USDCAD",
+            "timeframes": [
+                "HOUR",
+                "MINUTE_15"
+            ]
+        },
+        {
+            "instrument": "EURUSD",
+            "timeframes": [
+                "HOUR",
+                "MINUTE_15"
+            ]
+        },
+        {
+            "instrument": "GBPUSD",
+            "timeframes": [
+                "HOUR",
+                "MINUTE_15"
+            ]
+        },
+        {
+            "instrument": "USDCHF",
+            "timeframes": [
+                "HOUR",
+                "MINUTE_15"
+            ]
+        },
+        {
+            "instrument": "BTCUSD",
+            "timeframes": [
+                "HOUR_4",
+                "HOUR"
+            ]
+        }
+    ]
 }

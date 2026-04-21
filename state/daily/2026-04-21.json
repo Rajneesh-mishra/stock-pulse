@@ -696,6 +696,18 @@
       "trades": 0,
       "broker_match": true,
       "audit": "3 alerts MODIFY (price refresh), 8 queries KEEP, 9 structure_watch KEEP"
+    },
+    {
+      "ts_utc": "2026-04-21T11:10:14+00:00",
+      "type": "H1+M15_heartbeat",
+      "events_processed": 17,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "summary": "17 bar_close all SKIP. Oil +54c bounce to 86.857 above prior M15 bear BOS swing 86.621 but no bull BOS confirmed; H1 hi 87.407 <90 trigger. USDJPY 159.188 flat -0.9p 0.26 below 159.45 fade. Others flat-drift. News conflicting: Bloomberg 'Iran WILL attend Islamabad' vs Euronews/CNBC 'brink of collapse, talks stall'. T-~39h to Thu Apr 23 02:00 UTC expiry. 3 MODIFY (price/structure refresh), 8 queries KEEP.",
+      "broker": {
+        "balance": 1000.0,
+        "positions": 0
+      }
     }
   ],
   "entries": [
