@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-21T05:05:00Z",
   "regime": "ESCALATION_CONFIRMED_KINETIC_EXCHANGE",
-  "regime_note": "2026-04-21 05:05 UTC \u2014 12 bar_close heartbeat (M15 on AUDUSD/USDJPY/GOLD/OIL_CRUDE/USDCAD; H1+M15 on EURUSD/GBPUSD/USDCHF; H1 on BTCUSD). 0 news_flash. Broker $1000 flat 0 positions reconciled. WEB SEARCH CORRECTION: Iran ceasefire expires TODAY Apr 21 Tue (not Apr 22). Vance/Witkoff/Kushner expected in Islamabad today \u2014 Iran 'no talks for now', Tehran vowed retaliation after US Navy seized Iranian vessel over weekend. Iran FM Baghaei: US 'violated ceasefire from beginning'. Prices still coiling from 04:51 tick \u2014 market not ratifying escalation path yet: WTI ~86 below 90 trigger, Gold ~4790 at zone floor, USDJPY ~159 above 158.50, AUDUSD ~0.7167 above 0.707, USDCAD ~1.3647 at zone floor. No confluence anywhere = SKIP all. 0 trades. All 5 alerts + 8 queries KEEP (iran_ceasefire note tuned for today-expiry).",
+  "regime_note": "2026-04-21 05:19 UTC \u2014 13 bar_close heartbeat (M15 on AUD/USDJPY/GOLD/OIL/USDCAD + H1+M15 on EUR/GBP/USDCHF; +H1 on AUD/USDJPY/GOLD/OIL/USDCAD). 0 news_flash. Broker $1000 flat 0 pos reconciled. WEB SEARCH UPDATE: Iran ceasefire EXPIRES TODAY Apr 21 Tue (confirmed). WTI now $88.50 (-1.2%, up from 86.48 last tick) / Brent $94.94 (-0.6%). Oil DOWN today on peace-talks optimism \u2014 market playing fade-escalation. First Vance/Witkoff/Kushner round ended 21hr no-deal; US team returning. Iran MFA Baghaei cites US Hormuz blockade + seized Iranian cargo ship as breaches. NO TRADE: default=SKIP \u2014 market playing peace side, any entry needs catalyst confirmation. 4 of 5 alerts KEEP, 1 MODIFY (oil_crude conv 4\u21923 + new prices + fade-context). 9 structure_watch KEEP. 8 news queries KEEP.",
   "open_positions": [],
   "watchlist": [
     {
@@ -401,6 +401,6 @@
   "last_updated": "2026-04-21T03:37:00Z",
   "capital_base": 1000.0,
   "last_tick_ts_utc": "2026-04-21T04:22:30Z",
-  "last_tick_utc": "2026-04-21T02:44:02Z",
+  "last_tick_utc": "2026-04-21T05:19:30Z",
   "last_scan_ts": "2026-04-21T01:30:00Z"
 }

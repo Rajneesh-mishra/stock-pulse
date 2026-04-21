@@ -365,6 +365,13 @@
       "closed": 0,
       "skipped": 12,
       "summary": "Heartbeat. Web search correction: Iran ceasefire expires TODAY Apr 21 (was Apr 22). Vance+team to Islamabad; Iran not attending. Market still not ratifying \u2014 prices unchanged. All 5 alerts + 8 queries KEEP; iran_ceasefire query note tuned."
+    },
+    {
+      "ts_utc": "2026-04-21T05:19:30Z",
+      "trigger": "bar_close_heartbeat",
+      "events": 13,
+      "trades": 0,
+      "summary": "13 bar_close heartbeat. Web search: ceasefire expires TODAY Apr 21 (confirmed). WTI $88.50 / Brent $94.94. Oil DOWN on peace-talks optimism. Broker flat. 4/5 alerts KEEP, 1 MODIFY (oil_crude conv 4\u21923 + prices + fade-context)."
     }
   ],
   "entries": [
