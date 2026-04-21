@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-21T13:05:00Z",
   "regime": "PRE_BINARY_COMPRESSION_CONFLICTING_NARRATIVE",
-  "regime_note": "2026-04-21 13:20 UTC - 12 bar_close all SKIP T-~10.4h binary. Drift vs 13:05: AUDUSD 0.71643 (+1.5p 92p above 0.707), USDJPY 159.121 (-5p 0.33 below 159.45 fade), GOLD 4770.53 (-13.1p slight risk-on drift <4800), OIL 86.993 (-3.7c flat 3.01 below 90), EUR/CAD/GBP/CHF flat. WebSearch CNN/CNBC/AlJaz/NPR Apr 20-21: Trump Wed eve 'highly unlikely to extend', Vance+Witkoff+Kushner departing Islamabad 'mixed signals on Iran attendance', Iran MFA reiterates US breached first via blockade+Touska. Priced-in-optimism narrative intact. 3 MODIFY price refresh all level_alerts, 9 structure_watch KEEP, 8 queries KEEP, broker $1000/0 pos matches state, 12 events consumed, 0 trades (binary no edge T-10.4h).",
+  "regime_note": "2026-04-21 13:35 UTC - 8 M15 bar_close all SKIP T-~10.4h binary to 0000 GMT Wed Apr 22 expiry. Drift vs 13:20: AUDUSD 0.71691 (+4.8p, 98p above 0.707), USDJPY 159.069 (-5.2p, 0.38 below 159.45 fade), GOLD 4777.22 (+6.7p), OIL 86.803 (-19p, 3.2 below 90 fade), USDCAD/EUR/GBP/CHF flat. WebSearch CNN/CNBC/AlJaz/Euronews Apr 21: Vance+Witkoff+Kushner departing Islamabad but Iran state TV explicitly 'no delegation has departed for Islamabad'; Trump Tue 'little appetite to extend', won't open Hormuz until deal, threatens resume bombing. Tehran refuses talks under threat. Priced-in-optimism persists but binary uncertainty amplified. 3 MODIFY price refresh all level_alerts (AUDUSD 0.707 buy, USDJPY 159.45 sell, OIL 90 sell), 9 structure_watch KEEP (full instrument coverage), 8 news_queries KEEP. Broker $1000/0 pos matches state. 0 trades (binary no edge T-~10h).",
   "open_positions": [],
   "watchlist": [
     {
@@ -342,7 +342,7 @@
   "last_updated": "2026-04-21T13:20:00+00:00",
   "capital_base": 1000.0,
   "last_tick_ts_utc": "2026-04-21T11:25:00+00:00",
-  "last_tick_utc": "2026-04-21T12:10:00Z",
+  "last_tick_utc": "2026-04-21T19:03:00Z",
   "last_scan_ts": "2026-04-21T01:30:00Z",
   "tick_log": [
     {

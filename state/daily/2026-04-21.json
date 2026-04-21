@@ -761,6 +761,29 @@
       "trades_closed": 0,
       "events_consumed": 12,
       "watchlist": "3 MODIFY price refresh, 9 structure_watch KEEP, 8 queries KEEP"
+    },
+    {
+      "tick_utc": "2026-04-21T19:03:00Z",
+      "trigger": "forex_auto",
+      "events_consumed": 8,
+      "type": "bar_close x8",
+      "action": "SKIP all",
+      "reason": "binary T-~10.4h Iran ceasefire expiry 0000 GMT Wed Apr 22, no edge",
+      "prices": {
+        "AUDUSD": 0.71691,
+        "USDJPY": 159.069,
+        "GOLD": 4777.22,
+        "OIL_CRUDE": 86.803,
+        "USDCAD": 1.36419,
+        "EURUSD": 1.17707,
+        "GBPUSD": 1.35276,
+        "USDCHF": 0.77938
+      },
+      "news": "Vance+Witkoff+Kushner dep Islamabad, Iran state TV 'no delegation sent', Trump 'unlikely to extend', threatens bombing, won't open Hormuz until deal",
+      "audit": "3 level_alerts MODIFY price refresh, 9 structure_watch KEEP, 8 queries KEEP",
+      "trades": 0,
+      "balance": 1000.0,
+      "open_positions": 0
     }
   ],
   "entries": [
