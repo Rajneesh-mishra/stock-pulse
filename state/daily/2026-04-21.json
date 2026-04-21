@@ -323,6 +323,16 @@
       "positions_closed": 0,
       "trades_skipped": 0,
       "summary": "heartbeat \u2014 8 M15 bar_close all majors no fresh structure, 0 pos flat, Iran T-19h Islamabad talks collapsed 3 irreconcilable issues (enrichment/proxies/Hormuz), all alerts+queries KEEP"
+    },
+    {
+      "ts": "2026-04-21T04:33:00Z",
+      "type": "heartbeat",
+      "events_processed": 0,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "positions_open": 0,
+      "balance": 1000.0,
+      "summary": "0 events heartbeat \u2014 Iran T-?d ceasefire expiring 'in days' Pakistan retry today Iran undecided, BOJ Apr 28 T-7d, all 5 alerts + 8 queries KEEP"
     }
   ],
   "entries": [

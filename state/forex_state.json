@@ -1,7 +1,7 @@
 {
   "last_tick": "2026-04-21T04:08:00Z",
   "regime": "ESCALATION_CONFIRMED_KINETIC_EXCHANGE",
-  "regime_note": "2026-04-21 04:22 UTC tick \u2014 8 bar_close M15 across AUDUSD/USDJPY/GOLD/OIL/USDCAD/EURUSD/GBPUSD/USDCHF heartbeat. No fresh BOS/ChoCh on any TF, FVGs mitigated, trends 'unknown'. Prices essentially unchanged from 04:08: AUDUSD 0.71662, USDJPY 158.976, GOLD 4795.12 (still mid-zone 4780-4810 no confluence), OIL 86.43, USDCAD 1.36486, EURUSD 1.1775, GBPUSD 1.3516, USDCHF 0.7793. Broker $1000 flat 0 pos reconciled. NEW news intel (minor): Islamabad talks collapsed over three irreconcilable issues \u2014 Iran enrichment, proxy funding (Hezbollah), and Hormuz control/terms. Iran calls US demands 'childish' + cites ongoing US naval blockade as ceasefire breach. Trump extension 'highly unlikely' BUT European Business Magazine analysts frame extension-for-talks as 'most likely outcome' if round 2 materialises. Divergent read = ambiguity premium. Iran ceasefire T-~19h Apr 22 Wed expiry. Regime KINETIC_EXCHANGE_WATCH intact. All 5 level_alerts KEEP, all 9 structure_watch KEEP, all 7 news queries KEEP. No trade action.",
+  "regime_note": "2026-04-21 04:33 UTC heartbeat tick \u2014 0 unconsumed events, 0 open positions, balance $1000 flat. Iran-US: Islamabad talks failed Apr 12, Pakistan attempting restart today (Apr 21), Iran undecided about attending. Ceasefire expires 'in days', Trump's Hormuz blockade since Apr 13 cited as obstacle. Iran threatens response after US ship seizure. USDJPY 158.97 in 158.50-159.20 consol; BOJ Apr 28 meeting (T-7d), verbal intervention escalating, market caps upside ~158-160. GOLD 4795 still mid-zone 4780-4810 (no fresh BOS for entry), OIL_CRUDE 86.56 below 90 trigger. All 5 watchlist alerts + 8 news queries = KEEP. Coverage intact (9 instruments / 9 structure_watch).",
   "open_positions": [],
   "watchlist": [
     {
@@ -149,7 +149,7 @@
     "telegram_on_trade": true,
     "telegram_chat_ids": "6838758759,849258319"
   },
-  "last_tick_ts": "2026-04-21T03:54:00Z",
+  "last_tick_ts": "2026-04-21T04:33:00Z",
   "tracker": [
     {
       "situation": "US Navy Blockade of Iran \u2014 day 4",
