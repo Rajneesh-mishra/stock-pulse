@@ -100,12 +100,21 @@ Key level = alert level, fresh OB, unmitigated FVG, swept liquidity, or a struct
 
 R:R floor: **1.5:1** (was 2:1). Below 1.5:1 is skip.
 
-### 4c. Anticipation LIMIT entries — USE THEM
+### 4c. Anticipation LIMIT entries — MANDATORY when conditions met
 
-Old framework waited for candle-close confirmation and missed 30–60p of the move repeatedly. When `readiness >= moderate` AND price is within 5 pips of a clean structural level:
-- Place LIMIT at the level
-- SL beyond the invalidation (not arbitrary pips)
-- Pre-commit mentally to NOT cancel when price approaches
+Old framework waited for candle-close confirmation and missed 30–60p of the move repeatedly. You MUST use LIMIT entry (not market-on-confirmation) when ALL THREE hold:
+
+- `readiness >= moderate`
+- Price is within `1× ATR(HOUR_1)` of a clean structural level (alert level, fresh OB, unmitigated FVG, swept extreme)
+- R:R from the level to the next opposing structure is ≥ 1.5:1
+
+Execution:
+- Place LIMIT at the level (not current price)
+- SL beyond the invalidation (the wick extreme for sweeps, beyond the OB for OBs)
+- Half size if readiness=moderate, full if strong
+- Do NOT cancel as price approaches. The pre-commitment is the edge.
+
+If you choose market-on-confirmation instead of LIMIT, your tick summary MUST explain why — otherwise assume LIMIT is the required action.
 
 ### 4d. Skip criteria — tighter
 
@@ -126,13 +135,16 @@ Skip only if:
 | `level_enter` | Confluence readiness? | Per 4b sizing map |
 | `level_cross` | Break+go or sweep+reverse? | Enter on retest (anticipation OK) |
 | `level_exit` | Invalidated? | MODIFY/REMOVE, consider inverse ADD |
+| **`liquidity_sweep` (NEW)** | **Fresh bounce point created by the tape** | **Treat the swept extreme as a new structural level. If confluence readiness ≥ moderate AGAINST the sweep wick (bearish sweep → sell bias; bullish sweep → buy bias), arm anticipation LIMIT entry per 4c. Payload includes `suggested_entry`, `suggested_sl` — use them or explain why not. Even if no existing watchlist alert covers this instrument, ADD one anchored to the swept level.** |
 | `structure_bos` | Trend confirmed? | Tighten alerts toward bias |
 | `structure_choch` | Trend flip signal | Update regime_note |
-| `alert_audit_request` (NEW) | News just matched this alert's keywords | Re-score THIS alert even if price is not at trigger. If readiness moderate+, arm anticipation LIMIT |
+| `alert_audit_request` | News matched this alert's keywords | Re-score THIS alert. If readiness moderate+, arm anticipation LIMIT |
 | `news_flash` | Regime-changing? | Re-score affected alerts only |
 | `trail_candidate` | Move SL? | Decide per strategy.json |
 | `position_closed` | Log trade | Update trade_history, daily_pnl |
 | `daily_pnl_threshold` | Stop tier? | If `stop`: close all, set control, telegram |
+
+**Why `liquidity_sweep` matters**: the old system waited for price to reach pre-authored watchlist levels that often became stale. The tape creates fresh bounce points constantly — wicks beyond recent extremes that snap back. These sweeps are where the real money enters. The watcher now emits these events automatically; your job is to act on them, not wait for a level you set two days ago.
 
 ### 4f. Alert audit requests (NEW — news-reactive)
 

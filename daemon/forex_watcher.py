@@ -206,6 +206,87 @@ def check_level_alerts(signals, prices_by_epic, runtime):
             runtime["level_state"][aid] = cur_side
 
 
+PIP_SIZE = {
+    "EURUSD": 0.0001, "GBPUSD": 0.0001, "AUDUSD": 0.0001,
+    "USDCAD": 0.0001, "USDCHF": 0.0001,
+    "USDJPY": 0.01,   "GOLD": 0.1, "OIL_CRUDE": 0.01, "BTCUSD": 1.0,
+}
+
+
+def _detect_liquidity_sweep(candles, atr, tf, lookback=20, min_beyond_atr_frac=0.15, max_close_penetration=0.25):
+    """Return a dict describing a liquidity sweep on the just-closed bar, or
+    None. A sweep = bar's wick exceeded the prior `lookback`-bar extreme AND
+    the bar closed back inside by more than `max_close_penetration` of its
+    range. Minimum beyond-magnitude is `min_beyond_atr_frac` * ATR to filter
+    noise.
+
+    Returns:
+      { "direction": "up" | "down",         # wick direction
+        "bias":      "sell" | "buy",        # trade direction implied by rejection
+        "level":     float,                 # the prior extreme that got swept
+        "beyond_pips": float,               # how far wick went beyond, in pips
+        "close":     float,                 # bar close
+        "entry":     float,                 # suggested entry (close +/- buffer)
+        "sl":        float,                 # suggested SL (beyond wick extreme)
+      }
+    """
+    if not candles or len(candles) < lookback + 2 or not atr:
+        return None
+    bar = candles[-1]
+    prior = candles[-(lookback + 1):-1]   # prior `lookback` bars, excluding this one
+    o = bar.get("open"); h = bar.get("high"); l = bar.get("low"); c = bar.get("close")
+    if None in (o, h, l, c):
+        return None
+    rng = h - l
+    if rng <= 0:
+        return None
+    min_beyond = max(atr * min_beyond_atr_frac, 0)
+
+    prior_hi = max(p["high"] for p in prior if p.get("high") is not None)
+    prior_lo = min(p["low"] for p in prior if p.get("low") is not None)
+
+    # Bearish sweep: wicked above prior high, closed back below
+    if h > prior_hi + min_beyond and c < prior_hi:
+        # Penetration: how far INTO the range did the close pull back
+        # (0 = closed exactly at prior_hi, 1 = closed at bar low)
+        penetration = (prior_hi - c) / rng if rng > 0 else 0
+        if penetration >= max_close_penetration:
+            # infer pip size from the instrument we'll tag later — for now
+            # scale by the bar's own range if PIP_SIZE unknown
+            return {
+                "direction": "up",
+                "bias": "sell",
+                "level": prior_hi,
+                "beyond_pips": (h - prior_hi),  # raw; caller converts to pips
+                "close": c,
+                "entry": c,
+                "sl": h,                      # above the wick extreme
+            }
+
+    # Bullish sweep: wicked below prior low, closed back above
+    if l < prior_lo - min_beyond and c > prior_lo:
+        penetration = (c - prior_lo) / rng if rng > 0 else 0
+        if penetration >= max_close_penetration:
+            return {
+                "direction": "down",
+                "bias": "buy",
+                "level": prior_lo,
+                "beyond_pips": (prior_lo - l),
+                "close": c,
+                "entry": c,
+                "sl": l,
+            }
+    return None
+
+
+def _scale_sweep_to_pips(sweep, instrument):
+    """Convert raw price-diff to pips using the instrument's pip size."""
+    if not sweep: return sweep
+    pip = PIP_SIZE.get(instrument, 0.0001)
+    sweep["beyond_pips"] = round(sweep["beyond_pips"] / pip, 1)
+    return sweep
+
+
 # ── Structure scan (runs every N ticks) ──────────────────────────────────────
 
 def _detect_transition(prev, curr):
@@ -287,6 +368,35 @@ def scan_structure(signals, runtime):
                         "last_close": last_close, "atr_14": atr,
                     },
                 })
+
+            # Liquidity sweep detection — the "predict where it will bounce"
+            # primitive. Fires when a just-closed bar wicked beyond a recent
+            # extreme and closed back inside (rejection). This is the setup we
+            # were previously BLIND to: we would only trade pre-set watchlist
+            # levels, never the fresh ones the tape creates in real time.
+            if new_bar:
+                sweep = _detect_liquidity_sweep(candles, atr, tf)
+                if sweep:
+                    sweep = _scale_sweep_to_pips(sweep, instrument)
+                    append_event({
+                        "type": "liquidity_sweep",
+                        "instrument": instrument, "timeframe": tf,
+                        "direction": sweep["bias"],     # buy / sell
+                        "payload": {
+                            "bias": sweep["bias"],      # trade direction implied
+                            "sweep_direction": sweep["direction"],  # up/down
+                            "sweep_level": sweep["level"],          # prior extreme that got swept
+                            "wick_beyond_pips": sweep["beyond_pips"],
+                            "close_inside": sweep["close"],
+                            "bar_ts": latest_bar_ts,
+                            "atr_14": atr,
+                            "suggested_entry": sweep["entry"],
+                            "suggested_sl": sweep["sl"],
+                            "note": f"{sweep['direction']}-sweep of {tf} {sweep['level']:.5f} "
+                                    f"(wick {sweep['beyond_pips']:.1f}p beyond, close back inside) "
+                                    f"→ {sweep['bias']} bias on retest",
+                        },
+                    })
 
             runtime["last_structure"][key] = smc_snap
 

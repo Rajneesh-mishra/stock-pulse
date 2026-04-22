@@ -54,6 +54,8 @@ WAKE_EVENT_TYPES = {
     "level_enter",
     "level_exit",
     "level_cross",
+    "liquidity_sweep",          # NEW — fresh bounce point created by the tape
+    "alert_audit_request",      # NEW — news matched an active alert's keywords
     "structure_bos",
     "structure_choch",
     "trail_candidate",
@@ -63,7 +65,7 @@ WAKE_EVENT_TYPES = {
     "tp_hit",
     "daily_pnl_threshold",
     "volatility_spike",
-    "news_flash",        # filtered further by dedup below
+    "news_flash",               # filtered further by dedup below
 }
 
 # Event types that are auto-consumed without waking Claude (pure noise for tick decisions).
@@ -77,6 +79,8 @@ AUTO_CONSUME_TYPES = {
 BINARY_MODE_WAKE_TYPES = {
     "level_enter",
     "level_cross",
+    "liquidity_sweep",          # sweep = real edge even during binary event mode
+    "alert_audit_request",
     "trail_candidate",
     "position_opened",
     "position_closed",
