@@ -1,9 +1,11 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-22T21:27:27Z",
-  "pruned_at": "2026-04-22T21:27:27Z",
-  "pruned_by": "21:27 UTC heartbeat \u2014 1 stale news_flash consumed (fed_fomc Oct 2025 Powell archive, query TUNED to add '2026' keyword). Confluence: USDJPY +51 moderate WATCH 160 (dist 51p=>3\u00d7H1ATR), USDCAD -32 weak flaccid continuation, GOLD -16 none, OIL +28.5 weak. No pair ARMED. 4 KEEP, 9 structure_watch KEEP.",
-  "pruned_removed": [],
+  "last_updated_by_claude": "2026-04-22T21:33:00Z",
+  "pruned_at": "2026-04-22T21:33:00Z",
+  "pruned_by": "21:33 UTC tick \u2014 1 stale news_flash consumed (Al Jazeera Apr 20 'Islamabad negotiators' backgrounder, superseded by 4-source verified indefinite extension). REMOVED usdcad_liqsweep_sell_zone: live composite -37 weak (up from -32 but still <|40| moderate), M15 flipped +0.4 bullish = sweep-continuation exhausted, 93min post-sweep no ARM, per prior tick commit 'REMOVE next tick if not ARMED'. No replacement \u2014 USDCAD no sharper level. USDJPY +51 moderate WATCH 160 intact, GOLD -16 none (counterfactual 4h=0.8 real edge), OIL +28.5 weak retest-far. 3 KEEP, 1 REMOVE.",
+  "pruned_removed": [
+    "usdcad_liqsweep_sell_zone"
+  ],
   "pruned_added": [],
   "instruments": [
     "EURUSD",
@@ -70,23 +72,6 @@
       },
       "last_updated": "2026-04-22T21:27:27Z",
       "proximity": "229.0p above 90.30 retest (live 21:27 UTC 92.59). Composite +28.5 weak bullish. H4 ATR 225p \u2192 3\u00d7H4ATR=675p, dist 229p < 675p NOT STALE. Counterfactual 3f/67/67/100 edge real. KEEP, await retest.",
-      "updated_utc": "2026-04-22T21:27:27Z"
-    },
-    {
-      "id": "usdcad_liqsweep_sell_zone",
-      "instrument": "USDCAD",
-      "level": 1.36737,
-      "emit_on": "cross_up",
-      "cooldown_sec": 1800,
-      "direction": "sell",
-      "note": "ADDED 2026-04-22T20:08:03Z \u2014 M15 liquidity_sweep event fired 20:04 UTC: up-sweep of 1.36737 wick 1.2p beyond, closed back inside at 1.36727, atr14 4.7p. Sweep bias=sell. Confluence composite -24.5 readiness=NONE (below 25 threshold) 3/4 TFs agree bearish \u2014 sweep direction matches macro bias but readiness too thin for anticipation LIMIT per Step 4c (requires readiness\u2265moderate). Held as watchlist-proximity; re-evaluate on next sweep OR if composite strengthens to \u2265moderate. If entered on retest: suggested_entry 1.36727, SL 1.36749 (2.2p risk \u2014 too tight vs 2p spread, poor R:R economics). Replaces orphaned 1.3820 watchlist entry (147p away, structurally dead). | REFRESH 2026-04-22T21:27:27Z: MODIFY \u2014 live 1.36718 (flat vs 21:00 ref 1.36717); composite -32 weak unchanged. Sweep-continuation edge fading; final-tick evaluation \u2192 REMOVE next tick if not ARMED.",
-      "current_price_ref": 1.36718,
-      "price_ref": {
-        "ts": "2026-04-22T21:27:27Z",
-        "price": 1.36718
-      },
-      "last_updated": "2026-04-22T21:27:27Z",
-      "proximity": "Price 1.36718 now 1.9p below swept wick 1.36737 (live 21:27 UTC). 77min post-sweep. Composite -32.0 weak (same as 21:00 tick \u2014 no strengthening toward moderate). MODIFY: if composite doesn't reach moderate (<-40) by next tick and no M15 break of 1.3665 bull OB top, REMOVE. H4 ATR 20.3p, H1 ATR 9.8p \u2014 level close but direction flaccid.",
       "updated_utc": "2026-04-22T21:27:27Z"
     }
   ],
@@ -158,5 +143,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-22T21:27:27Z"
+  "last_updated_utc": "2026-04-22T21:33:00Z"
 }

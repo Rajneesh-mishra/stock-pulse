@@ -8,5 +8,14 @@
     "trades": [],
     "regime": "INDEFINITE_EXTENSION_HORMUZ_ESCALATING_SEIZURES_MIXED_RISK_ON",
     "note": "18:55 UTC - 12 stale archive flush consumed (Apr 13-19 blockade announcement + Touska republish). 2 queries RE-TUNED. Broker $1000/0. Tape flat. No trades."
+  },
+  {
+    "ts_utc": "2026-04-22T21:33:00Z",
+    "tick": "forex_auto",
+    "events_in": 1,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 1,
+    "note": "REMOVED usdcad_liqsweep_sell_zone (M15 flipped +0.4, sweep-continuation exhausted). 3 KEEP (USDJPY/GOLD/OIL). 0 trades $1000/0."
   }
 ]

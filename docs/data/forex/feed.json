@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-22T21:28:27.547131Z",
+  "generated_at": "2026-04-22T21:33:52.086693Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-21T06:17:00Z",
-      "events_in": 16,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 16,
-      "note": "16 bar_close heartbeat (H1+M15 across 8 pairs) all SKIP \u2014 no level hits, no structure shifts. Broker $1000 flat 0 pos reconciled. Last full news sweep 06:07 UTC (9 min ago) \u2014 skipped fresh web search (budget + no new data window). Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM intact, ceasefire expires TODAY, Vance/Witkoff/Kushner flying Islamabad. 5 level_alerts + 9 structure + 8 queries all KEEP."
-    },
     {
       "ts_utc": "2026-04-21T06:37:00Z",
       "events_in": 15,
@@ -184,6 +176,14 @@
       "closed": 0,
       "skipped": 0,
       "note": "21:00 UTC heartbeat \u2014 0 unconsumed events. Broker $1000/0 reconciled. Confluence sweep all 9: USDJPY composite +51 moderate bullish 159.488 (51p below 160 fade, still >3\u00d7 H1 ATR = WATCH not ARMED); USDCAD -32 weak bearish 1.36717 (now 2p BELOW swept 1.36737 wick, 45min post-sweep continuation valid but no sharper level formed); OIL +28.5 weak bullish 92.59 (229p above 90.30 retest zone); GOLD -16 none bearish 4739.99 (35p below 4775 trigger, tape unsupportive); BTC +47.5 moderate bullish 78.9k (parabolic, no anchorable level for new alert); AUDUSD +23.5 none bullish 0.7158 (no alert post-Rule 1 removal); EURUSD/GBPUSD/USDCHF none neutral. 1 WebSearch Hormuz: Iran seized 2 ships Apr 22, Trump WH says non-US non-Israeli seizures NOT ceasefire violation \u2014 slight de-escalation of rhetoric, gold bid weakening consistent. 4 alerts price-refreshed (all MODIFY proximity), 9 structure_watch KEEP, 8 news_queries KEEP. 0 trades."
+    },
+    {
+      "ts_utc": "2026-04-22T21:33:00Z",
+      "events_in": 1,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 1,
+      "note": "21:33 UTC forex auto tick \u2014 1 stale news_flash consumed (AJ Apr 20 'Islamabad negotiators' backgrounder, keyword 'Islamabad' matched but superseded by 4-source verified Trump indefinite extension Apr 22). USDCAD re-run: composite -37 weak (strengthened from -32 but still <|40| moderate), M15 +0.4 bullish = sweep continuation exhausted 93min post-sweep. REMOVED usdcad_liqsweep_sell_zone per prior tick's 'REMOVE next tick if not ARMED' commit. No replacement. USDJPY +51 moderate WATCH 160 (51p dist, BOJ T-4d), GOLD -16 none (4h hit_rate 0.8 KEEP), OIL +28.5 weak retest-far. 3 alerts KEEP, 1 REMOVE, 9 structure_watch KEEP, 8 queries KEEP. Broker $1000/0. 0 trades."
     },
     {
       "ticks": [
