@@ -85,5 +85,28 @@
     "events_consumed": 1,
     "trades": 0,
     "summary": "2026-04-22 14:54 UTC heartbeat \u2014 1 stale-dup news_flash (Sunday Guardian republish of Touska-seizure story already tracked, matched-kw=Touska only, within 60min cooldown TUNE). 0 trades, broker $1000/0 reconciled. No fresh escalation rung since 12:54 sweep. 3 alerts + 9 structure + 8 queries all KEEP. Binary resolved (indefinite extension, 4-source). Regime unchanged."
+  },
+  {
+    "ts_utc": "2026-04-22T15:55:00Z",
+    "trigger": "heartbeat",
+    "events_consumed": 14,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "broker_balance": 1000.0,
+    "summary": "15:55 UTC heartbeat \u2014 14 news_flash (13 Touska republishes Apr 21 08:38 + 1 iran_ceasefire teaser). 0 trades. GOLD 4752.76 rolling off (22.24p below 4775). USDJPY 158.95 static. us_iran_military query TUNED to kill Touska republish firing.",
+    "watchlist_changes": [
+      {
+        "id": "gold_safehaven_continuation_buy",
+        "action": "MODIFY",
+        "reason": "price refresh 4759\u21924753"
+      }
+    ],
+    "query_changes": [
+      {
+        "id": "us_iran_military",
+        "action": "TUNE",
+        "reason": "removed stale Touska/seized/Hormuz/blockade; added retaliation/mines/casualties/struck/escalation"
+      }
+    ]
   }
 ]

@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-22T15:50:00Z",
-  "pruned_at": "2026-04-22T15:50:00Z",
-  "pruned_by": "12:54 UTC tick — 10 news_flash events (1 stale iran_ceasefire Apr 21 Democracy Now 'highly unlikely' pre-dating actual indefinite extension; 9 Touska/blockade dupes Apr 19-20). Broker $1000/0 matches. 1 WebSearch (CNN live, ABC live, ksat, CNBC, Wikipedia '2026 Strait of Hormuz crisis'): MATERIAL ESCALATION — IRGC SEIZED 2 ships today (MSC Francesca + Epaminondas) transferred to Iranian waters + fired on 3rd container ship causing 'heavy bridge damage'. Step-up from 'fire, no casualties' (prior weak driver) to physical ship seizures (tit-for-tat asymmetric response to US Touska seizure). Trump re-affirms blockade continues. No fresh price pull (budget). Prior 12:42 UTC tape still stands as reference: GOLD 4747.16 (27p below 4775 reject), OIL 90.758 (near day hi 91.177 — break above now has stronger fundamental backing with 2-ship seizures), USDJPY 159.312, AUDUSD 0.71468, BTC 78204 (+3.28%). 1 alert MODIFY (gold: add 2-ship seizure catalyst — lifts conviction if 4775 tagged on continuation), 2 KEEP (audusd/usdjpy price refs valid). 9 structure_watch KEEP. 8 queries KEEP (iran_ceasefire already TUNED 11:38 for this scenario).",
+  "last_updated_by_claude": "2026-04-22T15:55:00Z",
+  "pruned_at": "2026-04-22T15:55:00Z",
+  "pruned_by": "15:55 UTC tick — 14 news_flash events, 13 pure Touska republishes (TOI/MSN/WaExaminer/Stars&Stripes/Marine Insight/Al Jazeera/BBC/NBC4/thenewsherald — all rewording Apr 21 08:38 UTC seizure story) + 1 iran_ceasefire '36-72 hours breakthrough' Open Magazine teaser (noise). Broker $1000/0 matches. 2 WebSearches (tradingeconomics/fxleaders, japantimes/investing USDJPY): GOLD 4752.76 (-6.35p vs 15:50 4759.11, still 22.24p below 4775 trigger, FXLeaders 'Gold Dips Toward $4,780' still framed around 4750-4780 zone); USDJPY narrative unchanged — Katayama-Bessent verbal intervention still elevated, 158 MoF threshold intact but price drifted further below 160. Narrative unchanged in 4h: same Trump indefinite extension, same Hormuz blockade, same IRGC ship seizures, no new rung. 1 alert MODIFY (gold price refresh 4759→4753), 2 KEEP. 1 query TUNE (us_iran_military: removed 'Touska'/'seized'/'Hormuz'/'blockade' stale tokens, added retaliation/mines/casualties/struck/escalation forward-looking beats). 9 structure + 7 other queries KEEP.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -62,15 +62,15 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "MODIFIED 15:50 UTC — buy GOLD 4775 breakout. Live ref ~15:50 UTC 4759.11 (+11.95p vs 12:42 4747.16, now 15.89p below trigger). Day range likely 4715-4775 zone intact. **CATALYST: IRGC SEIZED 2 ships today — MSC Francesca + Epaminondas — plus fired on 3rd 'Euphoria' (Fars/Mehr via Euronews/CBS/NBC Apr 22). Trump indefinite extension intact; Iran second-round talks remain on hold. Narrative unchanged past 3h — no fresh escalation rung, just confirmations.** Gold creeping toward 4775 on the seizure catalyst but hasn't broken. If 4775 tagged: wait for M15 BOS up + no rejection wick (spike-fade pattern burned us earlier today at 4772.24 reject). Aggressive LIMIT 4735-4740 still OK — seizure floor intact. SL 4730, TP1 4810, TP2 4850. Conv 3 currently → 4 on tag with CONFIRMED continuation (tighter bar given prior reject).",
-      "current_price_ref": 4759.11,
+      "note": "MODIFIED 15:55 UTC — buy GOLD 4775 breakout. Live ref ~15:55 UTC 4752.76 (-6.35p vs 15:50 4759.11, now 22.24p below trigger — pulled back). Day range 4715-4775 zone intact. **CATALYST: IRGC SEIZED 2 ships Apr 22 — MSC Francesca + Epaminondas — plus fired on 3rd 'Euphoria' (Fars/Mehr via Euronews/CBS/NBC). Trump indefinite extension intact; Iran second-round talks remain on hold. Narrative unchanged past 4h — confirmations only, no fresh rung. FXLeaders Apr 21: 'Gold Dips Toward $4,780' intraday frame 4750-4780.** Gold creeping toward 4775 on seizure catalyst but hasn't broken and now rolling off. If 4775 tagged: wait for M15 BOS up + no rejection wick (spike-fade pattern burned earlier today at 4772.24 reject). Aggressive LIMIT 4735-4740 still OK — seizure floor intact. SL 4730, TP1 4810, TP2 4850. Conv 3 currently → 4 on tag with CONFIRMED continuation (tighter bar given prior reject).",
+      "current_price_ref": 4752.76,
       "price_ref": {
-        "ts": "2026-04-22T15:50:00Z",
-        "price": 4759.11
+        "ts": "2026-04-22T15:55:00Z",
+        "price": 4752.76
       },
-      "last_updated": "2026-04-22T15:50:00Z",
-      "proximity": "15.89p below 4775 buy trigger (ref 15:50 UTC 4759.11). +11.95p drift toward level since 12:42. Narrative static: same 2-ship seizure, no new rung.",
-      "updated_utc": "2026-04-22 15:50 UTC"
+      "last_updated": "2026-04-22T15:55:00Z",
+      "proximity": "22.24p below 4775 buy trigger (ref 15:55 UTC 4752.76). Rolled off -6.35p vs 15:50 4759.11. Narrative static: same 2-ship seizure, no new rung.",
+      "updated_utc": "2026-04-22 15:55 UTC"
     }
   ],
   "structure_watch": [
@@ -141,5 +141,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-22 12:54 UTC"
+  "last_updated_utc": "2026-04-22 15:55 UTC"
 }

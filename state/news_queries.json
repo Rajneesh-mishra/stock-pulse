@@ -55,19 +55,28 @@
     },
     {
       "id": "us_iran_military",
-      "query": "US Iran naval blockade Touska Hormuz",
+      "query": "US Iran naval Hormuz blockade retaliation",
       "keywords_required": [
-        "Touska",
-        "blockade",
+        "retaliation",
+        "retaliate",
+        "missile",
+        "mine",
+        "mines",
+        "casualties",
+        "casualty",
+        "killed",
+        "wounded",
+        "struck",
+        "escalation",
         "Vance",
         "Witkoff",
         "Kushner",
         "Islamabad",
-        "seized",
-        "Hormuz"
+        "Hormuz reopen",
+        "blockade lifted"
       ],
       "cooldown_min": 60,
-      "note": "TUNED 2026-04-21 09:40 UTC — cooldown 45→60min: this tick fired 11 news_flash all on same Touska-seizure story (TOI/Sun/HindustanTimes/Mathrubhumi/GulfNews/ABP/Aus/BT/Impressive/SundayGuardian/CENTCOM). Narrative-unchanged duplicates. 60min gives breathing room without blocking materially-new escalation (retaliation strike / mines / casualties)."
+      "note": "TUNED 2026-04-22 15:55 UTC — Touska story (first broke Apr 21 08:38 UTC) fired 138 events total; this tick emitted 13 pure republishes at 15:53 the moment 60min cooldown reopened. 'Touska' and bare 'seized'/'blockade'/'Hormuz' now stale tokens. REMOVED: Touska, seized, Hormuz, blockade (all match 24h+ republishes). ADDED: retaliation/retaliate/missile/mine/mines/casualties/casualty/killed/wounded/struck/escalation (forward-looking escalation beats). KEPT: Vance/Witkoff/Kushner/Islamabad (diplomatic restart signals). Added: 'Hormuz reopen' and 'blockade lifted' as phrase-matches for de-escalation beats."
     },
     {
       "id": "opec_supply",
