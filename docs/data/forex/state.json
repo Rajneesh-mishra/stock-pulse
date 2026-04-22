@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-22T12:45:00Z",
-  "regime": "INDEFINITE_EXTENSION_HORMUZ_FRICTION_MIXED_RISK_ON",
-  "regime_note": "2026-04-22 12:45 UTC heartbeat \u2014 0 unconsumed events (waker caught up). Broker $1000/0 pos reconciled. Live 12:42 UTC: GOLD 4747.16 (+0.58% day, 27.84p below 4775 trigger, day hi 4772.24 reject holding), OIL_CRUDE 90.758 (+0.69% day, day hi 91.177 \u2014 **spike-fade PARTIAL INVALIDATION: OIL back near highs, push-and-pause replacing full fade**), USDJPY 159.312 (+9p vs 11:21, day range 159.101-159.455), AUDUSD 0.71468 (-9.7p, drifting lower but 74.7p above 0.707), EURUSD 1.17257 (-3.8p), USDCAD 1.36666 (flat), BTCUSD 78204 (+3.28% day, day low 75295.7 \u2192 now 78204 = +2909 USD MATERIAL RISK-ON RALLY). 1 WebSearch fresh news: ksat/nbcnews/armyrecognition confirm IRGC gunboat fired on container ship 07:55 Apr 22 per UKMTO (no casualties \u2014 weak driver); Trump 'indefinite extension' intact giving Iran time for 'unified proposal'. Regime shift note: BTC +3.28% parabolic risk-on PARTIALLY CONTRADICTS gold safehaven bias and AUDUSD-spike-to-support thesis. Mixed signals: commodity complex bid (Hormuz hedge) + crypto rip (risk-on) + USD flat (no clear dollar bid) = no clean regime direction. 0 trades (no unconsumed events, no 7-gate setup materialized). 3 alerts MODIFY (price refresh + BTC risk-on annotation), 9 structure_watch KEEP, 8 queries KEEP.",
+  "last_tick": "2026-04-22T12:54:00Z",
+  "regime": "INDEFINITE_EXTENSION_HORMUZ_ESCALATING_SEIZURES_MIXED_RISK_ON",
+  "regime_note": "2026-04-22 12:54 UTC \u2014 10 news_flash consumed (1 stale Democracy Now 'highly unlikely' Apr 21, 9 Touska/blockade Apr 19-20 dupes). Broker $1000/0. WebSearch (CNN/ABC live, ksat, CNBC, Wikipedia '2026 Strait of Hormuz crisis'): MATERIAL ESCALATION \u2014 IRGC SEIZED 2 ships today (MSC Francesca + Epaminondas transferred to Iranian waters) + fired on 3rd container ship 'heavy bridge damage'. Step-up from fire-no-casualties to physical seizures = tit-for-tat vs US Touska. Trump re-affirms blockade. Prior 12:42 tape: GOLD 4747.16 (27p below 4775 reject), OIL 90.758 (near day hi 91.177 \u2014 break now better-backed), USDJPY 159.312, AUDUSD 0.71468, BTC 78204 (+3.28%). No level triggers, 0 trades. 1 alert MODIFY (gold catalyst Conv 3\u21924 on tag), 2 KEEP.",
   "open_positions": [],
   "watchlist": [
     {
@@ -149,7 +149,7 @@
     "telegram_on_trade": true,
     "telegram_chat_ids": "6838758759,849258319"
   },
-  "last_tick_ts": "2026-04-22T12:45:00Z",
+  "last_tick_ts": "2026-04-22T12:54:00Z",
   "tracker": [
     {
       "situation": "US Navy Blockade of Iran \u2014 day 4",
@@ -332,6 +332,22 @@
       "closed": 0,
       "skipped": 0,
       "note": "12:45 UTC heartbeat \u2014 0 unconsumed events. Broker $1000/0 reconciled. Price refresh: GOLD 4747.16 (retraced -5.5p from reject), OIL 90.758 (back near day hi 91.177 \u2014 spike-fade partial invalidation, push-and-pause), USDJPY 159.312 (+9p, range intact), AUDUSD 0.71468 (-9.7p drift), BTCUSD 78204 (+3.28%, low 75296 = MATERIAL risk-on rally). 1 WebSearch confirmed Apr 22 07:55 IRGC gunboat fire on container ship (no casualties \u2014 weak driver, Trump indefinite extension intact). Regime update: 'INDEFINITE_EXTENSION_HORMUZ_FRICTION_MIXED_RISK_ON' \u2014 BTC parabolic contradicts gold/AUDUSD-support theses; commodity bid (Hormuz hedge) + crypto rip + USD flat = no clean direction. 3 alerts MODIFY (price refresh + BTC annotation), 9 structure_watch KEEP, 8 queries KEEP. 0 trades."
+    },
+    {
+      "ts_utc": "2026-04-22T12:54:00Z",
+      "events_in": 10,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 10,
+      "note": "12:54 UTC tick \u2014 10 news_flash (1 stale Democracy Now iran_ceasefire 'highly unlikely' pre-extension; 9 Touska/blockade dupes). 1 WebSearch: MATERIAL ESCALATION \u2014 IRGC SEIZED 2 ships today (MSC Francesca + Epaminondas) + 3rd ship bridge-damage fire. Step-up from fire to seizure = tit-for-tat vs Touska. Trump re-affirms blockade. No level touches (gold 27p from 4775, audusd 75p from 0.707, usdjpy 68p from 160). 0 trades. Gold alert MODIFIED (catalyst upgrade: 2-ship seizure lifts Conv 3\u21924 on tag). 2 alerts + 9 structure + 8 queries KEEP. Broker $1000/0."
+    },
+    {
+      "ts_utc": "2026-04-22T12:54:00Z",
+      "events_in": 10,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 10,
+      "note": "12:54 tick \u2014 10 news_flash (stale+dupes). WebSearch: IRGC SEIZED 2 ships today (MSC Francesca/Epaminondas) + 3rd bridge-damage. Step-up fire\u2192seizure. No level triggers. 0 trades. Gold alert catalyst upgraded. Broker $1000/0."
     }
   ],
   "recent_skips": [
@@ -365,16 +381,16 @@
       "price": 4809.28
     }
   ],
-  "last_tick_summary": "2026-04-22 12:45 UTC heartbeat \u2014 0 unconsumed events, 0 trades. Broker $1000/0 matches. Tape: GOLD 4747.16 (+0.58%, 28p below 4775 reject), OIL 90.758 (+0.69%, back near 91.177 day hi \u2014 spike-fade partial invalidation push-and-pause), USDJPY 159.312, AUDUSD 0.71468 drifting, BTCUSD 78204 (+3.28% MATERIAL risk-on rally). News: ksat/nbcnews confirm Apr 22 07:55 IRGC gunboat fire on container ship, no casualties \u2014 Trump indefinite extension intact. Regime shifted: 'INDEFINITE_EXTENSION_HORMUZ_FRICTION_MIXED_RISK_ON' \u2014 BTC parabolic contradicts gold/AUDUSD-support theses; mixed commodity-bid/crypto-rip/USD-flat = no clean direction. 3 alerts MODIFY (price refresh + BTC risk-on annotation), 9 structure_watch + 8 queries KEEP.",
+  "last_tick_summary": "2026-04-22 12:54 UTC \u2014 10 events consumed, 0 trades, broker $1000/0. NEW: IRGC SEIZED 2 ships (MSC Francesca + Epaminondas transferred to Iran) + 3rd ship bridge-damage fire per CNN/ABC live. Step-up from fire to physical seizures. No level touches. Gold 4775 alert catalyst upgraded (Conv 3\u21924 on tag). Regime: INDEFINITE_EXTENSION_HORMUZ_ESCALATING_SEIZURES_MIXED_RISK_ON. BTC +3.28% still weakens safehaven thesis \u2014 trend-shift vs spike-fade open question.",
   "last_scan": {
-    "timestamp": "2026-04-22T12:45:00Z",
-    "events_processed_last_tick": 0,
+    "timestamp": "2026-04-22T12:54:00Z",
+    "events_processed_last_tick": 10,
     "events_acted_last_tick": 0
   },
-  "last_updated": "2026-04-22T12:45:00Z",
+  "last_updated": "2026-04-22T12:54:00Z",
   "capital_base": 1000.0,
-  "last_tick_ts_utc": "2026-04-22T12:45:00Z",
-  "last_tick_utc": "2026-04-22T12:45:00Z",
+  "last_tick_ts_utc": "2026-04-22T12:54:00Z",
+  "last_tick_utc": "2026-04-22T12:54:00Z",
   "last_scan_ts": "2026-04-21T01:30:00Z",
   "tick_log": [
     {
@@ -401,8 +417,8 @@
     }
   ],
   "last_update": "2026-04-21T17:10:00Z",
-  "last_claude_update_utc": "2026-04-22T12:45:00Z",
-  "updated_at": "2026-04-22T12:45:00Z",
+  "last_claude_update_utc": "2026-04-22T12:54:00Z",
+  "updated_at": "2026-04-22T12:54:00Z",
   "binary_event": {
     "name": "iran_ceasefire_indefinite_extension",
     "deadline_utc": null,
@@ -414,6 +430,6 @@
       "Detroit News 2026-04-21 21:46 GMT \u2014 Trump announces indefinite extension of ceasefire as Iran stalls negotiations",
       "Al Jazeera 2026-04-21 21:40 GMT \u2014 Trump announces Iran ceasefire extension but says blockade remains"
     ],
-    "note": "Resolved 2026-04-22 11:38 UTC. 4 independent sources confirm Trump granted INDEFINITE ceasefire extension. No fixed deadline. RESIDUAL FRICTION (tracked separately, not a binary): Hormuz attacks ESCALATING post-extension (Tradewinds Apr 22 06:15 ship 'heavy bridge damage' from Iranian vessel; WaPo Apr 22 10:21 'more ships attacked after extension'); Iran calling extension 'ploy' (T\u00fcrkiye Today Apr 22 09:44); Iran refusing talks until blockade lifted (Express Tribune Apr 22 09:56); Vance Islamabad trip ON HOLD (NYT). Net: deadline-anchored binary REMOVED. Watchlist re-frames from 'spike on deadline collapse' to 'spike on fresh Hormuz strike escalation or formal Iran walkout'."
+    "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break."
   }
 }

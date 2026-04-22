@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-22T12:45:00Z",
-  "pruned_at": "2026-04-22T12:45:00Z",
-  "pruned_by": "12:45 UTC heartbeat — 0 unconsumed events. Broker $1000/0 pos matches. Tape 12:42 UTC: GOLD 4747.16 (-5.5p vs 11:21, +0.58% day, 27.84p below 4775 trigger, day hi 4772.24 reject intact, day lo 4715.44), OIL_CRUDE 90.758 (+102c vs 11:21 89.733, day hi 91.177 — **spike-fade PARTIAL INVALIDATION: OIL back near day highs, push-and-pause not full fade**), USDJPY 159.312 (+10p vs 11:21, day range 159.101-159.455, 68.8p below 160), AUDUSD 0.71468 (-9.7p vs 11:21, 74.7p above 0.707), EURUSD 1.17257 (-3.8p), USDCAD 1.36666 (flat), BTCUSD 78204 (+3.28% day, low 75296 — MATERIAL RISK-ON RALLY partially contradicts gold-safehaven bias; mixed signals with USD flat). Fresh news: ksat/nbcnews/armyrecognition confirm IRGC fast-attack-craft fire on container ship 07:55 Apr 22 (no casualties) — post-extension Hormuz friction ongoing, no regime change. All 3 level_alerts KEEP (price refresh only — gold still 22p from reject, usdjpy 68p below 160, audusd 74p above 0.707). 9 structure_watch KEEP. 8 queries KEEP.",
+  "last_updated_by_claude": "2026-04-22T12:54:00Z",
+  "pruned_at": "2026-04-22T12:54:00Z",
+  "pruned_by": "12:54 UTC tick — 10 news_flash events (1 stale iran_ceasefire Apr 21 Democracy Now 'highly unlikely' pre-dating actual indefinite extension; 9 Touska/blockade dupes Apr 19-20). Broker $1000/0 matches. 1 WebSearch (CNN live, ABC live, ksat, CNBC, Wikipedia '2026 Strait of Hormuz crisis'): MATERIAL ESCALATION — IRGC SEIZED 2 ships today (MSC Francesca + Epaminondas) transferred to Iranian waters + fired on 3rd container ship causing 'heavy bridge damage'. Step-up from 'fire, no casualties' (prior weak driver) to physical ship seizures (tit-for-tat asymmetric response to US Touska seizure). Trump re-affirms blockade continues. No fresh price pull (budget). Prior 12:42 UTC tape still stands as reference: GOLD 4747.16 (27p below 4775 reject), OIL 90.758 (near day hi 91.177 — break above now has stronger fundamental backing with 2-ship seizures), USDJPY 159.312, AUDUSD 0.71468, BTC 78204 (+3.28%). 1 alert MODIFY (gold: add 2-ship seizure catalyst — lifts conviction if 4775 tagged on continuation), 2 KEEP (audusd/usdjpy price refs valid). 9 structure_watch KEEP. 8 queries KEEP (iran_ceasefire already TUNED 11:38 for this scenario).",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -62,15 +62,15 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "MODIFIED 12:45 UTC — buy GOLD 4775 breakout. Live 12:42 UTC 4747.16 (-5.5p vs 11:21, +0.58% day, 27.84p below trigger, day range 4715.44-4772.24). Day hi 4772.24 reject holding (price drifted back into middle of range, not re-testing top). **BTC +3.28% (day low 75296 → 78204) is MATERIAL RISK-ON pressure against gold safehaven bias** — pure risk-on = gold typically sells down to 4715. Still, gold holding +0.58% day vs BTC rally suggests residual Hormuz-hedge bid. Catalyst-conditional thesis: 4775 break needs stronger catalyst (US casualty, large tanker sinking, Iran formal walkout). Conservative: wait for M15 close >4775 + volume + no rejection wick. Aggressive: anticipation LIMIT buy at 4735-4740 with SL 4705, TP 4775 retest. SL 4730, TP1 4810, TP2 4850. Conv 3 (1 test 1 reject; BTC risk-on weakens thesis further). SKIP if BTC continues ripping AND USD pairs bid AND no fresh Hormuz incident.",
+      "note": "MODIFIED 12:54 UTC — buy GOLD 4775 breakout. Live ref 12:42 UTC 4747.16 (27.84p below trigger, day range 4715.44-4772.24, day hi 4772.24 reject intact). **FRESH CATALYST 12:54 UTC: IRGC SEIZED 2 ships today — MSC Francesca + Epaminondas transferred to Iranian waters (CNN/ABC live) + fired on 3rd container ship causing 'heavy bridge damage'. Step-up from prior 'fire no casualties' to physical seizures = tit-for-tat response to US Touska seizure. Trump re-affirms blockade continues.** This is a materially stronger catalyst for 4775 break than earlier container-ship fire. Still against BTC +3.28% risk-on pressure. If 4775 is tagged now, the combination (2-ship seizure + rejection wick + possible M15 BOS up) = Conv 4 entry with full 1.0% risk. If spike-fades again = pattern confirmed, REMOVE next tick. Conservative path: M15 close >4775 + volume + no rejection wick. Aggressive LIMIT: 4735-4740 bid (2-ship seizure stabilizes the floor). SL 4730, TP1 4810, TP2 4850. Conv 3 currently → 4 on tag with continuation.",
       "current_price_ref": 4747.16,
       "price_ref": {
         "ts": "2026-04-22T12:42:44Z",
         "price": 4747.16
       },
-      "last_updated": "2026-04-22T12:45:00Z",
-      "proximity": "27.84p below 4775 buy trigger (live 12:42 UTC 4747.16 bid). Price retreated -5.5p from prior ref back into mid-range; day hi 4772.24 reject intact.",
-      "updated_utc": "2026-04-22 12:45 UTC"
+      "last_updated": "2026-04-22T12:54:00Z",
+      "proximity": "27.84p below 4775 buy trigger (ref 12:42 UTC 4747.16). Catalyst upgraded: 2 ships SEIZED + 1 fired on today — physical seizures not just threats.",
+      "updated_utc": "2026-04-22 12:54 UTC"
     }
   ],
   "structure_watch": [
@@ -141,5 +141,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-22 12:45 UTC"
+  "last_updated_utc": "2026-04-22 12:54 UTC"
 }
