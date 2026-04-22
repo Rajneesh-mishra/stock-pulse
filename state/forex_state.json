@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-22T14:47:00Z",
+  "last_tick": "2026-04-22T15:50:00Z",
   "regime": "INDEFINITE_EXTENSION_HORMUZ_ESCALATING_SEIZURES_MIXED_RISK_ON",
-  "regime_note": "2026-04-22 14:54 UTC heartbeat \u2014 1 dup news_flash consumed (Sunday Guardian/Touska, narrative-unchanged republish Apr 20 article; matched single kw 'Touska'; already-live note confirms 60min cooldown is absorbing). Broker $1000/0 reconciled. No new web scan this tick (6 min since 14:47 search of CNBC/CNN/AJ/ABC/NBC/National/NPR found narrative intact \u2014 nothing material could have shifted in 360s). Prior 12:42 UTC tape ref still governs: GOLD 4747.16 (27.84p below 4775), OIL 90.758, USDJPY 159.312 (68.8p below 160), AUDUSD 0.71468 (74.7p above 0.707), BTC 78204 (+3.28% risk-on persisting). Counterfactual: usdjpy_intervention_fade_zone 1f 100% 1h+4h (thin); oil_crude_retest_90_buy now 3f/0fill but all level-unreached (not noise, just distant); gold_escalation_buy_zone 10f/0fill + usdcad_short_fvg_retest 6f/0fill already removed prior. Nothing to action \u2014 3 alerts + 9 structure + 8 queries all KEEP.",
+  "regime_note_prev": "2026-04-22 14:54 UTC heartbeat \u2014 1 dup news_flash consumed (Sunday Guardian/Touska, narrative-unchanged republish Apr 20 article; matched single kw 'Touska'; already-live note confirms 60min cooldown is absorbing). Broker $1000/0 reconciled. No new web scan this tick (6 min since 14:47 search of CNBC/CNN/AJ/ABC/NBC/National/NPR found narrative intact \u2014 nothing material could have shifted in 360s). Prior 12:42 UTC tape ref still governs: GOLD 4747.16 (27.84p below 4775), OIL 90.758, USDJPY 159.312 (68.8p below 160), AUDUSD 0.71468 (74.7p above 0.707), BTC 78204 (+3.28% risk-on persisting). Counterfactual: usdjpy_intervention_fade_zone 1f 100% 1h+4h (thin); oil_crude_retest_90_buy now 3f/0fill but all level-unreached (not noise, just distant); gold_escalation_buy_zone 10f/0fill + usdcad_short_fvg_retest 6f/0fill already removed prior. Nothing to action \u2014 3 alerts + 9 structure + 8 queries all KEEP.",
   "open_positions": [],
   "watchlist": [
     {
@@ -149,7 +149,7 @@
     "telegram_on_trade": true,
     "telegram_chat_ids": "6838758759,849258319"
   },
-  "last_tick_ts": "2026-04-22T14:18:00Z",
+  "last_tick_ts": "2026-04-22T15:50:00Z",
   "tracker": [
     {
       "situation": "US Navy Blockade of Iran \u2014 day 4",
@@ -364,6 +364,14 @@
       "closed": 0,
       "skipped": 0,
       "note": "14:47 UTC heartbeat \u2014 0 unconsumed events. Broker $1000/0 matches. 1 WebSearch (CNBC/CNN/AJ/ABC/NBC/National/NPR) confirms 2-ship seizure + bridge-fire narrative unchanged since 12:54 sweep \u2014 no new escalation rung, Iran 'no decision' on new talks. Counterfactual review: usdjpy_intervention_fade_zone 100% 1h+4h thin, audusd_breakdown_trigger & gold_safehaven_continuation_buy no fires yet. 3 alerts + 9 structure + 8 queries all KEEP. No price pulls (budget prudent). Regime INDEFINITE_EXTENSION_HORMUZ_ESCALATING_SEIZURES_MIXED_RISK_ON intact."
+    },
+    {
+      "ts_utc": "2026-04-22T15:50:00Z",
+      "events_in": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "note": "15:50 UTC heartbeat \u2014 0 unconsumed events. Broker $1000/0 matches. 2 WebSearches: Euronews/CBS/NBC Apr 22 confirm 2-ship seizure (MSC Francesca+Epaminondas) + 3rd 'Euphoria' fired on, Trump indefinite extension intact, narrative unchanged since 12:54. tradingeconomics Apr 22: GOLD 4759.11 (+11.95p, 15.89p below 4775 trigger \u2014 creeping up), USDJPY 158.95 (-36.2p, 105p below 160 red line \u2014 drifting away). 2 MODIFY (gold+usdjpy price refresh), 1 KEEP (audusd), 9 structure + 8 queries KEEP. No trades."
     }
   ],
   "recent_skips": [
@@ -397,16 +405,16 @@
       "price": 4809.28
     }
   ],
-  "last_tick_summary": "2026-04-22 14:54 UTC heartbeat \u2014 1 stale-dup news_flash (Sunday Guardian republish of Touska-seizure story already tracked, matched-kw=Touska only, within 60min cooldown TUNE). 0 trades, broker $1000/0 reconciled. No fresh escalation rung since 12:54 sweep. 3 alerts + 9 structure + 8 queries all KEEP. Binary resolved (indefinite extension, 4-source). Regime unchanged.",
+  "last_tick_summary": "15:50 UTC heartbeat \u2014 0 events. GOLD 4759.11 creeping toward 4775 trigger (15.89p below) on 2-ship Hormuz seizure catalyst; USDJPY drifting AWAY from 160 (105p below, lower oil + diplomatic hopes). Narrative unchanged since 12:54. 2 MODIFY (gold/usdjpy price refresh), 1 KEEP (audusd), 9 structure + 8 queries KEEP. 0 trades, broker $1000/0.",
   "last_scan": {
-    "timestamp": "2026-04-22T14:47:00Z",
+    "timestamp": "2026-04-22T15:50:00Z",
     "events_processed_last_tick": 0,
     "events_acted_last_tick": 0
   },
-  "last_updated": "2026-04-22T14:47:00Z",
+  "last_updated": "2026-04-22T15:50:00Z",
   "capital_base": 1000.0,
-  "last_tick_ts_utc": "2026-04-22T14:47:00Z",
-  "last_tick_utc": "2026-04-22T14:54:48Z",
+  "last_tick_ts_utc": "2026-04-22T15:50:00Z",
+  "last_tick_utc": "2026-04-22T15:50:00Z",
   "last_scan_ts": "2026-04-21T01:30:00Z",
   "tick_log": [
     {
@@ -433,8 +441,8 @@
     }
   ],
   "last_update": "2026-04-21T17:10:00Z",
-  "last_claude_update_utc": "2026-04-22T14:47:00Z",
-  "updated_at": "2026-04-22T14:47:00Z",
+  "last_claude_update_utc": "2026-04-22T15:50:00Z",
+  "updated_at": "2026-04-22T15:50:00Z",
   "binary_event": {
     "name": "iran_ceasefire_indefinite_extension",
     "deadline_utc": null,
@@ -447,5 +455,6 @@
       "Al Jazeera 2026-04-21 21:40 GMT \u2014 Trump announces Iran ceasefire extension but says blockade remains"
     ],
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break."
-  }
+  },
+  "regime_note": "2026-04-22 15:50 UTC heartbeat \u2014 0 unconsumed events. Broker $1000/0 reconciled. 2 WebSearches: (1) Euronews/CBS/NBC/WaTimes Apr 22 confirm same narrative since 12:54 \u2014 MSC Francesca + Epaminondas seized + 3rd ship 'Euphoria' fired on (Fars/Mehr), no casualties, Trump indefinite extension intact, 2nd-round talks on hold. No new escalation rung in 3h, just confirmations. (2) tradingeconomics/forex.com Apr 22: GOLD 4759.11 (+11.95p vs 12:42 4747.16, 15.89p below 4775 trigger \u2014 creeping toward level on seizure catalyst), USDJPY 158.95 (-36.2p, drifted 105p below 160 red-line on lower oil + diplomatic hopes). Gold alert MODIFIED price+note, USDJPY alert MODIFIED price (level farther away), AUDUSD KEEP. 9 structure + 8 queries all KEEP. No trades (no triggers). Counterfactual review: usdjpy 100% 1h+4h n=1 thin; gold_escalation/usdcad_fvg/oil_retest already REMOVED with 0-fill = level-never-reached not noise, no further action."
 }

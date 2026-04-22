@@ -1,7 +1,7 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-22T12:54:00Z",
-  "pruned_at": "2026-04-22T12:54:00Z",
+  "last_updated_by_claude": "2026-04-22T15:50:00Z",
+  "pruned_at": "2026-04-22T15:50:00Z",
   "pruned_by": "12:54 UTC tick — 10 news_flash events (1 stale iran_ceasefire Apr 21 Democracy Now 'highly unlikely' pre-dating actual indefinite extension; 9 Touska/blockade dupes Apr 19-20). Broker $1000/0 matches. 1 WebSearch (CNN live, ABC live, ksat, CNBC, Wikipedia '2026 Strait of Hormuz crisis'): MATERIAL ESCALATION — IRGC SEIZED 2 ships today (MSC Francesca + Epaminondas) transferred to Iranian waters + fired on 3rd container ship causing 'heavy bridge damage'. Step-up from 'fire, no casualties' (prior weak driver) to physical ship seizures (tit-for-tat asymmetric response to US Touska seizure). Trump re-affirms blockade continues. No fresh price pull (budget). Prior 12:42 UTC tape still stands as reference: GOLD 4747.16 (27p below 4775 reject), OIL 90.758 (near day hi 91.177 — break above now has stronger fundamental backing with 2-ship seizures), USDJPY 159.312, AUDUSD 0.71468, BTC 78204 (+3.28%). 1 alert MODIFY (gold: add 2-ship seizure catalyst — lifts conviction if 4775 tagged on continuation), 2 KEEP (audusd/usdjpy price refs valid). 9 structure_watch KEEP. 8 queries KEEP (iran_ceasefire already TUNED 11:38 for this scenario).",
   "pruned_removed": [],
   "pruned_added": [],
@@ -45,15 +45,15 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "sell USDJPY 160.00 intervention red-line fade — live 12:42 UTC 159.312 (+9p vs 11:21 159.214, 68.8p below 160). Day hi 159.455 intact from earlier session. Indefinite extension verified; USD bid flat-to-soft. Setup structurally valid (Japan intervened 159.23 Jan 2026, MoF Katayama G7 'high urgency', BoJ Apr 27-28 hold priced). Counterfactual hit_rate 100% at 1h+4h (1 fire only, thin sample). Short ONLY on rejection wick at 160.00 + verbal-intervention/MoF tweet confirm; skip naked breaks. SL 160.50, TP 158.50 R:R ~3:1.",
-      "current_price_ref": 159.312,
+      "note": "sell USDJPY 160.00 intervention red-line fade — live ~15:50 UTC 158.95 (-36.2p vs 12:42 159.312, now 105p below 160). JPY strengthening on lower oil + diplomatic hopes (tradingeconomics/forex.com Apr 22). Setup still structurally valid but level is drifting further away — no trigger imminent. Counterfactual hit_rate 100% at 1h+4h (1 fire, thin). Short ONLY on rejection wick at 160.00 + verbal-intervention confirm; skip naked breaks. SL 160.50, TP 158.50 R:R ~3:1.",
+      "current_price_ref": 158.95,
       "price_ref": {
-        "ts": "2026-04-22T12:42:00Z",
-        "price": 159.312
+        "ts": "2026-04-22T15:50:00Z",
+        "price": 158.95
       },
-      "last_updated": "2026-04-22T12:45:00Z",
-      "proximity": "68.8p below 160.00 intervention red line (live 12:42 UTC 159.312 bid). Day range 159.101-159.455.",
-      "updated_utc": "2026-04-22 12:45 UTC"
+      "last_updated": "2026-04-22T15:50:00Z",
+      "proximity": "105p below 160.00 intervention red line (live 15:50 UTC 158.95). Drifted -36.2p further away since 12:42 — low-energy JPY bid continuing.",
+      "updated_utc": "2026-04-22 15:50 UTC"
     },
     {
       "id": "gold_safehaven_continuation_buy",
@@ -62,15 +62,15 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "MODIFIED 12:54 UTC — buy GOLD 4775 breakout. Live ref 12:42 UTC 4747.16 (27.84p below trigger, day range 4715.44-4772.24, day hi 4772.24 reject intact). **FRESH CATALYST 12:54 UTC: IRGC SEIZED 2 ships today — MSC Francesca + Epaminondas transferred to Iranian waters (CNN/ABC live) + fired on 3rd container ship causing 'heavy bridge damage'. Step-up from prior 'fire no casualties' to physical seizures = tit-for-tat response to US Touska seizure. Trump re-affirms blockade continues.** This is a materially stronger catalyst for 4775 break than earlier container-ship fire. Still against BTC +3.28% risk-on pressure. If 4775 is tagged now, the combination (2-ship seizure + rejection wick + possible M15 BOS up) = Conv 4 entry with full 1.0% risk. If spike-fades again = pattern confirmed, REMOVE next tick. Conservative path: M15 close >4775 + volume + no rejection wick. Aggressive LIMIT: 4735-4740 bid (2-ship seizure stabilizes the floor). SL 4730, TP1 4810, TP2 4850. Conv 3 currently → 4 on tag with continuation.",
-      "current_price_ref": 4747.16,
+      "note": "MODIFIED 15:50 UTC — buy GOLD 4775 breakout. Live ref ~15:50 UTC 4759.11 (+11.95p vs 12:42 4747.16, now 15.89p below trigger). Day range likely 4715-4775 zone intact. **CATALYST: IRGC SEIZED 2 ships today — MSC Francesca + Epaminondas — plus fired on 3rd 'Euphoria' (Fars/Mehr via Euronews/CBS/NBC Apr 22). Trump indefinite extension intact; Iran second-round talks remain on hold. Narrative unchanged past 3h — no fresh escalation rung, just confirmations.** Gold creeping toward 4775 on the seizure catalyst but hasn't broken. If 4775 tagged: wait for M15 BOS up + no rejection wick (spike-fade pattern burned us earlier today at 4772.24 reject). Aggressive LIMIT 4735-4740 still OK — seizure floor intact. SL 4730, TP1 4810, TP2 4850. Conv 3 currently → 4 on tag with CONFIRMED continuation (tighter bar given prior reject).",
+      "current_price_ref": 4759.11,
       "price_ref": {
-        "ts": "2026-04-22T12:42:44Z",
-        "price": 4747.16
+        "ts": "2026-04-22T15:50:00Z",
+        "price": 4759.11
       },
-      "last_updated": "2026-04-22T12:54:00Z",
-      "proximity": "27.84p below 4775 buy trigger (ref 12:42 UTC 4747.16). Catalyst upgraded: 2 ships SEIZED + 1 fired on today — physical seizures not just threats.",
-      "updated_utc": "2026-04-22 12:54 UTC"
+      "last_updated": "2026-04-22T15:50:00Z",
+      "proximity": "15.89p below 4775 buy trigger (ref 15:50 UTC 4759.11). +11.95p drift toward level since 12:42. Narrative static: same 2-ship seizure, no new rung.",
+      "updated_utc": "2026-04-22 15:50 UTC"
     }
   ],
   "structure_watch": [
