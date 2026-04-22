@@ -1,22 +1,6 @@
 {
-  "generated_at": "2026-04-22T21:33:52.086693Z",
+  "generated_at": "2026-04-22T22:03:47.030117Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-21T06:37:00Z",
-      "events_in": 15,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 15,
-      "note": "news_flash burst 15 events \u2014 Iran drone strikes on US vessels (Tasnim) confirmed post Touska seizure. India-US trade deal talks restart. No entry triggers, no trades. Gold note MODIFIED; all alerts/queries KEEP."
-    },
-    {
-      "ts_utc": "2026-04-21T07:34:00Z",
-      "events_in": 0,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 0,
-      "note": "Heartbeat \u2014 0 unconsumed events. Broker $1000 flat 0 pos reconciled. 1 web search: Bloomberg 'Iran set to attend Islamabad' (Brent -1.1% $94.44 fading 5.6% Mon gain) vs AJ 'Iran says no talks for now' \u2014 conflicting narrative continues, no regime shift. Trump ext 'highly unlikely' intact, T-~17h. 5+9+8 all KEEP (no delta since 07:09)."
-    },
     {
       "ts_utc": "2026-04-21T08:41:00+00:00",
       "events_in": 19,
@@ -184,6 +168,14 @@
       "closed": 0,
       "skipped": 1,
       "note": "21:33 UTC forex auto tick \u2014 1 stale news_flash consumed (AJ Apr 20 'Islamabad negotiators' backgrounder, keyword 'Islamabad' matched but superseded by 4-source verified Trump indefinite extension Apr 22). USDCAD re-run: composite -37 weak (strengthened from -32 but still <|40| moderate), M15 +0.4 bullish = sweep continuation exhausted 93min post-sweep. REMOVED usdcad_liqsweep_sell_zone per prior tick's 'REMOVE next tick if not ARMED' commit. No replacement. USDJPY +51 moderate WATCH 160 (51p dist, BOJ T-4d), GOLD -16 none (4h hit_rate 0.8 KEEP), OIL +28.5 weak retest-far. 3 alerts KEEP, 1 REMOVE, 9 structure_watch KEEP, 8 queries KEEP. Broker $1000/0. 0 trades."
+    },
+    {
+      "ts_utc": "2026-04-22T22:02:00Z",
+      "events_in": 11,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 11,
+      "note": "22:01 UTC tick \u2014 11 events: 1 news_flash boj_intervention STALE Jan 21 2026 Business Times 'Katayama calls for market calm' (3-month-old archive matched 'Katayama' kept-token), 1 alert_audit_request USDJPY usdjpy_intervention_fade_zone same source NO actionable signal, 9 bar_close routine heartbeat. Broker $1000/0 reconciled. Confluence USDJPY broker HTTP 404 transient \u2014 using 21:27 ref (composite +51 moderate WATCH 51p<160, dist >3\u00d7H1 ATR no ARM). TUNED boj_intervention query: added match_keywords=['2026','April','Apr 27','Apr 28','policy meeting'] (date-filter pattern from fed_fomc fix), cooldown 120\u2192180min. ATTENTION: USDJPY swing=WATCH (51p dist), GOLD swing=WATCH (4h hr 0.8 KEEP), OIL swing=WATCH retest-far. EURUSD/GBPUSD/AUDUSD/USDCAD/USDCHF swing=NONE no alert. BTC/GOLD/OIL scalp=N/A spread; FX scalps engine-managed per config. 3 alerts KEEP, 9 structure_watch KEEP, 1 query TUNE, 7 queries KEEP. 0 trades. BOJ T-4d (Apr 27-28)."
     },
     {
       "ticks": [
@@ -444,6 +436,14 @@
         }
       },
       "note": "Stale fed_fomc Oct 2025 archive fired via empty match_keywords \u2192 TUNED with ['2026']. No pair ARMED. BOJ Apr 27-28 T-4d. USDCAD sweep thesis final-tick warning."
+    },
+    {
+      "ts_utc": "2026-04-22T22:02:00Z",
+      "tick": "forex_auto",
+      "events_in": 11,
+      "opened": 0,
+      "closed": 0,
+      "summary": "22:01 UTC tick \u2014 11 events: 1 news_flash boj_intervention STALE Jan 21 2026 Business Times 'Katayama calls for market calm' (3-month-old archive matched 'Katayama' kept-token), 1 alert_audit_request USDJPY usdjpy_intervention_fade_zone same source NO actionable signal, 9 bar_close routine heartbeat. Broker $1000/0 reconciled. Confluence USDJPY broker HTTP 404 transient \u2014 using 21:27 ref (composite +51 moderate WATCH 51p<160, dist >3\u00d7H1 ATR no ARM). TUNED boj_intervention query: added match_keywords=['2026','April','Apr 27','Apr 28','policy meeting'] (date-filter pattern from fed_fomc fix), cooldown 120\u2192180min. ATTENTION: USDJPY swing=WATCH (51p dist), GOLD swing=WATCH (4h hr 0.8 KEEP), OIL swing=WATCH retest-far. EURUSD/GBPUSD/AUDUSD/USDCAD/USDCHF swing=NONE no alert. BTC/GOLD/OIL scalp=N/A spread; FX scalps engine-managed per config. 3 alerts KEEP, 9 structure_watch KEEP, 1 query TUNE, 7 queries KEEP. 0 trades. BOJ T-4d (Apr 27-28)."
     }
   ]
 }
