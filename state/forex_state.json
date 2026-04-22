@@ -1,6 +1,6 @@
 {
-  "regime": "INDEFINITE_EXTENSION_HORMUZ_ESCALATING_SEIZURES_MIXED_RISK_ON",
-  "regime_note_prev": "2026-04-22 18:55 UTC (next-day tick) \u2014 12 pending events consumed, all STALE archive flush: 10 us_iran_military Apr 13-14 original blockade announcements matched 'retaliation' + 1 Apr 16 CNBC 'day 4' matched 'blockade' + 1 Apr 19 Il Sole Touska republish. Two news_queries RE-TUNED: hormuz_strait REMOVED 'blockade'/'seized'/'fired' (baseline-state stale tokens) added 'sunk'/'ablaze'/'missile'; us_iran_military REMOVED 'retaliation'/'retaliate'/'struck'/'escalation'/'mine' (broad archive-matchers) cooldown 60->120min. Live tape 18:55 UTC: OIL 92.589 (-35p vs 22:32, holding above 90 breakout); GOLD 4740.35 (+7p, still 34.65p below 4775 trigger); USDJPY 159.483 (flat, 51.7p below 160); AUDUSD 0.716 (+4p drift, 90p above 0.707). ~6h price stasis confirms oil-specific re-rating still dominates. No new escalation rung, no diplomatic beat, no level hits - 0 trades.",
+  "regime": "INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING",
+  "regime_note_prev": "2026-04-22 19:57 UTC heartbeat \u2014 0 unconsumed events (last tick at 18:55 UTC flushed 12 stale archives + re-tuned 2 queries). [DATE CORRECTION: prior tick labeled tick_ts 2026-04-23 in error; true UTC is 2026-04-22 per broker timestamp + date -u. Corrected this tick.] Live tape refresh: OIL $92.99 (+5p vs 92.94, day range $87.67-$93.73 massive 6-pt swing Hormuz re-rating); GOLD $4752 (+19p vs 4733, +0.68% intraday, still 23p below 4775 trigger, consolidating 4760-4881, -10% off highs); USDJPY 159.54 via confluence (+6p vs 159.48, composite +51 readiness=moderate all-4-TF-agree, bear OB 160.11-160.46 overhead at intervention threshold, 46p below 160 red line); AUDUSD 0.716 drift (88.6p above 0.707 \u2014 persistent risk-on). BOJ Apr 27-28 T-5d calendar note (not blackout \u2014 >24h). Trump indefinite extension intact, Hormuz seizure narrative unchanged. Regime: INDEFINITE_EXTENSION_HORMUZ_FRICTION_OIL_RE-RATING. Audit: 4 alerts KEEP (3 MODIFY price + USDJPY/gold/oil context, 1 KEEP audusd), 9 structure_watch KEEP, 8 news_queries KEEP. Counterfactual: no fires>=3 hit<30% \u2192 no auto-REMOVE; oil_retest_90 67/67/100 real edge; usdjpy fade 100% all horizons but 1-fire thin. Broker $1000/0 matches. 0 trades.",
   "open_positions": [],
   "watchlist": [
     {
@@ -103,6 +103,17 @@
       "GBPUSD": 1.35162,
       "USDCHF": 0.78098,
       "DXY_reported": 97.63
+    },
+    "live_snapshot_2001_utc": {
+      "EURUSD": 1.17047,
+      "USDJPY": 159.555,
+      "GOLD": 4738.63,
+      "OIL_CRUDE": 92.258,
+      "BTCUSD": 78900,
+      "AUDUSD": 0.71583,
+      "USDCAD": 1.36726,
+      "GBPUSD": 1.35011,
+      "USDCHF": 0.78475
     }
   },
   "trade_history": [
@@ -377,6 +388,14 @@
       "closed": 0,
       "skipped": 12,
       "note": "18:55 UTC tick - 12 pending events all STALE archive flush (10 Apr 13-14 blockade-announcement matched 'retaliation' + 1 Apr 16 CNBC 'day 4' matched 'blockade' + 1 Apr 19 Il Sole Touska republish). Broker $1000/0 reconciled. Live tape: OIL 92.589 GOLD 4740.35 USDJPY 159.483 AUDUSD 0.716 (~flat vs 22:32 ref). No level hits, no trades. 2 news_queries RE-TUNED (hormuz_strait + us_iran_military) to kill broad archive matchers. 4 alerts KEEP, 9 structure KEEP."
+    },
+    {
+      "ts_utc": "2026-04-22T20:08:03Z",
+      "events_in": 29,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 29,
+      "note": "20:01 UTC tick \u2014 29 events: 11 news_flash SKIP (all stale: 8 us_tariff Feb archives+1 Apr21 BLiTZ, 1 Anadolu Apr21 Pakistan-welcomes baseline, 1 Dec2025 Reuters BoJ archive, 1 alert_audit_request on same Dec archive). 16 bar_close routine. 1 USDCAD liquidity_sweep M15 20:00 UTC up-sweep 1.36737 wick 1.2p close 1.36727 \u2014 sweep bias sell, confluence composite -24.5 readiness=none blocks LIMIT. ADDED usdcad_liqsweep_sell_zone (swept level as watchlist), REMOVED audusd_breakdown_trigger (stale Rule 1: 88p > 3\u00d7H4 ATR, no catalyst, BTC+4.2% risk-on kills). 3 MODIFY price refs (usdjpy/gold/oil); 1 ADD (usdcad); 1 REMOVE. 2 queries TUNE (us_tariff cd 60\u2192240 narrowed, boj_intervention cd 60\u2192120 dropped broad). 9 structure_watch KEEP. EURUSD 1.1705 NEW LOW broke re-entry base; BTC 78900 +4.2% parabolic. 0 trades, $1000/0."
     }
   ],
   "recent_skips": [
@@ -410,10 +429,10 @@
       "price": 4809.28
     }
   ],
-  "last_tick_summary": "19:57 UTC forex auto tick \u2014 0 unconsumed events heartbeat, 0 trades. Date label Apr23\u2192Apr22 corrected. Live tape: USDJPY 159.54 composite+51 readiness=moderate bear OB 160.11 overhead (intervention zone); GOLD $4752 consolidating; OIL $92.99 after 6-pt range day. BOJ Apr 27-28 T-5d binary calendar note. 3 alert price refs MODIFY, 1 KEEP, 9 structure+8 queries KEEP. Broker $1000/0.",
+  "last_tick_summary": "2026-04-22T20:08:03Z 20:01 UTC forex auto tick \u2014 29 events consumed (11 news_flash stale archives + 16 bar_close heartbeat + 1 USDCAD liquidity_sweep M15). 0 trades. USDJPY audit_request re-scored: composite +51 moderate bullish, bear OB 160.11-160.46 overhead = fade zone intact \u2014 44.5p from trigger at 1\u00d7 H1 ATR boundary, WATCH. USDCAD 20:00 UTC M15 up-sweep 1.36737 sell-bias but composite -24.5 readiness=none \u2192 LIMIT blocked, added as watchlist. Audit: 1 REMOVE (audusd_breakdown stale Rule 1), 1 ADD (usdcad_liqsweep), 3 MODIFY (price refs); 2 queries TUNED (us_tariff narrowed cd 240min, boj_intervention dropped broad tokens cd 120min). Regime: INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING. EURUSD 1.1705 broke re-entry base; BTC+4.2% parabolic. Broker $1000/0.",
   "last_scan": {
-    "timestamp": "2026-04-22T19:57:00Z",
-    "events_processed_last_tick": 0,
+    "timestamp": "2026-04-22T20:08:03Z",
+    "events_processed_last_tick": 29,
     "events_acted_last_tick": 0
   },
   "capital_base": 1000.0,
@@ -447,6 +466,14 @@
       "closed": 0,
       "skipped": 0,
       "summary": "19:57 UTC heartbeat \u2014 0 events, 0 trades, date-label corrected Apr23\u2192Apr22, 3 alert price refs refreshed (USDJPY 159.54 moderate+51 bear OB 160.11 armable; GOLD 4752 22p below 4775; OIL 92.99 big swing day), BOJ Apr27-28 T-5d noted, all 4+9+8 KEEP"
+    },
+    {
+      "ts_utc": "2026-04-22T20:08:03Z",
+      "events_in": 29,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 29,
+      "summary": "20:01 UTC \u2014 29 events all SKIP (11 news archive + 16 bar_close + 1 USDCAD liqsweep: readiness=none blocks LIMIT). REMOVED audusd_breakdown (Rule 1 stale), ADDED usdcad_liqsweep_sell_zone (1.36737), 3 alerts MODIFY price. 2 queries TUNE. 0 trades, $1000/0."
     }
   ],
   "binary_event": {
@@ -462,7 +489,7 @@
     ],
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). Monitor for reactivation on any T-24h trigger."
   },
-  "regime_note": "2026-04-22 19:57 UTC heartbeat \u2014 0 unconsumed events (last tick at 18:55 UTC flushed 12 stale archives + re-tuned 2 queries). [DATE CORRECTION: prior tick labeled tick_ts 2026-04-23 in error; true UTC is 2026-04-22 per broker timestamp + date -u. Corrected this tick.] Live tape refresh: OIL $92.99 (+5p vs 92.94, day range $87.67-$93.73 massive 6-pt swing Hormuz re-rating); GOLD $4752 (+19p vs 4733, +0.68% intraday, still 23p below 4775 trigger, consolidating 4760-4881, -10% off highs); USDJPY 159.54 via confluence (+6p vs 159.48, composite +51 readiness=moderate all-4-TF-agree, bear OB 160.11-160.46 overhead at intervention threshold, 46p below 160 red line); AUDUSD 0.716 drift (88.6p above 0.707 \u2014 persistent risk-on). BOJ Apr 27-28 T-5d calendar note (not blackout \u2014 >24h). Trump indefinite extension intact, Hormuz seizure narrative unchanged. Regime: INDEFINITE_EXTENSION_HORMUZ_FRICTION_OIL_RE-RATING. Audit: 4 alerts KEEP (3 MODIFY price + USDJPY/gold/oil context, 1 KEEP audusd), 9 structure_watch KEEP, 8 news_queries KEEP. Counterfactual: no fires>=3 hit<30% \u2192 no auto-REMOVE; oil_retest_90 67/67/100 real edge; usdjpy fade 100% all horizons but 1-fire thin. Broker $1000/0 matches. 0 trades.",
-  "tick_ts_utc": "2026-04-22T19:57:00Z",
-  "state_ts_utc": "2026-04-22T19:57:00Z"
+  "regime_note": "2026-04-22T20:08:03Z \u2014 29 events consumed: 11 news_flash (all SKIP: 8 us_tariff archives + 1 iran_ceasefire Anadolu post-extension baseline + 1 boj_intervention Dec 2025 Reuters archive + 1 USDJPY alert_audit_request triggered by same Dec archive), 16 bar_close routine heartbeat, 1 USDCAD liquidity_sweep M15 (20:04 UTC up-sweep 1.36737 wick 1.2p, closed 1.36727 \u2014 sweep-bias=sell matches confluence bearish call but readiness=none blocks LIMIT per Step 4c). USDJPY re-scored on audit_request: composite +51 moderate bullish 4/4 TFs agree, bear OB 160.11-160.46 overhead = intervention fade zone intact \u2014 44.5p from trigger at 1\u00d7 H1 ATR boundary (14.8p H1 ATR), WATCH not ARMED. Live tape: USDJPY 159.555 (+0.13%), GOLD 4738.63 (+0.40%, day 4715-4772 \u2014 4772 session hi rejected 2nd time), OIL 92.258 (+2.36%, day range 87.455-93.401 massive 6-pt swing continuation), AUDUSD 0.71583 flat, USDCAD 1.36726 flat, EURUSD 1.17047 (-0.32% NEW LOW broke below 1.1780 re-entry base), GBPUSD 1.35011 flat, USDCHF 0.78475 (+0.54%), BTCUSD 78900 (+4.2% parabolic continuation confirming risk-on). Audit: REMOVED audusd_breakdown_trigger per mechanical Rule 1 (88.3p > 3\u00d7H4 ATR, no catalyst 24h, BTC+4.2% cementing risk-on kills AUD-to-0.707 tail setup); ADDED usdcad_liqsweep_sell_zone (1.36737 swept wick, sweep protocol Step 4e); 3 MODIFY price refs. 9 structure_watch KEEP. 2 news_queries TUNED (us_tariff/boj_intervention kill archive matchers). Counterfactual no fires\u22653 hit<30% \u2192 no auto-REMOVE; oil_retest_90 3f/67/67/100 real edge; usdjpy fade 1f/100% thin. Broker $1000/0 reconciled. 0 trades.",
+  "tick_ts_utc": "2026-04-22T20:08:03Z",
+  "state_ts_utc": "2026-04-22T20:08:03Z"
 }

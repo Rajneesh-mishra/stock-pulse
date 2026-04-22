@@ -1,11 +1,13 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-22T19:57:00Z",
-  "pruned_at": "2026-04-22T19:57:00Z",
-  "pruned_by": "19:57 UTC tick \u2014 0 unconsumed events heartbeat. Live tape refresh (gold $4752, WTI $92.99, USDJPY 159.54 from confluence). USDJPY composite +51 moderate bullish, bear OB 160.11-160.46 overhead = intervention zone structural sell wall. BOJ Apr 27-28 T-5d binary tail. All 4 alerts KEEP; 3 MODIFY (price refs + USDJPY/gold/oil context), 1 KEEP-as-is (audusd). 9 structure_watch KEEP. 8 news_queries KEEP (2 RE-TUNED last tick still filtering). Counterfactual: usdjpy fade 1f/100%/100%/100% thin; oil_crude_retest_90_buy 3f/67/67/100 real edge; gold 10f/90/80/0 short ok 24h bleeds; audusd 1f/100/0/100 thin. No fires>=3 hit<30% \u2192 no auto-REMOVE. No level hits, no trades.",
-  "pruned_removed": [],
+  "last_updated_by_claude": "2026-04-22T20:08:03Z",
+  "pruned_at": "2026-04-22T20:08:03Z",
+  "pruned_by": "2026-04-22T20:08 tick \u2014 29 events: 11 news_flash (8 us_tariff Feb archives + 1 Apr21 BLiTZ + 1 iran_ceasefire Anadolu Apr21 post-extension + 1 boj_intervention Reuters Dec 2025 archive) + 16 bar_close heartbeat + 1 USDCAD liquidity_sweep M15. 0 trades. Broker $1000/0. REMOVED audusd_breakdown_trigger (88p > 3\u00d7H4 ATR, no catalyst 24h, drift away on BTC+4.2% risk-on); ADDED usdcad_liqsweep_sell_zone (1.36737 swept wick, sweep-protocol zone); 3 MODIFY price refs (usdjpy/gold/oil). 2 news_queries TUNED (us_tariff narrowed, boj_intervention dropped broad tokens). Live tape: USDJPY 159.555 composite+51 moderate bullish bear OB 160.11 overhead; GOLD 4738 (-14p 24h, 4772 rejected); OIL 92.26 (+2.36%, day range 87.45-93.40); AUDUSD 0.716 flat risk-on; EURUSD 1.1705 new low broke re-entry base; BTC 78900 +4.2% parabolic continuation.",
+  "pruned_removed": [
+    "audusd_breakdown_trigger"
+  ],
   "pruned_added": [
-    "oil_crude_retest_90_buy"
+    "usdcad_liqsweep_sell_zone"
   ],
   "instruments": [
     "EURUSD",
@@ -24,23 +26,6 @@
   },
   "level_alerts": [
     {
-      "id": "audusd_breakdown_trigger",
-      "instrument": "AUDUSD",
-      "level": 0.707,
-      "emit_on": "cross_down",
-      "cooldown_sec": 1800,
-      "direction": "buy",
-      "note": "MODIFIED 22:33 UTC \u2014 buy AUDUSD 0.707 support on Iran-escalation spike. Live 22:32 UTC 0.71596 (+12.8p vs 12:42 0.71468, 88.6p above trigger \u2014 drifted further away). Crude +3% without gold joining = oil-specific supply story not broad escalation; BTC +4.14% day confirms risk-ON persists, weakening AUD-spike-to-support thesis. Setup requires a fresh shock rung (US casualties, formal Iran walkout, Hormuz reopen denial) to re-energize. SL 0.703, TP 0.7187 on 0.707 rejection wick + risk-off confirm. Conv 3 currently, skip naked breaks. | REFRESH 2026-04-22T19:57:00Z: KEEP \u2014 still 88.6p above 0.707, drifted further away on persistent risk-on, BTC+4%",
-      "current_price_ref": 0.71596,
-      "price_ref": {
-        "ts": "2026-04-22T19:57:00Z",
-        "price": 0.71596
-      },
-      "last_updated": "2026-04-22T19:57:00Z",
-      "proximity": "88.6p above 0.707 buy zone (live 22:32 UTC 0.71596). Drifted +12.8p further away since 12:42. BTC+4.14% + risk-on persists.",
-      "updated_utc": "2026-04-22 19:57 UTC"
-    },
-    {
       "id": "usdjpy_intervention_fade_zone",
       "instrument": "USDJPY",
       "level": 160.0,
@@ -48,14 +33,14 @@
       "cooldown_sec": 1800,
       "direction": "sell",
       "note": "MODIFIED 22:33 UTC \u2014 sell USDJPY 160.00 intervention red-line fade. Live 22:32 UTC 159.48 (+53p vs 15:50 158.95, now 52p below 160 \u2014 moved CLOSER on crude-bid-USD dynamic). Day range 159.10-159.52. Katayama-Bessent 'bold action' language intact per Apr 16 \u2014 MoF pain threshold 158 per FXEmpire/MUFG. If 160 tags: short on rejection wick + verbal-intervention/rate-check confirm; skip naked breaks (prior 158.27 overnight low shows JPY bid available on oil fade/diplomacy). SL 160.50, TP 158.50 R:R ~3:1. Conv 4 on clean tag+rejection. | REFRESH 2026-04-22T19:57:00Z: MODIFY \u2014 live 159.54 via confluence (+6p vs 159.48), now 46p below 160; composite +51 moderate bullish with bear OB 160.11-160.46 overhead; BOJ Apr 27-28 T-5d adds binary tail",
-      "current_price_ref": 159.54,
+      "current_price_ref": 159.555,
       "price_ref": {
-        "ts": "2026-04-22T19:57:00Z",
-        "price": 159.54
+        "ts": "2026-04-22T20:08:03Z",
+        "price": 159.555
       },
-      "last_updated": "2026-04-22T19:57:00Z",
-      "proximity": "52p below 160.00 intervention red line (live 22:32 UTC 159.48). Moved +53p closer since 15:50 on crude-driven USD bid.",
-      "updated_utc": "2026-04-22 19:57 UTC"
+      "last_updated": "2026-04-22T20:08:03Z",
+      "proximity": "44.5p below 160.00 red line (live 20:01 UTC 159.555). H1 ATR 14.8p \u2192 3\u00d7=44p; price at edge of 1\u00d7 H1 ATR but 55p (~3.7\u00d7 H1 ATR) \u2192 WATCH not ARMED. Confluence composite +51 moderate bullish, bear OB 160.11-160.46 overhead intact.",
+      "updated_utc": "2026-04-22T20:08:03Z"
     },
     {
       "id": "gold_safehaven_continuation_buy",
@@ -65,14 +50,14 @@
       "cooldown_sec": 1800,
       "direction": "buy",
       "note": "MODIFIED 22:33 UTC \u2014 buy GOLD 4775 breakout. Live 22:32 UTC 4733.30 (-19.5p vs 15:55 4752.76, now 41.7p below trigger). Day range 4715.44-4772.24 \u2014 4772 HIGH CONFIRMED REJECTED (validated the spike-fade caution from prior note). Crude ripping +3% but gold ROLLING OFF = traders pricing Hormuz as oil-supply story not capital-flight escalation; gold-safehaven bid weakening. Thesis still valid on a NEXT escalation rung (US casualties, formal walkout, Hormuz reopen refusal hardening) but conv now 3 (was 4 at session high). If 4775 tagged: require M15 BOS up + no rejection wick (two rejects at this zone today). Aggressive LIMIT 4735-4740 questionable now \u2014 gold already broke back below 4750 vs seizure floor thesis. SL 4730, TP1 4810, TP2 4850. | REFRESH 2026-04-22T19:57:00Z: MODIFY \u2014 live ~$4752 via search (+19p vs 4733.30 last ref, +0.68% intraday), still 23p below 4775 trigger; consolidating 4760-4881 range per tape; 10% off highs since conflict start",
-      "current_price_ref": 4752.0,
+      "current_price_ref": 4738.63,
       "price_ref": {
-        "ts": "2026-04-22T19:57:00Z",
-        "price": 4752.0
+        "ts": "2026-04-22T20:08:03Z",
+        "price": 4738.63
       },
-      "last_updated": "2026-04-22T19:57:00Z",
-      "proximity": "41.7p below 4775 buy trigger (ref 22:32 UTC 4733.30 bid). Rolled off -19.5p vs 15:55; 4772 session high REJECTED.",
-      "updated_utc": "2026-04-22 19:57 UTC"
+      "last_updated": "2026-04-22T20:08:03Z",
+      "proximity": "36.37p below 4775 trigger (live 20:01 UTC 4738.63). Day 4715.44-4772.24 \u2014 4772 rejected again today. Catalyst upgraded per IRGC 2-ship seizure; need fresh rung to push through.",
+      "updated_utc": "2026-04-22T20:08:03Z"
     },
     {
       "id": "oil_crude_retest_90_buy",
@@ -82,14 +67,31 @@
       "cooldown_sec": 1800,
       "direction": "buy",
       "note": "ADDED 22:33 UTC \u2014 buy WTI 90.30 retest of broken 90 resistance as new support. Live 22:32 UTC 92.94 (+639p vs 16:53 86.55, +3.07% on day, day high 93.39). Clean break above 90 on Hormuz blockade re-rating (IRGC seized 2 ships + fired on 3rd Apr 22) \u2014 gold NOT joining the move confirms this is oil-supply specific. Anticipation logic: pullback to 90.30 with M15 reject wick + hold = buy. If price accepts below 90 (closes M15 < 89.80) thesis dead. SL 89.20 (90p risk), TP1 93.50 (daily high break, ~320p), TP2 95.00 (~470p). Conv 4: fresh structural break + clear invalidation. Skip if price just slices through 90 without any reaction (= new supply or Hormuz-reopen news). | REFRESH 2026-04-22T19:57:00Z: MODIFY \u2014 live $92.99 (+5p vs 92.94 last ref), day range 87.67-93.73 = massive 6-pt swing; still 267p above 90.30 retest buy zone (far). Keep \u2014 counterfactual 3f/67/67/100 remains strong edge",
-      "current_price_ref": 92.99,
+      "current_price_ref": 92.258,
       "price_ref": {
-        "ts": "2026-04-22T19:57:00Z",
-        "price": 92.99
+        "ts": "2026-04-22T20:08:03Z",
+        "price": 92.258
       },
-      "last_updated": "2026-04-22T19:57:00Z",
-      "proximity": "264p above 90.30 retest zone (live 22:32 UTC 92.94). Broke 90 cleanly +3% on day; needs pullback.",
-      "updated_utc": "2026-04-22 19:57 UTC"
+      "last_updated": "2026-04-22T20:08:03Z",
+      "proximity": "196p above 90.30 retest buy zone (live 20:01 UTC 92.258). Day range 87.455-93.401, bid pulled back -114p from 93.401 hi. Counterfactual 3f/67/67/100 real edge \u2014 wait for retest.",
+      "updated_utc": "2026-04-22T20:08:03Z"
+    },
+    {
+      "id": "usdcad_liqsweep_sell_zone",
+      "instrument": "USDCAD",
+      "level": 1.36737,
+      "emit_on": "cross_up",
+      "cooldown_sec": 1800,
+      "direction": "sell",
+      "note": "ADDED 2026-04-22T20:08:03Z \u2014 M15 liquidity_sweep event fired 20:04 UTC: up-sweep of 1.36737 wick 1.2p beyond, closed back inside at 1.36727, atr14 4.7p. Sweep bias=sell. Confluence composite -24.5 readiness=NONE (below 25 threshold) 3/4 TFs agree bearish \u2014 sweep direction matches macro bias but readiness too thin for anticipation LIMIT per Step 4c (requires readiness\u2265moderate). Held as watchlist-proximity; re-evaluate on next sweep OR if composite strengthens to \u2265moderate. If entered on retest: suggested_entry 1.36727, SL 1.36749 (2.2p risk \u2014 too tight vs 2p spread, poor R:R economics). Replaces orphaned 1.3820 watchlist entry (147p away, structurally dead).",
+      "current_price_ref": 1.36734,
+      "price_ref": {
+        "ts": "2026-04-22T20:08:03Z",
+        "price": 1.36734
+      },
+      "last_updated": "2026-04-22T20:08:03Z",
+      "proximity": "3p below swept wick 1.36737 (live 20:01 UTC 1.36734). Sweep closed inside \u2014 classic up-sweep sell setup but confluence readiness=none blocks LIMIT arm.",
+      "updated_utc": "2026-04-22T20:08:03Z"
     }
   ],
   "structure_watch": [
@@ -160,5 +162,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-22 22:33 UTC"
+  "last_updated_utc": "2026-04-22T20:08:03Z"
 }

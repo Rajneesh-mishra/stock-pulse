@@ -15,9 +15,9 @@
     "EURUSD":  { "enabled": true,  "mode": "range_extreme",    "bias": "neutral", "sessions": ["london", "ny_overlap"] },
     "GBPUSD":  { "enabled": true,  "mode": "session_open_break","bias": "neutral", "sessions": ["london"] },
     "AUDUSD":  { "enabled": true,  "mode": "range_extreme",    "bias": "neutral", "sessions": ["asia", "ny_overlap"] },
-    "USDJPY":  { "enabled": true,  "mode": "ema_pullback",     "bias": "bull",    "sessions": ["asia", "ny"] },
-    "USDCHF":  { "enabled": false, "mode": "range_extreme",    "bias": "neutral", "sessions": ["london"], "reason": "snb_quiet_awaiting_setup" },
-    "USDCAD":  { "enabled": false, "mode": "range_extreme",    "bias": "neutral", "sessions": ["ny"],     "reason": "spread_2p_borderline_wait_for_wider_range" },
+    "USDJPY":  { "enabled": false, "mode": "ema_pullback",     "bias": "bull",    "sessions": ["asia", "ny"], "reason": "JPY quote — shadow P/L needs per-pair pip-value conversion, enable after proper sizing lands" },
+    "USDCHF":  { "enabled": false, "mode": "range_extreme",    "bias": "neutral", "sessions": ["london"], "reason": "CHF quote — same pip-value issue as USDJPY" },
+    "USDCAD":  { "enabled": false, "mode": "range_extreme",    "bias": "neutral", "sessions": ["ny"],     "reason": "CAD quote + 2p spread borderline" },
     "GOLD":      { "enabled": false, "reason": "spread_5p_forbids_scalp_swing_only" },
     "OIL_CRUDE": { "enabled": false, "reason": "spread_4p_forbids_scalp_swing_only" },
     "BTCUSD":    { "enabled": false, "reason": "spread_50p_forbids_scalp" }

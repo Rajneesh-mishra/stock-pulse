@@ -1,5 +1,5 @@
 {
-  "_comment": "Authored by Claude. News daemon polls these queries every cadence. Emits news_flash events ONLY when a headline contains ≥1 required keyword AND the URL hasn't been seen before AND the query's cooldown has elapsed. Claude updates this as thesis shifts.",
+  "_comment": "Authored by Claude. News daemon polls these queries every cadence. Emits news_flash events ONLY when a headline contains \u22651 required keyword AND the URL hasn't been seen before AND the query's cooldown has elapsed. Claude updates this as thesis shifts.",
   "queries": [
     {
       "id": "iran_ceasefire",
@@ -33,7 +33,7 @@
         "tanker"
       ],
       "cooldown_min": 30,
-      "note": "TUNED 2026-04-22 11:38 UTC — fixed-deadline binary REMOVED (4-source verification of Trump indefinite extension: Reuters/NYT/Detroit News/AJ). Dropped 'expire'/'expiry' (deadline passed, no new fixed). Added 'indefinite' (extension framing), 'ploy' (Iran's framing per Türkiye Today), 'bridge damage' (Tradewinds Apr 22 06:15 ship hit), 'Vance' (NYT Vance trip on hold), 'blockade lifted' (Iran's precondition per Express Tribune Apr 22 09:56), 'ship attacked'/'tanker' (Hormuz escalation). Watch for: formal Iran walkout, retaliation strike with US casualties, Vance trip restart, blockade-lift conditional."
+      "note": "TUNED 2026-04-22 11:38 UTC \u2014 fixed-deadline binary REMOVED (4-source verification of Trump indefinite extension: Reuters/NYT/Detroit News/AJ). Dropped 'expire'/'expiry' (deadline passed, no new fixed). Added 'indefinite' (extension framing), 'ploy' (Iran's framing per T\u00fcrkiye Today), 'bridge damage' (Tradewinds Apr 22 06:15 ship hit), 'Vance' (NYT Vance trip on hold), 'blockade lifted' (Iran's precondition per Express Tribune Apr 22 09:56), 'ship attacked'/'tanker' (Hormuz escalation). Watch for: formal Iran walkout, retaliation strike with US casualties, Vance trip restart, blockade-lift conditional."
     },
     {
       "id": "hormuz_strait",
@@ -51,7 +51,7 @@
         "missile"
       ],
       "cooldown_min": 30,
-      "note": "TUNED 2026-04-22 18:55 UTC — REMOVED 'blockade'/'seized'/'fired' (all now baseline-state tokens matching stale CNBC/AP archives from Apr 13-16 original blockade announcement and Apr 20-21 Touska/MSC seizures already consumed). Added 'sunk', 'ablaze', 'missile' for fresh kinetic escalation rungs. Direct crude oil catalyst: forward-looking attacks/reopens only."
+      "note": "TUNED 2026-04-22 18:55 UTC \u2014 REMOVED 'blockade'/'seized'/'fired' (all now baseline-state tokens matching stale CNBC/AP archives from Apr 13-16 original blockade announcement and Apr 20-21 Touska/MSC seizures already consumed). Added 'sunk', 'ablaze', 'missile' for fresh kinetic escalation rungs. Direct crude oil catalyst: forward-looking attacks/reopens only."
     },
     {
       "id": "us_iran_military",
@@ -75,7 +75,7 @@
         "walkout"
       ],
       "cooldown_min": 120,
-      "note": "RE-TUNED 2026-04-22 18:55 UTC — prior 'retaliation'/'retaliate'/'struck'/'escalation'/'mine' flooded 12 stale archive articles this tick: 10 Apr 13-14 original blockade-announcement (Algemeiner/Fox/Globe & Mail/MSN/etc.) + 1 Apr 16 CNBC 'fourth day' + 1 Apr 19 Il Sole Touska republish. Those keywords match 9-day-old routine coverage of baseline state. REMOVED broad keywords; kept only action-verbs describing NEW escalation rungs (missile launched, casualties, sunk, ablaze) + forward diplomatic names (Vance/Witkoff/Kushner/Islamabad) + de-escalation-trigger phrases (Hormuz reopen, blockade lifted, new talks, walkout). Cooldown 60→120min. If this still floods: add date-filter logic to daemon."
+      "note": "RE-TUNED 2026-04-22 18:55 UTC \u2014 prior 'retaliation'/'retaliate'/'struck'/'escalation'/'mine' flooded 12 stale archive articles this tick: 10 Apr 13-14 original blockade-announcement (Algemeiner/Fox/Globe & Mail/MSN/etc.) + 1 Apr 16 CNBC 'fourth day' + 1 Apr 19 Il Sole Touska republish. Those keywords match 9-day-old routine coverage of baseline state. REMOVED broad keywords; kept only action-verbs describing NEW escalation rungs (missile launched, casualties, sunk, ablaze) + forward diplomatic names (Vance/Witkoff/Kushner/Islamabad) + de-escalation-trigger phrases (Hormuz reopen, blockade lifted, new talks, walkout). Cooldown 60\u2192120min. If this still floods: add date-filter logic to daemon."
     },
     {
       "id": "opec_supply",
@@ -97,22 +97,19 @@
       "query": "Bank of Japan yen intervention MoF Katayama",
       "keywords_required": [
         "intervene",
-        "intervention",
-        "FX",
         "sold",
         "bought",
-        "verbal",
-        "surprise",
-        "hike",
-        "decision",
         "Katayama",
         "Akazawa",
         "rate check",
         "urgency",
-        "excessive"
+        "excessive",
+        "surprise",
+        "hike",
+        "decision"
       ],
-      "cooldown_min": 60,
-      "note": "MoF pain threshold tightened to 158 per FXEmpire/MUFG (Apr 16) — vs 160 prior. USDJPY 158.969 with session low 158.27 overnight on verbal intervention. Katayama-Bessent FX talks Apr 16 affirm 'bold action' option per Sept Japan-US FX agreement. BoJ Apr 27-28. Pre-intervention verbal signals at peak."
+      "cooldown_min": 120,
+      "note": "RE-TUNED 2026-04-22T20:08:03Z \u2014 prior keywords 'intervention'/'FX'/'verbal' matched Dec 22 2025 Reuters 'sternest intervention warning' archive. Removed bare 'intervention'/'FX'/'verbal' (baseline-state tokens that match routine archives of past interventions). Kept verb 'intervene' + specific action-words (sold/bought yen, rate check) + named people (Katayama/Akazawa) + decision/hike/surprise/urgency/excessive. Cooldown 60\u2192120min. BoJ Apr 27-28 T-5d \u2014 watch fresh concrete action signals. MoF pain threshold 158 per FXEmpire/MUFG (Apr 16). Re-broaden after BoJ decision."
     },
     {
       "id": "fed_fomc",
@@ -129,7 +126,7 @@
         "Powell said"
       ],
       "cooldown_min": 180,
-      "note": "TUNED 2026-04-22 11:51 UTC — prior keywords 'cut'/'hike'/'hold' flooded 11 stale archive articles (Dec 2025-Mar 2026) this tick. Narrowed query+keywords to FOMC Apr 29 meeting and Powell statements only. Cooldown 120→180min. FOMC Apr 28-29 hold expected; oil shock could push dovish (growth risk) or hawkish (inflation). Re-broaden after meeting passes."
+      "note": "TUNED 2026-04-22 11:51 UTC \u2014 prior keywords 'cut'/'hike'/'hold' flooded 11 stale archive articles (Dec 2025-Mar 2026) this tick. Narrowed query+keywords to FOMC Apr 29 meeting and Powell statements only. Cooldown 120\u2192180min. FOMC Apr 28-29 hold expected; oil shock could push dovish (growth risk) or hawkish (inflation). Re-broaden after meeting passes."
     },
     {
       "id": "rba_hike",
@@ -141,22 +138,24 @@
         "unexpected"
       ],
       "cooldown_min": 240,
-      "note": "RE-TUNED 2026-04-21 07:38 UTC — prior keywords 'hike'/'shock'/'hawkish'/'dovish' still matched 10 stale archive articles (pub Dec 2025 — Mar 2026) this tick. Further narrowed to action/person specific. Market pricing May hike to 4.35%. Risk-off may force RBA to pause — AUD bid thesis broken under blockade."
+      "note": "RE-TUNED 2026-04-21 07:38 UTC \u2014 prior keywords 'hike'/'shock'/'hawkish'/'dovish' still matched 10 stale archive articles (pub Dec 2025 \u2014 Mar 2026) this tick. Further narrowed to action/person specific. Market pricing May hike to 4.35%. Risk-off may force RBA to pause \u2014 AUD bid thesis broken under blockade."
     },
     {
       "id": "us_tariff",
       "query": "US India tariff trade deal",
       "keywords_required": [
-        "deal",
-        "agreement",
         "exemption",
         "delay",
-        "announcement",
         "signed",
-        "retaliate"
+        "retaliate",
+        "lowered",
+        "raised",
+        "executive order",
+        "Modi",
+        "reset"
       ],
-      "cooldown_min": 60,
-      "note": "26% tariff active — any deal progress reverses FII flow thesis."
+      "cooldown_min": 240,
+      "note": "RE-TUNED 2026-04-22T20:08:03Z \u2014 prior keywords 'deal'/'agreement'/'announcement' flooded 8 stale archive articles this tick (7 Jan-Feb 2026 on India-US tariff reset history + 1 Apr 21 BLiTZ Pakistan-framed). Narrowed to specific fresh-action verbs (signed, lowered, raised, reset, executive order, Modi). Cooldown 60\u2192240min (secondary priority \u2014 FII flow concern doesn't directly move 9 FX pairs I trade)."
     }
   ],
   "global_settings": {
