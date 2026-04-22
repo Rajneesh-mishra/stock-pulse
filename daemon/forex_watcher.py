@@ -242,8 +242,12 @@ def _detect_liquidity_sweep(candles, atr, tf, lookback=20, min_beyond_atr_frac=0
         return None
     min_beyond = max(atr * min_beyond_atr_frac, 0)
 
-    prior_hi = max(p["high"] for p in prior if p.get("high") is not None)
-    prior_lo = min(p["low"] for p in prior if p.get("low") is not None)
+    prior_highs = [p["high"] for p in prior if p.get("high") is not None]
+    prior_lows  = [p["low"]  for p in prior if p.get("low")  is not None]
+    if len(prior_highs) < lookback // 2 or len(prior_lows) < lookback // 2:
+        return None   # too much missing data to trust the extremes
+    prior_hi = max(prior_highs)
+    prior_lo = min(prior_lows)
 
     # Bearish sweep: wicked above prior high, closed back below
     if h > prior_hi + min_beyond and c < prior_hi:

@@ -30,10 +30,8 @@ State:
   state/forex_scalp_ledger.jsonl     — every would-be or real trade
 """
 
-import fcntl
 import json
 import os
-import signal
 import subprocess
 import sys
 import threading
@@ -58,7 +56,12 @@ PIP_SIZE = {
     "USDJPY": 0.01,   "GOLD": 0.1, "OIL_CRUDE": 0.01, "BTCUSD": 1.0,
 }
 
-SCALPABLE = {"EURUSD", "GBPUSD", "AUDUSD", "USDJPY", "USDCHF"}
+# Pairs with USD as the quote currency — price_diff × size gives P/L directly
+# in USD, which is what the shadow tracker assumes. Non-USD-quote pairs
+# (USDJPY, USDCHF, USDCAD) need per-pair pip-value conversion; until that
+# lands, the engine refuses to trade them even if the config enables them.
+SCALPABLE = {"EURUSD", "GBPUSD", "AUDUSD"}
+SCALPABLE_PLANNED = {"USDJPY", "USDCHF", "USDCAD"}  # after pip-value conversion
 
 SESSION_HOURS = {
     "asia":       (0, 7),     # UTC
@@ -446,12 +449,18 @@ class Engine:
             if not sig: continue
 
             direction, entry, sl, tp = sig
-            # Position sizing: risk_pct / (SL distance * pip_value)
-            # Approximation: pip_value per 1.0 size = 1 quote unit
-            risk_usd = g.get("risk_pct_per_scalp", 0.005) * 1000   # $1000 capital
+            # Position sizing matches risk_guard's formulation:
+            #   risk_amount = size * abs(entry - sl)
+            # So size = risk_usd / sl_dist is dimensionally consistent with
+            # the guard's check. Actual per-pair USD exposure depends on the
+            # broker's contract definition; risk_guard's available-margin
+            # check catches any over-leveraging if we ever flip to live.
+            risk_usd = g.get("risk_pct_per_scalp", 0.005) * 1000   # $1000 notional
             sl_dist = abs(entry - sl)
             if sl_dist <= 0: continue
-            size = max(0.01, round(risk_usd / sl_dist * PIP_SIZE[epic], 4))
+            size = max(0.01, round(risk_usd / sl_dist, 4))
+            # Sanity cap — no single scalp over 10 "contracts" no matter what
+            size = min(size, 10.0)
 
             approved, detail = pass_risk_guard(epic, direction, size, sl, tp)
             if not approved:
@@ -482,6 +491,8 @@ class Engine:
                 actions.append({"epic": epic, "status": "open_failed", "detail": res})
 
         # Check open (shadow) positions for SL/TP hit
+        # Shadow P/L in USD with the risk-normalized sizing:
+        #   size = risk_usd / sl_dist, so size * price_diff = USD pnl directly.
         for epic in list(self.open_positions.keys()):
             if epic not in self.books: continue
             pos = self.open_positions[epic]
@@ -493,17 +504,17 @@ class Engine:
             closed = None
             if dir == "BUY":
                 if mid >= pos["tp"]:
-                    pnl = (pos["tp"] - pos["entry"]) * pos["size"] / PIP_SIZE[epic]
+                    pnl = (pos["tp"] - pos["entry"]) * pos["size"]
                     closed = "tp_hit"
                 elif mid <= pos["sl"]:
-                    pnl = (pos["sl"] - pos["entry"]) * pos["size"] / PIP_SIZE[epic]
+                    pnl = (pos["sl"] - pos["entry"]) * pos["size"]
                     closed = "sl_hit"
             else:
                 if mid <= pos["tp"]:
-                    pnl = (pos["entry"] - pos["tp"]) * pos["size"] / PIP_SIZE[epic]
+                    pnl = (pos["entry"] - pos["tp"]) * pos["size"]
                     closed = "tp_hit"
                 elif mid >= pos["sl"]:
-                    pnl = (pos["entry"] - pos["sl"]) * pos["size"] / PIP_SIZE[epic]
+                    pnl = (pos["entry"] - pos["sl"]) * pos["size"]
                     closed = "sl_hit"
             if closed:
                 self.halt.on_close(epic, pnl, g)

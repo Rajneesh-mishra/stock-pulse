@@ -144,11 +144,10 @@ def scan(epic, timeframes=None):
              else 0
              for tf in per_tf if "score" in per_tf[tf]]
     n_tfs = len(signs)
-    # Dominant sign = most populous non-zero sign
+    # agree_count = how many TFs agree with the dominant (most populous) direction
     pos = sum(1 for s in signs if s > 0)
     neg = sum(1 for s in signs if s < 0)
-    dominant = 1 if pos > neg else -1 if neg > pos else 0
-    agree_count = max(pos, neg)  # how many TFs agree with dominant direction
+    agree_count = max(pos, neg)
     all_agree = n_tfs > 0 and all(s == signs[0] and s != 0 for s in signs)
 
     # Tiered readiness — see module docstring for the sizing map

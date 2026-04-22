@@ -206,9 +206,11 @@ def _emit_audit_requests_for_alerts(qid, headline, matched_keywords, url):
             if kw and kw in note:
                 score += 2
                 matched_terms.append(kw)
-        # crude fallback: 3+ significant shared tokens
-        note_tokens = set(t for t in note.split() if len(t) >= 5)
-        head_tokens = set(t.strip(".,;:!?'\"()[]") for t in headline_l.split() if len(t) >= 5)
+        # crude fallback: 3+ significant shared tokens — strip punctuation
+        # symmetrically on both sides so e.g. "deadline," matches "deadline"
+        _punct = ".,;:!?'\"()[]"
+        note_tokens = set(t.strip(_punct) for t in note.split() if len(t.strip(_punct)) >= 5)
+        head_tokens = set(t.strip(_punct) for t in headline_l.split() if len(t.strip(_punct)) >= 5)
         overlap = note_tokens & head_tokens
         if len(overlap) >= 3:
             score += 1
