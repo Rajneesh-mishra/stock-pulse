@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-22T11:51:00Z",
-  "pruned_at": "2026-04-22T11:51:00Z",
-  "pruned_by": "11:51 UTC tick — 15 events: 1 hormuz_strait news_flash (Tradewinds 'Three MSC ships attacked by Iran trying to get through Strait of Hormuz' Apr 22 10:45 GMT = FRESH material confirming post-extension Hormuz escalation), 3 boj_intervention (2 stale Nov/Jan, 1 Mar — backgrounder), 11 fed_fomc stale flood (Dec 2025-Mar 2026 archive articles — keywords too broad). Tape 11:21 UTC: GOLD 4752.72 (-3.6p, +0.69% day, day hi 4772.24 — **tested 4775 buy trigger and REJECTED** on hormuz fire window), OIL_CRUDE 89.733 (-35c, day hi 91.177 — **spiked to 91 psych on Tradewinds fire and REJECTED** back to 90 area, -1.44pt round-trip fade), USDJPY 159.214 (flat -0.8p, day hi 159.455 intact), AUDUSD 0.71565 (+1.3p flat, 85.7p above 0.707). 1 MODIFY gold_safehaven_continuation_buy (add 4772.24 reject observation), 2 KEEP (audusd/usdjpy unchanged). 9 structure_watch KEEP. TUNE fed_fomc query keywords (11-article archive flood = broken filter). Material pattern: fresh Hormuz strike news fires → ~15min spike in GOLD/OIL → fade back to pre-news range. Extension-is-baseline / attacks-fade-not-trend emerging.",
+  "last_updated_by_claude": "2026-04-22T12:45:00Z",
+  "pruned_at": "2026-04-22T12:45:00Z",
+  "pruned_by": "12:45 UTC heartbeat — 0 unconsumed events. Broker $1000/0 pos matches. Tape 12:42 UTC: GOLD 4747.16 (-5.5p vs 11:21, +0.58% day, 27.84p below 4775 trigger, day hi 4772.24 reject intact, day lo 4715.44), OIL_CRUDE 90.758 (+102c vs 11:21 89.733, day hi 91.177 — **spike-fade PARTIAL INVALIDATION: OIL back near day highs, push-and-pause not full fade**), USDJPY 159.312 (+10p vs 11:21, day range 159.101-159.455, 68.8p below 160), AUDUSD 0.71468 (-9.7p vs 11:21, 74.7p above 0.707), EURUSD 1.17257 (-3.8p), USDCAD 1.36666 (flat), BTCUSD 78204 (+3.28% day, low 75296 — MATERIAL RISK-ON RALLY partially contradicts gold-safehaven bias; mixed signals with USD flat). Fresh news: ksat/nbcnews/armyrecognition confirm IRGC fast-attack-craft fire on container ship 07:55 Apr 22 (no casualties) — post-extension Hormuz friction ongoing, no regime change. All 3 level_alerts KEEP (price refresh only — gold still 22p from reject, usdjpy 68p below 160, audusd 74p above 0.707). 9 structure_watch KEEP. 8 queries KEEP.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -28,15 +28,15 @@
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "buy AUDUSD 0.707 support on Iran-escalation spike — live 11:08 UTC 0.71552 (-5.7p vs 10:55 0.71609, 85.5p above zone). NARRATIVE UPDATE 11:38 UTC: 4-source verification confirms INDEFINITE ceasefire extension (Reuters/NYT/Detroit News/AJ) — fixed-deadline binary REMOVED. Spike to 0.707 now requires fresh Hormuz strike escalation (already happening: Tradewinds 06:15 ship 'heavy bridge damage', WaPo 10:21 'more ships attacked') OR formal Iran walkout from Islamabad track (Iran calling extension 'ploy', refusing talks until blockade lifted). Probability of clean 0.707 touch reduced — likely path is staircase down on rolling Hormuz incidents not single deadline shock. Wait for rejection wick on 0.707 touch + risk-off confirmation; skip naked breaks. SL 0.703, TP 0.7187 (Fri high) on confirmation.",
-      "current_price_ref": 0.71552,
+      "note": "buy AUDUSD 0.707 support on Iran-escalation spike — live 12:42 UTC 0.71468 (-9.7p vs 11:21 0.71565, 74.7p above zone; drift lower continuing but nowhere near trigger). Indefinite ceasefire extension narrative intact (Reuters/NYT/DetNews/AJ 4-source verified). Spike to 0.707 requires fresh Hormuz strike escalation (ongoing — Apr 22 07:55 IRGC gunboat fire on container ship per ksat/nbcnews/armyrecognition, but no casualties so weak driver) OR formal Iran walkout. BTC +3.28% today signals risk-ON continuing which WEAKENS AUDUSD-spike-to-0.707 thesis (risk-on = AUD bid not sold). Wait for rejection wick on 0.707 touch + risk-off confirmation; skip naked breaks. SL 0.703, TP 0.7187 on confirmation.",
+      "current_price_ref": 0.71468,
       "price_ref": {
-        "ts": "2026-04-22T11:08:00Z",
-        "price": 0.71552
+        "ts": "2026-04-22T12:42:00Z",
+        "price": 0.71468
       },
-      "last_updated": "2026-04-22T11:38:00Z",
-      "proximity": "85.5p above 0.707 buy zone (live 11:08 UTC 0.71552 bid). Drifted -5.7p vs 10:55. Indefinite-extension narrative reduces deadline-driven spike probability.",
-      "updated_utc": "2026-04-22 11:38 UTC"
+      "last_updated": "2026-04-22T12:45:00Z",
+      "proximity": "74.7p above 0.707 buy zone (live 12:42 UTC 0.71468 bid). Drifted -9.7p vs 11:21. BTC+3.28% risk-on contradicts spike-to-support thesis.",
+      "updated_utc": "2026-04-22 12:45 UTC"
     },
     {
       "id": "usdjpy_intervention_fade_zone",
@@ -45,15 +45,15 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "sell USDJPY 160.00 intervention red-line fade — live 11:08 UTC 159.222 (-2.5p vs 10:55, 77.8p below 160). NARRATIVE UPDATE 11:38 UTC: indefinite ceasefire extension verified (4 sources) — USD safe-haven flow further faded; day high 159.455 < yesterday's 159.633 confirms pressure OFF the zone. Setup still structurally valid (Japan intervened 159.23 Jan 2026, MoF Katayama G7 'high urgency', BoJ Apr 27-28 priced hold) but probability of touching 160 reduced unless USD bid returns on fresh Hormuz-strike-escalation flight-to-USD. Note: counterfactual hit_rate 100% at 1h+4h on 1 fire (insufficient sample, but historically responsive). Short ONLY on rejection wick at 160.00 + verbal-intervention/MoF tweet confirm; skip naked breaks. SL 160.50, TP 158.50 R:R ~3:1.",
-      "current_price_ref": 159.222,
+      "note": "sell USDJPY 160.00 intervention red-line fade — live 12:42 UTC 159.312 (+9p vs 11:21 159.214, 68.8p below 160). Day hi 159.455 intact from earlier session. Indefinite extension verified; USD bid flat-to-soft. Setup structurally valid (Japan intervened 159.23 Jan 2026, MoF Katayama G7 'high urgency', BoJ Apr 27-28 hold priced). Counterfactual hit_rate 100% at 1h+4h (1 fire only, thin sample). Short ONLY on rejection wick at 160.00 + verbal-intervention/MoF tweet confirm; skip naked breaks. SL 160.50, TP 158.50 R:R ~3:1.",
+      "current_price_ref": 159.312,
       "price_ref": {
-        "ts": "2026-04-22T11:08:00Z",
-        "price": 159.222
+        "ts": "2026-04-22T12:42:00Z",
+        "price": 159.312
       },
-      "last_updated": "2026-04-22T11:38:00Z",
-      "proximity": "77.8p below 160.00 intervention red line (live 11:08 UTC 159.222 bid). Day high 159.455 vs yesterday 159.633 — pressure off, USD safe-haven bid further faded post-extension.",
-      "updated_utc": "2026-04-22 11:38 UTC"
+      "last_updated": "2026-04-22T12:45:00Z",
+      "proximity": "68.8p below 160.00 intervention red line (live 12:42 UTC 159.312 bid). Day range 159.101-159.455.",
+      "updated_utc": "2026-04-22 12:45 UTC"
     },
     {
       "id": "gold_safehaven_continuation_buy",
@@ -62,15 +62,15 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "MODIFIED 11:51 UTC — buy GOLD 4775 breakout on Iran-escalation hedging. Live 11:21 UTC 4752.72 (-3.6p vs 11:08, +0.69% day, day range 4715.44-4772.24). **OBSERVED TEST-REJECT: day high 4772.24 came within 2.76p of 4775 trigger and rejected on Tradewinds Apr 22 10:45 GMT 'Three MSC ships attacked by Iran' fire** — confirms catalyst-conditional thesis works (spike on attack news) AND that 4775 is live resistance (not clean breakout). Reframe: need STRONGER catalyst (US casualty, large tanker sinking, Iran formal walkout) to break 4775, not single incident news. Conservative: wait for M15 close >4775 + volume + no rejection wick. Aggressive: anticipation LIMIT buy at 4735-4740 (between day low 4715 and test-reject 4772) with SL 4705, TP 4775 retest. SL 4730 (below 4715 day low + 15p), TP1 4810, TP2 4850. Conv 3 (catalyst-conditional; today's data: 1 test 1 reject). SKIP if BTC continues +3% AND USD pairs bid AND no fresh Hormuz incident in 4h (pure risk-on = gold sells 4715).",
-      "current_price_ref": 4752.72,
+      "note": "MODIFIED 12:45 UTC — buy GOLD 4775 breakout. Live 12:42 UTC 4747.16 (-5.5p vs 11:21, +0.58% day, 27.84p below trigger, day range 4715.44-4772.24). Day hi 4772.24 reject holding (price drifted back into middle of range, not re-testing top). **BTC +3.28% (day low 75296 → 78204) is MATERIAL RISK-ON pressure against gold safehaven bias** — pure risk-on = gold typically sells down to 4715. Still, gold holding +0.58% day vs BTC rally suggests residual Hormuz-hedge bid. Catalyst-conditional thesis: 4775 break needs stronger catalyst (US casualty, large tanker sinking, Iran formal walkout). Conservative: wait for M15 close >4775 + volume + no rejection wick. Aggressive: anticipation LIMIT buy at 4735-4740 with SL 4705, TP 4775 retest. SL 4730, TP1 4810, TP2 4850. Conv 3 (1 test 1 reject; BTC risk-on weakens thesis further). SKIP if BTC continues ripping AND USD pairs bid AND no fresh Hormuz incident.",
+      "current_price_ref": 4747.16,
       "price_ref": {
-        "ts": "2026-04-22T11:21:39Z",
-        "price": 4752.72
+        "ts": "2026-04-22T12:42:44Z",
+        "price": 4747.16
       },
-      "last_updated": "2026-04-22T11:51:00Z",
-      "proximity": "22.28p below 4775 buy trigger (live 11:21 UTC 4752.72 bid). Day high 4772.24 rejected <3p from trigger on Hormuz attack news fire.",
-      "updated_utc": "2026-04-22 11:51 UTC"
+      "last_updated": "2026-04-22T12:45:00Z",
+      "proximity": "27.84p below 4775 buy trigger (live 12:42 UTC 4747.16 bid). Price retreated -5.5p from prior ref back into mid-range; day hi 4772.24 reject intact.",
+      "updated_utc": "2026-04-22 12:45 UTC"
     }
   ],
   "structure_watch": [
@@ -141,5 +141,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-22 11:51 UTC"
+  "last_updated_utc": "2026-04-22 12:45 UTC"
 }
