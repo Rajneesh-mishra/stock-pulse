@@ -42,7 +42,7 @@ from technicals import get_full_candles, calc_atr, smc_analyze  # noqa: E402
 from confluence import scan as confluence_scan  # noqa: E402
 
 PORT = int(os.environ.get("DASHBOARD_PORT", "8787"))
-HTML_FILE = REPO / "web" / "dashboard.html"
+HTML_FILE = REPO / "docs" / "forex.html"
 EVENTS_FILE = REPO / "state" / "forex_events.jsonl"
 CONSUMED_FILE = REPO / "state" / "forex_events_consumed.txt"
 SIGNALS_FILE = REPO / "state" / "forex_watchlist_signals.json"
@@ -751,10 +751,15 @@ def _read_state_minimal():
             "regime": s.get("regime"),
             "regime_note": s.get("regime_note"),
             "last_tick": s.get("last_tick"),
+            "last_tick_utc": s.get("last_tick_utc") or s.get("last_tick"),
             "daily_pnl": s.get("daily_pnl"),
             "total_pnl": s.get("total_pnl"),
             "total_trades": s.get("total_trades"),
             "consecutive_losses": s.get("consecutive_losses"),
+            "binary_event": s.get("binary_event"),
+            "trade_history": s.get("trade_history", []),
+            "open_positions": s.get("open_positions", []),
+            "broker_balance": s.get("broker_balance"),
         }
     except Exception:
         return {}
@@ -832,6 +837,27 @@ class Handler(BaseHTTPRequestHandler):
                 daemon = q.get("daemon", [""])[0]
                 action = q.get("action", [""])[0]
                 self._json(self._set_control(daemon, action))
+            elif u.path.startswith("/data/"):
+                # Serve static published JSON from docs/data/ (same files the
+                # public GitHub-Pages dashboard reads). Scoped strictly so we
+                # can't walk out of the docs tree.
+                rel = u.path.lstrip("/")
+                target = (REPO / "docs" / rel.removeprefix("data/")).resolve() \
+                    if False else (REPO / "docs" / rel).resolve()
+                docs_root = (REPO / "docs").resolve()
+                if not str(target).startswith(str(docs_root)):
+                    self._json({"error": "forbidden"}, status=403)
+                elif not target.exists() or not target.is_file():
+                    self._json({"error": "not found", "path": u.path}, status=404)
+                else:
+                    ctype = "application/json" if target.suffix == ".json" else "application/octet-stream"
+                    body = target.read_bytes()
+                    self.send_response(200)
+                    self.send_header("Content-Type", ctype)
+                    self.send_header("Content-Length", str(len(body)))
+                    self.send_header("Cache-Control", "no-store")
+                    self.end_headers()
+                    self.wfile.write(body)
             else:
                 self._json({"error": "not found", "path": u.path}, status=404)
         except BrokenPipeError:

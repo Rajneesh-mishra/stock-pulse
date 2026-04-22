@@ -20,8 +20,11 @@ today = datetime.datetime.utcnow().strftime('%Y-%m-%d')
 dfile = repo/'state'/'daily'/f'{today}.json'
 daily = []
 if dfile.exists():
-    try: daily = json.loads(dfile.read_text())
-    except Exception: daily = []
+    try:
+        raw = json.loads(dfile.read_text())
+        daily = raw.get('ticks', []) if isinstance(raw, dict) else (raw if isinstance(raw, list) else [])
+    except Exception:
+        daily = []
 feed = (ticks[-30:] + daily[-30:])[-40:]
 (repo/'docs/data/forex/feed.json').write_text(json.dumps({
     'generated_at': datetime.datetime.utcnow().isoformat()+'Z',

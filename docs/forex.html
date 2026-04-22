@@ -1661,15 +1661,15 @@ async function poll() {
 (async function main() {
   await detectMode();
   setModeBadge();
-  await poll();
   if (STATE.mode === 'live') {
-    await fetchAllCandles();
+    // Fire candles + snapshot + backfill in parallel so charts + log appear
+    // at roughly the same moment, not sequentially.
+    await Promise.all([ poll(), fetchAllCandles(), backfillEvents() ]);
     attachStreams();
-    await backfillEvents();
     setInterval(poll, 5_000);
     setInterval(fetchAllCandles, 120_000);
   } else {
-    await backfillEvents();
+    await Promise.all([ poll(), backfillEvents() ]);
     setInterval(poll, 30_000);
   }
 })();

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T11:41:38.948924Z",
+  "generated_at": "2026-04-22T11:43:18.046980Z",
   "ticks": [
     {
       "ts": "2026-04-21T02:40:00Z",
@@ -156,6 +156,15 @@
       "closed": 0,
       "skipped": 0,
       "note": "11:38 heartbeat \u2014 0 events. BINARY DEFUSED: 4-source verify INDEFINITE extension (Reuters/NYT/DetNews/AJ). Hormuz attacks escalating post-extension. Tape flat \u00b15p. 3 alerts MODIFY (indefinite-extension framing), 1 query TUNE iran_ceasefire."
+    },
+    {
+      "ts_utc": "2026-04-22T11:38:00Z",
+      "type": "heartbeat",
+      "events_in": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "note": "11:38 UTC heartbeat \u2014 0 events. BINARY DEFUSED: 4-source verify INDEFINITE extension (Reuters/NYT/DetNews/AJ). Hormuz attacks escalating post-extension. Tape flat \u00b15p. 3 alerts MODIFY (re-frame around indefinite-extension), 1 query TUNE iran_ceasefire. Broker $1000/0 matches."
     }
   ]
 }
