@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-22T22:18:43.087366Z",
+  "generated_at": "2026-04-22T22:56:34.173167Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-21T09:25:00Z",
-      "events_in": 8,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 8,
-      "note": "8 M15 bar_close all SKIP heartbeat \u2014 flat-drift, USDJPY drifted 6.85p away from 159.45, oil reversed pop, no structure shifts. 1 web search Iran: no material delta vs 09:09. MODIFIED usdjpy note. Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM intact. 3+9+8 audit: 1 MODIFY 2+9+8 KEEP."
-    },
     {
       "ts_utc": "2026-04-21T10:08:00Z",
       "events_in": 12,
@@ -444,6 +436,13 @@
       "opened": 0,
       "closed": 0,
       "summary": "22:01 UTC tick \u2014 11 events: 1 news_flash boj_intervention STALE Jan 21 2026 Business Times 'Katayama calls for market calm' (3-month-old archive matched 'Katayama' kept-token), 1 alert_audit_request USDJPY usdjpy_intervention_fade_zone same source NO actionable signal, 9 bar_close routine heartbeat. Broker $1000/0 reconciled. Confluence USDJPY broker HTTP 404 transient \u2014 using 21:27 ref (composite +51 moderate WATCH 51p<160, dist >3\u00d7H1 ATR no ARM). TUNED boj_intervention query: added match_keywords=['2026','April','Apr 27','Apr 28','policy meeting'] (date-filter pattern from fed_fomc fix), cooldown 120\u2192180min. ATTENTION: USDJPY swing=WATCH (51p dist), GOLD swing=WATCH (4h hr 0.8 KEEP), OIL swing=WATCH retest-far. EURUSD/GBPUSD/AUDUSD/USDCAD/USDCHF swing=NONE no alert. BTC/GOLD/OIL scalp=N/A spread; FX scalps engine-managed per config. 3 alerts KEEP, 9 structure_watch KEEP, 1 query TUNE, 7 queries KEEP. 0 trades. BOJ T-4d (Apr 27-28)."
+    },
+    {
+      "ts_utc": "2026-04-22T22:56:33Z",
+      "type": "tick_heartbeat",
+      "events": 1,
+      "trades": 0,
+      "note": "1 stale news_flash (iran_ceasefire Apr 12 NPR 'collapse' URL-miss backgrounder); 3 alerts KEEP (USDJPY WATCH, GOLD WATCH rule2, OIL WATCH rule2); broker $1000/0pos; attention 9/9 covered."
     }
   ]
 }
