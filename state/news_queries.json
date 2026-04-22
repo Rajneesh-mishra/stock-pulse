@@ -126,7 +126,10 @@
         "Powell said"
       ],
       "cooldown_min": 180,
-      "note": "TUNED 2026-04-22 11:51 UTC \u2014 prior keywords 'cut'/'hike'/'hold' flooded 11 stale archive articles (Dec 2025-Mar 2026) this tick. Narrowed query+keywords to FOMC Apr 29 meeting and Powell statements only. Cooldown 120\u2192180min. FOMC Apr 28-29 hold expected; oil shock could push dovish (growth risk) or hawkish (inflation). Re-broaden after meeting passes."
+      "note": "TUNED 2026-04-22T21:27:27Z \u2014 added match_keywords=['2026'] to block Oct 2025 Powell archive republish (stale '2025' article fired this tick despite prior narrowing of query text). Strict 2026 filter will force current-FOMC-era matches only. Re-evaluate after Apr 28-29 meeting passes.",
+      "match_keywords": [
+        "2026"
+      ]
     },
     {
       "id": "rba_hike",

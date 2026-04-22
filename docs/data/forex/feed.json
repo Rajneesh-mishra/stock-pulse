@@ -1,10 +1,6 @@
 {
-  "generated_at": "2026-04-22T21:14:23.554311Z",
+  "generated_at": "2026-04-22T21:28:27.547131Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-21T05:39:09.646128Z",
-      "summary": "05:37 UTC \u2014 15 news_flash consumed (hormuz/opec/us_tariff backlog), 0 trades, oil_crude MODIFIED (price $86.27\u2192$88.26), 4 alerts KEEP, 9 structure_watch KEEP, 8 queries KEEP"
-    },
     {
       "ts_utc": "2026-04-21T06:17:00Z",
       "events_in": 16,
@@ -376,6 +372,78 @@
         "OIL_CRUDE": "+28.5 weak bullish (229p>90.30)"
       },
       "audit": "4 alerts KEEP, 9 structure_watch KEEP, 8 queries KEEP, scalp config unchanged"
+    },
+    {
+      "ts_utc": "2026-04-22T21:27:27Z",
+      "tick_type": "heartbeat",
+      "events_consumed": 1,
+      "trades": {
+        "opened": 0,
+        "closed": 0,
+        "modified": 0,
+        "skipped": 0
+      },
+      "alert_changes": {
+        "keep": 4,
+        "modify_price_ref": 4,
+        "remove": 0,
+        "add": 0
+      },
+      "news_query_changes": {
+        "tune": [
+          "fed_fomc"
+        ],
+        "add": [],
+        "remove": []
+      },
+      "confluence": {
+        "USDJPY": {
+          "comp": 51.0,
+          "readiness": "moderate",
+          "price": 159.488
+        },
+        "USDCAD": {
+          "comp": -32.0,
+          "readiness": "weak",
+          "price": 1.36718
+        },
+        "GOLD": {
+          "comp": -16.0,
+          "readiness": "none",
+          "price": 4739.99
+        },
+        "OIL_CRUDE": {
+          "comp": 28.5,
+          "readiness": "weak",
+          "price": 92.59
+        },
+        "EURUSD": {
+          "comp": -6.5,
+          "readiness": "none",
+          "price": 1.17059
+        },
+        "GBPUSD": {
+          "comp": 8.5,
+          "readiness": "none",
+          "price": 1.35051
+        },
+        "AUDUSD": {
+          "comp": 8.5,
+          "readiness": "none",
+          "price": 0.71571
+        },
+        "USDCHF": {
+          "comp": 1.5,
+          "readiness": "none",
+          "price": 0.78453
+        },
+        "BTCUSD": {
+          "comp": 47.5,
+          "readiness": "moderate",
+          "price": 78601.1
+        }
+      },
+      "note": "Stale fed_fomc Oct 2025 archive fired via empty match_keywords \u2192 TUNED with ['2026']. No pair ARMED. BOJ Apr 27-28 T-4d. USDCAD sweep thesis final-tick warning."
     }
   ]
 }
