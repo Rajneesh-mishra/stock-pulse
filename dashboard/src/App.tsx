@@ -135,11 +135,11 @@ export default function App() {
           <InstrumentGrid snapshot={snap.snapshot} ticks={tickMap} candles={candles} alerts={alerts} />
         </section>
 
-        {/* ─────────── GATES ─────────── */}
+        {/* ─────────── SIGNAL READOUT ─────────── */}
         <section className="rise mt-10" style={{ animationDelay: '120ms' }}>
           <SectionHeader
-            title="Setup gates"
-            caption="Live 7-gate readiness computed by the confluence engine"
+            title="Signal readout"
+            caption="Inputs feeding the conviction × R:R sizing call — not a pass/fail gate"
           />
           <GatesTable rows={snap.gates} />
         </section>
