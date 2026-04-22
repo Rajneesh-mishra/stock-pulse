@@ -1,14 +1,10 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-22T20:08:03Z",
-  "pruned_at": "2026-04-22T20:08:03Z",
-  "pruned_by": "2026-04-22T20:08 tick \u2014 29 events: 11 news_flash (8 us_tariff Feb archives + 1 Apr21 BLiTZ + 1 iran_ceasefire Anadolu Apr21 post-extension + 1 boj_intervention Reuters Dec 2025 archive) + 16 bar_close heartbeat + 1 USDCAD liquidity_sweep M15. 0 trades. Broker $1000/0. REMOVED audusd_breakdown_trigger (88p > 3\u00d7H4 ATR, no catalyst 24h, drift away on BTC+4.2% risk-on); ADDED usdcad_liqsweep_sell_zone (1.36737 swept wick, sweep-protocol zone); 3 MODIFY price refs (usdjpy/gold/oil). 2 news_queries TUNED (us_tariff narrowed, boj_intervention dropped broad tokens). Live tape: USDJPY 159.555 composite+51 moderate bullish bear OB 160.11 overhead; GOLD 4738 (-14p 24h, 4772 rejected); OIL 92.26 (+2.36%, day range 87.45-93.40); AUDUSD 0.716 flat risk-on; EURUSD 1.1705 new low broke re-entry base; BTC 78900 +4.2% parabolic continuation.",
-  "pruned_removed": [
-    "audusd_breakdown_trigger"
-  ],
-  "pruned_added": [
-    "usdcad_liqsweep_sell_zone"
-  ],
+  "last_updated_by_claude": "2026-04-22T20:15:00Z",
+  "pruned_at": "2026-04-22T20:15:00Z",
+  "pruned_by": "2026-04-22T20:15 tick \u2014 1 event: USDCAD level_cross on usdcad_liqsweep_sell_zone (price 1.3674 crossed up thru 1.36737 trigger). Confluence composite -32 readiness=WEAK (was -24.5 none last tick, strengthening toward moderate) 3/4 TFs agree bearish. Still blocks LIMIT arm (need >=40 moderate) + R:R economics broken (2.2p SL vs ~2p spread). SKIP trade, MODIFY note with tag observation. 3 alerts KEEP unchanged. Broker $1000/0 reconciled.",
+  "pruned_removed": [],
+  "pruned_added": [],
   "instruments": [
     "EURUSD",
     "USDJPY",
@@ -83,15 +79,15 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "ADDED 2026-04-22T20:08:03Z \u2014 M15 liquidity_sweep event fired 20:04 UTC: up-sweep of 1.36737 wick 1.2p beyond, closed back inside at 1.36727, atr14 4.7p. Sweep bias=sell. Confluence composite -24.5 readiness=NONE (below 25 threshold) 3/4 TFs agree bearish \u2014 sweep direction matches macro bias but readiness too thin for anticipation LIMIT per Step 4c (requires readiness\u2265moderate). Held as watchlist-proximity; re-evaluate on next sweep OR if composite strengthens to \u2265moderate. If entered on retest: suggested_entry 1.36727, SL 1.36749 (2.2p risk \u2014 too tight vs 2p spread, poor R:R economics). Replaces orphaned 1.3820 watchlist entry (147p away, structurally dead).",
-      "current_price_ref": 1.36734,
+      "note": "ADDED 2026-04-22T20:08:03Z \u2014 M15 liquidity_sweep event fired 20:04 UTC: up-sweep of 1.36737 wick 1.2p beyond, closed back inside at 1.36727, atr14 4.7p. Sweep bias=sell. Confluence composite -24.5 readiness=NONE (below 25 threshold) 3/4 TFs agree bearish \u2014 sweep direction matches macro bias but readiness too thin for anticipation LIMIT per Step 4c (requires readiness\u2265moderate). Held as watchlist-proximity; re-evaluate on next sweep OR if composite strengthens to \u2265moderate. If entered on retest: suggested_entry 1.36727, SL 1.36749 (2.2p risk \u2014 too tight vs 2p spread, poor R:R economics). Replaces orphaned 1.3820 watchlist entry (147p away, structurally dead). | REFRESH 20:15 UTC: level TAGGED at 20:14 (cross_up to 1.3674, closed 1.36733). Confluence readiness=WEAK (composite -32, 3/4 agree bearish) vs NONE (-24.5) prior tick \u2014 approaching moderate but still blocks LIMIT. R:R still broken. MODIFY only.",
+      "current_price_ref": 1.36733,
       "price_ref": {
-        "ts": "2026-04-22T20:08:03Z",
-        "price": 1.36734
+        "ts": "2026-04-22T20:15:00Z",
+        "price": 1.36733
       },
-      "last_updated": "2026-04-22T20:08:03Z",
-      "proximity": "3p below swept wick 1.36737 (live 20:01 UTC 1.36734). Sweep closed inside \u2014 classic up-sweep sell setup but confluence readiness=none blocks LIMIT arm.",
-      "updated_utc": "2026-04-22T20:08:03Z"
+      "last_updated": "2026-04-22T20:15:00Z",
+      "proximity": "TAGGED 20:14 UTC: price crossed up 1.36737 to 1.3674 then bounced back to 1.36733. Composite strengthened -24.5 -> -32 (weak, 3/4 TFs agree bearish). Still below moderate (40) threshold -> no LIMIT arm. R:R economics unchanged (2.2p SL vs 2p spread fails 1.5:1 floor). Watch for next sweep or composite >=40 to upgrade.",
+      "updated_utc": "2026-04-22T20:15:00Z"
     }
   ],
   "structure_watch": [
@@ -162,5 +158,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-22T20:08:03Z"
+  "last_updated_utc": "2026-04-22T20:15:00Z"
 }

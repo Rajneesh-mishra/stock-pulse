@@ -149,5 +149,13 @@
     "trades": 0,
     "summary": "2026-04-22T20:08:03Z 20:01 UTC forex auto tick \u2014 29 events consumed (11 news_flash stale archives + 16 bar_close heartbeat + 1 USDCAD liquidity_sweep M15). 0 trades. USDJPY audit_request re-scored: composite +51 moderate bullish, bear OB 160.11-160.46 overhead = fade zone intact \u2014 44.5p from trigger at 1\u00d7 H1 ATR boundary, WATCH. USDCAD 20:00 UTC M15 up-sweep 1.36737 sell-bias but composite -24.5 readiness=none \u2192 LIMIT blocked, added as watchlist. Audit: 1 REMOVE (audusd_breakdown stale Rule 1), 1 ADD (usdcad_liqsweep), 3 MODIFY (price refs); 2 queries TUNED (us_tariff narrowed cd 240min, boj_intervention dropped broad tokens cd 120min). Regime: INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING. EURUSD 1.1705 broke re-entry base; BTC+4.2% parabolic. Broker $1000/0.",
     "regime": "INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING"
+  },
+  {
+    "ts_utc": "2026-04-22T20:15:00Z",
+    "events": 1,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 1,
+    "summary": "USDCAD level_cross tagged at 20:14, readiness=weak (-32), SKIP trade; 1 MODIFY alert note"
   }
 ]

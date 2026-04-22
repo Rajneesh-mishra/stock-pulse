@@ -1,22 +1,6 @@
 {
-  "generated_at": "2026-04-22T20:08:12.892976Z",
+  "generated_at": "2026-04-22T20:17:39.076903Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-21T03:11:30Z",
-      "events_in": 17,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 17,
-      "note": "routine bar_close heartbeat \u2014 GOLD in zone 4801 but composite 10.5 aligned=false SKIP; USDJPY -19.5 44p above trigger SKIP; all KEEP"
-    },
-    {
-      "ts_utc": "2026-04-21T03:37:00Z",
-      "events_in": 24,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 24,
-      "note": "24 news_flash all SKIP \u2014 2 iran_ceasefire bg confirming Trump/Vance Pakistan trip, 2 us_iran_military Mar 6 ISW + Feb 19 BBC scenario backgrounder (old), 1 opec_supply Sep archive, 10 rba_hike 2024-2025 archive flood (TUNED query keywords + raised cooldown), plus interim drips. NEW INFO from web search: MoF pain threshold tightened to 158 (vs 160) per FXEmpire/MUFG Apr 16; usdjpy_riskoff_break note MODIFIED to reflect. boj_intervention query note MODIFIED. Regime KINETIC_EXCHANGE intact. Broker $1000 flat 0 pos."
-    },
     {
       "ts_utc": "2026-04-21T03:54:00Z",
       "events_in": 8,
@@ -214,6 +198,14 @@
       "note": "20:01 UTC tick \u2014 29 events: 11 news_flash SKIP (all stale: 8 us_tariff Feb archives+1 Apr21 BLiTZ, 1 Anadolu Apr21 Pakistan-welcomes baseline, 1 Dec2025 Reuters BoJ archive, 1 alert_audit_request on same Dec archive). 16 bar_close routine. 1 USDCAD liquidity_sweep M15 20:00 UTC up-sweep 1.36737 wick 1.2p close 1.36727 \u2014 sweep bias sell, confluence composite -24.5 readiness=none blocks LIMIT. ADDED usdcad_liqsweep_sell_zone (swept level as watchlist), REMOVED audusd_breakdown_trigger (stale Rule 1: 88p > 3\u00d7H4 ATR, no catalyst, BTC+4.2% risk-on kills). 3 MODIFY price refs (usdjpy/gold/oil); 1 ADD (usdcad); 1 REMOVE. 2 queries TUNE (us_tariff cd 60\u2192240 narrowed, boj_intervention cd 60\u2192120 dropped broad). 9 structure_watch KEEP. EURUSD 1.1705 NEW LOW broke re-entry base; BTC 78900 +4.2% parabolic. 0 trades, $1000/0."
     },
     {
+      "ts_utc": "2026-04-22T20:15:00Z",
+      "events_in": 1,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 1,
+      "note": "20:15 UTC \u2014 1 event USDCAD level_cross on usdcad_liqsweep_sell_zone (our ADD 7min ago). Price 1.3674 crossed up thru 1.36737 then closed 1.36733 \u2014 classic rejection off swept wick. Confluence strengthened to composite -32 readiness=WEAK (was -24.5 NONE last tick) 3/4 TFs bearish, DAY -0.4 H4 -0.5 H1 -0.1 M15 +0.9. Still below moderate (need |composite|>=40 + 3TFs agree \u2014 we have agreement but score 8p short). LIMIT arm blocked per 4c; R:R economics unchanged (2.2p SL vs ~2p spread = <1.5:1). SKIP trade, MODIFY alert with tag observation. Broker $1000/0 reconciled. No news sweep (7min since last tick, budget prudent)."
+    },
+    {
       "ticks": [
         {
           "ts_utc": "2026-04-22T11:38:00Z",
@@ -363,6 +355,14 @@
       "trades": 0,
       "summary": "2026-04-22T20:08:03Z 20:01 UTC forex auto tick \u2014 29 events consumed (11 news_flash stale archives + 16 bar_close heartbeat + 1 USDCAD liquidity_sweep M15). 0 trades. USDJPY audit_request re-scored: composite +51 moderate bullish, bear OB 160.11-160.46 overhead = fade zone intact \u2014 44.5p from trigger at 1\u00d7 H1 ATR boundary, WATCH. USDCAD 20:00 UTC M15 up-sweep 1.36737 sell-bias but composite -24.5 readiness=none \u2192 LIMIT blocked, added as watchlist. Audit: 1 REMOVE (audusd_breakdown stale Rule 1), 1 ADD (usdcad_liqsweep), 3 MODIFY (price refs); 2 queries TUNED (us_tariff narrowed cd 240min, boj_intervention dropped broad tokens cd 120min). Regime: INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING. EURUSD 1.1705 broke re-entry base; BTC+4.2% parabolic. Broker $1000/0.",
       "regime": "INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING"
+    },
+    {
+      "ts_utc": "2026-04-22T20:15:00Z",
+      "events": 1,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 1,
+      "summary": "USDCAD level_cross tagged at 20:14, readiness=weak (-32), SKIP trade; 1 MODIFY alert note"
     }
   ]
 }
