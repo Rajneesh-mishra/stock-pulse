@@ -16,6 +16,7 @@ import { CounterfactualTable } from './components/CounterfactualTable';
 import { PositionsPanel } from './components/PositionsPanel';
 import { EventLog } from './components/EventLog';
 import { RegimeCallout } from './components/RegimeCallout';
+import { ChatDock } from './components/ChatDock';
 import { relativeTime } from './lib/format';
 
 type NavId = 'overview' | 'pairs' | 'alerts' | 'history' | 'events';
@@ -208,6 +209,9 @@ export default function App() {
           ))}
         </div>
       </nav>
+
+      {/* Floating chat */}
+      <ChatDock mode={mode} />
     </div>
   );
 }

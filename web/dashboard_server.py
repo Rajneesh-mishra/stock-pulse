@@ -700,6 +700,156 @@ def start_ws_streamer():
 
 # ── Full snapshot ────────────────────────────────────────────────────────────
 
+def _build_chat_briefing():
+    """Compact system briefing — state the trader has on screen right now.
+    Kept small so the prompt stays cheap. Never includes secrets or API keys."""
+    parts = []
+    # State
+    state = {}
+    try:
+        if STATE_FILE.exists():
+            s = json.loads(STATE_FILE.read_text())
+            state = s
+    except Exception:
+        state = {}
+
+    bal = state.get("broker_balance", 1000)
+    daily = state.get("daily_pnl", 0)
+    total = state.get("total_pnl", 0)
+    total_trades = state.get("total_trades", 0)
+    open_pos = state.get("open_positions", []) or []
+    regime_note = (state.get("regime_note") or "").replace("\n", " ").strip()
+    if len(regime_note) > 600:
+        regime_note = regime_note[:600] + "…"
+
+    parts.append(f"CAPITAL  balance=${bal:.2f}  daily_pnl=${daily:.2f}  total_pnl=${total:.2f}  lifetime_trades={total_trades}  open_positions={len(open_pos)}/4")
+
+    be = state.get("binary_event") or {}
+    if be.get("active"):
+        parts.append(f"BINARY_EVENT  {be.get('name','?')}  active=true  deadline={be.get('deadline_utc') or 'tbd'}  verified={be.get('verified')}  sources={len(be.get('sources') or [])}")
+    else:
+        parts.append(f"BINARY_EVENT  active=false  last_name={be.get('name','none')}")
+
+    # Open positions detail
+    for p in open_pos[:6]:
+        pos = p.get("position", p) if isinstance(p, dict) else {}
+        parts.append(f"OPEN  {pos.get('instrument','?')}  {pos.get('direction','?')}  entry={pos.get('level')}  sl={pos.get('stopLevel')}  tp={pos.get('profitLevel')}")
+
+    # Trade history (brief)
+    for t in (state.get("trade_history") or [])[-3:]:
+        parts.append(f"TRADE  {t.get('instrument')}  {t.get('direction')}  {t.get('entry_price')}→{t.get('exit_price')}  pnl=${t.get('pnl')}  {t.get('result')}")
+
+    # Watchlist
+    try:
+        if SIGNALS_FILE.exists():
+            w = json.loads(SIGNALS_FILE.read_text())
+            for a in (w.get("level_alerts") or []):
+                note = (a.get("note") or "").replace("\n", " ").strip()
+                if len(note) > 260: note = note[:260] + "…"
+                parts.append(
+                    f"ALERT  id={a.get('id')}  inst={a.get('instrument')}  {a.get('direction')}  level={a.get('level')}  "
+                    f"live={a.get('current_price_ref')}  prox={a.get('proximity','')[:80]}  note: {note}"
+                )
+    except Exception:
+        pass
+
+    # Live prices
+    try:
+        with _ticks_lock:
+            ticks = list(_latest_ticks.values())
+        if ticks:
+            tline = " ".join(f"{t['epic']}={(t['bid']+t['ofr'])/2:.5f}" for t in ticks)
+            parts.append(f"PRICES  {tline}")
+    except Exception:
+        pass
+
+    # Last 8 events
+    try:
+        evs = recent_events(8)
+        for e in evs:
+            ts = (e.get("ts_utc") or "")[11:16]
+            parts.append(f"EVENT  {ts}  {e.get('type','?')}  {e.get('instrument','')}  {e.get('alert_id') or e.get('timeframe') or ''}")
+    except Exception:
+        pass
+
+    if regime_note:
+        parts.append(f"REGIME  {regime_note}")
+
+    return "\n".join(parts)
+
+
+_CHAT_SYSTEM = """You are an analyst assistant embedded in a live forex trading dashboard.
+
+The user is the trader. They can see everything on screen (watchlist, positions,
+prices, alerts, counterfactuals, regime note, live events). You are looking at
+exactly the same data — a compact briefing is prepended below.
+
+Your job: answer the user's question directly, in plain English, grounded in the
+briefing. Be concise. Cite specific levels, alert IDs, and numbers from the
+briefing when relevant. If the answer depends on info you don't have, say so.
+
+DO NOT invoke tools. DO NOT place trades or modify state. If the user asks you
+to act, explain what you'd do but tell them to execute from the main tick flow.
+
+Format: short paragraphs or bullet points. Prices in monospace where helpful.
+Avoid boilerplate. Do NOT repeat the briefing — the user already sees it."""
+
+
+def _compose_chat_prompt(briefing, messages):
+    hist_lines = []
+    for m in messages:
+        role = m.get("role")
+        content = str(m.get("content") or "").strip()
+        if not content: continue
+        if role == "user":
+            hist_lines.append(f"USER: {content}")
+        elif role == "assistant":
+            hist_lines.append(f"ASSISTANT: {content}")
+    history = "\n\n".join(hist_lines)
+
+    return (
+        _CHAT_SYSTEM
+        + "\n\n---\n## LIVE BRIEFING (auto-generated from state)\n\n"
+        + briefing
+        + "\n\n---\n## CONVERSATION\n\n"
+        + history
+        + "\n\nASSISTANT:"
+    )
+
+
+def _invoke_claude_chat(prompt):
+    """Spawn `claude -p` non-interactively. Prompt is passed via stdin so no
+    shell-quoting concerns. Output mode = text. 90s hard timeout."""
+    claude_bin = os.environ.get("CLAUDE_BIN", "/Users/rajneeshmishra/.local/bin/claude")
+    cmd = [
+        claude_bin, "-p",
+        "--output-format", "text",
+        "--dangerously-skip-permissions",
+        "--max-budget-usd", "0.20",
+    ]
+    try:
+        p = subprocess.run(
+            cmd,
+            input=prompt.encode("utf-8"),
+            capture_output=True,
+            timeout=90,
+            cwd=str(REPO),
+        )
+    except subprocess.TimeoutExpired:
+        return {"ok": False, "error": "timeout", "detail": "claude did not respond within 90s"}
+    except FileNotFoundError:
+        return {"ok": False, "error": "cli_missing", "detail": f"claude binary not found at {claude_bin}"}
+    except Exception as e:
+        return {"ok": False, "error": "spawn_failed", "detail": str(e)}
+
+    if p.returncode != 0:
+        err = (p.stderr.decode("utf-8", "replace") or p.stdout.decode("utf-8", "replace")).strip()
+        return {"ok": False, "error": "nonzero_exit", "detail": err[:1000], "returncode": p.returncode}
+
+    text = p.stdout.decode("utf-8", "replace").strip()
+    return {"ok": True, "response": text}
+
+
 def full_snapshot():
     broker = broker_snapshot()
     with _ticks_lock:
@@ -789,6 +939,44 @@ class Handler(BaseHTTPRequestHandler):
         self.send_header("Content-Length", str(len(body)))
         self.end_headers()
         self.wfile.write(body)
+
+    def do_POST(self):
+        try:
+            u = urlparse(self.path)
+            if u.path == "/api/chat":
+                return self._handle_chat()
+            self._json({"error": "not found", "path": u.path}, status=404)
+        except Exception as e:
+            try:
+                self._json({"error": str(e)}, status=500)
+            except Exception:
+                pass
+
+    def _handle_chat(self):
+        length = int(self.headers.get("Content-Length") or 0)
+        if length > 50_000:
+            return self._json({"error": "payload too large"}, status=413)
+        raw = self.rfile.read(length) if length else b"{}"
+        try:
+            data = json.loads(raw.decode("utf-8"))
+        except Exception:
+            return self._json({"error": "invalid JSON"}, status=400)
+
+        messages = data.get("messages") or []
+        if not isinstance(messages, list) or not messages:
+            return self._json({"error": "messages[] required"}, status=400)
+        # keep only last ~16 turns to bound the prompt
+        messages = messages[-16:]
+        # hard cap per-message size
+        for m in messages:
+            if not isinstance(m, dict): continue
+            if isinstance(m.get("content"), str) and len(m["content"]) > 4000:
+                m["content"] = m["content"][:4000]
+
+        briefing = _build_chat_briefing()
+        prompt = _compose_chat_prompt(briefing, messages)
+        result = _invoke_claude_chat(prompt)
+        self._json(result, status=(200 if result.get("ok") else 502))
 
     def do_GET(self):
         u = urlparse(self.path)
