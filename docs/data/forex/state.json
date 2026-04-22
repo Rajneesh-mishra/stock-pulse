@@ -404,6 +404,14 @@
       "closed": 0,
       "skipped": 1,
       "note": "20:15 UTC \u2014 1 event USDCAD level_cross on usdcad_liqsweep_sell_zone (our ADD 7min ago). Price 1.3674 crossed up thru 1.36737 then closed 1.36733 \u2014 classic rejection off swept wick. Confluence strengthened to composite -32 readiness=WEAK (was -24.5 NONE last tick) 3/4 TFs bearish, DAY -0.4 H4 -0.5 H1 -0.1 M15 +0.9. Still below moderate (need |composite|>=40 + 3TFs agree \u2014 we have agreement but score 8p short). LIMIT arm blocked per 4c; R:R economics unchanged (2.2p SL vs ~2p spread = <1.5:1). SKIP trade, MODIFY alert with tag observation. Broker $1000/0 reconciled. No news sweep (7min since last tick, budget prudent)."
+    },
+    {
+      "ts_utc": "2026-04-22T21:00:30Z",
+      "events_in": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "note": "21:00 UTC heartbeat \u2014 0 unconsumed events. Broker $1000/0 reconciled. Confluence sweep all 9: USDJPY composite +51 moderate bullish 159.488 (51p below 160 fade, still >3\u00d7 H1 ATR = WATCH not ARMED); USDCAD -32 weak bearish 1.36717 (now 2p BELOW swept 1.36737 wick, 45min post-sweep continuation valid but no sharper level formed); OIL +28.5 weak bullish 92.59 (229p above 90.30 retest zone); GOLD -16 none bearish 4739.99 (35p below 4775 trigger, tape unsupportive); BTC +47.5 moderate bullish 78.9k (parabolic, no anchorable level for new alert); AUDUSD +23.5 none bullish 0.7158 (no alert post-Rule 1 removal); EURUSD/GBPUSD/USDCHF none neutral. 1 WebSearch Hormuz: Iran seized 2 ships Apr 22, Trump WH says non-US non-Israeli seizures NOT ceasefire violation \u2014 slight de-escalation of rhetoric, gold bid weakening consistent. 4 alerts price-refreshed (all MODIFY proximity), 9 structure_watch KEEP, 8 news_queries KEEP. 0 trades."
     }
   ],
   "recent_skips": [
@@ -437,10 +445,10 @@
       "price": 4809.28
     }
   ],
-  "last_tick_summary": "2026-04-22T20:15:00Z 20:15 UTC forex auto tick \u2014 1 event USDCAD level_cross on usdcad_liqsweep_sell_zone (1.3674 crossed 1.36737, closed 1.36733 rejection off swept wick). Confluence composite -32 readiness=WEAK (was -24.5 NONE last tick, strengthening 3/4 TFs bearish) still <40 moderate threshold -> LIMIT blocked per Step 4c + R:R economics broken (2.2p SL vs 2p spread). SKIP. 4 alerts KEEP (1 MODIFY usdcad tag note), 9 structure_watch KEEP, 8 queries KEEP. Regime INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING intact. Broker $1000/0.",
+  "last_tick_summary": "2026-04-22T21:00:30Z 21:00 UTC forex auto tick \u2014 0 events heartbeat. Confluence sweep all 9 pairs: USDJPY +51 moderate bullish WATCH (159.488 \u2192 160 fade 51p away); USDCAD -32 weak bearish (1.36717 now below swept 1.36737, continuation valid no new level); OIL +28.5 weak bullish WATCH (92.59 \u2192 90.30 retest 229p); GOLD -16 none bearish 4739.99 (35p below 4775, tape weak); BTC +47.5 moderate bullish parabolic (no anchorable level). No pair ARMED. 4 alerts price-refreshed. Broker $1000/0. BOJ Apr 27-28 T-5d calendar.",
   "last_scan": {
-    "timestamp": "2026-04-22T20:15:00Z",
-    "events_processed_last_tick": 1,
+    "timestamp": "2026-04-22T21:00:30Z",
+    "events_processed_last_tick": 0,
     "events_acted_last_tick": 0
   },
   "capital_base": 1000.0,
@@ -490,6 +498,14 @@
       "closed": 0,
       "skipped": 1,
       "summary": "20:15 UTC - 1 event (USDCAD level_cross on usdcad_liqsweep_sell_zone, price 1.3674 crossed up thru 1.36737). Confluence readiness=WEAK (composite -32, was -24.5 last tick, strengthening but <40 moderate threshold) -> LIMIT blocked per Step 4c. R:R broken (2.2p SL vs 2p spread fails 1.5:1). SKIP. 4 alerts KEEP (MODIFY usdcad tag observation), 9 structure_watch KEEP, 8 queries KEEP. Broker $1000/0. 0 trades."
+    },
+    {
+      "ts_utc": "2026-04-22T21:00:30Z",
+      "events_in": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "note": "21:00 UTC heartbeat \u2014 0 unconsumed events. Broker $1000/0 reconciled. Confluence sweep all 9: USDJPY composite +51 moderate bullish 159.488 (51p below 160 fade, still >3\u00d7 H1 ATR = WATCH not ARMED); USDCAD -32 weak bearish 1.36717 (now 2p BELOW swept 1.36737 wick, 45min post-sweep continuation valid but no sharper level formed); OIL +28.5 weak bullish 92.59 (229p above 90.30 retest zone); GOLD -16 none bearish 4739.99 (35p below 4775 trigger, tape unsupportive); BTC +47.5 moderate bullish 78.9k (parabolic, no anchorable level for new alert); AUDUSD +23.5 none bullish 0.7158 (no alert post-Rule 1 removal); EURUSD/GBPUSD/USDCHF none neutral. 1 WebSearch Hormuz: Iran seized 2 ships Apr 22, Trump WH says non-US non-Israeli seizures NOT ceasefire violation \u2014 slight de-escalation of rhetoric, gold bid weakening consistent. 4 alerts price-refreshed (all MODIFY proximity), 9 structure_watch KEEP, 8 news_queries KEEP. 0 trades."
     }
   ],
   "binary_event": {
@@ -505,7 +521,7 @@
     ],
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). Monitor for reactivation on any T-24h trigger."
   },
-  "regime_note": "2026-04-22T20:15:00Z \u2014 1 event consumed: USDCAD level_cross on usdcad_liqsweep_sell_zone (we ADDED this zone 7min prior at 20:08). Price 1.3674 crossed up thru 1.36737 trigger then closed 1.36733 \u2014 textbook rejection off swept wick pattern. Confluence refreshed: composite -32 (was -24.5) readiness=WEAK, directional_call=bearish, 3/4 TFs agree (DAY -0.4 / H4 -0.5 / H1 -0.1 / M15 +0.9). Strengthened but still 8 points short of moderate (|composite|>=40) \u2014 LIMIT anticipation arm blocked per Step 4c. R:R economics unchanged: 2.2p SL vs ~2p USDCAD spread = ~1:1, well below 1.5:1 floor. SKIP trade. Watch next sweep or readiness upgrade. No news sweep (7min after last tick). 4 alerts KEEP (1 MODIFY usdcad_liqsweep_sell_zone tag observation), 9 structure_watch KEEP, 8 news_queries KEEP. Counterfactual unchanged (new usdcad zone 0 fires so far). Broker $1000/0 reconciled. Regime INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING intact (BOJ Apr 27-28 T-5d still calendar-only, not blackout).",
-  "tick_ts_utc": "2026-04-22T20:15:00Z",
-  "state_ts_utc": "2026-04-22T20:15:00Z"
+  "regime_note": "2026-04-22T21:00:30Z \u2014 0 events heartbeat. WH Apr 22: Trump does NOT view Iran's seizure of 2 non-US/non-Israeli ships as ceasefire violation \u2014 slight rhetoric de-escalation aligns with gold's rolling-off bid (thesis upgrade from 12:54 IRGC seizure now capped). Confluence snapshot: USDJPY +51 moderate bullish 4/4 TFs\u2014push toward 160 red line intact but 51p (>3\u00d7 H1 ATR) = WATCH not ARMED; bear OB 160.11-160.46 overhead still the fade zone. USDCAD -32 weak bearish, 45min post-sweep price accepted below 1.36737 wick at 1.36717 \u2014 continuation valid but no sharper level formed; MODIFY alert, evaluate REMOVE next tick if no M15 break of 1.3665 bull OB by 22:00 UTC. OIL +28.5 weak bullish 92.59 matches buy bias but 229p above retest (wait). GOLD -16 none bearish 4739.99 \u2014 4772 rejected twice today, breakout thesis needs fresh rung. BTC +47.5 moderate bullish parabolic 78.9k but no clean structural level to anchor new alert. AUDUSD/EURUSD/GBPUSD/USDCHF: none/neutral, no action. Regime INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING intact (WH non-violation stance = soft ceiling on escalation premium). 4 alerts KEEP, 9 structure_watch KEEP, 8 queries KEEP. Broker $1000/0. 0 trades. BOJ Apr 27-28 T-5d calendar (non-blackout).",
+  "tick_ts_utc": "2026-04-22T21:00:30Z",
+  "state_ts_utc": "2026-04-22T21:00:30Z"
 }
