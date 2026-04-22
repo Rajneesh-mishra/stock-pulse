@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-22T21:03:46.725983Z",
+  "generated_at": "2026-04-22T21:14:23.554311Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-21T05:33:00Z",
-      "events_in": 8,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 8,
-      "note": "bar_close heartbeat (8 M15 all majors). 0 news. Ceasefire expires TODAY T-0h. WTI drifted $88.50\u2192$86.27 continuing fade-escalation. No level touches/BOS. oil_crude price MODIFIED; rest KEEP."
-    },
     {
       "ts_utc": "2026-04-21T05:39:09.646128Z",
       "summary": "05:37 UTC \u2014 15 news_flash consumed (hormuz/opec/us_tariff backlog), 0 trades, oil_crude MODIFIED (price $86.27\u2192$88.26), 4 alerts KEEP, 9 structure_watch KEEP, 8 queries KEEP"
@@ -363,6 +355,27 @@
       "closed": 0,
       "skipped": 0,
       "note": "21:00 UTC heartbeat \u2014 0 unconsumed events. Broker $1000/0 reconciled. Confluence sweep all 9: USDJPY composite +51 moderate bullish 159.488 (51p below 160 fade, still >3\u00d7 H1 ATR = WATCH not ARMED); USDCAD -32 weak bearish 1.36717 (now 2p BELOW swept 1.36737 wick, 45min post-sweep continuation valid but no sharper level formed); OIL +28.5 weak bullish 92.59 (229p above 90.30 retest zone); GOLD -16 none bearish 4739.99 (35p below 4775 trigger, tape unsupportive); BTC +47.5 moderate bullish 78.9k (parabolic, no anchorable level for new alert); AUDUSD +23.5 none bullish 0.7158 (no alert post-Rule 1 removal); EURUSD/GBPUSD/USDCHF none neutral. 1 WebSearch Hormuz: Iran seized 2 ships Apr 22, Trump WH says non-US non-Israeli seizures NOT ceasefire violation \u2014 slight de-escalation of rhetoric, gold bid weakening consistent. 4 alerts price-refreshed (all MODIFY proximity), 9 structure_watch KEEP, 8 news_queries KEEP. 0 trades."
+    },
+    {
+      "tick_ts_utc": "2026-04-22T21:14:19Z",
+      "trigger": "heartbeat",
+      "events_processed": 2,
+      "event_types": [
+        "news_flash(stale_archive)",
+        "news_flash(stale_archive)"
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "skips": 0,
+      "broker_balance": 1000.0,
+      "open_positions": 0,
+      "readiness_snapshot": {
+        "USDJPY": "+51 moderate bullish WATCH (50p<160, >3\u00d7H1 ATR)",
+        "USDCAD": "-37 weak bearish post-sweep (5p below 1.36737)",
+        "GOLD": "-16 none bearish (35p<4775)",
+        "OIL_CRUDE": "+28.5 weak bullish (229p>90.30)"
+      },
+      "audit": "4 alerts KEEP, 9 structure_watch KEEP, 8 queries KEEP, scalp config unchanged"
     }
   ]
 }
