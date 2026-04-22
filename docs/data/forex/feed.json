@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-22T22:56:34.173167Z",
+  "generated_at": "2026-04-22T23:06:00.993020Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-21T10:08:00Z",
-      "events_in": 12,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 12,
-      "note": "12 bar_close H1+M15 (AUDUSD/USDJPY/GOLD/OIL_CRUDE/USDCAD/EURUSD) all SKIP heartbeat. USDJPY fresh bid 159.189 +1p vs 09:54, 0.26 below 159.45 fade zone, day range 158.695-159.251. 1 WebSearch: no Iran deal, Vance flying Islamabad today, Iran refusing talks + 'new cards on battlefield', Trump 'highly unlikely' extend, T-~13.8h to Wed 00:00 GMT Apr 22 expiry. 1 MODIFY (usdjpy price refresh), 2+9+8 KEEP."
-    },
     {
       "ts_utc": "2026-04-21T11:25:00Z",
       "events_in": 8,
@@ -443,6 +435,19 @@
       "events": 1,
       "trades": 0,
       "note": "1 stale news_flash (iran_ceasefire Apr 12 NPR 'collapse' URL-miss backgrounder); 3 alerts KEEP (USDJPY WATCH, GOLD WATCH rule2, OIL WATCH rule2); broker $1000/0pos; attention 9/9 covered."
+    },
+    {
+      "ts_utc": "2026-04-22T23:05:53Z",
+      "kind": "heartbeat",
+      "summary": "0 events, broker API 404 (transient), no confluence refresh, all 3 alerts KEEP by mech rules, 0 trades, $1000/0pos",
+      "trades": 0,
+      "open_positions": 0,
+      "binary_active": false,
+      "scalp_enabled_pairs": [
+        "EURUSD",
+        "GBPUSD",
+        "AUDUSD"
+      ]
     }
   ]
 }

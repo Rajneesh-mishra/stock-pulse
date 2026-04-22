@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-22T22:18:17Z",
-  "pruned_at": "2026-04-22T22:18:17Z",
-  "pruned_by": "2026-04-22T22:18:17Z tick \u2014 heartbeat: 5 stale news_flash events (1 iran_ceasefire Apr 12 Islamabad backgrounder URL-matched 'Islamabad' kw after prior TUNE + 4 opec_supply archives Aug 2025/Sep 2025/Mar 2026 matched broad 'increase'/'hike'/'announce' kw). TUNED opec_supply: added match_keywords=['2026','April','May 2026','June 2026'] date filter, narrowed kw to action-verbs/supply-shock, cooldown 60\u2192120min. All 3 level_alerts KEEP by mechanical rules (USDJPY dist 53p<3\u00d7H4ATR 93p, GOLD dist 38p<3\u00d7H4ATR 109p + counterfactual 4h=0.8 real edge, OIL dist 195p<3\u00d7H4ATR 675p + counterfactual 4h=0.67). USDJPY readiness=moderate (agree 4/4 bullish) but dist>3\u00d7H1ATR=42p \u2192 WATCH not ARMED. No ADDs \u2014 no sharper levels on other 6 pairs (BTC comp=+43.5 moderate 4/4 but no clean level). 0 trades.",
+  "last_updated_by_claude": "2026-04-22T23:05:49Z",
+  "pruned_at": "2026-04-22T23:05:49Z",
+  "pruned_by": "2026-04-22T23:05:49Z tick \u2014 heartbeat: 0 events, broker API transient 404 (historicals 0 candles + prices 404) \u2014 no confluence refresh possible. Using 22:56 readings. All 3 level_alerts KEEP by mechanical rules (dist vs 3xH4ATR + counterfactual). No ADDs (no new sharper levels identifiable without fresh tape). No news churn since 22:12 opec_supply TUNE. 0 trades.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [

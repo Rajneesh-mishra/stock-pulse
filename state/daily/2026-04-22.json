@@ -273,5 +273,18 @@
     "events": 1,
     "trades": 0,
     "note": "1 stale news_flash (iran_ceasefire Apr 12 NPR 'collapse' URL-miss backgrounder); 3 alerts KEEP (USDJPY WATCH, GOLD WATCH rule2, OIL WATCH rule2); broker $1000/0pos; attention 9/9 covered."
+  },
+  {
+    "ts_utc": "2026-04-22T23:05:53Z",
+    "kind": "heartbeat",
+    "summary": "0 events, broker API 404 (transient), no confluence refresh, all 3 alerts KEEP by mech rules, 0 trades, $1000/0pos",
+    "trades": 0,
+    "open_positions": 0,
+    "binary_active": false,
+    "scalp_enabled_pairs": [
+      "EURUSD",
+      "GBPUSD",
+      "AUDUSD"
+    ]
   }
 ]
