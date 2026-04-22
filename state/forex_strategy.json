@@ -8,7 +8,19 @@
   "___SECTION_1___": "=== PRE-TRADE CHECKLIST (run EVERY trade) ===",
 
   "pre_trade_checklist": {
-    "description": "MUST pass ALL 7 gates before entering. If any gate fails, NO TRADE.",
+    "description": "7-gate framework. NOT binary (all-green-or-skip). Gates feed into a conviction score (1-5); conviction + R:R determines full / half / skip per prompts/forex_tick.md Step 4b. Gate 5 (risk_guard) is the ONLY hard gate — if it rejects, skip.",
+    "conviction_sizing": {
+      "5 + R:R >= 2": "full size, 1.5% risk",
+      "4 + R:R >= 2": "full size, 1.0% risk",
+      "4 + R:R 1.5-2": "half size, 0.5% risk",
+      "3 + asymmetric": "half size, 0.5% risk, anticipation LIMIT entry",
+      "3 single-scenario": "skip, watchlist instead",
+      "<= 2": "skip"
+    },
+    "entry_mode": {
+      "market_on_confirmation": "default: wait for 15M confirmation candle close, enter market",
+      "anticipation_limit": "conviction >= 4 AND structurally clean level: LIMIT at the level, SL beyond invalidation. Captures the 30-60p often lost waiting for confirmation close"
+    },
     "gates": [
       {
         "gate": 1,
@@ -34,10 +46,11 @@
       },
       {
         "gate": 4,
-        "name": "RISK:REWARD >= 2:1",
-        "question": "Is the distance to TP at least 2x the distance to SL?",
-        "rule": "Minimum R:R of 2:1. Preferred 3:1. Below 1.5:1 is automatic SKIP. EXCEPTION: 1.8:1 acceptable when conviction 4-5 AND all other 6 gates pass. This prevents over-rigidity on strong setups.",
-        "how": "Measure SL distance (entry to invalidation level, NOT arbitrary pips). Measure TP distance (entry to next opposing key level). TP/SL must be >= 2.0."
+        "name": "RISK:REWARD",
+        "question": "Is the distance to TP acceptable relative to SL for this conviction?",
+        "rule": "Floor: 1.5:1. Below 1.5:1 is always skip. 1.5-2:1 acceptable at conviction 4-5 with half size. 2:1+ standard. 3:1+ preferred. No hard 2:1 cutoff — interact with conviction_sizing table above.",
+        "how": "SL = invalidation level (not arbitrary pips). TP = next opposing key level. Compute TP/SL; feed into conviction_sizing.",
+        "note": "The old 'below 1.5:1 skip + 1.8:1 conviction exception' is replaced by the conviction_sizing table. This gate now informs sizing, not a binary go/no-go."
       },
       {
         "gate": 5,

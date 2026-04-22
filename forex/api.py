@@ -167,18 +167,31 @@ def cmd_prices(cst, tok, epic=None):
 def cmd_history(cst, tok, epic, count=200, resolution="HOUR"):
     r = requests.get(f"{BASE}/api/v1/prices/{epic}",
         headers=h(cst,tok), params={"resolution": resolution, "max": count}, timeout=15).json()
+
+    def _mid(price_dict):
+        if not isinstance(price_dict, dict):
+            return None
+        if "mid" in price_dict:
+            return price_dict["mid"]
+        b, a = price_dict.get("bid"), price_dict.get("ask")
+        if b is not None and a is not None:
+            return (float(b) + float(a)) / 2
+        return b if b is not None else a
+
     candles = []
     for p in r.get("prices", []):
         candles.append({
-            "time": p.get("snapshotTimeUTC"),
-            "open": p["openPrice"]["mid"] if "openPrice" in p else None,
-            "high": p["highPrice"]["mid"] if "highPrice" in p else None,
-            "low": p["lowPrice"]["mid"] if "lowPrice" in p else None,
-            "close": p["closePrice"]["mid"] if "closePrice" in p else None,
+            "time": p.get("snapshotTimeUTC") or p.get("snapshotTime"),
+            "open":  _mid(p.get("openPrice")),
+            "high":  _mid(p.get("highPrice")),
+            "low":   _mid(p.get("lowPrice")),
+            "close": _mid(p.get("closePrice")),
             "volume": p.get("lastTradedVolume"),
         })
+    # Return ALL candles (not just last 10) — needed by counterfactual tracker
+    # to find the candle closest to an arbitrary historical timestamp.
     print(json.dumps({"epic": epic, "resolution": resolution, "count": len(candles),
-                       "candles": candles[-10:]}, indent=2))  # Print last 10 for brevity
+                       "candles": candles}, indent=2))
 
 def cmd_open(cst, tok, epic, direction, size, sl, tp):
     """Open position. SL and TP are MANDATORY — risk_guard enforced."""
