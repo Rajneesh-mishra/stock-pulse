@@ -1,10 +1,10 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-21T22:45:00+00:00",
-  "pruned_at": "2026-04-21T22:45:00+00:00",
-  "pruned_by": "22:45 UTC tick — 15 news_flash events consumed (iran_ceasefire/hormuz_strait/us_iran_military — all rebroadcasts of known narrative, no fresh catalyst). MATERIAL MOVES vs 17:10 tick (5.5h ago): OIL 91.211 (+100p, +6.21% day, CLEAN break + sustained above 90.5 — escalation thesis confirmed, but alert trigger 90.5 now stale post-run). USDJPY 159.583 bid (+10p, broke day high 159.53, 41.7p below 160 intervention). AUDUSD 0.71348 (-187p, BROKE day low 0.71422, -0.58% day, 64.8p above 0.707 target — pressure building to buy zone). GOLD 4702.46 (-22p, BREAKING day low 4707.36, -2.45% day — market pricing DEAL despite Hormuz closed, conflicting with oil). USDCAD 1.36728 (+16p USD dominance over oil-CAD bid). EURUSD 1.17244 (-19p bear continuation). GBPUSD 1.34805 (-20p broke 1.348). USDCHF 0.78213 (+14p USD bid overwhelming CHF haven). BTCUSD 75,462 (-1.09%). DEADLINE CLARIFICATION: CNN/NPR/Al Jazeera Apr 21 confirm 'Wednesday evening ET' (likely Thu 00-04 GMT Apr 23) NOT 0000 GMT Wed Apr 22 as prior ticks assumed — T- ambiguous, may be ~25h not ~1h. Tape CONFLICTED: oil=escalation, gold=deal optimism, USD=dominance. MODIFY oil_crude_escalation_90 (trigger run through, reposition as 90.0-90.5 pullback-retest buy with 89 SL). MODIFY usdjpy + audusd (refresh prices + T-note). 9 structure_watch KEEP. 8 queries KEEP (all still topical for binary resolution window).",
-  "pruned_removed": [],
-  "pruned_added": [],
+  "last_updated_by_claude": "2026-04-22T10:55:00+00:00",
+  "pruned_at": "2026-04-22T10:55:00+00:00",
+  "pruned_by": "10:55 UTC tick — 68 unconsumed events (3 OIL level_cross 90.5 cross_down retests, 20 bar_close 22:23-23:25 full universe, 45 news_flash). DEADLINE PASSED (literal 0000 GMT Wed Apr 22 was ~10h45m ago). NEW INTEL: Indian Express Apr 22 06:41 GMT 'ceasefire extended' (Trump tone shifted to '48-hour warning'), The Quint Apr 22 06:37 GMT 'Vance Islamabad trip ON HOLD as Iran says NO to talks', BreakingNews.ie Apr 22 08:37 'Ships attacked in Strait of Hormuz amid efforts to re-start peace talks'. NET: extension granted with friction — Iran rejected Vance, ship attacks ongoing, Trump verbal escalation. Tape: OIL 90.069 (-0.07% NET, day range 87.455-91.177 645p swing settled near 90 psych), GOLD 4757 (+0.79% safe-haven bid persists), USDJPY 159.247 (-0.06% USD bid faded), AUDUSD 0.71609 (+0.12% stable), BTCUSD 78,100 (+3.14% strong risk-on), USDCAD/EURUSD/GBPUSD/USDCHF quiet. DIVERGENCE: BTC+AUD say risk-on, GOLD says safe-haven hedge, OIL flat — market split on extension durability. 3 OIL level_cross all SKIP per alert's own conditions (gold reversed UP +0.79% = explicit SKIP trigger; ceasefire-extended headlines support deal-priced-out). 20 bar_close all SKIP (modest drift since 23:25, no clean structure shift). REMOVE oil_crude_retest_90_buy (gold reverse SKIP fired + extension headlines invalidate buy thesis + already crossed 3x without rejection wick). MODIFY audusd + usdjpy notes (refresh prices, deadline-passed framing). ADD gold_safehaven_continuation_buy at 4775 (above day high 4772.24, would confirm Iran-talks-collapse hedging, +Vance walkout headlines support). 9 structure_watch KEEP. 8 queries: TUNE iran_ceasefire note (deadline passed, extension+friction state), 7 KEEP.",
+  "pruned_removed": ["oil_crude_retest_90_buy"],
+  "pruned_added": ["gold_safehaven_continuation_buy"],
   "instruments": [
     "EURUSD",
     "USDJPY",
@@ -28,15 +28,15 @@
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "buy AUDUSD 0.707 support on ceasefire-fail spike — live 22:44 UTC 0.71348 (-187p vs prior 0.71535, broke day low 0.71422, 64.8p above zone). USD safe-haven bid broad (USDJPY/USDCAD/USDCHF all bull, EURUSD/GBPUSD bear) — AUD already softening pre-binary. Deadline ambiguity (0000 GMT Wed vs Wed eve ET per CNN/NPR) but tape treating as imminent. If ceasefire collapses, AUDUSD likely spikes to 0.707 for liquidity sweep. Wait for rejection wick on 0.707 touch; skip naked level hits.",
-      "current_price_ref": 0.71348,
+      "note": "buy AUDUSD 0.707 support on ceasefire-fail spike — live 10:51 UTC 0.71609 (+10p vs prior 0.71628 yesterday, 90.9p above zone, stable). DEADLINE PASSED (literal 0000 GMT Wed Apr 22 was ~10h45m ago). State: extension reportedly granted (Indian Express) but friction — Vance Islamabad trip ON HOLD, Iran rejected talks (The Quint Apr 22 06:37 GMT), ship attacks Hormuz Apr 22 08:37 (BreakingNews.ie). USD safe-haven bid faded (BTC +3.14%, USDJPY -0.06%). For AUD to spike to 0.707 requires fresh decisive Iran-collapse catalyst (unsigned extension breakdown + retaliation strike). Wait for rejection wick on 0.707 touch; skip naked breaks. SL 0.703, TP 0.7187 (Fri high) on confirmation.",
+      "current_price_ref": 0.71609,
       "price_ref": {
-        "ts": "2026-04-21T22:44:00Z",
-        "price": 0.71348
+        "ts": "2026-04-22T10:51:00Z",
+        "price": 0.71609
       },
-      "last_updated": "2026-04-21T22:45:00+00:00",
-      "proximity": "64.8p above 0.707 buy zone (live 22:44 UTC 0.71348 bid). Broke day low 0.71422 — pressure toward zone building. Binary T- ambiguous (0000 GMT Wed lit. reading vs Wed eve ET per CNN/NPR).",
-      "updated_utc": "2026-04-21 22:45 UTC"
+      "last_updated": "2026-04-22T10:55:00+00:00",
+      "proximity": "90.9p above 0.707 buy zone (live 10:51 UTC 0.71609 bid). Stable; deadline-extension-with-friction state, USD bid faded — needs decisive Iran-collapse for spike to zone.",
+      "updated_utc": "2026-04-22 10:55 UTC"
     },
     {
       "id": "usdjpy_intervention_fade_zone",
@@ -45,101 +45,44 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "sell USDJPY 160.00 intervention red-line fade — live 22:44 UTC 159.583 bid (broke day high 159.53, +10p vs prior 159.485, 41.7p below 160). Japan intervened at 159.23 in Jan 2026; Katayama G7 'high urgency' verbal. USD broadly bid pre-binary (likely continues higher into event). Short ONLY on rejection wick at 160.00 — skip naked touches (intervention risk both ways).",
-      "current_price_ref": 159.583,
+      "note": "sell USDJPY 160.00 intervention red-line fade — live 10:51 UTC 159.247 bid (-33p vs 22:44 UTC 159.583, day range 159.101-159.455, 75.3p below 160). USD safe-haven bid faded post-deadline (BTC +3.14%, broad USD pairs soft). Day high 159.455 LOWER than yesterday's 159.633 — pressure off zone. Setup still valid as red-line fade (Japan intervened 159.23 Jan 2026, MoF Katayama G7 'high urgency' verbal, BoJ Apr 27-28 priced hold) but probability of touching 160 reduced unless USD bid returns on fresh Iran-escalation. Short ONLY on rejection wick at 160.00; skip naked breaks. SL 160.50, TP 158.50 R:R ~3:1.",
+      "current_price_ref": 159.247,
       "price_ref": {
-        "ts": "2026-04-21T22:44:00Z",
-        "price": 159.583
+        "ts": "2026-04-22T10:51:00Z",
+        "price": 159.247
       },
-      "last_updated": "2026-04-21T22:45:00+00:00",
-      "proximity": "41.7p below 160.00 intervention red line (live 22:44 UTC 159.583 bid). Broke day high 159.53, trend bullish — tightening toward zone.",
-      "updated_utc": "2026-04-21 22:45 UTC"
+      "last_updated": "2026-04-22T10:55:00+00:00",
+      "proximity": "75.3p below 160.00 intervention red line (live 10:51 UTC 159.247 bid). Day high 159.455 vs yesterday 159.633 — pressure off, USD bid faded post-deadline.",
+      "updated_utc": "2026-04-22 10:55 UTC"
     },
     {
-      "id": "oil_crude_retest_90_buy",
-      "instrument": "OIL_CRUDE",
-      "level": 90.5,
-      "emit_on": "cross_down",
+      "id": "gold_safehaven_continuation_buy",
+      "instrument": "GOLD",
+      "level": 4775.0,
+      "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "RENAMED + REARMED — prior 90.5 breakout trigger RAN THROUGH (live 22:44 UTC 91.211, +6.21% day, +70p past trigger). Reposition as pullback-retest BUY of 90.0-90.5 now-support zone. Thesis: broken resistance flipped to support, bullish structure intact (bull BOS 87.99, FVG 88.91-89.548 mitigated as prior support). Buy on cross_down back into 90.5 with M15 bull rejection wick AND no ceasefire-confirmed-proceed headline. SL 89.00 (below broken 90 psych), TP 93.00+ (run continuation). Conv 3 (tape confirms momentum but T- ambiguous binary cuts edge). SKIP if gold reverses higher (would imply safehaven bid rotating BACK into gold = oil deal-priced-out = bear).",
-      "current_price_ref": 91.211,
+      "note": "ADDED 10:55 UTC — buy GOLD 4775 breakout (above day high 4772.24) on confirmed Iran-talks-collapse hedging continuation. Live 10:51 UTC 4757 bid (+0.79% day, day range 4715.44-4772.24). Catalysts armed: Vance Islamabad trip ON HOLD + Iran 'no' to talks (The Quint Apr 22) + ship attacks Hormuz Apr 22 (BreakingNews.ie) + Trump '48-hour warning' tone shift. Gold rebounded strongly DESPITE oil flat = genuine safe-haven hedge bid persisting through deadline-extension ambiguity. Buy on M15 close >4775 with bullish FVG + headline-confirm of fresh Iran-escalation (retaliation strike, formal walkout). SL 4730 (below 4715 day low + 15p), TP1 4810 (post 22:23 H4 close-ref), TP2 4850. Conv 3 (catalyst-conditional). SKIP if BTC continues +3% rally AND USD pairs bid (would imply pure risk-on = gold sells off).",
+      "current_price_ref": 4757.0,
       "price_ref": {
-        "ts": "2026-04-21T22:44:00Z",
-        "price": 91.211
+        "ts": "2026-04-22T10:51:00Z",
+        "price": 4757.0
       },
-      "last_updated": "2026-04-21T22:45:00+00:00",
-      "proximity": "71.1p above 90.5 retest trigger (live 22:44 UTC 91.211 bid). Prior breakout trigger now flipped to pullback-buy. Wait for retest + rejection wick.",
-      "updated_utc": "2026-04-21 22:45 UTC"
+      "last_updated": "2026-04-22T10:55:00+00:00",
+      "proximity": "18p below 4775 buy trigger (live 10:51 UTC 4757 bid). 4.7p below day high 4772.24 — close to zone, needs catalyst push.",
+      "updated_utc": "2026-04-22 10:55 UTC"
     }
   ],
   "structure_watch": [
-    {
-      "instrument": "AUDUSD",
-      "timeframes": [
-        "HOUR_4",
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "USDJPY",
-      "timeframes": [
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "GOLD",
-      "timeframes": [
-        "HOUR_4",
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "OIL_CRUDE",
-      "timeframes": [
-        "HOUR_4",
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "USDCAD",
-      "timeframes": [
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "EURUSD",
-      "timeframes": [
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "GBPUSD",
-      "timeframes": [
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "USDCHF",
-      "timeframes": [
-        "HOUR",
-        "MINUTE_15"
-      ]
-    },
-    {
-      "instrument": "BTCUSD",
-      "timeframes": [
-        "HOUR_4",
-        "HOUR"
-      ]
-    }
+    {"instrument": "AUDUSD", "timeframes": ["HOUR_4", "HOUR", "MINUTE_15"]},
+    {"instrument": "USDJPY", "timeframes": ["HOUR", "MINUTE_15"]},
+    {"instrument": "GOLD", "timeframes": ["HOUR_4", "HOUR", "MINUTE_15"]},
+    {"instrument": "OIL_CRUDE", "timeframes": ["HOUR_4", "HOUR", "MINUTE_15"]},
+    {"instrument": "USDCAD", "timeframes": ["HOUR", "MINUTE_15"]},
+    {"instrument": "EURUSD", "timeframes": ["HOUR", "MINUTE_15"]},
+    {"instrument": "GBPUSD", "timeframes": ["HOUR", "MINUTE_15"]},
+    {"instrument": "USDCHF", "timeframes": ["HOUR", "MINUTE_15"]},
+    {"instrument": "BTCUSD", "timeframes": ["HOUR_4", "HOUR"]}
   ],
-  "last_updated_utc": "2026-04-21 22:45 UTC"
+  "last_updated_utc": "2026-04-22 10:55 UTC"
 }
