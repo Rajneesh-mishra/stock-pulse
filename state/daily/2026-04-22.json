@@ -8,7 +8,7 @@
         "opened": 0,
         "closed": 0,
         "skipped": 0,
-        "note": "11:38 UTC heartbeat \u2014 0 events. BINARY DEFUSED: 4-source verify INDEFINITE extension (Reuters/NYT/DetNews/AJ). Hormuz attacks escalating post-extension. Tape flat \u00b15p. 3 alerts MODIFY (re-frame around indefinite-extension), 1 query TUNE iran_ceasefire. Broker $1000/0 matches."
+        "note": "11:38 UTC heartbeat — 0 events. BINARY DEFUSED: 4-source verify INDEFINITE extension (Reuters/NYT/DetNews/AJ). Hormuz attacks escalating post-extension. Tape flat ±5p. 3 alerts MODIFY (re-frame around indefinite-extension), 1 query TUNE iran_ceasefire. Broker $1000/0 matches."
       }
     ]
   },
@@ -19,15 +19,15 @@
     "closed": 0,
     "skipped": 15,
     "material_events": [
-      "hormuz_strait: Tradewinds Apr 22 10:45 GMT 'Three MSC ships attacked by Iran' \u2014 post-extension Hormuz strike escalation confirmed"
+      "hormuz_strait: Tradewinds Apr 22 10:45 GMT 'Three MSC ships attacked by Iran' — post-extension Hormuz strike escalation confirmed"
     ],
     "stale_flood": "11 fed_fomc archive articles Dec 2025-Mar 2026 + 3 boj_intervention (2 old Nov/Jan, 1 Mar)",
-    "observation": "SPIKE-FADE PATTERN: on Tradewinds fire OIL spiked day hi 91.177 (psych test, rejected -1.44pt to 89.73), GOLD spiked day hi 4772.24 (within 2.76p of 4775 trigger, rejected -2p to 4752.72). Extension is baseline, single attack news produces 15-min spike then fades. USD pairs flat \u2014 spike confined to risk/commodity complex. Implication: naked breakout entries at trigger levels likely fail without stronger catalyst (US casualty, Iran walkout, tanker sunk).",
+    "observation": "SPIKE-FADE PATTERN: on Tradewinds fire OIL spiked day hi 91.177 (psych test, rejected -1.44pt to 89.73), GOLD spiked day hi 4772.24 (within 2.76p of 4775 trigger, rejected -2p to 4752.72). Extension is baseline, single attack news produces 15-min spike then fades. USD pairs flat — spike confined to risk/commodity complex. Implication: naked breakout entries at trigger levels likely fail without stronger catalyst (US casualty, Iran walkout, tanker sunk).",
     "watchlist_changes": [
       "MODIFY gold_safehaven_continuation_buy: add 4772.24 reject observation + anticipation LIMIT idea 4735-4740"
     ],
     "query_changes": [
-      "TUNE fed_fomc: narrow query to 'FOMC April 29 2026 decision Powell', keywords Powell/Apr29-specific, cooldown 120\u2192180min \u2014 was flooding 11 stale archive articles"
+      "TUNE fed_fomc: narrow query to 'FOMC April 29 2026 decision Powell', keywords Powell/Apr29-specific, cooldown 120→180min — was flooding 11 stale archive articles"
     ],
     "tape_11_21_utc": {
       "GOLD": 4752.72,
@@ -40,7 +40,7 @@
       }
     },
     "broker": "$1000.00 / 0 positions (matches state)",
-    "binary_event": "iran_ceasefire_indefinite_extension active=false verified=true \u2014 resolved, residual Hormuz friction tracked separately"
+    "binary_event": "iran_ceasefire_indefinite_extension active=false verified=true — resolved, residual Hormuz friction tracked separately"
   },
   {
     "ts_utc": "2026-04-22T12:45:00Z",
@@ -49,7 +49,7 @@
     "opened": 0,
     "closed": 0,
     "skipped": 0,
-    "summary": "2026-04-22 12:45 UTC heartbeat \u2014 0 unconsumed events, 0 trades. Broker $1000/0 matches. Tape: GOLD 4747.16 (+0.58%, 28p below 4775 reject), OIL 90.758 (+0.69%, back near 91.177 day hi \u2014 spike-fade partial invalidation push-and-pause), USDJPY 159.312, AUDUSD 0.71468 drifting, BTCUSD 78204 (+3.28% MATERIAL risk-on rally). News: ksat/nbcnews confirm Apr 22 07:55 IRGC gunboat fire on container ship, no casualties \u2014 Trump indefinite extension intact. Regime shifted: 'INDEFINITE_EXTENSION_HORMUZ_FRICTION_MIXED_RISK_ON' \u2014 BTC parabolic contradicts gold/AUDUSD-support theses; mixed commodity-bid/crypto-rip/USD-flat = no clean direction. 3 alerts MODIFY (price refresh + BTC risk-on annotation), 9 structure_watch + 8 queries KEEP."
+    "summary": "2026-04-22 12:45 UTC heartbeat — 0 unconsumed events, 0 trades. Broker $1000/0 matches. Tape: GOLD 4747.16 (+0.58%, 28p below 4775 reject), OIL 90.758 (+0.69%, back near 91.177 day hi — spike-fade partial invalidation push-and-pause), USDJPY 159.312, AUDUSD 0.71468 drifting, BTCUSD 78204 (+3.28% MATERIAL risk-on rally). News: ksat/nbcnews confirm Apr 22 07:55 IRGC gunboat fire on container ship, no casualties — Trump indefinite extension intact. Regime shifted: 'INDEFINITE_EXTENSION_HORMUZ_FRICTION_MIXED_RISK_ON' — BTC parabolic contradicts gold/AUDUSD-support theses; mixed commodity-bid/crypto-rip/USD-flat = no clean direction. 3 alerts MODIFY (price refresh + BTC risk-on annotation), 9 structure_watch + 8 queries KEEP."
   },
   {
     "ts_utc": "2026-04-22T12:54:00Z",
@@ -57,7 +57,7 @@
     "opened": 0,
     "closed": 0,
     "skipped": 10,
-    "summary": "12:54 UTC \u2014 10 news_flash stale/dupes (1 Democracy Now pre-extension, 9 Touska/blockade). WebSearch CNN/ABC/ksat/CNBC: IRGC SEIZED 2 ships today (MSC Francesca + Epaminondas transferred to Iran) + 3rd ship 'heavy bridge damage'. Step-up fire\u2192seizure = tit-for-tat vs US Touska. Trump re-affirms blockade. No level triggers, 0 trades. Gold alert catalyst upgraded.",
+    "summary": "12:54 UTC — 10 news_flash stale/dupes (1 Democracy Now pre-extension, 9 Touska/blockade). WebSearch CNN/ABC/ksat/CNBC: IRGC SEIZED 2 ships today (MSC Francesca + Epaminondas transferred to Iran) + 3rd ship 'heavy bridge damage'. Step-up fire→seizure = tit-for-tat vs US Touska. Trump re-affirms blockade. No level triggers, 0 trades. Gold alert catalyst upgraded.",
     "regime": "INDEFINITE_EXTENSION_HORMUZ_ESCALATING_SEIZURES_MIXED_RISK_ON"
   },
   {
@@ -70,5 +70,13 @@
     "trade_actions": [],
     "audit": "all KEEP (3 alerts, 9 structure, 8 queries)",
     "note": "stale France 24 Apr 19 Islamabad dupe; superseded by 4-source indefinite extension + NYT Vance trip-on-hold"
+  },
+  {
+    "ts_utc": "2026-04-22T14:47:00Z",
+    "type": "heartbeat",
+    "events_in": 0,
+    "trades": 0,
+    "broker": "$1000/0",
+    "note": "0 unconsumed. WebSearch narrative unchanged since 12:54. 3 alerts + 9 structure + 8 queries KEEP. Regime INDEFINITE_EXTENSION_HORMUZ_ESCALATING_SEIZURES_MIXED_RISK_ON intact."
   }
 ]
