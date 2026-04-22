@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, KeyboardEvent } from 'react';
 import type { Mode } from '../types';
 import { useChat } from '../hooks/useChat';
+import { Markdown } from './Markdown';
 
 const PROMPTS = [
   'What\'s the conviction read across the pairs right now?',
@@ -9,9 +10,12 @@ const PROMPTS = [
   'Which watchlist alert is closest to firing?',
 ];
 
+type Size = 'compact' | 'expanded';
+
 export function ChatDock({ mode }: { mode: Mode }) {
   const { messages, send, clear, sending, lastError } = useChat();
   const [open, setOpen] = useState(false);
+  const [size, setSize] = useState<Size>('compact');
   const [input, setInput] = useState('');
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
@@ -40,7 +44,7 @@ export function ChatDock({ mode }: { mode: Mode }) {
 
   const disabled = mode !== 'live';
 
-  // Trigger button (bottom-right)
+  // ─── collapsed trigger pill ────────────────────────────────────────────
   if (!open) {
     return (
       <button
@@ -61,24 +65,34 @@ export function ChatDock({ mode }: { mode: Mode }) {
     );
   }
 
+  // ─── panel ─────────────────────────────────────────────────────────────
+  const panelClass = size === 'expanded'
+    ? 'sm:w-[min(860px,calc(100vw-48px))] sm:h-[min(80vh,820px)]'
+    : 'sm:w-[420px] sm:h-[560px]';
+
   return (
     <>
-      {/* Dim backdrop on mobile */}
+      {/* Scrim — always on mobile, only when expanded on desktop */}
       <div
-        className="fixed inset-0 z-40 bg-ink-950/60 backdrop-blur-sm sm:hidden"
         onClick={() => setOpen(false)}
+        className={`fixed inset-0 z-40 bg-ink-950/60 backdrop-blur-sm ${
+          size === 'expanded' ? 'sm:block' : 'sm:hidden'
+        }`}
       />
-      <div className="fixed inset-x-0 bottom-0 z-50 sm:inset-auto sm:bottom-6 sm:right-6 sm:w-[420px]">
-        <div className="flex h-[70vh] flex-col rounded-t-xl2 border border-line bg-ink-850 shadow-lift sm:h-[560px] sm:rounded-xl2">
+      <div className={`fixed inset-x-0 bottom-0 z-50 sm:inset-auto sm:bottom-6 sm:right-6 ${panelClass}`}>
+        <div className={
+          `flex h-[75vh] flex-col rounded-t-xl2 border border-line bg-ink-850 shadow-lift sm:rounded-xl2 ` +
+          (size === 'expanded' ? 'sm:h-full' : 'sm:h-full')
+        }>
           {/* Header */}
           <div className="flex items-center justify-between border-b border-line px-4 py-3">
-            <div className="flex items-center gap-2.5">
-              <span className="relative grid h-7 w-7 place-items-center rounded-md bg-gradient-to-br from-bull to-sky text-ink-900">
+            <div className="flex items-center gap-2.5 min-w-0">
+              <span className="relative grid h-7 w-7 shrink-0 place-items-center rounded-md bg-gradient-to-br from-bull to-sky text-ink-900">
                 <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M2.5 4.5h11v7h-4l-3 3v-3h-4z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round"/></svg>
               </span>
-              <div className="leading-tight">
+              <div className="leading-tight min-w-0">
                 <div className="text-sm font-semibold text-fg">Ask Claude</div>
-                <div className="text-[10px] uppercase tracking-[0.18em] text-fg-subtle">
+                <div className="truncate text-[10px] uppercase tracking-[0.18em] text-fg-subtle">
                   {disabled ? 'unavailable · static mode' : 'grounded in your live state'}
                 </div>
               </div>
@@ -93,6 +107,22 @@ export function ChatDock({ mode }: { mode: Mode }) {
                   clear
                 </button>
               )}
+              <button
+                onClick={() => setSize(size === 'compact' ? 'expanded' : 'compact')}
+                className="hidden h-7 w-7 place-items-center rounded-md text-fg-muted hover:bg-ink-700 hover:text-fg sm:grid"
+                title={size === 'compact' ? 'Expand' : 'Collapse'}
+                aria-label="toggle size"
+              >
+                {size === 'compact' ? (
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path d="M3 1H1v2M1 9v2h2M9 11h2V9M11 3V1H9" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                ) : (
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path d="M4 4H1M4 4V1M8 4h3M8 4V1M4 8H1M4 8v3M8 8h3M8 8v3" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                )}
+              </button>
               <button
                 onClick={() => setOpen(false)}
                 className="grid h-7 w-7 place-items-center rounded-md text-fg-muted hover:bg-ink-700 hover:text-fg"
@@ -137,7 +167,7 @@ export function ChatDock({ mode }: { mode: Mode }) {
             ) : (
               <div className="space-y-3">
                 {messages.map((m, i) => (
-                  <MessageBubble key={i} role={m.role} content={m.content} error={!!m.error} />
+                  <MessageBubble key={i} role={m.role} content={m.content} error={!!m.error} expanded={size === 'expanded'} />
                 ))}
                 {sending && (
                   <div className="flex items-center gap-2 pl-1 text-[12px] text-fg-muted">
@@ -195,11 +225,19 @@ export function ChatDock({ mode }: { mode: Mode }) {
   );
 }
 
-function MessageBubble({ role, content, error }: { role: 'user' | 'assistant'; content: string; error: boolean }) {
+function MessageBubble({
+  role, content, error, expanded,
+}: {
+  role: 'user' | 'assistant';
+  content: string;
+  error: boolean;
+  expanded: boolean;
+}) {
+  const maxW = expanded ? 'max-w-[90%]' : 'max-w-[85%]';
   if (role === 'user') {
     return (
       <div className="flex justify-end">
-        <div className="max-w-[85%] rounded-2xl rounded-br-sm bg-bull/20 px-3.5 py-2 text-[13px] text-fg">
+        <div className={`rounded-2xl rounded-br-sm bg-bull/20 px-3.5 py-2 text-[13px] text-fg ${maxW} whitespace-pre-wrap`}>
           {content}
         </div>
       </div>
@@ -208,8 +246,12 @@ function MessageBubble({ role, content, error }: { role: 'user' | 'assistant'; c
   return (
     <div className="flex items-start gap-2">
       <div className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-md bg-gradient-to-br from-bull to-sky text-ink-900 text-[10px] font-semibold">C</div>
-      <div className={`max-w-[85%] rounded-2xl rounded-tl-sm bg-ink-750 px-3.5 py-2 text-[13px] leading-relaxed ${error ? 'text-bear' : 'text-fg'}`}>
-        <div className="whitespace-pre-wrap">{content}</div>
+      <div className={`rounded-2xl rounded-tl-sm bg-ink-750 px-3.5 py-2 ${maxW} ${error ? 'text-bear' : 'text-fg'}`}>
+        {error ? (
+          <div className="whitespace-pre-wrap text-[13px]">{content}</div>
+        ) : (
+          <Markdown>{content}</Markdown>
+        )}
       </div>
     </div>
   );

@@ -819,13 +819,18 @@ def _compose_chat_prompt(briefing, messages):
 
 def _invoke_claude_chat(prompt):
     """Spawn `claude -p` non-interactively. Prompt is passed via stdin so no
-    shell-quoting concerns. Output mode = text. 90s hard timeout."""
+    shell-quoting concerns. Output mode = text. 90s hard timeout.
+
+    Model: Haiku — chat is small-briefing Q&A, Sonnet is overkill and 10× the
+    cost. Override with CHAT_MODEL env if you want to experiment."""
     claude_bin = os.environ.get("CLAUDE_BIN", "/Users/rajneeshmishra/.local/bin/claude")
+    model = os.environ.get("CHAT_MODEL", "claude-haiku-4-5")
     cmd = [
         claude_bin, "-p",
+        "--model", model,
         "--output-format", "text",
         "--dangerously-skip-permissions",
-        "--max-budget-usd", "0.20",
+        "--max-budget-usd", "0.12",
     ]
     try:
         p = subprocess.run(
