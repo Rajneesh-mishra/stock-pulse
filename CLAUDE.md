@@ -33,6 +33,7 @@ This file contains invariants that MUST survive context compaction. The `/loop` 
 11. **ALWAYS update `docs/data/current.json` and `docs/data/timeline.json`** every tick that modifies state — these are what the dashboard reads. Failing to update them leaves the dashboard showing stale data. current.json must reflect latest scenarios, tracker, market data, **and signals/avoid** (stock suggestions). timeline.json must have a new tick entry appended.
 11a. **Update signals + avoid on every triggered tick** — if new data changes the thesis (e.g. crude spike, earnings result, tracker status change), update `signals` (action, stock, conviction 1-5, rationale, risk) and `avoid` in current.json accordingly. Don't leave stale conviction scores or outdated rationale.
 12. **ALWAYS git push after every tick** — `git add docs/ state/ && git commit -m "tick: $(date +%H:%M) {trigger_type}" && git push origin main`. No confirmation needed. All permissions are pre-granted.
+13. **Publish forex data to docs/ before commit** — run `bash docs/publish_forex.sh` at the end of every forex tick so docs/forex.html (the public dashboard at rajneesh-mishra.github.io/stock-pulse/forex.html) always reflects current state, watchlist, counterfactual summary, and feed.
 
 ## Agent Prompt Templates
 

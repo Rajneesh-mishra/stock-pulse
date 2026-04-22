@@ -1,0 +1,153 @@
+{
+  "generated_at": "2026-04-22T11:12:45.497080Z",
+  "ticks": [
+    {
+      "ts": "2026-04-21T02:40:00Z",
+      "events_processed": 23,
+      "events_opened": 0,
+      "events_closed": 0,
+      "events_skipped": 23,
+      "note": "auto tick \u2014 8 bar_close routine + 15 news_flash stale URL-flushes, no action"
+    },
+    {
+      "ts_utc": "2026-04-21T02:56:30Z",
+      "events_in": 8,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8,
+      "note": "bar_close heartbeat M15 all \u2014 USDJPY composite -19.5 aligned=false, no structure shift; all KEEP"
+    },
+    {
+      "ts_utc": "2026-04-21T03:11:30Z",
+      "events_in": 17,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 17,
+      "note": "routine bar_close heartbeat \u2014 GOLD in zone 4801 but composite 10.5 aligned=false SKIP; USDJPY -19.5 44p above trigger SKIP; all KEEP"
+    },
+    {
+      "ts_utc": "2026-04-21T03:37:00Z",
+      "events_in": 24,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 24,
+      "note": "24 news_flash all SKIP \u2014 2 iran_ceasefire bg confirming Trump/Vance Pakistan trip, 2 us_iran_military Mar 6 ISW + Feb 19 BBC scenario backgrounder (old), 1 opec_supply Sep archive, 10 rba_hike 2024-2025 archive flood (TUNED query keywords + raised cooldown), plus interim drips. NEW INFO from web search: MoF pain threshold tightened to 158 (vs 160) per FXEmpire/MUFG Apr 16; usdjpy_riskoff_break note MODIFIED to reflect. boj_intervention query note MODIFIED. Regime KINETIC_EXCHANGE intact. Broker $1000 flat 0 pos."
+    },
+    {
+      "ts_utc": "2026-04-21T03:54:00Z",
+      "events_in": 8,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8,
+      "note": "bar_close M15 all majors heartbeat \u2014 no BOS/ChoCh, no level fills, all KEEP watchlist+queries"
+    },
+    {
+      "ts_utc": "2026-04-21T05:05:00Z",
+      "events_in": 12,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 12,
+      "note": "bar_close heartbeat (12 across majors). 0 news. Ceasefire expiry today (corrected from Apr 22). All alerts+queries KEEP."
+    },
+    {
+      "ts_utc": "2026-04-21T05:33:00Z",
+      "events_in": 8,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8,
+      "note": "bar_close heartbeat (8 M15 all majors). 0 news. Ceasefire expires TODAY T-0h. WTI drifted $88.50\u2192$86.27 continuing fade-escalation. No level touches/BOS. oil_crude price MODIFIED; rest KEEP."
+    },
+    {
+      "ts_utc": "2026-04-21T05:39:09.646128Z",
+      "summary": "05:37 UTC \u2014 15 news_flash consumed (hormuz/opec/us_tariff backlog), 0 trades, oil_crude MODIFIED (price $86.27\u2192$88.26), 4 alerts KEEP, 9 structure_watch KEEP, 8 queries KEEP"
+    },
+    {
+      "ts_utc": "2026-04-21T06:17:00Z",
+      "events_in": 16,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 16,
+      "note": "16 bar_close heartbeat (H1+M15 across 8 pairs) all SKIP \u2014 no level hits, no structure shifts. Broker $1000 flat 0 pos reconciled. Last full news sweep 06:07 UTC (9 min ago) \u2014 skipped fresh web search (budget + no new data window). Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM intact, ceasefire expires TODAY, Vance/Witkoff/Kushner flying Islamabad. 5 level_alerts + 9 structure + 8 queries all KEEP."
+    },
+    {
+      "ts_utc": "2026-04-21T06:37:00Z",
+      "events_in": 15,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 15,
+      "note": "news_flash burst 15 events \u2014 Iran drone strikes on US vessels (Tasnim) confirmed post Touska seizure. India-US trade deal talks restart. No entry triggers, no trades. Gold note MODIFIED; all alerts/queries KEEP."
+    },
+    {
+      "ts_utc": "2026-04-21T07:34:00Z",
+      "events_in": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "note": "Heartbeat \u2014 0 unconsumed events. Broker $1000 flat 0 pos reconciled. 1 web search: Bloomberg 'Iran set to attend Islamabad' (Brent -1.1% $94.44 fading 5.6% Mon gain) vs AJ 'Iran says no talks for now' \u2014 conflicting narrative continues, no regime shift. Trump ext 'highly unlikely' intact, T-~17h. 5+9+8 all KEEP (no delta since 07:09)."
+    },
+    {
+      "ts_utc": "2026-04-21T08:41:00+00:00",
+      "events_in": 19,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 19,
+      "note": "08:41 UTC \u2014 15 news_flash Touska/Hormuz dupes + 4 M15 bar_close all SKIP (no BOS/rejection into 159.45 USDJPY zone; WTI<90; AUDUSD>0.707; GOLD<4800 FVG). Regime unchanged. T-15.3h to ceasefire expiry."
+    },
+    {
+      "ts_utc": "2026-04-21T09:25:00Z",
+      "events_in": 8,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8,
+      "note": "8 M15 bar_close all SKIP heartbeat \u2014 flat-drift, USDJPY drifted 6.85p away from 159.45, oil reversed pop, no structure shifts. 1 web search Iran: no material delta vs 09:09. MODIFIED usdjpy note. Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM intact. 3+9+8 audit: 1 MODIFY 2+9+8 KEEP."
+    },
+    {
+      "ts_utc": "2026-04-21T10:08:00Z",
+      "events_in": 12,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 12,
+      "note": "12 bar_close H1+M15 (AUDUSD/USDJPY/GOLD/OIL_CRUDE/USDCAD/EURUSD) all SKIP heartbeat. USDJPY fresh bid 159.189 +1p vs 09:54, 0.26 below 159.45 fade zone, day range 158.695-159.251. 1 WebSearch: no Iran deal, Vance flying Islamabad today, Iran refusing talks + 'new cards on battlefield', Trump 'highly unlikely' extend, T-~13.8h to Wed 00:00 GMT Apr 22 expiry. 1 MODIFY (usdjpy price refresh), 2+9+8 KEEP."
+    },
+    {
+      "ts_utc": "2026-04-21T11:25:00Z",
+      "events_in": 8,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8,
+      "note": "8 M15 bar_close SKIP heartbeat. TIMELINE CORRECTION via WaPo/CNBC Apr 21: ceasefire expires TODAY Tue evening ~22:00 UTC T-~10-11h (Apr 7+14d=Apr 21), NOT Thu. Iran MFA refusing Islamabad Rd2 citing blockade+container ship seizure as breaches. Trump 'bombs start going off' threat. WTI 87.2 (+34c bounce toward 90 still 2.8 away), USDJPY 159.197 (0.253 below 159.45 fade), all other pairs <3p drift. 3 MODIFY (price + timeline on all alerts), 2+9+8 KEEP otherwise."
+    },
+    {
+      "ts_utc": "2026-04-21T12:35:00Z",
+      "events_in": 8,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8,
+      "note": "8 M15 bar_close all SKIP \u2014 T-~11.3h binary, OIL -68p pullback from hi 87.617, USDJPY +6.6p bounce, others flat"
+    },
+    {
+      "ts_utc": "2026-04-21T12:50:00Z",
+      "events_in": 8,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8,
+      "note": "8 M15 bar_close all SKIP T-~11h binary; WebSearch Tehran 'no talks for now' confirmed, Trump Wed eve expiry unlikely extend; OIL 87.126 (+25c) USDJPY 159.1375 (-3.1p) AUDUSD 0.71596 flat GOLD 4782.63 (-4p); 3 MODIFY price refresh, all queries/structure KEEP, broker $1000/0 pos matches; no trades"
+    },
+    {
+      "ts_utc": "2026-04-21T13:05:00Z",
+      "events_in": 12,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 12,
+      "note": "12 bar_close 13:00 all SKIP \u2014 routine heartbeat, prices flat \u00b13p vs 12:50, narrative intact priced-in-optimism vs Tehran refusal. T-~10.9h."
+    },
+    {
+      "ts_utc": "2026-04-21T13:45:00Z",
+      "events_in": 15,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 15,
+      "note": "15 news_flash all SKIP \u2014 Touska seizure dupes (Apr 19-20) + Islamabad talks. Fresh: AlJaz Apr 21 'resuscitate talks after BREAKDOWN', TRT 'Qatar backs extending if collapse', JPost 'Trump doesn\u2019t want to extend'. Binary T-~10.3h breakdown-vs-resuscitation framing explicit. No price fetch (budget). 3+9+8 KEEP. 12 unique IDs consumed."
+    }
+  ]
+}

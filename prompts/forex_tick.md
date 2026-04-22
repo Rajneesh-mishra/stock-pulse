@@ -251,8 +251,11 @@ Update `state/forex_state.json` with:
 
 Append to `state/daily/$(date +%Y-%m-%d).json`.
 
+Then publish the forex data to the static dashboard:
+
 ```bash
 cd /Users/rajneeshmishra/Downloads/stock-pulse
+bash docs/publish_forex.sh
 git add state/ docs/ && git commit -m "tick: $(date +%H:%M) forex auto — <one-line>" && git push origin main
 ```
 

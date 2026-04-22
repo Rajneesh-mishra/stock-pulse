@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stock Pulse — Forex Command</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230A0C0F'/><circle cx='16' cy='16' r='5' fill='%23D4A574'/><circle cx='16' cy='16' r='10' fill='none' stroke='%23D4A574' stroke-width='1.2' opacity='0.5'/></svg>">
+
+<!-- Typography: editorial serif + monospace numerics + characterful sans -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+
+<style>
+/* ─────────────────────────────── TOKENS ─────────────────────────────── */
+:root {
+  --ink:           #0A0C0F;
+  --ink-elev:      #12151A;
+  --ink-deep:      #06080A;
+  --ink-edge:      rgba(242,234,219,0.08);
+  --ink-edge-hi:   rgba(242,234,219,0.16);
+
+  --cream:         #F2EADB;
+  --cream-dim:     rgba(242,234,219,0.65);
+  --cream-whisper: rgba(242,234,219,0.35);
+  --cream-quiet:   rgba(242,234,219,0.18);
+
+  --bull:          #FF6E3A;     /* burnt orange — long / bull */
+  --bull-dim:      rgba(255,110,58,0.18);
+  --bear:          #8FD4DA;     /* pale cyan — short / bear */
+  --bear-dim:      rgba(143,212,218,0.18);
+  --brass:         #D4A574;     /* binary event / mission-critical */
+  --brass-dim:     rgba(212,165,116,0.20);
+  --alarm:         #C74A3F;     /* losses / risk */
+  --mint:          #6CB097;     /* won / positive secondary */
+
+  --serif:         'Instrument Serif', 'Tobias', Georgia, serif;
+  --mono:          'JetBrains Mono', 'SF Mono', ui-monospace, monospace;
+  --sans:          'DM Sans', system-ui, -apple-system, sans-serif;
+
+  --h-top: 52px;
+}
+
+/* ─────────────────────────────── RESET ──────────────────────────────── */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--ink);
+  color: var(--cream);
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.55;
+  font-feature-settings: "ss01","ss02","cv01","cv02";
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Film-grain texture — subtle organic noise over the whole page */
+body::before {
+  content: "";
+  position: fixed; inset: 0;
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.95 0 0 0 0 0.92 0 0 0 0 0.86 0 0 0 1 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+/* Faint aurora gradient ambient — barely there, breathes the panels */
+body::after {
+  content: "";
+  position: fixed; top: -20vh; left: -10vw;
+  width: 70vw; height: 70vh;
+  background: radial-gradient(closest-side, rgba(212,165,116,0.06), transparent 70%);
+  pointer-events: none;
+  z-index: -1;
+  filter: blur(40px);
+}
+
+::selection { background: var(--brass); color: var(--ink); }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--ink-edge); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--ink-edge-hi); }
+
+/* ───────────────────────────── TOP BAR ──────────────────────────────── */
+.topbar {
+  height: var(--h-top);
+  border-bottom: 1px solid var(--ink-edge);
+  padding: 0 28px;
+  display: flex; align-items: center; justify-content: space-between;
+  position: sticky; top: 0;
+  background: rgba(10,12,15,0.82);
+  backdrop-filter: blur(12px) saturate(110%);
+  -webkit-backdrop-filter: blur(12px) saturate(110%);
+  z-index: 100;
+}
+.wordmark {
+  display: flex; align-items: baseline; gap: 10px;
+}
+.wordmark .mark {
+  font-family: var(--serif); font-style: italic;
+  font-size: 22px; letter-spacing: -0.5px;
+  color: var(--cream);
+}
+.wordmark .mark em { font-style: normal; color: var(--brass); }
+.wordmark .tag {
+  font-family: var(--mono); font-size: 10px;
+  color: var(--cream-whisper);
+  letter-spacing: 0.22em; text-transform: uppercase;
+}
+
+.topbar-right {
+  display: flex; align-items: center; gap: 20px;
+  font-family: var(--mono); font-size: 11px;
+  color: var(--cream-dim); letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.pulse { position: relative; display: inline-flex; align-items: center; gap: 8px; }
+.pulse::before {
+  content: ""; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--mint);
+  box-shadow: 0 0 0 0 rgba(108,176,151,0.6);
+  animation: pulse 2.4s ease-out infinite;
+}
+@keyframes pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(108,176,151,0.55); }
+  70%  { box-shadow: 0 0 0 10px rgba(108,176,151,0); }
+  100% { box-shadow: 0 0 0 0 rgba(108,176,151,0); }
+}
+
+/* ───────────────────────────── LAYOUT ───────────────────────────────── */
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 56px 32px 80px;
+}
+
+.section {
+  margin-top: 72px;
+}
+.section-head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  margin-bottom: 28px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--ink-edge);
+}
+.section-head h2 {
+  font-family: var(--serif); font-style: italic;
+  font-weight: 400; font-size: 34px; line-height: 1;
+  letter-spacing: -0.5px;
+  color: var(--cream);
+}
+.section-head .index {
+  font-family: var(--mono); font-size: 10px;
+  color: var(--cream-whisper);
+  letter-spacing: 0.3em; text-transform: uppercase;
+}
+.section-head .meta {
+  font-family: var(--mono); font-size: 10px;
+  color: var(--cream-whisper);
+  letter-spacing: 0.2em; text-transform: uppercase;
+}
+
+/* ───────────────────────────── HERO ─────────────────────────────────── */
+.hero {
+  margin-top: 24px;
+  padding: 48px 40px 56px;
+  border: 1px solid var(--ink-edge);
+  background:
+    radial-gradient(ellipse at 80% 20%, rgba(212,165,116,0.07), transparent 60%),
+    linear-gradient(180deg, var(--ink-elev), var(--ink));
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  /* corner tick marks — aerospace framing */
+  content: "";
+  position: absolute; inset: 12px;
+  border: 1px solid var(--ink-edge);
+  pointer-events: none;
+  clip-path: polygon(0 0, 32px 0, 32px 1px, 1px 1px, 1px 32px, 0 32px,
+                    0 100%, 32px 100%, 32px calc(100% - 1px), 1px calc(100% - 1px), 1px calc(100% - 32px), 0 calc(100% - 32px),
+                    100% 100%, calc(100% - 32px) 100%, calc(100% - 32px) calc(100% - 1px), calc(100% - 1px) calc(100% - 1px), calc(100% - 1px) calc(100% - 32px), 100% calc(100% - 32px),
+                    100% 0, calc(100% - 32px) 0, calc(100% - 32px) 1px, calc(100% - 1px) 1px, calc(100% - 1px) 32px, 100% 32px);
+}
+.hero-eyebrow {
+  display: flex; align-items: center; gap: 14px;
+  font-family: var(--mono); font-size: 10px;
+  color: var(--cream-whisper);
+  letter-spacing: 0.32em; text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.hero-eyebrow .dot {
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--brass);
+  animation: breathe 3s ease-in-out infinite;
+}
+@keyframes breathe {
+  0%,100% { opacity: 0.4; transform: scale(0.9); }
+  50%     { opacity: 1;   transform: scale(1.1); }
+}
+.hero-title {
+  font-family: var(--serif); font-style: italic;
+  font-size: clamp(48px, 6vw, 88px);
+  font-weight: 400; line-height: 1.02; letter-spacing: -1.5px;
+  color: var(--cream);
+  margin-bottom: 24px;
+}
+.hero-title em { color: var(--brass); font-style: italic; }
+
+.clock {
+  display: grid; grid-template-columns: repeat(7, auto);
+  gap: 18px; align-items: end;
+  margin: 8px 0 28px;
+}
+.clock-cell {
+  display: flex; flex-direction: column; align-items: flex-start;
+}
+.clock-cell .num {
+  font-family: var(--mono); font-weight: 500;
+  font-size: clamp(56px, 8vw, 108px);
+  line-height: 0.95;
+  letter-spacing: -3px;
+  color: var(--brass);
+  font-variant-numeric: tabular-nums;
+  text-shadow: 0 0 40px rgba(212,165,116,0.15);
+}
+.clock-cell .label {
+  font-family: var(--mono); font-size: 11px;
+  color: var(--cream-whisper);
+  letter-spacing: 0.3em; text-transform: uppercase;
+  margin-top: 8px;
+}
+.clock-sep {
+  font-family: var(--mono); font-size: clamp(40px, 6vw, 72px);
+  line-height: 0.95; color: var(--brass);
+  opacity: 0.35; align-self: center; padding-bottom: 30px;
+}
+
+.hero-meta {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--ink-edge);
+  font-family: var(--sans); font-size: 12px;
+}
+.hero-meta dt {
+  font-family: var(--mono); font-size: 10px;
+  color: var(--cream-whisper);
+  letter-spacing: 0.24em; text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.hero-meta dd { color: var(--cream); font-size: 14px; }
+.badge-verified { color: var(--mint); }
+.badge-unverified { color: var(--alarm); }
+
+/* ─────────────────────── BROKER STRIP ───────────────────────────────── */
+.broker-strip {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid var(--ink-edge);
+}
+.broker-cell {
+  padding: 28px 32px;
+  border-right: 1px solid var(--ink-edge);
+  position: relative;
+}
+.broker-cell:last-child { border-right: none; }
+.broker-cell .label {
+  font-family: var(--mono); font-size: 10px;
+  color: var(--cream-whisper);
+  letter-spacing: 0.28em; text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.broker-cell .big {
+  font-family: var(--mono); font-weight: 400;
+  font-size: clamp(28px, 3.4vw, 46px);
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: var(--cream);
+  font-variant-numeric: tabular-nums;
+}
+.broker-cell .sub {
+  font-family: var(--mono); font-size: 11px;
+  color: var(--cream-dim);
+  margin-top: 6px; letter-spacing: 0.05em;
+}
+.big.bull { color: var(--bull); }
+.big.bear { color: var(--bear); }
+.big.brass { color: var(--brass); }
+
+/* ─────────────────────── INSTRUMENT MATRIX ──────────────────────────── */
+.matrix {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--ink-edge);
+  border: 1px solid var(--ink-edge);
+}
+.inst {
+  background: var(--ink);
+  padding: 24px 26px 22px;
+  position: relative;
+  transition: background 300ms ease, transform 300ms ease;
+  cursor: default;
+}
+.inst:hover { background: var(--ink-elev); }
+.inst-head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  margin-bottom: 18px;
+}
+.inst-code {
+  font-family: var(--mono); font-weight: 500; font-size: 14px;
+  color: var(--cream); letter-spacing: 0.04em;
+}
+.inst-theme {
+  font-family: var(--mono); font-size: 9px;
+  color: var(--cream-whisper);
+  letter-spacing: 0.24em; text-transform: uppercase;
+}
+.inst-price {
+  font-family: var(--mono); font-weight: 500;
+  font-size: 34px; letter-spacing: -1px;
+  color: var(--cream);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.0;
+}
+.inst-price--idle {
+  font-family: var(--serif); font-style: italic; font-weight: 400;
+  color: var(--cream-whisper); letter-spacing: -0.5px;
+  font-size: 30px;
+}
+.inst--idle { opacity: 0.72; }
+.inst--idle:hover { opacity: 1; }
+.inst--idle .inst-spark .bar { background: rgba(242,234,219,0.09); }
+.inst-meta {
+  margin-top: 10px;
+  display: flex; align-items: center; justify-content: space-between;
+  font-family: var(--mono); font-size: 10px;
+  color: var(--cream-dim);
+  letter-spacing: 0.04em;
+  gap: 10px;
+}
+.inst-meta .prox {
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.inst-meta .dir {
+  padding: 2px 8px; border-radius: 2px;
+  font-weight: 500; letter-spacing: 0.2em;
+  font-size: 9px; text-transform: uppercase;
+  flex-shrink: 0;
+}
+.dir-bull { background: var(--bull-dim); color: var(--bull); }
+.dir-bear { background: var(--bear-dim); color: var(--bear); }
+.dir-flat { background: var(--cream-quiet); color: var(--cream-dim); }
+
+/* Sparkline track */
+.inst-spark {
+  margin-top: 18px; height: 32px;
+  display: flex; gap: 2px; align-items: flex-end;
+}
+.inst-spark .bar {
+  flex: 1; background: var(--cream-quiet); border-radius: 1px;
+  transition: height 300ms ease;
+}
+.inst-spark .bar.active { background: var(--brass); }
+.inst-spark .bar.bull { background: var(--bull); }
+.inst-spark .bar.bear { background: var(--bear); }
+
+/* ─────────────────────────── ALERT ROWS ─────────────────────────────── */
+.alerts { display: flex; flex-direction: column; gap: 1px; background: var(--ink-edge); border: 1px solid var(--ink-edge); }
+.alert {
+  background: var(--ink);
+  padding: 28px 32px;
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) 2fr minmax(200px, 1fr);
+  gap: 40px;
+  align-items: flex-start;
+  position: relative;
+}
+.alert:hover { background: var(--ink-elev); }
+.alert-head {
+  display: flex; flex-direction: column; gap: 10px;
+}
+.alert-dir {
+  font-family: var(--mono); font-size: 10px;
+  letter-spacing: 0.3em; text-transform: uppercase;
+  padding: 3px 9px; border-radius: 2px;
+  width: fit-content;
+}
+.alert-dir.buy { background: var(--bull-dim); color: var(--bull); }
+.alert-dir.sell { background: var(--bear-dim); color: var(--bear); }
+.alert-pair {
+  font-family: var(--serif); font-style: italic;
+  font-size: 42px; line-height: 1; color: var(--cream);
+  letter-spacing: -1px;
+}
+.alert-level {
+  font-family: var(--mono); font-size: 13px;
+  color: var(--cream-dim);
+}
+.alert-level strong {
+  font-weight: 500; color: var(--brass); font-size: 16px;
+  letter-spacing: 0.02em;
+}
+
+.alert-body p {
+  font-family: var(--serif);
+  font-size: 16.5px; line-height: 1.6;
+  color: var(--cream-dim);
+  max-width: 58ch;
+}
+.alert-body p::first-letter {
+  font-size: 120%;
+  color: var(--cream);
+}
+.alert-body .id {
+  font-family: var(--mono); font-size: 10px;
+  color: var(--cream-whisper);
+  letter-spacing: 0.2em; text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* Proximity gauge */
+.gauge { margin-top: 18px; }
+.gauge-track {
+  position: relative; height: 3px;
+  background: var(--cream-quiet); border-radius: 2px;
+  margin: 14px 0 8px;
+}
+.gauge-fill {
+  position: absolute; inset: 0 auto 0 0;
+  background: linear-gradient(90deg, var(--brass), rgba(212,165,116,0.2));
+  border-radius: 2px;
+  transition: width 600ms ease;
+}
+.gauge-dot {
+  position: absolute; top: 50%; transform: translate(-50%, -50%);
+  width: 12px; height: 12px; border-radius: 50%;
+  background: var(--cream); border: 2px solid var(--ink);
+  box-shadow: 0 0 0 2px var(--brass);
+  transition: left 600ms ease;
+}
+.gauge-labels {
+  display: flex; justify-content: space-between;
+  font-family: var(--mono); font-size: 10px;
+  color: var(--cream-whisper);
+  letter-spacing: 0.1em;
+}
+.gauge-title {
+  font-family: var(--mono); font-size: 10px;
+  color: var(--cream-whisper);
+  letter-spacing: 0.24em; text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.gauge-title .now {
+  color: var(--cream); font-weight: 500;
+}
+
+.alert-stats {
+  display: flex; flex-direction: column; gap: 14px;
+  border-left: 1px dashed var(--ink-edge);
+  padding-left: 28px;
+}
+.stat-row {
+  display: flex; align-items: baseline; justify-content: space-between;
+  font-family: var(--mono); font-size: 11px;
+}
+.stat-row .k {
+  color: var(--cream-whisper);
+  letter-spacing: 0.2em; text-transform: uppercase;
+}
+.stat-row .v {
+  color: var(--cream); font-weight: 500; font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+.hit-chips { display: flex; gap: 6px; margin-top: 8px; }
+.hit-chip {
+  width: 46px; padding: 8px 4px;
+  border: 1px solid var(--ink-edge);
+  text-align: center;
+  font-family: var(--mono); font-size: 9px;
+  color: var(--cream-dim);
+  border-radius: 2px;
+}
+.hit-chip .v {
+  display: block; color: var(--cream);
+  font-size: 14px; font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  margin-bottom: 2px;
+}
+.hit-chip.good { border-color: var(--mint); color: var(--mint); }
+.hit-chip.good .v { color: var(--mint); }
+.hit-chip.bad { border-color: var(--alarm); color: var(--alarm); }
+.hit-chip.bad .v { color: var(--alarm); }
+.hit-chip.pending { opacity: 0.4; }
+
+/* ───────────────────── COUNTERFACTUAL HEATMAP ───────────────────────── */
+.heatmap {
+  display: grid;
+  grid-template-columns: 260px repeat(3, 1fr);
+  gap: 1px;
+  background: var(--ink-edge);
+  border: 1px solid var(--ink-edge);
+}
+.heat-cell {
+  background: var(--ink);
+  padding: 16px 20px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--cream-dim);
+  min-height: 54px;
+  display: flex; align-items: center;
+}
+.heat-cell.head {
+  background: var(--ink-elev);
+  color: var(--cream-whisper);
+  font-size: 10px; letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+.heat-cell .aid {
+  font-family: var(--mono); font-size: 12px;
+  color: var(--cream); font-weight: 400;
+}
+.heat-cell .aid small {
+  display: block; color: var(--cream-whisper);
+  font-size: 10px; margin-top: 3px;
+  letter-spacing: 0.04em;
+}
+.heat-tile {
+  justify-content: center;
+  font-family: var(--mono); font-size: 16px;
+  font-weight: 500;
+  color: var(--cream);
+  position: relative;
+}
+.heat-tile .rate {
+  display: block; font-size: 18px;
+  font-variant-numeric: tabular-nums;
+}
+.heat-tile .pips {
+  display: block; font-size: 10px;
+  color: var(--cream-whisper);
+  margin-top: 4px; letter-spacing: 0.05em;
+}
+.heat-tile .inner { text-align: center; }
+.heat-tile.good { background: linear-gradient(135deg, rgba(108,176,151,0.14), transparent 80%); }
+.heat-tile.good .rate { color: var(--mint); }
+.heat-tile.ok   { background: linear-gradient(135deg, rgba(212,165,116,0.10), transparent 80%); }
+.heat-tile.ok   .rate { color: var(--brass); }
+.heat-tile.bad  { background: linear-gradient(135deg, rgba(199,74,63,0.10), transparent 80%); }
+.heat-tile.bad  .rate { color: var(--alarm); }
+.heat-tile.pending {
+  color: var(--cream-whisper);
+  font-style: italic;
+  font-family: var(--serif);
+  font-size: 14px;
+}
+
+/* ─────────────────────────── TRADE LEDGER ───────────────────────────── */
+.ledger { border: 1px solid var(--ink-edge); background: var(--ink-elev); }
+.trade {
+  padding: 28px 32px;
+  border-bottom: 1px solid var(--ink-edge);
+  display: grid;
+  grid-template-columns: 60px minmax(120px, 1fr) minmax(200px, 2fr) minmax(140px, auto);
+  gap: 28px;
+  align-items: center;
+}
+.trade:last-child { border-bottom: none; }
+.trade .arrow {
+  font-family: var(--serif); font-style: italic;
+  font-size: 40px; line-height: 1;
+  color: var(--cream-quiet);
+}
+.trade.buy .arrow { color: var(--bull); }
+.trade.sell .arrow { color: var(--bear); }
+.trade-main .pair {
+  font-family: var(--serif); font-style: italic;
+  font-size: 24px; line-height: 1.1; color: var(--cream);
+}
+.trade-main .prices {
+  font-family: var(--mono); font-size: 12px;
+  color: var(--cream-dim); margin-top: 4px;
+  font-variant-numeric: tabular-nums;
+}
+.trade-main .dates {
+  font-family: var(--mono); font-size: 10px;
+  color: var(--cream-whisper);
+  letter-spacing: 0.08em; margin-top: 4px;
+}
+.trade-lesson {
+  font-family: var(--serif); font-style: italic;
+  font-size: 15px; line-height: 1.55;
+  color: var(--cream-dim);
+}
+.trade-pnl {
+  font-family: var(--mono); font-size: 28px;
+  color: var(--cream); font-variant-numeric: tabular-nums;
+  text-align: right;
+  letter-spacing: -0.5px;
+}
+.trade-pnl .label {
+  display: block; font-size: 10px;
+  color: var(--cream-whisper);
+  letter-spacing: 0.2em; text-transform: uppercase;
+  margin-top: 4px;
+}
+.trade-pnl.profit { color: var(--mint); }
+.trade-pnl.loss { color: var(--alarm); }
+
+/* ─────────────────────────── REGIME PANEL ───────────────────────────── */
+.regime {
+  padding: 56px 48px;
+  border: 1px solid var(--ink-edge);
+  background: linear-gradient(180deg, var(--ink-deep), var(--ink-elev));
+  position: relative;
+}
+.regime h3 {
+  font-family: var(--mono); font-size: 10px;
+  color: var(--cream-whisper);
+  letter-spacing: 0.3em; text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.regime blockquote {
+  font-family: var(--serif);
+  font-size: 22px;
+  line-height: 1.45;
+  color: var(--cream);
+  max-width: 76ch;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+}
+.regime blockquote::first-letter {
+  font-size: 84px;
+  float: left;
+  line-height: 0.9;
+  padding: 6px 14px 0 0;
+  color: var(--brass);
+  font-style: italic;
+}
+.regime .cite {
+  margin-top: 28px;
+  font-family: var(--mono); font-size: 10px;
+  color: var(--cream-whisper);
+  letter-spacing: 0.2em; text-transform: uppercase;
+  display: flex; align-items: center; gap: 16px;
+}
+
+/* ─────────────────────────── FEED TICKER ────────────────────────────── */
+.feed {
+  margin-top: 56px;
+  padding: 24px 0;
+  border-top: 1px solid var(--ink-edge);
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+.feed-track {
+  display: flex; gap: 48px;
+  animation: feed 90s linear infinite;
+  white-space: nowrap;
+  font-family: var(--mono); font-size: 12px;
+  color: var(--cream-dim);
+}
+.feed-track:hover { animation-play-state: paused; }
+@keyframes feed {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.feed-item { display: inline-flex; gap: 14px; align-items: baseline; }
+.feed-item .t {
+  color: var(--brass);
+  font-weight: 500; letter-spacing: 0.04em;
+  flex-shrink: 0;
+}
+.feed-item .x { color: var(--cream-whisper); }
+
+/* ─────────────────────────── POSITIONS ──────────────────────────────── */
+.empty-positions {
+  padding: 80px 40px;
+  border: 1px dashed var(--ink-edge);
+  text-align: center;
+  background: var(--ink-elev);
+}
+.empty-positions .glyph {
+  font-family: var(--serif); font-style: italic;
+  font-size: 72px; color: var(--cream-quiet);
+  line-height: 1; margin-bottom: 18px;
+}
+.empty-positions p {
+  font-family: var(--serif); font-style: italic;
+  font-size: 22px; color: var(--cream-dim);
+  max-width: 40ch; margin: 0 auto;
+}
+.empty-positions .sub {
+  margin-top: 20px;
+  font-family: var(--mono); font-size: 10px;
+  color: var(--cream-whisper);
+  letter-spacing: 0.28em; text-transform: uppercase;
+}
+
+/* ─────────────────────────── FOOTER ─────────────────────────────────── */
+footer {
+  margin-top: 80px;
+  padding: 40px 32px 64px;
+  border-top: 1px solid var(--ink-edge);
+  display: flex; justify-content: space-between;
+  font-family: var(--mono); font-size: 10px;
+  color: var(--cream-whisper);
+  letter-spacing: 0.22em; text-transform: uppercase;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+footer a { color: var(--cream-dim); text-decoration: none; border-bottom: 1px solid var(--ink-edge); }
+
+/* ─────────────────────────── RESPONSIVE ─────────────────────────────── */
+@media (max-width: 980px) {
+  main { padding: 32px 18px 64px; }
+  .broker-strip { grid-template-columns: repeat(2, 1fr); }
+  .broker-cell:nth-child(2) { border-right: none; }
+  .broker-cell:nth-child(1), .broker-cell:nth-child(2) { border-bottom: 1px solid var(--ink-edge); }
+  .matrix { grid-template-columns: 1fr 1fr; }
+  .alert { grid-template-columns: 1fr; gap: 20px; }
+  .alert-stats { border-left: none; border-top: 1px dashed var(--ink-edge); padding-left: 0; padding-top: 20px; }
+  .heatmap { grid-template-columns: 1fr 1fr 1fr 1fr; font-size: 10px; }
+  .heat-cell { padding: 10px 8px; font-size: 10px; }
+  .trade { grid-template-columns: 30px 1fr; grid-template-areas: "arr main" "arr lesson" "arr pnl"; }
+  .trade .arrow { grid-area: arr; font-size: 28px; }
+  .trade-main { grid-area: main; }
+  .trade-lesson { grid-area: lesson; }
+  .trade-pnl { grid-area: pnl; text-align: left; }
+  .section-head h2 { font-size: 24px; }
+  .regime { padding: 32px 24px; }
+  .regime blockquote { font-size: 17px; }
+  .regime blockquote::first-letter { font-size: 54px; }
+  .hero { padding: 28px 20px; }
+  .clock { grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .clock-sep { display: none; }
+}
+
+@media (max-width: 640px) {
+  .broker-strip { grid-template-columns: 1fr; }
+  .broker-cell { border-right: none; border-bottom: 1px solid var(--ink-edge); }
+  .broker-cell:last-child { border-bottom: none; }
+  .matrix { grid-template-columns: 1fr; }
+  .inst { border-bottom: 1px solid var(--ink-edge); }
+  .topbar-right .opt { display: none; }
+}
+
+/* Reveal animation — staggered, subtle */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: reveal 700ms cubic-bezier(.2,.7,.2,1) forwards;
+}
+@keyframes reveal { to { opacity: 1; transform: none; } }
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <div class="wordmark">
+    <span class="mark">Stock <em>Pulse</em></span>
+    <span class="tag">Forex Command</span>
+  </div>
+  <div class="topbar-right">
+    <span class="opt" id="last-tick">— —</span>
+    <span class="opt" id="market-stat">Market</span>
+    <span class="pulse"><span id="pulse-label">Live</span></span>
+  </div>
+</div>
+
+<main>
+
+  <!-- ─────── HERO: BINARY EVENT COUNTDOWN ─────── -->
+  <section class="section" style="margin-top:0" data-reveal>
+    <div class="section-head">
+      <h2>Binary <em>Event</em></h2>
+      <span class="index">§ 00 · Mission Clock</span>
+    </div>
+    <div class="hero" id="hero">
+      <div class="hero-eyebrow">
+        <span class="dot"></span>
+        <span id="hero-name">—</span>
+        <span class="x">·</span>
+        <span id="hero-state">—</span>
+      </div>
+      <h1 class="hero-title" id="hero-headline">
+        The tape is split. <em>Gold hedges the ambiguity.</em>
+      </h1>
+      <div class="clock" id="clock">
+        <div class="clock-cell"><span class="num" id="cd-d">--</span><span class="label" id="cd-d-lbl">Days</span></div>
+        <span class="clock-sep">:</span>
+        <div class="clock-cell"><span class="num" id="cd-h">--</span><span class="label">Hours</span></div>
+        <span class="clock-sep">:</span>
+        <div class="clock-cell"><span class="num" id="cd-m">--</span><span class="label">Min</span></div>
+        <span class="clock-sep">:</span>
+        <div class="clock-cell"><span class="num" id="cd-s">--</span><span class="label">Sec</span></div>
+      </div>
+      <dl class="hero-meta">
+        <div><dt>Deadline</dt><dd id="hero-deadline">—</dd></div>
+        <div><dt>Verified</dt><dd id="hero-verified">—</dd></div>
+        <div><dt>Sources</dt><dd id="hero-sources">—</dd></div>
+        <div><dt>Posture</dt><dd id="hero-posture">—</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ─────── BROKER STRIP ─────── -->
+  <section class="section" data-reveal style="animation-delay:80ms">
+    <div class="section-head">
+      <h2><em>Ledger</em> State</h2>
+      <span class="index">§ 01 · Capital</span>
+    </div>
+    <div class="broker-strip">
+      <div class="broker-cell">
+        <div class="label">Balance</div>
+        <div class="big" id="bal">$—</div>
+        <div class="sub" id="bal-sub">capital base</div>
+      </div>
+      <div class="broker-cell">
+        <div class="label">Daily P&amp;L</div>
+        <div class="big" id="pnl">$—</div>
+        <div class="sub" id="pnl-sub">—</div>
+      </div>
+      <div class="broker-cell">
+        <div class="label">Open Risk</div>
+        <div class="big" id="risk">—</div>
+        <div class="sub" id="risk-sub">of 6% cap</div>
+      </div>
+      <div class="broker-cell">
+        <div class="label">Positions</div>
+        <div class="big" id="pos">—</div>
+        <div class="sub" id="pos-sub">of 4 max</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────── INSTRUMENT MATRIX ─────── -->
+  <section class="section" data-reveal style="animation-delay:160ms">
+    <div class="section-head">
+      <h2>The <em>Eyes</em></h2>
+      <span class="index">§ 02 · Watched Pairs</span>
+    </div>
+    <div class="matrix" id="matrix"></div>
+  </section>
+
+  <!-- ─────── LEVEL ALERTS ─────── -->
+  <section class="section" data-reveal style="animation-delay:240ms">
+    <div class="section-head">
+      <h2>Armed <em>Triggers</em></h2>
+      <span class="index">§ 03 · Level Alerts</span>
+    </div>
+    <div class="alerts" id="alerts"></div>
+  </section>
+
+  <!-- ─────── COUNTERFACTUAL HEATMAP ─────── -->
+  <section class="section" data-reveal style="animation-delay:320ms">
+    <div class="section-head">
+      <h2>What <em>Happened</em> If We'd Taken It</h2>
+      <span class="index">§ 04 · Counterfactual Memory</span>
+    </div>
+    <div class="heatmap" id="heatmap"></div>
+    <p style="font-family: var(--serif); font-size: 15px; color: var(--cream-dim); margin-top: 24px; max-width: 70ch; font-style: italic;">
+      Every alert fired is tracked at +1h, +4h, +24h. Favorable = price moved in the alert's direction from the trigger. Pending = horizon not yet elapsed. This is how SKIP decisions become auditable — not a matter of feel.
+    </p>
+  </section>
+
+  <!-- ─────── OPEN POSITIONS ─────── -->
+  <section class="section" data-reveal style="animation-delay:400ms">
+    <div class="section-head">
+      <h2>Open <em>Positions</em></h2>
+      <span class="index">§ 05 · At Risk Now</span>
+    </div>
+    <div id="positions"></div>
+  </section>
+
+  <!-- ─────── TRADE LEDGER ─────── -->
+  <section class="section" data-reveal style="animation-delay:480ms">
+    <div class="section-head">
+      <h2>Closed <em>Trades</em></h2>
+      <span class="index">§ 06 · History &amp; Lessons</span>
+    </div>
+    <div class="ledger" id="trades"></div>
+  </section>
+
+  <!-- ─────── REGIME NOTE ─────── -->
+  <section class="section" data-reveal style="animation-delay:560ms">
+    <div class="section-head">
+      <h2>The <em>Read</em></h2>
+      <span class="index">§ 07 · Regime Note</span>
+    </div>
+    <div class="regime">
+      <h3>— current narrative</h3>
+      <blockquote id="regime-quote">Loading…</blockquote>
+      <div class="cite">
+        <span id="regime-stamp">—</span>
+        <span>·</span>
+        <span id="regime-author">claude · forex orchestrator</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────── FEED TICKER ─────── -->
+  <section class="section" data-reveal style="animation-delay:640ms">
+    <div class="section-head">
+      <h2>The <em>Feed</em></h2>
+      <span class="index">§ 08 · Recent Ticks</span>
+    </div>
+    <div class="feed">
+      <div class="feed-track" id="feed-track"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div>Stock Pulse · Forex Command · <span id="data-stamp">—</span></div>
+  <div><a href="https://github.com/Rajneesh-mishra/stock-pulse" target="_blank" rel="noopener">↗ github</a></div>
+</footer>
+
+<script>
+/* ─────────────────────────────  HELPERS  ────────────────────────────── */
+const DATA_DIR = 'data/forex';
+const PIP_SIZE = {
+  EURUSD: 0.0001, GBPUSD: 0.0001, AUDUSD: 0.0001,
+  USDCAD: 0.0001, USDCHF: 0.0001,
+  USDJPY: 0.01, GOLD: 0.1, OIL_CRUDE: 0.01, BTCUSD: 1.0,
+};
+const PAIR_LABEL = {
+  EURUSD: 'EUR · USD', GBPUSD: 'GBP · USD', AUDUSD: 'AUD · USD',
+  USDCAD: 'USD · CAD', USDCHF: 'USD · CHF', USDJPY: 'USD · JPY',
+  GOLD: 'XAU · USD', OIL_CRUDE: 'WTI Crude', BTCUSD: 'BTC · USD',
+};
+const THEME = {
+  EURUSD: 'dollar macro', GBPUSD: 'dollar macro', AUDUSD: 'risk · geopol',
+  USDCAD: 'dollar · oil', USDCHF: 'dollar macro', USDJPY: 'geopol · intervention',
+  GOLD: 'safe haven', OIL_CRUDE: 'geopolitical', BTCUSD: 'crypto macro',
+};
+
+/* Escape any string before it enters innerHTML templates. */
+const ESCAPE_MAP = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
+function escapeHTML(v) {
+  if (v === null || v === undefined) return '';
+  return String(v).replace(/[&<>"']/g, ch => ESCAPE_MAP[ch]);
+}
+const h = escapeHTML;
+
+async function loadJSON(name) {
+  try {
+    const r = await fetch(`${DATA_DIR}/${name}?t=${Date.now()}`, { cache: 'no-store' });
+    if (!r.ok) throw new Error(r.status);
+    return await r.json();
+  } catch (e) { console.warn(`fetch ${name} failed`, e); return null; }
+}
+
+function fmtNum(n, dp) {
+  if (n === null || n === undefined || Number.isNaN(Number(n))) return '—';
+  return Number(n).toLocaleString(undefined, { minimumFractionDigits: dp, maximumFractionDigits: dp });
+}
+function fmtMoney(n) {
+  if (n === null || n === undefined || Number.isNaN(Number(n))) return '$—';
+  const v = Number(n);
+  const sign = v < 0 ? '−' : '';
+  return `${sign}$${Math.abs(v).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+}
+function relativeTime(iso) {
+  if (!iso) return '—';
+  const t = new Date(iso).getTime();
+  if (Number.isNaN(t)) return '—';
+  const dt = Date.now() - t;
+  const m = Math.round(dt / 60000);
+  if (m < 1) return 'just now';
+  if (m < 60) return `${m}m ago`;
+  const hr = Math.round(m/60);
+  if (hr < 24) return `${hr}h ago`;
+  return `${Math.round(hr/24)}d ago`;
+}
+function dpForInstrument(epic) {
+  return epic === 'USDJPY' ? 3
+       : epic === 'GOLD'   ? 2
+       : epic === 'OIL_CRUDE' ? 3
+       : epic === 'BTCUSD' ? 0
+       : 5;
+}
+
+/* ─────────────────────────  COUNTDOWN ───────────────────────────────── */
+let countdownInterval = null, postureInterval = null;
+function renderCountdown(state) {
+  const b = state && state.binary_event;
+  const deadlineEl = document.getElementById('hero-deadline');
+  const nameEl = document.getElementById('hero-name');
+  const stateEl = document.getElementById('hero-state');
+  const vEl = document.getElementById('hero-verified');
+  const srcEl = document.getElementById('hero-sources');
+  const postureEl = document.getElementById('hero-posture');
+  const head = document.getElementById('hero-headline');
+
+  if (countdownInterval) clearInterval(countdownInterval);
+  if (postureInterval) clearInterval(postureInterval);
+
+  if (!b || !b.deadline_utc) {
+    deadlineEl.textContent = 'No active binary';
+    stateEl.textContent = 'normal trading';
+    nameEl.textContent = '—';
+    vEl.textContent = '—';
+    srcEl.textContent = '—';
+    postureEl.textContent = 'standard';
+    head.innerHTML = 'The tape is quiet. <em>Watch the levels.</em>';
+    ['cd-d','cd-h','cd-m','cd-s'].forEach(id => document.getElementById(id).textContent = '00');
+    return;
+  }
+  nameEl.textContent = (b.name || 'event').replaceAll('_', ' ');
+  try { deadlineEl.textContent = new Date(b.deadline_utc).toUTCString().replace('GMT', 'UTC'); }
+  catch { deadlineEl.textContent = b.deadline_utc; }
+  const verified = b.verified === true;
+  vEl.textContent = verified ? 'confirmed' : 'unverified · awaiting 2nd source';
+  vEl.className = verified ? 'badge-verified' : 'badge-unverified';
+  srcEl.textContent = (b.sources || []).length ? `${(b.sources || []).length} cited` : 'none yet';
+
+  function updatePosture() {
+    const dt = new Date(b.deadline_utc).getTime() - Date.now();
+    let posture, stateText, headlineHTML;
+    if (dt < -60 * 1000) {
+      posture = 'deadline passed · reassess'; stateText = 'deadline passed';
+      headlineHTML = 'The deadline has passed. <em>The read is what matters now.</em>';
+    } else if (dt < 30 * 60 * 1000) {
+      posture = 'blackout · no new entries'; stateText = 'T-30 blackout';
+      headlineHTML = '<em>Thirty minutes.</em> No new entries. Manage what is open.';
+    } else if (dt < 24 * 3600 * 1000) {
+      posture = 'elevated caution · half size'; stateText = 'elevated caution';
+      headlineHTML = 'Elevated caution. <em>Conviction 4+ only. Half size.</em>';
+    } else {
+      posture = 'standard · deadline on horizon'; stateText = 'armed';
+      headlineHTML = 'The tape is armed. <em>Watch the levels, not the rhetoric.</em>';
+    }
+    postureEl.textContent = posture;
+    stateEl.textContent = stateText;
+    head.innerHTML = headlineHTML;   // safe — constants above, no user input
+  }
+  updatePosture();
+  postureInterval = setInterval(updatePosture, 60 * 1000);
+
+  function tick() {
+    let dt = new Date(b.deadline_utc).getTime() - Date.now();
+    let sign = '';
+    if (dt < 0) { dt = -dt; sign = '+'; }
+    const d = Math.floor(dt / 86400000);
+    const hr = Math.floor(dt / 3600000) % 24;
+    const m = Math.floor(dt / 60000) % 60;
+    const s = Math.floor(dt / 1000) % 60;
+    const pad = x => String(x).padStart(2, '0');
+    document.getElementById('cd-d').textContent = pad(d);
+    document.getElementById('cd-h').textContent = pad(hr);
+    document.getElementById('cd-m').textContent = pad(m);
+    document.getElementById('cd-s').textContent = pad(s);
+    document.getElementById('cd-d-lbl').textContent = sign === '+' ? 'Days past' : 'Days';
+  }
+  tick();
+  countdownInterval = setInterval(tick, 1000);
+}
+
+/* ─────────────────────────── BROKER ─────────────────────────────────── */
+function renderBroker(state) {
+  if (!state) return;
+  const bal = state.broker_balance ?? state.capital_base ?? 1000;
+  const pnl = Number(state.daily_pnl ?? 0);
+  const trades = state.trade_history || [];
+  const totalPnl = state.total_pnl ?? trades.reduce((s,t) => s + (Number(t.pnl) || 0), 0);
+  const open = (state.open_positions || []).length;
+  const openRisk = (state.open_positions || []).reduce((s, p) => s + (Number(p.risk) || 0), 0);
+
+  const balEl = document.getElementById('bal');
+  balEl.textContent = fmtMoney(bal);
+  document.getElementById('bal-sub').textContent = `total P/L ${fmtMoney(totalPnl)}`;
+
+  const pnlEl = document.getElementById('pnl');
+  pnlEl.textContent = fmtMoney(pnl);
+  pnlEl.className = 'big ' + (pnl > 0 ? 'bull' : pnl < 0 ? 'bear' : '');
+  document.getElementById('pnl-sub').textContent = pnl === 0 ? 'flat today' : `${trades.length} closed lifetime`;
+
+  const riskPct = bal > 0 ? (openRisk / bal * 100) : 0;
+  const riskEl = document.getElementById('risk');
+  if (openRisk > 0) {
+    riskEl.textContent = fmtMoney(openRisk);
+    riskEl.className = 'big';
+  } else {
+    riskEl.textContent = 'at rest';
+    riskEl.style.fontFamily = 'var(--serif)';
+    riskEl.style.fontStyle = 'italic';
+    riskEl.style.color = 'var(--cream-whisper)';
+    riskEl.style.fontSize = 'clamp(24px, 2.8vw, 38px)';
+    riskEl.style.letterSpacing = '-0.5px';
+  }
+  document.getElementById('risk-sub').textContent = `${riskPct.toFixed(2)}% used · cap 6%`;
+
+  const posEl = document.getElementById('pos');
+  if (open > 0) {
+    posEl.textContent = open;
+    posEl.className = 'big bull';
+  } else {
+    posEl.textContent = 'none';
+    posEl.style.fontFamily = 'var(--serif)';
+    posEl.style.fontStyle = 'italic';
+    posEl.style.color = 'var(--cream-whisper)';
+    posEl.style.fontSize = 'clamp(24px, 2.8vw, 38px)';
+    posEl.style.letterSpacing = '-0.5px';
+  }
+  document.getElementById('pos-sub').textContent = `${open}/4 open`;
+}
+
+/* ───────────────────── INSTRUMENT MATRIX ────────────────────────────── */
+function renderMatrix(watchlist) {
+  const matrix = document.getElementById('matrix');
+  const pairs = watchlist?.instruments || Object.keys(PIP_SIZE);
+  const alertsByInst = {};
+  (watchlist?.level_alerts || []).forEach(a => {
+    (alertsByInst[a.instrument] = alertsByInst[a.instrument] || []).push(a);
+  });
+
+  matrix.innerHTML = '';
+  pairs.forEach(epic => {
+    const a = (alertsByInst[epic] || [])[0];
+    const price = a?.current_price_ref;
+    const dir = a?.direction;
+    const dirClass = dir === 'buy' ? 'dir-bull' : dir === 'sell' ? 'dir-bear' : 'dir-flat';
+    const dirLabel = dir ? dir : 'watching';
+    const dp = dpForInstrument(epic);
+    const proxRaw = a?.proximity || '';
+    const distTxt = proxRaw ? proxRaw.split('.')[0] : '';
+
+    let seed = 0;
+    for (const ch of epic) seed += ch.charCodeAt(0);
+    const bars = Array.from({length: 12}, (_, i) => {
+      const height = Math.abs(Math.sin(seed + i * 0.7)) * 70 + 20;
+      const active = !!a && (i >= 7);
+      const cls = active && dir === 'buy' ? 'bar bull'
+                : active && dir === 'sell' ? 'bar bear'
+                : active ? 'bar active' : 'bar';
+      return `<div class="${cls}" style="height:${height.toFixed(0)}%"></div>`;
+    }).join('');
+
+    const priceHTML = price != null
+      ? `<div class="inst-price">${h(fmtNum(price, dp))}</div>`
+      : `<div class="inst-price inst-price--idle">standing&nbsp;by</div>`;
+    const metaHTML = price != null
+      ? `<span class="prox">${h(distTxt || '—')}</span><span class="dir ${dirClass}">${h(dirLabel)}</span>`
+      : `<span class="prox" style="font-family:var(--serif);font-style:italic;font-size:13px;color:var(--cream-whisper);">— no active alert —</span><span class="dir dir-flat">${h(THEME[epic]?.split(' ')[0] || 'watching')}</span>`;
+
+    matrix.innerHTML += `
+      <div class="inst ${price == null ? 'inst--idle' : ''}">
+        <div class="inst-head">
+          <span class="inst-code">${h(PAIR_LABEL[epic] || epic)}</span>
+          <span class="inst-theme">${h(THEME[epic] || '')}</span>
+        </div>
+        ${priceHTML}
+        <div class="inst-meta">${metaHTML}</div>
+        <div class="inst-spark" aria-hidden="true">${bars}</div>
+      </div>`;
+  });
+}
+
+/* ───────────────────────── LEVEL ALERTS ─────────────────────────────── */
+function computeGauge(alert) {
+  const cur = Number(alert.current_price_ref);
+  const lvl = Number(alert.level);
+  if (!Number.isFinite(cur) || !Number.isFinite(lvl)) return { pct: 0, near: '—', far: '—', distPips: null };
+  const pip = PIP_SIZE[alert.instrument] || 0.0001;
+  const distPips = Math.abs(cur - lvl) / pip;
+  const pct = Math.max(0, Math.min(100, 100 - (distPips / 200) * 100));
+  return { pct, near: 'TRIGGER', far: 'FAR · 200p', distPips };
+}
+
+function renderAlerts(watchlist, cf) {
+  const container = document.getElementById('alerts');
+  const alerts = watchlist?.level_alerts || [];
+  const cfMap = {};
+  (cf?.alerts || []).forEach(a => { cfMap[a.alert_id] = a; });
+
+  if (!alerts.length) {
+    container.innerHTML = `
+      <div class="alert" style="grid-template-columns:1fr">
+        <p style="font-family:var(--serif);font-style:italic;font-size:20px;color:var(--cream-dim);text-align:center;">
+          No armed triggers. The watchlist is clean.
+        </p>
+      </div>`;
+    return;
+  }
+
+  container.innerHTML = alerts.map(a => {
+    const g = computeGauge(a);
+    const stats = cfMap[a.id] || {};
+    const horizons = ['1h', '4h', '24h'];
+    const hitChips = horizons.map(hz => {
+      const b = stats.by_horizon?.[hz];
+      if (!b || b.hit_rate == null) return `<div class="hit-chip pending"><span class="v">—</span>${hz}</div>`;
+      const pct = Math.round(b.hit_rate * 100);
+      const cls = pct >= 55 ? 'good' : pct >= 30 ? '' : 'bad';
+      return `<div class="hit-chip ${cls}"><span class="v">${pct}%</span>${hz}</div>`;
+    }).join('');
+    const dp = dpForInstrument(a.instrument);
+    const noteText = (a.note || '').replace(/\s+/g, ' ').slice(0, 420);
+    const noteSuffix = (a.note || '').length > 420 ? '…' : '';
+    const dirClass = a.direction === 'buy' ? 'buy' : 'sell';
+    const distTxt = g.distPips != null ? `${g.distPips.toFixed(1)}p` : '—';
+    const gaugeLeft = g.distPips != null ? g.pct : 0;
+
+    return `
+      <div class="alert">
+        <div class="alert-head">
+          <span class="alert-dir ${dirClass}">${h(a.direction || '')}</span>
+          <div class="alert-pair">${h(PAIR_LABEL[a.instrument] || a.instrument)}</div>
+          <div class="alert-level">trigger at <strong>${h(fmtNum(a.level, dp))}</strong> · live ${h(fmtNum(a.current_price_ref, dp))}</div>
+          <div class="gauge">
+            <div class="gauge-title">proximity · <span class="now">${h(distTxt)}</span> from trigger</div>
+            <div class="gauge-track">
+              <div class="gauge-fill" style="width:${gaugeLeft}%"></div>
+              <div class="gauge-dot" style="left:${gaugeLeft}%"></div>
+            </div>
+            <div class="gauge-labels"><span>${g.near}</span><span>${g.far}</span></div>
+          </div>
+        </div>
+        <div class="alert-body">
+          <div class="id">${h(a.id || '')}</div>
+          <p>${h(noteText + noteSuffix)}</p>
+        </div>
+        <div class="alert-stats">
+          <div class="stat-row"><span class="k">updated</span><span class="v">${h(relativeTime(a.last_updated))}</span></div>
+          <div class="stat-row"><span class="k">cooldown</span><span class="v">${h(Math.round((a.cooldown_sec || 0) / 60))}m</span></div>
+          <div class="stat-row"><span class="k">fires</span><span class="v">${h(stats.fires ?? 0)}</span></div>
+          <div>
+            <div class="stat-row" style="margin-bottom:4px"><span class="k">hit rate · horizon</span></div>
+            <div class="hit-chips">${hitChips}</div>
+          </div>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+/* ───────────────── COUNTERFACTUAL HEATMAP ───────────────────────────── */
+function renderHeatmap(cf) {
+  const heat = document.getElementById('heatmap');
+  let html = `
+    <div class="heat-cell head">alert · instrument</div>
+    <div class="heat-cell head" style="justify-content:center">+1h</div>
+    <div class="heat-cell head" style="justify-content:center">+4h</div>
+    <div class="heat-cell head" style="justify-content:center">+24h</div>`;
+  const alerts = (cf?.alerts || []).filter(a => a.alert_id !== 'TEST_CHAIN_VALIDATION');
+  alerts.sort((x, y) => (y.fires || 0) - (x.fires || 0));
+  if (!alerts.length) {
+    html += `<div class="heat-cell" style="grid-column: 1 / -1; justify-content:center; color: var(--cream-whisper);">No alert history yet.</div>`;
+    heat.innerHTML = html;
+    return;
+  }
+  alerts.forEach(a => {
+    const directionStr = a.direction || 'direction not logged';
+    html += `
+      <div class="heat-cell">
+        <div class="aid">${h(a.alert_id)}<small>${h(a.instrument)} · ${h(directionStr)} · ${h(a.fires)} fires</small></div>
+      </div>`;
+    ['1h','4h','24h'].forEach(hz => {
+      const b = a.by_horizon?.[hz];
+      if (!b || b.hit_rate == null) {
+        html += `<div class="heat-cell heat-tile pending"><div class="inner">pending</div></div>`;
+        return;
+      }
+      const pct = Math.round(b.hit_rate * 100);
+      const cls = pct >= 55 ? 'good' : pct >= 30 ? 'ok' : 'bad';
+      const pips = b.avg_pips == null ? '' : (b.avg_pips > 0 ? `+${b.avg_pips}p` : `${b.avg_pips}p`);
+      html += `
+        <div class="heat-cell heat-tile ${cls}">
+          <div class="inner"><span class="rate">${h(pct)}%</span><span class="pips">${h(pips)} · n=${h(b.filled)}</span></div>
+        </div>`;
+    });
+  });
+  heat.innerHTML = html;
+}
+
+/* ───────────────────────── POSITIONS ────────────────────────────────── */
+function renderPositions(state) {
+  const container = document.getElementById('positions');
+  const open = state?.open_positions || [];
+  if (!open.length) {
+    container.innerHTML = `
+      <div class="empty-positions">
+        <div class="glyph">∅</div>
+        <p>Capital is preserved. No positions are at risk right now — and that is itself a choice.</p>
+        <div class="sub">waiting for conviction · alerts armed</div>
+      </div>`;
+    return;
+  }
+  container.innerHTML = open.map(p => {
+    const dir = (p.direction || '').toString().toLowerCase();
+    const arrow = dir === 'buy' ? '↗' : '↘';
+    const upl = Number(p.upl) || 0;
+    const cls = upl > 0 ? 'profit' : upl < 0 ? 'loss' : '';
+    const dp = dpForInstrument(p.instrument);
+    return `
+      <div class="trade ${dir}">
+        <div class="arrow">${arrow}</div>
+        <div class="trade-main">
+          <div class="pair">${h(PAIR_LABEL[p.instrument] || p.instrument)}</div>
+          <div class="prices">entry ${h(fmtNum(p.entry_price, dp))} · SL ${h(fmtNum(p.sl, dp))} · TP ${h(fmtNum(p.tp, dp))}</div>
+          <div class="dates">opened ${h(p.opened_at || '')}</div>
+        </div>
+        <div class="trade-lesson">${h(p.thesis || '')}</div>
+        <div class="trade-pnl ${cls}">${h(fmtMoney(upl))}<span class="label">unrealised</span></div>
+      </div>`;
+  }).join('');
+}
+
+/* ───────────────────────── TRADES LEDGER ────────────────────────────── */
+function renderTrades(state) {
+  const container = document.getElementById('trades');
+  const trades = (state?.trade_history || []).slice().reverse();
+  if (!trades.length) {
+    container.innerHTML = `<div class="trade" style="grid-template-columns:1fr"><p style="font-family:var(--serif);font-style:italic;color:var(--cream-dim);text-align:center">No trades yet.</p></div>`;
+    return;
+  }
+  container.innerHTML = trades.map(t => {
+    const dir = (t.direction || '').toString().toLowerCase();
+    const pnl = Number(t.pnl || 0);
+    const cls = pnl > 0.5 ? 'profit' : pnl < -0.5 ? 'loss' : '';
+    const dp = dpForInstrument(t.instrument);
+    const arrow = dir === 'buy' ? '↗' : '↘';
+    const opened = (t.opened_at || '').slice(0, 10);
+    const closed = (t.closed_at || '').slice(0, 10);
+    const lesson = t.lessons || t.exit_reason || '';
+    return `
+      <div class="trade ${dir}">
+        <div class="arrow">${arrow}</div>
+        <div class="trade-main">
+          <div class="pair">${h(PAIR_LABEL[t.instrument] || t.instrument)}</div>
+          <div class="prices">entry ${h(fmtNum(t.entry_price, dp))} → exit ${h(fmtNum(t.exit_price, dp))}</div>
+          <div class="dates">${h(opened)} → ${h(closed)} · ${h(t.result || '')}</div>
+        </div>
+        <div class="trade-lesson">&ldquo;${h(lesson)}&rdquo;</div>
+        <div class="trade-pnl ${cls}">${h(fmtMoney(pnl))}<span class="label">realized</span></div>
+      </div>`;
+  }).join('');
+}
+
+/* ─────────────────────────── REGIME ─────────────────────────────────── */
+function renderRegime(state) {
+  const raw = (state?.regime_note || 'No regime note recorded.').toString().trim();
+  // Strip a leading timestamp like "2026-04-22 10:55 UTC forex auto — " so the
+  // drop-cap can land on a real word of the narrative.
+  const stripped = raw
+    .replace(/^\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}\s*UTC(?:\s+[^—]+)?\s*—\s*/, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  const clean = stripped.slice(0, 820);
+  const needsEllipsis = stripped.length > 820;
+  document.getElementById('regime-quote').textContent = clean + (needsEllipsis ? '…' : '');
+  // Stamp shows the actual tick timestamp (the prefix we stripped, if any)
+  const stampMatch = raw.match(/^(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}\s*UTC)/);
+  document.getElementById('regime-stamp').textContent =
+    (stampMatch && stampMatch[1]) ||
+    state?.last_tick_utc || state?.last_updated || state?.updated_at || '—';
+}
+
+/* ─────────────────────────── FEED TICKER ────────────────────────────── */
+async function renderFeed() {
+  const feed = await loadJSON('feed.json');
+  const track = document.getElementById('feed-track');
+  const ticks = (feed?.ticks || []).slice(-24);
+  if (!ticks.length) {
+    track.innerHTML = `<span class="feed-item"><span class="t">—</span><span class="x">no recent activity</span></span>`;
+    return;
+  }
+  const html = ticks.map(t => {
+    const ts = (t.ts_utc || t.t || '').slice(11, 16);
+    const raw = (t.summary || t.note || t.trigger || '').toString().replace(/\s+/g, ' ').slice(0, 180);
+    return `<span class="feed-item"><span class="t">${h(ts)}</span><span class="x">${h(raw)}</span></span>`;
+  }).join('');
+  // duplicate for seamless horizontal scroll
+  track.innerHTML = html + html;
+}
+
+/* ─────────────────────────── MAIN ───────────────────────────────────── */
+async function main() {
+  const [state, watchlist, counterfactual] = await Promise.all([
+    loadJSON('state.json'),
+    loadJSON('watchlist.json'),
+    loadJSON('counterfactual.json'),
+  ]);
+  renderCountdown(state);
+  renderBroker(state);
+  renderMatrix(watchlist);
+  renderAlerts(watchlist, counterfactual);
+  renderHeatmap(counterfactual);
+  renderPositions(state);
+  renderTrades(state);
+  renderRegime(state);
+  renderFeed();
+
+  const lastTick = state?.last_tick_utc || state?.updated_at || state?.last_updated;
+  document.getElementById('last-tick').textContent = `tick ${relativeTime(lastTick)}`;
+  document.getElementById('market-stat').textContent = 'Forex · live';
+  document.getElementById('data-stamp').textContent = new Date().toISOString().replace('T', ' ').slice(0, 19) + ' UTC';
+}
+
+main();
+setInterval(main, 30_000);
+</script>
+</body>
+</html>

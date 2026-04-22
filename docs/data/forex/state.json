@@ -1,0 +1,390 @@
+{
+  "last_tick": "2026-04-22T10:55:00Z",
+  "regime": "POST_DEADLINE_EXTENSION_WITH_FRICTION_TAPE_SPLIT",
+  "regime_note": "2026-04-22 10:55 UTC forex auto \u2014 68 unconsumed (3 OIL level_cross 90.5 cross_down all SKIP per gold-reverse SKIP condition + extension headlines, 20 bar_close 22:23-23:25 full universe all SKIP modest drift, 45 news_flash). DEADLINE PASSED ~10h45m ago. NEW INTEL: ceasefire EXTENDED with friction \u2014 Trump '48-hour warning' tone (Indian Express 06:41), Vance Islamabad trip ON HOLD as Iran says NO to talks (The Quint 06:37), Hormuz ship attacks ongoing (BreakingNews.ie 08:37). Live: OIL 90.069 (-0.07% NET, 645p day swing 87.455-91.177 settled near 90 psych), GOLD 4757 (+0.79% safe-haven hedge persists DESPITE oil flat), USDJPY 159.247 (-0.06% USD bid faded, day high 159.455 vs prior 159.633), AUDUSD 0.71609 (+0.12% stable 90.9p above 0.707), BTCUSD 78,100 (+3.14% strong risk-on), USDCAD/EURUSD/GBPUSD/USDCHF quiet \u00b110p. DIVERGENCE: BTC+AUD say risk-on, GOLD says hedge, OIL flat \u2014 market split on extension durability. Broker $1000/0 pos matches. 0 trades (zero clean edge). Watchlist: REMOVE oil_crude_retest_90_buy, MODIFY audusd + usdjpy refresh, ADD gold_safehaven_continuation_buy 4775 cross_up. Queries: TUNE iran_ceasefire note (deadline-passed extension+friction), 7 KEEP. PRIOR: 2026-04-21 17:10 UTC \u2014 8 M15 bar_close full-universe all SKIP T-~6h51m binary to 0000 GMT Wed Apr 22 Iran deadline. MATERIAL: OIL_CRUDE M15 16:30 closed 90.205 SUSTAINED above 90 (+23p vs 89.972 prior) \u2014 90 fade alert INVALIDATED, FLIPPED to momentum-buy conditional on 90.50+ sustained + ceasefire-fail headline. Bull FVG 88.91-89.548 mitigated 5 bars ago as support, bull BOS 87.99 (88 bars ago). News conflict: CNBC/Reuters 21 Apr report oil FALLING on US-Iran talks proceeding (WTI 89.10, Brent 95.06) \u2014 our 90.205 feed spike contradicts and may be stale/wick. USDJPY 159.485 (+bull FVG 159.419-159.421 support, BOS 158.997 intact, 51.5p below 160 intervention). AUDUSD 0.71535 (-82p bear FVG 0.71594-0.71604 overhead, 83.5p above 0.707 target). GOLD 4724.15 (-21.7 less safe-haven bid, bear FVG 4734-4739). USDCAD 1.36569 (+10p bull FVG \u2014 USD-dominant vs oil). USDCHF 0.78077 (+bull FVG). EURUSD 1.17435 (bear trend intact). GBPUSD 1.350075 (-77p bear FVG). USD broadly bid pre-binary. MODIFY all 3 level_alerts (oil FLIP + refreshed prices + T-correct). 9 structure_watch KEEP, 8 queries KEEP. Broker $1000/0 pos matches state. 8 events consumed. 0 trades (binary T-~6h51m zero edge + oil thesis mid-flip).",
+  "open_positions": [],
+  "watchlist": [
+    {
+      "instrument": "AUDUSD",
+      "direction": "BUY",
+      "trigger": "Pullback to 0.7080-0.7090 zone OR clean break >0.7190 with volume",
+      "current_price": 0.71558,
+      "day_range": "0.71142 - 0.71652",
+      "entry_plan": "PRIMARY: Long at ~0.7085 on pullback with rejection confirmation. SECONDARY: If breaks above Fri high 0.7186 with volume + 15M BOS, enter on retest.",
+      "sl": 0.703,
+      "tp": 0.7187,
+      "tp2": 0.725,
+      "size_plan": "Calculate via risk_guard on trigger",
+      "thesis": "TOP PICK (Conv 4 \u2192 5 pending confirmation). Multi-factor tailwind: (1) Hawkish RBA pricing 3rd hike in May to 4.35% (highest in G10), (2) Dovish Fed repricing \u2014 year-end cut odds 50%, (3) Hormuz reopen + OPEC+ supply = risk-on, (4) Solid China Q1 supports AUD. AUDUSD at multi-year highs. DXY broke 98 lowest since Iran war.",
+      "theme": "risk_on_dollar_weak",
+      "invalidation": "If AUDUSD drops below 0.7000 OR Iran deal formally fails by Apr 22, cancel.",
+      "status": "ACTIVE_WAITING"
+    },
+    {
+      "instrument": "USDJPY",
+      "direction": "SELL",
+      "trigger": "Rally to 160.00-160.20 (intervention red line)",
+      "current_price": 158.91,
+      "day_range": "158.72 - 159.20",
+      "entry_plan": "Short at ~160.00-160.10. Japan intervened at 159.23 in Jan 2026 \u2014 160 is the red line. MoF Katayama escalated verbal intervention at G7 this weekend, said 'high sense of urgency' on FX.",
+      "sl": 160.5,
+      "tp": 158.5,
+      "size_plan": "Calculate via risk_guard \u2014 keep small given binary risk",
+      "thesis": "ASYMMETRIC TRADE (Conv 3). MoF verbal intervention active. Daily RSI overbought. BoJ Apr 27-28 priced for hold at 0.75% (~5bps of hike). MoF forced to jawbone due to BoJ delay. R:R ~3:1 to 5:1.",
+      "theme": "intervention_play",
+      "invalidation": "If USDJPY breaks 160.50 cleanly without intervention, cancel.",
+      "status": "ACTIVE_WAITING"
+    },
+    {
+      "instrument": "USDCAD",
+      "direction": "SELL",
+      "trigger": "Bounce to 1.3810-1.3830",
+      "current_price": 1.36919,
+      "day_range": "1.36727 - 1.37089",
+      "entry_plan": "Short at ~1.3820 on bounce to resistance.",
+      "sl": 1.388,
+      "tp": 1.373,
+      "tp2": 1.365,
+      "size_plan": "Calculate via risk_guard on trigger",
+      "thesis": "DXY weakness play (Conv 3). DXY sub-98 now \u2014 strongest signal yet. Oil at $87 is a drag but still above pre-crisis $75. CAD PM Carney majority = stability. R:R ~1.5:1 to 2.5:1.",
+      "theme": "dollar_macro",
+      "invalidation": "If USDCAD breaks above 1.3900, cancel.",
+      "status": "ACTIVE_WAITING"
+    },
+    {
+      "instrument": "EURUSD",
+      "direction": "BUY",
+      "status": "CANCELLED_FAKEOUT_RESET",
+      "current_price": 1.17639,
+      "day_range": "1.17284 - 1.17753",
+      "re_entry_conditions": "Need new base above 1.1780 + fresh push above 1.1811 with volume + 15M BOS + retest. Day high 1.17753 is close \u2014 watch.",
+      "invalidation_original": "Fri fakeout at 1.1834, retest rule saved entry."
+    },
+    {
+      "instrument": "OIL_CRUDE",
+      "direction": "SELL",
+      "status": "SHORT_RE-ENTRY_BLOCKED",
+      "current_price": 87.13,
+      "day_range": "86.50 - 89.62",
+      "change_today": "-4.0%",
+      "re_entry_logic": "Original rule required 'Iran extension CONFIRMED' before short re-entry below $89. Reuters explicitly denies formal signing. Apr 22 expiry live. NO SHORT here \u2014 if deal unravels, WTI explodes back to $95-100+ in hours. Wait for formal confirmation.",
+      "catalyst_today": "Strait of Hormuz temporarily reopened + OPEC+ +206k bpd May increase + ceasefire extension optimism."
+    }
+  ],
+  "market_context": {
+    "date": "2026-04-20",
+    "session": "MONDAY LONDON SESSION. Apr 20 18:35 IST / 13:05 UTC. 0 positions open. Capital $10,000 intact. First tick of Monday week. No triggers hit yet \u2014 all 3 active watchlist setups waiting for level touch.",
+    "key_events_upcoming": [
+      "Apr 22 (Wed): US-Iran ceasefire ORIGINAL EXPIRY \u2014 formal extension still pending. Binary risk event.",
+      "Apr 27-28: BoJ policy meeting (hold at 0.75%, 82% odds) \u2014 USDJPY short window closing",
+      "Apr 28-29: FOMC meeting (Fed hold expected, but 50% year-end cut priced)",
+      "Any day: Formal Iran extension announcement (in-principle since Fri)"
+    ],
+    "hormuz_status": "TEMPORARY REOPEN over weekend. Apr 22 original ceasefire expiry still live. Reuters: senior US official DENIES formal extension signed. Round 2 Pakistan talks ongoing. Mediators (Qatar, Saudi, Turkey via Pakistan PM) active. Headline risk in both directions this week.",
+    "dominant_theme": "RISK-ON PARTIALLY CONFIRMED. Multi-asset moves align \u2014 DXY sub-98, WTI -4%, Gold -0.62%, AUD multi-year highs, BTC +0.89%. AUDUSD long thesis strengthening from Conv 4 \u2192 potentially 5 on entry. But missing formal Iran signature keeps tail risk live. Discipline: no chasing, wait for clean level touch + confirmation.",
+    "instruments_tracked": [
+      "EURUSD",
+      "USDJPY",
+      "GOLD",
+      "OIL_CRUDE",
+      "BTCUSD",
+      "AUDUSD",
+      "USDCAD",
+      "GBPUSD",
+      "USDCHF"
+    ],
+    "live_snapshot_1830_ist": {
+      "EURUSD": 1.17639,
+      "USDJPY": 158.691,
+      "GOLD": 4813.68,
+      "OIL_CRUDE": 87.241,
+      "BTCUSD": 75298,
+      "AUDUSD": 0.7178,
+      "USDCAD": 1.36919,
+      "GBPUSD": 1.35162,
+      "USDCHF": 0.78098,
+      "DXY_reported": 97.63
+    }
+  },
+  "trade_history": [
+    {
+      "instrument": "GOLD",
+      "direction": "BUY",
+      "entry_price": 4818.99,
+      "exit_price": 4820.0,
+      "pnl": 1.01,
+      "result": "breakeven",
+      "opened_at": "2026-04-14T21:59:25+05:30",
+      "closed_at": "2026-04-15T08:40:00+05:30",
+      "exit_reason": "SL hit (trailing stop at breakeven). De-escalation regime shift killed Gold rally. Peak unrealized +$52.20 at $4,871.",
+      "lessons": "Trailing stop worked as designed."
+    },
+    {
+      "instrument": "OIL_CRUDE",
+      "direction": "SELL",
+      "entry_price": 89.978,
+      "exit_price": 90.0,
+      "pnl": 0.02,
+      "result": "breakeven",
+      "opened_at": "2026-04-15T14:50:00+05:30",
+      "closed_at": "2026-04-16T13:50:00+05:30",
+      "exit_reason": "SL hit (trailing stop at breakeven $90). WTI bounced from $87.79 back above $90. Peak unrealized +$1.74 at $88.20.",
+      "lessons": "Trailing stop saved us from a reversal. Entry thesis correct (double-top held). WTI just had more bounce left."
+    }
+  ],
+  "consecutive_losses": 0,
+  "daily_pnl": 0,
+  "weekly_pnl": 0,
+  "total_pnl": 1.01,
+  "total_trades": 1,
+  "wins": 0,
+  "losses": 0,
+  "broker_balance": 1000.0,
+  "effective_capital_usd": 1000,
+  "capital_base_note": "Demo account reset to $1k on 2026-04-20 (topUp -$8849.07). Broker balance and effective capital are now aligned.",
+  "loop_config": {
+    "active_market_interval": "10 min",
+    "quiet_interval": "30 min",
+    "overnight_interval": "2 hours",
+    "telegram_on_trade": true,
+    "telegram_chat_ids": "6838758759,849258319"
+  },
+  "last_tick_ts": "2026-04-21T16:18:00Z",
+  "tracker": [
+    {
+      "situation": "US Navy Blockade of Iran \u2014 day 4",
+      "status": "escalating",
+      "impact": "risk-off confirmed; USD/JPY/CHF/GOLD bid; oil bid; AUD/EM bleed",
+      "last_update": "2026-04-21T06:37:00Z",
+      "note": "Apr 20-21: Iran DRONE STRIKES on US vessels confirmed by Tasnim via Anadolu/TRT after USS Spruance seized M/V Touska (CENTCOM confirmed seizure, Marines rappelled after 6hr warnings + propulsion disable). US has NOT confirmed any vessels hit. Iran not formally agreed Islamabad talks restart. Trump: extension 'highly unlikely'. Escalation ladder: threat\u2192kinetic action (one rung up). Tape disconnect: oil -1.1%, gold -0.79%, USD bid \u2014 market still pricing deal-by-deadline. Binary remains: confirmed US damage\u2192spike, formal deal\u2192collapse."
+    }
+  ],
+  "last_tick_utc_prev": "2026-04-21T12:40:00Z",
+  "tick_history": [
+    {
+      "ts": "2026-04-21T02:40:00Z",
+      "events_processed": 23,
+      "events_opened": 0,
+      "events_closed": 0,
+      "events_skipped": 23,
+      "note": "auto tick \u2014 8 bar_close routine + 15 news_flash stale URL-flushes, no action"
+    },
+    {
+      "ts_utc": "2026-04-21T02:56:30Z",
+      "events_in": 8,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8,
+      "note": "bar_close heartbeat M15 all \u2014 USDJPY composite -19.5 aligned=false, no structure shift; all KEEP"
+    },
+    {
+      "ts_utc": "2026-04-21T03:11:30Z",
+      "events_in": 17,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 17,
+      "note": "routine bar_close heartbeat \u2014 GOLD in zone 4801 but composite 10.5 aligned=false SKIP; USDJPY -19.5 44p above trigger SKIP; all KEEP"
+    },
+    {
+      "ts_utc": "2026-04-21T03:37:00Z",
+      "events_in": 24,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 24,
+      "note": "24 news_flash all SKIP \u2014 2 iran_ceasefire bg confirming Trump/Vance Pakistan trip, 2 us_iran_military Mar 6 ISW + Feb 19 BBC scenario backgrounder (old), 1 opec_supply Sep archive, 10 rba_hike 2024-2025 archive flood (TUNED query keywords + raised cooldown), plus interim drips. NEW INFO from web search: MoF pain threshold tightened to 158 (vs 160) per FXEmpire/MUFG Apr 16; usdjpy_riskoff_break note MODIFIED to reflect. boj_intervention query note MODIFIED. Regime KINETIC_EXCHANGE intact. Broker $1000 flat 0 pos."
+    },
+    {
+      "ts_utc": "2026-04-21T03:54:00Z",
+      "events_in": 8,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8,
+      "note": "bar_close M15 all majors heartbeat \u2014 no BOS/ChoCh, no level fills, all KEEP watchlist+queries"
+    },
+    {
+      "ts_utc": "2026-04-21T05:05:00Z",
+      "events_in": 12,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 12,
+      "note": "bar_close heartbeat (12 across majors). 0 news. Ceasefire expiry today (corrected from Apr 22). All alerts+queries KEEP."
+    },
+    {
+      "ts_utc": "2026-04-21T05:33:00Z",
+      "events_in": 8,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8,
+      "note": "bar_close heartbeat (8 M15 all majors). 0 news. Ceasefire expires TODAY T-0h. WTI drifted $88.50\u2192$86.27 continuing fade-escalation. No level touches/BOS. oil_crude price MODIFIED; rest KEEP."
+    },
+    {
+      "ts_utc": "2026-04-21T05:39:09.646128Z",
+      "summary": "05:37 UTC \u2014 15 news_flash consumed (hormuz/opec/us_tariff backlog), 0 trades, oil_crude MODIFIED (price $86.27\u2192$88.26), 4 alerts KEEP, 9 structure_watch KEEP, 8 queries KEEP"
+    },
+    {
+      "ts_utc": "2026-04-21T06:17:00Z",
+      "events_in": 16,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 16,
+      "note": "16 bar_close heartbeat (H1+M15 across 8 pairs) all SKIP \u2014 no level hits, no structure shifts. Broker $1000 flat 0 pos reconciled. Last full news sweep 06:07 UTC (9 min ago) \u2014 skipped fresh web search (budget + no new data window). Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM intact, ceasefire expires TODAY, Vance/Witkoff/Kushner flying Islamabad. 5 level_alerts + 9 structure + 8 queries all KEEP."
+    },
+    {
+      "ts_utc": "2026-04-21T06:37:00Z",
+      "events_in": 15,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 15,
+      "note": "news_flash burst 15 events \u2014 Iran drone strikes on US vessels (Tasnim) confirmed post Touska seizure. India-US trade deal talks restart. No entry triggers, no trades. Gold note MODIFIED; all alerts/queries KEEP."
+    },
+    {
+      "ts_utc": "2026-04-21T07:34:00Z",
+      "events_in": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "note": "Heartbeat \u2014 0 unconsumed events. Broker $1000 flat 0 pos reconciled. 1 web search: Bloomberg 'Iran set to attend Islamabad' (Brent -1.1% $94.44 fading 5.6% Mon gain) vs AJ 'Iran says no talks for now' \u2014 conflicting narrative continues, no regime shift. Trump ext 'highly unlikely' intact, T-~17h. 5+9+8 all KEEP (no delta since 07:09)."
+    },
+    {
+      "ts_utc": "2026-04-21T08:41:00+00:00",
+      "events_in": 19,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 19,
+      "note": "08:41 UTC \u2014 15 news_flash Touska/Hormuz dupes + 4 M15 bar_close all SKIP (no BOS/rejection into 159.45 USDJPY zone; WTI<90; AUDUSD>0.707; GOLD<4800 FVG). Regime unchanged. T-15.3h to ceasefire expiry."
+    },
+    {
+      "ts_utc": "2026-04-21T09:25:00Z",
+      "events_in": 8,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8,
+      "note": "8 M15 bar_close all SKIP heartbeat \u2014 flat-drift, USDJPY drifted 6.85p away from 159.45, oil reversed pop, no structure shifts. 1 web search Iran: no material delta vs 09:09. MODIFIED usdjpy note. Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM intact. 3+9+8 audit: 1 MODIFY 2+9+8 KEEP."
+    },
+    {
+      "ts_utc": "2026-04-21T10:08:00Z",
+      "events_in": 12,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 12,
+      "note": "12 bar_close H1+M15 (AUDUSD/USDJPY/GOLD/OIL_CRUDE/USDCAD/EURUSD) all SKIP heartbeat. USDJPY fresh bid 159.189 +1p vs 09:54, 0.26 below 159.45 fade zone, day range 158.695-159.251. 1 WebSearch: no Iran deal, Vance flying Islamabad today, Iran refusing talks + 'new cards on battlefield', Trump 'highly unlikely' extend, T-~13.8h to Wed 00:00 GMT Apr 22 expiry. 1 MODIFY (usdjpy price refresh), 2+9+8 KEEP."
+    },
+    {
+      "ts_utc": "2026-04-21T11:25:00Z",
+      "events_in": 8,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8,
+      "note": "8 M15 bar_close SKIP heartbeat. TIMELINE CORRECTION via WaPo/CNBC Apr 21: ceasefire expires TODAY Tue evening ~22:00 UTC T-~10-11h (Apr 7+14d=Apr 21), NOT Thu. Iran MFA refusing Islamabad Rd2 citing blockade+container ship seizure as breaches. Trump 'bombs start going off' threat. WTI 87.2 (+34c bounce toward 90 still 2.8 away), USDJPY 159.197 (0.253 below 159.45 fade), all other pairs <3p drift. 3 MODIFY (price + timeline on all alerts), 2+9+8 KEEP otherwise."
+    },
+    {
+      "ts_utc": "2026-04-21T12:35:00Z",
+      "events_in": 8,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8,
+      "note": "8 M15 bar_close all SKIP \u2014 T-~11.3h binary, OIL -68p pullback from hi 87.617, USDJPY +6.6p bounce, others flat"
+    },
+    {
+      "ts_utc": "2026-04-21T12:50:00Z",
+      "events_in": 8,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8,
+      "note": "8 M15 bar_close all SKIP T-~11h binary; WebSearch Tehran 'no talks for now' confirmed, Trump Wed eve expiry unlikely extend; OIL 87.126 (+25c) USDJPY 159.1375 (-3.1p) AUDUSD 0.71596 flat GOLD 4782.63 (-4p); 3 MODIFY price refresh, all queries/structure KEEP, broker $1000/0 pos matches; no trades"
+    },
+    {
+      "ts_utc": "2026-04-21T13:05:00Z",
+      "events_in": 12,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 12,
+      "note": "12 bar_close 13:00 all SKIP \u2014 routine heartbeat, prices flat \u00b13p vs 12:50, narrative intact priced-in-optimism vs Tehran refusal. T-~10.9h."
+    },
+    {
+      "ts_utc": "2026-04-21T13:45:00Z",
+      "events_in": 15,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 15,
+      "note": "15 news_flash all SKIP \u2014 Touska seizure dupes (Apr 19-20) + Islamabad talks. Fresh: AlJaz Apr 21 'resuscitate talks after BREAKDOWN', TRT 'Qatar backs extending if collapse', JPost 'Trump doesn\u2019t want to extend'. Binary T-~10.3h breakdown-vs-resuscitation framing explicit. No price fetch (budget). 3+9+8 KEEP. 12 unique IDs consumed."
+    }
+  ],
+  "recent_skips": [
+    {
+      "event_id": "evt_1776699681618_bar_close",
+      "ts_utc": "2026-04-20T15:41",
+      "reason": "AUDUSD 15M bar_close: score 39 bullish, contradicts SELL watchlist; aligned=False"
+    },
+    {
+      "event_id": "evt_1776699683548_bar_close",
+      "ts_utc": "2026-04-20T15:41",
+      "reason": "USDJPY 15M bar_close: score -40 bearish but price 158.58 below 159.8 entry zone"
+    },
+    {
+      "event_id": "evt_1776699689518_bar_close",
+      "ts_utc": "2026-04-20T15:41",
+      "reason": "EURUSD 15M bar_close: score 46 bullish, 1.1788 below 1.1815 breakout trigger"
+    },
+    {
+      "event_id": "evt_1776708155880_level_enter",
+      "ts_utc": "2026-04-20T18:04:31.936234+00:00",
+      "instrument": "GOLD",
+      "reason": "No M15 BOS + no rejection wick + composite neutral 7.0 aligned=false + DAY -0.15 + -0.46% day on dollar bid",
+      "price": 4810.6
+    },
+    {
+      "event_id": "evt_1776736478305_level_enter",
+      "ts_utc": "2026-04-21T01:56:55Z",
+      "instrument": "GOLD",
+      "reason": "Composite 10.5 <60, aligned=false, M15 bear FVG unmitigated, DAY -0.15, DXY firming 99.8-100 headwind, no M15 BOS no rejection wick",
+      "price": 4809.28
+    }
+  ],
+  "last_tick_summary": "2026-04-21 12:30 UTC - 12 bar_close (3xH1, 1xH4, 8xM15) all SKIP, T-~11.3h to 0000 GMT Wed Apr 22 ceasefire expiry. Mild risk-on reversal vs 12:25: GOLD 4783.86 (-7.9p reversing lower), AUDUSD 0.71581 (-6.9p but 74p above 0.707), USDJPY 159.102 (+5.4p bounce 0.35 below 159.45 fade), OIL 87.56 flat new session hi 87.617. EUR/CAD/GBP/CHF <6p drift. News unchanged: Iran MFA no plans Rd2, vessels stranded, Trump bombs threat, extension 'highly unlikely'. Broker $1000/0 pos matches. 3 MODIFY (all alerts price refresh), 8 queries KEEP, 9 structure_watch KEEP, 12 events consumed, 0 trades (binary no edge).",
+  "last_scan": {
+    "timestamp": "2026-04-21T13:45:00Z",
+    "events_processed_last_tick": 15,
+    "events_acted_last_tick": 0
+  },
+  "last_updated": "2026-04-22T11:06:12.871424+00:00",
+  "capital_base": 1000.0,
+  "last_tick_ts_utc": "2026-04-21T17:10:00Z",
+  "last_tick_utc": "2026-04-21T17:10:00Z",
+  "last_scan_ts": "2026-04-21T01:30:00Z",
+  "tick_log": [
+    {
+      "utc": "2026-04-21T08:15Z",
+      "events_processed": 22,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "skipped": 22,
+      "audit_watchlist_changes": [
+        "REMOVE gold_escalation_buy_zone",
+        "REMOVE usdcad_short_fvg_retest",
+        "MODIFY oil_crude_escalation_90 note"
+      ],
+      "audit_queries_changes": [],
+      "summary": "Heartbeat tick; gold zone invalidated by breakdown+regime; USDCAD FVG mitigated; 3 alerts remain"
+    },
+    {
+      "ts_utc": "2026-04-21T10:23:00Z",
+      "summary": "10:23 UTC 8 M15 bar_close all SKIP flat drift; 1 oil price refresh MODIFY; 0 trades; $1000/0 pos",
+      "events_processed": 8,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 8
+    }
+  ],
+  "last_update": "2026-04-21T17:10:00Z",
+  "last_claude_update_utc": "2026-04-21T17:10:00Z",
+  "updated_at": "2026-04-21T17:10:00Z",
+  "binary_event": {
+    "name": "iran_ceasefire_deadline",
+    "deadline_utc": "2026-04-23T23:00:00Z",
+    "active": true,
+    "verified": false,
+    "sources": [],
+    "note": "Initialized by setup refactor. Deadline was previously assumed 0000 GMT Wed Apr 22 but last tick noted CNN/NPR clarification of Wed eve ET. Requires 2-source verification \u2014 Claude will verify and update deadline_utc on next tick."
+  }
+}
