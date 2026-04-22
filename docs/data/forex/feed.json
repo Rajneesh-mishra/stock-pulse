@@ -1,22 +1,6 @@
 {
-  "generated_at": "2026-04-22T23:06:00.993020Z",
+  "generated_at": "2026-04-22T23:24:16.668871Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-21T11:25:00Z",
-      "events_in": 8,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 8,
-      "note": "8 M15 bar_close SKIP heartbeat. TIMELINE CORRECTION via WaPo/CNBC Apr 21: ceasefire expires TODAY Tue evening ~22:00 UTC T-~10-11h (Apr 7+14d=Apr 21), NOT Thu. Iran MFA refusing Islamabad Rd2 citing blockade+container ship seizure as breaches. Trump 'bombs start going off' threat. WTI 87.2 (+34c bounce toward 90 still 2.8 away), USDJPY 159.197 (0.253 below 159.45 fade), all other pairs <3p drift. 3 MODIFY (price + timeline on all alerts), 2+9+8 KEEP otherwise."
-    },
-    {
-      "ts_utc": "2026-04-21T12:35:00Z",
-      "events_in": 8,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 8,
-      "note": "8 M15 bar_close all SKIP \u2014 T-~11.3h binary, OIL -68p pullback from hi 87.617, USDJPY +6.6p bounce, others flat"
-    },
     {
       "ts_utc": "2026-04-21T12:50:00Z",
       "events_in": 8,
@@ -160,6 +144,14 @@
       "closed": 0,
       "skipped": 5,
       "note": "22:12 UTC tick \u2014 5 stale news_flash events (1 iran_ceasefire Apr 12 Islamabad backgrounder + 4 opec_supply 2025/Mar2026 archives). TUNED opec_supply (narrowed kw + match_keywords date filter + cooldown 60\u2192120min). Confluence USDJPY +51 moderate WATCH 160 (dist 53p), GOLD -18.5 none WATCH 4775, OIL +26 weak WATCH 90.30 retest-far, USDCAD -37 weak no-alert, BTC +43.5 moderate no-alert. Broker $1000/0pos. 3 KEEP, 1 query TUNED, 0 trades. BOJ T-4d."
+    },
+    {
+      "ts_utc": "2026-04-22T23:24:00Z",
+      "events_in": 1,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 1,
+      "note": "23:24 UTC tick \u2014 1 stale news_flash hormuz_strait (Apr 18 Express Tribune India-summons-Iran-envoy 'attack' kw archive republish, 5d old). TUNED hormuz_strait: added match_keywords=['2026','April','Apr 22','Apr 23'] + cooldown 30\u219260min. Broker API 404 persists 2+ ticks, using 22:56 refs. USDJPY +51 mod WATCH 160 (52.6p dist, 3xH1ATR=42p, 3xH4ATR=93p); GOLD -35 weak WATCH 4775 (44.4p, rule-2 KEEP 4h=0.8); OIL +26 weak WATCH 90.30 retest-far (192p, rule-2 KEEP 4h=0.67); USDCAD/EURUSD/GBPUSD/AUDUSD/USDCHF swing=NONE; BTC scalp=N/A. 3 alerts KEEP, 1 query TUNED (hormuz_strait), 9 structure_watch KEEP, 7 queries KEEP. 0 trades, $1000/0pos. BOJ T-4d."
     },
     {
       "ticks": [
@@ -448,6 +440,14 @@
         "GBPUSD",
         "AUDUSD"
       ]
+    },
+    {
+      "ts_utc": "2026-04-22T23:24:00Z",
+      "events_in": 1,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 1,
+      "summary": "1 stale hormuz_strait news_flash (Apr 18 'attack' kw republish). TUNED hormuz_strait: +match_keywords date filter, cd 30\u219260. Broker 404 2+ ticks. 3 alerts KEEP, 9 structure KEEP, 7 queries KEEP. 0 trades $1000/0."
     }
   ]
 }
