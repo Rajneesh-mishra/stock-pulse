@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T15:56:50.127639Z",
+  "generated_at": "2026-04-22T16:55:26.961698Z",
   "ticks": [
     {
       "ts": "2026-04-21T02:40:00Z",
@@ -322,6 +322,17 @@
           "reason": "removed stale Touska/seized/Hormuz/blockade; added retaliation/mines/casualties/struck/escalation"
         }
       ]
+    },
+    {
+      "ts_utc": "2026-04-22T16:53:00Z",
+      "trigger": "heartbeat",
+      "events_consumed": 0,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "broker_balance": 1000.0,
+      "summary": "16:53 UTC heartbeat \u2014 0 events. 0 trades. GOLD 4752.76 / USDJPY 158.95 / WTI 86.55 / Brent 95 all unchanged from 15:55. Narrative static \u22651h. All alerts + queries KEEP.",
+      "watchlist_changes": [],
+      "query_changes": []
     }
   ]
 }

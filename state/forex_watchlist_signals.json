@@ -1,8 +1,8 @@
 {
-  "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-22T15:55:00Z",
-  "pruned_at": "2026-04-22T15:55:00Z",
-  "pruned_by": "15:55 UTC tick — 14 news_flash events, 13 pure Touska republishes (TOI/MSN/WaExaminer/Stars&Stripes/Marine Insight/Al Jazeera/BBC/NBC4/thenewsherald — all rewording Apr 21 08:38 UTC seizure story) + 1 iran_ceasefire '36-72 hours breakthrough' Open Magazine teaser (noise). Broker $1000/0 matches. 2 WebSearches (tradingeconomics/fxleaders, japantimes/investing USDJPY): GOLD 4752.76 (-6.35p vs 15:50 4759.11, still 22.24p below 4775 trigger, FXLeaders 'Gold Dips Toward $4,780' still framed around 4750-4780 zone); USDJPY narrative unchanged — Katayama-Bessent verbal intervention still elevated, 158 MoF threshold intact but price drifted further below 160. Narrative unchanged in 4h: same Trump indefinite extension, same Hormuz blockade, same IRGC ship seizures, no new rung. 1 alert MODIFY (gold price refresh 4759→4753), 2 KEEP. 1 query TUNE (us_iran_military: removed 'Touska'/'seized'/'Hormuz'/'blockade' stale tokens, added retaliation/mines/casualties/struck/escalation forward-looking beats). 9 structure + 7 other queries KEEP.",
+  "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
+  "last_updated_by_claude": "2026-04-22T16:53:00Z",
+  "pruned_at": "2026-04-22T16:53:00Z",
+  "pruned_by": "16:53 UTC heartbeat tick \u2014 0 pending events. 2 WebSearches confirmed: GOLD 4752.76 unchanged (22.24p below 4775), USDJPY ~158.95 with Katayama still verbal-only, WTI ~86.55 / Brent ~95 stuck. Narrative static \u22651h: same Trump indefinite extension + Hormuz blockade + IRGC seizures, no fresh rung. All 3 alerts KEEP (audusd_breakdown_trigger 0.707 buy, usdjpy_intervention_fade_zone 160 sell, gold_safehaven_continuation_buy 4775 buy). 9 structure_watch KEEP. 7 news_queries KEEP (no TUNE \u2014 us_iran_military tune from 15:55 working, no fresh Touska republishes this tick). Counterfactual: most active alerts still have unfilled horizon data (avg_pips=None) so no fires\u22653+hit_rate<30% REMOVE trigger.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -28,7 +28,7 @@
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "buy AUDUSD 0.707 support on Iran-escalation spike — live 12:42 UTC 0.71468 (-9.7p vs 11:21 0.71565, 74.7p above zone; drift lower continuing but nowhere near trigger). Indefinite ceasefire extension narrative intact (Reuters/NYT/DetNews/AJ 4-source verified). Spike to 0.707 requires fresh Hormuz strike escalation (ongoing — Apr 22 07:55 IRGC gunboat fire on container ship per ksat/nbcnews/armyrecognition, but no casualties so weak driver) OR formal Iran walkout. BTC +3.28% today signals risk-ON continuing which WEAKENS AUDUSD-spike-to-0.707 thesis (risk-on = AUD bid not sold). Wait for rejection wick on 0.707 touch + risk-off confirmation; skip naked breaks. SL 0.703, TP 0.7187 on confirmation.",
+      "note": "buy AUDUSD 0.707 support on Iran-escalation spike \u2014 live 12:42 UTC 0.71468 (-9.7p vs 11:21 0.71565, 74.7p above zone; drift lower continuing but nowhere near trigger). Indefinite ceasefire extension narrative intact (Reuters/NYT/DetNews/AJ 4-source verified). Spike to 0.707 requires fresh Hormuz strike escalation (ongoing \u2014 Apr 22 07:55 IRGC gunboat fire on container ship per ksat/nbcnews/armyrecognition, but no casualties so weak driver) OR formal Iran walkout. BTC +3.28% today signals risk-ON continuing which WEAKENS AUDUSD-spike-to-0.707 thesis (risk-on = AUD bid not sold). Wait for rejection wick on 0.707 touch + risk-off confirmation; skip naked breaks. SL 0.703, TP 0.7187 on confirmation.",
       "current_price_ref": 0.71468,
       "price_ref": {
         "ts": "2026-04-22T12:42:00Z",
@@ -45,14 +45,14 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "sell USDJPY 160.00 intervention red-line fade — live ~15:50 UTC 158.95 (-36.2p vs 12:42 159.312, now 105p below 160). JPY strengthening on lower oil + diplomatic hopes (tradingeconomics/forex.com Apr 22). Setup still structurally valid but level is drifting further away — no trigger imminent. Counterfactual hit_rate 100% at 1h+4h (1 fire, thin). Short ONLY on rejection wick at 160.00 + verbal-intervention confirm; skip naked breaks. SL 160.50, TP 158.50 R:R ~3:1.",
+      "note": "sell USDJPY 160.00 intervention red-line fade \u2014 live ~15:50 UTC 158.95 (-36.2p vs 12:42 159.312, now 105p below 160). JPY strengthening on lower oil + diplomatic hopes (tradingeconomics/forex.com Apr 22). Setup still structurally valid but level is drifting further away \u2014 no trigger imminent. Counterfactual hit_rate 100% at 1h+4h (1 fire, thin). Short ONLY on rejection wick at 160.00 + verbal-intervention confirm; skip naked breaks. SL 160.50, TP 158.50 R:R ~3:1.",
       "current_price_ref": 158.95,
       "price_ref": {
         "ts": "2026-04-22T15:50:00Z",
         "price": 158.95
       },
       "last_updated": "2026-04-22T15:50:00Z",
-      "proximity": "105p below 160.00 intervention red line (live 15:50 UTC 158.95). Drifted -36.2p further away since 12:42 — low-energy JPY bid continuing.",
+      "proximity": "105p below 160.00 intervention red line (live 15:50 UTC 158.95). Drifted -36.2p further away since 12:42 \u2014 low-energy JPY bid continuing.",
       "updated_utc": "2026-04-22 15:50 UTC"
     },
     {
@@ -62,7 +62,7 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "MODIFIED 15:55 UTC — buy GOLD 4775 breakout. Live ref ~15:55 UTC 4752.76 (-6.35p vs 15:50 4759.11, now 22.24p below trigger — pulled back). Day range 4715-4775 zone intact. **CATALYST: IRGC SEIZED 2 ships Apr 22 — MSC Francesca + Epaminondas — plus fired on 3rd 'Euphoria' (Fars/Mehr via Euronews/CBS/NBC). Trump indefinite extension intact; Iran second-round talks remain on hold. Narrative unchanged past 4h — confirmations only, no fresh rung. FXLeaders Apr 21: 'Gold Dips Toward $4,780' intraday frame 4750-4780.** Gold creeping toward 4775 on seizure catalyst but hasn't broken and now rolling off. If 4775 tagged: wait for M15 BOS up + no rejection wick (spike-fade pattern burned earlier today at 4772.24 reject). Aggressive LIMIT 4735-4740 still OK — seizure floor intact. SL 4730, TP1 4810, TP2 4850. Conv 3 currently → 4 on tag with CONFIRMED continuation (tighter bar given prior reject).",
+      "note": "MODIFIED 15:55 UTC \u2014 buy GOLD 4775 breakout. Live ref ~15:55 UTC 4752.76 (-6.35p vs 15:50 4759.11, now 22.24p below trigger \u2014 pulled back). Day range 4715-4775 zone intact. **CATALYST: IRGC SEIZED 2 ships Apr 22 \u2014 MSC Francesca + Epaminondas \u2014 plus fired on 3rd 'Euphoria' (Fars/Mehr via Euronews/CBS/NBC). Trump indefinite extension intact; Iran second-round talks remain on hold. Narrative unchanged past 4h \u2014 confirmations only, no fresh rung. FXLeaders Apr 21: 'Gold Dips Toward $4,780' intraday frame 4750-4780.** Gold creeping toward 4775 on seizure catalyst but hasn't broken and now rolling off. If 4775 tagged: wait for M15 BOS up + no rejection wick (spike-fade pattern burned earlier today at 4772.24 reject). Aggressive LIMIT 4735-4740 still OK \u2014 seizure floor intact. SL 4730, TP1 4810, TP2 4850. Conv 3 currently \u2192 4 on tag with CONFIRMED continuation (tighter bar given prior reject).",
       "current_price_ref": 4752.76,
       "price_ref": {
         "ts": "2026-04-22T15:55:00Z",
@@ -141,5 +141,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-22 15:55 UTC"
+  "last_updated_utc": "2026-04-22 16:53 UTC"
 }
