@@ -17,5 +17,14 @@
     "closed": 0,
     "skipped": 1,
     "note": "REMOVED usdcad_liqsweep_sell_zone (M15 flipped +0.4, sweep-continuation exhausted). 3 KEEP (USDJPY/GOLD/OIL). 0 trades $1000/0."
+  },
+  {
+    "ts_utc": "2026-04-22T22:18:42Z",
+    "tick": "forex_auto",
+    "events_in": 5,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 5,
+    "note": "22:12 UTC tick \u2014 5 stale news_flash events (1 iran_ceasefire Apr 12 Islamabad backgrounder + 4 opec_supply 2025/Mar2026 archives). TUNED opec_supply (narrowed kw + match_keywords date filter + cooldown 60\u2192120min). Confluence USDJPY +51 moderate WATCH 160 (dist 53p), GOLD -18.5 none WATCH 4775, OIL +26 weak WATCH 90.30 retest-far, USDCAD -37 weak no-alert, BTC +43.5 moderate no-alert. Broker $1000/0pos. 3 KEEP, 1 query TUNED, 0 trades. BOJ T-4d."
   }
 ]

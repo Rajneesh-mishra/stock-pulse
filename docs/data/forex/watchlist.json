@@ -1,11 +1,9 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-22T21:33:00Z",
-  "pruned_at": "2026-04-22T21:33:00Z",
-  "pruned_by": "21:33 UTC tick \u2014 1 stale news_flash consumed (Al Jazeera Apr 20 'Islamabad negotiators' backgrounder, superseded by 4-source verified indefinite extension). REMOVED usdcad_liqsweep_sell_zone: live composite -37 weak (up from -32 but still <|40| moderate), M15 flipped +0.4 bullish = sweep-continuation exhausted, 93min post-sweep no ARM, per prior tick commit 'REMOVE next tick if not ARMED'. No replacement \u2014 USDCAD no sharper level. USDJPY +51 moderate WATCH 160 intact, GOLD -16 none (counterfactual 4h=0.8 real edge), OIL +28.5 weak retest-far. 3 KEEP, 1 REMOVE.",
-  "pruned_removed": [
-    "usdcad_liqsweep_sell_zone"
-  ],
+  "last_updated_by_claude": "2026-04-22T22:18:17Z",
+  "pruned_at": "2026-04-22T22:18:17Z",
+  "pruned_by": "2026-04-22T22:18:17Z tick \u2014 heartbeat: 5 stale news_flash events (1 iran_ceasefire Apr 12 Islamabad backgrounder URL-matched 'Islamabad' kw after prior TUNE + 4 opec_supply archives Aug 2025/Sep 2025/Mar 2026 matched broad 'increase'/'hike'/'announce' kw). TUNED opec_supply: added match_keywords=['2026','April','May 2026','June 2026'] date filter, narrowed kw to action-verbs/supply-shock, cooldown 60\u2192120min. All 3 level_alerts KEEP by mechanical rules (USDJPY dist 53p<3\u00d7H4ATR 93p, GOLD dist 38p<3\u00d7H4ATR 109p + counterfactual 4h=0.8 real edge, OIL dist 195p<3\u00d7H4ATR 675p + counterfactual 4h=0.67). USDJPY readiness=moderate (agree 4/4 bullish) but dist>3\u00d7H1ATR=42p \u2192 WATCH not ARMED. No ADDs \u2014 no sharper levels on other 6 pairs (BTC comp=+43.5 moderate 4/4 but no clean level). 0 trades.",
+  "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
     "EURUSD",
@@ -30,15 +28,15 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "MODIFIED 22:33 UTC \u2014 sell USDJPY 160.00 intervention red-line fade. Live 22:32 UTC 159.48 (+53p vs 15:50 158.95, now 52p below 160 \u2014 moved CLOSER on crude-bid-USD dynamic). Day range 159.10-159.52. Katayama-Bessent 'bold action' language intact per Apr 16 \u2014 MoF pain threshold 158 per FXEmpire/MUFG. If 160 tags: short on rejection wick + verbal-intervention/rate-check confirm; skip naked breaks (prior 158.27 overnight low shows JPY bid available on oil fade/diplomacy). SL 160.50, TP 158.50 R:R ~3:1. Conv 4 on clean tag+rejection. | REFRESH 2026-04-22T21:27:27Z: KEEP \u2014 live 159.488 flat vs 21:00 ref; readiness=moderate (+51) composite unchanged; dist 51p = >3\u00d7 H1 ATR = still WATCH. BOJ T-4d now (27th).",
-      "current_price_ref": 159.488,
+      "note": "MODIFIED 22:33 UTC \u2014 sell USDJPY 160.00 intervention red-line fade. Live 22:32 UTC 159.48 (+53p vs 15:50 158.95, now 52p below 160 \u2014 moved CLOSER on crude-bid-USD dynamic). Day range 159.10-159.52. Katayama-Bessent 'bold action' language intact per Apr 16 \u2014 MoF pain threshold 158 per FXEmpire/MUFG. If 160 tags: short on rejection wick + verbal-intervention/rate-check confirm; skip naked breaks (prior 158.27 overnight low shows JPY bid available on oil fade/diplomacy). SL 160.50, TP 158.50 R:R ~3:1. Conv 4 on clean tag+rejection. | REFRESH 2026-04-22T21:27:27Z: KEEP \u2014 live 159.488 flat vs 21:00 ref; readiness=moderate (+51) composite unchanged; dist 51p = >3\u00d7 H1 ATR = still WATCH. BOJ T-4d now (27th). | REFRESH 2026-04-22T22:18:17Z: KEEP \u2014 comp=51.0 ready=moderate dist=53.3p 3\u00d7H4ATR=93.3p; WATCH.",
+      "current_price_ref": 159.467,
       "price_ref": {
-        "ts": "2026-04-22T21:27:27Z",
-        "price": 159.488
+        "ts": "2026-04-22T22:18:17Z",
+        "price": 159.467
       },
-      "last_updated": "2026-04-22T21:27:27Z",
-      "proximity": "51.2p below 160.00 red line (live 21:27 UTC 159.488). Composite +51 moderate bullish (4/4 TFs). H4 ATR 30.8p \u2014 still >3\u00d7H1 ATR (14.2p) from level \u2192 WATCH not ARMED. BOJ Apr 27-28 T-5d calendar noted.",
-      "updated_utc": "2026-04-22T21:27:27Z"
+      "last_updated": "2026-04-22T22:18:17Z",
+      "proximity": "53.3p from level 160.0. Comp 51.0 moderate (4/4 TFs). H1ATR=0.13906 H4ATR=0.3109. WATCH.",
+      "updated_utc": "2026-04-22T22:18:17Z"
     },
     {
       "id": "gold_safehaven_continuation_buy",
@@ -47,15 +45,15 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "MODIFIED 22:33 UTC \u2014 buy GOLD 4775 breakout. Live 22:32 UTC 4733.30 (-19.5p vs 15:55 4752.76, now 41.7p below trigger). Day range 4715.44-4772.24 \u2014 4772 HIGH CONFIRMED REJECTED (validated the spike-fade caution from prior note). Crude ripping +3% but gold ROLLING OFF = traders pricing Hormuz as oil-supply story not capital-flight escalation; gold-safehaven bid weakening. Thesis still valid on a NEXT escalation rung (US casualties, formal walkout, Hormuz reopen refusal hardening) but conv now 3 (was 4 at session high). If 4775 tagged: require M15 BOS up + no rejection wick (two rejects at this zone today). Aggressive LIMIT 4735-4740 questionable now \u2014 gold already broke back below 4750 vs seizure floor thesis. SL 4730, TP1 4810, TP2 4850. | REFRESH 2026-04-22T21:27:27Z: KEEP \u2014 live 4739.99 flat vs 21:00 ref; composite -16 none unchanged. Counterfactual 4h=0.8 real edge holds (KEEP per rule 2).",
-      "current_price_ref": 4739.99,
+      "note": "MODIFIED 22:33 UTC \u2014 buy GOLD 4775 breakout. Live 22:32 UTC 4733.30 (-19.5p vs 15:55 4752.76, now 41.7p below trigger). Day range 4715.44-4772.24 \u2014 4772 HIGH CONFIRMED REJECTED (validated the spike-fade caution from prior note). Crude ripping +3% but gold ROLLING OFF = traders pricing Hormuz as oil-supply story not capital-flight escalation; gold-safehaven bid weakening. Thesis still valid on a NEXT escalation rung (US casualties, formal walkout, Hormuz reopen refusal hardening) but conv now 3 (was 4 at session high). If 4775 tagged: require M15 BOS up + no rejection wick (two rejects at this zone today). Aggressive LIMIT 4735-4740 questionable now \u2014 gold already broke back below 4750 vs seizure floor thesis. SL 4730, TP1 4810, TP2 4850. | REFRESH 2026-04-22T21:27:27Z: KEEP \u2014 live 4739.99 flat vs 21:00 ref; composite -16 none unchanged. Counterfactual 4h=0.8 real edge holds (KEEP per rule 2). | REFRESH 2026-04-22T22:18:17Z: KEEP \u2014 comp=-18.5 ready=none dist=37.8p 3\u00d7H4ATR=108.8p; WATCH.",
+      "current_price_ref": 4737.25,
       "price_ref": {
-        "ts": "2026-04-22T21:27:27Z",
-        "price": 4739.99
+        "ts": "2026-04-22T22:18:17Z",
+        "price": 4737.25
       },
-      "last_updated": "2026-04-22T21:27:27Z",
-      "proximity": "35.0p below 4775 trigger (live 21:27 UTC 4739.99). Composite -16 none bearish \u2014 tape still not supporting breakout thesis after twin 4772 rejects today. 3\u00d7H4ATR=107p \u2192 NOT stale. WATCH; catalyst rung needed.",
-      "updated_utc": "2026-04-22T21:27:27Z"
+      "last_updated": "2026-04-22T22:18:17Z",
+      "proximity": "37.8p from level 4775.0. Comp -18.5 none (3/4 TFs). H1ATR=15.82801 H4ATR=36.25743. WATCH.",
+      "updated_utc": "2026-04-22T22:18:17Z"
     },
     {
       "id": "oil_crude_retest_90_buy",
@@ -64,15 +62,15 @@
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "ADDED 22:33 UTC \u2014 buy WTI 90.30 retest of broken 90 resistance as new support. Live 22:32 UTC 92.94 (+639p vs 16:53 86.55, +3.07% on day, day high 93.39). Clean break above 90 on Hormuz blockade re-rating (IRGC seized 2 ships + fired on 3rd Apr 22) \u2014 gold NOT joining the move confirms this is oil-supply specific. Anticipation logic: pullback to 90.30 with M15 reject wick + hold = buy. If price accepts below 90 (closes M15 < 89.80) thesis dead. SL 89.20 (90p risk), TP1 93.50 (daily high break, ~320p), TP2 95.00 (~470p). Conv 4: fresh structural break + clear invalidation. Skip if price just slices through 90 without any reaction (= new supply or Hormuz-reopen news). | REFRESH 2026-04-22T21:27:27Z: KEEP \u2014 live 92.59 flat vs 21:00; composite +28.5 weak; 3\u00d7H4ATR=675p easily contains 229p dist. Counterfactual still-hot.",
-      "current_price_ref": 92.59,
+      "note": "ADDED 22:33 UTC \u2014 buy WTI 90.30 retest of broken 90 resistance as new support. Live 22:32 UTC 92.94 (+639p vs 16:53 86.55, +3.07% on day, day high 93.39). Clean break above 90 on Hormuz blockade re-rating (IRGC seized 2 ships + fired on 3rd Apr 22) \u2014 gold NOT joining the move confirms this is oil-supply specific. Anticipation logic: pullback to 90.30 with M15 reject wick + hold = buy. If price accepts below 90 (closes M15 < 89.80) thesis dead. SL 89.20 (90p risk), TP1 93.50 (daily high break, ~320p), TP2 95.00 (~470p). Conv 4: fresh structural break + clear invalidation. Skip if price just slices through 90 without any reaction (= new supply or Hormuz-reopen news). | REFRESH 2026-04-22T21:27:27Z: KEEP \u2014 live 92.59 flat vs 21:00; composite +28.5 weak; 3\u00d7H4ATR=675p easily contains 229p dist. Counterfactual still-hot. | REFRESH 2026-04-22T22:18:17Z: KEEP \u2014 comp=26.0 ready=weak dist=194.8p 3\u00d7H4ATR=675.0p; WATCH.",
+      "current_price_ref": 92.248,
       "price_ref": {
-        "ts": "2026-04-22T21:27:27Z",
-        "price": 92.59
+        "ts": "2026-04-22T22:18:17Z",
+        "price": 92.248
       },
-      "last_updated": "2026-04-22T21:27:27Z",
-      "proximity": "229.0p above 90.30 retest (live 21:27 UTC 92.59). Composite +28.5 weak bullish. H4 ATR 225p \u2192 3\u00d7H4ATR=675p, dist 229p < 675p NOT STALE. Counterfactual 3f/67/67/100 edge real. KEEP, await retest.",
-      "updated_utc": "2026-04-22T21:27:27Z"
+      "last_updated": "2026-04-22T22:18:17Z",
+      "proximity": "194.8p from level 90.3. Comp 26.0 weak (3/4 TFs). H1ATR=1.11601 H4ATR=2.25002. WATCH.",
+      "updated_utc": "2026-04-22T22:18:17Z"
     }
   ],
   "structure_watch": [
@@ -143,5 +141,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-22T21:33:00Z"
+  "last_updated_utc": "2026-04-22T22:18:17Z"
 }
