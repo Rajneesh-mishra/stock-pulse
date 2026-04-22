@@ -1,26 +1,31 @@
-# Secrets — never commit
+# env secrets
 .env
+.env.local
 
-# System noise
-.DS_Store
-**/__pycache__/
+# python
+__pycache__/
 *.pyc
+.venv/
 
-# Cached Capital.com session token (8-min TTL, regenerated on demand)
-state/.capital_session.json
-# Daemon logs
+# node / vite
+node_modules/
+dashboard/dist/
+dashboard/tsconfig.tsbuildinfo
+*.log
 logs/
-# Daemon control files + runtime caches (local-only)
-state/forex_watcher.control
-state/forex_position_sync.control
+
+# session / runtime caches
+state/.capital_session.json
 state/.watcher_runtime.json
-state/.position_sync_runtime.json
-# Claude session stuff
-.claude/
-.playwright-mcp/
-state/forex_events_consumed.txt
-state/forex_event_waker.control
-state/forex_heartbeat.control
-state/.forex_claude.lock
 state/.news_runtime.json
-state/forex_news.control
+state/.position_sync_runtime.json
+state/.counterfactual_cursor
+state/.forex_claude.lock
+
+# screenshots / playwright outputs
+*.jpeg
+*.png
+.playwright-mcp/
+
+# macOS
+.DS_Store

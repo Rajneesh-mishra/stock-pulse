@@ -42,7 +42,7 @@ from technicals import get_full_candles, calc_atr, smc_analyze  # noqa: E402
 from confluence import scan as confluence_scan  # noqa: E402
 
 PORT = int(os.environ.get("DASHBOARD_PORT", "8787"))
-HTML_FILE = REPO / "docs" / "forex.html"
+HTML_FILE = REPO / "docs" / "index.html"
 EVENTS_FILE = REPO / "state" / "forex_events.jsonl"
 CONSUMED_FILE = REPO / "state" / "forex_events_consumed.txt"
 SIGNALS_FILE = REPO / "state" / "forex_watchlist_signals.json"
@@ -837,25 +837,38 @@ class Handler(BaseHTTPRequestHandler):
                 daemon = q.get("daemon", [""])[0]
                 action = q.get("action", [""])[0]
                 self._json(self._set_control(daemon, action))
-            elif u.path.startswith("/data/"):
-                # Serve static published JSON from docs/data/ (same files the
-                # public GitHub-Pages dashboard reads). Scoped strictly so we
-                # can't walk out of the docs tree.
+            elif u.path.startswith("/data/") or u.path.startswith("/assets/"):
+                # Serve static published files from docs/ (same tree served by
+                # GitHub Pages). Scoped strictly to docs/ so we can't escape.
                 rel = u.path.lstrip("/")
-                target = (REPO / "docs" / rel.removeprefix("data/")).resolve() \
-                    if False else (REPO / "docs" / rel).resolve()
                 docs_root = (REPO / "docs").resolve()
+                target = (REPO / "docs" / rel).resolve()
                 if not str(target).startswith(str(docs_root)):
                     self._json({"error": "forbidden"}, status=403)
                 elif not target.exists() or not target.is_file():
                     self._json({"error": "not found", "path": u.path}, status=404)
                 else:
-                    ctype = "application/json" if target.suffix == ".json" else "application/octet-stream"
+                    ctype_map = {
+                        ".json": "application/json",
+                        ".js":   "application/javascript; charset=utf-8",
+                        ".css":  "text/css; charset=utf-8",
+                        ".svg":  "image/svg+xml",
+                        ".png":  "image/png",
+                        ".jpg":  "image/jpeg",
+                        ".woff2": "font/woff2",
+                        ".woff":  "font/woff",
+                        ".html": "text/html; charset=utf-8",
+                    }
+                    ctype = ctype_map.get(target.suffix, "application/octet-stream")
                     body = target.read_bytes()
                     self.send_response(200)
                     self.send_header("Content-Type", ctype)
                     self.send_header("Content-Length", str(len(body)))
-                    self.send_header("Cache-Control", "no-store")
+                    # Hashed assets can be cached long-term; JSON should not
+                    if u.path.startswith("/assets/"):
+                        self.send_header("Cache-Control", "public, max-age=31536000, immutable")
+                    else:
+                        self.send_header("Cache-Control", "no-store")
                     self.end_headers()
                     self.wfile.write(body)
             else:
