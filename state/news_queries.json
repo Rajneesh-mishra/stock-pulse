@@ -4,56 +4,148 @@
     {
       "id": "iran_ceasefire",
       "query": "Iran US ceasefire deal Islamabad talks",
-      "keywords_required": ["signed", "formal", "collapse", "rejected", "extended", "extension", "expire", "expiry", "unlikely", "strike", "attack", "breakdown", "breakthrough", "announce", "skip", "walkout", "pulled", "withdraw", "boycott", "freeze", "Islamabad", "childish"],
+      "keywords_required": [
+        "signed",
+        "formal",
+        "collapse",
+        "rejected",
+        "extended",
+        "extension",
+        "indefinite",
+        "unlikely",
+        "strike",
+        "attack",
+        "breakdown",
+        "breakthrough",
+        "announce",
+        "skip",
+        "walkout",
+        "pulled",
+        "withdraw",
+        "boycott",
+        "freeze",
+        "Islamabad",
+        "ploy",
+        "bridge damage",
+        "Vance",
+        "blockade lifted",
+        "ship attacked",
+        "tanker"
+      ],
       "cooldown_min": 30,
-      "note": "TUNED 2026-04-22 10:55 UTC — DEADLINE PASSED (literal 0000 GMT Wed Apr 22 was ~10h45m ago). NEW STATE: Indian Express Apr 22 06:41 reports ceasefire EXTENDED with Trump tone shift to '48-hour warning'; The Quint Apr 22 06:37 reports VANCE Islamabad trip ON HOLD as Iran says NO to talks; BreakingNews.ie Apr 22 08:37 ship attacks in Strait of Hormuz amid efforts to re-start peace talks. Net: extension granted with Iran-rejection friction. Tape split — BTC +3.14% risk-on, GOLD +0.79% safe-haven hedge. Watch for: formal Iran walkout, retaliation strike, '48hr warning' expiry (~Thu eve UTC), or Vance trip restart."
+      "note": "TUNED 2026-04-22 11:38 UTC — fixed-deadline binary REMOVED (4-source verification of Trump indefinite extension: Reuters/NYT/Detroit News/AJ). Dropped 'expire'/'expiry' (deadline passed, no new fixed). Added 'indefinite' (extension framing), 'ploy' (Iran's framing per Türkiye Today), 'bridge damage' (Tradewinds Apr 22 06:15 ship hit), 'Vance' (NYT Vance trip on hold), 'blockade lifted' (Iran's precondition per Express Tribune Apr 22 09:56), 'ship attacked'/'tanker' (Hormuz escalation). Watch for: formal Iran walkout, retaliation strike with US casualties, Vance trip restart, blockade-lift conditional."
     },
     {
       "id": "hormuz_strait",
       "query": "Strait Hormuz tanker vessel",
-      "keywords_required": ["attack", "mine", "blockade", "closed", "reopen", "strike", "incident", "sanction", "seized", "fired"],
+      "keywords_required": [
+        "attack",
+        "mine",
+        "blockade",
+        "closed",
+        "reopen",
+        "strike",
+        "incident",
+        "sanction",
+        "seized",
+        "fired"
+      ],
       "cooldown_min": 30,
       "note": "Direct crude oil catalyst — fired 15 events this tick confirming blockade. Hormuz fully closed, ships attacked."
     },
     {
       "id": "us_iran_military",
       "query": "US Iran naval blockade Touska Hormuz",
-      "keywords_required": ["Touska", "blockade", "Vance", "Witkoff", "Kushner", "Islamabad", "seized", "Hormuz"],
+      "keywords_required": [
+        "Touska",
+        "blockade",
+        "Vance",
+        "Witkoff",
+        "Kushner",
+        "Islamabad",
+        "seized",
+        "Hormuz"
+      ],
       "cooldown_min": 60,
       "note": "TUNED 2026-04-21 09:40 UTC — cooldown 45→60min: this tick fired 11 news_flash all on same Touska-seizure story (TOI/Sun/HindustanTimes/Mathrubhumi/GulfNews/ABP/Aus/BT/Impressive/SundayGuardian/CENTCOM). Narrative-unchanged duplicates. 60min gives breathing room without blocking materially-new escalation (retaliation strike / mines / casualties)."
     },
     {
       "id": "opec_supply",
       "query": "OPEC crude oil production",
-      "keywords_required": ["emergency", "cut", "hike", "increase", "announce", "surprise", "meeting"],
+      "keywords_required": [
+        "emergency",
+        "cut",
+        "hike",
+        "increase",
+        "announce",
+        "surprise",
+        "meeting"
+      ],
       "cooldown_min": 60,
       "note": "OPEC+ approved +206k bpd May. Any surprise supply move = WTI whipsaw. Emergency meeting possible under blockade."
     },
     {
       "id": "boj_intervention",
       "query": "Bank of Japan yen intervention MoF Katayama",
-      "keywords_required": ["intervene", "intervention", "FX", "sold", "bought", "verbal", "surprise", "hike", "decision", "Katayama", "Akazawa", "rate check", "urgency", "excessive"],
+      "keywords_required": [
+        "intervene",
+        "intervention",
+        "FX",
+        "sold",
+        "bought",
+        "verbal",
+        "surprise",
+        "hike",
+        "decision",
+        "Katayama",
+        "Akazawa",
+        "rate check",
+        "urgency",
+        "excessive"
+      ],
       "cooldown_min": 60,
       "note": "MoF pain threshold tightened to 158 per FXEmpire/MUFG (Apr 16) — vs 160 prior. USDJPY 158.969 with session low 158.27 overnight on verbal intervention. Katayama-Bessent FX talks Apr 16 affirm 'bold action' option per Sept Japan-US FX agreement. BoJ Apr 27-28. Pre-intervention verbal signals at peak."
     },
     {
       "id": "fed_fomc",
       "query": "Federal Reserve FOMC rate",
-      "keywords_required": ["cut", "hike", "hold", "pivot", "dovish", "hawkish", "surprise", "statement"],
+      "keywords_required": [
+        "cut",
+        "hike",
+        "hold",
+        "pivot",
+        "dovish",
+        "hawkish",
+        "surprise",
+        "statement"
+      ],
       "cooldown_min": 120,
       "note": "FOMC Apr 28-29 — Fed hold expected. Oil shock could push dovish (growth risk) or hawkish (inflation)."
     },
     {
       "id": "rba_hike",
       "query": "Reserve Bank Australia RBA rate",
-      "keywords_required": ["Bullock", "May meeting", "surprise", "unexpected"],
+      "keywords_required": [
+        "Bullock",
+        "May meeting",
+        "surprise",
+        "unexpected"
+      ],
       "cooldown_min": 240,
       "note": "RE-TUNED 2026-04-21 07:38 UTC — prior keywords 'hike'/'shock'/'hawkish'/'dovish' still matched 10 stale archive articles (pub Dec 2025 — Mar 2026) this tick. Further narrowed to action/person specific. Market pricing May hike to 4.35%. Risk-off may force RBA to pause — AUD bid thesis broken under blockade."
     },
     {
       "id": "us_tariff",
       "query": "US India tariff trade deal",
-      "keywords_required": ["deal", "agreement", "exemption", "delay", "announcement", "signed", "retaliate"],
+      "keywords_required": [
+        "deal",
+        "agreement",
+        "exemption",
+        "delay",
+        "announcement",
+        "signed",
+        "retaliate"
+      ],
       "cooldown_min": 60,
       "note": "26% tariff active — any deal progress reverses FII flow thesis."
     }

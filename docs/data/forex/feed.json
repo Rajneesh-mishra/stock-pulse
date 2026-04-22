@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T11:12:45.497080Z",
+  "generated_at": "2026-04-22T11:41:38.948924Z",
   "ticks": [
     {
       "ts": "2026-04-21T02:40:00Z",
@@ -148,6 +148,14 @@
       "closed": 0,
       "skipped": 15,
       "note": "15 news_flash all SKIP \u2014 Touska seizure dupes (Apr 19-20) + Islamabad talks. Fresh: AlJaz Apr 21 'resuscitate talks after BREAKDOWN', TRT 'Qatar backs extending if collapse', JPost 'Trump doesn\u2019t want to extend'. Binary T-~10.3h breakdown-vs-resuscitation framing explicit. No price fetch (budget). 3+9+8 KEEP. 12 unique IDs consumed."
+    },
+    {
+      "ts_utc": "2026-04-22T11:38:00Z",
+      "events_in": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "note": "11:38 heartbeat \u2014 0 events. BINARY DEFUSED: 4-source verify INDEFINITE extension (Reuters/NYT/DetNews/AJ). Hormuz attacks escalating post-extension. Tape flat \u00b15p. 3 alerts MODIFY (indefinite-extension framing), 1 query TUNE iran_ceasefire."
     }
   ]
 }
