@@ -8,7 +8,7 @@
         "opened": 0,
         "closed": 0,
         "skipped": 0,
-        "note": "11:38 UTC heartbeat — 0 events. BINARY DEFUSED: 4-source verify INDEFINITE extension (Reuters/NYT/DetNews/AJ). Hormuz attacks escalating post-extension. Tape flat ±5p. 3 alerts MODIFY (re-frame around indefinite-extension), 1 query TUNE iran_ceasefire. Broker $1000/0 matches."
+        "note": "11:38 UTC heartbeat \u2014 0 events. BINARY DEFUSED: 4-source verify INDEFINITE extension (Reuters/NYT/DetNews/AJ). Hormuz attacks escalating post-extension. Tape flat \u00b15p. 3 alerts MODIFY (re-frame around indefinite-extension), 1 query TUNE iran_ceasefire. Broker $1000/0 matches."
       }
     ]
   },
@@ -19,15 +19,15 @@
     "closed": 0,
     "skipped": 15,
     "material_events": [
-      "hormuz_strait: Tradewinds Apr 22 10:45 GMT 'Three MSC ships attacked by Iran' — post-extension Hormuz strike escalation confirmed"
+      "hormuz_strait: Tradewinds Apr 22 10:45 GMT 'Three MSC ships attacked by Iran' \u2014 post-extension Hormuz strike escalation confirmed"
     ],
     "stale_flood": "11 fed_fomc archive articles Dec 2025-Mar 2026 + 3 boj_intervention (2 old Nov/Jan, 1 Mar)",
-    "observation": "SPIKE-FADE PATTERN: on Tradewinds fire OIL spiked day hi 91.177 (psych test, rejected -1.44pt to 89.73), GOLD spiked day hi 4772.24 (within 2.76p of 4775 trigger, rejected -2p to 4752.72). Extension is baseline, single attack news produces 15-min spike then fades. USD pairs flat — spike confined to risk/commodity complex. Implication: naked breakout entries at trigger levels likely fail without stronger catalyst (US casualty, Iran walkout, tanker sunk).",
+    "observation": "SPIKE-FADE PATTERN: on Tradewinds fire OIL spiked day hi 91.177 (psych test, rejected -1.44pt to 89.73), GOLD spiked day hi 4772.24 (within 2.76p of 4775 trigger, rejected -2p to 4752.72). Extension is baseline, single attack news produces 15-min spike then fades. USD pairs flat \u2014 spike confined to risk/commodity complex. Implication: naked breakout entries at trigger levels likely fail without stronger catalyst (US casualty, Iran walkout, tanker sunk).",
     "watchlist_changes": [
       "MODIFY gold_safehaven_continuation_buy: add 4772.24 reject observation + anticipation LIMIT idea 4735-4740"
     ],
     "query_changes": [
-      "TUNE fed_fomc: narrow query to 'FOMC April 29 2026 decision Powell', keywords Powell/Apr29-specific, cooldown 120→180min — was flooding 11 stale archive articles"
+      "TUNE fed_fomc: narrow query to 'FOMC April 29 2026 decision Powell', keywords Powell/Apr29-specific, cooldown 120\u2192180min \u2014 was flooding 11 stale archive articles"
     ],
     "tape_11_21_utc": {
       "GOLD": 4752.72,
@@ -40,7 +40,7 @@
       }
     },
     "broker": "$1000.00 / 0 positions (matches state)",
-    "binary_event": "iran_ceasefire_indefinite_extension active=false verified=true — resolved, residual Hormuz friction tracked separately"
+    "binary_event": "iran_ceasefire_indefinite_extension active=false verified=true \u2014 resolved, residual Hormuz friction tracked separately"
   },
   {
     "ts_utc": "2026-04-22T12:45:00Z",
@@ -49,7 +49,7 @@
     "opened": 0,
     "closed": 0,
     "skipped": 0,
-    "summary": "2026-04-22 12:45 UTC heartbeat — 0 unconsumed events, 0 trades. Broker $1000/0 matches. Tape: GOLD 4747.16 (+0.58%, 28p below 4775 reject), OIL 90.758 (+0.69%, back near 91.177 day hi — spike-fade partial invalidation push-and-pause), USDJPY 159.312, AUDUSD 0.71468 drifting, BTCUSD 78204 (+3.28% MATERIAL risk-on rally). News: ksat/nbcnews confirm Apr 22 07:55 IRGC gunboat fire on container ship, no casualties — Trump indefinite extension intact. Regime shifted: 'INDEFINITE_EXTENSION_HORMUZ_FRICTION_MIXED_RISK_ON' — BTC parabolic contradicts gold/AUDUSD-support theses; mixed commodity-bid/crypto-rip/USD-flat = no clean direction. 3 alerts MODIFY (price refresh + BTC risk-on annotation), 9 structure_watch + 8 queries KEEP."
+    "summary": "2026-04-22 12:45 UTC heartbeat \u2014 0 unconsumed events, 0 trades. Broker $1000/0 matches. Tape: GOLD 4747.16 (+0.58%, 28p below 4775 reject), OIL 90.758 (+0.69%, back near 91.177 day hi \u2014 spike-fade partial invalidation push-and-pause), USDJPY 159.312, AUDUSD 0.71468 drifting, BTCUSD 78204 (+3.28% MATERIAL risk-on rally). News: ksat/nbcnews confirm Apr 22 07:55 IRGC gunboat fire on container ship, no casualties \u2014 Trump indefinite extension intact. Regime shifted: 'INDEFINITE_EXTENSION_HORMUZ_FRICTION_MIXED_RISK_ON' \u2014 BTC parabolic contradicts gold/AUDUSD-support theses; mixed commodity-bid/crypto-rip/USD-flat = no clean direction. 3 alerts MODIFY (price refresh + BTC risk-on annotation), 9 structure_watch + 8 queries KEEP."
   },
   {
     "ts_utc": "2026-04-22T12:54:00Z",
@@ -57,7 +57,7 @@
     "opened": 0,
     "closed": 0,
     "skipped": 10,
-    "summary": "12:54 UTC — 10 news_flash stale/dupes (1 Democracy Now pre-extension, 9 Touska/blockade). WebSearch CNN/ABC/ksat/CNBC: IRGC SEIZED 2 ships today (MSC Francesca + Epaminondas transferred to Iran) + 3rd ship 'heavy bridge damage'. Step-up fire→seizure = tit-for-tat vs US Touska. Trump re-affirms blockade. No level triggers, 0 trades. Gold alert catalyst upgraded.",
+    "summary": "12:54 UTC \u2014 10 news_flash stale/dupes (1 Democracy Now pre-extension, 9 Touska/blockade). WebSearch CNN/ABC/ksat/CNBC: IRGC SEIZED 2 ships today (MSC Francesca + Epaminondas transferred to Iran) + 3rd ship 'heavy bridge damage'. Step-up fire\u2192seizure = tit-for-tat vs US Touska. Trump re-affirms blockade. No level triggers, 0 trades. Gold alert catalyst upgraded.",
     "regime": "INDEFINITE_EXTENSION_HORMUZ_ESCALATING_SEIZURES_MIXED_RISK_ON"
   },
   {
@@ -84,7 +84,7 @@
     "type": "forex_heartbeat",
     "events_consumed": 1,
     "trades": 0,
-    "summary": "2026-04-22 14:54 UTC heartbeat — 1 stale-dup news_flash (Sunday Guardian republish of Touska-seizure story already tracked, matched-kw=Touska only, within 60min cooldown TUNE). 0 trades, broker $1000/0 reconciled. No fresh escalation rung since 12:54 sweep. 3 alerts + 9 structure + 8 queries all KEEP. Binary resolved (indefinite extension, 4-source). Regime unchanged."
+    "summary": "2026-04-22 14:54 UTC heartbeat \u2014 1 stale-dup news_flash (Sunday Guardian republish of Touska-seizure story already tracked, matched-kw=Touska only, within 60min cooldown TUNE). 0 trades, broker $1000/0 reconciled. No fresh escalation rung since 12:54 sweep. 3 alerts + 9 structure + 8 queries all KEEP. Binary resolved (indefinite extension, 4-source). Regime unchanged."
   },
   {
     "ts_utc": "2026-04-22T15:55:00Z",
@@ -93,12 +93,12 @@
     "trades_opened": 0,
     "trades_closed": 0,
     "broker_balance": 1000.0,
-    "summary": "15:55 UTC heartbeat — 14 news_flash (13 Touska republishes Apr 21 08:38 + 1 iran_ceasefire teaser). 0 trades. GOLD 4752.76 rolling off (22.24p below 4775). USDJPY 158.95 static. us_iran_military query TUNED to kill Touska republish firing.",
+    "summary": "15:55 UTC heartbeat \u2014 14 news_flash (13 Touska republishes Apr 21 08:38 + 1 iran_ceasefire teaser). 0 trades. GOLD 4752.76 rolling off (22.24p below 4775). USDJPY 158.95 static. us_iran_military query TUNED to kill Touska republish firing.",
     "watchlist_changes": [
       {
         "id": "gold_safehaven_continuation_buy",
         "action": "MODIFY",
-        "reason": "price refresh 4759→4753"
+        "reason": "price refresh 4759\u21924753"
       }
     ],
     "query_changes": [
@@ -116,19 +116,19 @@
     "trades_opened": 0,
     "trades_closed": 0,
     "broker_balance": 1000.0,
-    "summary": "16:53 UTC heartbeat — 0 events. 0 trades. GOLD 4752.76 / USDJPY 158.95 / WTI 86.55 / Brent 95 all unchanged from 15:55. Narrative static ≥1h. All alerts + queries KEEP.",
+    "summary": "16:53 UTC heartbeat \u2014 0 events. 0 trades. GOLD 4752.76 / USDJPY 158.95 / WTI 86.55 / Brent 95 all unchanged from 15:55. Narrative static \u22651h. All alerts + queries KEEP.",
     "watchlist_changes": [],
     "query_changes": []
   },
   {
     "ts_utc": "2026-04-22T22:33:00Z",
     "type": "heartbeat_with_watchlist_refresh",
-    "summary": "WTI broke 90 (+3.07% day to 92.94, high 93.39) on Hormuz repricing while gold rolled off (4772 rejected, 4733 now) and BTC +4.14% — oil-specific supply story. USDJPY 159.48 +53p closer to 160. Added oil_crude_retest_90_buy alert (SL 89.20 TP1 93.50 TP2 95 Conv 4). MODIFIED all 3 existing alerts with fresh price refs. 0 trades, broker $1000/0 reconciled."
+    "summary": "WTI broke 90 (+3.07% day to 92.94, high 93.39) on Hormuz repricing while gold rolled off (4772 rejected, 4733 now) and BTC +4.14% \u2014 oil-specific supply story. USDJPY 159.48 +53p closer to 160. Added oil_crude_retest_90_buy alert (SL 89.20 TP1 93.50 TP2 95 Conv 4). MODIFIED all 3 existing alerts with fresh price refs. 0 trades, broker $1000/0 reconciled."
   },
   {
     "ts_utc": "2026-04-22T23:26:00Z",
     "type": "heartbeat",
-    "summary": "23:26 UTC tick — 1 pending news_flash consumed (Pakistan Islamabad-standby, US-Iran talks stalled per The National 15:12 GMT — restatement of already-non-actionable theme). 0 positions, broker $1000/0 reconciled clean. 3 web searches: gold 4750-4759 softly bouncing, WTI mixed reports $89-92 (keeping broker 92.94), USDJPY 159.36 tradingeconomics confirming live read — Katayama 'bold action' verbal intervention rhetoric intact, 158 MoF threshold. Narrative unchanged from 22:33: Trump indefinite extension (4-source), Iran won't reopen Hormuz while USN intercepts, peace talks collapsed/stalled, Vance trip on hold. No new escalation rung, no new diplomatic beat. All 4 alerts KEEP (all refreshed at 22:33 with live prices). 8 news_queries KEEP. No regime change, binary_event remains resolved/inactive."
+    "summary": "23:26 UTC tick \u2014 1 pending news_flash consumed (Pakistan Islamabad-standby, US-Iran talks stalled per The National 15:12 GMT \u2014 restatement of already-non-actionable theme). 0 positions, broker $1000/0 reconciled clean. 3 web searches: gold 4750-4759 softly bouncing, WTI mixed reports $89-92 (keeping broker 92.94), USDJPY 159.36 tradingeconomics confirming live read \u2014 Katayama 'bold action' verbal intervention rhetoric intact, 158 MoF threshold. Narrative unchanged from 22:33: Trump indefinite extension (4-source), Iran won't reopen Hormuz while USN intercepts, peace talks collapsed/stalled, Vance trip on hold. No new escalation rung, no new diplomatic beat. All 4 alerts KEEP (all refreshed at 22:33 with live prices). 8 news_queries KEEP. No regime change, binary_event remains resolved/inactive."
   },
   {
     "ts_utc": "2026-04-22T19:57:00Z",
@@ -147,7 +147,7 @@
     "type": "forex_tick",
     "events_in": 29,
     "trades": 0,
-    "summary": "2026-04-22T20:08:03Z 20:01 UTC forex auto tick — 29 events consumed (11 news_flash stale archives + 16 bar_close heartbeat + 1 USDCAD liquidity_sweep M15). 0 trades. USDJPY audit_request re-scored: composite +51 moderate bullish, bear OB 160.11-160.46 overhead = fade zone intact — 44.5p from trigger at 1× H1 ATR boundary, WATCH. USDCAD 20:00 UTC M15 up-sweep 1.36737 sell-bias but composite -24.5 readiness=none → LIMIT blocked, added as watchlist. Audit: 1 REMOVE (audusd_breakdown stale Rule 1), 1 ADD (usdcad_liqsweep), 3 MODIFY (price refs); 2 queries TUNED (us_tariff narrowed cd 240min, boj_intervention dropped broad tokens cd 120min). Regime: INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING. EURUSD 1.1705 broke re-entry base; BTC+4.2% parabolic. Broker $1000/0.",
+    "summary": "2026-04-22T20:08:03Z 20:01 UTC forex auto tick \u2014 29 events consumed (11 news_flash stale archives + 16 bar_close heartbeat + 1 USDCAD liquidity_sweep M15). 0 trades. USDJPY audit_request re-scored: composite +51 moderate bullish, bear OB 160.11-160.46 overhead = fade zone intact \u2014 44.5p from trigger at 1\u00d7 H1 ATR boundary, WATCH. USDCAD 20:00 UTC M15 up-sweep 1.36737 sell-bias but composite -24.5 readiness=none \u2192 LIMIT blocked, added as watchlist. Audit: 1 REMOVE (audusd_breakdown stale Rule 1), 1 ADD (usdcad_liqsweep), 3 MODIFY (price refs); 2 queries TUNED (us_tariff narrowed cd 240min, boj_intervention dropped broad tokens cd 120min). Regime: INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING. EURUSD 1.1705 broke re-entry base; BTC+4.2% parabolic. Broker $1000/0.",
     "regime": "INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING"
   },
   {
@@ -164,7 +164,7 @@
     "opened": 0,
     "closed": 0,
     "skipped": 0,
-    "note": "21:00 UTC heartbeat — 0 unconsumed events. Broker $1000/0 reconciled. Confluence sweep all 9: USDJPY composite +51 moderate bullish 159.488 (51p below 160 fade, still >3× H1 ATR = WATCH not ARMED); USDCAD -32 weak bearish 1.36717 (now 2p BELOW swept 1.36737 wick, 45min post-sweep continuation valid but no sharper level formed); OIL +28.5 weak bullish 92.59 (229p above 90.30 retest zone); GOLD -16 none bearish 4739.99 (35p below 4775 trigger, tape unsupportive); BTC +47.5 moderate bullish 78.9k (parabolic, no anchorable level for new alert); AUDUSD +23.5 none bullish 0.7158 (no alert post-Rule 1 removal); EURUSD/GBPUSD/USDCHF none neutral. 1 WebSearch Hormuz: Iran seized 2 ships Apr 22, Trump WH says non-US non-Israeli seizures NOT ceasefire violation — slight de-escalation of rhetoric, gold bid weakening consistent. 4 alerts price-refreshed (all MODIFY proximity), 9 structure_watch KEEP, 8 news_queries KEEP. 0 trades."
+    "note": "21:00 UTC heartbeat \u2014 0 unconsumed events. Broker $1000/0 reconciled. Confluence sweep all 9: USDJPY composite +51 moderate bullish 159.488 (51p below 160 fade, still >3\u00d7 H1 ATR = WATCH not ARMED); USDCAD -32 weak bearish 1.36717 (now 2p BELOW swept 1.36737 wick, 45min post-sweep continuation valid but no sharper level formed); OIL +28.5 weak bullish 92.59 (229p above 90.30 retest zone); GOLD -16 none bearish 4739.99 (35p below 4775 trigger, tape unsupportive); BTC +47.5 moderate bullish 78.9k (parabolic, no anchorable level for new alert); AUDUSD +23.5 none bullish 0.7158 (no alert post-Rule 1 removal); EURUSD/GBPUSD/USDCHF none neutral. 1 WebSearch Hormuz: Iran seized 2 ships Apr 22, Trump WH says non-US non-Israeli seizures NOT ceasefire violation \u2014 slight de-escalation of rhetoric, gold bid weakening consistent. 4 alerts price-refreshed (all MODIFY proximity), 9 structure_watch KEEP, 8 news_queries KEEP. 0 trades."
   },
   {
     "tick_ts_utc": "2026-04-22T21:14:19Z",
@@ -180,7 +180,7 @@
     "broker_balance": 1000.0,
     "open_positions": 0,
     "readiness_snapshot": {
-      "USDJPY": "+51 moderate bullish WATCH (50p<160, >3×H1 ATR)",
+      "USDJPY": "+51 moderate bullish WATCH (50p<160, >3\u00d7H1 ATR)",
       "USDCAD": "-37 weak bearish post-sweep (5p below 1.36737)",
       "GOLD": "-16 none bearish (35p<4775)",
       "OIL_CRUDE": "+28.5 weak bullish (229p>90.30)"
@@ -257,7 +257,7 @@
         "price": 78601.1
       }
     },
-    "note": "Stale fed_fomc Oct 2025 archive fired via empty match_keywords → TUNED with ['2026']. No pair ARMED. BOJ Apr 27-28 T-4d. USDCAD sweep thesis final-tick warning."
+    "note": "Stale fed_fomc Oct 2025 archive fired via empty match_keywords \u2192 TUNED with ['2026']. No pair ARMED. BOJ Apr 27-28 T-4d. USDCAD sweep thesis final-tick warning."
   },
   {
     "ts_utc": "2026-04-22T22:02:00Z",
@@ -265,7 +265,7 @@
     "events_in": 11,
     "opened": 0,
     "closed": 0,
-    "summary": "22:01 UTC tick — 11 events: 1 news_flash boj_intervention STALE Jan 21 2026 Business Times 'Katayama calls for market calm' (3-month-old archive matched 'Katayama' kept-token), 1 alert_audit_request USDJPY usdjpy_intervention_fade_zone same source NO actionable signal, 9 bar_close routine heartbeat. Broker $1000/0 reconciled. Confluence USDJPY broker HTTP 404 transient — using 21:27 ref (composite +51 moderate WATCH 51p<160, dist >3×H1 ATR no ARM). TUNED boj_intervention query: added match_keywords=['2026','April','Apr 27','Apr 28','policy meeting'] (date-filter pattern from fed_fomc fix), cooldown 120→180min. ATTENTION: USDJPY swing=WATCH (51p dist), GOLD swing=WATCH (4h hr 0.8 KEEP), OIL swing=WATCH retest-far. EURUSD/GBPUSD/AUDUSD/USDCAD/USDCHF swing=NONE no alert. BTC/GOLD/OIL scalp=N/A spread; FX scalps engine-managed per config. 3 alerts KEEP, 9 structure_watch KEEP, 1 query TUNE, 7 queries KEEP. 0 trades. BOJ T-4d (Apr 27-28)."
+    "summary": "22:01 UTC tick \u2014 11 events: 1 news_flash boj_intervention STALE Jan 21 2026 Business Times 'Katayama calls for market calm' (3-month-old archive matched 'Katayama' kept-token), 1 alert_audit_request USDJPY usdjpy_intervention_fade_zone same source NO actionable signal, 9 bar_close routine heartbeat. Broker $1000/0 reconciled. Confluence USDJPY broker HTTP 404 transient \u2014 using 21:27 ref (composite +51 moderate WATCH 51p<160, dist >3\u00d7H1 ATR no ARM). TUNED boj_intervention query: added match_keywords=['2026','April','Apr 27','Apr 28','policy meeting'] (date-filter pattern from fed_fomc fix), cooldown 120\u2192180min. ATTENTION: USDJPY swing=WATCH (51p dist), GOLD swing=WATCH (4h hr 0.8 KEEP), OIL swing=WATCH retest-far. EURUSD/GBPUSD/AUDUSD/USDCAD/USDCHF swing=NONE no alert. BTC/GOLD/OIL scalp=N/A spread; FX scalps engine-managed per config. 3 alerts KEEP, 9 structure_watch KEEP, 1 query TUNE, 7 queries KEEP. 0 trades. BOJ T-4d (Apr 27-28)."
   },
   {
     "ts_utc": "2026-04-22T22:56:33Z",
@@ -293,6 +293,35 @@
     "opened": 0,
     "closed": 0,
     "skipped": 1,
-    "summary": "1 stale hormuz_strait news_flash (Apr 18 'attack' kw republish). TUNED hormuz_strait: +match_keywords date filter, cd 30→60. Broker 404 2+ ticks. 3 alerts KEEP, 9 structure KEEP, 7 queries KEEP. 0 trades $1000/0."
+    "summary": "1 stale hormuz_strait news_flash (Apr 18 'attack' kw republish). TUNED hormuz_strait: +match_keywords date filter, cd 30\u219260. Broker 404 2+ ticks. 3 alerts KEEP, 9 structure KEEP, 7 queries KEEP. 0 trades $1000/0."
+  },
+  {
+    "tick_ts_utc": "2026-04-22T23:55:00Z",
+    "trigger": "heartbeat_audit",
+    "events_unconsumed": 1,
+    "events_consumed": [
+      "evt_1776901907291_news_flash"
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "positions_open": 0,
+    "balance": 1000.0,
+    "daily_pnl": 0.0,
+    "attention": {
+      "USDJPY": "swing=WATCH scalp=OFF ready=moderate dist=51p>1xH1ATR",
+      "GOLD": "swing=WATCH scalp=N/A ready=weak bearish_against_buy",
+      "OIL_CRUDE": "swing=WATCH scalp=N/A ready=weak dist=196p",
+      "BTCUSD": "swing=NONE scalp=N/A ready=moderate no_alert",
+      "USDCAD": "swing=NONE scalp=OFF ready=weak no_alert",
+      "EURUSD": "swing=NONE scalp=ACTIVE ready=none",
+      "GBPUSD": "swing=NONE scalp=ACTIVE ready=none",
+      "AUDUSD": "swing=NONE scalp=ACTIVE ready=none",
+      "USDCHF": "swing=NONE scalp=OFF ready=none"
+    },
+    "audit_actions": [
+      "news_query iran_ceasefire TUNE (dropped announce+Islamabad)",
+      "alerts 3 KEEP"
+    ],
+    "summary": "heartbeat audit; 1 stale news_flash iran_ceasefire tuned; 0 trades"
   }
 ]

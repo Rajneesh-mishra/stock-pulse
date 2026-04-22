@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-22T23:24:16.668871Z",
+  "generated_at": "2026-04-22T23:57:56.302658Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-21T12:50:00Z",
-      "events_in": 8,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 8,
-      "note": "8 M15 bar_close all SKIP T-~11h binary; WebSearch Tehran 'no talks for now' confirmed, Trump Wed eve expiry unlikely extend; OIL 87.126 (+25c) USDJPY 159.1375 (-3.1p) AUDUSD 0.71596 flat GOLD 4782.63 (-4p); 3 MODIFY price refresh, all queries/structure KEEP, broker $1000/0 pos matches; no trades"
-    },
     {
       "ts_utc": "2026-04-21T13:05:00Z",
       "events_in": 12,
@@ -448,6 +440,35 @@
       "closed": 0,
       "skipped": 1,
       "summary": "1 stale hormuz_strait news_flash (Apr 18 'attack' kw republish). TUNED hormuz_strait: +match_keywords date filter, cd 30\u219260. Broker 404 2+ ticks. 3 alerts KEEP, 9 structure KEEP, 7 queries KEEP. 0 trades $1000/0."
+    },
+    {
+      "tick_ts_utc": "2026-04-22T23:55:00Z",
+      "trigger": "heartbeat_audit",
+      "events_unconsumed": 1,
+      "events_consumed": [
+        "evt_1776901907291_news_flash"
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "positions_open": 0,
+      "balance": 1000.0,
+      "daily_pnl": 0.0,
+      "attention": {
+        "USDJPY": "swing=WATCH scalp=OFF ready=moderate dist=51p>1xH1ATR",
+        "GOLD": "swing=WATCH scalp=N/A ready=weak bearish_against_buy",
+        "OIL_CRUDE": "swing=WATCH scalp=N/A ready=weak dist=196p",
+        "BTCUSD": "swing=NONE scalp=N/A ready=moderate no_alert",
+        "USDCAD": "swing=NONE scalp=OFF ready=weak no_alert",
+        "EURUSD": "swing=NONE scalp=ACTIVE ready=none",
+        "GBPUSD": "swing=NONE scalp=ACTIVE ready=none",
+        "AUDUSD": "swing=NONE scalp=ACTIVE ready=none",
+        "USDCHF": "swing=NONE scalp=OFF ready=none"
+      },
+      "audit_actions": [
+        "news_query iran_ceasefire TUNE (dropped announce+Islamabad)",
+        "alerts 3 KEEP"
+      ],
+      "summary": "heartbeat audit; 1 stale news_flash iran_ceasefire tuned; 0 trades"
     }
   ]
 }
