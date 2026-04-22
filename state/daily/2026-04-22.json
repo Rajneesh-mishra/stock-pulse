@@ -129,5 +129,17 @@
     "ts_utc": "2026-04-22T23:26:00Z",
     "type": "heartbeat",
     "summary": "23:26 UTC tick \u2014 1 pending news_flash consumed (Pakistan Islamabad-standby, US-Iran talks stalled per The National 15:12 GMT \u2014 restatement of already-non-actionable theme). 0 positions, broker $1000/0 reconciled clean. 3 web searches: gold 4750-4759 softly bouncing, WTI mixed reports $89-92 (keeping broker 92.94), USDJPY 159.36 tradingeconomics confirming live read \u2014 Katayama 'bold action' verbal intervention rhetoric intact, 158 MoF threshold. Narrative unchanged from 22:33: Trump indefinite extension (4-source), Iran won't reopen Hormuz while USN intercepts, peace talks collapsed/stalled, Vance trip on hold. No new escalation rung, no new diplomatic beat. All 4 alerts KEEP (all refreshed at 22:33 with live prices). 8 news_queries KEEP. No regime change, binary_event remains resolved/inactive."
+  },
+  {
+    "ts_utc": "2026-04-22T19:57:00Z",
+    "tick_type": "heartbeat",
+    "events_in": 0,
+    "trades": 0,
+    "pairs_updated": [
+      "USDJPY",
+      "GOLD",
+      "OIL_CRUDE"
+    ],
+    "note": "19:57 UTC heartbeat, date correction, price refresh, BOJ Apr 27-28 T-5d calendar note"
   }
 ]
