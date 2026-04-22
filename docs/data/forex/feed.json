@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T11:43:18.046980Z",
+  "generated_at": "2026-04-22T11:55:01.169700Z",
   "ticks": [
     {
       "ts": "2026-04-21T02:40:00Z",
@@ -150,7 +150,7 @@
       "note": "15 news_flash all SKIP \u2014 Touska seizure dupes (Apr 19-20) + Islamabad talks. Fresh: AlJaz Apr 21 'resuscitate talks after BREAKDOWN', TRT 'Qatar backs extending if collapse', JPost 'Trump doesn\u2019t want to extend'. Binary T-~10.3h breakdown-vs-resuscitation framing explicit. No price fetch (budget). 3+9+8 KEEP. 12 unique IDs consumed."
     },
     {
-      "ts_utc": "2026-04-22T11:38:00Z",
+      "ts_utc": "2026-04-22T11:51:00Z",
       "events_in": 0,
       "opened": 0,
       "closed": 0,
@@ -158,13 +158,55 @@
       "note": "11:38 heartbeat \u2014 0 events. BINARY DEFUSED: 4-source verify INDEFINITE extension (Reuters/NYT/DetNews/AJ). Hormuz attacks escalating post-extension. Tape flat \u00b15p. 3 alerts MODIFY (indefinite-extension framing), 1 query TUNE iran_ceasefire."
     },
     {
-      "ts_utc": "2026-04-22T11:38:00Z",
-      "type": "heartbeat",
-      "events_in": 0,
+      "ts_utc": "2026-04-22T11:51:00Z",
+      "events_in": 15,
       "opened": 0,
       "closed": 0,
-      "skipped": 0,
-      "note": "11:38 UTC heartbeat \u2014 0 events. BINARY DEFUSED: 4-source verify INDEFINITE extension (Reuters/NYT/DetNews/AJ). Hormuz attacks escalating post-extension. Tape flat \u00b15p. 3 alerts MODIFY (re-frame around indefinite-extension), 1 query TUNE iran_ceasefire. Broker $1000/0 matches."
+      "skipped": 15,
+      "note": "11:51 tick \u2014 15 events: 1 hormuz Tradewinds 'Three MSC ships attacked' (material, fresh post-extension strike confirmation) + 3 boj_intervention (2 stale Nov/Jan + 1 Mar) + 11 fed_fomc stale flood (Dec-Mar, query broken filter). SPIKE-FADE PATTERN: on Tradewinds fire OIL spiked 91.177 (psych test) rejected back 89.73, GOLD spiked 4772.24 (2.76p from 4775 trigger) rejected back 4752.72. Extension=baseline, attacks=spike-fade not trend. 0 trades (Conv \u22643 all setups, no 7-gate). 1 MODIFY gold_safehaven (add reject observation + anticipation LIMIT idea at 4735-4740), 2 KEEP (audusd/usdjpy), 9 structure_watch KEEP. 1 query TUNE fed_fomc (Powell/Apr29-specific; cooldown 120\u2192180min), 7 KEEP. Broker $1000/0 matches."
+    },
+    {
+      "ticks": [
+        {
+          "ts_utc": "2026-04-22T11:38:00Z",
+          "type": "heartbeat",
+          "events_in": 0,
+          "opened": 0,
+          "closed": 0,
+          "skipped": 0,
+          "note": "11:38 UTC heartbeat \u2014 0 events. BINARY DEFUSED: 4-source verify INDEFINITE extension (Reuters/NYT/DetNews/AJ). Hormuz attacks escalating post-extension. Tape flat \u00b15p. 3 alerts MODIFY (re-frame around indefinite-extension), 1 query TUNE iran_ceasefire. Broker $1000/0 matches."
+        }
+      ]
+    },
+    {
+      "ts_utc": "2026-04-22T11:51:00Z",
+      "events_in": 15,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 15,
+      "material_events": [
+        "hormuz_strait: Tradewinds Apr 22 10:45 GMT 'Three MSC ships attacked by Iran' \u2014 post-extension Hormuz strike escalation confirmed"
+      ],
+      "stale_flood": "11 fed_fomc archive articles Dec 2025-Mar 2026 + 3 boj_intervention (2 old Nov/Jan, 1 Mar)",
+      "observation": "SPIKE-FADE PATTERN: on Tradewinds fire OIL spiked day hi 91.177 (psych test, rejected -1.44pt to 89.73), GOLD spiked day hi 4772.24 (within 2.76p of 4775 trigger, rejected -2p to 4752.72). Extension is baseline, single attack news produces 15-min spike then fades. USD pairs flat \u2014 spike confined to risk/commodity complex. Implication: naked breakout entries at trigger levels likely fail without stronger catalyst (US casualty, Iran walkout, tanker sunk).",
+      "watchlist_changes": [
+        "MODIFY gold_safehaven_continuation_buy: add 4772.24 reject observation + anticipation LIMIT idea 4735-4740"
+      ],
+      "query_changes": [
+        "TUNE fed_fomc: narrow query to 'FOMC April 29 2026 decision Powell', keywords Powell/Apr29-specific, cooldown 120\u2192180min \u2014 was flooding 11 stale archive articles"
+      ],
+      "tape_11_21_utc": {
+        "GOLD": 4752.72,
+        "OIL_CRUDE": 89.733,
+        "USDJPY": 159.214,
+        "AUDUSD": 0.71565,
+        "day_high_tested_rejected": {
+          "GOLD": 4772.24,
+          "OIL_CRUDE": 91.177
+        }
+      },
+      "broker": "$1000.00 / 0 positions (matches state)",
+      "binary_event": "iran_ceasefire_indefinite_extension active=false verified=true \u2014 resolved, residual Hormuz friction tracked separately"
     }
   ]
 }

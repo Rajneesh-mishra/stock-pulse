@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-22T11:38:00Z",
-  "pruned_at": "2026-04-22T11:38:00Z",
-  "pruned_by": "11:38 UTC heartbeat tick — 0 unconsumed events. MATERIAL: 4-source verification (Reuters Apr 22 01:29, NYT Apr 21 17:08, Detroit News Apr 21 21:46, Al Jazeera Apr 21 21:40) confirms Trump granted INDEFINITE ceasefire extension — fixed-deadline binary REMOVED. Residual friction: Hormuz attacks ESCALATING post-extension (Tradewinds Apr 22 06:15 ship 'heavy bridge damage', WaPo Apr 22 10:21 'more ships attacked'); Iran calling extension 'ploy' (Türkiye Today), refusing talks until blockade lifted (Express Tribune); Vance trip on hold (NYT). Tape flat vs 10:55: GOLD 4756.29 (+0.77% hedge persists), OIL 90.083 flat, USDJPY 159.222 (day hi 159.455 LOWER than yesterday 159.633), AUDUSD 0.71552, BTC 78,228 (+3.31% risk-on). MODIFY all 3 alerts: re-frame triggers from 'deadline expiry collapse' to 'fresh Hormuz strike or Iran formal walkout' (with extension as new baseline). 9 structure_watch KEEP. NO removes/adds — alert thesis structure intact, only catalyst phrasing changes.",
+  "last_updated_by_claude": "2026-04-22T11:51:00Z",
+  "pruned_at": "2026-04-22T11:51:00Z",
+  "pruned_by": "11:51 UTC tick — 15 events: 1 hormuz_strait news_flash (Tradewinds 'Three MSC ships attacked by Iran trying to get through Strait of Hormuz' Apr 22 10:45 GMT = FRESH material confirming post-extension Hormuz escalation), 3 boj_intervention (2 stale Nov/Jan, 1 Mar — backgrounder), 11 fed_fomc stale flood (Dec 2025-Mar 2026 archive articles — keywords too broad). Tape 11:21 UTC: GOLD 4752.72 (-3.6p, +0.69% day, day hi 4772.24 — **tested 4775 buy trigger and REJECTED** on hormuz fire window), OIL_CRUDE 89.733 (-35c, day hi 91.177 — **spiked to 91 psych on Tradewinds fire and REJECTED** back to 90 area, -1.44pt round-trip fade), USDJPY 159.214 (flat -0.8p, day hi 159.455 intact), AUDUSD 0.71565 (+1.3p flat, 85.7p above 0.707). 1 MODIFY gold_safehaven_continuation_buy (add 4772.24 reject observation), 2 KEEP (audusd/usdjpy unchanged). 9 structure_watch KEEP. TUNE fed_fomc query keywords (11-article archive flood = broken filter). Material pattern: fresh Hormuz strike news fires → ~15min spike in GOLD/OIL → fade back to pre-news range. Extension-is-baseline / attacks-fade-not-trend emerging.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -62,15 +62,15 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "ADDED 10:55 UTC, REFRAMED 11:38 UTC — buy GOLD 4775 breakout on Iran-escalation hedging. Live 11:08 UTC 4756.29 (-7p vs 10:55 4757, +0.77% day, day range 4715.44-4772.24). NARRATIVE 11:38 UTC: indefinite extension verified (Reuters/NYT/DN/AJ) but Hormuz attacks ESCALATING (Tradewinds Apr 22 06:15 ship heavy bridge damage from Iranian vessel, WaPo Apr 22 10:21 'more ships attacked AFTER Trump extension') + Iran calling extension 'ploy' refusing talks until blockade lifted (Express Tribune Apr 22 09:56). Gold +0.77% bid PERSISTS DESPITE oil flat = real safe-haven flow on extension-is-paper-attacks-are-kinetic divergence. Buy trigger upgraded: M15 close >4775 + bullish FVG + headline-confirm of fresh Hormuz strike (casualty/large vessel) OR Iran formal walkout. SL 4730 (below 4715 day low + 15p), TP1 4810, TP2 4850. Conv 3 (catalyst-conditional, but more aligned with current tape than yesterday's deadline-collapse framing). SKIP if BTC continues +3% AND USD pairs bid AND no fresh Hormuz incident in 4h (would imply pure risk-on = gold sells off into 4715 day low).",
-      "current_price_ref": 4756.29,
+      "note": "MODIFIED 11:51 UTC — buy GOLD 4775 breakout on Iran-escalation hedging. Live 11:21 UTC 4752.72 (-3.6p vs 11:08, +0.69% day, day range 4715.44-4772.24). **OBSERVED TEST-REJECT: day high 4772.24 came within 2.76p of 4775 trigger and rejected on Tradewinds Apr 22 10:45 GMT 'Three MSC ships attacked by Iran' fire** — confirms catalyst-conditional thesis works (spike on attack news) AND that 4775 is live resistance (not clean breakout). Reframe: need STRONGER catalyst (US casualty, large tanker sinking, Iran formal walkout) to break 4775, not single incident news. Conservative: wait for M15 close >4775 + volume + no rejection wick. Aggressive: anticipation LIMIT buy at 4735-4740 (between day low 4715 and test-reject 4772) with SL 4705, TP 4775 retest. SL 4730 (below 4715 day low + 15p), TP1 4810, TP2 4850. Conv 3 (catalyst-conditional; today's data: 1 test 1 reject). SKIP if BTC continues +3% AND USD pairs bid AND no fresh Hormuz incident in 4h (pure risk-on = gold sells 4715).",
+      "current_price_ref": 4752.72,
       "price_ref": {
-        "ts": "2026-04-22T11:08:00Z",
-        "price": 4756.29
+        "ts": "2026-04-22T11:21:39Z",
+        "price": 4752.72
       },
-      "last_updated": "2026-04-22T11:38:00Z",
-      "proximity": "18.7p below 4775 buy trigger (live 11:08 UTC 4756.29 bid). 15.95p below day high 4772.24. Off slightly vs 10:55 (4757) — needs catalyst push.",
-      "updated_utc": "2026-04-22 11:38 UTC"
+      "last_updated": "2026-04-22T11:51:00Z",
+      "proximity": "22.28p below 4775 buy trigger (live 11:21 UTC 4752.72 bid). Day high 4772.24 rejected <3p from trigger on Hormuz attack news fire.",
+      "updated_utc": "2026-04-22 11:51 UTC"
     }
   ],
   "structure_watch": [
@@ -141,5 +141,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-22 11:38 UTC"
+  "last_updated_utc": "2026-04-22 11:51 UTC"
 }

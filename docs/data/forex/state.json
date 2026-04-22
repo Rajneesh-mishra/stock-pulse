@@ -1,7 +1,7 @@
 {
-  "last_tick": "2026-04-22T11:38:00Z",
-  "regime": "INDEFINITE_EXTENSION_HORMUZ_ESCALATION_USD_BID_FADED",
-  "regime_note": "2026-04-22 11:38 UTC heartbeat tick — 0 unconsumed events. MATERIAL NARRATIVE SHIFT verified: 4 independent sources (Reuters 01:29, NYT 17:08, Detroit News 21:46, Al Jazeera 21:40) confirm Trump granted INDEFINITE ceasefire extension — fixed deadline binary REMOVED. Residual friction: Hormuz ship attacks ESCALATING post-extension (Tradewinds 06:15 'heavy bridge damage', WaPo 10:21 'more ships attacked'); Iran calling extension 'ploy' (Türkiye Today 09:44), refusing talks until blockade lifted (Express Tribune 09:56); Vance trip on hold (NYT). Live tape ~11:08 UTC: GOLD 4756.29 (+0.77% safe-haven hedge persists), OIL_CRUDE 90.083 (-0.05% flat near 90 psych), USDJPY 159.222 (-0.07%, day high 159.455 LOWER than yesterday's 159.633 — pressure off 160), AUDUSD 0.71552 (+0.04%, 85.5p above 0.707 trigger), BTCUSD 78,228 (+3.31% strong risk-on continuation), USDCAD 1.36562 (-0.04%), EURUSD 1.1741 (-0.01%), GBPUSD 1.35064 (+0.01%), USDCHF 0.7816 (+0.14% modest USD bid). All instruments within ±5p of 10:55 tick — micro-noise. No level breaches, no structure shifts. With binary defused, 0.707 AUDUSD spike + 160 USDJPY rally now require fresh Hormuz-strike-escalation or Iran formal walkout (not deadline expiry). Gold safe-haven trade thesis still alive — extension is paper, attacks are kinetic. Broker $1000/0 pos matches state. 0 trades. Watchlist: 3 alerts MODIFY (re-frame around indefinite-extension narrative + price refresh), 9 structure_watch KEEP. Queries: TUNE iran_ceasefire keywords (drop expiry-focus, add ploy/indefinite/bridge/Vance), 7 KEEP.",
+  "last_tick": "2026-04-22T11:51:00Z",
+  "regime": "INDEFINITE_EXTENSION_HORMUZ_ESCALATION_SPIKE_FADE_PATTERN",
+  "regime_note": "2026-04-22 11:51 UTC tick — 15 events: 1 FRESH hormuz_strait news_flash (Tradewinds Apr 22 10:45 GMT 'Three MSC ships attacked by Iran trying to get through Strait of Hormuz'), 3 boj_intervention (2 stale Nov 2025/Jan 2026 + 1 Mar 2026 backgrounder), 11 fed_fomc stale archive flood (Dec 2025-Mar 2026 — query keyword filter broken, TUNED this tick). MATERIAL OBSERVATION: spike-fade pattern emerging post-extension. On Tradewinds fire (10:45 GMT), OIL_CRUDE spiked day high 91.177 (psych level test) and REJECTED to 89.733 (-1.44pt round-trip fade); GOLD day high 4772.24 came within 2.76p of 4775 buy trigger and REJECTED to 4752.72 (-2p round-trip fade). Extension is baseline, attacks produce 15-30min spikes that fade rather than trend. Implication: naked breakout entries at 4775 GOLD / 91 OIL likely fail without stronger catalyst (US casualty, Iran formal walkout, large tanker sunk); anticipation/LIMIT entries at 4735-4740 GOLD or 89.00-89.30 OIL_CRUDE pullbacks become more attractive for patient setups. Live tape 11:21 UTC: GOLD 4752.72 (+0.69% day), OIL 89.733 (-0.44% day hi 91.177/lo 87.455), USDJPY 159.214 (flat, day hi 159.455 intact), AUDUSD 0.71565 (flat, 85.7p above 0.707). USD pairs unchanged — spike confined to risk/commodity complex. BTCUSD still +3%+ risk-on (not fetched this tick, broker session). Broker $1000/0 pos matches state. 0 trades (no valid 7-gate setup; Conv ≤3 on all actionable alerts). Watchlist: 1 MODIFY gold_safehaven (4772 reject), 2 KEEP. Queries: 1 TUNE fed_fomc (narrowed to Powell/Apr29), 7 KEEP.",
   "open_positions": [],
   "watchlist": [
     {
@@ -310,12 +310,20 @@
       "note": "15 news_flash all SKIP — Touska seizure dupes (Apr 19-20) + Islamabad talks. Fresh: AlJaz Apr 21 'resuscitate talks after BREAKDOWN', TRT 'Qatar backs extending if collapse', JPost 'Trump doesn’t want to extend'. Binary T-~10.3h breakdown-vs-resuscitation framing explicit. No price fetch (budget). 3+9+8 KEEP. 12 unique IDs consumed."
     },
     {
-      "ts_utc": "2026-04-22T11:38:00Z",
+      "ts_utc": "2026-04-22T11:51:00Z",
       "events_in": 0,
       "opened": 0,
       "closed": 0,
       "skipped": 0,
       "note": "11:38 heartbeat — 0 events. BINARY DEFUSED: 4-source verify INDEFINITE extension (Reuters/NYT/DetNews/AJ). Hormuz attacks escalating post-extension. Tape flat ±5p. 3 alerts MODIFY (indefinite-extension framing), 1 query TUNE iran_ceasefire."
+    },
+    {
+      "ts_utc": "2026-04-22T11:51:00Z",
+      "events_in": 15,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 15,
+      "note": "11:51 tick — 15 events: 1 hormuz Tradewinds 'Three MSC ships attacked' (material, fresh post-extension strike confirmation) + 3 boj_intervention (2 stale Nov/Jan + 1 Mar) + 11 fed_fomc stale flood (Dec-Mar, query broken filter). SPIKE-FADE PATTERN: on Tradewinds fire OIL spiked 91.177 (psych test) rejected back 89.73, GOLD spiked 4772.24 (2.76p from 4775 trigger) rejected back 4752.72. Extension=baseline, attacks=spike-fade not trend. 0 trades (Conv ≤3 all setups, no 7-gate). 1 MODIFY gold_safehaven (add reject observation + anticipation LIMIT idea at 4735-4740), 2 KEEP (audusd/usdjpy), 9 structure_watch KEEP. 1 query TUNE fed_fomc (Powell/Apr29-specific; cooldown 120→180min), 7 KEEP. Broker $1000/0 matches."
     }
   ],
   "recent_skips": [
@@ -349,16 +357,16 @@
       "price": 4809.28
     }
   ],
-  "last_tick_summary": "2026-04-22 11:38 UTC heartbeat — 0 events, 0 trades. BINARY DEFUSED: 4-source verification (Reuters/NYT/Detroit News/AJ) confirms INDEFINITE ceasefire extension. Residual: Hormuz ship attacks escalating post-extension (heavy bridge damage), Iran calling it 'ploy' refusing talks until blockade lifted. Tape flat ±5p vs 10:55 tick: GOLD 4756 (+0.77% hedge persists), OIL 90.083 flat, USDJPY 159.222 (day hi 159.455 < yesterday's 159.633 = USD bid faded), AUDUSD 0.71552 (85.5p above 0.707), BTC 78,228 (+3.31% risk-on). Watchlist re-frames from deadline-spike to escalation-spike: 3 alerts MODIFY, 9 structure_watch KEEP, 1 query TUNE (iran_ceasefire), 7 KEEP. Broker $1000/0 matches.",
+  "last_tick_summary": "2026-04-22 11:51 UTC tick — 15 events (1 material hormuz + 14 stale archive flood), 0 trades. SPIKE-FADE PATTERN confirmed post-extension: Tradewinds 'Three MSC ships attacked' fire (10:45 GMT) produced 15-min spike in OIL (day hi 91.177 rejected back 89.73 = -1.44pt fade) and GOLD (day hi 4772.24 rejected back 4752.72 = -2p fade, tested 4775 trigger within 2.76p). Extension is baseline, attacks produce spike-fades not trends. USD pairs flat — spike confined to risk/commodity complex. Implication: naked breakouts at 4775 GOLD / 91 OIL likely to fail without stronger catalyst (casualty/walkout); anticipation LIMIT entries at pullbacks more attractive. 1 alert MODIFY gold_safehaven (add reject observation + anticipation LIMIT idea 4735-4740), 2 KEEP, 9 structure_watch KEEP, 1 query TUNE fed_fomc (Powell/Apr29 narrowed — was flooding 11 stale archive articles), 7 KEEP. Broker $1000/0 matches.",
   "last_scan": {
-    "timestamp": "2026-04-22T11:38:00Z",
-    "events_processed_last_tick": 0,
+    "timestamp": "2026-04-22T11:51:00Z",
+    "events_processed_last_tick": 15,
     "events_acted_last_tick": 0
   },
-  "last_updated": "2026-04-22T11:38:00Z",
+  "last_updated": "2026-04-22T11:51:00Z",
   "capital_base": 1000.0,
-  "last_tick_ts_utc": "2026-04-22T11:38:00Z",
-  "last_tick_utc": "2026-04-22T11:38:00Z",
+  "last_tick_ts_utc": "2026-04-22T11:51:00Z",
+  "last_tick_utc": "2026-04-22T11:51:00Z",
   "last_scan_ts": "2026-04-21T01:30:00Z",
   "tick_log": [
     {
@@ -385,8 +393,8 @@
     }
   ],
   "last_update": "2026-04-21T17:10:00Z",
-  "last_claude_update_utc": "2026-04-22T11:38:00Z",
-  "updated_at": "2026-04-22T11:38:00Z",
+  "last_claude_update_utc": "2026-04-22T11:51:00Z",
+  "updated_at": "2026-04-22T11:51:00Z",
   "binary_event": {
     "name": "iran_ceasefire_indefinite_extension",
     "deadline_utc": null,

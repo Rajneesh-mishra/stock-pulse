@@ -108,19 +108,20 @@
     },
     {
       "id": "fed_fomc",
-      "query": "Federal Reserve FOMC rate",
+      "query": "FOMC April 29 2026 decision Powell",
       "keywords_required": [
-        "cut",
-        "hike",
-        "hold",
+        "Powell",
+        "April 29",
+        "Apr 29",
+        "April 2026",
         "pivot",
-        "dovish",
-        "hawkish",
         "surprise",
-        "statement"
+        "emergency",
+        "press conference",
+        "Powell said"
       ],
-      "cooldown_min": 120,
-      "note": "FOMC Apr 28-29 — Fed hold expected. Oil shock could push dovish (growth risk) or hawkish (inflation)."
+      "cooldown_min": 180,
+      "note": "TUNED 2026-04-22 11:51 UTC — prior keywords 'cut'/'hike'/'hold' flooded 11 stale archive articles (Dec 2025-Mar 2026) this tick. Narrowed query+keywords to FOMC Apr 29 meeting and Powell statements only. Cooldown 120→180min. FOMC Apr 28-29 hold expected; oil shock could push dovish (growth risk) or hawkish (inflation). Re-broaden after meeting passes."
     },
     {
       "id": "rba_hike",
