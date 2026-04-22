@@ -7,6 +7,8 @@ mkdir -p "$REPO/docs/data/forex"
 cp "$REPO/state/forex_state.json"              "$REPO/docs/data/forex/state.json"
 cp "$REPO/state/forex_watchlist_signals.json"  "$REPO/docs/data/forex/watchlist.json"
 cp "$REPO/state/forex_counterfactual_summary.json" "$REPO/docs/data/forex/counterfactual.json"
+[ -f "$REPO/state/forex_scalp_config.json" ] && cp "$REPO/state/forex_scalp_config.json" "$REPO/docs/data/forex/scalp_config.json" || true
+[ -f "$REPO/state/forex_scalp_status.json" ] && cp "$REPO/state/forex_scalp_status.json" "$REPO/docs/data/forex/scalp_status.json" || true
 # Also publish a lightweight "last activity" feed for the ticker — pull last 30 ticks
 python3 - <<'PY'
 import json, os, glob

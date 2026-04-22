@@ -5,7 +5,21 @@ never a trade call. Claude reads the output and judges whether to act.
 
 Pulls D1 / H4 / H1 / M15 candles, runs SMC + EMA bias on each, composes a
 weighted alignment score in [-100, +100]. Positive = bullish bias, negative
-= bearish. |score| >= 60 with all TFs agreeing direction = aligned setup.
+= bearish.
+
+Readiness is TIERED (was a single 60-threshold binary veto — too strict for
+a $1k account on 10-min tick cadence):
+
+  strong    |composite| >= 60 AND all TFs agree
+  moderate  |composite| >= 40 AND ≥ (n_tfs - 1) TFs agree (e.g. 3-of-4)
+  weak      |composite| >= 25 AND ≥ 2 TFs agree
+  none      otherwise
+
+Claude maps readiness → sizing:
+  strong   → full size (1.5% risk), market on confirmation
+  moderate → half size (0.5% risk), anticipation LIMIT at level OK
+  weak     → watchlist only, no entry
+  none     → not even a watch
 
 Usage:
   python3 forex/confluence.py AUDUSD
@@ -124,13 +138,32 @@ def scan(epic, timeframes=None):
 
     composite = (weighted_sum / total_weight * 100) if total_weight else 0.0
 
-    # Alignment: all non-error TFs agree on sign and composite is strong
+    # Per-TF sign — 0 means TF was indecisive (|score| <= 0.1)
     signs = [1 if per_tf[tf].get("score", 0) > 0.1
              else -1 if per_tf[tf].get("score", 0) < -0.1
              else 0
              for tf in per_tf if "score" in per_tf[tf]]
-    all_agree = len(signs) > 0 and all(s == signs[0] and s != 0 for s in signs)
-    aligned = abs(composite) >= 60 and all_agree
+    n_tfs = len(signs)
+    # Dominant sign = most populous non-zero sign
+    pos = sum(1 for s in signs if s > 0)
+    neg = sum(1 for s in signs if s < 0)
+    dominant = 1 if pos > neg else -1 if neg > pos else 0
+    agree_count = max(pos, neg)  # how many TFs agree with dominant direction
+    all_agree = n_tfs > 0 and all(s == signs[0] and s != 0 for s in signs)
+
+    # Tiered readiness — see module docstring for the sizing map
+    abs_comp = abs(composite)
+    if abs_comp >= 60 and all_agree:
+        readiness = "strong"
+    elif abs_comp >= 40 and agree_count >= max(1, n_tfs - 1):
+        readiness = "moderate"
+    elif abs_comp >= 25 and agree_count >= 2:
+        readiness = "weak"
+    else:
+        readiness = "none"
+
+    # Back-compat: legacy "aligned" key still means "strong"
+    aligned = readiness == "strong"
 
     if composite > 10:
         call = "bullish"
@@ -144,8 +177,11 @@ def scan(epic, timeframes=None):
         "current_price": current_price,
         "composite_score": round(composite, 1),
         "directional_call": call,
-        "aligned": aligned,
+        "readiness": readiness,            # strong | moderate | weak | none
+        "aligned": aligned,                # kept for back-compat — readiness == "strong"
         "all_tfs_agree": all_agree,
+        "agree_count": agree_count,
+        "n_tfs_scored": n_tfs,
         "per_timeframe": per_tf,
         "weights": {k: v for k, v in TF_WEIGHTS.items() if k in timeframes},
     }

@@ -158,17 +158,28 @@ def check_level_alerts(signals, prices_by_epic, runtime):
             inside = zlo <= price <= zhi
             prev_state = runtime["level_state"].get(aid, "outside")
 
+            # Propagate direction from the watchlist entry into the event itself.
+            # The counterfactual tracker (daemon/forex_counterfactual_tracker.py)
+            # needs this persisted because alerts get REMOVED from watchlist over
+            # time, and if direction isn't in the event we lose it forever.
+            trade_dir = (alert.get("direction") or "").lower() or None
+
             if inside and prev_state != "inside" and emit_on in ("enter", "touch"):
                 append_event({
                     "type": "level_enter", "instrument": instrument, "alert_id": aid,
+                    "direction": trade_dir,
                     "payload": {"price": price, "zone_low": zlo, "zone_high": zhi,
+                                "direction": trade_dir,
+                                "sl": alert.get("sl"), "tp": alert.get("tp"),
                                 "note": alert.get("note", "")},
                 })
                 runtime["alert_cooldowns"][aid] = now_iso
             elif not inside and prev_state == "inside" and emit_on in ("exit", "touch"):
                 append_event({
                     "type": "level_exit", "instrument": instrument, "alert_id": aid,
-                    "payload": {"price": price, "zone_low": zlo, "zone_high": zhi},
+                    "direction": trade_dir,
+                    "payload": {"price": price, "zone_low": zlo, "zone_high": zhi,
+                                "direction": trade_dir},
                 })
                 runtime["alert_cooldowns"][aid] = now_iso
 
@@ -178,12 +189,17 @@ def check_level_alerts(signals, prices_by_epic, runtime):
             lvl = alert["level"]
             prev_side = runtime["level_state"].get(aid)
             cur_side = "above" if price > lvl else "below"
+            trade_dir = (alert.get("direction") or "").lower() or None
             if prev_side and prev_side != cur_side:
                 direction = "cross_up" if cur_side == "above" else "cross_down"
                 if emit_on in ("touch", direction):
                     append_event({
                         "type": "level_cross", "instrument": instrument, "alert_id": aid,
-                        "payload": {"price": price, "level": lvl, "direction": direction,
+                        "direction": trade_dir,
+                        "payload": {"price": price, "level": lvl,
+                                    "cross_direction": direction,     # up/down price crossing
+                                    "direction": trade_dir,            # buy/sell intent
+                                    "sl": alert.get("sl"), "tp": alert.get("tp"),
                                     "note": alert.get("note", "")},
                     })
                     runtime["alert_cooldowns"][aid] = now_iso

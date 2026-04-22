@@ -45,6 +45,7 @@ MAX_TOTAL_POSITIONS = 4             # Max 4 open positions
 MAX_DAILY_LOSS_PCT = 0.05           # 5% daily loss → halt
 MAX_CONSECUTIVE_LOSSES = 4          # 4 consecutive losses → 24hr pause
 WEEKEND_CLOSE_HOUR_UTC_FRIDAY = 20  # Close risky positions by Friday 20:00 UTC
+BALANCE_FLOOR_PCT = 0.80            # Hard floor: balance < 80% of capital_base → no new entries
 
 THEME_MAP = {
     "GOLD": "geopolitical",
@@ -206,6 +207,17 @@ def check_order(epic, direction, size, sl, tp):
     daily_loss_pct = abs(state.get("daily_pnl", 0)) / capital_base if capital_base > 0 and state.get("daily_pnl", 0) < 0 else 0
     if daily_loss_pct >= MAX_DAILY_LOSS_PCT:
         rejections.append(f"REJECT: Daily loss {daily_loss_pct:.1%} hit {MAX_DAILY_LOSS_PCT:.0%} limit. No more trades today.")
+
+    # 9b. Balance floor — drawdown circuit breaker
+    # Broker balance dropped below 80% of capital_base means we've lost ≥20% of
+    # working capital. Halt new entries until human review.
+    floor = BALANCE_FLOOR_PCT * EFFECTIVE_CAPITAL_USD
+    if broker_balance < floor:
+        rejections.append(
+            f"REJECT: Balance ${broker_balance:.2f} is below floor ${floor:.2f} "
+            f"({BALANCE_FLOOR_PCT:.0%} of ${EFFECTIVE_CAPITAL_USD:.0f} capital base). "
+            f"New entries halted until manual reset. Close existing positions at market if adversarial."
+        )
 
     # 10. Weekend check (Friday evening)
     now = datetime.now(timezone.utc)

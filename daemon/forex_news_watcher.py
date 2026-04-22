@@ -36,6 +36,7 @@ QUERIES_FILE = STATE / "news_queries.json"
 CONTROL_FILE = STATE / "forex_news.control"
 STATUS_FILE = STATE / "forex_news_status.json"
 RUNTIME_FILE = STATE / ".news_runtime.json"
+SIGNALS_FILE = STATE / "forex_watchlist_signals.json"
 
 USER_AGENT = "ForexPulse-NewsWatcher/1.0"
 MAX_SEEN_URLS = 1000
@@ -175,6 +176,66 @@ def save_runtime(rt):
 _STARTED_AT = utc_now().isoformat()
 
 
+_AUDIT_REQUEST_COOLDOWN_SEC = 900   # 15min per alert_id to avoid spam
+_audit_last_emit = {}   # alert_id -> timestamp
+
+
+def _emit_audit_requests_for_alerts(qid, headline, matched_keywords, url):
+    """If headline matches terms already tracked by active level alerts, emit
+    a targeted alert_audit_request event. One event per matched alert, per
+    15min cooldown. Claude's tick Step 4f handles these by re-scoring that
+    alert and arming anticipation LIMIT if readiness improved."""
+    try:
+        wl = json.loads(SIGNALS_FILE.read_text())
+    except Exception:
+        return
+    now = time.time()
+    headline_l = headline.lower()
+    kw_set = set(k.lower() for k in (matched_keywords or []))
+
+    for alert in wl.get("level_alerts", []):
+        aid = alert.get("id")
+        note = (alert.get("note") or "").lower()
+        inst = alert.get("instrument", "")
+        # Match if any of:
+        #   - any matched_keyword appears in alert note
+        #   - alert note shares 2+ significant words with the headline
+        score = 0
+        matched_terms = []
+        for kw in kw_set:
+            if kw and kw in note:
+                score += 2
+                matched_terms.append(kw)
+        # crude fallback: 3+ significant shared tokens
+        note_tokens = set(t for t in note.split() if len(t) >= 5)
+        head_tokens = set(t.strip(".,;:!?'\"()[]") for t in headline_l.split() if len(t) >= 5)
+        overlap = note_tokens & head_tokens
+        if len(overlap) >= 3:
+            score += 1
+            matched_terms.extend(list(overlap)[:5])
+        if score < 2:
+            continue
+
+        # Per-alert cooldown
+        last = _audit_last_emit.get(aid, 0)
+        if now - last < _AUDIT_REQUEST_COOLDOWN_SEC:
+            continue
+        _audit_last_emit[aid] = now
+
+        append_event({
+            "type": "alert_audit_request",
+            "instrument": inst,
+            "alert_id": aid,
+            "payload": {
+                "trigger_query_id": qid,
+                "trigger_headline": headline[:200],
+                "trigger_url": url,
+                "match_score": score,
+                "matched_terms": matched_terms[:10],
+            },
+        })
+
+
 def process_query(q, runtime, hourly_cap):
     """Fetch RSS for one query, emit events for new matching headlines.
     Returns number of events emitted."""
@@ -229,6 +290,13 @@ def process_query(q, runtime, hourly_cap):
         runtime["last_emit_per_query"][qid] = utc_now().isoformat()
         runtime["hourly_window"]["count"] += 1
         emitted += 1
+
+        # Alert re-audit request: if this headline's keywords overlap with
+        # any active alert's note/keywords, emit a targeted audit event so
+        # Claude re-scores THAT alert's readiness even if price isn't at
+        # trigger. Prevents news-reactive blind sizing (would whipsaw) while
+        # still letting material news drive thesis re-evaluation.
+        _emit_audit_requests_for_alerts(qid, title, matches, url)
 
     return emitted
 

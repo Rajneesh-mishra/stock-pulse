@@ -201,16 +201,52 @@ def ingest_new_alerts():
                 or d.get("level")
                 or wl_row.get("level")
             )
+            # Direction resolution order:
+            #   1. event.direction (new — emitted by watcher post-fix)
+            #   2. event.payload.direction
+            #   3. current watchlist row (only works if alert still exists)
+            #   4. infer from payload.cross_direction: cross_up on resistance=SELL,
+            #      cross_down on support=BUY. Rough but right 80%+ of the time.
+            #   5. aliased from alert_id semantics as last resort
+            inferred_dir = None
+            cd = payload.get("cross_direction") or payload.get("direction")
+            if cd == "cross_up":
+                inferred_dir = "sell"
+            elif cd == "cross_down":
+                inferred_dir = "buy"
+            aid_lower = (aid or "").lower()
+            if "_buy" in aid_lower or aid_lower.endswith("buy") or "_long" in aid_lower:
+                aid_dir = "buy"
+            elif "_sell" in aid_lower or aid_lower.endswith("sell") or "_short" in aid_lower:
+                aid_dir = "sell"
+            else:
+                aid_dir = None
+            # Legacy events stored cross direction under payload.direction; reject
+            # those values and use only real buy/sell semantics.
+            def _clean(v):
+                if v in ("cross_up", "cross_down", None):
+                    return None
+                if isinstance(v, str):
+                    v = v.lower().strip()
+                    return v if v in ("buy", "sell") else None
+                return None
+            direction = (
+                _clean(d.get("direction"))
+                or _clean(payload.get("direction"))
+                or _clean(wl_row.get("direction"))
+                or inferred_dir
+                or aid_dir
+            )
             row = {
                 "kind": "alert_fired",
                 "alert_id": aid,
                 "event_id": d.get("event_id"),
                 "event_type": d.get("type"),
                 "instrument": epic,
-                "direction": d.get("direction") or wl_row.get("direction"),
+                "direction": direction,
                 "trigger_price": trigger_price,
-                "sl": d.get("sl") or wl_row.get("sl"),
-                "tp": d.get("tp") or wl_row.get("tp"),
+                "sl": payload.get("sl") or d.get("sl") or wl_row.get("sl"),
+                "tp": payload.get("tp") or d.get("tp") or wl_row.get("tp"),
                 "fired_at": d.get("ts_utc") or datetime.now(timezone.utc).isoformat(),
                 "checkpoints": {h: None for h, _ in HORIZONS},
             }

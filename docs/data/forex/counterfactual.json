@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T18:56:45.357633+00:00",
+  "generated_at": "2026-04-22T19:20:47.752796+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -30,104 +30,104 @@
     {
       "alert_id": "audusd_breakdown_sell_zone",
       "instrument": "AUDUSD",
-      "direction": null,
+      "direction": "sell",
       "fires": 1,
       "by_horizon": {
         "1h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 1.1,
+          "hit_rate": 1.0
         },
         "4h": {
-          "filled": 0,
+          "filled": 1,
           "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "avg_pips": -2.5,
+          "hit_rate": 0.0
         },
         "24h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 24.7,
+          "hit_rate": 1.0
         }
       }
     },
     {
       "alert_id": "gold_escalation_buy_zone",
       "instrument": "GOLD",
-      "direction": null,
+      "direction": "buy",
       "fires": 10,
       "by_horizon": {
         "1h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 10,
+          "favorable": 9,
+          "avg_pips": 25.1,
+          "hit_rate": 0.9
         },
         "4h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 10,
+          "favorable": 8,
+          "avg_pips": 81.5,
+          "hit_rate": 0.8
         },
         "24h": {
-          "filled": 0,
+          "filled": 10,
           "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "avg_pips": -539.4,
+          "hit_rate": 0.0
         }
       }
     },
     {
       "alert_id": "usdcad_short_fvg_retest",
       "instrument": "USDCAD",
-      "direction": null,
+      "direction": "sell",
       "fires": 6,
       "by_horizon": {
         "1h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 6,
+          "favorable": 3,
+          "avg_pips": 0.5,
+          "hit_rate": 0.5
         },
         "4h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 6,
+          "favorable": 3,
+          "avg_pips": 0.4,
+          "hit_rate": 0.5
         },
         "24h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 6,
+          "favorable": 2,
+          "avg_pips": -3.2,
+          "hit_rate": 0.33
         }
       }
     },
     {
       "alert_id": "oil_crude_escalation_90",
       "instrument": "OIL_CRUDE",
-      "direction": null,
+      "direction": "sell",
       "fires": 1,
       "by_horizon": {
         "1h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 66.2,
+          "hit_rate": 1.0
         },
         "4h": {
-          "filled": 0,
+          "filled": 1,
           "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "avg_pips": -16.9,
+          "hit_rate": 0.0
         },
         "24h": {
-          "filled": 0,
+          "filled": 1,
           "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "avg_pips": -330.4,
+          "hit_rate": 0.0
         }
       }
     },
@@ -151,35 +151,35 @@
         },
         "24h": {
           "filled": 1,
-          "favorable": 0,
-          "avg_pips": -4.9,
-          "hit_rate": 0.0
+          "favorable": 1,
+          "avg_pips": 0.8,
+          "hit_rate": 1.0
         }
       }
     },
     {
       "alert_id": "oil_crude_retest_90_buy",
       "instrument": "OIL_CRUDE",
-      "direction": null,
+      "direction": "buy",
       "fires": 3,
       "by_horizon": {
         "1h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 3,
+          "favorable": 2,
+          "avg_pips": 61.6,
+          "hit_rate": 0.67
         },
         "4h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 3,
+          "favorable": 2,
+          "avg_pips": 35.1,
+          "hit_rate": 0.67
         },
         "24h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 320.4,
+          "hit_rate": 1.0
         }
       }
     }

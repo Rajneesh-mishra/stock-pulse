@@ -1,5 +1,4 @@
 {
-  "last_tick": "2026-04-22T15:50:00Z",
   "regime": "INDEFINITE_EXTENSION_HORMUZ_ESCALATING_SEIZURES_MIXED_RISK_ON",
   "regime_note_prev": "2026-04-22 14:54 UTC heartbeat \u2014 1 dup news_flash consumed (Sunday Guardian/Touska, narrative-unchanged republish Apr 20 article; matched single kw 'Touska'; already-live note confirms 60min cooldown is absorbing). Broker $1000/0 reconciled. No new web scan this tick (6 min since 14:47 search of CNBC/CNN/AJ/ABC/NBC/National/NPR found narrative intact \u2014 nothing material could have shifted in 360s). Prior 12:42 UTC tape ref still governs: GOLD 4747.16 (27.84p below 4775), OIL 90.758, USDJPY 159.312 (68.8p below 160), AUDUSD 0.71468 (74.7p above 0.707), BTC 78204 (+3.28% risk-on persisting). Counterfactual: usdjpy_intervention_fade_zone 1f 100% 1h+4h (thin); oil_crude_retest_90_buy now 3f/0fill but all level-unreached (not noise, just distant); gold_escalation_buy_zone 10f/0fill + usdcad_short_fvg_retest 6f/0fill already removed prior. Nothing to action \u2014 3 alerts + 9 structure + 8 queries all KEEP.",
   "open_positions": [],
@@ -149,7 +148,6 @@
     "telegram_on_trade": true,
     "telegram_chat_ids": "6838758759,849258319"
   },
-  "last_tick_ts": "2026-04-22T15:50:00Z",
   "tracker": [
     {
       "situation": "US Navy Blockade of Iran \u2014 day 4",
@@ -159,7 +157,6 @@
       "note": "Apr 20-21: Iran DRONE STRIKES on US vessels confirmed by Tasnim via Anadolu/TRT after USS Spruance seized M/V Touska (CENTCOM confirmed seizure, Marines rappelled after 6hr warnings + propulsion disable). US has NOT confirmed any vessels hit. Iran not formally agreed Islamabad talks restart. Trump: extension 'highly unlikely'. Escalation ladder: threat\u2192kinetic action (one rung up). Tape disconnect: oil -1.1%, gold -0.79%, USD bid \u2014 market still pricing deal-by-deadline. Binary remains: confirmed US damage\u2192spike, formal deal\u2192collapse."
     }
   ],
-  "last_tick_utc_prev": "2026-04-21T12:40:00Z",
   "tick_history": [
     {
       "ts": "2026-04-21T02:40:00Z",
@@ -419,11 +416,7 @@
     "events_processed_last_tick": 12,
     "events_acted_last_tick": 0
   },
-  "last_updated": "2026-04-23T18:55:00Z",
   "capital_base": 1000.0,
-  "last_tick_ts_utc": "2026-04-23T18:55:00Z",
-  "last_tick_utc": "2026-04-23T18:55:00Z",
-  "last_scan_ts": "2026-04-21T01:30:00Z",
   "tick_log": [
     {
       "utc": "2026-04-21T08:15Z",
@@ -448,9 +441,6 @@
       "skipped": 8
     }
   ],
-  "last_update": "2026-04-21T17:10:00Z",
-  "last_claude_update_utc": "2026-04-23T18:55:00Z",
-  "updated_at": "2026-04-23T18:55:00Z",
   "binary_event": {
     "name": "iran_ceasefire_indefinite_extension",
     "deadline_utc": null,
@@ -464,5 +454,7 @@
     ],
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break."
   },
-  "regime_note": "2026-04-22 18:55 UTC (next-day tick) \u2014 12 pending events consumed, all STALE archive flush: 10 us_iran_military Apr 13-14 original blockade announcements matched 'retaliation' + 1 Apr 16 CNBC 'day 4' matched 'blockade' + 1 Apr 19 Il Sole Touska republish. Two news_queries RE-TUNED: hormuz_strait REMOVED 'blockade'/'seized'/'fired' (baseline-state stale tokens) added 'sunk'/'ablaze'/'missile'; us_iran_military REMOVED 'retaliation'/'retaliate'/'struck'/'escalation'/'mine' (broad archive-matchers) cooldown 60->120min. Live tape 18:55 UTC: OIL 92.589 (-35p vs 22:32, holding above 90 breakout); GOLD 4740.35 (+7p, still 34.65p below 4775 trigger); USDJPY 159.483 (flat, 51.7p below 160); AUDUSD 0.716 (+4p drift, 90p above 0.707). ~6h price stasis confirms oil-specific re-rating still dominates. No new escalation rung, no diplomatic beat, no level hits - 0 trades."
+  "regime_note": "2026-04-22 18:55 UTC (next-day tick) \u2014 12 pending events consumed, all STALE archive flush: 10 us_iran_military Apr 13-14 original blockade announcements matched 'retaliation' + 1 Apr 16 CNBC 'day 4' matched 'blockade' + 1 Apr 19 Il Sole Touska republish. Two news_queries RE-TUNED: hormuz_strait REMOVED 'blockade'/'seized'/'fired' (baseline-state stale tokens) added 'sunk'/'ablaze'/'missile'; us_iran_military REMOVED 'retaliation'/'retaliate'/'struck'/'escalation'/'mine' (broad archive-matchers) cooldown 60->120min. Live tape 18:55 UTC: OIL 92.589 (-35p vs 22:32, holding above 90 breakout); GOLD 4740.35 (+7p, still 34.65p below 4775 trigger); USDJPY 159.483 (flat, 51.7p below 160); AUDUSD 0.716 (+4p drift, 90p above 0.707). ~6h price stasis confirms oil-specific re-rating still dominates. No new escalation rung, no diplomatic beat, no level hits - 0 trades.",
+  "tick_ts_utc": "2026-04-23T18:55:00Z",
+  "state_ts_utc": "2026-04-23T18:55:00Z"
 }

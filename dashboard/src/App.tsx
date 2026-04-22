@@ -17,6 +17,8 @@ import { PositionsPanel } from './components/PositionsPanel';
 import { EventLog } from './components/EventLog';
 import { RegimeCallout } from './components/RegimeCallout';
 import { ChatDock } from './components/ChatDock';
+import { ScalpPanel } from './components/ScalpPanel';
+import { AttentionMatrix } from './components/AttentionMatrix';
 import { relativeTime } from './lib/format';
 
 type NavId = 'overview' | 'pairs' | 'alerts' | 'history' | 'events';
@@ -136,11 +138,29 @@ export default function App() {
           <InstrumentGrid snapshot={snap.snapshot} ticks={tickMap} candles={candles} alerts={alerts} />
         </section>
 
-        {/* ─────────── SIGNAL READOUT ─────────── */}
+        {/* ─────────── ATTENTION MATRIX ─────────── */}
+        <section className="rise mt-10" style={{ animationDelay: '100ms' }}>
+          <SectionHeader
+            title="Attention matrix"
+            caption="Every pair gets one row — no pair silently ignored"
+          />
+          <AttentionMatrix mode={mode} watchlist={snap.watchlist} />
+        </section>
+
+        {/* ─────────── SCALP ENGINE ─────────── */}
         <section className="rise mt-10" style={{ animationDelay: '120ms' }}>
           <SectionHeader
+            title="Scalp engine"
+            caption="Mechanical scalps on FX majors — shadow mode until stats validate"
+          />
+          <ScalpPanel mode={mode} />
+        </section>
+
+        {/* ─────────── SIGNAL READOUT ─────────── */}
+        <section className="rise mt-10" style={{ animationDelay: '140ms' }}>
+          <SectionHeader
             title="Signal readout"
-            caption="Inputs feeding the conviction × R:R sizing call — not a pass/fail gate"
+            caption="Inputs feeding the readiness × R:R sizing call — not a pass/fail gate"
           />
           <GatesTable rows={snap.gates} />
         </section>
