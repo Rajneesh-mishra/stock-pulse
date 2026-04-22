@@ -405,7 +405,7 @@
       "price": 4809.28
     }
   ],
-  "last_tick_summary": "16:53 UTC heartbeat \u2014 0 unconsumed events (waker dropped any noise). 0 trades, broker $1000/0 reconciled. GOLD 4752.76 unchanged vs 15:55 (22.24p below 4775 trigger), USDJPY ~158.95 narrative intact, WTI ~86.55 / Brent ~95 stuck (Hormuz priced in). 2 news searches: same Trump indefinite extension + Hormuz blockade + IRGC seizures + Katayama verbal-intervention; no fresh rung. All 3 alerts KEEP, 9 structure + 7 queries KEEP.",
+  "last_tick_summary": "22:33 UTC tick \u2014 1 news_flash (Pakistan-leads-talks, non-actionable) + 2 bar_close (noise). 0 trades, broker $1000/0 reconciled. BIG MOVE: WTI 92.94 (+639p vs 16:53 86.55, +3.07% on day, day high 93.39) \u2014 clean break above 90 on Hormuz repricing. GOLD 4733 rolled off -19.5p (4772 high REJECTED, spike-fade confirmed). USDJPY 159.48 +53p closer to 160. AUDUSD drifted +12.8p risk-on with BTC +4.14%. Added oil_crude_retest_90_buy alert; 3 existing alerts MODIFY (price refs refreshed). 8 queries KEEP.",
   "last_scan": {
     "timestamp": "2026-04-22T15:50:00Z",
     "events_processed_last_tick": 0,
@@ -414,7 +414,7 @@
   "last_updated": "2026-04-22T15:50:00Z",
   "capital_base": 1000.0,
   "last_tick_ts_utc": "2026-04-22T15:50:00Z",
-  "last_tick_utc": "2026-04-22T16:53:00Z",
+  "last_tick_utc": "2026-04-22T22:33:00Z",
   "last_scan_ts": "2026-04-21T01:30:00Z",
   "tick_log": [
     {
@@ -456,5 +456,5 @@
     ],
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break."
   },
-  "regime_note": "2026-04-22 16:53 UTC \u2014 1h after last tick, narrative fully static. Trump indefinite ceasefire extension intact (4-source verified), Hormuz blockade ongoing with 2 IRGC ship seizures (Francesca/Epaminondas) + 1 fire-on (Euphoria), no new escalation rung. GOLD 4752.76 unchanged, USDJPY 158.95 unchanged, WTI ~86.55 (CNBC), Brent ~95 (CNBC) \u2014 Hormuz risk premium fully priced. Katayama-Bessent verbal intervention rhetoric still elevated, no actual MoF action. Binary_event resolved (indefinite extension), no active deadline. Counterfactual horizon data still mostly unfilled (waker hasn't back-resolved fires) \u2014 no automatic REMOVE triggered."
+  "regime_note": "2026-04-22 22:33 UTC \u2014 WTI broke 90 cleanly (+3.07% day, 92.94 live, day high 93.39) while gold ROLLED OFF (4772 high rejected, now 4733) and BTC +4.14%. Read: Hormuz priced as oil-specific supply story, NOT broad escalation/risk-off. USDJPY +53p closer to 160 on crude-bid-USD. Narrative unchanged: Trump indefinite ceasefire extension (4-source verified), IRGC 2-ship seizure + 3rd fire-on, Vance trip on hold, Iran no-final-decision on talks. No new escalation rung; no fresh diplomatic breakthrough."
 }

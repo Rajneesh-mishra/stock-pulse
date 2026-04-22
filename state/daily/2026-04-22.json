@@ -119,5 +119,10 @@
     "summary": "16:53 UTC heartbeat \u2014 0 events. 0 trades. GOLD 4752.76 / USDJPY 158.95 / WTI 86.55 / Brent 95 all unchanged from 15:55. Narrative static \u22651h. All alerts + queries KEEP.",
     "watchlist_changes": [],
     "query_changes": []
+  },
+  {
+    "ts_utc": "2026-04-22T22:33:00Z",
+    "type": "heartbeat_with_watchlist_refresh",
+    "summary": "WTI broke 90 (+3.07% day to 92.94, high 93.39) on Hormuz repricing while gold rolled off (4772 rejected, 4733 now) and BTC +4.14% \u2014 oil-specific supply story. USDJPY 159.48 +53p closer to 160. Added oil_crude_retest_90_buy alert (SL 89.20 TP1 93.50 TP2 95 Conv 4). MODIFIED all 3 existing alerts with fresh price refs. 0 trades, broker $1000/0 reconciled."
   }
 ]
