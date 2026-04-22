@@ -372,6 +372,14 @@
       "closed": 0,
       "skipped": 0,
       "note": "15:50 UTC heartbeat \u2014 0 unconsumed events. Broker $1000/0 matches. 2 WebSearches: Euronews/CBS/NBC Apr 22 confirm 2-ship seizure (MSC Francesca+Epaminondas) + 3rd 'Euphoria' fired on, Trump indefinite extension intact, narrative unchanged since 12:54. tradingeconomics Apr 22: GOLD 4759.11 (+11.95p, 15.89p below 4775 trigger \u2014 creeping up), USDJPY 158.95 (-36.2p, 105p below 160 red line \u2014 drifting away). 2 MODIFY (gold+usdjpy price refresh), 1 KEEP (audusd), 9 structure + 8 queries KEEP. No trades."
+    },
+    {
+      "ts_utc": "2026-04-23T18:55:00Z",
+      "events_in": 12,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 12,
+      "note": "18:55 UTC tick - 12 pending events all STALE archive flush (10 Apr 13-14 blockade-announcement matched 'retaliation' + 1 Apr 16 CNBC 'day 4' matched 'blockade' + 1 Apr 19 Il Sole Touska republish). Broker $1000/0 reconciled. Live tape: OIL 92.589 GOLD 4740.35 USDJPY 159.483 AUDUSD 0.716 (~flat vs 22:32 ref). No level hits, no trades. 2 news_queries RE-TUNED (hormuz_strait + us_iran_military) to kill broad archive matchers. 4 alerts KEEP, 9 structure KEEP."
     }
   ],
   "recent_skips": [
@@ -405,16 +413,16 @@
       "price": 4809.28
     }
   ],
-  "last_tick_summary": "23:26 UTC tick \u2014 1 pending news_flash consumed (Pakistan Islamabad-standby, US-Iran talks stalled per The National 15:12 GMT \u2014 restatement of already-non-actionable theme). 0 positions, broker $1000/0 reconciled clean. 3 web searches: gold 4750-4759 softly bouncing, WTI mixed reports $89-92 (keeping broker 92.94), USDJPY 159.36 tradingeconomics confirming live read \u2014 Katayama 'bold action' verbal intervention rhetoric intact, 158 MoF threshold. Narrative unchanged from 22:33: Trump indefinite extension (4-source), Iran won't reopen Hormuz while USN intercepts, peace talks collapsed/stalled, Vance trip on hold. No new escalation rung, no new diplomatic beat. All 4 alerts KEEP (all refreshed at 22:33 with live prices). 8 news_queries KEEP. No regime change, binary_event remains resolved/inactive.",
+  "last_tick_summary": "18:55 UTC forex auto tick - 12 pending events consumed all STALE (10 Apr 13-14 blockade-announcement flood + 1 Apr 16 'day 4' + 1 Apr 19 Touska republish matched broad keywords). 0 trades. 2 news_queries RE-TUNED to kill archive-matchers: hormuz_strait (-blockade/seized/fired +sunk/ablaze/missile), us_iran_military (-retaliation/retaliate/struck/escalation/mine, cooldown 60->120min). Live tape flat vs 22:32 ref (OIL 92.59 holding above 90; GOLD 4740 still 34.65p below 4775; USDJPY 159.48 flat; AUDUSD 0.716 drift). 4 alerts KEEP, 9 structure KEEP, 8 queries: 2 TUNE 6 KEEP. Broker $1000/0 reconciled. Regime intact.",
   "last_scan": {
-    "timestamp": "2026-04-22T15:50:00Z",
-    "events_processed_last_tick": 0,
+    "timestamp": "2026-04-23T18:55:00Z",
+    "events_processed_last_tick": 12,
     "events_acted_last_tick": 0
   },
-  "last_updated": "2026-04-22T15:50:00Z",
+  "last_updated": "2026-04-23T18:55:00Z",
   "capital_base": 1000.0,
-  "last_tick_ts_utc": "2026-04-22T15:50:00Z",
-  "last_tick_utc": "2026-04-22T23:26:00Z",
+  "last_tick_ts_utc": "2026-04-23T18:55:00Z",
+  "last_tick_utc": "2026-04-23T18:55:00Z",
   "last_scan_ts": "2026-04-21T01:30:00Z",
   "tick_log": [
     {
@@ -441,8 +449,8 @@
     }
   ],
   "last_update": "2026-04-21T17:10:00Z",
-  "last_claude_update_utc": "2026-04-22T15:50:00Z",
-  "updated_at": "2026-04-22T15:50:00Z",
+  "last_claude_update_utc": "2026-04-23T18:55:00Z",
+  "updated_at": "2026-04-23T18:55:00Z",
   "binary_event": {
     "name": "iran_ceasefire_indefinite_extension",
     "deadline_utc": null,
@@ -456,5 +464,5 @@
     ],
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break."
   },
-  "regime_note": "2026-04-22 22:33 UTC \u2014 WTI broke 90 cleanly (+3.07% day, 92.94 live, day high 93.39) while gold ROLLED OFF (4772 high rejected, now 4733) and BTC +4.14%. Read: Hormuz priced as oil-specific supply story, NOT broad escalation/risk-off. USDJPY +53p closer to 160 on crude-bid-USD. Narrative unchanged: Trump indefinite ceasefire extension (4-source verified), IRGC 2-ship seizure + 3rd fire-on, Vance trip on hold, Iran no-final-decision on talks. No new escalation rung; no fresh diplomatic breakthrough."
+  "regime_note": "2026-04-22 18:55 UTC (next-day tick) \u2014 12 pending events consumed, all STALE archive flush: 10 us_iran_military Apr 13-14 original blockade announcements matched 'retaliation' + 1 Apr 16 CNBC 'day 4' matched 'blockade' + 1 Apr 19 Il Sole Touska republish. Two news_queries RE-TUNED: hormuz_strait REMOVED 'blockade'/'seized'/'fired' (baseline-state stale tokens) added 'sunk'/'ablaze'/'missile'; us_iran_military REMOVED 'retaliation'/'retaliate'/'struck'/'escalation'/'mine' (broad archive-matchers) cooldown 60->120min. Live tape 18:55 UTC: OIL 92.589 (-35p vs 22:32, holding above 90 breakout); GOLD 4740.35 (+7p, still 34.65p below 4775 trigger); USDJPY 159.483 (flat, 51.7p below 160); AUDUSD 0.716 (+4p drift, 90p above 0.707). ~6h price stasis confirms oil-specific re-rating still dominates. No new escalation rung, no diplomatic beat, no level hits - 0 trades."
 }

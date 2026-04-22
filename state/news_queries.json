@@ -41,42 +41,41 @@
       "keywords_required": [
         "attack",
         "mine",
-        "blockade",
         "closed",
         "reopen",
         "strike",
         "incident",
         "sanction",
-        "seized",
-        "fired"
+        "sunk",
+        "ablaze",
+        "missile"
       ],
       "cooldown_min": 30,
-      "note": "Direct crude oil catalyst — fired 15 events this tick confirming blockade. Hormuz fully closed, ships attacked."
+      "note": "TUNED 2026-04-22 18:55 UTC — REMOVED 'blockade'/'seized'/'fired' (all now baseline-state tokens matching stale CNBC/AP archives from Apr 13-16 original blockade announcement and Apr 20-21 Touska/MSC seizures already consumed). Added 'sunk', 'ablaze', 'missile' for fresh kinetic escalation rungs. Direct crude oil catalyst: forward-looking attacks/reopens only."
     },
     {
       "id": "us_iran_military",
       "query": "US Iran naval Hormuz blockade retaliation",
       "keywords_required": [
-        "retaliation",
-        "retaliate",
         "missile",
-        "mine",
         "mines",
         "casualties",
         "casualty",
         "killed",
         "wounded",
-        "struck",
-        "escalation",
+        "sunk",
+        "ablaze",
         "Vance",
         "Witkoff",
         "Kushner",
         "Islamabad",
         "Hormuz reopen",
-        "blockade lifted"
+        "blockade lifted",
+        "new talks",
+        "walkout"
       ],
-      "cooldown_min": 60,
-      "note": "TUNED 2026-04-22 15:55 UTC — Touska story (first broke Apr 21 08:38 UTC) fired 138 events total; this tick emitted 13 pure republishes at 15:53 the moment 60min cooldown reopened. 'Touska' and bare 'seized'/'blockade'/'Hormuz' now stale tokens. REMOVED: Touska, seized, Hormuz, blockade (all match 24h+ republishes). ADDED: retaliation/retaliate/missile/mine/mines/casualties/casualty/killed/wounded/struck/escalation (forward-looking escalation beats). KEPT: Vance/Witkoff/Kushner/Islamabad (diplomatic restart signals). Added: 'Hormuz reopen' and 'blockade lifted' as phrase-matches for de-escalation beats."
+      "cooldown_min": 120,
+      "note": "RE-TUNED 2026-04-22 18:55 UTC — prior 'retaliation'/'retaliate'/'struck'/'escalation'/'mine' flooded 12 stale archive articles this tick: 10 Apr 13-14 original blockade-announcement (Algemeiner/Fox/Globe & Mail/MSN/etc.) + 1 Apr 16 CNBC 'fourth day' + 1 Apr 19 Il Sole Touska republish. Those keywords match 9-day-old routine coverage of baseline state. REMOVED broad keywords; kept only action-verbs describing NEW escalation rungs (missile launched, casualties, sunk, ablaze) + forward diplomatic names (Vance/Witkoff/Kushner/Islamabad) + de-escalation-trigger phrases (Hormuz reopen, blockade lifted, new talks, walkout). Cooldown 60→120min. If this still floods: add date-filter logic to daemon."
     },
     {
       "id": "opec_supply",

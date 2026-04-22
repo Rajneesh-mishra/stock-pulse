@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T17:57:27.958433Z",
+  "generated_at": "2026-04-22T18:57:32.469402Z",
   "ticks": [
     {
       "ts": "2026-04-21T02:40:00Z",
@@ -212,6 +212,14 @@
       "closed": 0,
       "skipped": 0,
       "note": "15:50 UTC heartbeat \u2014 0 unconsumed events. Broker $1000/0 matches. 2 WebSearches: Euronews/CBS/NBC Apr 22 confirm 2-ship seizure (MSC Francesca+Epaminondas) + 3rd 'Euphoria' fired on, Trump indefinite extension intact, narrative unchanged since 12:54. tradingeconomics Apr 22: GOLD 4759.11 (+11.95p, 15.89p below 4775 trigger \u2014 creeping up), USDJPY 158.95 (-36.2p, 105p below 160 red line \u2014 drifting away). 2 MODIFY (gold+usdjpy price refresh), 1 KEEP (audusd), 9 structure + 8 queries KEEP. No trades."
+    },
+    {
+      "ts_utc": "2026-04-23T18:55:00Z",
+      "events_in": 12,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 12,
+      "note": "18:55 UTC tick - 12 pending events all STALE archive flush (10 Apr 13-14 blockade-announcement matched 'retaliation' + 1 Apr 16 CNBC 'day 4' matched 'blockade' + 1 Apr 19 Il Sole Touska republish). Broker $1000/0 reconciled. Live tape: OIL 92.589 GOLD 4740.35 USDJPY 159.483 AUDUSD 0.716 (~flat vs 22:32 ref). No level hits, no trades. 2 news_queries RE-TUNED (hormuz_strait + us_iran_military) to kill broad archive matchers. 4 alerts KEEP, 9 structure KEEP."
     },
     {
       "ticks": [
