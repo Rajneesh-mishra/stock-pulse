@@ -817,42 +817,146 @@ def _compose_chat_prompt(briefing, messages):
     )
 
 
-def _invoke_claude_chat(prompt):
-    """Spawn `claude -p` non-interactively. Prompt is passed via stdin so no
-    shell-quoting concerns. Output mode = text. 90s hard timeout.
+def _stream_claude_chat(handler, prompt):
+    """Pipe `claude -p --output-format stream-json` output to the browser as SSE.
 
-    Model: Haiku — chat is small-briefing Q&A, Sonnet is overkill and 10× the
-    cost. Override with CHAT_MODEL env if you want to experiment."""
+    stream-json emits one JSON object per line. We only forward:
+      • text_delta events  → {"delta": "..."}
+      • final result event → {"done": true, "cost_usd": ...}
+      • any error          → {"error": "...", "detail": "..."}
+
+    Thinking / metadata / tool events are silently dropped. The prompt enters
+    via stdin so nothing shell-quoted. 120s hard wall-clock timeout.
+    """
     claude_bin = os.environ.get("CLAUDE_BIN", "/Users/rajneeshmishra/.local/bin/claude")
     model = os.environ.get("CHAT_MODEL", "claude-haiku-4-5")
     cmd = [
         claude_bin, "-p",
         "--model", model,
-        "--output-format", "text",
+        "--output-format", "stream-json",
+        "--include-partial-messages",   # token-level deltas, required for real streaming
+        "--verbose",                    # required alongside stream-json
         "--dangerously-skip-permissions",
         "--max-budget-usd", "0.12",
     ]
+
+    # Send SSE headers first so the browser starts consuming immediately
     try:
-        p = subprocess.run(
+        handler.send_response(200)
+        handler.send_header("Content-Type", "text/event-stream")
+        handler.send_header("Cache-Control", "no-cache, no-transform")
+        handler.send_header("X-Accel-Buffering", "no")
+        handler.send_header("Access-Control-Allow-Origin", "*")
+        handler.end_headers()
+    except Exception:
+        return
+
+    def write_event(payload):
+        try:
+            handler.wfile.write(f"data: {json.dumps(payload, default=str)}\n\n".encode("utf-8"))
+            handler.wfile.flush()
+        except (BrokenPipeError, ConnectionResetError):
+            raise
+
+    proc = None
+    try:
+        proc = subprocess.Popen(
             cmd,
-            input=prompt.encode("utf-8"),
-            capture_output=True,
-            timeout=90,
+            stdin=subprocess.PIPE,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
             cwd=str(REPO),
+            bufsize=1,  # line-buffered
+            text=True,
         )
-    except subprocess.TimeoutExpired:
-        return {"ok": False, "error": "timeout", "detail": "claude did not respond within 90s"}
     except FileNotFoundError:
-        return {"ok": False, "error": "cli_missing", "detail": f"claude binary not found at {claude_bin}"}
+        try: write_event({"error": "cli_missing", "detail": f"claude binary not at {claude_bin}"})
+        except Exception: pass
+        return
     except Exception as e:
-        return {"ok": False, "error": "spawn_failed", "detail": str(e)}
+        try: write_event({"error": "spawn_failed", "detail": str(e)})
+        except Exception: pass
+        return
 
-    if p.returncode != 0:
-        err = (p.stderr.decode("utf-8", "replace") or p.stdout.decode("utf-8", "replace")).strip()
-        return {"ok": False, "error": "nonzero_exit", "detail": err[:1000], "returncode": p.returncode}
+    # Pipe prompt in, then close stdin so claude can start generating
+    try:
+        assert proc.stdin is not None
+        proc.stdin.write(prompt)
+        proc.stdin.close()
+    except Exception as e:
+        try: write_event({"error": "write_failed", "detail": str(e)})
+        except Exception: pass
+        try: proc.kill()
+        except Exception: pass
+        return
 
-    text = p.stdout.decode("utf-8", "replace").strip()
-    return {"ok": True, "response": text}
+    start = time.time()
+    TIMEOUT = 120
+    cost_usd = None
+    received_any_text = False
+
+    try:
+        assert proc.stdout is not None
+        for line in proc.stdout:
+            if time.time() - start > TIMEOUT:
+                try: write_event({"error": "timeout", "detail": f"no completion within {TIMEOUT}s"})
+                except Exception: pass
+                proc.kill()
+                return
+
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                obj = json.loads(line)
+            except Exception:
+                continue
+
+            t = obj.get("type")
+            if t == "stream_event":
+                ev = obj.get("event") or {}
+                if ev.get("type") == "content_block_delta":
+                    delta = ev.get("delta") or {}
+                    if delta.get("type") == "text_delta":
+                        text = delta.get("text")
+                        if text:
+                            received_any_text = True
+                            try:
+                                write_event({"delta": text})
+                            except (BrokenPipeError, ConnectionResetError):
+                                proc.kill()
+                                return
+            elif t == "result":
+                cost_usd = obj.get("total_cost_usd")
+                break
+
+        # Drain and close
+        try: proc.wait(timeout=5)
+        except Exception:
+            try: proc.kill()
+            except Exception: pass
+
+        if proc.returncode and proc.returncode != 0:
+            err_detail = ""
+            try:
+                err_detail = (proc.stderr.read() or "").strip()[:500] if proc.stderr else ""
+            except Exception:
+                pass
+            if not received_any_text:
+                try: write_event({"error": "nonzero_exit", "detail": err_detail or f"exit {proc.returncode}"})
+                except Exception: pass
+                return
+
+        try: write_event({"done": True, "cost_usd": cost_usd})
+        except Exception: pass
+    except (BrokenPipeError, ConnectionResetError):
+        try: proc.kill()
+        except Exception: pass
+    except Exception as e:
+        try: write_event({"error": "stream_failed", "detail": str(e)[:500]})
+        except Exception: pass
+        try: proc.kill()
+        except Exception: pass
 
 
 def full_snapshot():
@@ -970,9 +1074,7 @@ class Handler(BaseHTTPRequestHandler):
         messages = data.get("messages") or []
         if not isinstance(messages, list) or not messages:
             return self._json({"error": "messages[] required"}, status=400)
-        # keep only last ~16 turns to bound the prompt
         messages = messages[-16:]
-        # hard cap per-message size
         for m in messages:
             if not isinstance(m, dict): continue
             if isinstance(m.get("content"), str) and len(m["content"]) > 4000:
@@ -980,8 +1082,7 @@ class Handler(BaseHTTPRequestHandler):
 
         briefing = _build_chat_briefing()
         prompt = _compose_chat_prompt(briefing, messages)
-        result = _invoke_claude_chat(prompt)
-        self._json(result, status=(200 if result.get("ok") else 502))
+        _stream_claude_chat(self, prompt)
 
     def do_GET(self):
         u = urlparse(self.path)

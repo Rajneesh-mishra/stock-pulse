@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T14:49:15.015400Z",
+  "generated_at": "2026-04-22T14:55:01.014769Z",
   "ticks": [
     {
       "ts": "2026-04-21T02:40:00Z",
@@ -284,6 +284,13 @@
       "trades": 0,
       "broker": "$1000/0",
       "note": "0 unconsumed. WebSearch narrative unchanged since 12:54. 3 alerts + 9 structure + 8 queries KEEP. Regime INDEFINITE_EXTENSION_HORMUZ_ESCALATING_SEIZURES_MIXED_RISK_ON intact."
+    },
+    {
+      "tick_utc": "2026-04-22T14:54:48Z",
+      "type": "forex_heartbeat",
+      "events_consumed": 1,
+      "trades": 0,
+      "summary": "2026-04-22 14:54 UTC heartbeat \u2014 1 stale-dup news_flash (Sunday Guardian republish of Touska-seizure story already tracked, matched-kw=Touska only, within 60min cooldown TUNE). 0 trades, broker $1000/0 reconciled. No fresh escalation rung since 12:54 sweep. 3 alerts + 9 structure + 8 queries all KEEP. Binary resolved (indefinite extension, 4-source). Regime unchanged."
     }
   ]
 }

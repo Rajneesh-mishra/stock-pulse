@@ -13,7 +13,7 @@ const PROMPTS = [
 type Size = 'compact' | 'expanded';
 
 export function ChatDock({ mode }: { mode: Mode }) {
-  const { messages, send, clear, sending, lastError } = useChat();
+  const { messages, send, clear, sending, lastError, cancel } = useChat();
   const [open, setOpen] = useState(false);
   const [size, setSize] = useState<Size>('compact');
   const [input, setInput] = useState('');
@@ -167,10 +167,17 @@ export function ChatDock({ mode }: { mode: Mode }) {
             ) : (
               <div className="space-y-3">
                 {messages.map((m, i) => (
-                  <MessageBubble key={i} role={m.role} content={m.content} error={!!m.error} expanded={size === 'expanded'} />
+                  <MessageBubble
+                    key={i}
+                    role={m.role}
+                    content={m.content}
+                    error={!!m.error}
+                    expanded={size === 'expanded'}
+                    streaming={!!m.streaming}
+                  />
                 ))}
-                {sending && (
-                  <div className="flex items-center gap-2 pl-1 text-[12px] text-fg-muted">
+                {sending && messages[messages.length - 1]?.role === 'assistant' && !messages[messages.length - 1]?.content && (
+                  <div className="flex items-center gap-2 pl-8 text-[12px] text-fg-muted">
                     <span className="relative flex h-2 w-2">
                       <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-bull opacity-75" />
                       <span className="relative inline-flex h-2 w-2 rounded-full bg-bull" />
@@ -195,20 +202,33 @@ export function ChatDock({ mode }: { mode: Mode }) {
                 disabled={disabled || sending}
                 className="max-h-32 flex-1 resize-none bg-transparent px-3 py-2.5 text-[13px] text-fg placeholder:text-fg-subtle focus:outline-none disabled:opacity-50"
               />
-              <button
-                onClick={() => {
-                  if (input.trim() && !sending && !disabled) {
-                    const msg = input.trim();
-                    setInput('');
-                    send(msg);
-                  }
-                }}
-                disabled={disabled || sending || !input.trim()}
-                className="mb-1 mr-1 grid h-8 w-8 place-items-center rounded-lg bg-bull text-ink-900 transition-colors hover:bg-bull/90 disabled:cursor-not-allowed disabled:bg-ink-700 disabled:text-fg-subtle"
-                aria-label="send"
-              >
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M2 8l12-6-5 14-2-6z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round"/></svg>
-              </button>
+              {sending ? (
+                <button
+                  onClick={cancel}
+                  className="mb-1 mr-1 grid h-8 w-8 place-items-center rounded-lg bg-bear/80 text-ink-900 transition-colors hover:bg-bear"
+                  aria-label="stop"
+                  title="Stop"
+                >
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                    <rect x="1.5" y="1.5" width="7" height="7" rx="1" fill="currentColor" />
+                  </svg>
+                </button>
+              ) : (
+                <button
+                  onClick={() => {
+                    if (input.trim() && !disabled) {
+                      const msg = input.trim();
+                      setInput('');
+                      send(msg);
+                    }
+                  }}
+                  disabled={disabled || !input.trim()}
+                  className="mb-1 mr-1 grid h-8 w-8 place-items-center rounded-lg bg-bull text-ink-900 transition-colors hover:bg-bull/90 disabled:cursor-not-allowed disabled:bg-ink-700 disabled:text-fg-subtle"
+                  aria-label="send"
+                >
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M2 8l12-6-5 14-2-6z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round"/></svg>
+                </button>
+              )}
             </div>
             {lastError && (
               <div className="mt-1.5 px-1 text-[11px] text-bear">
@@ -226,12 +246,13 @@ export function ChatDock({ mode }: { mode: Mode }) {
 }
 
 function MessageBubble({
-  role, content, error, expanded,
+  role, content, error, expanded, streaming,
 }: {
   role: 'user' | 'assistant';
   content: string;
   error: boolean;
   expanded: boolean;
+  streaming?: boolean;
 }) {
   const maxW = expanded ? 'max-w-[90%]' : 'max-w-[85%]';
   if (role === 'user') {
@@ -245,14 +266,43 @@ function MessageBubble({
   }
   return (
     <div className="flex items-start gap-2">
-      <div className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-md bg-gradient-to-br from-bull to-sky text-ink-900 text-[10px] font-semibold">C</div>
+      <div className={`mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-md bg-gradient-to-br from-bull to-sky text-ink-900 text-[10px] font-semibold ${streaming ? 'animate-pulse' : ''}`}>C</div>
       <div className={`rounded-2xl rounded-tl-sm bg-ink-750 px-3.5 py-2 ${maxW} ${error ? 'text-bear' : 'text-fg'}`}>
-        {error ? (
-          <div className="whitespace-pre-wrap text-[13px]">{content}</div>
-        ) : (
-          <Markdown>{content}</Markdown>
-        )}
+        {content ? (
+          error ? (
+            <div className="whitespace-pre-wrap text-[13px]">{content}</div>
+          ) : (
+            <div className="relative">
+              <Markdown>{content}</Markdown>
+              {streaming && <StreamingCursor />}
+            </div>
+          )
+        ) : streaming ? (
+          <div className="flex items-center gap-1 py-1">
+            <Dot delay={0} />
+            <Dot delay={150} />
+            <Dot delay={300} />
+          </div>
+        ) : null}
       </div>
     </div>
+  );
+}
+
+function StreamingCursor() {
+  return (
+    <span
+      aria-hidden="true"
+      className="ml-0.5 inline-block h-[1em] w-[6px] translate-y-[2px] rounded-sm bg-bull/70 align-middle animate-pulse"
+    />
+  );
+}
+
+function Dot({ delay }: { delay: number }) {
+  return (
+    <span
+      className="h-1.5 w-1.5 rounded-full bg-fg-muted animate-pulse"
+      style={{ animationDelay: `${delay}ms` }}
+    />
   );
 }
