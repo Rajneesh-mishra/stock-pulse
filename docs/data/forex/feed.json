@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T05:23:27.226151Z",
+  "generated_at": "2026-04-23T05:34:09.134393Z",
   "ticks": [
     {
       "ts_utc": "2026-04-21T08:41:00+00:00",
@@ -514,6 +514,18 @@
       "binary_event": "iran_ceasefire_indefinite_extension (active=false, BOJ T-4d, FOMC T-6d)",
       "alerts_actions": "USDJPY/GOLD/OIL \u2014 KEEP carry-forward",
       "scalp": "3 FX shadow active no-trades; 3 disabled pip-conv; 3 N/A spread; halts=0",
+      "attention_covered": "9/9"
+    },
+    {
+      "tick_utc": "2026-04-23T05:35:00Z",
+      "events_unconsumed": 8,
+      "events_processed": 8,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "skips": 0,
+      "binary_event": "iran_ceasefire_indefinite_extension (active=false, verified=true)",
+      "scalp_status": "shadow 3 live pairs KEEP; 3 disabled pip-conv; 3 N/A spread",
+      "note": "News-reactive heartbeat: Al Jazeera 9d-stale Hormuz 'attack' backgrounder triggered news_flash + OIL audit_request; non-thesis-altering. OIL confluence refreshed comp +34.5 weak 3/4 bull aligned BUY dist~354p from 90.30 retest dormant. USDJPY/GOLD carried. 0 trades $1000/0pos.",
       "attention_covered": "9/9"
     }
   ]
