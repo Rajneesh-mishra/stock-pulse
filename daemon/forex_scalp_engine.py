@@ -229,26 +229,56 @@ def setup_range_extreme(book, pair_cfg):
 
 
 def setup_session_open_break(book, pair_cfg):
-    """First 15min of the session defines a range; break + retest of range edge."""
-    hour = datetime.now(timezone.utc).hour
-    minute = datetime.now(timezone.utc).minute
-    # Only fires 15-45 minutes past a session-open hour
+    """First 15min of the session defines a range. After that, if price breaks
+    out of the range and pulls back to retest the edge, enter.
+
+    Previous version had two bugs:
+      1. Picked the range via positional slicing `cs[-5:-2]` — drifts as time
+         passes, and before ~07:20 includes pre-session bars.
+      2. Only fired in a 30-min post-open window (15-45 min past the hour),
+         giving one or two polling cycles per day to catch the setup.
+
+    Now: select range bars by timestamp (only bars whose open is in the first
+    15min of the session). Trigger window widened to 20–90 min past session
+    open — gives more attempts, still within the "early session" edge.
+    """
+    now = datetime.now(timezone.utc)
+    hour, minute = now.hour, now.minute
     open_hours = {"london": 7, "ny": 12, "ny_overlap": 12, "asia": 0}
     relevant = [open_hours[s] for s in pair_cfg.get("sessions", []) if s in open_hours]
     if not relevant: return None
-    this_hour_session_start = hour in relevant and 15 <= minute <= 45
-    if not this_hour_session_start: return None
+
+    # Are we in an active session-open window for any of this pair's sessions?
+    # Window: 20–90 min past session open.
+    open_ts = None
+    for oh in relevant:
+        candidate = now.replace(hour=oh, minute=0, second=0, microsecond=0)
+        mins_since = (now - candidate).total_seconds() / 60
+        if 20 <= mins_since <= 90:
+            open_ts = candidate
+            break
+    if open_ts is None: return None
 
     cs = book.m5_closed()
     if len(cs) < 6: return None
-    first15 = cs[-5:-2]   # 3 × M5 bars = 15min from session open, excluding last 2
-    rng_hi = max(c[2] for c in first15)
-    rng_lo = min(c[3] for c in first15)
+
+    # Bars whose bucket is within first 15 min of session open
+    open_epoch = open_ts.timestamp()
+    first_window_end = open_epoch + 15 * 60
+    first15_bars = [c for c in cs if open_epoch <= c[0] < first_window_end]
+    if len(first15_bars) < 2: return None  # need at least 2 bars of range
+
+    rng_hi = max(c[2] for c in first15_bars)
+    rng_lo = min(c[3] for c in first15_bars)
     last = cs[-1]
     _, o, h, l, c = last
     pip = PIP_SIZE[book.epic]
 
-    # Broke above and pulled back to retest
+    # Must be after the first-15min window (i.e. the breakout/retest phase)
+    if last[0] < first_window_end:
+        return None
+
+    # Broke above, closing near the broken edge (retest)
     if h > rng_hi + 0.3 * pip and abs(c - rng_hi) < 0.5 * pip:
         entry = book.last_mid
         sl = (rng_hi + rng_lo) / 2
@@ -493,9 +523,15 @@ class Engine:
                 })
                 actions.append({"epic": epic, "status": "open_failed", "detail": res})
 
-        # Check open (shadow) positions for SL/TP hit
+        # Check open (shadow) positions for SL/TP hit OR time-exit.
         # Shadow P/L in USD with the risk-normalized sizing:
         #   size = risk_usd / sl_dist, so size * price_diff = USD pnl directly.
+        # MAX HOLD: scalps are minutes, not hours. The ledger showed a
+        # 160-minute "scalp" on EURUSD that ground down to SL — a proper
+        # scalp should bail long before that if neither SL nor TP tagged.
+        max_hold_min = g.get("max_hold_minutes", 45)
+        max_hold_sec = max_hold_min * 60
+
         for epic in list(self.open_positions.keys()):
             if epic not in self.books: continue
             pos = self.open_positions[epic]
@@ -519,11 +555,23 @@ class Engine:
                 elif mid >= pos["sl"]:
                     pnl = (pos["entry"] - pos["sl"]) * pos["size"]
                     closed = "sl_hit"
+
+            # Time exit — close at market if held too long without resolution
+            if not closed:
+                age_sec = now_ts - pos.get("opened_at", now_ts)
+                if age_sec >= max_hold_sec:
+                    if dir == "BUY":
+                        pnl = (mid - pos["entry"]) * pos["size"]
+                    else:
+                        pnl = (pos["entry"] - mid) * pos["size"]
+                    closed = "time_exit"
+
             if closed:
                 self.halt.on_close(epic, pnl, g)
                 append_ledger({
                     "kind": "closed", "epic": epic, "how": closed, "pnl_usd": round(pnl, 2),
                     "entry": pos["entry"], "exit": mid, "shadow": True,
+                    "held_min": round((now_ts - pos.get("opened_at", now_ts)) / 60, 1),
                 })
                 del self.open_positions[epic]
                 actions.append({"epic": epic, "status": "closed", "how": closed, "pnl": pnl})
