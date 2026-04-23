@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T03:36:27.601355Z",
+  "generated_at": "2026-04-23T04:06:48.684205Z",
   "ticks": [
     {
       "ts_utc": "2026-04-21T08:41:00+00:00",
@@ -415,6 +415,18 @@
       "closed": 0,
       "skipped": 2,
       "note": "CBS Apr 7 2026 16-day Hormuz-reopens archive matched 'reopen' via over-broad April year-month filter; tuned hormuz_strait to [Apr 20-23]. alert_audit_request GOLD non-altering (gold in 4698-4700 floor-test). 3 KEEP."
+    },
+    {
+      "ts": "2026-04-23T04:05:00Z",
+      "type": "tick",
+      "trigger": "auto",
+      "events_consumed": 16,
+      "news_events": 2,
+      "bar_close_noise": 14,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "note": "2 stale news republishes tuned (iran_ceasefire date filter added, us_tariff bare '2026' removed). Confluence + broker price API persistent glitch 2nd tick \u2014 carried 03:25 reads. 3 KEEP 9 structure_watch KEEP, scalp shadow 3 FX / 3 disabled / 3 N/A, 0 pos $1000, BOJ T-4d."
     }
   ]
 }
