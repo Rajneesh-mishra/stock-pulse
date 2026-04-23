@@ -140,5 +140,22 @@
     "trigger": "event",
     "events_in": 1,
     "summary": "01:58 forex \u2014 1 evt Caspian ceasefire-ext 44h republish non-altering; USDJPY +43.5 mod 4/4 WATCH 62.5p; GOLD -35 weak 47.3p KEEP; OIL +29.5 weak 280p KEEP. 0 trades $1000/0pos."
+  },
+  {
+    "ts_utc": "2026-04-23T02:16:46Z",
+    "trigger": "heartbeat",
+    "events": 0,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 0,
+    "binary": "iran_ceasefire_indefinite_extension(inactive,verified)",
+    "alerts": {
+      "USDJPY_160_SELL": "KEEP WATCH dist=52.2p comp=+51_BULLISH_4/4 contradiction",
+      "GOLD_4775_BUY": "KEEP WATCH dist=69.2p comp=-35_BEARISH_3/4 rule2_keep",
+      "OIL_90.30_BUY": "KEEP WATCH dist=327p comp=+29.5_BULLISH_3/4 weak"
+    },
+    "news": "Brent $101.91 / WTI $92.96 rising on Iran ceasefire-extension peace-talk doubts; non-thesis-altering",
+    "scalp": "shadow_3FX KEEP, 3 disabled pip-value, 3 NA spread",
+    "attention_covered": "9/9"
   }
 ]
