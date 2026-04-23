@@ -247,8 +247,13 @@ def invoke_claude():
     """Run `claude -p` with the forex_tick prompt. Returns exit code.
     Hard-kills the process group on TICK_TIMEOUT_SEC to prevent runaway spend."""
     prompt = PROMPT_FILE.read_text()
+    # Default model: Sonnet 4.6 — higher-quality reasoning for the tick's
+    # multi-step protocol (confluence + sizing + audit + commit). Override via
+    # TICK_MODEL env if needed.
+    model = os.environ.get("TICK_MODEL", "claude-sonnet-4-6")
     cmd = [
         "claude", "-p", prompt,
+        "--model", model,
         "--dangerously-skip-permissions",
         "--max-budget-usd", str(TICK_BUDGET_USD),
         "--output-format", "text",

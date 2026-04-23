@@ -53,8 +53,12 @@ def main():
     try:
         log(f"heartbeat tick starting, pid={os.getpid()}")
         prompt = PROMPT_FILE.read_text()
+        # Default model: Sonnet 4.6. Same rationale as the event waker — the
+        # heartbeat runs the same tick protocol.
+        model = os.environ.get("TICK_MODEL", "claude-sonnet-4-6")
         cmd = [
             "claude", "-p", prompt,
+            "--model", model,
             "--dangerously-skip-permissions",
             "--max-budget-usd", str(TICK_BUDGET_USD),
             "--output-format", "text",

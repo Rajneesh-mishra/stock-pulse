@@ -846,7 +846,10 @@ def _stream_claude_chat(handler, prompt):
     via stdin so nothing shell-quoted. 120s hard wall-clock timeout.
     """
     claude_bin = os.environ.get("CLAUDE_BIN", "/Users/rajneeshmishra/.local/bin/claude")
-    model = os.environ.get("CHAT_MODEL", "claude-haiku-4-5")
+    # Default: Sonnet 4.6. Was Haiku 4.5 for cost, but user requested consistent
+    # Sonnet across all Claude invocations (ticks + chat). Budget bumped from
+    # 0.12 to 0.30 because Sonnet costs ~5-8× Haiku on equivalent output.
+    model = os.environ.get("CHAT_MODEL", "claude-sonnet-4-6")
     cmd = [
         claude_bin, "-p",
         "--model", model,
@@ -854,7 +857,7 @@ def _stream_claude_chat(handler, prompt):
         "--include-partial-messages",   # token-level deltas, required for real streaming
         "--verbose",                    # required alongside stream-json
         "--dangerously-skip-permissions",
-        "--max-budget-usd", "0.12",
+        "--max-budget-usd", "0.30",
     ]
 
     # Send SSE headers first so the browser starts consuming immediately
