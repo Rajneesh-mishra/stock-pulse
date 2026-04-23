@@ -1,12 +1,10 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-23T07:57:00Z",
-  "pruned_at": "2026-04-23T07:57:00Z",
-  "pruned_by": "2026-04-23T07:57:00Z tick \u2014 5 evt (1 OIL liquidity_sweep 93.2365 buy bias weak +32 watchlist ADD + 4 bar_close auto). 3 existing KEEP + 1 ADD = 4 level_alerts. 9 structure_watch KEEP. Scalp 3 FX shadow + 3 disabled pip-conv + 3 N/A spread. 0 trades $1000/0pos BOJ T-4d FOMC T-6d.",
+  "last_updated_by_claude": "2026-04-23T08:09:00Z",
+  "pruned_at": "2026-04-23T08:09:00Z",
+  "pruned_by": "2026-04-23T08:09:00Z tick \u2014 1 evt (news_flash us_tariff Chatham House Feb 17 65d-archive 'reset' solo-kw NOT-thesis-altering; tuned us_tariff dropped 'reset'). 4 level_alerts KEEP carried (no fresh confluence scan this tick \u2014 budget-conserve, last 07:57 12min ago). 9 structure_watch KEEP. Scalp 3 FX shadow + 3 disabled pip-conv + 3 N/A spread halts=0. 0 trades $1000/0pos BOJ T-4d FOMC T-6d.",
   "pruned_removed": [],
-  "pruned_added": [
-    "oil_sweep_9323_buy_retest (OIL_CRUDE 93.2365 buy retest from fresh M15 sweep)"
-  ],
+  "pruned_added": [],
   "instruments": [
     "EURUSD",
     "USDJPY",
@@ -36,9 +34,9 @@
         "ts": "2026-04-23T05:05:00Z",
         "price": 159.549
       },
-      "last_updated": "2026-04-23T07:57:00Z",
+      "last_updated": "2026-04-23T08:09:00Z",
       "proximity": "45.1p from 160.0. Comp +51 mod 4/4 bull against SELL. 3xH1ATR 42.9p borderline WATCH.",
-      "updated_utc": "2026-04-23T07:57:00Z"
+      "updated_utc": "2026-04-23T08:09:00Z"
     },
     {
       "id": "gold_safehaven_continuation_buy",
@@ -53,9 +51,9 @@
         "ts": "2026-04-23T04:20:00Z",
         "price": 4705.14
       },
-      "last_updated": "2026-04-23T07:57:00Z",
+      "last_updated": "2026-04-23T08:09:00Z",
       "proximity": "698.6p from 4775. Floor-test 4698-4700. Comp -35 weak bearish vs BUY. Rule-2 cf 4h=0.8 KEEP.",
-      "updated_utc": "2026-04-23T07:57:00Z"
+      "updated_utc": "2026-04-23T08:09:00Z"
     },
     {
       "id": "oil_crude_retest_90_buy",
@@ -70,9 +68,9 @@
         "ts": "2026-04-23T05:35:00Z",
         "price": 93.842
       },
-      "last_updated": "2026-04-23T07:57:00Z",
+      "last_updated": "2026-04-23T08:09:00Z",
       "proximity": "~354p from 90.30. Comp +34.5 weak bullish aligned BUY. M15 93.842 pulled back -16p. Retest alert \u2014 awaiting pullback.",
-      "updated_utc": "2026-04-23T07:57:00Z"
+      "updated_utc": "2026-04-23T08:09:00Z"
     },
     {
       "id": "oil_sweep_9323_buy_retest",
@@ -87,9 +85,9 @@
         "ts": "2026-04-23T07:57:00Z",
         "price": 93.338
       },
-      "last_updated": "2026-04-23T07:57:00Z",
+      "last_updated": "2026-04-23T08:09:00Z",
       "proximity": "10p above sweep level. Weak +32 buy bias. Watchlist only \u2014 below moderate arming.",
-      "updated_utc": "2026-04-23T07:57:00Z"
+      "updated_utc": "2026-04-23T08:09:00Z"
     }
   ],
   "structure_watch": [
@@ -160,5 +158,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-23T07:57:00Z"
+  "last_updated_utc": "2026-04-23T08:09:00Z"
 }

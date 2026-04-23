@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-23T07:59:55.861213Z",
+  "generated_at": "2026-04-23T08:06:59.455069Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-21T09:25:00Z",
-      "events_in": 8,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 8,
-      "note": "8 M15 bar_close all SKIP heartbeat \u2014 flat-drift, USDJPY drifted 6.85p away from 159.45, oil reversed pop, no structure shifts. 1 web search Iran: no material delta vs 09:09. MODIFIED usdjpy note. Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM intact. 3+9+8 audit: 1 MODIFY 2+9+8 KEEP."
-    },
     {
       "ts_utc": "2026-04-21T10:08:00Z",
       "events_in": 12,
@@ -239,6 +231,13 @@
       "trades_opened": 0,
       "trades_closed": 0,
       "summary": "3 liq_sweep readiness=none NOT-ACTIONABLE + 7 bar_close; 3 KEEP carried"
+    },
+    {
+      "ts": "2026-04-23T08:09:00Z",
+      "events_processed": 1,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "summary": "1 news_flash us_tariff Chatham House Feb 17 archive 'reset' solo-match non-altering; DROPPED 'reset'; 4 alerts KEEP carried; 0 trades 0pos"
     },
     {
       "date": "2026-04-23",
@@ -605,6 +604,29 @@
         "OIL_CRUDE": "swing=WATCH scalp=N/A(spread 4p) readiness=weak \u2014 liquidity_sweep 93.2365 NEW buy-bias watchlist, + carried 90.30 retest dormant rule-1+2 KEEP cf 4h=0.67/24h=1.0",
         "BTCUSD": "swing=NONE scalp=N/A(spread 50p) readiness=n/a \u2014 no alert, no event"
       }
+    },
+    {
+      "tick_ts_utc": "2026-04-23T08:09:00Z",
+      "events_processed": 1,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 1,
+      "note": "news_flash us_tariff Chatham House Feb 17 2026 65d-archive fired on 'reset' solo-kw (pure commentary noun \u2014 'reset in India-US relations'). NOT thesis-altering. TUNED us_tariff: dropped 'reset'. match_keywords date filter still daemon-unenforced (known bug). No fresh confluence scan (07:57 last, 12min ago, price stable, budget-conserve). 4 level_alerts KEEP carried: USDJPY fade 160 WATCH, GOLD 4775 buy floor-test WATCH, OIL 90.30 retest-dormant WATCH, OIL sweep 93.2365 watchlist. 0 trades $1000/0pos. BOJ T-4d FOMC T-6d.",
+      "attention_matrix": {
+        "EURUSD": "swing=NONE scalp=ACTIVE(shadow) readiness=n/a \u2014 range_extreme london/ny_overlap, no active swing thesis",
+        "GBPUSD": "swing=NONE scalp=ACTIVE(shadow) readiness=n/a \u2014 session_open_break london, no active swing thesis",
+        "AUDUSD": "swing=NONE scalp=ACTIVE(shadow) readiness=n/a \u2014 range_extreme asia/ny_overlap, no active swing thesis",
+        "USDJPY": "swing=WATCH scalp=OFF(pip-conv) readiness=moderate \u2014 160.00 fade alert dist 45.1p carried comp+51 mod 4/4 bull vs SELL (counter-trend fade rule-2 |comp|\u226540 corroborating); dist > near-threshold 30p so WATCH not ARMED. BOJ T-4d",
+        "USDCAD": "swing=NONE scalp=OFF(pip-conv) readiness=n/a \u2014 no active alert",
+        "USDCHF": "swing=NONE scalp=OFF(pip-conv) readiness=n/a \u2014 no active alert",
+        "GOLD": "swing=WATCH scalp=N/A(spread 5p) readiness=weak \u2014 4775 buy breakout alert dist 698.6p floor-testing 4698-4700; rule-1 cond3 FALSE + rule-2 cf 4h=0.8 real-edge KEEP; needs escalation rung to re-arm",
+        "OIL_CRUDE": "swing=WATCH scalp=N/A(spread 3-4p) readiness=weak \u2014 90.30 retest-buy dist ~354p dormant + new 93.2365 sweep-retest-buy watchlist (below moderate arming); both KEEP on rule-2 real-edge",
+        "BTCUSD": "swing=NONE scalp=N/A(spread 50p) readiness=n/a \u2014 no active alert, H4/H1 structure-watch only"
+      },
+      "news_queries_audit": "us_tariff TUNED(dropped 'reset'); 7 others KEEP bug-deferred (match_keywords NEVER-ENFORCED daemon/forex_news_watcher.py:246)",
+      "scalp_audit": "EURUSD=KEEP(no trades yet) GBPUSD=KEEP(no trades yet) AUDUSD=KEEP(no trades yet) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked halts=0",
+      "binary_event": "iran_ceasefire_indefinite_extension active=false verified; BOJ Apr 27-28 T-4d calendar; FOMC Apr 29 T-6d calendar",
+      "web_search": "skipped 0pos-regime-stable-news_watcher-covered"
     }
   ]
 }

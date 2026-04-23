@@ -211,11 +211,10 @@
         "retaliate",
         "lowered",
         "raised",
-        "executive order",
-        "reset"
+        "executive order"
       ],
       "cooldown_min": 240,
-      "note": "RE-TUNED 2026-04-23T00:03:00Z - prior tune's 'Modi' keyword let Feb 2 2026 Al Jazeera 'Trump cuts India tariffs to 18% as Modi agrees to stop buying Russian oil' (80-day-old archive) fire via modi-only match score 2. DROPPED 'Modi' (too broad, historical AND current leader articles match). ADDED match_keywords=['2026','April 2026','Apr 22','Apr 23'] date filter (hormuz/opec/boj/fed_fomc pattern). Cooldown stays 240min - secondary priority (FII flow concern doesn't directly move 9 FX pairs I trade). | RE-RE-TUNED 2026-04-23T04:03:00Z - bare '2026' match_keyword was leaking Feb 22 2026 CNBC 'India delays Washington trade visit' republish (60d stale) because published-date field contains '2026'. REMOVED bare '2026', kept only specific month/day tokens to force topical recency. RE-TUNED 2026-04-23T04:35:00Z \u2014 substring-leak bug: 'Apr 20' was matching 'Apr 2026' as substring (any 2026 article passed). Switched to 'DD Mon YYYY' tokens which align with RSS pubDate format and have unique day numbers.",
+      "note": "RE-TUNED 2026-04-23T08:08:00Z \u2014 DROPPED 'reset' solo-kw. Chatham House Feb 17 2026 'Despite reset in India\u2013US relations, New Delhi retains commitment to strategic hedging' (65-day archive) fired on 'reset' solo-match; match_keywords=['20 Apr 2026'...'23 Apr 2026'] date filter STILL-NOT-ENFORCED by daemon (known bug forex_news_watcher.py:246 match_keywords NEVER-ENFORCED). 'reset' is pure commentary noun \u2014 any India-US relationship article ever written matches. Kept action-specific tokens (exemption/delay/signed/retaliate/lowered/raised/executive order); even these will leak past match_keywords but are less prone to pure-backgrounder false positives. Prior: 'RE-TUNED 2026-04-23T00:03:00Z DROPPED Modi solo-kw Feb 2 80d archive. | RE-RE-TUNED 04:03 removed bare 2026. RE-TUNED 04:35 DD Mon YYYY tokens.'",
       "match_keywords": [
         "20 Apr 2026",
         "21 Apr 2026",
