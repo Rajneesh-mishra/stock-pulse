@@ -505,5 +505,19 @@
     "skipped": 0,
     "attention_covered": "9/9",
     "summary": "09:25 forex auto \u2014 2 evt (news_flash hormuz_strait CNBC Apr-19 4d-stale 'Oil prices jump after Iran and U.S. attack commercial ships' matched 'attack' + paired alert_audit_request OIL_CRUDE oil_crude_retest_90_buy; daemon match_keywords date-filter STILL-NOT-E"
+  },
+  {
+    "tick_ts_utc": "2026-04-23T12:29:00Z",
+    "events_consumed": [
+      "evt_1776947281315_level_cross",
+      "evt_1776947281324_level_cross"
+    ],
+    "opens": 0,
+    "closes": 0,
+    "skips": 2,
+    "binary": "iran_ceasefire_indefinite_extension (resolved, Hormuz friction live)",
+    "scalp": "shadow 3 FX active, 0 trades, halts=0",
+    "attention_covered": "9/9",
+    "note": "2 level_cross events \u2014 OIL 93.2365 buy-retest price 65p below (not armed), GOLD 4721.68 sell-retest weak. No trade. KEEP all 5 alerts, 9 structure_watch."
   }
 ]
