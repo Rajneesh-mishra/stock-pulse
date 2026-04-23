@@ -608,5 +608,44 @@
     "regime_summary": "USDJPY +51 mod 4/4 bull dist=32.2p WATCH; GOLD -40 mod 3/4 bear; OIL +45 mod 4/4 bull; 0 pos $1000",
     "attention_covered": "9/9",
     "tick_mode": "auto"
+  },
+  {
+    "tick_ts_utc": "2026-04-23T20:05:00Z",
+    "type": "heartbeat",
+    "events_consumed": 0,
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "broker_balance": 1000.0,
+    "daily_pnl": 0.0,
+    "prices": {
+      "USDJPY": 159.72,
+      "GOLD": 4695.51,
+      "OIL_CRUDE": 95.972,
+      "AUDUSD": 0.71325,
+      "USDCAD": 1.36958,
+      "EURUSD": 1.16857,
+      "GBPUSD": 1.34672,
+      "USDCHF": 0.78636,
+      "BTCUSD": 77813.65
+    },
+    "readiness": {
+      "USDJPY": "moderate_bullish_51",
+      "GOLD": "moderate_bearish_-40",
+      "OIL_CRUDE": "moderate_bullish_45",
+      "AUDUSD": "none_4.5",
+      "USDCAD": "none_-13.5",
+      "EURUSD": "weak_bearish_-33",
+      "GBPUSD": "none_5.5",
+      "USDCHF": "none_6.5",
+      "BTCUSD": "weak_bullish_33"
+    },
+    "watchlist_status": {
+      "usdjpy_intervention_fade_zone": "ARMED-on-tag dist=28p within 30p counter-trend |comp|51 LIVE; fires=1 not-validated",
+      "gold_sweep_4721_sell_retest": "ARMED-on-tag dist=26p within 30p validated 5f 4h 1.0",
+      "gold_safehaven_continuation_buy": "WATCH dist=79p bearish readiness opposes BUY",
+      "oil_crude_retest_90_buy": "WATCH dist=567p far, retest thesis",
+      "oil_sweep_9323_buy_retest": "WATCH dist=274p outside near-threshold"
+    },
+    "notes": "Heartbeat \u2014 no trades; tooling: no LIMIT CLI so Step 4c setups wait for rejection confirmation on tag. BOJ T-3d FOMC T-4d. attention_covered=9/9."
   }
 ]
