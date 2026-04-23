@@ -560,5 +560,16 @@
     "closed": 0,
     "skipped": 1,
     "binary_event": "iran_ceasefire_indefinite_extension (no deadline)"
+  },
+  {
+    "ts_utc": "2026-04-23T17:52:00Z",
+    "tick_type": "forex_auto",
+    "n_events": 13,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "open_positions": 0,
+    "daily_pnl": 0,
+    "balance": 1000.0,
+    "note": "13 evt (6 liquidity_sweeps + 7 bar_close) \u2014 GOLD composite flipped -40 moderate bearish at px 4685; gold_sweep_4721 readiness lifted weak\u2192moderate but price just outside 30p near-threshold. 5 alerts KEEP 9 SW KEEP scalp shadow. 0pos $1000. attention_covered=9/9."
   }
 ]

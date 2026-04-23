@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-23T17:48:49.197078Z",
+  "generated_at": "2026-04-23T17:55:28.039065Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-22T14:47:00Z",
-      "events_in": 0,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 0,
-      "note": "14:47 UTC heartbeat \u2014 0 unconsumed events. Broker $1000/0 matches. 1 WebSearch (CNBC/CNN/AJ/ABC/NBC/National/NPR) confirms 2-ship seizure + bridge-fire narrative unchanged since 12:54 sweep \u2014 no new escalation rung, Iran 'no decision' on new talks. Counterfactual review: usdjpy_intervention_fade_zone 100% 1h+4h thin, audusd_breakdown_trigger & gold_safehaven_continuation_buy no fires yet. 3 alerts + 9 structure + 8 queries all KEEP. No price pulls (budget prudent). Regime INDEFINITE_EXTENSION_HORMUZ_ESCALATING_SEIZURES_MIXED_RISK_ON intact."
-    },
     {
       "ts_utc": "2026-04-22T15:50:00Z",
       "events_in": 0,
@@ -711,6 +703,17 @@
       "closed": 0,
       "skipped": 1,
       "binary_event": "iran_ceasefire_indefinite_extension (no deadline)"
+    },
+    {
+      "ts_utc": "2026-04-23T17:52:00Z",
+      "tick_type": "forex_auto",
+      "n_events": 13,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "open_positions": 0,
+      "daily_pnl": 0,
+      "balance": 1000.0,
+      "note": "13 evt (6 liquidity_sweeps + 7 bar_close) \u2014 GOLD composite flipped -40 moderate bearish at px 4685; gold_sweep_4721 readiness lifted weak\u2192moderate but price just outside 30p near-threshold. 5 alerts KEEP 9 SW KEEP scalp shadow. 0pos $1000. attention_covered=9/9."
     }
   ]
 }
