@@ -487,5 +487,14 @@
     "open_positions": 0,
     "daily_pnl": 0.0,
     "summary": "1 news_flash boj_intervention Reuters Jan-23 90d-stale 'rate check' kw (daemon date-filter NEVER-ENFORCED forex_news_watcher.py:246 known bug; keywords_required action-phrases working correctly; 'no comment on rate checks' = verbal caution backgrounder) NOT thesis-altering \u2014 current Katayama 'bold action' regime already priced into USDJPY 160 fade alert. 5 level_alerts KEEP. 9 structure_watch KEEP. 8 news_queries KEEP bug-deferred. 0 pos BOJ T-4d."
+  },
+  {
+    "tick_ts_utc": "2026-04-23T09:13:00Z",
+    "events_processed": 2,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "open_positions": 0,
+    "daily_pnl": 0.0,
+    "summary": "09:13 auto \u2014 2 evt (news_flash iran_ceasefire WVIR Sat-Apr-11 12d-stale 'US and Iran end 21-hour ceasefire talks without agreement before Vance departs Pakistan' matched bare 'Vance' solo-kw + paired alert_audit_request USDJPY; daemon match_keywords date filter STILL-NOT-ENFORCED known bug forex_news_watcher.py:246). NOT thesis-altering \u2014 Islamabad collapse + Vance-trip already priced into indefinite extension regime. Tuned iran_ceasefire: DROPPED bare 'Vance' (governor-name-solo failure pattern like prior Bullock/Katayama/Islamabad), ADDED 'Vance departs'/'Vance walks' phrase-required. No fresh confluence (budget). 5 level_alerts KEEP (USDJPY160, GOLD4775, OIL90.30, OIL93.2365sweep, GOLD4721sweep). 9 structure_watch KEEP. 8 news_queries (iran_ceasefire tuned, 7 KEEP). Scalp 3 FX shadow KEEP. 0pos BOJ T-4d (Apr 27-28) FOMC T-6d (Apr 29)."
   }
 ]
