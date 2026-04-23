@@ -1,18 +1,11 @@
 {
   "pid": 45868,
-  "last_step_utc": "2026-04-23T00:30:22.061027+00:00",
-  "heartbeat": 6006,
+  "last_step_utc": "2026-04-23T00:44:25.035636+00:00",
+  "heartbeat": 6330,
   "reason": "ok",
   "shadow": true,
   "daily_pnl_usd": -0.0,
   "open": {},
   "halted": {},
-  "actions": [
-    {
-      "epic": "AUDUSD",
-      "status": "closed",
-      "how": "sl_hit",
-      "pnl": -0.004999999999999449
-    }
-  ]
+  "actions": []
 }

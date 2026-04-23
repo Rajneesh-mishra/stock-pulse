@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-23T00:37:30Z",
+  "last_updated_by_claude": "2026-04-23T00:52:00Z",
   "pruned_at": "2026-04-23T00:37:30Z",
   "pruned_by": "2026-04-23T00:37:30Z tick - 15 events consumed (8 liquidity_sweep + 7 bar_close). SWEEP TRIAGE all SKIP entry (none meet Step 4e readiness>=moderate AND aligned-against-sweep criteria). No alerts added (prior USDCAD sweep removed after 93min precedent; minor sub-1.5xATR sweeps on 5 pairs would be noise). 3 alerts KEEP: USDJPY 160 fade 56p, GOLD 4775 buy rule-2 4h=0.8, OIL 90.30 retest rule-2 4h=0.67. BOJ T-4d, FOMC T-6d.",
   "pruned_removed": [],
@@ -45,15 +45,15 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "MODIFIED 22:33 UTC \u2014 buy GOLD 4775 breakout. Live 22:32 UTC 4733.30 (-19.5p vs 15:55 4752.76, now 41.7p below trigger). Day range 4715.44-4772.24 \u2014 4772 HIGH CONFIRMED REJECTED (validated the spike-fade caution from prior note). Crude ripping +3% but gold ROLLING OFF = traders pricing Hormuz as oil-supply story not capital-flight escalation; gold-safehaven bid weakening. Thesis still valid on a NEXT escalation rung (US casualties, formal walkout, Hormuz reopen refusal hardening) but conv now 3 (was 4 at session high). If 4775 tagged: require M15 BOS up + no rejection wick (two rejects at this zone today). Aggressive LIMIT 4735-4740 questionable now \u2014 gold already broke back below 4750 vs seizure floor thesis. SL 4730, TP1 4810, TP2 4850. | REFRESH 2026-04-22T21:27:27Z: KEEP \u2014 live 4739.99 flat vs 21:00 ref; composite -16 none unchanged. Counterfactual 4h=0.8 real edge holds (KEEP per rule 2). | REFRESH 2026-04-22T22:18:17Z: KEEP \u2014 comp=-18.5 ready=none dist=37.8p 3\u00d7H4ATR=108.8p; WATCH. | REFRESH 2026-04-22T22:56:28Z: KEEP \u2014 comp=-35.0 ready=weak 3/4 bearish dist=44.4p 3xH4ATR=108.8p; WATCH. Counterfactual 4h=0.8 real edge rule2. Price 4730.57. | REFRESH 2026-04-22T23:55:00Z: KEEP \u2014 comp=-35.0 ready=weak 3/4 bearish dist=46.5p (against BUY thesis). Counterfactual 4h=0.8 rule-2 KEEP real edge. Price 4728.54. WATCH. | REFRESH 2026-04-23T00:03:00Z: KEEP - confluence API only_0_candles transient glitch. Carrying 23:55 read comp=-35.0 readiness=weak 3/4 bearish dist=46.5p (against BUY thesis). Counterfactual 4h=0.8 rule-2 KEEP real edge. Price ref 4728.54 unchanged. WATCH. | REFRESH 2026-04-23T00:23:30Z: KEEP \u2014 confluence restored. comp=-35.0 readiness=weak 3/4 bearish (against BUY thesis). Price 4729.025 dist=46p. Counterfactual 4h=0.8 rule-2 real edge. WATCH. Hormuz seizure fully priced into current 4720-4740 range \u2014 next rung needs US casualties / walkout / 4th ship incident to clear 4772 high. | REFRESH 2026-04-23T00:37:30Z: KEEP \u2014 00:15 M15 down-sweep 4698.81 MASSIVE 46.2p wick 4.4xATR, buy bias, BUT comp -35 weak 3/4 bearish AGAINST sweep-buy per Step 4e not armable. Existing 4775 breakout thesis unchanged; sweep note: 4698-4700 now structural floor if price returns. Rule-2 4h=0.8 real edge KEEP.",
-      "current_price_ref": 4729.025,
+      "note": "MODIFIED 22:33 UTC \u2014 buy GOLD 4775 breakout. Live 22:32 UTC 4733.30 (-19.5p vs 15:55 4752.76, now 41.7p below trigger). Day range 4715.44-4772.24 \u2014 4772 HIGH CONFIRMED REJECTED (validated the spike-fade caution from prior note). Crude ripping +3% but gold ROLLING OFF = traders pricing Hormuz as oil-supply story not capital-flight escalation; gold-safehaven bid weakening. Thesis still valid on a NEXT escalation rung (US casualties, formal walkout, Hormuz reopen refusal hardening) but conv now 3 (was 4 at session high). If 4775 tagged: require M15 BOS up + no rejection wick (two rejects at this zone today). Aggressive LIMIT 4735-4740 questionable now \u2014 gold already broke back below 4750 vs seizure floor thesis. SL 4730, TP1 4810, TP2 4850. | REFRESH 2026-04-22T21:27:27Z: KEEP \u2014 live 4739.99 flat vs 21:00 ref; composite -16 none unchanged. Counterfactual 4h=0.8 real edge holds (KEEP per rule 2). | REFRESH 2026-04-22T22:18:17Z: KEEP \u2014 comp=-18.5 ready=none dist=37.8p 3\u00d7H4ATR=108.8p; WATCH. | REFRESH 2026-04-22T22:56:28Z: KEEP \u2014 comp=-35.0 ready=weak 3/4 bearish dist=44.4p 3xH4ATR=108.8p; WATCH. Counterfactual 4h=0.8 real edge rule2. Price 4730.57. | REFRESH 2026-04-22T23:55:00Z: KEEP \u2014 comp=-35.0 ready=weak 3/4 bearish dist=46.5p (against BUY thesis). Counterfactual 4h=0.8 rule-2 KEEP real edge. Price 4728.54. WATCH. | REFRESH 2026-04-23T00:03:00Z: KEEP - confluence API only_0_candles transient glitch. Carrying 23:55 read comp=-35.0 readiness=weak 3/4 bearish dist=46.5p (against BUY thesis). Counterfactual 4h=0.8 rule-2 KEEP real edge. Price ref 4728.54 unchanged. WATCH. | REFRESH 2026-04-23T00:23:30Z: KEEP \u2014 confluence restored. comp=-35.0 readiness=weak 3/4 bearish (against BUY thesis). Price 4729.025 dist=46p. Counterfactual 4h=0.8 rule-2 real edge. WATCH. Hormuz seizure fully priced into current 4720-4740 range \u2014 next rung needs US casualties / walkout / 4th ship incident to clear 4772 high. | REFRESH 2026-04-23T00:37:30Z: KEEP \u2014 00:15 M15 down-sweep 4698.81 MASSIVE 46.2p wick 4.4xATR, buy bias, BUT comp -35 weak 3/4 bearish AGAINST sweep-buy per Step 4e not armable. Existing 4775 breakout thesis unchanged; sweep note: 4698-4700 now structural floor if price returns. Rule-2 4h=0.8 real edge KEEP. | REFRESH 2026-04-23T00:52:00Z: KEEP \u2014 confluence: comp -27.5 readiness=weak 3/4 bearish (DAY -0.4, H4 +0.1, H1 -0.65, M15 -0.15). Price 4743.86 dist 31.1p from 4775. 00:30 M15 up-sweep 4749.45 wick 26.7p 2.5xATR emitted sell bias \u2192 composite agrees with sweep direction but readiness=weak BELOW moderate threshold per Step 4b sizing map (weak + at key level = watchlist only). Not armable for LIMIT. M15 bull FVG 4741.275/4728.3 unmitigated = local sell-side magnet zone fading. Existing BUY 4775 breakout thesis still valid on next escalation rung. Rule-2 4h=0.8 real edge KEEP.",
+      "current_price_ref": 4743.86,
       "price_ref": {
-        "ts": "2026-04-23T00:23:30Z",
-        "price": 4729.025
+        "ts": "2026-04-23T00:52:00Z",
+        "price": 4743.86
       },
-      "last_updated": "2026-04-23T00:37:30Z",
-      "proximity": "46p from level 4775.0. Comp -35.0 weak (3/4 bearish \u2014 against BUY thesis). Rule-2 KEEP (4h=0.8 real edge). WATCH.",
-      "updated_utc": "2026-04-23T00:37:30Z"
+      "last_updated": "2026-04-23T00:52:00Z",
+      "proximity": "31.1p from level 4775.0. Comp -27.5 weak (3/4 bearish \u2014 against BUY thesis, but weak readiness). Rule-2 KEEP (4h=0.8 real edge). WATCH.",
+      "updated_utc": "2026-04-23T00:52:00Z"
     },
     {
       "id": "oil_crude_retest_90_buy",
@@ -141,5 +141,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-23T00:37:30Z"
+  "last_updated_utc": "2026-04-23T00:52:00Z"
 }

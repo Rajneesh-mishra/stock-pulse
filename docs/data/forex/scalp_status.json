@@ -1,20 +1,6 @@
 {
   "pid": 45868,
-  "last_step_utc": "2026-04-23T00:30:03.092371+00:00",
-  "heartbeat": 6000,
-  "reason": "ok",
-  "shadow": true,
-  "daily_pnl_usd": 0.0,
-  "open": {
-    "AUDUSD": {
-      "direction": "SELL",
-      "entry": 0.71594,
-      "sl": 0.71644,
-      "tp": 0.71489,
-      "size": 10.0,
-      "shadow": true
-    }
-  },
-  "halted": {},
-  "actions": []
+  "last_step_utc": "2026-04-23T00:43:06.608154+00:00",
+  "heartbeat": 6300,
+  "reason": "no_live_ticks"
 }
