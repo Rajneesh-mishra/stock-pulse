@@ -528,7 +528,14 @@
       "price": 4809.28
     }
   ],
-  "last_tick_summary": "05:35 forex auto \u2014 0 evt HEARTBEAT (1 news_flash 9d-stale + 1 audit + 6 bar_close auto). OIL retest 93.842 dormant. Carrying USDJPY/GOLD priors. 0 trades $1000/0pos. BOJ T-4d.",
+  "last_tick_summary": {
+    "ts_utc": "2026-04-23T06:24:00Z",
+    "events_processed": 4,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 1,
+    "reason": "USDJPY fade 40.95p>30p proximity; GOLD/OIL dist-dormant; others no-alert"
+  },
   "last_scan": "2026-04-23T05:05:00Z",
   "capital_base": 1000.0,
   "tick_log": [
@@ -711,7 +718,7 @@
     ],
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). Monitor for reactivation on any T-24h trigger."
   },
-  "regime_note": "2026-04-23T05:35:00Z - 05:35 forex tick \u2014 0 trade-altering evt (1 news_flash hormuz_strait Al Jazeera Apr-14 9d-stale 'attack' kw backgrounder + same origin alert_audit_request OIL + 6 bar_close auto). OIL confluence refreshed: comp +34.5 weak 3/4 bull aligned BUY M15 93.842 (-16p pullback from 94.002), dist~354p from 90.30 trigger retest alert dormant. USDJPY (05:05) +51 mod 4/4 bull vs SELL dist 45.1p borderline WATCH 160 counter-trend. GOLD (04:20) -35 weak 3/4 bear vs BUY floor-test 4698-4700 dist 698.6p rule-1 KEEP cf 4h=0.8 rule-2 strong. 3 KEEP, 9 structure_watch KEEP, 8 queries KEEP bug-deferred. Scalp: EUR/GBP/AUD shadow KEEP no-trades, 3 disabled pip-conv, 3 N/A spread. 0 trades $1000/0pos. BOJ T-4d (Apr 27-28), FOMC T-6d. Iran ceasefire indefinite extension active=false verified=true current regime escalation-lean. attention_covered=9/9.",
-  "tick_ts_utc": "2026-04-23T05:35:00Z",
-  "state_ts_utc": "2026-04-23T05:35:00Z"
+  "regime_note": "2026-04-23T06:24:00Z \u2014 06:24 forex tick \u2014 4 evt processed (1 alert_audit_request USDJPY from hormuz_strait attack news + 3 news_flash: hormuz_strait Business Standard Apr-23 03:13 fresh-attack real-news KEEP thesis, iran_ceasefire Deccan Herald AI-satire NON-actionable already-resolved-indefinite-extension, fed_fomc AOL.com Jan-28 Powell STALE-archive match_keywords bug 3rd repeat). USDJPY confluence refreshed: 159.5905 comp +51 moderate 4/4 bull aligned=false vs SELL 160 counter-trend fade \u2014 |composite|\u226540 against alert = extension-real fade-live but dist 40.95p > 30p proximity floor (H1ATR 13.5p, 0.5\u00d7H4ATR 15p, floor 30p) \u2014 WATCH not ARMED, need price closer to 160. GOLD carried 05:35 read ~4705 floor-test 4698-4700 cond3 FALSE rule-1 KEEP cf 4h=0.8 rule-2 strong-edge KEEP. OIL carried 05:35 read 93.842 pullback from 94.002 dist 354p<3xH4ATR 680.9p rule-1 KEEP cf 4h=0.67/24h=1.0 rule-2 real-edge KEEP retest dormant. 3 level_alerts KEEP (USDJPY fade / GOLD 4775 breakout / OIL 90.30 retest) + TEST_CHAIN_VALIDATION ignore, 9 structure_watch KEEP, 8 news_queries KEEP bug-deferred (match_keywords NEVER-ENFORCED daemon/forex_news_watcher.py:246 known, 4th surfacing on Jan-28 stale Powell). Scalp 3 FX shadow KEEP no-trades + 3 disabled pip-conv + 3 N/A spread, halt map empty. 0 trades $1000/0pos, BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 29), attention_covered=9/9, web_search skipped (0pos regime stable budget-aware).",
+  "tick_ts_utc": "2026-04-23T06:24:00Z",
+  "state_ts_utc": "2026-04-23T06:24:00Z"
 }
