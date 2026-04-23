@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-23T17:39:45.177509Z",
+  "generated_at": "2026-04-23T17:48:49.197078Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-22T14:18:00Z",
-      "events_in": 1,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 1,
-      "note": "14:18 UTC tick \u2014 1 news_flash (stale iran_ceasefire dupe: France 24 Apr 19 Vance Islamabad trip, superseded by NYT Apr 21 'Vance trip on hold' + 4-source indefinite extension, already captured). No fresh data window (21min since last sweep). Broker $1000/0 matches. No trades. 3 alerts KEEP (audusd 74.7p above 0.707, usdjpy 68.8p below 160, gold 27.84p below 4775), 9 structure_watch KEEP, 8 queries KEEP (iran_ceasefire already TUNED 11:38 for this). Regime INDEFINITE_EXTENSION_HORMUZ_ESCALATING_SEIZURES_MIXED_RISK_ON intact."
-    },
     {
       "ts_utc": "2026-04-22T14:47:00Z",
       "events_in": 0,
@@ -710,6 +702,15 @@
       "binary_event": "iran_ceasefire_indefinite_extension (active=false)",
       "attention_covered": "9/9",
       "note": "news_watcher iran_ceasefire 'indefinite' kw WaPo Apr-22 extension iteration NOT thesis-altering. USDJPY dist=22.3p inside 30p threshold but naked-break block."
+    },
+    {
+      "ts_utc": "2026-04-23T17:48:30Z",
+      "summary": "17:48 forex auto \u2014 1 evt news_flash us_iran_military 3d-stale Korean republish NOT thesis-altering. 0 trades 0pos $1000. All 5 alerts KEEP + 9 SW KEEP. attention_covered=9/9.",
+      "events_processed": 1,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 1,
+      "binary_event": "iran_ceasefire_indefinite_extension (no deadline)"
     }
   ]
 }

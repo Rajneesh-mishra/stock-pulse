@@ -551,5 +551,14 @@
     "binary_event": "iran_ceasefire_indefinite_extension (active=false)",
     "attention_covered": "9/9",
     "note": "news_watcher iran_ceasefire 'indefinite' kw WaPo Apr-22 extension iteration NOT thesis-altering. USDJPY dist=22.3p inside 30p threshold but naked-break block."
+  },
+  {
+    "ts_utc": "2026-04-23T17:48:30Z",
+    "summary": "17:48 forex auto \u2014 1 evt news_flash us_iran_military 3d-stale Korean republish NOT thesis-altering. 0 trades 0pos $1000. All 5 alerts KEEP + 9 SW KEEP. attention_covered=9/9.",
+    "events_processed": 1,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 1,
+    "binary_event": "iran_ceasefire_indefinite_extension (no deadline)"
   }
 ]
