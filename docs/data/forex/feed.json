@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T07:25:47.752706Z",
+  "generated_at": "2026-04-23T07:45:45.087212Z",
   "ticks": [
     {
       "ts_utc": "2026-04-21T09:25:00Z",
@@ -576,6 +576,16 @@
       "summary": "USDJPY audit: comp +51 moderate vs SELL 160, dist 34.2p > 30p floor \u2192 WATCH",
       "positions": 0,
       "balance": 1000.0
+    },
+    {
+      "ts_utc": "2026-04-23T07:44:00Z",
+      "events_consumed": 1,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "positions_open": 0,
+      "balance": 1000.0,
+      "alerts_active": 3,
+      "note": "iran_ceasefire Trump-tease news_flash soft single-aggregator, broker candle degraded, 3 KEEP no trades"
     }
   ]
 }
