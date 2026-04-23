@@ -84,10 +84,17 @@
         "Hormuz reopen",
         "blockade lifted",
         "new talks",
-        "walkout"
+        "walkout",
+        "shoot to kill",
+        "mine-laying boats",
+        "attacked Iranian boats",
+        "mine boats",
+        "naval strike",
+        "torpedo",
+        "sank"
       ],
       "cooldown_min": 120,
-      "note": "RE-TUNED 2026-04-22 18:55 UTC \u2014 prior 'retaliation'/'retaliate'/'struck'/'escalation'/'mine' flooded 12 stale archive articles this tick: 10 Apr 13-14 original blockade-announcement (Algemeiner/Fox/Globe & Mail/MSN/etc.) + 1 Apr 16 CNBC 'fourth day' + 1 Apr 19 Il Sole Touska republish. Those keywords match 9-day-old routine coverage of baseline state. REMOVED broad keywords; kept only action-verbs describing NEW escalation rungs (missile launched, casualties, sunk, ablaze) + forward diplomatic names (Vance/Witkoff/Kushner/Islamabad) + de-escalation-trigger phrases (Hormuz reopen, blockade lifted, new talks, walkout). Cooldown 60\u2192120min. If this still floods: add date-filter logic to daemon. | 2026-04-23T21:40:00Z TUNE: added match_keywords=['23 Apr 2026','24 Apr 2026','25 Apr 2026'] \u2014 'killed' solo-match returned Mar 1 2026 archive (54d stale). Date-window filter prevents stale archives firing. Note: daemon bug forex_news_watcher.py:246 \u2014 match_keywords not enforced; cosmetic until bug fixed.",
+      "note": "RE-TUNED 2026-04-22 18:55 UTC \u2014 prior 'retaliation'/'retaliate'/'struck'/'escalation'/'mine' flooded 12 stale archive articles this tick: 10 Apr 13-14 original blockade-announcement (Algemeiner/Fox/Globe & Mail/MSN/etc.) + 1 Apr 16 CNBC 'fourth day' + 1 Apr 19 Il Sole Touska republish. Those keywords match 9-day-old routine coverage of baseline state. REMOVED broad keywords; kept only action-verbs describing NEW escalation rungs (missile launched, casualties, sunk, ablaze) + forward diplomatic names (Vance/Witkoff/Kushner/Islamabad) + de-escalation-trigger phrases (Hormuz reopen, blockade lifted, new talks, walkout). Cooldown 60\u2192120min. If this still floods: add date-filter logic to daemon. | 2026-04-23T21:40:00Z TUNE: added match_keywords=['23 Apr 2026','24 Apr 2026','25 Apr 2026'] \u2014 'killed' solo-match returned Mar 1 2026 archive (54d stale). Date-window filter prevents stale archives firing. Note: daemon bug forex_news_watcher.py:246 \u2014 match_keywords not enforced; cosmetic until bug fixed. | 2026-04-23T23:25:00Z TUNE: Trump 'shoot to kill' order Apr 23 on Iranian mine-laying boats not captured by prior keywords. Added 'shoot to kill','mine-laying boats','attacked Iranian boats','mine boats','naval strike'. These are escalation-new keywords not in backgrounder archives.",
       "match_keywords": [
         "23 Apr 2026",
         "24 Apr 2026",

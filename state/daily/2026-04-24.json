@@ -124,5 +124,84 @@
     "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=KEEP halt={}",
     "web_search": "skipped (0 pos + regime stable)",
     "boj_fomc": "BOJ T-3d FOMC T-5d"
+  },
+  {
+    "tick_ts_utc": "2026-04-23T23:25:00Z",
+    "type": "heartbeat_regime_shift",
+    "events": 0,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 0,
+    "balance": 1000.0,
+    "open_positions": 0,
+    "daily_pnl": 0.0,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "regime_shift": "INDEFINITE_EXTENSION_HORMUZ_FRICTION \u2192 ACTIVE_ESCALATION_SHOOT_TO_KILL",
+    "web_search": "1 search \u2014 Trump shoot-to-kill order on Iranian mine boats Apr 23 (NBC/Bloomberg). 3rd tanker seized. Brent $105+. Katayama fresh yen warning. BOJ hawkish June signal expected.",
+    "attention": {
+      "EURUSD": {
+        "swing": "NONE",
+        "scalp": "ACTIVE",
+        "readiness": "weak",
+        "comp": -32
+      },
+      "GBPUSD": {
+        "swing": "NONE",
+        "scalp": "ACTIVE",
+        "readiness": "none",
+        "comp": 5.5
+      },
+      "AUDUSD": {
+        "swing": "NONE",
+        "scalp": "ACTIVE",
+        "readiness": "none",
+        "comp": 4.5
+      },
+      "USDJPY": {
+        "swing": "ARMED",
+        "scalp": "OFF",
+        "readiness": "moderate",
+        "comp": 45,
+        "dist_to_160": "25.7p",
+        "note": "Katayama Apr 23 fresh warning; BOJ T-3d"
+      },
+      "USDCAD": {
+        "swing": "NONE",
+        "scalp": "OFF",
+        "readiness": "none",
+        "comp": -13.5
+      },
+      "USDCHF": {
+        "swing": "NONE",
+        "scalp": "OFF",
+        "readiness": "none",
+        "comp": 16.5
+      },
+      "GOLD": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "moderate",
+        "comp": -40,
+        "note": "sweep_4721 dist=32.5$ OUTSIDE 30$ (downgrade from ARMED); escalation uncertainty"
+      },
+      "OIL_CRUDE": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "moderate",
+        "comp": 40,
+        "note": "sweep_9323 dist=322p; retest_90 dist=615p; Brent$105 confirms bull"
+      },
+      "BTCUSD": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "moderate",
+        "comp": 55,
+        "note": "day_fvg_buy dist=1177$ outside 507$; risk-on side of mix"
+      }
+    },
+    "alerts_audit": "6 KEEP (3 proximity MODIFY: usdjpy/gold_sweep/gold_safehaven); 9 SW KEEP",
+    "queries_audit": "1 TUNE (us_iran_military: added shoot-to-kill keywords); 7 KEEP",
+    "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=KEEP(bias=sell aligns M15 ChoCh) halt={}",
+    "boj_fomc": "BOJ T-3d (Apr 27-28) | FOMC T-5d (Apr 29)"
   }
 ]

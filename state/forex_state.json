@@ -1,5 +1,5 @@
 {
-  "regime": "INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING",
+  "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
   "regime_note_prev": "INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING \u2014 2026-04-23T21:40:00Z 21:40 forex auto \u2014 1 evt us_iran_military news_flash Reuters Mar-1 STALE 54d 'killed' solo-match non-thesis-altering. USDJPY 159.685 +45 mod 4/4 bull dist=31.5p OUTSIDE 30p \u2192 swing=WATCH (downgrade from ARMED; drifted 4p away from 160 red line). GOLD 4694.08 -40 mod 3/4 bear gold_sweep_4721 dist=27.6$ INSIDE 30$ \u2192 swing=ARMED (upgrade from WATCH; needs tag + M15 rejection wick \u22655p); gold_safehaven_4775 dist=80.9$ opp-watch extending away. OIL 96.446 +44 mod 4/4 bull sweep_9323 dist=321p WATCH; retest_90 dist=615p dormant. AUDUSD USDCAD GBPUSD USDCHF none swing=NONE. EURUSD -33 weak BTCUSD +35 weak no alert. 5 level_alerts KEEP 9 SW KEEP. 3 queries TUNE (us_iran_military date-window added; iran_ceasefire+us_tariff rolled +1d). Scalp 3 FX ACTIVE halt={}. BOJ T-3d FOMC T-5d. web_search skipped (0 pos + regime stable 4h+). attention_covered=9/9.",
   "open_positions": [],
   "watchlist": [
@@ -780,6 +780,14 @@
     {
       "ts_utc": "2026-04-23T17:52:00Z",
       "summary": "17:52 forex auto \u2014 13 evt (6 liquidity_sweeps 17:51 bar-close AUDUSD/GOLD/OIL_CRUDE/USDCAD/GBPUSD/USDCHF + 7 bar_close auto). GOLD only confluence re-scan (budget-tight, $0.56 remaining): composite FLIPPED to -40.0 MODERATE 3/4 bearish (was -34.5 weak) at px 4685.0 (gold dropped -26p from 4711.35). gold_safehaven_continuation_buy 4775: dist=90p, 3xH4ATR=119.7p cond1 FALSE rule-1 KEEP, aligned=Fals"
+    },
+    {
+      "ts_utc": "2026-04-23T23:25:00Z",
+      "events_in": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "note": "23:25 UTC heartbeat \u2014 0 evt. WEB SEARCH MATERIAL: Trump shoot-to-kill order on Iranian mine boats (Apr 23 NBC/Bloomberg) + 3rd tanker seized + Brent $105 + Katayama fresh yen warning. REGIME SHIFT \u2192 ACTIVE_ESCALATION_SHOOT_TO_KILL. USDJPY 159.743 dist=25.7p INSIDE 30p swing=ARMED (upgrade). GOLD 4689.18 dist=32.5$ OUTSIDE 30$ swing=WATCH (downgrade; escalation uncertainty on sell). OIL 96.456 +40 mod extending. BTCUSD 78137 +55 mod watch. 6 alerts proximity-MODIFY, 9 SW KEEP, 1 query TUNE. 0 trades. BOJ T-3d FOMC T-5d."
     }
   ],
   "binary_event": {
@@ -793,9 +801,9 @@
       "Detroit News 2026-04-21 21:46 GMT \u2014 Trump announces indefinite extension of ceasefire as Iran stalls negotiations",
       "Al Jazeera 2026-04-21 21:40 GMT \u2014 Trump announces Iran ceasefire extension but says blockade remains"
     ],
-    "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). | 2026-04-23 20:05 UTC tick: BOJ Apr 27-28 T-3d, FOMC T-4d \u2014 still calendar, no blackout. | 2026-04-23 20:30 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-3d \u2014 still calendar, no blackout. | 2026-04-23 21:10 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. Half-size caution on elevated-event week. | 2026-04-24 03:45 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout."
+    "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). | 2026-04-23 20:05 UTC tick: BOJ Apr 27-28 T-3d, FOMC T-4d \u2014 still calendar, no blackout. | 2026-04-23 20:30 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-3d \u2014 still calendar, no blackout. | 2026-04-23 21:10 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. Half-size caution on elevated-event week. | 2026-04-24 03:45 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. | 2026-04-23T23:25:00Z ESCALATION: Trump 'shoot to kill' order on Iranian mine boats. 3rd tanker seized. Regime shifted to ACTIVE_ESCALATION. BOJ T-3d FOMC T-5d no blackout."
   },
-  "regime_note": "INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING \u2014 2026-04-24T03:45:00Z heartbeat \u2014 0 evt 0 pos $1000/$1000. USDJPY 159.691 +43 mod 4/4 bull dist=30.9p OUTSIDE 30p swing=WATCH (barely outside; BOJ T-3d). GOLD 4697.27 -40 mod 3/4 bear gold_sweep_4721 dist=24.41$ INSIDE 30$ swing=ARMED (closer than prev 27.6$; H4 bear FVG 4703-4716 unmitigated adds confluence); gold_safehaven_4775 dist=77.73$ opp-watch extending away. OIL 96.032 +45 mod 4/4 bull sweep_9323 dist=279p WATCH; retest_90 dist=573p dormant. AUDUSD USDCAD GBPUSD USDCHF none swing=NONE. EURUSD -33 weak BTCUSD +40 mod 4/4 bull day_fvg_buy_added. 5\u21926 level_alerts (ADD btcusd_day_fvg_buy) 9 SW KEEP. web_search skipped (0 pos + regime stable). Scalp 3 FX ACTIVE halt={}. BOJ T-3d FOMC T-5d. attention_covered=9/9.",
-  "tick_ts_utc": "2026-04-24T03:45:00Z",
-  "state_ts_utc": "2026-04-24T03:45:00Z"
+  "regime_note": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED \u2014 2026-04-23T23:25:00Z heartbeat \u2014 0 evt 0 pos $1000/$1000. WEB SEARCH: Trump ordered US Navy to 'shoot and kill' Iranian mine-laying boats (Apr 23, NBC/Bloomberg). 3rd Iranian tanker seized this week. Brent $105+, WTI $96 (+3.1% Apr 23). Katayama fresh intervention warning 'constant close contact with US on yen' (Bloomberg Apr 23). BOJ Apr 27-28 expected hold 0.75% + hawkish June signal. FOMC T-5d. USDJPY 159.743 +45 mod 4/4 bull dist=25.7p INSIDE 30p \u2192 swing=ARMED (upgrade; Katayama fresh warning). GOLD 4689.18 -40 mod 3/4 bear sweep_4721 dist=32.5$ OUTSIDE 30$ \u2192 swing=WATCH (downgrade from ARMED; escalation uncertainty: shoot-to-kill may drive gold THROUGH 4721; safehaven_4775 dist=85.82$ opp-watch upgraded significance given escalation). OIL 96.456 +40 mod 4/4 bull sweep_9323 dist=322p WATCH; retest_90 dist=615p dormant; Brent$105 confirms bull thesis, price far from both buy levels. AUDUSD 0.71305 none; EURUSD 1.1683 weak; GBPUSD 1.3464 none; USDCAD 1.37004 none; USDCHF 0.78651 none. BTCUSD 78137.9 +55 mod 4/4 bull day_fvg_buy dist=1177$ WATCH. 6 level_alerts KEEP (3 proximity MOD). 9 SW KEEP. 1 query TUNE (us_iran_military). Scalp 3 FX ACTIVE shadow halt={}. BOJ T-3d FOMC T-5d. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-23T23:25:00Z",
+  "state_ts_utc": "2026-04-23T23:25:00Z"
 }
