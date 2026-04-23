@@ -384,14 +384,17 @@ def execute_trade(epic, direction, size, sl, tp, shadow):
 # ── Tick ingest from dashboard /api/snapshot ─────────────────────────────
 
 def read_live_ticks_snapshot():
-    """Read live_ticks from the dashboard's full_snapshot() via local HTTP.
-    Falls back to None if dashboard is down."""
+    """Read live_ticks via the dashboard's fast /api/live_ticks endpoint.
+    This endpoint is in-memory only — no broker calls — so its latency is
+    microseconds, unlike /api/snapshot which can take >3s on broker cache
+    miss and was silently timing out here before (bug: stuck at
+    reason=no_live_ticks for hours)."""
     try:
         import urllib.request
-        with urllib.request.urlopen("http://127.0.0.1:8787/api/snapshot", timeout=3) as r:
+        with urllib.request.urlopen("http://127.0.0.1:8787/api/live_ticks", timeout=5) as r:
             data = json.loads(r.read())
         return data.get("live_ticks") or {}
-    except Exception as e:
+    except Exception:
         return None
 
 

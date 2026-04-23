@@ -1093,6 +1093,13 @@ class Handler(BaseHTTPRequestHandler):
                 self._html(HTML_FILE.read_bytes())
             elif u.path == "/api/snapshot":
                 self._json(full_snapshot())
+            elif u.path == "/api/live_ticks":
+                # Fast path — in-memory dict, no broker calls. Used by the
+                # scalp engine which polls every 1s and needs deterministic
+                # latency. Full snapshot can take >3s on broker cache miss.
+                with _ticks_lock:
+                    ticks_copy = dict(_latest_ticks)
+                self._json({"live_ticks": ticks_copy, "ts_ms": int(time.time() * 1000)})
             elif u.path == "/api/events":
                 n = int(q.get("n", ["50"])[0])
                 self._json({"events": recent_events(n)})

@@ -84,7 +84,9 @@ The scanner returns `readiness` ∈ `{strong, moderate, weak, none}`:
 - `weak` — |composite| ≥ 25 AND ≥ 2 TFs agree
 - `none` — below those
 
-### 4b. Sizing map (NEW — replaces conviction table)
+### 4b. Sizing map (replaces conviction table)
+
+For TREND-ALIGNED alerts (normal case — the alert's direction matches the expected move):
 
 | readiness | direction at key level? | sizing | entry mode |
 |---|---|---|---|
@@ -96,16 +98,38 @@ The scanner returns `readiness` ∈ `{strong, moderate, weak, none}`:
 | weak | no | watchlist only | add as proximity alert |
 | none | any | skip | no alert unless thesis-new |
 
-Key level = alert level, fresh OB, unmitigated FVG, swept liquidity, or a structurally sharp swing. "Near" = within 1× ATR(H1).
+For COUNTER-TREND FADES (alert explicitly marks an extreme to fade — e.g.
+"intervention red line", "BoJ defends", "overextended", "capitulation"):
 
-R:R floor: **1.5:1** (was 2:1). Below 1.5:1 is skip.
+Confluence OPPOSING the alert direction is **corroborating**, not blocking.
+Price extended in the "wrong" direction (i.e. toward the fade level) is
+exactly what creates the rejection edge. Use the confluence magnitude as
+an extension gauge:
+
+| |composite| | sizing for counter-trend fade |
+|---|---|
+| ≥ 40 against alert | **half** (0.5% risk) — extension is real, fade is live |
+| ≥ 25 against alert | watchlist only, arm on rejection wick |
+| < 25 | no setup |
+
+A counter-trend alert is one whose note contains any of:
+`intervention`, `red line`, `red-line`, `defends`, `BoJ`, `fade`,
+`overextended`, `capitulation`, `exhaustion`, `parabolic`.
+
+Key level proximity threshold (for LIMIT arming):
+    near = dist <= max(1 × H1_ATR, 0.5 × H4_ATR, 30 pips)
+Why the floor of 30 pips: in low-vol regimes H1 ATR can collapse to
+<20 pips, which would make every alert unarmable. The H4 fallback and
+absolute floor keep the criterion useful across volatility regimes.
+
+R:R floor: **1.5:1**. Below 1.5:1 is skip.
 
 ### 4c. Anticipation LIMIT entries — MANDATORY when conditions met
 
 Old framework waited for candle-close confirmation and missed 30–60p of the move repeatedly. You MUST use LIMIT entry (not market-on-confirmation) when ALL THREE hold:
 
-- `readiness >= moderate`
-- Price is within `1× ATR(HOUR_1)` of a clean structural level (alert level, fresh OB, unmitigated FVG, swept extreme)
+- Readiness is **moderate or better** per Step 4b (for trend-aligned alerts: `readiness ≥ moderate` AND direction matches; for counter-trend fades: `|composite| ≥ 40` against the alert direction)
+- Price is within `max(1 × H1 ATR, 0.5 × H4 ATR, 30 pips)` of a clean structural level (alert level, fresh OB, unmitigated FVG, swept extreme)
 - R:R from the level to the next opposing structure is ≥ 1.5:1
 
 Execution:
