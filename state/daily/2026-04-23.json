@@ -527,5 +527,15 @@
     "closed": 0,
     "skipped": 0,
     "summary": "non-thesis news_flash + 2 alert_audits; 5 alerts KEEP; 0pos $1000 0pnl"
+  },
+  {
+    "ts_utc": "2026-04-23T17:14:22Z",
+    "events_processed": 38,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "balance": 1000.0,
+    "open_positions": 0,
+    "regime_note": "2026-04-23T17:14:22Z \u2014 17:07 forex auto \u2014 21 evt gap since 12:34 (4.5h): 6 usdjpy_audits (iran_ceasefire 'extension' kw from Reuters/Al-Jazeera/Detroit-News/Caspian/Daily-Pioneer/WaPo \u2014 ALL iteration of indefinite-extension regime NOT thesis-altering) + 3 oil_audits (ship-traffic + extension-coverage NOT altering) + 4 liquidity_sweeps (USDCHF 0.78602 up-sell readiness=none skip / GBPUSD 1.35133 up-sell readiness=none skip / USDJPY 159.382 down-buy readiness=moderate-but-contradicts-active-160-fa",
+    "notes": "21-evt gap tick. USDJPY 160 fade ARMED-on-tag at 30p (override blocks LIMIT). GOLD 4721.68 sweep-sell near but weak. OIL 90.30/93.2365 retests dormant extending up. 4 new sweeps skipped (readiness none or conflict). No trades. Scalp shadow halts=0."
   }
 ]

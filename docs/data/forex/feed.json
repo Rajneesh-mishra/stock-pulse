@@ -1,22 +1,6 @@
 {
-  "generated_at": "2026-04-23T12:34:54.892647Z",
+  "generated_at": "2026-04-23T17:14:35.329508Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-22T12:45:00Z",
-      "events_in": 0,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 0,
-      "note": "12:45 UTC heartbeat \u2014 0 unconsumed events. Broker $1000/0 reconciled. Price refresh: GOLD 4747.16 (retraced -5.5p from reject), OIL 90.758 (back near day hi 91.177 \u2014 spike-fade partial invalidation, push-and-pause), USDJPY 159.312 (+9p, range intact), AUDUSD 0.71468 (-9.7p drift), BTCUSD 78204 (+3.28%, low 75296 = MATERIAL risk-on rally). 1 WebSearch confirmed Apr 22 07:55 IRGC gunboat fire on container ship (no casualties \u2014 weak driver, Trump indefinite extension intact). Regime update: 'INDEFINITE_EXTENSION_HORMUZ_FRICTION_MIXED_RISK_ON' \u2014 BTC parabolic contradicts gold/AUDUSD-support theses; commodity bid (Hormuz hedge) + crypto rip + USD flat = no clean direction. 3 alerts MODIFY (price refresh + BTC annotation), 9 structure_watch KEEP, 8 queries KEEP. 0 trades."
-    },
-    {
-      "ts_utc": "2026-04-22T12:54:00Z",
-      "events_in": 10,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 10,
-      "note": "12:54 UTC tick \u2014 10 news_flash (1 stale Democracy Now iran_ceasefire 'highly unlikely' pre-extension; 9 Touska/blockade dupes). 1 WebSearch: MATERIAL ESCALATION \u2014 IRGC SEIZED 2 ships today (MSC Francesca + Epaminondas) + 3rd ship bridge-damage fire. Step-up from fire to seizure = tit-for-tat vs Touska. Trump re-affirms blockade. No level touches (gold 27p from 4775, audusd 75p from 0.707, usdjpy 68p from 160). 0 trades. Gold alert MODIFIED (catalyst upgrade: 2-ship seizure lifts Conv 3\u21924 on tag). 2 alerts + 9 structure + 8 queries KEEP. Broker $1000/0."
-    },
     {
       "ts_utc": "2026-04-22T12:54:00Z",
       "events_in": 10,
@@ -174,6 +158,13 @@
       "trades_opened": 0,
       "trades_closed": 0,
       "summary": "1 news_flash us_tariff Chatham House Feb 17 archive 'reset' solo-match non-altering; DROPPED 'reset'; 4 alerts KEEP carried; 0 trades 0pos"
+    },
+    {
+      "ts": "2026-04-23T17:14:22Z",
+      "summary": "2026-04-23T17:14:22Z \u2014 17:07 forex auto \u2014 21 evt gap since 12:34 (4.5h): 6 usdjpy_audits (iran_ceasefire 'extension' kw from Reuters/Al-Jazeera/Detroit-News/Caspian/Daily-Pioneer/WaPo \u2014 ALL iteration of indefinite-extension regime NOT thesis-altering) + 3 oil_audits (ship-traffic + extension-coverage NOT altering) + 4 liquidity_sweeps (USDCHF 0.78602 up-sell readiness=none skip / GBPUSD 1.35133 up",
+      "events_processed": 38,
+      "trades_opened": 0,
+      "trades_closed": 0
     },
     {
       "date": "2026-04-23",
@@ -703,6 +694,16 @@
       "closed": 0,
       "skipped": 0,
       "summary": "non-thesis news_flash + 2 alert_audits; 5 alerts KEEP; 0pos $1000 0pnl"
+    },
+    {
+      "ts_utc": "2026-04-23T17:14:22Z",
+      "events_processed": 38,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "balance": 1000.0,
+      "open_positions": 0,
+      "regime_note": "2026-04-23T17:14:22Z \u2014 17:07 forex auto \u2014 21 evt gap since 12:34 (4.5h): 6 usdjpy_audits (iran_ceasefire 'extension' kw from Reuters/Al-Jazeera/Detroit-News/Caspian/Daily-Pioneer/WaPo \u2014 ALL iteration of indefinite-extension regime NOT thesis-altering) + 3 oil_audits (ship-traffic + extension-coverage NOT altering) + 4 liquidity_sweeps (USDCHF 0.78602 up-sell readiness=none skip / GBPUSD 1.35133 up-sell readiness=none skip / USDJPY 159.382 down-buy readiness=moderate-but-contradicts-active-160-fa",
+      "notes": "21-evt gap tick. USDJPY 160 fade ARMED-on-tag at 30p (override blocks LIMIT). GOLD 4721.68 sweep-sell near but weak. OIL 90.30/93.2365 retests dormant extending up. 4 new sweeps skipped (readiness none or conflict). No trades. Scalp shadow halts=0."
     }
   ]
 }
