@@ -455,6 +455,14 @@
       "closed": 0,
       "skipped": 1,
       "note": "23:24 UTC tick \u2014 1 stale news_flash hormuz_strait (Apr 18 Express Tribune India-summons-Iran-envoy 'attack' kw archive republish, 5d old). TUNED hormuz_strait: added match_keywords=['2026','April','Apr 22','Apr 23'] + cooldown 30\u219260min. Broker API 404 persists 2+ ticks, using 22:56 refs. USDJPY +51 mod WATCH 160 (52.6p dist, 3xH1ATR=42p, 3xH4ATR=93p); GOLD -35 weak WATCH 4775 (44.4p, rule-2 KEEP 4h=0.8); OIL +26 weak WATCH 90.30 retest-far (192p, rule-2 KEEP 4h=0.67); USDCAD/EURUSD/GBPUSD/AUDUSD/USDCHF swing=NONE; BTC scalp=N/A. 3 alerts KEEP, 1 query TUNED (hormuz_strait), 9 structure_watch KEEP, 7 queries KEEP. 0 trades, $1000/0pos. BOJ T-4d."
+    },
+    {
+      "ts_utc": "2026-04-23T00:37:30Z",
+      "events_in": 15,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 15,
+      "note": "00:37 UTC tick - 15 events: 8 liquidity_sweep (one per pair) + 7 M15 bar_close routine. SWEEP TRIAGE: GOLD down-sweep 4698.81 46.2p wick 4.4xATR (biggest mag, readiness=weak bearish comp AGAINST buy-bias = not armable), OIL_CRUDE up-sweep 95.286 154.9p wick 2xATR (readiness=weak bullish comp AGAINST sell-bias = not armable, conflicts with existing 90.30 BUY thesis), USDJPY up-sweep 159.604 8.4p (readiness=moderate bullish comp AGAINST sell-bias = not armable), AUDUSD/EURUSD/GBPUSD down-sweep + USDCAD/USDCHF up-sweep all sub-1.5xATR minor. NO sweeps meet Step 4e criteria (readiness>=moderate AND direction AGAINST sweep wick). 0 new alerts added (would be noisy, prior USDCAD sweep alert removed after 93min as precedent). 3 KEEP alerts (USDJPY 56p<160 WATCH, GOLD 46p<4775 weak bearish comp rule-2 4h=0.8 KEEP, OIL 320p>90.30 weak bull rule-1 cond1 FALSE KEEP rule-2 4h=0.67). Broker $1000/0pos reconciled. 0 trades. BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 28-29)."
     }
   ],
   "recent_skips": [
@@ -488,10 +496,10 @@
       "price": 4809.28
     }
   ],
-  "last_tick_summary": "00:03 UTC tick - 1 stale us_tariff news_flash (Feb 2 AJ 'Trump cuts India tariffs 18% Modi Russian oil' 80-day-old modi-kw match) + derivative USDJPY alert_audit_request. TUNED us_tariff: DROP Modi kw + ADD match_keywords date filter. Confluence API only_0_candles glitch, carrying 23:55 refs: USDJPY +51 mod WATCH 160, GOLD -35 weak WATCH 4775, OIL +26 weak WATCH 90.30. 3 KEEP, 1 query TUNED, 0 trades, $1000/0pos. BOJ T-4d.",
+  "last_tick_summary": "00:37 UTC tick - 15 events: 8 liquidity_sweep (one per pair) + 7 M15 bar_close routine. SWEEP TRIAGE: GOLD down-sweep 4698.81 46.2p wick 4.4xATR (biggest mag, readiness=weak bearish comp AGAINST buy-bias = not armable), OIL_CRUDE up-sweep 95.286 154.9p wick 2xATR (readiness=weak bullish comp AGAINST sell-bias = not armable, conflicts with existing 90.30 BUY thesis), USDJPY up-sweep 159.604 8.4p (readiness=moderate bullish comp AGAINST sell-bias = not armable), AUDUSD/EURUSD/GBPUSD down-sweep + USDCAD/USDCHF up-sweep all sub-1.5xATR minor. NO sweeps meet Step 4e criteria (readiness>=moderate AND direction AGAINST sweep wick). 0 new alerts added (would be noisy, prior USDCAD sweep alert removed after 93min as precedent). 3 KEEP alerts (USDJPY 56p<160 WATCH, GOLD 46p<4775 weak bearish comp rule-2 4h=0.8 KEEP, OIL 320p>90.30 weak bull rule-1 cond1 FALSE KEEP rule-2 4h=0.67). Broker $1000/0pos reconciled. 0 trades. BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 28-29).",
   "last_scan": {
-    "timestamp": "2026-04-22T23:24:00Z",
-    "events_processed_last_tick": 1,
+    "timestamp": "2026-04-23T00:37:30Z",
+    "events_processed_last_tick": 15,
     "events_acted_last_tick": 0
   },
   "capital_base": 1000.0,
@@ -583,6 +591,15 @@
       "binary": "iran_ceasefire_indefinite (inactive)",
       "scalp": "EURUSD/GBPUSD/AUDUSD enabled-shadow, USDJPY/USDCAD/USDCHF disabled",
       "note": "heartbeat; confluence API only_0_candles glitch carrying"
+    },
+    {
+      "ts_utc": "2026-04-23T00:37:30Z",
+      "events_in": 15,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 15,
+      "note": "00:37 UTC tick - 15 events: 8 liquidity_sweep (one per pair) + 7 M15 bar_close routine. SWEEP TRIAGE: GOLD down-sweep 4698.81 46.2p wick 4.4xATR (biggest mag, readiness=weak bearish comp AGAINST buy-bias = not armable), OIL_CRUDE up-sweep 95.286 154.9p wick 2xATR (readiness=weak bullish comp AGAINST sell-bias = not armable, conflicts with existing 90.30 BUY thesis), USDJPY up-sweep 159.604 8.4p (readiness=moderate bullish comp AGAINST sell-bias = not armable), AUDUSD/EURUSD/GBPUSD down-sweep + USDCAD/USDCHF up-sweep all sub-1.5xATR minor. NO sweeps meet Step 4e criteria (readiness>=moderate AND direction AGAINST sweep wick). 0 new alerts added (would be noisy, prior USDCAD sweep alert removed after 93min as precedent). 3 KEEP alerts (USDJPY 56p<160 WATCH, GOLD 46p<4775 weak bearish comp rule-2 4h=0.8 KEEP, OIL 320p>90.30 weak bull rule-1 cond1 FALSE KEEP rule-2 4h=0.67). Broker $1000/0pos reconciled. 0 trades. BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 28-29).",
+      "summary": "00:37 UTC tick - 15 events: 8 liquidity_sweep (one per pair) + 7 M15 bar_close routine. SWEEP TRIAGE: GOLD down-sweep 4698.81 46.2p wick 4.4xATR (biggest mag, readiness=weak bearish comp AGAINST buy-bias = not armable), OIL_CRUDE up-sweep 95.286 154.9p wick 2xATR (readiness=weak bullish comp AGAINST sell-bias = not armable, conflicts with existing 90.30 BUY thesis), USDJPY up-sweep 159.604 8.4p (readiness=moderate bullish comp AGAINST sell-bias = not armable), AUDUSD/EURUSD/GBPUSD down-sweep + USDCAD/USDCHF up-sweep all sub-1.5xATR minor. NO sweeps meet Step 4e criteria (readiness>=moderate AND direction AGAINST sweep wick). 0 new alerts added (would be noisy, prior USDCAD sweep alert removed after 93min as precedent). 3 KEEP alerts (USDJPY 56p<160 WATCH, GOLD 46p<4775 weak bearish comp rule-2 4h=0.8 KEEP, OIL 320p>90.30 weak bull rule-1 cond1 FALSE KEEP rule-2 4h=0.67). Broker $1000/0pos reconciled. 0 trades. BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 28-29)."
     }
   ],
   "binary_event": {
@@ -598,7 +615,7 @@
     ],
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). Monitor for reactivation on any T-24h trigger."
   },
-  "regime_note": "2026-04-23T00:23:30Z - heartbeat tick: 7 unconsumed events (1 hormuz_strait Apr22 Goodreturns seizure-story republish already-priced in binary_event + 6 fed_fomc stale Powell archives Oct25/Jan26x2/Feb26/Apr6/Apr14 \u2014 the '2026' match_keyword tune from prior tick was ineffective because '2026' substring appears in query string/URLs). fed_fomc RE-TUNED: match_keywords now ['April 29','Apr 29','FOMC decision today','cut 25','held rates','Powell presser','Powell press conference','statement today'] + cooldown 180\u2192360min. Confluence RESTORED (prior only_0_candles glitch gone): USDJPY comp +48.5 moderate 4/4 bullish dist 55.8p (alert SELL, against) WATCH; GOLD comp -35 weak 3/4 bearish dist 46p (alert BUY, against, rule-2 real edge 4h=0.8) WATCH; OIL comp +34.5 weak 3/4 bullish dist 320p moved AWAY +125p (aligned with alert BUY but retest further, rule-1 cond1 FALSE still <3xH4ATR) WATCH; BTCUSD comp +43.5 moderate 4/4 bullish no alert/no thesis anchor. 3 KEEP 1 TUNED, 0 armed, 0 trades $1000/0pos. BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 28-29).",
-  "tick_ts_utc": "2026-04-23T00:23:30Z",
-  "state_ts_utc": "2026-04-23T00:23:30Z"
+  "regime_note": "2026-04-23T00:37:30Z - 00:37 UTC tick - 15 events: 8 liquidity_sweep (one per pair) + 7 M15 bar_close routine. SWEEP TRIAGE: GOLD down-sweep 4698.81 46.2p wick 4.4xATR (biggest mag, readiness=weak bearish comp AGAINST buy-bias = not armable), OIL_CRUDE up-sweep 95.286 154.9p wick 2xATR (readiness=weak bullish comp AGAINST sell-bias = not armable, conflicts with existing 90.30 BUY thesis), USDJPY up-sweep 159.604 8.4p (readiness=moderate bullish comp AGAINST sell-bias = not armable), AUDUSD/EURUSD/GBPUSD down-sweep + USDCAD/USDCHF up-sweep all sub-1.5xATR minor. NO sweeps meet Step 4e criteria (readiness>=moderate AND direction AGAINST sweep wick). 0 new alerts added (would be noisy, prior USDCAD sweep alert removed after 93min as precedent). 3 KEEP alerts (USDJPY 56p<160 WATCH, GOLD 46p<4775 weak bearish comp rule-2 4h=0.8 KEEP, OIL 320p>90.30 weak bull rule-1 cond1 FALSE KEEP rule-2 4h=0.67). Broker $1000/0pos reconciled. 0 trades. BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 28-29).",
+  "tick_ts_utc": "2026-04-23T00:37:30Z",
+  "state_ts_utc": "2026-04-23T00:37:30Z"
 }

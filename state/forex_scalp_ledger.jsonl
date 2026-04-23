@@ -1,1 +1,2 @@
 {"kind": "opened", "epic": "AUDUSD", "setup": "range_extreme", "direction": "SELL", "entry": 0.71594, "sl": 0.71644, "tp": 0.71489, "size": 10.0, "shadow": true, "broker_ref": {"shadow": true, "would_open": {"epic": "AUDUSD", "direction": "SELL", "size": 10.0, "sl": 0.71644, "tp": 0.71489}}, "ts_utc": "2026-04-23T00:25:51.175608+00:00"}
+{"kind": "closed", "epic": "AUDUSD", "how": "sl_hit", "pnl_usd": -0.0, "entry": 0.71594, "exit": 0.7164699999999999, "shadow": true, "ts_utc": "2026-04-23T00:30:22.060213+00:00"}

@@ -76,5 +76,13 @@
       "OIL_CRUDE": "swing=WATCH scalp=N/A(4p) ready=weak comp=+34.5 3/4 bullish dist=320p (+125p further) rule-1 cond1 FALSE rule-2 KEEP",
       "BTCUSD": "swing=NONE scalp=N/A(50p) ready=moderate comp=+43.5 4/4 bullish no thesis anchor"
     }
+  },
+  {
+    "ts_utc": "2026-04-23T00:37:30Z",
+    "events_in": 15,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 15,
+    "note": "00:37 UTC tick - 15 events: 8 liquidity_sweep (one per pair) + 7 M15 bar_close routine. SWEEP TRIAGE: GOLD down-sweep 4698.81 46.2p wick 4.4xATR (biggest mag, readiness=weak bearish comp AGAINST buy-bias = not armable), OIL_CRUDE up-sweep 95.286 154.9p wick 2xATR (readiness=weak bullish comp AGAINST sell-bias = not armable, conflicts with existing 90.30 BUY thesis), USDJPY up-sweep 159.604 8.4p (readiness=moderate bullish comp AGAINST sell-bias = not armable), AUDUSD/EURUSD/GBPUSD down-sweep + USDCAD/USDCHF up-sweep all sub-1.5xATR minor. NO sweeps meet Step 4e criteria (readiness>=moderate AND direction AGAINST sweep wick). 0 new alerts added (would be noisy, prior USDCAD sweep alert removed after 93min as precedent). 3 KEEP alerts (USDJPY 56p<160 WATCH, GOLD 46p<4775 weak bearish comp rule-2 4h=0.8 KEEP, OIL 320p>90.30 weak bull rule-1 cond1 FALSE KEEP rule-2 4h=0.67). Broker $1000/0pos reconciled. 0 trades. BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 28-29)."
   }
 ]

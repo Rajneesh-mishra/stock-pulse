@@ -1,20 +1,18 @@
 {
   "pid": 45868,
-  "last_step_utc": "2026-04-23T00:26:10.598795+00:00",
-  "heartbeat": 5910,
+  "last_step_utc": "2026-04-23T00:30:22.061027+00:00",
+  "heartbeat": 6006,
   "reason": "ok",
   "shadow": true,
-  "daily_pnl_usd": 0.0,
-  "open": {
-    "AUDUSD": {
-      "direction": "SELL",
-      "entry": 0.71594,
-      "sl": 0.71644,
-      "tp": 0.71489,
-      "size": 10.0,
-      "shadow": true
-    }
-  },
+  "daily_pnl_usd": -0.0,
+  "open": {},
   "halted": {},
-  "actions": []
+  "actions": [
+    {
+      "epic": "AUDUSD",
+      "status": "closed",
+      "how": "sl_hit",
+      "pnl": -0.004999999999999449
+    }
+  ]
 }
