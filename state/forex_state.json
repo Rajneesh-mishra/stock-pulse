@@ -1,6 +1,6 @@
 {
   "regime": "INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING",
-  "regime_note_prev": "2026-04-23T01:00:24Z - 01:00 UTC tick \u2014 9 events (2 liquidity_sweep + 7 bar_close). AUDUSD 00:45 M15 up-sweep 0.7166 wick 0.9p 0.16xATR = noise, confluence +23.5 none bullish opposes sell-bias, not armable. GOLD 00:45 M15 up-sweep 4752.12 wick 18.4p 1.73xATR sell bias (3rd cluster 4749-4752 within 30min building local sell pressure), confluence -27.5 weak 3/4 bearish AGREES sweep direction BUT readiness<moderate per Step 4b not armable for LIMIT. No new alerts (precedent: prior 3 GOLD sweeps + USDCAD sweep removed at 93min without arm \u2014 pattern has to cross moderate threshold). USDJPY comp +43.5 moderate 4/4 bullish AGAINST 160 SELL thesis, price 159.311 dist 68.9p >3xH1ATR WATCH. OIL +34.5 weak bullish aligned BUY 250p dist WATCH. USDCAD -28.5 weak no-alert. EURUSD/GBPUSD/USDCHF none. 3 alerts KEEP (price refresh), 9 structure_watch KEEP, 8 queries KEEP. Broker $1000/0pos reconciled. 0 trades. BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 28-29), iran_ceasefire binary=inactive/indef-ext. scalp: 3 majors EURUSD/GBPUSD/AUDUSD ACTIVE shadow, USDJPY/USDCAD/USDCHF DISABLED (pip-value), GOLD/OIL/BTC N/A (spread).",
+  "regime_note_prev": "2026-04-23T01:10:30Z - 01:10 UTC heartbeat tick \u2014 0 unconsumed events. Broker $1000/0pos reconciled. Confluence refresh: USDJPY comp +43.5 moderate 4/4 bullish AGAINST 160 SELL (close 159.368, dist 63.2p>3xH1ATR 44.3p WATCH not ARM); GOLD -27.5 weak 3/4 bearish close 4744.22 dist 30.8p below 4775 BUY (rule-2 4h=0.8 KEEP); OIL +34.5 weak bullish close 93.03 dist 273p above 90.30 retest (rule-2 4h=0.67 KEEP). 3 alerts KEEP refresh, 9 structure_watch KEEP, 8 queries KEEP. Scalp audit: 3 FX majors shadow-KEEP, 3 disabled(pip-value), 3 N/A(spread). 0 trades $1000/0pos. BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 28-29), iran_ceasefire binary=inactive/indef-ext.",
   "open_positions": [],
   "watchlist": [
     {
@@ -520,10 +520,10 @@
       "price": 4809.28
     }
   ],
-  "last_tick_summary": "01:10 UTC heartbeat \u2014 0 events. USDJPY +43.5 mod AGAINST 160 SELL dist 63p WATCH, GOLD -27.5 weak 4775 BUY 30.8p rule-2 KEEP, OIL +34.5 weak 90.30 BUY 273p rule-2 KEEP. 3 KEEP. 0 trades $1000/0. BOJ T-4d FOMC T-6d.",
+  "last_tick_summary": "01:22 UTC \u2014 1 evt (Vance MSN republish, non-altering). USDJPY +43.5 mod AGAINST 160 SELL dist 60.4p WATCH, GOLD -35.0 weak 4775 BUY 44.5p rule-2 KEEP, OIL +34.5 weak 90.30 BUY 285.6p rule-2 KEEP. 3 KEEP. 0 trades $1000/0. BOJ T-4d FOMC T-6d.",
   "last_scan": {
-    "timestamp": "2026-04-23T01:10:30Z",
-    "events_processed_last_tick": 0,
+    "timestamp": "2026-04-23T01:25:46Z",
+    "events_processed_last_tick": 1,
     "events_acted_last_tick": 0
   },
   "capital_base": 1000.0,
@@ -691,7 +691,7 @@
     ],
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). Monitor for reactivation on any T-24h trigger."
   },
-  "regime_note": "2026-04-23T01:10:30Z - 01:10 UTC heartbeat tick \u2014 0 unconsumed events. Broker $1000/0pos reconciled. Confluence refresh: USDJPY comp +43.5 moderate 4/4 bullish AGAINST 160 SELL (close 159.368, dist 63.2p>3xH1ATR 44.3p WATCH not ARM); GOLD -27.5 weak 3/4 bearish close 4744.22 dist 30.8p below 4775 BUY (rule-2 4h=0.8 KEEP); OIL +34.5 weak bullish close 93.03 dist 273p above 90.30 retest (rule-2 4h=0.67 KEEP). 3 alerts KEEP refresh, 9 structure_watch KEEP, 8 queries KEEP. Scalp audit: 3 FX majors shadow-KEEP, 3 disabled(pip-value), 3 N/A(spread). 0 trades $1000/0pos. BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 28-29), iran_ceasefire binary=inactive/indef-ext.",
-  "tick_ts_utc": "2026-04-23T01:10:30Z",
-  "state_ts_utc": "2026-04-23T01:10:30Z"
+  "regime_note": "2026-04-23T01:25:46Z - 01:22 UTC tick \u2014 1 unconsumed event (news_flash iran_ceasefire MSN republish 2026-04-22T19:00 GMT 'Vance Islamabad trip halted as Iran stalls', matched 'Vance' kw \u2014 already covered by tracker note + binary indef-extension; non-thesis-altering, no audit_request derivative emitted). Broker $1000/0pos reconciled. Refresh: USDJPY +43.5 moderate 4/4 bullish AGAINST 160 SELL (px 159.396, dist 60.4p>3xH1ATR 44.6p WATCH not ARM, dist<3xH4ATR 95p so KEEP rule-1); GOLD -35.0 weak 3/4 bearish (px 4730.5, dist 44.5p below 4775 BUY, <3xH4ATR 116p, rule-2 4h=0.8 KEEP); OIL +34.5 weak 3/4 bullish (px 93.156, dist 285.6p above 90.30 BUY, <3xH4ATR 727p, rule-2 4h=0.67/24h=1.0 KEEP). 3 alerts KEEP refresh, 9 structure_watch KEEP, 8 queries KEEP. Scalp audit unchanged: 3 FX majors shadow-KEEP, 3 disabled(pip-value), 3 N/A(spread). 0 trades $1000/0pos. BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 28-29), iran_ceasefire binary=inactive/indef-ext.",
+  "tick_ts_utc": "2026-04-23T01:25:46Z",
+  "state_ts_utc": "2026-04-23T01:25:46Z"
 }

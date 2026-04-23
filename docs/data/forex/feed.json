@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T01:11:59.654931Z",
+  "generated_at": "2026-04-23T01:25:56.645774Z",
   "ticks": [
     {
       "ts_utc": "2026-04-21T06:37:00Z",
@@ -363,6 +363,14 @@
       "closed": 0,
       "skipped": 0,
       "summary": "01:10 UTC heartbeat \u2014 0 events, USDJPY +43.5 mod AGAINST 160 SELL WATCH 63p, GOLD -27.5 weak 4775 BUY 30.8p KEEP, OIL +34.5 weak 90.30 BUY 273p KEEP. 0 trades $1000/0."
+    },
+    {
+      "ts_utc": "2026-04-23T01:25:46Z",
+      "type": "forex_tick",
+      "events": 1,
+      "trades": 0,
+      "balance": 1000.0,
+      "summary": "01:22 UTC \u2014 1 evt (Vance MSN republish, non-altering). USDJPY +43.5 mod AGAINST 160 SELL dist 60.4p WATCH, GOLD -35.0 weak 4775 BUY 44.5p rule-2 KEEP, OIL +34.5 weak 90.30 BUY 285.6p rule-2 KEEP. 3 KEEP. 0 trades $1000/0. BOJ T-4d FOMC T-6d."
     }
   ]
 }
