@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T04:06:48.684205Z",
+  "generated_at": "2026-04-23T04:20:20.310111Z",
   "ticks": [
     {
       "ts_utc": "2026-04-21T08:41:00+00:00",
@@ -427,6 +427,23 @@
       "closed": 0,
       "skipped": 0,
       "note": "2 stale news republishes tuned (iran_ceasefire date filter added, us_tariff bare '2026' removed). Confluence + broker price API persistent glitch 2nd tick \u2014 carried 03:25 reads. 3 KEEP 9 structure_watch KEEP, scalp shadow 3 FX / 3 disabled / 3 N/A, 0 pos $1000, BOJ T-4d."
+    },
+    {
+      "ticks": [
+        {
+          "ts_utc": "2026-04-23T04:20:00Z",
+          "type": "heartbeat",
+          "summary": "0 events, confluence API RESTORED, 3 KEEP USDJPY/GOLD/OIL all WATCH not ARM, 0 trades, $1000/0pos, BOJ T-4d",
+          "alerts_status": {
+            "USDJPY_160_SELL": "WATCH \u2014 43.55p dist, comp+51 moderate 4/4 bullish (counter-trend)",
+            "GOLD_4775_BUY": "WATCH \u2014 698.6p dist, floor-test 4698-4700, rule-2 KEEP (cf 4h=0.8)",
+            "OIL_90.30_BUY": "WATCH \u2014 370.2p dist, comp+34.5 weak 3/4 bullish aligned BUY, retest awaits pullback"
+          },
+          "positions": 0,
+          "balance": 1000.0,
+          "attention_covered": "9/9"
+        }
+      ]
     }
   ]
 }
