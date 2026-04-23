@@ -1,235 +1,108 @@
-# Stock Pulse — Orchestrator Reference
+# Stock Pulse — Forex Command
 
-This file contains invariants that MUST survive context compaction. The `/loop` orchestrator reads this on every tick.
+Project-level instructions. Auto-loaded by Claude Code at every session
+start (including headless `claude -p` ticks). Keep this focused and
+forex-specific — anything here runs on every tick, so bloat costs money.
 
-## Telegram Config
+## What this system is
 
-- **Credentials**: stored in `.env` file at `/Users/rajneeshmishra/Downloads/stock-pulse/.env` (NEVER commit this file)
-- **Send script**: `bash /Users/rajneeshmishra/Downloads/stock-pulse/send_telegram.sh "<message>"`
-- **Parse mode**: Markdown
-- The send script reads TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_IDS from `.env` automatically
+Claude-orchestrated forex/CFD trading on Capital.com demo. Working
+capital: **$1,000**. Daemons sense the tape and emit events; Claude ticks
+consume events and decide trades; risk_guard validates every order;
+scalp engine handles mechanical scalps on FX majors.
 
-## File Paths
+**Canonical tick prompt:** `prompts/forex_tick.md` — read that, not this.
+This file just has the rails the tick runs on.
 
-- **State file**: `/Users/rajneeshmishra/Downloads/stock-pulse/state/state.json`
-- **Daily log**: `/Users/rajneeshmishra/Downloads/stock-pulse/state/daily/YYYY-MM-DD.json`
-- **Dashboard current**: `/Users/rajneeshmishra/Downloads/stock-pulse/docs/data/current.json`
-- **Dashboard timeline**: `/Users/rajneeshmishra/Downloads/stock-pulse/docs/data/timeline.json`
-- **Dashboard history**: `/Users/rajneeshmishra/Downloads/stock-pulse/docs/data/history/YYYY-MM-DD.json`
-- **Repo root**: `/Users/rajneeshmishra/Downloads/stock-pulse`
-
-## Operational Rules
-
-1. **ALL agents MUST be foreground** (never `run_in_background: true`) — background agents silently lose output
-2. **Max 2-3 parallel agents** at any stage — reliability drops with more
-3. **Max 3 deep-dive agents** per tick — hard cap, no exceptions
-4. **Validate every agent result** — if empty/garbage, note the gap and proceed. One retry max for critical agents.
-5. **State writes happen LAST** — after all analysis is done, before Telegram/dashboard
-6. **No Telegram message on quiet ticks** — only send when there's something worth saying
-7. **Dashboard push**: on events + every 30 min heartbeat. Skip on quiet ticks.
-8. **Dedup**: read `last_scan.last_telegram_summary` before composing. Don't repeat the same alert. Check `alert_cooldowns` for per-category throttling.
-9. **Web search for Indian data**: FII/DII only returns net figures (accept this). For sector data, use WebFetch on `https://www.icicidirect.com/research/equity/nse-bse-sector` specifically.
-10. **Daily log**: append to today's file only. Read yesterday's file ONLY when a tracked situation or prediction explicitly references it.
-11. **ALWAYS update `docs/data/current.json` and `docs/data/timeline.json`** every tick that modifies state — these are what the dashboard reads. Failing to update them leaves the dashboard showing stale data. current.json must reflect latest scenarios, tracker, market data, **and signals/avoid** (stock suggestions). timeline.json must have a new tick entry appended.
-11a. **Update signals + avoid on every triggered tick** — if new data changes the thesis (e.g. crude spike, earnings result, tracker status change), update `signals` (action, stock, conviction 1-5, rationale, risk) and `avoid` in current.json accordingly. Don't leave stale conviction scores or outdated rationale.
-12. **ALWAYS git push after every tick** — `git add docs/ state/ && git commit -m "tick: $(date +%H:%M) {trigger_type}" && git push origin main`. No confirmation needed. All permissions are pre-granted.
-13. **Publish forex data to docs/ before commit** — run `bash docs/publish_forex.sh` at the end of every forex tick so docs/forex.html (the public dashboard at rajneesh-mishra.github.io/stock-pulse/forex.html) always reflects current state, watchlist, counterfactual summary, and feed.
-
-## Agent Prompt Templates
-
-### Sentinel Agent
+## Repo layout (what matters)
 
 ```
-You are a market sentinel scanning the Indian stock market.
-
-CURRENT STATE (from state.json):
-{paste state.json contents here}
-
-TODAY'S LOG SO FAR:
-{paste today's daily log summary or "No activity yet"}
-
-YOUR JOB: Quick triage. Do a web search for "Indian stock market today" and "Nifty 50 today" to get a pulse.
-
-Then answer:
-1. Did anything significant happen since the last scan at {last_scan.timestamp}? (Nifty moved >0.5% from {last_scan.nifty_level}, major news broke, sector crash/rally)
-2. Is any situation in the tracker escalating or de-escalating?
-3. Is any calendar event within 3 days that hasn't been analyzed yet?
-4. Is it time for a forward scan? (last_forward_scan was {last_scan.last_forward_scan} — do one if >3 hours ago during market hours, >6 hours otherwise)
-
-OUTPUT exactly this JSON:
-{
-  "trigger": "none" | "reactive" | "predictive" | "calendar",
-  "reason": "one line explaining why",
-  "details": "relevant data points",
-  "nifty_current": <number or null>,
-  "forward_scan_needed": true | false,
-  "market_status": "pre_market" | "open" | "post_market" | "closed" | "weekend"
-}
-
-Be conservative. Only trigger reactive/predictive if there's a REAL signal, not just noise.
+state/
+  forex_state.json                 positions, trade_history, binary_event, regime_note
+  forex_watchlist_signals.json     YOU author this; daemon reads it
+  forex_events.jsonl               append-only event stream
+  forex_events_consumed.txt        IDs you've processed
+  forex_counterfactual_summary.json alert hit rates (read-only, from daemon)
+  forex_scalp_config.json          YOU author this; scalp engine reads it
+  forex_scalp_status.json          scalp engine writes this (read-only for you)
+  forex_scalp_ledger.jsonl         scalp engine writes this (read-only)
+  daily/YYYY-MM-DD.json            tick log — append today's entry
+daemon/
+  forex_watcher.py                 emits level/structure/liquidity_sweep events
+  forex_news_watcher.py            emits news_flash + alert_audit_request events
+  forex_position_sync.py           broker reconciliation
+  forex_counterfactual_tracker.py  fills hit-rate data (don't touch)
+  forex_scalp_engine.py            mechanical scalp entries (shadow-mode by default)
+  claude_event_waker.py            wakes YOU on actionable events
+forex/
+  api.py                           Capital.com CLI wrapper — use for trades + prices
+  risk_guard.py                    HARD safety — every order must pass `check` first
+  confluence.py                    multi-TF readiness scorer (strong/moderate/weak/none)
+  technicals.py                    SMC + EMA + ATR helpers
+prompts/
+  forex_tick.md                    THE tick protocol — read this every tick
+web/
+  dashboard_server.py              http://localhost:8787 — live UI + /api/chat
+docs/                              Vite React build — served by dashboard_server + GH Pages
+  publish_forex.sh                 copies state/forex_*.json → docs/data/forex/
+dashboard/                         React source (Vite + TS + Tailwind)
 ```
 
-### Sentinel Extended (Forward Scan)
+## Operational invariants
 
-```
-You are doing a FORWARD SCAN of upcoming events and geopolitical situations relevant to Indian markets.
+1. **Telegram**: `bash send_telegram.sh "<msg>"` — reads `.env` automatically. Send on: trade open/close/modify, regime-change headline, any tick-timeout or daemon-down alert from the waker.
+2. **Every trade has SL + TP.** `risk_guard check` rejects naked orders.
+3. **Risk ceilings** — 2% per swing trade, 0.5% per scalp, 6% total open, 4 positions max, 2 correlated, 5% daily loss stop. Enforced by risk_guard.
+4. **No run_in_background agents.** Silently lose output. Foreground only.
+5. **No background tools in ticks.** `claude -p` is one-shot; can't schedule wakeups.
+6. **State writes happen LAST** in a tick, after all analysis.
+7. **Publish data before commit.** Every forex tick Step 10 runs `bash docs/publish_forex.sh` before `git commit` so the dashboard reflects current state.
+8. **Git push has retry** (`for i in 1 2 3; do ... && break; sleep 10; done`). Never silent-fail.
+9. **Scalp engine is auto** — don't place scalp-style entries yourself. You tune `forex_scalp_config.json` (enable/disable per pair, bias, sessions) and review stats weekly. Live scalp orders go through risk_guard same as swing.
 
-CURRENT CALENDAR: {paste calendar array}
-CURRENT TRACKER: {paste tracker array}
+## Confluence readiness tiers (from forex/confluence.py)
 
-Do multiple web searches:
-1. "India stock market upcoming events this week"
-2. "RBI policy date 2026" / "FOMC meeting date 2026" 
-3. "Indian market earnings season dates"
-4. "F&O expiry date India"
-5. "geopolitical news affecting India markets today"
+- **strong** — |composite| ≥ 60 AND all TFs agree → full size (1.5%)
+- **moderate** — |composite| ≥ 40 AND ≥ (n−1) TFs agree → half size (0.5%), anticipation LIMIT OK
+- **weak** — |composite| ≥ 25 AND ≥ 2 TFs agree → watchlist only
+- **none** — below the above → no setup
 
-From your searches, update:
-- CALENDAR: Add any new events with date, description, impact_level (1-5), sectors_affected. Remove events that have passed.
-- TRACKER: Add any new geopolitical/macro situations. Update status of existing ones (watching/escalating/de-escalating/resolved). Remove resolved or stale ones.
+For counter-trend fades (alert note contains "intervention"/"red line"/"BoJ"/"fade"/"overextended"/"capitulation"/"exhaustion"/"parabolic"), confluence OPPOSING the alert is corroborating, not blocking — see prompt Step 4b.
 
-NO HARDCODED items. Only add what you actually found in your searches.
+## Event types (from daemons)
 
-OUTPUT as JSON:
-{
-  "calendar": [...updated array...],
-  "tracker": [...updated array...]
-}
-```
+- `level_enter` / `level_cross` / `level_exit` — watchlist zone hits
+- `liquidity_sweep` — price wicked beyond recent 20-bar extreme and closed back inside (rejection). Fresh bounce point the tape just created.
+- `structure_bos` / `structure_choch` — SMC transitions on watched TFs
+- `alert_audit_request` — news matched an active alert's keywords; re-score THAT alert
+- `news_flash` — breaking headline matching a watched query
+- `bar_close` — auto-consumed by waker, not actionable
+- `trail_candidate` / `position_opened` / `position_closed` / `sl_hit` / `tp_hit`
+- `daily_pnl_threshold` — 5% daily loss stop reached
 
-### Market Pulse Agent (R1)
+## Instruments
 
-```
-You are a market data collector for Indian equities. Get the NUMBERS, no opinions.
+9 pairs: EURUSD, GBPUSD, AUDUSD, USDCAD, USDCHF, USDJPY, GOLD, OIL_CRUDE, BTCUSD.
 
-Web search and/or WebFetch to find:
-- Nifty 50, Sensex, Bank Nifty: level, % change, day high/low
-- India VIX: level and % change
-- FII/DII: net buy/sell figures (in crores)
-- Global cues: US futures (S&P 500, Nasdaq), crude oil (Brent), USD/INR, gold
-- SGX Nifty or GIFT Nifty if available
+Scalp engine is active on EURUSD / GBPUSD / AUDUSD only (USD quote, shadow P/L = price_diff × size gives direct USD). USDJPY / USDCHF / USDCAD disabled pending per-pair pip-value conversion. GOLD / OIL / BTC disabled — spreads too wide for scalp (5p / 4p / 50p).
 
-For sector data, WebFetch this URL: https://www.icicidirect.com/research/equity/nse-bse-sector
+## Python environment
 
-OUTPUT: structured data, no commentary. Format:
-{
-  "indices": { "nifty": {...}, "sensex": {...}, "banknifty": {...} },
-  "vix": {...},
-  "fii_dii": { "fii_net": "...", "dii_net": "..." },
-  "global": { "sp500_futures": "...", "crude": "...", "usdinr": "...", "gold": "..." },
-  "sectors": { "top_gainers": [...], "top_losers": [...] },
-  "data_timestamp": "..."
-}
-```
-
-### News + Sector Scanner Agent (R1)
-
-```
-You are a news scanner for Indian stock markets.
-
-Web search for:
-1. "Indian stock market news today"
-2. "NSE BSE breaking news"
-3. "India earnings results today"
-4. "{specific sector/theme from trigger}" if applicable
-
-Find the 5-10 most relevant headlines. For each:
-- Headline
-- Source
-- One-line context: WHY this matters for markets
-- Affected sectors/stocks
-
-Filter aggressively. Skip generic "market ends flat" headlines. Focus on news that could MOVE prices.
-
-OUTPUT as JSON array of headlines with context.
-```
-
-### Deep Dive Agent (R2)
-
-```
-You are researching ONE specific stock or theme: {STOCK_OR_THEME}
-
-Context from the broad scan: {CONTEXT_FROM_R1}
-
-Do thorough web searches:
-1. "{stock} share price today analysis"
-2. "{stock} latest earnings results"
-3. "{stock} analyst target price"
-4. "{stock} promoter holding changes"
-5. "{stock} technical analysis support resistance"
-
-Compile:
-- BULL CASE: Why this could go up. Catalysts, technicals, fundamentals.
-- BEAR CASE: Why this could go down. Risks, red flags, headwinds.
-- KEY LEVELS: Support, resistance, 52-week high/low
-- CONVICTION: 1-5 (1 = weak signal, 5 = high conviction)
-
-OUTPUT as structured JSON with bull_case, bear_case, key_levels, conviction, and summary.
-```
-
-### Scenario Mapper Agent (P1)
-
-```
-You are analyzing an approaching event/situation: {SITUATION}
-
-Context: {DETAILS_FROM_SENTINEL}
-
-Research this thoroughly:
-1. What are the possible outcomes? (2-3 scenarios)
-2. For each scenario: probability estimate, impact on Indian markets, specific sectors/stocks affected
-3. Historical analogs: what happened last time something similar occurred?
-4. Asymmetric positions: what benefits in multiple scenarios?
-
-OUTPUT as JSON:
-{
-  "situation": "...",
-  "timeframe": "...",
-  "scenarios": [
-    { "name": "...", "probability": "...", "impact": "...", "sectors": [...], "stocks": [...] }
-  ],
-  "positioning": { "asymmetric_bets": [...], "hedges": [...] },
-  "watch_triggers": [...]
-}
-```
-
-### Synthesis Agent (R3 / P2)
-
-```
-You are the final analyst synthesizing all research into a Telegram message.
-
-INPUTS:
-{ALL_PREVIOUS_AGENT_OUTPUTS}
-
-LAST MESSAGE SENT: {last_scan.last_telegram_summary}
-ALERT COOLDOWNS: {alert_cooldowns}
-
-RULES:
-- If this is substantially the same as the last message, output "SKIP" — don't send.
-- Present BOTH bull and bear perspective. Be balanced.
-- Be punchy and scannable — this is read on a phone.
-- Include conviction score (1-5).
-- Include specific levels/numbers, not vague commentary.
-- End with what to WATCH for next.
-- Max 200 words for alerts, 250 for predictive briefs.
-- Use Markdown formatting compatible with Telegram.
-
-OUTPUT: The exact message to send, or "SKIP" if nothing new.
-MESSAGE TYPE: "alert" | "predictive" | "daily_wrap"
-```
-
-## Timing Reference
-
-| Context | Sentinel Freq | Forward Scan | Dashboard Push |
-|---------|--------------|--------------|----------------|
-| Market hours (9:15-3:30 IST), quiet | 10 min | Every 3 hours | 30 min heartbeat |
-| Market hours, volatile | 5 min | Every 2 hours | On events |
-| Pre-market (8:30-9:15) | 10 min | Once at start | Once |
-| Post-market (3:30-5 PM) | 15 min | Once | After daily wrap |
-| Evening/night | 30 min | Every 4 hours | Skip |
-| Weekend/holiday | 2 hours | Every 6 hours | Skip |
+- Python 3.14 at `/opt/homebrew/bin/python3`
+- Daemons run under launchd (com.stockpulse.*)
+- Always use `python3 forex/api.py …` from repo root — not bare scripts
+- `.env` file at repo root holds CAPITAL_API_KEY / CAPITAL_EMAIL / CAPITAL_PASSWORD / TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_IDS. **Never commit `.env`.**
 
 ## Dashboard
 
-- **Repo**: `https://github.com/Rajneesh-mishra/stock-pulse.git`
-- **URL**: `https://rajneesh-mishra.github.io/stock-pulse/`
-- **Push command**: `cd /Users/rajneeshmishra/Downloads/stock-pulse && git add docs/ state/ && git commit -m "tick: $(date +%H:%M) {trigger_type}" && git push origin main`
+- **Local**: http://localhost:8787 (served by `web/dashboard_server.py`)
+- **Public**: https://rajneesh-mishra.github.io/stock-pulse/
+- Same HTML. GitHub Pages reads static JSON from `docs/data/forex/`; the local server also serves the same JSON plus live API endpoints.
+
+## What NOT to do
+
+- Don't touch `state/.capital_session.json` (shared session cache for api.py / risk_guard / technicals)
+- Don't remove `state/.counterfactual_cursor` unless rebuilding the ledger
+- Don't add a sentinel/deep-dive agent pattern — that was the old Indian-equities flow, no longer applies
+- Don't read yesterday's daily log unless a tracked situation explicitly references prior-day context
+- Don't bloat this file — it's auto-loaded on every tick. Move anything non-essential to `prompts/` or the archive.

@@ -21,9 +21,9 @@ You are inside `/Users/rajneeshmishra/Downloads/stock-pulse`.
 
 Read `state/forex_state.json`:
 
-1. **`binary_event`** — if `active=true` + deadline inside 30min → blackout (no new entries). 30min–24h → elevated caution, conviction 4+ only, half size. Anchoring ≥2 ticks to a deadline requires ≥2 independent sources (Step 5).
+1. **`binary_event`** — if `active=true` + deadline inside 30min → blackout (no new entries). 30min–24h → elevated caution, readiness ≥ moderate only, half size. Anchoring ≥2 ticks to a deadline requires ≥2 independent sources (Step 5).
 2. **`state/forex_counterfactual_summary.json`** — hit rates per alert. See Step 8a for mechanical KEEP/REMOVE.
-3. **`state/forex_scalp_config.json`** — per-pair scalp enable/mode/bias/session. Updated by you in Step 4h.
+3. **`state/forex_scalp_config.json`** — per-pair scalp enable/mode/bias/session. Updated by you in Step 8d.
 
 ## Step 1 — Unconsumed events
 
@@ -164,7 +164,7 @@ Skip only if:
 | `structure_choch` | Trend flip signal | Update regime_note |
 | `alert_audit_request` | News matched this alert's keywords | Re-score THIS alert. If readiness moderate+, arm anticipation LIMIT |
 | `news_flash` | Regime-changing? | Re-score affected alerts only |
-| `trail_candidate` | Move SL? | Decide per strategy.json |
+| `trail_candidate` | Move SL? | At +1R: SL → breakeven. At +2R: SL → +0.5R (lock half profit). At +3R: SL → +1.5R. Modify via `python3 forex/api.py modify <dealId> <sl> <tp>` |
 | `position_closed` | Log trade | Update trade_history, daily_pnl |
 | `daily_pnl_threshold` | Stop tier? | If `stop`: close all, set control, telegram |
 
@@ -203,9 +203,12 @@ Telegram on every open/close/modify:
 bash send_telegram.sh "*TRADE EXECUTED* ..."
 ```
 
-## Step 7 — Position / news check
+## Step 7 — Position / news check (budget-aware)
 
-2–3 targeted web searches rotating through gold, crude, USDJPY+DXY, specific active situations. Material headline → update `regime_note` + telegram if position-affecting.
+- **Skip web search if**: any of (last search <20 min ago) OR (news_watcher emitted news_flash events this tick that you've already read) OR (0 open positions AND regime stable for 4+ hours).
+- Otherwise: 2 targeted searches, rotating through gold, crude, USDJPY+DXY, specific active situations. Don't do the same rotation every tick — vary.
+- Material headline → update `regime_note` + telegram if position-affecting.
+- Web search costs real API budget; the news_watcher daemon already covers the routine news surface. Your job here is to fill the gaps, not duplicate.
 
 ## Step 8 — MANDATORY AUDIT (every tick, no skipping)
 
@@ -262,22 +265,27 @@ attention matrix:
 
 - `swing=NONE` → no active alert and readiness < moderate
 - `swing=WATCH` → alert exists but price not at trigger OR readiness=weak
-- `swing=ARMED` → alert + readiness ≥ moderate + price within 1× H1 ATR
-- `scalp=ACTIVE` → scalp_config.enabled=true for this pair
-- `scalp=OFF` → scalp config enabled=false (you disabled it or 3-loss halt)
-- `scalp=N/A` → spread economics forbid (GOLD, OIL, BTC, USDCAD>1.5p avg)
+- `swing=ARMED` → alert + readiness ≥ moderate + price within `max(1×H1_ATR, 0.5×H4_ATR, 30p)` (the Step 4c proximity threshold)
+- `scalp=ACTIVE` → scalp_config.enabled=true for this pair AND engine not halted
+- `scalp=HALTED` → 3-consecutive-loss halt in progress; recovers automatically
+- `scalp=OFF` → scalp_config.enabled=false with a reason (pip-value conversion pending for JPY/CHF/CAD, etc.)
+- `scalp=N/A` → spread economics forbid (GOLD 5p, OIL 4p, BTC 50p)
 
 If a pair is neither ARMED nor ACTIVE, the reason must state WHY you aren't acting on it. This forces coverage — no pair can be silently ignored because the loud pair is getting focus.
 
 ### 8d. Scalp config audit (NEW)
 
-Read `state/forex_scalp_config.json`. For each FX major (EURUSD, GBPUSD, AUDUSD, USDJPY, USDCHF, USDCAD):
-- If the scalp engine recorded ≥20 trades and win rate <40% → `enabled: false, reason: "wr_below_40pct"`
-- If 3 consecutive scalp losses on a pair (engine handles this automatically via 4h disable) → respect the halt
-- If regime shifted materially (e.g. surprise central bank move), reset `bias` to neutral
-- If session shifted (London close, NY open), note current session in `reason`
+Read `state/forex_scalp_config.json` AND `state/forex_scalp_status.json`.
 
-Output: `scalp audit: EURUSD=KEEP AUDUSD=KEEP USDJPY=DISABLED(3L halt 2h remaining) …`
+Currently scalpable: **EURUSD, GBPUSD, AUDUSD** only (USD-quote pairs — shadow P/L math is direct). USDJPY / USDCHF / USDCAD are hard-disabled in the engine pending per-pair pip-value conversion; don't flip their `enabled` flag (engine ignores it anyway).
+
+For the 3 live pairs:
+- Engine halt → read from status file's `halted` map. Respect; don't override.
+- If win rate (from ledger) <40% on ≥20 trades → set `enabled: false, reason: "wr_below_40pct"`
+- If regime shifted (surprise central bank, risk-off flash) → reset `bias` to neutral
+- If session transition matters for this pair's mode, note in `reason`
+
+Output: `scalp audit: EURUSD=KEEP(wr 52%) GBPUSD=KEEP(no trades yet) AUDUSD=HALT(3L, 2h remaining) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked`
 
 ### 8e. Write updates atomically
 
