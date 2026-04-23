@@ -1,5 +1,5 @@
 {
-  "_comment": "Authored by Claude. News daemon polls these queries every cadence. Emits news_flash events ONLY when a headline contains ≥1 required keyword AND the URL hasn't been seen before AND the query's cooldown has elapsed. Claude updates this as thesis shifts.",
+  "_comment": "Authored by Claude. News daemon polls these queries every cadence. Emits news_flash events ONLY when a headline contains \u22651 required keyword AND the URL hasn't been seen before AND the query's cooldown has elapsed. Claude updates this as thesis shifts.",
   "queries": [
     {
       "id": "iran_ceasefire",
@@ -34,7 +34,7 @@
         "Vance trip"
       ],
       "cooldown_min": 30,
-      "note": "TUNED 2026-04-22 11:38 UTC — fixed-deadline binary REMOVED (4-source verification of Trump indefinite extension: Reuters/NYT/Detroit News/AJ). Dropped 'expire'/'expiry' (deadline p | 2026-04-22 23:55 UTC TUNE: DROPPED \"announce\"+\"Islamabad\" (caught Apr 12 WaPo Islamabad-talks-collapse republish via announce+Islamabad match). ADDED \"walks out\",\"Iran walkout\",\"Vance trip\" phrases. Keyword set now escalation-specific."
+      "note": "TUNED 2026-04-22 11:38 UTC \u2014 fixed-deadline binary REMOVED (4-source verification of Trump indefinite extension: Reuters/NYT/Detroit News/AJ). Dropped 'expire'/'expiry' (deadline p | 2026-04-22 23:55 UTC TUNE: DROPPED \"announce\"+\"Islamabad\" (caught Apr 12 WaPo Islamabad-talks-collapse republish via announce+Islamabad match). ADDED \"walks out\",\"Iran walkout\",\"Vance trip\" phrases. Keyword set now escalation-specific."
     },
     {
       "id": "hormuz_strait",
@@ -52,7 +52,7 @@
         "missile"
       ],
       "cooldown_min": 60,
-      "note": "RE-TUNED 2026-04-22T23:21:42Z — prior 30min cooldown + broad attack kw let Apr 18 Express Tribune India-summons-Iran-envoy archive fire this tick (5-day-old Touska-aftermath republish, not fresh kinetic rung). Added match_keywords=[2026,April,Apr 22,Apr 23] date filter (fed_fomc/boj/opec pattern). Cooldown 30→60min. Keeps kw list same — date filter forces current-cycle content.",
+      "note": "RE-TUNED 2026-04-22T23:21:42Z \u2014 prior 30min cooldown + broad attack kw let Apr 18 Express Tribune India-summons-Iran-envoy archive fire this tick (5-day-old Touska-aftermath republish, not fresh kinetic rung). Added match_keywords=[2026,April,Apr 22,Apr 23] date filter (fed_fomc/boj/opec pattern). Cooldown 30\u219260min. Keeps kw list same \u2014 date filter forces current-cycle content.",
       "match_keywords": [
         "2026",
         "April",
@@ -82,7 +82,7 @@
         "walkout"
       ],
       "cooldown_min": 120,
-      "note": "RE-TUNED 2026-04-22 18:55 UTC — prior 'retaliation'/'retaliate'/'struck'/'escalation'/'mine' flooded 12 stale archive articles this tick: 10 Apr 13-14 original blockade-announcement (Algemeiner/Fox/Globe & Mail/MSN/etc.) + 1 Apr 16 CNBC 'fourth day' + 1 Apr 19 Il Sole Touska republish. Those keywords match 9-day-old routine coverage of baseline state. REMOVED broad keywords; kept only action-verbs describing NEW escalation rungs (missile launched, casualties, sunk, ablaze) + forward diplomatic names (Vance/Witkoff/Kushner/Islamabad) + de-escalation-trigger phrases (Hormuz reopen, blockade lifted, new talks, walkout). Cooldown 60→120min. If this still floods: add date-filter logic to daemon."
+      "note": "RE-TUNED 2026-04-22 18:55 UTC \u2014 prior 'retaliation'/'retaliate'/'struck'/'escalation'/'mine' flooded 12 stale archive articles this tick: 10 Apr 13-14 original blockade-announcement (Algemeiner/Fox/Globe & Mail/MSN/etc.) + 1 Apr 16 CNBC 'fourth day' + 1 Apr 19 Il Sole Touska republish. Those keywords match 9-day-old routine coverage of baseline state. REMOVED broad keywords; kept only action-verbs describing NEW escalation rungs (missile launched, casualties, sunk, ablaze) + forward diplomatic names (Vance/Witkoff/Kushner/Islamabad) + de-escalation-trigger phrases (Hormuz reopen, blockade lifted, new talks, walkout). Cooldown 60\u2192120min. If this still floods: add date-filter logic to daemon."
     },
     {
       "id": "opec_supply",
@@ -101,7 +101,7 @@
         "production halt"
       ],
       "cooldown_min": 120,
-      "note": "RE-TUNED 2026-04-22T22:18:17Z — prior broad keywords ['increase','announce','hike','meeting'] matched 4 stale archives this tick (Aug 2025 NYT, Sep 2025 NYT, Mar 2026 Reuters x2). Narrowed to action-verbs + forward-looking supply-shock triggers tied to current Hormuz situation. Added match_keywords=['2026','April','May 2026','June 2026'] date filter (fed_fomc/boj pattern). Cooldown 60→120min.",
+      "note": "RE-TUNED 2026-04-22T22:18:17Z \u2014 prior broad keywords ['increase','announce','hike','meeting'] matched 4 stale archives this tick (Aug 2025 NYT, Sep 2025 NYT, Mar 2026 Reuters x2). Narrowed to action-verbs + forward-looking supply-shock triggers tied to current Hormuz situation. Added match_keywords=['2026','April','May 2026','June 2026'] date filter (fed_fomc/boj pattern). Cooldown 60\u2192120min.",
       "match_keywords": [
         "2026",
         "April",
@@ -128,7 +128,7 @@
         "decision"
       ],
       "cooldown_min": 180,
-      "note": "RE-TUNED 2026-04-22T22:01:27Z — prior 120min cooldown still let Jan 21 2026 Business Times 'Japanese bonds may rebound after Katayama calls for market calm' archive fire (stale market-calm commentary, not fresh action). Added match_keywords=['2026','April','Apr 27','Apr 28','policy meeting'] to enforce current-cycle content. Cooldown 120→180min. Same fed_fomc-style date-filter pattern. Re-evaluate after BoJ Apr 27-28.",
+      "note": "RE-TUNED 2026-04-22T22:01:27Z \u2014 prior 120min cooldown still let Jan 21 2026 Business Times 'Japanese bonds may rebound after Katayama calls for market calm' archive fire (stale market-calm commentary, not fresh action). Added match_keywords=['2026','April','Apr 27','Apr 28','policy meeting'] to enforce current-cycle content. Cooldown 120\u2192180min. Same fed_fomc-style date-filter pattern. Re-evaluate after BoJ Apr 27-28.",
       "match_keywords": [
         "2026",
         "April",
@@ -151,10 +151,17 @@
         "press conference",
         "Powell said"
       ],
-      "cooldown_min": 180,
-      "note": "TUNED 2026-04-22T21:27:27Z — added match_keywords=['2026'] to block Oct 2025 Powell archive republish (stale '2025' article fired this tick despite prior narrowing of query text). Strict 2026 filter will force current-FOMC-era matches only. Re-evaluate after Apr 28-29 meeting passes.",
+      "cooldown_min": 360,
+      "note": "TUNED 2026-04-22T21:27:27Z \u2014 added match_keywords=['2026'] to block Oct 2025 Powell archive republish (stale '2025' article fired this tick despite prior narrowing of query text). Strict 2026 filter will force current-FOMC-era matches only. Re-evaluate after Apr 28-29 meeting passes. | 2026-04-23T00:23Z RE-TUNE: prior match_keywords=['2026'] ineffective (substring '2026' present in query-string and many article URLs; 6 stale Powell archives fired this tick \u2014 Oct 2025/Jan 2026x2/Feb 2026/Apr 6/Apr 14). Replaced with narrower match_keywords that require a current-decision-cycle phrase (Apr 29 meeting specifics). Raised cooldown 180\u2192360min.",
       "match_keywords": [
-        "2026"
+        "April 29",
+        "Apr 29",
+        "FOMC decision today",
+        "cut 25",
+        "held rates",
+        "Powell presser",
+        "Powell press conference",
+        "statement today"
       ]
     },
     {
@@ -167,7 +174,7 @@
         "unexpected"
       ],
       "cooldown_min": 240,
-      "note": "RE-TUNED 2026-04-21 07:38 UTC — prior keywords 'hike'/'shock'/'hawkish'/'dovish' still matched 10 stale archive articles (pub Dec 2025 — Mar 2026) this tick. Further narrowed to action/person specific. Market pricing May hike to 4.35%. Risk-off may force RBA to pause — AUD bid thesis broken under blockade."
+      "note": "RE-TUNED 2026-04-21 07:38 UTC \u2014 prior keywords 'hike'/'shock'/'hawkish'/'dovish' still matched 10 stale archive articles (pub Dec 2025 \u2014 Mar 2026) this tick. Further narrowed to action/person specific. Market pricing May hike to 4.35%. Risk-off may force RBA to pause \u2014 AUD bid thesis broken under blockade."
     },
     {
       "id": "us_tariff",

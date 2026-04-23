@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T00:08:44.155722Z",
+  "generated_at": "2026-04-23T00:26:11.003056Z",
   "ticks": [
     {
       "ts_utc": "2026-04-21T05:05:00Z",
@@ -283,6 +283,37 @@
         "closed": 0
       },
       "regime_one_liner": "0 events, broker flat $1000/0pos, confluence API only_0_candles glitch persistent, all 5 watchlist alerts KEEP"
+    },
+    {
+      "tick_ts_utc": "2026-04-23T00:23:30Z",
+      "trigger": "heartbeat",
+      "events_consumed": 7,
+      "events_detail": "1 hormuz Apr22 Goodreturns seizure republish (priced) + 6 fed_fomc stale Powell archives (match_keywords='2026' ineffective)",
+      "alerts": {
+        "kept": 3,
+        "tuned": 0,
+        "removed": 0,
+        "added": 0
+      },
+      "queries_tuned": [
+        "fed_fomc"
+      ],
+      "queries_tune_detail": "fed_fomc match_keywords replaced with current-decision-phrase list + cooldown 180\u2192360min",
+      "positions_delta": 0,
+      "account_balance_usd": 1000.0,
+      "daily_pnl_usd": 0.0,
+      "confluence_restored": true,
+      "attention_matrix": {
+        "EURUSD": "swing=NONE scalp=ACTIVE ready=none comp=-1.5 neutral",
+        "GBPUSD": "swing=NONE scalp=ACTIVE ready=none comp=+8.5 neutral",
+        "AUDUSD": "swing=NONE scalp=ACTIVE ready=none comp=+8.5 neutral",
+        "USDJPY": "swing=WATCH scalp=OFF(JPY pip-val) ready=moderate comp=+48.5 4/4 bullish (against SELL thesis) dist=55.8p>1xH1ATR",
+        "USDCAD": "swing=NONE scalp=OFF(CAD+spread) ready=none comp=-23.5",
+        "USDCHF": "swing=NONE scalp=OFF(CHF pip-val) ready=none comp=+1.5",
+        "GOLD": "swing=WATCH scalp=N/A(5p) ready=weak comp=-35 3/4 bearish (against BUY thesis) dist=46p rule-2 KEEP",
+        "OIL_CRUDE": "swing=WATCH scalp=N/A(4p) ready=weak comp=+34.5 3/4 bullish dist=320p (+125p further) rule-1 cond1 FALSE rule-2 KEEP",
+        "BTCUSD": "swing=NONE scalp=N/A(50p) ready=moderate comp=+43.5 4/4 bullish no thesis anchor"
+      }
     }
   ]
 }
