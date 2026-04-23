@@ -542,7 +542,16 @@
       "price": 4809.28
     }
   ],
-  "last_tick_summary": "2026-04-23T08:25:00Z \u2014 08:25 forex tick \u2014 2 evt (1 news_flash iran_ceasefire Qatar-backs-extension Anadolu Apr-21 2d-stale non-altering, 1 alert_audit_request USDJPY AP Iraqi-captain 'attack' generic Hormuz non-altering). USDJPY confluence comp +51 moderate 4/4 bull aligned=false vs SELL 160 dist 33.85p (just above 30p near-threshold) WATCH rule-2 |comp|\u226540 extension-real fade-live KEEP. 5 level_alerts KEEP (USDJPY 160 sell rule-2 / GOLD 4775 buy rule-2 4h=0.8 / OIL 90.30 retest buy rule-2 4h=0.67/24h=1.0 / OIL 93.2365 sweep buy retest weak watchlist / GOLD 4721.68 sweep sell retest weak watchlist). 9 structure_watch KEEP. 8 news_queries KEEP bug-deferred. Scalp 3 FX shadow KEEP no-trades + 3 disabled pip-conv (USDJPY/CHF/CAD) + 3 N/A spread (GOLD/OIL/BTC) halts=0 daily_pnl 0. 0 trades $1000/0pos BOJ T-4d (Apr 27-28) FOMC T-6d (Apr 29). attention_covered=9/9. web_search skipped 0pos-regime-stable-news_watcher-covered.",
+  "last_tick_summary": {
+    "ts_utc": "2026-04-23T09:25:00Z",
+    "events_consumed": 10,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 0,
+    "attention_covered": "9/9",
+    "binary_event": "iran_ceasefire_indefinite_extension_hormuz_friction",
+    "note": "09:25 forex auto \u2014 2 evt (news_flash hormuz_strait CNBC Apr-19 4d-stale 'Oil prices jump after Iran and U.S. attack commercial ships' matched 'attack' + paired alert_audit_request OIL_CRUDE oil_crude_retest_90_buy; daemon match_keywords date-filter STILL-NOT-ENFORCED forex_news_watcher.py:246 known bug; query tuned prior tick 03:25/04:35 DD-Mon-YYYY token filter yet daemon not reloading/enforcing)"
+  },
   "last_scan": "2026-04-23T05:05:00Z",
   "capital_base": 1000.0,
   "tick_log": [
@@ -726,6 +735,14 @@
       "trades_opened": 0,
       "trades_closed": 0,
       "skips": 0
+    },
+    {
+      "ts_utc": "2026-04-23T09:25:00Z",
+      "summary": "09:25 forex auto \u2014 2 evt (news_flash hormuz_strait CNBC Apr-19 4d-stale 'Oil prices jump after Iran and U.S. attack commercial ships' matched 'attack' + paired alert_audit_request OIL_CRUDE oil_crude_retest_90_buy; daemon match_keywords date-filter STILL-NOT-ENFORCED forex_news_w"
+    },
+    {
+      "ts_utc": "2026-04-23T09:25:00Z",
+      "summary": "09:25 forex auto \u2014 2 evt (news_flash hormuz_strait CNBC Apr-19 4d-stale 'Oil prices jump after Iran and U.S. attack commercial ships' matched 'attack' + paired alert_audit_request OIL_CRUDE oil_crude_retest_90_buy; daemon match_keywords date-filter STILL-NOT-ENFORCED forex_news_w"
     }
   ],
   "binary_event": {
@@ -741,7 +758,7 @@
     ],
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). Monitor for reactivation on any T-24h trigger."
   },
-  "regime_note": "2026-04-23T09:13:00Z \u2014 09:13 forex tick \u2014 2 evt (news_flash iran_ceasefire WVIR 'US and Iran end 21-hour ceasefire talks without agreement before Vance departs Pakistan' Sat Apr 11 2026 12d-stale archive matched bare 'Vance' solo-kw + paired alert_audit_request USDJPY from same). Daemon match_keywords date filter STILL-NOT-ENFORCED per known bug forex_news_watcher.py:246. NOT thesis-altering \u2014 Islamabad collapse/Vance-trip-collapse already priced into current regime (indefinite ceasefire extension + Hormuz blockade active). Tuned iran_ceasefire query: DROPPED bare 'Vance' solo-kw, ADDED 'Vance departs'/'Vance walks' phrase-required (governor-name-solo failure pattern same as prior 'Bullock'/'Katayama'/'Islamabad'). No fresh confluence re-scan (08:25 last 48min ago, price stable, 0 positions, budget-conserve). 5 level_alerts KEEP. 9 structure_watch KEEP. 8 news_queries KEEP (iran_ceasefire tuned). Scalp 3 FX shadow KEEP 0-trades + 3 disabled pip-conv (USDJPY/CHF/CAD) + 3 N/A spread (GOLD/OIL/BTC) halts=0 daily_pnl 0. 0 trades $1000/0pos BOJ T-4d (Apr 27-28) FOMC T-6d (Apr 29). attention_covered=9/9.",
-  "tick_ts_utc": "2026-04-23T09:13:00Z",
-  "state_ts_utc": "2026-04-23T09:13:00Z"
+  "regime_note": "2026-04-23T09:25:00Z \u2014 09:25 forex auto \u2014 2 evt (news_flash hormuz_strait CNBC Apr-19 4d-stale 'Oil prices jump after Iran and U.S. attack commercial ships' matched 'attack' + paired alert_audit_request OIL_CRUDE oil_crude_retest_90_buy; daemon match_keywords date-filter STILL-NOT-ENFORCED forex_news_watcher.py:246 known bug; query tuned prior tick 03:25/04:35 DD-Mon-YYYY token filter yet daemon not reloading/enforcing). NOT thesis-altering \u2014 Hormuz blockade ongoing backgrounder already priced into regime INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING. No fresh confluence re-scan (budget tight; last 09:13+08:25 reads carried). Latest bar_close 09:15 M15: USDJPY 159.707 (+46p since 05:05 ref 159.549, dist=29.3p from 160 = INSIDE 30p near-threshold; rule-2 |comp|+51 mod 4/4 bull aligned=false vs SELL \u2192 fade LIVE but alert-note 'skip naked breaks require rejection+rate-check/verbal intervention confirm' overrides default LIMIT \u2192 swing=ARMED-on-tag not ARMED-LIMIT). OIL_CRUDE 94.236 (+39p from 93.842 last_close, extending AWAY from 90.30 retest dist=394p dormant). GOLD 4701.085 (-2.9p from 4703.99 floor-test 4698-4700 cond3 FALSE rule-1 KEEP). 5 level_alerts KEEP: USDJPY 160 sell fade swing=ARMED-on-tag rule-2 +51 in-near-threshold cf 1f hit 1.0/1.0/1.0 / GOLD 4775 buy escalation rule-2 4h=0.8 / OIL 90.30 retest buy rule-2 4h=0.67/24h=1.0 dormant / OIL 93.2365 sweep-retest buy watchlist weak / GOLD 4721.68 sweep-retest sell watchlist weak. 9 structure_watch KEEP. 8 news_queries KEEP bug-deferred. Scalp 3 FX shadow KEEP 0-trades + 3 disabled pip-conv (USDJPY/CHF/CAD) + 3 N/A spread (GOLD/OIL/BTC) halts=0 daily_pnl 0. 0 trades $1000/0pos BOJ T-4d (Apr 27-28) FOMC T-6d (Apr 29). attention_covered=9/9. web_search skipped 0pos-regime-stable-news_watcher-covered.",
+  "tick_ts_utc": "2026-04-23T09:25:00Z",
+  "state_ts_utc": "2026-04-23T09:25:00Z"
 }

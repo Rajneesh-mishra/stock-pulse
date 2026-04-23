@@ -496,5 +496,14 @@
     "open_positions": 0,
     "daily_pnl": 0.0,
     "summary": "09:13 auto \u2014 2 evt (news_flash iran_ceasefire WVIR Sat-Apr-11 12d-stale 'US and Iran end 21-hour ceasefire talks without agreement before Vance departs Pakistan' matched bare 'Vance' solo-kw + paired alert_audit_request USDJPY; daemon match_keywords date filter STILL-NOT-ENFORCED known bug forex_news_watcher.py:246). NOT thesis-altering \u2014 Islamabad collapse + Vance-trip already priced into indefinite extension regime. Tuned iran_ceasefire: DROPPED bare 'Vance' (governor-name-solo failure pattern like prior Bullock/Katayama/Islamabad), ADDED 'Vance departs'/'Vance walks' phrase-required. No fresh confluence (budget). 5 level_alerts KEEP (USDJPY160, GOLD4775, OIL90.30, OIL93.2365sweep, GOLD4721sweep). 9 structure_watch KEEP. 8 news_queries (iran_ceasefire tuned, 7 KEEP). Scalp 3 FX shadow KEEP. 0pos BOJ T-4d (Apr 27-28) FOMC T-6d (Apr 29)."
+  },
+  {
+    "ts_utc": "2026-04-23T09:25:00Z",
+    "events_consumed": 10,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 0,
+    "attention_covered": "9/9",
+    "summary": "09:25 forex auto \u2014 2 evt (news_flash hormuz_strait CNBC Apr-19 4d-stale 'Oil prices jump after Iran and U.S. attack commercial ships' matched 'attack' + paired alert_audit_request OIL_CRUDE oil_crude_retest_90_buy; daemon match_keywords date-filter STILL-NOT-E"
   }
 ]
