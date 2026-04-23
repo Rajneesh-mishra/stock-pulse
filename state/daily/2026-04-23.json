@@ -345,5 +345,24 @@
     "balance": 1000.0,
     "alerts_active": 3,
     "note": "iran_ceasefire Trump-tease news_flash soft single-aggregator, broker candle degraded, 3 KEEP no trades"
+  },
+  {
+    "tick_ts_utc": "2026-04-23T07:57:00Z",
+    "events_processed": 5,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 1,
+    "note": "OIL_CRUDE M15 liquidity_sweep 93.2365 (wick 39.1p, close 93.55) buy bias \u2014 comp +32 weak (below moderate) \u2192 watchlist ADD only (oil_sweep_9323_buy_retest). 4 bar_close auto. 3 existing alerts KEEP: USDJPY 160 sell fade WATCH, GOLD 4775 buy floor-test WATCH, OIL 90.30 buy retest-dormant WATCH. 0 trades, 0pos, $1000 bal. BOJ T-4d FOMC T-6d.",
+    "attention_matrix": {
+      "EURUSD": "swing=NONE scalp=ACTIVE(shadow) readiness=n/a \u2014 range_extreme mode london/ny_overlap, 07:57 M15 bar_close noise no actionable setup",
+      "GBPUSD": "swing=NONE scalp=ACTIVE(shadow) readiness=n/a \u2014 session_open_break london, bar_close noise",
+      "AUDUSD": "swing=NONE scalp=ACTIVE(shadow) readiness=n/a \u2014 range_extreme asia/ny_overlap",
+      "USDJPY": "swing=WATCH scalp=OFF(pip-conv-pending) readiness=moderate \u2014 comp+51 mod 4/4 bull vs SELL 160 fade dist 45.1p counter-trend rule-2 KEEP, borderline WATCH",
+      "USDCAD": "swing=NONE scalp=OFF(pip-conv-pending) readiness=n/a \u2014 bar_close noise, no active fade alert",
+      "USDCHF": "swing=NONE scalp=OFF(pip-conv-pending) readiness=n/a \u2014 bar_close noise, no active alert",
+      "GOLD": "swing=WATCH scalp=N/A(spread 5p) readiness=weak \u2014 comp-35 weak 3/4 bear vs BUY 4775 dist 698.6p floor-test 4698-4700 cond3 FALSE rule-1+2 KEEP cf 4h=0.8",
+      "OIL_CRUDE": "swing=WATCH scalp=N/A(spread 4p) readiness=weak \u2014 liquidity_sweep 93.2365 NEW buy-bias watchlist, + carried 90.30 retest dormant rule-1+2 KEEP cf 4h=0.67/24h=1.0",
+      "BTCUSD": "swing=NONE scalp=N/A(spread 50p) readiness=n/a \u2014 no alert, no event"
+    }
   }
 ]
