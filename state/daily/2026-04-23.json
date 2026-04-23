@@ -92,5 +92,13 @@
     "closed": 0,
     "skipped": 6,
     "note": "00:52 UTC tick \u2014 1 GOLD liquidity_sweep up-sweep 4749.45 wick 26.7p 2.5xATR sell-bias + 5 bar_close routine. Confluence GOLD comp -27.5 weak 3/4 bearish aligned with sweep but <moderate = not armable. No counter-alert. $1000/0, 0 trades, 3+9+8 KEEP."
+  },
+  {
+    "ts_utc": "2026-04-23T01:08:00Z",
+    "events_processed": 2,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "skipped": 2,
+    "notes": "opec_supply Feb13 archive republish (matched 'war' required-kw + '2026' match-kw) + derivative OIL alert_audit_request. Stale archive NOT thesis-altering; OIL comp +34.5 weak aligned not armable 286p away; KEEP alert. TUNED query: tighter required-kw (explicit supply-verbs only) + strict forward-month filters + cooldown 120\u2192240min. No trades $1000/0pos."
   }
 ]

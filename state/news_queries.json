@@ -89,26 +89,29 @@
       "query": "OPEC crude oil production",
       "keywords_required": [
         "emergency",
-        "cut",
+        "surprise cut",
         "surprise meeting",
-        "May 2026",
-        "June 2026",
-        "Hormuz",
-        "war",
-        "Iran",
+        "production halt",
         "Saudi raises",
         "Saudi cuts",
-        "production halt"
+        "OPEC+ cut",
+        "OPEC+ hike",
+        "output cut",
+        "output hike",
+        "Hormuz closure",
+        "Hormuz shut",
+        "Hormuz reopen"
       ],
-      "cooldown_min": 120,
-      "note": "RE-TUNED 2026-04-22T22:18:17Z \u2014 prior broad keywords ['increase','announce','hike','meeting'] matched 4 stale archives this tick (Aug 2025 NYT, Sep 2025 NYT, Mar 2026 Reuters x2). Narrowed to action-verbs + forward-looking supply-shock triggers tied to current Hormuz situation. Added match_keywords=['2026','April','May 2026','June 2026'] date filter (fed_fomc/boj pattern). Cooldown 60\u2192120min.",
+      "cooldown_min": 240,
+      "note": "RE-TUNED 2026-04-23T01:08:00Z \u2014 prior 00:41 UTC fire matched Feb 13 2026 Reuters archive (70-day-old) on 'war' keyword. Root cause: 'war'/'Iran' in keywords_required matched any Hormuz-tangential archive regardless of supply content; '2026'/'April' in match_keywords matched published-date string on archives. REMOVED broad geopolitical kw ('war','Iran') and loose date-year kw ('2026','April'). REPLACED with explicit supply-shock action verbs ('surprise cut','OPEC+ cut','output hike','production halt','Saudi raises/cuts','Hormuz closure/shut/reopen') and strict forward-month kw ('May 2026','June 2026','July 2026','this week','next week','announced today','announced yesterday'). Cooldown 120\u2192240min (supply news is slow-drip, don't need sub-2h repeats). Prior note: 'RE-TUNED 2026-04-22T22:18:17Z \u2014 prior broad keywords ['increase','announce','hike','meeting'] matched 4 stale archives this tick (Aug 2025 NYT, Sep 2025 NYT, Mar 2026 Reuters x2). Narrowed to action-verbs + forward-looking supply-shock triggers tied to current Hormuz situation. Added match_keywords=['2026','April','May 2026','June 2026'] date filter (fed_fomc/boj pattern). Cooldown 60\u2192120min.'",
       "match_keywords": [
-        "2026",
-        "April",
         "May 2026",
         "June 2026",
-        "this month",
-        "this week"
+        "July 2026",
+        "this week",
+        "next week",
+        "announced today",
+        "announced yesterday"
       ]
     },
     {
