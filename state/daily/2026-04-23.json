@@ -225,5 +225,16 @@
     "binary_event": "iran_ceasefire active=false",
     "broker_balance_usd": 1000,
     "open_positions": 0
+  },
+  {
+    "tick_utc": "2026-04-23T04:50:00Z",
+    "events_processed": 1,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 1,
+    "binary_event": "BOJ T-4d FOMC T-6d",
+    "note": "1 evt Reuters Jun-2 2025 OPEC+ output-hike 11mo archive (legit kw, daemon match_keywords NOT enforced bug surfaced). Confluence API only_0_candles glitch carried 04:20 reads. 3 KEEP all borderline/dormant. 0 trades, $1000/0pos.",
+    "positions": 0,
+    "attention_covered": "9/9"
   }
 ]

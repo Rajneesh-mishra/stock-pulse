@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-23T04:20:00Z",
-  "pruned_at": "2026-04-23T04:20:00Z",
-  "pruned_by": "2026-04-23T04:20:00Z tick \u2014 0 events (heartbeat), confluence API RESTORED after 2-tick glitch. 3 KEEP refreshed: USDJPY 159.5645 dist 43.55p just>3xH1ATR 42.4p WATCH 160 SELL comp+51 mod 4/4 bull (counter-trend) / GOLD 4705.14 dist 698.6p floor-test 4698-4700 cond3 FALSE rule-1 KEEP cf 4h=0.8 rule-2 KEEP / OIL 94.002 dist 370.2p<3xH4ATR 680.9p WATCH 90.30 BUY cf 4h=0.67 rule-2 KEEP. 9 structure_watch KEEP. 8 news queries KEEP (no fires this tick). scalp 3 FX shadow KEEP + 3 disabled + 3 N/A. 0 trades $1000/0pos. BOJ T-4d FOMC T-6d.",
+  "last_updated_by_claude": "2026-04-23T04:50:00Z",
+  "pruned_at": "2026-04-23T04:50:00Z",
+  "pruned_by": "2026-04-23T04:50:00Z tick \u2014 1 evt Reuters Jun-2 2025 OPEC+ output-hike 11mo archive (legit kw 'output hike' can't filter without daemon pubDate check \u2014 flagged in regime_note). Confluence API only_0_candles glitch 3rd tick. Carrying 04:20 reads: USDJPY 159.5645 43.55p borderline WATCH / GOLD 4705.14 698.6p floor-test / OIL 94.002 370.2p retest dormant. 3 KEEP, 9 structure_watch KEEP, 8 queries KEEP bug-deferred, scalp 3 FX shadow KEEP + 3 disabled + 3 N/A. 0 trades. BOJ T-4d FOMC T-6d.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
