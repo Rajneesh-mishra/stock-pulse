@@ -165,6 +165,7 @@ Skip only if:
 | `alert_audit_request` | News matched this alert's keywords | Re-score THIS alert. If readiness moderate+, arm anticipation LIMIT |
 | `news_flash` | Regime-changing? | Re-score affected alerts only |
 | `trail_candidate` | Move SL? | At +1R: SL → breakeven. At +2R: SL → +0.5R (lock half profit). At +3R: SL → +1.5R. Modify via `python3 forex/api.py modify <dealId> <sl> <tp>` |
+| _time check_ | Trade is age ≥ 4h and setup is narrative/validated? | **Close at market.** Data shows narrative alerts (escalation, sweep-retest) pop 1-4h then revert at 24h. Don't hold overnight. |
 | `position_closed` | Log trade | Update trade_history, daily_pnl |
 | `daily_pnl_threshold` | Stop tier? | If `stop`: close all, set control, telegram |
 
@@ -186,7 +187,30 @@ If anchoring ≥2 ticks to a deadline (ceasefire, FOMC, CPI):
 3. Only 1 source → `binary_event.verified: false`, annotate "deadline unverified"
 4. Do not reuse unverified deadlines across >3 ticks
 
-## Step 6 — Execute approved trades
+## Step 6 — Manage existing positions FIRST, then execute new trades
+
+### 6a. Position-age check (NEW — data-driven time exit)
+
+For each open position, compute age = `now - opened_at`. Check `state/forex_state.json.open_positions[i]` for the `thesis_type` tag you set at entry (`narrative`, `trend`, `validated_sweep_retest`, `counter_trend_fade`, `scalp_entry`).
+
+Apply the time cap by type:
+
+| thesis_type | max hold | why |
+|---|---|---|
+| `narrative` / `validated_sweep_retest` | **4h** | Counterfactual data: setups pop 1-4h, revert at 24h |
+| `counter_trend_fade` | 8h | Fades at extremes reset on a session, not a narrative |
+| `trend` | 24h | Structural-trend trades deserve a day |
+| `scalp_entry` | 1h | Scalp range → exit even if neither SL/TP hit |
+
+If age ≥ max_hold, close at market:
+```bash
+python3 forex/api.py close <dealId>
+bash send_telegram.sh "*TIME EXIT* <epic> <dir> <entry> → <mid> pnl=<x>"
+```
+
+### 6b. Execute new approved trades
+
+When entering a trade, ALWAYS tag `thesis_type` in `state/forex_state.json.open_positions[i].thesis_type` so 6a can time-exit correctly.
 
 ```bash
 python3 forex/risk_guard.py check <EPIC> <BUY|SELL> <size> <stop_level> <profit_level>
@@ -227,9 +251,21 @@ Show the ATR math in your audit line. Example: `audusd_breakdown_trigger REMOVE 
 Replace removed alerts with a new zone anchored to the current week's swept liquidity / fresh OB / FVG.
 
 **Mechanical rule 2 — COUNTERFACTUAL-DRIVEN PRUNE**:
-- `fires >= 3 AND hit_rate < 0.30 at 1h AND 4h` → REMOVE (noise)
-- `fires >= 3 AND hit_rate > 0.55 at 4h or 24h` → KEEP even if stale (real edge)
+- `fires >= 3 AND hit_rate < 0.40 at 4h` → REMOVE (noise — 4h is the decisive horizon; don't use 24h)
+- `fires >= 3 AND hit_rate > 0.60 at 4h` → KEEP even if stale AND promote (see Rule 3 below)
 - `fires < 3` → decide on merits
+
+**Mechanical rule 3 — VALIDATED-ALERT PROMOTION** (NEW):
+An alert that has fired ≥ 2 times with **hit_rate ≥ 0.60 at 4h** is "validated". Validated alerts:
+- Earn the right to fire **naked LIMIT** at moderate+ readiness — note-overrides like "require rejection confirmation" are RELAXED for them. The counterfactual is the proof.
+- Use a **4-hour HARD TIME EXIT** on any trade entered via a validated narrative/escalation alert. Per-fire data shows these setups pop 1-4h then revert at 24h — take the move, exit on time, don't hold overnight.
+
+Examples from current ledger (as of last run — update this table when state changes):
+- `gold_escalation_buy_zone` — 10 fires, 90%/80% 1h/4h → validated, 4h time-stop
+- `oil_sweep_9323_buy_retest` — 4 fires, 75%/100% 1h/4h → validated, 4h time-stop
+- `gold_sweep_4721_sell_retest` — 5 fires, 60%/100% 1h/4h → validated, 4h time-stop
+
+Note: "validated" applies ONLY for promotion / sizing relaxation. It does NOT override hard risk checks (SL/TP mandatory, risk_guard approval, exposure caps).
 
 For each level_alert + structure_watch pair, assign: KEEP | MODIFY | REMOVE | ADD.
 
