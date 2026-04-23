@@ -236,7 +236,31 @@ bash send_telegram.sh "*TRADE EXECUTED* ..."
 
 ## Step 8 — MANDATORY AUDIT (every tick, no skipping)
 
-### 8a. Watchlist audit — with TWO mechanical rules
+### 8a. Watchlist audit — with THREE mechanical rules
+
+**Alert note shape (MANDATORY — enforced on every ADD and MODIFY):**
+
+Every alert's `note` field MUST follow this structure:
+
+```
+ENTRY: <technical criterion — what must happen on the chart>
+
+CONTEXT: <regime/narrative — why this thesis exists, OPTIONAL>
+
+SL: <price>  TP: <price>  R:R target: <number>
+
+<one-line author stamp: who rewrote, when, why>
+```
+
+Hard rules:
+- **ENTRY must be PURELY technical.** No news keywords (intervention, ceasefire, Fed, headline, etc.) in the ENTRY line. Acceptable: rejection wick, M15 close, BOS, FVG, swept level, retest, ATR distance.
+- **CONTEXT is narrative and optional.** If news context matters for the thesis, put it here. It is NOT a gate — the ENTRY is.
+- **No tick-by-tick REFRESH appends.** If you need to modify, REWRITE the entire note (keeping ENTRY/CONTEXT/SL/TP structure). Don't pile up "REFRESH 2026-04-23T19:14Z: KEEP..." entries — that's how notes turn into 20KB of ratchet bloat. One authoritative note per alert.
+- **Also populate structured fields**: `entry_criterion`, `regime_context`, `sl`, `tp`, `rr_target`, `last_updated`.
+
+If you find an existing alert whose note doesn't follow this shape, MODIFY it into shape during this tick's audit.
+
+
 
 Every pair in `instruments` needs matching `structure_watch`. Default TFs: `["HOUR", "MINUTE_15"]`. Active-setup pairs may add `HOUR_4`. BTC: `["HOUR_4", "HOUR"]`.
 
