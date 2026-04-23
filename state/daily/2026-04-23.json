@@ -571,5 +571,14 @@
     "daily_pnl": 0,
     "balance": 1000.0,
     "note": "13 evt (6 liquidity_sweeps + 7 bar_close) \u2014 GOLD composite flipped -40 moderate bearish at px 4685; gold_sweep_4721 readiness lifted weak\u2192moderate but price just outside 30p near-threshold. 5 alerts KEEP 9 SW KEEP scalp shadow. 0pos $1000. attention_covered=9/9."
+  },
+  {
+    "tick_ts_utc": "2026-04-23T18:09:10Z",
+    "summary": "18:08 forex auto \u2014 2 evt iran_ceasefire Apr-22 Hormuz ships republish (not thesis-altering) + paired USDJPY audit. Carried 17:52 reads. 0 trades 0pos $1000. attention_covered=9/9.",
+    "events_consumed": 2,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "attention_covered": "9/9",
+    "budget_remaining_usd": 1.08
   }
 ]
