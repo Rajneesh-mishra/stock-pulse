@@ -173,13 +173,26 @@
       "id": "rba_hike",
       "query": "Reserve Bank Australia RBA rate",
       "keywords_required": [
-        "Bullock",
+        "surprise cut",
+        "surprise hike",
         "May meeting",
-        "surprise",
-        "unexpected"
+        "emergency",
+        "unscheduled",
+        "cash rate raised",
+        "cash rate lowered",
+        "hold rates",
+        "voted to hike",
+        "voted to cut"
       ],
       "cooldown_min": 240,
-      "note": "RE-TUNED 2026-04-21 07:38 UTC \u2014 prior keywords 'hike'/'shock'/'hawkish'/'dovish' still matched 10 stale archive articles (pub Dec 2025 \u2014 Mar 2026) this tick. Further narrowed to action/person specific. Market pricing May hike to 4.35%. Risk-off may force RBA to pause \u2014 AUD bid thesis broken under blockade."
+      "match_keywords": [
+        "Apr 2026",
+        "May 2026",
+        "this week",
+        "announced today",
+        "announced yesterday"
+      ],
+      "note": "RE-TUNED 2026-04-23T03:33:00Z \u2014 prior keywords ['Bullock','May meeting','surprise','unexpected'] still matched Jul 23 2025 Guardian Bullock-wary-of-cutting archive (9 months stale) via solo 'Bullock' governor-name token. 'Bullock' appears in any RBA-related archive backgrounder regardless of current relevance (same failure mode as 'Katayama'/'Islamabad' in earlier tunes). STRIPPED bare 'Bullock' + single-word 'surprise'/'unexpected'; REPLACED with action-phrase required ('surprise cut','surprise hike','cash rate raised','voted to hike','emergency','unscheduled','hold rates'). Added match_keywords date filter following boj_intervention/opec_supply pattern. Cooldown 240min kept. Prior: 'RE-TUNED 2026-04-21 07:38 UTC \u2014 narrowed to action/person specific. Market pricing May hike to 4.35%; risk-off may force RBA pause \u2014 AUD bid thesis broken under blockade.'"
     },
     {
       "id": "us_tariff",
