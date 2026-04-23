@@ -1,6 +1,6 @@
 {
   "regime": "INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING",
-  "regime_note_prev": "2026-04-23T00:52:00Z - 00:52 UTC tick \u2014 6 events (1 GOLD liquidity_sweep 00:30 up-sweep 4749.45 wick 26.7p 2.5xATR sell bias + 5 bar_close M15 routine on OIL/USDCAD/EURUSD/GBPUSD/USDCHF). GOLD confluence comp -27.5 readiness=weak 3/4 bearish (DAY -0.4, H4 +0.1, H1 -0.65, M15 -0.15) \u2192 agrees with sweep-sell direction BUT weak<moderate per Step 4b = not armable for LIMIT. Not adding counter-directional alert (precedent: prior USDCAD sweep alert removed after 93min; magnitude here 2.5xATR not 4xATR, doesn't warrant). Existing GOLD 4775 BUY rule-2 real edge (4h=0.8) KEEP. Price refresh GOLD 4729.025\u21924743.86 (-15p). 3 alerts KEEP, 9 structure_watch KEEP, 8 news_queries KEEP. Broker $1000/0pos reconciled. 0 trades. BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 28-29), iran_ceasefire binary=inactive.",
+  "regime_note_prev": "2026-04-23T01:08:00Z - 01:08 UTC tick \u2014 2 events (1 news_flash opec_supply Feb13 2026 Reuters archive 70-day-old republish matching 'war' required-kw and '2026' match-kw + 1 derivative alert_audit_request OIL_CRUDE oil_crude_retest_90_buy). AUDIT: stale archive NOT thesis-altering (OPEC+ May +206k bpd already priced; Fri Feb 13 OPEC+ output-increase reporting superseded by current Apr 22 Hormuz seizure regime). OIL confluence: comp +34.5 readiness=weak 3/4 bullish (DAY +0.4, H4 -0.15, H1 +0.7, M15 +0.9) aligned with BUY thesis but weak<moderate = not armable per Step 4b. Price 93.159 dist 286p from 90.30 (prior tick was 93.506 dist 320p \u2014 retrace 35p). Rule-1 cond1 dist 286p < 3\u00d7H4ATR 726p FALSE not stale-remove. Rule-2 4h=0.67 KEEP real edge. Alert unchanged, refresh appended. TUNED opec_supply: removed broad 'war'/'Iran' required-kw (matched Hormuz-tangential archives) + '2026'/'April' match-kw (matched published-date strings); replaced with explicit supply-shock verbs (surprise cut, OPEC+ cut/hike, output cut/hike, Saudi raises/cuts, Hormuz closure/shut/reopen) + strict forward-month kw (May/June/July 2026, this week, next week, announced today/yesterday). Cooldown 120\u2192240min. 3 level_alerts KEEP (USDJPY 160 fade 55.8p WATCH moderate, GOLD 4775 buy 31p WATCH weak-bearish rule-2 real edge, OIL 90.30 buy 286p WATCH weak-bullish rule-2 real edge). 9 structure_watch KEEP. Broker $1000/0pos reconciled. 0 trades $1000/0pos. BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 28-29), iran_ceasefire binary=inactive/indef-extension. scalp: 3 majors ACTIVE (EURUSD/GBPUSD/AUDUSD shadow mode), USDJPY/USDCHF/USDCAD DISABLED (pip-value quote handling), GOLD/OIL/BTC N/A (spread).",
   "open_positions": [],
   "watchlist": [
     {
@@ -471,6 +471,14 @@
       "closed": 0,
       "skipped": 6,
       "note": "00:52 UTC tick \u2014 6 events (1 GOLD liquidity_sweep 00:30 4749.45 up-sweep wick 26.7p 2.5xATR sell-bias + 5 bar_close routine). GOLD confluence comp -27.5 weak 3/4 bearish \u2192 agrees sweep-dir but <moderate not armable per 4b. No counter-alert added (USDCAD-sweep precedent, 2.5x<4xATR). GOLD price 4729\u21924743.86 refresh (+14.8p drift). 3 alerts KEEP, 9 structure KEEP, 8 queries KEEP. $1000/0. 0 trades. BOJ T-4d, FOMC T-6d."
+    },
+    {
+      "ts_utc": "2026-04-23T01:00:24Z",
+      "events_in": 9,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 9,
+      "summary": "01:00 UTC \u2014 9 events (AUDUSD sweep 0.9p noise + GOLD 4752 up-sweep 18.4p 1.73xATR 3rd-cluster + 7 bar_close). No sweep armable (AUDUSD conf opposes+wick tiny, GOLD conf weak<moderate). USDJPY +43.5 mod AGAINST 160 SELL 68.9p WATCH, OIL +34.5 weak BUY 250p WATCH, GOLD -27.5 weak 4775 BUY 29p rule-2 KEEP. 3 alerts KEEP refresh. 0 trades $1000/0."
     }
   ],
   "recent_skips": [
@@ -504,11 +512,11 @@
       "price": 4809.28
     }
   ],
-  "last_tick_summary": "01:08 UTC \u2014 2 events (opec_supply Feb13 stale archive + derivative OIL audit). KEEP OIL 90.30 alert (weak+aligned, 286p away, not armable). TUNED opec_supply query to block stale-archive false positives. 0 trades $1000/0pos.",
+  "last_tick_summary": "01:00 UTC \u2014 9 events (2 sweeps 7 bar_close). GOLD 4752 up-sweep 3rd-cluster weak not armable. 3 KEEP refresh. $1000/0pos.",
   "last_scan": {
-    "timestamp": "2026-04-23T01:08:00Z",
-    "events_processed_last_tick": 2,
-    "events_acted_last_tick": 1
+    "timestamp": "2026-04-23T01:00:24Z",
+    "events_processed_last_tick": 9,
+    "events_acted_last_tick": 0
   },
   "capital_base": 1000.0,
   "tick_log": [
@@ -625,6 +633,14 @@
         "opec_supply"
       ],
       "summary": "2 events (Feb13 OPEC+ archive + derivative OIL audit) \u2014 stale republish re-tuned; alert KEEP; no trades."
+    },
+    {
+      "ts_utc": "2026-04-23T01:00:24Z",
+      "events_in": 9,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 9,
+      "summary": "01:00 UTC \u2014 9 events (AUDUSD sweep 0.9p noise + GOLD 4752 up-sweep 18.4p 1.73xATR 3rd-cluster + 7 bar_close). No sweep armable (AUDUSD conf opposes+wick tiny, GOLD conf weak<moderate). USDJPY +43.5 mod AGAINST 160 SELL 68.9p WATCH, OIL +34.5 weak BUY 250p WATCH, GOLD -27.5 weak 4775 BUY 29p rule-2 KEEP. 3 alerts KEEP refresh. 0 trades $1000/0."
     }
   ],
   "binary_event": {
@@ -640,7 +656,7 @@
     ],
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). Monitor for reactivation on any T-24h trigger."
   },
-  "regime_note": "2026-04-23T01:08:00Z - 01:08 UTC tick \u2014 2 events (1 news_flash opec_supply Feb13 2026 Reuters archive 70-day-old republish matching 'war' required-kw and '2026' match-kw + 1 derivative alert_audit_request OIL_CRUDE oil_crude_retest_90_buy). AUDIT: stale archive NOT thesis-altering (OPEC+ May +206k bpd already priced; Fri Feb 13 OPEC+ output-increase reporting superseded by current Apr 22 Hormuz seizure regime). OIL confluence: comp +34.5 readiness=weak 3/4 bullish (DAY +0.4, H4 -0.15, H1 +0.7, M15 +0.9) aligned with BUY thesis but weak<moderate = not armable per Step 4b. Price 93.159 dist 286p from 90.30 (prior tick was 93.506 dist 320p \u2014 retrace 35p). Rule-1 cond1 dist 286p < 3\u00d7H4ATR 726p FALSE not stale-remove. Rule-2 4h=0.67 KEEP real edge. Alert unchanged, refresh appended. TUNED opec_supply: removed broad 'war'/'Iran' required-kw (matched Hormuz-tangential archives) + '2026'/'April' match-kw (matched published-date strings); replaced with explicit supply-shock verbs (surprise cut, OPEC+ cut/hike, output cut/hike, Saudi raises/cuts, Hormuz closure/shut/reopen) + strict forward-month kw (May/June/July 2026, this week, next week, announced today/yesterday). Cooldown 120\u2192240min. 3 level_alerts KEEP (USDJPY 160 fade 55.8p WATCH moderate, GOLD 4775 buy 31p WATCH weak-bearish rule-2 real edge, OIL 90.30 buy 286p WATCH weak-bullish rule-2 real edge). 9 structure_watch KEEP. Broker $1000/0pos reconciled. 0 trades $1000/0pos. BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 28-29), iran_ceasefire binary=inactive/indef-extension. scalp: 3 majors ACTIVE (EURUSD/GBPUSD/AUDUSD shadow mode), USDJPY/USDCHF/USDCAD DISABLED (pip-value quote handling), GOLD/OIL/BTC N/A (spread).",
-  "tick_ts_utc": "2026-04-23T01:08:00Z",
-  "state_ts_utc": "2026-04-23T01:08:00Z"
+  "regime_note": "2026-04-23T01:00:24Z - 01:00 UTC tick \u2014 9 events (2 liquidity_sweep + 7 bar_close). AUDUSD 00:45 M15 up-sweep 0.7166 wick 0.9p 0.16xATR = noise, confluence +23.5 none bullish opposes sell-bias, not armable. GOLD 00:45 M15 up-sweep 4752.12 wick 18.4p 1.73xATR sell bias (3rd cluster 4749-4752 within 30min building local sell pressure), confluence -27.5 weak 3/4 bearish AGREES sweep direction BUT readiness<moderate per Step 4b not armable for LIMIT. No new alerts (precedent: prior 3 GOLD sweeps + USDCAD sweep removed at 93min without arm \u2014 pattern has to cross moderate threshold). USDJPY comp +43.5 moderate 4/4 bullish AGAINST 160 SELL thesis, price 159.311 dist 68.9p >3xH1ATR WATCH. OIL +34.5 weak bullish aligned BUY 250p dist WATCH. USDCAD -28.5 weak no-alert. EURUSD/GBPUSD/USDCHF none. 3 alerts KEEP (price refresh), 9 structure_watch KEEP, 8 queries KEEP. Broker $1000/0pos reconciled. 0 trades. BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 28-29), iran_ceasefire binary=inactive/indef-ext. scalp: 3 majors EURUSD/GBPUSD/AUDUSD ACTIVE shadow, USDJPY/USDCAD/USDCHF DISABLED (pip-value), GOLD/OIL/BTC N/A (spread).",
+  "tick_ts_utc": "2026-04-23T01:00:24Z",
+  "state_ts_utc": "2026-04-23T01:00:24Z"
 }

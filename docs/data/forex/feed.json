@@ -1,10 +1,6 @@
 {
-  "generated_at": "2026-04-23T00:48:36.304448Z",
+  "generated_at": "2026-04-23T01:00:44.745619Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-21T05:39:09.646128Z",
-      "summary": "05:37 UTC \u2014 15 news_flash consumed (hormuz/opec/us_tariff backlog), 0 trades, oil_crude MODIFIED (price $86.27\u2192$88.26), 4 alerts KEEP, 9 structure_watch KEEP, 8 queries KEEP"
-    },
     {
       "ts_utc": "2026-04-21T06:17:00Z",
       "events_in": 16,
@@ -238,6 +234,14 @@
       "note": "00:52 UTC tick \u2014 6 events (1 GOLD liquidity_sweep 00:30 4749.45 up-sweep wick 26.7p 2.5xATR sell-bias + 5 bar_close routine). GOLD confluence comp -27.5 weak 3/4 bearish \u2192 agrees sweep-dir but <moderate not armable per 4b. No counter-alert added (USDCAD-sweep precedent, 2.5x<4xATR). GOLD price 4729\u21924743.86 refresh (+14.8p drift). 3 alerts KEEP, 9 structure KEEP, 8 queries KEEP. $1000/0. 0 trades. BOJ T-4d, FOMC T-6d."
     },
     {
+      "ts_utc": "2026-04-23T01:00:24Z",
+      "events_in": 9,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 9,
+      "summary": "01:00 UTC \u2014 9 events (AUDUSD sweep 0.9p noise + GOLD 4752 up-sweep 18.4p 1.73xATR 3rd-cluster + 7 bar_close). No sweep armable (AUDUSD conf opposes+wick tiny, GOLD conf weak<moderate). USDJPY +43.5 mod AGAINST 160 SELL 68.9p WATCH, OIL +34.5 weak BUY 250p WATCH, GOLD -27.5 weak 4775 BUY 29p rule-2 KEEP. 3 alerts KEEP refresh. 0 trades $1000/0."
+    },
+    {
       "ts_utc": "2026-04-23T18:55:00Z",
       "events_in": 12,
       "opened": 0,
@@ -338,6 +342,14 @@
       "trades_closed": 0,
       "skipped": 2,
       "notes": "opec_supply Feb13 archive republish (matched 'war' required-kw + '2026' match-kw) + derivative OIL alert_audit_request. Stale archive NOT thesis-altering; OIL comp +34.5 weak aligned not armable 286p away; KEEP alert. TUNED query: tighter required-kw (explicit supply-verbs only) + strict forward-month filters + cooldown 120\u2192240min. No trades $1000/0pos."
+    },
+    {
+      "ts_utc": "2026-04-23T01:00:24Z",
+      "events_in": 9,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 9,
+      "summary": "01:00 UTC \u2014 9 events (AUDUSD sweep 0.9p noise + GOLD 4752 up-sweep 18.4p 1.73xATR 3rd-cluster + 7 bar_close). No sweep armable (AUDUSD conf opposes+wick tiny, GOLD conf weak<moderate). USDJPY +43.5 mod AGAINST 160 SELL 68.9p WATCH, OIL +34.5 weak BUY 250p WATCH, GOLD -27.5 weak 4775 BUY 29p rule-2 KEEP. 3 alerts KEEP refresh. 0 trades $1000/0."
     }
   ]
 }
