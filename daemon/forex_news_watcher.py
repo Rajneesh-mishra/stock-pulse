@@ -70,7 +70,7 @@ def write_json_atomic(path, data):
 
 
 def append_event(event):
-    event.setdefault("event_id", f"evt_{int(time.time()*1000)}_news_flash")
+    event.setdefault("event_id", f"evt_{int(time.time()*1000)}_{event.get('type','event')}")
     event.setdefault("ts_utc", utc_now().isoformat())
     event.setdefault("consumed_by_claude", False)
     event.setdefault("source", "news_watcher")
@@ -82,9 +82,20 @@ def append_event(event):
             f.write(json.dumps(event, default=str) + "\n")
         finally:
             fcntl.flock(f.fileno(), fcntl.LOCK_UN)
-    log(f"EVENT news_flash  query={event['payload']['query_id']}  "
-        f"kw={event['payload']['matched_keywords']}  "
-        f"headline={event['payload']['headline'][:80]}")
+    # Log line shape depends on event type — alert_audit_request has a
+    # different payload than news_flash. Don't crash on either.
+    etype = event.get("type", "event")
+    p = event.get("payload", {}) or {}
+    if etype == "news_flash":
+        log(f"EVENT news_flash  query={p.get('query_id','?')}  "
+            f"kw={p.get('matched_keywords', [])}  "
+            f"headline={(p.get('headline','') or '')[:80]}")
+    elif etype == "alert_audit_request":
+        log(f"EVENT alert_audit_request  alert={event.get('alert_id','?')}  "
+            f"inst={event.get('instrument','?')}  "
+            f"trigger={(p.get('trigger_headline','') or '')[:80]}")
+    else:
+        log(f"EVENT {etype}  {event.get('instrument','')}  {event.get('alert_id','')}")
 
 
 def read_control():
