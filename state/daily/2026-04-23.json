@@ -297,5 +297,31 @@
     "scalp_status": "3 FX shadow KEEP, 3 pip-conv-off, 3 spread-N/A, halts=0",
     "note": "USDJPY audit: 159.5905 +51 mod 4/4 bull vs SELL 160 fade, dist 40.95p>30p prox \u2014 WATCH not ARMED. GOLD/OIL carried 05:35 reads. 3 level_alerts KEEP, 9 sw KEEP, 8 queries KEEP (match_keywords bug 4th surface on Jan-28 Powell). web_search skipped (0pos stable). BOJ T-4d, FOMC T-6d.",
     "attention_covered": "9/9"
+  },
+  {
+    "ts_utc": "2026-04-23T07:14:00Z",
+    "events": 10,
+    "liquidity_sweeps": [
+      "USDCAD buy 0.8p",
+      "EURUSD sell 1.5p",
+      "USDCHF buy 2.1p"
+    ],
+    "trades": {
+      "opened": 0,
+      "closed": 0
+    },
+    "account": {
+      "balance": 1000.0,
+      "open_pos": 0,
+      "daily_pnl": 0.0
+    },
+    "alerts": {
+      "KEEP": 3,
+      "MODIFY": 0,
+      "REMOVE": 0,
+      "ADD": 0
+    },
+    "scalp": "3 FX shadow KEEP + 3 disabled pip-conv + 3 N/A spread, halts=0",
+    "attention_covered": "9/9"
   }
 ]

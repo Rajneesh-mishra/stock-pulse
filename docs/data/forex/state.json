@@ -1,6 +1,6 @@
 {
   "regime": "INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING",
-  "regime_note_prev": "2026-04-23T05:05:00Z - 05:05 forex tick \u2014 1 news_flash iran_ceasefire Apr-21 NDTV Vance-solo-Pakistan (current-regime escalation-lean, thesis-CONFIRMING not altering \u2014 supports fade pairs' theses but no level change). 4 bar_close auto. USDJPY confluence re-run: comp +51 moderate 4/4 bullish aligned=false vs SELL dist 45.1p>3xH1ATR 42.9p borderline WATCH 160 SELL counter-trend. GOLD 4705.14 dist 698.6p floor-test 4698-4700 cond3 FALSE rule-1 KEEP cf 4h=0.8 rule-2 KEEP. OIL 94.002 dist 370.2p<3xH4ATR 680.9p rule-1 KEEP cf 4h=0.67/24h=1.0 rule-2 KEEP retest dormant. 3 KEEP, 9 structure_watch KEEP, 8 queries KEEP bug-deferred (match_keywords NEVER-ENFORCED in daemon/forex_news_watcher.py:246 \u2014 daemon fix non-trivial+restart, deferred), scalp 3 FX shadow KEEP + 3 disabled pip-conv + 3 N/A spread, 0 trades $1000/0pos, BOJ T-4d (Apr 27-28) FOMC T-6d, attention_covered=9/9.",
+  "regime_note_prev": "2026-04-23T06:24:00Z \u2014 06:24 forex tick \u2014 4 evt processed (1 alert_audit_request USDJPY from hormuz_strait attack news + 3 news_flash: hormuz_strait Business Standard Apr-23 03:13 fresh-attack real-news KEEP thesis, iran_ceasefire Deccan Herald AI-satire NON-actionable already-resolved-indefinite-extension, fed_fomc AOL.com Jan-28 Powell STALE-archive match_keywords bug 3rd repeat). USDJPY confluence refreshed: 159.5905 comp +51 moderate 4/4 bull aligned=false vs SELL 160 counter-trend fade \u2014 |composite|\u226540 against alert = extension-real fade-live but dist 40.95p > 30p proximity floor (H1ATR 13.5p, 0.5\u00d7H4ATR 15p, floor 30p) \u2014 WATCH not ARMED, need price closer to 160. GOLD carried 05:35 read ~4705 floor-test 4698-4700 cond3 FALSE rule-1 KEEP cf 4h=0.8 rule-2 strong-edge KEEP. OIL carried 05:35 read 93.842 pullback from 94.002 dist 354p<3xH4ATR 680.9p rule-1 KEEP cf 4h=0.67/24h=1.0 rule-2 real-edge KEEP retest dormant. 3 level_alerts KEEP (USDJPY fade / GOLD 4775 breakout / OIL 90.30 retest) + TEST_CHAIN_VALIDATION ignore, 9 structure_watch KEEP, 8 news_queries KEEP bug-deferred (match_keywords NEVER-ENFORCED daemon/forex_news_watcher.py:246 known, 4th surfacing on Jan-28 stale Powell). Scalp 3 FX shadow KEEP no-trades + 3 disabled pip-conv + 3 N/A spread, halt map empty. 0 trades $1000/0pos, BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 29), attention_covered=9/9, web_search skipped (0pos regime stable budget-aware).",
   "open_positions": [],
   "watchlist": [
     {
@@ -495,6 +495,13 @@
       "closed": 0,
       "skipped": 2,
       "note": "news_flash CBS Apr 7 archive 'reopen' via over-broad April filter; alert_audit_request GOLD non-altering. Tuned hormuz_strait. 3 KEEP."
+    },
+    {
+      "ts": "2026-04-23T07:14:00Z",
+      "events_processed": 10,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "summary": "3 liq_sweep readiness=none NOT-ACTIONABLE + 7 bar_close; 3 KEEP carried"
     }
   ],
   "recent_skips": [
@@ -718,7 +725,7 @@
     ],
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). Monitor for reactivation on any T-24h trigger."
   },
-  "regime_note": "2026-04-23T06:24:00Z \u2014 06:24 forex tick \u2014 4 evt processed (1 alert_audit_request USDJPY from hormuz_strait attack news + 3 news_flash: hormuz_strait Business Standard Apr-23 03:13 fresh-attack real-news KEEP thesis, iran_ceasefire Deccan Herald AI-satire NON-actionable already-resolved-indefinite-extension, fed_fomc AOL.com Jan-28 Powell STALE-archive match_keywords bug 3rd repeat). USDJPY confluence refreshed: 159.5905 comp +51 moderate 4/4 bull aligned=false vs SELL 160 counter-trend fade \u2014 |composite|\u226540 against alert = extension-real fade-live but dist 40.95p > 30p proximity floor (H1ATR 13.5p, 0.5\u00d7H4ATR 15p, floor 30p) \u2014 WATCH not ARMED, need price closer to 160. GOLD carried 05:35 read ~4705 floor-test 4698-4700 cond3 FALSE rule-1 KEEP cf 4h=0.8 rule-2 strong-edge KEEP. OIL carried 05:35 read 93.842 pullback from 94.002 dist 354p<3xH4ATR 680.9p rule-1 KEEP cf 4h=0.67/24h=1.0 rule-2 real-edge KEEP retest dormant. 3 level_alerts KEEP (USDJPY fade / GOLD 4775 breakout / OIL 90.30 retest) + TEST_CHAIN_VALIDATION ignore, 9 structure_watch KEEP, 8 news_queries KEEP bug-deferred (match_keywords NEVER-ENFORCED daemon/forex_news_watcher.py:246 known, 4th surfacing on Jan-28 stale Powell). Scalp 3 FX shadow KEEP no-trades + 3 disabled pip-conv + 3 N/A spread, halt map empty. 0 trades $1000/0pos, BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 29), attention_covered=9/9, web_search skipped (0pos regime stable budget-aware).",
-  "tick_ts_utc": "2026-04-23T06:24:00Z",
-  "state_ts_utc": "2026-04-23T06:24:00Z"
+  "regime_note": "2026-04-23T07:14:00Z \u2014 07:14 forex tick \u2014 10 evt (3 liquidity_sweep small wicks: USDCAD 0.8p down-sweep 1.36667 buy-bias vs comp -23.5 bearish NOT-ACTIONABLE / EURUSD 1.5p up-sweep 1.171065 sell-bias vs comp +1 neutral NOT-ACTIONABLE / USDCHF 2.1p down-sweep 0.78435 buy-bias vs comp -1 neutral NOT-ACTIONABLE \u2014 all readiness=none below arming threshold, no ADD per Step 4b readiness=none+no-fresh-catalyst). 7 bar_close auto. 3 KEEP carried from 05:35: USDJPY comp+51 mod 4/4 bull aligned=false vs SELL dist 45.1p borderline WATCH rule-2 KEEP / GOLD comp-35 weak 3/4 bear vs BUY floor-test 4698-4700 rule-1+2 KEEP / OIL comp+34.5 weak 3/4 bull aligned BUY dist 354p retest dormant rule-1+2 KEEP. Scalp 3 FX shadow KEEP no-trades + 3 disabled pip-conv + 3 N/A spread halts=0. 0 trades $1000/0pos, BOJ T-4d (Apr 27-28) FOMC T-6d (Apr 29), attention_covered=9/9, web_search skipped 0pos-regime-stable-1.6h.",
+  "tick_ts_utc": "2026-04-23T07:14:00Z",
+  "state_ts_utc": "2026-04-23T07:14:00Z"
 }
