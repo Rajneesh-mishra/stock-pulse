@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-23T01:05:53.162222Z",
+  "generated_at": "2026-04-23T01:11:59.654931Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-21T06:17:00Z",
-      "events_in": 16,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 16,
-      "note": "16 bar_close heartbeat (H1+M15 across 8 pairs) all SKIP \u2014 no level hits, no structure shifts. Broker $1000 flat 0 pos reconciled. Last full news sweep 06:07 UTC (9 min ago) \u2014 skipped fresh web search (budget + no new data window). Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM intact, ceasefire expires TODAY, Vance/Witkoff/Kushner flying Islamabad. 5 level_alerts + 9 structure + 8 queries all KEEP."
-    },
     {
       "ts_utc": "2026-04-21T06:37:00Z",
       "events_in": 15,
@@ -242,114 +234,135 @@
       "summary": "01:00 UTC \u2014 9 events (AUDUSD sweep 0.9p noise + GOLD 4752 up-sweep 18.4p 1.73xATR 3rd-cluster + 7 bar_close). No sweep armable (AUDUSD conf opposes+wick tiny, GOLD conf weak<moderate). USDJPY +43.5 mod AGAINST 160 SELL 68.9p WATCH, OIL +34.5 weak BUY 250p WATCH, GOLD -27.5 weak 4775 BUY 29p rule-2 KEEP. 3 alerts KEEP refresh. 0 trades $1000/0."
     },
     {
-      "ts_utc": "2026-04-23T18:55:00Z",
-      "events_in": 12,
+      "ts_utc": "2026-04-23T01:10:30Z",
+      "events_in": 0,
       "opened": 0,
       "closed": 0,
-      "skipped": 12,
-      "trades": [],
-      "regime": "INDEFINITE_EXTENSION_HORMUZ_ESCALATING_SEIZURES_MIXED_RISK_ON",
-      "note": "18:55 UTC - 12 stale archive flush consumed (Apr 13-19 blockade announcement + Touska republish). 2 queries RE-TUNED. Broker $1000/0. Tape flat. No trades."
+      "skipped": 0,
+      "summary": "01:10 UTC heartbeat \u2014 0 unconsumed events. Broker $1000/0pos reconciled. Confluence refresh: USDJPY +43.5 moderate 4/4 bullish AGAINST 160 SELL thesis (close 159.368, dist 63.2p > 3xH1ATR 44.3p = WATCH not ARM, comp re-strengthened from last tick's +38.5); GOLD -27.5 weak 3/4 bearish close 4744.22 dist 30.8p below 4775 BUY trigger (rule-2 4h=0.8 KEEP); OIL +34.5 weak bullish close 93.03 dist 273p ABOVE 90.30 BUY retest (rule-2 4h=0.67 KEEP). No sweep in this window. 3 alerts KEEP, 9 structure_watch KEEP, 8 queries KEEP. Scalp audit: EURUSD/GBPUSD/AUDUSD KEEP shadow, USDJPY/USDCHF/USDCAD DISABLED(pip-value), GOLD/OIL/BTC N/A(spread). 0 trades $1000/0pos. BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 28-29), iran_ceasefire binary=inactive/indef-ext."
     },
     {
-      "ts_utc": "2026-04-22T21:33:00Z",
-      "tick": "forex_auto",
-      "events_in": 1,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 1,
-      "note": "REMOVED usdcad_liqsweep_sell_zone (M15 flipped +0.4, sweep-continuation exhausted). 3 KEEP (USDJPY/GOLD/OIL). 0 trades $1000/0."
+      "ticks": [
+        {
+          "ts_utc": "2026-04-23T18:55:00Z",
+          "events_in": 12,
+          "opened": 0,
+          "closed": 0,
+          "skipped": 12,
+          "trades": [],
+          "regime": "INDEFINITE_EXTENSION_HORMUZ_ESCALATING_SEIZURES_MIXED_RISK_ON",
+          "note": "18:55 UTC - 12 stale archive flush consumed (Apr 13-19 blockade announcement + Touska republish). 2 queries RE-TUNED. Broker $1000/0. Tape flat. No trades."
+        },
+        {
+          "ts_utc": "2026-04-22T21:33:00Z",
+          "tick": "forex_auto",
+          "events_in": 1,
+          "opened": 0,
+          "closed": 0,
+          "skipped": 1,
+          "note": "REMOVED usdcad_liqsweep_sell_zone (M15 flipped +0.4, sweep-continuation exhausted). 3 KEEP (USDJPY/GOLD/OIL). 0 trades $1000/0."
+        },
+        {
+          "ts_utc": "2026-04-22T22:18:42Z",
+          "tick": "forex_auto",
+          "events_in": 5,
+          "opened": 0,
+          "closed": 0,
+          "skipped": 5,
+          "note": "22:12 UTC tick \u2014 5 stale news_flash events (1 iran_ceasefire Apr 12 Islamabad backgrounder + 4 opec_supply 2025/Mar2026 archives). TUNED opec_supply (narrowed kw + match_keywords date filter + cooldown 60\u2192120min). Confluence USDJPY +51 moderate WATCH 160 (dist 53p), GOLD -18.5 none WATCH 4775, OIL +26 weak WATCH 90.30 retest-far, USDCAD -37 weak no-alert, BTC +43.5 moderate no-alert. Broker $1000/0pos. 3 KEEP, 1 query TUNED, 0 trades. BOJ T-4d."
+        },
+        {
+          "ts_utc": "2026-04-23T00:03:00Z",
+          "tick": "forex_auto",
+          "events_in": 2,
+          "opened": 0,
+          "closed": 0,
+          "skipped": 2,
+          "note": "00:03 UTC tick - 1 stale us_tariff news_flash (Feb 2 2026 Al Jazeera 'Trump cuts India tariffs 18% Modi Russian oil' 80-day-old archive via modi-kw match score 2) + derivative USDJPY alert_audit_request (stale news, not thesis-altering). TUNED us_tariff: DROP 'Modi' kw (too broad) + ADD match_keywords=['2026','April 2026','Apr 22','Apr 23'] date filter; cooldown stays 240min. Confluence API only_0_candles transient across USDJPY/EURUSD/GOLD (broker positions/account fine) - carrying 23:55 readings. USDJPY +51 mod WATCH 160 (51.3p >1xH1ATR 13.4p), GOLD -35 weak WATCH 4775 (46.5p rule-2 KEEP 4h=0.8), OIL +26 weak WATCH 90.30 (195.6p rule-2 KEEP 4h=0.67). 3 alerts KEEP, 9 structure KEEP, 7 queries (1 TUNED). 0 trades $1000/0pos. BOJ T-4d."
+        },
+        {
+          "ts": "2026-04-23T00:08:35Z",
+          "type": "heartbeat",
+          "events": 0,
+          "trades": {
+            "opened": 0,
+            "closed": 0
+          },
+          "regime_one_liner": "0 events, broker flat $1000/0pos, confluence API only_0_candles glitch persistent, all 5 watchlist alerts KEEP"
+        },
+        {
+          "tick_ts_utc": "2026-04-23T00:23:30Z",
+          "trigger": "heartbeat",
+          "events_consumed": 7,
+          "events_detail": "1 hormuz Apr22 Goodreturns seizure republish (priced) + 6 fed_fomc stale Powell archives (match_keywords='2026' ineffective)",
+          "alerts": {
+            "kept": 3,
+            "tuned": 0,
+            "removed": 0,
+            "added": 0
+          },
+          "queries_tuned": [
+            "fed_fomc"
+          ],
+          "queries_tune_detail": "fed_fomc match_keywords replaced with current-decision-phrase list + cooldown 180\u2192360min",
+          "positions_delta": 0,
+          "account_balance_usd": 1000.0,
+          "daily_pnl_usd": 0.0,
+          "confluence_restored": true,
+          "attention_matrix": {
+            "EURUSD": "swing=NONE scalp=ACTIVE ready=none comp=-1.5 neutral",
+            "GBPUSD": "swing=NONE scalp=ACTIVE ready=none comp=+8.5 neutral",
+            "AUDUSD": "swing=NONE scalp=ACTIVE ready=none comp=+8.5 neutral",
+            "USDJPY": "swing=WATCH scalp=OFF(JPY pip-val) ready=moderate comp=+48.5 4/4 bullish (against SELL thesis) dist=55.8p>1xH1ATR",
+            "USDCAD": "swing=NONE scalp=OFF(CAD+spread) ready=none comp=-23.5",
+            "USDCHF": "swing=NONE scalp=OFF(CHF pip-val) ready=none comp=+1.5",
+            "GOLD": "swing=WATCH scalp=N/A(5p) ready=weak comp=-35 3/4 bearish (against BUY thesis) dist=46p rule-2 KEEP",
+            "OIL_CRUDE": "swing=WATCH scalp=N/A(4p) ready=weak comp=+34.5 3/4 bullish dist=320p (+125p further) rule-1 cond1 FALSE rule-2 KEEP",
+            "BTCUSD": "swing=NONE scalp=N/A(50p) ready=moderate comp=+43.5 4/4 bullish no thesis anchor"
+          }
+        },
+        {
+          "ts_utc": "2026-04-23T00:37:30Z",
+          "events_in": 15,
+          "opened": 0,
+          "closed": 0,
+          "skipped": 15,
+          "note": "00:37 UTC tick - 15 events: 8 liquidity_sweep (one per pair) + 7 M15 bar_close routine. SWEEP TRIAGE: GOLD down-sweep 4698.81 46.2p wick 4.4xATR (biggest mag, readiness=weak bearish comp AGAINST buy-bias = not armable), OIL_CRUDE up-sweep 95.286 154.9p wick 2xATR (readiness=weak bullish comp AGAINST sell-bias = not armable, conflicts with existing 90.30 BUY thesis), USDJPY up-sweep 159.604 8.4p (readiness=moderate bullish comp AGAINST sell-bias = not armable), AUDUSD/EURUSD/GBPUSD down-sweep + USDCAD/USDCHF up-sweep all sub-1.5xATR minor. NO sweeps meet Step 4e criteria (readiness>=moderate AND direction AGAINST sweep wick). 0 new alerts added (would be noisy, prior USDCAD sweep alert removed after 93min as precedent). 3 KEEP alerts (USDJPY 56p<160 WATCH, GOLD 46p<4775 weak bearish comp rule-2 4h=0.8 KEEP, OIL 320p>90.30 weak bull rule-1 cond1 FALSE KEEP rule-2 4h=0.67). Broker $1000/0pos reconciled. 0 trades. BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 28-29)."
+        },
+        {
+          "ts_utc": "2026-04-23T00:52:00Z",
+          "events_in": 6,
+          "opened": 0,
+          "closed": 0,
+          "skipped": 6,
+          "note": "00:52 UTC tick \u2014 1 GOLD liquidity_sweep up-sweep 4749.45 wick 26.7p 2.5xATR sell-bias + 5 bar_close routine. Confluence GOLD comp -27.5 weak 3/4 bearish aligned with sweep but <moderate = not armable. No counter-alert. $1000/0, 0 trades, 3+9+8 KEEP."
+        },
+        {
+          "ts_utc": "2026-04-23T01:08:00Z",
+          "events_processed": 2,
+          "trades_opened": 0,
+          "trades_closed": 0,
+          "skipped": 2,
+          "notes": "opec_supply Feb13 archive republish (matched 'war' required-kw + '2026' match-kw) + derivative OIL alert_audit_request. Stale archive NOT thesis-altering; OIL comp +34.5 weak aligned not armable 286p away; KEEP alert. TUNED query: tighter required-kw (explicit supply-verbs only) + strict forward-month filters + cooldown 120\u2192240min. No trades $1000/0pos."
+        },
+        {
+          "ts_utc": "2026-04-23T01:00:24Z",
+          "events_in": 9,
+          "opened": 0,
+          "closed": 0,
+          "skipped": 9,
+          "summary": "01:00 UTC \u2014 9 events (AUDUSD sweep 0.9p noise + GOLD 4752 up-sweep 18.4p 1.73xATR 3rd-cluster + 7 bar_close). No sweep armable (AUDUSD conf opposes+wick tiny, GOLD conf weak<moderate). USDJPY +43.5 mod AGAINST 160 SELL 68.9p WATCH, OIL +34.5 weak BUY 250p WATCH, GOLD -27.5 weak 4775 BUY 29p rule-2 KEEP. 3 alerts KEEP refresh. 0 trades $1000/0."
+        }
+      ]
     },
     {
-      "ts_utc": "2026-04-22T22:18:42Z",
-      "tick": "forex_auto",
-      "events_in": 5,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 5,
-      "note": "22:12 UTC tick \u2014 5 stale news_flash events (1 iran_ceasefire Apr 12 Islamabad backgrounder + 4 opec_supply 2025/Mar2026 archives). TUNED opec_supply (narrowed kw + match_keywords date filter + cooldown 60\u2192120min). Confluence USDJPY +51 moderate WATCH 160 (dist 53p), GOLD -18.5 none WATCH 4775, OIL +26 weak WATCH 90.30 retest-far, USDCAD -37 weak no-alert, BTC +43.5 moderate no-alert. Broker $1000/0pos. 3 KEEP, 1 query TUNED, 0 trades. BOJ T-4d."
-    },
-    {
-      "ts_utc": "2026-04-23T00:03:00Z",
-      "tick": "forex_auto",
-      "events_in": 2,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 2,
-      "note": "00:03 UTC tick - 1 stale us_tariff news_flash (Feb 2 2026 Al Jazeera 'Trump cuts India tariffs 18% Modi Russian oil' 80-day-old archive via modi-kw match score 2) + derivative USDJPY alert_audit_request (stale news, not thesis-altering). TUNED us_tariff: DROP 'Modi' kw (too broad) + ADD match_keywords=['2026','April 2026','Apr 22','Apr 23'] date filter; cooldown stays 240min. Confluence API only_0_candles transient across USDJPY/EURUSD/GOLD (broker positions/account fine) - carrying 23:55 readings. USDJPY +51 mod WATCH 160 (51.3p >1xH1ATR 13.4p), GOLD -35 weak WATCH 4775 (46.5p rule-2 KEEP 4h=0.8), OIL +26 weak WATCH 90.30 (195.6p rule-2 KEEP 4h=0.67). 3 alerts KEEP, 9 structure KEEP, 7 queries (1 TUNED). 0 trades $1000/0pos. BOJ T-4d."
-    },
-    {
-      "ts": "2026-04-23T00:08:35Z",
+      "ts_utc": "2026-04-23T01:10:30Z",
       "type": "heartbeat",
-      "events": 0,
-      "trades": {
-        "opened": 0,
-        "closed": 0
-      },
-      "regime_one_liner": "0 events, broker flat $1000/0pos, confluence API only_0_candles glitch persistent, all 5 watchlist alerts KEEP"
-    },
-    {
-      "tick_ts_utc": "2026-04-23T00:23:30Z",
-      "trigger": "heartbeat",
-      "events_consumed": 7,
-      "events_detail": "1 hormuz Apr22 Goodreturns seizure republish (priced) + 6 fed_fomc stale Powell archives (match_keywords='2026' ineffective)",
-      "alerts": {
-        "kept": 3,
-        "tuned": 0,
-        "removed": 0,
-        "added": 0
-      },
-      "queries_tuned": [
-        "fed_fomc"
-      ],
-      "queries_tune_detail": "fed_fomc match_keywords replaced with current-decision-phrase list + cooldown 180\u2192360min",
-      "positions_delta": 0,
-      "account_balance_usd": 1000.0,
-      "daily_pnl_usd": 0.0,
-      "confluence_restored": true,
-      "attention_matrix": {
-        "EURUSD": "swing=NONE scalp=ACTIVE ready=none comp=-1.5 neutral",
-        "GBPUSD": "swing=NONE scalp=ACTIVE ready=none comp=+8.5 neutral",
-        "AUDUSD": "swing=NONE scalp=ACTIVE ready=none comp=+8.5 neutral",
-        "USDJPY": "swing=WATCH scalp=OFF(JPY pip-val) ready=moderate comp=+48.5 4/4 bullish (against SELL thesis) dist=55.8p>1xH1ATR",
-        "USDCAD": "swing=NONE scalp=OFF(CAD+spread) ready=none comp=-23.5",
-        "USDCHF": "swing=NONE scalp=OFF(CHF pip-val) ready=none comp=+1.5",
-        "GOLD": "swing=WATCH scalp=N/A(5p) ready=weak comp=-35 3/4 bearish (against BUY thesis) dist=46p rule-2 KEEP",
-        "OIL_CRUDE": "swing=WATCH scalp=N/A(4p) ready=weak comp=+34.5 3/4 bullish dist=320p (+125p further) rule-1 cond1 FALSE rule-2 KEEP",
-        "BTCUSD": "swing=NONE scalp=N/A(50p) ready=moderate comp=+43.5 4/4 bullish no thesis anchor"
-      }
-    },
-    {
-      "ts_utc": "2026-04-23T00:37:30Z",
-      "events_in": 15,
+      "events_in": 0,
       "opened": 0,
       "closed": 0,
-      "skipped": 15,
-      "note": "00:37 UTC tick - 15 events: 8 liquidity_sweep (one per pair) + 7 M15 bar_close routine. SWEEP TRIAGE: GOLD down-sweep 4698.81 46.2p wick 4.4xATR (biggest mag, readiness=weak bearish comp AGAINST buy-bias = not armable), OIL_CRUDE up-sweep 95.286 154.9p wick 2xATR (readiness=weak bullish comp AGAINST sell-bias = not armable, conflicts with existing 90.30 BUY thesis), USDJPY up-sweep 159.604 8.4p (readiness=moderate bullish comp AGAINST sell-bias = not armable), AUDUSD/EURUSD/GBPUSD down-sweep + USDCAD/USDCHF up-sweep all sub-1.5xATR minor. NO sweeps meet Step 4e criteria (readiness>=moderate AND direction AGAINST sweep wick). 0 new alerts added (would be noisy, prior USDCAD sweep alert removed after 93min as precedent). 3 KEEP alerts (USDJPY 56p<160 WATCH, GOLD 46p<4775 weak bearish comp rule-2 4h=0.8 KEEP, OIL 320p>90.30 weak bull rule-1 cond1 FALSE KEEP rule-2 4h=0.67). Broker $1000/0pos reconciled. 0 trades. BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 28-29)."
-    },
-    {
-      "ts_utc": "2026-04-23T00:52:00Z",
-      "events_in": 6,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 6,
-      "note": "00:52 UTC tick \u2014 1 GOLD liquidity_sweep up-sweep 4749.45 wick 26.7p 2.5xATR sell-bias + 5 bar_close routine. Confluence GOLD comp -27.5 weak 3/4 bearish aligned with sweep but <moderate = not armable. No counter-alert. $1000/0, 0 trades, 3+9+8 KEEP."
-    },
-    {
-      "ts_utc": "2026-04-23T01:08:00Z",
-      "events_processed": 2,
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "skipped": 2,
-      "notes": "opec_supply Feb13 archive republish (matched 'war' required-kw + '2026' match-kw) + derivative OIL alert_audit_request. Stale archive NOT thesis-altering; OIL comp +34.5 weak aligned not armable 286p away; KEEP alert. TUNED query: tighter required-kw (explicit supply-verbs only) + strict forward-month filters + cooldown 120\u2192240min. No trades $1000/0pos."
-    },
-    {
-      "ts_utc": "2026-04-23T01:00:24Z",
-      "events_in": 9,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 9,
-      "summary": "01:00 UTC \u2014 9 events (AUDUSD sweep 0.9p noise + GOLD 4752 up-sweep 18.4p 1.73xATR 3rd-cluster + 7 bar_close). No sweep armable (AUDUSD conf opposes+wick tiny, GOLD conf weak<moderate). USDJPY +43.5 mod AGAINST 160 SELL 68.9p WATCH, OIL +34.5 weak BUY 250p WATCH, GOLD -27.5 weak 4775 BUY 29p rule-2 KEEP. 3 alerts KEEP refresh. 0 trades $1000/0."
+      "skipped": 0,
+      "summary": "01:10 UTC heartbeat \u2014 0 events, USDJPY +43.5 mod AGAINST 160 SELL WATCH 63p, GOLD -27.5 weak 4775 BUY 30.8p KEEP, OIL +34.5 weak 90.30 BUY 273p KEEP. 0 trades $1000/0."
     }
   ]
 }
