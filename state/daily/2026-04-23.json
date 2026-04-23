@@ -463,5 +463,20 @@
     "open_positions": 0,
     "balance_usd": 1000.0,
     "daily_pnl_usd": 0.0
+  },
+  {
+    "tick_ts_utc": "2026-04-23T08:56:00Z",
+    "events_consumed": 1,
+    "event_ids": [
+      "evt_1776934424812_news_flash"
+    ],
+    "opened": 0,
+    "closed": 0,
+    "skipped": 0,
+    "open_positions": 0,
+    "balance_usd": 1000.0,
+    "daily_pnl": 0,
+    "regime": "INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING",
+    "summary": "1 news_flash us_iran_military Mar-01 54d-stale 'killed' kw non-thesis-altering. 5 alerts KEEP. 9 structure_watch KEEP. 0 pos."
   }
 ]

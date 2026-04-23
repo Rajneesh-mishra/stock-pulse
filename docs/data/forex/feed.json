@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-23T08:47:09.018358Z",
+  "generated_at": "2026-04-23T08:55:32.557151Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-21T12:35:00Z",
-      "events_in": 8,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 8,
-      "note": "8 M15 bar_close all SKIP \u2014 T-~11.3h binary, OIL -68p pullback from hi 87.617, USDJPY +6.6p bounce, others flat"
-    },
     {
       "ts_utc": "2026-04-21T12:50:00Z",
       "events_in": 8,
@@ -687,6 +679,21 @@
       "open_positions": 0,
       "balance_usd": 1000.0,
       "daily_pnl_usd": 0.0
+    },
+    {
+      "tick_ts_utc": "2026-04-23T08:56:00Z",
+      "events_consumed": 1,
+      "event_ids": [
+        "evt_1776934424812_news_flash"
+      ],
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "open_positions": 0,
+      "balance_usd": 1000.0,
+      "daily_pnl": 0,
+      "regime": "INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING",
+      "summary": "1 news_flash us_iran_military Mar-01 54d-stale 'killed' kw non-thesis-altering. 5 alerts KEEP. 9 structure_watch KEEP. 0 pos."
     }
   ]
 }

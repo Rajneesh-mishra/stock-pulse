@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-23T08:46:00Z",
-  "pruned_at": "2026-04-23T08:46:00Z",
-  "pruned_by": "2026-04-23T08:46:00Z tick \u2014 2 evt consumed (1 news_flash opec_supply Aug-3-2025 stale + 1 alert_audit_request GOLD NY Post WHEN-Hormuz-reopens contingency NOT actual-reopen). Confluence GOLD re-run: comp -35 weak 3/4 bear vs BUY 4775 dist 710.1p px 4703.99 floor-test 4698-4700 cond3 FALSE rule-1 KEEP, cf 4h=0.8 rule-2 KEEP. 5 level_alerts KEEP unchanged. 9 structure_watch KEEP. 8 news_queries KEEP bug-deferred.",
+  "last_updated_by_claude": "2026-04-23T08:56:00Z",
+  "pruned_at": "2026-04-23T08:56:00Z",
+  "pruned_by": "2026-04-23T08:56:00Z tick \u2014 1 evt (news_flash us_iran_military Mar-01 54d-stale 'killed' kw daemon date-filter NEVER-ENFORCED known bug; NOT thesis-altering baseline Hormuz routine). No fresh confluence re-scan (budget). 5 level_alerts KEEP. 9 structure_watch KEEP. 8 news_queries KEEP bug-deferred.",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -167,5 +167,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-23T08:25:00Z"
+  "last_updated_utc": "2026-04-23T08:56:00Z"
 }
