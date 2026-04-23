@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-23T01:54:36.912150Z",
+  "generated_at": "2026-04-23T01:57:42.715995Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-21T06:37:00Z",
-      "events_in": 15,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 15,
-      "note": "news_flash burst 15 events \u2014 Iran drone strikes on US vessels (Tasnim) confirmed post Touska seizure. India-US trade deal talks restart. No entry triggers, no trades. Gold note MODIFIED; all alerts/queries KEEP."
-    },
     {
       "ts_utc": "2026-04-21T07:34:00Z",
       "events_in": 0,
@@ -242,6 +234,14 @@
       "summary": "01:10 UTC heartbeat \u2014 0 unconsumed events. Broker $1000/0pos reconciled. Confluence refresh: USDJPY +43.5 moderate 4/4 bullish AGAINST 160 SELL thesis (close 159.368, dist 63.2p > 3xH1ATR 44.3p = WATCH not ARM, comp re-strengthened from last tick's +38.5); GOLD -27.5 weak 3/4 bearish close 4744.22 dist 30.8p below 4775 BUY trigger (rule-2 4h=0.8 KEEP); OIL +34.5 weak bullish close 93.03 dist 273p ABOVE 90.30 BUY retest (rule-2 4h=0.67 KEEP). No sweep in this window. 3 alerts KEEP, 9 structure_watch KEEP, 8 queries KEEP. Scalp audit: EURUSD/GBPUSD/AUDUSD KEEP shadow, USDJPY/USDCHF/USDCAD DISABLED(pip-value), GOLD/OIL/BTC N/A(spread). 0 trades $1000/0pos. BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 28-29), iran_ceasefire binary=inactive/indef-ext."
     },
     {
+      "ts_utc": "2026-04-23T02:00:00Z",
+      "events_in": 1,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "summary": "01:58 UTC \u2014 1 evt (Apr 21 Caspian News ceasefire-extension republish, non-altering). USDJPY +43.5 mod 4/4 bullish AGAINST 160 SELL dist 62.5p WATCH; GOLD -35.0 weak 4775 BUY 47.3p rule-2 KEEP; OIL +29.5 weak 90.30 BUY 280p rule-2 KEEP. 3 KEEP, 0 trades $1000/0pos. BOJ T-4d FOMC T-6d. attention_covered=9/9"
+    },
+    {
       "ticks": [
         {
           "ts_utc": "2026-04-23T18:55:00Z",
@@ -376,6 +376,12 @@
       "ts_utc": "2026-04-23T01:55:00Z",
       "type": "tick",
       "summary": "01:53 UTC forex auto \u2014 1 event (WaPo Iran-ceasefire republish Apr 22 05:49 GMT 20h-old, matched 'indefinite' kw, same story as binary indef-extension 4-source verified: NON-THESIS-ALTERING no audit_request derivative). Broker $1000/0pos reconciled. USDJPY confluence endpoint returned 0-candles (API hiccup not signal) \u2014 using 01:22 cached +60.4 moderate 4/4 bullish AGAINST 160 SELL dist 60p WATCH. 3 KEEP refresh: USDJPY 160 SELL 60p>3xH1ATR 45p mod-bullish WATCH against / GOLD 4775 BUY 45p weak rule-2 / OIL 90.30 BUY 286p weak rule-2. 9 structure_watch KEEP, 8 news queries KEEP (iran_ceasefire tuning working: 'indefinite' only fired WaPo this time, escalation-specific set). Scalp: 3 FX shadow KEEP + 3 disabled(pip-value) + 3 N/A(spread). 0 trades, BOJ T-4d FOMC T-6d. attention_covered=9/9."
+    },
+    {
+      "ts_utc": "2026-04-23T02:00:00Z",
+      "trigger": "event",
+      "events_in": 1,
+      "summary": "01:58 forex \u2014 1 evt Caspian ceasefire-ext 44h republish non-altering; USDJPY +43.5 mod 4/4 WATCH 62.5p; GOLD -35 weak 47.3p KEEP; OIL +29.5 weak 280p KEEP. 0 trades $1000/0pos."
     }
   ]
 }
