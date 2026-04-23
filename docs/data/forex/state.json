@@ -1,6 +1,6 @@
 {
   "regime": "INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING",
-  "regime_note_prev": "2026-04-23T09:04:30Z \u2014 09:04 forex tick \u2014 1 evt (news_flash boj_intervention Reuters Fri Jan 23 2026 08:00 GMT 90d-stale archive 'Japan finance minister watching FX closely, no comment on rate checks' matched 'rate check' via keywords_required action-phrase correctly; daemon date-filter NEVER-ENFORCED forex_news_watcher.py:246 known bug let stale archive pass). NOT thesis-altering \u2014 current Katayama 'bold action' Apr-16 regime + MUFG pain threshold 158 already priced into USDJPY 160 fade alert. No fresh confluence scan this tick (08:25 last 40min ago, price stable, budget-conserve). 5 level_alerts KEEP: USDJPY 160 sell intervention-fade rule-2 |comp|+51 against-alert extension-real fade-live cf 1f hit 1.0/1.0/1.0 / GOLD 4775 buy escalation rule-2 4h=0.8 floor-test 4698-4700 cond3 FALSE rule-1 KEEP / OIL 90.30 retest buy rule-2 4h=0.67/24h=1.0 dormant / OIL 93.2365 sweep-retest buy watchlist-only weak / GOLD 4721.68 sweep-retest sell watchlist-only weak. 9 structure_watch KEEP. 8 news_queries KEEP bug-deferred (match_keywords date-filter NEVER-ENFORCED daemon/forex_news_watcher.py:246). Scalp 3 FX shadow KEEP no-trades + 3 disabled pip-conv (USDJPY/CHF/CAD) + 3 N/A spread (GOLD/OIL/BTC) halts=0 daily_pnl 0. 0 trades $1000/0pos BOJ T-4d (Apr 27-28) FOMC T-6d (Apr 29). attention_covered=9/9. web_search skipped 0pos-regime-stable-news_watcher-covered.",
+  "regime_note_prev": "2026-04-23T12:29:00Z \u2014 12:29 forex auto \u2014 2 evt (level_cross OIL_CRUDE oil_sweep_9323_buy_retest tape crossed 93.2365 px now 92.587 dist=65p below + level_cross GOLD gold_sweep_4721_sell_retest px 4731.68 dist=100p above 4721.68). OIL confluence comp +43.5 moderate bullish 4/4 TFs agree but aligned=false vs alert-direction-buy-retest (price 65p below suggests retest failed downward, sweep-rejection not confirmed \u2014 KEEP watchlist, arm LIMIT 93.2365 only on price reclaim back above). GOLD confluence comp -27.5 weak bearish 3/4 matches sell-retest direction but readiness=weak \u2192 watchlist-only per 4b. NOT thesis-altering \u2014 Hormuz escalation regime unchanged (2-ship seizure carried, BOJ T-4d Apr-27/28, FOMC T-6d Apr-29). No fresh web search (news_watcher-covered + 0pos + regime-stable). 5 level_alerts KEEP: USDJPY 160 sell fade rule-2 cf 1.0/1.0/1.0 swing=ARMED-on-tag (px ~159.7 last ref) / GOLD 4775 buy escalation rule-2 4h=0.8 / OIL 90.30 retest buy rule-2 4h=0.67/24h=1.0 dist=229p dormant / OIL 93.2365 sweep-retest buy watchlist moderate NOT-armed-price-below / GOLD 4721.68 sweep-retest sell watchlist weak. 9 structure_watch KEEP. 8 news_queries KEEP bug-deferred. Scalp 3 FX shadow KEEP 0-trades + 3 disabled pip-conv + 3 N/A spread halts=0 daily_pnl 0. 0 trades $1000/0pos attention_covered=9/9.",
   "open_positions": [],
   "watchlist": [
     {
@@ -543,14 +543,25 @@
     }
   ],
   "last_tick_summary": {
-    "ts_utc": "2026-04-23T09:25:00Z",
+    "ts_utc": "2026-04-23T12:34:42Z",
     "events_consumed": 10,
     "opened": 0,
     "closed": 0,
     "skipped": 0,
     "attention_covered": "9/9",
-    "binary_event": "iran_ceasefire_indefinite_extension_hormuz_friction",
-    "note": "09:25 forex auto \u2014 2 evt (news_flash hormuz_strait CNBC Apr-19 4d-stale 'Oil prices jump after Iran and U.S. attack commercial ships' matched 'attack' + paired alert_audit_request OIL_CRUDE oil_crude_retest_90_buy; daemon match_keywords date-filter STILL-NOT-ENFORCED forex_news_watcher.py:246 known bug; query tuned prior tick 03:25/04:35 DD-Mon-YYYY token filter yet daemon not reloading/enforcing)"
+    "binary_event": "iran_ceasefire_indefinite_extension (resolved, Hormuz seizures escalated friction)",
+    "note": "09:25 forex auto \u2014 2 evt (news_flash hormuz_strait CNBC Apr-19 4d-stale 'Oil prices jump after Iran and U.S. attack commercial ships' matched 'attack' + paired alert_audit_request OIL_CRUDE oil_crude_retest_90_buy; daemon match_keywords date-filter STILL-NOT-ENFORCED forex_news_watcher.py:246 known bug; query tuned prior tick 03:25/04:35 DD-Mon-YYYY token filter yet daemon not reloading/enforcing)",
+    "events_processed": 3,
+    "events_detail": [
+      "news_flash iran_ceasefire Anadolu extension \u2014 regime-known, non-thesis-altering",
+      "alert_audit_request USDJPY intervention_fade_zone \u2014 KEEP, weak |comp|38.5 vs alert, watchlist",
+      "news_flash us_iran_military Asianet Vance \u2014 9d-stale archive, daemon bug, non-thesis",
+      "alert_audit_request GOLD safehaven_continuation_buy \u2014 KEEP, weak -27.5 direction-mismatch, watchlist"
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "skips": [],
+    "scalp": "3 FX shadow KEEP 0-trades halts=0 daily_pnl 0; 3 disabled pip-conv; 3 N/A spread"
   },
   "last_scan": "2026-04-23T05:05:00Z",
   "capital_base": 1000.0,
@@ -758,7 +769,7 @@
     ],
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). Monitor for reactivation on any T-24h trigger."
   },
-  "regime_note": "2026-04-23T12:29:00Z \u2014 12:29 forex auto \u2014 2 evt (level_cross OIL_CRUDE oil_sweep_9323_buy_retest tape crossed 93.2365 px now 92.587 dist=65p below + level_cross GOLD gold_sweep_4721_sell_retest px 4731.68 dist=100p above 4721.68). OIL confluence comp +43.5 moderate bullish 4/4 TFs agree but aligned=false vs alert-direction-buy-retest (price 65p below suggests retest failed downward, sweep-rejection not confirmed \u2014 KEEP watchlist, arm LIMIT 93.2365 only on price reclaim back above). GOLD confluence comp -27.5 weak bearish 3/4 matches sell-retest direction but readiness=weak \u2192 watchlist-only per 4b. NOT thesis-altering \u2014 Hormuz escalation regime unchanged (2-ship seizure carried, BOJ T-4d Apr-27/28, FOMC T-6d Apr-29). No fresh web search (news_watcher-covered + 0pos + regime-stable). 5 level_alerts KEEP: USDJPY 160 sell fade rule-2 cf 1.0/1.0/1.0 swing=ARMED-on-tag (px ~159.7 last ref) / GOLD 4775 buy escalation rule-2 4h=0.8 / OIL 90.30 retest buy rule-2 4h=0.67/24h=1.0 dist=229p dormant / OIL 93.2365 sweep-retest buy watchlist moderate NOT-armed-price-below / GOLD 4721.68 sweep-retest sell watchlist weak. 9 structure_watch KEEP. 8 news_queries KEEP bug-deferred. Scalp 3 FX shadow KEEP 0-trades + 3 disabled pip-conv + 3 N/A spread halts=0 daily_pnl 0. 0 trades $1000/0pos attention_covered=9/9.",
-  "tick_ts_utc": "2026-04-23T12:29:00Z",
-  "state_ts_utc": "2026-04-23T12:29:00Z"
+  "regime_note": "2026-04-23T12:34:42Z \u2014 12:34 forex auto \u2014 3 evt (news_flash iran_ceasefire Anadolu Apr-21 'Pakistan welcomes extension US-Iran ceasefire' + paired alert_audit_request USDJPY intervention_fade_zone; news_flash us_iran_military Asianet Apr-14 9d-stale 'Vance Economic Terrorism' bare-'Vance'-kw daemon match_keywords date-filter STILL-NOT-ENFORCED forex_news_watcher.py:246 known + paired alert_audit_request GOLD safehaven_continuation_buy). NOT thesis-altering \u2014 indefinite-extension regime + Hormuz-seizure friction already priced. USDJPY confluence px 159.47 comp +38.5 weak bullish 4/4 TFs aligned=False vs SELL-fade-alert \u2014 counter-trend-fade table |comp|=38.5 <40 \u2192 watchlist-only dist=53p from 160 not-at-trigger KEEP. GOLD confluence px 4740.36 comp -27.5 weak bearish 3/4 vs BUY-escalation-alert trend-aligned direction-mismatch \u2192 watchlist-only dist=346p from 4775 KEEP cf fires=10 4h=0.80 rule-2. No fresh web search (news_watcher-covered + 0pos + regime-stable + budget-conserve). 5 level_alerts KEEP: USDJPY 160 sell fade counter-trend |comp|38.5 weak-watchlist / GOLD 4775 buy escalation cf 4h=0.80 rule-2 dist=346p / OIL 90.30 retest buy cf 4h=0.67/24h=1.0 dormant / OIL 93.2365 sweep-retest buy watchlist moderate-context dist-below / GOLD 4721.68 sweep-retest sell watchlist weak. 9 structure_watch KEEP. 8 news_queries KEEP bug-deferred fed_fomc Powell-flood noted (daemon match_keywords not enforced \u2014 tuned notes already in queries). Scalp 3 FX shadow KEEP 0-trades halts=0 daily_pnl 0 + 3 disabled pip-conv (USDJPY/CHF/CAD) + 3 N/A spread (GOLD 5p / OIL 4p / BTC 50p). 0 trades $1000/0pos BOJ T-4d (Apr 27-28) FOMC T-6d (Apr 29). attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-23T12:34:42Z",
+  "state_ts_utc": "2026-04-23T12:34:42Z"
 }

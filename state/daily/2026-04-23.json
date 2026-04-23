@@ -519,5 +519,13 @@
     "scalp": "shadow 3 FX active, 0 trades, halts=0",
     "attention_covered": "9/9",
     "note": "2 level_cross events \u2014 OIL 93.2365 buy-retest price 65p below (not armed), GOLD 4721.68 sell-retest weak. No trade. KEEP all 5 alerts, 9 structure_watch."
+  },
+  {
+    "ts_utc": "2026-04-23T12:34:42Z",
+    "events": 3,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 0,
+    "summary": "non-thesis news_flash + 2 alert_audits; 5 alerts KEEP; 0pos $1000 0pnl"
   }
 ]

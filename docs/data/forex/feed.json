@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-23T12:31:00.401655Z",
+  "generated_at": "2026-04-23T12:34:54.892647Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-22T11:51:00Z",
-      "events_in": 15,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 15,
-      "note": "11:51 tick \u2014 15 events: 1 hormuz Tradewinds 'Three MSC ships attacked' (material, fresh post-extension strike confirmation) + 3 boj_intervention (2 stale Nov/Jan + 1 Mar) + 11 fed_fomc stale flood (Dec-Mar, query broken filter). SPIKE-FADE PATTERN: on Tradewinds fire OIL spiked 91.177 (psych test) rejected back 89.73, GOLD spiked 4772.24 (2.76p from 4775 trigger) rejected back 4752.72. Extension=baseline, attacks=spike-fade not trend. 0 trades (Conv \u22643 all setups, no 7-gate). 1 MODIFY gold_safehaven (add reject observation + anticipation LIMIT idea at 4735-4740), 2 KEEP (audusd/usdjpy), 9 structure_watch KEEP. 1 query TUNE fed_fomc (Powell/Apr29-specific; cooldown 120\u2192180min), 7 KEEP. Broker $1000/0 matches."
-    },
     {
       "ts_utc": "2026-04-22T12:45:00Z",
       "events_in": 0,
@@ -703,6 +695,14 @@
       "scalp": "shadow 3 FX active, 0 trades, halts=0",
       "attention_covered": "9/9",
       "note": "2 level_cross events \u2014 OIL 93.2365 buy-retest price 65p below (not armed), GOLD 4721.68 sell-retest weak. No trade. KEEP all 5 alerts, 9 structure_watch."
+    },
+    {
+      "ts_utc": "2026-04-23T12:34:42Z",
+      "events": 3,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "summary": "non-thesis news_flash + 2 alert_audits; 5 alerts KEEP; 0pos $1000 0pnl"
     }
   ]
 }
