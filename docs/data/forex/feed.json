@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-23T17:14:35.329508Z",
+  "generated_at": "2026-04-23T17:39:45.177509Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-22T12:54:00Z",
-      "events_in": 10,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 10,
-      "note": "12:54 tick \u2014 10 news_flash (stale+dupes). WebSearch: IRGC SEIZED 2 ships today (MSC Francesca/Epaminondas) + 3rd bridge-damage. Step-up fire\u2192seizure. No level triggers. 0 trades. Gold alert catalyst upgraded. Broker $1000/0."
-    },
     {
       "ts_utc": "2026-04-22T14:18:00Z",
       "events_in": 1,
@@ -704,6 +696,20 @@
       "open_positions": 0,
       "regime_note": "2026-04-23T17:14:22Z \u2014 17:07 forex auto \u2014 21 evt gap since 12:34 (4.5h): 6 usdjpy_audits (iran_ceasefire 'extension' kw from Reuters/Al-Jazeera/Detroit-News/Caspian/Daily-Pioneer/WaPo \u2014 ALL iteration of indefinite-extension regime NOT thesis-altering) + 3 oil_audits (ship-traffic + extension-coverage NOT altering) + 4 liquidity_sweeps (USDCHF 0.78602 up-sell readiness=none skip / GBPUSD 1.35133 up-sell readiness=none skip / USDJPY 159.382 down-buy readiness=moderate-but-contradicts-active-160-fa",
       "notes": "21-evt gap tick. USDJPY 160 fade ARMED-on-tag at 30p (override blocks LIMIT). GOLD 4721.68 sweep-sell near but weak. OIL 90.30/93.2365 retests dormant extending up. 4 new sweeps skipped (readiness none or conflict). No trades. Scalp shadow halts=0."
+    },
+    {
+      "tick_ts_utc": "2026-04-23T17:38:30Z",
+      "events_processed": 2,
+      "opened": 0,
+      "closed": 0,
+      "modified": 0,
+      "skipped": 1,
+      "skip_reasons": [
+        "USDJPY 160 fade ARMED-on-tag not ARMED-LIMIT per alert-note override"
+      ],
+      "binary_event": "iran_ceasefire_indefinite_extension (active=false)",
+      "attention_covered": "9/9",
+      "note": "news_watcher iran_ceasefire 'indefinite' kw WaPo Apr-22 extension iteration NOT thesis-altering. USDJPY dist=22.3p inside 30p threshold but naked-break block."
     }
   ]
 }

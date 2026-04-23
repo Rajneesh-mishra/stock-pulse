@@ -150,6 +150,23 @@ def matched_keywords(title, keywords):
     return [k for k in keywords if k.lower() in title_lc]
 
 
+def match_window(title, pub_date, window_tokens):
+    """Second-stage recency filter. Headline OR pubDate must contain at
+    least one of `window_tokens`. Used by Claude to strip archive
+    republishes — e.g. window=['20 Apr 2026','21 Apr 2026', ...] to only
+    let headlines with a current date through.
+
+    Empty window_tokens → no filter, always passes.
+    Returns the matched token or None."""
+    if not window_tokens:
+        return "no_filter"
+    haystack = f"{title} {pub_date}".lower()
+    for tok in window_tokens:
+        if tok.lower() in haystack:
+            return tok
+    return None
+
+
 # ── Runtime state ────────────────────────────────────────────────────────────
 
 def load_runtime():
@@ -244,6 +261,7 @@ def process_query(q, runtime, hourly_cap):
     qid = q.get("id", "unknown")
     query = q.get("query", "")
     keywords = q.get("keywords_required", [])
+    window_tokens = q.get("match_keywords", [])   # Second-stage recency filter
     cooldown_min = q.get("cooldown_min", 30)
 
     # Per-query cooldown
@@ -271,6 +289,15 @@ def process_query(q, runtime, hourly_cap):
 
         matches = matched_keywords(title, keywords)
         if keywords and not matches:
+            continue
+
+        # Second-stage filter: match_keywords acts as a recency window.
+        # Claude tunes this with tokens like "22 Apr 2026" to block
+        # archive republishes. Checks title + pubDate.
+        pub = item.get("pubDate", "")
+        win_match = match_window(title, pub, window_tokens)
+        if window_tokens and win_match is None:
+            # Headline failed the recency window — likely an archive leak
             continue
 
         # Global hourly cap

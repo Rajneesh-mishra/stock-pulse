@@ -2,12 +2,12 @@
   "status": "running",
   "pid": 14513,
   "started_at": "2026-04-23T12:35:10.966892+00:00",
-  "last_poll": "2026-04-23T17:07:15.577719+00:00",
-  "polls_total": 28,
-  "events_emitted": 208,
-  "errors": 9,
+  "last_poll": "2026-04-23T17:37:30.782591+00:00",
+  "polls_total": 31,
+  "events_emitted": 244,
+  "errors": 10,
   "last_error": "iran_ceasefire: 'query_id'",
   "query_count": 8,
   "hourly_cap": 15,
-  "hourly_used": 2
+  "hourly_used": 1
 }
