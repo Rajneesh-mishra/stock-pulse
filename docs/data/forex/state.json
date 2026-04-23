@@ -1,6 +1,6 @@
 {
   "regime": "INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING",
-  "regime_note_prev": "2026-04-23T18:08:52Z \u2014 18:08 forex auto \u2014 2 evt (news_flash iran_ceasefire Reuters Apr-22 'Iran seizes ships Hormuz US calls off attacks' matched 'attack' kw + paired alert_audit USDJPY). NOT thesis-altering \u2014 Apr-22 MSC Francesca/Epaminondas seizure already absorbed into INDEFINITE_EXTENSION_HORMUZ_FRICTION (binary_event Apr-22 12:54 UTC rung already priced); republish via 'attack' kw. Carried 17:52 reads (15min, budget $1.14 remaining, price endpoint 404): USDJPY 159.70 comp +45.5 mod 4/4 bull",
+  "regime_note_prev": "2026-04-23T18:52:00Z \u2014 18:52 forex auto heartbeat \u2014 0 evt, $1000/0pos. USDJPY composite LIFTED weak\u2192moderate (+51 4/4 bull, was +38 weak 3/4 at 18:39) px 159.591 dist 40.9p OUTSIDE 30p near-threshold \u2192 swing=WATCH watchlist-arm-on-wick (alert-note override blocks naked LIMIT anyway). GOLD composite holding -40 moderate 3/4 bear px 4705.89 (+20p from 18:39's 4685). gold_sweep_4721_sell_retest NOW W",
   "open_positions": [],
   "watchlist": [
     {
@@ -516,6 +516,15 @@
       "events_processed": 38,
       "trades_opened": 0,
       "trades_closed": 0
+    },
+    {
+      "ts": "2026-04-23T19:14:00Z",
+      "events": 2,
+      "opened": 0,
+      "closed": 0,
+      "skipped_setups": 0,
+      "pnl": 0,
+      "note": "satire news_flash + USDJPY audit both non-thesis-altering; swing=WATCH"
     }
   ],
   "recent_skips": [
@@ -549,10 +558,7 @@
       "price": 4809.28
     }
   ],
-  "last_tick_summary": {
-    "ts_utc": "2026-04-23T17:52:00Z",
-    "summary": "17:52 forex auto \u2014 13 evt (6 liquidity_sweeps 17:51 bar-close AUDUSD/GOLD/OIL_CRUDE/USDCAD/GBPUSD/USDCHF + 7 bar_close auto). GOLD only confluence re-scan (budget-tight, $0.56 remaining): composite FLIPPED to -40.0 MODERATE 3/4 bearish (was -34.5 weak) at px 4685.0 (gold dropped -26p from 4711.35). gold_safehaven_continuation_buy 4775: dist=90p, 3xH4ATR=119.7p cond1 FALSE rule-1 KEEP, aligned=False vs BUY (counter-trend context no fade note) watchlist only. gold_sweep_4721_sell_retest: px 4685 dist=36.7p BELOW 4721.68, readiness LIFTED weak\u2192moderate aligned SELL, but price moved AWAY just outside 30p near-threshold \u2192 WATCH not ARM. If price re-tags 4721.68 with readiness \u2265 moderate next cycle \u2192 arm LIMIT sell SL 4725.01 TP 4707.00 R:R 4.4:1. GOLD 17:51 sweep DOWN 4673.27 bias=buy \u2014 composite BEARISH aligned WITH sweep wick direction (down), NOT against \u2192 not armable (would need bullish moderate against wick to add). OIL_CRUDE 17:51 sweep UP 97.647 bias=sell \u2014 no fade-note alert + last-read comp +45 bullish aligned WITH sweep wick direction \u2192 not armable counter-trend, skip. Retests 90.30/93.2365 dormant, price 97p extending away. AUDUSD/GBPUSD/USDCAD/USDCHF sweeps: no existing alert + no fresh confluence (budget) \u2192 no-add pending next cycle. USDJPY: no event this cycle, carrying 17:14 read comp +45.5 moderate 4/4 bull AGAINST SELL fade, px 159.70 dist=30p at-threshold; alert-note override 'skip naked breaks' blocks LIMIT, ARMED-on-tag only. 5 level_alerts KEEP. 9 structure_watch KEEP. Scalp 3 FX shadow halts=0 daily_pnl=0 + 3 disabled pip-conv + 3 N/A spread. 0 trades $1000/0pos. BOJ T-4d (Apr 27-28) FOMC T-6d (Apr 29). attention_covered=9/9. web_search skipped (0pos+regime-stable+budget)."
-  },
+  "last_tick_summary": "19:14 auto \u2014 2 evt satire+audit carried; USDJPY dist tightened 40.9p\u219232.2p (WATCH); 0 trades",
   "last_scan": "2026-04-23T05:05:00Z",
   "capital_base": 1000.0,
   "tick_log": [
@@ -763,7 +769,7 @@
     ],
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). Monitor for reactivation on any T-24h trigger."
   },
-  "regime_note": "2026-04-23T18:52:00Z \u2014 18:52 forex auto heartbeat \u2014 0 evt, $1000/0pos. USDJPY composite LIFTED weak\u2192moderate (+51 4/4 bull, was +38 weak 3/4 at 18:39) px 159.591 dist 40.9p OUTSIDE 30p near-threshold \u2192 swing=WATCH watchlist-arm-on-wick (alert-note override blocks naked LIMIT anyway). GOLD composite holding -40 moderate 3/4 bear px 4705.89 (+20p from 18:39's 4685). gold_sweep_4721_sell_retest NOW WITHIN 30p (dist=15.79p H1_ATR=22.6p) trend-aligned moderate \u2192 ARMED-on-tag per note override 'M15 reject wick + hold required'; on-wick entry LIMIT SELL 4721.68 SL 4725.01 TP 4707.00 R:R 4.41:1 half-size 0.5%. gold_safehaven_continuation_buy 4775 cond1 FALSE dist=69p (3\u00d7H4ATR=119.7p) counter-trend-no-fade-keyword \u2192 KEEP watchlist. OIL 95.43 moderate+45 bull carried retests 90.30/93.2365 dormant-extending. EURUSD weak-bear / BTCUSD mod+53 / GBPUSD AUDUSD USDCAD USDCHF no thesis (carried 18:39). 5 level_alerts KEEP, 9 structure_watch KEEP. Scalp engine healthy daily_pnl=0 halted={} 3 FX shadow active + 3 disabled pip-conv-pending + 3 N/A spread. BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 29). attention_covered=9/9. web_search skipped (news_watcher-covered + 0pos + regime-stable + last-tick 13min).",
-  "tick_ts_utc": "2026-04-23T18:52:00Z",
-  "state_ts_utc": "2026-04-23T18:52:00Z"
+  "regime_note": "2026-04-23T19:14:00Z \u2014 19:14 forex auto \u2014 2 evt: Deccan Herald Apr-23 'Iran AI Satire Tehran trolls Trump ceasefire extension' news_flash (matched 'extension') + paired USDJPY alert_audit_request. Classified satire-republish NON-thesis-altering (fully-verified indefinite extension already priced). USDJPY re-audit: comp +51.0 moderate 4/4 bullish aligned=False vs SELL fade (counter-trend) px 159.678 dist=32.2p from 160 (narrowed from 18:52's 40.9p). OUTSIDE 30p near-threshold \u2192 swing=WATCH. Alert-note override 'skip naked breaks require M15 rejection + verbal intervention/rate-check' blocks naked LIMIT when within 30p too \u2192 ARMED-on-tag only. Rule-2 |comp|\u226540 against alert = fade LIVE on tag. cf 1f rule-2 hit 1.0/1.0/1.0 KEEP. BOJ T-4d (Apr 27-28). Carried 18:52 reads (<25min): GOLD 4685 comp=-40 moderate 3/4 bear gold_escalation_buy_zone@4775 cond1 FALSE rule-1 KEEP + gold_sweep_4721_sell_retest dist=36.7p OUTSIDE 30p but MODERATE aligned SELL \u2192 WATCH (on-tag within 30p + readiness\u2265moderate = arm LIMIT 4721.68 SL 4725.01 TP 4707.00 R:R 4.4:1 half-size 0.5% via validated-alert promotion). OIL 95.43 moderate +45 4/4 bull, oil_crude_retest_90_buy dist=512p + oil_sweep_9323_buy_retest dist=220p both extending-away dormant. AUDUSD watchlist 0.7085 pullback ACTIVE_WAITING. USDCAD 1.3810-1.3830 bounce-target ACTIVE_WAITING. EURUSD cancelled_fakeout_reset. BTCUSD mod+53 no alert. GBPUSD USDCHF no thesis. 5 level_alerts KEEP. 9 structure_watch KEEP. Scalp 3 FX shadow-mode halt={} daily_pnl=0; USDJPY/CHF/CAD pip-conv-pending; GOLD/OIL/BTC spread-blocked. 0 trades 0 pos $1000/$1000. FOMC T-6d BOJ T-4d. attention_covered=9/9. web_search skipped (news_watcher emitted this-tick event + 0 pos + regime-stable + 22min since last tick).",
+  "tick_ts_utc": "2026-04-23T19:14:00Z",
+  "state_ts_utc": "2026-04-23T19:14:00Z"
 }

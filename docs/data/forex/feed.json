@@ -1,22 +1,6 @@
 {
-  "generated_at": "2026-04-23T18:58:46.872878Z",
+  "generated_at": "2026-04-23T19:17:26.944684Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-22T20:15:00Z",
-      "events_in": 1,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 1,
-      "note": "20:15 UTC \u2014 1 event USDCAD level_cross on usdcad_liqsweep_sell_zone (our ADD 7min ago). Price 1.3674 crossed up thru 1.36737 then closed 1.36733 \u2014 classic rejection off swept wick. Confluence strengthened to composite -32 readiness=WEAK (was -24.5 NONE last tick) 3/4 TFs bearish, DAY -0.4 H4 -0.5 H1 -0.1 M15 +0.9. Still below moderate (need |composite|>=40 + 3TFs agree \u2014 we have agreement but score 8p short). LIMIT arm blocked per 4c; R:R economics unchanged (2.2p SL vs ~2p spread = <1.5:1). SKIP trade, MODIFY alert with tag observation. Broker $1000/0 reconciled. No news sweep (7min since last tick, budget prudent)."
-    },
-    {
-      "ts_utc": "2026-04-22T21:00:30Z",
-      "events_in": 0,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 0,
-      "note": "21:00 UTC heartbeat \u2014 0 unconsumed events. Broker $1000/0 reconciled. Confluence sweep all 9: USDJPY composite +51 moderate bullish 159.488 (51p below 160 fade, still >3\u00d7 H1 ATR = WATCH not ARMED); USDCAD -32 weak bearish 1.36717 (now 2p BELOW swept 1.36737 wick, 45min post-sweep continuation valid but no sharper level formed); OIL +28.5 weak bullish 92.59 (229p above 90.30 retest zone); GOLD -16 none bearish 4739.99 (35p below 4775 trigger, tape unsupportive); BTC +47.5 moderate bullish 78.9k (parabolic, no anchorable level for new alert); AUDUSD +23.5 none bullish 0.7158 (no alert post-Rule 1 removal); EURUSD/GBPUSD/USDCHF none neutral. 1 WebSearch Hormuz: Iran seized 2 ships Apr 22, Trump WH says non-US non-Israeli seizures NOT ceasefire violation \u2014 slight de-escalation of rhetoric, gold bid weakening consistent. 4 alerts price-refreshed (all MODIFY proximity), 9 structure_watch KEEP, 8 news_queries KEEP. 0 trades."
-    },
     {
       "ts_utc": "2026-04-22T21:33:00Z",
       "events_in": 1,
@@ -117,6 +101,15 @@
       "events_processed": 38,
       "trades_opened": 0,
       "trades_closed": 0
+    },
+    {
+      "ts": "2026-04-23T19:14:00Z",
+      "events": 2,
+      "opened": 0,
+      "closed": 0,
+      "skipped_setups": 0,
+      "pnl": 0,
+      "note": "satire news_flash + USDJPY audit both non-thesis-altering; swing=WATCH"
     },
     {
       "date": "2026-04-23",
@@ -716,6 +709,17 @@
       "closed": 0,
       "skipped": 0,
       "summary": "USDJPY composite lifted weak->moderate +51 dist 40.9p WATCH. GOLD sweep_4721 now within 30p ARMED-on-tag note-override. 0 trades."
+    },
+    {
+      "ts_utc": "2026-04-23T19:14:00Z",
+      "events": 2,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "binary": "iran_ceasefire_extension (inactive/verified)",
+      "regime_summary": "USDJPY +51 mod 4/4 bull dist=32.2p WATCH; GOLD -40 mod 3/4 bear; OIL +45 mod 4/4 bull; 0 pos $1000",
+      "attention_covered": "9/9",
+      "tick_mode": "auto"
     }
   ]
 }
