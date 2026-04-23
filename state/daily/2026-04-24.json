@@ -49,5 +49,80 @@
     "pnl": 0,
     "balance": 1000.0,
     "note": "1 news_flash STALE (Mar-1 Reuters 54d). GOLD sweep_4721 ARMED (27.6$ inside 30$). USDJPY fade WATCH (31.5p outside 30p). 3 queries TUNED. 0 trades."
+  },
+  {
+    "tick_ts_utc": "2026-04-24T03:45:00Z",
+    "type": "heartbeat",
+    "events": 0,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 0,
+    "balance": 1000.0,
+    "open_positions": 0,
+    "daily_pnl": 0.0,
+    "regime": "INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING",
+    "attention": {
+      "EURUSD": {
+        "swing": "NONE",
+        "scalp": "ACTIVE",
+        "readiness": "weak",
+        "comp": -33
+      },
+      "GBPUSD": {
+        "swing": "NONE",
+        "scalp": "ACTIVE",
+        "readiness": "none",
+        "comp": 5.5
+      },
+      "AUDUSD": {
+        "swing": "NONE",
+        "scalp": "ACTIVE",
+        "readiness": "none",
+        "comp": 4.5
+      },
+      "USDJPY": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "moderate",
+        "comp": 43
+      },
+      "USDCAD": {
+        "swing": "NONE",
+        "scalp": "OFF",
+        "readiness": "none",
+        "comp": -13.5
+      },
+      "USDCHF": {
+        "swing": "NONE",
+        "scalp": "OFF",
+        "readiness": "none",
+        "comp": 6.5
+      },
+      "GOLD": {
+        "swing": "ARMED",
+        "scalp": "N/A",
+        "readiness": "moderate",
+        "comp": -40,
+        "dist_to_level": "24.41$"
+      },
+      "OIL_CRUDE": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "moderate",
+        "comp": 45
+      },
+      "BTCUSD": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "moderate",
+        "comp": 40,
+        "note": "day_fvg_buy added"
+      }
+    },
+    "alerts_audit": "5 KEEP 1 ADD (btcusd_day_fvg_buy)",
+    "sw_audit": "9 SW KEEP",
+    "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=KEEP halt={}",
+    "web_search": "skipped (0 pos + regime stable)",
+    "boj_fomc": "BOJ T-3d FOMC T-5d"
   }
 ]
