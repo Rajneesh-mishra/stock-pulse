@@ -1,6 +1,6 @@
 {
   "regime": "INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING",
-  "regime_note_prev": "2026-04-23T02:16:46Z - 02:12 heartbeat tick \u2014 0 events, 0 positions, $1000/0pos. USDJPY 159.478 dist 52.2p<3xH4ATR(95p) KEEP WATCH against 160 SELL \u2014 H1 confluence comp +51 4/4 BULLISH (directional contradiction means WATCH not ARM). GOLD 4705.76 dist 69.2p<3xH4ATR(116p) KEEP rule-2 (prior 10 fires 90% 1h hit_rate, +25p avg) WATCH against 4775 BUY \u2014 H1 weak comp -35 3/4 BEARISH. OIL_CRUDE 93.573 dist 327p<3xH4ATR(727p) KEEP rule-2 WATCH against 90.30 BUY \u2014 comp +29.5 3/4 BULLISH aligned but weak. News scan: Brent $101.91 / WTI $92.96 rising on Iran ceasefire-extension doubts (Trump-extended yet US naval blockade maintained, peace-talk uncertainty). Non-thesis-altering \u2014 binary iran_ceasefire_indefinite_extension still 4-source verified inactive. BOJ T-4d FOMC T-6d. 9 structure_watch KEEP, 8 news_queries KEEP, scalp 3 FX shadow KEEP (EURUSD/GBPUSD/AUDUSD) + 3 disabled (USDJPY/USDCHF/USDCAD pip-value) + 3 N/A (GOLD/OIL/BTC spread). attention_covered=9/9.",
+  "regime_note_prev": "2026-04-23T03:15:00Z - 03:15 tick \u2014 1 event (Times of Islamabad 'Saudi Arabia urged US lift Hormuz blockade' Apr 14 9-day-old archive republish, 'Islamabad' kw match, non-thesis-altering). 0 positions $1000/0pos. 3 KEEP: USDJPY 159.544 dist 45.6p just>3xH1ATR 44.55p <3xH4ATR 95p WATCH 160 SELL comp +51 mod 4/4 bullish (dir contradicts); GOLD 4701.94 BROKE LOWER -44p testing 4698-4700 swept floor dist 730p<3xH4ATR 1159p WATCH 4775 BUY comp -35 weak 3/4 bear rule-2 0.8 KEEP; OIL_CRUDE 94.68 EXTENDED +189p on Hormuz 3-ship attack (NPR/NBC/CNBC Apr 22) dist 438p<3xH4ATR 726p WATCH 90.30 BUY comp +29.5 weak 3/4 bull aligned rule-2 0.67/1.0. 9 structure_watch KEEP, 8 queries KEEP, scalp 3 FX shadow KEEP + 3 disabled(pip-value) + 3 N/A(spread). News: Brent $101.5 +3% confirming oil-supply regime, gold NOT joining sell-side pressure = safehaven-bid weakening per original note. Binary iran_ceasefire_indefinite_extension inactive-verified stands. BOJ T-4d FOMC T-6d. attention_covered=9/9.",
   "open_positions": [],
   "watchlist": [
     {
@@ -180,14 +180,6 @@
     }
   ],
   "tick_history": [
-    {
-      "ts": "2026-04-21T02:40:00Z",
-      "events_processed": 23,
-      "events_opened": 0,
-      "events_closed": 0,
-      "events_skipped": 23,
-      "note": "auto tick \u2014 8 bar_close routine + 15 news_flash stale URL-flushes, no action"
-    },
     {
       "ts_utc": "2026-04-21T02:56:30Z",
       "events_in": 8,
@@ -495,6 +487,14 @@
       "closed": 0,
       "skipped": 0,
       "summary": "01:58 UTC \u2014 1 evt (Apr 21 Caspian News ceasefire-extension republish, non-altering). USDJPY +43.5 mod 4/4 bullish AGAINST 160 SELL dist 62.5p WATCH; GOLD -35.0 weak 4775 BUY 47.3p rule-2 KEEP; OIL +29.5 weak 90.30 BUY 280p rule-2 KEEP. 3 KEEP, 0 trades $1000/0pos. BOJ T-4d FOMC T-6d. attention_covered=9/9"
+    },
+    {
+      "ts_utc": "2026-04-23T03:25:00Z",
+      "events_in": 2,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 2,
+      "note": "news_flash CBS Apr 7 archive 'reopen' via over-broad April filter; alert_audit_request GOLD non-altering. Tuned hormuz_strait. 3 KEEP."
     }
   ],
   "recent_skips": [
@@ -528,7 +528,7 @@
       "price": 4809.28
     }
   ],
-  "last_tick_summary": "01:58 UTC \u2014 1 evt (Apr 21 Caspian News ceasefire-extension republish, non-altering). USDJPY +43.5 mod 4/4 bullish AGAINST 160 SELL dist 62.5p WATCH; GOLD -35.0 weak 4775 BUY 47.3p rule-2 KEEP; OIL +29.5 weak 90.30 BUY 280p rule-2 KEEP. 3 KEEP, 0 trades $1000/0pos. BOJ T-4d FOMC T-6d. attention_covered=9/9",
+  "last_tick_summary": "2026-04-23T03:25:00Z tick \u2014 2 evt (Apr 7 CBS Hormuz-reopens archive non-altering, hormuz_strait filter tightened), 0 pos, 3 KEEP USDJPY/GOLD/OIL.",
   "last_scan": {
     "timestamp": "2026-04-23T01:25:46Z",
     "events_processed_last_tick": 1,
@@ -715,7 +715,7 @@
     ],
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). Monitor for reactivation on any T-24h trigger."
   },
-  "regime_note": "2026-04-23T03:15:00Z - 03:15 tick \u2014 1 event (Times of Islamabad 'Saudi Arabia urged US lift Hormuz blockade' Apr 14 9-day-old archive republish, 'Islamabad' kw match, non-thesis-altering). 0 positions $1000/0pos. 3 KEEP: USDJPY 159.544 dist 45.6p just>3xH1ATR 44.55p <3xH4ATR 95p WATCH 160 SELL comp +51 mod 4/4 bullish (dir contradicts); GOLD 4701.94 BROKE LOWER -44p testing 4698-4700 swept floor dist 730p<3xH4ATR 1159p WATCH 4775 BUY comp -35 weak 3/4 bear rule-2 0.8 KEEP; OIL_CRUDE 94.68 EXTENDED +189p on Hormuz 3-ship attack (NPR/NBC/CNBC Apr 22) dist 438p<3xH4ATR 726p WATCH 90.30 BUY comp +29.5 weak 3/4 bull aligned rule-2 0.67/1.0. 9 structure_watch KEEP, 8 queries KEEP, scalp 3 FX shadow KEEP + 3 disabled(pip-value) + 3 N/A(spread). News: Brent $101.5 +3% confirming oil-supply regime, gold NOT joining sell-side pressure = safehaven-bid weakening per original note. Binary iran_ceasefire_indefinite_extension inactive-verified stands. BOJ T-4d FOMC T-6d. attention_covered=9/9.",
-  "tick_ts_utc": "2026-04-23T03:15:00Z",
-  "state_ts_utc": "2026-04-23T03:15:00Z"
+  "regime_note": "2026-04-23T03:25:00Z - 03:25 tick \u2014 2 events (news_flash CBS Apr 7 2026 16-day-archive 'Iran war throttle oil flows even if Hormuz reopens' matched 'reopen' via over-broad year-month date filter [2026,April] \u2014 tuned hormuz_strait to [Apr 20-23] window; alert_audit_request GOLD gold_safehaven_continuation_buy on same archive non-thesis-altering). 0 positions $1000/0pos. 3 KEEP refresh: USDJPY 159.508 dist 49.2p (just>3xH1ATR 44.4p <3xH4ATR 95p) WATCH 160 SELL comp+51 mod 4/4 bullish (dir contradicts); GOLD 4705.47 floor-test 4698-4700 swept-floor dist 695p>3xH4ATR 116p but cond3 FALSE (not trending toward 4775) rule-1 KEEP; cf 4h=0.8 rule-2 KEEP; weak comp-35 3/4 bear; OIL 94.441 EXT dist 414p<3xH4ATR 727p WATCH 90.30 BUY retest comp+29.5 weak 3/4 bull aligned rule-2 0.67/1.0 KEEP. 9 structure_watch KEEP, 8 queries (hormuz_strait TUNED), scalp 3 FX shadow KEEP + 3 disabled pip-value + 3 N/A spread, 0 trades, BOJ T-4d FOMC T-6d. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-23T03:25:00Z",
+  "state_ts_utc": "2026-04-23T03:25:00Z"
 }
