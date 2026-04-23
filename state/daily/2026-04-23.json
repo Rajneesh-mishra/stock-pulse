@@ -27,7 +27,7 @@
         "opened": 0,
         "closed": 0,
         "skipped": 5,
-        "note": "22:12 UTC tick \u2014 5 stale news_flash events (1 iran_ceasefire Apr 12 Islamabad backgrounder + 4 opec_supply 2025/Mar2026 archives). TUNED opec_supply (narrowed kw + match_keywords date filter + cooldown 60\u2192120min). Confluence USDJPY +51 moderate WATCH 160 (dist 53p), GOLD -18.5 none WATCH 4775, OIL +26 weak WATCH 90.30 retest-far, USDCAD -37 weak no-alert, BTC +43.5 moderate no-alert. Broker $1000/0pos. 3 KEEP, 1 query TUNED, 0 trades. BOJ T-4d."
+        "note": "22:12 UTC tick — 5 stale news_flash events (1 iran_ceasefire Apr 12 Islamabad backgrounder + 4 opec_supply 2025/Mar2026 archives). TUNED opec_supply (narrowed kw + match_keywords date filter + cooldown 60→120min). Confluence USDJPY +51 moderate WATCH 160 (dist 53p), GOLD -18.5 none WATCH 4775, OIL +26 weak WATCH 90.30 retest-far, USDCAD -37 weak no-alert, BTC +43.5 moderate no-alert. Broker $1000/0pos. 3 KEEP, 1 query TUNED, 0 trades. BOJ T-4d."
       },
       {
         "ts_utc": "2026-04-23T00:03:00Z",
@@ -62,7 +62,7 @@
         "queries_tuned": [
           "fed_fomc"
         ],
-        "queries_tune_detail": "fed_fomc match_keywords replaced with current-decision-phrase list + cooldown 180\u2192360min",
+        "queries_tune_detail": "fed_fomc match_keywords replaced with current-decision-phrase list + cooldown 180→360min",
         "positions_delta": 0,
         "account_balance_usd": 1000.0,
         "daily_pnl_usd": 0.0,
@@ -93,7 +93,7 @@
         "opened": 0,
         "closed": 0,
         "skipped": 6,
-        "note": "00:52 UTC tick \u2014 1 GOLD liquidity_sweep up-sweep 4749.45 wick 26.7p 2.5xATR sell-bias + 5 bar_close routine. Confluence GOLD comp -27.5 weak 3/4 bearish aligned with sweep but <moderate = not armable. No counter-alert. $1000/0, 0 trades, 3+9+8 KEEP."
+        "note": "00:52 UTC tick — 1 GOLD liquidity_sweep up-sweep 4749.45 wick 26.7p 2.5xATR sell-bias + 5 bar_close routine. Confluence GOLD comp -27.5 weak 3/4 bearish aligned with sweep but <moderate = not armable. No counter-alert. $1000/0, 0 trades, 3+9+8 KEEP."
       },
       {
         "ts_utc": "2026-04-23T01:08:00Z",
@@ -101,7 +101,7 @@
         "trades_opened": 0,
         "trades_closed": 0,
         "skipped": 2,
-        "notes": "opec_supply Feb13 archive republish (matched 'war' required-kw + '2026' match-kw) + derivative OIL alert_audit_request. Stale archive NOT thesis-altering; OIL comp +34.5 weak aligned not armable 286p away; KEEP alert. TUNED query: tighter required-kw (explicit supply-verbs only) + strict forward-month filters + cooldown 120\u2192240min. No trades $1000/0pos."
+        "notes": "opec_supply Feb13 archive republish (matched 'war' required-kw + '2026' match-kw) + derivative OIL alert_audit_request. Stale archive NOT thesis-altering; OIL comp +34.5 weak aligned not armable 286p away; KEEP alert. TUNED query: tighter required-kw (explicit supply-verbs only) + strict forward-month filters + cooldown 120→240min. No trades $1000/0pos."
       },
       {
         "ts_utc": "2026-04-23T01:00:24Z",
@@ -109,7 +109,7 @@
         "opened": 0,
         "closed": 0,
         "skipped": 9,
-        "summary": "01:00 UTC \u2014 9 events (AUDUSD sweep 0.9p noise + GOLD 4752 up-sweep 18.4p 1.73xATR 3rd-cluster + 7 bar_close). No sweep armable (AUDUSD conf opposes+wick tiny, GOLD conf weak<moderate). USDJPY +43.5 mod AGAINST 160 SELL 68.9p WATCH, OIL +34.5 weak BUY 250p WATCH, GOLD -27.5 weak 4775 BUY 29p rule-2 KEEP. 3 alerts KEEP refresh. 0 trades $1000/0."
+        "summary": "01:00 UTC — 9 events (AUDUSD sweep 0.9p noise + GOLD 4752 up-sweep 18.4p 1.73xATR 3rd-cluster + 7 bar_close). No sweep armable (AUDUSD conf opposes+wick tiny, GOLD conf weak<moderate). USDJPY +43.5 mod AGAINST 160 SELL 68.9p WATCH, OIL +34.5 weak BUY 250p WATCH, GOLD -27.5 weak 4775 BUY 29p rule-2 KEEP. 3 alerts KEEP refresh. 0 trades $1000/0."
       }
     ]
   },
@@ -120,7 +120,7 @@
     "opened": 0,
     "closed": 0,
     "skipped": 0,
-    "summary": "01:10 UTC heartbeat \u2014 0 events, USDJPY +43.5 mod AGAINST 160 SELL WATCH 63p, GOLD -27.5 weak 4775 BUY 30.8p KEEP, OIL +34.5 weak 90.30 BUY 273p KEEP. 0 trades $1000/0."
+    "summary": "01:10 UTC heartbeat — 0 events, USDJPY +43.5 mod AGAINST 160 SELL WATCH 63p, GOLD -27.5 weak 4775 BUY 30.8p KEEP, OIL +34.5 weak 90.30 BUY 273p KEEP. 0 trades $1000/0."
   },
   {
     "ts_utc": "2026-04-23T01:25:46Z",
@@ -128,6 +128,11 @@
     "events": 1,
     "trades": 0,
     "balance": 1000.0,
-    "summary": "01:22 UTC \u2014 1 evt (Vance MSN republish, non-altering). USDJPY +43.5 mod AGAINST 160 SELL dist 60.4p WATCH, GOLD -35.0 weak 4775 BUY 44.5p rule-2 KEEP, OIL +34.5 weak 90.30 BUY 285.6p rule-2 KEEP. 3 KEEP. 0 trades $1000/0. BOJ T-4d FOMC T-6d."
+    "summary": "01:22 UTC — 1 evt (Vance MSN republish, non-altering). USDJPY +43.5 mod AGAINST 160 SELL dist 60.4p WATCH, GOLD -35.0 weak 4775 BUY 44.5p rule-2 KEEP, OIL +34.5 weak 90.30 BUY 285.6p rule-2 KEEP. 3 KEEP. 0 trades $1000/0. BOJ T-4d FOMC T-6d."
+  },
+  {
+    "ts_utc": "2026-04-23T01:55:00Z",
+    "type": "tick",
+    "summary": "01:53 UTC forex auto — 1 event (WaPo Iran-ceasefire republish Apr 22 05:49 GMT 20h-old, matched 'indefinite' kw, same story as binary indef-extension 4-source verified: NON-THESIS-ALTERING no audit_request derivative). Broker $1000/0pos reconciled. USDJPY confluence endpoint returned 0-candles (API hiccup not signal) — using 01:22 cached +60.4 moderate 4/4 bullish AGAINST 160 SELL dist 60p WATCH. 3 KEEP refresh: USDJPY 160 SELL 60p>3xH1ATR 45p mod-bullish WATCH against / GOLD 4775 BUY 45p weak rule-2 / OIL 90.30 BUY 286p weak rule-2. 9 structure_watch KEEP, 8 news queries KEEP (iran_ceasefire tuning working: 'indefinite' only fired WaPo this time, escalation-specific set). Scalp: 3 FX shadow KEEP + 3 disabled(pip-value) + 3 N/A(spread). 0 trades, BOJ T-4d FOMC T-6d. attention_covered=9/9."
   }
 ]

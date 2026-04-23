@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T01:25:56.645774Z",
+  "generated_at": "2026-04-23T01:54:36.912150Z",
   "ticks": [
     {
       "ts_utc": "2026-04-21T06:37:00Z",
@@ -371,6 +371,11 @@
       "trades": 0,
       "balance": 1000.0,
       "summary": "01:22 UTC \u2014 1 evt (Vance MSN republish, non-altering). USDJPY +43.5 mod AGAINST 160 SELL dist 60.4p WATCH, GOLD -35.0 weak 4775 BUY 44.5p rule-2 KEEP, OIL +34.5 weak 90.30 BUY 285.6p rule-2 KEEP. 3 KEEP. 0 trades $1000/0. BOJ T-4d FOMC T-6d."
+    },
+    {
+      "ts_utc": "2026-04-23T01:55:00Z",
+      "type": "tick",
+      "summary": "01:53 UTC forex auto \u2014 1 event (WaPo Iran-ceasefire republish Apr 22 05:49 GMT 20h-old, matched 'indefinite' kw, same story as binary indef-extension 4-source verified: NON-THESIS-ALTERING no audit_request derivative). Broker $1000/0pos reconciled. USDJPY confluence endpoint returned 0-candles (API hiccup not signal) \u2014 using 01:22 cached +60.4 moderate 4/4 bullish AGAINST 160 SELL dist 60p WATCH. 3 KEEP refresh: USDJPY 160 SELL 60p>3xH1ATR 45p mod-bullish WATCH against / GOLD 4775 BUY 45p weak rule-2 / OIL 90.30 BUY 286p weak rule-2. 9 structure_watch KEEP, 8 news queries KEEP (iran_ceasefire tuning working: 'indefinite' only fired WaPo this time, escalation-specific set). Scalp: 3 FX shadow KEEP + 3 disabled(pip-value) + 3 N/A(spread). 0 trades, BOJ T-4d FOMC T-6d. attention_covered=9/9."
     }
   ]
 }
