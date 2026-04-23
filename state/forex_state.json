@@ -1,6 +1,6 @@
 {
   "regime": "INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING",
-  "regime_note_prev": "2026-04-23T01:55:00Z - 01:53 tick \u2014 1 event (news_flash iran_ceasefire WaPo 2026-04-22T05:49 GMT Trump extends ceasefire indefinitely \u2014 20h-old republish, matched 'indefinite' req-kw). Already covered by binary_event indef-extension (4-source verified: Reuters/NYT/DetroitNews/AJ). Non-thesis-altering, no audit_request derivative. Broker $1000/0pos. USDJPY confluence endpoint returned 0-candles (transient API empty) \u2014 kept 01:22 cached +60.4 moderate 4/4 bullish AGAINST 160 SELL dist 60p>3xH1ATR 45p WATCH (not ARM). 3 alerts KEEP, scalp 3 ACTIVE shadow, 0 trades.",
+  "regime_note_prev": "2026-04-23T02:16:46Z - 02:12 heartbeat tick \u2014 0 events, 0 positions, $1000/0pos. USDJPY 159.478 dist 52.2p<3xH4ATR(95p) KEEP WATCH against 160 SELL \u2014 H1 confluence comp +51 4/4 BULLISH (directional contradiction means WATCH not ARM). GOLD 4705.76 dist 69.2p<3xH4ATR(116p) KEEP rule-2 (prior 10 fires 90% 1h hit_rate, +25p avg) WATCH against 4775 BUY \u2014 H1 weak comp -35 3/4 BEARISH. OIL_CRUDE 93.573 dist 327p<3xH4ATR(727p) KEEP rule-2 WATCH against 90.30 BUY \u2014 comp +29.5 3/4 BULLISH aligned but weak. News scan: Brent $101.91 / WTI $92.96 rising on Iran ceasefire-extension doubts (Trump-extended yet US naval blockade maintained, peace-talk uncertainty). Non-thesis-altering \u2014 binary iran_ceasefire_indefinite_extension still 4-source verified inactive. BOJ T-4d FOMC T-6d. 9 structure_watch KEEP, 8 news_queries KEEP, scalp 3 FX shadow KEEP (EURUSD/GBPUSD/AUDUSD) + 3 disabled (USDJPY/USDCHF/USDCAD pip-value) + 3 N/A (GOLD/OIL/BTC spread). attention_covered=9/9.",
   "open_positions": [],
   "watchlist": [
     {
@@ -692,6 +692,14 @@
       "closed": 0,
       "skipped": 1,
       "summary": "01:53 UTC forex auto \u2014 1 event (WaPo Iran-ceasefire republish Apr 22 05:49 GMT 20h-old, matched 'indefinite' kw, same story as binary indef-extension 4-source verified: NON-THESIS-ALTERING no audit_request derivative). Broker $1000/0pos reconciled. USDJPY confluence endpoint returned 0-candles (API hiccup not signal) \u2014 using 01:22 cached +60.4 moderate 4/4 bullish AGAINST 160 SELL dist 60p WATCH. 3 KEEP refresh: USDJPY 160 SELL 60p>3xH1ATR 45p mod-bullish WATCH against / GOLD 4775 BUY 45p weak rule-2 / OIL 90.30 BUY 286p weak rule-2. 9 structure_watch KEEP, 8 news queries KEEP (iran_ceasefire tuning working: 'indefinite' only fired WaPo this time, escalation-specific set). Scalp: 3 FX shadow KEEP + 3 disabled(pip-value) + 3 N/A(spread). 0 trades, BOJ T-4d FOMC T-6d. attention_covered=9/9."
+    },
+    {
+      "ts": "2026-04-23T03:15:00Z",
+      "events": 1,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 1,
+      "note": "stale Apr 14 archive republish Saudi-Hormuz; 3 alerts KEEP refresh; GOLD broke lower to 4701.94 testing sweep floor; OIL extended to 94.68 on 3-ship attack"
     }
   ],
   "binary_event": {
@@ -707,7 +715,7 @@
     ],
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). Monitor for reactivation on any T-24h trigger."
   },
-  "regime_note": "2026-04-23T02:16:46Z - 02:12 heartbeat tick \u2014 0 events, 0 positions, $1000/0pos. USDJPY 159.478 dist 52.2p<3xH4ATR(95p) KEEP WATCH against 160 SELL \u2014 H1 confluence comp +51 4/4 BULLISH (directional contradiction means WATCH not ARM). GOLD 4705.76 dist 69.2p<3xH4ATR(116p) KEEP rule-2 (prior 10 fires 90% 1h hit_rate, +25p avg) WATCH against 4775 BUY \u2014 H1 weak comp -35 3/4 BEARISH. OIL_CRUDE 93.573 dist 327p<3xH4ATR(727p) KEEP rule-2 WATCH against 90.30 BUY \u2014 comp +29.5 3/4 BULLISH aligned but weak. News scan: Brent $101.91 / WTI $92.96 rising on Iran ceasefire-extension doubts (Trump-extended yet US naval blockade maintained, peace-talk uncertainty). Non-thesis-altering \u2014 binary iran_ceasefire_indefinite_extension still 4-source verified inactive. BOJ T-4d FOMC T-6d. 9 structure_watch KEEP, 8 news_queries KEEP, scalp 3 FX shadow KEEP (EURUSD/GBPUSD/AUDUSD) + 3 disabled (USDJPY/USDCHF/USDCAD pip-value) + 3 N/A (GOLD/OIL/BTC spread). attention_covered=9/9.",
-  "tick_ts_utc": "2026-04-23T02:16:46Z",
-  "state_ts_utc": "2026-04-23T02:16:46Z"
+  "regime_note": "2026-04-23T03:15:00Z - 03:15 tick \u2014 1 event (Times of Islamabad 'Saudi Arabia urged US lift Hormuz blockade' Apr 14 9-day-old archive republish, 'Islamabad' kw match, non-thesis-altering). 0 positions $1000/0pos. 3 KEEP: USDJPY 159.544 dist 45.6p just>3xH1ATR 44.55p <3xH4ATR 95p WATCH 160 SELL comp +51 mod 4/4 bullish (dir contradicts); GOLD 4701.94 BROKE LOWER -44p testing 4698-4700 swept floor dist 730p<3xH4ATR 1159p WATCH 4775 BUY comp -35 weak 3/4 bear rule-2 0.8 KEEP; OIL_CRUDE 94.68 EXTENDED +189p on Hormuz 3-ship attack (NPR/NBC/CNBC Apr 22) dist 438p<3xH4ATR 726p WATCH 90.30 BUY comp +29.5 weak 3/4 bull aligned rule-2 0.67/1.0. 9 structure_watch KEEP, 8 queries KEEP, scalp 3 FX shadow KEEP + 3 disabled(pip-value) + 3 N/A(spread). News: Brent $101.5 +3% confirming oil-supply regime, gold NOT joining sell-side pressure = safehaven-bid weakening per original note. Binary iran_ceasefire_indefinite_extension inactive-verified stands. BOJ T-4d FOMC T-6d. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-23T03:15:00Z",
+  "state_ts_utc": "2026-04-23T03:15:00Z"
 }
