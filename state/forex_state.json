@@ -1,6 +1,6 @@
 {
   "regime": "INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING",
-  "regime_note_prev": "2026-04-23T20:05:00Z \u2014 20:05 forex auto heartbeat \u2014 0 evt 0 pos $1000/$1000. Scan: USDJPY 159.72 comp=+51 moderate 4/4 bullish aligned=False vs SELL fade dist=28p INSIDE 30p-threshold (h1_atr=16p 0.5\u00d7h4=15p floor=30p) \u2192 counter-trend |comp|\u226540 against alert = fade LIVE on tag; alert ENTRY (M15 close<160 + 8p rejection wick, no news gate) authoritative \u2192 swing=ARMED-on-tag (tape-driven). Alert fires=1 not-yet-validated, no naked-LIMIT promotion. GOLD 4695.51 comp=-40 moderate 3/4 bear, gold_sweep_4721_sell_retest dist=26p INSIDE 30p moderate aligned SELL \u2713 validated (5f 4h 1.0 1h 0.6) \u2192 swing=ARMED-on-tag awaiting retest + M15 close<level + 5p wick; gold_safehaven_continuation_buy 4775 dist=79p \u22643\u00d7h4atr(120p) no catalyst swing=WATCH bearish-readiness opposes. OIL 95.97 comp=+45 moderate 4/4 bull, both retest alerts (90.3 5.67$=567p; 9323 2.735$=274p) outside near-threshold 1.42$ dormant extending-away swing=WATCH. AUDUSD 0.71325 none comp=+4.5 no-alert swing=NONE (no thesis). USDCAD 1.36958 none comp=-13.5 no-alert swing=NONE. EURUSD 1.16857 weak comp=-33 no-alert swing=NONE. GBPUSD 1.34672 none swing=NONE. USDCHF 0.78636 none swing=NONE. BTCUSD 77813 weak comp=+33 no-alert swing=NONE. TOOLING NOTE: forex/api.py CLI has no LIMIT order endpoint \u2014 Step 4c ARMED setups execute as market-on-rejection-confirmation per each alert's ENTRY line (not a choice, a gap; remedial item to surface if validated-alert setups persist without tape trigger). AUDIT: 5 level_alerts all KEEP; ENTRY/CONTEXT/SL/TP shape clean on all 5 from 19:34 rewrite. Rule-1 staleness check: max dist=79p(gold 4775) vs 3\u00d7h4atr=120p \u2192 no auto-removes. Rule-2 prune: oil_crude_retest_90_buy 3f 4h 0.67 KEEP, oil_sweep_9323_buy_retest 4f 4h 1.0 validated KEEP, gold_sweep_4721_sell_retest 5f 4h 1.0 validated KEEP. USDJPY 1f decide-on-merits KEEP. 9 structure_watch all KEEP. News-queries dormant (news_watcher covering). Scalp audit: EURUSD(ema_pullback neutral) GBPUSD(session_open_break neutral) AUDUSD(range_extreme sell) all enabled halt={} no trades. USDJPY/CHF/CAD pip-conv-pending (JPY/CHF/CAD-quote). GOLD/OIL/BTC spread-blocked. web_search skipped per Step 7 (0 pos + regime stable 6h+). Deadlines: BOJ Apr 27-28 T-3d, FOMC T-4d \u2014 still >24h, no blackout. attention_covered=9/9.",
+  "regime_note_prev": "INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING \u2014 2026-04-23T21:40:00Z 21:40 forex auto \u2014 1 evt us_iran_military news_flash Reuters Mar-1 STALE 54d 'killed' solo-match non-thesis-altering. USDJPY 159.685 +45 mod 4/4 bull dist=31.5p OUTSIDE 30p \u2192 swing=WATCH (downgrade from ARMED; drifted 4p away from 160 red line). GOLD 4694.08 -40 mod 3/4 bear gold_sweep_4721 dist=27.6$ INSIDE 30$ \u2192 swing=ARMED (upgrade from WATCH; needs tag + M15 rejection wick \u22655p); gold_safehaven_4775 dist=80.9$ opp-watch extending away. OIL 96.446 +44 mod 4/4 bull sweep_9323 dist=321p WATCH; retest_90 dist=615p dormant. AUDUSD USDCAD GBPUSD USDCHF none swing=NONE. EURUSD -33 weak BTCUSD +35 weak no alert. 5 level_alerts KEEP 9 SW KEEP. 3 queries TUNE (us_iran_military date-window added; iran_ceasefire+us_tariff rolled +1d). Scalp 3 FX ACTIVE halt={}. BOJ T-3d FOMC T-5d. web_search skipped (0 pos + regime stable 4h+). attention_covered=9/9.",
   "open_positions": [],
   "watchlist": [
     {
@@ -533,6 +533,14 @@
       "closed": 0,
       "skipped": 1,
       "note": "20:20 forex auto \u2014 1 evt: Open Magazine Apr-22 'Trump Teases Possible Iran Breakthrough' news_flash (kw='breakthrough') STALE-NON-THESIS-ALTERING (2d-old tease; indefinite extension 4-source verified). USDJPY 159.729 comp+45 mod 4/4 bull dist=27.1p INSIDE 30p counter-trend fade=ARMED-on-tag (M15 reject-wick required; 1 fire not-validated \u2192 note-override retained; no LIMIT until tag). GOLD 4689.55 comp-40 mod 3/4 bear gold_sweep_4721 dist=32.1p OUTSIDE 30p swing=WATCH; gold_safehaven_4775 dist=85.45p H4ATR=37.6p 3x=112.8p cond1-FALSE opp-WATCH. OIL 96.391 comp+45 mod 4/4 bull oil_retest_90 dist=609p oil_sweep_9323 dist=315p both extending. AUDUSD comp+4.5 none ChoCh-bear swing=NONE watchlist zone 0.7085 far. EURUSD comp-33 weak CANCELLED GBPUSD comp+5.5 none USDCAD comp-13.5 none USDCHF comp+16.5 none BTCUSD comp+33 weak. 5 level_alerts KEEP 9 SW KEEP. 3 queries TUNE (iran_ceasefire/hormuz_strait/us_tariff rolling Apr-24 date window). web_search skipped (0 pos + regime stable + stale-news-only event). Scalp shadow halt={}. 0 trades $1000/0 pos. BOJ T-3d FOMC T-4d. attention_covered=9/9."
+    },
+    {
+      "ts_utc": "2026-04-23T21:40:00Z",
+      "events_in": 1,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 1,
+      "note": "21:40 forex auto \u2014 1 evt us_iran_military Reuters Mar-1-2026 STALE 54d non-thesis-altering. USDJPY 159.685 +45 mod 4/4 bull dist=31.5p OUTSIDE 30p swing=WATCH (downgrade from ARMED-on-tag). GOLD 4694.08 -40 mod 3/4 bear gold_sweep_4721 dist=27.6$ INSIDE 30$ swing=ARMED (upgrade from WATCH); gold_safehaven_4775 dist=80.9$ opp-watch. OIL 96.446 +44 mod 4/4 bull sweep_9323 dist=321p WATCH; retest_90 dist=615p dormant. AUDUSD USDCAD GBPUSD USDCHF none swing=NONE. EURUSD -33 weak BTCUSD +35 weak no alert. 5 level_alerts KEEP 9 SW KEEP. us_iran_military+iran_ceasefire+us_tariff queries TUNED (date-window). Scalp 3 FX shadow halt={}. BOJ T-3d FOMC T-5d. web_search skipped (0 pos + regime stable 4h+). attention_covered=9/9."
     }
   ],
   "recent_skips": [
@@ -567,14 +575,15 @@
     }
   ],
   "last_tick_summary": {
-    "tick_ts_utc": "2026-04-23T20:05:00Z",
-    "events_consumed": 0,
+    "tick_ts_utc": "2026-04-23T21:40:00Z",
+    "events_consumed": 1,
     "positions_opened": 0,
     "positions_closed": 0,
     "skipped": 0,
-    "binary_event": "iran_ceasefire_indefinite_extension (resolved)",
-    "scalp": "3 FX live shadow-mode, halt={}",
-    "attention_covered": "9/9"
+    "binary_event": "iran_ceasefire_indefinite_extension (resolved/inactive)",
+    "scalp": "3 FX ACTIVE shadow halt={}",
+    "attention_covered": "9/9",
+    "note": "1 news_flash STALE (Mar-1 Reuters tanker article, 54d old, non-thesis-altering). GOLD sweep_4721 WATCH\u2192ARMED (dist 27.6$ inside 30$ threshold). USDJPY ARMED\u2192WATCH (dist 31.5p outside 30p). 3 queries TUNED. 0 trades."
   },
   "last_scan": "2026-04-23T05:05:00Z",
   "capital_base": 1000.0,

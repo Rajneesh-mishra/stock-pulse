@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-23T21:11:52.276475Z",
+  "generated_at": "2026-04-23T21:42:09.059872Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-23T00:37:30Z",
-      "events_in": 15,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 15,
-      "note": "00:37 UTC tick - 15 events: 8 liquidity_sweep (one per pair) + 7 M15 bar_close routine. SWEEP TRIAGE: GOLD down-sweep 4698.81 46.2p wick 4.4xATR (biggest mag, readiness=weak bearish comp AGAINST buy-bias = not armable), OIL_CRUDE up-sweep 95.286 154.9p wick 2xATR (readiness=weak bullish comp AGAINST sell-bias = not armable, conflicts with existing 90.30 BUY thesis), USDJPY up-sweep 159.604 8.4p (readiness=moderate bullish comp AGAINST sell-bias = not armable), AUDUSD/EURUSD/GBPUSD down-sweep + USDCAD/USDCHF up-sweep all sub-1.5xATR minor. NO sweeps meet Step 4e criteria (readiness>=moderate AND direction AGAINST sweep wick). 0 new alerts added (would be noisy, prior USDCAD sweep alert removed after 93min as precedent). 3 KEEP alerts (USDJPY 56p<160 WATCH, GOLD 46p<4775 weak bearish comp rule-2 4h=0.8 KEEP, OIL 320p>90.30 weak bull rule-1 cond1 FALSE KEEP rule-2 4h=0.67). Broker $1000/0pos reconciled. 0 trades. BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 28-29)."
-    },
     {
       "ts_utc": "2026-04-23T00:52:00Z",
       "events_in": 6,
@@ -86,6 +78,14 @@
       "closed": 0,
       "skipped": 1,
       "note": "20:20 forex auto \u2014 1 evt: Open Magazine Apr-22 'Trump Teases Possible Iran Breakthrough' news_flash (kw='breakthrough') STALE-NON-THESIS-ALTERING (2d-old tease; indefinite extension 4-source verified). USDJPY 159.729 comp+45 mod 4/4 bull dist=27.1p INSIDE 30p counter-trend fade=ARMED-on-tag (M15 reject-wick required; 1 fire not-validated \u2192 note-override retained; no LIMIT until tag). GOLD 4689.55 comp-40 mod 3/4 bear gold_sweep_4721 dist=32.1p OUTSIDE 30p swing=WATCH; gold_safehaven_4775 dist=85.45p H4ATR=37.6p 3x=112.8p cond1-FALSE opp-WATCH. OIL 96.391 comp+45 mod 4/4 bull oil_retest_90 dist=609p oil_sweep_9323 dist=315p both extending. AUDUSD comp+4.5 none ChoCh-bear swing=NONE watchlist zone 0.7085 far. EURUSD comp-33 weak CANCELLED GBPUSD comp+5.5 none USDCAD comp-13.5 none USDCHF comp+16.5 none BTCUSD comp+33 weak. 5 level_alerts KEEP 9 SW KEEP. 3 queries TUNE (iran_ceasefire/hormuz_strait/us_tariff rolling Apr-24 date window). web_search skipped (0 pos + regime stable + stale-news-only event). Scalp shadow halt={}. 0 trades $1000/0 pos. BOJ T-3d FOMC T-4d. attention_covered=9/9."
+    },
+    {
+      "ts_utc": "2026-04-23T21:40:00Z",
+      "events_in": 1,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 1,
+      "note": "21:40 forex auto \u2014 1 evt us_iran_military Reuters Mar-1-2026 STALE 54d non-thesis-altering. USDJPY 159.685 +45 mod 4/4 bull dist=31.5p OUTSIDE 30p swing=WATCH (downgrade from ARMED-on-tag). GOLD 4694.08 -40 mod 3/4 bear gold_sweep_4721 dist=27.6$ INSIDE 30$ swing=ARMED (upgrade from WATCH); gold_safehaven_4775 dist=80.9$ opp-watch. OIL 96.446 +44 mod 4/4 bull sweep_9323 dist=321p WATCH; retest_90 dist=615p dormant. AUDUSD USDCAD GBPUSD USDCHF none swing=NONE. EURUSD -33 weak BTCUSD +35 weak no alert. 5 level_alerts KEEP 9 SW KEEP. us_iran_military+iran_ceasefire+us_tariff queries TUNED (date-window). Scalp 3 FX shadow halt={}. BOJ T-3d FOMC T-5d. web_search skipped (0 pos + regime stable 4h+). attention_covered=9/9."
     },
     {
       "date": "2026-04-23",
