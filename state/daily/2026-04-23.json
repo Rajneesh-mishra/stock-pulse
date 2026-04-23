@@ -478,5 +478,14 @@
     "daily_pnl": 0,
     "regime": "INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING",
     "summary": "1 news_flash us_iran_military Mar-01 54d-stale 'killed' kw non-thesis-altering. 5 alerts KEEP. 9 structure_watch KEEP. 0 pos."
+  },
+  {
+    "tick_ts_utc": "2026-04-23T09:04:30Z",
+    "events_processed": 1,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "open_positions": 0,
+    "daily_pnl": 0.0,
+    "summary": "1 news_flash boj_intervention Reuters Jan-23 90d-stale 'rate check' kw (daemon date-filter NEVER-ENFORCED forex_news_watcher.py:246 known bug; keywords_required action-phrases working correctly; 'no comment on rate checks' = verbal caution backgrounder) NOT thesis-altering \u2014 current Katayama 'bold action' regime already priced into USDJPY 160 fade alert. 5 level_alerts KEEP. 9 structure_watch KEEP. 8 news_queries KEEP bug-deferred. 0 pos BOJ T-4d."
   }
 ]
