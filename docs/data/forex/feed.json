@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-23T20:30:14.862609Z",
+  "generated_at": "2026-04-23T21:11:52.276475Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-22T23:24:00Z",
-      "events_in": 1,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 1,
-      "note": "23:24 UTC tick \u2014 1 stale news_flash hormuz_strait (Apr 18 Express Tribune India-summons-Iran-envoy 'attack' kw archive republish, 5d old). TUNED hormuz_strait: added match_keywords=['2026','April','Apr 22','Apr 23'] + cooldown 30\u219260min. Broker API 404 persists 2+ ticks, using 22:56 refs. USDJPY +51 mod WATCH 160 (52.6p dist, 3xH1ATR=42p, 3xH4ATR=93p); GOLD -35 weak WATCH 4775 (44.4p, rule-2 KEEP 4h=0.8); OIL +26 weak WATCH 90.30 retest-far (192p, rule-2 KEEP 4h=0.67); USDCAD/EURUSD/GBPUSD/AUDUSD/USDCHF swing=NONE; BTC scalp=N/A. 3 alerts KEEP, 1 query TUNED (hormuz_strait), 9 structure_watch KEEP, 7 queries KEEP. 0 trades, $1000/0pos. BOJ T-4d."
-    },
     {
       "ts_utc": "2026-04-23T00:37:30Z",
       "events_in": 15,
@@ -755,6 +747,36 @@
       "daily_pnl": 0.0,
       "regime": "INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING",
       "note": "20:20 UTC \u2014 1 evt news_flash iran_ceasefire (Open Magazine Apr-22 Trump breakthrough tease). STALE NON-THESIS-ALTERING. USDJPY 159.729 ARMED-on-tag dist=27.1p <30p threshold. GOLD 4689.55 WATCH dist=32.1p OUTSIDE 30p. OIL 96.391 retests extending-away. 0 trades. 5 alerts KEEP 9 SW KEEP. 3 queries TUNE. BOJ T-3d FOMC T-4d."
+    },
+    {
+      "tick_ts_utc": "2026-04-23T21:10:36Z",
+      "type": "heartbeat",
+      "events": 0,
+      "positions_open": 0,
+      "positions_closed": 0,
+      "trades_opened": 0,
+      "trades_skipped": 0,
+      "balance_usd": 1000.0,
+      "pnl_usd": 0.0,
+      "regime": "INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING",
+      "binary_event": "none",
+      "scalp_status": "EURUSD/GBPUSD/AUDUSD ACTIVE halt={}",
+      "attention": {
+        "EURUSD": "swing=NONE scalp=ACTIVE readiness=weak comp=-33",
+        "GBPUSD": "swing=NONE scalp=ACTIVE readiness=none comp=+5.5",
+        "AUDUSD": "swing=NONE scalp=ACTIVE readiness=none comp=+4.5",
+        "USDJPY": "swing=WATCH scalp=OFF readiness=moderate comp=+42.5 dist=38.2p",
+        "USDCAD": "swing=NONE scalp=OFF readiness=none comp=-13.5",
+        "USDCHF": "swing=NONE scalp=OFF readiness=none comp=+4.0",
+        "GOLD": "swing=ARMED scalp=N/A readiness=moderate comp=-40 dist=27.6$ INSIDE 30p",
+        "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=moderate comp=+44",
+        "BTCUSD": "swing=NONE scalp=N/A readiness=weak comp=+27"
+      },
+      "alerts_keep": 5,
+      "alerts_add": 0,
+      "alerts_remove": 0,
+      "web_search": "skipped (0 pos + regime stable + 0 events)",
+      "notes": "GOLD ARMED dist=27.6$ INSIDE 30p threshold (gold_sweep_4721_sell_retest validated 5f 4h 1.0) awaiting retest of 4721.68. USDJPY fade WATCH dist=38.2p outside 30p. OIL both buy alerts extending away WATCH. BOJ T-3d FOMC T-5d."
     }
   ]
 }
