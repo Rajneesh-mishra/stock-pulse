@@ -387,5 +387,61 @@
     "scalp_audit": "EURUSD=KEEP(no trades yet) GBPUSD=KEEP(no trades yet) AUDUSD=KEEP(no trades yet) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked halts=0",
     "binary_event": "iran_ceasefire_indefinite_extension active=false verified; BOJ Apr 27-28 T-4d calendar; FOMC Apr 29 T-6d calendar",
     "web_search": "skipped 0pos-regime-stable-news_watcher-covered"
+  },
+  {
+    "ts_utc": "2026-04-23T08:13:00Z",
+    "tick": "08:13",
+    "events_total": 12,
+    "events_actionable": 1,
+    "actionable_types": [
+      "liquidity_sweep:GOLD:M15:up-sweep:4721.68"
+    ],
+    "confluence": {
+      "GOLD": {
+        "composite": -32.5,
+        "readiness": "weak",
+        "aligned_with_sell_bias": true
+      }
+    },
+    "level_alerts_before": 4,
+    "level_alerts_after": 5,
+    "added": [
+      "gold_sweep_4721_sell_retest"
+    ],
+    "removed": [],
+    "kept": [
+      "usdjpy_intervention_fade_zone",
+      "gold_safehaven_continuation_buy",
+      "oil_crude_retest_90_buy",
+      "oil_sweep_9323_buy_retest"
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "skipped": 0,
+    "open_positions_after": 0,
+    "balance": 1000.0,
+    "daily_pnl": 0,
+    "binary_event_active": false,
+    "scalp": {
+      "live_shadow": [
+        "EURUSD",
+        "GBPUSD",
+        "AUDUSD"
+      ],
+      "pip_conv_pending": [
+        "USDJPY",
+        "USDCHF",
+        "USDCAD"
+      ],
+      "spread_blocked": [
+        "GOLD",
+        "OIL_CRUDE",
+        "BTCUSD"
+      ],
+      "halts": 0
+    },
+    "news_queries_action": "KEEP_all_8_bug_deferred",
+    "attention_covered": "9/9",
+    "note": "Fresh M15 up-sweep GOLD 4721.68 \u2192 sell-bias watchlist ADD; confluence weak bearish blocks arming, readiness must lift to moderate for LIMIT"
   }
 ]

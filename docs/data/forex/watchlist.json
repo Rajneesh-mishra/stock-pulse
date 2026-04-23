@@ -1,10 +1,12 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-23T08:09:00Z",
-  "pruned_at": "2026-04-23T08:09:00Z",
-  "pruned_by": "2026-04-23T08:09:00Z tick \u2014 1 evt (news_flash us_tariff Chatham House Feb 17 65d-archive 'reset' solo-kw NOT-thesis-altering; tuned us_tariff dropped 'reset'). 4 level_alerts KEEP carried (no fresh confluence scan this tick \u2014 budget-conserve, last 07:57 12min ago). 9 structure_watch KEEP. Scalp 3 FX shadow + 3 disabled pip-conv + 3 N/A spread halts=0. 0 trades $1000/0pos BOJ T-4d FOMC T-6d.",
+  "last_updated_by_claude": "2026-04-23T08:13:00Z",
+  "pruned_at": "2026-04-23T08:13:00Z",
+  "pruned_by": "2026-04-23T08:13:00Z tick \u2014 1 fresh evt liquidity_sweep GOLD M15 up-sweep 4721.68 wick 33.3p close 4718.95 \u2192 sell bias. Confluence comp -32.5 WEAK bearish aligned=yes with sell but below moderate \u2192 ADD watchlist-only per Step 4e (fresh bounce-point the tape made, rule mandates ADD even if no existing coverage). 4 KEEP carried + 1 ADD = 5 level_alerts total. Distance 16.4p within 30p proximity floor but readiness weak blocks arming. Keep 3 carried: USDJPY 160 sell fade rule-2 comp+51 KEEP, GOLD 4775 buy rule-2 4h=0.8 KEEP, OIL 90.30 buy rule-2 4h=0.67 KEEP, OIL 93.2365 buy carried KEEP. 11 bar_close auto-consumed.",
   "pruned_removed": [],
-  "pruned_added": [],
+  "pruned_added": [
+    "gold_sweep_4721_sell_retest"
+  ],
   "instruments": [
     "EURUSD",
     "USDJPY",
@@ -88,6 +90,15 @@
       "last_updated": "2026-04-23T08:09:00Z",
       "proximity": "10p above sweep level. Weak +32 buy bias. Watchlist only \u2014 below moderate arming.",
       "updated_utc": "2026-04-23T08:09:00Z"
+    },
+    {
+      "id": "gold_sweep_4721_sell_retest",
+      "instrument": "GOLD",
+      "level": 4721.68,
+      "emit_on": "cross_up",
+      "cooldown_sec": 1800,
+      "direction": "sell",
+      "note": "ADDED 08:13 UTC \u2014 sell GOLD 4721.68 retest of fresh M15 up-sweep (wick 33.3p beyond, close 4718.95, ATR 8.96). Sweep created 08:00 UTC on fresh bounce point the tape made. Live 4720.04 bid. Confluence composite -32.5 WEAK BEARISH (3/4 TFs agree) aligned with sell bias \u2014 BELOW moderate so watchlist only per Step 4b. Arm only if readiness advances to moderate+ AND price returns to 4721.68 zone with rejection wick + M15 close back below 4718.95. Suggested entry 4721.68 zone, SL 4725.01 (beyond wick extreme, ~33p risk), TP 4707.00 (M15 swept bull FVG lower ~147p). R:R ~4.4:1 attractive IF readiness lifts. cf no baseline (new alert). Proximity floor=max(1\u00d7H1_ATR 17.6p, 0.5\u00d7H4_ATR 8.8p, 30p) = 30p, current dist 16.4p WITHIN ARMING PROXIMITY but readiness weak blocks. Distinct from gold_safehaven_continuation_buy @ 4775 (escalation-catalyst dependent)."
     }
   ],
   "structure_watch": [
@@ -158,5 +169,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-23T08:09:00Z"
+  "last_updated_utc": "2026-04-23T08:13:00Z"
 }
