@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-23T18:40:42.431966Z",
+  "generated_at": "2026-04-23T18:58:46.872878Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-22T20:08:03Z",
-      "events_in": 29,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 29,
-      "note": "20:01 UTC tick \u2014 29 events: 11 news_flash SKIP (all stale: 8 us_tariff Feb archives+1 Apr21 BLiTZ, 1 Anadolu Apr21 Pakistan-welcomes baseline, 1 Dec2025 Reuters BoJ archive, 1 alert_audit_request on same Dec archive). 16 bar_close routine. 1 USDCAD liquidity_sweep M15 20:00 UTC up-sweep 1.36737 wick 1.2p close 1.36727 \u2014 sweep bias sell, confluence composite -24.5 readiness=none blocks LIMIT. ADDED usdcad_liqsweep_sell_zone (swept level as watchlist), REMOVED audusd_breakdown_trigger (stale Rule 1: 88p > 3\u00d7H4 ATR, no catalyst, BTC+4.2% risk-on kills). 3 MODIFY price refs (usdjpy/gold/oil); 1 ADD (usdcad); 1 REMOVE. 2 queries TUNE (us_tariff cd 60\u2192240 narrowed, boj_intervention cd 60\u2192120 dropped broad). 9 structure_watch KEEP. EURUSD 1.1705 NEW LOW broke re-entry base; BTC 78900 +4.2% parabolic. 0 trades, $1000/0."
-    },
     {
       "ts_utc": "2026-04-22T20:15:00Z",
       "events_in": 1,
@@ -715,6 +707,15 @@
       "closed": 0,
       "skipped": 0,
       "summary": "USDJPY re-audit downgrade: px 159.543 (-16p) comp +38 weak 3/4 bull, dist 160.00=45.7p OUTSIDE 30p, fade watchlist-only. 4 evt all stale/not-thesis-altering. 0 trades 0 pos."
+    },
+    {
+      "ts_utc": "2026-04-23T18:52:00Z",
+      "mode": "heartbeat",
+      "events": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "summary": "USDJPY composite lifted weak->moderate +51 dist 40.9p WATCH. GOLD sweep_4721 now within 30p ARMED-on-tag note-override. 0 trades."
     }
   ]
 }
