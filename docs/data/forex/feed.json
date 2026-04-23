@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-23T08:26:09.204698Z",
+  "generated_at": "2026-04-23T08:47:09.018358Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-21T11:25:00Z",
-      "events_in": 8,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 8,
-      "note": "8 M15 bar_close SKIP heartbeat. TIMELINE CORRECTION via WaPo/CNBC Apr 21: ceasefire expires TODAY Tue evening ~22:00 UTC T-~10-11h (Apr 7+14d=Apr 21), NOT Thu. Iran MFA refusing Islamabad Rd2 citing blockade+container ship seizure as breaches. Trump 'bombs start going off' threat. WTI 87.2 (+34c bounce toward 90 still 2.8 away), USDJPY 159.197 (0.253 below 159.45 fade), all other pairs <3p drift. 3 MODIFY (price + timeline on all alerts), 2+9+8 KEEP otherwise."
-    },
     {
       "ts_utc": "2026-04-21T12:35:00Z",
       "events_in": 8,
@@ -683,6 +675,18 @@
       "closed": 0,
       "skipped": 0,
       "summary": "2026-04-23T08:25:00Z \u2014 08:25 forex tick \u2014 2 evt (1 news_flash iran_ceasefire Qatar-backs-extension Anadolu Apr-21 2d-stale non-altering, 1 alert_audit_request USDJPY AP Iraqi-captain 'attack' generic Hormuz non-altering). USDJPY confluence comp +51 moderate 4/4 bull aligned=false vs SELL 160 dist 33.85p (just above 30p near-threshold) WATCH rule-2 |comp|\u226540 extension-real fade-live KEEP. 5 level_alerts KEEP (USDJPY 160 sell rule-2 / GOLD 4775 buy rule-2 4h=0.8 / OIL 90.30 retest buy rule-2 4h=0.67/24h=1.0 / OIL 93.2365 sweep buy retest weak watchlist / GOLD 4721.68 sweep sell retest weak watchlist). 9 structure_watch KEEP. 8 news_queries KEEP bug-deferred. Scalp 3 FX shadow KEEP no-trades + 3 disabled pip-conv (USDJPY/CHF/CAD) + 3 N/A spread (GOLD/OIL/BTC) halts=0 daily_pnl 0. 0 trades $1000/0pos BOJ T-4d (Apr 27-28) FOMC T-6d (Apr 29). attention_covered=9/9. web_search skipped 0pos-regime-stable-news_watcher-covered."
+    },
+    {
+      "ts_utc": "2026-04-23T08:46:00Z",
+      "type": "tick",
+      "events_processed": 2,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "skips": 0,
+      "summary": "08:46 forex auto \u2014 2 evt consumed (1 news_flash opec_supply Reuters Aug-3-2025 8.5mo-stale archive matched 'output hike' kw daemon date-filter-bug NEVER-ENFORCED forex_news_watcher.py:246 known + 1 alert_audit_request GOLD trigger NY Post 'OPEC+ agrees to boost oil output WHEN Strait of Hormuz reopens' contingency story not actual reopen \u2014 Hormuz blockade still active per binary_event 4-source). Re-run confluence GOLD: comp -35 weak 3/4 bearish (against BUY 4775) px 4703.99 dist=710.1p from 4775 (>3xH4ATR cond1 TRUE, last 20 M15 floor-test 4698-4700 not trending toward 4775 cond3 FALSE \u2192 rule-1 KEEP); cf gold_escalation_buy 4h=0.8 rule-2 strong edge KEEP. NOT thesis-altering \u2014 escalation thesis (US casualties/walkout/4th-ship) separate from OPEC contingency-plan story. 5 level_alerts KEEP: USDJPY 160 sell fade rule-2 / GOLD 4775 buy escalation rule-2 4h=0.8 / OIL 90.30 retest buy rule-2 4h=0.67/24h=1.0 / OIL 93.2365 sweep-retest buy watchlist-only weak / GOLD 4721.68 sweep-retest sell watchlist-only weak. 9 structure_watch KEEP. 8 news_queries KEEP bug-deferred (match_keywords NEVER-ENFORCED daemon/forex_news_watcher.py:246 known). Scalp 3 FX shadow KEEP no-trades + 3 disabled pip-conv (USDJPY/CHF/CAD) + 3 N/A spread (GOLD/OIL/BTC) halts=0 daily_pnl 0. 0 trades $1000/0pos BOJ T-4d (Apr 27-28) FOMC T-6d (Apr 29). attention_covered=9/9. web_search skipped 0pos-regime-stable-news_watcher-covered.",
+      "open_positions": 0,
+      "balance_usd": 1000.0,
+      "daily_pnl_usd": 0.0
     }
   ]
 }

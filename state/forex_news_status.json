@@ -2,12 +2,12 @@
   "status": "running",
   "pid": 41578,
   "started_at": "2026-04-22T19:20:30.089836+00:00",
-  "last_poll": "2026-04-23T08:23:38.203075+00:00",
-  "polls_total": 79,
-  "events_emitted": 647,
-  "errors": 11,
-  "last_error": "hormuz_strait: 'query_id'",
+  "last_poll": "2026-04-23T08:43:42.609765+00:00",
+  "polls_total": 81,
+  "events_emitted": 666,
+  "errors": 12,
+  "last_error": "opec_supply: 'query_id'",
   "query_count": 8,
   "hourly_cap": 15,
-  "hourly_used": 6
+  "hourly_used": 8
 }
