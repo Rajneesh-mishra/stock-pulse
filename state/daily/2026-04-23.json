@@ -25,7 +25,7 @@
     "opened": 0,
     "closed": 0,
     "skipped": 5,
-    "note": "22:12 UTC tick — 5 stale news_flash events (1 iran_ceasefire Apr 12 Islamabad backgrounder + 4 opec_supply 2025/Mar2026 archives). TUNED opec_supply (narrowed kw + match_keywords date filter + cooldown 60→120min). Confluence USDJPY +51 moderate WATCH 160 (dist 53p), GOLD -18.5 none WATCH 4775, OIL +26 weak WATCH 90.30 retest-far, USDCAD -37 weak no-alert, BTC +43.5 moderate no-alert. Broker $1000/0pos. 3 KEEP, 1 query TUNED, 0 trades. BOJ T-4d."
+    "note": "22:12 UTC tick \u2014 5 stale news_flash events (1 iran_ceasefire Apr 12 Islamabad backgrounder + 4 opec_supply 2025/Mar2026 archives). TUNED opec_supply (narrowed kw + match_keywords date filter + cooldown 60\u2192120min). Confluence USDJPY +51 moderate WATCH 160 (dist 53p), GOLD -18.5 none WATCH 4775, OIL +26 weak WATCH 90.30 retest-far, USDCAD -37 weak no-alert, BTC +43.5 moderate no-alert. Broker $1000/0pos. 3 KEEP, 1 query TUNED, 0 trades. BOJ T-4d."
   },
   {
     "ts_utc": "2026-04-23T00:03:00Z",
@@ -35,5 +35,15 @@
     "closed": 0,
     "skipped": 2,
     "note": "00:03 UTC tick - 1 stale us_tariff news_flash (Feb 2 2026 Al Jazeera 'Trump cuts India tariffs 18% Modi Russian oil' 80-day-old archive via modi-kw match score 2) + derivative USDJPY alert_audit_request (stale news, not thesis-altering). TUNED us_tariff: DROP 'Modi' kw (too broad) + ADD match_keywords=['2026','April 2026','Apr 22','Apr 23'] date filter; cooldown stays 240min. Confluence API only_0_candles transient across USDJPY/EURUSD/GOLD (broker positions/account fine) - carrying 23:55 readings. USDJPY +51 mod WATCH 160 (51.3p >1xH1ATR 13.4p), GOLD -35 weak WATCH 4775 (46.5p rule-2 KEEP 4h=0.8), OIL +26 weak WATCH 90.30 (195.6p rule-2 KEEP 4h=0.67). 3 alerts KEEP, 9 structure KEEP, 7 queries (1 TUNED). 0 trades $1000/0pos. BOJ T-4d."
+  },
+  {
+    "ts": "2026-04-23T00:08:35Z",
+    "type": "heartbeat",
+    "events": 0,
+    "trades": {
+      "opened": 0,
+      "closed": 0
+    },
+    "regime_one_liner": "0 events, broker flat $1000/0pos, confluence API only_0_candles glitch persistent, all 5 watchlist alerts KEEP"
   }
 ]
