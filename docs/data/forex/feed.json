@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-23T04:45:31.530652Z",
+  "generated_at": "2026-04-23T05:06:37.637504Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-21T09:25:00Z",
-      "events_in": 8,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 8,
-      "note": "8 M15 bar_close all SKIP heartbeat \u2014 flat-drift, USDJPY drifted 6.85p away from 159.45, oil reversed pop, no structure shifts. 1 web search Iran: no material delta vs 09:09. MODIFIED usdjpy note. Regime PRE_BINARY_COMPRESSION_DEAL_OPTIMISM intact. 3+9+8 audit: 1 MODIFY 2+9+8 KEEP."
-    },
     {
       "ts_utc": "2026-04-21T10:08:00Z",
       "events_in": 12,
@@ -470,6 +462,24 @@
       "note": "1 evt Reuters Jun-2 2025 OPEC+ output-hike 11mo archive (legit kw, daemon match_keywords NOT enforced bug surfaced). Confluence API only_0_candles glitch carried 04:20 reads. 3 KEEP all borderline/dormant. 0 trades, $1000/0pos.",
       "positions": 0,
       "attention_covered": "9/9"
+    },
+    {
+      "tick_ts_utc": "2026-04-23T05:05:00Z",
+      "events_consumed": 5,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "summary": "1 news_flash iran_ceasefire NDTV Vance-solo-Pakistan thesis-confirming not altering; USDJPY 159.549 45.1p borderline WATCH / GOLD 4705 698p floor-test KEEP / OIL 94.002 370p retest dormant; 3 KEEP 9 sw KEEP 8 q KEEP bug-deferred; 0 trades $1000/0pos; BOJ T-4d FOMC T-6d; attention 9/9",
+      "attention_matrix": {
+        "EURUSD": "NONE scalp=ACTIVE range_extreme",
+        "GBPUSD": "NONE scalp=ACTIVE session_open_break",
+        "AUDUSD": "NONE scalp=ACTIVE range_extreme",
+        "USDJPY": "WATCH moderate 160 SELL counter-trend dist 45.1p>3xH1ATR 42.9p borderline; scalp OFF pip-conv",
+        "USDCAD": "NONE scalp=OFF pip-conv+2p",
+        "USDCHF": "NONE scalp=OFF pip-conv",
+        "GOLD": "WATCH weak 4775 BUY px 4705 698.6p floor-test cond3 FALSE rule-1 KEEP cf rule-2; N/A 5p",
+        "OIL_CRUDE": "WATCH weak 90.30 BUY px 94.00 370p rule-1/2 KEEP retest dormant; N/A 4p",
+        "BTCUSD": "NONE scalp=N/A 50p"
+      }
     }
   ]
 }

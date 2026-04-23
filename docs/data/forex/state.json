@@ -1,6 +1,6 @@
 {
   "regime": "INDEFINITE_EXTENSION_HORMUZ_FRICTION_RISK_ON_ACCELERATING",
-  "regime_note_prev": "2026-04-23T04:50:00Z tick \u2014 1 evt Reuters 02-Jun-2025 'OPEC+ output hike tepid Asian demand' 11mo-stale leaked via 'output hike' in keywords_required (legit current supply kw). ROOT CAUSE SURFACED: grep of daemon/forex_news_watcher.py shows match_keywords field is NEVER ENFORCED (only keywords_required checked at line 246). All recent 'TUNED match_keywords date filter' work across 5 queries (iran_ceasefire, hormuz_strait, opec_supply, boj_intervention, fed_fomc, us_tariff, rba_hike) has been NO-OP. Real fix needs daemon pubDate-staleness filter (reject >7d old articles) \u2014 deferred, flagged for next session (non-trivial code change + daemon restart). For now: can't date-filter via config, so stale archives on legit kw will leak. Event non-thesis-altering (OPEC+ hike already priced, oil at 94.13 ripping on Iran not supply). Confluence API only_0_candles glitch 3rd tick of 5 \u2014 carried 04:20 reads. 3 KEEP: USDJPY 159.5645 dist 43.55p>3xH1ATR 42.4p borderline WATCH 160 SELL counter-trend comp+51 mod 4/4 bull / GOLD 4705.14 dist 698.6p>3xH4ATR 108.9p cond3 FALSE rule-1 KEEP cf 4h=0.8 rule-2 KEEP floor-test 4698-4700 / OIL 94.002 dist 370.2p<3xH4ATR 680.9p rule-1 KEEP cf 4h=0.67/24h=1.0 rule-2 KEEP retest dormant. 9 structure_watch KEEP, 8 queries KEEP (bug deferred), scalp 3 FX shadow KEEP + 3 disabled + 3 N/A, 0 trades $1000/0pos, BOJ T-4d FOMC T-6d, attention_covered=9/9.",
+  "regime_note_prev": "2026-04-23T04:35:00Z - 04:35 forex tick \u2014 2 evt (Apr 18 Hormuz attack 5d-stale leaked via 'Apr 20' substring of 'Apr 2026' year-string in pubDate; tuned hormuz/iran_ceasefire/us_tariff to '20 Apr 2026' DD-Mon-YYYY format + boj_intervention dropped bare 'April'/'2026'). Audit OIL_CRUDE oil_crude_retest_90_buy: comp+34.5 weak 3/4 bull (H4 -0.15 dissent), px 94.13 dist 383p<3xH4ATR 681p KEEP rule-1; cf 4h=0.67/24h=1.0 KEEP rule-2; news supportive but px moving AWAY from 90.30 retest, anticipation dormant. 3 KEEP: USDJPY 159.529 dist 47.1p>3xH1ATR 42.6p borderline WATCH 160 SELL counter-trend comp+51 mod 4/4 bull >30p arm zone / GOLD 4704.54 dist 705p>3xH4ATR 109p cond3 FALSE rule-1 KEEP cf 4h=0.8 rule-2 KEEP / OIL 94.13 above. 9 structure_watch KEEP, 8 queries (hormuz/iran/us_tariff/boj tuned), scalp 3 FX shadow KEEP + 3 disabled pip-value + 3 N/A spread, 0 trades $1000/0pos, BOJ T-4d FOMC T-6d, attention_covered=9/9.",
   "open_positions": [],
   "watchlist": [
     {
@@ -528,12 +528,8 @@
       "price": 4809.28
     }
   ],
-  "last_tick_summary": "2026-04-23T03:25:00Z tick \u2014 2 evt (Apr 7 CBS Hormuz-reopens archive non-altering, hormuz_strait filter tightened), 0 pos, 3 KEEP USDJPY/GOLD/OIL.",
-  "last_scan": {
-    "timestamp": "2026-04-23T01:25:46Z",
-    "events_processed_last_tick": 1,
-    "events_acted_last_tick": 0
-  },
+  "last_tick_summary": "05:05 forex tick \u2014 1 news_flash iran_ceasefire Apr-21 NDTV Vance-solo-Pakistan (current-regime escalation-lean, thesis-CONFIRMING not altering \u2014 supports fade pairs' theses but no level change). 4 bar_close auto. USDJPY confluence re-run: comp +51 moderate 4/4 bullish aligned=false vs SELL dist 45.1p>3xH1ATR 42.9p borderline WATCH 160 SELL counter-trend. GOLD 4705.14 dist 698.6p floor-test 4698-4700 cond3 FALSE rule-1 KEEP cf 4h=0.8 rule-2 KEEP. OIL 94.002 dist 370.2p<3xH4ATR 680.9p rule-1 KEEP cf 4h=0.67/24h=1.0 rule-2 KEEP retest dormant. 3 KEEP, 9 structure_watch KEEP, 8 queries KEEP bug-deferred (match_keywords NEVER-ENFORCED in daemon/forex_news_watcher.py:246 \u2014 daemon fix non-trivial+restart, deferred), scalp 3 FX shadow KEEP + 3 disabled pip-conv + 3 N/A spread, 0 trades $1000/0pos, BOJ T-4d (Apr 27-28) FOMC T-6d, attention_covered=9/9.",
+  "last_scan": "2026-04-23T05:05:00Z",
   "capital_base": 1000.0,
   "tick_log": [
     {
@@ -715,7 +711,7 @@
     ],
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). Monitor for reactivation on any T-24h trigger."
   },
-  "regime_note": "2026-04-23T04:35:00Z - 04:35 forex tick \u2014 2 evt (Apr 18 Hormuz attack 5d-stale leaked via 'Apr 20' substring of 'Apr 2026' year-string in pubDate; tuned hormuz/iran_ceasefire/us_tariff to '20 Apr 2026' DD-Mon-YYYY format + boj_intervention dropped bare 'April'/'2026'). Audit OIL_CRUDE oil_crude_retest_90_buy: comp+34.5 weak 3/4 bull (H4 -0.15 dissent), px 94.13 dist 383p<3xH4ATR 681p KEEP rule-1; cf 4h=0.67/24h=1.0 KEEP rule-2; news supportive but px moving AWAY from 90.30 retest, anticipation dormant. 3 KEEP: USDJPY 159.529 dist 47.1p>3xH1ATR 42.6p borderline WATCH 160 SELL counter-trend comp+51 mod 4/4 bull >30p arm zone / GOLD 4704.54 dist 705p>3xH4ATR 109p cond3 FALSE rule-1 KEEP cf 4h=0.8 rule-2 KEEP / OIL 94.13 above. 9 structure_watch KEEP, 8 queries (hormuz/iran/us_tariff/boj tuned), scalp 3 FX shadow KEEP + 3 disabled pip-value + 3 N/A spread, 0 trades $1000/0pos, BOJ T-4d FOMC T-6d, attention_covered=9/9.",
-  "tick_ts_utc": "2026-04-23T04:35:00Z",
-  "state_ts_utc": "2026-04-23T04:35:00Z"
+  "regime_note": "2026-04-23T05:05:00Z - 05:05 forex tick \u2014 1 news_flash iran_ceasefire Apr-21 NDTV Vance-solo-Pakistan (current-regime escalation-lean, thesis-CONFIRMING not altering \u2014 supports fade pairs' theses but no level change). 4 bar_close auto. USDJPY confluence re-run: comp +51 moderate 4/4 bullish aligned=false vs SELL dist 45.1p>3xH1ATR 42.9p borderline WATCH 160 SELL counter-trend. GOLD 4705.14 dist 698.6p floor-test 4698-4700 cond3 FALSE rule-1 KEEP cf 4h=0.8 rule-2 KEEP. OIL 94.002 dist 370.2p<3xH4ATR 680.9p rule-1 KEEP cf 4h=0.67/24h=1.0 rule-2 KEEP retest dormant. 3 KEEP, 9 structure_watch KEEP, 8 queries KEEP bug-deferred (match_keywords NEVER-ENFORCED in daemon/forex_news_watcher.py:246 \u2014 daemon fix non-trivial+restart, deferred), scalp 3 FX shadow KEEP + 3 disabled pip-conv + 3 N/A spread, 0 trades $1000/0pos, BOJ T-4d (Apr 27-28) FOMC T-6d, attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-23T05:05:00Z",
+  "state_ts_utc": "2026-04-23T05:05:00Z"
 }
