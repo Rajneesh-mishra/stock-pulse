@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T04:20:20.310111Z",
+  "generated_at": "2026-04-23T04:28:22.869593Z",
   "ticks": [
     {
       "ts_utc": "2026-04-21T08:41:00+00:00",
@@ -444,6 +444,29 @@
           "attention_covered": "9/9"
         }
       ]
+    },
+    {
+      "ts_utc": "2026-04-23T04:35:00Z",
+      "trigger": "alert_audit_request + news_flash (Hormuz attack 5d-stale leak)",
+      "events_processed": 2,
+      "events_consumed": [
+        "evt_1776918169144_news_flash",
+        "evt_1776918169171_news_flash"
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "skips": 1,
+      "skip_reasons": [
+        "OIL 90.30 BUY: price 94.13 still 383p above level, anticipation dormant"
+      ],
+      "fix_applied": "news_queries: hormuz/iran_ceasefire/us_tariff/boj_intervention TUNED \u2014 'Apr 20' substring matched 'Apr 2026' year-string in pubDate; switched to 'DD Mon YYYY' tokens",
+      "level_alerts": "3 KEEP (usdjpy_intervention_fade_zone, gold_safehaven_continuation_buy, oil_crude_retest_90_buy)",
+      "structure_watch": "9 KEEP",
+      "scalp": "3 FX shadow KEEP + 3 disabled pip-value + 3 N/A spread",
+      "attention_covered": "9/9",
+      "binary_event": "iran_ceasefire active=false",
+      "broker_balance_usd": 1000,
+      "open_positions": 0
     }
   ]
 }

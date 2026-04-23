@@ -2,12 +2,12 @@
   "status": "running",
   "pid": 41578,
   "started_at": "2026-04-22T19:20:30.089836+00:00",
-  "last_poll": "2026-04-23T04:12:48.377178+00:00",
-  "polls_total": 54,
-  "events_emitted": 439,
-  "errors": 6,
+  "last_poll": "2026-04-23T04:22:49.207189+00:00",
+  "polls_total": 55,
+  "events_emitted": 456,
+  "errors": 7,
   "last_error": "hormuz_strait: 'query_id'",
   "query_count": 8,
   "hourly_cap": 15,
-  "hourly_used": 2
+  "hourly_used": 3
 }

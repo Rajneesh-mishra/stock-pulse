@@ -34,13 +34,12 @@
         "Vance trip"
       ],
       "cooldown_min": 30,
-      "note": "TUNED 2026-04-22 11:38 UTC \u2014 fixed-deadline binary REMOVED (4-source verification of Trump indefinite extension: Reuters/NYT/Detroit News/AJ). Dropped 'expire'/'expiry' (deadline p | 2026-04-22 23:55 UTC TUNE: DROPPED \"announce\"+\"Islamabad\" (caught Apr 12 WaPo Islamabad-talks-collapse republish via announce+Islamabad match). ADDED \"walks out\",\"Iran walkout\",\"Vance trip\" phrases. Keyword set now escalation-specific. | 2026-04-23T04:03:00Z TUNE: Apr 12 Times of India Islamabad-talks-collapse republish fired via 'collapse' solo-kw 11d stale. ADDED match_keywords date filter ['April 2026','Apr 22','Apr 23','Apr 20','Apr 21'] per hormuz/opec/boj/fed_fomc pattern. Kept 'collapse' as primary \u2014 legit escalation kw, date filter handles staleness.",
+      "note": "TUNED 2026-04-22 11:38 UTC \u2014 fixed-deadline binary REMOVED (4-source verification of Trump indefinite extension: Reuters/NYT/Detroit News/AJ). Dropped 'expire'/'expiry' (deadline p | 2026-04-22 23:55 UTC TUNE: DROPPED \"announce\"+\"Islamabad\" (caught Apr 12 WaPo Islamabad-talks-collapse republish via announce+Islamabad match). ADDED \"walks out\",\"Iran walkout\",\"Vance trip\" phrases. Keyword set now escalation-specific. | 2026-04-23T04:03:00Z TUNE: Apr 12 Times of India Islamabad-talks-collapse republish fired via 'collapse' solo-kw 11d stale. ADDED match_keywords date filter ['April 2026','Apr 22','Apr 23','Apr 20','Apr 21'] per hormuz/opec/boj/fed_fomc pattern. Kept 'collapse' as primary \u2014 legit escalation kw, date filter handles staleness. RE-TUNED 2026-04-23T04:35:00Z \u2014 substring-leak bug: 'Apr 20' was matching 'Apr 2026' as substring (any 2026 article passed). Switched to 'DD Mon YYYY' tokens which align with RSS pubDate format and have unique day numbers.",
       "match_keywords": [
-        "April 2026",
-        "Apr 22",
-        "Apr 23",
-        "Apr 20",
-        "Apr 21"
+        "20 Apr 2026",
+        "21 Apr 2026",
+        "22 Apr 2026",
+        "23 Apr 2026"
       ]
     },
     {
@@ -59,12 +58,12 @@
         "missile"
       ],
       "cooldown_min": 60,
-      "note": "RE-TUNED 2026-04-23T03:25:00Z \u2014 prior filter [2026,April,Apr 22,Apr 23] too broad \u2014 Apr 7 2026 CBS archive 'Iran war throttle oil flows even if Hormuz reopens' matched via 'April' (any-month-2026) + 'reopen' kw. Tightened to current-window dates only. Bump window +1d on each tick; year-only/month-only filters are banned.",
+      "note": "RE-TUNED 2026-04-23T03:25:00Z \u2014 prior filter [2026,April,Apr 22,Apr 23] too broad \u2014 Apr 7 2026 CBS archive 'Iran war throttle oil flows even if Hormuz reopens' matched via 'April' (any-month-2026) + 'reopen' kw. Tightened to current-window dates only. Bump window +1d on each tick; year-only/month-only filters are banned. RE-TUNED 2026-04-23T04:35:00Z \u2014 substring-leak bug: 'Apr 20' was matching 'Apr 2026' as substring (any 2026 article passed). Switched to 'DD Mon YYYY' tokens which align with RSS pubDate format and have unique day numbers.",
       "match_keywords": [
-        "Apr 20",
-        "Apr 21",
-        "Apr 22",
-        "Apr 23"
+        "20 Apr 2026",
+        "21 Apr 2026",
+        "22 Apr 2026",
+        "23 Apr 2026"
       ]
     },
     {
@@ -140,13 +139,14 @@
         "smoothing operation"
       ],
       "cooldown_min": 240,
-      "note": "RE-TUNED 2026-04-23T01:05Z \u2014 Mar 13 2026 Dailyhunt Katayama-Iran-fallout 41-day archive fired on 'Katayama' solo-req kw (match_keywords ['2026','April','Apr 27','Apr 28','policy meeting'] NOT enforced by watcher per empirical evidence: prior tune 22:01 still allowed 01:02 fire). Removed bare 'Katayama'/'Akazawa'/'hike'/'decision' solo-req tokens (MoF names appear in backgrounder archives, 'hike'/'decision' too generic). Replaced with action-phrase required: 'intervene','sold yen','bought yen','rate check','urgency','excessive','surprise hike','stealth intervention','yen intervention','pain threshold','verbal intervention','sold dollars','smoothing operation'. Cooldown 180\u2192240min. match_keywords kept for when watcher enforces them later. Re-evaluate after BoJ Apr 27-28.",
+      "note": "RE-TUNED 2026-04-23T01:05Z \u2014 Mar 13 2026 Dailyhunt Katayama-Iran-fallout 41-day archive fired on 'Katayama' solo-req kw (match_keywords ['2026','April','Apr 27','Apr 28','policy meeting'] NOT enforced by watcher per empirical evidence: prior tune 22:01 still allowed 01:02 fire). Removed bare 'Katayama'/'Akazawa'/'hike'/'decision' solo-req tokens (MoF names appear in backgrounder archives, 'hike'/'decision' too generic). Replaced with action-phrase required: 'intervene','sold yen','bought yen','rate check','urgency','excessive','surprise hike','stealth intervention','yen intervention','pain threshold','verbal intervention','sold dollars','smoothing operation'. Cooldown 180\u2192240min. match_keywords kept for when watcher enforces them later. Re-evaluate after BoJ Apr 27-28. RE-TUNED 2026-04-23T04:35:00Z \u2014 substring-leak bug: 'Apr 20' was matching 'Apr 2026' as substring (any 2026 article passed). Switched to 'DD Mon YYYY' tokens which align with RSS pubDate format and have unique day numbers. (boj_intervention: dropped bare '2026'/'April'; kept date-precise + action phrases)",
       "match_keywords": [
-        "2026",
-        "April",
-        "Apr 27",
-        "Apr 28",
-        "policy meeting"
+        "27 Apr 2026",
+        "28 Apr 2026",
+        "policy meeting",
+        "BoJ raised",
+        "BoJ held",
+        "rate decision"
       ]
     },
     {
@@ -215,13 +215,12 @@
         "reset"
       ],
       "cooldown_min": 240,
-      "note": "RE-TUNED 2026-04-23T00:03:00Z - prior tune's 'Modi' keyword let Feb 2 2026 Al Jazeera 'Trump cuts India tariffs to 18% as Modi agrees to stop buying Russian oil' (80-day-old archive) fire via modi-only match score 2. DROPPED 'Modi' (too broad, historical AND current leader articles match). ADDED match_keywords=['2026','April 2026','Apr 22','Apr 23'] date filter (hormuz/opec/boj/fed_fomc pattern). Cooldown stays 240min - secondary priority (FII flow concern doesn't directly move 9 FX pairs I trade). | RE-RE-TUNED 2026-04-23T04:03:00Z - bare '2026' match_keyword was leaking Feb 22 2026 CNBC 'India delays Washington trade visit' republish (60d stale) because published-date field contains '2026'. REMOVED bare '2026', kept only specific month/day tokens to force topical recency.",
+      "note": "RE-TUNED 2026-04-23T00:03:00Z - prior tune's 'Modi' keyword let Feb 2 2026 Al Jazeera 'Trump cuts India tariffs to 18% as Modi agrees to stop buying Russian oil' (80-day-old archive) fire via modi-only match score 2. DROPPED 'Modi' (too broad, historical AND current leader articles match). ADDED match_keywords=['2026','April 2026','Apr 22','Apr 23'] date filter (hormuz/opec/boj/fed_fomc pattern). Cooldown stays 240min - secondary priority (FII flow concern doesn't directly move 9 FX pairs I trade). | RE-RE-TUNED 2026-04-23T04:03:00Z - bare '2026' match_keyword was leaking Feb 22 2026 CNBC 'India delays Washington trade visit' republish (60d stale) because published-date field contains '2026'. REMOVED bare '2026', kept only specific month/day tokens to force topical recency. RE-TUNED 2026-04-23T04:35:00Z \u2014 substring-leak bug: 'Apr 20' was matching 'Apr 2026' as substring (any 2026 article passed). Switched to 'DD Mon YYYY' tokens which align with RSS pubDate format and have unique day numbers.",
       "match_keywords": [
-        "April 2026",
-        "Apr 22",
-        "Apr 23",
-        "Apr 20",
-        "Apr 21"
+        "20 Apr 2026",
+        "21 Apr 2026",
+        "22 Apr 2026",
+        "23 Apr 2026"
       ]
     }
   ],
