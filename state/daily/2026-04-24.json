@@ -203,5 +203,42 @@
     "watchlist_changes": [
       "REMOVED oil_sweep_9323_buy_retest (price 92.406 below level AND SL 92.84; 6th fire; thesis invalidated)"
     ]
+  },
+  {
+    "tick_ts_utc": "2026-04-24T16:10:00Z",
+    "events": [
+      "news_flash:iran_ceasefire(Islamabad talks collapse + naval showdown escalating)"
+    ],
+    "trades": [],
+    "limits_placed": [],
+    "limits_cancelled": [],
+    "open_positions": 0,
+    "balance": 995.13,
+    "daily_pnl": -3.21,
+    "readiness": {
+      "GOLD": "none(-18)",
+      "OIL": "weak(+27)",
+      "USDJPY": "none(+19.5)",
+      "AUDUSD": "weak(+29)",
+      "GBPUSD": "none(+19)",
+      "EURUSD": "none(+15.5)",
+      "BTCUSD": "weak(+37.5, same-day-loss skip)",
+      "USDCAD": "weak(-29, no fresh level)",
+      "USDCHF": "none(-17)"
+    },
+    "alerts_rebuilt": [
+      "gold_escalation_buy_zone",
+      "usdjpy_intervention_fade_zone",
+      "oil_sweep_9208_buy_retest",
+      "audusd_pullback_buy",
+      "usdcad_short_fvg_retest"
+    ],
+    "alerts_removed": [
+      "gbpusd_sweep_134928_sell_retest(4fires,4h=0%)",
+      "audusd_sweep_71379_sell_retest(3fires,4h=null)",
+      "oil_sweep_9323(already removed prev tick)"
+    ],
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "note": "Islamabad talks collapsed, US-Iran naval showdown escalating (Arab Weekly). Escalation confirmed. No regime change. Level_alerts rebuilt. 0 trades."
   }
 ]

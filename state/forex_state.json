@@ -722,10 +722,154 @@
       "Detroit News 2026-04-21 21:46 GMT \u2014 Trump announces indefinite extension of ceasefire as Iran stalls negotiations",
       "Al Jazeera 2026-04-21 21:40 GMT \u2014 Trump announces Iran ceasefire extension but says blockade remains"
     ],
-    "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). | 2026-04-23 20:05 UTC tick: BOJ Apr 27-28 T-3d, FOMC T-4d \u2014 still calendar, no blackout. | 2026-04-23 20:30 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-3d \u2014 still calendar, no blackout. | 2026-04-23 21:10 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. Half-size caution on elevated-event week. | 2026-04-24 03:45 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. | 2026-04-23T23:25:00Z ESCALATION: Trump 'shoot to kill' order on Iranian mine boats. 3rd tanker seized. Regime shifted to ACTIVE_ESCALATION. BOJ T-3d FOMC T-5d no blackout. | 2026-04-24T00:52Z tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout."
+    "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). | 2026-04-23 20:05 UTC tick: BOJ Apr 27-28 T-3d, FOMC T-4d \u2014 still calendar, no blackout. | 2026-04-23 20:30 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-3d \u2014 still calendar, no blackout. | 2026-04-23 21:10 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. Half-size caution on elevated-event week. | 2026-04-24 03:45 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. | 2026-04-23T23:25:00Z ESCALATION: Trump 'shoot to kill' order on Iranian mine boats. 3rd tanker seized. Regime shifted to ACTIVE_ESCALATION. BOJ T-3d FOMC T-5d no blackout. | 2026-04-24T00:52Z tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. | 2026-04-24T16:10Z tick: 'After collapse of Islamabad talks, US-Iran naval showdown escalates' (Arab Weekly 08:33 UTC). Escalation confirmed. Regime stays ACTIVE_ESCALATION. No blackout (no deadline). BOJ Apr 27-28 T-3d. FOMC Apr 29 T-5d."
   },
-  "regime_note": "15:50 forex auto \u2014 1 evt OIL level_cross oil_sweep_9323_buy_retest: price at 92.406 blew through level 93.237 AND SL 92.84 (6th fire, readiness=weak, no LIMIT ever placed). REMOVE oil_sweep_9323 (thesis invalidated; M15 bearish, bear FVG 93.15-94.59 overhead). 90.30 validated zone now 2.11$ below, WATCH. USDJPY 159.42 +27 weak dist=58p WATCH BOJ T-2d. GOLD 4729 -18 none dist=45.9$ WATCH. BTC 78118 +55 mod but same-day-loss-block+outside-prox WATCH. 0 trades 0 LIMIT 0pos. attention_covered=9/9.",
-  "tick_ts_utc": "2026-04-24T15:50:00Z",
-  "state_ts_utc": "2026-04-24T15:50:00Z",
-  "balance": 995.13
+  "regime_note": "16:10 forex auto \u2014 1 evt news_flash(Islamabad talks collapse + naval showdown escalating). Escalation confirmed, regime stays ACTIVE_ESCALATION. GOLD 4726 comp=-18 none. OIL 92.84 comp=+27 weak (swept 97\u219292.08 intraday, escalation-supply bullish). USDJPY 159.35 comp=+19.5 none, dist=65p from intervention 160.00, BOJ T-3d. AUDUSD 0.715 comp=+29 weak. BTC 77927 comp=+37.5 weak, same-day-loss skip. No readiness\u2265moderate. 0 trades 0 LIMIT 0pos. alerts rebuilt. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-24T16:10:00Z",
+  "state_ts_utc": "2026-04-24T16:10:00Z",
+  "balance": 995.13,
+  "level_alerts": [
+    {
+      "alert_id": "gold_escalation_buy_zone",
+      "instrument": "GOLD",
+      "direction": "BUY",
+      "level": 4700.0,
+      "status": "WATCH",
+      "note": "ENTRY: Pullback to 4695-4715 zone; M15 rejection wick + close above 4700 on bullish candle. Or H4 OB touch at 4658-4668 with same confirmation.\n\nCONTEXT: US-Iran ACTIVE_ESCALATION regime. Shoot-to-kill orders, Hormuz blockade, tanker seizures. Each escalation rung drives gold higher. VALIDATED alert 10 fires 4h=80%.\n\nSL: 4648  TP: 4800  R:R target: 2.0\n\nREWRITTEN 2026-04-24T16:10Z \u2014 fresh level from H4 OB support zone after gold at 4726 comp=-18 (none); watchlist until pullback to zone.",
+      "entry_criterion": "M15 rejection wick + close above 4700 after pullback to 4695-4715 zone",
+      "regime_context": "ACTIVE_ESCALATION; gold_escalation_buy_zone VALIDATED 10 fires 4h=80%",
+      "sl": 4648.0,
+      "tp": 4800.0,
+      "rr_target": 2.0,
+      "last_updated": "2026-04-24T16:10Z",
+      "validated": true
+    },
+    {
+      "alert_id": "usdjpy_intervention_fade_zone",
+      "instrument": "USDJPY",
+      "direction": "SELL",
+      "level": 160.05,
+      "status": "WATCH",
+      "note": "ENTRY: Touch of 160.00-160.20 zone with M15 rejection wick closing back below 160.10. No entry until price reaches the zone.\n\nCONTEXT: BoJ verbal intervention escalated (MoF 'high urgency', G7 remarks). Apr 27-28 BoJ meeting = event risk. Japan intervened at 159.23 Jan 2026; 160 is the red line. Counter-trend fade by construction.\n\nSL: 160.55  TP: 158.00  R:R target: 4.1\n\nREWRITTEN 2026-04-24T16:10Z \u2014 USDJPY at 159.35 dist=65p. 1 fire 4h=100% (validated on merits). Half-size on entry (counter-trend fade).",
+      "entry_criterion": "Touch of 160.00-160.20 + M15 rejection wick closing back below 160.10",
+      "regime_context": "BoJ T-3d (Apr 27-28 meeting); verbal intervention active; counter-trend fade zone",
+      "sl": 160.55,
+      "tp": 158.0,
+      "rr_target": 4.1,
+      "last_updated": "2026-04-24T16:10Z",
+      "validated": false
+    },
+    {
+      "alert_id": "oil_sweep_9208_buy_retest",
+      "instrument": "OIL_CRUDE",
+      "direction": "BUY",
+      "level": 92.15,
+      "status": "WATCH",
+      "note": "ENTRY: Pullback / second test of today's intraday sweep low at 92.08-92.30 zone. M15 rejection wick + close above 92.20 required.\n\nCONTEXT: OIL swept from 97.15 high to 92.08 intraday (-5.07$). Fresh liquidity sweep low created. ACTIVE_ESCALATION (Hormuz blockade, US-Iran naval clash) = supply disruption bullish. comp=+27 (weak). Readiness must reach moderate before entry.\n\nSL: 91.40  TP: 94.20  R:R target: 2.7\n\nADDED 2026-04-24T16:10Z \u2014 fresh sweep low at 92.08 this session.",
+      "entry_criterion": "Pullback to 92.08-92.30 zone; M15 rejection wick + close above 92.20",
+      "regime_context": "ACTIVE_ESCALATION supply disruption bullish; fresh intraday sweep at 92.08",
+      "sl": 91.4,
+      "tp": 94.2,
+      "rr_target": 2.7,
+      "last_updated": "2026-04-24T16:10Z",
+      "validated": false
+    },
+    {
+      "alert_id": "audusd_pullback_buy",
+      "instrument": "AUDUSD",
+      "direction": "BUY",
+      "level": 0.7085,
+      "status": "WATCH",
+      "note": "ENTRY: Pullback to 0.7080-0.7090 zone; M15 rejection wick + close above 0.7085 OR bullish EMA bounce on M15.\n\nCONTEXT: AUDUSD multi-year highs. RBA hawkish (3rd hike May priced), dovish Fed, risk-on DXY sub-98. comp=+29 weak bullish. Primary buy-dip thesis intact.\n\nSL: 0.7030  TP: 0.7190  R:R target: 1.9\n\nREWRITTEN 2026-04-24T16:10Z \u2014 AUDUSD at 0.7151 dist=66p from zone. Watchlist only.",
+      "entry_criterion": "Pullback to 0.7080-0.7090; M15 rejection wick + close above 0.7085",
+      "regime_context": "Risk-on, DXY sub-98, RBA hawkish; multi-year highs context",
+      "sl": 0.703,
+      "tp": 0.719,
+      "rr_target": 1.9,
+      "last_updated": "2026-04-24T16:10Z",
+      "validated": false
+    },
+    {
+      "alert_id": "usdcad_short_fvg_retest",
+      "instrument": "USDCAD",
+      "direction": "SELL",
+      "level": null,
+      "status": "WATCH",
+      "note": "ENTRY: Rally to fresh H4 FVG or bearish OB on USDCAD; M15 rejection close below the OB lower boundary required.\n\nCONTEXT: USDCAD comp=-29 (weak bearish). USD weakness dominant. Oil prices suppressing CAD-negative effect. 6 fires 4h=50% on previous variant \u2014 borderline, keep on merits.\n\nSL: above OB (set on trigger)  TP: prior swing low  R:R target: 2.0\n\nREWRITTEN 2026-04-24T16:10Z \u2014 stale level removed; watch for fresh H4 bearish OB entry.",
+      "entry_criterion": "Rally to H4 bearish OB + M15 rejection close below OB lower boundary",
+      "regime_context": "USD weak, USDCAD comp=-29 bearish; 6 fires 4h=50% borderline",
+      "sl": null,
+      "tp": null,
+      "rr_target": 2.0,
+      "last_updated": "2026-04-24T16:10Z",
+      "validated": false
+    }
+  ],
+  "structure_watch": [
+    {
+      "instrument": "EURUSD",
+      "timeframes": [
+        "HOUR",
+        "MINUTE_15"
+      ]
+    },
+    {
+      "instrument": "GBPUSD",
+      "timeframes": [
+        "HOUR",
+        "MINUTE_15"
+      ]
+    },
+    {
+      "instrument": "AUDUSD",
+      "timeframes": [
+        "HOUR",
+        "MINUTE_15"
+      ]
+    },
+    {
+      "instrument": "USDJPY",
+      "timeframes": [
+        "HOUR",
+        "MINUTE_15"
+      ]
+    },
+    {
+      "instrument": "USDCAD",
+      "timeframes": [
+        "HOUR",
+        "MINUTE_15"
+      ]
+    },
+    {
+      "instrument": "USDCHF",
+      "timeframes": [
+        "HOUR",
+        "MINUTE_15"
+      ]
+    },
+    {
+      "instrument": "GOLD",
+      "timeframes": [
+        "HOUR_4",
+        "HOUR",
+        "MINUTE_15"
+      ]
+    },
+    {
+      "instrument": "OIL_CRUDE",
+      "timeframes": [
+        "HOUR_4",
+        "HOUR",
+        "MINUTE_15"
+      ]
+    },
+    {
+      "instrument": "BTCUSD",
+      "timeframes": [
+        "HOUR_4",
+        "HOUR"
+      ]
+    }
+  ]
 }
