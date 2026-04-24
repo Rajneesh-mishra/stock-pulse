@@ -346,5 +346,78 @@
     "scalp_status": "3 FX ACTIVE halt={}",
     "attention_covered": "9/9",
     "summary": "0 evt heartbeat. USDJPY 159.806 +45 mod dist=19.45p INSIDE 30p swing=ARMED (BOJ T-3d). GOLD 4675.53 -40 mod sweep_4721 dist=46.15$ WATCH; safehaven_4775 dist=99.47$ WATCH. OIL +42.5 mod sweep_9323 dist=277p WATCH. BTC +47.5 mod day_fvg dist=772$ WATCH. 6 alerts KEEP. BOJ T-3d FOMC T-5d."
+  },
+  {
+    "tick_ts_utc": "2026-04-24T05:06:00Z",
+    "events_consumed": 0,
+    "events_pending": 0,
+    "tick_type": "heartbeat",
+    "opened": 0,
+    "closed": 0,
+    "skipped": 0,
+    "broker_divergence": "2 rogue USDJPY SELL (scalp engine bug) closed at BE",
+    "balance_usd": 1000.0,
+    "daily_pnl_usd": 0.0,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "BOJ T-3d FOMC T-5d",
+    "attention_matrix": {
+      "EURUSD": {
+        "swing": "NONE",
+        "scalp": "ACTIVE",
+        "readiness": "weak",
+        "reason": "comp=-31 weak bearish no alert; scalp enabled neutral"
+      },
+      "GBPUSD": {
+        "swing": "NONE",
+        "scalp": "ACTIVE",
+        "readiness": "none",
+        "reason": "comp=+8 none neutral; no setup; scalp enabled neutral"
+      },
+      "AUDUSD": {
+        "swing": "NONE",
+        "scalp": "ACTIVE",
+        "readiness": "none",
+        "reason": "comp=+7 none neutral; pullback thesis needs 0.7085 which is 4p below; no active alert"
+      },
+      "USDJPY": {
+        "swing": "ARMED",
+        "scalp": "OFF",
+        "readiness": "moderate",
+        "reason": "intervention fade 160.00; dist=22.1p INSIDE 30p; |comp|=+43 mod bull against sell; awaits 160 tag + rej wick; scalp disabled pip-conv"
+      },
+      "USDCAD": {
+        "swing": "NONE",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "comp=-8.5 none; SELL trigger=1.3820, curr=1.371 49p away; scalp disabled CAD-quote"
+      },
+      "USDCHF": {
+        "swing": "NONE",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "no alert, comp=unknown; scalp disabled CHF-quote"
+      },
+      "GOLD": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "moderate",
+        "reason": "sweep_4721 dist=47.3$ outside 20$ prox; bearish -40 corroborating; need 20$ bounce to arm"
+      },
+      "OIL_CRUDE": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "moderate",
+        "reason": "sweep_9323 dist=2.16$ outside 1.12$ prox; bullish +42.5 corroborating; 1.04$ gap to ARMED"
+      },
+      "BTCUSD": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "weak",
+        "reason": "FVG 76960 tagged, bounced 747$; +27 weak; need pullback retest"
+      }
+    },
+    "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=KEEP USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked; daily_pnl=$0.0 no_halts",
+    "alerts_audit": "6 KEEP (usdjpy_intervention ARMED 22.1p; gold_safehaven_buy WATCH dormant 100.6$; oil_retest_90 WATCH 5.1$; oil_sweep_9323 WATCH 2.16$ close; gold_sweep_4721 WATCH 47.3$; btc_fvg_buy WATCH 747$)",
+    "notes": "Rogue USDJPY scalp positions investigated and closed. Likely scalp engine bug \u2014 opened despite enabled=false. Both at BE. Balance $1000."
   }
 ]

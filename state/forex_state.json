@@ -151,6 +151,19 @@
       "closed_at": "2026-04-16T13:50:00+05:30",
       "exit_reason": "SL hit (trailing stop at breakeven $90). WTI bounced from $87.79 back above $90. Peak unrealized +$1.74 at $88.20.",
       "lessons": "Trailing stop saved us from a reversal. Entry thesis correct (double-top held). WTI just had more bounce left."
+    },
+    {
+      "instrument": "USDJPY",
+      "direction": "SELL",
+      "entry_price": 159.775,
+      "exit_price": 159.775,
+      "pnl": 0.0,
+      "result": "breakeven",
+      "opened_at": "2026-04-24T05:00:45+00:00",
+      "closed_at": "2026-04-24T05:06:00+00:00",
+      "exit_reason": "Closed at market \u2014 rogue scalp positions opened by scalp engine despite USDJPY disabled in config. Not at intervention trigger (160.00); counter to current bullish structure (+43). Closed both at BE to restore clean state.",
+      "thesis_type": "scalp_entry",
+      "lessons": "Scalp engine opened USDJPY positions despite enabled=false. Investigate engine for disabled-pair bypass bug."
     }
   ],
   "consecutive_losses": 0,
@@ -609,7 +622,7 @@
     ],
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). | 2026-04-23 20:05 UTC tick: BOJ Apr 27-28 T-3d, FOMC T-4d \u2014 still calendar, no blackout. | 2026-04-23 20:30 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-3d \u2014 still calendar, no blackout. | 2026-04-23 21:10 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. Half-size caution on elevated-event week. | 2026-04-24 03:45 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. | 2026-04-23T23:25:00Z ESCALATION: Trump 'shoot to kill' order on Iranian mine boats. 3rd tanker seized. Regime shifted to ACTIVE_ESCALATION. BOJ T-3d FOMC T-5d no blackout. | 2026-04-24T00:52Z tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout."
   },
-  "regime_note": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED \u2014 2026-04-24T04:00:00Z 04:00 forex auto \u2014 0 evt heartbeat. Web search SKIPPED (0 pos + regime stable 4h25m). USDJPY 159.806 +45 mod dist=19.45p INSIDE 30p swing=ARMED (BOJ T-3d). GOLD 4675.53 -40 mod sweep_4721 dist=46.15$ OUTSIDE 30$ swing=WATCH; safehaven_4775 dist=99.47$ WATCH. OIL 96.013 +42.5 mod sweep_9323 dist=277p WATCH; retest_90 dist=571p dormant. BTC 77732 +47.5 mod day_fvg dist=772$ OUTSIDE 507$ WATCH (bounced from zone). 6 alerts KEEP. Scalp 3 FX ACTIVE halt={}. BOJ T-3d FOMC T-5d. attention_covered=9/9.",
-  "tick_ts_utc": "2026-04-24T04:00:00Z",
-  "state_ts_utc": "2026-04-24T04:00:00Z"
+  "regime_note": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED \u2014 2026-04-24T05:06Z 05:06 forex auto \u2014 0 evt heartbeat. BROKER DIVERGENCE: 2 rogue USDJPY SELL 100 (opened by scalp engine despite disabled flag) at 159.773/159.778, SL=159.9, TP=158.8 \u2014 CLOSED at breakeven. Balance restored $1000.00. USDJPY 159.779 +43 mod 4/4 bull dist=22.1p INSIDE 30p ARMED (BOJ T-3d; intervention fade at 160.00; no entry yet \u2014 trigger requires 160.00 tag + M15 rej wick \u22658p). GOLD 4674.37 -40 mod bearish; sweep_4721 dist=47.3$ OUTSIDE 20$ \u2192 swing=WATCH (downgrade from prev ARMED; was 27.6$ inside now 47.3$ outside). OIL 95.402 +42.5 mod bull; sweep_9323 dist=2.16$ OUTSIDE 1.12$ \u2192 swing=WATCH (close; 1.04$ gap to ARMED). EURUSD -31 weak. AUDUSD +7 none. GBPUSD +8 none. USDCAD -8.5 none. BTC +27 weak FVG=WATCH. 6 alerts KEEP. 8 queries KEEP. Scalp 3 FX ACTIVE halt={}. BOJ T-3d FOMC T-5d. web_search skipped (0 open positions + regime stable). attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-24T05:06:00Z",
+  "state_ts_utc": "2026-04-24T05:06:00Z"
 }
