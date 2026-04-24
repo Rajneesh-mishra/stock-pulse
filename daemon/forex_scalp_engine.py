@@ -56,6 +56,17 @@ PIP_SIZE = {
     "USDJPY": 0.01,   "GOLD": 0.1, "OIL_CRUDE": 0.01, "BTCUSD": 1.0,
 }
 
+# Broker minimum deal size per epic (queried from Capital.com dealingRules).
+# Orders below these values return error.invalid.size.minvalue, which
+# previous execute_trade code swallowed silently. If a setup's computed
+# size is below this, we bump it up to the minimum (this makes the real
+# USD risk larger than the intended 0.5%; R:R check still gates).
+BROKER_MIN_SIZE = {
+    "EURUSD": 100, "GBPUSD": 100, "AUDUSD": 100,
+    "USDCAD": 100, "USDCHF": 100, "USDJPY": 100,
+    "GOLD": 0.01, "OIL_CRUDE": 1.0, "BTCUSD": 0.0001,
+}
+
 # Pairs with USD as the quote currency — price_diff × size gives P/L directly
 # in USD, which is what the shadow tracker assumes. Non-USD-quote pairs
 # (USDJPY, USDCHF, USDCAD) need per-pair pip-value conversion; until that
@@ -449,7 +460,9 @@ def pass_risk_guard(epic, direction, size, sl, tp):
 
 def execute_trade(epic, direction, size, sl, tp, shadow):
     """In shadow mode: log the hypothetical order, return fake deal id.
-    In live mode: call forex/api.py open."""
+    In live mode: call forex/api.py open. Detects broker error responses
+    (forex/api.py exits 0 even on HTTP 400 error-in-JSON responses, so we
+    must look for errorCode in the parsed JSON, not just returncode)."""
     if shadow:
         return True, {"shadow": True, "would_open": {
             "epic": epic, "direction": direction, "size": size, "sl": sl, "tp": tp,
@@ -462,7 +475,19 @@ def execute_trade(epic, direction, size, sl, tp, shadow):
         )
         if r.returncode != 0:
             return False, (r.stderr or r.stdout)[:500]
-        return True, json.loads(r.stdout)
+        try:
+            out = json.loads(r.stdout)
+        except Exception:
+            return False, f"unparseable_response: {(r.stdout or '')[:400]}"
+        # Broker error-in-JSON (api.py exits 0 even on HTTP 400)
+        if isinstance(out, dict) and (out.get("errorCode")
+                                      or int(out.get("http_status") or 200) >= 400):
+            err = out.get("errorCode") or f"http_{out.get('http_status')}"
+            return False, f"{err}: {json.dumps(out)[:400]}"
+        # Need a dealReference OR dealId to count as a real placement
+        if not (out.get("dealReference") or out.get("dealId")):
+            return False, f"no_deal_id: {json.dumps(out)[:300]}"
+        return True, out
     except Exception as e:
         return False, f"api_spawn_failed: {e}"
 
@@ -492,6 +517,7 @@ class Engine:
         self.halt = HaltTracker()
         self.open_positions = {}   # epic -> {direction, entry, sl, tp, opened_at, shadow}
         self.last_attempt = {}     # epic -> ts — throttle per-pair cadence
+        self._last_reconcile = 0   # ts of last broker-vs-memory reconcile
 
     def step(self):
         cfg = read_config()
@@ -508,6 +534,43 @@ class Engine:
         ticks = read_live_ticks_snapshot()
         if not ticks:
             return {"reason": "no_live_ticks"}
+
+        # Reconcile in-memory live positions with the actual broker. If we
+        # recorded an "opened" from a silent-reject response, we'd carry
+        # phantom positions forever. Every ~60s, compare our live opens to
+        # broker positions and drop any we don't actually have.
+        now_ts = time.time()
+        if (not shadow) and any(not p.get("shadow") for p in self.open_positions.values()) \
+                and (now_ts - self._last_reconcile > 60):
+            self._last_reconcile = now_ts
+            try:
+                r = subprocess.run(
+                    [sys.executable, str(REPO / "forex" / "api.py"), "positions"],
+                    capture_output=True, text=True, timeout=10, cwd=str(REPO),
+                )
+                if r.returncode == 0:
+                    broker_epics = set()
+                    try:
+                        data = json.loads(r.stdout)
+                        for p in data.get("positions", []):
+                            pos = p.get("position", {})
+                            ep = (p.get("market", {}) or {}).get("epic") or pos.get("epic")
+                            if ep: broker_epics.add(ep)
+                    except Exception:
+                        pass
+                    phantom = [e for e, p in self.open_positions.items()
+                               if not p.get("shadow") and e not in broker_epics]
+                    for e in phantom:
+                        log(f"RECONCILE drop phantom live position {e} "
+                            f"(engine had it, broker does not)")
+                        append_ledger({
+                            "kind": "reconcile_drop", "epic": e,
+                            "reason": "broker_has_no_position",
+                            "was": self.open_positions[e],
+                        })
+                        del self.open_positions[e]
+            except Exception as ex:
+                log(f"reconcile failed: {ex}")
 
         # Ingest ticks into books
         now_ts = time.time()
@@ -547,9 +610,15 @@ class Engine:
             risk_usd = g.get("risk_pct_per_scalp", 0.005) * 1000   # $1000 notional
             sl_dist = abs(entry - sl)
             if sl_dist <= 0: continue
+            # Start with risk-normalized size
             size = max(0.01, round(risk_usd / sl_dist, 4))
-            # Sanity cap — no single scalp over 10 "contracts" no matter what
-            size = min(size, 10.0)
+            # Floor at broker minimum (orders below this fail silently)
+            broker_min = BROKER_MIN_SIZE.get(epic, 0.01)
+            if size < broker_min:
+                size = broker_min
+            # Sanity ceiling — don't let a tight SL produce absurd size
+            # (1000 is 10× the typical FX-major minimum, well inside risk_guard)
+            size = min(size, broker_min * 10)
 
             approved, detail = pass_risk_guard(epic, direction, size, sl, tp)
             if not approved:
