@@ -529,5 +529,86 @@
     },
     "scalp_status": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=KEEP halted={} daily_pnl=0",
     "notes": "USDCHF H1 up-sweep (1.7p wick) \u2014 comp=+7.5 none, counter-trend sell criteria not met (need |comp|>=40 against). Added WATCH alert usdchf_sweep_h1_sell_retest at 0.7875 zone."
+  },
+  {
+    "tick_ts_utc": "2026-04-24T07:35:00Z",
+    "events": [
+      {
+        "id": "evt_1777015999285_level_cross",
+        "type": "level_cross",
+        "instrument": "USDCHF",
+        "alert_id": "usdchf_sweep_h1_sell_retest",
+        "action": "SKIP \u2014 readiness=none (+7.5), entry needs readiness\u2265moderate bearish (\u2264-40). H1/M15 bullish. WATCH."
+      }
+    ],
+    "trades": [],
+    "positions_open": 0,
+    "balance_usd": 1000.0,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "prices": {
+      "USDJPY": 159.702,
+      "GOLD": 4683.27,
+      "OIL_CRUDE": 95.812,
+      "USDCHF": 0.7874,
+      "EURUSD": 1.168025,
+      "GBPUSD": 1.346385,
+      "AUDUSD": 0.71284,
+      "USDCAD": 1.37085,
+      "BTCUSD": 77668.65
+    },
+    "confluence": {
+      "USDJPY": {
+        "comp": 40.5,
+        "readiness": "moderate",
+        "note": "counter-fade ARMED dist=29.8p"
+      },
+      "USDCHF": {
+        "comp": 7.5,
+        "readiness": "none",
+        "note": "bullish H1/M15, no sell entry"
+      },
+      "GOLD": {
+        "comp": -35.5,
+        "readiness": "weak"
+      },
+      "OIL_CRUDE": {
+        "comp": 43.0,
+        "readiness": "moderate",
+        "note": "both buy levels outside prox"
+      },
+      "EURUSD": {
+        "comp": -31.0,
+        "readiness": "weak"
+      },
+      "GBPUSD": {
+        "comp": 5.5,
+        "readiness": "none"
+      },
+      "AUDUSD": {
+        "comp": 8.0,
+        "readiness": "none"
+      },
+      "USDCAD": {
+        "comp": -8.5,
+        "readiness": "none"
+      },
+      "BTCUSD": {
+        "comp": 27.0,
+        "readiness": "weak"
+      }
+    },
+    "attention_matrix": {
+      "EURUSD": "swing=WATCH scalp=ACTIVE readiness=weak (comp=-31 below levels)",
+      "GBPUSD": "swing=NONE scalp=ACTIVE readiness=none (no alert, comp +5.5)",
+      "AUDUSD": "swing=NONE scalp=ACTIVE readiness=none (no active alert firing, comp +8)",
+      "USDJPY": "swing=ARMED scalp=OFF readiness=moderate (counter-fade BOJ T-3d, dist=29.8p, await 160 tag)",
+      "USDCAD": "swing=NONE scalp=OFF readiness=none (comp -8.5, pip-conv pending)",
+      "USDCHF": "swing=WATCH scalp=OFF readiness=none (alert exists, comp +7.5 bullish, no entry)",
+      "GOLD": "swing=WATCH scalp=N/A readiness=weak (sell 38.4$ from 4721 outside prox; buy 91.7$ from 4775)",
+      "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=moderate (both buy levels outside prox, rising away)",
+      "BTCUSD": "swing=WATCH scalp=N/A readiness=weak (FVG zone 709$ below current price)"
+    },
+    "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=KEEP USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
+    "notes": "api.py no LIMIT order type \u2014 USDJPY counter-fade must be market-on-confirmation when 160.00 tags + M15 wick \u22658p."
   }
 ]

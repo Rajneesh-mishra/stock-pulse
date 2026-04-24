@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-24T07:17:32.207308+00:00",
+  "generated_at": "2026-04-24T07:37:42.506353+00:00",
   "counts": {
     "trades": 14,
-    "events": 3341,
+    "events": 3350,
     "ticks": 59,
-    "regime_snapshots": 2,
+    "regime_snapshots": 3,
     "broker_positions": 0,
-    "counterfactuals": 34
+    "counterfactuals": 35
   },
   "trades_last_50": [
     {
@@ -306,6 +306,14 @@
   ],
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
+    {
+      "ts_utc": "2026-04-24T07:17:00Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "07:17 forex auto \u2014 1 evt (USDCHF H1 up-sweep 0.787505 wick=1.7p; comp=+7.5 none; SKIP trade \u2014 counter-trend sell needs |comp|\u226540, got 7.5; ADD usdchf_sweep_h1_sell_retest WATCH). USDJPY 159.655 +35.5 weak dist=34.5p OUTSIDE 30p \u2192 WATCH BOJ T-3d. GOLD 4681.8 -35.5 weak sweep_4721 dist=40.1$ OUTSIDE 30$ \u2192 WATCH. OIL 95.70 +43.0 mod sweep_9323 dist=2.46$ WATCH. 6 alerts KEEP +1 ADD (USDCHF). 8 news queries KEEP. web_search skipped (0pos+regime stable). 0 trades 0pos. BOJ T-3d FOMC T-5d. attention_covered=9/9.",
+      "binary_event_name": "iran_ceasefire_indefinite_extension",
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
     {
       "ts_utc": "2026-04-24T06:52:00Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
@@ -826,6 +834,19 @@
     }
   ],
   "counterfactuals_last_50": [
+    {
+      "alert_id": "usdchf_sweep_h1_sell_retest",
+      "instrument": "USDCHF",
+      "direction": "sell",
+      "trigger_price": 0.78756,
+      "fired_at": "2026-04-24T07:33:19.285177+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
     {
       "alert_id": "oil_sweep_9519_buy_retest",
       "instrument": "OIL_CRUDE",
