@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T01:43:39.868448Z",
+  "generated_at": "2026-04-24T02:49:43.662584Z",
   "ticks": [
     {
       "ts_utc": "2026-04-22T20:08:03Z",
@@ -162,6 +162,14 @@
       "closed": 0,
       "skipped": 0,
       "summary": "01:41 forex auto \u2014 0 evt heartbeat. WEB SEARCH: shoot-to-kill confirmed 4 sources; IEA '13M bpd lost' OIL bid reinforced. USDJPY 159.79 +45 mod dist=21p ARMED (BOJ T-3d). GOLD 4695 -40 mod 26.68$ INSIDE 30$ ARMED (KEEP: -40 mod restored vs -37.5 weak 06:00 IST). OIL 96.92 +43 mod sweep_9323 dist=368p WATCH; retest_90 dist=662p dormant. BTC 78062 +52.5 mod (3/4 bull) day_fvg_buy dist=1102$ WATCH. EURUSD -32 weak others none. 6 alerts KEEP 9 SW KEEP. Scalp 3 FX ACTIVE halt={}. BOJ T-3d FOMC T-5d. 0 trades $1000/0pos. attention_covered=9/9."
+    },
+    {
+      "ts_utc": "2026-04-24T02:47:00Z",
+      "events_in": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "summary": "02:47 forex auto \u2014 0 evt heartbeat. USDJPY 159.772 +45 mod 4/4 bull dist=22.8p INSIDE 30p swing=ARMED (BOJ T-3d). GOLD 4682.17 -40 mod 3/4 bear sweep_4721 dist=39.51$ OUTSIDE 30$ swing=WATCH (DOWNGRADE; price dropped 4695\u21924682). safehaven_4775 dist=92.83$ opp-watch far. OIL 95.804 +40.5 mod sweep_9323 dist=256.75p WATCH; retest_90 dist=550p dormant. BTC 78436.85 +55 mod day_fvg_buy dist=1476.85$ WATCH (price UP from 78062). EURUSD -32 weak GBPUSD none AUDUSD none USDCAD none USDCHF none swing=NONE. 6 alerts KEEP 9 SW KEEP. Scalp 3 FX ACTIVE halt={}. BOJ T-3d FOMC T-5d. web_search skipped (0 pos + last search 64m ago + no events). attention_covered=9/9."
     },
     {
       "tick_ts_utc": "2026-04-24T20:30:00Z",
@@ -472,6 +480,18 @@
       "closed": 0,
       "pnl": 0,
       "note": "heartbeat. WEB SEARCH: shoot-to-kill confirmed; IEA 13M bpd lost. USDJPY 159.79 dist=21p ARMED. GOLD 4695 -40 mod 26.68$ ARMED. OIL 96.92 +43 mod WATCH. BTC 78062 WATCH. 0 trades."
+    },
+    {
+      "ts_utc": "2026-04-24T02:47:00Z",
+      "events_in": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "pnl_usd": 0,
+      "balance": 1000.0,
+      "positions": 0,
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "summary": "02:47 forex auto \u2014 0 evt heartbeat. USDJPY 159.772 +45 mod dist=22.8p ARMED (BOJ T-3d). GOLD 4682.17 -40 mod sweep_4721 dist=39.51$ WATCH (DOWNGRADE; was ARMED 26.68$). OIL 95.804 +40.5 mod sweep_9323 dist=256.75p WATCH. BTC 78436.85 +55 mod day_fvg_buy dist=1476.85$ WATCH. 6 alerts KEEP. 0 trades $1000/0."
     }
   ]
 }
