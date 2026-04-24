@@ -434,6 +434,14 @@
       "closed": 0,
       "skipped": 1,
       "note": "12:57 forex auto \u2014 1 evt (fed_fomc news_flash GoldSilver FOMC-preview Apr-23 20:56 GMT 'What to Watch Before April 29 FOMC' NON-THESIS-ALTERING market-preview, consumed). USDJPY 159.604 comp=+32.5 weak dist=39.6p OUTSIDE 30p WATCH (BOJ T-3d FOMC T-5d). GOLD 4692.845 sweep_4721 dist=28.8$ INSIDE prox comp=-34.5 weak NEAR-ARM (need -40). OIL 95.729 sweep_9323 dist=2.49$ OUTSIDE prox comp=+32.5 weak WATCH. BTC 78068 H4 FVG LIMIT ARMED @ 78056 comp=+55 mod 4/4 bull dealId=00000000-4e72-1a54-044a-beb40055311e (bid=78044 near fill). AUDUSD +11 none GBPUSD +21.5 none EURUSD -8 none USDCAD -21.5 none USDCHF +18.5 none. 10 alerts KEEP. 0 trades 1 LIMIT 0 pos. attention_covered=9/9."
+    },
+    {
+      "ts_utc": "2026-04-24T13:43:00Z",
+      "events_in": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "note": "13:43 forex auto \u2014 0 evt heartbeat. USDJPY 159.603 comp=+32.5 weak dist=39.7p OUTSIDE 30p WATCH (BOJ T-3d FOMC T-5d). GOLD 4708.8 sweep_4721 dist=12.9$ INSIDE prox comp=-23.0 none WATCH (DOWNGRADE from NEAR-ARM; need \u2264-40 mod). OIL 94.606 sweep_9323 dist=1.37$ BARELY OUTSIDE prox 1.28$ comp=+30 weak NEAR-ARM (gap=0.09$ to prox, +10pts to mod). BTC 78175.9 LIMIT ARMED 78056 bid=78152 comp=+55 mod 4/4 bull (dealId=00000000-4e72-1a54-044a-beb40055311e). EURUSD +2 none GBPUSD +9 none AUDUSD +9 none USDCAD -14 none USDCHF +12.5 none. Scalp 3 FX ACTIVE halt={}. web_search SKIP (0pos + regime stable 5h+). 10 alerts KEEP proximity-refresh. 0 trades 1 LIMIT 0 pos. attention_covered=9/9."
     }
   ],
   "recent_skips": [
@@ -686,7 +694,7 @@
     ],
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). | 2026-04-23 20:05 UTC tick: BOJ Apr 27-28 T-3d, FOMC T-4d \u2014 still calendar, no blackout. | 2026-04-23 20:30 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-3d \u2014 still calendar, no blackout. | 2026-04-23 21:10 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. Half-size caution on elevated-event week. | 2026-04-24 03:45 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. | 2026-04-23T23:25:00Z ESCALATION: Trump 'shoot to kill' order on Iranian mine boats. 3rd tanker seized. Regime shifted to ACTIVE_ESCALATION. BOJ T-3d FOMC T-5d no blackout. | 2026-04-24T00:52Z tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout."
   },
-  "regime_note": "12:57 forex auto \u2014 1 evt (fed_fomc news_flash GoldSilver FOMC-preview Apr-23 20:56 GMT 'What to Watch Before April 29 FOMC' NON-THESIS-ALTERING market-preview, consumed). USDJPY 159.604 comp=+32.5 weak dist=39.6p OUTSIDE 30p WATCH (BOJ T-3d FOMC T-5d). GOLD 4692.845 sweep_4721 dist=28.8$ INSIDE prox comp=-34.5 weak NEAR-ARM (need -40). OIL 95.729 sweep_9323 dist=2.49$ OUTSIDE prox comp=+32.5 weak WATCH. BTC 78068 H4 FVG LIMIT ARMED @ 78056 comp=+55 mod 4/4 bull dealId=00000000-4e72-1a54-044a-beb40055311e (bid=78044 near fill). AUDUSD +11 none GBPUSD +21.5 none EURUSD -8 none USDCAD -21.5 none USDCHF +18.5 none. 10 alerts KEEP. 0 trades 1 LIMIT 0 pos. attention_covered=9/9.",
-  "tick_ts_utc": "2026-04-24T12:57:00Z",
-  "state_ts_utc": "2026-04-24T12:57:00Z"
+  "regime_note": "13:43 forex auto \u2014 0 evt heartbeat. USDJPY 159.603 comp=+32.5 weak dist=39.7p OUTSIDE 30p WATCH (BOJ T-3d FOMC T-5d). GOLD 4708.8 sweep_4721 dist=12.9$ INSIDE prox comp=-23.0 none WATCH (DOWNGRADE from NEAR-ARM; need \u2264-40 mod). OIL 94.606 sweep_9323 dist=1.37$ BARELY OUTSIDE prox 1.28$ comp=+30 weak NEAR-ARM (gap=0.09$ to prox, +10pts to mod). BTC 78175.9 LIMIT ARMED 78056 bid=78152 comp=+55 mod 4/4 bull (dealId=00000000-4e72-1a54-044a-beb40055311e). EURUSD +2 none GBPUSD +9 none AUDUSD +9 none USDCAD -14 none USDCHF +12.5 none. Scalp 3 FX ACTIVE halt={}. web_search SKIP (0pos + regime stable 5h+). 10 alerts KEEP proximity-refresh. 0 trades 1 LIMIT 0 pos. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-24T13:43:00Z",
+  "state_ts_utc": "2026-04-24T13:43:00Z"
 }

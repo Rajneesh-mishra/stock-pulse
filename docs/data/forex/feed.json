@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-24T12:58:47.992716Z",
+  "generated_at": "2026-04-24T13:48:47.715952Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-22T21:33:00Z",
-      "events_in": 1,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 1,
-      "note": "21:33 UTC forex auto tick \u2014 1 stale news_flash consumed (AJ Apr 20 'Islamabad negotiators' backgrounder, keyword 'Islamabad' matched but superseded by 4-source verified Trump indefinite extension Apr 22). USDCAD re-run: composite -37 weak (strengthened from -32 but still <|40| moderate), M15 +0.4 bullish = sweep continuation exhausted 93min post-sweep. REMOVED usdcad_liqsweep_sell_zone per prior tick's 'REMOVE next tick if not ARMED' commit. No replacement. USDJPY +51 moderate WATCH 160 (51p dist, BOJ T-4d), GOLD -16 none (4h hit_rate 0.8 KEEP), OIL +28.5 weak retest-far. 3 alerts KEEP, 1 REMOVE, 9 structure_watch KEEP, 8 queries KEEP. Broker $1000/0. 0 trades."
-    },
     {
       "ts_utc": "2026-04-22T22:02:00Z",
       "events_in": 11,
@@ -236,6 +228,14 @@
       "note": "12:57 forex auto \u2014 1 evt (fed_fomc news_flash GoldSilver FOMC-preview Apr-23 20:56 GMT 'What to Watch Before April 29 FOMC' NON-THESIS-ALTERING market-preview, consumed). USDJPY 159.604 comp=+32.5 weak dist=39.6p OUTSIDE 30p WATCH (BOJ T-3d FOMC T-5d). GOLD 4692.845 sweep_4721 dist=28.8$ INSIDE prox comp=-34.5 weak NEAR-ARM (need -40). OIL 95.729 sweep_9323 dist=2.49$ OUTSIDE prox comp=+32.5 weak WATCH. BTC 78068 H4 FVG LIMIT ARMED @ 78056 comp=+55 mod 4/4 bull dealId=00000000-4e72-1a54-044a-beb40055311e (bid=78044 near fill). AUDUSD +11 none GBPUSD +21.5 none EURUSD -8 none USDCAD -21.5 none USDCHF +18.5 none. 10 alerts KEEP. 0 trades 1 LIMIT 0 pos. attention_covered=9/9."
     },
     {
+      "ts_utc": "2026-04-24T13:43:00Z",
+      "events_in": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "note": "13:43 forex auto \u2014 0 evt heartbeat. USDJPY 159.603 comp=+32.5 weak dist=39.7p OUTSIDE 30p WATCH (BOJ T-3d FOMC T-5d). GOLD 4708.8 sweep_4721 dist=12.9$ INSIDE prox comp=-23.0 none WATCH (DOWNGRADE from NEAR-ARM; need \u2264-40 mod). OIL 94.606 sweep_9323 dist=1.37$ BARELY OUTSIDE prox 1.28$ comp=+30 weak NEAR-ARM (gap=0.09$ to prox, +10pts to mod). BTC 78175.9 LIMIT ARMED 78056 bid=78152 comp=+55 mod 4/4 bull (dealId=00000000-4e72-1a54-044a-beb40055311e). EURUSD +2 none GBPUSD +9 none AUDUSD +9 none USDCAD -14 none USDCHF +12.5 none. Scalp 3 FX ACTIVE halt={}. web_search SKIP (0pos + regime stable 5h+). 10 alerts KEEP proximity-refresh. 0 trades 1 LIMIT 0 pos. attention_covered=9/9."
+    },
+    {
       "ts_utc": "2026-04-24T12:46:00Z",
       "events_in": 2,
       "opened": 0,
@@ -256,6 +256,14 @@
       "closed": 0,
       "skipped": 1,
       "note": "12:57 forex auto \u2014 1 evt (fed_fomc news_flash GoldSilver FOMC-preview Apr-23 20:56 GMT 'What to Watch Before April 29 FOMC' NON-THESIS-ALTERING market-preview, consumed). USDJPY 159.604 comp=+32.5 weak dist=39.6p OUTSIDE 30p WATCH (BOJ T-3d FOMC T-5d). GOLD 4692.845 sweep_4721 dist=28.8$ INSIDE prox comp=-34.5 weak NEAR-ARM (need -40). OIL 95.729 sweep_9323 dist=2.49$ OUTSIDE prox comp=+32.5 weak WATCH. BTC 78068 H4 FVG LIMIT ARMED @ 78056 comp=+55 mod 4/4 bull dealId=00000000-4e72-1a54-044a-beb40055311e (bid=78044 near fill). AUDUSD +11 none GBPUSD +21.5 none EURUSD -8 none USDCAD -21.5 none USDCHF +18.5 none. 10 alerts KEEP. 0 trades 1 LIMIT 0 pos. attention_covered=9/9."
+    },
+    {
+      "ts_utc": "2026-04-24T13:43:00Z",
+      "events_in": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "note": "13:43 forex auto \u2014 0 evt heartbeat. USDJPY 159.603 +32.5 weak 39.7p OUTSIDE 30p WATCH. GOLD 4708.8 sweep_4721 -23.0 none WATCH (DOWNGRADE from NEAR-ARM). OIL 94.606 sweep_9323 +30.0 weak 1.37$ BARELY OUTSIDE 1.28$ NEAR-ARM. BTC 78175.9 LIMIT 78056 ARMED bid=78152. Scalp 3 FX ACTIVE halt={}. 0 trades 1 LIMIT 0 pos."
     }
   ]
 }
