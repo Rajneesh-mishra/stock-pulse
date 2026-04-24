@@ -1,6 +1,6 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "regime_note_prev": "09:28 forex auto \u2014 0 evt heartbeat. USDJPY 159.73 +43.0 mod dist=27.3p INSIDE 30p \u2192 ARMED (counter-fade SELL at 160.00, BOJ T-3d). GOLD 4691.2 -31.5 weak sweep_4695 dist=4.2$ INSIDE prox (readiness gate holds at -31.5 < -40). OIL 96.81 +43.0 mod extending dist=3.58$ from 93.237 WATCH. BTC 77498 +27.0 weak FVG 76960 dist=538$ WATCH. GBPUSD scalp BUY open 1.346775 (engine-managed). 8 alerts KEEP. scalp EURUSD/GBP/AUD=KEEP. 0 trades 0pos. BOJ T-3d FOMC T-4d. attention_covered=9/9.",
+  "regime_note_prev": "12:01 forex auto \u2014 1 evt (GBPUSD level_cross gbpusd_sweep_134928 cross_up 1.349405 comp=+21.5 none OPPOSES sell SKIP; WATCH). OIL 93.837 sweep_9323 0.60$ NEAR-ARM comp=+30 weak (gap 10pts to mod). GOLD 4707.83 sweep_4721 13.85$ NEAR-ARM comp=-27 weak (gap 13pts). USDJPY 159.431 comp=+30 weak dist=56.9p WATCH BOJ T-3d. BTC 78267 comp=+55 mod OUTSIDE FVG prox (1307$>490$) WATCH. 0 trades 0pos. attention_covered=9/9.",
   "open_positions": [],
   "watchlist": [
     {
@@ -686,7 +686,7 @@
     ],
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). | 2026-04-23 20:05 UTC tick: BOJ Apr 27-28 T-3d, FOMC T-4d \u2014 still calendar, no blackout. | 2026-04-23 20:30 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-3d \u2014 still calendar, no blackout. | 2026-04-23 21:10 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. Half-size caution on elevated-event week. | 2026-04-24 03:45 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. | 2026-04-23T23:25:00Z ESCALATION: Trump 'shoot to kill' order on Iranian mine boats. 3rd tanker seized. Regime shifted to ACTIVE_ESCALATION. BOJ T-3d FOMC T-5d no blackout. | 2026-04-24T00:52Z tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout."
   },
-  "regime_note": "12:01 forex auto \u2014 1 evt (GBPUSD level_cross gbpusd_sweep_134928 cross_up 1.349405 comp=+21.5 none OPPOSES sell SKIP; WATCH). OIL 93.837 sweep_9323 0.60$ NEAR-ARM comp=+30 weak (gap 10pts to mod). GOLD 4707.83 sweep_4721 13.85$ NEAR-ARM comp=-27 weak (gap 13pts). USDJPY 159.431 comp=+30 weak dist=56.9p WATCH BOJ T-3d. BTC 78267 comp=+55 mod OUTSIDE FVG prox (1307$>490$) WATCH. 0 trades 0pos. attention_covered=9/9.",
-  "tick_ts_utc": "2026-04-24T12:01:35Z",
-  "state_ts_utc": "2026-04-24T12:01:35Z"
+  "regime_note": "12:39 forex auto \u2014 0 evt heartbeat. BTC 78252 H4 FVG 78056-78208 \u2192 LIMIT BUY ARMED (comp=+55 mod 4/4 bull, R:R=4.7, risk=$4.90, dealId=00000000-4e72-1a54-044a-beb40055311e). OIL 94.84 Iranian FM Araghchi arrives Pakistan (peace talks not breakthrough; Hormuz blocked); sweep_9323 dist=1.60$ OUTSIDE prox (price moved away from 93.237). GOLD 4705 sweep_4721 16.6$ INSIDE prox comp=-18 none (need -40 mod). USDCHF 0.786 dist=13.5p INSIDE prox comp=+3.5 none (need -40). USDJPY 159.56 comp=+30 weak dist=44.4p BOJ T-2d. 0 trades 1 LIMIT armed 0 pos. 10 alerts KEEP 1 ADD. scalp EURUSD/GBP/AUD=KEEP no halts. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-24T12:39:00Z",
+  "state_ts_utc": "2026-04-24T12:39:00Z"
 }

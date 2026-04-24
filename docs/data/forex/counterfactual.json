@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T12:07:00.146314+00:00",
+  "generated_at": "2026-04-24T12:42:09.690239+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -216,10 +216,10 @@
       "fires": 5,
       "by_horizon": {
         "1h": {
-          "filled": 4,
-          "favorable": 3,
-          "avg_pips": 42.3,
-          "hit_rate": 0.75
+          "filled": 5,
+          "favorable": 4,
+          "avg_pips": 57.4,
+          "hit_rate": 0.8
         },
         "4h": {
           "filled": 4,
@@ -228,10 +228,10 @@
           "hit_rate": 1.0
         },
         "24h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 178.5,
+          "hit_rate": 1.0
         }
       }
     },
@@ -254,10 +254,10 @@
           "hit_rate": 1.0
         },
         "24h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 258.5,
+          "hit_rate": 1.0
         }
       }
     },
@@ -320,10 +320,10 @@
       "fires": 2,
       "by_horizon": {
         "1h": {
-          "filled": 1,
+          "filled": 2,
           "favorable": 1,
-          "avg_pips": 140.6,
-          "hit_rate": 1.0
+          "avg_pips": 58.5,
+          "hit_rate": 0.5
         },
         "4h": {
           "filled": 0,
@@ -344,6 +344,32 @@
       "instrument": "GBPUSD",
       "direction": "sell",
       "fires": 2,
+      "by_horizon": {
+        "1h": {
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 2.0,
+          "hit_rate": 1.0
+        },
+        "4h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "24h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        }
+      }
+    },
+    {
+      "alert_id": "audusd_sweep_71379_sell_retest",
+      "instrument": "AUDUSD",
+      "direction": "sell",
+      "fires": 1,
       "by_horizon": {
         "1h": {
           "filled": 0,

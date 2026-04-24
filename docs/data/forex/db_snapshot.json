@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-24T12:04:48.373275+00:00",
+  "generated_at": "2026-04-24T12:39:58.393544+00:00",
   "counts": {
     "trades": 14,
-    "events": 3548,
+    "events": 3575,
     "ticks": 59,
     "regime_snapshots": 15,
     "broker_positions": 0,
-    "counterfactuals": 40
+    "counterfactuals": 41
   },
   "trades_last_50": [
     {
@@ -890,6 +890,19 @@
     }
   ],
   "counterfactuals_last_50": [
+    {
+      "alert_id": "audusd_sweep_71379_sell_retest",
+      "instrument": "AUDUSD",
+      "direction": "sell",
+      "trigger_price": 0.71391,
+      "fired_at": "2026-04-24T12:36:11.904764+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
     {
       "alert_id": "gbpusd_sweep_134928_sell_retest",
       "instrument": "GBPUSD",
