@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T06:16:46.715608Z",
+  "generated_at": "2026-04-24T06:55:26.910528Z",
   "ticks": [
     {
       "ts_utc": "2026-04-22T20:08:03Z",
@@ -659,6 +659,42 @@
       "closed": 0,
       "skipped": 0,
       "note": "06:10 forex auto \u2014 0 evt heartbeat. Rule3 promotions: oil_sweep_9323 (4f/100%4h) + gold_sweep_4721 (5f/100%4h) + oil_retest_90 (3f/67%4h) \u2014 ENTRY relaxed to naked LIMIT (no M15 confirmation), 4h time-stop added. USDJPY 159.745 +42.5 mod dist=25.5p ARMED (BOJ T-3d). GOLD 4682 -37.5 weak sweep_4721 dist=39.4$ WATCH. OIL 95.29 +42.5 mod sweep_9323 dist=2.06$ WATCH. BTC 77945 +27 weak fvg_buy dist=985$ WATCH. 6 alerts 3 MODIFY 3 KEEP. 9 SW KEEP. 8 queries KEEP. Scalp 3 FX ACTIVE halt={}. 0 trades $1000/0pos. attention_covered=9/9."
+    },
+    {
+      "tick_ts_utc": "2026-04-24T06:52:00Z",
+      "events_processed": 1,
+      "events": [
+        "evt_1777013392130_news_flash (fed_fomc news_flash AOL Mar-15 STALE 40d non-thesis)"
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "open_positions": 0,
+      "balance_usd": 1000.0,
+      "pnl_usd": 0.0,
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "binary_event": "none (BOJ T-3d FOMC T-5d calendar)",
+      "alerts_modified": [
+        "fed_fomc news_query TUNED (removed bare Powell+press-conference kw-required)"
+      ],
+      "alerts_kept": [
+        "usdjpy_intervention_fade_zone",
+        "gold_safehaven_continuation_buy",
+        "oil_crude_retest_90_buy",
+        "oil_sweep_9323_buy_retest",
+        "gold_sweep_4721_sell_retest",
+        "btcusd_day_fvg_buy"
+      ],
+      "key_prices": {
+        "USDJPY": 159.702,
+        "GOLD": 4669.47,
+        "OIL_CRUDE": 95.771,
+        "BTCUSD": 77926.775,
+        "EURUSD": 1.168025,
+        "GBPUSD": 1.346425,
+        "AUDUSD": 0.71231
+      },
+      "attention_covered": "9/9",
+      "scalp_status": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=ACTIVE halts=none daily_pnl=0"
     }
   ]
 }
