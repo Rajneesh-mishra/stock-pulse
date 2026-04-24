@@ -1,13 +1,13 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "regime_note_prev": "07:17 forex auto \u2014 1 evt (USDCHF H1 up-sweep 0.787505 wick=1.7p; comp=+7.5 none; SKIP trade \u2014 counter-trend sell needs |comp|\u226540, got 7.5; ADD usdchf_sweep_h1_sell_retest WATCH). USDJPY 159.655 +35.5 weak dist=34.5p OUTSIDE 30p \u2192 WATCH BOJ T-3d. GOLD 4681.8 -35.5 weak sweep_4721 dist=40.1$ OUTSIDE 30$ \u2192 WATCH. OIL 95.70 +43.0 mod sweep_9323 dist=2.46$ WATCH. 6 alerts KEEP +1 ADD (USDCHF). 8 news queries KEEP. web_search skipped (0pos+regime stable). 0 trades 0pos. BOJ T-3d FOMC T-5d. attention_covered=9/9.",
+  "regime_note_prev": "09:28 forex auto \u2014 0 evt heartbeat. USDJPY 159.73 +43.0 mod dist=27.3p INSIDE 30p \u2192 ARMED (counter-fade SELL at 160.00, BOJ T-3d). GOLD 4691.2 -31.5 weak sweep_4695 dist=4.2$ INSIDE prox (readiness gate holds at -31.5 < -40). OIL 96.81 +43.0 mod extending dist=3.58$ from 93.237 WATCH. BTC 77498 +27.0 weak FVG 76960 dist=538$ WATCH. GBPUSD scalp BUY open 1.346775 (engine-managed). 8 alerts KEEP. scalp EURUSD/GBP/AUD=KEEP. 0 trades 0pos. BOJ T-3d FOMC T-4d. attention_covered=9/9.",
   "open_positions": [],
   "watchlist": [
     {
       "instrument": "AUDUSD",
       "direction": "BUY",
       "trigger": "Pullback to 0.7080-0.7090 zone OR clean break >0.7190 with volume",
-      "current_price": 0.71558,
+      "current_price": 0.71316,
       "day_range": "0.71142 - 0.71652",
       "entry_plan": "PRIMARY: Long at ~0.7085 on pullback with rejection confirmation. SECONDARY: If breaks above Fri high 0.7186 with volume + 15M BOS, enter on retest.",
       "sl": 0.703,
@@ -23,7 +23,7 @@
       "instrument": "USDJPY",
       "direction": "SELL",
       "trigger": "Rally to 160.00-160.20 (intervention red line)",
-      "current_price": 159.368,
+      "current_price": 159.7285,
       "day_range": "158.72 - 159.20",
       "entry_plan": "Short at ~160.00-160.10. Japan intervened at 159.23 in Jan 2026 \u2014 160 is the red line. MoF Katayama escalated verbal intervention at G7 this weekend, said 'high sense of urgency' on FX.",
       "sl": 160.5,
@@ -38,7 +38,7 @@
       "instrument": "USDCAD",
       "direction": "SELL",
       "trigger": "Bounce to 1.3810-1.3830",
-      "current_price": 1.36919,
+      "current_price": 1.36874,
       "day_range": "1.36727 - 1.37089",
       "entry_plan": "Short at ~1.3820 on bounce to resistance.",
       "sl": 1.388,
@@ -655,6 +655,6 @@
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). | 2026-04-23 20:05 UTC tick: BOJ Apr 27-28 T-3d, FOMC T-4d \u2014 still calendar, no blackout. | 2026-04-23 20:30 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-3d \u2014 still calendar, no blackout. | 2026-04-23 21:10 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. Half-size caution on elevated-event week. | 2026-04-24 03:45 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. | 2026-04-23T23:25:00Z ESCALATION: Trump 'shoot to kill' order on Iranian mine boats. 3rd tanker seized. Regime shifted to ACTIVE_ESCALATION. BOJ T-3d FOMC T-5d no blackout. | 2026-04-24T00:52Z tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout."
   },
   "regime_note": "09:20 forex auto \u2014 1 evt (GOLD level_cross gold_sweep_4695_sell_retest cross_up 4696.47 SKIP readiness=weak comp=-31.5 3/4 bear, need -40 mod for trade). USDJPY 159.704 +40.5 mod dist=29.6p INSIDE 30p \u2192 swing=ARMED BOJ T-3d, verbal intv escalating (Katayama G7 urgency). GOLD 4695.7 -31.5 weak AT sweep_4695 level, readiness\u2191from -35.5 but still weak; declining on inflation/Fed concern despite escalation. OIL 96.63 +43.0 mod sweep_9323 dist=3.40$ WATCH; Brent $106+ extending. News: Hormuz blockade entrenched, Islamabad collapsed, BOJ 5bps hike priced Apr27-28. GBPUSD scalp ghost (broker rejected minsize). 0 trades 0pos. attention_covered=9/9.",
-  "tick_ts_utc": "2026-04-24T09:20:00Z",
-  "state_ts_utc": "2026-04-24T09:20:00Z"
+  "tick_ts_utc": "2026-04-24T09:27:54Z",
+  "state_ts_utc": "2026-04-24T09:27:54Z"
 }

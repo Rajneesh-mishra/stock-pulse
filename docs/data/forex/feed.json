@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-24T09:21:45.997947Z",
+  "generated_at": "2026-04-24T09:29:03.681852Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-22T23:24:00Z",
-      "events_in": 1,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 1,
-      "note": "23:24 UTC tick \u2014 1 stale news_flash hormuz_strait (Apr 18 Express Tribune India-summons-Iran-envoy 'attack' kw archive republish, 5d old). TUNED hormuz_strait: added match_keywords=['2026','April','Apr 22','Apr 23'] + cooldown 30\u219260min. Broker API 404 persists 2+ ticks, using 22:56 refs. USDJPY +51 mod WATCH 160 (52.6p dist, 3xH1ATR=42p, 3xH4ATR=93p); GOLD -35 weak WATCH 4775 (44.4p, rule-2 KEEP 4h=0.8); OIL +26 weak WATCH 90.30 retest-far (192p, rule-2 KEEP 4h=0.67); USDCAD/EURUSD/GBPUSD/AUDUSD/USDCHF swing=NONE; BTC scalp=N/A. 3 alerts KEEP, 1 query TUNED (hormuz_strait), 9 structure_watch KEEP, 7 queries KEEP. 0 trades, $1000/0pos. BOJ T-4d."
-    },
     {
       "ts_utc": "2026-04-23T00:37:30Z",
       "events_in": 15,
@@ -879,6 +871,46 @@
       "scalp_note": "GBPUSD ghost open (broker rejected minsize error) \u2014 no real position. AUDUSD shadow-mode only. EURUSD/GBPUSD active real-mode.",
       "news_highlights": "BOJ pricing ~5bps Apr27-28, Katayama G7 'urgency' verbal intv. Gold -1% on stagflation/Fed-hawkish concern. Oil Brent $106+ extending on Hormuz entrenched. Islamabad talks collapsed.",
       "USDJPY_BOJ_note": "BOJ T-3d. Only 5bps hike priced. Katayama escalated verbal intervention at G7. 160 red line intact."
+    },
+    {
+      "tick_ts_utc": "2026-04-24T09:27:54Z",
+      "events_consumed": 0,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "skipped": 0,
+      "open_positions": 0,
+      "scalp_open": {
+        "GBPUSD": "BUY 1.346775"
+      },
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "binary_event": "none",
+      "key_prices": {
+        "USDJPY": 159.7285,
+        "GOLD": 4691.2,
+        "OIL": 96.814,
+        "BTCUSD": 77497.65,
+        "AUDUSD": 0.71316,
+        "EURUSD": 1.168775,
+        "GBPUSD": 1.348195,
+        "USDCAD": 1.36874,
+        "USDCHF": 0.78632
+      },
+      "confluence": {
+        "USDJPY": "+43.0 mod 4/4 bull",
+        "GOLD": "-31.5 weak 3/4 bear",
+        "OIL": "+43.0 mod 4/4 bull",
+        "BTCUSD": "+27.0 weak 3/4 bull",
+        "AUDUSD": "+8.0 none",
+        "EURUSD": "-27.0 weak",
+        "GBPUSD": "+18.5 none",
+        "USDCAD": "-30.6 weak",
+        "USDCHF": "-5.0 none"
+      },
+      "armed": [
+        "USDJPY \u2014 counter-fade SELL at 160.00 (dist=27.3p, BOJ T-3d)"
+      ],
+      "attention_covered": "9/9",
+      "note": "Heartbeat. USDJPY 27.3p below BoJ intervention red line 160.00 \u2014 ARMED, enter SELL on level_cross. GBPUSD scalp BUY open (engine). Gold declining -31.5 weak. Oil extending +43 mod. No events no trades."
     }
   ]
 }

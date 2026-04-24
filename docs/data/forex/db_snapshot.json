@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-24T09:18:40.739473+00:00",
+  "generated_at": "2026-04-24T09:28:42.512771+00:00",
   "counts": {
     "trades": 14,
-    "events": 3423,
+    "events": 3431,
     "ticks": 59,
-    "regime_snapshots": 6,
+    "regime_snapshots": 7,
     "broker_positions": 0,
     "counterfactuals": 36
   },
@@ -306,6 +306,14 @@
   ],
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
+    {
+      "ts_utc": "2026-04-24T09:20:00Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "09:20 forex auto \u2014 1 evt (GOLD level_cross gold_sweep_4695_sell_retest cross_up 4696.47 SKIP readiness=weak comp=-31.5 3/4 bear, need -40 mod for trade). USDJPY 159.704 +40.5 mod dist=29.6p INSIDE 30p \u2192 swing=ARMED BOJ T-3d, verbal intv escalating (Katayama G7 urgency). GOLD 4695.7 -31.5 weak AT sweep_4695 level, readiness\u2191from -35.5 but still weak; declining on inflation/Fed concern despite escalation. OIL 96.63 +43.0 mod sweep_9323 dist=3.40$ WATCH; Brent $106+ extending. News: Hormuz blockade entrenched, Islamabad collapsed, BOJ 5bps hike priced Apr27-28. GBPUSD scalp ghost (broker rejected minsize). 0 trades 0pos. attention_covered=9/9.",
+      "binary_event_name": "iran_ceasefire_indefinite_extension",
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
     {
       "ts_utc": "2026-04-24T08:17:00Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
