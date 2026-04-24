@@ -685,5 +685,35 @@
     },
     "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=KEEP USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
     "notes": "Heartbeat. USDJPY marginally slipped to WATCH (30.6p vs 30p threshold; was 29.8p ARMED last tick). GOLD sweep_4721 also marginal (30.6$ vs 30$ threshold + readiness=weak). Both need <1% further move to re-arm. OIL extending away from both buy levels."
+  },
+  {
+    "tick_ts_utc": "2026-04-24T09:20:00Z",
+    "events_processed": 1,
+    "events": [
+      "GOLD level_cross gold_sweep_4695_sell_retest cross_up 4696.47"
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "skipped": 1,
+    "skip_reason": "GOLD gold_sweep_4695_sell_retest: readiness=weak (-31.5, 3/4 bear, need -40 mod)",
+    "positions_open": 0,
+    "balance": 1000.0,
+    "daily_pnl": 0.0,
+    "attention": {
+      "EURUSD": "NONE (comp=-23 none 2/4), scalp=ACTIVE",
+      "GBPUSD": "NONE (comp=+18.5 none 2/4), scalp=ACTIVE (ghost open in scalp_status)",
+      "AUDUSD": "NONE (comp=+8 neutral 2/4), scalp=ACTIVE bias neutral",
+      "USDJPY": "ARMED swing (comp=+40.5 mod 4/4 bull, counter-trend sell at 160, dist=29.6p INSIDE 30p, BOJ T-3d), scalp=OFF pip-conv",
+      "USDCAD": "NONE (comp=-21.5 none 3/4 bearish), scalp=OFF CAD-quote",
+      "USDCHF": "WATCH (usdchf_sweep_h1_sell_retest at 0.7875, comp=-10 none), scalp=OFF pip-conv",
+      "GOLD": "WATCH (gold_sweep_4695 AT level readiness=weak; gold_sweep_4721 26$ away; gold_safehaven_buy 79$ away), scalp=N/A spread5p",
+      "OIL_CRUDE": "WATCH (oil_sweep_9323 dist=3.40$ outside prox; oil_retest_90 dist=6.34$ far; both validated), scalp=N/A spread4p",
+      "BTCUSD": "WATCH (btcusd_day_fvg 76960 unmitigated, price 77620 above zone), scalp=N/A spread50p"
+    },
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "none active",
+    "scalp_note": "GBPUSD ghost open (broker rejected minsize error) \u2014 no real position. AUDUSD shadow-mode only. EURUSD/GBPUSD active real-mode.",
+    "news_highlights": "BOJ pricing ~5bps Apr27-28, Katayama G7 'urgency' verbal intv. Gold -1% on stagflation/Fed-hawkish concern. Oil Brent $106+ extending on Hormuz entrenched. Islamabad talks collapsed.",
+    "USDJPY_BOJ_note": "BOJ T-3d. Only 5bps hike priced. Katayama escalated verbal intervention at G7. 160 red line intact."
   }
 ]

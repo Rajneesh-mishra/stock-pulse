@@ -1,22 +1,6 @@
 {
-  "generated_at": "2026-04-24T08:22:14.334618Z",
+  "generated_at": "2026-04-24T09:21:45.997947Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-22T22:02:00Z",
-      "events_in": 11,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 11,
-      "note": "22:01 UTC tick \u2014 11 events: 1 news_flash boj_intervention STALE Jan 21 2026 Business Times 'Katayama calls for market calm' (3-month-old archive matched 'Katayama' kept-token), 1 alert_audit_request USDJPY usdjpy_intervention_fade_zone same source NO actionable signal, 9 bar_close routine heartbeat. Broker $1000/0 reconciled. Confluence USDJPY broker HTTP 404 transient \u2014 using 21:27 ref (composite +51 moderate WATCH 51p<160, dist >3\u00d7H1 ATR no ARM). TUNED boj_intervention query: added match_keywords=['2026','April','Apr 27','Apr 28','policy meeting'] (date-filter pattern from fed_fomc fix), cooldown 120\u2192180min. ATTENTION: USDJPY swing=WATCH (51p dist), GOLD swing=WATCH (4h hr 0.8 KEEP), OIL swing=WATCH retest-far. EURUSD/GBPUSD/AUDUSD/USDCAD/USDCHF swing=NONE no alert. BTC/GOLD/OIL scalp=N/A spread; FX scalps engine-managed per config. 3 alerts KEEP, 9 structure_watch KEEP, 1 query TUNE, 7 queries KEEP. 0 trades. BOJ T-4d (Apr 27-28)."
-    },
-    {
-      "ts_utc": "2026-04-22T22:18:17Z",
-      "events_in": 5,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 5,
-      "note": "22:12 UTC tick \u2014 5 stale news_flash events (1 iran_ceasefire Apr 12 Islamabad backgrounder + 4 opec_supply 2025/Mar2026 archives). TUNED opec_supply (narrowed kw + match_keywords date filter + cooldown 60\u2192120min). Confluence USDJPY +51 moderate WATCH 160 (dist 53p), GOLD -18.5 none WATCH 4775, OIL +26 weak WATCH 90.30 retest-far, USDCAD -37 weak no-alert, BTC +43.5 moderate no-alert. Broker $1000/0pos. 3 KEEP, 1 query TUNED, 0 trades. BOJ T-4d."
-    },
     {
       "ts_utc": "2026-04-22T23:24:00Z",
       "events_in": 1,
@@ -170,6 +154,14 @@
       "closed": 0,
       "skipped": 0,
       "summary": "08:17 UTC heartbeat \u2014 0 evt. USDJPY 159.695 +40.5 mod dist=30.6p OUTSIDE 30p \u2192 WATCH (was ARMED @29.8p last tick, marginal slip). GOLD 4691.1 -35.5 weak sweep_4721 dist=30.6$ OUTSIDE threshold \u2192 WATCH. OIL 96.54 +43.0 mod sweep_9323 dist=3.30$ extending away. BTC 77881 +29.5 weak FVG dist=921$. USDCHF -5.0 none sweep_h1 WATCH. 7 alerts KEEP. Scalp 3 FX ACTIVE halt={}. 0 trades $1000/0pos. BOJ T-3d FOMC T-5d."
+    },
+    {
+      "ts_utc": "2026-04-24T08:28:00Z",
+      "events_in": 9,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 9,
+      "note": "08:28 forex auto \u2014 9 evt: news_flash Arab Weekly 'After collapse of Islamabad talks, US-Iran naval showdown escalates' FRESH Apr-24 08:18 GMT (regime CONFIRMED strengthened; escalation diplomatic track closed) + GOLD M15 liquidity_sweep 4695.395 wick=22.5p 2.58xATR ADD gold_sweep_4695_sell_retest WATCH readiness=weak + 7 bar_close routine. USDJPY 159.732 +43.0 mod 4/4 bull dist=26.8p INSIDE 30p swing=ARMED (counter-fade BOJ T-3d); SKIP market SELL \u2014 api.py MARKET-only, LIMIT at 160 not supported, entering 26.8p early changes thesis; alert remains ARMED, execute on next tick if price \u2265159.97. GOLD 4688 -35.5 weak sweep_4721 33.7$ WATCH; NEW sweep_4695 7.4$ WATCH (readiness=weak need -40); safehaven_4775 87$ WATCH. OIL 96.44 +43.0 mod extending sweep_9323 3.2$ WATCH. BTCUSD 77881 +29.5 weak FVG 921$ WATCH. USDCHF 0.78621 comp=none WATCH. 8 alerts (7 KEEP +1 ADD). Scalp: GBPUSD BUY 1.346775 TP=1.347515 likely TP'd (current 1.348>TP; engine-managed). halt={}. 0 swing trades $1000/0pos. BOJ T-3d FOMC T-5d. attention_covered=9/9."
     },
     {
       "tick_ts_utc": "2026-04-24T20:30:00Z",
@@ -857,6 +849,36 @@
       },
       "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=KEEP USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
       "notes": "Heartbeat. USDJPY marginally slipped to WATCH (30.6p vs 30p threshold; was 29.8p ARMED last tick). GOLD sweep_4721 also marginal (30.6$ vs 30$ threshold + readiness=weak). Both need <1% further move to re-arm. OIL extending away from both buy levels."
+    },
+    {
+      "tick_ts_utc": "2026-04-24T09:20:00Z",
+      "events_processed": 1,
+      "events": [
+        "GOLD level_cross gold_sweep_4695_sell_retest cross_up 4696.47"
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "skipped": 1,
+      "skip_reason": "GOLD gold_sweep_4695_sell_retest: readiness=weak (-31.5, 3/4 bear, need -40 mod)",
+      "positions_open": 0,
+      "balance": 1000.0,
+      "daily_pnl": 0.0,
+      "attention": {
+        "EURUSD": "NONE (comp=-23 none 2/4), scalp=ACTIVE",
+        "GBPUSD": "NONE (comp=+18.5 none 2/4), scalp=ACTIVE (ghost open in scalp_status)",
+        "AUDUSD": "NONE (comp=+8 neutral 2/4), scalp=ACTIVE bias neutral",
+        "USDJPY": "ARMED swing (comp=+40.5 mod 4/4 bull, counter-trend sell at 160, dist=29.6p INSIDE 30p, BOJ T-3d), scalp=OFF pip-conv",
+        "USDCAD": "NONE (comp=-21.5 none 3/4 bearish), scalp=OFF CAD-quote",
+        "USDCHF": "WATCH (usdchf_sweep_h1_sell_retest at 0.7875, comp=-10 none), scalp=OFF pip-conv",
+        "GOLD": "WATCH (gold_sweep_4695 AT level readiness=weak; gold_sweep_4721 26$ away; gold_safehaven_buy 79$ away), scalp=N/A spread5p",
+        "OIL_CRUDE": "WATCH (oil_sweep_9323 dist=3.40$ outside prox; oil_retest_90 dist=6.34$ far; both validated), scalp=N/A spread4p",
+        "BTCUSD": "WATCH (btcusd_day_fvg 76960 unmitigated, price 77620 above zone), scalp=N/A spread50p"
+      },
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "binary_event": "none active",
+      "scalp_note": "GBPUSD ghost open (broker rejected minsize error) \u2014 no real position. AUDUSD shadow-mode only. EURUSD/GBPUSD active real-mode.",
+      "news_highlights": "BOJ pricing ~5bps Apr27-28, Katayama G7 'urgency' verbal intv. Gold -1% on stagflation/Fed-hawkish concern. Oil Brent $106+ extending on Hormuz entrenched. Islamabad talks collapsed.",
+      "USDJPY_BOJ_note": "BOJ T-3d. Only 5bps hike priced. Katayama escalated verbal intervention at G7. 160 red line intact."
     }
   ]
 }
