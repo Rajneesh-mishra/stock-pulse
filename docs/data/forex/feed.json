@@ -1,22 +1,6 @@
 {
-  "generated_at": "2026-04-24T10:18:07.169053Z",
+  "generated_at": "2026-04-24T10:34:07.013984Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-23T01:00:24Z",
-      "events_in": 9,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 9,
-      "summary": "01:00 UTC \u2014 9 events (AUDUSD sweep 0.9p noise + GOLD 4752 up-sweep 18.4p 1.73xATR 3rd-cluster + 7 bar_close). No sweep armable (AUDUSD conf opposes+wick tiny, GOLD conf weak<moderate). USDJPY +43.5 mod AGAINST 160 SELL 68.9p WATCH, OIL +34.5 weak BUY 250p WATCH, GOLD -27.5 weak 4775 BUY 29p rule-2 KEEP. 3 alerts KEEP refresh. 0 trades $1000/0."
-    },
-    {
-      "ts_utc": "2026-04-23T01:10:30Z",
-      "events_in": 0,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 0,
-      "summary": "01:10 UTC heartbeat \u2014 0 unconsumed events. Broker $1000/0pos reconciled. Confluence refresh: USDJPY +43.5 moderate 4/4 bullish AGAINST 160 SELL thesis (close 159.368, dist 63.2p > 3xH1ATR 44.3p = WATCH not ARM, comp re-strengthened from last tick's +38.5); GOLD -27.5 weak 3/4 bearish close 4744.22 dist 30.8p below 4775 BUY trigger (rule-2 4h=0.8 KEEP); OIL +34.5 weak bullish close 93.03 dist 273p ABOVE 90.30 BUY retest (rule-2 4h=0.67 KEEP). No sweep in this window. 3 alerts KEEP, 9 structure_watch KEEP, 8 queries KEEP. Scalp audit: EURUSD/GBPUSD/AUDUSD KEEP shadow, USDJPY/USDCHF/USDCAD DISABLED(pip-value), GOLD/OIL/BTC N/A(spread). 0 trades $1000/0pos. BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 28-29), iran_ceasefire binary=inactive/indef-ext."
-    },
     {
       "ts_utc": "2026-04-23T02:00:00Z",
       "events_in": 1,
@@ -146,6 +130,14 @@
       "closed": 0,
       "skipped": 1,
       "note": "10:20 forex auto \u2014 1 evt (CNBC news_flash 'Iran War, U.S. Court tariff ruling delays India trade deal' 09:59 GMT Apr 24 FRESH; query=us_tariff matched 'delay'; US court ruling mildly USD-neg; Iran War reinforces escalation; no alert_audit triggered; no trade changes). USDJPY 159.759 +43.0 mod dist=24.1p INSIDE 30p \u2192 ARMED BOJ T-3d. GOLD 4682.59 -36.0 weak sweep_4695 dist=12.8$ prox WATCH; sweep_4721 dist=39.1$ WATCH. OIL 96.984 +43.0 mod sweep_9323 dist=3.75$ WATCH extending. Scalp engine GBPUSD+EURUSD ghost vs broker=0pos. 8 alerts KEEP. 0 trades 0pos. BOJ T-3d FOMC T-5d. attention_covered=9/9."
+    },
+    {
+      "ts_utc": "2026-04-24T10:30:00Z",
+      "events_in": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "summary": "10:30 forex auto \u2014 0 evt heartbeat. USDJPY 159.726 +40.5 mod 4/4 bull dist=27.4p INSIDE 30p swing=ARMED (counter-fade SELL 160.00, BOJ T-3d; api.py market-only entry waits price\u2265159.97). GOLD 4681.69 -36.0 weak sweep_4695 dist=13.7$ INSIDE prox readiness=weak WATCH; sweep_4721 dist=40.0$ OUTSIDE. OIL 96.817 +43.0 mod sweep_9323 dist=3.58 extending WATCH. EURUSD -8 none GBPUSD +18.5 none AUDUSD +8 none USDCAD -21.5 none USDCHF +5 none. BTC 77692 +27 weak fvg_76960 dist=732 WATCH. Scalp engine GBPUSD+EURUSD ghost vs broker=0 (known carry). 8 alerts KEEP. 0 trades 0pos. BOJ T-3d FOMC T-5d. news_search SKIP(last_scan 10min ago). attention_covered=9/9."
     },
     {
       "tick_ts_utc": "2026-04-24T20:30:00Z",
@@ -924,6 +916,14 @@
       "positions_open": 0,
       "broker_balance": 1000.0,
       "note": "10:20 UTC forex auto \u2014 1 evt (CNBC news_flash 10:11Z 'Iran War, U.S. Court tariff ruling delays India trade deal'; us_tariff query matched 'delay'; fresh Apr 24 story. US court tariff ruling = mildly USD-negative; Iran War reinforces escalation regime; no alert audit triggered; no trade changes). USDJPY 159.759 +43.0 mod 4/4 bull dist=24.1p INSIDE 30p \u2192 ARMED BOJ T-3d; need level_cross at 160 before entry. GOLD 4682.59 -36.0 weak: sweep_4695 dist=12.8$ prox<30$ but readiness<moderate WATCH; sweep_4721 dist=39.1$ OUTSIDE WATCH. OIL 96.984 +43.0 mod extending away from 93.237 sweep (dist=3.75$) and 90.30 retest (dist=6.68$) \u2192 both WATCH. BTC +27 weak FVG dist=537$. EURUSD/GBPUSD/AUDUSD/USDCAD/USDCHF comp none. Scalp engine: GBPUSD+EURUSD show as 'open' in status but broker=0pos ghost. 8 alerts KEEP. us_tariff query KEEP. 0 trades 0pos $1000. BOJ T-3d FOMC T-5d. attention_covered=9/9."
+    },
+    {
+      "ts_utc": "2026-04-24T10:30:00Z",
+      "events_in": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "summary": "10:30 forex auto \u2014 0 evt heartbeat. USDJPY 159.726 +40.5 mod 4/4 bull dist=27.4p INSIDE 30p swing=ARMED (counter-fade SELL 160.00, BOJ T-3d; api.py market-only entry waits price\u2265159.97). GOLD 4681.69 -36.0 weak sweep_4695 dist=13.7$ INSIDE prox readiness=weak WATCH; sweep_4721 dist=40.0$ OUTSIDE. OIL 96.817 +43.0 mod sweep_9323 dist=3.58 extending WATCH. EURUSD -8 none GBPUSD +18.5 none AUDUSD +8 none USDCAD -21.5 none USDCHF +5 none. BTC 77692 +27 weak fvg_76960 dist=732 WATCH. Scalp engine GBPUSD+EURUSD ghost vs broker=0 (known carry). 8 alerts KEEP. 0 trades 0pos. BOJ T-3d FOMC T-5d. news_search SKIP(last_scan 10min ago). attention_covered=9/9."
     }
   ]
 }

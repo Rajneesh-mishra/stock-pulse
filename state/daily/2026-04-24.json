@@ -776,5 +776,13 @@
     "positions_open": 0,
     "broker_balance": 1000.0,
     "note": "10:20 UTC forex auto \u2014 1 evt (CNBC news_flash 10:11Z 'Iran War, U.S. Court tariff ruling delays India trade deal'; us_tariff query matched 'delay'; fresh Apr 24 story. US court tariff ruling = mildly USD-negative; Iran War reinforces escalation regime; no alert audit triggered; no trade changes). USDJPY 159.759 +43.0 mod 4/4 bull dist=24.1p INSIDE 30p \u2192 ARMED BOJ T-3d; need level_cross at 160 before entry. GOLD 4682.59 -36.0 weak: sweep_4695 dist=12.8$ prox<30$ but readiness<moderate WATCH; sweep_4721 dist=39.1$ OUTSIDE WATCH. OIL 96.984 +43.0 mod extending away from 93.237 sweep (dist=3.75$) and 90.30 retest (dist=6.68$) \u2192 both WATCH. BTC +27 weak FVG dist=537$. EURUSD/GBPUSD/AUDUSD/USDCAD/USDCHF comp none. Scalp engine: GBPUSD+EURUSD show as 'open' in status but broker=0pos ghost. 8 alerts KEEP. us_tariff query KEEP. 0 trades 0pos $1000. BOJ T-3d FOMC T-5d. attention_covered=9/9."
+  },
+  {
+    "ts_utc": "2026-04-24T10:30:00Z",
+    "events_in": 0,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 0,
+    "summary": "10:30 forex auto \u2014 0 evt heartbeat. USDJPY 159.726 +40.5 mod 4/4 bull dist=27.4p INSIDE 30p swing=ARMED (counter-fade SELL 160.00, BOJ T-3d; api.py market-only entry waits price\u2265159.97). GOLD 4681.69 -36.0 weak sweep_4695 dist=13.7$ INSIDE prox readiness=weak WATCH; sweep_4721 dist=40.0$ OUTSIDE. OIL 96.817 +43.0 mod sweep_9323 dist=3.58 extending WATCH. EURUSD -8 none GBPUSD +18.5 none AUDUSD +8 none USDCAD -21.5 none USDCHF +5 none. BTC 77692 +27 weak fvg_76960 dist=732 WATCH. Scalp engine GBPUSD+EURUSD ghost vs broker=0 (known carry). 8 alerts KEEP. 0 trades 0pos. BOJ T-3d FOMC T-5d. news_search SKIP(last_scan 10min ago). attention_covered=9/9."
   }
 ]
