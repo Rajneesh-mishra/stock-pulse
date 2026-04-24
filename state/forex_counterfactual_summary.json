@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T11:56:58.677874+00:00",
+  "generated_at": "2026-04-24T12:01:59.625519+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -343,7 +343,7 @@
       "alert_id": "gbpusd_sweep_134928_sell_retest",
       "instrument": "GBPUSD",
       "direction": "sell",
-      "fires": 1,
+      "fires": 2,
       "by_horizon": {
         "1h": {
           "filled": 0,

@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-24T11:56:29Z",
+  "last_updated_by_claude": "2026-04-24T12:01:00Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -95,14 +95,14 @@
       "cooldown_sec": 1800,
       "direction": "buy",
       "note": "ENTRY: LIMIT at 93.237 when readiness\u2265moderate and price within 1.13$ of level. VALIDATED \u2014 no M15 rejection confirmation required (4 fires, 100% 4h hit rate). Cancel LIMIT if price closes below SL 92.84.\n\nCONTEXT: Down-sweep zone created 2026-04-23 07:45 UTC; wick 39.1p below 93.55, closed back at 93.55. Swept liquidity at 93.237 is validated bounce zone. OIL bullish regime (IEA 13M bpd Hormuz impact). Apply 4h hard time-stop on any entered trade.\n\nSL: 92.84  TP: 94.35  R:R target: 2.0\n\nrule3-promotion 2026-04-24T06:10Z \u2014 validated (4f/100%4h); ENTRY relaxed to naked LIMIT, 4h time-stop added.",
-      "current_price_ref": 94.156,
+      "current_price_ref": 93.837,
       "price_ref": {
-        "ts": "2026-04-24T11:56:29Z",
-        "price": 94.156
+        "ts": "2026-04-24T12:01:00Z",
+        "price": 93.837
       },
       "last_updated": "2026-04-24T06:10:00Z",
-      "proximity": "0.92$ ABOVE 93.237 \u2192 INSIDE prox 1.21$ (max(H1ATR=1.21$,0.5\u00d7H4=1.20$,0.30$)=1.21$). comp=+30 weak (need +40 mod; gap=10pts). VALIDATED (4f/100%4h). NEAR-ARM. BOJ T-3d FOMC T-5d.",
-      "updated_utc": "2026-04-24T11:56:29Z",
+      "proximity": "0.60$ ABOVE 93.237 \u2192 INSIDE prox 1.21$ (max(H1ATR=1.21$,0.5\u00d7H4=1.20$,0.30$)=1.21$). comp=+30 weak (need +40 mod; gap=10pts). VALIDATED (5f/100%4h). NEAR-ARM. BOJ T-3d.",
+      "updated_utc": "2026-04-24T12:01:00Z",
       "entry_criterion": "LIMIT at 93.237 when readiness\u2265moderate and price within 1.13$ of level. VALIDATED \u2014 no M15 confirmation required (4 fires, 100% 4h hit rate). Cancel if price closes below SL 92.84.",
       "regime_context": "Down-sweep zone 2026-04-23 07:45 UTC. Swept liquidity at 93.237. 4 fires, 100% 4h hit rate \u2014 validated. OIL pullback 96.97\u219293.99 triggered by false Tehran explosion report (military drill, Apr 24 11:xx UTC), NOT de-escalation. Hormuz blockade intact, IEA 13M bpd supply impact. Thesis strengthened. Apply 4h hard time-stop on entered trade.",
       "sl": 92.84,
@@ -117,14 +117,14 @@
       "cooldown_sec": 1800,
       "direction": "sell",
       "note": "ENTRY: LIMIT at 4721.68 when readiness\u2265moderate and price within 30$ of level. VALIDATED \u2014 no M15 rejection confirmation required (5 fires, 100% 4h hit rate). Cancel LIMIT if price closes above SL 4725.01.\n\nCONTEXT: Up-sweep zone created 2026-04-23 08:00 UTC; wick 33.3p above 4718.95, closed back at 4718.95. Swept liquidity at 4721.68 is validated sell zone. Current readiness=weak (-37.5 3/4 bear); need moderate (-40+ 4/4) to arm. Apply 4h hard time-stop on any entered trade.\n\nSL: 4725.01  TP: 4707.0  R:R target: 4.4\n\nrule3-promotion 2026-04-24T06:10Z \u2014 validated (5f/100%4h); ENTRY relaxed to naked LIMIT, M15-wick override removed, 4h time-stop added.",
-      "current_price_ref": 4705.99,
+      "current_price_ref": 4707.83,
       "price_ref": {
-        "ts": "2026-04-24T11:56:29Z",
-        "price": 4705.99
+        "ts": "2026-04-24T12:01:00Z",
+        "price": 4707.83
       },
       "last_updated": "2026-04-24T06:10:00Z",
-      "updated_utc": "2026-04-24T11:56:29Z",
-      "proximity": "15.7$ BELOW 4721.68 \u2192 INSIDE prox 30$ (max(H1ATR=20.4$,0.5\u00d7H4=19.4$,30$)=30$). comp=-27 weak (need -40 mod; gap=13pts). VALIDATED (5f/100%4h). Day FVG 4723.6-4717.3 unmitigated overhead. NEAR-ARM.",
+      "updated_utc": "2026-04-24T12:01:00Z",
+      "proximity": "13.85$ BELOW 4721.68 \u2192 INSIDE prox 30$. comp=-27 weak (need -40 mod; gap=13pts). VALIDATED (5f/100%4h). Day FVG 4723.6-4717.3 unmitigated overhead. NEAR-ARM. M15 bear OB 4707.85-4722.30 price at/in OB.",
       "entry_criterion": "LIMIT at 4721.68 when readiness\u2265moderate and price within 30$ of level. VALIDATED \u2014 no M15 confirmation required (5 fires, 100% 4h hit rate). Cancel if price closes above SL 4725.01.",
       "regime_context": "Up-sweep zone 2026-04-23 08:00 UTC. Swept liquidity at 4721.68. 5 fires, 100% 4h hit rate \u2014 validated. GOLD bearish composite (-37.5 weak; need -40 moderate to arm). Escalation backdrop (Iran/Hormuz) provides upward pressure; technical bearish composite must reassert for LIMIT to fire. Apply 4h hard time-stop on entered trade.",
       "sl": 4725.01,
@@ -205,19 +205,19 @@
       "cooldown_sec": 1800,
       "direction": "sell",
       "note": "ENTRY: price retests 1.34928 zone (M15 up-sweep 2026-04-24T11:00Z); LIMIT SELL at 1.349275 when readiness\u2264-40 moderate-bear; M15 bar closes back below 1.34928 with rejection wick \u22654p from high.\n\nCONTEXT: M15 up-sweep wick 8.8p (1.29\u00d7ATR) at 1.349275, close back at 1.348930. H1 bull FVG at 1.34845-1.34885 below provides initial support; sell zone at swept extreme. Current comp=+29.0 weak bullish \u2014 far from armable. BOJ T-3d, GBPUSD scalp engine active.\n\nSL: 1.350155  TP: 1.34750  R:R target: 2.0\n\nadded 2026-04-24T11:18Z \u2014 liquidity_sweep event; wick=8.8p=1.29\u00d7ATR; comp=+29.0 BULLISH OPPOSES sell \u2192 WATCH only.",
-      "current_price_ref": 1.34944,
+      "current_price_ref": 1.349435,
       "price_ref": {
-        "ts": "2026-04-24T11:56:29Z",
-        "price": 1.34944
+        "ts": "2026-04-24T12:01:00Z",
+        "price": 1.349435
       },
       "last_updated": "2026-04-24T11:18:00Z",
-      "updated_utc": "2026-04-24T11:56:29Z",
+      "updated_utc": "2026-04-24T12:01:00Z",
       "entry_criterion": "price retests 1.349275; LIMIT SELL when readiness\u2264-40 moderate-bear; M15 close below with rejection wick \u22654p. Cancel if price closes above SL 1.350155.",
       "regime_context": "M15 up-sweep 2026-04-24T11:00Z, wick 8.8p at 1.349275. Current comp=+29.0 weak bullish \u2014 OPPOSES sell thesis. ARM only when composite turns moderately bearish (\u2264-40). GBPUSD scalp engine active with BUY bias ghost.",
       "sl": 1.350155,
       "tp": 1.3475,
       "rr_target": "2.0",
-      "proximity": "1.65p ABOVE 1.349275 sweep level. comp=+29 weak bullish OPPOSES sell (UPGRADE from +21.5 none). H4ATR=0.00285; 3\u00d7=8.6p (NOT auto-remove). WATCH \u2014 need comp \u2264-40 mod-bear to ARM."
+      "proximity": "1.6p ABOVE 1.349275 sweep level (cross_up at 12:01). comp=+21.5 none bullish OPPOSES sell (need \u2264-40 mod-bear to ARM). H4ATR=0.00285; 3\u00d7=8.6p (NOT auto-remove). Event: level_cross processed, SKIP (readiness=none). WATCH."
     }
   ],
   "structure_watch": [
@@ -288,5 +288,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-24T11:56:29Z"
+  "last_updated_utc": "2026-04-24T12:01:00Z"
 }

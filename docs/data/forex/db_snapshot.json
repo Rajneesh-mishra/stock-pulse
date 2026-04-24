@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-24T11:54:39.488340+00:00",
+  "generated_at": "2026-04-24T11:59:44.064345+00:00",
   "counts": {
     "trades": 14,
-    "events": 3536,
+    "events": 3537,
     "ticks": 59,
-    "regime_snapshots": 13,
+    "regime_snapshots": 14,
     "broker_positions": 0,
-    "counterfactuals": 39
+    "counterfactuals": 40
   },
   "trades_last_50": [
     {
@@ -307,6 +307,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-24T11:56:29Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "11:56 forex auto \u2014 1 evt (news_flash Hormuz historical Fortune article 'Tanker War 1980s tactics'; no new escalation, NO regime change, consumed). OIL 94.156 sweep_9323 dist=0.92$ INSIDE prox (1.21$) comp=+30 weak NEAR-ARM (need +40 mod; gap=10pts). GOLD 4706 sweep_4721 dist=15.7$ INSIDE prox (30$) comp=-27 weak NEAR-ARM (need -40 mod; gap=13pts). USDJPY 159.445 dist=55.5p OUTSIDE 30p comp=22.5 none BOJ T-3d WATCH. BTC 78213 comp=55 moderate OUTSIDE FVG prox (dist=1252$) WATCH. GBPUSD 1.34944 comp=+29 weak 1.65p above sweep_134928 WATCH. 0 trades 0 pos. BOJ T-3d FOMC T-5d. attention_covered=9/9.",
+      "binary_event_name": "iran_ceasefire_indefinite_extension",
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-04-24T11:34:28Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "11:38 forex auto \u2014 1 evt (OIL level_cross oil_sweep_9323_buy_retest cross_down 93.166 comp=+30 weak SKIP; readiness gate not met (need +40), KEEP WATCH). OIL 93.127 sweep_9323 dist=0.11$ AT-LEVEL comp=weak WATCH. GOLD 4714 sweep_4721 dist=6.9$ readiness=none WATCH. USDJPY 159.38 comp=22.5 none dist=62p from 160.00 BOJ T-3d WATCH. Scalp EURUSD BUY open 1.168965 + GBPUSD BUY open 1.346775 (engine-managed). 0 swing trades 0 swing pos. BOJ T-3d FOMC T-5d. attention_covered=9/9.",
@@ -374,14 +382,6 @@
       "ts_utc": "2026-04-24T08:17:00Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED \u2014 2026-04-24T08:17Z tick: 0 evt heartbeat. USDJPY 159.695 +40.5 mod 4/4 bull dist=30.6p OUTSIDE 30p floor \u2192 swing=WATCH (marginal downgrade from ARMED last tick at 29.8p; needs +0.6p more to tag 160). BOJ T-3d. GOLD 4691.1 -35.5 weak 3/4 bear sweep_4721 dist=30.6$ OUTSIDE 30$ threshold \u2192 WATCH (also just missed; needs +18$ rally + readiness -40). OIL 96.54 +43.0 mod sweep_9323 dist=3.30$ WATCH extending; retest_90 dist=6.24$ dormant. BTCUSD 77881 +29.5 weak FVG 76960 dist=921$ WATCH. USDCHF 0.7862 -5.0 none sweep_h1 WATCH readiness=none. EURUSD -28.5 weak GBPUSD/AUDUSD/USDCAD none \u2192 swing=NONE. 7 alerts KEEP (price refs updated). 0 trades 0pos. BOJ T-3d FOMC T-5d. binary=inactive. attention_covered=9/9.",
-      "binary_event_name": "iran_ceasefire_indefinite_extension",
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-04-24T07:35:00Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED \u2014 2026-04-24T07:35Z tick: 1 evt (USDCHF level_cross usdchf_sweep_h1_sell_retest cross_up; comp=+7.5 none readiness=none SKIP \u2014 entry requires readiness\u2265moderate bearish \u2264-40; H1/M15 bullish momentum OPPOSES sell). USDJPY 159.702 +40.5 mod 4/4 bull dist=29.8p INSIDE 30p \u2192 swing=ARMED counter-fade; api.py has no LIMIT type \u2192 market-on-confirmation when 160.00 tags + M15 wick \u22658p. BOJ T-3d. GOLD 4683.3 -35.5 weak sweep_4721 dist=38.4$ WATCH; safehaven 91.7$ dormant. OIL 95.81 +43.0 mod sweep_9323 dist=2.58$ WATCH rising away; retest_90 5.51$ dormant. USDCHF 0.7874 +7.5 none sweep_h1 WATCH readiness=none. BTCUSD 77669 +27 weak FVG dist=709$ WATCH. EURUSD -31 weak GBPUSD none AUDUSD none USDCAD none \u2192 swing=NONE. 7 alerts KEEP (price_refs updated). 0 trades 0pos. BOJ T-3d FOMC T-5d. attention_covered=9/9.",
       "binary_event_name": "iran_ceasefire_indefinite_extension",
       "binary_event_active": 0,
       "binary_event_deadline": null
@@ -890,6 +890,19 @@
     }
   ],
   "counterfactuals_last_50": [
+    {
+      "alert_id": "gbpusd_sweep_134928_sell_retest",
+      "instrument": "GBPUSD",
+      "direction": "sell",
+      "trigger_price": 1.349405,
+      "fired_at": "2026-04-24T11:57:09.390671+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
     {
       "alert_id": "oil_sweep_9323_buy_retest",
       "instrument": "OIL_CRUDE",
