@@ -419,5 +419,20 @@
     "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=KEEP USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked; daily_pnl=$0.0 no_halts",
     "alerts_audit": "6 KEEP (usdjpy_intervention ARMED 22.1p; gold_safehaven_buy WATCH dormant 100.6$; oil_retest_90 WATCH 5.1$; oil_sweep_9323 WATCH 2.16$ close; gold_sweep_4721 WATCH 47.3$; btc_fvg_buy WATCH 747$)",
     "notes": "Rogue USDJPY scalp positions investigated and closed. Likely scalp engine bug \u2014 opened despite enabled=false. Both at BE. Balance $1000."
+  },
+  {
+    "ts_utc": "2026-04-24T05:25:00Z",
+    "session": "ASIA_EARLY_05:25UTC",
+    "events_in": 12,
+    "opened": 0,
+    "closed": 2,
+    "daily_pnl": 0.0,
+    "balance": 1000.0,
+    "positions": [],
+    "alerts_changed": [
+      "ADD oil_sweep_9519_buy_retest",
+      "6 KEEP price-refreshed"
+    ],
+    "note": "12 evt: 2 rogue USDJPY scalp positions (engine bug) already closed at BE per 05:06 tick \u2014 events consumed. OIL M15 down-sweep 95.319 wick=0.16\u00d7ATR SKIP-trade (SL too tight for 4p spread). ADD watch alert oil_sweep_9519. USDJPY ARMED 20.8p from 160 fade. 0 trades."
   }
 ]
