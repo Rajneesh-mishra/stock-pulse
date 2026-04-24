@@ -194,22 +194,6 @@
   ],
   "tick_history": [
     {
-      "ts_utc": "2026-04-22T20:08:03Z",
-      "events_in": 29,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 29,
-      "note": "20:01 UTC tick \u2014 29 events: 11 news_flash SKIP (all stale: 8 us_tariff Feb archives+1 Apr21 BLiTZ, 1 Anadolu Apr21 Pakistan-welcomes baseline, 1 Dec2025 Reuters BoJ archive, 1 alert_audit_request on same Dec archive). 16 bar_close routine. 1 USDCAD liquidity_sweep M15 20:00 UTC up-sweep 1.36737 wick 1.2p close 1.36727 \u2014 sweep bias sell, confluence composite -24.5 readiness=none blocks LIMIT. ADDED usdcad_liqsweep_sell_zone (swept level as watchlist), REMOVED audusd_breakdown_trigger (stale Rule 1: 88p > 3\u00d7H4 ATR, no catalyst, BTC+4.2% risk-on kills). 3 MODIFY price refs (usdjpy/gold/oil); 1 ADD (usdcad); 1 REMOVE. 2 queries TUNE (us_tariff cd 60\u2192240 narrowed, boj_intervention cd 60\u2192120 dropped broad). 9 structure_watch KEEP. EURUSD 1.1705 NEW LOW broke re-entry base; BTC 78900 +4.2% parabolic. 0 trades, $1000/0."
-    },
-    {
-      "ts_utc": "2026-04-22T20:15:00Z",
-      "events_in": 1,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 1,
-      "note": "20:15 UTC \u2014 1 event USDCAD level_cross on usdcad_liqsweep_sell_zone (our ADD 7min ago). Price 1.3674 crossed up thru 1.36737 then closed 1.36733 \u2014 classic rejection off swept wick. Confluence strengthened to composite -32 readiness=WEAK (was -24.5 NONE last tick) 3/4 TFs bearish, DAY -0.4 H4 -0.5 H1 -0.1 M15 +0.9. Still below moderate (need |composite|>=40 + 3TFs agree \u2014 we have agreement but score 8p short). LIMIT arm blocked per 4c; R:R economics unchanged (2.2p SL vs ~2p spread = <1.5:1). SKIP trade, MODIFY alert with tag observation. Broker $1000/0 reconciled. No news sweep (7min since last tick, budget prudent)."
-    },
-    {
       "ts_utc": "2026-04-22T21:00:30Z",
       "events_in": 0,
       "opened": 0,
@@ -434,6 +418,14 @@
       "closed": 0,
       "skipped": 1,
       "note": "11:28 forex auto \u2014 1 evt (GBPUSD level_cross gbpusd_sweep_134928_sell_retest at 1.349555 cross_up; comp=+21.5 none bullish OPPOSES sell; readiness=none (need \u2264-40); SKIP trade KEEP WATCH). USDJPY 159.408 +30.0 weak (DOWNGRADE from +43 mod) dist=59.2p OUTSIDE 30p \u2192 WATCH (BOJ T-3d). GOLD 4706.49 -32.5 weak; sweep_4721 dist=15.2$ INSIDE prox 30$ NEAR-ARM (need -40); safehaven_4775 dist=68.5$ dormant. OIL 93.999 +35.5 weak; sweep_9323 dist=0.76$ INSIDE prox 1.17$ NEAR-ARM (need +40; gap=4.5pts); pullback=false-alarm (Tehran military drill). BTCUSD 78255 +34.5 weak fvg_76960 dist=1295$ WATCH. EURUSD -8 none GBPUSD +21.5 none AUDUSD +18.5 none USDCAD -21.5 none USDCHF -10.5 none \u2014 all swing=NONE/WATCH. 9 alerts proximity-refreshed (all KEEP). 9 SW KEEP. Scalp halt={}. 0 trades 0pos. BOJ T-3d FOMC T-5d. attention_covered=9/9."
+    },
+    {
+      "ts_utc": "2026-04-24T12:46:00Z",
+      "events_in": 2,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 2,
+      "note": "12:46 forex auto \u2014 2 evt (AUDUSD level_cross audusd_sweep_71379_sell_retest comp=+18.5 NONE bullish OPPOSES sell SKIP; GBPUSD level_cross gbpusd_sweep_134928_sell_retest comp=+21.5 NONE bullish OPPOSES sell SKIP). USDJPY 159.56 comp=+30 weak dist=44.2p OUTSIDE 30p WATCH (BOJ T-2d FOMC T-4d). GOLD 4700.4 sweep_4721 dist=21.3$ INSIDE prox comp=-18 none NEAR-ARM (need -40). OIL 95.24 sweep_9323 dist=2.0$ OUTSIDE prox comp=+30 weak WATCH. BTC 78229 LIMIT ARMED 78056 H4 FVG comp=+55 mod 4/4 bull (dealId=00000000-4e72-1a54-044a-beb40055311e). USDCHF 0.786 comp=+3.5 none sweep WATCH. EURUSD -8 none AUDUSD +18.5 none GBPUSD +21.5 none USDCAD -21.5 none. 10 alerts KEEP. 0 trades 1 LIMIT 0 pos. attention_covered=9/9."
     }
   ],
   "recent_skips": [
@@ -686,7 +678,7 @@
     ],
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). | 2026-04-23 20:05 UTC tick: BOJ Apr 27-28 T-3d, FOMC T-4d \u2014 still calendar, no blackout. | 2026-04-23 20:30 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-3d \u2014 still calendar, no blackout. | 2026-04-23 21:10 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. Half-size caution on elevated-event week. | 2026-04-24 03:45 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. | 2026-04-23T23:25:00Z ESCALATION: Trump 'shoot to kill' order on Iranian mine boats. 3rd tanker seized. Regime shifted to ACTIVE_ESCALATION. BOJ T-3d FOMC T-5d no blackout. | 2026-04-24T00:52Z tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout."
   },
-  "regime_note": "12:39 forex auto \u2014 0 evt heartbeat. BTC 78252 H4 FVG 78056-78208 \u2192 LIMIT BUY ARMED (comp=+55 mod 4/4 bull, R:R=4.7, risk=$4.90, dealId=00000000-4e72-1a54-044a-beb40055311e). OIL 94.84 Iranian FM Araghchi arrives Pakistan (peace talks not breakthrough; Hormuz blocked); sweep_9323 dist=1.60$ OUTSIDE prox (price moved away from 93.237). GOLD 4705 sweep_4721 16.6$ INSIDE prox comp=-18 none (need -40 mod). USDCHF 0.786 dist=13.5p INSIDE prox comp=+3.5 none (need -40). USDJPY 159.56 comp=+30 weak dist=44.4p BOJ T-2d. 0 trades 1 LIMIT armed 0 pos. 10 alerts KEEP 1 ADD. scalp EURUSD/GBP/AUD=KEEP no halts. attention_covered=9/9.",
-  "tick_ts_utc": "2026-04-24T12:39:00Z",
-  "state_ts_utc": "2026-04-24T12:39:00Z"
+  "regime_note": "12:46 forex auto \u2014 2 evt (AUDUSD level_cross audusd_sweep_71379_sell_retest comp=+18.5 NONE bullish OPPOSES sell SKIP; GBPUSD level_cross gbpusd_sweep_134928_sell_retest comp=+21.5 NONE bullish OPPOSES sell SKIP). USDJPY 159.56 comp=+30 weak dist=44.2p OUTSIDE 30p WATCH (BOJ T-2d FOMC T-4d). GOLD 4700.4 sweep_4721 dist=21.3$ INSIDE prox comp=-18 none NEAR-ARM (need -40). OIL 95.24 sweep_9323 dist=2.0$ OUTSIDE prox comp=+30 weak WATCH. BTC 78229 LIMIT ARMED 78056 H4 FVG comp=+55 mod 4/4 bull (dealId=00000000-4e72-1a54-044a-beb40055311e). USDCHF 0.786 comp=+3.5 none sweep WATCH. EURUSD -8 none AUDUSD +18.5 none GBPUSD +21.5 none USDCAD -21.5 none. 10 alerts KEEP. 0 trades 1 LIMIT 0 pos. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-24T12:46:00Z",
+  "state_ts_utc": "2026-04-24T12:46:00Z"
 }

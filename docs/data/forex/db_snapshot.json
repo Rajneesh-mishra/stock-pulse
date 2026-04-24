@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-24T12:39:58.393544+00:00",
+  "generated_at": "2026-04-24T12:44:58.818404+00:00",
   "counts": {
     "trades": 14,
-    "events": 3575,
+    "events": 3576,
     "ticks": 59,
-    "regime_snapshots": 15,
+    "regime_snapshots": 16,
     "broker_positions": 0,
-    "counterfactuals": 41
+    "counterfactuals": 42
   },
   "trades_last_50": [
     {
@@ -307,6 +307,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-24T12:39:00Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "12:39 forex auto \u2014 0 evt heartbeat. BTC 78252 H4 FVG 78056-78208 \u2192 LIMIT BUY ARMED (comp=+55 mod 4/4 bull, R:R=4.7, risk=$4.90, dealId=00000000-4e72-1a54-044a-beb40055311e). OIL 94.84 Iranian FM Araghchi arrives Pakistan (peace talks not breakthrough; Hormuz blocked); sweep_9323 dist=1.60$ OUTSIDE prox (price moved away from 93.237). GOLD 4705 sweep_4721 16.6$ INSIDE prox comp=-18 none (need -40 mod). USDCHF 0.786 dist=13.5p INSIDE prox comp=+3.5 none (need -40). USDJPY 159.56 comp=+30 weak dist=44.4p BOJ T-2d. 0 trades 1 LIMIT armed 0 pos. 10 alerts KEEP 1 ADD. scalp EURUSD/GBP/AUD=KEEP no halts. attention_covered=9/9.",
+      "binary_event_name": "iran_ceasefire_indefinite_extension",
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-04-24T12:01:35Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "12:01 forex auto \u2014 1 evt (GBPUSD level_cross gbpusd_sweep_134928 cross_up 1.349405 comp=+21.5 none OPPOSES sell SKIP; WATCH). OIL 93.837 sweep_9323 0.60$ NEAR-ARM comp=+30 weak (gap 10pts to mod). GOLD 4707.83 sweep_4721 13.85$ NEAR-ARM comp=-27 weak (gap 13pts). USDJPY 159.431 comp=+30 weak dist=56.9p WATCH BOJ T-3d. BTC 78267 comp=+55 mod OUTSIDE FVG prox (1307$>490$) WATCH. 0 trades 0pos. attention_covered=9/9.",
@@ -374,14 +382,6 @@
       "ts_utc": "2026-04-24T09:20:00Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "09:20 forex auto \u2014 1 evt (GOLD level_cross gold_sweep_4695_sell_retest cross_up 4696.47 SKIP readiness=weak comp=-31.5 3/4 bear, need -40 mod for trade). USDJPY 159.704 +40.5 mod dist=29.6p INSIDE 30p \u2192 swing=ARMED BOJ T-3d, verbal intv escalating (Katayama G7 urgency). GOLD 4695.7 -31.5 weak AT sweep_4695 level, readiness\u2191from -35.5 but still weak; declining on inflation/Fed concern despite escalation. OIL 96.63 +43.0 mod sweep_9323 dist=3.40$ WATCH; Brent $106+ extending. News: Hormuz blockade entrenched, Islamabad collapsed, BOJ 5bps hike priced Apr27-28. GBPUSD scalp ghost (broker rejected minsize). 0 trades 0pos. attention_covered=9/9.",
-      "binary_event_name": "iran_ceasefire_indefinite_extension",
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-04-24T08:17:00Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED \u2014 2026-04-24T08:28Z: ISLAMABAD TALKS COLLAPSED (Arab Weekly 08:18 GMT today) \u2014 diplomatic track closed, US-Iran naval showdown escalating. Regime strengthened. USDJPY 159.732 +43.0 mod 4/4 bull dist=26.8p INSIDE 30p \u2192 swing=ARMED (counter-fade); API MARKET-only, LIMIT at 160 pending. GOLD 4688 -35.5 weak; sweep_4695 NEW WATCH (readiness=weak); sweep_4721 WATCH 33.7$; safehaven_4775 WATCH 87$. OIL 96.44 +43.0 mod extending, sweep_9323 WATCH 3.2$. BTCUSD +29.5 weak FVG WATCH. 8 alerts. 0 trades 0pos. BOJ T-3d FOMC T-5d. binary=inactive.",
       "binary_event_name": "iran_ceasefire_indefinite_extension",
       "binary_event_active": 0,
       "binary_event_deadline": null
@@ -890,6 +890,19 @@
     }
   ],
   "counterfactuals_last_50": [
+    {
+      "alert_id": "gbpusd_sweep_134928_sell_retest",
+      "instrument": "GBPUSD",
+      "direction": "sell",
+      "trigger_price": 1.3493249999999999,
+      "fired_at": "2026-04-24T12:43:05.679052+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
     {
       "alert_id": "audusd_sweep_71379_sell_retest",
       "instrument": "AUDUSD",

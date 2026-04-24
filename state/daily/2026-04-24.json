@@ -1,20 +1,16 @@
-"alert_audit_request:GOLD:gold_sweep_4721_sell_retest (KEEP, moderate -40, dist=29.97p WATCH)"
-"news_flash"
-"usdjpy_intervention_fade_zone (dist 29.5p\u219223p)"
-"AUDUSD bias sell\u2192neutral"
-"6 KEEP price-refreshed"
-"oil_sweep_9519_buy_retest"
-"btcusd_day_fvg_buy"
-"evt_1777013392130_news_flash (fed_fomc news_flash AOL Mar-15 STALE 40d non-thesis)"
-"fed_fomc news_query TUNED (removed bare Powell+press-conference kw-required)"
-"btcusd_day_fvg_buy"
-"GOLD level_cross gold_sweep_4695_sell_retest cross_up 4696.47"
-"USDJPY \u2014 counter-fade SELL at 160.00 (dist=27.3p, BOJ T-3d)"
-"EURUSD BUY 1.168965"
-"usdchf_sweep_h1_sell_retest"
-"audusd_sweep_71379_sell_retest"
-"ADD gbpusd_sweep_134928_sell_retest (WATCH)"
-{"tick_ts_utc": "2026-04-24T11:56:29Z", "events_processed": 1, "events": [{"id": "evt_1777031548196_news_flash", "type": "news_flash", "action": "CONSUME_NO_ACTION", "reason": "historical Fortune article about 1980s Tanker War tactics; not new escalation; regime unchanged"}], "trades_opened": 0, "trades_closed": 0, "positions_open": 0, "daily_pnl_usd": 0.0, "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED", "binary_event_active": false, "alerts_keep": 9, "alerts_modify": 0, "alerts_remove": 0, "alerts_add": 0, "scalp_config": "EURUSD/GBPUSD/AUDUSD KEEP; USDJPY/USDCHF/USDCAD pip-conv-pending; GOLD/OIL/BTC spread-blocked", "key_watches": ["OIL sweep_9323 dist=0.92$ INSIDE prox; comp=+30 weak need +40 mod", "GOLD sweep_4721 dist=15.7$ INSIDE prox; comp=-27 weak need -40 mod", "BTC comp=+55 moderate but dist=1252$ OUTSIDE FVG prox", "USDJPY 159.445 dist=55.5p BOJ T-3d"], "attention_matrix": {"EURUSD": "swing=NONE scalp=ACTIVE readiness=none; no swing alert comp=5.5 none", "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=weak; SELL 1.349275 but comp=+29 weak OPPOSES", "AUDUSD": "swing=WATCH scalp=ACTIVE readiness=none; SELL 0.71379 but comp=+18.5 none OPPOSES", "USDJPY": "swing=WATCH scalp=OFF readiness=none; counter-fade SELL 160.00 dist=55.5p OUTSIDE", "USDCAD": "swing=NONE scalp=OFF readiness=weak; no alert comp=-29 weak", "USDCHF": "swing=WATCH scalp=OFF readiness=none; SELL 0.7875 comp=-15.5 none (need -40)", "GOLD": "swing=WATCH scalp=N/A readiness=weak; sweep_4721 INSIDE prox but comp=-27 (need -40)", "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=weak; sweep_9323 INSIDE prox but comp=+30 (need +40)", "BTCUSD": "swing=WATCH scalp=N/A readiness=moderate; FVG 76960 dist=1252$ OUTSIDE prox"}}
-{"tick_ts": "2026-04-24T12:01:00Z", "events_processed": 1, "events": ["evt_1777031829390_level_cross"], "decisions": {"gbpusd_sweep_134928_sell_retest": "level_cross cross_up at 1.349405; comp=+21.5 none bullish OPPOSES sell (need \u2264-40 mod-bear); SKIP; WATCH maintained"}, "trades": [], "positions_opened": 0, "positions_closed": 0, "confluence": {"EURUSD": {"composite": -2.0, "readiness": "none"}, "GBPUSD": {"composite": 21.5, "readiness": "none"}, "AUDUSD": {"composite": 18.5, "readiness": "none"}, "USDJPY": {"composite": 30.0, "readiness": "weak"}, "USDCAD": {"composite": -29.0, "readiness": "weak"}, "USDCHF": {"composite": -15.5, "readiness": "none"}, "GOLD": {"composite": -27.0, "readiness": "weak"}, "OIL_CRUDE": {"composite": 30.0, "readiness": "weak"}, "BTCUSD": {"composite": 55.0, "readiness": "moderate"}}, "near_arm": ["oil_sweep_9323 (0.60$ dist, gap +10pts)", "gold_sweep_4721 (13.85$ dist, gap +13pts)"], "scalp_engine": {"GBPUSD": "BUY open 1.346775 engine", "EURUSD": "BUY open 1.168965 engine"}, "binary_event": "none active", "attention_covered": "9/9"}
-
-{"tick_ts_utc": "2026-04-24T12:39:00Z", "events_processed": 0, "events": [], "decisions": {"btcusd_h4fvg_78056_buy": "LIMIT BUY armed at H4 FVG bottom 78056; comp=+55 moderate 4/4 bull; R:R=4.7; risk=$4.90 (0.49%); dealId=00000000-4e72-1a54-044a-beb40055311e"}, "trades": [{"action": "LIMIT_ARMED", "epic": "BTCUSD", "direction": "BUY", "size": 0.016, "limit_price": 78056, "sl": 77750, "tp": 79500, "dealId": "00000000-4e72-1a54-044a-beb40055311e", "dealRef": "o_149de2e6-cae3-46b5-a4b5-59eda7349f4a", "risk_usd": 4.9, "risk_pct": 0.0049, "thesis_type": "trend"}], "positions_opened": 0, "positions_closed": 0, "limits_armed": 1, "confluence": {"EURUSD": {"composite": -8.0, "readiness": "none"}, "GBPUSD": {"composite": 29.0, "readiness": "weak"}, "AUDUSD": {"composite": 18.5, "readiness": "none"}, "USDJPY": {"composite": 30.0, "readiness": "weak"}, "USDCAD": {"composite": -21.5, "readiness": "none"}, "USDCHF": {"composite": 3.5, "readiness": "none"}, "GOLD": {"composite": -18.0, "readiness": "none"}, "OIL_CRUDE": {"composite": 30.0, "readiness": "weak"}, "BTCUSD": {"composite": 55.0, "readiness": "moderate"}}, "news_check": {"OIL_Hormuz": "Iranian FM Araghchi arrives Pakistan for peace talks (not breakthrough); WTI dipped to $94.75 from $96.07; Hormuz blockade intact. Regime unchanged.", "BTC": "BTC slipped from near $80K on oil-risk-asset pressure; $78,250 area; H4 FVG 78056-78208 in active pullback zone."}, "near_arm": ["gold_sweep_4721 (16.6$ INSIDE prox, comp=-18 need -40)", "usdchf_sweep_h1 (13.5p INSIDE prox, comp=+3.5 need -40)"], "alerts_keep": 10, "alerts_add": 1, "scalp_engine": {"status": "running", "halted": {}, "daily_pnl": 0.0}, "binary_event": "none active (iran_ceasefire active=false)", "attention_covered": "9/9", "attention_matrix": {"EURUSD": "swing=NONE scalp=ACTIVE readiness=none; comp=-8 neutral no alert", "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=weak; SELL 1.349275 comp=+29 weak OPPOSES (need -40)", "AUDUSD": "swing=WATCH scalp=ACTIVE readiness=none; SELL 0.71379 comp=+18.5 none OPPOSES", "USDJPY": "swing=WATCH scalp=OFF readiness=weak; counter-fade SELL 160.00 dist=44.4p OUTSIDE", "USDCAD": "swing=NONE scalp=OFF readiness=none; no active alert comp=-21.5 none", "USDCHF": "swing=WATCH scalp=OFF readiness=none; SELL 0.7875 dist=13.5p INSIDE prox comp=+3.5 none (need -40)", "GOLD": "swing=WATCH scalp=N/A readiness=none; sweep_4721 INSIDE prox 16.6$ comp=-18 (need -40)", "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=weak; sweep_9323 OUTSIDE prox 1.60$ comp=+30 (need +40)", "BTCUSD": "swing=ARMED scalp=N/A readiness=moderate; H4 FVG LIMIT ARMED at 78056"}}
+[
+  {
+    "ts_utc": "2026-04-24T12:46:00Z",
+    "events_in": 2,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 2,
+    "alerts_kept": 10,
+    "alerts_added": 0,
+    "alerts_removed": 0,
+    "pnl_usd": 0,
+    "open_positions": 0,
+    "pending_limits": 1,
+    "note": "12:46 forex auto \u2014 2 evt: AUDUSD level_cross audusd_sweep_71379_sell_retest comp=+18.5 NONE bullish OPPOSES sell SKIP WATCH; GBPUSD level_cross gbpusd_sweep_134928_sell_retest comp=+21.5 NONE bullish OPPOSES sell SKIP WATCH. USDJPY 159.56 comp=+30 weak dist=44.2p OUTSIDE 30p WATCH BOJ T-2d. GOLD 4700.4 sweep_4721 dist=21.3$ INSIDE prox comp=-18 none NEAR-ARM. OIL 95.24 sweep_9323 dist=2.0$ OUTSIDE prox comp=+30 weak WATCH. BTC 78229 LIMIT ARMED 78056 H4 FVG. 10 alerts KEEP. 0 trades 1 LIMIT 0 pos."
+  }
+]
