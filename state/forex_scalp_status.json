@@ -1,11 +1,22 @@
 {
   "pid": 71146,
-  "last_step_utc": "2026-04-24T07:39:19.220697+00:00",
-  "heartbeat": 8880,
+  "last_step_utc": "2026-04-24T08:22:00.126446+00:00",
+  "heartbeat": 11100,
   "reason": "ok",
   "shadow": false,
   "daily_pnl_usd": 0.0,
-  "open": {},
+  "open": {
+    "GBPUSD": {
+      "direction": "BUY",
+      "entry": 1.346775,
+      "sl": 1.3464049999999999,
+      "tp": 1.3475150000000005,
+      "size": 10.0,
+      "shadow": false,
+      "initial_sl": 1.3464049999999999,
+      "moved_to_be": false
+    }
+  },
   "halted": {},
   "actions": []
 }

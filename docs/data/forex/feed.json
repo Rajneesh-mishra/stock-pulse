@@ -1,22 +1,6 @@
 {
-  "generated_at": "2026-04-24T07:39:39.736103Z",
+  "generated_at": "2026-04-24T08:22:14.334618Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-22T21:00:30Z",
-      "events_in": 0,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 0,
-      "note": "21:00 UTC heartbeat \u2014 0 unconsumed events. Broker $1000/0 reconciled. Confluence sweep all 9: USDJPY composite +51 moderate bullish 159.488 (51p below 160 fade, still >3\u00d7 H1 ATR = WATCH not ARMED); USDCAD -32 weak bearish 1.36717 (now 2p BELOW swept 1.36737 wick, 45min post-sweep continuation valid but no sharper level formed); OIL +28.5 weak bullish 92.59 (229p above 90.30 retest zone); GOLD -16 none bearish 4739.99 (35p below 4775 trigger, tape unsupportive); BTC +47.5 moderate bullish 78.9k (parabolic, no anchorable level for new alert); AUDUSD +23.5 none bullish 0.7158 (no alert post-Rule 1 removal); EURUSD/GBPUSD/USDCHF none neutral. 1 WebSearch Hormuz: Iran seized 2 ships Apr 22, Trump WH says non-US non-Israeli seizures NOT ceasefire violation \u2014 slight de-escalation of rhetoric, gold bid weakening consistent. 4 alerts price-refreshed (all MODIFY proximity), 9 structure_watch KEEP, 8 news_queries KEEP. 0 trades."
-    },
-    {
-      "ts_utc": "2026-04-22T21:33:00Z",
-      "events_in": 1,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 1,
-      "note": "21:33 UTC forex auto tick \u2014 1 stale news_flash consumed (AJ Apr 20 'Islamabad negotiators' backgrounder, keyword 'Islamabad' matched but superseded by 4-source verified Trump indefinite extension Apr 22). USDCAD re-run: composite -37 weak (strengthened from -32 but still <|40| moderate), M15 +0.4 bullish = sweep continuation exhausted 93min post-sweep. REMOVED usdcad_liqsweep_sell_zone per prior tick's 'REMOVE next tick if not ARMED' commit. No replacement. USDJPY +51 moderate WATCH 160 (51p dist, BOJ T-4d), GOLD -16 none (4h hit_rate 0.8 KEEP), OIL +28.5 weak retest-far. 3 alerts KEEP, 1 REMOVE, 9 structure_watch KEEP, 8 queries KEEP. Broker $1000/0. 0 trades."
-    },
     {
       "ts_utc": "2026-04-22T22:02:00Z",
       "events_in": 11,
@@ -178,6 +162,14 @@
       "closed": 0,
       "skipped": 1,
       "note": "05:35 forex auto \u2014 1 evt (OIL_CRUDE level_cross oil_sweep_9519_buy_retest at 95.25; price dropped through SL 95.263 before M15 close above 95.319; entry criterion NOT met (no rejection wick close); SKIP trade, REMOVE alert. wick was 0.16\u00d7ATR minor at creation). USDJPY 159.761 +40.5 mod 4/4 bull dist=23.9p INSIDE 30p ARMED (BOJ T-3d). OIL 95.22 +42.5 mod sweep_9323 dist=1.98$ WATCH; retest_90 dist=4.92$ dormant. 6 alerts (5 KEEP +1 REMOVE), 9 SW KEEP. Scalp 3 FX ACTIVE halt={}. 0 trades $1000/0pos."
+    },
+    {
+      "ts_utc": "2026-04-24T08:17:00Z",
+      "events_in": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "summary": "08:17 UTC heartbeat \u2014 0 evt. USDJPY 159.695 +40.5 mod dist=30.6p OUTSIDE 30p \u2192 WATCH (was ARMED @29.8p last tick, marginal slip). GOLD 4691.1 -35.5 weak sweep_4721 dist=30.6$ OUTSIDE threshold \u2192 WATCH. OIL 96.54 +43.0 mod sweep_9323 dist=3.30$ extending away. BTC 77881 +29.5 weak FVG dist=921$. USDCHF -5.0 none sweep_h1 WATCH. 7 alerts KEEP. Scalp 3 FX ACTIVE halt={}. 0 trades $1000/0pos. BOJ T-3d FOMC T-5d."
     },
     {
       "tick_ts_utc": "2026-04-24T20:30:00Z",
@@ -790,6 +782,81 @@
       },
       "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=KEEP USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
       "notes": "api.py no LIMIT order type \u2014 USDJPY counter-fade must be market-on-confirmation when 160.00 tags + M15 wick \u22658p."
+    },
+    {
+      "ts_utc": "2026-04-24T08:17:00Z",
+      "events": [],
+      "trades": [],
+      "positions_open": 0,
+      "balance_usd": 1000.0,
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "prices": {
+        "USDJPY": 159.6945,
+        "GOLD": 4691.1,
+        "OIL_CRUDE": 96.54,
+        "USDCHF": 0.78616,
+        "EURUSD": 1.16915,
+        "GBPUSD": 1.348205,
+        "AUDUSD": 0.7137,
+        "USDCAD": 1.36911,
+        "BTCUSD": 77880.95
+      },
+      "confluence": {
+        "USDJPY": {
+          "comp": 40.5,
+          "readiness": "moderate",
+          "note": "4/4 bull AGAINST sell; dist=30.6p OUTSIDE 30p \u2192 WATCH"
+        },
+        "GOLD": {
+          "comp": -35.5,
+          "readiness": "weak",
+          "note": "sweep_4721 dist=30.6$ outside; safehaven_4775 84$ dormant"
+        },
+        "OIL_CRUDE": {
+          "comp": 43.0,
+          "readiness": "moderate",
+          "note": "sweep_9323 dist=3.30$ extending; retest_90 dist=6.24$ dormant"
+        },
+        "BTCUSD": {
+          "comp": 29.5,
+          "readiness": "weak",
+          "note": "FVG 76960 dist=921$"
+        },
+        "USDCHF": {
+          "comp": -5.0,
+          "readiness": "none",
+          "note": "sweep_h1 WATCH; H1 bullish"
+        },
+        "EURUSD": {
+          "comp": -28.5,
+          "readiness": "weak"
+        },
+        "GBPUSD": {
+          "comp": 8.0,
+          "readiness": "none"
+        },
+        "AUDUSD": {
+          "comp": 8.0,
+          "readiness": "none"
+        },
+        "USDCAD": {
+          "comp": -16.0,
+          "readiness": "none"
+        }
+      },
+      "attention_matrix": {
+        "EURUSD": "swing=NONE scalp=ACTIVE readiness=weak (comp=-28.5, no active alert, CANCELLED status)",
+        "GBPUSD": "swing=NONE scalp=ACTIVE readiness=none (comp=+8.0, no alert)",
+        "AUDUSD": "swing=NONE scalp=ACTIVE readiness=none (comp=+8.0, no alert post-Rule1 removal)",
+        "USDJPY": "swing=WATCH scalp=OFF readiness=moderate (dist=30.6p OUTSIDE 30p floor by 0.6p; BOJ T-3d; pip-conv-off)",
+        "USDCAD": "swing=NONE scalp=OFF readiness=none (comp=-16.0, no alert; pip-conv-off)",
+        "USDCHF": "swing=WATCH scalp=OFF readiness=none (sweep_h1 alert; comp=-5.0 need -40; pip-conv-off)",
+        "GOLD": "swing=WATCH scalp=N/A readiness=weak (sweep_4721 dist=30.6$ outside; need mod -40; spread 5p)",
+        "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=moderate (both buy levels outside prox; oil extending higher; spread 3-4p)",
+        "BTCUSD": "swing=WATCH scalp=N/A readiness=weak (FVG 76960 dist=921$; spread 50p)"
+      },
+      "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=KEEP USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
+      "notes": "Heartbeat. USDJPY marginally slipped to WATCH (30.6p vs 30p threshold; was 29.8p ARMED last tick). GOLD sweep_4721 also marginal (30.6$ vs 30$ threshold + readiness=weak). Both need <1% further move to re-arm. OIL extending away from both buy levels."
     }
   ]
 }

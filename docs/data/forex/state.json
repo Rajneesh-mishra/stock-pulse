@@ -386,6 +386,14 @@
       "closed": 0,
       "skipped": 1,
       "note": "05:35 forex auto \u2014 1 evt (OIL_CRUDE level_cross oil_sweep_9519_buy_retest at 95.25; price dropped through SL 95.263 before M15 close above 95.319; entry criterion NOT met (no rejection wick close); SKIP trade, REMOVE alert. wick was 0.16\u00d7ATR minor at creation). USDJPY 159.761 +40.5 mod 4/4 bull dist=23.9p INSIDE 30p ARMED (BOJ T-3d). OIL 95.22 +42.5 mod sweep_9323 dist=1.98$ WATCH; retest_90 dist=4.92$ dormant. 6 alerts (5 KEEP +1 REMOVE), 9 SW KEEP. Scalp 3 FX ACTIVE halt={}. 0 trades $1000/0pos."
+    },
+    {
+      "ts_utc": "2026-04-24T08:17:00Z",
+      "events_in": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "summary": "08:17 UTC heartbeat \u2014 0 evt. USDJPY 159.695 +40.5 mod dist=30.6p OUTSIDE 30p \u2192 WATCH (was ARMED @29.8p last tick, marginal slip). GOLD 4691.1 -35.5 weak sweep_4721 dist=30.6$ OUTSIDE threshold \u2192 WATCH. OIL 96.54 +43.0 mod sweep_9323 dist=3.30$ extending away. BTC 77881 +29.5 weak FVG dist=921$. USDCHF -5.0 none sweep_h1 WATCH. 7 alerts KEEP. Scalp 3 FX ACTIVE halt={}. 0 trades $1000/0pos. BOJ T-3d FOMC T-5d."
     }
   ],
   "recent_skips": [
@@ -419,8 +427,8 @@
       "price": 4809.28
     }
   ],
-  "last_tick_summary": "06:10 forex auto \u2014 0 evt heartbeat. Rule3 promotions: oil_sweep_9323 (4f/100%4h) + gold_sweep_4721 (5f/100%4h) + oil_retest_90 (3f/67%4h) MODIFIED \u2014 entry relaxed to naked LIMIT (no M15 confirmation), 4h time-stop added. USDJPY 159.745 +42.5 mod 4/4 bull dist=25.5p INSIDE 30p swing=ARMED (counter-trend fade; BOJ T-3d; awaits 160.00 tag). GOLD 4682 -37.5 weak 3/4 bear sweep_4721 dist=39.4$ OUTSIDE 30$ swing=WATCH (validated, needs moderate to arm LIMIT). OIL 95.29 +42.5 mod 4/4 bull sweep_9323 dist=2.06$ OUTSIDE 1.13$ swing=WATCH (validated, closing in). BTC 77945 +27 weak day_fvg_buy dist=985$ WATCH. EURUSD weak NONE GBPUSD/AUDUSD/USDCAD/USDCHF none swing=NONE. 6 alerts 3 MODIFY (rule3-promotion) 3 KEEP. 9 SW KEEP. 8 queries KEEP. Scalp 3 FX ACTIVE halt={}. web_search skipped (0 pos + regime stable 4h+). BOJ T-3d FOMC T-5d. binary=inactive. attention_covered=9/9.",
-  "last_scan": "2026-04-24T06:10:00Z",
+  "last_tick_summary": "08:17 UTC heartbeat \u2014 0 evt. USDJPY 159.695 +40.5 mod dist=30.6p OUTSIDE 30p \u2192 WATCH (was ARMED @29.8p last tick, marginal slip). GOLD 4691.1 -35.5 weak sweep_4721 dist=30.6$ OUTSIDE threshold \u2192 WATCH. OIL 96.54 +43.0 mod sweep_9323 dist=3.30$ extending away. BTC 77881 +29.5 weak FVG dist=921$. USDCHF -5.0 none sweep_h1 WATCH. 7 alerts KEEP. Scalp 3 FX ACTIVE halt={}. 0 trades $1000/0pos. BOJ T-3d FOMC T-5d.",
+  "last_scan": "2026-04-24T08:17:00Z",
   "capital_base": 1000.0,
   "tick_log": [
     {
@@ -638,7 +646,7 @@
     ],
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). | 2026-04-23 20:05 UTC tick: BOJ Apr 27-28 T-3d, FOMC T-4d \u2014 still calendar, no blackout. | 2026-04-23 20:30 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-3d \u2014 still calendar, no blackout. | 2026-04-23 21:10 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. Half-size caution on elevated-event week. | 2026-04-24 03:45 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. | 2026-04-23T23:25:00Z ESCALATION: Trump 'shoot to kill' order on Iranian mine boats. 3rd tanker seized. Regime shifted to ACTIVE_ESCALATION. BOJ T-3d FOMC T-5d no blackout. | 2026-04-24T00:52Z tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout."
   },
-  "regime_note": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED \u2014 2026-04-24T07:35Z tick: 1 evt (USDCHF level_cross usdchf_sweep_h1_sell_retest cross_up; comp=+7.5 none readiness=none SKIP \u2014 entry requires readiness\u2265moderate bearish \u2264-40; H1/M15 bullish momentum OPPOSES sell). USDJPY 159.702 +40.5 mod 4/4 bull dist=29.8p INSIDE 30p \u2192 swing=ARMED counter-fade; api.py has no LIMIT type \u2192 market-on-confirmation when 160.00 tags + M15 wick \u22658p. BOJ T-3d. GOLD 4683.3 -35.5 weak sweep_4721 dist=38.4$ WATCH; safehaven 91.7$ dormant. OIL 95.81 +43.0 mod sweep_9323 dist=2.58$ WATCH rising away; retest_90 5.51$ dormant. USDCHF 0.7874 +7.5 none sweep_h1 WATCH readiness=none. BTCUSD 77669 +27 weak FVG dist=709$ WATCH. EURUSD -31 weak GBPUSD none AUDUSD none USDCAD none \u2192 swing=NONE. 7 alerts KEEP (price_refs updated). 0 trades 0pos. BOJ T-3d FOMC T-5d. attention_covered=9/9.",
-  "tick_ts_utc": "2026-04-24T07:35:00Z",
-  "state_ts_utc": "2026-04-24T07:35:00Z"
+  "regime_note": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED \u2014 2026-04-24T08:17Z tick: 0 evt heartbeat. USDJPY 159.695 +40.5 mod 4/4 bull dist=30.6p OUTSIDE 30p floor \u2192 swing=WATCH (marginal downgrade from ARMED last tick at 29.8p; needs +0.6p more to tag 160). BOJ T-3d. GOLD 4691.1 -35.5 weak 3/4 bear sweep_4721 dist=30.6$ OUTSIDE 30$ threshold \u2192 WATCH (also just missed; needs +18$ rally + readiness -40). OIL 96.54 +43.0 mod sweep_9323 dist=3.30$ WATCH extending; retest_90 dist=6.24$ dormant. BTCUSD 77881 +29.5 weak FVG 76960 dist=921$ WATCH. USDCHF 0.7862 -5.0 none sweep_h1 WATCH readiness=none. EURUSD -28.5 weak GBPUSD/AUDUSD/USDCAD none \u2192 swing=NONE. 7 alerts KEEP (price refs updated). 0 trades 0pos. BOJ T-3d FOMC T-5d. binary=inactive. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-24T08:17:00Z",
+  "state_ts_utc": "2026-04-24T08:17:00Z"
 }
