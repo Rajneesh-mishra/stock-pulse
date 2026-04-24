@@ -1,21 +1,6 @@
 {
-  "generated_at": "2026-04-24T11:13:47.811811Z",
+  "generated_at": "2026-04-24T11:20:42.385528Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-23T03:25:00Z",
-      "events_in": 2,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 2,
-      "note": "news_flash CBS Apr 7 archive 'reopen' via over-broad April filter; alert_audit_request GOLD non-altering. Tuned hormuz_strait. 3 KEEP."
-    },
-    {
-      "ts": "2026-04-23T07:14:00Z",
-      "events_processed": 10,
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "summary": "3 liq_sweep readiness=none NOT-ACTIONABLE + 7 bar_close; 3 KEEP carried"
-    },
     {
       "ts": "2026-04-23T08:09:00Z",
       "events_processed": 1,
@@ -130,6 +115,14 @@
       "closed": 0,
       "skipped": 0,
       "summary": "10:30 forex auto \u2014 0 evt heartbeat. USDJPY 159.726 +40.5 mod 4/4 bull dist=27.4p INSIDE 30p swing=ARMED (counter-fade SELL 160.00, BOJ T-3d; api.py market-only entry waits price\u2265159.97). GOLD 4681.69 -36.0 weak sweep_4695 dist=13.7$ INSIDE prox readiness=weak WATCH; sweep_4721 dist=40.0$ OUTSIDE. OIL 96.817 +43.0 mod sweep_9323 dist=3.58 extending WATCH. EURUSD -8 none GBPUSD +18.5 none AUDUSD +8 none USDCAD -21.5 none USDCHF +5 none. BTC 77692 +27 weak fvg_76960 dist=732 WATCH. Scalp engine GBPUSD+EURUSD ghost vs broker=0 (known carry). 8 alerts KEEP. 0 trades 0pos. BOJ T-3d FOMC T-5d. news_search SKIP(last_scan 10min ago). attention_covered=9/9."
+    },
+    {
+      "ts_utc": "2026-04-24T11:18:00Z",
+      "events_in": 2,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 2,
+      "note": "11:18 forex auto \u2014 2 evt (GBPUSD M15 up-sweep 1.34927 wick=8.8p 1.29\u00d7ATR comp=+29.0 weak-bull OPPOSES sell \u2192 ADD WATCH gbpusd_sweep_134928; GOLD level_cross gold_sweep_4695_sell_retest cross_up 4702.9>SL 4697.65 \u2192 REMOVE invalid). USDJPY 159.54 +30.0 weak dist=46.4p OUTSIDE 30p \u2192 WATCH (dropping from +43 mod). GOLD 4698.59 -32.5 weak; sweep_4721 dist=23.1$ INSIDE 30$ prox WATCH (need -40 mod); safehaven_4775 dist=76.4$ WATCH. OIL 94.56 +35.5 weak; sweep_9323 dist=1.32$ barely OUTSIDE prox 1.16$; pullback live 96.97\u219294.56 Day-FVG 93.42-94.18 below. GBPUSD scalp ghost at 1.346775+1.168965 engine-managed. 0 swing trades 0 swing pos. BOJ T-3d FOMC T-5d. attention_covered=9/9."
     },
     {
       "tick_ts_utc": "2026-04-24T20:30:00Z",
@@ -985,6 +978,18 @@
       "binary_event": "none (iran_ceasefire inactive, no deadline)",
       "scalp_status": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=ACTIVE USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
       "attention_covered": "9/9"
+    },
+    {
+      "ts_utc": "2026-04-24T11:18:00Z",
+      "events_in": 2,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 2,
+      "alerts_modified": [
+        "REMOVE gold_sweep_4695_sell_retest (price>SL)",
+        "ADD gbpusd_sweep_134928_sell_retest (WATCH)"
+      ],
+      "note": "2 evt: GBPUSD up-sweep 1.34927 wick=8.8p comp=+29 OPPOSES sell \u2192 ADD WATCH; GOLD level_cross 4695 cross_up price 4702.9>SL 4697.65 \u2192 REMOVE. OIL 96.97\u219294.56 pullback; sweep_9323 dist=1.32$ near-prox. GOLD sweep_4721 dist=23.1$<30$ WATCH. 0 trades 0pos."
     }
   ]
 }
