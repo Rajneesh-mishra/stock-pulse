@@ -67,10 +67,12 @@ export default {
         glow: '0 0 0 1px rgba(34,215,160,0.4), 0 0 20px rgba(34,215,160,0.15)',
       },
       animation: {
-        'pulse-dot':     'pulseDot 2.2s cubic-bezier(0, 0, 0.2, 1) infinite',
-        'flash-up':      'flashUp 700ms ease-out',
-        'flash-dn':      'flashDn 700ms ease-out',
-        'event-in':      'eventIn 450ms cubic-bezier(.2,.7,.2,1)',
+        'pulse-dot':         'pulseDot 2.2s cubic-bezier(0, 0, 0.2, 1) infinite',
+        'flash-up':          'flashUp 700ms ease-out',
+        'flash-dn':          'flashDn 700ms ease-out',
+        'event-in':          'eventIn 450ms cubic-bezier(.2,.7,.2,1)',
+        'skeleton':          'skeleton 1.6s ease-in-out infinite',
+        'topbar-progress':   'topbarProgress 1.4s cubic-bezier(.4,0,.2,1) infinite',
       },
       keyframes: {
         pulseDot: {
@@ -88,6 +90,15 @@ export default {
         eventIn: {
           '0%':   { opacity: '0', transform: 'translateY(-4px)', backgroundColor: 'rgba(255,181,71,0.06)' },
           '100%': { opacity: '1', transform: 'translateY(0)',  backgroundColor: 'transparent' },
+        },
+        skeleton: {
+          '0%':   { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(200%)' },
+        },
+        topbarProgress: {
+          '0%':   { transform: 'translateX(-100%)' },
+          '60%':  { transform: 'translateX(180%)' },
+          '100%': { transform: 'translateX(180%)' },
         },
       },
     },

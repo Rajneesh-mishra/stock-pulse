@@ -19,6 +19,11 @@ import { RegimeCallout } from './components/RegimeCallout';
 import { ChatDock } from './components/ChatDock';
 import { ScalpPanel } from './components/ScalpPanel';
 import { AttentionMatrix } from './components/AttentionMatrix';
+import {
+  SkHero, SkCapitalStrip, SkInstrumentGrid, SkAlertList,
+  SkGatesTable, SkAttentionMatrix, SkScalpPanel,
+  SkCounterfactual, SkTradeRows, SkEventLog, TopProgress,
+} from './components/Skeleton';
 import { relativeTime } from './lib/format';
 
 type NavId = 'overview' | 'pairs' | 'alerts' | 'history' | 'events';
@@ -79,8 +84,22 @@ export default function App() {
   const wsReceived = snap.snapshot?.ws_stats?.ticks_received ?? ticks.received;
   const lastTick = state.last_tick_utc ?? state.last_tick ?? snap.snapshot?.ts;
 
+  // Per-section readiness flags. Initial load can take 4-5s because the
+  // snapshot endpoint makes broker calls; we show skeletons until each
+  // section has the data it needs.
+  const loadingSnapshot = snap.loading || !snap.snapshot;
+  const loadingWatchlist = snap.loading || !snap.watchlist;
+  const loadingGates = snap.loading || (snap.gates?.length ?? 0) === 0 && mode === 'live';
+  const loadingCF = snap.counterfactual == null;
+  const loadingCandles = mode === 'live' && Object.keys(candles).length === 0;
+  const loadingEvents = events.length === 0;
+  // Global "any section still loading" — drives the top progress bar
+  const anyLoading = loadingSnapshot || loadingCF;
+
   return (
     <div className="min-h-screen pb-24 sm:pb-8">
+      <TopProgress loading={anyLoading} />
+
       {/* Top bar */}
       <header className="sticky top-0 z-40 border-b border-line bg-ink-900/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-[1440px] items-center justify-between px-4 py-3 sm:px-8">
@@ -124,8 +143,8 @@ export default function App() {
 
         {/* ─────────── OVERVIEW ─────────── */}
         <section ref={refs.overview} data-section="overview" className="rise space-y-6" style={{ animationDelay: '0ms' }}>
-          <BinaryEventHero event={state.binary_event} />
-          <CapitalStrip snapshot={snap.snapshot} />
+          {loadingSnapshot ? <SkHero /> : <BinaryEventHero event={state.binary_event} />}
+          {loadingSnapshot ? <SkCapitalStrip /> : <CapitalStrip snapshot={snap.snapshot} />}
         </section>
 
         {/* ─────────── PAIRS ─────────── */}
@@ -135,7 +154,9 @@ export default function App() {
             caption="Real-time quotes · M15 candles · tick flash on price change"
             right={mode === 'live' ? <span className="text-bull">● WS</span> : <span>static</span>}
           />
-          <InstrumentGrid snapshot={snap.snapshot} ticks={tickMap} candles={candles} alerts={alerts} />
+          {loadingSnapshot || loadingCandles
+            ? <SkInstrumentGrid count={9} />
+            : <InstrumentGrid snapshot={snap.snapshot} ticks={tickMap} candles={candles} alerts={alerts} />}
         </section>
 
         {/* ─────────── ATTENTION MATRIX ─────────── */}
@@ -144,7 +165,7 @@ export default function App() {
             title="Attention matrix"
             caption="Every pair gets one row — no pair silently ignored"
           />
-          <AttentionMatrix mode={mode} watchlist={snap.watchlist} />
+          {loadingWatchlist ? <SkAttentionMatrix /> : <AttentionMatrix mode={mode} watchlist={snap.watchlist} />}
         </section>
 
         {/* ─────────── SCALP ENGINE ─────────── */}
@@ -162,7 +183,7 @@ export default function App() {
             title="Signal readout"
             caption="Inputs feeding the readiness × R:R sizing call — not a pass/fail gate"
           />
-          <GatesTable rows={snap.gates} />
+          {loadingGates ? <SkGatesTable /> : <GatesTable rows={snap.gates} />}
         </section>
 
         {/* ─────────── ALERTS ─────────── */}
@@ -171,7 +192,9 @@ export default function App() {
             title="Armed triggers"
             caption="Each watchlist alert — proximity, thesis, and counterfactual hit-rate by horizon"
           />
-          <AlertList alerts={alerts} counterfactual={snap.counterfactual} ticks={tickMap as any} />
+          {loadingWatchlist
+            ? <SkAlertList count={3} />
+            : <AlertList alerts={alerts} counterfactual={snap.counterfactual} ticks={tickMap as any} />}
         </section>
 
         <section className="rise mt-10" style={{ animationDelay: '200ms' }}>
@@ -179,18 +202,26 @@ export default function App() {
             title="What would've happened"
             caption="Every alert fired, tracked +1h / +4h / +24h — SKIP decisions made auditable"
           />
-          <CounterfactualTable cf={snap.counterfactual} />
+          {loadingCF ? <SkCounterfactual /> : <CounterfactualTable cf={snap.counterfactual} />}
         </section>
 
         {/* ─────────── HISTORY ─────────── */}
         <section ref={refs.history} data-section="history" className="rise mt-10" style={{ animationDelay: '240ms' }}>
           <SectionHeader title="Positions & trades" caption="Open risk, closed trades, and the lessons on each" />
-          <PositionsPanel positions={openPositions} trades={tradeHistory} />
+          {loadingSnapshot
+            ? <><SkTradeRows count={2} /><div className="mt-6"><SkTradeRows count={2} /></div></>
+            : <PositionsPanel positions={openPositions} trades={tradeHistory} />}
         </section>
 
         <section className="rise mt-10" style={{ animationDelay: '280ms' }}>
           <SectionHeader title="The read" caption="Regime note — what the orchestrator is working from" />
-          <RegimeCallout note={state.regime_note} stamp={state.last_tick_utc ?? state.last_tick} />
+          {loadingSnapshot
+            ? <div className="rounded-xl2 border border-line bg-ink-800 p-8 space-y-3">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <div key={i} className="h-3 bg-ink-750 rounded-sm animate-pulse" style={{ width: `${70 + Math.random() * 25}%` }} />
+                ))}
+              </div>
+            : <RegimeCallout note={state.regime_note} stamp={state.last_tick_utc ?? state.last_tick} />}
         </section>
 
         {/* ─────────── EVENTS ─────────── */}
@@ -199,7 +230,7 @@ export default function App() {
             title="Live events"
             caption="Everything the daemons emit — bar closes, structure shifts, news flashes, level crosses"
           />
-          <EventLog events={events} />
+          {loadingEvents ? <SkEventLog count={6} /> : <EventLog events={events} />}
         </section>
 
         <footer className="mt-16 border-t border-line pt-6 pb-4 text-[10px] uppercase tracking-[0.18em] text-fg-subtle sm:flex sm:items-center sm:justify-between">

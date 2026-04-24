@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import type { BinaryEvent } from '../types';
 import { Badge } from './Badge';
+import { dateTimeIST } from '../lib/format';
 
 type Posture = 'none' | 'passed' | 'blackout' | 'caution' | 'armed' | 'quiet';
 
@@ -107,7 +108,7 @@ export function BinaryEventHero({ event }: { event?: BinaryEvent }) {
         )}
 
         <div className="mt-8 grid grid-cols-2 gap-x-4 gap-y-3 border-t border-line pt-5 text-xs sm:grid-cols-4">
-          <Meta k="Deadline" v={event?.deadline_utc ? new Date(event.deadline_utc).toUTCString().replace('GMT', 'UTC') : '—'} />
+          <Meta k="Deadline" v={event?.deadline_utc ? `${dateTimeIST(event.deadline_utc)} IST` : '—'} />
           <Meta k="Verified" v={event?.verified ? <span className="text-bull">confirmed</span> : <span className="text-bear">unverified</span>} />
           <Meta k="Sources" v={event?.sources?.length ? `${event.sources.length} cited` : 'none yet'} />
           <Meta k="Event"   v={event?.name ? event.name.replaceAll('_', ' ') : '—'} />

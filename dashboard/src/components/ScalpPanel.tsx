@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Card } from './Card';
 import { Badge } from './Badge';
-import { PAIR_LABEL, dpFor, fmtNum, relativeTime } from '../lib/format';
+import { PAIR_LABEL, dpFor, fmtNum, dateTimeIST } from '../lib/format';
 import type { EpicCode, Mode } from '../types';
 
 interface ScalpConfig {
@@ -279,7 +279,7 @@ function TradeRow({ t }: { t: ScalpTrade }) {
           {fmtNum(t.entry, dp)} → {fmtNum(t.exit, dp)}
         </span>
         <span className="text-[10px] text-fg-subtle whitespace-nowrap">
-          · {t.setup ?? '—'} · {t.held_min != null ? `${t.held_min}m` : '—'}
+          · {dateTimeIST(t.closed_at)} · {t.setup ?? '—'} · {t.held_min != null ? `${t.held_min.toFixed(1)}m` : '—'}
         </span>
       </div>
       <div className={`num text-[12px] font-medium ${pips == null ? 'text-fg-muted' : pips > 0 ? 'text-bull' : pips < 0 ? 'text-bear' : 'text-fg'}`}>

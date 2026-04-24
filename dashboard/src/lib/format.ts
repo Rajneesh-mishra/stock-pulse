@@ -89,11 +89,49 @@ export function relativeTime(iso: string | null | undefined): string {
   return `${Math.round(h / 24)}d ago`;
 }
 
+// IST 12-hour time formatter — operator is in India, UTC is confusing at
+// a glance. "11:38 PM IST" > "18:08:15Z" for human reading.
+const IST_TZ = 'Asia/Kolkata';
+
+const _istTime = new Intl.DateTimeFormat('en-IN', {
+  timeZone: IST_TZ,
+  hour: 'numeric', minute: '2-digit', second: '2-digit',
+  hour12: true,
+});
+const _istDateTime = new Intl.DateTimeFormat('en-IN', {
+  timeZone: IST_TZ,
+  day: '2-digit', month: 'short',
+  hour: 'numeric', minute: '2-digit',
+  hour12: true,
+});
+const _istShortTime = new Intl.DateTimeFormat('en-IN', {
+  timeZone: IST_TZ,
+  hour: 'numeric', minute: '2-digit',
+  hour12: true,
+});
+
+/** Full IST time: "11:38:15 PM". For event logs where seconds matter. */
 export function shortTimestamp(iso?: string): string {
   if (!iso) return '—';
   const d = new Date(iso);
   if (Number.isNaN(d.getTime())) return '—';
-  return d.toISOString().slice(11, 19);
+  return _istTime.format(d);
+}
+
+/** Short IST time without seconds: "11:38 PM". */
+export function shortClockIST(iso?: string): string {
+  if (!iso) return '—';
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return '—';
+  return _istShortTime.format(d);
+}
+
+/** IST date + time: "23 Apr, 11:38 PM". For trade ledger rows, etc. */
+export function dateTimeIST(iso?: string): string {
+  if (!iso) return '—';
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return '—';
+  return _istDateTime.format(d);
 }
 
 export function truncate(s: string | null | undefined, n: number): string {
