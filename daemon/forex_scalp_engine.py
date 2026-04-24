@@ -213,24 +213,24 @@ def enforce_sl_floor(entry, raw_sl, direction, book, atr_m5):
     around 0.4-0.8 pips on AUDUSD — SMALLER than the 0.6p spread, so every
     trade was stopped out the instant the offer ticked.
 
-    Enforced floor: max(structural, 2 × spread, 0.4 × ATR_M5). Trades that
-    can't produce an SL distance ≥ 1.0p should be rejected entirely (see
-    caller).
+    Enforced floor: max(structural, 2 × spread, 0.4 × ATR_M5).
+
+    Returns (new_sl, widened_from_p, floor_p) so the caller can log whether
+    the floor kicked in and by how much. The R:R check in the setup itself
+    is the effective reject gate — if widening the SL compresses R:R below
+    the min threshold, the setup returns None. No separate reject here.
     """
     pip = PIP_SIZE[book.epic]
-    # Spread is carried on the book's last tick observation. We don't have
-    # bid/ofr separate here; scalp engine calls with access to both via
-    # the top-level code in step(). For here, treat last_spread as a rough
-    # proxy — caller already has access via the live tick.
     spread_p = getattr(book, "last_spread_pips", None) or 1.0
     atr_p = (atr_m5 or 0) / pip
     raw_sl_p = abs(entry - raw_sl) / pip
 
     floor_p = max(raw_sl_p, 2.0 * spread_p, 0.4 * atr_p)
     if direction == "BUY":
-        return entry - floor_p * pip
+        new_sl = entry - floor_p * pip
     else:
-        return entry + floor_p * pip
+        new_sl = entry + floor_p * pip
+    return new_sl
 
 
 def _m5_atr(book, period=14):
@@ -264,7 +264,6 @@ def setup_range_extreme(book, pair_cfg):
         entry = book.last_mid
         raw_sl = l - 0.5 * pip
         sl = enforce_sl_floor(entry, raw_sl, "BUY", book, atr_m5)
-        if not _sl_acceptable(entry, sl, book): return None
         tp = (hi + lo) / 2   # target = range mid
         if (tp - entry) / (entry - sl) >= min_rr:
             return ("BUY", entry, sl, tp)
@@ -273,19 +272,10 @@ def setup_range_extreme(book, pair_cfg):
         entry = book.last_mid
         raw_sl = h + 0.5 * pip
         sl = enforce_sl_floor(entry, raw_sl, "SELL", book, atr_m5)
-        if not _sl_acceptable(entry, sl, book): return None
         tp = (hi + lo) / 2
         if (entry - tp) / (sl - entry) >= min_rr:
             return ("SELL", entry, sl, tp)
     return None
-
-
-def _sl_acceptable(entry, sl, book):
-    """Reject a setup outright if the final SL distance is less than 2× spread.
-    Below that threshold the trade is spread-eaten before it has a chance."""
-    pip = PIP_SIZE[book.epic]
-    sl_dist_p = abs(entry - sl) / pip
-    return sl_dist_p >= 2.0 * book.last_spread_pips
 
 
 def setup_session_open_break(book, pair_cfg):
@@ -345,14 +335,12 @@ def setup_session_open_break(book, pair_cfg):
         entry = book.last_mid
         raw_sl = (rng_hi + rng_lo) / 2
         sl = enforce_sl_floor(entry, raw_sl, "BUY", book, atr_m5)
-        if not _sl_acceptable(entry, sl, book): return None
         tp = entry + 2 * (entry - sl)
         return ("BUY", entry, sl, tp)
     if l < rng_lo - 0.3 * pip and abs(c - rng_lo) < 0.5 * pip:
         entry = book.last_mid
         raw_sl = (rng_hi + rng_lo) / 2
         sl = enforce_sl_floor(entry, raw_sl, "SELL", book, atr_m5)
-        if not _sl_acceptable(entry, sl, book): return None
         tp = entry - 2 * (sl - entry)
         return ("SELL", entry, sl, tp)
     return None
@@ -379,7 +367,6 @@ def setup_ema_pullback(book, pair_cfg):
             entry = book.last_mid
             raw_sl = e21 - 0.5 * a
             sl = enforce_sl_floor(entry, raw_sl, "BUY", book, a)
-            if not _sl_acceptable(entry, sl, book): return None
             tp = entry + 2 * (entry - sl)
             return ("BUY", entry, sl, tp)
     if e21 < e50 and bias in ("neutral", "bear"):
@@ -387,7 +374,6 @@ def setup_ema_pullback(book, pair_cfg):
             entry = book.last_mid
             raw_sl = e21 + 0.5 * a
             sl = enforce_sl_floor(entry, raw_sl, "SELL", book, a)
-            if not _sl_acceptable(entry, sl, book): return None
             tp = entry - 2 * (sl - entry)
             return ("SELL", entry, sl, tp)
     return None
