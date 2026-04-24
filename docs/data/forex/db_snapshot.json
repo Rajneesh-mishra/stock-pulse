@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-24T05:31:38.903258+00:00",
+  "generated_at": "2026-04-24T05:36:39.523371+00:00",
   "counts": {
     "trades": 14,
-    "events": 3272,
+    "events": 3273,
     "ticks": 59,
     "regime_snapshots": 1,
     "broker_positions": 0,
-    "counterfactuals": 33
+    "counterfactuals": 34
   },
   "trades_last_50": [
     {
@@ -818,6 +818,19 @@
     }
   ],
   "counterfactuals_last_50": [
+    {
+      "alert_id": "oil_sweep_9519_buy_retest",
+      "instrument": "OIL_CRUDE",
+      "direction": "buy",
+      "trigger_price": 95.25,
+      "fired_at": "2026-04-24T05:32:49.585770+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
     {
       "alert_id": "gold_sweep_4721_sell_retest",
       "instrument": "GOLD",
