@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-24T14:55:08.996223Z",
+  "generated_at": "2026-04-24T15:44:17.933050Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-22T22:18:17Z",
-      "events_in": 5,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 5,
-      "note": "22:12 UTC tick \u2014 5 stale news_flash events (1 iran_ceasefire Apr 12 Islamabad backgrounder + 4 opec_supply 2025/Mar2026 archives). TUNED opec_supply (narrowed kw + match_keywords date filter + cooldown 60\u2192120min). Confluence USDJPY +51 moderate WATCH 160 (dist 53p), GOLD -18.5 none WATCH 4775, OIL +26 weak WATCH 90.30 retest-far, USDCAD -37 weak no-alert, BTC +43.5 moderate no-alert. Broker $1000/0pos. 3 KEEP, 1 query TUNED, 0 trades. BOJ T-4d."
-    },
     {
       "ts_utc": "2026-04-22T23:24:00Z",
       "events_in": 1,
@@ -236,6 +228,14 @@
       "note": "14:10 forex auto \u2014 2 evt: GOLD level_cross gold_sweep_4721_sell_retest (price=4724.71; comp=-14.0 none; counter-trend fade needs |bull-comp|\u226525, got 0; SKIP WATCH). AUDUSD level_cross audusd_sweep_71379_sell_retest (price=0.71388; comp=+9.0 none; |bull-comp|=9<25; SKIP WATCH). BTC BUY 0.016@78053.95 UPL=-$2.89 age=16min thesis=trend SL=77750 buffer=123pts NO ACTION. USDJPY 159.59 comp=+27 weak dist=41.1p OUTSIDE 30p WATCH (BOJ T-3d). OIL 94.82 comp=+27 weak sweep_9323 dist=1.58$ OUTSIDE prox NEAR-ARM. GOLD comp=-14.0 none sweep_4721 INSIDE prox WATCH. 0 trades 0 LIMIT 1pos. attention_covered=9/9."
     },
     {
+      "ts_utc": "2026-04-24T15:40:00Z",
+      "events_in": 1,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 1,
+      "note": "15:40 forex auto \u2014 1 evt AUDUSD level_cross audusd_sweep_71379_sell_retest comp=+21.5 none SKIP (need \u2264-40, |comp|<25 counter-trend threshold). REMOVE audusd_sweep_71379 (3 fires, never armed, 0.67\u00d7ATR minor wick, main thesis bullish). REMOVE gbpusd_sweep_134928 (3 fires audit, comp+11.5 never arming). USDJPY 159.54 comp=+27 weak dist=45.7p OUTSIDE 30p WATCH (BOJ T-3d). OIL 94.30 comp=+27 weak sweep_9323 dist=1.07$ NEAR-ARM (need +40). GOLD 4718.8 comp=-18 none safehaven_4775 dist=56.2$ WATCH. BTC 77785 comp=+47.5 mod FVG_76960 dist=825$ WATCH (same-day-loss block). USDCHF 0.78601 comp=-5 none sweep_h1 INSIDE prox WATCH. 0 trades 0 LIMIT 0pos. attention_covered=9/9."
+    },
+    {
       "ts_utc": "2026-04-24T12:46:00Z",
       "events_in": 2,
       "opened": 0,
@@ -394,6 +394,14 @@
       "closed": 1,
       "skipped": 7,
       "note": "14:50 forex auto \u2014 1 evt position_closed BTCUSD (SL hit 77750, PnL=-$3.21, 32min after fill; M15 close=77746.7 breached SL). 7 bar_close routine. BTC same-day-loss blocks re-entry. GOLD sweep_4721 REMOVED (price 4729.23 > SL 4725.01 \u2014 structure invalid). USDJPY 159.47 comp=+27 weak dist=53.1p OUTSIDE 30p WATCH (BOJ T-3d). GOLD 4729.23 comp=-6.5 none safehaven_4775 dist=45.77$ WATCH. OIL 94.23 comp=+27 weak sweep_9323 dist=0.99$ INSIDE prox NEAR-ARM (need +40 mod). BTCUSD 77982 comp=+52.5 mod FVG_76960 same-day-loss SKIP. AUDUSD 0.71396 sweep_71379 dist=1.7p INSIDE comp=none WATCH. GBPUSD 1.34962 sweep_134928 dist=3.4p INSIDE comp=none WATCH. USDCHF 0.78564 sweep_h1 dist=18.6p INSIDE comp=none WATCH. EURUSD 1.17072 comp=none no-alert NONE. USDCAD comp=none no-alert NONE. balance=$995.13 daily_pnl=-$4.87. 1 REMOVE 8 alerts remaining. 0 trades 0 LIMIT 0pos. attention_covered=9/9."
+    },
+    {
+      "ts_utc": "2026-04-24T15:40:00Z",
+      "events_in": 1,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 1,
+      "note": "15:40 forex auto \u2014 1 evt AUDUSD level_cross audusd_sweep_71379_sell_retest comp=+21.5 none SKIP (need \u2264-40, |comp|<25 counter-trend threshold). REMOVE audusd_sweep_71379 (3 fires, never armed, 0.67\u00d7ATR minor wick, main thesis bullish). REMOVE gbpusd_sweep_134928 (3 fires audit, comp+11.5 never arming). USDJPY 159.54 comp=+27 weak dist=45.7p OUTSIDE 30p WATCH (BOJ T-3d). OIL 94.30 comp=+27 weak sweep_9323 dist=1.07$ NEAR-ARM (need +40). GOLD 4718.8 comp=-18 none safehaven_4775 dist=56.2$ WATCH. BTC 77785 comp=+47.5 mod FVG_76960 dist=825$ WATCH (same-day-loss block). USDCHF 0.78601 comp=-5 none sweep_h1 INSIDE prox WATCH. 0 trades 0 LIMIT 0pos. attention_covered=9/9."
     }
   ]
 }

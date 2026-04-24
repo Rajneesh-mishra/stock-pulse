@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-24T14:51:39.152343+00:00",
+  "generated_at": "2026-04-24T15:41:56.970020+00:00",
   "counts": {
     "trades": 15,
-    "events": 3666,
+    "events": 3700,
     "ticks": 59,
-    "regime_snapshots": 22,
+    "regime_snapshots": 23,
     "broker_positions": 0,
-    "counterfactuals": 46
+    "counterfactuals": 47
   },
   "trades_last_50": [
     {
@@ -328,6 +328,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-24T14:50:00Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "14:50 forex auto \u2014 1 evt BTC position_closed SL@77750 PnL=-$3.21. balance=$995.13 daily_pnl=-$4.87. USDJPY 159.47 comp=+27 weak dist=53.1p WATCH (BOJ T-3d). GOLD 4729.23 comp=-6.5 none safehaven_4775 dist=45.77$ WATCH; sweep_4721 REMOVED (price>SL). OIL 94.23 comp=+27 weak sweep_9323 dist=0.99$ NEAR-ARM (need +40). BTC 77982 mod FVG-same-day-loss SKIP. 0 trades 0 LIMIT 0pos. attention_covered=9/9.",
+      "binary_event_name": "iran_ceasefire_indefinite_extension",
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-04-24T14:14:00Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "14:14 forex auto \u2014 1 evt USDCAD M15 sweep_up 1.6p comp=-14 none SKIP. BTC BUY@78054 UPL=-$1.5 SL=77750 age=20min NO ACTION. AUDUSD at retest 0.71379 (dist=2.5p) comp=+16.5 none WATCH. OIL sweep_9323 dist=1.01$ <prox 1.25$ comp=+27 weak WATCH. USDJPY 159.45 dist=55p BoJ zone 160.0 WATCH. FOMC Apr29 5d. 0 trades 0 LIMIT 1pos. attention_covered=9/9.",
@@ -395,14 +403,6 @@
       "ts_utc": "2026-04-24T11:56:29Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "11:56 forex auto \u2014 1 evt (news_flash Hormuz historical Fortune article 'Tanker War 1980s tactics'; no new escalation, NO regime change, consumed). OIL 94.156 sweep_9323 dist=0.92$ INSIDE prox (1.21$) comp=+30 weak NEAR-ARM (need +40 mod; gap=10pts). GOLD 4706 sweep_4721 dist=15.7$ INSIDE prox (30$) comp=-27 weak NEAR-ARM (need -40 mod; gap=13pts). USDJPY 159.445 dist=55.5p OUTSIDE 30p comp=22.5 none BOJ T-3d WATCH. BTC 78213 comp=55 moderate OUTSIDE FVG prox (dist=1252$) WATCH. GBPUSD 1.34944 comp=+29 weak 1.65p above sweep_134928 WATCH. 0 trades 0 pos. BOJ T-3d FOMC T-5d. attention_covered=9/9.",
-      "binary_event_name": "iran_ceasefire_indefinite_extension",
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-04-24T11:34:28Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "11:38 forex auto \u2014 1 evt (OIL level_cross oil_sweep_9323_buy_retest cross_down 93.166 comp=+30 weak SKIP; readiness gate not met (need +40), KEEP WATCH). OIL 93.127 sweep_9323 dist=0.11$ AT-LEVEL comp=weak WATCH. GOLD 4714 sweep_4721 dist=6.9$ readiness=none WATCH. USDJPY 159.38 comp=22.5 none dist=62p from 160.00 BOJ T-3d WATCH. Scalp EURUSD BUY open 1.168965 + GBPUSD BUY open 1.346775 (engine-managed). 0 swing trades 0 swing pos. BOJ T-3d FOMC T-5d. attention_covered=9/9.",
       "binary_event_name": "iran_ceasefire_indefinite_extension",
       "binary_event_active": 0,
       "binary_event_deadline": null
@@ -911,6 +911,19 @@
     }
   ],
   "counterfactuals_last_50": [
+    {
+      "alert_id": "audusd_sweep_71379_sell_retest",
+      "instrument": "AUDUSD",
+      "direction": "sell",
+      "trigger_price": 0.7138,
+      "fired_at": "2026-04-24T15:38:49.134100+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
     {
       "alert_id": "audusd_sweep_71379_sell_retest",
       "instrument": "AUDUSD",
