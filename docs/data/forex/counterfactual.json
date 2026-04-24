@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T15:43:59.885440+00:00",
+  "generated_at": "2026-04-24T15:51:02.081368+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -213,7 +213,7 @@
       "alert_id": "oil_sweep_9323_buy_retest",
       "instrument": "OIL_CRUDE",
       "direction": "buy",
-      "fires": 5,
+      "fires": 6,
       "by_horizon": {
         "1h": {
           "filled": 5,
@@ -254,10 +254,10 @@
           "hit_rate": 1.0
         },
         "24h": {
-          "filled": 2,
+          "filled": 3,
           "favorable": 2,
-          "avg_pips": 134.8,
-          "hit_rate": 1.0
+          "avg_pips": 79.7,
+          "hit_rate": 0.67
         }
       }
     },

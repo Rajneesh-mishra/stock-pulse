@@ -166,5 +166,42 @@
     "closed": 0,
     "skipped": 1,
     "note": "15:40 forex auto \u2014 1 evt AUDUSD level_cross audusd_sweep_71379_sell_retest comp=+21.5 none SKIP (need \u2264-40, |comp|<25 counter-trend threshold). REMOVE audusd_sweep_71379 (3 fires, never armed, 0.67\u00d7ATR minor wick, main thesis bullish). REMOVE gbpusd_sweep_134928 (3 fires audit, comp+11.5 never arming). USDJPY 159.54 comp=+27 weak dist=45.7p OUTSIDE 30p WATCH (BOJ T-3d). OIL 94.30 comp=+27 weak sweep_9323 dist=1.07$ NEAR-ARM (need +40). GOLD 4718.8 comp=-18 none safehaven_4775 dist=56.2$ WATCH. BTC 77785 comp=+47.5 mod FVG_76960 dist=825$ WATCH (same-day-loss block). USDCHF 0.78601 comp=-5 none sweep_h1 INSIDE prox WATCH. 0 trades 0 LIMIT 0pos. attention_covered=9/9."
+  },
+  {
+    "tick_ts_utc": "2026-04-24T15:50:00Z",
+    "events_processed": [
+      "evt_1777045503509_level_cross"
+    ],
+    "event_summary": "1 evt OIL level_cross oil_sweep_9323_buy_retest",
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "limits_placed": 0,
+    "limits_cancelled": 0,
+    "positions_eod": 0,
+    "daily_pnl": -4.87,
+    "balance": 995.13,
+    "decisions": {
+      "oil_sweep_9323_buy_retest": "SKIP \u2014 price at 92.406 below level 93.237 AND below SL 92.84; readiness=weak; 6th fire; thesis invalidated. REMOVE alert.",
+      "oil_crude_retest_90_buy": "WATCH \u2014 90.30 validated zone now 2.11$ below current price; readiness=weak; monitoring.",
+      "usdjpy_intervention_fade_zone": "WATCH \u2014 159.42 dist=58.3p from 160; readiness=weak; BOJ T-2d.",
+      "gold_safehaven_continuation_buy": "WATCH \u2014 4729 dist=45.9$ from 4775; readiness=none.",
+      "btcusd_day_fvg_buy": "WATCH \u2014 78118 outside FVG prox; same-day-loss-block active; readiness=mod.",
+      "usdchf_sweep_h1_sell_retest": "WATCH \u2014 0.78502 dist=24.8p inside prox but readiness=none."
+    },
+    "attention_matrix": {
+      "EURUSD": "swing=NONE scalp=ACTIVE readiness=none \u2014 comp=5 neutral, no active alert",
+      "GBPUSD": "swing=NONE scalp=ACTIVE readiness=none \u2014 comp=19 none, no active alert",
+      "AUDUSD": "swing=WATCH scalp=ACTIVE readiness=none \u2014 comp=21.5 none, 0.7085 pullback zone too far",
+      "USDJPY": "swing=WATCH scalp=OFF(pip-conv) readiness=weak \u2014 159.42 dist=58p from 160 fade zone; BOJ T-2d",
+      "USDCAD": "swing=NONE scalp=OFF(pip-conv) readiness=weak \u2014 comp=-29 weak-bear, no active level alert",
+      "USDCHF": "swing=WATCH scalp=OFF(pip-conv) readiness=none \u2014 0.7875 sweep zone 24.8p away; comp=-21.5 none",
+      "GOLD": "swing=WATCH scalp=N/A(5p) readiness=none \u2014 comp=-18 none, 45.9$ below 4775 trigger",
+      "OIL_CRUDE": "swing=WATCH scalp=N/A(4p) readiness=weak \u2014 oil_9323 REMOVED; 90.30 validated zone 2.11$ below; comp=+27 weak",
+      "BTCUSD": "swing=WATCH scalp=N/A(50p) readiness=moderate \u2014 78118 far above FVG 76960; same-day-loss block"
+    },
+    "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=KEEP USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
+    "watchlist_changes": [
+      "REMOVED oil_sweep_9323_buy_retest (price 92.406 below level AND SL 92.84; 6th fire; thesis invalidated)"
+    ]
   }
 ]
