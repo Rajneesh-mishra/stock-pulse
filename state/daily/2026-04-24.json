@@ -333,5 +333,18 @@
     "alerts_added": 0,
     "alerts_removed": 0,
     "summary": "13 evt 6 liq_sweep NOT-ACTIONABLE (wick 0.26-0.61\u00d7ATR) + 7 bar_close. USDJPY ARMED dist=18.5p. GOLD sweep_4721 WATCH dist=44.67$. BTC FVG tagged (low=76959.55) bounced +714$, no daemon event. 0 trades."
+  },
+  {
+    "tick_ts_utc": "2026-04-24T04:00:00Z",
+    "events_processed": 0,
+    "events": [],
+    "trades": [],
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "web_search": "SKIPPED (0 pos + regime stable 4h25m)",
+    "alerts_action": "6 KEEP \u2014 proximity notes updated",
+    "scalp_status": "3 FX ACTIVE halt={}",
+    "attention_covered": "9/9",
+    "summary": "0 evt heartbeat. USDJPY 159.806 +45 mod dist=19.45p INSIDE 30p swing=ARMED (BOJ T-3d). GOLD 4675.53 -40 mod sweep_4721 dist=46.15$ WATCH; safehaven_4775 dist=99.47$ WATCH. OIL +42.5 mod sweep_9323 dist=277p WATCH. BTC +47.5 mod day_fvg dist=772$ WATCH. 6 alerts KEEP. BOJ T-3d FOMC T-5d."
   }
 ]

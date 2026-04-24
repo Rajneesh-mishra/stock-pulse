@@ -135,10 +135,17 @@ class PriceBook:
         self._cur_m1 = None   # {ts, o, h, l, c}
         self._cur_m5 = None
         self.last_mid = None
+        self.last_bid = None
+        self.last_ofr = None
+        self.last_spread_pips = 1.0   # initialize optimistically
 
     def ingest(self, bid, ofr, ts_s):
         mid = (float(bid) + float(ofr)) / 2
         self.last_mid = mid
+        self.last_bid = float(bid)
+        self.last_ofr = float(ofr)
+        pip = PIP_SIZE.get(self.epic, 0.0001)
+        self.last_spread_pips = max(0.1, (self.last_ofr - self.last_bid) / pip)
         self._bucket(mid, ts_s, M1_BUCKET, "_cur_m1", self.m1)
         self._bucket(mid, ts_s, M5_BUCKET, "_cur_m5", self.m5)
 
@@ -198,6 +205,45 @@ def in_session(session_names):
 
 # ── Setups — return (direction, entry, sl, tp) or None ──────────────────
 
+def enforce_sl_floor(entry, raw_sl, direction, book, atr_m5):
+    """Widen an SL if it's too tight to survive spread/noise.
+
+    Original issue: setups placed SL 0.5 pip beyond the structural wick.
+    With entry = mid and wick right at bid or offer, SL distance came out
+    around 0.4-0.8 pips on AUDUSD — SMALLER than the 0.6p spread, so every
+    trade was stopped out the instant the offer ticked.
+
+    Enforced floor: max(structural, 2 × spread, 0.4 × ATR_M5). Trades that
+    can't produce an SL distance ≥ 1.0p should be rejected entirely (see
+    caller).
+    """
+    pip = PIP_SIZE[book.epic]
+    # Spread is carried on the book's last tick observation. We don't have
+    # bid/ofr separate here; scalp engine calls with access to both via
+    # the top-level code in step(). For here, treat last_spread as a rough
+    # proxy — caller already has access via the live tick.
+    spread_p = getattr(book, "last_spread_pips", None) or 1.0
+    atr_p = (atr_m5 or 0) / pip
+    raw_sl_p = abs(entry - raw_sl) / pip
+
+    floor_p = max(raw_sl_p, 2.0 * spread_p, 0.4 * atr_p)
+    if direction == "BUY":
+        return entry - floor_p * pip
+    else:
+        return entry + floor_p * pip
+
+
+def _m5_atr(book, period=14):
+    """Lightweight ATR on M5 candles from the book."""
+    cs = book.m5_closed()
+    if len(cs) < period + 1: return 0
+    trs = []
+    for i in range(-period, 0):
+        h, l, cp = cs[i][2], cs[i][3], cs[i-1][4]
+        trs.append(max(h - l, abs(h - cp), abs(l - cp)))
+    return sum(trs) / period
+
+
 def setup_range_extreme(book, pair_cfg):
     """Price touched 20-M5-bar high or low, last closed M5 retraced ≥60% of the wick."""
     cs = book.m5_closed()
@@ -211,21 +257,35 @@ def setup_range_extreme(book, pair_cfg):
     wick_up = h - max(o, c)
     wick_dn = min(o, c) - l
     pip = PIP_SIZE[book.epic]
+    atr_m5 = _m5_atr(book)
+    min_rr = pair_cfg.get("min_rr", 1.5)
     # Bullish rejection at range low
     if l <= lo + 0.2 * pip and wick_dn > 0 and c > (l + 0.6 * (h - l)):
         entry = book.last_mid
-        sl = l - 0.5 * pip
+        raw_sl = l - 0.5 * pip
+        sl = enforce_sl_floor(entry, raw_sl, "BUY", book, atr_m5)
+        if not _sl_acceptable(entry, sl, book): return None
         tp = (hi + lo) / 2   # target = range mid
-        if (tp - entry) / (entry - sl) >= pair_cfg.get("min_rr", 1.5):
+        if (tp - entry) / (entry - sl) >= min_rr:
             return ("BUY", entry, sl, tp)
     # Bearish rejection at range high
     if h >= hi - 0.2 * pip and wick_up > 0 and c < (l + 0.4 * (h - l)):
         entry = book.last_mid
-        sl = h + 0.5 * pip
+        raw_sl = h + 0.5 * pip
+        sl = enforce_sl_floor(entry, raw_sl, "SELL", book, atr_m5)
+        if not _sl_acceptable(entry, sl, book): return None
         tp = (hi + lo) / 2
-        if (entry - tp) / (sl - entry) >= pair_cfg.get("min_rr", 1.5):
+        if (entry - tp) / (sl - entry) >= min_rr:
             return ("SELL", entry, sl, tp)
     return None
+
+
+def _sl_acceptable(entry, sl, book):
+    """Reject a setup outright if the final SL distance is less than 2× spread.
+    Below that threshold the trade is spread-eaten before it has a chance."""
+    pip = PIP_SIZE[book.epic]
+    sl_dist_p = abs(entry - sl) / pip
+    return sl_dist_p >= 2.0 * book.last_spread_pips
 
 
 def setup_session_open_break(book, pair_cfg):
@@ -278,15 +338,21 @@ def setup_session_open_break(book, pair_cfg):
     if last[0] < first_window_end:
         return None
 
+    atr_m5 = _m5_atr(book)
+
     # Broke above, closing near the broken edge (retest)
     if h > rng_hi + 0.3 * pip and abs(c - rng_hi) < 0.5 * pip:
         entry = book.last_mid
-        sl = (rng_hi + rng_lo) / 2
+        raw_sl = (rng_hi + rng_lo) / 2
+        sl = enforce_sl_floor(entry, raw_sl, "BUY", book, atr_m5)
+        if not _sl_acceptable(entry, sl, book): return None
         tp = entry + 2 * (entry - sl)
         return ("BUY", entry, sl, tp)
     if l < rng_lo - 0.3 * pip and abs(c - rng_lo) < 0.5 * pip:
         entry = book.last_mid
-        sl = (rng_hi + rng_lo) / 2
+        raw_sl = (rng_hi + rng_lo) / 2
+        sl = enforce_sl_floor(entry, raw_sl, "SELL", book, atr_m5)
+        if not _sl_acceptable(entry, sl, book): return None
         tp = entry - 2 * (sl - entry)
         return ("SELL", entry, sl, tp)
     return None
@@ -311,13 +377,17 @@ def setup_ema_pullback(book, pair_cfg):
     if e21 > e50 and bias in ("neutral", "bull"):
         if l <= e21 + 0.5 * a and c > e21 + 0.1 * a:
             entry = book.last_mid
-            sl = e21 - 0.5 * a
+            raw_sl = e21 - 0.5 * a
+            sl = enforce_sl_floor(entry, raw_sl, "BUY", book, a)
+            if not _sl_acceptable(entry, sl, book): return None
             tp = entry + 2 * (entry - sl)
             return ("BUY", entry, sl, tp)
     if e21 < e50 and bias in ("neutral", "bear"):
         if h >= e21 - 0.5 * a and c < e21 - 0.1 * a:
             entry = book.last_mid
-            sl = e21 + 0.5 * a
+            raw_sl = e21 + 0.5 * a
+            sl = enforce_sl_floor(entry, raw_sl, "SELL", book, a)
+            if not _sl_acceptable(entry, sl, book): return None
             tp = entry - 2 * (sl - entry)
             return ("SELL", entry, sl, tp)
     return None
@@ -510,6 +580,8 @@ class Engine:
                 self.open_positions[epic] = {
                     "direction": direction, "entry": entry, "sl": sl, "tp": tp,
                     "size": size, "opened_at": now_ts, "shadow": shadow,
+                    "initial_sl": sl,      # frozen for 1R breakeven calc
+                    "moved_to_be": False,
                 }
                 append_ledger({
                     "kind": "opened", "epic": epic, "setup": pc.get("mode"),
@@ -529,6 +601,8 @@ class Engine:
         # MAX HOLD: scalps are minutes, not hours. The ledger showed a
         # 160-minute "scalp" on EURUSD that ground down to SL — a proper
         # scalp should bail long before that if neither SL nor TP tagged.
+        # BREAKEVEN MOVE: when trade reaches +1R favorable, move SL to entry.
+        # This saves winners that reverse, without chopping losers early.
         max_hold_min = g.get("max_hold_minutes", 45)
         max_hold_sec = max_hold_min * 60
 
@@ -539,6 +613,32 @@ class Engine:
             mid = self.books[epic].last_mid
             if mid is None: continue
             dir = pos["direction"]
+
+            # Breakeven move — when +1R favorable is reached, ratchet SL up to
+            # entry (+ half-spread buffer so a tick back to entry isn't a loss).
+            pip = PIP_SIZE[epic]
+            spread_buffer = 0.3 * pip * self.books[epic].last_spread_pips
+            initial_risk = abs(pos["entry"] - pos.get("initial_sl", pos["sl"]))
+            if not pos.get("moved_to_be") and initial_risk > 0:
+                favorable = (mid - pos["entry"]) if dir == "BUY" else (pos["entry"] - mid)
+                if favorable >= initial_risk:
+                    # Ratchet SL to breakeven + small buffer
+                    if dir == "BUY":
+                        new_sl = pos["entry"] + spread_buffer
+                        if new_sl > pos["sl"]:
+                            pos["sl"] = new_sl
+                    else:
+                        new_sl = pos["entry"] - spread_buffer
+                        if new_sl < pos["sl"]:
+                            pos["sl"] = new_sl
+                    pos["moved_to_be"] = True
+                    append_ledger({
+                        "kind": "sl_moved_to_be", "epic": epic,
+                        "new_sl": pos["sl"], "entry": pos["entry"],
+                        "favorable_at_move": favorable / pip,
+                        "shadow": True,
+                    })
+
             pnl = 0
             closed = None
             if dir == "BUY":
