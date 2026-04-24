@@ -784,5 +784,74 @@
     "closed": 0,
     "skipped": 0,
     "summary": "10:30 forex auto \u2014 0 evt heartbeat. USDJPY 159.726 +40.5 mod 4/4 bull dist=27.4p INSIDE 30p swing=ARMED (counter-fade SELL 160.00, BOJ T-3d; api.py market-only entry waits price\u2265159.97). GOLD 4681.69 -36.0 weak sweep_4695 dist=13.7$ INSIDE prox readiness=weak WATCH; sweep_4721 dist=40.0$ OUTSIDE. OIL 96.817 +43.0 mod sweep_9323 dist=3.58 extending WATCH. EURUSD -8 none GBPUSD +18.5 none AUDUSD +8 none USDCAD -21.5 none USDCHF +5 none. BTC 77692 +27 weak fvg_76960 dist=732 WATCH. Scalp engine GBPUSD+EURUSD ghost vs broker=0 (known carry). 8 alerts KEEP. 0 trades 0pos. BOJ T-3d FOMC T-5d. news_search SKIP(last_scan 10min ago). attention_covered=9/9."
+  },
+  {
+    "tick_ts_utc": "2026-04-24T11:10:00Z",
+    "events_processed": 9,
+    "events_actionable": 1,
+    "event_summary": "AUDUSD M15 up-sweep 0.71379 wick=3.2p (0.67xATR) \u2192 SKIP (comp=+13.5 none, need bearish 40+ for counter-fade); ADD audusd_sweep_71379_sell_retest WATCH alert",
+    "swing_trades_opened": 0,
+    "swing_trades_closed": 0,
+    "scalp_engine_open": [
+      "GBPUSD BUY 1.346775",
+      "EURUSD BUY 1.168965"
+    ],
+    "open_positions": 0,
+    "prices": {
+      "USDJPY": 159.52,
+      "AUDUSD": 0.71372,
+      "GOLD": 4702.76,
+      "OIL_CRUDE": 94.744
+    },
+    "confluence": {
+      "USDJPY": {
+        "composite": 30.0,
+        "readiness": "weak",
+        "call": "bullish",
+        "swing": "WATCH",
+        "note": "dist=47.7p OUTSIDE 30p, was ARMED now WATCH"
+      },
+      "AUDUSD": {
+        "composite": 13.5,
+        "readiness": "none",
+        "call": "bullish",
+        "swing": "WATCH"
+      },
+      "GOLD": {
+        "composite": -37.5,
+        "readiness": "weak",
+        "call": "bearish",
+        "swing": "WATCH",
+        "note": "4721 dist=18.9$ borderline; 4695 price above 7.4$"
+      },
+      "OIL_CRUDE": {
+        "composite": 35.5,
+        "readiness": "weak",
+        "call": "bullish",
+        "swing": "WATCH",
+        "note": "96.97->94.74 pullback; 9323 dist=1.5$ near-watch"
+      }
+    },
+    "alerts_audit": {
+      "KEEP": [
+        "usdjpy_intervention_fade_zone",
+        "gold_safehaven_continuation_buy",
+        "oil_crude_retest_90_buy",
+        "oil_sweep_9323_buy_retest",
+        "gold_sweep_4721_sell_retest",
+        "gold_sweep_4695_sell_retest",
+        "btcusd_day_fvg_buy",
+        "usdchf_sweep_h1_sell_retest"
+      ],
+      "ADD": [
+        "audusd_sweep_71379_sell_retest"
+      ],
+      "REMOVE": [],
+      "MODIFY": []
+    },
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "none (iran_ceasefire inactive, no deadline)",
+    "scalp_status": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=ACTIVE USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
+    "attention_covered": "9/9"
   }
 ]

@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-24T10:20:00Z",
+  "last_updated_by_claude": "2026-04-24T11:10:00Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -35,8 +35,8 @@
         "price": 159.759
       },
       "last_updated": "2026-04-23T19:34:33+00:00",
-      "proximity": "24.1p BELOW 160.00 \u2192 INSIDE 30p \u2192 swing=ARMED. comp=+43.0 mod 4/4 bull AGAINST sell (counter-trend fade). BOJ T-3d. Enter SELL on level_cross at 160.00, half size (0.5% $5), SL=160.50 TP=158.50.",
-      "updated_utc": "2026-04-24T10:20:00Z",
+      "proximity": "47.7p BELOW 160.00 \u2192 OUTSIDE 30p \u2192 swing=WATCH. comp=+30.0 weak (need +40 bull for counter-fade ARM; was +43 mod last tick, pulled back). BOJ T-3d.",
+      "updated_utc": "2026-04-24T11:10:00Z",
       "entry_criterion": "price tags 160.00; enter on M15 bar that closes BACK BELOW 160 with a rejection wick of 8+ pips from the high. No headline required.",
       "regime_context": "160 is the MoF/BoJ verbal-intervention red line (Katayama G7 'bold action'). FRESH: Katayama Apr 23 Bloomberg \u2014 'constant close contact with US on FX'. BOJ Apr 27-28 hold at 0.75% expected but hawkish June signal strengthens JPY short-squeeze risk. Escalation of shoot-to-kill Iran orders supports USD safe-haven but BoJ intervention risk outweighs at 160 red line.",
       "sl": 160.5,
@@ -57,8 +57,8 @@
         "price": 4682.59
       },
       "last_updated": "2026-04-23T19:34:33+00:00",
-      "proximity": "92.4$ BELOW 4775 buy level \u2192 swing=WATCH dormant. comp=-36.0 weak OPPOSES buy. H4ATR=37.0$; 3\u00d7=111.1$ (dist=92.4$ NOT auto-remove). Gold declining. Alert self-limiting. KEEP.",
-      "updated_utc": "2026-04-24T10:20:00Z",
+      "proximity": "72.2$ BELOW 4775 buy level \u2192 swing=WATCH dormant. comp=-37.5 weak OPPOSES buy. H4ATR=37.0$; 3\u00d7=111.1$ (dist=72.2$ NOT auto-remove). Gold rising 4682\u21924703. KEEP.",
+      "updated_utc": "2026-04-24T11:10:00Z",
       "entry_criterion": "price breaks above 4775 with an M15 close above + bullish FVG on the breakout bar. Structural continuation, entry on the break.",
       "regime_context": "Safe-haven bid thesis now UPGRADED: Trump ordered US Navy to attack Iranian mine-laying boats (Apr 23), 3rd tanker seized, Brent $105+. Hormuz remains blocked. Thesis invalidates only if BTC >+5% day (pure risk-on) while gold rolls AND Iran-US de-escalates. Currently comp bears suppress, but escalation ladder could flip that quickly.",
       "sl": 4730,
@@ -79,8 +79,8 @@
         "price": 96.984
       },
       "last_updated": "2026-04-24T06:10:00Z",
-      "proximity": "6.68$ ABOVE 90.30 \u2192 swing=WATCH (oil extending). comp=+43.0 mod ALIGNED. VALIDATED (3f/67%4h). H4ATR=2.197$; 3\u00d7=6.59$; dist=6.68$ borderline rule-1 but rule-2 overrides (KEEP). Need ~5.6$ pullback to arm.",
-      "updated_utc": "2026-04-24T10:20:00Z",
+      "proximity": "4.44$ ABOVE 90.30 \u2192 swing=WATCH. comp=+35.5 weak (was +43 mod; OIL 96.97\u219294.74 pullback). VALIDATED (3f/67%4h). H4ATR=2.197$; prox=1.10$; 3\u00d7=6.59$ (dist 4.44$ NOT auto-remove). Need 3.4$ more pullback to arm.",
+      "updated_utc": "2026-04-24T11:10:00Z",
       "entry_criterion": "LIMIT at 90.30 when readiness\u2265moderate and price within 1.13$ of level. VALIDATED \u2014 no M15 confirmation required (3 fires, 67% 4h hit rate). Cancel if price closes below SL 89.5.",
       "regime_context": "WTI cleanly broke above 90 on Hormuz blockade re-rating. 90 flipped from resistance to support on the break. Retest is structural, not news-gated.",
       "sl": 89.5,
@@ -101,8 +101,8 @@
         "price": 96.984
       },
       "last_updated": "2026-04-24T06:10:00Z",
-      "proximity": "3.747$ ABOVE 93.237 \u2192 swing=WATCH (oil extending). comp=+43.0 mod ALIGNED. VALIDATED (4f/100%4h). H4ATR=2.197$; prox=1.10$; 3.747$ outside. Need ~2.7$ pullback to arm.",
-      "updated_utc": "2026-04-24T10:20:00Z",
+      "proximity": "1.507$ ABOVE 93.237 \u2192 swing=WATCH. OUTSIDE 1.10$ prox by 0.4$. comp=+35.5 weak (need +40 mod). VALIDATED (4f/100%4h). H4ATR=2.197$; prox=1.10$. OIL 96.97\u219294.74 pullback; dist narrowing rapidly \u2014 NEAR-WATCH.",
+      "updated_utc": "2026-04-24T11:10:00Z",
       "entry_criterion": "LIMIT at 93.237 when readiness\u2265moderate and price within 1.13$ of level. VALIDATED \u2014 no M15 confirmation required (4 fires, 100% 4h hit rate). Cancel if price closes below SL 92.84.",
       "regime_context": "Down-sweep zone 2026-04-23 07:45 UTC. Swept liquidity at 93.237. 4 fires, 100% 4h hit rate \u2014 validated. OIL bullish mod +42.5. Apply 4h hard time-stop on entered trade.",
       "sl": 92.84,
@@ -124,7 +124,7 @@
       },
       "last_updated": "2026-04-24T06:10:00Z",
       "updated_utc": "2026-04-24T10:20:00Z",
-      "proximity": "39.09$ BELOW 4721.68 \u2192 swing=WATCH. comp=-36.0 weak 3/4 bear (need -40 mod for ARMED). VALIDATED (5f/100%4h). H4ATR=37.0$; prox=18.5$; dist=39.09$ OUTSIDE. Gold declining.",
+      "proximity": "18.9$ BELOW 4721.68 \u2192 swing=WATCH. Borderline prox 18.5$. comp=-37.5 weak (need -40 mod to ARM). VALIDATED (5f/100%4h). H4ATR=37.0$; prox=18.5$. Gold rising 4682\u21924703. Approaching ARMED.",
       "entry_criterion": "LIMIT at 4721.68 when readiness\u2265moderate and price within 30$ of level. VALIDATED \u2014 no M15 confirmation required (5 fires, 100% 4h hit rate). Cancel if price closes above SL 4725.01.",
       "regime_context": "Up-sweep zone 2026-04-23 08:00 UTC. Swept liquidity at 4721.68. 5 fires, 100% 4h hit rate \u2014 validated. GOLD bearish composite (-37.5 weak; need -40 moderate to arm). Escalation backdrop (Iran/Hormuz) provides upward pressure; technical bearish composite must reassert for LIMIT to fire. Apply 4h hard time-stop on entered trade.",
       "sl": 4725.01,
@@ -195,7 +195,29 @@
       "sl": 4697.65,
       "tp": 4684.0,
       "rr_target": "5.1",
-      "proximity": "12.81$ BELOW 4695.395 \u2192 INSIDE prox 18.5$ but readiness=weak \u2192 swing=WATCH. comp=-36.0 weak 3/4 bear (need -40 mod to ARM). Not validated (1 fire, no 4h data yet)."
+      "proximity": "7.4$ ABOVE 4695.395 \u2192 price is ABOVE sell level. INSIDE prox 18.5$. comp=-37.5 weak (need -40 mod to ARM). 1h counterfactual 100%/140.6p promising. Not validated (1 fire, 4h not filled). WATCH \u2014 arm on retest if comp reaches -40."
+    },
+    {
+      "id": "audusd_sweep_71379_sell_retest",
+      "instrument": "AUDUSD",
+      "level": 0.71379,
+      "emit_on": "cross_up",
+      "cooldown_sec": 1800,
+      "direction": "sell",
+      "note": "ENTRY: price retests 0.71379 zone (M15 up-sweep 2026-04-24T11:00Z); LIMIT SELL at 0.71379 when readiness\u2265moderate-bear (composite \u2264-40); M15 bar closes back below 0.71379 with rejection wick \u22653p from high. Day bear FVG at 0.71393-0.71464 overhead provides resistance context.\n\nCONTEXT: M15 up-sweep wick 3.2p (0.67\u00d7ATR) at 0.71379, closed back at 0.71349. Unmitigated Day bear FVG at 0.71393-0.71464 sits directly above sweep level \u2014 structural supply zone. H1 bearish (price<ema21<ema50). Main AUDUSD watchlist is BULLISH at 0.7085; this sell alert is counter-direction and requires composite \u2264-40 to arm.\n\nSL: 0.71415  TP: 0.71280  R:R target: 2.5\n\nadded 2026-04-24T11:10Z \u2014 liquidity_sweep event; wick=3.2p=0.67\u00d7ATR; WATCH readiness=none (comp=+13.5).",
+      "current_price_ref": 0.71372,
+      "price_ref": {
+        "ts": "2026-04-24T11:10:00Z",
+        "price": 0.71372
+      },
+      "last_updated": "2026-04-24T11:10:00Z",
+      "updated_utc": "2026-04-24T11:10:00Z",
+      "entry_criterion": "price retests 0.71379; LIMIT SELL at 0.71379 when readiness\u2265moderate-bear (composite \u2264-40); M15 close below with rejection wick \u22653p. Cancel if price closes above SL 0.71415.",
+      "regime_context": "M15 up-sweep 2026-04-24T11:00Z at 0.71379. Day bear FVG 0.71393-0.71464 overhead (unmitigated, 1 bar ago). H1 bearish. Main regime AUDUSD BUY at 0.7085. This is counter-direction \u2014 requires comp \u2264-40 to arm.",
+      "sl": 0.71415,
+      "tp": 0.7128,
+      "rr_target": "2.5",
+      "proximity": "0.7p ABOVE 0.71379 sweep level \u2192 price at level. comp=+13.5 none (need \u2264-40 for counter-trend ARM). H4ATR=0.00216; 3\u00d7=6.48p (NOT auto-remove). WATCH only \u2014 low wick, counter-direction to main thesis. 0 fires, no counterfactual."
     }
   ],
   "structure_watch": [

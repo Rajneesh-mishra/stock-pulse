@@ -7,7 +7,7 @@
       "instrument": "AUDUSD",
       "direction": "BUY",
       "trigger": "Pullback to 0.7080-0.7090 zone OR clean break >0.7190 with volume",
-      "current_price": 0.71316,
+      "current_price": 0.71372,
       "day_range": "0.71142 - 0.71652",
       "entry_plan": "PRIMARY: Long at ~0.7085 on pullback with rejection confirmation. SECONDARY: If breaks above Fri high 0.7186 with volume + 15M BOS, enter on retest.",
       "sl": 0.703,
@@ -23,7 +23,7 @@
       "instrument": "USDJPY",
       "direction": "SELL",
       "trigger": "Rally to 160.00-160.20 (intervention red line)",
-      "current_price": 159.7285,
+      "current_price": 159.52,
       "day_range": "158.72 - 159.20",
       "entry_plan": "Short at ~160.00-160.10. Japan intervened at 159.23 in Jan 2026 \u2014 160 is the red line. MoF Katayama escalated verbal intervention at G7 this weekend, said 'high sense of urgency' on FX.",
       "sl": 160.5,
@@ -670,7 +670,7 @@
     ],
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). | 2026-04-23 20:05 UTC tick: BOJ Apr 27-28 T-3d, FOMC T-4d \u2014 still calendar, no blackout. | 2026-04-23 20:30 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-3d \u2014 still calendar, no blackout. | 2026-04-23 21:10 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. Half-size caution on elevated-event week. | 2026-04-24 03:45 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. | 2026-04-23T23:25:00Z ESCALATION: Trump 'shoot to kill' order on Iranian mine boats. 3rd tanker seized. Regime shifted to ACTIVE_ESCALATION. BOJ T-3d FOMC T-5d no blackout. | 2026-04-24T00:52Z tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout."
   },
-  "regime_note": "10:30 forex auto \u2014 0 evt heartbeat. USDJPY 159.726 +40.5 mod 4/4 bull dist=27.4p INSIDE 30p \u2192 ARMED BOJ T-3d (counter-fade SELL at 160.00; api.py market-only, entry fires when price \u2265159.97). GOLD 4681.69 -36.0 weak sweep_4695 dist=13.7$ INSIDE prox but readiness=weak(need -40) WATCH; sweep_4721 dist=40.0$ OUTSIDE. OIL 96.817 +43.0 mod sweep_9323 dist=3.58 OUTSIDE extending. Scalp engine GBPUSD+EURUSD ghost vs broker=0pos (carry). 8 alerts KEEP. 0 trades 0pos. BOJ T-3d FOMC T-5d. attention_covered=9/9.",
-  "tick_ts_utc": "2026-04-24T10:30:00Z",
-  "state_ts_utc": "2026-04-24T10:30:00Z"
+  "regime_note": "11:10 forex auto \u2014 1 evt (AUDUSD M15 up-sweep 0.71379 wick=3.2p; SKIP comp=+13.5 none; ADD WATCH alert audusd_sweep_71379_sell_retest). USDJPY 159.52 +30 weak dist=47.7p OUTSIDE 30p \u2192 WATCH (was ARMED). GOLD 4702.76 -37.5 weak; sweep_4721 dist=18.9$ borderline ARMED (need -40 mod); sweep_4695 price above 7.4$. OIL 94.74 +35.5 weak 96.97\u219294.74 pullback; sweep_9323 dist=1.507$ (just outside 1.10$ prox). Scalp engine: GBPUSD BUY 1.346775 + EURUSD BUY 1.168965 live. 0 swing trades 0 swing pos. BOJ T-3d FOMC T-5d. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-24T11:10:00Z",
+  "state_ts_utc": "2026-04-24T11:10:00Z"
 }
