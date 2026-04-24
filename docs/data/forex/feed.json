@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T14:11:57.383746Z",
+  "generated_at": "2026-04-24T14:19:46.592942Z",
   "ticks": [
     {
       "ts_utc": "2026-04-22T22:18:17Z",
@@ -370,6 +370,22 @@
         "BTCUSD BUY 0.016 @ 78053.95 SL=77750 TP=79500 UPL=-2.89"
       ],
       "note": "2 evt: GOLD level_cross gold_sweep_4721 (comp=-14 none SKIP); AUDUSD level_cross audusd_sweep_71379 (comp=+9 none SKIP). BTC position 16min old, SL buffer=123pts, no action. 9 alerts KEEP. attention_covered=9/9."
+    },
+    {
+      "ts_utc": "2026-04-24T14:14:00Z",
+      "events_in": 1,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 1,
+      "skip_reasons": [
+        "USDCAD M15 sweep_up 1.6p comp=-14 none (below |25| counter-trend threshold)"
+      ],
+      "positions": 1,
+      "broker_balance": 998.34,
+      "daily_pnl": -1.66,
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "binary": "none",
+      "note": "1 evt: USDCAD M15 sweep_up 1.6p SKIP. BTC BUY@78054 UPL=-$1.5 NO ACTION. AUDUSD at retest 2.5p. OIL dist=1.01$ near-prox weak. FOMC Apr29 5d out."
     }
   ]
 }
