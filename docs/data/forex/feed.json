@@ -1,15 +1,6 @@
 {
-  "generated_at": "2026-04-24T11:29:27.277044Z",
+  "generated_at": "2026-04-24T11:34:47.930506Z",
   "ticks": [
-    {
-      "ts": "2026-04-23T19:14:00Z",
-      "events": 2,
-      "opened": 0,
-      "closed": 0,
-      "skipped_setups": 0,
-      "pnl": 0,
-      "note": "satire news_flash + USDJPY audit both non-thesis-altering; swing=WATCH"
-    },
     {
       "ts_utc": "2026-04-23T20:20:00Z",
       "events_in": 1,
@@ -993,6 +984,40 @@
       "skipped": 1,
       "pnl": 0,
       "note": "11:28 forex auto \u2014 1 evt (GBPUSD level_cross gbpusd_sweep_134928_sell_retest at 1.349555 cross_up; comp=+21.5 none bullish OPPOSES sell; readiness=none (need \u2264-40); SKIP trade KEEP WATCH). USDJPY 159.408 +30.0 weak (DOWNGRADE from +43 mod) dist=59.2p OUTSIDE 30p \u2192 WATCH (BOJ T-3d). GOLD 4706.49 -32.5 weak; sweep_4721 dist=15.2$ INSIDE prox 30$ NEAR-ARM (need -40); safehaven_4775 dist=68.5$ dormant. OIL 93.999 +35.5 weak; sweep_9323 dist=0.76$ INSIDE prox 1.17$ NEAR-ARM (need +40; gap=4.5pts); pullback=false-alarm (Tehran military drill). BTCUSD 78255 +34.5 weak fvg_76960 dist=1295$ WATCH. EURUSD -8 none GBPUSD +21.5 none AUDUSD +18.5 none USDCAD -21.5 none USDCHF -10.5 none \u2014 all swing=NONE/WATCH. 9 alerts proximity-refreshed (all KEEP). 9 SW KEEP. Scalp halt={}. 0 trades 0pos. BOJ T-3d FOMC T-5d. attention_covered=9/9."
+    },
+    {
+      "tick_ts_utc": "2026-04-24T11:34:28Z",
+      "events_processed": 1,
+      "events": [
+        {
+          "id": "evt_1777030198933_level_cross",
+          "type": "level_cross",
+          "instrument": "OIL_CRUDE",
+          "alert_id": "oil_sweep_9323_buy_retest",
+          "cross_direction": "cross_down",
+          "price": 93.166
+        }
+      ],
+      "decisions": {
+        "OIL_CRUDE": "SKIP \u2014 oil_sweep_9323_buy_retest level_cross cross_down 93.166; readiness=weak (comp=30.0, need 40 for moderate). Validated alert but readiness gate not met. KEEP WATCH."
+      },
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "scalp_engine": {
+        "EURUSD": "BUY open @ 1.168965 (engine-managed)",
+        "GBPUSD": "BUY open @ 1.346775 (engine-managed)"
+      },
+      "prices": {
+        "OIL_CRUDE": 93.127,
+        "GOLD": 4714.74,
+        "USDJPY": 159.381,
+        "GBPUSD": 1.349955,
+        "AUDUSD": 0.71468,
+        "EURUSD": 1.171505,
+        "BTCUSD": 78325
+      },
+      "binary_event": "none (iran_ceasefire active=false)",
+      "summary": "1 evt OIL level_cross oil_sweep_9323 cross_down comp=+30 weak SKIP. 0 trades 0pos. BOJ T-3d FOMC T-5d. attention_covered=9/9."
     }
   ]
 }

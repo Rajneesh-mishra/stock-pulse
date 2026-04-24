@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-24T11:29:22.792310+00:00",
+  "generated_at": "2026-04-24T11:34:27.426403+00:00",
   "counts": {
     "trades": 14,
-    "events": 3518,
+    "events": 3519,
     "ticks": 59,
     "regime_snapshots": 12,
     "broker_positions": 0,
-    "counterfactuals": 38
+    "counterfactuals": 39
   },
   "trades_last_50": [
     {
@@ -890,6 +890,19 @@
     }
   ],
   "counterfactuals_last_50": [
+    {
+      "alert_id": "oil_sweep_9323_buy_retest",
+      "instrument": "OIL_CRUDE",
+      "direction": "buy",
+      "trigger_price": 93.166,
+      "fired_at": "2026-04-24T11:29:58.933561+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
     {
       "alert_id": "gbpusd_sweep_134928_sell_retest",
       "instrument": "GBPUSD",
