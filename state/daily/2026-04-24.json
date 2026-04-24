@@ -203,5 +203,23 @@
     "queries_audit": "1 TUNE (us_iran_military: added shoot-to-kill keywords); 7 KEEP",
     "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=KEEP(bias=sell aligns M15 ChoCh) halt={}",
     "boj_fomc": "BOJ T-3d (Apr 27-28) | FOMC T-5d (Apr 29)"
+  },
+  {
+    "tick_ts": "2026-04-24T06:00:00Z",
+    "events": 0,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL",
+    "binary_event": "none",
+    "positions": 0,
+    "balance": 1000.0,
+    "pnl_today": 0.0,
+    "alerts_kept": 6,
+    "alerts_modified": 0,
+    "alerts_removed": 0,
+    "news_queries_tuned": 4,
+    "scalp_halted": {},
+    "attention_covered": "9/9",
+    "summary": "0 evt heartbeat. USDJPY 159.705 swing=ARMED (29.5p from 160 fade zone). GOLD 4705 swing=WATCH (16.6$ from 4721, readiness=weak). OIL +43 mod both retest alerts dormant. BTC +55 mod day_fvg_buy WATCH. 4 news queries date-rolled. BOJ T-3d FOMC T-5d."
   }
 ]
