@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T13:59:26.917750+00:00",
+  "generated_at": "2026-04-24T14:11:29.164757+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -239,7 +239,7 @@
       "alert_id": "gold_sweep_4721_sell_retest",
       "instrument": "GOLD",
       "direction": "sell",
-      "fires": 5,
+      "fires": 6,
       "by_horizon": {
         "1h": {
           "filled": 5,
@@ -254,9 +254,9 @@
           "hit_rate": 1.0
         },
         "24h": {
-          "filled": 1,
-          "favorable": 1,
-          "avg_pips": 258.5,
+          "filled": 2,
+          "favorable": 2,
+          "avg_pips": 134.8,
           "hit_rate": 1.0
         }
       }
@@ -369,7 +369,7 @@
       "alert_id": "audusd_sweep_71379_sell_retest",
       "instrument": "AUDUSD",
       "direction": "sell",
-      "fires": 1,
+      "fires": 2,
       "by_horizon": {
         "1h": {
           "filled": 1,

@@ -123,5 +123,16 @@
     },
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
     "binary_event": "active=false, no blackout"
+  },
+  {
+    "ts_utc": "2026-04-24T14:10:00Z",
+    "events_in": 2,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 2,
+    "positions": [
+      "BTCUSD BUY 0.016 @ 78053.95 SL=77750 TP=79500 UPL=-2.89"
+    ],
+    "note": "2 evt: GOLD level_cross gold_sweep_4721 (comp=-14 none SKIP); AUDUSD level_cross audusd_sweep_71379 (comp=+9 none SKIP). BTC position 16min old, SL buffer=123pts, no action. 9 alerts KEEP. attention_covered=9/9."
   }
 ]

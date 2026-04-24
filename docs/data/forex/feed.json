@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-24T13:59:43.537681Z",
+  "generated_at": "2026-04-24T14:11:57.383746Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-22T22:02:00Z",
-      "events_in": 11,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 11,
-      "note": "22:01 UTC tick \u2014 11 events: 1 news_flash boj_intervention STALE Jan 21 2026 Business Times 'Katayama calls for market calm' (3-month-old archive matched 'Katayama' kept-token), 1 alert_audit_request USDJPY usdjpy_intervention_fade_zone same source NO actionable signal, 9 bar_close routine heartbeat. Broker $1000/0 reconciled. Confluence USDJPY broker HTTP 404 transient \u2014 using 21:27 ref (composite +51 moderate WATCH 51p<160, dist >3\u00d7H1 ATR no ARM). TUNED boj_intervention query: added match_keywords=['2026','April','Apr 27','Apr 28','policy meeting'] (date-filter pattern from fed_fomc fix), cooldown 120\u2192180min. ATTENTION: USDJPY swing=WATCH (51p dist), GOLD swing=WATCH (4h hr 0.8 KEEP), OIL swing=WATCH retest-far. EURUSD/GBPUSD/AUDUSD/USDCAD/USDCHF swing=NONE no alert. BTC/GOLD/OIL scalp=N/A spread; FX scalps engine-managed per config. 3 alerts KEEP, 9 structure_watch KEEP, 1 query TUNE, 7 queries KEEP. 0 trades. BOJ T-4d (Apr 27-28)."
-    },
     {
       "ts_utc": "2026-04-22T22:18:17Z",
       "events_in": 5,
@@ -236,6 +228,14 @@
       "note": "13:43 forex auto \u2014 0 evt heartbeat. USDJPY 159.603 comp=+32.5 weak dist=39.7p OUTSIDE 30p WATCH (BOJ T-3d FOMC T-5d). GOLD 4708.8 sweep_4721 dist=12.9$ INSIDE prox comp=-23.0 none WATCH (DOWNGRADE from NEAR-ARM; need \u2264-40 mod). OIL 94.606 sweep_9323 dist=1.37$ BARELY OUTSIDE prox 1.28$ comp=+30 weak NEAR-ARM (gap=0.09$ to prox, +10pts to mod). BTC 78175.9 LIMIT ARMED 78056 bid=78152 comp=+55 mod 4/4 bull (dealId=00000000-4e72-1a54-044a-beb40055311e). EURUSD +2 none GBPUSD +9 none AUDUSD +9 none USDCAD -14 none USDCHF +12.5 none. Scalp 3 FX ACTIVE halt={}. web_search SKIP (0pos + regime stable 5h+). 10 alerts KEEP proximity-refresh. 0 trades 1 LIMIT 0 pos. attention_covered=9/9."
     },
     {
+      "ts_utc": "2026-04-24T14:10:00Z",
+      "events_in": 2,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 2,
+      "note": "14:10 forex auto \u2014 2 evt: GOLD level_cross gold_sweep_4721_sell_retest (price=4724.71; comp=-14.0 none; counter-trend fade needs |bull-comp|\u226525, got 0; SKIP WATCH). AUDUSD level_cross audusd_sweep_71379_sell_retest (price=0.71388; comp=+9.0 none; |bull-comp|=9<25; SKIP WATCH). BTC BUY 0.016@78053.95 UPL=-$2.89 age=16min thesis=trend SL=77750 buffer=123pts NO ACTION. USDJPY 159.59 comp=+27 weak dist=41.1p OUTSIDE 30p WATCH (BOJ T-3d). OIL 94.82 comp=+27 weak sweep_9323 dist=1.58$ OUTSIDE prox NEAR-ARM. GOLD comp=-14.0 none sweep_4721 INSIDE prox WATCH. 0 trades 0 LIMIT 1pos. attention_covered=9/9."
+    },
+    {
       "ts_utc": "2026-04-24T12:46:00Z",
       "events_in": 2,
       "opened": 0,
@@ -359,6 +359,17 @@
       },
       "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "binary_event": "active=false, no blackout"
+    },
+    {
+      "ts_utc": "2026-04-24T14:10:00Z",
+      "events_in": 2,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 2,
+      "positions": [
+        "BTCUSD BUY 0.016 @ 78053.95 SL=77750 TP=79500 UPL=-2.89"
+      ],
+      "note": "2 evt: GOLD level_cross gold_sweep_4721 (comp=-14 none SKIP); AUDUSD level_cross audusd_sweep_71379 (comp=+9 none SKIP). BTC position 16min old, SL buffer=123pts, no action. 9 alerts KEEP. attention_covered=9/9."
     }
   ]
 }
