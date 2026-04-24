@@ -755,5 +755,26 @@
     ],
     "attention_covered": "9/9",
     "note": "Heartbeat. USDJPY 27.3p below BoJ intervention red line 160.00 \u2014 ARMED, enter SELL on level_cross. GBPUSD scalp BUY open (engine). Gold declining -31.5 weak. Oil extending +43 mod. No events no trades."
+  },
+  {
+    "tick_ts_utc": "2026-04-24T10:20:00Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "event_id": "evt_1777025501890_news_flash",
+        "type": "news_flash",
+        "ts": "2026-04-24T10:11:41Z",
+        "query": "us_tariff",
+        "headline": "Iran War, U.S. Court's tariff ruling delays India trade deal \u2014 but a bigger risk lies ahead - CNBC",
+        "action": "NOTED - mildly USD-neg; no alert change"
+      }
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "skipped_setups": 0,
+    "pnl_usd": 0.0,
+    "positions_open": 0,
+    "broker_balance": 1000.0,
+    "note": "10:20 UTC forex auto \u2014 1 evt (CNBC news_flash 10:11Z 'Iran War, U.S. Court tariff ruling delays India trade deal'; us_tariff query matched 'delay'; fresh Apr 24 story. US court tariff ruling = mildly USD-negative; Iran War reinforces escalation regime; no alert audit triggered; no trade changes). USDJPY 159.759 +43.0 mod 4/4 bull dist=24.1p INSIDE 30p \u2192 ARMED BOJ T-3d; need level_cross at 160 before entry. GOLD 4682.59 -36.0 weak: sweep_4695 dist=12.8$ prox<30$ but readiness<moderate WATCH; sweep_4721 dist=39.1$ OUTSIDE WATCH. OIL 96.984 +43.0 mod extending away from 93.237 sweep (dist=3.75$) and 90.30 retest (dist=6.68$) \u2192 both WATCH. BTC +27 weak FVG dist=537$. EURUSD/GBPUSD/AUDUSD/USDCAD/USDCHF comp none. Scalp engine: GBPUSD+EURUSD show as 'open' in status but broker=0pos ghost. 8 alerts KEEP. us_tariff query KEEP. 0 trades 0pos $1000. BOJ T-3d FOMC T-5d. attention_covered=9/9."
   }
 ]

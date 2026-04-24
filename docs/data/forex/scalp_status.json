@@ -1,7 +1,7 @@
 {
   "pid": 71146,
-  "last_step_utc": "2026-04-24T09:28:30.354690+00:00",
-  "heartbeat": 14640,
+  "last_step_utc": "2026-04-24T10:17:53.397952+00:00",
+  "heartbeat": 17250,
   "reason": "ok",
   "shadow": false,
   "daily_pnl_usd": 0.0,
@@ -14,6 +14,16 @@
       "size": 10.0,
       "shadow": false,
       "initial_sl": 1.3464049999999999,
+      "moved_to_be": false
+    },
+    "EURUSD": {
+      "direction": "BUY",
+      "entry": 1.168965,
+      "sl": 1.168602618830826,
+      "tp": 1.169689762338348,
+      "size": 10.0,
+      "shadow": false,
+      "initial_sl": 1.168602618830826,
       "moved_to_be": false
     }
   },
