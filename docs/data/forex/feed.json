@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T00:54:37.029129Z",
+  "generated_at": "2026-04-24T01:43:39.868448Z",
   "ticks": [
     {
       "ts_utc": "2026-04-22T20:08:03Z",
@@ -154,6 +154,14 @@
     {
       "ts": "2026-04-24T06:00:00Z",
       "summary": "2026-04-24T06:00:00Z 06:00 forex auto \u2014 0 evt heartbeat. REGIME: ACTIVE_ESCALATION_SHOOT_TO_KILL. USDJPY 159.705 +45 mod 4/4 bull dist=29.5p INSIDE 30p swing=ARMED (counter-trend fade live; BOJ T-3d). GOLD 4705.06 -37.5 weak 3/4 bear dist=16.6$ INSIDE 30$ swing=WATCH (readiness=weak, need |comp|\u226540 for ARMED; H4 FVG 4703-4716 resistance). OIL 96.13 +43 mod 4/4 bull sweep_9323 dist=289p WATCH; retest_90 dist=583p dormant. BTCUSD 78462 +55 mod 4/4 bull day_fvg_buy dist=1502$ WATCH. EURUSD -29.5 weak GBPUSD none AUDUSD none swing=NONE. 6 level_alerts KEEP 8 news_queries (4 TUNE date-roll +1d, 4 KEEP). Scalp 3 FX ACTIVE halt={}. BOJ T-3d FOMC T-5d. web_search skipped (0 pos + regime stable 6h+). attention_covered=9/9."
+    },
+    {
+      "ts_utc": "2026-04-24T01:41:00Z",
+      "events_in": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "summary": "01:41 forex auto \u2014 0 evt heartbeat. WEB SEARCH: shoot-to-kill confirmed 4 sources; IEA '13M bpd lost' OIL bid reinforced. USDJPY 159.79 +45 mod dist=21p ARMED (BOJ T-3d). GOLD 4695 -40 mod 26.68$ INSIDE 30$ ARMED (KEEP: -40 mod restored vs -37.5 weak 06:00 IST). OIL 96.92 +43 mod sweep_9323 dist=368p WATCH; retest_90 dist=662p dormant. BTC 78062 +52.5 mod (3/4 bull) day_fvg_buy dist=1102$ WATCH. EURUSD -32 weak others none. 6 alerts KEEP 9 SW KEEP. Scalp 3 FX ACTIVE halt={}. BOJ T-3d FOMC T-5d. 0 trades $1000/0pos. attention_covered=9/9."
     },
     {
       "tick_ts_utc": "2026-04-24T20:30:00Z",
@@ -456,6 +464,14 @@
       ],
       "web_search": "skipped (last tick <22 min, 0 positions)",
       "summary": "1 evt FOMC preview consumed. GOLD sweep_4721 upgraded WATCH\u2192ARMED (|comp| hit 40). USDJPY 23p from 160 ARMED. 0 trades. BOJ T-3d FOMC T-5d."
+    },
+    {
+      "ts_utc": "2026-04-24T01:41:00Z",
+      "events": 0,
+      "opened": 0,
+      "closed": 0,
+      "pnl": 0,
+      "note": "heartbeat. WEB SEARCH: shoot-to-kill confirmed; IEA 13M bpd lost. USDJPY 159.79 dist=21p ARMED. GOLD 4695 -40 mod 26.68$ ARMED. OIL 96.92 +43 mod WATCH. BTC 78062 WATCH. 0 trades."
     }
   ]
 }

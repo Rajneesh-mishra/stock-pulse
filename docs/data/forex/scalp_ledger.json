@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-04-24T00:54:36.875530Z",
+  "generated_at": "2026-04-24T01:43:39.711586Z",
   "stats": {
     "all": {
-      "count": 8,
-      "wins": 3,
+      "count": 9,
+      "wins": 4,
       "losses": 5,
       "time_exits": 0,
-      "win_rate": 0.375,
-      "net_pips": 5.1,
+      "win_rate": 0.444,
+      "net_pips": 8.5,
       "net_pnl_usd": 0.02
     },
     "today": {
-      "count": 1,
-      "wins": 1,
+      "count": 2,
+      "wins": 2,
       "losses": 0,
       "time_exits": 0,
       "win_rate": 1.0,
-      "net_pips": 3.6,
+      "net_pips": 7.0,
       "net_pnl_usd": 0
     },
     "rejected_total": 0
@@ -148,6 +148,22 @@
       "how": "tp_hit",
       "pnl_usd": 0.0,
       "held_min": 5.2,
+      "shadow": true
+    },
+    {
+      "opened_at": "2026-04-24T01:15:50.576952+00:00",
+      "closed_at": "2026-04-24T01:20:39.909181+00:00",
+      "epic": "AUDUSD",
+      "direction": "SELL",
+      "setup": "range_extreme",
+      "entry": 0.71349,
+      "exit": 0.71315,
+      "sl": 0.7136600000000001,
+      "tp": 0.71315,
+      "size": 10.0,
+      "how": "tp_hit",
+      "pnl_usd": 0.0,
+      "held_min": 4.8,
       "shadow": true
     }
   ]
