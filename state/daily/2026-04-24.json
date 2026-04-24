@@ -499,5 +499,35 @@
     },
     "attention_covered": "9/9",
     "scalp_status": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=ACTIVE halts=none daily_pnl=0"
+  },
+  {
+    "tick_ts_utc": "2026-04-24T07:17:00Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "id": "evt_1777015004894_liquidity_sweep",
+        "type": "liquidity_sweep",
+        "instrument": "USDCHF",
+        "action": "SKIP_trade_ADD_watch_alert"
+      }
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "positions_open": 0,
+    "balance_usd": 1000.0,
+    "pnl_today_usd": 0.0,
+    "attention_matrix": {
+      "EURUSD": "WATCH/ACTIVE scalp=ACTIVE readiness=weak(-28.5) no level alert",
+      "GBPUSD": "NONE/ACTIVE scalp=ACTIVE readiness=none",
+      "AUDUSD": "WATCH/ACTIVE scalp=ACTIVE readiness=none price 0.71297 above trigger 0.7085",
+      "USDJPY": "WATCH/OFF scalp=OFF(pip-conv) readiness=weak(+35.5 4/4 bull) dist=34.5p OUTSIDE 30p",
+      "USDCAD": "WATCH/OFF scalp=OFF(pip-conv) readiness=none dist=113p from 1.3820",
+      "USDCHF": "WATCH/OFF scalp=OFF(pip-conv) readiness=none H1 sweep ADD alert",
+      "GOLD": "WATCH/NA scalp=N/A readiness=weak(-35.5) sweep_4721 dist=40.1$ OUTSIDE prox",
+      "OIL_CRUDE": "WATCH/NA scalp=N/A readiness=moderate(+43.0) sweep_9323 dist=2.46$ OUTSIDE prox",
+      "BTCUSD": "WATCH/NA scalp=N/A readiness=weak(+27.0) FVG dist=775$"
+    },
+    "scalp_status": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=KEEP halted={} daily_pnl=0",
+    "notes": "USDCHF H1 up-sweep (1.7p wick) \u2014 comp=+7.5 none, counter-trend sell criteria not met (need |comp|>=40 against). Added WATCH alert usdchf_sweep_h1_sell_retest at 0.7875 zone."
   }
 ]

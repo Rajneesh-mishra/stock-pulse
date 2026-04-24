@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-24T06:55:26.910528Z",
+  "generated_at": "2026-04-24T07:22:16.222332Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-22T20:08:03Z",
-      "events_in": 29,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 29,
-      "note": "20:01 UTC tick \u2014 29 events: 11 news_flash SKIP (all stale: 8 us_tariff Feb archives+1 Apr21 BLiTZ, 1 Anadolu Apr21 Pakistan-welcomes baseline, 1 Dec2025 Reuters BoJ archive, 1 alert_audit_request on same Dec archive). 16 bar_close routine. 1 USDCAD liquidity_sweep M15 20:00 UTC up-sweep 1.36737 wick 1.2p close 1.36727 \u2014 sweep bias sell, confluence composite -24.5 readiness=none blocks LIMIT. ADDED usdcad_liqsweep_sell_zone (swept level as watchlist), REMOVED audusd_breakdown_trigger (stale Rule 1: 88p > 3\u00d7H4 ATR, no catalyst, BTC+4.2% risk-on kills). 3 MODIFY price refs (usdjpy/gold/oil); 1 ADD (usdcad); 1 REMOVE. 2 queries TUNE (us_tariff cd 60\u2192240 narrowed, boj_intervention cd 60\u2192120 dropped broad). 9 structure_watch KEEP. EURUSD 1.1705 NEW LOW broke re-entry base; BTC 78900 +4.2% parabolic. 0 trades, $1000/0."
-    },
     {
       "ts_utc": "2026-04-22T20:15:00Z",
       "events_in": 1,
@@ -695,6 +687,36 @@
       },
       "attention_covered": "9/9",
       "scalp_status": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=ACTIVE halts=none daily_pnl=0"
+    },
+    {
+      "tick_ts_utc": "2026-04-24T07:17:00Z",
+      "events_processed": 1,
+      "events": [
+        {
+          "id": "evt_1777015004894_liquidity_sweep",
+          "type": "liquidity_sweep",
+          "instrument": "USDCHF",
+          "action": "SKIP_trade_ADD_watch_alert"
+        }
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "positions_open": 0,
+      "balance_usd": 1000.0,
+      "pnl_today_usd": 0.0,
+      "attention_matrix": {
+        "EURUSD": "WATCH/ACTIVE scalp=ACTIVE readiness=weak(-28.5) no level alert",
+        "GBPUSD": "NONE/ACTIVE scalp=ACTIVE readiness=none",
+        "AUDUSD": "WATCH/ACTIVE scalp=ACTIVE readiness=none price 0.71297 above trigger 0.7085",
+        "USDJPY": "WATCH/OFF scalp=OFF(pip-conv) readiness=weak(+35.5 4/4 bull) dist=34.5p OUTSIDE 30p",
+        "USDCAD": "WATCH/OFF scalp=OFF(pip-conv) readiness=none dist=113p from 1.3820",
+        "USDCHF": "WATCH/OFF scalp=OFF(pip-conv) readiness=none H1 sweep ADD alert",
+        "GOLD": "WATCH/NA scalp=N/A readiness=weak(-35.5) sweep_4721 dist=40.1$ OUTSIDE prox",
+        "OIL_CRUDE": "WATCH/NA scalp=N/A readiness=moderate(+43.0) sweep_9323 dist=2.46$ OUTSIDE prox",
+        "BTCUSD": "WATCH/NA scalp=N/A readiness=weak(+27.0) FVG dist=775$"
+      },
+      "scalp_status": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=KEEP halted={} daily_pnl=0",
+      "notes": "USDCHF H1 up-sweep (1.7p wick) \u2014 comp=+7.5 none, counter-trend sell criteria not met (need |comp|>=40 against). Added WATCH alert usdchf_sweep_h1_sell_retest at 0.7875 zone."
     }
   ]
 }
