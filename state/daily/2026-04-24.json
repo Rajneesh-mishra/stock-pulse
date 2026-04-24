@@ -865,5 +865,14 @@
       "ADD gbpusd_sweep_134928_sell_retest (WATCH)"
     ],
     "note": "2 evt: GBPUSD up-sweep 1.34927 wick=8.8p comp=+29 OPPOSES sell \u2192 ADD WATCH; GOLD level_cross 4695 cross_up price 4702.9>SL 4697.65 \u2192 REMOVE. OIL 96.97\u219294.56 pullback; sweep_9323 dist=1.32$ near-prox. GOLD sweep_4721 dist=23.1$<30$ WATCH. 0 trades 0pos."
+  },
+  {
+    "ts_utc": "2026-04-24T11:28:00Z",
+    "events": 1,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 1,
+    "pnl": 0,
+    "note": "11:28 forex auto \u2014 1 evt (GBPUSD level_cross gbpusd_sweep_134928_sell_retest at 1.349555 cross_up; comp=+21.5 none bullish OPPOSES sell; readiness=none (need \u2264-40); SKIP trade KEEP WATCH). USDJPY 159.408 +30.0 weak (DOWNGRADE from +43 mod) dist=59.2p OUTSIDE 30p \u2192 WATCH (BOJ T-3d). GOLD 4706.49 -32.5 weak; sweep_4721 dist=15.2$ INSIDE prox 30$ NEAR-ARM (need -40); safehaven_4775 dist=68.5$ dormant. OIL 93.999 +35.5 weak; sweep_9323 dist=0.76$ INSIDE prox 1.17$ NEAR-ARM (need +40; gap=4.5pts); pullback=false-alarm (Tehran military drill). BTCUSD 78255 +34.5 weak fvg_76960 dist=1295$ WATCH. EURUSD -8 none GBPUSD +21.5 none AUDUSD +18.5 none USDCAD -21.5 none USDCHF -10.5 none \u2014 all swing=NONE/WATCH. 9 alerts proximity-refreshed (all KEEP). 9 SW KEEP. Scalp halt={}. 0 trades 0pos. BOJ T-3d FOMC T-5d. attention_covered=9/9."
   }
 ]
