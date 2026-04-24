@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-24T05:35:00Z",
+  "last_updated_by_claude": "2026-04-24T06:10:00Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -72,16 +72,16 @@
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "ENTRY: price pulls back to 90.30, M15 rejection wick holds the level (low within 5p of 90.30, close >= 90.30 + 0.3\u00d7 ATR). Classic broken-resistance-as-support retest.\n\nCONTEXT: WTI cleanly broke above 90 on Hormuz blockade re-rating. 90 flipped from resistance to support on the break. Retest is structural, not news-gated.\n\nSL: 89.5  TP: 92.5  R:R target: 2.0\n\nrewritten 2026-04-23T19:34:33+00:00 to separate entry criterion (technical, sufficient) from regime context (narrative, not gating).",
-      "current_price_ref": 95.2165,
+      "note": "ENTRY: LIMIT at 90.30 when readiness\u2265moderate and price within 1.13$ of level. VALIDATED \u2014 no M15 rejection confirmation required (3 fires, 67% 4h hit rate). Cancel LIMIT if price closes below SL 89.5.\n\nCONTEXT: WTI cleanly broke above 90 on Hormuz blockade re-rating. 90 flipped from resistance to support. 3 fires, 67% 4h hit rate \u2192 passes validation threshold (\u22652 fires, \u226560%). Apply 4h hard time-stop on entered trade.\n\nSL: 89.5  TP: 92.5  R:R target: 2.0\n\nrule3-promotion 2026-04-24T06:10Z \u2014 validated (3f/67%4h); ENTRY relaxed to naked LIMIT, 4h time-stop added.",
+      "current_price_ref": 95.294,
       "price_ref": {
-        "ts": "2026-04-24T05:35:00Z",
-        "price": 95.2165
+        "ts": "2026-04-24T06:10:00Z",
+        "price": 95.294
       },
-      "last_updated": "2026-04-23T19:34:33+00:00",
-      "proximity": "4.917$ ABOVE 90.30 \u2192 swing=WATCH dormant. comp=+42.5 mod 4/4 bull. H4ATR=2.248$; 3\u00d7=6.74$ (dist=4.92$ NOT auto-remove). Dormant until pullback to 91.4$.",
-      "updated_utc": "2026-04-24T05:35:00Z",
-      "entry_criterion": "price pulls back to 90.30, M15 rejection wick holds the level (low within 5p of 90.30, close >= 90.30 + 0.3\u00d7 ATR). Classic broken-resistance-as-support retest.",
+      "last_updated": "2026-04-24T06:10:00Z",
+      "proximity": "4.994$ ABOVE 90.30 \u2192 swing=WATCH dormant. comp=+42.5 mod 4/4 bull. H4ATR=2.261$; 3\u00d7=6.78$ (dist=4.99$ NOT auto-remove). VALIDATED (3f/67%4h). Dormant until pullback below 91.43$.",
+      "updated_utc": "2026-04-24T06:10:00Z",
+      "entry_criterion": "LIMIT at 90.30 when readiness\u2265moderate and price within 1.13$ of level. VALIDATED \u2014 no M15 confirmation required (3 fires, 67% 4h hit rate). Cancel if price closes below SL 89.5.",
       "regime_context": "WTI cleanly broke above 90 on Hormuz blockade re-rating. 90 flipped from resistance to support on the break. Retest is structural, not news-gated.",
       "sl": 89.5,
       "tp": 92.5,
@@ -94,17 +94,17 @@
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "ENTRY: price returns to 93.2365 (fresh M15 down-sweep zone from 07:45 UTC), M15 bar closes above with a rejection-from-below wick of 5+ pips. Liquidity-sweep retest setup; pure tape.\n\nCONTEXT: Sweep created 07:45 UTC when price wicked 39.1p below 93.55 and closed back at 93.55. The swept liquidity at 93.2365 becomes a retest zone. Counterfactual: 4 fires, 100% 4h hit rate \u2014 validated.\n\nSL: 92.84  TP: 94.35  R:R target: 2.0\n\nrewritten 2026-04-23T19:34:33+00:00 to separate entry criterion (technical, sufficient) from regime context (narrative, not gating).",
-      "current_price_ref": 95.2165,
+      "note": "ENTRY: LIMIT at 93.237 when readiness\u2265moderate and price within 1.13$ of level. VALIDATED \u2014 no M15 rejection confirmation required (4 fires, 100% 4h hit rate). Cancel LIMIT if price closes below SL 92.84.\n\nCONTEXT: Down-sweep zone created 2026-04-23 07:45 UTC; wick 39.1p below 93.55, closed back at 93.55. Swept liquidity at 93.237 is validated bounce zone. OIL bullish regime (IEA 13M bpd Hormuz impact). Apply 4h hard time-stop on any entered trade.\n\nSL: 92.84  TP: 94.35  R:R target: 2.0\n\nrule3-promotion 2026-04-24T06:10Z \u2014 validated (4f/100%4h); ENTRY relaxed to naked LIMIT, 4h time-stop added.",
+      "current_price_ref": 95.294,
       "price_ref": {
-        "ts": "2026-04-24T05:35:00Z",
-        "price": 95.2165
+        "ts": "2026-04-24T06:10:00Z",
+        "price": 95.294
       },
-      "last_updated": "2026-04-23T19:34:33+00:00",
-      "proximity": "1.98$ ABOVE 93.2365 \u2192 swing=WATCH (closing in). comp=+42.5 mod bull trend-aligned. VALIDATED (4 fires 100%/4h). prox_thresh=1.124$; 1.98$ outside. Need ~0.86$ drop to re-arm.",
-      "updated_utc": "2026-04-24T05:35:00Z",
-      "entry_criterion": "price returns to 93.2365 (fresh M15 down-sweep zone from 07:45 UTC), M15 bar closes above with a rejection-from-below wick of 5+ pips. Liquidity-sweep retest setup; pure tape.",
-      "regime_context": "Sweep created 07:45 UTC when price wicked 39.1p below 93.55 and closed back at 93.55. The swept liquidity at 93.2365 becomes a retest zone. Counterfactual: 4 fires, 100% 4h hit rate \u2014 validated.",
+      "last_updated": "2026-04-24T06:10:00Z",
+      "proximity": "2.06$ ABOVE 93.237 \u2192 swing=WATCH (closing in). comp=+42.5 mod bull trend-aligned. VALIDATED (4 fires 100%/4h). prox_thresh=1.13$; 2.06$ outside. Need ~0.93$ drop to arm LIMIT.",
+      "updated_utc": "2026-04-24T06:10:00Z",
+      "entry_criterion": "LIMIT at 93.237 when readiness\u2265moderate and price within 1.13$ of level. VALIDATED \u2014 no M15 confirmation required (4 fires, 100% 4h hit rate). Cancel if price closes below SL 92.84.",
+      "regime_context": "Down-sweep zone 2026-04-23 07:45 UTC. Swept liquidity at 93.237. 4 fires, 100% 4h hit rate \u2014 validated. OIL bullish mod +42.5. Apply 4h hard time-stop on entered trade.",
       "sl": 92.84,
       "tp": 94.35,
       "rr_target": "2.0"
@@ -116,17 +116,17 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "ENTRY: price returns to 4721.68 (fresh M15 up-sweep zone from 08:00 UTC), M15 bar closes below with a rejection-from-above wick of 5+ pips. Liquidity-sweep retest setup; pure tape.\n\nCONTEXT: Sweep created 08:00 UTC when price wicked 33.3p above 4718.95 and closed back at 4718.95. The swept liquidity at 4721.68 becomes a retest zone. Counterfactual: 5 fires, 100% 4h hit rate \u2014 validated.\n\nSL: 4725.01  TP: 4707.0  R:R target: 4.4\n\nrewritten 2026-04-23T19:34:33+00:00 to separate entry criterion (technical, sufficient) from regime context (narrative, not gating).",
-      "current_price_ref": 4674.02,
+      "note": "ENTRY: LIMIT at 4721.68 when readiness\u2265moderate and price within 30$ of level. VALIDATED \u2014 no M15 rejection confirmation required (5 fires, 100% 4h hit rate). Cancel LIMIT if price closes above SL 4725.01.\n\nCONTEXT: Up-sweep zone created 2026-04-23 08:00 UTC; wick 33.3p above 4718.95, closed back at 4718.95. Swept liquidity at 4721.68 is validated sell zone. Current readiness=weak (-37.5 3/4 bear); need moderate (-40+ 4/4) to arm. Apply 4h hard time-stop on any entered trade.\n\nSL: 4725.01  TP: 4707.0  R:R target: 4.4\n\nrule3-promotion 2026-04-24T06:10Z \u2014 validated (5f/100%4h); ENTRY relaxed to naked LIMIT, M15-wick override removed, 4h time-stop added.",
+      "current_price_ref": 4682.24,
       "price_ref": {
-        "ts": "2026-04-24T05:25:00Z",
-        "price": 4674.02
+        "ts": "2026-04-24T06:10:00Z",
+        "price": 4682.24
       },
-      "last_updated": "2026-04-23T19:34:33+00:00",
-      "updated_utc": "2026-04-24T05:25:00Z",
-      "proximity": "47.7$ BELOW 4721.68 \u2192 swing=WATCH. comp=-37.5 weak 3/4 bearish trend-aligned. VALIDATED (5 fires 100%/4h). H1ATR=~18$; prox=18$; 47.7$ OUTSIDE threshold. KEEP rule-2 (validated).",
-      "entry_criterion": "price returns to 4721.68 (fresh M15 up-sweep zone from 08:00 UTC), M15 bar closes below with a rejection-from-above wick of 5+ pips. Liquidity-sweep retest setup; pure tape.",
-      "regime_context": "Sweep created 08:00 UTC when price wicked 33.3p above 4718.95 and closed back. Counterfactual: 5 fires, 100% 4h hit rate \u2014 validated. REGIME SHIFT Apr 23: Trump ordered US Navy to attack Iranian mine-laying boats + 3rd tanker seized \u2192 safe-haven bid elevated. Current technical picture still bearish (-40 moderate) but escalation creates directional uncertainty at this level. Wait for clear M15 rejection wick \u22655p before entry; escalation-driven moves lack the wick.",
+      "last_updated": "2026-04-24T06:10:00Z",
+      "updated_utc": "2026-04-24T06:10:00Z",
+      "proximity": "39.4$ BELOW 4721.68 \u2192 swing=WATCH. comp=-37.5 weak 3/4 bearish. VALIDATED (5 fires 100%/4h). prox=30$; 39.4$ OUTSIDE threshold. Need +9.4$ rally + readiness upgrade to moderate to arm LIMIT.",
+      "entry_criterion": "LIMIT at 4721.68 when readiness\u2265moderate and price within 30$ of level. VALIDATED \u2014 no M15 confirmation required (5 fires, 100% 4h hit rate). Cancel if price closes above SL 4725.01.",
+      "regime_context": "Up-sweep zone 2026-04-23 08:00 UTC. Swept liquidity at 4721.68. 5 fires, 100% 4h hit rate \u2014 validated. GOLD bearish composite (-37.5 weak; need -40 moderate to arm). Escalation backdrop (Iran/Hormuz) provides upward pressure; technical bearish composite must reassert for LIMIT to fire. Apply 4h hard time-stop on entered trade.",
       "sl": 4725.01,
       "tp": 4707.0,
       "rr_target": "4.4"
@@ -139,20 +139,20 @@
       "cooldown_sec": 3600,
       "direction": "buy",
       "note": "ENTRY: price pulls back into Day FVG zone 76937-76984; M15 bar closes inside or above zone with bullish rejection wick of \u226550p from the low. Structural pullback entry into unmitigated demand.\n\nCONTEXT: Fresh Day FVG created 2026-04-23 (bars_ago=1, unmitigated). BTC +40 mod 4/4 bull across all TFs. Risk-on regime (Hormuz friction = safe-haven/risk-on mix; BTC tracking risk-on side).\n\nSL: 76400  TP: 78600  R:R target: 2.9\n\nadded 2026-04-24T03:45:00Z \u2014 fresh unmitigated Day FVG + 4/4 bull confluence.",
-      "current_price_ref": 77707,
+      "current_price_ref": 77945,
       "price_ref": {
-        "ts": "2026-04-24T05:25:00Z",
-        "price": 77707
+        "ts": "2026-04-24T06:10:00Z",
+        "price": 77945
       },
       "last_updated": "2026-04-24T03:47:00Z",
-      "updated_utc": "2026-04-24T05:25:00Z",
-      "proximity": "~747$ ABOVE 76960 FVG zone \u2192 swing=WATCH. comp=+27 weak bull (3/4). Awaiting pullback retest into FVG zone 76937-76984.",
+      "updated_utc": "2026-04-24T06:10:00Z",
+      "proximity": "~985$ ABOVE 76960 FVG zone \u2192 swing=WATCH. comp=+27 weak bull (3/4). Awaiting pullback retest into FVG zone 76937-76984.",
       "entry_criterion": "price pulls back into Day FVG zone 76937-76984; M15 bar closes inside or above zone with bullish rejection wick of \u226550p from the low. Structural pullback entry into unmitigated demand.",
       "regime_context": "Fresh Day FVG created 2026-04-23. BTC 4/4 bull across all TFs. Risk-on regime supports continuation.",
       "sl": 76400,
       "tp": 78600,
       "rr_target": "2.9"
-    },
+    }
   ],
   "structure_watch": [
     {
@@ -222,5 +222,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-24T05:35:00Z"
+  "last_updated_utc": "2026-04-24T06:10:00Z"
 }

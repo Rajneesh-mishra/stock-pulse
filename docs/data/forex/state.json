@@ -419,8 +419,8 @@
       "price": 4809.28
     }
   ],
-  "last_tick_summary": "05:35 forex auto — 1 evt (OIL_CRUDE level_cross oil_sweep_9519_buy_retest at 95.25; price crossed THROUGH SL 95.263 before M15 close above 95.319 with wick; entry criterion NOT met; structural SL violated; SKIP trade; REMOVE alert — wick was 0.16×ATR minor, setup never had conviction). USDJPY 159.761 +40.5 mod 4/4 bull dist=23.9p INSIDE 30p swing=ARMED (counter-trend fade; BOJ T-3d; awaits 160.00 tag + M15 rej wick ≥8p). GOLD ~4674 -37.5 weak 3/4 bear sweep_4721 dist=47.7$ WATCH; safehaven_4775 dist=101$ dormant. OIL 95.22 +42.5 mod sweep_9323 dist=1.98$ WATCH (closing in); retest_90 dist=4.92$ dormant; sweep_9519 REMOVED (SL violated). BTC ~77707 +27 weak day_fvg_buy dist=747$ WATCH. EURUSD 1.1682 weak NONE. GBPUSD/AUDUSD/USDCAD/USDCHF none swing=NONE. 6 alerts (5 KEEP +1 REMOVE), 9 SW KEEP. 8 queries KEEP. Scalp 3 FX ACTIVE halt={}. web_search skipped (0 pos + no new regime). BOJ T-3d FOMC T-5d. binary=inactive. attention_covered=9/9.",
-  "last_scan": "2026-04-24T05:35:00Z",
+  "last_tick_summary": "06:10 forex auto — 0 evt heartbeat. Rule3 promotions: oil_sweep_9323 (4f/100%4h) + gold_sweep_4721 (5f/100%4h) + oil_retest_90 (3f/67%4h) MODIFIED — entry relaxed to naked LIMIT (no M15 confirmation), 4h time-stop added. USDJPY 159.745 +42.5 mod 4/4 bull dist=25.5p INSIDE 30p swing=ARMED (counter-trend fade; BOJ T-3d; awaits 160.00 tag). GOLD 4682 -37.5 weak 3/4 bear sweep_4721 dist=39.4$ OUTSIDE 30$ swing=WATCH (validated, needs moderate to arm LIMIT). OIL 95.29 +42.5 mod 4/4 bull sweep_9323 dist=2.06$ OUTSIDE 1.13$ swing=WATCH (validated, closing in). BTC 77945 +27 weak day_fvg_buy dist=985$ WATCH. EURUSD weak NONE GBPUSD/AUDUSD/USDCAD/USDCHF none swing=NONE. 6 alerts 3 MODIFY (rule3-promotion) 3 KEEP. 9 SW KEEP. 8 queries KEEP. Scalp 3 FX ACTIVE halt={}. web_search skipped (0 pos + regime stable 4h+). BOJ T-3d FOMC T-5d. binary=inactive. attention_covered=9/9.",
+  "last_scan": "2026-04-24T06:10:00Z",
   "capital_base": 1000.0,
   "tick_log": [
     {
