@@ -1,22 +1,7 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
   "regime_note_prev": "14:10 forex auto \u2014 2 evt GOLD level_cross gold_sweep_4721 comp=-14 none SKIP. AUDUSD level_cross audusd_sweep_71379 comp=+9 none SKIP. BTC BUY 0.016@78053.95 UPL=-$2.89 SL=77750 age=16min NO ACTION. USDJPY 159.59 +27 weak dist=41.1p WATCH. OIL 94.82 +27 weak sweep_9323 NEAR-ARM. GOLD -14 none sweep_4721 INSIDE prox WATCH. 0 trades 0 LIMIT 1pos. attention_covered=9/9.",
-  "open_positions": [
-    {
-      "dealId": "00000000-4e72-4a5e-044a-beb40055311e",
-      "epic": "BTCUSD",
-      "direction": "BUY",
-      "size": 0.016,
-      "entry": 78053.95,
-      "stopLevel": 77750.0,
-      "profitLevel": 79500.0,
-      "opened_at": "2026-04-24T13:54:10Z",
-      "thesis_type": "trend",
-      "time_exit_utc": "2026-04-24T17:54:10Z",
-      "alert_id": "btcusd_h4fvg_78056_buy",
-      "note": "H4 FVG 78056-78208 LIMIT BUY filled. comp=+52.5 mod 4/4 bull. Risk=$4.86 (0.49%). Time-exit 17:54 UTC."
-    }
-  ],
+  "open_positions": [],
   "watchlist": [
     {
       "instrument": "AUDUSD",
@@ -179,16 +164,30 @@
       "exit_reason": "Closed at market \u2014 rogue scalp positions opened by scalp engine despite USDJPY disabled in config. Not at intervention trigger (160.00); counter to current bullish structure (+43). Closed both at BE to restore clean state.",
       "thesis_type": "scalp_entry",
       "lessons": "Scalp engine opened USDJPY positions despite enabled=false. Investigate engine for disabled-pair bypass bug."
+    },
+    {
+      "instrument": "BTCUSD",
+      "direction": "BUY",
+      "entry_price": 78053.95,
+      "exit_price": 77796.5,
+      "pnl": -3.21,
+      "result": "loss",
+      "opened_at": "2026-04-24T13:54:10Z",
+      "closed_at": "2026-04-24T14:26:22Z",
+      "exit_reason": "SL hit at 77750. M15 close=77746.7 breached SL. Price dipped to 77732 then recovered. Age=32min.",
+      "thesis_type": "trend",
+      "alert_id": "btcusd_h4fvg_78056_buy",
+      "lessons": "H4 FVG limit fill but price rejected immediately. FVG zone 76937-76984 still unmitigated \u2014 re-entry if price returns and comp remains moderate+"
     }
   ],
-  "consecutive_losses": 0,
-  "daily_pnl": -1.66,
+  "consecutive_losses": 1,
+  "daily_pnl": -4.87,
   "weekly_pnl": 0,
   "total_pnl": 1.01,
   "total_trades": 1,
   "wins": 0,
   "losses": 0,
-  "broker_balance": 998.34,
+  "broker_balance": 995.13,
   "effective_capital_usd": 1000,
   "capital_base_note": "Demo account reset to $1k on 2026-04-20 (topUp -$8849.07). Broker balance and effective capital are now aligned.",
   "loop_config": {
@@ -498,7 +497,7 @@
       "price": 4809.28
     }
   ],
-  "last_tick_summary": "14:10 forex auto \u2014 2 evt GOLD level_cross gold_sweep_4721 comp=-14 none SKIP. AUDUSD level_cross audusd_sweep_71379 comp=+9 none SKIP. BTC BUY 0.016@78053.95 UPL=-$2.89 SL=77750 age=16min NO ACTION. USDJPY 159.59 +27 weak dist=41.1p WATCH. OIL 94.82 +27 weak sweep_9323 NEAR-ARM. GOLD -14 none sweep_4721 INSIDE prox WATCH. 0 trades 0 LIMIT 1pos. attention_covered=9/9.",
+  "last_tick_summary": "14:50 forex auto \u2014 1 evt BTC position_closed SL@77750 PnL=-$3.21. balance=$995.13 daily_pnl=-$4.87. USDJPY 159.47 comp=+27 weak dist=53.1p WATCH (BOJ T-3d). GOLD 4729.23 comp=-6.5 none safehaven_4775 dist=45.77$ WATCH; sweep_4721 REMOVED (price>SL). OIL 94.23 comp=+27 weak sweep_9323 dist=0.99$ NEAR-ARM (need +40). BTC 77982 mod FVG-same-day-loss SKIP. 0 trades 0 LIMIT 0pos. attention_covered=9/9.",
   "last_scan": "2026-04-24T11:28:00Z",
   "capital_base": 1000.0,
   "tick_log": [
@@ -717,7 +716,7 @@
     ],
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). | 2026-04-23 20:05 UTC tick: BOJ Apr 27-28 T-3d, FOMC T-4d \u2014 still calendar, no blackout. | 2026-04-23 20:30 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-3d \u2014 still calendar, no blackout. | 2026-04-23 21:10 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. Half-size caution on elevated-event week. | 2026-04-24 03:45 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. | 2026-04-23T23:25:00Z ESCALATION: Trump 'shoot to kill' order on Iranian mine boats. 3rd tanker seized. Regime shifted to ACTIVE_ESCALATION. BOJ T-3d FOMC T-5d no blackout. | 2026-04-24T00:52Z tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout."
   },
-  "regime_note": "14:14 forex auto \u2014 1 evt USDCAD M15 sweep_up 1.6p comp=-14 none SKIP. BTC BUY@78054 UPL=-$1.5 SL=77750 age=20min NO ACTION. AUDUSD at retest 0.71379 (dist=2.5p) comp=+16.5 none WATCH. OIL sweep_9323 dist=1.01$ <prox 1.25$ comp=+27 weak WATCH. USDJPY 159.45 dist=55p BoJ zone 160.0 WATCH. FOMC Apr29 5d. 0 trades 0 LIMIT 1pos. attention_covered=9/9.",
-  "tick_ts_utc": "2026-04-24T14:14:00Z",
-  "state_ts_utc": "2026-04-24T14:14:00Z"
+  "regime_note": "14:50 forex auto \u2014 1 evt BTC position_closed SL@77750 PnL=-$3.21. balance=$995.13 daily_pnl=-$4.87. USDJPY 159.47 comp=+27 weak dist=53.1p WATCH (BOJ T-3d). GOLD 4729.23 comp=-6.5 none safehaven_4775 dist=45.77$ WATCH; sweep_4721 REMOVED (price>SL). OIL 94.23 comp=+27 weak sweep_9323 dist=0.99$ NEAR-ARM (need +40). BTC 77982 mod FVG-same-day-loss SKIP. 0 trades 0 LIMIT 0pos. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-24T14:50:00Z",
+  "state_ts_utc": "2026-04-24T14:50:00Z"
 }
