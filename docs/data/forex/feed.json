@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T00:34:51.232521Z",
+  "generated_at": "2026-04-24T00:54:37.029129Z",
   "ticks": [
     {
       "ts_utc": "2026-04-22T20:08:03Z",
@@ -377,6 +377,85 @@
       "scalp_halted": {},
       "attention_covered": "9/9",
       "summary": "0 evt heartbeat. USDJPY 159.705 swing=ARMED (29.5p from 160 fade zone). GOLD 4705 swing=WATCH (16.6$ from 4721, readiness=weak). OIL +43 mod both retest alerts dormant. BTC +55 mod day_fvg_buy WATCH. 4 news queries date-rolled. BOJ T-3d FOMC T-5d."
+    },
+    {
+      "tick_ts_utc": "2026-04-24T00:52:00Z",
+      "tick_label": "00:52 forex auto",
+      "events_processed": 1,
+      "event_types": [
+        "news_flash"
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "positions_open": 0,
+      "balance": 1000.0,
+      "pnl_day": 0.0,
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "attention_matrix": {
+        "EURUSD": {
+          "swing": "NONE",
+          "scalp": "ACTIVE",
+          "readiness": "weak",
+          "comp": -32
+        },
+        "GBPUSD": {
+          "swing": "NONE",
+          "scalp": "ACTIVE",
+          "readiness": "none",
+          "comp": 5.5
+        },
+        "AUDUSD": {
+          "swing": "NONE",
+          "scalp": "ACTIVE",
+          "readiness": "none",
+          "comp": 4.5
+        },
+        "USDJPY": {
+          "swing": "ARMED",
+          "scalp": "OFF",
+          "readiness": "moderate",
+          "comp": 45
+        },
+        "USDCAD": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "comp": -13.5
+        },
+        "USDCHF": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "comp": 16.5
+        },
+        "GOLD": {
+          "swing": "ARMED",
+          "scalp": "N/A",
+          "readiness": "moderate",
+          "comp": -40
+        },
+        "OIL_CRUDE": {
+          "swing": "WATCH",
+          "scalp": "N/A",
+          "readiness": "moderate",
+          "comp": 43
+        },
+        "BTCUSD": {
+          "swing": "WATCH",
+          "scalp": "N/A",
+          "readiness": "moderate",
+          "comp": 55
+        }
+      },
+      "alerts_modified": [
+        "gold_sweep_4721_sell_retest (WATCH\u2192ARMED)",
+        "usdjpy_intervention_fade_zone (dist 29.5p\u219223p)"
+      ],
+      "scalp_config_changes": [
+        "AUDUSD bias sell\u2192neutral"
+      ],
+      "web_search": "skipped (last tick <22 min, 0 positions)",
+      "summary": "1 evt FOMC preview consumed. GOLD sweep_4721 upgraded WATCH\u2192ARMED (|comp| hit 40). USDJPY 23p from 160 ARMED. 0 trades. BOJ T-3d FOMC T-5d."
     }
   ]
 }

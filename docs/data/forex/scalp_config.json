@@ -13,14 +13,73 @@
     "max_hold_minutes": 45
   },
   "pairs": {
-    "EURUSD":  { "enabled": true,  "mode": "ema_pullback",     "bias": "neutral", "sessions": ["london", "ny_overlap"] },
-    "GBPUSD":  { "enabled": true,  "mode": "session_open_break","bias": "neutral", "sessions": ["london", "ny"] },
-    "AUDUSD":  { "enabled": true,  "mode": "range_extreme",    "bias": "sell",    "sessions": ["asia", "ny_overlap"] },
-    "USDJPY":  { "enabled": false, "mode": "ema_pullback",     "bias": "bull",    "sessions": ["asia", "ny"], "reason": "JPY quote — shadow P/L needs per-pair pip-value conversion, enable after proper sizing lands" },
-    "USDCHF":  { "enabled": false, "mode": "range_extreme",    "bias": "neutral", "sessions": ["london"], "reason": "CHF quote — same pip-value issue as USDJPY" },
-    "USDCAD":  { "enabled": false, "mode": "range_extreme",    "bias": "neutral", "sessions": ["ny"],     "reason": "CAD quote + 2p spread borderline" },
-    "GOLD":      { "enabled": false, "reason": "spread_5p_forbids_scalp_swing_only" },
-    "OIL_CRUDE": { "enabled": false, "reason": "spread_4p_forbids_scalp_swing_only" },
-    "BTCUSD":    { "enabled": false, "reason": "spread_50p_forbids_scalp" }
+    "EURUSD": {
+      "enabled": true,
+      "mode": "ema_pullback",
+      "bias": "neutral",
+      "sessions": [
+        "london",
+        "ny_overlap"
+      ]
+    },
+    "GBPUSD": {
+      "enabled": true,
+      "mode": "session_open_break",
+      "bias": "neutral",
+      "sessions": [
+        "london",
+        "ny"
+      ]
+    },
+    "AUDUSD": {
+      "enabled": true,
+      "mode": "range_extreme",
+      "bias": "neutral",
+      "sessions": [
+        "asia",
+        "ny_overlap"
+      ],
+      "reason": "bias reset sell\u2192neutral: composite=+4.5 neutral, no clear directional signal"
+    },
+    "USDJPY": {
+      "enabled": false,
+      "mode": "ema_pullback",
+      "bias": "bull",
+      "sessions": [
+        "asia",
+        "ny"
+      ],
+      "reason": "JPY quote \u2014 shadow P/L needs per-pair pip-value conversion, enable after proper sizing lands"
+    },
+    "USDCHF": {
+      "enabled": false,
+      "mode": "range_extreme",
+      "bias": "neutral",
+      "sessions": [
+        "london"
+      ],
+      "reason": "CHF quote \u2014 same pip-value issue as USDJPY"
+    },
+    "USDCAD": {
+      "enabled": false,
+      "mode": "range_extreme",
+      "bias": "neutral",
+      "sessions": [
+        "ny"
+      ],
+      "reason": "CAD quote + 2p spread borderline"
+    },
+    "GOLD": {
+      "enabled": false,
+      "reason": "spread_5p_forbids_scalp_swing_only"
+    },
+    "OIL_CRUDE": {
+      "enabled": false,
+      "reason": "spread_4p_forbids_scalp_swing_only"
+    },
+    "BTCUSD": {
+      "enabled": false,
+      "reason": "spread_50p_forbids_scalp"
+    }
   }
 }
