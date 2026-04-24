@@ -320,5 +320,18 @@
     "positions": 0,
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
     "summary": "02:47 forex auto \u2014 0 evt heartbeat. USDJPY 159.772 +45 mod dist=22.8p ARMED (BOJ T-3d). GOLD 4682.17 -40 mod sweep_4721 dist=39.51$ WATCH (DOWNGRADE; was ARMED 26.68$). OIL 95.804 +40.5 mod sweep_9323 dist=256.75p WATCH. BTC 78436.85 +55 mod day_fvg_buy dist=1476.85$ WATCH. 6 alerts KEEP. 0 trades $1000/0."
+  },
+  {
+    "ts_utc": "2026-04-24T03:47:00Z",
+    "events_in": 13,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 13,
+    "pnl": 0,
+    "positions_open": 0,
+    "alerts_kept": 6,
+    "alerts_added": 0,
+    "alerts_removed": 0,
+    "summary": "13 evt 6 liq_sweep NOT-ACTIONABLE (wick 0.26-0.61\u00d7ATR) + 7 bar_close. USDJPY ARMED dist=18.5p. GOLD sweep_4721 WATCH dist=44.67$. BTC FVG tagged (low=76959.55) bounced +714$, no daemon event. 0 trades."
   }
 ]
