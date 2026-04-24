@@ -2,7 +2,7 @@
   "_comment": "Scalp engine config. Engine daemon reads this every second. Claude updates via the tick's Step 8d audit. Shadow mode = no live orders, just logs paper entries.",
   "global": {
     "enabled": true,
-    "shadow_mode": true,
+    "shadow_mode": false,
     "daily_loss_cap_usd": 15,
     "max_concurrent": 2,
     "max_per_pair": 1,
