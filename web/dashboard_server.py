@@ -49,6 +49,24 @@ SIGNALS_FILE = REPO / "state" / "forex_watchlist_signals.json"
 WATCHER_STATUS = REPO / "state" / "forex_watcher_status.json"
 POSYNC_STATUS = REPO / "state" / "forex_position_sync_status.json"
 STATE_FILE = REPO / "state" / "forex_state.json"
+DB_PATH    = REPO / "state" / "pulse.db"
+
+
+def _db_query(sql, params=(), limit=500):
+    """Execute a read-only query on the pulse DB. Returns list of dict rows."""
+    import sqlite3
+    if not DB_PATH.exists():
+        return {"error": "db_not_initialised",
+                "detail": f"{DB_PATH} missing — run `python3 db/migrate.py`"}
+    con = sqlite3.connect(f"file:{DB_PATH}?mode=ro", uri=True)
+    con.row_factory = sqlite3.Row
+    try:
+        rows = [dict(r) for r in con.execute(sql, params).fetchmany(limit)]
+        return {"rows": rows, "count": len(rows)}
+    except Exception as e:
+        return {"error": "db_query_failed", "detail": str(e)}
+    finally:
+        con.close()
 
 # Broker call cache — thread-safe, 3-sec TTL
 _broker_cache = {"ts": 0, "positions": None, "account": None, "prices": {}}
@@ -1150,6 +1168,74 @@ class Handler(BaseHTTPRequestHandler):
                     self._json({"error": "epic required"}, status=400)
                 else:
                     self._json(evaluate_gates(epic))
+            elif u.path == "/api/db/summary":
+                # Quick counts + latest bits — good "health" page for the DB.
+                import sqlite3
+                if not DB_PATH.exists():
+                    self._json({"error": "db_not_initialised"}, status=503)
+                else:
+                    con = sqlite3.connect(f"file:{DB_PATH}?mode=ro", uri=True)
+                    con.row_factory = sqlite3.Row
+                    try:
+                        counts = {}
+                        for t in ("trades","events","ticks","regime_snapshots",
+                                  "broker_positions","counterfactuals"):
+                            counts[t] = con.execute(f"SELECT COUNT(*) FROM {t}").fetchone()[0]
+                        latest_tick = con.execute("SELECT ts_utc FROM ticks ORDER BY id DESC LIMIT 1").fetchone()
+                        latest_trade = con.execute("SELECT opened_at, epic, direction, source FROM trades ORDER BY id DESC LIMIT 1").fetchone()
+                        self._json({
+                            "db_path": str(DB_PATH),
+                            "counts": counts,
+                            "latest_tick_ts": latest_tick["ts_utc"] if latest_tick else None,
+                            "latest_trade": dict(latest_trade) if latest_trade else None,
+                        })
+                    finally:
+                        con.close()
+            elif u.path == "/api/db/trades":
+                epic_filter = q.get("epic", [None])[0]
+                source_filter = q.get("source", [None])[0]
+                limit = min(int(q.get("limit", ["50"])[0]), 500)
+                where, params = [], []
+                if epic_filter:
+                    where.append("epic = ?"); params.append(epic_filter)
+                if source_filter:
+                    where.append("source = ?"); params.append(source_filter)
+                w = ("WHERE " + " AND ".join(where)) if where else ""
+                sql = f"""SELECT id, source, epic, direction, size, entry_price,
+                          sl, tp, exit_price, opened_at, closed_at, open_reason,
+                          close_reason, thesis_type, realized_pnl_usd,
+                          realized_pnl_pips, held_minutes, shadow, broker_deal_id
+                       FROM trades {w} ORDER BY id DESC LIMIT ?"""
+                params.append(limit)
+                self._json(_db_query(sql, tuple(params), limit=limit))
+            elif u.path == "/api/db/events":
+                type_filter = q.get("type", [None])[0]
+                limit = min(int(q.get("limit", ["50"])[0]), 500)
+                if type_filter:
+                    self._json(_db_query(
+                        "SELECT event_id, type, ts_utc, instrument, alert_id, "
+                        "direction, timeframe, consumed FROM events WHERE type=? "
+                        "ORDER BY id DESC LIMIT ?",
+                        (type_filter, limit), limit=limit))
+                else:
+                    self._json(_db_query(
+                        "SELECT event_id, type, ts_utc, instrument, alert_id, "
+                        "direction, timeframe, consumed FROM events "
+                        "ORDER BY id DESC LIMIT ?",
+                        (limit,), limit=limit))
+            elif u.path == "/api/db/ticks":
+                limit = min(int(q.get("limit", ["50"])[0]), 500)
+                self._json(_db_query(
+                    "SELECT ts_utc, trigger_type, events_in, trades_opened, "
+                    "trades_closed, summary FROM ticks ORDER BY id DESC LIMIT ?",
+                    (limit,), limit=limit))
+            elif u.path == "/api/db/positions":
+                limit = min(int(q.get("limit", ["100"])[0]), 500)
+                self._json(_db_query(
+                    "SELECT ts_utc, deal_id, epic, direction, size, level, "
+                    "stop_level, profit_level, upl FROM broker_positions "
+                    "ORDER BY id DESC LIMIT ?",
+                    (limit,), limit=limit))
             elif u.path == "/api/gates/all":
                 self._json({"instruments": gates_all()})
             elif u.path == "/api/ticks":

@@ -29,3 +29,8 @@ state/.forex_claude.lock
 
 # macOS
 .DS_Store
+
+# SQLite binary — rebuilt via db/migrate.py if lost; docs/data/forex/db_snapshot.json is the git-durable backup
+state/pulse.db
+state/pulse.db-*
+state/.db_persister_cursor/
