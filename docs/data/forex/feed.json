@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T06:39:49.742050Z",
+  "generated_at": "2026-04-25T06:49:26.191725Z",
   "ticks": [
     {
       "ts_utc": "2026-04-23T00:37:30Z",
@@ -398,6 +398,14 @@
       },
       "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=KEEP(no trades) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
       "tick_note": "06:34 forex auto \u2014 1 evt news_flash(iran_ceasefire: Tehran skips round 2, escalation persists). Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP. BOJ T-2d FOMC T-4d cal. 0 trades 0pos. attention_covered=9/9."
+    },
+    {
+      "ts_utc": "2026-04-25T06:50:00Z",
+      "events_in": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "note": "06:50 forex auto \u2014 0 evt heartbeat. Market CLOSED weekend. Broker: 0pos, 1 LIMIT GBPUSD BUY@1.3506 SL=1.3495 TP=1.3531 bid=1.35266 (20.7p away) KEEP. Confluence sweep all 9: GBPUSD +48 mod bullish 4/4 ARMED; USDJPY +19.5 none (dropped from +51 mod, BOJ T-2d) WATCH 61.6p<160; GOLD -10.5 none safehaven_4775 64.4$ WATCH; OIL +29.5 weak retest_90 3.9$ WATCH; BTC +13.5 none FVG_76960 687$ same-day-loss block; USDCHF -5 none sweep_h1 27p WATCH; USDCAD -29 weak sweep_136634 opposing WATCH; EURUSD +12.5 none; AUDUSD +29 weak no-alert. Rule1/Rule2 audit: all 7 alerts dist<3\u00d7H4ATR NOT auto-remove; counterfactual prunes already done (gbpusd_134928/audusd_71379 removed Apr24). 7 alerts KEEP prox-refreshed. Scalp engine: EURUSD/GBPUSD/AUDUSD ACTIVE halt={}, USDJPY/CHF/CAD pip-conv-pending, GOLD/OIL/BTC spread-blocked. web_search SKIP (0pos + regime stable 4h+). BOJ T-2d FOMC T-4d. 0 trades 0pos. attention_covered=9/9."
     }
   ]
 }
