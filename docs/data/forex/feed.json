@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T04:27:25.519595Z",
+  "generated_at": "2026-04-25T05:42:50.768483Z",
   "ticks": [
     {
       "ts_utc": "2026-04-22T23:24:00Z",
@@ -295,6 +295,60 @@
       "regime_summary": "Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 active. 3 sweep events processed: USDCAD buy+GBPUSD sell added as WATCH; USDCHF skip (readiness=none). BOJ T-2d, FOMC T-4d calendar. No blackout.",
       "balance_usd": 995.13,
       "daily_pnl_usd": 0.0
+    },
+    {
+      "tick_ts_utc": "2026-04-25T05:41:00Z",
+      "events_processed": 0,
+      "events_consumed": [],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "skipped": 0,
+      "positions_end": 0,
+      "pending_limits": 1,
+      "limit_detail": "GBPUSD BUY@1.3506 SL=1.3495 TP=1.3531",
+      "binary": "none",
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "confluence": {
+        "EURUSD": {
+          "comp": 12.5,
+          "readiness": "none"
+        },
+        "GBPUSD": {
+          "comp": 48.0,
+          "readiness": "moderate"
+        },
+        "AUDUSD": {
+          "comp": 29.0,
+          "readiness": "weak"
+        },
+        "USDJPY": {
+          "comp": 19.5,
+          "readiness": "none"
+        },
+        "USDCAD": {
+          "comp": -29.0,
+          "readiness": "weak"
+        },
+        "USDCHF": {
+          "comp": -5.0,
+          "readiness": "none"
+        },
+        "GOLD": {
+          "comp": -10.5,
+          "readiness": "none"
+        },
+        "OIL_CRUDE": {
+          "comp": 29.5,
+          "readiness": "weak"
+        },
+        "BTCUSD": {
+          "comp": 13.5,
+          "readiness": "none"
+        }
+      },
+      "attention_covered": "9/9",
+      "scalp_status": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=KEEP USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
+      "note": "heartbeat, market closed weekend, no events"
     }
   ]
 }
