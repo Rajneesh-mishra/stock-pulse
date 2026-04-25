@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-25T10:07:47.004935Z",
+  "generated_at": "2026-04-25T11:15:53.895927Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-23T00:52:00Z",
-      "events_in": 6,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 6,
-      "note": "00:52 UTC tick \u2014 6 events (1 GOLD liquidity_sweep 00:30 4749.45 up-sweep wick 26.7p 2.5xATR sell-bias + 5 bar_close routine). GOLD confluence comp -27.5 weak 3/4 bearish \u2192 agrees sweep-dir but <moderate not armable per 4b. No counter-alert added (USDCAD-sweep precedent, 2.5x<4xATR). GOLD price 4729\u21924743.86 refresh (+14.8p drift). 3 alerts KEEP, 9 structure KEEP, 8 queries KEEP. $1000/0. 0 trades. BOJ T-4d, FOMC T-6d."
-    },
     {
       "ts_utc": "2026-04-23T01:00:24Z",
       "events_in": 9,
@@ -512,6 +504,28 @@
         "BTCUSD": "+26 weak"
       },
       "note": "Heartbeat. Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 in place (comp=+48 moderate). BOJ T-2d FOMC T-4d cal. oil_sweep_9208 pruned (stale). attention_covered=9/9."
+    },
+    {
+      "tick_ts_utc": "2026-04-25T11:15:00Z",
+      "events": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "binary": "none",
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "open_positions": [],
+      "pending_limits": [
+        {
+          "epic": "GBPUSD",
+          "dir": "BUY",
+          "level": 1.3506,
+          "sl": 1.3495,
+          "tp": 1.3531,
+          "comp": "+48 mod"
+        }
+      ],
+      "note": "0 evt heartbeat. Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP. BOJ T-2d FOMC T-4d cal. GOLD none(-10.5) $4710.6 WATCH. OIL weak(+29.5) $94.20 dist $3.90 WATCH(3f/67%4h). Fixed oil_crude_retest_90_buy counterfactual note (3f/67%4h, not 6f/100%4h). 0 trades 0pos. attention_covered=9/9.",
+      "scalp": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=ACTIVE no_halts daily_pnl=$0.00"
     }
   ]
 }
