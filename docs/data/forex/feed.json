@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-25T06:49:26.191725Z",
+  "generated_at": "2026-04-25T07:57:48.180794Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-23T00:37:30Z",
-      "events_in": 15,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 15,
-      "note": "00:37 UTC tick - 15 events: 8 liquidity_sweep (one per pair) + 7 M15 bar_close routine. SWEEP TRIAGE: GOLD down-sweep 4698.81 46.2p wick 4.4xATR (biggest mag, readiness=weak bearish comp AGAINST buy-bias = not armable), OIL_CRUDE up-sweep 95.286 154.9p wick 2xATR (readiness=weak bullish comp AGAINST sell-bias = not armable, conflicts with existing 90.30 BUY thesis), USDJPY up-sweep 159.604 8.4p (readiness=moderate bullish comp AGAINST sell-bias = not armable), AUDUSD/EURUSD/GBPUSD down-sweep + USDCAD/USDCHF up-sweep all sub-1.5xATR minor. NO sweeps meet Step 4e criteria (readiness>=moderate AND direction AGAINST sweep wick). 0 new alerts added (would be noisy, prior USDCAD sweep alert removed after 93min as precedent). 3 KEEP alerts (USDJPY 56p<160 WATCH, GOLD 46p<4775 weak bearish comp rule-2 4h=0.8 KEEP, OIL 320p>90.30 weak bull rule-1 cond1 FALSE KEEP rule-2 4h=0.67). Broker $1000/0pos reconciled. 0 trades. BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 28-29)."
-    },
     {
       "ts_utc": "2026-04-23T00:52:00Z",
       "events_in": 6,
@@ -236,6 +228,14 @@
       "note": "05:55 forex auto \u2014 1 evt news_flash(fed_fomc GoldSilver 'What to Watch Before Apr-29 FOMC' published Apr-23 20:56 GMT, non-thesis-altering market-preview, consumed). Market CLOSED weekend. Broker: 0pos, 1 LIMIT GBPUSD BUY@1.3506 SL=1.3495 TP=1.3531 (bid=1.35266 20.6p away). GBPUSD comp=+48 mod bullish, LIMIT KEEP. USDJPY 159.384 +19.5 none dist=61.6p WATCH BOJ T-2d. GOLD 4710.6 -10.5 none safehaven_4775 dist=64.4$ WATCH. OIL 94.2 +29.5 weak retest_90 dist=3.90$ WATCH. BTC 77647 +13.5 none fvg_76960 dist=687$ WATCH (same-day-loss block til 14:26 UTC). USDCHF -5.0 none sweep_h1 WATCH. USDCAD -29.0 weak sweep_136634 WATCH. EURUSD +12.5 none AUDUSD +29.0 weak. 7 alerts KEEP. Scalp: EURUSD/GBPUSD/AUDUSD ACTIVE halt={}. BOJ T-2d FOMC T-4d. 0 trades 0pos. attention_covered=9/9."
     },
     {
+      "ts_utc": "2026-04-25T07:50:00Z",
+      "events_in": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "note": "07:50 forex auto \u2014 0 evt heartbeat. Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP (bid=1.35331, 27p above limit). USDJPY +19.5 none dist=66.1p WATCH (BOJ T-2d). GOLD -10.5 none price=4710 inside 4695-4715 zone WATCH (validated 10 fires 4h=80%). OIL +29.5 weak sweep_9208 dist=2.05$ WATCH; READD sweep_9323 dist=0.97$ WATCH (validated 6 fires 4h=100%). AUDUSD +29.0 weak pullback_0.7085 dist=65p WATCH. USDCAD -29.0 weak fvg_1.3675 WATCH. USDCHF -5.0 none NONE. EURUSD +12.5 none NONE. BTC +5.5 none NONE. 6 KEEP +1 ADD oil_9323. news_search SKIP(0pos+regime stable 4h+). scalp halt={}. 0 trades 0pos. BOJ T-2d FOMC T-4d. attention_covered=9/9."
+    },
+    {
       "tick_ts_utc": "2026-04-25T03:52:00Z",
       "events_processed": 3,
       "events": [
@@ -406,6 +406,18 @@
       "closed": 0,
       "skipped": 0,
       "note": "06:50 forex auto \u2014 0 evt heartbeat. Market CLOSED weekend. Broker: 0pos, 1 LIMIT GBPUSD BUY@1.3506 SL=1.3495 TP=1.3531 bid=1.35266 (20.7p away) KEEP. Confluence sweep all 9: GBPUSD +48 mod bullish 4/4 ARMED; USDJPY +19.5 none (dropped from +51 mod, BOJ T-2d) WATCH 61.6p<160; GOLD -10.5 none safehaven_4775 64.4$ WATCH; OIL +29.5 weak retest_90 3.9$ WATCH; BTC +13.5 none FVG_76960 687$ same-day-loss block; USDCHF -5 none sweep_h1 27p WATCH; USDCAD -29 weak sweep_136634 opposing WATCH; EURUSD +12.5 none; AUDUSD +29 weak no-alert. Rule1/Rule2 audit: all 7 alerts dist<3\u00d7H4ATR NOT auto-remove; counterfactual prunes already done (gbpusd_134928/audusd_71379 removed Apr24). 7 alerts KEEP prox-refreshed. Scalp engine: EURUSD/GBPUSD/AUDUSD ACTIVE halt={}, USDJPY/CHF/CAD pip-conv-pending, GOLD/OIL/BTC spread-blocked. web_search SKIP (0pos + regime stable 4h+). BOJ T-2d FOMC T-4d. 0 trades 0pos. attention_covered=9/9."
+    },
+    {
+      "ts_utc": "2026-04-25T07:50:00Z",
+      "events": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "alerts_changed": 1,
+      "alert_changes": [
+        "ADD oil_sweep_9323_buy_retest (validated 6 fires 4h=100%)"
+      ],
+      "note": "07:50 heartbeat. Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 KEEP. READD oil_sweep_9323. 0 trades. BOJ T-2d FOMC T-4d."
     }
   ]
 }
