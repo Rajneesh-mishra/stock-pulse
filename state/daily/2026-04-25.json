@@ -446,5 +446,25 @@
     "audit_changes": "All 7 alerts KEEP. Proximity notes updated. No new trades. Escalation news strengthens gold/oil thesis narratively but price not at entry levels.",
     "scalp_status": "EURUSD/GBPUSD/AUDUSD ACTIVE no halts. USDJPY/USDCHF/USDCAD pip-conv pending. GOLD/OIL/BTC spread blocked.",
     "attention_covered": "9/9"
+  },
+  {
+    "tick_ts_utc": "2026-04-25T18:22Z",
+    "events": 0,
+    "event_types": [],
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_active": false,
+    "binary_name": "iran_ceasefire_indefinite_extension",
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "orders_pending": 1,
+    "orders_pending_detail": [
+      "GBPUSD LIMIT BUY@1.3506"
+    ],
+    "pnl_day": 0.0,
+    "balance": 995.13,
+    "notes": "0 evt heartbeat. Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP. BOJ T-2d FOMC T-4d cal. GOLD none(-10.5) WATCH(val). OIL weak(+29.5) WATCH(val). AUDUSD ADD level alert pullback_buy_7085. USDCAD WATCH(opp). USDCHF WATCH. BTCUSD WATCH FVG. attention_covered=9/9.",
+    "watchlist_changes": [
+      "ADD audusd_pullback_buy_7085"
+    ]
   }
 ]

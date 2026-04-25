@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-25T17:57:00Z",
+  "last_updated_by_claude": "2026-04-25T18:22:00Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -152,6 +152,28 @@
       "last_updated": "2026-04-25T04:21:00Z",
       "updated_utc": "2026-04-25T17:57:00Z",
       "proximity": "GBPUSD@1.35331; dist=3.9p BELOW 1.35370 \u2192 at level. comp=+48 mod bullish (extension gauge for counter-trend SELL; |comp|\u226540 criterion met). Cannot arm LIMIT SELL: level 1.35370 below current offer 1.35396 \u2192 would fill immediately. WATCH Mon open for rejection at 1.35370. LIMIT BUY@1.3506 is primary (working)."
+    },
+    {
+      "id": "audusd_pullback_buy_7085",
+      "instrument": "AUDUSD",
+      "level": 0.70850,
+      "emit_on": "cross_down",
+      "cooldown_sec": 1800,
+      "direction": "buy",
+      "note": "ENTRY: M15 bar pulls back into 0.7085–0.7090 zone and closes above 0.7085 with rejection wick ≥2p from the low. Requires readiness ≥ moderate to arm anticipation LIMIT.\n\nCONTEXT: AUDUSD multi-factor bullish: RBA hawkish (3rd hike priced May 4.35%), DXY broke 98, Hormuz friction supports AUD risk-on side. Pullback retracement into structural demand zone.\n\nSL: 0.7030  TP: 0.7187  R:R target: 1.85\n\nadded 2026-04-25T18:22Z — heartbeat tick; comp=+29 weak, watchlist-only until confluence moderate+.",
+      "entry_criterion": "M15 bar closes above 0.7085 with rejection wick ≥2p from the low inside 0.7085–0.7090 zone. Requires readiness ≥ moderate to arm LIMIT.",
+      "regime_context": "AUDUSD multi-factor bullish: RBA hawkish (3rd hike priced May), DXY broke 98 (lowest since Iran war), Hormuz reopen + OPEC+ supports risk-on, China Q1 solid. comp=+29 weak; needs pullback confirmation.",
+      "sl": 0.7030,
+      "tp": 0.7187,
+      "rr_target": "1.85",
+      "current_price_ref": 0.71503,
+      "price_ref": {
+        "ts": "2026-04-25T18:22:00Z",
+        "price": 0.71503
+      },
+      "last_updated": "2026-04-25T18:22:00Z",
+      "updated_utc": "2026-04-25T18:22:00Z",
+      "proximity": "AUDUSD@0.71503; dist=65.3p ABOVE 0.7085 → outside 30p prox. comp=+29 weak. H4ATR=21p; 3×H4ATR=63p (dist=65p barely outside). swing=WATCH (readiness=weak, need pullback + moderate to arm)."
     },
     {
       "id": "usdcad_sweep_136634_buy_watch",
