@@ -1,13 +1,6 @@
 {
-  "generated_at": "2026-04-25T18:28:03.691324Z",
+  "generated_at": "2026-04-25T19:21:29.902699Z",
   "ticks": [
-    {
-      "ts": "2026-04-23T07:14:00Z",
-      "events_processed": 10,
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "summary": "3 liq_sweep readiness=none NOT-ACTIONABLE + 7 bar_close; 3 KEEP carried"
-    },
     {
       "ts": "2026-04-23T08:09:00Z",
       "events_processed": 1,
@@ -662,6 +655,14 @@
       "watchlist_changes": [
         "ADD audusd_pullback_buy_7085"
       ]
+    },
+    {
+      "ts_utc": "2026-04-25T19:20Z",
+      "events_in": 1,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "note": "19:20 UTC tick \u2014 1 evt news_flash(fed_fomc: Warsh Fed Chair nomination committee vote set Apr 29, CoinGape). Non-regime-changing: Powell still chairs April 29 FOMC. Mildly USD-bullish (hawkish Warsh background). GBPUSD LIMIT BUY@1.3506 KEEP (dist=27p, ARM zone, comp=+48 moderate). BOJ T-2d FOMC T-4d \u2014 calendar only, no blackout. GOLD none(-10.5) dist=10.6p validated WATCH. OIL weak(+29.5) dist=$0.97 validated WATCH. USDCAD weak(-29) dist=6.4p WATCH. USDJPY none(+19.5) dist=66p WATCH BOJ T-2d. All 6 level_alerts KEEP. 8 news queries KEEP. 9 structure_watch KEEP. Scalp audit: EURUSD/GBPUSD/AUDUSD KEEP(no halts), USDJPY/CHF/CAD pip-conv-pending, GOLD/OIL/BTC spread. 0 trades 0pos. $995.13. attention_covered=9/9."
     }
   ]
 }
