@@ -249,5 +249,32 @@
     "alerts_remove": 0,
     "calendar": "BOJ T-2d(Apr27-28) FOMC T-4d(Apr29)",
     "note": "Heartbeat. GOLD inside buy zone 4695-4715 (comp=none, no entry). USDCAD 6p from SELL FVG. Oil sweep_9323 $0.97 from level."
+  },
+  {
+    "tick_ts_utc": "2026-04-25T10:05Z",
+    "events": 0,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "skipped": 0,
+    "open_positions": 0,
+    "pending_limits": 1,
+    "binary": "iran_ceasefire_indefinite_extension(active=false)",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "alert_changes": [
+      "REMOVE oil_sweep_9208_buy_retest (stale dist=205p>3xH4ATR=171p)"
+    ],
+    "scalp": "EURUSD/GBPUSD/AUDUSD ACTIVE no_halt",
+    "confluence": {
+      "EURUSD": "+12.5 none",
+      "GBPUSD": "+48 moderate",
+      "AUDUSD": "+29 weak",
+      "USDJPY": "+19.5 none",
+      "USDCAD": "-29 weak",
+      "USDCHF": "-5 none",
+      "GOLD": "-10.5 none",
+      "OIL_CRUDE": "+29.5 weak",
+      "BTCUSD": "+26 weak"
+    },
+    "note": "Heartbeat. Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 in place (comp=+48 moderate). BOJ T-2d FOMC T-4d cal. oil_sweep_9208 pruned (stale). attention_covered=9/9."
   }
 ]
