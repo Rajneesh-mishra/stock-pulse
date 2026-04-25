@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T13:41:24.330201+00:00",
+  "generated_at": "2026-04-25T17:59:20.100467+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -358,9 +358,9 @@
           "hit_rate": 0.0
         },
         "24h": {
-          "filled": 2,
+          "filled": 3,
           "favorable": 0,
-          "avg_pips": -38.7,
+          "avg_pips": -38.8,
           "hit_rate": 0.0
         }
       }
@@ -384,10 +384,10 @@
           "hit_rate": 0.0
         },
         "24h": {
-          "filled": 0,
+          "filled": 1,
           "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "avg_pips": -12.3,
+          "hit_rate": 0.0
         }
       }
     },
@@ -410,10 +410,10 @@
           "hit_rate": 0.0
         },
         "24h": {
-          "filled": 0,
+          "filled": 1,
           "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "avg_pips": -310.4,
+          "hit_rate": 0.0
         }
       }
     }

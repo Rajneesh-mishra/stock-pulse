@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-25T13:39:48.064424+00:00",
+  "generated_at": "2026-04-25T17:55:06.047622+00:00",
   "counts": {
     "trades": 15,
-    "events": 3835,
+    "events": 3838,
     "ticks": 59,
-    "regime_snapshots": 37,
+    "regime_snapshots": 38,
     "broker_positions": 0,
     "counterfactuals": 48
   },
@@ -328,6 +328,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-25T13:41Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "13:41 forex auto \u2014 0 evt heartbeat. Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP (dist=27p within 30p ARM threshold). BOJ T-2d FOMC T-4d cal. GOLD none(-10.5) inside 4695-4715 zone WATCH(val). OIL weak(+29.5) dist=$0.90 NEAR(H1ATR=$1.29) WATCH(val). USDCAD weak(-29) dist=5p WATCH. 0 trades 0pos. attention_covered=9/9.",
+      "binary_event_name": "iran_ceasefire_indefinite_extension",
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-04-25T13:16Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "13:16 forex auto \u2014 1 evt news_flash(hormuz_strait historical retrospective, non-actionable). Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP (dist=27p within 30p ARM threshold). BOJ T-2d FOMC T-4d cal. GOLD none(-10.5) price=4710.6 IN zone 4695-4715 WATCH(validated 10f/80%4h). OIL weak(+29.5) price=$94.20 dist=$0.97 NEAR(H1ATR=$1.29) readiness=weak WATCH(valid 6f/100%4h). USDCAD dist=6p from sell level 1.3675 readiness=weak WATCH. 0 trades 0pos. attention_covered=9/9.",
@@ -395,14 +403,6 @@
       "ts_utc": "2026-04-25T04:21:00Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "04:21 forex auto \u2014 3 evt liq_sweep(USDCAD buy 1.36634 wick=1.4p weak, GBPUSD sell 1.35370 wick=2.2p entry-missed, USDCHF buy 0.78458 wick=1.0p none). Market CLOSED (weekend). GBPUSD LIMIT BUY@1.3506 active bid=1.35266 comp=+48 mod KEEP. ADDED gbpusd_sweep_135370_sell_watch (counter-trend WATCH, entry-missed, Sunday retest). ADDED usdcad_sweep_136634_buy_watch (weak 1.4p wick, bearish opp, WATCH). USDCHF comp=-5 none SKIP (wick 1.0p, no setup). GOLD 4710.6 comp=-10.5 none WATCH. OIL 94.20 comp=+29.5 weak 90.30 dist=3.90$ WATCH. USDJPY 159.38 dist=61.6p BOJ T-2d WATCH. BTC 77681 comp=+13.5 none same-day-block til 14:26 UTC. EURUSD comp=+12.5 none NONE. AUDUSD comp=+29 weak NONE. 0 trades 0 LIMIT-changes 0pos. attention_covered=9/9.",
-      "binary_event_name": "iran_ceasefire_indefinite_extension",
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-04-25T04:17:00Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "04:17 forex auto \u2014 1 evt news_flash(Fortune Apr24 historical Tanker-War retrospective, matched 'mine' kw, NO fresh catalyst, no regime change). GOLD 4710.6 comp=-10.5 none WATCH. OIL 94.20 comp=+29.5 weak 90.30 dist=3.90$ WATCH. USDJPY 159.38 comp=+19.5 none dist=61.6p BOJ T-2d WATCH. GBPUSD LIMIT BUY@1.3506 active bid=1.35266 comp=+48 moderate KEEP. BTC 77700 comp=+13.5 none same-day-loss block til 14:26 UTC WATCH. USDCHF 0.7848 comp=-5 none dist=26.8p inside-prox WATCH. AUDUSD 0.7150 comp=+29 weak NONE. EURUSD 1.1721 comp=+12.5 none NONE. USDCAD 1.3669 comp=-29 weak NONE. 0 trades 0 LIMIT-changes 0pos. attention_covered=9/9.",
       "binary_event_name": "iran_ceasefire_indefinite_extension",
       "binary_event_active": 0,
       "binary_event_deadline": null

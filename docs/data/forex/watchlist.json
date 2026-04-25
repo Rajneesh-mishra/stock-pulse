@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-25T11:15:00Z",
+  "last_updated_by_claude": "2026-04-25T17:57:00Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -36,7 +36,7 @@
       },
       "last_updated": "2026-04-23T19:34:33+00:00",
       "proximity": "USDJPY@159.384; dist=61.6p BELOW 160.00 \u2192 OUTSIDE 30p prox \u2192 swing=WATCH. comp=+19.5 none bullish (AGAINST sell; extension=weak). H4ATR=0.276; 3\u00d7H4ATR=82.8p (NOT auto-remove). BOJ Apr 27-28 T-2d WATCH.",
-      "updated_utc": "2026-04-25T11:15:00Z",
+      "updated_utc": "2026-04-25T17:57:00Z",
       "entry_criterion": "price tags 160.00; enter on M15 bar that closes BACK BELOW 160 with a rejection wick of 8+ pips from the high. No headline required.",
       "regime_context": "160 is the MoF/BoJ verbal-intervention red line (Katayama G7 'bold action'). FRESH: Katayama Apr 23 Bloomberg \u2014 'constant close contact with US on FX'. BOJ Apr 27-28 hold at 0.75% expected but hawkish June signal strengthens JPY short-squeeze risk. Escalation of shoot-to-kill Iran orders supports USD safe-haven but BoJ intervention risk outweighs at 160 red line.",
       "sl": 160.5,
@@ -57,8 +57,8 @@
         "price": 4729.1
       },
       "last_updated": "2026-04-23T19:34:33+00:00",
-      "proximity": "GOLD@4710.6; dist=$64.4 BELOW 4775 \u2192 OUTSIDE prox. comp=-10.5 none bearish (OPPOSES buy). H4ATR=36.12; 3\u00d7H4ATR=$108.4 (NOT auto-remove). fires=10/80%4h validated. Regime ACTIVE_ESCALATION intact.",
-      "updated_utc": "2026-04-25T11:15:00Z",
+      "proximity": "GOLD@4710.6; dist=$64.4 BELOW 4775 \u2192 OUTSIDE prox. comp=-10.5 none bearish (OPPOSES buy). H4ATR=36.12; 3\u00d7H4ATR=$108.4 (NOT auto-remove). fires=10/80%4h validated. Escalation news (Trump cancels Islamabad envoys) supports gold thesis. swing=WATCH, price must approach 4775.",
+      "updated_utc": "2026-04-25T17:57:00Z",
       "entry_criterion": "price breaks above 4775 with an M15 close above + bullish FVG on the breakout bar. Structural continuation, entry on the break.",
       "regime_context": "Safe-haven bid thesis now UPGRADED: Trump ordered US Navy to attack Iranian mine-laying boats (Apr 23), 3rd tanker seized, Brent $105+. Hormuz remains blocked. Thesis invalidates only if BTC >+5% day (pure risk-on) while gold rolls AND Iran-US de-escalates. Currently comp bears suppress, but escalation ladder could flip that quickly.",
       "sl": 4730,
@@ -79,8 +79,8 @@
         "price": 92.406
       },
       "last_updated": "2026-04-24T06:10:00Z",
-      "proximity": "OIL@94.20; dist=$3.90 ABOVE 90.30 \u2192 inside 3\u00d7H4ATR=$7.11. comp=+29.5 weak (need +40 mod). Validated (3f/67%4h \u2014 NOTE: prior tick erroneously showed 6f/100%4h from oil_sweep_9323; corrected). WATCH for retrace. Market closed weekend.",
-      "updated_utc": "2026-04-25T11:15:00Z",
+      "proximity": "OIL@94.20; dist=$3.90 ABOVE 90.30 \u2192 inside 3\u00d7H4ATR=$7.11. comp=+29.5 weak (need +40 mod). Validated (3f/67%4h). Escalation news supports oil supply-risk; oil elevated far from buy level. swing=WATCH for retrace. Market closed weekend.",
+      "updated_utc": "2026-04-25T17:57:00Z",
       "entry_criterion": "LIMIT at 90.30 when readiness\u2265moderate and price within 1.13$ of level. VALIDATED \u2014 no M15 confirmation required (3 fires, 67% 4h hit rate). Cancel if price closes below SL 89.5.",
       "regime_context": "WTI cleanly broke above 90 on Hormuz blockade re-rating. 90 flipped from resistance to support on the break. Retest is structural, not news-gated.",
       "sl": 89.5,
@@ -101,8 +101,8 @@
         "price": 78118
       },
       "last_updated": "2026-04-24T03:47:00Z",
-      "updated_utc": "2026-04-25T11:15:00Z",
-      "proximity": "BTC@77780; dist=$820 ABOVE 76960 FVG \u2192 OUTSIDE 0.5\u00d7H4ATR=$403. comp=+26 weak. Day FVG 76937-76984 unmitigated. Same-day-loss block expired. swing=WATCH.",
+      "updated_utc": "2026-04-25T17:57:00Z",
+      "proximity": "BTC@77273; dist=$313 ABOVE 76960 FVG \u2192 INSIDE 0.5\u00d7H4ATR\u2248$400. comp=+3.5 none readiness=none. Day FVG 76937-76984 approaching. swing=WATCH (readiness=none, need comp\u226540 to arm).",
       "entry_criterion": "price pulls back into Day FVG zone 76937-76984; M15 bar closes inside or above zone with bullish rejection wick of \u226550p from the low. Structural pullback entry into unmitigated demand.",
       "regime_context": "Fresh Day FVG created 2026-04-23. BTC 4/4 bull across all TFs. Risk-on regime supports continuation.",
       "sl": 76400,
@@ -123,13 +123,13 @@
         "price": 0.78502
       },
       "last_updated": "2026-04-24T07:17:00Z",
-      "updated_utc": "2026-04-25T11:15:00Z",
+      "updated_utc": "2026-04-25T17:57:00Z",
       "entry_criterion": "price retests 0.7875; M15 bar closes back below with rejection wick \u22653p. Requires readiness\u2265moderate to arm.",
       "regime_context": "H1 up-sweep 2026-04-24T07:00Z; wick=1.7p at 0.787505. comp=+7.5 neutral readiness=none. USD-CHF swing eligible (scalp disabled-pip-conv). WATCH until comp \u2264-40 moderate-bear.",
       "sl": 0.7885,
       "tp": 0.784,
       "rr_target": "3.1",
-      "proximity": "USDCHF@0.7848; dist=27p BELOW 0.7875 \u2192 INSIDE 30p prox but comp=-5 none (need \u2264-40 mod to arm). H4ATR=0.00188; 3\u00d7H4ATR=56.4p (NOT auto-remove). swing=WATCH."
+      "proximity": "USDCHF@0.78483; dist=27p BELOW 0.7875 \u2192 INSIDE 30p prox but comp=-5.0 none (need \u2264-40 mod to arm). H4ATR=0.00188; 3\u00d7H4ATR=56.4p (NOT auto-remove). swing=WATCH."
     },
     {
       "id": "gbpusd_sweep_135370_sell_watch",
@@ -150,8 +150,8 @@
         "price": 1.35266
       },
       "last_updated": "2026-04-25T04:21:00Z",
-      "updated_utc": "2026-04-25T11:15:00Z",
-      "proximity": "GBPUSD@1.35331; dist=3.9p BELOW 1.35370 \u2192 at level. comp=+48 mod bullish (extension gauge for counter-trend SELL). LIMIT BUY@1.3506 is primary; this is range upper. Market closed weekend. swing=WATCH; arm Mon if rejection at 1.35370."
+      "updated_utc": "2026-04-25T17:57:00Z",
+      "proximity": "GBPUSD@1.35331; dist=3.9p BELOW 1.35370 \u2192 at level. comp=+48 mod bullish (extension gauge for counter-trend SELL; |comp|\u226540 criterion met). Cannot arm LIMIT SELL: level 1.35370 below current offer 1.35396 \u2192 would fill immediately. WATCH Mon open for rejection at 1.35370. LIMIT BUY@1.3506 is primary (working)."
     },
     {
       "id": "usdcad_sweep_136634_buy_watch",
@@ -172,8 +172,8 @@
         "price": 1.36646
       },
       "last_updated": "2026-04-25T04:21:00Z",
-      "updated_utc": "2026-04-25T11:15:00Z",
-      "proximity": "USDCAD@1.36686; dist=5.2p ABOVE 1.36634 \u2192 at level. comp=-29 weak bearish OPPOSING buy. Very weak setup (1.4p wick). swing=WATCH (low priority)."
+      "updated_utc": "2026-04-25T17:57:00Z",
+      "proximity": "USDCAD@1.36686; dist=5.2p ABOVE 1.36634 \u2192 at level. comp=-29 weak bearish OPPOSING buy. Very weak setup (1.4p wick). swing=WATCH (low priority, readiness<moderate)."
     }
   ],
   "structure_watch": [
@@ -244,5 +244,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-25T11:15:00Z"
+  "last_updated_utc": "2026-04-25T17:57:00Z"
 }
