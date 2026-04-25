@@ -314,5 +314,71 @@
     "notes": "1 news_flash: Times of Israel historical analysis on US protecting Hormuz shipping in 1980s. Non-actionable \u2014 historical retrospective, no regime change. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP (dist=27p within 30p ARM threshold). GOLD comp=-10.5 none IN zone 4695-4715 WATCH. OIL dist=$0.97 within H1ATR=$1.29 but readiness=weak WATCH. USDCAD 6p from sell level readiness=weak WATCH. BOJ T-2d FOMC T-4d \u2014 calendar caution only. Market closed weekend.",
     "scalp_status": "EURUSD/GBPUSD/AUDUSD=ACTIVE no halts daily_pnl=$0",
     "attention_covered": "9/9"
+  },
+  {
+    "tick_ts_utc": "2026-04-25T13:41Z",
+    "type": "heartbeat",
+    "events_consumed": 0,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "working_orders": 1,
+    "open_positions": 0,
+    "account_balance": 995.13,
+    "account_available": 964.74,
+    "daily_pnl": 0.0,
+    "market_status": "CLOSED_WEEKEND",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "regime_flags": [
+      "BOJ_T2D",
+      "FOMC_T4D"
+    ],
+    "confluence_summary": {
+      "GBPUSD": {
+        "readiness": "moderate",
+        "comp": 48.0,
+        "action": "LIMIT_KEEP"
+      },
+      "GOLD": {
+        "readiness": "none",
+        "comp": -10.5,
+        "action": "WATCH"
+      },
+      "OIL_CRUDE": {
+        "readiness": "weak",
+        "comp": 29.5,
+        "action": "WATCH"
+      },
+      "AUDUSD": {
+        "readiness": "weak",
+        "comp": 29.0,
+        "action": "WATCH"
+      },
+      "USDJPY": {
+        "readiness": "none",
+        "comp": 19.5,
+        "action": "WATCH"
+      },
+      "USDCAD": {
+        "readiness": "weak",
+        "comp": -29.0,
+        "action": "WATCH"
+      },
+      "EURUSD": {
+        "readiness": "none",
+        "comp": 12.5,
+        "action": "NONE"
+      },
+      "USDCHF": {
+        "readiness": "none",
+        "comp": -5.0,
+        "action": "NONE"
+      },
+      "BTCUSD": {
+        "readiness": "none",
+        "comp": 18.5,
+        "action": "NONE"
+      }
+    },
+    "notes": "Heartbeat. Market closed (weekend). GBPUSD LIMIT BUY@1.3506 armed, dist=27p within 30p threshold. All 6 alerts KEEP. Scalp engine running, no halts."
   }
 ]
