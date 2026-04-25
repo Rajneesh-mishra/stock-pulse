@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-25T11:14:19.943655+00:00",
+  "generated_at": "2026-04-25T13:19:34.611364+00:00",
   "counts": {
     "trades": 15,
-    "events": 3832,
+    "events": 3835,
     "ticks": 59,
-    "regime_snapshots": 35,
+    "regime_snapshots": 36,
     "broker_positions": 0,
     "counterfactuals": 48
   },
@@ -328,6 +328,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-25T11:15Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "11:15 forex auto \u2014 0 evt heartbeat. Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP (bid=1.35331, 27p above limit). BOJ T-2d FOMC T-4d cal. GOLD none(-10.5) price=4710.6 dist=$64.4 below 4775 WATCH(validated 10f/80%4h). OIL weak(+29.5) price=$94.20 dist=$3.90 above 90.30 WATCH(validated 3f/67%4h). USDJPY none(+19.5) 159.38 dist=61.6p below 160 WATCH. 0 trades 0pos. attention_covered=9/9.",
+      "binary_event_name": "iran_ceasefire_indefinite_extension",
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-04-25T09:02:24Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "09:02 forex auto \u2014 0 evt heartbeat. Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP (bid=1.35331, 27p above limit; BOJ T-2d risk). GOLD price=4710 inside 4695-4715 zone WATCH (comp=-10.5 none; VALIDATED 10 fires 4h=80%; readiness too low for entry). OIL sweep_9323@93.23 dist=$0.97 WATCH (comp=+29.5 weak; VALIDATED 6 fires 4h=100%; need mod for entry). OIL sweep_9208@92.15 dist=$2.05 WATCH (comp=+29.5 weak; need mod). USDCAD FVG SELL@1.3675 dist=6.4p WATCH (comp=-29 weak; near level, need mod). AUDUSD pullback BUY@0.7085 dist=65p WATCH (comp=+29 weak). USDJPY fade SELL@160.05 dist=66.6p WATCH (comp=+19.5 none; BOJ T-2d). USDCHF comp=-5 none NONE. EURUSD comp=+12.5 none NONE. BTCUSD comp=+15.5 none NONE. All 7 alerts KEEP. scalp halt=none. 0 trades 0pos. BOJ T-2d FOMC T-4d cal. attention_covered=9/9.",
@@ -395,14 +403,6 @@
       "ts_utc": "2026-04-25T03:59:17Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "03:52 forex auto \u2014 3 evt: news_flash(Hezbollah defiant ceasefire ext \u2014 ME risk persists, gold safe-haven supported) + news_flash(CNBC: Iran war+tariff ruling delays US-India trade deal \u2014 risk-off spillover) + alert_audit_request(usdjpy_intervention_fade_zone: KEEP, Hezbollah match=weak 'extension', BOJ thesis intact T-2d). GOLD 4710 comp=-10.5 none WATCH dist=10 above buy zone. OIL 94.20 comp=+29 weak WATCH. USDJPY 159.38 comp=+19.5 none dist=66.6p from 160.05 WATCH. GBPUSD LIMIT BUY @ 1.3506 active (bid=1.35266 above, waiting pullback) comp=+48 mod. USDCAD level fixed to 1.3675 (H1 FVG). Markets CLOSED (weekend). 0 trades 0 new LIMIT 0pos. BOJ T-2d FOMC T-4d. attention_covered=9/9.",
-      "binary_event_name": "iran_ceasefire_indefinite_extension",
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-04-24T16:10:00Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "16:10 forex auto \u2014 1 evt news_flash(Islamabad talks collapse + naval showdown escalating). Escalation confirmed, regime stays ACTIVE_ESCALATION. GOLD 4726 comp=-18 none. OIL 92.84 comp=+27 weak (swept 97\u219292.08 intraday, escalation-supply bullish). USDJPY 159.35 comp=+19.5 none, dist=65p from intervention 160.00, BOJ T-3d. AUDUSD 0.715 comp=+29 weak. BTC 77927 comp=+37.5 weak, same-day-loss skip. No readiness\u2265moderate. 0 trades 0 LIMIT 0pos. alerts rebuilt. attention_covered=9/9.",
       "binary_event_name": "iran_ceasefire_indefinite_extension",
       "binary_event_active": 0,
       "binary_event_deadline": null

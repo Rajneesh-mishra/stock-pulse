@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-25T11:15:53.895927Z",
+  "generated_at": "2026-04-25T13:22:51.327163Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-23T01:00:24Z",
-      "events_in": 9,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 9,
-      "summary": "01:00 UTC \u2014 9 events (AUDUSD sweep 0.9p noise + GOLD 4752 up-sweep 18.4p 1.73xATR 3rd-cluster + 7 bar_close). No sweep armable (AUDUSD conf opposes+wick tiny, GOLD conf weak<moderate). USDJPY +43.5 mod AGAINST 160 SELL 68.9p WATCH, OIL +34.5 weak BUY 250p WATCH, GOLD -27.5 weak 4775 BUY 29p rule-2 KEEP. 3 alerts KEEP refresh. 0 trades $1000/0."
-    },
     {
       "ts_utc": "2026-04-23T01:10:30Z",
       "events_in": 0,
@@ -526,6 +518,22 @@
       ],
       "note": "0 evt heartbeat. Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP. BOJ T-2d FOMC T-4d cal. GOLD none(-10.5) $4710.6 WATCH. OIL weak(+29.5) $94.20 dist $3.90 WATCH(3f/67%4h). Fixed oil_crude_retest_90_buy counterfactual note (3f/67%4h, not 6f/100%4h). 0 trades 0pos. attention_covered=9/9.",
       "scalp": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=ACTIVE no_halts daily_pnl=$0.00"
+    },
+    {
+      "tick_ts_utc": "2026-04-25T13:16Z",
+      "events_processed": 1,
+      "events": [
+        "evt_1777122892784_news_flash (news_flash hormuz_strait historical, non-actionable)"
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "positions_after": 0,
+      "pending_limits": 1,
+      "limit_summary": "GBPUSD BUY @1.3506 size=4500 SL=1.3495 TP=1.3531 (GTC)",
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "notes": "1 news_flash: Times of Israel historical analysis on US protecting Hormuz shipping in 1980s. Non-actionable \u2014 historical retrospective, no regime change. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP (dist=27p within 30p ARM threshold). GOLD comp=-10.5 none IN zone 4695-4715 WATCH. OIL dist=$0.97 within H1ATR=$1.29 but readiness=weak WATCH. USDCAD 6p from sell level readiness=weak WATCH. BOJ T-2d FOMC T-4d \u2014 calendar caution only. Market closed weekend.",
+      "scalp_status": "EURUSD/GBPUSD/AUDUSD=ACTIVE no halts daily_pnl=$0",
+      "attention_covered": "9/9"
     }
   ]
 }
