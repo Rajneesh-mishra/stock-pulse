@@ -1,0 +1,32 @@
+[
+  {
+    "tick_ts_utc": "2026-04-25T20:42:15Z",
+    "events": 0,
+    "event_types": [],
+    "market_status": "CLOSED_WEEKEND",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event_active": false,
+    "calendar": "BOJ Apr27-28 T-1d, FOMC Apr29 T-4d",
+    "open_positions": 0,
+    "working_orders": 1,
+    "working_orders_detail": [
+      "GBPUSD LIMIT BUY@1.3506 SL=1.3495 TP=1.3531 sz=4500"
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "pnl_tick": 0,
+    "watchlist_changes": "all 6 KEEP",
+    "attention": {
+      "EURUSD": "swing=NONE scalp=ACTIVE readiness=none",
+      "GBPUSD": "swing=ARMED scalp=ACTIVE readiness=moderate",
+      "AUDUSD": "swing=WATCH scalp=ACTIVE readiness=weak",
+      "USDJPY": "swing=WATCH scalp=OFF readiness=none",
+      "USDCAD": "swing=WATCH scalp=OFF readiness=weak",
+      "USDCHF": "swing=NONE scalp=OFF readiness=none",
+      "GOLD": "swing=WATCH scalp=N/A readiness=none",
+      "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=weak",
+      "BTCUSD": "swing=NONE scalp=N/A readiness=none"
+    },
+    "note": "0 evt heartbeat. Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 KEEP. GOLD inside 4695-4715 zone WATCH(validated). OIL dist=$0.93 WATCH(validated). BOJ T-1d FOMC T-4d cal."
+  }
+]
