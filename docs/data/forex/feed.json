@@ -1,13 +1,6 @@
 {
-  "generated_at": "2026-04-25T19:21:29.902699Z",
+  "generated_at": "2026-04-25T19:36:17.271998Z",
   "ticks": [
-    {
-      "ts": "2026-04-23T08:09:00Z",
-      "events_processed": 1,
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "summary": "1 news_flash us_tariff Chatham House Feb 17 archive 'reset' solo-match non-altering; DROPPED 'reset'; 4 alerts KEEP carried; 0 trades 0pos"
-    },
     {
       "ts": "2026-04-23T17:14:22Z",
       "summary": "2026-04-23T17:14:22Z \u2014 17:07 forex auto \u2014 21 evt gap since 12:34 (4.5h): 6 usdjpy_audits (iran_ceasefire 'extension' kw from Reuters/Al-Jazeera/Detroit-News/Caspian/Daily-Pioneer/WaPo \u2014 ALL iteration of indefinite-extension regime NOT thesis-altering) + 3 oil_audits (ship-traffic + extension-coverage NOT altering) + 4 liquidity_sweeps (USDCHF 0.78602 up-sell readiness=none skip / GBPUSD 1.35133 up",
@@ -663,6 +656,33 @@
       "closed": 0,
       "skipped": 0,
       "note": "19:20 UTC tick \u2014 1 evt news_flash(fed_fomc: Warsh Fed Chair nomination committee vote set Apr 29, CoinGape). Non-regime-changing: Powell still chairs April 29 FOMC. Mildly USD-bullish (hawkish Warsh background). GBPUSD LIMIT BUY@1.3506 KEEP (dist=27p, ARM zone, comp=+48 moderate). BOJ T-2d FOMC T-4d \u2014 calendar only, no blackout. GOLD none(-10.5) dist=10.6p validated WATCH. OIL weak(+29.5) dist=$0.97 validated WATCH. USDCAD weak(-29) dist=6.4p WATCH. USDJPY none(+19.5) dist=66p WATCH BOJ T-2d. All 6 level_alerts KEEP. 8 news queries KEEP. 9 structure_watch KEEP. Scalp audit: EURUSD/GBPUSD/AUDUSD KEEP(no halts), USDJPY/CHF/CAD pip-conv-pending, GOLD/OIL/BTC spread. 0 trades 0pos. $995.13. attention_covered=9/9."
+    },
+    {
+      "tick_ts_utc": "2026-04-25T19:35Z",
+      "events": 0,
+      "event_types": [],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "skipped": 0,
+      "binary_event": "none",
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "open_positions": 0,
+      "working_orders": 1,
+      "working_orders_detail": [
+        "GBPUSD LIMIT BUY@1.3506 size=4500 SL=1.3495 TP=1.3531"
+      ],
+      "scalp_status": "EURUSD/GBPUSD/AUDUSD ACTIVE no_halt daily_pnl=$0",
+      "gbpusd_comp": 48.0,
+      "gbpusd_readiness": "moderate",
+      "gold_comp": -10.5,
+      "gold_readiness": "none",
+      "oil_comp": 29.5,
+      "oil_readiness": "weak",
+      "audusd_comp": 29.0,
+      "audusd_readiness": "weak",
+      "usdcad_comp": -29.0,
+      "usdcad_readiness": "weak",
+      "summary": "Heartbeat tick. Market closed weekend. GBPUSD LIMIT BUY@1.3506 KEEP (dist=27p, comp=+48 mod). BOJ T-2d FOMC T-4d elevated caution. 6 alerts maintained. 0 trades."
     }
   ]
 }
