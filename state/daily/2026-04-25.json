@@ -113,5 +113,13 @@
     "attention_covered": "9/9",
     "scalp_status": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=KEEP USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
     "note": "heartbeat, market closed weekend, no events"
+  },
+  {
+    "ts_utc": "2026-04-25T05:55:00Z",
+    "events_in": 1,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 1,
+    "note": "05:55 forex auto \u2014 1 evt news_flash(FOMC-preview non-thesis-altering). Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 KEEP. BOJ T-2d FOMC T-4d. 7 alerts KEEP. 0 trades 0pos."
   }
 ]
