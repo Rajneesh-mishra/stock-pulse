@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-24T16:12:14.446089+00:00",
+  "generated_at": "2026-04-25T03:56:43.794264+00:00",
   "counts": {
     "trades": 15,
-    "events": 3724,
+    "events": 3800,
     "ticks": 59,
-    "regime_snapshots": 25,
+    "regime_snapshots": 26,
     "broker_positions": 0,
     "counterfactuals": 48
   },
@@ -328,6 +328,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-24T16:10:00Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "16:10 forex auto \u2014 1 evt news_flash(Islamabad talks collapse + naval showdown escalating). Escalation confirmed, regime stays ACTIVE_ESCALATION. GOLD 4726 comp=-18 none. OIL 92.84 comp=+27 weak (swept 97\u219292.08 intraday, escalation-supply bullish). USDJPY 159.35 comp=+19.5 none, dist=65p from intervention 160.00, BOJ T-3d. AUDUSD 0.715 comp=+29 weak. BTC 77927 comp=+37.5 weak, same-day-loss skip. No readiness\u2265moderate. 0 trades 0 LIMIT 0pos. alerts rebuilt. attention_covered=9/9.",
+      "binary_event_name": "iran_ceasefire_indefinite_extension",
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-04-24T15:50:00Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "15:50 forex auto \u2014 1 evt OIL level_cross oil_sweep_9323_buy_retest: price at 92.406 blew through level 93.237 AND SL 92.84 (6th fire, readiness=weak, no LIMIT ever placed). REMOVE oil_sweep_9323 (thesis invalidated; M15 bearish, bear FVG 93.15-94.59 overhead). 90.30 validated zone now 2.11$ below, WATCH. USDJPY 159.42 +27 weak dist=58p WATCH BOJ T-2d. GOLD 4729 -18 none dist=45.9$ WATCH. BTC 78118 +55 mod but same-day-loss-block+outside-prox WATCH. 0 trades 0 LIMIT 0pos. attention_covered=9/9.",
@@ -395,14 +403,6 @@
       "ts_utc": "2026-04-24T12:46:00Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "12:46 forex auto \u2014 2 evt (AUDUSD level_cross audusd_sweep_71379_sell_retest comp=+18.5 NONE bullish OPPOSES sell SKIP; GBPUSD level_cross gbpusd_sweep_134928_sell_retest comp=+21.5 NONE bullish OPPOSES sell SKIP). USDJPY 159.56 comp=+30 weak dist=44.2p OUTSIDE 30p WATCH (BOJ T-2d FOMC T-4d). GOLD 4700.4 sweep_4721 dist=21.3$ INSIDE prox comp=-18 none NEAR-ARM (need -40). OIL 95.24 sweep_9323 dist=2.0$ OUTSIDE prox comp=+30 weak WATCH. BTC 78229 LIMIT ARMED 78056 H4 FVG comp=+55 mod 4/4 bull (dealId=00000000-4e72-1a54-044a-beb40055311e). USDCHF 0.786 comp=+3.5 none sweep WATCH. EURUSD -8 none AUDUSD +18.5 none GBPUSD +21.5 none USDCAD -21.5 none. 10 alerts KEEP. 0 trades 1 LIMIT 0 pos. attention_covered=9/9.",
-      "binary_event_name": "iran_ceasefire_indefinite_extension",
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-04-24T12:39:00Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "12:39 forex auto \u2014 0 evt heartbeat. BTC 78252 H4 FVG 78056-78208 \u2192 LIMIT BUY ARMED (comp=+55 mod 4/4 bull, R:R=4.7, risk=$4.90, dealId=00000000-4e72-1a54-044a-beb40055311e). OIL 94.84 Iranian FM Araghchi arrives Pakistan (peace talks not breakthrough; Hormuz blocked); sweep_9323 dist=1.60$ OUTSIDE prox (price moved away from 93.237). GOLD 4705 sweep_4721 16.6$ INSIDE prox comp=-18 none (need -40 mod). USDCHF 0.786 dist=13.5p INSIDE prox comp=+3.5 none (need -40). USDJPY 159.56 comp=+30 weak dist=44.4p BOJ T-2d. 0 trades 1 LIMIT armed 0 pos. 10 alerts KEEP 1 ADD. scalp EURUSD/GBP/AUD=KEEP no halts. attention_covered=9/9.",
       "binary_event_name": "iran_ceasefire_indefinite_extension",
       "binary_event_active": 0,
       "binary_event_deadline": null

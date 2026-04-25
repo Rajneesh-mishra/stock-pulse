@@ -1,0 +1,30 @@
+[
+  {
+    "tick_ts_utc": "2026-04-25T03:52:00Z",
+    "events_processed": 3,
+    "events": [
+      "news_flash: Hezbollah defiant ceasefire extension (ME risk persists, gold supported)",
+      "alert_audit_request: usdjpy_intervention_fade_zone KEEP (weak Hezbollah match, BOJ thesis intact)",
+      "news_flash: CNBC US-India trade deal delayed by Iran war + tariff ruling"
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "limits_placed": 0,
+    "limits_cancelled": 0,
+    "open_positions": 0,
+    "pending_limits": 1,
+    "pending_limit_detail": "GBPUSD BUY @ 1.3506 SL=1.3495 TP=1.3531 (waiting pullback, bid=1.35266)",
+    "balance": 995.13,
+    "available": 964.74,
+    "daily_pnl_usd": 0.0,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "none (active=false, indefinite extension)",
+    "calendar": "BOJ Apr 27-28 T-2d, FOMC Apr 29 T-4d",
+    "market_status": "CLOSED (weekend)",
+    "alert_changes": [
+      "usdcad_short_fvg_retest MODIFY: level=None\u21921.3675 (H1 FVG), SL=1.370, TP=1.360",
+      "gbpusd_pullback_buy_1350 ADD: LIMIT BUY @ 1.3506 tracking active order"
+    ],
+    "attention_covered": "9/9"
+  }
+]

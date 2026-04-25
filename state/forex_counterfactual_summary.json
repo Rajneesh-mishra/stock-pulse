@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T16:12:06.762752+00:00",
+  "generated_at": "2026-04-25T03:59:21.342238+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -216,15 +216,15 @@
       "fires": 6,
       "by_horizon": {
         "1h": {
-          "filled": 5,
-          "favorable": 4,
-          "avg_pips": 57.4,
-          "hit_rate": 0.8
+          "filled": 6,
+          "favorable": 5,
+          "avg_pips": 49.1,
+          "hit_rate": 0.83
         },
         "4h": {
-          "filled": 5,
-          "favorable": 5,
-          "avg_pips": 197.1,
+          "filled": 6,
+          "favorable": 6,
+          "avg_pips": 182.6,
           "hit_rate": 1.0
         },
         "24h": {
@@ -248,16 +248,16 @@
           "hit_rate": 0.67
         },
         "4h": {
-          "filled": 5,
-          "favorable": 5,
-          "avg_pips": 211.3,
+          "filled": 6,
+          "favorable": 6,
+          "avg_pips": 179.3,
           "hit_rate": 1.0
         },
         "24h": {
-          "filled": 3,
-          "favorable": 2,
-          "avg_pips": 79.7,
-          "hit_rate": 0.67
+          "filled": 5,
+          "favorable": 3,
+          "avg_pips": 41.8,
+          "hit_rate": 0.6
         }
       }
     },
@@ -352,9 +352,9 @@
           "hit_rate": 0.75
         },
         "4h": {
-          "filled": 2,
+          "filled": 4,
           "favorable": 0,
-          "avg_pips": -12.6,
+          "avg_pips": -19.0,
           "hit_rate": 0.0
         },
         "24h": {
@@ -372,16 +372,16 @@
       "fires": 3,
       "by_horizon": {
         "1h": {
-          "filled": 2,
+          "filled": 3,
           "favorable": 1,
-          "avg_pips": 4.9,
-          "hit_rate": 0.5
+          "avg_pips": -0.9,
+          "hit_rate": 0.33
         },
         "4h": {
-          "filled": 0,
+          "filled": 3,
           "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "avg_pips": -12.3,
+          "hit_rate": 0.0
         },
         "24h": {
           "filled": 0,
@@ -404,10 +404,10 @@
           "hit_rate": 0.0
         },
         "4h": {
-          "filled": 0,
+          "filled": 1,
           "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "avg_pips": -386.8,
+          "hit_rate": 0.0
         },
         "24h": {
           "filled": 0,

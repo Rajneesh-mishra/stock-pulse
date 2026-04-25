@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T16:12:45.045879Z",
+  "generated_at": "2026-04-25T03:59:39.586258Z",
   "stats": {
     "all": {
       "count": 11,
@@ -11,12 +11,12 @@
       "net_pnl_usd": 0.02
     },
     "today": {
-      "count": 4,
-      "wins": 2,
-      "losses": 2,
+      "count": 0,
+      "wins": 0,
+      "losses": 0,
       "time_exits": 0,
-      "win_rate": 0.5,
-      "net_pips": 5.7,
+      "win_rate": null,
+      "net_pips": 0,
       "net_pnl_usd": 0
     },
     "rejected_total": 0
