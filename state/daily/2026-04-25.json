@@ -182,5 +182,72 @@
       "ADD oil_sweep_9323_buy_retest (validated 6 fires 4h=100%)"
     ],
     "note": "07:50 heartbeat. Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 KEEP. READD oil_sweep_9323. 0 trades. BOJ T-2d FOMC T-4d."
+  },
+  {
+    "tick_ts_utc": "2026-04-25T09:02:40Z",
+    "events": 0,
+    "event_type": "heartbeat",
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "positions_open": 0,
+    "limits_working": 1,
+    "limit_details": "GBPUSD BUY@1.3506 SL=1.3495 TP=1.3531 dealId=00000000-4e72-9b27-044a-beb40055311e",
+    "account_balance": 995.13,
+    "account_available": 964.74,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event_active": false,
+    "market_status": "CLOSED_WEEKEND",
+    "confluence": {
+      "GBPUSD": {
+        "readiness": "moderate",
+        "composite": 48.0,
+        "price": 1.35331
+      },
+      "GOLD": {
+        "readiness": "none",
+        "composite": -10.5,
+        "price": 4710.625
+      },
+      "OIL_CRUDE": {
+        "readiness": "weak",
+        "composite": 29.5,
+        "price": 94.203
+      },
+      "EURUSD": {
+        "readiness": "none",
+        "composite": 12.5,
+        "price": 1.17208
+      },
+      "AUDUSD": {
+        "readiness": "weak",
+        "composite": 29.0,
+        "price": 0.71503
+      },
+      "USDJPY": {
+        "readiness": "none",
+        "composite": 19.5,
+        "price": 159.384
+      },
+      "USDCAD": {
+        "readiness": "weak",
+        "composite": -29.0,
+        "price": 1.36686
+      },
+      "USDCHF": {
+        "readiness": "none",
+        "composite": -5.0,
+        "price": 0.784825
+      },
+      "BTCUSD": {
+        "readiness": "none",
+        "composite": 15.5,
+        "price": 77679.5
+      }
+    },
+    "alerts_audited": 7,
+    "alerts_keep": 7,
+    "alerts_remove": 0,
+    "calendar": "BOJ T-2d(Apr27-28) FOMC T-4d(Apr29)",
+    "note": "Heartbeat. GOLD inside buy zone 4695-4715 (comp=none, no entry). USDCAD 6p from SELL FVG. Oil sweep_9323 $0.97 from level."
   }
 ]
