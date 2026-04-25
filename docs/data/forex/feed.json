@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T05:59:27.160939Z",
+  "generated_at": "2026-04-25T06:39:49.742050Z",
   "ticks": [
     {
       "ts_utc": "2026-04-23T00:37:30Z",
@@ -357,6 +357,47 @@
       "closed": 0,
       "skipped": 1,
       "note": "05:55 forex auto \u2014 1 evt news_flash(FOMC-preview non-thesis-altering). Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 KEEP. BOJ T-2d FOMC T-4d. 7 alerts KEEP. 0 trades 0pos."
+    },
+    {
+      "tick_ts_utc": "2026-04-25T06:34:00Z",
+      "events_consumed": [
+        "evt_1777098817816_news_flash"
+      ],
+      "events_total": 1,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "positions_open": 0,
+      "pending_limits": 1,
+      "pending_limit_detail": "GBPUSD BUY@1.3506 SL=1.3495 TP=1.3531 size=4500",
+      "market_status": "CLOSED_WEEKEND",
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "binary_event": "none (active=false)",
+      "news_summary": "news_flash(iran_ceasefire): Tehran skips Islamabad round 2, calls US demands childish. Escalation persists. No new binary event. Regime unchanged.",
+      "confluence": {
+        "EURUSD": "+12.5 none",
+        "GBPUSD": "+48 moderate",
+        "AUDUSD": "+29 weak",
+        "USDJPY": "+19.5 none",
+        "USDCAD": "-29 weak",
+        "USDCHF": "-5 none",
+        "GOLD": "-10.5 none",
+        "OIL_CRUDE": "+29.5 weak",
+        "BTCUSD": "+13.5 none"
+      },
+      "watchlist_audit": "7 alerts, all KEEP \u2014 no auto-remove (all within 3\u00d7H4ATR). No counterfactual prune (no alert reaches fires\u22653 AND hit_rate<0.40). News query date windows rolled +1d for 4 queries.",
+      "attention_matrix": {
+        "EURUSD": "swing=NONE scalp=ACTIVE readiness=none",
+        "GBPUSD": "swing=ARMED scalp=ACTIVE readiness=moderate LIMIT BUY active @ 1.3506",
+        "AUDUSD": "swing=WATCH scalp=ACTIVE readiness=weak comp=+29 weak",
+        "USDJPY": "swing=WATCH scalp=OFF readiness=none dist=61.6p from 160 BOJ T-2d",
+        "USDCAD": "swing=WATCH scalp=OFF readiness=weak comp=-29 weak opposing buy",
+        "USDCHF": "swing=WATCH scalp=OFF readiness=none comp=-5 none need \u2264-40 to arm",
+        "GOLD": "swing=WATCH scalp=N/A readiness=none dist=64.4$ below 4775",
+        "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=weak comp=+29.5 weak need +40",
+        "BTCUSD": "swing=WATCH scalp=N/A readiness=none same-day-loss block until 14:26 UTC"
+      },
+      "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=KEEP(no trades) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
+      "tick_note": "06:34 forex auto \u2014 1 evt news_flash(iran_ceasefire: Tehran skips round 2, escalation persists). Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP. BOJ T-2d FOMC T-4d cal. 0 trades 0pos. attention_covered=9/9."
     }
   ]
 }
