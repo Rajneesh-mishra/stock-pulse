@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T04:18:28.798581Z",
+  "generated_at": "2026-04-25T04:27:25.519595Z",
   "ticks": [
     {
       "ts_utc": "2026-04-22T23:24:00Z",
@@ -270,6 +270,31 @@
       "closed": 0,
       "skipped": 1,
       "note": "04:17 UTC forex auto \u2014 1 evt news_flash(Fortune Apr24 'Tanker War 1980s' historical retrospective, keyword 'mine' matched hormuz_strait query, NOT a fresh catalyst, NO regime change, SKIP). Broker: 0 positions, 1 GBPUSD LIMIT BUY@1.3506 SL=1.3495 TP=1.3531 active (bid=1.35266, conf=+48 mod bull 4/4 TFs, KEEP). balance=$995.13 daily=-$4.87. Confluence: GOLD=-10.5 none 4710.6 | OIL=+29.5 weak 94.20 | USDJPY=+19.5 none 159.38 | GBPUSD=+48 mod 1.35331 | AUDUSD=+29 weak 0.71503 | EURUSD=+12.5 none | USDCAD=-29 weak | USDCHF=-5 none | BTC=+13.5 none 77700. Watchlist audit: usdjpy_intervention_fade_zone KEEP(dist=61.6p BOJ T-2d), gold_safehaven KEEP(dist=64.4$ rule-2 10f/80%4h), oil_retest_90 KEEP(dist=3.90$ rule-2 3f/67%4h), btcusd_day_fvg KEEP-WATCH(same-day-loss block til 14:26 UTC), usdchf_sweep KEEP-WATCH(26.8p below 0.7875 inside-prox comp=none). No news_query changes. Scalp: EURUSD/GBPUSD/AUDUSD=ACTIVE(no trades, daily P/L=$0), USDJPY/USDCHF/USDCAD=OFF(pip-conv), GOLD/OIL/BTC=N/A(spread). 0 trades 0 LIMIT-changes. attention_covered=9/9. BOJ T-2d FOMC T-4d."
+    },
+    {
+      "tick_ts_utc": "2026-04-25T04:21:00Z",
+      "events_processed": [
+        "evt_1777090599642_liquidity_sweep (USDCAD buy 1.36634 wick=1.4p watchlist-add)",
+        "evt_1777090604368_liquidity_sweep (GBPUSD sell 1.35370 wick=2.2p watchlist-add entry-missed)",
+        "evt_1777090606954_liquidity_sweep (USDCHF buy 0.78458 wick=1.0p skip readiness=none)"
+      ],
+      "trades_opened": [],
+      "trades_closed": [],
+      "orders_placed": [],
+      "orders_cancelled": [],
+      "alerts_added": [
+        "gbpusd_sweep_135370_sell_watch",
+        "usdcad_sweep_136634_buy_watch"
+      ],
+      "alerts_removed": [],
+      "alerts_modified": [
+        "proximity notes refreshed: USDJPY/GOLD/OIL/BTC/USDCHF"
+      ],
+      "open_positions": 0,
+      "active_limits": 1,
+      "regime_summary": "Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 active. 3 sweep events processed: USDCAD buy+GBPUSD sell added as WATCH; USDCHF skip (readiness=none). BOJ T-2d, FOMC T-4d calendar. No blackout.",
+      "balance_usd": 995.13,
+      "daily_pnl_usd": 0.0
     }
   ]
 }

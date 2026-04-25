@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-25T04:16:54.113977+00:00",
+  "generated_at": "2026-04-25T04:26:58.804808+00:00",
   "counts": {
     "trades": 15,
     "events": 3825,
     "ticks": 59,
-    "regime_snapshots": 27,
+    "regime_snapshots": 28,
     "broker_positions": 0,
     "counterfactuals": 48
   },
@@ -328,6 +328,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-25T04:17:00Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "04:17 forex auto \u2014 1 evt news_flash(Fortune Apr24 historical Tanker-War retrospective, matched 'mine' kw, NO fresh catalyst, no regime change). GOLD 4710.6 comp=-10.5 none WATCH. OIL 94.20 comp=+29.5 weak 90.30 dist=3.90$ WATCH. USDJPY 159.38 comp=+19.5 none dist=61.6p BOJ T-2d WATCH. GBPUSD LIMIT BUY@1.3506 active bid=1.35266 comp=+48 moderate KEEP. BTC 77700 comp=+13.5 none same-day-loss block til 14:26 UTC WATCH. USDCHF 0.7848 comp=-5 none dist=26.8p inside-prox WATCH. AUDUSD 0.7150 comp=+29 weak NONE. EURUSD 1.1721 comp=+12.5 none NONE. USDCAD 1.3669 comp=-29 weak NONE. 0 trades 0 LIMIT-changes 0pos. attention_covered=9/9.",
+      "binary_event_name": "iran_ceasefire_indefinite_extension",
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-04-25T03:59:17Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "03:52 forex auto \u2014 3 evt: news_flash(Hezbollah defiant ceasefire ext \u2014 ME risk persists, gold safe-haven supported) + news_flash(CNBC: Iran war+tariff ruling delays US-India trade deal \u2014 risk-off spillover) + alert_audit_request(usdjpy_intervention_fade_zone: KEEP, Hezbollah match=weak 'extension', BOJ thesis intact T-2d). GOLD 4710 comp=-10.5 none WATCH dist=10 above buy zone. OIL 94.20 comp=+29 weak WATCH. USDJPY 159.38 comp=+19.5 none dist=66.6p from 160.05 WATCH. GBPUSD LIMIT BUY @ 1.3506 active (bid=1.35266 above, waiting pullback) comp=+48 mod. USDCAD level fixed to 1.3675 (H1 FVG). Markets CLOSED (weekend). 0 trades 0 new LIMIT 0pos. BOJ T-2d FOMC T-4d. attention_covered=9/9.",
@@ -395,14 +403,6 @@
       "ts_utc": "2026-04-24T13:43:00Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "13:43 forex auto \u2014 0 evt heartbeat. USDJPY 159.603 comp=+32.5 weak dist=39.7p OUTSIDE 30p WATCH (BOJ T-3d FOMC T-5d). GOLD 4708.8 sweep_4721 dist=12.9$ INSIDE prox comp=-23.0 none WATCH (DOWNGRADE from NEAR-ARM; need \u2264-40 mod). OIL 94.606 sweep_9323 dist=1.37$ BARELY OUTSIDE prox 1.28$ comp=+30 weak NEAR-ARM (gap=0.09$ to prox, +10pts to mod). BTC 78175.9 LIMIT ARMED 78056 bid=78152 comp=+55 mod 4/4 bull (dealId=00000000-4e72-1a54-044a-beb40055311e). EURUSD +2 none GBPUSD +9 none AUDUSD +9 none USDCAD -14 none USDCHF +12.5 none. Scalp 3 FX ACTIVE halt={}. web_search SKIP (0pos + regime stable 5h+). 10 alerts KEEP proximity-refresh. 0 trades 1 LIMIT 0 pos. attention_covered=9/9.",
-      "binary_event_name": "iran_ceasefire_indefinite_extension",
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-04-24T12:57:00Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "12:57 forex auto \u2014 1 evt (fed_fomc news_flash GoldSilver FOMC-preview Apr-23 20:56 GMT 'What to Watch Before April 29 FOMC' NON-THESIS-ALTERING market-preview, consumed). USDJPY 159.604 comp=+32.5 weak dist=39.6p OUTSIDE 30p WATCH (BOJ T-3d FOMC T-5d). GOLD 4692.845 sweep_4721 dist=28.8$ INSIDE prox comp=-34.5 weak NEAR-ARM (need -40). OIL 95.729 sweep_9323 dist=2.49$ OUTSIDE prox comp=+32.5 weak WATCH. BTC 78068 H4 FVG LIMIT ARMED @ 78056 comp=+55 mod 4/4 bull dealId=00000000-4e72-1a54-044a-beb40055311e (bid=78044 near fill). AUDUSD +11 none GBPUSD +21.5 none EURUSD -8 none USDCAD -21.5 none USDCHF +18.5 none. 10 alerts KEEP. 0 trades 1 LIMIT 0 pos. attention_covered=9/9.",
       "binary_event_name": "iran_ceasefire_indefinite_extension",
       "binary_event_active": 0,
       "binary_event_deadline": null
