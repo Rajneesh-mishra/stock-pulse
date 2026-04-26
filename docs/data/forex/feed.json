@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-26T17:12:56.258270Z",
+  "generated_at": "2026-04-26T18:20:03.228904Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T02:47:00Z",
-      "events_in": 0,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 0,
-      "summary": "02:47 forex auto \u2014 0 evt heartbeat. USDJPY 159.772 +45 mod 4/4 bull dist=22.8p INSIDE 30p swing=ARMED (BOJ T-3d). GOLD 4682.17 -40 mod 3/4 bear sweep_4721 dist=39.51$ OUTSIDE 30$ swing=WATCH (DOWNGRADE; price dropped 4695\u21924682). safehaven_4775 dist=92.83$ opp-watch far. OIL 95.804 +40.5 mod sweep_9323 dist=256.75p WATCH; retest_90 dist=550p dormant. BTC 78436.85 +55 mod day_fvg_buy dist=1476.85$ WATCH (price UP from 78062). EURUSD -32 weak GBPUSD none AUDUSD none USDCAD none USDCHF none swing=NONE. 6 alerts KEEP 9 SW KEEP. Scalp 3 FX ACTIVE halt={}. BOJ T-3d FOMC T-5d. web_search skipped (0 pos + last search 64m ago + no events). attention_covered=9/9."
-    },
     {
       "ts_utc": "2026-04-24T03:47:00Z",
       "events_in": 13,
@@ -768,6 +760,74 @@
         "BTC comp dropped +60\u2192+57.5 (still moderate)",
         "Market CLOSED weekend"
       ]
+    },
+    {
+      "tick_ts_utc": "2026-04-26T18:19:22Z",
+      "events_consumed": 0,
+      "events_processed": [],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "trades_skipped": 0,
+      "open_positions": 0,
+      "working_orders": 1,
+      "working_order_details": [
+        {
+          "epic": "GBPUSD",
+          "direction": "BUY",
+          "type": "LIMIT",
+          "level": 1.3506,
+          "sl": 1.3495,
+          "tp": 1.3531,
+          "size": 4500
+        }
+      ],
+      "account_balance": 995.13,
+      "account_pnl": 0.0,
+      "confluence": {
+        "EURUSD": {
+          "score": 12.5,
+          "readiness": "none"
+        },
+        "GBPUSD": {
+          "score": 48.0,
+          "readiness": "moderate"
+        },
+        "AUDUSD": {
+          "score": 29.0,
+          "readiness": "weak"
+        },
+        "USDJPY": {
+          "score": 19.5,
+          "readiness": "none"
+        },
+        "USDCAD": {
+          "score": -29.0,
+          "readiness": "weak"
+        },
+        "USDCHF": {
+          "score": -5.0,
+          "readiness": "none"
+        },
+        "GOLD": {
+          "score": -10.5,
+          "readiness": "none"
+        },
+        "OIL_CRUDE": {
+          "score": 29.5,
+          "readiness": "weak"
+        },
+        "BTCUSD": {
+          "score": 60.0,
+          "readiness": "strong"
+        }
+      },
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "binary_event_active": false,
+      "boj_t_days": 0,
+      "fomc_t_days": 3,
+      "scalp_halt": {},
+      "attention_covered": "9/9",
+      "note": "0 evt heartbeat. Market CLOSED weekend. BOJ T-0d hold confirmed. GBPUSD LIMIT BUY@1.3506 ARMED (mod readiness, dist=20.6p). BTC STRONG(+60) FVG@76960 WATCH. All 8 alerts KEEP."
     }
   ]
 }
