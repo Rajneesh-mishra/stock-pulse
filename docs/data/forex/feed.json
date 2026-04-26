@@ -1,13 +1,6 @@
 {
-  "generated_at": "2026-04-26T12:41:16.350184Z",
+  "generated_at": "2026-04-26T13:47:02.876107Z",
   "ticks": [
-    {
-      "ts": "2026-04-23T07:14:00Z",
-      "events_processed": 10,
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "summary": "3 liq_sweep readiness=none NOT-ACTIONABLE + 7 bar_close; 3 KEEP carried"
-    },
     {
       "ts": "2026-04-23T08:09:00Z",
       "events_processed": 1,
@@ -563,6 +556,19 @@
       },
       "scalp_audit": "EURUSD=KEEP(no trades) GBPUSD=KEEP(no trades,bull) AUDUSD=KEEP(no trades,neutral) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
       "notes": "Heartbeat. Market closed weekend. BTC live @77977. BOJ T-1d tomorrow \u2014 USDJPY intervention watch elevated."
+    },
+    {
+      "tick_ts_utc": "2026-04-26T13:42:00Z",
+      "events": 0,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "open_positions": 0,
+      "pending_orders": 1,
+      "balance": 995.13,
+      "daily_pnl_usd": 0.0,
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "binary_event": "none_active",
+      "notes": "Heartbeat. Market CLOSED (weekend). GBPUSD LIMIT BUY@1.3506 working (comp=+48 mod, dist=20.6p ARMED). BTC comp +60\u2192+57.5 moderate (size note: half until comp re-confirms strong). BOJ Apr27-28 T-0d (tomorrow). FOMC Apr29-30 T-3d. No new trades. Attention 9/9."
     }
   ]
 }
