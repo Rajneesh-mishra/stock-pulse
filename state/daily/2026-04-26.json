@@ -256,5 +256,63 @@
       }
     },
     "notes": "Heartbeat tick. Market closed weekend. BTC upgraded strong (+55\u2192+60). AUDUSD 0.7085 removed (stale), 0.7143 FVG added. gold_sweep_4721 re-added to watcher (validated 6f/100%4h, $10.4 from level). No new trades. GBPUSD LIMIT BUY armed dist=20.6p."
+  },
+  {
+    "tick_ts_utc": "2026-04-26T11:35:00Z",
+    "events_consumed": 0,
+    "events_processed": [],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "pending_orders": 1,
+    "pending_order_detail": "GBPUSD LIMIT BUY@1.3506 dealId=00000000-4e72-9b27-044a-beb40055311e",
+    "open_positions": 0,
+    "account_balance": 995.13,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event_active": false,
+    "calendar": "BOJ T-1d (Apr27-28) FOMC T-3d (Apr29-30)",
+    "market_status": "CLOSED weekend",
+    "tick_type": "heartbeat",
+    "confluence_snapshot": {
+      "EURUSD": {
+        "readiness": "none",
+        "comp": 12.5
+      },
+      "GBPUSD": {
+        "readiness": "moderate",
+        "comp": 48.0
+      },
+      "AUDUSD": {
+        "readiness": "weak",
+        "comp": 29.0
+      },
+      "USDJPY": {
+        "readiness": "none",
+        "comp": 19.5
+      },
+      "USDCAD": {
+        "readiness": "weak",
+        "comp": -29.0
+      },
+      "USDCHF": {
+        "readiness": "none",
+        "comp": -5.0
+      },
+      "GOLD": {
+        "readiness": "none",
+        "comp": -10.5
+      },
+      "OIL_CRUDE": {
+        "readiness": "weak",
+        "comp": 29.5
+      },
+      "BTCUSD": {
+        "readiness": "strong",
+        "comp": 60.0
+      }
+    },
+    "watchlist_audit": "all 7 alerts KEEP (no staleness, no counterfactual prunes triggered)",
+    "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP(bull bias) AUDUSD=KEEP(neutral) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
+    "attention_covered": "9/9",
+    "note": "11:35 forex auto \u2014 0 evt heartbeat. Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 comp=+48 mod ARMED(dist=20.6p<30p KEEP). BOJ T-1d FOMC T-3d. 0 trades 0pos."
   }
 ]
