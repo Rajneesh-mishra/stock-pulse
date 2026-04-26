@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-26T08:12:32.864710Z",
+  "generated_at": "2026-04-26T08:39:55.552052Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-23T01:10:30Z",
-      "events_in": 0,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 0,
-      "summary": "01:10 UTC heartbeat \u2014 0 unconsumed events. Broker $1000/0pos reconciled. Confluence refresh: USDJPY +43.5 moderate 4/4 bullish AGAINST 160 SELL thesis (close 159.368, dist 63.2p > 3xH1ATR 44.3p = WATCH not ARM, comp re-strengthened from last tick's +38.5); GOLD -27.5 weak 3/4 bearish close 4744.22 dist 30.8p below 4775 BUY trigger (rule-2 4h=0.8 KEEP); OIL +34.5 weak bullish close 93.03 dist 273p ABOVE 90.30 BUY retest (rule-2 4h=0.67 KEEP). No sweep in this window. 3 alerts KEEP, 9 structure_watch KEEP, 8 queries KEEP. Scalp audit: EURUSD/GBPUSD/AUDUSD KEEP shadow, USDJPY/USDCHF/USDCAD DISABLED(pip-value), GOLD/OIL/BTC N/A(spread). 0 trades $1000/0pos. BOJ T-4d (Apr 27-28), FOMC T-6d (Apr 28-29), iran_ceasefire binary=inactive/indef-ext."
-    },
     {
       "ts_utc": "2026-04-23T02:00:00Z",
       "events_in": 1,
@@ -235,6 +227,14 @@
       "skipped": 0,
       "note": "08:11 forex auto \u2014 0 evt heartbeat. Market CLOSED weekend. Broker: 0pos, 1 LIMIT GBPUSD BUY@1.3506 SL=1.3495 TP=1.3531 (bid=1.35331, dist=27p). Confluence sweep 9: GBPUSD comp=+48 mod ARMED (LIMIT keep); GOLD comp=-10.5 none inside 4695-4715 WATCH (val 10f/80%4h); OIL comp=+29.5 weak 93.23 dist=$0.97 WATCH (val 6f/100%4h); USDJPY comp=+19.5 none dist=66.6p OUTSIDE prox WATCH (BOJ T-1d); AUDUSD comp=+29 weak 0.7085 dist=65p WATCH (borderline Rule-1 63p threshold, KEEP); USDCAD comp=-29 weak 1.3675 FVG dist=6.4p NEAR-ARM (readiness=weak); USDCHF comp=-5 none NONE; EURUSD comp=+12.5 none NONE; BTCUSD comp=+55 mod ADD dayfvg_76960 (76936-76984 unmitigated, dist=$1120 WATCH). 6 KEEP + 1 ADD. 8 news_queries KEEP. scalp halt={}. BOJ T-1d FOMC T-3d. web_search SKIP (0pos+regime stable 2h+). attention_covered=9/9."
     },
+    {
+      "ts_utc": "2026-04-26T08:35:40Z",
+      "events_in": 1,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 1,
+      "note": "08:35 forex auto \u2014 1 evt news_flash(hormuz_strait: Times of Israel '80s Hormuz protection historical analysis, non-altering). Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP. BOJ T-1d FOMC T-3d cal. GOLD none(-10.5) dist=$64.4 WATCH(val 10f/80%4h). OIL weak(+29.5) sweep_9323 dist=$0.97 WATCH(val 6f/100%4h). 0 trades 0pos. attention_covered=9/9."
+    },
     "GBPUSD LIMIT BUY@1.3506 SL=1.3495 TP=1.3531 sz=4500",
     "news_flash(fed_fomc:stale_GoldSilver_Apr23_republish)",
     "GBPUSD LIMIT BUY@1.3506 SL=1.3495 TP=1.3531 sz=4500 comp=+48 ARMED",
@@ -341,6 +341,21 @@
       "balance": 995.13,
       "daily_pnl": 0.0,
       "note": "08:11 heartbeat. 0 events. GBPUSD LIMIT KEEP. ADD btcusd_dayfvg_76960_buy. BOJ T-1d FOMC T-3d. 0 trades 0pos."
+    },
+    {
+      "ts_utc": "2026-04-26T08:35:40Z",
+      "events_in": 1,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 1,
+      "note": "08:35 forex auto \u2014 1 evt news_flash(hormuz_strait: Times of Israel '80s Hormuz protection historical analysis, non-altering). Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP. BOJ T-1d FOMC T-3d cal. GOLD none(-10.5) dist=$64.4 WATCH(val 10f/80%4h). OIL weak(+29.5) sweep_9323 dist=$0.97 WATCH(val 6f/100%4h). 0 trades 0pos. attention_covered=9/9.",
+      "binary_event": "inactive(iran_ceasefire_indef_ext)",
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "calendar": "BOJ T-1d(Apr27-28) FOMC T-3d(Apr29-30)",
+      "balance": 995.13,
+      "daily_pnl": -4.87,
+      "open_positions": 0,
+      "working_orders": 1
     }
   ]
 }

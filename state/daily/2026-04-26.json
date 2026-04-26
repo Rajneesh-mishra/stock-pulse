@@ -105,5 +105,20 @@
     "balance": 995.13,
     "daily_pnl": 0.0,
     "note": "08:11 heartbeat. 0 events. GBPUSD LIMIT KEEP. ADD btcusd_dayfvg_76960_buy. BOJ T-1d FOMC T-3d. 0 trades 0pos."
+  },
+  {
+    "ts_utc": "2026-04-26T08:35:40Z",
+    "events_in": 1,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 1,
+    "note": "08:35 forex auto \u2014 1 evt news_flash(hormuz_strait: Times of Israel '80s Hormuz protection historical analysis, non-altering). Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP. BOJ T-1d FOMC T-3d cal. GOLD none(-10.5) dist=$64.4 WATCH(val 10f/80%4h). OIL weak(+29.5) sweep_9323 dist=$0.97 WATCH(val 6f/100%4h). 0 trades 0pos. attention_covered=9/9.",
+    "binary_event": "inactive(iran_ceasefire_indef_ext)",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "calendar": "BOJ T-1d(Apr27-28) FOMC T-3d(Apr29-30)",
+    "balance": 995.13,
+    "daily_pnl": -4.87,
+    "open_positions": 0,
+    "working_orders": 1
   }
 ]
