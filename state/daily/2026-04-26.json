@@ -28,5 +28,37 @@
       "BTCUSD": "swing=NONE scalp=N/A readiness=none"
     },
     "note": "0 evt heartbeat. Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 KEEP. GOLD inside 4695-4715 zone WATCH(validated). OIL dist=$0.93 WATCH(validated). BOJ T-1d FOMC T-4d cal."
+  },
+  {
+    "tick_ts_utc": "2026-04-26T05:38:00Z",
+    "events": 1,
+    "event_types": [
+      "news_flash(fed_fomc:stale_GoldSilver_Apr23_republish)"
+    ],
+    "market_status": "CLOSED_WEEKEND",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event_active": false,
+    "calendar": "BOJ Apr27-28 T-1d, FOMC Apr29 T-3d",
+    "open_positions": 0,
+    "working_orders": 1,
+    "working_orders_detail": [
+      "GBPUSD LIMIT BUY@1.3506 SL=1.3495 TP=1.3531 sz=4500 comp=+48 ARMED"
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "pnl_tick": 0,
+    "watchlist_changes": "REMOVE audusd_pullback_buy_7085(Rule1 dist breach); ADD audusd_m15fvg_buy_7143; ADD usdcad_sell_fvg_13675; 6 KEEP",
+    "attention": {
+      "EURUSD": "swing=NONE scalp=ACTIVE readiness=none comp=+12.5 no alert",
+      "GBPUSD": "swing=ARMED scalp=ACTIVE readiness=moderate comp=+48 LIMIT BUY@1.3506 dist=20.6p",
+      "AUDUSD": "swing=WATCH scalp=ACTIVE readiness=weak comp=+29 M15FVG@0.71430 dist=7.3p need mod+",
+      "USDJPY": "swing=WATCH scalp=OFF readiness=none comp=+19.5 dist=61.6p from 160; BOJ T-1d",
+      "USDCAD": "swing=WATCH scalp=OFF readiness=weak comp=-29 FVG@1.3675 dist=6.4p need mod-40",
+      "USDCHF": "swing=WATCH scalp=OFF readiness=none comp=-5 sweep retest 0.7875 dist=26.7p",
+      "GOLD": "swing=WATCH scalp=N/A readiness=none comp=-10.5 validated 10f/80%4h dist=$64.4",
+      "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=weak comp=+29.5 validated 3f/67%4h dist=$3.90",
+      "BTCUSD": "swing=WATCH scalp=N/A readiness=moderate comp=+44 FVG@76960 dist=$1089 outside prox"
+    },
+    "note": "1 evt news_flash(fed_fomc) stale GoldSilver Apr-23 republish \u2014 non-thesis-altering. Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 KEEP ARMED. AUDUSD 0.7085 REMOVED Rule1(dist breach 65.3>63p); new M15FVG 0.71430 ADDED. USDCAD sell FVG 1.3675 ADDED. BOJ T-1d FOMC T-3d half-size caution."
   }
 ]
