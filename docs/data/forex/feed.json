@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-26T19:28:05.437271Z",
+  "generated_at": "2026-04-26T19:43:22.474314Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T05:25:00Z",
-      "events_in": 12,
-      "opened": 0,
-      "closed": 2,
-      "skipped": 10,
-      "note": "05:25 forex auto \u2014 12 evt (2 position_opened USDJPY rogue-scalp already closed at BE per 05:06 tick; 2 position_closed USDJPY same; 1 OIL_CRUDE liquidity_sweep M15 05:00 UTC sweep=95.319 wick=5.6p 0.16\u00d7ATR SKIP-trade (wick too small, SL 5.6p vs OIL spread 4p kills R:R at entry; LIMIT at swept level 95.319 gives R:R 4.1 before spread but wick magnitude too minor for conviction); ADD oil_sweep_9519_buy_retest anchored 95.319 SL=95.263 TP=95.550 R:R=4.1 (monitor 2 ticks, remove if no approach); 7 bar_close routine). USDJPY 159.792 +43 mod 4/4 bull dist=20.8p INSIDE 30p swing=ARMED (counter-trend fade; BOJ T-3d). GOLD 4674.02 -37.5 weak 3/4 bear sweep_4721 dist=47.7$ OUTSIDE 18$ prox swing=WATCH; safehaven_4775 dist=101$ dormant. OIL 95.386 +42.5 mod 4/4 bull sweep_9519 dist=6.7p WATCH; sweep_9323 dist=2.15$ WATCH; retest_90 dist=5.09$ dormant. BTCUSD ~77707 +27 weak day_fvg_buy 76960 dist=747$ WATCH. EURUSD 1.1679 weak -29.5 swing=NONE GBPUSD 1.3463 none swing=NONE AUDUSD ~0.715 none swing=NONE USDCAD 1.3709 none swing=NONE USDCHF 0.7870 none swing=NONE. 7 level_alerts (6 KEEP +1 ADD sweep_9519) 9 SW KEEP. 8 queries KEEP. Scalp 3 FX ACTIVE halt={}. web_search skipped (0 pos + regime stable 4h+). BOJ T-3d FOMC T-5d. binary=inactive. attention_covered=9/9."
-    },
     {
       "ts_utc": "2026-04-24T05:35:00Z",
       "events_in": 1,
@@ -832,6 +824,35 @@
       "pnl_session": 0.0,
       "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note": "2026-04-26T19:28Z tick: 0 evt heartbeat. Market CLOSED weekend(BTC@78264). BOJ T-0d started(announcement expected Apr27~14UTC, hold consensus). USDJPY@159.38 dist=66p from 160.05(intervention zone). FOMC T-3d (Apr29-30). GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP(dist=27.1p ARMED). BTC STRONG(+60) FVG@76960 dist=$1304 WATCH. GOLD none(-10.5) @4710.6 inside 4695-4715 zone WATCH(val). OIL weak(+29.5) sweep_9323 dist=$0.97 WATCH(val). AUDUSD weak(+29) FVG@0.7143 dist=7.3p WATCH. USDCAD weak(-29) FVG@1.3675 dist=6.4p WATCH. 8 alerts KEEP. 0 trades 0pos. attention_covered=9/9."
+    },
+    {
+      "tick_ts_utc": "2026-04-26T19:40Z",
+      "events": 1,
+      "events_detail": [
+        "liquidity_sweep BTCUSD H1 up-sweep 78369.4"
+      ],
+      "trades_opened": 0,
+      "limits_placed": 1,
+      "limits_detail": [
+        "BTCUSD SELL LIMIT@78369 SL=78524 TP=77700 size=0.03 (counter-trend fade, 0.5% risk)"
+      ],
+      "trades_closed": 0,
+      "positions_open": 0,
+      "working_orders": 2,
+      "working_orders_detail": [
+        "GBPUSD BUY@1.3506",
+        "BTCUSD SELL@78369"
+      ],
+      "balance": 995.13,
+      "daily_pnl": 0.0,
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "binary_event": "none",
+      "alerts_keep": 8,
+      "alerts_add": 1,
+      "alerts_remove": 0,
+      "scalp_halted": {},
+      "attention_covered": "9/9",
+      "note": "BTC H1 up-sweep 78369.4 (154p wick, close 78091) \u2192 LIMIT SELL@78369 armed. Counter-trend fade: conf=+60 STRONG bull extension corroborates. R:R=4.3:1, 4h time-stop on fill. Market CLOSED weekend (BTC 24/7). BOJ T-0d hold confirmed. FOMC T-3d cal."
     }
   ]
 }
