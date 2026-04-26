@@ -541,5 +541,16 @@
     "open_positions": 0,
     "working_orders": 1,
     "note": "15:54 heartbeat. Market CLOSED weekend. 0 events. GBPUSD LIMIT BUY@1.3506 ARMED(dist=27.3p). Confluence: GBPUSD+48mod BTCUSD+60strong AUDUSD+29weak OIL+29.5weak USDCAD-29weak. GOLD-10.5none inside 4695-4715 zone. USDJPY+19.5none. BOJ T-0d (meets Monday). FOMC T-3d. 7\u21928 level_alerts: added gold_sweep_4721_sell_retest(validated 6f/100%4h). 0 trades 0pos. attention_covered=9/9."
+  },
+  {
+    "ts_utc": "2026-04-26T16:41Z",
+    "events_processed": 1,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "skipped": 1,
+    "pnl": 0.0,
+    "positions_open": 0,
+    "limit_orders": 1,
+    "note": "Iran FM \u2192 Moscow, ceasefire collapse looms. Regime ACTIVE_ESCALATION confirmed. GBPUSD LIMIT BUY@1.3506 KEEP. 5 queries date-rolled +1d (added Apr 29). 10 alerts KEEP. BOJ T-0d FOMC T-3d."
   }
 ]
