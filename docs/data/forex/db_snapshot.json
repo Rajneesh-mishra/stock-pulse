@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-26T21:39:47.484750+00:00",
+  "generated_at": "2026-04-26T21:49:50.186830+00:00",
   "counts": {
     "trades": 16,
-    "events": 3906,
+    "events": 3912,
     "ticks": 59,
     "regime_snapshots": 62,
     "broker_positions": 0,
-    "counterfactuals": 50
+    "counterfactuals": 51
   },
   "trades_last_50": [
     {
@@ -933,6 +933,19 @@
   ],
   "counterfactuals_last_50": [
     {
+      "alert_id": "audusd_m15fvg_buy_7143",
+      "instrument": "AUDUSD",
+      "direction": "buy",
+      "trigger_price": 0.71429,
+      "fired_at": "2026-04-26T21:43:38.917956+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
+    {
       "alert_id": "usdcad_sell_fvg_13675",
       "instrument": "USDCAD",
       "direction": "sell",
@@ -1568,19 +1581,6 @@
       "pips_1h": 1.1,
       "pips_4h": -2.5,
       "pips_24h": 24.7
-    },
-    {
-      "alert_id": "TEST_CHAIN_VALIDATION",
-      "instrument": "EURUSD",
-      "direction": null,
-      "trigger_price": 1.177165,
-      "fired_at": "2026-04-20T14:02:35.722108+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
     }
   ]
 }

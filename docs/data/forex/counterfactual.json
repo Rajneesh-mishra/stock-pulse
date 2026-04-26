@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T21:38:49.984523+00:00",
+  "generated_at": "2026-04-26T21:50:06.176969+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -421,7 +421,7 @@
       "alert_id": "audusd_m15fvg_buy_7143",
       "instrument": "AUDUSD",
       "direction": "buy",
-      "fires": 1,
+      "fires": 2,
       "by_horizon": {
         "1h": {
           "filled": 0,

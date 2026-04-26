@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-26T17:11Z",
+  "last_updated_by_claude": "2026-04-27T03:16Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -160,20 +160,20 @@
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "ENTRY: price retests M15 FVG zone 0.71426\u20130.71444; M15 bar closes at or above 0.71426 with bullish rejection wick \u22652p from the low. Requires readiness \u2265 moderate to arm anticipation LIMIT.\n\nCONTEXT: Unmitigated M15 FVG bars_ago=21 as of 2026-04-26. AUDUSD bullish trend (3/4 TF agree, comp=+29 weak). RBA hawkish, DXY broken, Hormuz friction supports AUD risk-on side. comp must improve to +40 mod before arming.\n\nSL: 0.7130  TP: 0.7187  R:R target: 3.4\n\nadded 2026-04-26T05:38Z \u2014 Rule1-REMOVE of 0.7085 level; replacement anchored to fresh unmitigated M15 FVG.",
-      "entry_criterion": "M15 bar closes at or above 0.71426 with bullish rejection wick \u22652p from the low inside 0.71426\u20130.71444 FVG. Requires readiness \u2265 moderate to arm LIMIT.",
-      "regime_context": "Unmitigated M15 FVG 0.71426\u20130.71444 (bars_ago=21 at creation). AUDUSD bullish: RBA 3rd hike priced May at 4.35%, DXY broken, risk-on bid. comp=+29 weak; needs pullback into FVG + moderate+ readiness before entry.",
+      "note": "ENTRY: M15 bar closes ABOVE H4 bear FVG top 0.7146; enter on retest of 0.7143\u20130.7146 from above with bullish rejection wick \u22652p from the low. Requires readiness \u2265 moderate (comp \u226540) to arm anticipation LIMIT.\n\nCONTEXT: Original M15 FVG (0.71426\u20130.71444) now mitigated. H4 + H1 bear FVGs overhead at 0.71439\u20130.71502 form fresh resistance. AUDUSD bullish: RBA hawkish, DXY weak, risk-on. Clean setup requires H4 FVG mitigation first.\n\nSL: 0.7130  TP: 0.7187  R:R target: 2.4\n\nmodified 2026-04-27T03:16Z \u2014 M15 FVG mitigated; H4 bear FVG overhead; updated entry to breakout-retest above 0.7146.",
+      "entry_criterion": "M15 bar closes ABOVE H4 bear FVG top 0.7146; enter on retest of 0.7143\u20130.7146 from above with bullish rejection wick \u22652p. Requires readiness \u2265 moderate (comp \u226540) to arm LIMIT.",
+      "regime_context": "Original M15 FVG mitigated. H4 bear FVG at 0.71439\u20130.7146 (bars_ago=1, unmitigated) acts as resistance. H1 bear FVG at 0.71439\u20130.71502 (unmitigated). AUDUSD bullish bias persists (RBA hawkish, DXY weak, comp=+19 weak). Entry requires structural reclaim above H4 FVG.",
       "sl": 0.713,
       "tp": 0.7187,
-      "rr_target": "3.4",
-      "current_price_ref": 0.71503,
+      "rr_target": "2.4",
+      "current_price_ref": 0.71403,
       "price_ref": {
-        "ts": "2026-04-26T17:11Z",
-        "price": 0.71503
+        "ts": "2026-04-27T03:16Z",
+        "price": 0.71403
       },
-      "last_updated": "2026-04-26T05:38:00Z",
-      "updated_utc": "2026-04-26T17:11Z",
-      "proximity": "AUDUSD@0.71503; dist=5.9p ABOVE FVG top 0.71444 \u2192 INSIDE 30p prox. comp=+29 weak (need \u226540 mod). WATCH until readiness\u2192moderate."
+      "last_updated": "2026-04-27T03:16:00Z",
+      "updated_utc": "2026-04-27T03:16Z",
+      "proximity": "AUDUSD@0.71403; price at zone. H4 bear FVG overhead 0.71439\u20130.7146 (unmitigated). comp=+19 none (need \u226540 mod). H4ATR=0.00208; 3\u00d7H4ATR=62.4p (not stale). WATCH until H4 FVG mitigated AND comp\u2192moderate."
     },
     {
       "id": "oil_sweep_9323_buy_retest",
@@ -311,5 +311,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-26T14:07Z"
+  "last_updated_utc": "2026-04-27T03:16Z"
 }

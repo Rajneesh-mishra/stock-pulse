@@ -130,5 +130,37 @@
     "regime": "ACTIVE_ESCALATION",
     "summary": "Heartbeat. BTCUSD LIMIT SELL@78369 placed (previously watchlisted, now armed on broker). GBPUSD LIMIT BUY@1.3506 KEEP. BOJ T-0d underway hold confirmed. FOMC T-3d. 9/9 attention covered.",
     "scalp_halts": {}
+  },
+  {
+    "tick_ts_utc": "2026-04-27T03:16Z",
+    "events": 1,
+    "events_detail": [
+      "level_cross(AUDUSD audusd_m15fvg_buy_7143)"
+    ],
+    "opened": 0,
+    "closed": 0,
+    "skipped": 1,
+    "skipped_detail": "AUDUSD level_cross: readiness=none(comp=+19), M15 FVG mitigated, H4 bear FVG overhead \u2014 no entry",
+    "alert_actions": "audusd_m15fvg_buy_7143 MODIFIED \u2014 entry criterion updated: M15 close above H4 bear FVG 0.7146, retest from above",
+    "working_orders": [
+      "BTCUSD LIMIT SELL@78369 (comp=+50.5 mod, market CLOSED, dist=$334)",
+      "GBPUSD LIMIT BUY@1.3506 (comp=+27.5 weak, bid=1.35091, dist=3.1p)"
+    ],
+    "open_positions": 0,
+    "balance": 997.67,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "none",
+    "attention_matrix": {
+      "EURUSD": "swing=NONE scalp=ACTIVE readiness=none",
+      "GBPUSD": "swing=WATCH(LIMIT@1.3506 GTC) scalp=ACTIVE readiness=weak",
+      "AUDUSD": "swing=WATCH scalp=ACTIVE readiness=none",
+      "USDJPY": "swing=WATCH scalp=OFF readiness=weak",
+      "USDCAD": "swing=WATCH scalp=OFF readiness=weak",
+      "USDCHF": "swing=WATCH scalp=OFF readiness=none",
+      "GOLD": "swing=WATCH scalp=N/A readiness=none",
+      "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=weak",
+      "BTCUSD": "swing=ARMED(LIMIT@78369 GTC) scalp=N/A readiness=moderate"
+    },
+    "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=KEEP USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked"
   }
 ]
