@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T20:34:09.496360+00:00",
+  "generated_at": "2026-04-26T21:39:50.196273+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -414,6 +414,58 @@
           "favorable": 0,
           "avg_pips": -310.4,
           "hit_rate": 0.0
+        }
+      }
+    },
+    {
+      "alert_id": "audusd_m15fvg_buy_7143",
+      "instrument": "AUDUSD",
+      "direction": "buy",
+      "fires": 1,
+      "by_horizon": {
+        "1h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "4h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "24h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        }
+      }
+    },
+    {
+      "alert_id": "usdcad_sell_fvg_13675",
+      "instrument": "USDCAD",
+      "direction": "sell",
+      "fires": 1,
+      "by_horizon": {
+        "1h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "4h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "24h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
         }
       }
     }
