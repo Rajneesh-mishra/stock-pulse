@@ -1,64 +1,25 @@
 [
+  "GBPUSD LIMIT BUY@1.3506 SL=1.3495 TP=1.3531 sz=4500",
+  "news_flash(fed_fomc:stale_GoldSilver_Apr23_republish)",
+  "GBPUSD LIMIT BUY@1.3506 SL=1.3495 TP=1.3531 sz=4500 comp=+48 ARMED",
   {
-    "tick_ts_utc": "2026-04-25T20:42:15Z",
-    "events": 0,
-    "event_types": [],
-    "market_status": "CLOSED_WEEKEND",
+    "ts_utc": "2026-04-26T06:20Z",
+    "events_in": 1,
+    "events": [
+      "news_flash: iran_ceasefire \u2014 Trump cancels Pakistan envoys trip (Reuters Apr 25). Escalation confirmed."
+    ],
+    "opened": 0,
+    "closed": 0,
+    "skipped": 0,
+    "working_orders": [
+      "GBPUSD LIMIT BUY@1.3506 size=4500 SL=1.3495 TP=1.3531"
+    ],
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-    "binary_event_active": false,
-    "calendar": "BOJ Apr27-28 T-1d, FOMC Apr29 T-4d",
-    "open_positions": 0,
-    "working_orders": 1,
-    "working_orders_detail": [
-      "GBPUSD LIMIT BUY@1.3506 SL=1.3495 TP=1.3531 sz=4500"
-    ],
-    "trades_opened": 0,
-    "trades_closed": 0,
-    "pnl_tick": 0,
-    "watchlist_changes": "all 6 KEEP",
-    "attention": {
-      "EURUSD": "swing=NONE scalp=ACTIVE readiness=none",
-      "GBPUSD": "swing=ARMED scalp=ACTIVE readiness=moderate",
-      "AUDUSD": "swing=WATCH scalp=ACTIVE readiness=weak",
-      "USDJPY": "swing=WATCH scalp=OFF readiness=none",
-      "USDCAD": "swing=WATCH scalp=OFF readiness=weak",
-      "USDCHF": "swing=NONE scalp=OFF readiness=none",
-      "GOLD": "swing=WATCH scalp=N/A readiness=none",
-      "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=weak",
-      "BTCUSD": "swing=NONE scalp=N/A readiness=none"
-    },
-    "note": "0 evt heartbeat. Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 KEEP. GOLD inside 4695-4715 zone WATCH(validated). OIL dist=$0.93 WATCH(validated). BOJ T-1d FOMC T-4d cal."
-  },
-  {
-    "tick_ts_utc": "2026-04-26T05:38:00Z",
-    "events": 1,
-    "event_types": [
-      "news_flash(fed_fomc:stale_GoldSilver_Apr23_republish)"
-    ],
-    "market_status": "CLOSED_WEEKEND",
-    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-    "binary_event_active": false,
-    "calendar": "BOJ Apr27-28 T-1d, FOMC Apr29 T-3d",
-    "open_positions": 0,
-    "working_orders": 1,
-    "working_orders_detail": [
-      "GBPUSD LIMIT BUY@1.3506 SL=1.3495 TP=1.3531 sz=4500 comp=+48 ARMED"
-    ],
-    "trades_opened": 0,
-    "trades_closed": 0,
-    "pnl_tick": 0,
-    "watchlist_changes": "REMOVE audusd_pullback_buy_7085(Rule1 dist breach); ADD audusd_m15fvg_buy_7143; ADD usdcad_sell_fvg_13675; 6 KEEP",
-    "attention": {
-      "EURUSD": "swing=NONE scalp=ACTIVE readiness=none comp=+12.5 no alert",
-      "GBPUSD": "swing=ARMED scalp=ACTIVE readiness=moderate comp=+48 LIMIT BUY@1.3506 dist=20.6p",
-      "AUDUSD": "swing=WATCH scalp=ACTIVE readiness=weak comp=+29 M15FVG@0.71430 dist=7.3p need mod+",
-      "USDJPY": "swing=WATCH scalp=OFF readiness=none comp=+19.5 dist=61.6p from 160; BOJ T-1d",
-      "USDCAD": "swing=WATCH scalp=OFF readiness=weak comp=-29 FVG@1.3675 dist=6.4p need mod-40",
-      "USDCHF": "swing=WATCH scalp=OFF readiness=none comp=-5 sweep retest 0.7875 dist=26.7p",
-      "GOLD": "swing=WATCH scalp=N/A readiness=none comp=-10.5 validated 10f/80%4h dist=$64.4",
-      "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=weak comp=+29.5 validated 3f/67%4h dist=$3.90",
-      "BTCUSD": "swing=WATCH scalp=N/A readiness=moderate comp=+44 FVG@76960 dist=$1089 outside prox"
-    },
-    "note": "1 evt news_flash(fed_fomc) stale GoldSilver Apr-23 republish \u2014 non-thesis-altering. Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 KEEP ARMED. AUDUSD 0.7085 REMOVED Rule1(dist breach 65.3>63p); new M15FVG 0.71430 ADDED. USDCAD sell FVG 1.3675 ADDED. BOJ T-1d FOMC T-3d half-size caution."
+    "binary_event": "none (ceasefire extended indefinitely, no deadline)",
+    "calendar": "BOJ T-1d (Apr 27-28), FOMC T-3d (Apr 29-30)",
+    "confluence_summary": "EURUSD none(+12.5), GBPUSD mod(+48), AUDUSD weak(+29), USDJPY none(+19.5), USDCAD weak(-29), USDCHF none(-5), GOLD none(-10.5), OIL weak(+29.5), BTC mod(+44)",
+    "watchlist_audit": "all KEEP \u2014 no Rule1/Rule2/Rule3 triggers",
+    "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP(bull) AUDUSD=KEEP(neutral) others=disabled",
+    "note": "1 evt news_flash(iran_ceasefire). Market closed weekend. No trades. GBPUSD LIMIT BUY@1.3506 kept. Regime ACTIVE_ESCALATION confirmed. BOJ T-1d."
   }
-]{"tick_ts_utc": "2026-04-26T06:00:00Z", "events": 0, "event_types": [], "market_status": "CLOSED_WEEKEND", "trades_opened": 0, "trades_closed": 0, "positions_after": 0, "working_orders": [{"epic": "GBPUSD", "dir": "BUY", "type": "LIMIT", "level": 1.3506, "sl": 1.3495, "tp": 1.3531, "dealId": "00000000-4e72-9b27-044a-beb40055311e"}], "watchlist_changes": ["ADD oil_sweep_9323_buy_retest@93.23 (validated 6f/100%4h, dist=$0.97 within H1ATR=$1.29)"], "scalp_changes": ["GBPUSD bias neutral\u2192bull (comp=+48 moderate)"], "confluence": {"GBPUSD": {"comp": 48, "readiness": "moderate"}, "EURUSD": {"comp": 12.5, "readiness": "none"}, "AUDUSD": {"comp": 29, "readiness": "weak"}, "USDJPY": {"comp": 19.5, "readiness": "none"}, "USDCAD": {"comp": -29, "readiness": "weak"}, "USDCHF": {"comp": -5, "readiness": "none"}, "GOLD": {"comp": -10.5, "readiness": "none"}, "OIL_CRUDE": {"comp": 29.5, "readiness": "weak"}, "BTCUSD": {"comp": 44, "readiness": "moderate"}}, "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED", "binary_event": "none_active", "calendar": "BOJ Apr27-28 T-1d, FOMC Apr29-30 T-3d", "note": "Heartbeat tick. Oil_sweep_9323 validated alert re-activated (absent from watchlist but within proximity). GBPUSD scalp bias set to bull aligning with moderate bull confluence."}
+]

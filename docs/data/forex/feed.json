@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-26T05:59:44.452398Z",
+  "generated_at": "2026-04-26T06:21:30.684651Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-23T00:52:00Z",
-      "events_in": 6,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 6,
-      "note": "00:52 UTC tick \u2014 6 events (1 GOLD liquidity_sweep 00:30 4749.45 up-sweep wick 26.7p 2.5xATR sell-bias + 5 bar_close routine). GOLD confluence comp -27.5 weak 3/4 bearish \u2192 agrees sweep-dir but <moderate not armable per 4b. No counter-alert added (USDCAD-sweep precedent, 2.5x<4xATR). GOLD price 4729\u21924743.86 refresh (+14.8p drift). 3 alerts KEEP, 9 structure KEEP, 8 queries KEEP. $1000/0. 0 trades. BOJ T-4d, FOMC T-6d."
-    },
     {
       "ts_utc": "2026-04-23T01:00:24Z",
       "events_in": 9,
@@ -234,6 +226,37 @@
       "closed": 0,
       "skipped": 0,
       "note": "07:50 forex auto \u2014 0 evt heartbeat. Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP (bid=1.35331, 27p above limit). USDJPY +19.5 none dist=66.1p WATCH (BOJ T-2d). GOLD -10.5 none price=4710 inside 4695-4715 zone WATCH (validated 10 fires 4h=80%). OIL +29.5 weak sweep_9208 dist=2.05$ WATCH; READD sweep_9323 dist=0.97$ WATCH (validated 6 fires 4h=100%). AUDUSD +29.0 weak pullback_0.7085 dist=65p WATCH. USDCAD -29.0 weak fvg_1.3675 WATCH. USDCHF -5.0 none NONE. EURUSD +12.5 none NONE. BTC +5.5 none NONE. 6 KEEP +1 ADD oil_9323. news_search SKIP(0pos+regime stable 4h+). scalp halt={}. 0 trades 0pos. BOJ T-2d FOMC T-4d. attention_covered=9/9."
+    },
+    {
+      "ts_utc": "2026-04-26T06:20Z",
+      "events_in": 1,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "note": "1 evt news_flash(iran_ceasefire: Pakistan trip cancelled). Market closed weekend. GBPUSD LIMIT BUY@1.3506 KEEP. Regime confirmed ACTIVE_ESCALATION. 0 trades 0pos."
+    },
+    "GBPUSD LIMIT BUY@1.3506 SL=1.3495 TP=1.3531 sz=4500",
+    "news_flash(fed_fomc:stale_GoldSilver_Apr23_republish)",
+    "GBPUSD LIMIT BUY@1.3506 SL=1.3495 TP=1.3531 sz=4500 comp=+48 ARMED",
+    {
+      "ts_utc": "2026-04-26T06:20Z",
+      "events_in": 1,
+      "events": [
+        "news_flash: iran_ceasefire \u2014 Trump cancels Pakistan envoys trip (Reuters Apr 25). Escalation confirmed."
+      ],
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "working_orders": [
+        "GBPUSD LIMIT BUY@1.3506 size=4500 SL=1.3495 TP=1.3531"
+      ],
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "binary_event": "none (ceasefire extended indefinitely, no deadline)",
+      "calendar": "BOJ T-1d (Apr 27-28), FOMC T-3d (Apr 29-30)",
+      "confluence_summary": "EURUSD none(+12.5), GBPUSD mod(+48), AUDUSD weak(+29), USDJPY none(+19.5), USDCAD weak(-29), USDCHF none(-5), GOLD none(-10.5), OIL weak(+29.5), BTC mod(+44)",
+      "watchlist_audit": "all KEEP \u2014 no Rule1/Rule2/Rule3 triggers",
+      "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP(bull) AUDUSD=KEEP(neutral) others=disabled",
+      "note": "1 evt news_flash(iran_ceasefire). Market closed weekend. No trades. GBPUSD LIMIT BUY@1.3506 kept. Regime ACTIVE_ESCALATION confirmed. BOJ T-1d."
     }
   ]
 }
