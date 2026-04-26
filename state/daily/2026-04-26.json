@@ -21,5 +21,79 @@
     "watchlist_audit": "all KEEP \u2014 no Rule1/Rule2/Rule3 triggers",
     "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP(bull) AUDUSD=KEEP(neutral) others=disabled",
     "note": "1 evt news_flash(iran_ceasefire). Market closed weekend. No trades. GBPUSD LIMIT BUY@1.3506 kept. Regime ACTIVE_ESCALATION confirmed. BOJ T-1d."
+  },
+  {
+    "tick_ts_utc": "2026-04-26T07:05Z",
+    "events": 0,
+    "event_types": [],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "trades_skipped": 0,
+    "open_positions": 0,
+    "working_orders": 1,
+    "working_order_detail": "GBPUSD LIMIT BUY@1.3506 dealId=00000000-4e72-9b27-044a-beb40055311e",
+    "account_balance": 995.13,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_active": false,
+    "calendar": "BOJ T-1d (Apr27-28), FOMC T-3d (Apr29-30)",
+    "attention_matrix": {
+      "EURUSD": {
+        "swing": "NONE",
+        "scalp": "ACTIVE",
+        "readiness": "none",
+        "reason": "comp=+12.5 below moderate threshold, no alert"
+      },
+      "GBPUSD": {
+        "swing": "ARMED",
+        "scalp": "ACTIVE(bull)",
+        "readiness": "moderate",
+        "reason": "LIMIT BUY@1.3506 active, comp=+48, dist=20.6p within 30p"
+      },
+      "AUDUSD": {
+        "swing": "WATCH",
+        "scalp": "ACTIVE",
+        "readiness": "weak",
+        "reason": "pullback_buy@0.7085, comp=+29, dist=52p, not at trigger"
+      },
+      "USDJPY": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "fade_zone@160.05, comp=+19.5, dist=71p, BOJ T-1d elevated risk"
+      },
+      "USDCAD": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "weak",
+        "reason": "FVG_short@1.3675, comp=-29, pip-conv pending for scalp"
+      },
+      "USDCHF": {
+        "swing": "NONE",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "comp=-5, no alert, pip-conv pending for scalp"
+      },
+      "GOLD": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "none",
+        "reason": "escalation_buy@4700, comp=-10.5, dist=$10.3, validated 10f/80%4h"
+      },
+      "OIL_CRUDE": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "weak",
+        "reason": "sweep_retest@93.23, comp=+29.5, dist=$0.93, validated 6f/100%4h"
+      },
+      "BTCUSD": {
+        "swing": "NONE",
+        "scalp": "N/A",
+        "readiness": "moderate",
+        "reason": "FVG@76960 comp=+44 but dist=$1089 outside proximity, spread 50p"
+      }
+    },
+    "scalp_audit": "EURUSD=KEEP(no trades yet) GBPUSD=KEEP(bull-bias,no trades) AUDUSD=KEEP(no trades) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
+    "alert_changes": "all_KEEP",
+    "notes": "Heartbeat. Market closed weekend. GBPUSD LIMIT ARMED. BOJ Apr27-28 T-1d: USDJPY 159.34 approaching intervention zone 160.05."
   }
 ]
