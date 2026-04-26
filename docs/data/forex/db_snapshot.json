@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-26T13:59:13.627982+00:00",
+  "generated_at": "2026-04-26T14:49:27.184929+00:00",
   "counts": {
     "trades": 15,
-    "events": 3863,
+    "events": 3864,
     "ticks": 59,
-    "regime_snapshots": 53,
+    "regime_snapshots": 54,
     "broker_positions": 0,
     "counterfactuals": 48
   },
@@ -328,6 +328,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-26T14:07Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "14:07 forex auto \u2014 1 evt news_flash(fed_fomc: Senate committee vote Apr 29 advance Warsh Fed Chair nomination NON-ALTERING). Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP(dist=21.6p ARMED). BOJ T-0d FOMC T-3d cal. Warsh hawkish nominee = medium-term USD-bull, does not change Powell Apr-29 FOMC. BTC comp +57.5\u2192+60 STRONG FVG@76960 dist=$1014 WATCH(full size authorized). GOLD none(-10.5) @4710 WATCH(val 10f/80%4h). OIL weak(+29.5) sweep_9323 dist=$0.97 WATCH(val). AUDUSD weak(+29) M15FVG@0.7143 WATCH. USDCAD weak(-29) FVG@1.3675 WATCH. 0 trades 0pos. attention_covered=9/9.",
+      "binary_event_name": "iran_ceasefire_indefinite_extension",
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-04-26T13:42:00Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "13:42 forex auto \u2014 0 evt heartbeat. Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP(dist=20.6p ARMED). BOJ Apr27-28 T-0d: USDJPY@159.38 intervention zone 160 dist=61.6p. FOMC Apr29-30 T-3d cal. BTC comp +60\u2192+57.5 MODERATE (4/4 agree, FVG@76960 dist=$1013 WATCH-half). GOLD none(-10.5) inside zone WATCH(val 10f/80%4h). OIL weak(+29.5) sweep_9323 dist=$0.97 WATCH(val 6f/100%4h). AUDUSD weak(+29) M15FVG@0.7143 dist=7.3p WATCH. USDCAD weak(-29) FVG@1.3675 dist=6.4p WATCH. 0 trades 0pos. attention_covered=9/9.",
@@ -395,14 +403,6 @@
       "ts_utc": "2026-04-26T06:20Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "06:20 forex auto \u2014 1 evt news_flash(iran_ceasefire: Trump cancels Pakistan trip, ceasefire talks stalled further). Market CLOSED weekend. Regime ACTIVE_ESCALATION intact (confirmed by Pakistan trip cancellation). GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP. BOJ T-1d FOMC T-3d cal. GOLD none(-10.5) dist=$64.4 WATCH(val 10f/80%4h). OIL weak(+29.5) sweep@93.23 dist=$0.97 prox WATCH(val 6f/100%4h). AUDUSD weak(+29) FVG@0.7143 dist=7.3p WATCH. USDCAD weak(-29) FVG@1.3675 dist=6.4p WATCH. BTCUSD mod(+44) FVG@76960 dist=$1089 outside prox WATCH. 0 trades 0pos. attention_covered=9/9.",
-      "binary_event_name": "iran_ceasefire_indefinite_extension",
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-04-26T05:38:00Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "05:38 forex auto \u2014 1 evt news_flash(fed_fomc: GoldSilver FOMC-preview Apr-23 stale republish, non-thesis-altering). Market CLOSED weekend. Regime ACTIVE_ESCALATION intact. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP (bid=1.35266 dist=20.6p ARMED). BOJ T-1d(Apr27-28) FOMC T-3d(Apr29) cal \u2014 half-size caution. GOLD none(-10.5) @4710.6 dist=$64.4 from 4775 WATCH(validated 10f/80%4h). OIL weak(+29.5) @94.2 dist=$3.90 from 90.3 WATCH(validated 3f/67%4h). AUDUSD REMOVE audusd_pullback_buy_7085(Rule1: dist=65.3p>3\u00d7H4ATR=63p, no catalyst); ADD audusd_m15fvg_buy_7143(FVG 0.71426-0.71444 dist=7.3p, comp=+29 weak WATCH). ADD usdcad_sell_fvg_13675(FVG 1.3675 dist=6.4p, comp=-29 weak WATCH). BTCUSD comp=+44 mod dist=$1089 above FVG WATCH. USDJPY none(+19.5) dist=61.6p from 160 BOJ T-1d intervention risk WATCH. 0 trades 0pos. attention_covered=9/9.",
       "binary_event_name": "iran_ceasefire_indefinite_extension",
       "binary_event_active": 0,
       "binary_event_deadline": null

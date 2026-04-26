@@ -1,13 +1,6 @@
 {
-  "generated_at": "2026-04-26T14:03:36.378044Z",
+  "generated_at": "2026-04-26T14:52:47.945389Z",
   "ticks": [
-    {
-      "ts": "2026-04-23T17:14:22Z",
-      "summary": "2026-04-23T17:14:22Z \u2014 17:07 forex auto \u2014 21 evt gap since 12:34 (4.5h): 6 usdjpy_audits (iran_ceasefire 'extension' kw from Reuters/Al-Jazeera/Detroit-News/Caspian/Daily-Pioneer/WaPo \u2014 ALL iteration of indefinite-extension regime NOT thesis-altering) + 3 oil_audits (ship-traffic + extension-coverage NOT altering) + 4 liquidity_sweeps (USDCHF 0.78602 up-sell readiness=none skip / GBPUSD 1.35133 up",
-      "events_processed": 38,
-      "trades_opened": 0,
-      "trades_closed": 0
-    },
     {
       "ts": "2026-04-23T19:14:00Z",
       "events": 2,
@@ -677,6 +670,65 @@
           "reason": "FVG@76960 dist=$1014 outside prox($321), STRONG but not at level"
         }
       }
+    },
+    {
+      "tick_ts_utc": "2026-04-26T14:51Z",
+      "events": 0,
+      "event_types": [],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "trades_skipped": 0,
+      "positions_after": 0,
+      "working_orders": 1,
+      "working_order_detail": "GBPUSD LIMIT BUY@1.3506 SL=1.3495 TP=1.3531 size=4500",
+      "daily_pnl_usd": -4.87,
+      "account_balance": 995.13,
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "binary_event": "none_active (BOJ Apr27-28 T-0d, FOMC Apr29-30 T-3d \u2014 calendar, no blackout)",
+      "regime_note": "0 evt heartbeat. Market CLOSED weekend(BTC@78036). GBPUSD LIMIT BUY@1.3506 comp=+48 mod ARMED(dist=27.3p). BOJ T-0d intervention risk elevated. FOMC T-3d. BTC comp=+60 STRONG FVG@76960 WATCH. GOLD none(-10.5) WATCH(val). OIL weak(+29.5) sweep_9323 WATCH(val). AUDUSD weak(+29) FVG@0.7143 WATCH. USDCAD weak(-29) FVG@1.3675 WATCH.",
+      "alerts_kept": 10,
+      "alerts_modified": 0,
+      "alerts_removed": 0,
+      "alerts_added": 0,
+      "confluence_snapshot": {
+        "EURUSD": {
+          "comp": 12.5,
+          "readiness": "none"
+        },
+        "GBPUSD": {
+          "comp": 48.0,
+          "readiness": "moderate"
+        },
+        "AUDUSD": {
+          "comp": 29.0,
+          "readiness": "weak"
+        },
+        "USDJPY": {
+          "comp": 19.5,
+          "readiness": "none"
+        },
+        "USDCAD": {
+          "comp": -29.0,
+          "readiness": "weak"
+        },
+        "USDCHF": {
+          "comp": -5.0,
+          "readiness": "none"
+        },
+        "GOLD": {
+          "comp": -10.5,
+          "readiness": "none"
+        },
+        "OIL_CRUDE": {
+          "comp": 29.5,
+          "readiness": "weak"
+        },
+        "BTCUSD": {
+          "comp": 60.0,
+          "readiness": "strong"
+        }
+      },
+      "attention_covered": "9/9"
     }
   ]
 }
