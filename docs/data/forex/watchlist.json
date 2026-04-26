@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-26T05:38:00Z",
+  "last_updated_by_claude": "2026-04-26T06:00:00Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 — strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -176,6 +176,28 @@
       "proximity": "AUDUSD@0.71503; dist=7.3p ABOVE 0.71430 → INSIDE 30p prox. comp=+29 weak (need +40 mod to arm). H4ATR=0.0021; 3×H4ATR=63p (dist=7.3p, NOT auto-remove). swing=WATCH (need Mon open + mod readiness to arm)."
     },
     {
+      "id": "oil_sweep_9323_buy_retest",
+      "instrument": "OIL_CRUDE",
+      "level": 93.23,
+      "emit_on": "cross_down",
+      "cooldown_sec": 1800,
+      "direction": "buy",
+      "note": "ENTRY: price pulls back to 93.23 swept extreme; M15 bar closes AT or ABOVE 93.23 with bullish rejection wick ≥2 pts from the low. VALIDATED — naked LIMIT at moderate+ readiness (6 fires, 100% 4h hit rate). Cancel LIMIT if price closes below SL 92.50.\n\nCONTEXT: WTI liquidity sweep low at 93.23 (prior sweep level). Oil in bullish trend (comp=+29.5 weak, DXY weak, Hormuz supply-risk premium). 6 fires, 100% 4h hit rate → validated per Rule 3. Apply 4h hard time-stop on entered trade.\n\nSL: 92.50  TP: 95.50  R:R target: 3.1\n\nadded back 2026-04-26T06:00Z — validated alert (6f/100%4h) absent from watchlist; dist=$0.97 within H1ATR=$1.29, re-activated.",
+      "entry_criterion": "M15 bar closes at or above 93.23 with bullish rejection wick ≥2 pts from the low. VALIDATED — naked LIMIT at moderate+ readiness.",
+      "regime_context": "WTI swept low at 93.23. Oil bullish: comp=+29.5 weak, Hormuz supply-risk premium, DXY weak. 6 fires, 100%4h → Rule 3 validated. 4h time-stop on entered trade.",
+      "sl": 92.50,
+      "tp": 95.50,
+      "rr_target": "3.1",
+      "current_price_ref": 94.203,
+      "price_ref": {
+        "ts": "2026-04-26T06:00:00Z",
+        "price": 94.203
+      },
+      "last_updated": "2026-04-26T06:00:00Z",
+      "updated_utc": "2026-04-26T06:00:00Z",
+      "proximity": "OIL@94.203; dist=$0.97 BELOW threshold — INSIDE H1ATR=$1.29 prox. comp=+29.5 weak (need +40 mod to arm). Validated (6f/100%4h). swing=WATCH (need Mon open + mod readiness to arm LIMIT)."
+    },
+    {
       "id": "usdcad_sell_fvg_13675",
       "instrument": "USDCAD",
       "level": 1.36750,
@@ -266,5 +288,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-26T05:38:00Z"
+  "last_updated_utc": "2026-04-26T06:00:00Z"
 }

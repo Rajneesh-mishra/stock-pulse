@@ -25,11 +25,12 @@
     "GBPUSD": {
       "enabled": true,
       "mode": "session_open_break",
-      "bias": "neutral",
+      "bias": "bull",
       "sessions": [
         "london",
         "ny"
-      ]
+      ],
+      "reason": "bias neutral→bull: comp=+48 moderate, 4/4 TFs agree bullish, LIMIT BUY active at 1.3506"
     },
     "AUDUSD": {
       "enabled": true,
