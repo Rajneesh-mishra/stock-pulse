@@ -356,5 +356,120 @@
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
     "binary_event": "none_active",
     "notes": "Heartbeat. Market CLOSED (weekend). GBPUSD LIMIT BUY@1.3506 working (comp=+48 mod, dist=20.6p ARMED). BTC comp +60\u2192+57.5 moderate (size note: half until comp re-confirms strong). BOJ Apr27-28 T-0d (tomorrow). FOMC Apr29-30 T-3d. No new trades. Attention 9/9."
+  },
+  {
+    "tick_ts_utc": "2026-04-26T14:07Z",
+    "events_consumed": 1,
+    "events": [
+      "evt_1777211832415_news_flash"
+    ],
+    "event_summary": "news_flash fed_fomc: Warsh Fed Chair nomination Senate committee vote Apr 29 \u2014 NON-ALTERING",
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "trades_skipped": 0,
+    "open_positions": 0,
+    "working_orders": 1,
+    "working_order_detail": "GBPUSD LIMIT BUY@1.3506 SL1.3495 TP1.3531 comp=+48 mod KEEP",
+    "account_balance": 995.13,
+    "daily_pnl_usd": 0.0,
+    "confluence": {
+      "GBPUSD": {
+        "readiness": "moderate",
+        "composite": 48.0
+      },
+      "GOLD": {
+        "readiness": "none",
+        "composite": -10.5
+      },
+      "USDJPY": {
+        "readiness": "none",
+        "composite": 19.5
+      },
+      "AUDUSD": {
+        "readiness": "weak",
+        "composite": 29.0
+      },
+      "OIL_CRUDE": {
+        "readiness": "weak",
+        "composite": 29.5
+      },
+      "BTCUSD": {
+        "readiness": "strong",
+        "composite": 60.0
+      },
+      "EURUSD": {
+        "readiness": "none",
+        "composite": 12.5
+      },
+      "USDCAD": {
+        "readiness": "weak",
+        "composite": -29.0
+      },
+      "USDCHF": {
+        "readiness": "none",
+        "composite": -5.0
+      }
+    },
+    "alert_changes": [
+      "btcusd_day_fvg_buy MODIFY comp+57.5\u2192+60 strong, full size (1.5%) authorized"
+    ],
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "scalp_status": "EURUSD=ACTIVE GBPUSD=ACTIVE(bull) AUDUSD=ACTIVE(neutral) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
+    "attention_matrix": {
+      "EURUSD": {
+        "swing": "NONE",
+        "scalp": "ACTIVE",
+        "readiness": "none",
+        "reason": "comp=+12.5 none, no alert"
+      },
+      "GBPUSD": {
+        "swing": "ARMED",
+        "scalp": "ACTIVE",
+        "readiness": "moderate",
+        "reason": "LIMIT BUY@1.3506 active, comp=+48 mod"
+      },
+      "AUDUSD": {
+        "swing": "WATCH",
+        "scalp": "ACTIVE",
+        "readiness": "weak",
+        "reason": "FVG@0.7143 alert, comp=+29 weak (need +40 mod)"
+      },
+      "USDJPY": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "sell@160 alert, comp=+19.5 none; pip-conv pending"
+      },
+      "USDCAD": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "weak",
+        "reason": "FVG sell@1.3675, comp=-29 weak; pip-conv pending"
+      },
+      "USDCHF": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "sweep sell@0.7875, comp=-5 none; pip-conv pending"
+      },
+      "GOLD": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "none",
+        "reason": "buy@4775 and sell@4721, comp=-10.5 none (spread 5p)"
+      },
+      "OIL_CRUDE": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "weak",
+        "reason": "validated buys, comp=+29.5 weak (need +40 mod for entry)"
+      },
+      "BTCUSD": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "strong",
+        "reason": "FVG@76960 dist=$1014 outside prox($321), STRONG but not at level"
+      }
+    }
   }
 ]
