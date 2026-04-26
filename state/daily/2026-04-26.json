@@ -658,5 +658,17 @@
     "scalp_halt": {},
     "attention_covered": "9/9",
     "note": "0 evt heartbeat. Market CLOSED weekend. BOJ T-0d hold confirmed. GBPUSD LIMIT BUY@1.3506 ARMED (mod readiness, dist=20.6p). BTC STRONG(+60) FVG@76960 WATCH. All 8 alerts KEEP."
+  },
+  {
+    "tick_ts": "2026-04-26T19:28Z",
+    "events": 0,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "positions": 0,
+    "working_orders": 1,
+    "account_balance": 995.13,
+    "pnl_session": 0.0,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "note": "2026-04-26T19:28Z tick: 0 evt heartbeat. Market CLOSED weekend(BTC@78264). BOJ T-0d started(announcement expected Apr27~14UTC, hold consensus). USDJPY@159.38 dist=66p from 160.05(intervention zone). FOMC T-3d (Apr29-30). GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP(dist=27.1p ARMED). BTC STRONG(+60) FVG@76960 dist=$1304 WATCH. GOLD none(-10.5) @4710.6 inside 4695-4715 zone WATCH(val). OIL weak(+29.5) sweep_9323 dist=$0.97 WATCH(val). AUDUSD weak(+29) FVG@0.7143 dist=7.3p WATCH. USDCAD weak(-29) FVG@1.3675 dist=6.4p WATCH. 8 alerts KEEP. 0 trades 0pos. attention_covered=9/9."
   }
 ]
