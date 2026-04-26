@@ -552,5 +552,43 @@
     "positions_open": 0,
     "limit_orders": 1,
     "note": "Iran FM \u2192 Moscow, ceasefire collapse looms. Regime ACTIVE_ESCALATION confirmed. GBPUSD LIMIT BUY@1.3506 KEEP. 5 queries date-rolled +1d (added Apr 29). 10 alerts KEEP. BOJ T-0d FOMC T-3d."
+  },
+  {
+    "tick_ts_utc": "2026-04-26T17:11Z",
+    "events": 0,
+    "event_types": [],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "alerts_added": 0,
+    "alerts_removed": 0,
+    "alerts_modified": 1,
+    "open_positions": 0,
+    "working_orders": 1,
+    "working_order_detail": "GBPUSD LIMIT BUY@1.3506 size=4500 SL=1.3495 TP=1.3531 dist=20.6p",
+    "account_balance": 995.13,
+    "daily_pnl_usd": 0.0,
+    "scalp_halted": {},
+    "scalp_daily_pnl": 0.0,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "confluence_summary": {
+      "EURUSD": "none/+12.5",
+      "GBPUSD": "moderate/+48",
+      "AUDUSD": "weak/+29",
+      "USDJPY": "none/+19.5",
+      "USDCAD": "weak/-29",
+      "USDCHF": "none/-5",
+      "GOLD": "none/-10.5",
+      "OIL_CRUDE": "weak/+29.5",
+      "BTCUSD": "moderate/+57.5"
+    },
+    "notes": [
+      "Heartbeat tick \u2014 0 events",
+      "GBPUSD LIMIT BUY@1.3506 KEEP (comp=+48 mod, dist=20.6p ARMED)",
+      "gold_sweep_4721_sell_retest Rule3-promoted: 6 fires 100%4h \u2192 naked LIMIT at |comp|\u226540 bullish",
+      "BOJ T-0d (Apr 27-28 hold expected, JPY hawkish June risk)",
+      "FOMC T-3d (Apr 29-30) calendar only",
+      "BTC comp dropped +60\u2192+57.5 (still moderate)",
+      "Market CLOSED weekend"
+    ]
   }
 ]
