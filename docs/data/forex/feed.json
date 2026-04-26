@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-26T23:05:49.986800Z",
+  "generated_at": "2026-04-26T23:19:03.716022Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T08:17:00Z",
-      "events_in": 0,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 0,
-      "summary": "08:17 UTC heartbeat \u2014 0 evt. USDJPY 159.695 +40.5 mod dist=30.6p OUTSIDE 30p \u2192 WATCH (was ARMED @29.8p last tick, marginal slip). GOLD 4691.1 -35.5 weak sweep_4721 dist=30.6$ OUTSIDE threshold \u2192 WATCH. OIL 96.54 +43.0 mod sweep_9323 dist=3.30$ extending away. BTC 77881 +29.5 weak FVG dist=921$. USDCHF -5.0 none sweep_h1 WATCH. 7 alerts KEEP. Scalp 3 FX ACTIVE halt={}. 0 trades $1000/0pos. BOJ T-3d FOMC T-5d."
-    },
     {
       "ts_utc": "2026-04-24T08:28:00Z",
       "events_in": 9,
@@ -907,6 +899,21 @@
       "account_balance": 995.13,
       "account_available": 847.19,
       "pnl_today": 0.0
+    },
+    {
+      "tick_ts_utc": "2026-04-27T04:43Z",
+      "events": 12,
+      "events_detail": "1 liquidity_sweep(GOLD), 11 bar_close",
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "positions_open": 0,
+      "working_orders": 1,
+      "working_orders_detail": "GBPUSD LIMIT BUY@1.3506 SL=1.3495 TP=1.3531",
+      "balance": 992.97,
+      "actions": [
+        "ADD gold_sweep_4679_buy_retest alert (WATCH, comp=-21 none bearish, needs comp\u226525 bull to arm)"
+      ],
+      "summary": "12 evt (GOLD M15 down-sweep@4679.96 + 11 bar_close). GOLD sweep alert added as WATCH. No trades. GBPUSD LIMIT KEEP. OIL mod but outside prox. BTC strong but far from levels. 0 pos 1 working."
     }
   ]
 }
