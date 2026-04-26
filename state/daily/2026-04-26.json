@@ -188,5 +188,73 @@
       "OIL_CRUDE": "swing=WATCH scalp=N/A(spread3-4p) readiness=weak | validated sweep retest $93.23 dist=$0.97<prox, needs mod readiness",
       "BTCUSD": "swing=WATCH scalp=N/A(spread50p) readiness=strong | DAY FVG@76960 dist=$1011>$332prox, wait for pullback"
     }
+  },
+  {
+    "tick_ts_utc": "2026-04-26T10:20:00Z",
+    "events": 0,
+    "event_types": [],
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "trades_skipped": 0,
+    "open_positions": [],
+    "pending_orders": [
+      {
+        "epic": "GBPUSD",
+        "dir": "BUY",
+        "limit": 1.3506,
+        "sl": 1.3495,
+        "tp": 1.3531,
+        "size": 4500
+      }
+    ],
+    "alerts_modified": [
+      "btcusd_dayfvg_76960_buy (comp+60 strong)",
+      "gold_sweep_4721_sell_retest (ADDED to watchlist)",
+      "audusd_pullback_buy (REMOVED stale)",
+      "audusd_m15fvg_buy_7143 (ADDED)"
+    ],
+    "binary_event": "none (ceasefire extension indefinite, active=false)",
+    "calendar": "BOJ Apr 27-28 T-1d, FOMC Apr 29-30 T-3d",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "scalp": "EURUSD/GBPUSD/AUDUSD active no halts daily_pnl=0",
+    "confluence_snapshot": {
+      "EURUSD": {
+        "comp": 12.5,
+        "readiness": "none"
+      },
+      "GBPUSD": {
+        "comp": 48.0,
+        "readiness": "moderate"
+      },
+      "AUDUSD": {
+        "comp": 29.0,
+        "readiness": "weak"
+      },
+      "USDJPY": {
+        "comp": 19.5,
+        "readiness": "none"
+      },
+      "USDCAD": {
+        "comp": -29.0,
+        "readiness": "weak"
+      },
+      "USDCHF": {
+        "comp": -5.0,
+        "readiness": "none"
+      },
+      "GOLD": {
+        "comp": -10.5,
+        "readiness": "none"
+      },
+      "OIL_CRUDE": {
+        "comp": 29.5,
+        "readiness": "weak"
+      },
+      "BTCUSD": {
+        "comp": 60.0,
+        "readiness": "strong"
+      }
+    },
+    "notes": "Heartbeat tick. Market closed weekend. BTC upgraded strong (+55\u2192+60). AUDUSD 0.7085 removed (stale), 0.7143 FVG added. gold_sweep_4721 re-added to watcher (validated 6f/100%4h, $10.4 from level). No new trades. GBPUSD LIMIT BUY armed dist=20.6p."
   }
 ]
