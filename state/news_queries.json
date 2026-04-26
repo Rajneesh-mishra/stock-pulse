@@ -37,9 +37,9 @@
             "cooldown_min": 30,
             "note": "TUNED 2026-04-22 11:38 UTC \u2014 fixed-deadline binary REMOVED (4-source verification of Trump indefinite extension: Reuters/NYT/Detroit News/AJ). Dropped 'expire'/'expiry' (deadline p | 2026-04-22 23:55 UTC TUNE: DROPPED \"announce\"+\"Islamabad\" (caught Apr 12 WaPo Islamabad-talks-collapse republish via announce+Islamabad match). ADDED \"walks out\",\"Iran walkout\",\"Vance trip\" phrases. Keyword set now escalation-specific. | 2026-04-23T04:03:00Z TUNE: Apr 12 Times of India Islamabad-talks-collapse republish fired via 'collapse' solo-kw 11d stale. ADDED match_keywords date filter ['April 2026','Apr 22','Apr 23','Apr 20','Apr 21'] per hormuz/opec/boj/fed_fomc pattern. Kept 'collapse' as primary \u2014 legit escalation kw, date filter handles staleness. RE-TUNED 2026-04-23T04:35:00Z \u2014 substring-leak bug: 'Apr 20' was matching 'Apr 2026' as substring (any 2026 article passed). Switched to 'DD Mon YYYY' tokens which align with RSS pubDate format and have unique day numbers. | RE-TUNED 2026-04-23T09:13:00Z \u2014 WVIR Apr 11 'US and Iran end 21-hour ceasefire talks without agreement before Vance departs Pakistan' 12d-stale fired on bare 'Vance' solo-kw (match_keywords STILL-NOT-ENFORCED daemon bug forex_news_watcher.py:246). DROPPED bare 'Vance' (governor-name-solo pattern same as 'Bullock'/'Katayama'/'Islamabad' past failures). ADDED phrase-required 'Vance departs','Vance walks' to keep Vance-action captured while killing pure-backgrounder republishes. | 2026-04-23T20:20:00Z TUNE: rolled date window to ['22 Apr 2026', '23 Apr 2026', '24 Apr 2026'] (dropped Apr 20-21 stale, added Apr 24 current). Note: daemon bug forex_news_watcher.py:246 \u2014 match_keywords not enforced; cosmetic update. | 2026-04-23T21:40:00Z TUNE: rolled date window +1d (dropped Apr 22, added Apr 25). | 2026-04-24T06:00:00Z TUNE: rolled date window to ['24 Apr 2026', '25 Apr 2026', '26 Apr 2026'] (dropped 23 Apr 2026, added 26 Apr 2026).",
             "match_keywords": [
-                "25 Apr 2026",
                 "26 Apr 2026",
-                "27 Apr 2026"
+                "27 Apr 2026",
+                "28 Apr 2026"
             ]
         },
         {
@@ -60,9 +60,9 @@
             "cooldown_min": 60,
             "note": "RE-TUNED 2026-04-23T03:25:00Z \u2014 prior filter [2026,April,Apr 22,Apr 23] too broad \u2014 Apr 7 2026 CBS archive 'Iran war throttle oil flows even if Hormuz reopens' matched via 'April' (any-month-2026) + 'reopen' kw. Tightened to current-window dates only. Bump window +1d on each tick; year-only/month-only filters are banned. RE-TUNED 2026-04-23T04:35:00Z \u2014 substring-leak bug: 'Apr 20' was matching 'Apr 2026' as substring (any 2026 article passed). Switched to 'DD Mon YYYY' tokens which align with RSS pubDate format and have unique day numbers. | 2026-04-23T20:20:00Z TUNE: rolled date window to ['22 Apr 2026', '23 Apr 2026', '24 Apr 2026'] (dropped Apr 20-21 stale, added Apr 24 current). Note: daemon bug forex_news_watcher.py:246 \u2014 match_keywords not enforced; cosmetic update. | 2026-04-24T20:30:00Z TUNE: rolled date window to ['23 Apr 2026', '24 Apr 2026', '25 Apr 2026'] (dropped Apr 22 stale, added Apr 25 upcoming). | 2026-04-24T06:00:00Z TUNE: rolled date window to ['24 Apr 2026', '25 Apr 2026', '26 Apr 2026'] (dropped 23 Apr 2026, added 26 Apr 2026).",
             "match_keywords": [
-                "25 Apr 2026",
                 "26 Apr 2026",
-                "27 Apr 2026"
+                "27 Apr 2026",
+                "28 Apr 2026"
             ]
         },
         {
@@ -96,9 +96,9 @@
             "cooldown_min": 120,
             "note": "RE-TUNED 2026-04-22 18:55 UTC \u2014 prior 'retaliation'/'retaliate'/'struck'/'escalation'/'mine' flooded 12 stale archive articles this tick: 10 Apr 13-14 original blockade-announcement (Algemeiner/Fox/Globe & Mail/MSN/etc.) + 1 Apr 16 CNBC 'fourth day' + 1 Apr 19 Il Sole Touska republish. Those keywords match 9-day-old routine coverage of baseline state. REMOVED broad keywords; kept only action-verbs describing NEW escalation rungs (missile launched, casualties, sunk, ablaze) + forward diplomatic names (Vance/Witkoff/Kushner/Islamabad) + de-escalation-trigger phrases (Hormuz reopen, blockade lifted, new talks, walkout). Cooldown 60\u2192120min. If this still floods: add date-filter logic to daemon. | 2026-04-23T21:40:00Z TUNE: added match_keywords=['23 Apr 2026','24 Apr 2026','25 Apr 2026'] \u2014 'killed' solo-match returned Mar 1 2026 archive (54d stale). Date-window filter prevents stale archives firing. Note: daemon bug forex_news_watcher.py:246 \u2014 match_keywords not enforced; cosmetic until bug fixed. | 2026-04-23T23:25:00Z TUNE: Trump 'shoot to kill' order Apr 23 on Iranian mine-laying boats not captured by prior keywords. Added 'shoot to kill','mine-laying boats','attacked Iranian boats','mine boats','naval strike'. These are escalation-new keywords not in backgrounder archives. | 2026-04-24T06:00:00Z TUNE: rolled date window to ['24 Apr 2026', '25 Apr 2026', '26 Apr 2026'] (dropped 23 Apr 2026, added 26 Apr 2026).",
             "match_keywords": [
-                "25 Apr 2026",
                 "26 Apr 2026",
-                "27 Apr 2026"
+                "27 Apr 2026",
+                "28 Apr 2026"
             ]
         },
         {
@@ -232,9 +232,9 @@
             "cooldown_min": 240,
             "note": "RE-TUNED 2026-04-23T08:08:00Z \u2014 DROPPED 'reset' solo-kw. Chatham House Feb 17 2026 'Despite reset in India\u2013US relations, New Delhi retains commitment to strategic hedging' (65-day archive) fired on 'reset' solo-match; match_keywords=['20 Apr 2026'...'23 Apr 2026'] date filter STILL-NOT-ENFORCED by daemon (known bug forex_news_watcher.py:246 match_keywords NEVER-ENFORCED). 'reset' is pure commentary noun \u2014 any India-US relationship article ever written matches. Kept action-specific tokens (exemption/delay/signed/retaliate/lowered/raised/executive order); even these will leak past match_keywords but are less prone to pure-backgrounder false positives. Prior: 'RE-TUNED 2026-04-23T00:03:00Z DROPPED Modi solo-kw Feb 2 80d archive. | RE-RE-TUNED 04:03 removed bare 2026. RE-TUNED 04:35 DD Mon YYYY tokens.' | 2026-04-23T20:20:00Z TUNE: rolled date window to ['22 Apr 2026', '23 Apr 2026', '24 Apr 2026'] (dropped Apr 20-21 stale, added Apr 24 current). Note: daemon bug forex_news_watcher.py:246 \u2014 match_keywords not enforced; cosmetic update. | 2026-04-23T21:40:00Z TUNE: rolled date window +1d (dropped Apr 22, added Apr 25). | 2026-04-24T06:00:00Z TUNE: rolled date window to ['24 Apr 2026', '25 Apr 2026', '26 Apr 2026'] (dropped 23 Apr 2026, added 26 Apr 2026).",
             "match_keywords": [
-                "25 Apr 2026",
                 "26 Apr 2026",
-                "27 Apr 2026"
+                "27 Apr 2026",
+                "28 Apr 2026"
             ]
         }
     ],

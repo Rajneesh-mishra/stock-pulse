@@ -135,5 +135,58 @@
     "balance": 995.13,
     "daily_pnl_usd": 0.0,
     "attention_covered": "9/9"
+  },
+  {
+    "tick_ts_utc": "2026-04-26T09:38:00Z",
+    "events": 1,
+    "events_list": [
+      "evt_1777196156003_news_flash (us_iran_military: Hormuz mines 6-month clearance NON-ALTERING)"
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "skipped": 0,
+    "open_positions": 0,
+    "working_orders": 1,
+    "working_orders_detail": [
+      "GBPUSD LIMIT BUY@1.3506 SL=1.3495 TP=1.3531 size=4500 dist=20.6p ARMED"
+    ],
+    "market_status": "CLOSED_WEEKEND",
+    "binary_event": "none (binary_event.active=false, Hormuz ACTIVE_ESCALATION regime)",
+    "calendar": "BOJ Apr 27-28 T-1d | FOMC Apr 29-30 T-3d",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "regime_note": "Hormuz mine-clearance 6-month timeline confirmed. Sustained supply disruption. Gold/oil thesis strengthened. Regime unchanged.",
+    "confluence": {
+      "GBPUSD": "moderate +48",
+      "GOLD": "none -10.5",
+      "OIL_CRUDE": "weak +29.5",
+      "BTCUSD": "strong +60",
+      "USDJPY": "none +19.5",
+      "AUDUSD": "weak +29",
+      "USDCAD": "weak -29",
+      "EURUSD": "none +12.5",
+      "USDCHF": "none -5"
+    },
+    "watchlist_audit": {
+      "gold_escalation_buy_zone": "KEEP (validated 10f/80%4h, dist=$10.6 inside zone, readiness=none, mines news strengthens)",
+      "usdjpy_intervention_fade_zone": "KEEP (dist=66.6p<3xH4ATR=82.8p, BOJ T-1d elevates relevance)",
+      "audusd_pullback_buy": "KEEP (dist=65.3p vs 3xH4ATR=63p borderline-stale, re-evaluate Mon open)",
+      "usdcad_short_fvg_retest": "KEEP (dist=6.4p, readiness=weak, 6f/50%4h borderline merits)",
+      "gbpusd_pullback_buy_1350": "KEEP ARMED (LIMIT working, dist=20.6p<30p, readiness=moderate)",
+      "oil_sweep_9323_buy_retest": "KEEP (validated 6f/100%4h, dist=$0.97<$1.29prox, readiness=weak, mines article strengthens)",
+      "btcusd_dayfvg_76960_buy": "KEEP (strong readiness +60, dist=$1011>$332prox, price moving toward zone)"
+    },
+    "news_queries_audit": "TUNE: rolled date windows for iran_ceasefire/hormuz_strait/us_iran_military/us_tariff: dropped '25 Apr 2026', added '28 Apr 2026'",
+    "scalp_audit": "EURUSD=KEEP(no trades) GBPUSD=KEEP(bias=bull mod+48) AUDUSD=KEEP(bias=neutral) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
+    "attention_matrix": {
+      "EURUSD": "swing=NONE scalp=ACTIVE readiness=none | no alert, comp=+12.5 below 25 threshold",
+      "GBPUSD": "swing=ARMED scalp=ACTIVE readiness=moderate | LIMIT BUY@1.3506 dist=20.6p, BOJ T-1d not GBP-relevant",
+      "AUDUSD": "swing=WATCH scalp=ACTIVE readiness=weak | pullback buy 0.7085 dist=65.3p>30p, borderline stale re-eval Mon",
+      "USDJPY": "swing=WATCH scalp=OFF(pip-conv) readiness=none | intervention fade 160.05 dist=62p, BOJ T-1d tomorrow",
+      "USDCAD": "swing=WATCH scalp=OFF(pip-conv) readiness=weak | FVG SELL 1.3675 dist=6.4p but only weak readiness",
+      "USDCHF": "swing=NONE scalp=OFF(pip-conv) readiness=none | no alert, comp=-5 neutral no setup",
+      "GOLD": "swing=WATCH scalp=N/A(spread5p) readiness=none | validated buy 4695-4715 price inside zone, comp=-10.5 tape bearish short-term",
+      "OIL_CRUDE": "swing=WATCH scalp=N/A(spread3-4p) readiness=weak | validated sweep retest $93.23 dist=$0.97<prox, needs mod readiness",
+      "BTCUSD": "swing=WATCH scalp=N/A(spread50p) readiness=strong | DAY FVG@76960 dist=$1011>$332prox, wait for pullback"
+    }
   }
 ]
