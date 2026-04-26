@@ -314,5 +314,34 @@
     "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP(bull bias) AUDUSD=KEEP(neutral) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
     "attention_covered": "9/9",
     "note": "11:35 forex auto \u2014 0 evt heartbeat. Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 comp=+48 mod ARMED(dist=20.6p<30p KEEP). BOJ T-1d FOMC T-3d. 0 trades 0pos."
+  },
+  {
+    "tick_ts_utc": "2026-04-26T12:45:00Z",
+    "events_processed": 0,
+    "events_actioned": 0,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "trades_skipped": 0,
+    "positions_open": 0,
+    "working_orders": 1,
+    "working_order_detail": "GBPUSD LIMIT BUY@1.3506 SL=1.3495 TP=1.3531",
+    "balance_usd": 995.13,
+    "daily_pnl_usd": 0.0,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event_active": false,
+    "calendar": "BOJ Apr27-28 T-1d | FOMC Apr29-30 T-3d",
+    "attention": {
+      "EURUSD": "swing=NONE scalp=ACTIVE readiness=none \u2014 no level in play",
+      "GBPUSD": "swing=ARMED scalp=ACTIVE readiness=moderate \u2014 LIMIT BUY@1.3506 working",
+      "AUDUSD": "swing=WATCH scalp=ACTIVE readiness=weak \u2014 M15FVG@0.7143 dist=5.7p, need mod",
+      "USDJPY": "swing=WATCH scalp=OFF readiness=none \u2014 BOJ T-1d, intervention 160 dist=66p",
+      "USDCAD": "swing=WATCH scalp=OFF readiness=weak \u2014 H4FVG@1.3675 dist=7.2p, need mod",
+      "USDCHF": "swing=WATCH scalp=OFF readiness=none \u2014 sweep@0.7875 dist=32.8p, comp=none",
+      "GOLD": "swing=WATCH scalp=N/A readiness=none \u2014 gold_sweep_4721 dist=$10.4 val 6f/100%4h",
+      "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=weak \u2014 sweep_9323 dist=$0.97 val 6f/100%4h",
+      "BTCUSD": "swing=WATCH scalp=N/A readiness=moderate \u2014 FVG@76960 dist=$1017 outside prox"
+    },
+    "scalp_audit": "EURUSD=KEEP(no trades) GBPUSD=KEEP(no trades,bull) AUDUSD=KEEP(no trades,neutral) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
+    "notes": "Heartbeat. Market closed weekend. BTC live @77977. BOJ T-1d tomorrow \u2014 USDJPY intervention watch elevated."
   }
 ]
