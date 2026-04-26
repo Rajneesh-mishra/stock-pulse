@@ -213,5 +213,53 @@
     },
     "scalp_audit": "EURUSD=KEEP(no trades) GBPUSD=KEEP(no trades) AUDUSD=KEEP(no trades) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED"
+  },
+  {
+    "tick_ts_utc": "2026-04-27T05:01Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "type": "level_cross",
+        "instrument": "GOLD",
+        "alert_id": "gold_sweep_4679_buy_retest",
+        "decision": "REMOVE \u2014 price crossed DOWN through 4679.96 (bid=4677.19); buy thesis invalidated, swept extreme broken"
+      }
+    ],
+    "trades": [],
+    "open_positions": [],
+    "pending_orders": [
+      {
+        "instrument": "GBPUSD",
+        "type": "LIMIT_BUY",
+        "level": 1.3506,
+        "bid_dist_p": 4.8,
+        "status": "KEEP"
+      }
+    ],
+    "market_regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "attention_matrix": {
+      "EURUSD": "swing=NONE scalp=ACTIVE readiness=none reason=comp=-2.5 neutral no alert",
+      "GBPUSD": "swing=ARMED scalp=ACTIVE readiness=moderate reason=LIMIT BUY@1.3506 working comp=+45.5 mod bid 4.8p above",
+      "AUDUSD": "swing=WATCH scalp=ACTIVE readiness=none reason=inside H4 FVG zone 0.7143-0.7146 comp=+19 none; need M15 close >0.7146 + comp\u226540",
+      "USDJPY": "swing=WATCH scalp=OFF readiness=weak reason=dist=43p below 160 comp=+34.5 weak; pip-conv pending",
+      "USDCAD": "swing=WATCH scalp=OFF readiness=weak reason=price AT sell level 1.3675 (dist=0.9p) comp=-37.5 weak; need \u2264-40 mod",
+      "USDCHF": "swing=WATCH scalp=OFF readiness=none reason=comp=+18 none bullish; sell alert needs \u2264-40; opposite direction",
+      "GOLD": "swing=WATCH scalp=N/A readiness=none reason=comp=-21 none bearish; sweep buy REMOVED (broke 4679.96); sell 4721 needs |comp|\u226540 bull; new H1FVG sell WATCH at 4695",
+      "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=moderate reason=comp=+40 mod; buy levels 93.23/90.30 far (dist=$1.87/$4.80 outside prox)",
+      "BTCUSD": "swing=WATCH scalp=N/A readiness=moderate reason=comp=+52.5 mod; FVG dist=$1097 outside prox; session high sell 78914 dist=$833 outside prox"
+    },
+    "watchlist_changes": {
+      "removed": [
+        "gold_sweep_4679_buy_retest"
+      ],
+      "added": [
+        "gold_h1fvg_sell_4695"
+      ],
+      "news_query_date_roll": "drop 26Apr2026, add 30Apr2026"
+    },
+    "scalp_audit": "EURUSD=KEEP(no trades) GBPUSD=KEEP(no trades) AUDUSD=KEEP(no trades) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
+    "broker_balance": 992.97,
+    "daily_pnl": 0.0,
+    "note": "1 evt level_cross GOLD (buy invalidated, REMOVED); GBPUSD LIMIT KEEP; OIL comp\u2192mod; 0pos 1 working"
   }
 ]

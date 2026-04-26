@@ -1,252 +1,256 @@
 {
-    "_comment": "Authored by Claude. News daemon polls these queries every cadence. Emits news_flash events ONLY when a headline contains \u22651 required keyword AND the URL hasn't been seen before AND the query's cooldown has elapsed. Claude updates this as thesis shifts.",
-    "queries": [
-        {
-            "id": "iran_ceasefire",
-            "query": "Iran US ceasefire deal Islamabad talks",
-            "keywords_required": [
-                "signed",
-                "formal",
-                "collapse",
-                "rejected",
-                "extended",
-                "extension",
-                "indefinite",
-                "unlikely",
-                "strike",
-                "attack",
-                "breakdown",
-                "breakthrough",
-                "skip",
-                "walkout",
-                "pulled",
-                "withdraw",
-                "boycott",
-                "freeze",
-                "ploy",
-                "bridge damage",
-                "blockade lifted",
-                "ship attacked",
-                "tanker",
-                "walks out",
-                "Iran walkout",
-                "Vance trip",
-                "Vance departs",
-                "Vance walks"
-            ],
-            "cooldown_min": 30,
-            "note": "TUNED 2026-04-22 11:38 UTC \u2014 fixed-deadline binary REMOVED (4-source verification of Trump indefinite extension: Reuters/NYT/Detroit News/AJ). Dropped 'expire'/'expiry' (deadline p | 2026-04-22 23:55 UTC TUNE: DROPPED \"announce\"+\"Islamabad\" (caught Apr 12 WaPo Islamabad-talks-collapse republish via announce+Islamabad match). ADDED \"walks out\",\"Iran walkout\",\"Vance trip\" phrases. Keyword set now escalation-specific. | 2026-04-23T04:03:00Z TUNE: Apr 12 Times of India Islamabad-talks-collapse republish fired via 'collapse' solo-kw 11d stale. ADDED match_keywords date filter ['April 2026','Apr 22','Apr 23','Apr 20','Apr 21'] per hormuz/opec/boj/fed_fomc pattern. Kept 'collapse' as primary \u2014 legit escalation kw, date filter handles staleness. RE-TUNED 2026-04-23T04:35:00Z \u2014 substring-leak bug: 'Apr 20' was matching 'Apr 2026' as substring (any 2026 article passed). Switched to 'DD Mon YYYY' tokens which align with RSS pubDate format and have unique day numbers. | RE-TUNED 2026-04-23T09:13:00Z \u2014 WVIR Apr 11 'US and Iran end 21-hour ceasefire talks without agreement before Vance departs Pakistan' 12d-stale fired on bare 'Vance' solo-kw (match_keywords STILL-NOT-ENFORCED daemon bug forex_news_watcher.py:246). DROPPED bare 'Vance' (governor-name-solo pattern same as 'Bullock'/'Katayama'/'Islamabad' past failures). ADDED phrase-required 'Vance departs','Vance walks' to keep Vance-action captured while killing pure-backgrounder republishes. | 2026-04-23T20:20:00Z TUNE: rolled date window to ['22 Apr 2026', '23 Apr 2026', '24 Apr 2026'] (dropped Apr 20-21 stale, added Apr 24 current). Note: daemon bug forex_news_watcher.py:246 \u2014 match_keywords not enforced; cosmetic update. | 2026-04-23T21:40:00Z TUNE: rolled date window +1d (dropped Apr 22, added Apr 25). | 2026-04-24T06:00:00Z TUNE: rolled date window to ['24 Apr 2026', '25 Apr 2026', '26 Apr 2026'] (dropped 23 Apr 2026, added 26 Apr 2026). | 2026-04-26T16:41Z TUNE: rolled date window +1d, added 29 Apr 2026 (BOJ T-0d, FOMC T-3d window).",
-            "match_keywords": [
-                "26 Apr 2026",
-                "27 Apr 2026",
-                "28 Apr 2026",
-                "29 Apr 2026"
-            ]
-        },
-        {
-            "id": "hormuz_strait",
-            "query": "Strait Hormuz tanker vessel",
-            "keywords_required": [
-                "attack",
-                "mine",
-                "closed",
-                "reopen",
-                "strike",
-                "incident",
-                "sanction",
-                "sunk",
-                "ablaze",
-                "missile"
-            ],
-            "cooldown_min": 60,
-            "note": "RE-TUNED 2026-04-23T03:25:00Z \u2014 prior filter [2026,April,Apr 22,Apr 23] too broad \u2014 Apr 7 2026 CBS archive 'Iran war throttle oil flows even if Hormuz reopens' matched via 'April' (any-month-2026) + 'reopen' kw. Tightened to current-window dates only. Bump window +1d on each tick; year-only/month-only filters are banned. RE-TUNED 2026-04-23T04:35:00Z \u2014 substring-leak bug: 'Apr 20' was matching 'Apr 2026' as substring (any 2026 article passed). Switched to 'DD Mon YYYY' tokens which align with RSS pubDate format and have unique day numbers. | 2026-04-23T20:20:00Z TUNE: rolled date window to ['22 Apr 2026', '23 Apr 2026', '24 Apr 2026'] (dropped Apr 20-21 stale, added Apr 24 current). Note: daemon bug forex_news_watcher.py:246 \u2014 match_keywords not enforced; cosmetic update. | 2026-04-24T20:30:00Z TUNE: rolled date window to ['23 Apr 2026', '24 Apr 2026', '25 Apr 2026'] (dropped Apr 22 stale, added Apr 25 upcoming). | 2026-04-24T06:00:00Z TUNE: rolled date window to ['24 Apr 2026', '25 Apr 2026', '26 Apr 2026'] (dropped 23 Apr 2026, added 26 Apr 2026). | 2026-04-26T16:41Z TUNE: rolled date window +1d, added 29 Apr 2026 (BOJ T-0d, FOMC T-3d window).",
-            "match_keywords": [
-                "26 Apr 2026",
-                "27 Apr 2026",
-                "28 Apr 2026",
-                "29 Apr 2026"
-            ]
-        },
-        {
-            "id": "us_iran_military",
-            "query": "US Iran naval Hormuz blockade retaliation",
-            "keywords_required": [
-                "missile",
-                "mines",
-                "casualties",
-                "casualty",
-                "killed",
-                "wounded",
-                "sunk",
-                "ablaze",
-                "Vance",
-                "Witkoff",
-                "Kushner",
-                "Islamabad",
-                "Hormuz reopen",
-                "blockade lifted",
-                "new talks",
-                "walkout",
-                "shoot to kill",
-                "mine-laying boats",
-                "attacked Iranian boats",
-                "mine boats",
-                "naval strike",
-                "torpedo",
-                "sank"
-            ],
-            "cooldown_min": 120,
-            "note": "RE-TUNED 2026-04-22 18:55 UTC \u2014 prior 'retaliation'/'retaliate'/'struck'/'escalation'/'mine' flooded 12 stale archive articles this tick: 10 Apr 13-14 original blockade-announcement (Algemeiner/Fox/Globe & Mail/MSN/etc.) + 1 Apr 16 CNBC 'fourth day' + 1 Apr 19 Il Sole Touska republish. Those keywords match 9-day-old routine coverage of baseline state. REMOVED broad keywords; kept only action-verbs describing NEW escalation rungs (missile launched, casualties, sunk, ablaze) + forward diplomatic names (Vance/Witkoff/Kushner/Islamabad) + de-escalation-trigger phrases (Hormuz reopen, blockade lifted, new talks, walkout). Cooldown 60\u2192120min. If this still floods: add date-filter logic to daemon. | 2026-04-23T21:40:00Z TUNE: added match_keywords=['23 Apr 2026','24 Apr 2026','25 Apr 2026'] \u2014 'killed' solo-match returned Mar 1 2026 archive (54d stale). Date-window filter prevents stale archives firing. Note: daemon bug forex_news_watcher.py:246 \u2014 match_keywords not enforced; cosmetic until bug fixed. | 2026-04-23T23:25:00Z TUNE: Trump 'shoot to kill' order Apr 23 on Iranian mine-laying boats not captured by prior keywords. Added 'shoot to kill','mine-laying boats','attacked Iranian boats','mine boats','naval strike'. These are escalation-new keywords not in backgrounder archives. | 2026-04-24T06:00:00Z TUNE: rolled date window to ['24 Apr 2026', '25 Apr 2026', '26 Apr 2026'] (dropped 23 Apr 2026, added 26 Apr 2026). | 2026-04-26T16:41Z TUNE: rolled date window +1d, added 29 Apr 2026 (BOJ T-0d, FOMC T-3d window).",
-            "match_keywords": [
-                "26 Apr 2026",
-                "27 Apr 2026",
-                "28 Apr 2026",
-                "29 Apr 2026"
-            ]
-        },
-        {
-            "id": "opec_supply",
-            "query": "OPEC crude oil production",
-            "keywords_required": [
-                "emergency",
-                "surprise cut",
-                "surprise meeting",
-                "production halt",
-                "Saudi raises",
-                "Saudi cuts",
-                "OPEC+ cut",
-                "OPEC+ hike",
-                "output cut",
-                "output hike",
-                "Hormuz closure",
-                "Hormuz shut",
-                "Hormuz reopen"
-            ],
-            "cooldown_min": 240,
-            "note": "RE-TUNED 2026-04-23T01:08:00Z \u2014 prior 00:41 UTC fire matched Feb 13 2026 Reuters archive (70-day-old) on 'war' keyword. Root cause: 'war'/'Iran' in keywords_required matched any Hormuz-tangential archive regardless of supply content; '2026'/'April' in match_keywords matched published-date string on archives. REMOVED broad geopolitical kw ('war','Iran') and loose date-year kw ('2026','April'). REPLACED with explicit supply-shock action verbs ('surprise cut','OPEC+ cut','output hike','production halt','Saudi raises/cuts','Hormuz closure/shut/reopen') and strict forward-month kw ('May 2026','June 2026','July 2026','this week','next week','announced today','announced yesterday'). Cooldown 120\u2192240min (supply news is slow-drip, don't need sub-2h repeats). Prior note: 'RE-TUNED 2026-04-22T22:18:17Z \u2014 prior broad keywords ['increase','announce','hike','meeting'] matched 4 stale archives this tick (Aug 2025 NYT, Sep 2025 NYT, Mar 2026 Reuters x2). Narrowed to action-verbs + forward-looking supply-shock triggers tied to current Hormuz situation. Added match_keywords=['2026','April','May 2026','June 2026'] date filter (fed_fomc/boj pattern). Cooldown 60\u2192120min.'",
-            "match_keywords": [
-                "May 2026",
-                "June 2026",
-                "July 2026",
-                "this week",
-                "next week",
-                "announced today",
-                "announced yesterday"
-            ]
-        },
-        {
-            "id": "boj_intervention",
-            "query": "Bank of Japan yen intervention MoF Katayama",
-            "keywords_required": [
-                "intervene",
-                "sold yen",
-                "bought yen",
-                "rate check",
-                "urgency",
-                "excessive",
-                "surprise hike",
-                "stealth intervention",
-                "yen intervention",
-                "pain threshold",
-                "verbal intervention",
-                "sold dollars",
-                "smoothing operation"
-            ],
-            "cooldown_min": 240,
-            "note": "RE-TUNED 2026-04-23T01:05Z \u2014 Mar 13 2026 Dailyhunt Katayama-Iran-fallout 41-day archive fired on 'Katayama' solo-req kw (match_keywords ['2026','April','Apr 27','Apr 28','policy meeting'] NOT enforced by watcher per empirical evidence: prior tune 22:01 still allowed 01:02 fire). Removed bare 'Katayama'/'Akazawa'/'hike'/'decision' solo-req tokens (MoF names appear in backgrounder archives, 'hike'/'decision' too generic). Replaced with action-phrase required: 'intervene','sold yen','bought yen','rate check','urgency','excessive','surprise hike','stealth intervention','yen intervention','pain threshold','verbal intervention','sold dollars','smoothing operation'. Cooldown 180\u2192240min. match_keywords kept for when watcher enforces them later. Re-evaluate after BoJ Apr 27-28. RE-TUNED 2026-04-23T04:35:00Z \u2014 substring-leak bug: 'Apr 20' was matching 'Apr 2026' as substring (any 2026 article passed). Switched to 'DD Mon YYYY' tokens which align with RSS pubDate format and have unique day numbers. (boj_intervention: dropped bare '2026'/'April'; kept date-precise + action phrases) | 2026-04-26T16:41Z TUNE: rolled date window +1d, added 29 Apr 2026 (BOJ T-0d, FOMC T-3d window).",
-            "match_keywords": [
-                "27 Apr 2026",
-                "28 Apr 2026",
-                "29 Apr 2026",
-                "policy meeting",
-                "BoJ raised",
-                "BoJ held",
-                "rate decision"
-            ]
-        },
-        {
-            "id": "fed_fomc",
-            "query": "FOMC April 29 2026 decision Powell",
-            "keywords_required": [
-                "April 29",
-                "Apr 29",
-                "FOMC today",
-                "decision today",
-                "cut today",
-                "held today",
-                "rate cut",
-                "rate hold",
-                "held rates",
-                "rates unchanged",
-                "Powell said today",
-                "pivot",
-                "surprise cut",
-                "emergency cut"
-            ],
-            "cooldown_min": 360,
-            "note": "TUNED 2026-04-22T21:27:27Z \u2014 added match_keywords=['2026'] to block Oct 2025 Powell archive republish (stale '2025' article fired this tick despite prior narrowing of query text). Strict 2026 filter will force current-FOMC-era matches only. Re-evaluate after Apr 28-29 meeting passes. | 2026-04-23T00:23Z RE-TUNE: prior match_keywords=['2026'] ineffective (substring '2026' present in query-string and many article URLs; 6 stale Powell archives fired this tick \u2014 Oct 2025/Jan 2026x2/Feb 2026/Apr 6/Apr 14). Replaced with narrower match_keywords that require a current-decision-cycle phrase (Apr 29 meeting specifics). Raised cooldown 180\u2192360min. | 2026-04-24T06:52Z RE-TUNE: Mar-15 AOL archive fired on bare 'Powell'+'press conference' solo-match (forward-looking weekly-preview article from 6 weeks ago). Both 'Powell' and 'press conference' are governor-name-solo / generic-phrase patterns known to match backgrounder archives. REMOVED both from keywords_required. Kept only action-specific and date-anchored phrases (Apr 29/FOMC today/rate cut etc). Re-evaluate after Apr 29 FOMC meeting passes \u2014 query should be REMOVED post-meeting.",
-            "match_keywords": [
-                "April 29",
-                "Apr 29",
-                "FOMC decision today",
-                "cut 25",
-                "held rates",
-                "Powell presser",
-                "Powell press conference",
-                "statement today"
-            ]
-        },
-        {
-            "id": "rba_hike",
-            "query": "Reserve Bank Australia RBA rate",
-            "keywords_required": [
-                "surprise cut",
-                "surprise hike",
-                "May meeting",
-                "emergency",
-                "unscheduled",
-                "cash rate raised",
-                "cash rate lowered",
-                "hold rates",
-                "voted to hike",
-                "voted to cut"
-            ],
-            "cooldown_min": 240,
-            "match_keywords": [
-                "Apr 2026",
-                "May 2026",
-                "this week",
-                "announced today",
-                "announced yesterday"
-            ],
-            "note": "RE-TUNED 2026-04-23T03:33:00Z \u2014 prior keywords ['Bullock','May meeting','surprise','unexpected'] still matched Jul 23 2025 Guardian Bullock-wary-of-cutting archive (9 months stale) via solo 'Bullock' governor-name token. 'Bullock' appears in any RBA-related archive backgrounder regardless of current relevance (same failure mode as 'Katayama'/'Islamabad' in earlier tunes). STRIPPED bare 'Bullock' + single-word 'surprise'/'unexpected'; REPLACED with action-phrase required ('surprise cut','surprise hike','cash rate raised','voted to hike','emergency','unscheduled','hold rates'). Added match_keywords date filter following boj_intervention/opec_supply pattern. Cooldown 240min kept. Prior: 'RE-TUNED 2026-04-21 07:38 UTC \u2014 narrowed to action/person specific. Market pricing May hike to 4.35%; risk-off may force RBA pause \u2014 AUD bid thesis broken under blockade.'"
-        },
-        {
-            "id": "us_tariff",
-            "query": "US India tariff trade deal",
-            "keywords_required": [
-                "exemption",
-                "delay",
-                "signed",
-                "retaliate",
-                "lowered",
-                "raised",
-                "executive order"
-            ],
-            "cooldown_min": 240,
-            "note": "RE-TUNED 2026-04-23T08:08:00Z \u2014 DROPPED 'reset' solo-kw. Chatham House Feb 17 2026 'Despite reset in India\u2013US relations, New Delhi retains commitment to strategic hedging' (65-day archive) fired on 'reset' solo-match; match_keywords=['20 Apr 2026'...'23 Apr 2026'] date filter STILL-NOT-ENFORCED by daemon (known bug forex_news_watcher.py:246 match_keywords NEVER-ENFORCED). 'reset' is pure commentary noun \u2014 any India-US relationship article ever written matches. Kept action-specific tokens (exemption/delay/signed/retaliate/lowered/raised/executive order); even these will leak past match_keywords but are less prone to pure-backgrounder false positives. Prior: 'RE-TUNED 2026-04-23T00:03:00Z DROPPED Modi solo-kw Feb 2 80d archive. | RE-RE-TUNED 04:03 removed bare 2026. RE-TUNED 04:35 DD Mon YYYY tokens.' | 2026-04-23T20:20:00Z TUNE: rolled date window to ['22 Apr 2026', '23 Apr 2026', '24 Apr 2026'] (dropped Apr 20-21 stale, added Apr 24 current). Note: daemon bug forex_news_watcher.py:246 \u2014 match_keywords not enforced; cosmetic update. | 2026-04-23T21:40:00Z TUNE: rolled date window +1d (dropped Apr 22, added Apr 25). | 2026-04-24T06:00:00Z TUNE: rolled date window to ['24 Apr 2026', '25 Apr 2026', '26 Apr 2026'] (dropped 23 Apr 2026, added 26 Apr 2026). | 2026-04-26T16:41Z TUNE: rolled date window +1d, added 29 Apr 2026 (BOJ T-0d, FOMC T-3d window).",
-            "match_keywords": [
-                "26 Apr 2026",
-                "27 Apr 2026",
-                "28 Apr 2026",
-                "29 Apr 2026"
-            ]
-        }
-    ],
-    "global_settings": {
-        "poll_sec_active": 600,
-        "poll_sec_quiet": 1200,
-        "max_events_per_hour": 15,
-        "fetch_timeout_sec": 15
+  "_comment": "Authored by Claude. News daemon polls these queries every cadence. Emits news_flash events ONLY when a headline contains \u22651 required keyword AND the URL hasn't been seen before AND the query's cooldown has elapsed. Claude updates this as thesis shifts.",
+  "queries": [
+    {
+      "id": "iran_ceasefire",
+      "query": "Iran US ceasefire deal Islamabad talks",
+      "keywords_required": [
+        "signed",
+        "formal",
+        "collapse",
+        "rejected",
+        "extended",
+        "extension",
+        "indefinite",
+        "unlikely",
+        "strike",
+        "attack",
+        "breakdown",
+        "breakthrough",
+        "skip",
+        "walkout",
+        "pulled",
+        "withdraw",
+        "boycott",
+        "freeze",
+        "ploy",
+        "bridge damage",
+        "blockade lifted",
+        "ship attacked",
+        "tanker",
+        "walks out",
+        "Iran walkout",
+        "Vance trip",
+        "Vance departs",
+        "Vance walks"
+      ],
+      "cooldown_min": 30,
+      "note": "TUNED 2026-04-22 11:38 UTC \u2014 fixed-deadline binary REMOVED (4-source verification of Trump indefinite extension: Reuters/NYT/Detroit News/AJ). Dropped 'expire'/'expiry' (deadline p | 2026-04-22 23:55 UTC TUNE: DROPPED \"announce\"+\"Islamabad\" (caught Apr 12 WaPo Islamabad-talks-collapse republish via announce+Islamabad match). ADDED \"walks out\",\"Iran walkout\",\"Vance trip\" phrases. Keyword set now escalation-specific. | 2026-04-23T04:03:00Z TUNE: Apr 12 Times of India Islamabad-talks-collapse republish fired via 'collapse' solo-kw 11d stale. ADDED match_keywords date filter ['April 2026','Apr 22','Apr 23','Apr 20','Apr 21'] per hormuz/opec/boj/fed_fomc pattern. Kept 'collapse' as primary \u2014 legit escalation kw, date filter handles staleness. RE-TUNED 2026-04-23T04:35:00Z \u2014 substring-leak bug: 'Apr 20' was matching 'Apr 2026' as substring (any 2026 article passed). Switched to 'DD Mon YYYY' tokens which align with RSS pubDate format and have unique day numbers. | RE-TUNED 2026-04-23T09:13:00Z \u2014 WVIR Apr 11 'US and Iran end 21-hour ceasefire talks without agreement before Vance departs Pakistan' 12d-stale fired on bare 'Vance' solo-kw (match_keywords STILL-NOT-ENFORCED daemon bug forex_news_watcher.py:246). DROPPED bare 'Vance' (governor-name-solo pattern same as 'Bullock'/'Katayama'/'Islamabad' past failures). ADDED phrase-required 'Vance departs','Vance walks' to keep Vance-action captured while killing pure-backgrounder republishes. | 2026-04-23T20:20:00Z TUNE: rolled date window to ['22 Apr 2026', '23 Apr 2026', '24 Apr 2026'] (dropped Apr 20-21 stale, added Apr 24 current). Note: daemon bug forex_news_watcher.py:246 \u2014 match_keywords not enforced; cosmetic update. | 2026-04-23T21:40:00Z TUNE: rolled date window +1d (dropped Apr 22, added Apr 25). | 2026-04-24T06:00:00Z TUNE: rolled date window to ['24 Apr 2026', '25 Apr 2026', '26 Apr 2026'] (dropped 23 Apr 2026, added 26 Apr 2026). | 2026-04-26T16:41Z TUNE: rolled date window +1d, added 29 Apr 2026 (BOJ T-0d, FOMC T-3d window).",
+      "match_keywords": [
+        "27 Apr 2026",
+        "28 Apr 2026",
+        "29 Apr 2026",
+        "30 Apr 2026"
+      ]
+    },
+    {
+      "id": "hormuz_strait",
+      "query": "Strait Hormuz tanker vessel",
+      "keywords_required": [
+        "attack",
+        "mine",
+        "closed",
+        "reopen",
+        "strike",
+        "incident",
+        "sanction",
+        "sunk",
+        "ablaze",
+        "missile"
+      ],
+      "cooldown_min": 60,
+      "note": "RE-TUNED 2026-04-23T03:25:00Z \u2014 prior filter [2026,April,Apr 22,Apr 23] too broad \u2014 Apr 7 2026 CBS archive 'Iran war throttle oil flows even if Hormuz reopens' matched via 'April' (any-month-2026) + 'reopen' kw. Tightened to current-window dates only. Bump window +1d on each tick; year-only/month-only filters are banned. RE-TUNED 2026-04-23T04:35:00Z \u2014 substring-leak bug: 'Apr 20' was matching 'Apr 2026' as substring (any 2026 article passed). Switched to 'DD Mon YYYY' tokens which align with RSS pubDate format and have unique day numbers. | 2026-04-23T20:20:00Z TUNE: rolled date window to ['22 Apr 2026', '23 Apr 2026', '24 Apr 2026'] (dropped Apr 20-21 stale, added Apr 24 current). Note: daemon bug forex_news_watcher.py:246 \u2014 match_keywords not enforced; cosmetic update. | 2026-04-24T20:30:00Z TUNE: rolled date window to ['23 Apr 2026', '24 Apr 2026', '25 Apr 2026'] (dropped Apr 22 stale, added Apr 25 upcoming). | 2026-04-24T06:00:00Z TUNE: rolled date window to ['24 Apr 2026', '25 Apr 2026', '26 Apr 2026'] (dropped 23 Apr 2026, added 26 Apr 2026). | 2026-04-26T16:41Z TUNE: rolled date window +1d, added 29 Apr 2026 (BOJ T-0d, FOMC T-3d window).",
+      "match_keywords": [
+        "27 Apr 2026",
+        "28 Apr 2026",
+        "29 Apr 2026",
+        "30 Apr 2026"
+      ]
+    },
+    {
+      "id": "us_iran_military",
+      "query": "US Iran naval Hormuz blockade retaliation",
+      "keywords_required": [
+        "missile",
+        "mines",
+        "casualties",
+        "casualty",
+        "killed",
+        "wounded",
+        "sunk",
+        "ablaze",
+        "Vance",
+        "Witkoff",
+        "Kushner",
+        "Islamabad",
+        "Hormuz reopen",
+        "blockade lifted",
+        "new talks",
+        "walkout",
+        "shoot to kill",
+        "mine-laying boats",
+        "attacked Iranian boats",
+        "mine boats",
+        "naval strike",
+        "torpedo",
+        "sank"
+      ],
+      "cooldown_min": 120,
+      "note": "RE-TUNED 2026-04-22 18:55 UTC \u2014 prior 'retaliation'/'retaliate'/'struck'/'escalation'/'mine' flooded 12 stale archive articles this tick: 10 Apr 13-14 original blockade-announcement (Algemeiner/Fox/Globe & Mail/MSN/etc.) + 1 Apr 16 CNBC 'fourth day' + 1 Apr 19 Il Sole Touska republish. Those keywords match 9-day-old routine coverage of baseline state. REMOVED broad keywords; kept only action-verbs describing NEW escalation rungs (missile launched, casualties, sunk, ablaze) + forward diplomatic names (Vance/Witkoff/Kushner/Islamabad) + de-escalation-trigger phrases (Hormuz reopen, blockade lifted, new talks, walkout). Cooldown 60\u2192120min. If this still floods: add date-filter logic to daemon. | 2026-04-23T21:40:00Z TUNE: added match_keywords=['23 Apr 2026','24 Apr 2026','25 Apr 2026'] \u2014 'killed' solo-match returned Mar 1 2026 archive (54d stale). Date-window filter prevents stale archives firing. Note: daemon bug forex_news_watcher.py:246 \u2014 match_keywords not enforced; cosmetic until bug fixed. | 2026-04-23T23:25:00Z TUNE: Trump 'shoot to kill' order Apr 23 on Iranian mine-laying boats not captured by prior keywords. Added 'shoot to kill','mine-laying boats','attacked Iranian boats','mine boats','naval strike'. These are escalation-new keywords not in backgrounder archives. | 2026-04-24T06:00:00Z TUNE: rolled date window to ['24 Apr 2026', '25 Apr 2026', '26 Apr 2026'] (dropped 23 Apr 2026, added 26 Apr 2026). | 2026-04-26T16:41Z TUNE: rolled date window +1d, added 29 Apr 2026 (BOJ T-0d, FOMC T-3d window).",
+      "match_keywords": [
+        "27 Apr 2026",
+        "28 Apr 2026",
+        "29 Apr 2026",
+        "30 Apr 2026"
+      ]
+    },
+    {
+      "id": "opec_supply",
+      "query": "OPEC crude oil production",
+      "keywords_required": [
+        "emergency",
+        "surprise cut",
+        "surprise meeting",
+        "production halt",
+        "Saudi raises",
+        "Saudi cuts",
+        "OPEC+ cut",
+        "OPEC+ hike",
+        "output cut",
+        "output hike",
+        "Hormuz closure",
+        "Hormuz shut",
+        "Hormuz reopen"
+      ],
+      "cooldown_min": 240,
+      "note": "RE-TUNED 2026-04-23T01:08:00Z \u2014 prior 00:41 UTC fire matched Feb 13 2026 Reuters archive (70-day-old) on 'war' keyword. Root cause: 'war'/'Iran' in keywords_required matched any Hormuz-tangential archive regardless of supply content; '2026'/'April' in match_keywords matched published-date string on archives. REMOVED broad geopolitical kw ('war','Iran') and loose date-year kw ('2026','April'). REPLACED with explicit supply-shock action verbs ('surprise cut','OPEC+ cut','output hike','production halt','Saudi raises/cuts','Hormuz closure/shut/reopen') and strict forward-month kw ('May 2026','June 2026','July 2026','this week','next week','announced today','announced yesterday'). Cooldown 120\u2192240min (supply news is slow-drip, don't need sub-2h repeats). Prior note: 'RE-TUNED 2026-04-22T22:18:17Z \u2014 prior broad keywords ['increase','announce','hike','meeting'] matched 4 stale archives this tick (Aug 2025 NYT, Sep 2025 NYT, Mar 2026 Reuters x2). Narrowed to action-verbs + forward-looking supply-shock triggers tied to current Hormuz situation. Added match_keywords=['2026','April','May 2026','June 2026'] date filter (fed_fomc/boj pattern). Cooldown 60\u2192120min.'",
+      "match_keywords": [
+        "May 2026",
+        "June 2026",
+        "July 2026",
+        "this week",
+        "next week",
+        "announced today",
+        "announced yesterday",
+        "30 Apr 2026"
+      ]
+    },
+    {
+      "id": "boj_intervention",
+      "query": "Bank of Japan yen intervention MoF Katayama",
+      "keywords_required": [
+        "intervene",
+        "sold yen",
+        "bought yen",
+        "rate check",
+        "urgency",
+        "excessive",
+        "surprise hike",
+        "stealth intervention",
+        "yen intervention",
+        "pain threshold",
+        "verbal intervention",
+        "sold dollars",
+        "smoothing operation"
+      ],
+      "cooldown_min": 240,
+      "note": "RE-TUNED 2026-04-23T01:05Z \u2014 Mar 13 2026 Dailyhunt Katayama-Iran-fallout 41-day archive fired on 'Katayama' solo-req kw (match_keywords ['2026','April','Apr 27','Apr 28','policy meeting'] NOT enforced by watcher per empirical evidence: prior tune 22:01 still allowed 01:02 fire). Removed bare 'Katayama'/'Akazawa'/'hike'/'decision' solo-req tokens (MoF names appear in backgrounder archives, 'hike'/'decision' too generic). Replaced with action-phrase required: 'intervene','sold yen','bought yen','rate check','urgency','excessive','surprise hike','stealth intervention','yen intervention','pain threshold','verbal intervention','sold dollars','smoothing operation'. Cooldown 180\u2192240min. match_keywords kept for when watcher enforces them later. Re-evaluate after BoJ Apr 27-28. RE-TUNED 2026-04-23T04:35:00Z \u2014 substring-leak bug: 'Apr 20' was matching 'Apr 2026' as substring (any 2026 article passed). Switched to 'DD Mon YYYY' tokens which align with RSS pubDate format and have unique day numbers. (boj_intervention: dropped bare '2026'/'April'; kept date-precise + action phrases) | 2026-04-26T16:41Z TUNE: rolled date window +1d, added 29 Apr 2026 (BOJ T-0d, FOMC T-3d window).",
+      "match_keywords": [
+        "27 Apr 2026",
+        "28 Apr 2026",
+        "29 Apr 2026",
+        "policy meeting",
+        "BoJ raised",
+        "BoJ held",
+        "rate decision",
+        "30 Apr 2026"
+      ]
+    },
+    {
+      "id": "fed_fomc",
+      "query": "FOMC April 29 2026 decision Powell",
+      "keywords_required": [
+        "April 29",
+        "Apr 29",
+        "FOMC today",
+        "decision today",
+        "cut today",
+        "held today",
+        "rate cut",
+        "rate hold",
+        "held rates",
+        "rates unchanged",
+        "Powell said today",
+        "pivot",
+        "surprise cut",
+        "emergency cut"
+      ],
+      "cooldown_min": 360,
+      "note": "TUNED 2026-04-22T21:27:27Z \u2014 added match_keywords=['2026'] to block Oct 2025 Powell archive republish (stale '2025' article fired this tick despite prior narrowing of query text). Strict 2026 filter will force current-FOMC-era matches only. Re-evaluate after Apr 28-29 meeting passes. | 2026-04-23T00:23Z RE-TUNE: prior match_keywords=['2026'] ineffective (substring '2026' present in query-string and many article URLs; 6 stale Powell archives fired this tick \u2014 Oct 2025/Jan 2026x2/Feb 2026/Apr 6/Apr 14). Replaced with narrower match_keywords that require a current-decision-cycle phrase (Apr 29 meeting specifics). Raised cooldown 180\u2192360min. | 2026-04-24T06:52Z RE-TUNE: Mar-15 AOL archive fired on bare 'Powell'+'press conference' solo-match (forward-looking weekly-preview article from 6 weeks ago). Both 'Powell' and 'press conference' are governor-name-solo / generic-phrase patterns known to match backgrounder archives. REMOVED both from keywords_required. Kept only action-specific and date-anchored phrases (Apr 29/FOMC today/rate cut etc). Re-evaluate after Apr 29 FOMC meeting passes \u2014 query should be REMOVED post-meeting.",
+      "match_keywords": [
+        "April 29",
+        "Apr 29",
+        "FOMC decision today",
+        "cut 25",
+        "held rates",
+        "Powell presser",
+        "Powell press conference",
+        "statement today",
+        "30 Apr 2026"
+      ]
+    },
+    {
+      "id": "rba_hike",
+      "query": "Reserve Bank Australia RBA rate",
+      "keywords_required": [
+        "surprise cut",
+        "surprise hike",
+        "May meeting",
+        "emergency",
+        "unscheduled",
+        "cash rate raised",
+        "cash rate lowered",
+        "hold rates",
+        "voted to hike",
+        "voted to cut"
+      ],
+      "cooldown_min": 240,
+      "match_keywords": [
+        "Apr 2026",
+        "May 2026",
+        "this week",
+        "announced today",
+        "announced yesterday",
+        "30 Apr 2026"
+      ],
+      "note": "RE-TUNED 2026-04-23T03:33:00Z \u2014 prior keywords ['Bullock','May meeting','surprise','unexpected'] still matched Jul 23 2025 Guardian Bullock-wary-of-cutting archive (9 months stale) via solo 'Bullock' governor-name token. 'Bullock' appears in any RBA-related archive backgrounder regardless of current relevance (same failure mode as 'Katayama'/'Islamabad' in earlier tunes). STRIPPED bare 'Bullock' + single-word 'surprise'/'unexpected'; REPLACED with action-phrase required ('surprise cut','surprise hike','cash rate raised','voted to hike','emergency','unscheduled','hold rates'). Added match_keywords date filter following boj_intervention/opec_supply pattern. Cooldown 240min kept. Prior: 'RE-TUNED 2026-04-21 07:38 UTC \u2014 narrowed to action/person specific. Market pricing May hike to 4.35%; risk-off may force RBA pause \u2014 AUD bid thesis broken under blockade.'"
+    },
+    {
+      "id": "us_tariff",
+      "query": "US India tariff trade deal",
+      "keywords_required": [
+        "exemption",
+        "delay",
+        "signed",
+        "retaliate",
+        "lowered",
+        "raised",
+        "executive order"
+      ],
+      "cooldown_min": 240,
+      "note": "RE-TUNED 2026-04-23T08:08:00Z \u2014 DROPPED 'reset' solo-kw. Chatham House Feb 17 2026 'Despite reset in India\u2013US relations, New Delhi retains commitment to strategic hedging' (65-day archive) fired on 'reset' solo-match; match_keywords=['20 Apr 2026'...'23 Apr 2026'] date filter STILL-NOT-ENFORCED by daemon (known bug forex_news_watcher.py:246 match_keywords NEVER-ENFORCED). 'reset' is pure commentary noun \u2014 any India-US relationship article ever written matches. Kept action-specific tokens (exemption/delay/signed/retaliate/lowered/raised/executive order); even these will leak past match_keywords but are less prone to pure-backgrounder false positives. Prior: 'RE-TUNED 2026-04-23T00:03:00Z DROPPED Modi solo-kw Feb 2 80d archive. | RE-RE-TUNED 04:03 removed bare 2026. RE-TUNED 04:35 DD Mon YYYY tokens.' | 2026-04-23T20:20:00Z TUNE: rolled date window to ['22 Apr 2026', '23 Apr 2026', '24 Apr 2026'] (dropped Apr 20-21 stale, added Apr 24 current). Note: daemon bug forex_news_watcher.py:246 \u2014 match_keywords not enforced; cosmetic update. | 2026-04-23T21:40:00Z TUNE: rolled date window +1d (dropped Apr 22, added Apr 25). | 2026-04-24T06:00:00Z TUNE: rolled date window to ['24 Apr 2026', '25 Apr 2026', '26 Apr 2026'] (dropped 23 Apr 2026, added 26 Apr 2026). | 2026-04-26T16:41Z TUNE: rolled date window +1d, added 29 Apr 2026 (BOJ T-0d, FOMC T-3d window).",
+      "match_keywords": [
+        "27 Apr 2026",
+        "28 Apr 2026",
+        "29 Apr 2026",
+        "30 Apr 2026"
+      ]
     }
+  ],
+  "global_settings": {
+    "poll_sec_active": 600,
+    "poll_sec_quiet": 1200,
+    "max_events_per_hour": 15,
+    "fetch_timeout_sec": 15
+  }
 }
