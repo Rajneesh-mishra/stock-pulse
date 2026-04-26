@@ -162,5 +162,56 @@
       "BTCUSD": "swing=ARMED(LIMIT@78369 GTC) scalp=N/A readiness=moderate"
     },
     "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=KEEP USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked"
+  },
+  {
+    "tick_ts_utc": "2026-04-27T23:14Z",
+    "events_processed": 8,
+    "events_detail": "1 news_flash(iran_ceasefire stale Lebanon/Israel +20h no-thesis-change), 7 bar_close(consumed)",
+    "news_assessment": "STALE: Lebanon/Israel strikes (20h old, matched 'strike' kw). General ME escalation backdrop. No specific Hormuz/Iran thesis change. No alert modifications needed.",
+    "market_open": true,
+    "boj_status": "T-0d hold confirmed 0.75%",
+    "fomc_status": "T-2d calendar, no blackout",
+    "positions_open": 0,
+    "working_orders": 1,
+    "working_order_detail": "GBPUSD LIMIT BUY@1.3506 SL=1.3495 TP=1.3531 (dealId 00000000-4e72-9b27-044a-beb40055311e) KEEP \u2014 bid=1.35160, 10p above limit, comp=+45.5 mod bullish, H4 bear OB at 1.3531-1.3545 overhead",
+    "trades_this_tick": 0,
+    "balance_usd": 992.97,
+    "confluence": {
+      "GBPUSD": "+45.5 moderate bullish 4/4 TFs",
+      "GOLD": "-21.0 none bearish 2/4 TFs",
+      "OIL_CRUDE": "+34.5 weak bullish 3/4 TFs",
+      "AUDUSD": "+19.0 none bullish 3/4 TFs",
+      "USDJPY": "+34.5 weak bullish 3/4 TFs",
+      "EURUSD": "+2.5 none neutral 2/4 TFs",
+      "USDCHF": "+4.0 none neutral 2/4 TFs",
+      "USDCAD": "-29.5 weak bearish 3/4 TFs",
+      "BTCUSD": "+60.0 strong bullish 4/4 TFs"
+    },
+    "alert_audit": {
+      "usdjpy_intervention_fade_zone": "KEEP \u2014 dist=43.1p, BOJ hold confirmed",
+      "gold_safehaven_continuation_buy": "KEEP \u2014 dist=$89.54, below 3\u00d7H4ATR=$107.25",
+      "oil_crude_retest_90_buy": "KEEP \u2014 validated 3f/67%4h, dist=$4.75",
+      "btcusd_day_fvg_buy": "KEEP \u2014 FVG unmitigated, comp strong, dist=$1334",
+      "usdchf_sweep_h1_sell_retest": "KEEP \u2014 dist=12.6p, need comp\u2264-40",
+      "gbpusd_sweep_135370_sell_watch": "KEEP \u2014 within prox, NOT arming (BUY conflict)",
+      "audusd_m15fvg_buy_7143": "KEEP \u2014 price inside zone, comp=none need moderate",
+      "oil_sweep_9323_buy_retest": "KEEP \u2014 validated 6f/100%4h, dist=$1.82",
+      "usdcad_sell_fvg_13675": "KEEP \u2014 price at level, comp weak need moderate",
+      "gold_sweep_4721_sell_retest": "KEEP \u2014 validated 6f/100%4h, need comp +40 bull",
+      "btcusd_sweep_78914_sell_watch": "KEEP \u2014 dist=$619, outside prox"
+    },
+    "attention_matrix": {
+      "EURUSD": "swing=NONE   scalp=ACTIVE  readiness=none    \u2014 comp=+2.5 neutral, no swing alert",
+      "GBPUSD": "swing=ARMED  scalp=ACTIVE  readiness=moderate \u2014 LIMIT BUY@1.3506 working, comp=+45.5 mod",
+      "AUDUSD": "swing=WATCH  scalp=ACTIVE  readiness=none    \u2014 price inside 0.7143-0.7146, comp=+19 need \u226540",
+      "USDJPY": "swing=WATCH  scalp=OFF     readiness=weak    \u2014 dist=43.1p from 160, comp=+34.5 weak",
+      "USDCAD": "swing=WATCH  scalp=OFF     readiness=weak    \u2014 AT 1.3675 alert, comp=-29.5 need \u2264-40",
+      "USDCHF": "swing=WATCH  scalp=OFF     readiness=none    \u2014 dist=12.6p below 0.7875, comp=+4 neutral",
+      "GOLD": "swing=WATCH  scalp=N/A     readiness=none    \u2014 comp=-21 none; sell@4721 dist=$35.54; buy@4775 dist=$90",
+      "OIL_CRUDE": "swing=WATCH  scalp=N/A     readiness=weak    \u2014 comp=+34.5 weak; 93.23 dist=$1.82 outside prox",
+      "BTCUSD": "swing=WATCH  scalp=N/A     readiness=strong  \u2014 comp=+60 strong; sell@78914 dist=$619 outside prox; buy FVG dist=$1334"
+    },
+    "scalp_audit": "EURUSD=KEEP(no trades) GBPUSD=KEEP(no trades) AUDUSD=KEEP(no trades) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED"
   }
 ]

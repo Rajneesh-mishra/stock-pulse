@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-26T21:49:50.186830+00:00",
+  "generated_at": "2026-04-26T23:05:10.980414+00:00",
   "counts": {
     "trades": 16,
-    "events": 3912,
+    "events": 3957,
     "ticks": 59,
-    "regime_snapshots": 62,
+    "regime_snapshots": 63,
     "broker_positions": 0,
     "counterfactuals": 51
   },
@@ -349,6 +349,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-27T23:14Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "23:14 forex auto \u2014 8 evt: 1 news_flash(iran_ceasefire stale +20h Lebanon/Israel strikes, no thesis change), 7 bar_close(consumed). Market OPEN Asia. BOJ T-0d hold confirmed (0.75% held, no surprise). FOMC T-2d cal, no blackout. GBPUSD LIMIT BUY@1.3506 KEEP (bid=1.35160, 10p above; comp=+45.5 mod bullish 4/4 TFs). GOLD comp=-21 none, price 4685.46 (-$25 drop from 4710): below bear FVGs (4689-4707, 4710-4714); both alerts WATCH (sell@4721 needs comp\u2265+40 bull, buy@4775 dist=$90). OIL comp=+34.5 weak, price 95.046; oil_sweep_9323 dist=$1.82 > prox$1.29 WATCH. BTCUSD comp=+60 strong, price 78294 (session high 78914.85 seen, prior SELL@78369 closed +$1.03 on 4h-time-stop); FVG@76960 dist=$1334 WATCH; sell@78914 dist=$619 WATCH. USDJPY 159.569 comp=+34.5 weak, dist=43.1p from 160 WATCH. USDCAD comp=-29.5 weak, price 1.36763 AT 1.3675 alert level; need comp\u2264-40 to arm WATCH. AUDUSD comp=+19 none, price 0.71447 inside 0.7143-0.7146 zone; need comp\u2265+40 WATCH. USDCHF comp=+4 none, price 0.78624 (moved up); sell@0.7875 needs comp\u2264-40 WATCH. EURUSD comp=+2.5 none, no alert. 0 open pos. bal=$992.97. 1 working limit. attention_covered=9/9.",
+      "binary_event_name": "iran_ceasefire_indefinite_extension",
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-04-27T03:04:00Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-27 03:04 forex auto \u2014 0 evt heartbeat. Market OPEN. BOJ T-0d meeting underway (hold confirmed; USDJPY@159.538, dist=51p from 160.05 intervention). FOMC T-3d (Apr 29-30) \u2014 calendar only, no blackout. Regime ACTIVE_ESCALATION stable (Hormuz blockade). GBPUSD LIMIT BUY@1.3506 comp=+27.5 weak KEEP (active broker order, dist=14.9p). BTCUSD LIMIT SELL@78369 NEW PLACED comp=+55.5 mod ARMED (counter-trend fade, dist=$285, R:R=4.3). GOLD none(-10.5) @~4710 WATCH (val 10f/80%4h). OIL weak(+29.5) sweep_9323 WATCH (val 6f/100%4h). USDJPY weak(+34.5) dist=51p from 160.05 WATCH (BOJ live, no blackout). 0 trades 0pos 2 working orders. attention_covered=9/9.",
@@ -416,14 +424,6 @@
       "ts_utc": "2026-04-26T14:07Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "14:07 forex auto \u2014 1 evt news_flash(fed_fomc: Senate committee vote Apr 29 advance Warsh Fed Chair nomination NON-ALTERING). Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP(dist=21.6p ARMED). BOJ T-0d FOMC T-3d cal. Warsh hawkish nominee = medium-term USD-bull, does not change Powell Apr-29 FOMC. BTC comp +57.5\u2192+60 STRONG FVG@76960 dist=$1014 WATCH(full size authorized). GOLD none(-10.5) @4710 WATCH(val 10f/80%4h). OIL weak(+29.5) sweep_9323 dist=$0.97 WATCH(val). AUDUSD weak(+29) M15FVG@0.7143 WATCH. USDCAD weak(-29) FVG@1.3675 WATCH. 0 trades 0pos. attention_covered=9/9.",
-      "binary_event_name": "iran_ceasefire_indefinite_extension",
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-04-26T13:42:00Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "13:42 forex auto \u2014 0 evt heartbeat. Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP(dist=20.6p ARMED). BOJ Apr27-28 T-0d: USDJPY@159.38 intervention zone 160 dist=61.6p. FOMC Apr29-30 T-3d cal. BTC comp +60\u2192+57.5 MODERATE (4/4 agree, FVG@76960 dist=$1013 WATCH-half). GOLD none(-10.5) inside zone WATCH(val 10f/80%4h). OIL weak(+29.5) sweep_9323 dist=$0.97 WATCH(val 6f/100%4h). AUDUSD weak(+29) M15FVG@0.7143 dist=7.3p WATCH. USDCAD weak(-29) FVG@1.3675 dist=6.4p WATCH. 0 trades 0pos. attention_covered=9/9.",
       "binary_event_name": "iran_ceasefire_indefinite_extension",
       "binary_event_active": 0,
       "binary_event_deadline": null
