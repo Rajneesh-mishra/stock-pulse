@@ -120,5 +120,20 @@
     "daily_pnl": -4.87,
     "open_positions": 0,
     "working_orders": 1
+  },
+  {
+    "tick_ts_utc": "2026-04-26T09:14Z",
+    "events": 0,
+    "event_types": [],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "open_positions": 0,
+    "working_orders": 1,
+    "working_order_detail": "GBPUSD LIMIT BUY@1.3506 (dealId=00000000-4e72-9b27-044a-beb40055311e)",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "notable": "BTC comp upgrade +44\u2192+60 strong. BOJ T-1d (Apr 27-28 hold expected). FOMC T-3d.",
+    "balance": 995.13,
+    "daily_pnl_usd": 0.0,
+    "attention_covered": "9/9"
   }
 ]
