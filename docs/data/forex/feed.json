@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-26T07:05:45.473539Z",
+  "generated_at": "2026-04-26T08:12:32.864710Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-23T01:00:24Z",
-      "events_in": 9,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 9,
-      "summary": "01:00 UTC \u2014 9 events (AUDUSD sweep 0.9p noise + GOLD 4752 up-sweep 18.4p 1.73xATR 3rd-cluster + 7 bar_close). No sweep armable (AUDUSD conf opposes+wick tiny, GOLD conf weak<moderate). USDJPY +43.5 mod AGAINST 160 SELL 68.9p WATCH, OIL +34.5 weak BUY 250p WATCH, GOLD -27.5 weak 4775 BUY 29p rule-2 KEEP. 3 alerts KEEP refresh. 0 trades $1000/0."
-    },
     {
       "ts_utc": "2026-04-23T01:10:30Z",
       "events_in": 0,
@@ -235,6 +227,14 @@
       "skipped": 0,
       "note": "1 evt news_flash(iran_ceasefire: Pakistan trip cancelled). Market closed weekend. GBPUSD LIMIT BUY@1.3506 KEEP. Regime confirmed ACTIVE_ESCALATION. 0 trades 0pos."
     },
+    {
+      "ts_utc": "2026-04-26T08:11Z",
+      "events_in": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "note": "08:11 forex auto \u2014 0 evt heartbeat. Market CLOSED weekend. Broker: 0pos, 1 LIMIT GBPUSD BUY@1.3506 SL=1.3495 TP=1.3531 (bid=1.35331, dist=27p). Confluence sweep 9: GBPUSD comp=+48 mod ARMED (LIMIT keep); GOLD comp=-10.5 none inside 4695-4715 WATCH (val 10f/80%4h); OIL comp=+29.5 weak 93.23 dist=$0.97 WATCH (val 6f/100%4h); USDJPY comp=+19.5 none dist=66.6p OUTSIDE prox WATCH (BOJ T-1d); AUDUSD comp=+29 weak 0.7085 dist=65p WATCH (borderline Rule-1 63p threshold, KEEP); USDCAD comp=-29 weak 1.3675 FVG dist=6.4p NEAR-ARM (readiness=weak); USDCHF comp=-5 none NONE; EURUSD comp=+12.5 none NONE; BTCUSD comp=+55 mod ADD dayfvg_76960 (76936-76984 unmitigated, dist=$1120 WATCH). 6 KEEP + 1 ADD. 8 news_queries KEEP. scalp halt={}. BOJ T-1d FOMC T-3d. web_search SKIP (0pos+regime stable 2h+). attention_covered=9/9."
+    },
     "GBPUSD LIMIT BUY@1.3506 SL=1.3495 TP=1.3531 sz=4500",
     "news_flash(fed_fomc:stale_GoldSilver_Apr23_republish)",
     "GBPUSD LIMIT BUY@1.3506 SL=1.3495 TP=1.3531 sz=4500 comp=+48 ARMED",
@@ -331,6 +331,16 @@
       "scalp_audit": "EURUSD=KEEP(no trades yet) GBPUSD=KEEP(bull-bias,no trades) AUDUSD=KEEP(no trades) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
       "alert_changes": "all_KEEP",
       "notes": "Heartbeat. Market closed weekend. GBPUSD LIMIT ARMED. BOJ Apr27-28 T-1d: USDJPY 159.34 approaching intervention zone 160.05."
+    },
+    {
+      "ts_utc": "2026-04-26T08:11Z",
+      "events_in": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "balance": 995.13,
+      "daily_pnl": 0.0,
+      "note": "08:11 heartbeat. 0 events. GBPUSD LIMIT KEEP. ADD btcusd_dayfvg_76960_buy. BOJ T-1d FOMC T-3d. 0 trades 0pos."
     }
   ]
 }
