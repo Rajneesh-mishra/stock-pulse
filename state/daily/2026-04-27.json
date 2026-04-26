@@ -1,0 +1,54 @@
+[
+  {
+    "tick_ts_utc": "2026-04-26T20:02Z",
+    "events_processed": 1,
+    "events": [
+      "news_flash:fed_fomc \u2014 GoldSilver Apr-23 FOMC preview, stale republish, non-altering"
+    ],
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "working_orders": [
+      {
+        "epic": "GBPUSD",
+        "dir": "BUY",
+        "type": "LIMIT",
+        "level": 1.3506,
+        "sl": 1.3495,
+        "tp": 1.3531,
+        "status": "KEEP"
+      },
+      {
+        "epic": "BTCUSD",
+        "dir": "SELL",
+        "type": "LIMIT",
+        "level": 78369,
+        "sl": 78524,
+        "tp": 77700,
+        "status": "KEEP"
+      }
+    ],
+    "prices": {
+      "BTCUSD": 78270,
+      "GBPUSD": 1.35331,
+      "GOLD": 4710.625,
+      "OIL_CRUDE": 94.203,
+      "USDJPY": 159.384,
+      "EURUSD": 1.17208
+    },
+    "confluence": {
+      "BTCUSD": "+60 STRONG",
+      "GBPUSD": "+48 MOD",
+      "GOLD": "-10.5 NONE",
+      "OIL_CRUDE": "+29.5 WEAK",
+      "AUDUSD": "+29 WEAK",
+      "USDJPY": "+19.5 NONE"
+    },
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "none(active=false)",
+    "calendar": "BOJ T-0d (meeting underway, hold confirmed); FOMC T-2d(UTC)",
+    "watchlist_changes": "10 alerts KEEP \u2014 no adds/removes",
+    "scalp_halts": "none",
+    "attention_covered": "9/9",
+    "note": "1 evt news_flash(fed_fomc) stale; 0 pos; 2 LIMITs KEEP"
+  }
+]
