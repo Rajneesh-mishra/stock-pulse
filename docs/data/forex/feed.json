@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-26T20:05:57.290569Z",
+  "generated_at": "2026-04-26T20:34:21.722172Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T05:35:00Z",
-      "events_in": 1,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 1,
-      "note": "05:35 forex auto \u2014 1 evt (OIL_CRUDE level_cross oil_sweep_9519_buy_retest at 95.25; price dropped through SL 95.263 before M15 close above 95.319; entry criterion NOT met (no rejection wick close); SKIP trade, REMOVE alert. wick was 0.16\u00d7ATR minor at creation). USDJPY 159.761 +40.5 mod 4/4 bull dist=23.9p INSIDE 30p ARMED (BOJ T-3d). OIL 95.22 +42.5 mod sweep_9323 dist=1.98$ WATCH; retest_90 dist=4.92$ dormant. 6 alerts (5 KEEP +1 REMOVE), 9 SW KEEP. Scalp 3 FX ACTIVE halt={}. 0 trades $1000/0pos."
-    },
     {
       "ts_utc": "2026-04-24T08:17:00Z",
       "events_in": 0,
@@ -853,6 +845,68 @@
       "scalp_halted": {},
       "attention_covered": "9/9",
       "note": "BTC H1 up-sweep 78369.4 (154p wick, close 78091) \u2192 LIMIT SELL@78369 armed. Counter-trend fade: conf=+60 STRONG bull extension corroborates. R:R=4.3:1, 4h time-stop on fill. Market CLOSED weekend (BTC 24/7). BOJ T-0d hold confirmed. FOMC T-3d cal."
+    },
+    {
+      "tick_ts_utc": "2026-04-26T20:34:15Z",
+      "events": 0,
+      "event_types": [],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "trades_skipped": 0,
+      "open_positions": 0,
+      "working_orders": [
+        "BTCUSD SELL LIMIT@78369 SL=78524 TP=77700",
+        "GBPUSD BUY LIMIT@1.3506 SL=1.3495 TP=1.3531"
+      ],
+      "market_status": "CLOSED (FX/metals/oil). BTC TRADEABLE @78246/78296.",
+      "binary_event": "none (active=false)",
+      "boj_status": "T-0d meeting underway Apr27-28, hold consensus intact",
+      "fomc_status": "T-3d Apr29-30, calendar only no blackout",
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "confluence": {
+        "EURUSD": {
+          "score": 12.5,
+          "readiness": "none"
+        },
+        "GBPUSD": {
+          "score": 48.0,
+          "readiness": "moderate"
+        },
+        "AUDUSD": {
+          "score": 29.0,
+          "readiness": "weak"
+        },
+        "USDJPY": {
+          "score": 19.5,
+          "readiness": "none"
+        },
+        "USDCAD": {
+          "score": -29.0,
+          "readiness": "weak"
+        },
+        "USDCHF": {
+          "score": -5.0,
+          "readiness": "none"
+        },
+        "GOLD": {
+          "score": -10.5,
+          "readiness": "none"
+        },
+        "OIL_CRUDE": {
+          "score": 29.5,
+          "readiness": "weak"
+        },
+        "BTCUSD": {
+          "score": 60.0,
+          "readiness": "strong"
+        }
+      },
+      "scalp_status": "EURUSD=ACTIVE(neutral) GBPUSD=ACTIVE(bull) AUDUSD=ACTIVE(neutral) others=off/N/A",
+      "alerts_audit": "10 alerts all KEEP (GBPUSD ARMED, BTCUSD ARMED, others WATCH)",
+      "attention_covered": "9/9",
+      "account_balance": 995.13,
+      "account_available": 847.19,
+      "pnl_today": 0.0
     }
   ]
 }

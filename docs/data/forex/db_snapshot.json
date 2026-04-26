@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-26T20:01:28.443361+00:00",
+  "generated_at": "2026-04-26T20:31:35.862141+00:00",
   "counts": {
     "trades": 15,
-    "events": 3874,
+    "events": 3876,
     "ticks": 59,
-    "regime_snapshots": 59,
+    "regime_snapshots": 60,
     "broker_positions": 0,
     "counterfactuals": 48
   },
@@ -328,6 +328,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-26T20:02Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "20:02 forex auto \u2014 1 evt news_flash(fed_fomc) \u2014 GoldSilver Apr-23 FOMC preview (stale republish), non-altering, consumed. Market CLOSED weekend (FX opens ~22:00 UTC; BTC@78270 live). BOJ Apr 27-28 T-0d meeting underway \u2014 hold consensus intact (confirmed news). USDJPY@159.384 dist=61.6p from 160 intervention zone; comp=+19.5 none. FOMC Apr 29-30 T-2d(UTC) cal, no blackout. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP(dist=20.6p ARMED; BOJ hold = USD neutral/weak). BTCUSD LIMIT SELL@78369 comp=+60 STRONG counter-trend fade KEEP(dist=99p; 24/7 market). GOLD none(-10.5) @4710.6 WATCH(val sell@4721 not armed: |comp|=10.5<40; buy@4775 too far). OIL weak(+29.5) sweep_9323 dist=$0.97 WATCH(val 6f/100%4h; comp needs\u2192moderate). AUDUSD weak(+29) M15FVG@0.71426 dist=5.9p WATCH(comp needs\u2192moderate). USDCAD weak(-29) FVG@1.3675 dist=6.4p WATCH. 10 alerts all KEEP. 0 trades 0pos. attention_covered=9/9.",
+      "binary_event_name": "iran_ceasefire_indefinite_extension",
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-04-26T19:40Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "19:40 forex auto \u2014 1 evt liquidity_sweep(BTCUSD H1 up-sweep 78369.4 \u2192 sell). Market CLOSED weekend (BTC 24/7). BOJ Apr 27-28 T-0d (hold confirmed, USDJPY@159.38 dist=66p from 160). FOMC Apr 29-30 T-3d cal. BTCUSD: H1 up-sweep 78369.4 (wick 154p, close 78091). LIMIT SELL@78369 armed, SL=78524, TP=77700, R:R=4.3, 0.5% risk. BTC conf=+60 STRONG bull \u2014 extension corroborates counter-trend fade. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP(dist=27p ARMED). GOLD none(-10.5) @4710 inside 4695-4715 zone WATCH(val). OIL weak(+29.5) sweep_9323 dist=$0.97 WATCH(val 6f/100%4h). USDJPY none(+19.5) intervention@160.05 dist=66p WATCH. 9 alerts KEEP+1 ADD. 0 trades 0pos. attention_covered=9/9.",
@@ -395,14 +403,6 @@
       "ts_utc": "2026-04-26T11:35:00Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "11:35 forex auto \u2014 0 evt heartbeat. Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 comp=+48 mod ARMED(dist=20.6p<30p, KEEP). BOJ T-1d (Apr 27-28 decision, USDJPY=159.384 dist=61.6p from 160 intervention zone \u2014 elevated risk). FOMC T-3d (Apr 29-30). GOLD none(-10.5) inside 4695-4715 zone WATCH(val 10f/80%4h). OIL weak(+29.5) sweep_9323 dist=$0.97<H1ATR WATCH(val 6f/100%4h). BTC strong(+60) FVG@76960 dist=$1149 WATCH. AUDUSD weak(+29) M15FVG@0.7143 dist=7p WATCH. USDCAD weak(-29) FVG@1.3675 dist=6.4p WATCH. 0 trades 0pos. attention_covered=9/9.",
-      "binary_event_name": "iran_ceasefire_indefinite_extension",
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-04-26T10:20:00Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "10:20 forex auto \u2014 0 evt heartbeat. Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP (dist=20.6p ARMED). BOJ T-1d (Apr 27-28, hold expected, USDJPY=159.384 dist=61.6p intervention zone). FOMC T-3d (Apr 29-30). BTC comp=+60 STRONG (+55\u2192+60 upgrade) 4/4 TFs FVG@76960 dist=$1079 WATCH. GOLD none(-10.5) inside 4695-4715 zone; sweep_4721_sell val(6f/100%4h) dist=$10.4 WATCH; ADDED to watcher. OIL weak(+29.5) sweep_9323 dist=$0.97 ARMED(prox) WATCH(val). USDCAD weak(-29) FVG 1.3675 dist=6.4p ARMED(prox) WATCH. AUDUSD weak(+29) 0.7085 REMOVED(stale 65.3p>63p), 0.7143 M15FVG ADDED. 0 trades 0pos. attention_covered=9/9.",
       "binary_event_name": "iran_ceasefire_indefinite_extension",
       "binary_event_active": 0,
       "binary_event_deadline": null
