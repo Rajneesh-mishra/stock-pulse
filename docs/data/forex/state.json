@@ -1,9 +1,9 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-27T20:34Z",
-  "state_ts_utc": "2026-04-27T20:34Z",
-  "regime_note": "2026-04-27T20:34Z forex auto \u2014 0 evt: heartbeat. USDCAD SELL@1.36106 age=6.6h UPL=-$2.88 thesis-intact comp=-43.5 mod-bear 4/4 TFs; trail needs 1.35792 (bid=1.36282, 49p against). GBPUSD LIMIT@1.352555 working (bid 6.7p above) comp=+40 mod-bull. AUDUSD comp=+43.5 mod-bull corr-cap-full 2/2; scalp DISABLED (wr=11%). GOLD comp=-25 weak bear; gold_safehaven alert direction fixed (BUY\u2192SELL). OIL@95.25 comp=+36 weak bull. EURUSD comp=3 none; 117186 sweep buy within proximity 3.5p. FOMC+BoC T-45.4h (both hold expected). News: no new regime threats. Bare alert notes added (7 alerts). 1 pos 1 working. daily_pnl=-$10.52 float=-$2.88. attention_covered=9/9.",
-  "regime_note_prev": "2026-04-27T19:40Z forex auto \u2014 1 evt (GOLD level_cross gold_sweep_4682_buy_watch): price=4676.91 below 4682.3 again; bearish breach confirmed, comp=-25 none \u2192 REMOVED from watchlist. USDCAD SELL@1.36106 age=5h50m UPL=-$2.99 thesis-intact comp=-43.5 mod-bear 4/4 TFs; trail needs 1.35792 (bid=1.3629, 43.3p against). GBPUSD LIMIT@1.352555 working (bid 8.4p above) comp=+40 mod-bull. AUDUSD comp=+37.5 weak (slipped from +62.5) corr-cap-full 2/2; scalp DISABLED. GOLD comp=-25 none, H4 bear FVG 4686-4699 overhead unmitigated. OIL@95.042 comp=+28.5 weak. FOMC T-46.4h. 1 pos 1 working. daily_pnl=-$10.52 float=-$2.99. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-27T21:41Z",
+  "state_ts_utc": "2026-04-27T21:41Z",
+  "regime_note": "2026-04-27T21:41Z forex auto \u2014 0 evt: heartbeat. USDCAD SELL@1.36106 age=12.2h UPL=-$3.07 thesis-intact comp=-43.5 mod-bear 4/4 TFs; trail needs 1.35792 (bid=1.36235, 44.3p against). GBPUSD LIMIT@1.352555 working (bid 7.85p above) comp=+47.5 mod-bull 4/4 TFs; BoE hike odds rising supports. AUDUSD comp=+43.5 mod-bull corr-cap-full. GOLD comp=-25 weak-bear; 4h bear FVG 4686-4699 overhead. EURUSD comp=+10.5 none; 117186 sweep buy 4.1p away, readiness none. USDJPY comp=+29 weak; intervention fade 160.0 59p away. USDCHF comp=+5 none. OIL comp=+37 weak (broker $95.47; search $82 rejected as stale). FOMC T-44.3h (caution activates ~18:00Z today T<24h). 1 pos 1 working. daily_pnl=-$10.52 float=-$3.07. attention_covered=9/9.",
+  "regime_note_prev": "2026-04-27T20:34Z forex auto \u2014 0 evt: heartbeat. USDCAD SELL@1.36106 age=6.6h UPL=-$2.88 thesis-intact comp=-43.5 mod-bear 4/4 TFs; trail needs 1.35792 (bid=1.36282, 49p against). GBPUSD LIMIT@1.352555 working (bid 6.7p above) comp=+40 mod-bull. AUDUSD comp=+43.5 mod-bull corr-cap-full 2/2; scalp DISABLED (wr=11%). GOLD comp=-25 weak bear; gold_safehaven alert direction fixed (BUY\u2192SELL). OIL@95.25 comp=+36 weak bull. EURUSD comp=3 none; 117186 sweep buy within proximity 3.5p. FOMC+BoC T-45.4h (both hold expected). News: no new regime threats. Bare alert notes added (7 alerts). 1 pos 1 working. daily_pnl=-$10.52 float=-$2.88. attention_covered=9/9.",
   "open_positions": [
     {
       "dealId": "00000000-4e77-6243-044a-beb40055311e",
@@ -19,8 +19,8 @@
       "time_exit_utc": "2026-04-28T13:50Z",
       "rr": 1.93,
       "risk_usd": 6.28,
-      "upl_usd": -2.88,
-      "upl": -2.88
+      "upl_usd": -3.07,
+      "upl": -3.07
     }
   ],
   "watchlist": [
@@ -876,7 +876,7 @@
     "active": true,
     "name": "FOMC",
     "deadline_utc": "2026-04-29T18:00Z",
-    "t_minus_hours": 45.4,
+    "t_minus_hours": 44.3,
     "blackout": false,
     "caution": false,
     "note": "FOMC decision 2026-04-29T18:00Z + BoC decision 2026-04-29 (expected hold at 2.25% per TD Securities). T\u224851.2h: no blackout, caution activates T<24h (~18:00Z Apr28). FOMC 99.9% hold at 3.5-3.75%. BoC expected hold at 2.25% (mildly positive for USDCAD SELL \u2014 CAD not weakened by cut).",
@@ -1113,7 +1113,9 @@
       "stopLevel": 1.3515,
       "profitLevel": 1.36,
       "status": "working",
-      "placed_utc": "2026-04-27T16:01Z"
+      "placed_utc": "2026-04-27T16:01Z",
+      "current_bid": 1.35334,
+      "pips_to_fill": 7.9
     }
   ],
   "daily_pnl_usd": -16.82,

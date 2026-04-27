@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T20:34:43.261785Z",
+  "generated_at": "2026-04-27T21:41:43.991025Z",
   "ticks": [
     {
       "ts_utc": "2026-04-24T14:10:00Z",
@@ -80,29 +80,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "tick_ts_utc": "2026-04-27T07:28Z",
-      "events_processed": 1,
-      "events": [
-        "level_cross GBPUSD gbpusd_sweep_135370_sell_watch fire#5@07:21Z \u2014 NO TRADE (M15 close 0.65p above 1.3537, criterion not met)"
-      ],
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "open_positions": 0,
-      "working_orders": 2,
-      "working_order_detail": [
-        "AUDUSD BUY LIMIT@0.7143 (KEEP, comp=+45 mod)",
-        "USDCAD SELL LIMIT@1.3675 (KEEP, comp=-40 mod)"
-      ],
-      "daily_pnl_usd": -16.82,
-      "balance_usd": 974.9,
-      "news": "BoE dovish (5-4 hold, business inflation exp 4%); FOMC T-2d hawkish hold; GBP selling on fundamental basis \u2014 supports gbpusd_sweep_135370_sell_watch",
-      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "binary_event": "FOMC_2026-04-29 active=false T-2d",
-      "gbpusd": "fire#5 at 1.3537, comp=+53 mod extension MET, criterion NOT MET \u2014 WATCH",
-      "attention_covered": "9/9",
-      "scalp_status": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=ACTIVE no halts"
     },
     {
       "tick_ts_utc": "2026-04-27T08:11Z",
@@ -1389,6 +1366,39 @@
         "GOLD": "swing=WATCH scalp=N/A readiness=weak comp=-25",
         "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=weak comp=+36"
       }
+    },
+    {
+      "tick_ts_utc": "2026-04-27T21:41Z",
+      "events_processed": 0,
+      "events_pending_before": 0,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "trades_skipped": 0,
+      "positions": [
+        {
+          "epic": "USDCAD",
+          "direction": "SELL",
+          "entry": 1.36106,
+          "upl": -3.07,
+          "age_h": 12.2,
+          "thesis": "trend"
+        }
+      ],
+      "working_orders": [
+        {
+          "epic": "GBPUSD",
+          "direction": "BUY",
+          "level": 1.352555,
+          "pips_to_fill": 7.85
+        }
+      ],
+      "daily_pnl": -10.52,
+      "float_pnl": -3.07,
+      "binary_event": "FOMC T-44.3h",
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "scalp_status": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=OFF(wr=11%)",
+      "attention_covered": "9/9",
+      "note": "heartbeat tick \u2014 0 events, 1 pos 1 working, thesis intact. FOMC caution activates ~18:00Z Apr28 (T<24h)."
     }
   ]
 }
