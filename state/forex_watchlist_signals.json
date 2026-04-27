@@ -307,6 +307,51 @@
       "last_updated": "2026-04-27T10:53Z",
       "updated_utc": "2026-04-27T10:53Z",
       "proximity": "EURUSD@1.174555; dist=17.5p ABOVE FVG bottom 1.17328. comp=+23.5 none (<40). FOMC T-31.5h caution. WATCH."
+    },
+    {
+      "id": "oil_sweep_9351_buy_retest",
+      "instrument": "OIL_CRUDE",
+      "level": 93.5115,
+      "emit_on": "cross_down",
+      "cooldown_sec": 1800,
+      "direction": "buy",
+      "note": "ENTRY: price pulls back to 93.51 swept extreme; M15 bar closes AT or ABOVE 93.51 with bullish rejection wick ≥2pts. Arm LIMIT BUY@93.51 when comp ≥+40 bullish.\n\nCONTEXT: M15 down-sweep 2026-04-27T11:30Z — wick 6.9pts (1.74×H1ATR), close_inside=93.98. Fresh structural support at 93.51. comp=+27 weak (needs +40 for arming). Existing oil_sweep_9323 at 93.23 provides deeper validated support. H1 bear FVG overhead 94.33–95.007 (unmitigated). Apply 4h time-stop if entered.\n\nSL: 93.20  TP: 95.50  R:R target: 6.4\n\nadded 2026-04-27T11:43Z — new M15 down-sweep created fresh structural support at 93.51; WATCH until comp≥40.",
+      "entry_criterion": "M15 retest of 93.51 with bullish rejection wick ≥2pts. Arm LIMIT when comp ≥+40 bullish.",
+      "regime_context": "M15 down-sweep 11:30Z 2026-04-27, wick=6.9pts. comp=+27 weak. H1 FVG overhead 94.33–95.007. 4h time-stop on entered trade.",
+      "sl": 93.2,
+      "tp": 95.5,
+      "rr_target": "6.4",
+      "current_price_ref": 94.043,
+      "price_ref": {
+        "ts": "2026-04-27T11:43Z",
+        "price": 94.043
+      },
+      "last_updated": "2026-04-27T11:43Z",
+      "updated_utc": "2026-04-27T11:43Z",
+      "proximity": "OIL@94.043; dist=$0.53 ABOVE swept level 93.51. comp=+27 weak (<40). H1 bear FVG 94.33–95.007 overhead (unmitigated). WATCH — arm LIMIT when comp≥40."
+    },
+    {
+      "id": "gold_escalation_buy_zone",
+      "instrument": "GOLD",
+      "level": 4700.0,
+      "emit_on": "cross_down",
+      "cooldown_sec": 1800,
+      "direction": "buy",
+      "note": "ENTRY: price retests 4700 zone; M15 bar closes AT or ABOVE 4700 with bullish rejection wick ≥2pts. VALIDATED — naked LIMIT at readiness ≥moderate (comp ≥+40 bullish). 4h hard time-stop.\n\nCONTEXT: Escalation buy zone in ACTIVE_ESCALATION_SHOOT_TO_KILL regime (Hormuz blocked, US/Iran naval conflict). 10 fires, 90%/80% 1h/4h → validated per Rule 3. comp=-25 weak; arm when comp ≥+40 bullish. 4h time-stop per Rule 3 validated protocol.\n\nSL: 4680  TP: 4750  R:R target: 2.5\n\nrestored-to-watchlist 2026-04-27T11:43Z — validated 10f/80%4h was absent from forex_watchlist_signals.json; price at 4702 (at level); daemon now watches.",
+      "entry_criterion": "M15 close AT or ABOVE 4700 with bullish rejection wick ≥2pts. VALIDATED — naked LIMIT at comp ≥+40 bullish. 4h time-stop.",
+      "regime_context": "ACTIVE_ESCALATION regime (Hormuz). 10 fires, 90%/80% 1h/4h validated. comp=-25 weak; arm at +40 bull. 4h time-stop.",
+      "sl": 4680.0,
+      "tp": 4750.0,
+      "rr_target": "2.5",
+      "validated": true,
+      "current_price_ref": 4702.27,
+      "price_ref": {
+        "ts": "2026-04-27T11:43Z",
+        "price": 4702.27
+      },
+      "last_updated": "2026-04-27T11:43Z",
+      "updated_utc": "2026-04-27T11:43Z",
+      "proximity": "GOLD@4702.27; dist=2.27pts ABOVE 4700 (3×H4ATR=104.8, not stale). comp=-25 weak (<+40 for BUY). VALIDATED 10f/80%4h. WATCH — arm at comp≥+40 bull."
     }
   ],
   "structure_watch": [
@@ -377,5 +422,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-27T10:53Z"
+  "last_updated_utc": "2026-04-27T11:43Z"
 }
