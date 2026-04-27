@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-27T04:41Z",
+  "last_updated_by_claude": "2026-04-27T05:20Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -122,14 +122,14 @@
       "sl": 1.3558,
       "tp": 1.3505,
       "rr_target": "1.52",
-      "current_price_ref": 1.354035,
+      "current_price_ref": 1.35376,
       "price_ref": {
-        "ts": "2026-04-27T04:52Z",
-        "price": 1.354035
+        "ts": "2026-04-27T05:20Z",
+        "price": 1.35376
       },
       "last_updated": "2026-04-27T04:25Z",
-      "updated_utc": "2026-04-27T04:52Z",
-      "proximity": "GBPUSD@1.354035; 0.35p ABOVE 1.3537 dual-resistance zone. |comp|=53 mod (counter-trigger MET). Monitoring M15 rejection close BELOW 1.3537 \u2192 MARKET SELL. SL=1.3558. No M15 confirmation yet. WATCH."
+      "updated_utc": "2026-04-27T05:20Z",
+      "proximity": "GBPUSD@1.35376; 0.6p ABOVE 1.3537 dual-resistance zone. |comp|=53 mod (counter-trigger MET). ARMED \u2014 monitoring M15 rejection close BELOW 1.3537 with wick \u22652p \u2192 MARKET SELL. SL=1.3558, TP=1.3505, R:R=1.52. LIMIT not applicable (price at/above level)."
     },
     {
       "id": "audusd_m15fvg_buy_7143",
@@ -210,37 +210,15 @@
       "sl": 4755.0,
       "tp": 4640.0,
       "rr_target": "2.4",
-      "current_price_ref": 4724.1,
+      "current_price_ref": 4719.55,
       "price_ref": {
-        "ts": "2026-04-27T04:52Z",
-        "price": 4724.1
+        "ts": "2026-04-27T05:20Z",
+        "price": 4719.55
       },
       "last_updated": "2026-04-26T17:11Z",
-      "updated_utc": "2026-04-27T04:52Z",
-      "proximity": "GOLD@4724.1; dist=3.1pts ABOVE 4721. comp=-4.5 none (need |comp|>=40 bullish ext \u2014 NOT MET). 8f/100%4h VALIDATED. WATCH \u2014 awaiting bullish extension to arm naked LIMIT SELL.",
+      "updated_utc": "2026-04-27T05:20Z",
+      "proximity": "GOLD@4719.55; dist=1.45pts BELOW 4721 \u2014 level_cross fire #9 at 05:07Z (price 4721.39). comp=-12 bearish (need |comp|>=40 BULLISH ext \u2014 NOT MET). No LIMIT armed. H4 bull FVG unmitigated at 4710.9-4719.5 just below; could bounce. WATCH \u2014 arm on comp turning bullish >=+40.",
       "validated": true
-    },
-    {
-      "id": "btcusd_h4fvg_79025_buy",
-      "instrument": "BTCUSD",
-      "level": 79025.0,
-      "emit_on": "cross_down",
-      "cooldown_sec": 3600,
-      "direction": "buy",
-      "note": "ENTRY: price pulled back to H4 bull FVG zone 78939-79025; LIMIT BUY filled at 79024.5 on 2026-04-27T04:50Z. POSITION LIVE \u2014 no further LIMIT action.\n\nCONTEXT: H4 bull FVG bars_ago=1 (formed 2026-04-27T00:00Z). H4 BOS bullish at 78356. comp=+57.5 mod 4/4TF bullish. BTC +1.1% on day. Structural support zone confirmed entry.\n\nSL: 78700  TP: 80500  R:R target: 4.5\n\nLIMIT filled 2026-04-27T04:50Z \u2014 position live deal_id=00000000-4e76-8da6-044a-beb40055311e. thesis_type=trend 24h time_exit=2026-04-28T04:50Z. Alert retained for position tracking.",
-      "entry_criterion": "FILLED \u2014 LIMIT BUY @ 79024.5. Position live. Monitor trail/exit per Step 6a.",
-      "regime_context": "BTCUSD BUY@79024.5 LIVE. H4 FVG 78939-79025 entry zone confirmed. comp=+57.5 mod. SL=78700 ($324.5 stop). TP=80500 ($1475.5 target). UPL=-$2.70 at tick. Trail at +1R=$79349, then +2R=$79674. Time exit 2026-04-28T04:50Z.",
-      "sl": 78700.0,
-      "tp": 80500.0,
-      "rr_target": "4.5",
-      "current_price_ref": 78976.0,
-      "price_ref": {
-        "ts": "2026-04-27T04:52Z",
-        "price": 78976.0
-      },
-      "last_updated": "2026-04-27T04:25Z",
-      "updated_utc": "2026-04-27T04:52Z",
-      "proximity": "BTC@78976 (via conf); position open @ 79024.5. UPL=-$2.70. Price inside H4 FVG zone 78939-79025. SL=78700 ($277 above SL). Thesis intact. No trail action yet (current < +1R). time_exit=2026-04-28T04:50Z."
     },
     {
       "id": "btcusd_h4bos_78356_buy",
@@ -249,20 +227,20 @@
       "emit_on": "cross_down",
       "cooldown_sec": 3600,
       "direction": "buy",
-      "note": "ENTRY: price pulls back to H4 BOS level 78356 zone (\u00b1150p); M15 bar closes at or above 78356 with bullish rejection wick \u2265100p from the low. Requires comp \u2265 40 bullish to arm LIMIT.\n\nCONTEXT: H4 BOS at 78356 (Apr 17T16:00Z) confirms bullish trend. comp=+60 STRONG bullish. BTC active SELL from 78914 TP=77600. If SELL closes, use H4 BOS retest as re-entry buy.\n\nSL: 77800  TP: 80500  R:R target: 3.8\n\nadded 2026-04-27T01:00Z \u2014 btcusd_day_fvg_buy removed (stale); H4 BOS 78356 is current structural support.",
-      "entry_criterion": "M15 bar closes at or above 78356 with bullish rejection wick \u2265100p. Requires comp \u2265 40 bullish to arm LIMIT BUY.",
-      "regime_context": "H4 BOS 78356 (Apr17) confirms bull trend. Active SELL from 78914 TP=77600. Use BOS retest as re-entry buy after SELL resolves.",
+      "note": "ENTRY: price pulls back to H4 BOS 78356 zone (\u00b1150p); M15 bar closes at or above 78356 with bullish rejection wick \u2265100p from the low. Requires comp \u2265 40 bullish to arm LIMIT.\n\nCONTEXT: H4 BOS at 78356 (Apr 17T16:00Z) confirms bullish trend. btcusd_h4fvg_79025 SL-hit 2026-04-27T05:09Z (entry 79024.5, exit 78700, pnl=-$12.98). Same-instrument loss today \u2014 skip arming this tick; reassess next tick if price consolidates at 78356-78450 with M15 rejection wick. Day FVG zone 77897-78419 overlaps with H4 BOS. comp=+57.5 moderate bullish 4/4TF supports thesis long-term.\n\nSL: 77800  TP: 80500  R:R target: 3.8\n\nupdated 2026-04-27T05:20Z \u2014 BTC SL hit; H4 BOS 78356 is now primary re-entry level; same-loss skip this tick.",
+      "entry_criterion": "M15 bar closes at or above 78356 with bullish rejection wick \u2265100p. Requires comp \u2265 40 bullish to arm LIMIT. Same-loss skip this tick \u2014 reassess next tick.",
+      "regime_context": "btcusd_h4fvg_79025 SL-hit (pnl=-$12.98). BTC@78596, bid approaching Day FVG zone 77897-78419 + H4 BOS 78356. comp=+57.5 moderate. H1 bear FVG overhead 78957-79098 is resistance. Same-instrument loss skip this tick.",
       "sl": 77800.0,
       "tp": 80500.0,
       "rr_target": "3.8",
-      "current_price_ref": 78976.0,
+      "current_price_ref": 78596.0,
       "price_ref": {
-        "ts": "2026-04-27T04:52Z",
-        "price": 78976.0
+        "ts": "2026-04-27T05:20Z",
+        "price": 78596.0
       },
       "last_updated": "2026-04-27T01:00:00Z",
-      "updated_utc": "2026-04-27T04:52Z",
-      "proximity": "BTC@78976; dist=$620 ABOVE H4BOS 78356 \u2014 OUTSIDE prox (H1ATR~$396). comp=+57.5 mod bullish. Backup buy if BTCUSD position stopped out. Wait for pullback toward 78356-78600. WATCH."
+      "updated_utc": "2026-04-27T05:20Z",
+      "proximity": "BTC@78596; dist=$240 ABOVE H4BOS 78356 \u2014 Day FVG zone 77897-78419 (BTC inside top). comp=+57.5 mod. Same-loss skip. WATCH."
     }
   ],
   "structure_watch": [
@@ -333,5 +311,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-27T04:52Z"
+  "last_updated_utc": "2026-04-27T05:20Z"
 }

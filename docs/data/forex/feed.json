@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-27T05:10:55.092603Z",
+  "generated_at": "2026-04-27T05:18:18.977897Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T03:47:00Z",
-      "events_in": 13,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 13,
-      "summary": "03:47 forex auto \u2014 13 evt: 6 liq_sweep ALL NOT-ACTIONABLE (wick 0.26-0.61\u00d7ATR; readiness<moderate or OPPOSES sweep dir: AUDUSD 0.28\u00d7, USDJPY 0.26\u00d7, USDCAD 0.51\u00d7, EURUSD 0.61\u00d7readiness=weak-opposes-buy, GBPUSD 0.47\u00d7readiness=none, USDCHF 0.43\u00d7) + 7 bar_close routine. USDJPY 159.815 +45 mod 4/4 bull dist=18.5p INSIDE 30p swing=ARMED (BOJ T-3d). GOLD 4677.01 -40 mod 3/4 bear sweep_4721 dist=44.67$ OUTSIDE 30$ swing=WATCH (dropping); safehaven_4775 dist=97.99$ WATCH far. OIL 95.963 +40.5 mod sweep_9323 dist=273p WATCH; retest_90 dist=566p dormant. BTC 77673 day_fvg_buy: FVG zone (76937-76984) TAGGED (day low=76959.55), bounced +714$ to 77673; no daemon event (alert likely added post-low); zone respected, await next touch. dist=714$ INSIDE prox(985.7$) but price above zone. EURUSD -32 weak GBPUSD none AUDUSD none USDCAD none USDCHF none swing=NONE. 6 alerts KEEP proximity-refreshed. 9 SW KEEP. Scalp 3 FX ACTIVE halt={}. BOJ T-3d FOMC T-5d. web_search skipped (0pos+regime stable 4h+). attention_covered=9/9."
-    },
     {
       "ts_utc": "2026-04-24T05:25:00Z",
       "events_in": 12,
@@ -854,6 +846,39 @@
       "pnl_note": "daily_pnl warn -$10.64 (-1.09%). Conservative posture. BTC 26p from SL.",
       "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "binary_event": "FOMC_2026-04-29 T-2d no blackout",
+      "attention_covered": "9/9"
+    },
+    {
+      "tick_ts_utc": "2026-04-27T05:20Z",
+      "events": [
+        {
+          "id": "evt_1777266469264_level_cross",
+          "type": "level_cross",
+          "instrument": "GOLD",
+          "alert_id": "gold_sweep_4721_sell_retest",
+          "action": "WATCH (comp=-12 bearish, need +40 bullish ext, NOT MET)"
+        },
+        {
+          "id": "evt_1777266544438_position_closed",
+          "type": "position_closed",
+          "instrument": "BTCUSD",
+          "action": "SL_HIT: entry=79024.5, sl=78700, pnl=-$12.98, thesis=trend H4 FVG invalidated"
+        }
+      ],
+      "positions_opened": 0,
+      "positions_closed": 1,
+      "working_orders": 2,
+      "pnl_usd_this_tick": -12.98,
+      "daily_pnl_usd": -16.82,
+      "balance_usd": 974.9,
+      "decisions": {
+        "GOLD": "WATCH \u2014 level_cross #9 at 4721.39, comp=-12 not met (need |comp|>=40 bullish ext). No LIMIT armed. H4 FVG 4710.9-4719.5 unmitigated just below.",
+        "BTCUSD": "SL_HIT pnl=-$12.98. btcusd_h4bos_78356_buy on watch. Same-loss skip this tick.",
+        "GBPUSD": "ARMED \u2014 comp=+53 mod, |comp|>=40 counter-trigger MET. Monitoring M15 rejection close below 1.3537 for MARKET SELL.",
+        "AUDUSD": "KEEP \u2014 LIMIT@0.7143 live (3f/100%4h validated).",
+        "USDCAD": "KEEP \u2014 LIMIT@1.3675 live (comp=-40 mod)."
+      },
+      "scalp": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=ACTIVE USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
       "attention_covered": "9/9"
     }
   ]

@@ -1,27 +1,10 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-27T05:10Z",
-  "state_ts_utc": "2026-04-27T05:10Z",
-  "regime_note": "2026-04-27T05:10Z forex auto \u2014 1 evt: daily_pnl_threshold(warn, pnl=-$10.64 -1.09% of $977.29, conservative posture). BTCUSD BUY@79024.5 LIVE bid=78726.75 SL=78700 (26p from SL, UPL=-$12) \u2014 trend thesis intact, 15min old, no time exit. AUDUSD BUY@0.7143 ARMED (comp=+45 mod, 3f/100%4h, 26.5p above limit). USDCAD SELL@1.3675 ARMED (comp=-40 mod, 10.4p below level). GBPUSD@1.35401 AT 1.3537 dual-resistance \u2014 monitoring M15 rejection close; comp=+53 mod (|comp|>=40 MET, waiting confirmation). GOLD@4720.27 AT 4721 sell-retest level \u2014 comp=-12 none (|comp|<40 bullish ext NOT MET). OIL@94.69 dist=$1.47 above sweep_9323, comp=+34.5 weak (need >=40). FOMC T-2d no blackout. 1 pos open 2 working. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-27T05:20Z",
+  "state_ts_utc": "2026-04-27T05:20Z",
+  "regime_note": "2026-04-27T05:20Z forex auto \u2014 2 evt: BTCUSD SL hit (entry@79024.5 SL@78700 pnl=-$12.98, H4 FVG thesis invalidated; bid@78596 now near H4 BOS 78356 zone). GOLD level_cross #9 at 4721.39 fired but comp=-12 bearish (need |comp|>=40 bullish ext) \u2014 NO LIMIT armed. GBPUSD@1.35376 AT dual-resistance 1.3537 \u2014 comp=+53 mod (counter-trigger MET); awaiting M15 rejection close below 1.3537 to enter MARKET SELL. AUDUSD BUY@0.7143 ARMED (comp=+45 mod, 3f/100%4h, bid=0.71674). USDCAD SELL@1.3675 ARMED (comp=-40 mod). daily_pnl=-$16.82 (-1.68%). 0 pos, 2 working. FOMC T-2d. attention_covered=9/9.",
   "regime_note_prev": "04:25 forex auto \u2014 0 evt heartbeat. AUDUSD BUY@0.7143 KEEP (comp=+45 mod 4/4TF, bid=0.71736). USDCAD SELL@1.3675 KEEP (comp=-40 mod 4/4TF, bid=1.36627). GBPUSD@1.35447 day-high=1.3548 (dual resistance confirmed 1.3537/1.3548); SL updated 1.3545\u21921.3558 (above sweep high); TP 1.3510\u21921.3505; R:R=1.52 valid; monitoring M15 reject below 1.3537 MARKET. BTC H4 FVG bars_ago=1 unmitigated (78939-79025) + comp=+60 strong 4/4TF \u2192 LIMIT BUY@79025 ARMED (dealId=00000000-4e76-892b-044a-beb40055311e, size=0.04, SL=78700, TP=80500, R:R=4.5). GOLD@4726 comp=-4.5 none (need +40 bull ext for 4721 sell \u2014 NOT met). gold_h1fvg_sell_4695 REMOVED (price rallied 4677\u21924727 through FVG zone, thesis void). OIL@94.20 dist=$0.97 near prox of 93.23 but comp=+27 weak (<40). BOJ Apr27-28 meeting today (USDJPY 159.18, intervention level 160.0). FOMC T-2d Apr29 active=false. Regime ACTIVE_ESCALATION stable. 1 trade (BTC LIMIT) 0 pos 3 working. attention_covered=9/9.",
-  "open_positions": [
-    {
-      "deal_id": "00000000-4e76-8da6-044a-beb40055311e",
-      "epic": "BTCUSD",
-      "direction": "BUY",
-      "size": 0.04,
-      "entry": 79024.5,
-      "sl": 78700.0,
-      "tp": 80500.0,
-      "opened_at": "2026-04-27T04:50:06Z",
-      "thesis_type": "trend",
-      "alert_id": "btcusd_h4fvg_79025_buy",
-      "time_exit_utc": "2026-04-28T04:50Z",
-      "risk_usd": 12.98,
-      "rr": 4.55,
-      "note": "H4 bull FVG 78939-79025 filled at 79024.5. comp=+57.5 mod 4/4TF bullish. H4 BOS bull at 78356. trend thesis, 24h max hold."
-    }
-  ],
+  "open_positions": [],
   "watchlist": [
     {
       "instrument": "AUDUSD",
@@ -236,10 +219,29 @@
       "alert_id": "btcusd_sweep_78914_sell_watch",
       "confluence_at_entry": "+60 STRONG bull (corroborates counter-trend fade)",
       "result": "loss"
+    },
+    {
+      "trade_id": "btcusd_h4fvg_79025_buy_20260427",
+      "instrument": "BTCUSD",
+      "direction": "BUY",
+      "entry": 79024.5,
+      "close": 78700.0,
+      "size": 0.04,
+      "sl": 78700.0,
+      "tp": 80500.0,
+      "opened_at": "2026-04-27T04:50:06Z",
+      "closed_at": "2026-04-27T05:09:04Z",
+      "hold_min": 19.0,
+      "thesis_type": "trend",
+      "exit_reason": "SL_hit (BTC broke below 78700; H4 FVG 78939-79025 invalidated by close below SL)",
+      "pnl_usd": -12.98,
+      "alert_id": "btcusd_h4fvg_79025_buy",
+      "confluence_at_entry": "+57.5 moderate bull 4/4TF",
+      "result": "loss"
     }
   ],
   "consecutive_losses": 1,
-  "daily_pnl": -3.84,
+  "daily_pnl": -16.82,
   "weekly_pnl": 0,
   "total_pnl": 2.04,
   "total_trades": 2,

@@ -685,5 +685,38 @@
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
     "binary_event": "FOMC_2026-04-29 T-2d no blackout",
     "attention_covered": "9/9"
+  },
+  {
+    "tick_ts_utc": "2026-04-27T05:20Z",
+    "events": [
+      {
+        "id": "evt_1777266469264_level_cross",
+        "type": "level_cross",
+        "instrument": "GOLD",
+        "alert_id": "gold_sweep_4721_sell_retest",
+        "action": "WATCH (comp=-12 bearish, need +40 bullish ext, NOT MET)"
+      },
+      {
+        "id": "evt_1777266544438_position_closed",
+        "type": "position_closed",
+        "instrument": "BTCUSD",
+        "action": "SL_HIT: entry=79024.5, sl=78700, pnl=-$12.98, thesis=trend H4 FVG invalidated"
+      }
+    ],
+    "positions_opened": 0,
+    "positions_closed": 1,
+    "working_orders": 2,
+    "pnl_usd_this_tick": -12.98,
+    "daily_pnl_usd": -16.82,
+    "balance_usd": 974.9,
+    "decisions": {
+      "GOLD": "WATCH \u2014 level_cross #9 at 4721.39, comp=-12 not met (need |comp|>=40 bullish ext). No LIMIT armed. H4 FVG 4710.9-4719.5 unmitigated just below.",
+      "BTCUSD": "SL_HIT pnl=-$12.98. btcusd_h4bos_78356_buy on watch. Same-loss skip this tick.",
+      "GBPUSD": "ARMED \u2014 comp=+53 mod, |comp|>=40 counter-trigger MET. Monitoring M15 rejection close below 1.3537 for MARKET SELL.",
+      "AUDUSD": "KEEP \u2014 LIMIT@0.7143 live (3f/100%4h validated).",
+      "USDCAD": "KEEP \u2014 LIMIT@1.3675 live (comp=-40 mod)."
+    },
+    "scalp": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=ACTIVE USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
+    "attention_covered": "9/9"
   }
 ]
