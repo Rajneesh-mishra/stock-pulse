@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-27T03:15Z",
+  "last_updated_by_claude": "2026-04-27T03:39Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -124,12 +124,12 @@
       "rr_target": "3.4",
       "current_price_ref": 1.35408,
       "price_ref": {
-        "ts": "2026-04-27T03:15Z",
+        "ts": "2026-04-27T03:39Z",
         "price": 1.35408
       },
       "last_updated": "2026-04-27T03:15Z",
-      "updated_utc": "2026-04-27T03:15Z",
-      "proximity": "GBPUSD@1.35408; dist=3.8p ABOVE 1.3537 \u2014 price still elevated above sweep level. |comp|=+53 mod bullish (counter-trigger MET). Still waiting for M15 close BELOW 1.35370 with rejection wick \u22652p \u2014 market entry on confirmation. GBPUSD BUY@1.3506 LIMIT CANCELLED (58h no approach, correlated cap). SELL WATCH only. WATCH."
+      "updated_utc": "2026-04-27T03:39Z",
+      "proximity": "GBPUSD@1.35408; dist=3.8p ABOVE 1.3537 \u2014 price above sweep level. |comp|=+53 mod bullish (counter-trigger MET). Waiting for M15 close BELOW 1.35370 with rejection wick \u22652p \u2014 no bar yet. WATCH."
     },
     {
       "id": "audusd_m15fvg_buy_7143",
@@ -144,14 +144,14 @@
       "sl": 0.713,
       "tp": 0.7187,
       "rr_target": "2.4",
-      "current_price_ref": 0.71731,
+      "current_price_ref": 0.71735,
       "price_ref": {
-        "ts": "2026-04-27T03:15Z",
-        "price": 0.71731
+        "ts": "2026-04-27T03:39Z",
+        "price": 0.71735
       },
       "last_updated": "2026-04-27T03:16:00Z",
-      "updated_utc": "2026-04-27T03:15Z",
-      "proximity": "AUDUSD@0.71731; dist=30.1p ABOVE limit 0.7143 \u2192 inside 30p prox. comp=+45 mod bullish (4/4 TFs). LIMIT BUY@0.7143 ARMED (dealId=00000000-4e76-6275-044a-beb40055311e). 3 fires 100%4h VALIDATED. KEEP."
+      "updated_utc": "2026-04-27T03:39Z",
+      "proximity": "AUDUSD@0.71735; dist=30.5p ABOVE limit 0.7143 \u2192 inside 30p prox. comp=+45 mod bullish (4/4 TFs). LIMIT BUY@0.7143 ARMED (dealId=00000000-4e76-6275-044a-beb40055311e). 3 fires 100%4h VALIDATED. KEEP."
     },
     {
       "id": "oil_sweep_9323_buy_retest",
@@ -188,14 +188,14 @@
       "sl": 1.3695,
       "tp": 1.3595,
       "rr_target": "4.0",
-      "current_price_ref": 1.36633,
+      "current_price_ref": 1.36632,
       "price_ref": {
-        "ts": "2026-04-27T03:15Z",
-        "price": 1.36633
+        "ts": "2026-04-27T03:39Z",
+        "price": 1.36632
       },
       "last_updated": "2026-04-26T05:38:00Z",
-      "updated_utc": "2026-04-27T03:15Z",
-      "proximity": "USDCAD@1.36633; dist=11.7p BELOW 1.3675 \u2192 inside 30p prox. comp=-40 mod bearish (4/4 TFs, criterion MET). LIMIT SELL@1.3675 ARMED (dealId=00000000-4e76-5ddd-044a-beb40055311e). KEEP."
+      "updated_utc": "2026-04-27T03:39Z",
+      "proximity": "USDCAD@1.36632; dist=11.8p BELOW 1.3675 \u2192 inside 30p prox. comp=-40 mod bearish (4/4 TFs, criterion MET). LIMIT SELL@1.3675 ARMED (dealId=00000000-4e76-5ddd-044a-beb40055311e). KEEP."
     },
     {
       "id": "gold_sweep_4721_sell_retest",
@@ -204,20 +204,20 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "ENTRY: price tags 4720-4725 zone; arm anticipation LIMIT SELL at 4721 when |comp| \u2265 40 bullish extension (naked LIMIT \u2014 VALIDATED, no M15 rejection required). Cancel if price closes above SL 4755.\n\nCONTEXT: Validated swept-extreme retest sell (6 fires, 100%4h). GOLD sell at 4721 is the recent up-sweep high. Counter-trend fade \u2014 bullish comp extension is the corroborating signal. Apply 4h hard time-stop on entered trade. Iran escalation = gold bid \u2192 4721 may be retested; arm on |comp|\u226540 bullish.\n\nSL: 4755  TP: 4640  R:R target: 2.4\n\nrule3-promotion 2026-04-26T17:11Z \u2014 6 fires 100%4h; ENTRY upgraded to naked LIMIT at moderate+ extension; 4h time-stop added.",
-      "entry_criterion": "Arm anticipation LIMIT SELL at 4721 when |comp| \u2265 40 bullish extension. VALIDATED \u2014 naked LIMIT (6 fires, 100%4h), no M15 rejection required. Cancel if closes above SL 4755.",
+      "note": "ENTRY: price tags 4720-4725 zone; arm anticipation LIMIT SELL at 4721 when |comp| \u2265 40 bullish extension (naked LIMIT \u2014 VALIDATED, no M15 rejection required). Cancel if price closes above SL 4755.\n\nCONTEXT: Validated swept-extreme retest sell (8 fires, 100%4h). GOLD sell at 4721 is the recent up-sweep high. Counter-trend fade \u2014 bullish comp extension is the corroborating signal. Apply 4h hard time-stop on entered trade. Iran escalation = gold bid \u2192 4721 may be retested; arm on |comp|\u226540 bullish.\n\nSL: 4755  TP: 4640  R:R target: 2.4\n\nrule3-promotion 2026-04-26T17:11Z \u2014 6 fires 100%4h; ENTRY upgraded to naked LIMIT at moderate+ extension; 4h time-stop added.",
+      "entry_criterion": "Arm anticipation LIMIT SELL at 4721 when |comp| \u2265 40 bullish extension. VALIDATED \u2014 naked LIMIT (8 fires, 100%4h), no M15 rejection required. Cancel if closes above SL 4755.",
       "regime_context": "Validated sweep retest (6f/100%4h). 4721 = up-sweep high; counter-trend sell on bullish extension. Iran bid could push gold to 4721 \u2014 arm when |comp|\u226540 bullish. 4h hard time-stop.",
       "sl": 4755.0,
       "tp": 4640.0,
       "rr_target": "2.4",
-      "current_price_ref": 4720.6,
+      "current_price_ref": 4722.09,
       "price_ref": {
-        "ts": "2026-04-27T03:15Z",
-        "price": 4720.6
+        "ts": "2026-04-27T03:39Z",
+        "price": 4722.09
       },
       "last_updated": "2026-04-26T17:11Z",
-      "updated_utc": "2026-04-27T03:15Z",
-      "proximity": "GOLD@4720.6; dist=0.4pts BELOW 4721 \u2014 price AT the sweep level (3rd tag this session). comp=-14.5 none (BEARISH \u2014 need |comp|\u226540 BULLISH extension to arm counter-trend sell). NOT armed. Validated 7f/100%4h. WATCH \u2014 arm when comp swings +40 bullish.",
+      "updated_utc": "2026-04-27T03:39Z",
+      "proximity": "GOLD@4722.09; dist=1.09pts BELOW 4721 \u2014 AT level (8th fire). comp=-12 none bearish (BEARISH; need |comp|\u226540 BULLISH extension). NOT armed. Validated 8f/100%4h. WATCH \u2014 arm when comp swings +40 bullish.",
       "validated": true
     },
     {
@@ -233,14 +233,14 @@
       "sl": 4707.0,
       "tp": 4660.0,
       "rr_target": "3.2",
-      "current_price_ref": 4720.6,
+      "current_price_ref": 4722.09,
       "price_ref": {
-        "ts": "2026-04-27T03:15Z",
-        "price": 4720.6
+        "ts": "2026-04-27T03:39Z",
+        "price": 4722.09
       },
       "last_updated": "2026-04-27T05:01:00Z",
-      "updated_utc": "2026-04-27T03:15Z",
-      "proximity": "GOLD@4720.6; dist=25.6pts ABOVE 4695 \u2014 outside FVG zone 4685-4705. comp=-14.5 none (need \u2264-40 mod bearish to arm). H4 bull OB at 4692.97 support. H4 bear FVG 4710-4713 resistance. WATCH."
+      "updated_utc": "2026-04-27T03:39Z",
+      "proximity": "GOLD@4722.09; dist=27.09pts ABOVE 4695 \u2014 above FVG zone 4685-4705. comp=-12 none (need \u2264-40 mod bearish to arm). WATCH for pullback to zone."
     },
     {
       "id": "btcusd_h4bos_78356_buy",
@@ -257,12 +257,12 @@
       "rr_target": "3.8",
       "current_price_ref": 79216.3,
       "price_ref": {
-        "ts": "2026-04-27T03:15Z",
+        "ts": "2026-04-27T03:39Z",
         "price": 79216.3
       },
       "last_updated": "2026-04-27T01:00:00Z",
-      "updated_utc": "2026-04-27T03:15Z",
-      "proximity": "BTC@79216; dist=$860 ABOVE H4BOS 78356 \u2192 OUTSIDE prox (H1ATR=$267). comp=+60 strong bullish. Direction aligned but far from level. Wait for pullback toward 78356-78600 before arming. WATCH."
+      "updated_utc": "2026-04-27T03:39Z",
+      "proximity": "BTC@79216; dist=$860 ABOVE H4BOS 78356 \u2192 OUTSIDE prox (H1ATR~$267). comp=+60 strong bullish. Wait for pullback toward 78356-78600 to arm. WATCH."
     }
   ],
   "structure_watch": [
@@ -333,5 +333,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-27T02:07Z"
+  "last_updated_utc": "2026-04-27T03:39Z"
 }

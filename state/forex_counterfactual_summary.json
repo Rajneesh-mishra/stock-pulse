@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T03:17:09.397651+00:00",
+  "generated_at": "2026-04-27T03:39:48.442159+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -239,7 +239,7 @@
       "alert_id": "gold_sweep_4721_sell_retest",
       "instrument": "GOLD",
       "direction": "sell",
-      "fires": 7,
+      "fires": 8,
       "by_horizon": {
         "1h": {
           "filled": 6,
@@ -482,10 +482,10 @@
           "hit_rate": 1.0
         },
         "4h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 353.3,
+          "hit_rate": 1.0
         },
         "24h": {
           "filled": 0,
@@ -554,10 +554,10 @@
       "fires": 1,
       "by_horizon": {
         "1h": {
-          "filled": 0,
+          "filled": 1,
           "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "avg_pips": -7.9,
+          "hit_rate": 0.0
         },
         "4h": {
           "filled": 0,

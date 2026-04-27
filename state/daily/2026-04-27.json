@@ -396,5 +396,49 @@
     "skipped": 0,
     "cancelled_limits": 1,
     "note": "03:15 forex auto \u2014 0 evt heartbeat. GBPUSD BUY LIMIT@1.3506 CANCELLED: 58h no approach (price at 1.35408, TP=1.3531 already superseded by market), 3-correlated cap exceeded (AUDUSD BUY + GBPUSD BUY + USDCAD SELL = 3 USD-weakness positions). Confluence: GBPUSD +53 mod bull, AUDUSD +45 mod bull, USDCAD -40 mod bear, GOLD -14.5 none, BTCUSD +60 strong, OIL +27 weak, EURUSD +23.5 none, USDJPY +3.5 none, USDCHF -5.0 none. GOLD@4720.6 tagged 4721 sweep (7th tag) \u2014 comp=-14.5 none (need +40 bullish extension); NO ENTRY. 2 LIMITs active: AUDUSD BUY@0.7143 ARMED + USDCAD SELL@1.3675 ARMED. 0 trades 0pos 2 working. FOMC T-2d, BoJ 0.75% hold confirmed. Hormuz standoff. attention_covered=9/9."
+  },
+  {
+    "tick_ts_utc": "2026-04-27T03:39Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "type": "level_cross",
+        "instrument": "GOLD",
+        "alert_id": "gold_sweep_4721_sell_retest",
+        "price": 4721.26
+      }
+    ],
+    "decisions": [
+      {
+        "instrument": "GOLD",
+        "alert_id": "gold_sweep_4721_sell_retest",
+        "fire_number": 8,
+        "decision": "NO_ENTRY",
+        "reason": "comp=-12 bearish (none readiness); counter-trend sell requires |comp|>=40 BULLISH extension \u2014 NOT MET. WATCH."
+      }
+    ],
+    "trades_executed": 0,
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "working_orders": [
+      {
+        "epic": "AUDUSD",
+        "direction": "BUY",
+        "level": 0.7143,
+        "status": "KEEP",
+        "comp": 45.0
+      },
+      {
+        "epic": "USDCAD",
+        "direction": "SELL",
+        "level": 1.3675,
+        "status": "KEEP",
+        "comp": -40.0
+      }
+    ],
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "FOMC_2026-04-29 T-2d active=false no_blackout",
+    "scalp_status": "EURUSD/GBPUSD/AUDUSD ACTIVE no_halts",
+    "attention_covered": "9/9"
   }
 ]
