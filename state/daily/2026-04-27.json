@@ -2173,5 +2173,43 @@
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
     "binary_event": "FOMC T-47.5h",
     "summary": "1 evt (GOLD level_cross gold_sweep_4682_buy_watch): comp=-22.5 none, H4 bear FVG 4686-4699 overhead, WATCH. USDCAD SELL@1.36106 age=4.7h UPL=-$1.25 thesis-intact mod-bear 4/4. GBPUSD LIMIT@1.352555 working bid 9.4p above, H1 FVG overhead may push to limit. AUDUSD comp=+62.5 strong corr-cap-full. No new trades."
+  },
+  {
+    "tick_ts_utc": "2026-04-27T18:47Z",
+    "events": 1,
+    "events_detail": [
+      "GOLD level_cross gold_sweep_4682_buy_watch"
+    ],
+    "opened": 0,
+    "closed": 0,
+    "skipped": 1,
+    "skip_reason": "GOLD comp=-25 weak bearish, need +40 bull; WATCH only",
+    "positions_open": [
+      {
+        "epic": "USDCAD",
+        "direction": "SELL",
+        "size": 2000,
+        "entry": 1.36106,
+        "upl": -2.07,
+        "age_h": 4.95,
+        "thesis": "trend"
+      }
+    ],
+    "working_orders": [
+      {
+        "epic": "GBPUSD",
+        "direction": "BUY",
+        "size": 5000,
+        "level": 1.352555,
+        "sl": 1.3515,
+        "tp": 1.36
+      }
+    ],
+    "daily_pnl_realized": -10.52,
+    "daily_pnl_float": -2.07,
+    "broker_balance": 979.13,
+    "binary_event": "FOMC T-47.2h",
+    "attention": "9/9 covered",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED"
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T18:33:51.446311Z",
+  "generated_at": "2026-04-27T18:49:48.718863Z",
   "ticks": [
     {
       "ts_utc": "2026-04-24T14:10:00Z",
@@ -80,44 +80,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "tick_ts_utc": "2026-04-27T05:48Z",
-      "events_processed": 1,
-      "events": [
-        {
-          "type": "level_cross",
-          "instrument": "GBPUSD",
-          "alert_id": "gbpusd_sweep_135370_sell_watch",
-          "fired_at": "2026-04-27T05:47:37",
-          "action": "NO_TRADE",
-          "reason": "M15 05:45 close=1.353725 ABOVE 1.3537 (criterion not met). R:R at bid=1.49 <1.5 floor. comp=+48 mod counter-fade MET. Awaiting 06:00 M15 close."
-        }
-      ],
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "positions_after": 0,
-      "working_orders_after": 2,
-      "working_orders": [
-        {
-          "epic": "AUDUSD",
-          "direction": "BUY",
-          "level": 0.7143,
-          "dealId": "00000000-4e76-6275-044a-beb40055311e"
-        },
-        {
-          "epic": "USDCAD",
-          "direction": "SELL",
-          "level": 1.3675,
-          "dealId": "00000000-4e76-5ddd-044a-beb40055311e"
-        }
-      ],
-      "daily_pnl_usd": -16.82,
-      "account_balance": 974.9,
-      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "binary_event": "FOMC_2026-04-29 T-2d active=false",
-      "attention_covered": "9/9",
-      "note": "GBPUSD fire#3 at 1.3537 dual-resistance zone: M15 criterion not met (05:45 close above level), R:R=1.49 below floor. Live retest \u2014 06:00 M15 bar pending. BTC alert modified to reclaim-thesis (BOS 78356 violated bearishly). OIL comp upgraded +27\u2192+40 moderate. 2 working LIMITs intact (AUDUSD/USDCAD)."
     },
     {
       "tick_ts_utc": "2026-04-27T06:40Z",
@@ -1443,6 +1405,44 @@
       "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "binary_event": "FOMC T-47.5h",
       "summary": "1 evt (GOLD level_cross gold_sweep_4682_buy_watch): comp=-22.5 none, H4 bear FVG 4686-4699 overhead, WATCH. USDCAD SELL@1.36106 age=4.7h UPL=-$1.25 thesis-intact mod-bear 4/4. GBPUSD LIMIT@1.352555 working bid 9.4p above, H1 FVG overhead may push to limit. AUDUSD comp=+62.5 strong corr-cap-full. No new trades."
+    },
+    {
+      "tick_ts_utc": "2026-04-27T18:47Z",
+      "events": 1,
+      "events_detail": [
+        "GOLD level_cross gold_sweep_4682_buy_watch"
+      ],
+      "opened": 0,
+      "closed": 0,
+      "skipped": 1,
+      "skip_reason": "GOLD comp=-25 weak bearish, need +40 bull; WATCH only",
+      "positions_open": [
+        {
+          "epic": "USDCAD",
+          "direction": "SELL",
+          "size": 2000,
+          "entry": 1.36106,
+          "upl": -2.07,
+          "age_h": 4.95,
+          "thesis": "trend"
+        }
+      ],
+      "working_orders": [
+        {
+          "epic": "GBPUSD",
+          "direction": "BUY",
+          "size": 5000,
+          "level": 1.352555,
+          "sl": 1.3515,
+          "tp": 1.36
+        }
+      ],
+      "daily_pnl_realized": -10.52,
+      "daily_pnl_float": -2.07,
+      "broker_balance": 979.13,
+      "binary_event": "FOMC T-47.2h",
+      "attention": "9/9 covered",
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED"
     }
   ]
 }
