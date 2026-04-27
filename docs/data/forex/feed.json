@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-27T05:56:05.848926Z",
+  "generated_at": "2026-04-27T06:38:51.044548Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T08:17:00Z",
-      "events_in": 0,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 0,
-      "summary": "08:17 UTC heartbeat \u2014 0 evt. USDJPY 159.695 +40.5 mod dist=30.6p OUTSIDE 30p \u2192 WATCH (was ARMED @29.8p last tick, marginal slip). GOLD 4691.1 -35.5 weak sweep_4721 dist=30.6$ OUTSIDE threshold \u2192 WATCH. OIL 96.54 +43.0 mod sweep_9323 dist=3.30$ extending away. BTC 77881 +29.5 weak FVG dist=921$. USDCHF -5.0 none sweep_h1 WATCH. 7 alerts KEEP. Scalp 3 FX ACTIVE halt={}. 0 trades $1000/0pos. BOJ T-3d FOMC T-5d."
-    },
     {
       "ts_utc": "2026-04-24T08:28:00Z",
       "events_in": 9,
@@ -994,6 +986,44 @@
       "binary_event": "FOMC_2026-04-29 T-2d active=false",
       "attention_covered": "9/9",
       "note": "GBPUSD fire#3 at 1.3537 dual-resistance zone: M15 criterion not met (05:45 close above level), R:R=1.49 below floor. Live retest \u2014 06:00 M15 bar pending. BTC alert modified to reclaim-thesis (BOS 78356 violated bearishly). OIL comp upgraded +27\u2192+40 moderate. 2 working LIMITs intact (AUDUSD/USDCAD)."
+    },
+    {
+      "tick_ts_utc": "2026-04-27T06:40Z",
+      "events_consumed": 2,
+      "events": [
+        "EURUSD liquidity_sweep M15 wick=1.8p comp=+21 none WATCH",
+        "GBPUSD liquidity_sweep M15 wick=1.0p comp=+45.5 mod WATCH"
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "trades_skipped": 1,
+      "skip_reasons": [
+        "GBPUSD sweep WATCH-only: wick 1.0p<1\u00d7ATR, 3rd USD-short correlation risk, FOMC T-2d caution"
+      ],
+      "working_orders": [
+        {
+          "pair": "AUDUSD",
+          "dir": "BUY",
+          "level": 0.7143,
+          "dealId": "00000000-4e76-6275-044a-beb40055311e"
+        },
+        {
+          "pair": "USDCAD",
+          "dir": "SELL",
+          "level": 1.3675,
+          "dealId": "00000000-4e76-5ddd-044a-beb40055311e"
+        }
+      ],
+      "daily_pnl_usd": -16.82,
+      "open_positions": 0,
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "binary_event": "FOMC_2026-04-29 T-2d (active=false, no blackout)",
+      "attention_covered": "9/9",
+      "watchlist_changes": [
+        "ADD gbpusd_sweep_135255_buy_watch WATCH",
+        "EURUSD price_ref updated"
+      ],
+      "scalp_status": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=ACTIVE no_halts"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-27T05:48Z",
+  "last_updated_by_claude": "2026-04-27T06:40Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -122,14 +122,14 @@
       "sl": 1.3558,
       "tp": 1.3505,
       "rr_target": "1.52",
-      "current_price_ref": 1.35367,
+      "current_price_ref": 1.352815,
       "price_ref": {
-        "ts": "2026-04-27T05:48Z",
-        "price": 1.35367
+        "ts": "2026-04-27T06:30Z",
+        "price": 1.352815
       },
       "last_updated": "2026-04-27T04:25Z",
-      "updated_utc": "2026-04-27T05:48Z",
-      "proximity": "GBPUSD@1.35367 bid; fire #3 at 05:47Z \u2014 price bounced to 1.3537 zone (bid=1.35367, offer=1.3538). M15 05:45 close=1.353725 (ABOVE 1.3537 \u2014 criterion NOT MET). R:R at bid=1.49 (<1.5 floor). NO TRADE. 06:00 M15 bar in progress \u2014 if closes below 1.3537 with wick \u22652p from high, MARKET SELL next tick. comp=+48 mod (bullish extension, counter-fade trigger MET). SL=1.3558 TP=1.3505 R:R@level=1.52. ARMED-PENDING."
+      "updated_utc": "2026-04-27T06:30Z",
+      "proximity": "GBPUSD@1.352815; dist=8.85p BELOW 1.3537. comp=+45.5 mod bullish (counter-trend sell extension MET). Price pulled back from zone after 3 non-trigger fires. Criterion: M15 close BELOW 1.3537 + wick \u22652p from high. SL=1.3558 TP=1.3505 R:R=1.52. WATCH \u2014 needs re-approach to 1.3537."
     },
     {
       "id": "audusd_m15fvg_buy_7143",
@@ -241,6 +241,50 @@
       "last_updated": "2026-04-27T05:48Z",
       "updated_utc": "2026-04-27T05:48Z",
       "proximity": "BTC@77795; H4 BOS 78356 violated bearishly (price closed below). comp=+40 moderate bullish. Same-loss skip <24h. WATCH \u2014 no LIMIT arming until 2026-04-28."
+    },
+    {
+      "id": "eurusd_sweep_117186_buy_watch",
+      "instrument": "EURUSD",
+      "level": 1.17186,
+      "emit_on": "cross_down",
+      "cooldown_sec": 1800,
+      "direction": "buy",
+      "note": "ENTRY: price retests 1.17186 swept extreme; M15 bar closes AT or ABOVE 1.17186 with bullish rejection wick \u22652p from the low. Requires readiness \u2265 moderate (comp \u226540 bullish).\n\nCONTEXT: Down-sweep M15 06:15Z 2026-04-27 \u2014 wicked 1.8p below 1.17186, closed back at 1.17200. Fresh structural support. comp=+21 none currently (H1 bear FVG 1.17231 immediately overhead blocks TP). WATCH \u2014 arm LIMIT only if comp improves to \u226540 bullish.\n\nSL: 1.1710  TP: 1.1745  R:R target: 2.0\n\nadded 2026-04-27T06:30Z \u2014 M15 down-sweep creates buy structural level; readiness=none; WATCH only.",
+      "entry_criterion": "M15 retest of 1.17186 with bullish rejection wick \u22652p from low. comp \u226540 required before arming LIMIT.",
+      "regime_context": "Down-sweep M15 06:15Z created fresh structural support at 1.17186. H1 bear FVG 1.17231-1.17251 is overhead resistance. Arm only on comp \u226540 bullish.",
+      "sl": 1.171,
+      "tp": 1.1745,
+      "rr_target": "2.0",
+      "current_price_ref": 1.17207,
+      "price_ref": {
+        "ts": "2026-04-27T06:40Z",
+        "price": 1.17207
+      },
+      "last_updated": "2026-04-27T06:30Z",
+      "updated_utc": "2026-04-27T06:40Z",
+      "proximity": "EURUSD@1.17207; dist=2.1p above swept level 1.17186. comp=+21 none \u2014 no LIMIT. H1 bear FVG 1.17231 overhead. WATCH."
+    },
+    {
+      "id": "gbpusd_sweep_135255_buy_watch",
+      "instrument": "GBPUSD",
+      "level": 1.352555,
+      "emit_on": "cross_down",
+      "cooldown_sec": 1800,
+      "direction": "buy",
+      "note": "ENTRY: price retests 1.352555 down-sweep extreme; M15 bar closes AT or ABOVE 1.352555 with bullish rejection wick \u22652p from the low. Requires readiness \u2265 moderate (comp \u2265+40 bullish). Wick at creation=1.0p (<1\u00d7ATR=4.8p) \u2014 arm only on confirmed retest with wick, not preemptively.\n\nCONTEXT: M15 down-sweep 06:15Z 2026-04-27 wicked 1.0p below 1.352555, closed back at 1.352745. Small wick (noise-level); structural significance limited. H1 bear FVG at 1.35336\u20131.35393 is overhead TP target. comp=+45.5 moderate bullish. FOMC T-2d caution. 3rd USD-short risk with AUDUSD BUY + USDCAD SELL working.\n\nSL: 1.3515  TP: 1.35393  R:R target: 2.3\n\nadded 2026-04-27T06:40Z \u2014 M15 down-sweep creates fresh support at 1.352555; wick too small for immediate LIMIT arming; WATCH until confirmed retest + comp \u2265+40.",
+      "entry_criterion": "M15 retest of 1.352555 with bullish rejection wick \u22652p from low. comp \u2265+40 required. Wick at creation was noise-level (1.0p); arm on confirmed retest.",
+      "regime_context": "M15 down-sweep 06:15Z 2026-04-27. comp=+45.5 moderate bullish. Correlation risk with AUDUSD BUY + USDCAD SELL (both USD-short). FOMC T-2d caution. H1 bear FVG at 1.35336\u20131.35393 overhead. Small wick (<1\u00d7ATR) \u2014 structural significance limited.",
+      "sl": 1.3515,
+      "tp": 1.35393,
+      "rr_target": "2.3",
+      "current_price_ref": 1.35278,
+      "price_ref": {
+        "ts": "2026-04-27T06:40Z",
+        "price": 1.35278
+      },
+      "last_updated": "2026-04-27T06:40Z",
+      "updated_utc": "2026-04-27T06:40Z",
+      "proximity": "GBPUSD@1.35278; dist=22.5p above swept level 1.352555. comp=+45.5 moderate bullish. Wick 1.0p too small for immediate LIMIT arming. FOMC T-2d caution. Correlation risk. WATCH only."
     }
   ],
   "structure_watch": [
@@ -311,5 +355,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-27T05:28Z"
+  "last_updated_utc": "2026-04-27T06:40Z"
 }

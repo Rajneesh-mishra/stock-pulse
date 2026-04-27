@@ -1,8 +1,8 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-27T05:48Z",
-  "state_ts_utc": "2026-04-27T05:48Z",
-  "regime_note": "2026-04-27T05:48Z forex auto \u2014 1 evt: GBPUSD level_cross gbpusd_sweep_135370_sell_watch fire#3@05:47Z \u2014 price bounced to 1.3537 zone (bid=1.35367, offer=1.3538). M15 05:45 close=1.353725 (ABOVE 1.3537 \u2014 criterion NOT MET). R:R at bid=1.49 (<1.5 floor). NO TRADE. comp=+48 mod counter-fade MET. 06:00 M15 close pending \u2014 if below 1.3537 with wick \u22652p, MARKET SELL next tick. AUDUSD BUY@0.7143 KEEP (comp=+45 mod, 3f/100%4h validated, bid=0.7167). USDCAD SELL@1.3675 KEEP (comp=-40 mod, bid=1.36653). BTC@77795 below BOS 78356 + FVG zone; alert modified to reclaim-thesis; same-loss skip. OIL comp=+40 mod (upgraded); oil_sweep_9323 dist=$1.62 outside prox. GOLD comp=-14.5 none bearish. daily_pnl=-$16.82 (-1.68%). 0 pos, 2 working. FOMC T-2d. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-27T06:40Z",
+  "state_ts_utc": "2026-04-27T06:40Z",
+  "regime_note": "2026-04-27T06:40Z forex auto \u2014 2 evt: EURUSD liquidity_sweep M15 06:15Z@1.171855 (wick=1.8p; comp=+21 none; WATCH \u2014 alert eurusd_sweep_117186_buy_watch updated price ref). GBPUSD liquidity_sweep M15 06:15Z@1.352555 (wick=1.0p=0.21\u00d7ATR; comp=+45.5 mod bullish; WATCH \u2014 wick noise-level <1\u00d7ATR, 3rd USD-short risk, FOMC T-2d caution; alert gbpusd_sweep_135255_buy_watch ADDED). NO new trades. AUDUSD BUY@0.7143 LIMIT KEEP (comp=+45 mod, 3f/100%4h). USDCAD SELL@1.3675 LIMIT KEEP (comp=-40 mod). daily_pnl=-$16.82. 0 pos 2 working. FOMC T-2d. attention_covered=9/9.",
   "regime_note_prev": "2026-04-27T05:20Z forex auto \u2014 2 evt: BTCUSD SL hit (entry@79024.5 SL@78700 pnl=-$12.98, H4 FVG thesis invalidated; bid@78596 now near H4 BOS 78356 zone). GOLD level_cross #9 at 4721.39 fired but comp=-12 bearish (need |comp|>=40 bullish ext) \u2014 NO LIMIT armed. GBPUSD@1.35376 AT dual-resistance 1.3537 \u2014 comp=+53 mod (counter-trigger MET); awaiting M15 rejection close below 1.3537 to enter MARKET SELL. AUDUSD BUY@0.7143 ARMED (comp=+45 mod, 3f/100%4h, bid=0.71674). USDCAD SELL@1.3675 ARMED (comp=-",
   "open_positions": [],
   "watchlist": [
