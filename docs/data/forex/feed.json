@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-27T08:11:10.537468Z",
+  "generated_at": "2026-04-27T08:16:56.863025Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T11:18:00Z",
-      "events_in": 2,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 2,
-      "note": "11:18 forex auto \u2014 2 evt (GBPUSD M15 up-sweep 1.34927 wick=8.8p 1.29\u00d7ATR comp=+29.0 weak-bull OPPOSES sell \u2192 ADD WATCH gbpusd_sweep_134928; GOLD level_cross gold_sweep_4695_sell_retest cross_up 4702.9>SL 4697.65 \u2192 REMOVE invalid). USDJPY 159.54 +30.0 weak dist=46.4p OUTSIDE 30p \u2192 WATCH (dropping from +43 mod). GOLD 4698.59 -32.5 weak; sweep_4721 dist=23.1$ INSIDE 30$ prox WATCH (need -40 mod); safehaven_4775 dist=76.4$ WATCH. OIL 94.56 +35.5 weak; sweep_9323 dist=1.32$ barely OUTSIDE prox 1.16$; pullback live 96.97\u219294.56 Day-FVG 93.42-94.18 below. GBPUSD scalp ghost at 1.346775+1.168965 engine-managed. 0 swing trades 0 swing pos. BOJ T-3d FOMC T-5d. attention_covered=9/9."
-    },
     {
       "ts_utc": "2026-04-24T11:28:00Z",
       "events_in": 1,
@@ -1131,6 +1123,41 @@
       },
       "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "binary_event": "FOMC_2026-04-29 (active=false, T-34h, no blackout/caution)"
+    },
+    {
+      "tick_ts_utc": "2026-04-27T08:15Z",
+      "events_processed": 1,
+      "events": [
+        {
+          "id": "evt_1777276974187_liquidity_sweep",
+          "type": "liquidity_sweep",
+          "instrument": "EURUSD",
+          "timeframe": "MINUTE_15",
+          "action": "WATCH-ONLY",
+          "reason": "comp=+23.5 none (<25 counter-trend threshold); wick=1.2p noise (<1\u00d7ATR); H4 bull FVG obstacle at 1.17298-1.17406; ADD eurusd_sweep_117454_sell_watch"
+        }
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "open_positions": 0,
+      "working_orders": 2,
+      "working_order_ids": [
+        "00000000-4e76-6275-044a-beb40055311e",
+        "00000000-4e76-5ddd-044a-beb40055311e"
+      ],
+      "daily_pnl_usd": -16.82,
+      "balance": 974.9,
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "binary_event": "FOMC_2026-04-29 active=false T-2d no-blackout",
+      "alerts_added": [
+        "eurusd_sweep_117454_sell_watch"
+      ],
+      "alerts_removed": [],
+      "alerts_modified": [
+        "eurusd_sweep_117186_buy_watch (proximity update)"
+      ],
+      "scalp_status": "EURUSD/GBPUSD/AUDUSD active no-halt",
+      "attention_covered": "9/9"
     }
   ]
 }

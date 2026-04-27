@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-27T06:40Z",
+  "last_updated_by_claude": "2026-04-27T08:15Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -255,14 +255,14 @@
       "sl": 1.171,
       "tp": 1.1745,
       "rr_target": "2.0",
-      "current_price_ref": 1.17207,
+      "current_price_ref": 1.174635,
       "price_ref": {
-        "ts": "2026-04-27T06:40Z",
-        "price": 1.17207
+        "ts": "2026-04-27T08:15Z",
+        "price": 1.174635
       },
       "last_updated": "2026-04-27T06:30Z",
-      "updated_utc": "2026-04-27T06:40Z",
-      "proximity": "EURUSD@1.17207; dist=2.1p above swept level 1.17186. comp=+21 none \u2014 no LIMIT. H1 bear FVG 1.17231 overhead. WATCH."
+      "updated_utc": "2026-04-27T08:15Z",
+      "proximity": "EURUSD@1.174635; dist=27.5p ABOVE swept level 1.17186. comp=+23.5 none \u2014 no LIMIT. H1 bear FVG 1.17231-1.17251 between price and level (overhead mitigated bars_ago=4). New up-sweep at 1.17454 adds sell alert (see eurusd_sweep_117454_sell_watch). WATCH \u2014 arm BUY only if comp \u2265+40 bullish AND price retests 1.17186."
     },
     {
       "id": "gbpusd_sweep_135255_buy_watch",
@@ -285,6 +285,28 @@
       "last_updated": "2026-04-27T06:40Z",
       "updated_utc": "2026-04-27T06:40Z",
       "proximity": "GBPUSD@1.35278; dist=22.5p above swept level 1.352555. comp=+45.5 moderate bullish. Wick 1.0p too small for immediate LIMIT arming. FOMC T-2d caution. Correlation risk. WATCH only."
+    },
+    {
+      "id": "eurusd_sweep_117454_sell_watch",
+      "instrument": "EURUSD",
+      "level": 1.17454,
+      "emit_on": "cross_up",
+      "cooldown_sec": 1800,
+      "direction": "sell",
+      "note": "ENTRY: price retests 1.17454 M15 up-sweep extreme from above; M15 bar closes BACK BELOW 1.17454 with rejection wick \u22652p from the high. MARKET entry on M15 rejection close. Requires |comp| \u2265 40 bullish extension before arming. H4 bull FVG (1.17298-1.17406) is unmitigated between entry and TP \u2014 arm only when FVG is mitigated or price shows clear impulsive break.\n\nCONTEXT: M15 up-sweep 08:00Z 2026-04-27 \u2014 wick 1.2p beyond 1.17454 (noise, <1\u00d7ATR 5.4p). Close back inside at 1.174165. comp=+23.5 none at creation (need \u226540 bullish ext). Unmitigated H4 bull FVG at 1.17298-1.17406 blocks TP path. WATCH \u2014 two conditions before arming: |comp|\u226540 bullish AND FVG mitigated or clear.\n\nSL: 1.17500  TP: 1.17290  R:R target: 3.6 (below H4 FVG bottom 1.17298)\n\nadded 2026-04-27T08:15Z \u2014 M15 up-sweep; wick noise-level; comp=none; FVG obstacle; WATCH only.",
+      "entry_criterion": "M15 rejection close below 1.17454 with wick \u22652p from high. MARKET entry. |comp|\u226540 bullish + H4 FVG mitigated before arming.",
+      "regime_context": "M15 up-sweep 08:00Z 2026-04-27. wick=1.2p (noise <1\u00d7ATR). comp=+23.5 none. H4 bull FVG 1.17298-1.17406 unmitigated = TP obstacle. Arm on |comp|\u226540 bullish + FVG cleared.",
+      "sl": 1.175,
+      "tp": 1.1729,
+      "rr_target": "3.6",
+      "current_price_ref": 1.174635,
+      "price_ref": {
+        "ts": "2026-04-27T08:15Z",
+        "price": 1.174635
+      },
+      "last_updated": "2026-04-27T08:15Z",
+      "updated_utc": "2026-04-27T08:15Z",
+      "proximity": "EURUSD@1.174635; dist=0.9p BELOW sweep level 1.17454 \u2014 price at/near level. comp=+23.5 none (<40 required). Wick noise-level (1.2p). H4 FVG obstacle 1.17298-1.17406 unmitigated. WATCH \u2014 no LIMIT arming."
     }
   ],
   "structure_watch": [
@@ -355,5 +377,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-27T06:40Z"
+  "last_updated_utc": "2026-04-27T08:15Z"
 }

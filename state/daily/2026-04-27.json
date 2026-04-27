@@ -1017,5 +1017,40 @@
     },
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
     "binary_event": "FOMC_2026-04-29 (active=false, T-34h, no blackout/caution)"
+  },
+  {
+    "tick_ts_utc": "2026-04-27T08:15Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "id": "evt_1777276974187_liquidity_sweep",
+        "type": "liquidity_sweep",
+        "instrument": "EURUSD",
+        "timeframe": "MINUTE_15",
+        "action": "WATCH-ONLY",
+        "reason": "comp=+23.5 none (<25 counter-trend threshold); wick=1.2p noise (<1\u00d7ATR); H4 bull FVG obstacle at 1.17298-1.17406; ADD eurusd_sweep_117454_sell_watch"
+      }
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "open_positions": 0,
+    "working_orders": 2,
+    "working_order_ids": [
+      "00000000-4e76-6275-044a-beb40055311e",
+      "00000000-4e76-5ddd-044a-beb40055311e"
+    ],
+    "daily_pnl_usd": -16.82,
+    "balance": 974.9,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "FOMC_2026-04-29 active=false T-2d no-blackout",
+    "alerts_added": [
+      "eurusd_sweep_117454_sell_watch"
+    ],
+    "alerts_removed": [],
+    "alerts_modified": [
+      "eurusd_sweep_117186_buy_watch (proximity update)"
+    ],
+    "scalp_status": "EURUSD/GBPUSD/AUDUSD active no-halt",
+    "attention_covered": "9/9"
   }
 ]
