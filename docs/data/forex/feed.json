@@ -1,22 +1,6 @@
 {
-  "generated_at": "2026-04-27T06:38:51.044548Z",
+  "generated_at": "2026-04-27T07:27:35.088569Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T08:28:00Z",
-      "events_in": 9,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 9,
-      "note": "08:28 forex auto \u2014 9 evt: news_flash Arab Weekly 'After collapse of Islamabad talks, US-Iran naval showdown escalates' FRESH Apr-24 08:18 GMT (regime CONFIRMED strengthened; escalation diplomatic track closed) + GOLD M15 liquidity_sweep 4695.395 wick=22.5p 2.58xATR ADD gold_sweep_4695_sell_retest WATCH readiness=weak + 7 bar_close routine. USDJPY 159.732 +43.0 mod 4/4 bull dist=26.8p INSIDE 30p swing=ARMED (counter-fade BOJ T-3d); SKIP market SELL \u2014 api.py MARKET-only, LIMIT at 160 not supported, entering 26.8p early changes thesis; alert remains ARMED, execute on next tick if price \u2265159.97. GOLD 4688 -35.5 weak sweep_4721 33.7$ WATCH; NEW sweep_4695 7.4$ WATCH (readiness=weak need -40); safehaven_4775 87$ WATCH. OIL 96.44 +43.0 mod extending sweep_9323 3.2$ WATCH. BTCUSD 77881 +29.5 weak FVG 921$ WATCH. USDCHF 0.78621 comp=none WATCH. 8 alerts (7 KEEP +1 ADD). Scalp: GBPUSD BUY 1.346775 TP=1.347515 likely TP'd (current 1.348>TP; engine-managed). halt={}. 0 swing trades $1000/0pos. BOJ T-3d FOMC T-5d. attention_covered=9/9."
-    },
-    {
-      "ts_utc": "2026-04-24T10:20:00Z",
-      "events_in": 1,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 1,
-      "note": "10:20 forex auto \u2014 1 evt (CNBC news_flash 'Iran War, U.S. Court tariff ruling delays India trade deal' 09:59 GMT Apr 24 FRESH; query=us_tariff matched 'delay'; US court ruling mildly USD-neg; Iran War reinforces escalation; no alert_audit triggered; no trade changes). USDJPY 159.759 +43.0 mod dist=24.1p INSIDE 30p \u2192 ARMED BOJ T-3d. GOLD 4682.59 -36.0 weak sweep_4695 dist=12.8$ prox WATCH; sweep_4721 dist=39.1$ WATCH. OIL 96.984 +43.0 mod sweep_9323 dist=3.75$ WATCH extending. Scalp engine GBPUSD+EURUSD ghost vs broker=0pos. 8 alerts KEEP. 0 trades 0pos. BOJ T-3d FOMC T-5d. attention_covered=9/9."
-    },
     {
       "ts_utc": "2026-04-24T10:30:00Z",
       "events_in": 0,
@@ -1024,6 +1008,104 @@
         "EURUSD price_ref updated"
       ],
       "scalp_status": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=ACTIVE no_halts"
+    },
+    {
+      "tick_ts_utc": "2026-04-27T06:57Z",
+      "events_processed": 1,
+      "events": [
+        "gbpusd_sweep_135370_sell_watch fire#4 level_cross 06:48Z \u2014 NO TRADE (M15 close above 1.3537, criterion not met)"
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "working_orders": [
+        {
+          "epic": "AUDUSD",
+          "dir": "BUY",
+          "limit": 0.7143,
+          "sl": 0.713,
+          "tp": 0.7187,
+          "status": "ARMED"
+        },
+        {
+          "epic": "USDCAD",
+          "dir": "SELL",
+          "limit": 1.3675,
+          "sl": 1.3695,
+          "tp": 1.3595,
+          "status": "ARMED"
+        }
+      ],
+      "open_positions": 0,
+      "daily_pnl_usd": -16.82,
+      "account_balance": 974.9,
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "binary_event": "FOMC_2026-04-29 T-2d cal no blackout",
+      "confluence_snapshot": {
+        "EURUSD": {
+          "comp": 23.5,
+          "readiness": "none"
+        },
+        "GBPUSD": {
+          "comp": 48.0,
+          "readiness": "moderate",
+          "direction": "bullish"
+        },
+        "AUDUSD": {
+          "comp": 45.0,
+          "readiness": "moderate",
+          "direction": "bullish"
+        },
+        "USDJPY": {
+          "comp": 3.5,
+          "readiness": "none"
+        },
+        "USDCAD": {
+          "comp": -40.0,
+          "readiness": "moderate",
+          "direction": "bearish"
+        },
+        "USDCHF": {
+          "comp": -5.0,
+          "readiness": "none"
+        },
+        "GOLD": {
+          "comp": -12.0,
+          "readiness": "none"
+        },
+        "OIL_CRUDE": {
+          "comp": 40.0,
+          "readiness": "moderate",
+          "direction": "bullish"
+        },
+        "BTCUSD": {
+          "comp": 30.5,
+          "readiness": "weak"
+        }
+      },
+      "decision": "GBPUSD fire#4 at 1.3537 \u2014 M15 rejection criterion not met (close still above level). 4th consecutive WATCH. All working LIMITs KEEP."
+    },
+    {
+      "tick_ts_utc": "2026-04-27T07:28Z",
+      "events_processed": 1,
+      "events": [
+        "level_cross GBPUSD gbpusd_sweep_135370_sell_watch fire#5@07:21Z \u2014 NO TRADE (M15 close 0.65p above 1.3537, criterion not met)"
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "open_positions": 0,
+      "working_orders": 2,
+      "working_order_detail": [
+        "AUDUSD BUY LIMIT@0.7143 (KEEP, comp=+45 mod)",
+        "USDCAD SELL LIMIT@1.3675 (KEEP, comp=-40 mod)"
+      ],
+      "daily_pnl_usd": -16.82,
+      "balance_usd": 974.9,
+      "news": "BoE dovish (5-4 hold, business inflation exp 4%); FOMC T-2d hawkish hold; GBP selling on fundamental basis \u2014 supports gbpusd_sweep_135370_sell_watch",
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "binary_event": "FOMC_2026-04-29 active=false T-2d",
+      "gbpusd": "fire#5 at 1.3537, comp=+53 mod extension MET, criterion NOT MET \u2014 WATCH",
+      "attention_covered": "9/9",
+      "scalp_status": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=ACTIVE no halts"
     }
   ]
 }
