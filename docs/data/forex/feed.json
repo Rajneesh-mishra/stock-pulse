@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T14:20:23.346367Z",
+  "generated_at": "2026-04-27T14:26:57.130090Z",
   "ticks": [
     {
       "ts_utc": "2026-04-24T14:10:00Z",
@@ -80,15 +80,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "ts_utc": "2026-04-27T03:15Z",
-      "events_in": 0,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 0,
-      "cancelled_limits": 1,
-      "note": "03:15 forex auto \u2014 0 evt heartbeat. GBPUSD BUY LIMIT@1.3506 CANCELLED: 58h no approach (price at 1.35408, TP=1.3531 already superseded by market), 3-correlated cap exceeded (AUDUSD BUY + GBPUSD BUY + USDCAD SELL = 3 USD-weakness positions). Confluence: GBPUSD +53 mod bull, AUDUSD +45 mod bull, USDCAD -40 mod bear, GOLD -14.5 none, BTCUSD +60 strong, OIL +27 weak, EURUSD +23.5 none, USDJPY +3.5 none, USDCHF -5.0 none. GOLD@4720.6 tagged 4721 sweep (7th tag) \u2014 comp=-14.5 none (need +40 bullish extension); NO ENTRY. 2 LIMITs active: AUDUSD BUY@0.7143 ARMED + USDCAD SELL@1.3675 ARMED. 0 trades 0pos 2 working. FOMC T-2d, BoJ 0.75% hold confirmed. Hormuz standoff. attention_covered=9/9."
     },
     {
       "tick_ts_utc": "2026-04-27T03:39Z",
@@ -1493,6 +1484,58 @@
       "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "attention_covered": "9/9",
       "scalp_status": "EURUSD/GBPUSD/AUDUSD active, no halts, daily_pnl=$0"
+    },
+    {
+      "tick_ts_utc": "2026-04-27T14:25Z",
+      "events_processed": 3,
+      "events": [
+        "trail_candidate GBPUSD x3 (R=3.22/4.13/5.09)"
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "modifications": [
+        {
+          "action": "TRAIL",
+          "epic": "GBPUSD",
+          "dealId": "00000000-4e77-61f9-044a-beb40055311e",
+          "sl_old": 1.35444,
+          "sl_new": 1.35491,
+          "reason": "+3R trail \u2192 +1.5R lock"
+        }
+      ],
+      "watchlist_changes": [
+        {
+          "action": "PROMOTE",
+          "id": "audusd_m15fvg_buy_7143",
+          "reason": "3f 4h=100% Rule3 validated"
+        }
+      ],
+      "open_positions": [
+        {
+          "epic": "GBPUSD",
+          "direction": "BUY",
+          "entry": 1.35421,
+          "sl": 1.35491,
+          "tp": 1.3564,
+          "upl_approx": 11.52,
+          "r_current": 3.3
+        },
+        {
+          "epic": "USDCAD",
+          "direction": "SELL",
+          "entry": 1.36106,
+          "sl": 1.3642,
+          "tp": 1.355,
+          "upl_approx": 1.15,
+          "r_current": 0.3
+        }
+      ],
+      "daily_pnl_realized": -16.82,
+      "float_approx": 12.67,
+      "binary_event": "FOMC/BoC Apr29 T\u224849.6h",
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "attention_covered": "9/9",
+      "notes": "GBPUSD +3R trail to +1.5R; TP 9.1p away. BoE hike pricing 50% supports. USDCAD running +0.3R toward TP. Hormuz escalation unchanged. AUDUSD validated (3f 4h=100%) but correlation cap. FOMC T\u224849.6h."
     }
   ]
 }
