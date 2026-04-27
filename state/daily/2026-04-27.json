@@ -718,5 +718,97 @@
     },
     "scalp": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=ACTIVE USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
     "attention_covered": "9/9"
+  },
+  {
+    "tick_ts_utc": "2026-04-27T05:28Z",
+    "events": [
+      {
+        "id": "evt_1777266923546_level_cross",
+        "type": "level_cross",
+        "instrument": "GBPUSD",
+        "alert_id": "gbpusd_sweep_135370_sell_watch"
+      },
+      {
+        "id": "evt_1777266964646_level_cross",
+        "type": "level_cross",
+        "instrument": "BTCUSD",
+        "alert_id": "btcusd_h4bos_78356_buy"
+      }
+    ],
+    "open_positions": 0,
+    "working_orders": 2,
+    "daily_pnl_usd": -16.82,
+    "balance": 974.9,
+    "actions": [],
+    "skips": [
+      {
+        "instrument": "GBPUSD",
+        "reason": "R:R=1.38<1.5 floor from entry@1.35357 \u2014 M15 rejection confirmed but entry below level"
+      },
+      {
+        "instrument": "BTCUSD",
+        "reason": "same-instrument loss today + H4 BOS 78356 violated (price 78046.7)"
+      }
+    ],
+    "attention": {
+      "EURUSD": {
+        "swing": "NONE",
+        "scalp": "ACTIVE",
+        "readiness": "none",
+        "note": "comp=+23.5 (3/4TF), no alert"
+      },
+      "GBPUSD": {
+        "swing": "WATCH",
+        "scalp": "ACTIVE",
+        "readiness": "moderate",
+        "note": "M15 reject close@1.35357 confirmed; R:R=1.38<1.5; monitor bounce to 1.3537"
+      },
+      "AUDUSD": {
+        "swing": "ARMED",
+        "scalp": "ACTIVE",
+        "readiness": "moderate",
+        "note": "LIMIT BUY@0.7143 live, validated 3f/100%4h"
+      },
+      "USDJPY": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "none",
+        "note": "comp=+3.5 (2/4TF); @159.29 dist=70.8p from 160 intervention; pip-conv-pending"
+      },
+      "USDCAD": {
+        "swing": "ARMED",
+        "scalp": "OFF",
+        "readiness": "moderate",
+        "note": "LIMIT SELL@1.3675 live, comp=-40 mod 4/4TF; pip-conv-pending"
+      },
+      "USDCHF": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "none",
+        "note": "comp=-5.0 none; dist=26.1p inside prox but comp criterion not met; pip-conv-pending"
+      },
+      "GOLD": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "none",
+        "note": "comp=-12 bearish; gold_sweep_4721 counter-trigger needs |comp|>=40 BULLISH \u2014 not met"
+      },
+      "OIL_CRUDE": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "weak",
+        "note": "comp=+34.5 weak; oil_sweep_9323 dist=$1.55 outside prox $1.07; need comp>=40"
+      },
+      "BTCUSD": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "moderate",
+        "note": "H4 BOS 78356 violated; price@78046 in Day FVG 77897-78419; same-loss skip"
+      }
+    },
+    "scalp_audit": "EURUSD=KEEP(no trades) GBPUSD=KEEP(no trades) AUDUSD=KEEP(no trades) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "FOMC_2026-04-29 T-2d (active=false, no blackout)",
+    "summary": "2 evt processed: GBPUSD M15 reject close confirmed R:R too low; BTCUSD H4 BOS broken same-loss skip. 0 trades. 2 LIMITs active."
   }
 ]
