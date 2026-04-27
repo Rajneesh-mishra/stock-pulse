@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-27T13:27:27.741764+00:00",
+  "generated_at": "2026-04-27T13:32:29.659487+00:00",
   "counts": {
     "trades": 18,
-    "events": 4618,
+    "events": 4626,
     "ticks": 59,
-    "regime_snapshots": 100,
+    "regime_snapshots": 101,
     "broker_positions": 0,
     "counterfactuals": 77
   },
@@ -391,6 +391,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-27T13:30Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "2026-04-27T13:30Z forex auto \u2014 1 evt: GOLD level_cross gold_sweep_4701_buy_retest fire#6@13:22Z @4701.69 \u2014 NO TRADE (comp=-25 weak, need \u2264-40; price now 4700.54, only 0.95pts above SL 4699.59; H4 bear FVG 4706.4-4708.72 overhead constrains TP=4705.5, R:R=1.72). 6 consecutive NO-TRADEs, comp stuck at -25. BoJ held 0.75% as expected \u2014 USDJPY@159.16 flat, weak JPY thesis intact, 160 red line still live. Iran talks stalling ('excessive US demands'), Hormuz still blocked \u2014 escalation regime unchanged. ADD gbpusd_liqsweep_135421_buy (tracking LIMIT@1.354215 dealId=..4354.. placed 13:19Z). USDCAD offer=1.36045 approaching SELL LIMIT@1.36103 (5.8p away). FOMC T-52.5h (caution activates at T<24h ~18:00Z Apr 28). daily_pnl=-$16.82. 0 pos 3 working. attention_covered=9/9.",
+      "binary_event_name": "FOMC",
+      "binary_event_active": 1,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
       "ts_utc": "2026-04-27T13:09Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-27T13:09Z forex auto \u2014 2 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#5@13:00Z @1.17454 \u2014 NO TRADE (comp=+23.5 none <+40; H4 bull FVG 1.17328-1.17379 bars_ago=2 unmitigated, blocks TP path to 1.1729). 5 consecutive NO-TRADEs; comp stuck at +23.5. GBPUSD liquidity_sweep M15@13:00Z down-sweep 1.354215 wick=4.7p (5.9xATR) \u2014 ARMED GBPUSD BUY LIMIT@1.354215 size=10000 SL=1.353745 TP=1.35569 R:R=3.1 (comp=+50.5 moderate 4/4TF, half-size FOMC T-53h). GOLD@4696.2 H1 close 4699.35 \u2014 broke below 4700 escalation zone (comp=-25 weak, no trade). BoJ meeting today USDJPY@159.22 comp=-4 none. FOMC T-~53h. daily_pnl=-$16.82. 0 pos 3 working. attention_covered=9/9.",
@@ -458,14 +466,6 @@
       "ts_utc": "2026-04-27T10:28Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-27T10:28Z forex auto \u2014 0 evt: heartbeat. AUDUSD LIMIT BUY@0.7143 KEEP (comp=+51 mod, 43.6p from fill; 3f/100%4h validated). USDCAD LIMIT SELL@1.3675 KEEP (comp=-46 mod, 65.7p from trigger). GOLD comp=-25.0 weak bear: 4701 buy watch at exact -25 threshold (need |comp|\u226540 for LIMIT; FOMC caution blocks); 4721 sell watch needs +40 bull ext. USDJPY@159.21 dist=79p from 160 red line (3\u00d7H4ATR=83.2p \u2014 borderline). GBPUSD comp=+53 mod (135255 buy watch \u2014 correlation cap blocks, 2 USD-short already working). OIL comp=+37.5 weak (9323 buy dist=$1.95, needs mod). BTC comp=+39.5 weak (same-loss skip until 2026-04-28). FOMC T-55.5h. daily_pnl=-$16.82. 0 pos 2 working. attention_covered=9/9.",
-      "binary_event_name": "FOMC",
-      "binary_event_active": 1,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-04-27T09:58Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "2026-04-27T09:58Z forex auto \u2014 1 evt: GOLD level_cross gold_sweep_4701_buy_retest fire#1@09:54Z price=4701.27 (cross_down) \u2014 NO TRADE (comp=-19.5 none, |comp|=19.5 < 25 threshold; arming blocked). GOLD now @4702.26 (bounced from 4701.27). H1 bear FVG 4708.405-4710.09 overhead. WATCHLIST: REMOVED oil_crude_retest_90_buy (dist=$5.09 ~3\u00d7H4ATR, price at $95.39 running away; oil_sweep_9323_buy_retest at $93.23 provides coverage). AUDUSD BUY@0.7143 KEEP. USDCAD SELL@1.3675 KEEP. OIL daily low=$93.88 tested sweep_9323 zone \u2014 watch for pulback arm. FOMC T-2d (Apr 29 18:00Z) elevated caution. daily_pnl=-$16.82. 0 pos 2 working. attention_covered=9/9.",
       "binary_event_name": "FOMC",
       "binary_event_active": 1,
       "binary_event_deadline": "2026-04-29T18:00Z"

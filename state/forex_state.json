@@ -1,9 +1,9 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-27T13:30Z",
-  "state_ts_utc": "2026-04-27T13:30Z",
-  "regime_note": "2026-04-27T13:30Z forex auto \u2014 1 evt: GOLD level_cross gold_sweep_4701_buy_retest fire#6@13:22Z @4701.69 \u2014 NO TRADE (comp=-25 weak, need \u2264-40; price now 4700.54, only 0.95pts above SL 4699.59; H4 bear FVG 4706.4-4708.72 overhead constrains TP=4705.5, R:R=1.72). 6 consecutive NO-TRADEs, comp stuck at -25. BoJ held 0.75% as expected \u2014 USDJPY@159.16 flat, weak JPY thesis intact, 160 red line still live. Iran talks stalling ('excessive US demands'), Hormuz still blocked \u2014 escalation regime unchanged. ADD gbpusd_liqsweep_135421_buy (tracking LIMIT@1.354215 dealId=..4354.. placed 13:19Z). USDCAD offer=1.36045 approaching SELL LIMIT@1.36103 (5.8p away). FOMC T-52.5h (caution activates at T<24h ~18:00Z Apr 28). daily_pnl=-$16.82. 0 pos 3 working. attention_covered=9/9.",
-  "regime_note_prev": "2026-04-27T13:09Z forex auto \u2014 2 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#5@13:00Z @1.17454 \u2014 NO TRADE (comp=+23.5 none <+40; H4 bull FVG 1.17328-1.17379 bars_ago=2 unmitigated, blocks TP path to 1.1729). 5 consecutive NO-TRADEs; comp stuck at +23.5. GBPUSD liquidity_sweep M15@13:00Z down-sweep 1.354215 wick=4.7p (5.9xATR) \u2014 ARMED GBPUSD BUY LIMIT@1.354215 size=10000 SL=1.353745 TP=1.35569 R:R=3.1 (comp=+50.5 moderate 4/4TF, half-size FOMC T-53h). GOLD@4696.2 H1 close 4699.35 \u2014 broke below 4700 escalation zone (comp=-25 weak, no trade). BoJ meeting today USDJPY@159.22 comp=-4 none. FOMC T-~53h. daily_pnl=-$16.82. 0 pos 3 working. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-27T13:45Z",
+  "state_ts_utc": "2026-04-27T13:45Z",
+  "regime_note": "2026-04-27T13:45Z forex auto \u2014 1 evt: GOLD level_cross gold_escalation_buy_zone fire#13@13:23Z @4700 \u2014 NO TRADE (comp=-25 weak, need \u2265moderate; validated alert earns naked LIMIT at mod+ but readiness insufficient; comp stuck at -25 for 7+ consecutive fires). AUDIT: REMOVE eurusd_sweep_117454_sell_watch (Rule2 fires=5 4h=0%); REMOVE usdcad_sell_fvg_13675 (stale/superseded); ADD usdcad_h4fvg_sell_retest@1.36103 (matches broker LIMIT). BROKER: 0 pos 3 working (USDCAD SELL@1.36103 3.9p from fill, GBPUSD BUY@1.354215, AUDUSD BUY@0.7143). FOMC T=52h (caution activates T<24h ~18:00Z Apr28). Iran escalation regime unchanged. daily_pnl=-$16.82. 0 pos 3 working. attention_covered=9/9.",
+  "regime_note_prev": "2026-04-27T13:30Z forex auto \u2014 1 evt: GOLD level_cross gold_sweep_4701_buy_retest fire#6@13:22Z @4701.69 \u2014 NO TRADE (comp=-25 weak, need \u2264-40; price now 4700.54, only 0.95pts above SL 4699.59; H4 bear FVG 4706.4-4708.72 overhead constrains TP=4705.5, R:R=1.72). 6 consecutive NO-TRADEs, comp stuck at -25. BoJ held 0.75% as expected \u2014 USDJPY@159.16 flat, weak JPY thesis intact, 160 red line still live. Iran talks stalling ('excessive US demands'), Hormuz still blocked \u2014 escalation regime unchanged. ADD gbpusd_liqsweep_135421_buy (tracking LIMIT@1.354215 dealId=..4354.. placed 13:19Z). USDCAD offer=1.36045 approaching SELL LIMIT@1.36103 (5.8p away). FOMC T-52.5h (caution activates at T<24h ~18:00Z Apr 28). daily_pnl=-$16.82. 0 pos 3 working. attention_covered=9/9.",
   "open_positions": [],
   "watchlist": [
     {
@@ -882,12 +882,6 @@
       "active": null
     },
     {
-      "alert_id": "usdcad_sell_fvg_13675",
-      "direction": "SELL",
-      "level": 1.3675,
-      "active": null
-    },
-    {
       "alert_id": "gold_sweep_4721_sell_retest",
       "direction": "SELL",
       "level": 4721.0,
@@ -909,12 +903,6 @@
       "alert_id": "gbpusd_sweep_135255_buy_watch",
       "direction": "BUY",
       "level": 1.352555,
-      "active": null
-    },
-    {
-      "alert_id": "eurusd_sweep_117454_sell_watch",
-      "direction": "SELL",
-      "level": 1.17454,
       "active": null
     },
     {
@@ -940,6 +928,20 @@
       "direction": "BUY",
       "level": 4700.0,
       "active": null
+    },
+    {
+      "alert_id": "usdcad_h4fvg_sell_retest",
+      "instrument": "USDCAD",
+      "direction": "SELL",
+      "level": 1.36103,
+      "active": true,
+      "entry_criterion": "H4 FVG top at 1.36103 retest; rejection wick or M15 bearish BOS close at level",
+      "regime_context": "USDCAD bearish comp=-46 moderate; H4 FVG fresh bars_ago=1; FOMC caution T>24h",
+      "sl": 1.3642,
+      "tp": 1.355,
+      "rr_target": 1.67,
+      "last_updated": "2026-04-27T13:45Z",
+      "note": "ENTRY: H4 FVG retest at 1.36103; LIMIT SELL already armed on broker (dealId 00000000-4e77-364d-...)\n\nCONTEXT: USDCAD bearish structure, comp=-46 moderate 3/4TF; H4 FVG bars_ago=1 unmitigated at entry time\n\nSL: 1.3642  TP: 1.355  R:R target: 1.67\n\nAdded 2026-04-27T13:45Z after broker LIMIT placed prior tick"
     }
   ],
   "structure_watch": [

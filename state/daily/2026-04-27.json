@@ -1568,5 +1568,63 @@
     "working_orders": 3,
     "attention_covered": "9/9",
     "summary": "GOLD level_cross gold_sweep_4701_buy_retest fire#6@13:22Z \u2014 NO TRADE (comp=-25 weak, need \u2264-40; price 4700.54 only 0.95pts above SL 4699.59; H4 FVG 4706.4-4708.72 overhead). BoJ held 0.75% \u2014 USDJPY@159.16 flat. Iran talks stalling. ADD gbpusd_liqsweep_135421_buy alert. USDCAD LIMIT 5.8p away."
+  },
+  {
+    "tick_ts_utc": "2026-04-27T13:45Z",
+    "events": [
+      "gold_escalation_buy_zone level_cross fire#13 @4700"
+    ],
+    "positions_opened": [],
+    "positions_closed": [],
+    "orders_placed": [],
+    "orders_cancelled": [],
+    "no_trade_reasons": {
+      "GOLD gold_escalation_buy_zone": "comp=-25 weak, need \u2265moderate; 7+ consecutive no-trade fires at this level"
+    },
+    "alerts_removed": [
+      "eurusd_sweep_117454_sell_watch (Rule2 fires=5 4h=0%)",
+      "usdcad_sell_fvg_13675 (stale/superseded)"
+    ],
+    "alerts_added": [
+      "usdcad_h4fvg_sell_retest@1.36103"
+    ],
+    "working_limits": [
+      {
+        "epic": "USDCAD",
+        "dir": "SELL",
+        "level": 1.36103,
+        "sl": 1.3642,
+        "tp": 1.355
+      },
+      {
+        "epic": "GBPUSD",
+        "dir": "BUY",
+        "level": 1.354215,
+        "sl": 1.353745,
+        "tp": 1.3564
+      },
+      {
+        "epic": "AUDUSD",
+        "dir": "BUY",
+        "level": 0.7143,
+        "sl": 0.713,
+        "tp": 0.7187
+      }
+    ],
+    "daily_pnl_usd": -16.82,
+    "regime": "ACTIVE_ESCALATION_US_IRAN_HORMUZ",
+    "binary_event": "FOMC 2026-04-29T18:00Z T=52h",
+    "attention_matrix": {
+      "EURUSD": "swing=WATCH scalp=N/A readiness=none reason: comp=+23.5 none; h4fvg@1.17328 in 15p proximity but need moderate",
+      "GBPUSD": "swing=ARMED scalp=ACTIVE readiness=moderate reason: LIMIT@1.354215 live on broker, comp=+50.5",
+      "AUDUSD": "swing=ARMED scalp=ACTIVE readiness=strong reason: LIMIT@0.7143 live on broker, comp=+71",
+      "USDJPY": "swing=WATCH scalp=OFF readiness=none reason: intervention zone@160 dist=80p, comp=-4 none",
+      "USDCAD": "swing=ARMED scalp=OFF readiness=moderate reason: SELL LIMIT@1.36103 3.9p from fill, comp=-46",
+      "USDCHF": "swing=WATCH scalp=OFF readiness=weak reason: sell retest@0.7875 dist=34p, comp=-28.5",
+      "GOLD": "swing=WATCH scalp=N/A readiness=weak reason: escalation zone firing but comp=-25 weak, 7 consecutive no-trades",
+      "OIL": "swing=WATCH scalp=N/A readiness=weak reason: sweep retests@93.23/93.51 dist>160p, comp=+39.5 weak",
+      "BTCUSD": "swing=WATCH scalp=N/A readiness=weak reason: h4bos@78356 dist=613pts, comp=+34.5 weak"
+    },
+    "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=KEEP USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked; no halts active"
   }
 ]
