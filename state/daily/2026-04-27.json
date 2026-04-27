@@ -2008,5 +2008,43 @@
     "closed": 1,
     "skipped": 0,
     "note": "15:09 UTC \u2014 2 evt: (1) GBPUSD position_closed SL@1.35491 trailing (+1.5R lock) pnl=+$6.30. (2) USDCHF M15 down-sweep@0.78320 wick=1.1p comp=-26 weak \u2192 ADD usdchf_m15sweep_7832_buy_watch WATCHLIST (no arming, |comp|<40). AUDUSD: correlation cap cleared, price 49p above 0.7143 (outside 30p proximity) \u2014 WATCH, arm LIMIT on retracement. USDCAD SELL@1.36106 open, age=71min, UPL\u2248-$0.90. Scalp: EURUSD/GBPUSD/AUDUSD ACTIVE no halts. News skip (<20min). daily_pnl=-$10.52. FOMC T\u224850h. attention_covered=9/9."
+  },
+  {
+    "tick_ts_utc": "2026-04-27T16:01Z",
+    "type": "heartbeat",
+    "events_processed": 0,
+    "positions_opened": 0,
+    "working_orders_placed": 1,
+    "positions_closed": 0,
+    "skipped": 0,
+    "actions": [
+      "GBPUSD LIMIT BUY @ 1.352555 SL=1.3515 TP=1.360 R:R=7.1 (corrected TP from 1.35393; comp=+50.5 moderate)",
+      "GBPUSD alert TP updated: 1.35393->1.360 (prior R:R=1.31 below floor)"
+    ],
+    "watchlist_changes": [
+      "MODIFY gbpusd_sweep_135255_buy_watch: TP corrected 1.35393->1.360, LIMIT ARMED dealId=00000000-4e77-b253-044a-beb40055311e"
+    ],
+    "positions_summary": {
+      "USDCAD": {
+        "dir": "SELL",
+        "entry": 1.36106,
+        "sl": 1.3642,
+        "tp": 1.355,
+        "upl": -0.84,
+        "age_h": 2.2
+      }
+    },
+    "working_orders": {
+      "GBPUSD": {
+        "dir": "BUY",
+        "limit": 1.352555,
+        "sl": 1.3515,
+        "tp": 1.36
+      }
+    },
+    "daily_pnl_usd": -10.52,
+    "float_usd": -0.84,
+    "binary_event": "FOMC T-49h",
+    "attention_covered": "9/9"
   }
 ]
