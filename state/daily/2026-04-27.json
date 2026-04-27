@@ -1125,5 +1125,26 @@
       "all proximity notes"
     ],
     "summary": "1 evt: GOLD M15 down-sweep @4701.76 wick=21.7p \u2192 ADD gold_sweep_4701_buy_retest WATCH (comp=-19.5 none). No trades. AUDUSD BUY@0.7143 + USDCAD SELL@1.3675 LIMITs active. FOMC T-2d caution. GOLD sell@4721 borderline prox but comp not met."
+  },
+  {
+    "tick_ts": "2026-04-27T09:58Z",
+    "events_processed": [
+      "evt_1777283665443_level_cross"
+    ],
+    "events_count": 1,
+    "actionable_events": 1,
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "working_limits": 2,
+    "daily_pnl": -16.82,
+    "alerts_added": [],
+    "alerts_removed": [
+      "oil_crude_retest_90_buy (dist=$5.09 ~3\u00d7H4ATR, stale)"
+    ],
+    "alerts_modified": [
+      "gold_sweep_4701_buy_retest (fire#1 proximity update)",
+      "proximity notes refreshed"
+    ],
+    "summary": "1 evt: GOLD level_cross gold_sweep_4701_buy_retest fire#1@09:54Z price=4701.27 \u2014 NO TRADE (comp=-19.5 none, |comp|<25 threshold). REMOVED oil_crude_retest_90_buy (stale, price at $95.39). AUDUSD BUY@0.7143 + USDCAD SELL@1.3675 LIMITs active. OIL daily low=$93.88 tested sweep_9323 zone. FOMC T-2d caution."
   }
 ]
