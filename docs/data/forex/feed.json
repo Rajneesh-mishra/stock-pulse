@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T19:41:52.548797Z",
+  "generated_at": "2026-04-27T20:34:43.261785Z",
   "ticks": [
     {
       "ts_utc": "2026-04-24T14:10:00Z",
@@ -80,81 +80,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "tick_ts_utc": "2026-04-27T06:57Z",
-      "events_processed": 1,
-      "events": [
-        "gbpusd_sweep_135370_sell_watch fire#4 level_cross 06:48Z \u2014 NO TRADE (M15 close above 1.3537, criterion not met)"
-      ],
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "working_orders": [
-        {
-          "epic": "AUDUSD",
-          "dir": "BUY",
-          "limit": 0.7143,
-          "sl": 0.713,
-          "tp": 0.7187,
-          "status": "ARMED"
-        },
-        {
-          "epic": "USDCAD",
-          "dir": "SELL",
-          "limit": 1.3675,
-          "sl": 1.3695,
-          "tp": 1.3595,
-          "status": "ARMED"
-        }
-      ],
-      "open_positions": 0,
-      "daily_pnl_usd": -16.82,
-      "account_balance": 974.9,
-      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "binary_event": "FOMC_2026-04-29 T-2d cal no blackout",
-      "confluence_snapshot": {
-        "EURUSD": {
-          "comp": 23.5,
-          "readiness": "none"
-        },
-        "GBPUSD": {
-          "comp": 48.0,
-          "readiness": "moderate",
-          "direction": "bullish"
-        },
-        "AUDUSD": {
-          "comp": 45.0,
-          "readiness": "moderate",
-          "direction": "bullish"
-        },
-        "USDJPY": {
-          "comp": 3.5,
-          "readiness": "none"
-        },
-        "USDCAD": {
-          "comp": -40.0,
-          "readiness": "moderate",
-          "direction": "bearish"
-        },
-        "USDCHF": {
-          "comp": -5.0,
-          "readiness": "none"
-        },
-        "GOLD": {
-          "comp": -12.0,
-          "readiness": "none"
-        },
-        "OIL_CRUDE": {
-          "comp": 40.0,
-          "readiness": "moderate",
-          "direction": "bullish"
-        },
-        "BTCUSD": {
-          "comp": 30.5,
-          "readiness": "weak"
-        }
-      },
-      "decision": "GBPUSD fire#4 at 1.3537 \u2014 M15 rejection criterion not met (close still above level). 4th consecutive WATCH. All working LIMITs KEEP."
     },
     {
       "tick_ts_utc": "2026-04-27T07:28Z",
@@ -1435,6 +1360,35 @@
       },
       "binary_event": "FOMC 2026-04-29T18:00Z T-46.4h (no caution yet, caution kicks T<24h ~18:00Z Apr28)",
       "scalp_audit": "EURUSD=KEEP(no trades) GBPUSD=KEEP(bull bias, no halt) AUDUSD=DISABLED(wr=11%/19trades) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
+    },
+    {
+      "tick_ts": "2026-04-27T20:34Z",
+      "events": 0,
+      "event_detail": "heartbeat",
+      "positions": 1,
+      "working_orders": 1,
+      "daily_pnl": -10.52,
+      "float_upl": -2.88,
+      "broker_balance": 978.32,
+      "actions": [
+        "hold USDCAD SELL@1.36106 age=6.6h UPL=-2.88 thesis-intact",
+        "hold GBPUSD LIMIT@1.352555 working bid=1.35322",
+        "AUDIT: fixed gold_safehaven_continuation_buy direction BUY->SELL",
+        "AUDIT: added notes to 7 bare level_alerts",
+        "news: BoC+FOMC both expected hold Apr29 \u2014 no regime shift"
+      ],
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "fomc_t_minus_h": 45.4,
+      "attention": {
+        "EURUSD": "swing=WATCH scalp=ACTIVE readiness=none comp=3",
+        "GBPUSD": "swing=ARMED(LIMIT working) scalp=ACTIVE readiness=moderate comp=+40",
+        "AUDUSD": "swing=WATCH(corr-cap) scalp=OFF readiness=moderate comp=+43.5",
+        "USDJPY": "swing=WATCH scalp=OFF readiness=none comp=24",
+        "USDCAD": "swing=NONE(in-pos) scalp=OFF readiness=moderate comp=-43.5",
+        "USDCHF": "swing=WATCH scalp=OFF readiness=none comp=3",
+        "GOLD": "swing=WATCH scalp=N/A readiness=weak comp=-25",
+        "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=weak comp=+36"
+      }
     }
   ]
 }
