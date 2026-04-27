@@ -1,9 +1,9 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-27T18:47Z",
-  "state_ts_utc": "2026-04-27T18:47Z",
-  "regime_note": "2026-04-27T18:47Z forex auto \u2014 1 evt (GOLD level_cross gold_sweep_4682_buy_watch): price=4681.89 crossed below 4682.3; comp=-25 weak bearish (need +40 bull to arm) \u2014 WATCH only. H4 bear FVG 4686.16-4699.59 overhead unmitigated, bearish pressure persists. USDCAD SELL@1.36106 age=4h57m UPL=-$2.07 thesis-intact comp=-43.5 mod-bear 4/4 TFs; trail needs 1.35792 (bid=1.36227, 43.5p against). GBPUSD LIMIT@1.352555 working (bid 8.45p above); comp=+40 mod bull, thesis intact. AUDUSD comp=+62.5 strong bull, corr-cap-full 2/2. FOMC T-47.2h. 1 pos 1 working. daily_pnl=-$10.52 float=-$2.07. attention_covered=9/9.",
-  "regime_note_prev": "2026-04-27T18:32Z forex auto \u2014 1 evt (GOLD level_cross gold_sweep_4682_buy_watch): comp=-22.5 none, H4 bear FVG 4686.16-4699.59 overhead unmitigated, WATCH (need +40 bull to arm). USDCAD SELL@1.36106 age=4.7h UPL=-$1.25 (improved from -$1.48) thesis-intact comp=-43.5 mod-bear 4/4 TFs; trail needs 1.35792 (40p move) \u2014 bid=1.36171 (6.5p against). GBPUSD LIMIT@1.352555 working (bid 9.4p above 1.35349); H1 bear FVG 1.35397-1.35417 formed overhead \u2014 may push toward limit; comp=+44 mod bull. AUDUSD comp=+62.5 strong bull, corr-cap-full 2/2. FOMC T-47.5h. 1 pos 1 working. daily_pnl=-$10.52 float=-$1.25. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-27T19:40Z",
+  "state_ts_utc": "2026-04-27T19:40Z",
+  "regime_note": "2026-04-27T19:40Z forex auto \u2014 1 evt (GOLD level_cross gold_sweep_4682_buy_watch): price=4676.91 below 4682.3 again; bearish breach confirmed, comp=-25 none \u2192 REMOVED from watchlist. USDCAD SELL@1.36106 age=5h50m UPL=-$2.99 thesis-intact comp=-43.5 mod-bear 4/4 TFs; trail needs 1.35792 (bid=1.3629, 43.3p against). GBPUSD LIMIT@1.352555 working (bid 8.4p above) comp=+40 mod-bull. AUDUSD comp=+37.5 weak (slipped from +62.5) corr-cap-full 2/2; scalp DISABLED. GOLD comp=-25 none, H4 bear FVG 4686-4699 overhead unmitigated. OIL@95.042 comp=+28.5 weak. FOMC T-46.4h. 1 pos 1 working. daily_pnl=-$10.52 float=-$2.99. attention_covered=9/9.",
+  "regime_note_prev": "2026-04-27T19:27Z forex auto \u2014 0 evt: heartbeat. USDCAD SELL@1.36106 age=5.5h UPL=-$2.32 thesis-intact comp=-43.5 mod-bear 4/4 TFs; CAD firm (7-wk high, oil +2.4%/stalled US-Iran talks, BoC hold Apr29). GBPUSD LIMIT@1.352555 working (bid 8.8p above) comp=+40 mod-bull. AUDUSD comp=+62.5 strong bull corr-cap-full; scalp DISABLED (wr=11% 19 trades). GOLD comp=-25 weak bear; gold_sweep_4682_buy_watch REMOVED (bearish breach). OIL +2.4% @95.08, comp=+33.5 weak bull. FOMC T-46.5h (Apr29 18:00Z hold expected). 1 pos 1 working. daily_pnl=-$10.52 float=-$2.32. attention_covered=9/9.",
   "open_positions": [
     {
       "dealId": "00000000-4e77-6243-044a-beb40055311e",
@@ -19,8 +19,8 @@
       "time_exit_utc": "2026-04-28T13:50Z",
       "rr": 1.93,
       "risk_usd": 6.28,
-      "upl_usd": -1.25,
-      "upl": -2.07
+      "upl_usd": -2.99,
+      "upl": -2.99
     }
   ],
   "watchlist": [
@@ -876,7 +876,7 @@
     "active": true,
     "name": "FOMC",
     "deadline_utc": "2026-04-29T18:00Z",
-    "t_minus_hours": 47.2,
+    "t_minus_hours": 46.4,
     "blackout": false,
     "caution": false,
     "note": "FOMC decision 2026-04-29T18:00Z + BoC decision 2026-04-29 (expected hold at 2.25% per TD Securities). T\u224851.2h: no blackout, caution activates T<24h (~18:00Z Apr28). FOMC 99.9% hold at 3.5-3.75%. BoC expected hold at 2.25% (mildly positive for USDCAD SELL \u2014 CAD not weakened by cut).",
@@ -971,19 +971,6 @@
       "level": 4700.0,
       "active": null,
       "instrument": "GOLD"
-    },
-    {
-      "alert_id": "gold_sweep_4682_buy_watch",
-      "instrument": "GOLD",
-      "direction": "buy",
-      "level": 4682.3,
-      "note": "ENTRY: price retests 4682-4686 zone; M15 bar closes AT or ABOVE 4682 with bullish rejection wick \u22652pts from the low. WATCHLIST ONLY \u2014 arm LIMIT BUY when |comp| \u226540 bullish.\n\nCONTEXT: Price broke through prior 4686 swept wick creating deeper structural level at 4682. comp=-25 weak bearish \u2014 below arming threshold. De-escalation risk (Iranian FM peace talks Apr27). FOMC T\u224848h.\n\nSL: 4672  TP: 4721  R:R target: 3.7\n\nsynced from watchlist_signals 2026-04-27T18:14Z",
-      "entry_criterion": "M15 retest of 4682-4686 with bullish rejection wick \u22652pts. WATCHLIST ONLY \u2014 arm at |comp|\u226540 bullish.",
-      "regime_context": "Prior 4686 sweep invalidated. New support at 4682. comp=-25 weak bearish. De-escalation risk from Iranian FM peace talks. FOMC T\u224848h. 4h time-stop if entered.",
-      "sl": 4672.0,
-      "tp": 4721.0,
-      "rr_target": "3.7",
-      "last_updated": "2026-04-27T18:14Z"
     },
     {
       "alert_id": "usdchf_m15sweep_7832_buy_watch",

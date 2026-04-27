@@ -2211,5 +2211,35 @@
     "binary_event": "FOMC T-47.2h",
     "attention": "9/9 covered",
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED"
+  },
+  {
+    "tick_ts": "2026-04-27T19:40Z",
+    "events": 1,
+    "event_detail": "1 GOLD level_cross (gold_sweep_4682_buy_watch bearish breach) + 7 bar_close (noise)",
+    "positions_open": 1,
+    "working_orders": 1,
+    "new_trades": 0,
+    "closed_trades": 0,
+    "daily_pnl": -10.52,
+    "float_upl": -2.99,
+    "total_exposure": -13.51,
+    "actions": [
+      "REMOVE gold_sweep_4682_buy_watch (bearish breach confirmed; price=4676.91 below 4682.3; comp=-25 none)",
+      "HOLD USDCAD SELL@1.36106 (age=5h50m, trend type, time_exit=2026-04-28T13:50Z, comp=-43.5 mod-bear intact)",
+      "HOLD GBPUSD LIMIT@1.352555 (bid 8.4p above, comp=+40 mod-bull intact)",
+      "Updated proximity notes for 11 remaining alerts"
+    ],
+    "attention_matrix": {
+      "EURUSD": "swing=WATCH scalp=ACTIVE readiness=none  H4 FVG overhead, comp=+10.5",
+      "GBPUSD": "swing=ARMED scalp=ACTIVE readiness=moderate  LIMIT working@1.352555",
+      "AUDUSD": "swing=WATCH scalp=OFF readiness=weak  comp=+37.5 slipped, corr-cap-full",
+      "USDJPY": "swing=WATCH scalp=OFF readiness=none  comp=+24 none, 160 red line 59.8p away",
+      "USDCAD": "swing=NONE scalp=OFF readiness=moderate  position open SELL@1.36106",
+      "USDCHF": "swing=WATCH scalp=OFF readiness=none  comp=+3 none, pip-conv-pending",
+      "GOLD": "swing=WATCH scalp=N/A readiness=weak  comp=-25 none, H4 FVG overhead 4686-4699",
+      "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=weak  comp=+28.5 weak"
+    },
+    "binary_event": "FOMC 2026-04-29T18:00Z T-46.4h (no caution yet, caution kicks T<24h ~18:00Z Apr28)",
+    "scalp_audit": "EURUSD=KEEP(no trades) GBPUSD=KEEP(bull bias, no halt) AUDUSD=DISABLED(wr=11%/19trades) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
   }
 ]
