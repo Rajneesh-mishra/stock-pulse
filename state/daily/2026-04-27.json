@@ -1099,5 +1099,31 @@
     "working_orders": 2,
     "alerts_active": 12,
     "note": "1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE. REMOVED gbpusd_sweep_135370_sell_watch (thesis invalidated). OIL comp +40 mod. 2 LIMITs: AUDUSD BUY@0.7143, USDCAD SELL@1.3675. attention_covered=9/9."
+  },
+  {
+    "tick_ts": "2026-04-27T09:43Z",
+    "events_processed": [
+      "evt_1777282980155_liquidity_sweep",
+      "evt_1777282983064_bar_close",
+      "evt_1777282985396_bar_close",
+      "evt_1777282987869_bar_close",
+      "evt_1777282990024_bar_close",
+      "evt_1777282992838_bar_close"
+    ],
+    "events_count": 6,
+    "actionable_events": 1,
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "working_limits": 2,
+    "daily_pnl": -16.82,
+    "alerts_added": [
+      "gold_sweep_4701_buy_retest"
+    ],
+    "alerts_removed": [],
+    "alerts_modified": [
+      "gold_sweep_4721_sell_retest (9f update)",
+      "all proximity notes"
+    ],
+    "summary": "1 evt: GOLD M15 down-sweep @4701.76 wick=21.7p \u2192 ADD gold_sweep_4701_buy_retest WATCH (comp=-19.5 none). No trades. AUDUSD BUY@0.7143 + USDCAD SELL@1.3675 LIMITs active. FOMC T-2d caution. GOLD sell@4721 borderline prox but comp not met."
   }
 ]
