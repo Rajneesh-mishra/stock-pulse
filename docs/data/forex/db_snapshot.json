@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-27T04:01:45.342187+00:00",
+  "generated_at": "2026-04-27T04:26:56.929000+00:00",
   "counts": {
     "trades": 17,
-    "events": 4180,
+    "events": 4211,
     "ticks": 59,
-    "regime_snapshots": 74,
+    "regime_snapshots": 75,
     "broker_positions": 0,
     "counterfactuals": 58
   },
@@ -370,6 +370,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-27T03:58Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "03:58 forex auto \u2014 4 liq_sweep evt (AUDUSD@0.7176 1.6p, USDJPY@159.203 1.0p, EURUSD@1.17318 0.9p, GBPUSD@1.35471 1.6p) + 7 bar_close. AUDUSD sweep: entry@0.7174 passed (bid=0.71741 below), primary LIMIT BUY@0.7143 ARMED (comp=+45 mod, 3f/100%4h validated). USDCAD SELL@1.3675 ARMED (comp=-40 mod, 4/4 TF). USDJPY sweep 159.203: SKIP (readiness=none comp=-1.5, scalp disabled). EURUSD sweep 1.17318: SKIP (readiness=none comp=+23.5<40). GBPUSD sweep 1.35471: new resistance above 1.3537; entry@1.354465 passed (price below); monitoring M15 rejection below 1.3537 (comp=+53 mod ext MET). GOLD@4724 comp=-4.5 none bearish (need +40 bullish ext for sell@4721 \u2014 not met, 9th approach, validated 8f/100%4h WATCH). OIL@94.26 dist=$1.03 within prox($1.14) of 93.23 but comp=+27 weak (need \u226540 mod). BTC@79084 dist=$728 outside prox($267) H4BOS@78356 WATCH. FOMC T-2d (Apr 29 18:00Z, active=false, no blackout). BOJ 0.75% hold confirmed. Regime ACTIVE_ESCALATION stable. 0 trades 0pos 2 working. attention_covered=9/9.",
+      "binary_event_name": "FOMC_2026-04-29",
+      "binary_event_active": 0,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
       "ts_utc": "2026-04-27T03:39Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "03:39 forex auto \u2014 1 evt: level_cross(GOLD gold_sweep_4721_sell_retest@4721.26). comp=-12 bearish (readiness=none); counter-trend sell requires |comp|\u226540 BULLISH extension NOT MET; 8th fire, 100%4h validated \u2014 WATCH ONLY, no LIMIT armed. AUDUSD BUY@0.7143 KEEP (comp=+45 mod, 4/4 TF, validated 3f/100%4h). USDCAD SELL@1.3675 KEEP (comp=-40 mod, 4/4 TF). GBPUSD@1.35408 above sweep 1.3537 \u2014 monitoring M15 rejection close (|comp|=+53 met, no bar yet). BTC@79216 dist=$860 H4BOS@78356 WATCH (comp=+60 strong but outside prox). FOMC T-2d (Apr 29 18:00Z, active=false, no blackout). Hormuz blockade ACTIVE_ESCALATION stable. 0 trades 0pos 2 working. attention_covered=9/9.",
@@ -437,14 +445,6 @@
       "ts_utc": "2026-04-27T00:09Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "00:09 forex auto \u2014 20 evt: 1 level_cross(AUDUSD audusd_m15fvg_buy_7143 \u2014 price at zone 0.7143-0.7146) + 19 bar_close. NO ENTRY AUDUSD: comp=+21.5 none (need \u226540). H1+H4 bear FVGs now mitigated \u2014 cleaner structure. GBPUSD LIMIT BUY@1.3506 KEEP (comp=+27.5 weak, degraded from +45.5 mod; thesis not invalidated \u2014 Day+H4 bullish). BTC LIMIT SELL@78914 KEEP (comp=+60 strong bullish extension; dist=$212 < $323 prox = ARMED counter-trend). OIL comp=+40 mod; both buy levels outside prox (93.23 dist=$1.88, 90.30 dist=$4.82). GOLD comp=-22 none; H1 FVG sell zone 4685-4705 dist=$6 below (needs retracement). USDCAD comp=-37.5 weak; price=1.36772 AT level 1.3675; 2.5pts from arming (need \u2264-40). FOMC T-2d calendar, no blackout. 0 trades 0pos 2 working. attention_covered=9/9.",
-      "binary_event_name": "FOMC_2026-04-29",
-      "binary_event_active": 0,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-04-27T05:01Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "05:01 forex auto \u2014 1 evt: level_cross(GOLD gold_sweep_4679_buy_retest \u2014 price crossed DOWN through 4679.96, bid=4677.19; buy thesis INVALIDATED, alert REMOVED). Market OPEN Asia. BOJ hold 0.75% confirmed. FOMC T-2d cal. GOLD comp=-21 none bearish; H1 bear FVG 4685-4705 overhead \u2014 new sell WATCH gold_h1fvg_sell_4695 added. gold_sweep_4721 KEEP (dist=$43.8, 3\u00d7H4ATR=$107.7; needs |comp|\u226540 bull extension). GBPUSD LIMIT BUY@1.3506 KEEP (bid=1.35145, 4.8p above; comp=+45.5 mod \u2014 upgraded from weak). OIL comp=+40.0 mod (up from weak); both buy levels 93.23/90.30 far (dist=$1.87/$4.80 outside prox). BTC comp=+52.5 mod; FVG dist=$1097 outside prox; session high sell 78914 dist=$833 outside prox. USDCAD comp=-37.5 weak (need \u2264-40; price@1.36784 AT sell level \u2014 very close). USDJPY comp=+34.5 weak; dist=43p below 160. AUDUSD comp=+19 none; inside H4 FVG zone \u2014 needs M15 close >0.7146 first. 0 trades 0pos 1 working. attention_covered=9/9.",
       "binary_event_name": "FOMC_2026-04-29",
       "binary_event_active": 0,
       "binary_event_deadline": "2026-04-29T18:00Z"

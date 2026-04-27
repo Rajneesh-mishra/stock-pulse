@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-27T03:58Z",
+  "last_updated_by_claude": "2026-04-27T04:25Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -116,20 +116,20 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "ENTRY: price retests 1.35370 from below on M15; bar closes back below with rejection wick \u22652p from the high. Counter-trend entry \u2014 requires readiness \u2265moderate (|comp|\u226540 bullish extension) to arm.\n\nCONTEXT: M15 up-sweep Apr 24 20:45 UTC, wick=2.2p beyond 1.35370, closed back at 1.35331. Bullish +48 mod = counter-trend extension signal. Active LIMIT BUY at 1.35060 is bullish primary; this sell at 1.35370 is range upper boundary.\n\nSL: 1.35450  TP: 1.35100  R:R target: 3.4\n\nadded 2026-04-25T04:21Z \u2014 liquidity_sweep event, counter-trend WATCH pending Mon open retest.",
-      "entry_criterion": "price retests 1.35370 from below; M15 bar closes back below with rejection wick \u22652p. Requires |comp|\u226540 bullish extension to arm.",
-      "regime_context": "M15 up-sweep Apr 24 20:45 UTC (1.3537) + NEW M15 up-sweep Apr 27 03:45Z (1.354705, 1.6p wick). Double resistance at 1.3537/1.3547. comp=+53 mod bullish = extension gauge for counter-trend fade. M15 rejection close below 1.3537 is the entry trigger.",
-      "sl": 1.3545,
-      "tp": 1.351,
-      "rr_target": "3.4",
-      "current_price_ref": 1.35408,
+      "note": "ENTRY: M15 rejection close below 1.35370 with wick \u22652p from high after retest of dual resistance 1.3537/1.3548 zone. Counter-trend \u2014 enter MARKET on close. Requires |comp|\u226540 bullish extension.\n\nCONTEXT: Two M15 up-sweeps: Apr 24 20:45Z (1.3537) and Apr 27 03:45Z (1.3548, day high 1.3548). Dual resistance zone. comp=+53 mod = extension gauge. Counter-trend fade on rejection close below 1.3537.\n\nSL: 1.3558  TP: 1.3505  R:R target: 1.52\n\nmodified 2026-04-27T04:25Z \u2014 SL raised 1.3545\u21921.3558 (above Apr27 sweep high 1.3548); TP adjusted 1.3510\u21921.3505 to maintain R:R\u22651.5.",
+      "entry_criterion": "M15 rejection close below 1.35370 with wick \u22652p from high. Requires |comp|\u226540 bullish extension. Enter MARKET on M15 close \u2014 LIMIT not applicable (price above entry level).",
+      "regime_context": "Dual resistance: 1.3537 (Apr24 sweep) + 1.3548 (Apr27 day high sweep). comp=+53 mod bullish = extension signal for counter-trend sell. 1f/0%4h \u2014 new alert, no validation. MARKET on M15 rejection confirmation.",
+      "sl": 1.3558,
+      "tp": 1.3505,
+      "rr_target": "1.52",
+      "current_price_ref": 1.35447,
       "price_ref": {
-        "ts": "2026-04-27T03:39Z",
-        "price": 1.35408
+        "ts": "2026-04-27T04:25Z",
+        "price": 1.35447
       },
-      "last_updated": "2026-04-27T03:15Z",
-      "updated_utc": "2026-04-27T03:39Z",
-      "proximity": "GBPUSD@1.354525; price above 1.3537 zone. NEW M15 up-sweep at 1.354705 (1.6p wick, 03:45Z) creates higher resistance \u2014 entry@1.354465 passed (already below current price). |comp|=+53 mod bullish (counter-trigger MET). Dual resistance: 1.3537 (original sweep) + 1.3547 (new sweep). Monitor M15 rejection close BELOW 1.35370 with wick \u22652p. WATCH."
+      "last_updated": "2026-04-27T04:25Z",
+      "updated_utc": "2026-04-27T04:25Z",
+      "proximity": "GBPUSD@1.35447; AT dual resistance zone 1.3537/1.3548. |comp|=+53 mod bullish (counter-trigger MET). SL=1.3558 (above day high 1.3548). Monitor M15 rejection close BELOW 1.35370 with wick \u22652p \u2192 MARKET SELL."
     },
     {
       "id": "audusd_m15fvg_buy_7143",
@@ -221,26 +221,26 @@
       "validated": true
     },
     {
-      "id": "gold_h1fvg_sell_4695",
-      "instrument": "GOLD",
-      "level": 4695.0,
-      "emit_on": "cross_up",
-      "cooldown_sec": 1800,
-      "direction": "sell",
-      "note": "ENTRY: price retraces into H1 bear FVG zone 4685-4705; M15 bar closes back below 4695 with bearish rejection wick \u22652pts from the high. Requires readiness \u2265 moderate (comp \u2264-40 bearish) to arm anticipation LIMIT SELL.\n\nCONTEXT: H1 bear FVG unmitigated at 4685-4705.37 (bars_ago=1). H4 bear FVG above at 4710-4713.75 (unmitigated). Price broke below M15 sweep low 4679.96 \u2014 now trading 4677. Next support: M15 bull OB 4657-4668. FVGs above form resistance for any bounce.\n\nSL: 4707  TP: 4660  R:R target: 3.2\n\nadded 2026-04-27T05:01Z \u2014 gold_sweep_4679_buy_retest removed (price broke below 4679.96); H1 FVG overhead as sell zone for any bounce.",
-      "entry_criterion": "M15 bar closes back below 4695 with bearish rejection wick \u22652pts from the high after retracing into 4685-4705. Requires comp \u2264-40 (readiness \u2265 moderate) to arm LIMIT SELL.",
-      "regime_context": "H1 bear FVG at 4685-4705 (unmitigated, 1 bar old). H4 bear FVG at 4710-4713 overhead. Gold broke below M15 sweep low 4679.96 \u2014 bearish momentum. Next support: M15 bull OB 4657-4668. comp=-21 none bearish \u2014 WATCH until comp \u2264-40.",
-      "sl": 4707.0,
-      "tp": 4660.0,
-      "rr_target": "3.2",
-      "current_price_ref": 4722.09,
+      "id": "btcusd_h4fvg_79025_buy",
+      "instrument": "BTCUSD",
+      "level": 79025.0,
+      "emit_on": "cross_down",
+      "cooldown_sec": 3600,
+      "direction": "buy",
+      "note": "ENTRY: price pulls back to H4 bull FVG zone 78939-79025; M15 rejection wick ≥$100 bullish from FVG zone confirms support. LIMIT BUY ARMED at 79025 (dealId 00000000-4e76-892b-044a-beb40055311e). comp=+60 strong — no confirmation required.\n\nCONTEXT: H4 bull FVG unmitigated bars_ago=1 (formed 2026-04-27T00:00Z). H4 BOS bullish at 78356. comp=+60 strong 4/4TF. BTC +1.1% on day. Fresh structural support — highest probability buy zone before BOS retest.\n\nSL: 78700  TP: 80500  R:R target: 4.5\n\nadded 2026-04-27T04:25Z — H4 FVG bars_ago=1, comp=+60 strong, LIMIT ARMED size=0.04.",
+      "entry_criterion": "Pullback into H4 FVG zone 78939-79025; M15 bullish rejection wick ≥$100 from zone. LIMIT ARMED at 79025. comp=+60 strong — no additional confirmation needed.",
+      "regime_context": "H4 bull FVG bars_ago=1 (fresh, unmitigated). H4 BOS at 78356 confirms uptrend. comp=+60 strong, all TFs agree bullish. BTC +1.1% day. LIMIT BUY active at 79025.",
+      "sl": 78700.0,
+      "tp": 80500.0,
+      "rr_target": "4.5",
+      "current_price_ref": 79041.0,
       "price_ref": {
-        "ts": "2026-04-27T03:39Z",
-        "price": 4722.09
+        "ts": "2026-04-27T04:25Z",
+        "price": 79041.0
       },
-      "last_updated": "2026-04-27T05:01:00Z",
-      "updated_utc": "2026-04-27T03:39Z",
-      "proximity": "GOLD@4722.09; dist=27.09pts ABOVE 4695 \u2014 above FVG zone 4685-4705. comp=-12 none (need \u2264-40 mod bearish to arm). WATCH for pullback to zone."
+      "last_updated": "2026-04-27T04:25Z",
+      "updated_utc": "2026-04-27T04:25Z",
+      "proximity": "BTC@79041; dist=$16 above LIMIT 79025 (inside prox H1ATR=$390). LIMIT BUY ARMED dealId=00000000-4e76-892b-044a-beb40055311e. comp=+60 strong. ARMED."
     },
     {
       "id": "btcusd_h4bos_78356_buy",

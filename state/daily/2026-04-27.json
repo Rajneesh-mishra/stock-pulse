@@ -496,5 +496,49 @@
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
     "attention_covered": "9/9",
     "account_balance": 987.93
+  },
+  {
+    "tick_ts_utc": "2026-04-27T04:25Z",
+    "events_processed": 0,
+    "events_type": "heartbeat",
+    "trades_opened": 1,
+    "trades_closed": 0,
+    "positions_open": 0,
+    "working_orders": 3,
+    "new_orders": [
+      {
+        "epic": "BTCUSD",
+        "type": "LIMIT",
+        "direction": "BUY",
+        "level": 79025,
+        "size": 0.04,
+        "sl": 78700,
+        "tp": 80500,
+        "dealId": "00000000-4e76-892b-044a-beb40055311e",
+        "reason": "H4 FVG bars_ago=1 unmitigated, comp=+60 strong 4/4TF, R:R=4.5"
+      }
+    ],
+    "watchlist_changes": [
+      "REMOVE gold_h1fvg_sell_4695 (price 4677\u21924727 through FVG zone, thesis void)",
+      "MODIFY gbpusd_sweep_135370_sell_watch: SL 1.3545\u21921.3558 (above Apr27 day high 1.3548), TP 1.3510\u21921.3505, R:R=1.52",
+      "ADD btcusd_h4fvg_79025_buy (H4 FVG bars_ago=1, comp=+60 strong, LIMIT ARMED)"
+    ],
+    "confluence_summary": {
+      "AUDUSD": "comp=+45 mod 4/4TF ARMED@0.7143",
+      "USDCAD": "comp=-40 mod 4/4TF ARMED@1.3675",
+      "GBPUSD": "comp=+53 mod WATCH dual-resist 1.3537/1.3548",
+      "EURUSD": "comp=+23.5 none WATCH",
+      "USDJPY": "comp=-6.5 none WATCH (BOJ today)",
+      "USDCHF": "comp=-5.0 none WATCH",
+      "GOLD": "comp=-4.5 none WATCH 4721",
+      "OIL_CRUDE": "comp=+27 weak WATCH 93.23",
+      "BTCUSD": "comp=+60 strong ARMED@79025 H4FVG"
+    },
+    "balance": 987.93,
+    "available": 960.42,
+    "daily_pnl": 0.0,
+    "scalp_status": "EURUSD/GBPUSD/AUDUSD active no-halt",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "notes": "BTC LIMIT BUY at H4 FVG 79025: risk_guard approved, size=0.04, risk=1.32%. Gold h1fvg 4695 alert removed (invalidated). GBPUSD SL updated above new sweep high 1.3548."
   }
 ]
