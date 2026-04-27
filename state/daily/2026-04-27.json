@@ -984,5 +984,38 @@
     "gbpusd": "fire#5 at 1.3537, comp=+53 mod extension MET, criterion NOT MET \u2014 WATCH",
     "attention_covered": "9/9",
     "scalp_status": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=ACTIVE no halts"
+  },
+  {
+    "tick_ts_utc": "2026-04-27T08:11Z",
+    "events_processed": 1,
+    "events_noise": 5,
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "skipped": 1,
+    "daily_pnl_usd": -16.82,
+    "open_positions": 0,
+    "working_orders": 2,
+    "actions": [
+      "AUDUSD liquidity_sweep M15@0.71784 wick=1.0p (0.22\u00d7ATR) WATCH-ONLY: wick<1\u00d7ATR, entry passed, bull FVG obstacle",
+      "ADD alert: audusd_sweep_71784_sell_watch (WATCH-ONLY)",
+      "MODIFY gbpusd_pullback_buy_1350: removed stale LIMIT-working claim, no broker order",
+      "MODIFY btcusd_sweep_78369_sell_retest: removed stale LIMIT-working claim, WATCH-ONLY at comp=+30.5",
+      "AUDUSD BUY LIMIT@0.7143 KEEP (validated 100%4h)",
+      "USDCAD SELL LIMIT@1.3675 KEEP (comp=-40 mod)",
+      "scalp bias: AUDUSD neutral\u2192bull, GBPUSD neutral\u2192bull"
+    ],
+    "attention_matrix": {
+      "EURUSD": "swing=NONE scalp=ACTIVE readiness=none (+23.5) \u2014 below threshold, no active alert",
+      "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=moderate (+53) \u2014 pullback_buy@1.3506 dist=38p > 30p ARM threshold",
+      "AUDUSD": "swing=ARMED scalp=ACTIVE readiness=moderate (+45) \u2014 BUY LIMIT@0.7143 working (validated 100%4h); sweep sell WATCH-ONLY",
+      "USDJPY": "swing=WATCH scalp=OFF readiness=none (+3.5) \u2014 intervention zone 160.05 dist=80.5p; scalp pip-conv pending",
+      "USDCAD": "swing=ARMED scalp=OFF readiness=moderate (-40) \u2014 SELL LIMIT@1.3675 working; scalp pip-conv pending",
+      "USDCHF": "swing=NONE scalp=OFF readiness=none (-5) \u2014 no active alert; scalp pip-conv pending",
+      "GOLD": "swing=WATCH scalp=N/A (spread 5p) readiness=none (-14.5) \u2014 gold_escalation buy zone 4700 dist=12.68p KEEP; sweep sell 4721 dist=8.32p needs comp\u2265+25",
+      "OIL_CRUDE": "swing=WATCH scalp=N/A (spread 4p) readiness=moderate (+45) \u2014 sweep_9323 buy at 93.23 dist=251p >> 30p ARM",
+      "BTCUSD": "swing=WATCH scalp=N/A (spread 50p) readiness=weak (+30.5) \u2014 dayfvg buy@76960 dist=766p; sweep sell@78369 WATCH-ONLY (H4 BOS broken, comp weak)"
+    },
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "FOMC_2026-04-29 (active=false, T-34h, no blackout/caution)"
   }
 ]
