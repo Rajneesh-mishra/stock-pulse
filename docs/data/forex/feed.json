@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T12:58:11.449510Z",
+  "generated_at": "2026-04-27T13:30:08.433895Z",
   "ticks": [
     {
       "ts_utc": "2026-04-24T14:10:00Z",
@@ -80,44 +80,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "tick_ts_utc": "2026-04-27T01:00Z",
-      "events": 1,
-      "events_detail": [
-        "level_cross(BTCUSD btcusd_sweep_78914_sell_watch \u2014 LIMIT SELL@78914 filled)"
-      ],
-      "new_positions": [
-        {
-          "instrument": "BTCUSD",
-          "direction": "SELL",
-          "entry": 78914.65,
-          "sl": 79300,
-          "tp": 77600,
-          "size": 0.013,
-          "thesis": "validated_sweep_retest",
-          "comp_at_entry": 60.0
-        }
-      ],
-      "new_orders": [
-        {
-          "instrument": "USDCAD",
-          "direction": "SELL",
-          "limit": 1.3675,
-          "sl": 1.3695,
-          "tp": 1.3595,
-          "size": 3000
-        }
-      ],
-      "closed_positions": [],
-      "watchlist_changes": [
-        "REMOVED btcusd_day_fvg_buy (stale dist=$2281>3xH4ATR=$1994)",
-        "ADDED btcusd_h4bos_78356_buy (H4 BOS structural support)"
-      ],
-      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "positions_open": 1,
-      "working_orders": 2,
-      "note": "BTC LIMIT SELL@78914 filled via btcusd_sweep_78914_sell_watch level_cross. USDCAD LIMIT SELL@1.3675 armed (comp=-40 mod-bearish threshold reached)."
     },
     {
       "tick_ts_utc": "2026-04-27T01:20Z",
@@ -1337,6 +1299,23 @@
       },
       "binary_event": "FOMC Apr 29 18:00Z T-53.1h; BoJ Apr 27-28 today",
       "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED"
+    },
+    {
+      "tick_ts_utc": "2026-04-27T13:30Z",
+      "events_processed": [
+        "evt_1777296121704_level_cross"
+      ],
+      "events_count": 1,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 1,
+      "binary": "FOMC T-52.5h",
+      "scalp": "ACTIVE (EURUSD/GBPUSD/AUDUSD no halt)",
+      "daily_pnl": -16.82,
+      "open_positions": 0,
+      "working_orders": 3,
+      "attention_covered": "9/9",
+      "summary": "GOLD level_cross gold_sweep_4701_buy_retest fire#6@13:22Z \u2014 NO TRADE (comp=-25 weak, need \u2264-40; price 4700.54 only 0.95pts above SL 4699.59; H4 FVG 4706.4-4708.72 overhead). BoJ held 0.75% \u2014 USDJPY@159.16 flat. Iran talks stalling. ADD gbpusd_liqsweep_135421_buy alert. USDCAD LIMIT 5.8p away."
     }
   ]
 }

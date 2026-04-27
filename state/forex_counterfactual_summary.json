@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T12:57:25.709005+00:00",
+  "generated_at": "2026-04-27T13:29:10.888643+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -57,7 +57,7 @@
       "alert_id": "gold_escalation_buy_zone",
       "instrument": "GOLD",
       "direction": "buy",
-      "fires": 11,
+      "fires": 12,
       "by_horizon": {
         "1h": {
           "filled": 10,
@@ -629,18 +629,18 @@
       "alert_id": "eurusd_sweep_117454_sell_watch",
       "instrument": "EURUSD",
       "direction": "sell",
-      "fires": 4,
+      "fires": 5,
       "by_horizon": {
         "1h": {
-          "filled": 3,
+          "filled": 4,
           "favorable": 3,
-          "avg_pips": 3.2,
-          "hit_rate": 1.0
+          "avg_pips": 1.8,
+          "hit_rate": 0.75
         },
         "4h": {
-          "filled": 1,
+          "filled": 2,
           "favorable": 0,
-          "avg_pips": -3.8,
+          "avg_pips": -4.9,
           "hit_rate": 0.0
         },
         "24h": {
@@ -655,7 +655,7 @@
       "alert_id": "gold_sweep_4701_buy_retest",
       "instrument": "GOLD",
       "direction": "buy",
-      "fires": 4,
+      "fires": 5,
       "by_horizon": {
         "1h": {
           "filled": 3,
