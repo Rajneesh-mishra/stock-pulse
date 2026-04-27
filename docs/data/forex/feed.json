@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T13:37:20.729507Z",
+  "generated_at": "2026-04-27T13:54:17.034907Z",
   "ticks": [
     {
       "ts_utc": "2026-04-24T14:10:00Z",
@@ -80,19 +80,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "tick_ts_utc": "2026-04-27T02:07Z",
-      "events": 0,
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "positions_open": 0,
-      "working_orders": 3,
-      "balance_usd": 987.93,
-      "daily_pnl_usd": 0.0,
-      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "binary_event": "none",
-      "notes": "heartbeat 0-evt. 3 LIMITs working: GBPUSD BUY@1.3506, AUDUSD BUY@0.7143, USDCAD SELL@1.3675. FOMC T-2d 99%hold. Hormuz ceasefire extended, standoff ongoing. GOLD comp=-19.5 none. BTC comp=+60 strong H4BOS watch. OIL comp=+37.5 weak."
     },
     {
       "tick_ts_utc": "2026-04-27T02:38Z",
@@ -1360,6 +1347,95 @@
         "BTCUSD": "swing=WATCH scalp=N/A readiness=weak reason: h4bos@78356 dist=613pts, comp=+34.5 weak"
       },
       "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=KEEP USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked; no halts active"
+    },
+    {
+      "tick_ts_utc": "2026-04-27T13:51Z",
+      "type": "heartbeat",
+      "events_consumed": 0,
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "working_limits": 3,
+      "working_limit_detail": [
+        {
+          "epic": "USDCAD",
+          "dir": "SELL",
+          "level": 1.36103,
+          "bid_now": 1.36089,
+          "pips_away": 1.4,
+          "status": "FILL_IMMINENT"
+        },
+        {
+          "epic": "GBPUSD",
+          "dir": "BUY",
+          "level": 1.354215,
+          "bid_now": 1.354375,
+          "pips_away": 16.0,
+          "status": "ARMED"
+        },
+        {
+          "epic": "AUDUSD",
+          "dir": "BUY",
+          "level": 0.7143,
+          "bid_now": 0.71867,
+          "pips_away": 43.0,
+          "status": "ARMED"
+        }
+      ],
+      "daily_pnl_usd": -16.82,
+      "account_balance": 974.9,
+      "audit": {
+        "removed": [
+          {
+            "id": "gold_sweep_4701_buy_retest",
+            "reason": "SL=4699.59 breached, GOLD@4690.3"
+          },
+          {
+            "id": "eurusd_sweep_117454_sell_watch",
+            "reason": "Rule2: fires=5 4h=0%"
+          }
+        ],
+        "kept": 14,
+        "added": 0
+      },
+      "confluence_snapshot": {
+        "EURUSD": {
+          "comp": 21.0,
+          "readiness": "none"
+        },
+        "GBPUSD": {
+          "comp": 50.5,
+          "readiness": "moderate"
+        },
+        "AUDUSD": {
+          "comp": 48.5,
+          "readiness": "moderate"
+        },
+        "USDJPY": {
+          "comp": 6.0,
+          "readiness": "none"
+        },
+        "USDCAD": {
+          "comp": -46.0,
+          "readiness": "moderate"
+        },
+        "USDCHF": {
+          "comp": -26.0,
+          "readiness": "weak"
+        },
+        "GOLD": {
+          "comp": -25.0,
+          "readiness": "weak"
+        },
+        "OIL_CRUDE": {
+          "comp": 39.5,
+          "readiness": "weak"
+        },
+        "BTCUSD": {
+          "comp": 34.5,
+          "readiness": "weak"
+        }
+      },
+      "scalp_status": "EURUSD/GBPUSD/AUDUSD=active no-halt; daily_pnl=0"
     }
   ]
 }

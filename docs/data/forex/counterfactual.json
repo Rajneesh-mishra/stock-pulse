@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T13:36:24.828774+00:00",
+  "generated_at": "2026-04-27T13:53:49.836356+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -60,10 +60,10 @@
       "fires": 12,
       "by_horizon": {
         "1h": {
-          "filled": 10,
+          "filled": 11,
           "favorable": 9,
-          "avg_pips": 25.1,
-          "hit_rate": 0.9
+          "avg_pips": 17.5,
+          "hit_rate": 0.82
         },
         "4h": {
           "filled": 10,
@@ -658,10 +658,62 @@
       "fires": 5,
       "by_horizon": {
         "1h": {
-          "filled": 3,
+          "filled": 4,
           "favorable": 3,
-          "avg_pips": 60.0,
-          "hit_rate": 1.0
+          "avg_pips": 26.5,
+          "hit_rate": 0.75
+        },
+        "4h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "24h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        }
+      }
+    },
+    {
+      "alert_id": "gbpusd_liqsweep_135421_buy",
+      "instrument": "GBPUSD",
+      "direction": "buy",
+      "fires": 1,
+      "by_horizon": {
+        "1h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "4h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "24h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        }
+      }
+    },
+    {
+      "alert_id": "usdcad_h4fvg_sell_retest",
+      "instrument": "USDCAD",
+      "direction": "sell",
+      "fires": 1,
+      "by_horizon": {
+        "1h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
         },
         "4h": {
           "filled": 0,
