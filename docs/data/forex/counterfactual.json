@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T02:43:24.731335+00:00",
+  "generated_at": "2026-04-27T02:57:40.312744+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -239,7 +239,7 @@
       "alert_id": "gold_sweep_4721_sell_retest",
       "instrument": "GOLD",
       "direction": "sell",
-      "fires": 6,
+      "fires": 7,
       "by_horizon": {
         "1h": {
           "filled": 6,

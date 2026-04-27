@@ -1,13 +1,6 @@
 {
-  "generated_at": "2026-04-27T02:44:10.955595Z",
+  "generated_at": "2026-04-27T02:58:21.644051Z",
   "ticks": [
-    {
-      "ts": "2026-04-23T08:09:00Z",
-      "events_processed": 1,
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "summary": "1 news_flash us_tariff Chatham House Feb 17 archive 'reset' solo-match non-altering; DROPPED 'reset'; 4 alerts KEEP carried; 0 trades 0pos"
-    },
     {
       "ts": "2026-04-23T17:14:22Z",
       "summary": "2026-04-23T17:14:22Z \u2014 17:07 forex auto \u2014 21 evt gap since 12:34 (4.5h): 6 usdjpy_audits (iran_ceasefire 'extension' kw from Reuters/Al-Jazeera/Detroit-News/Caspian/Daily-Pioneer/WaPo \u2014 ALL iteration of indefinite-extension regime NOT thesis-altering) + 3 oil_audits (ship-traffic + extension-coverage NOT altering) + 4 liquidity_sweeps (USDCHF 0.78602 up-sell readiness=none skip / GBPUSD 1.35133 up",
@@ -608,6 +601,14 @@
       "decisions": "GBPUSD level_cross at 1.35370: |comp|=+48 mod, counter-trigger MET. SELL LIMIT not armable (price above level). Monitoring for M15 rejection close. GBPUSD BUY@1.3506 KEEP. AUDUSD BUY@0.7143 KEEP. USDCAD SELL@1.3675 KEEP.",
       "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "attention_covered": "9/9"
+    },
+    {
+      "ts_utc": "2026-04-27T03:00Z",
+      "events_in": 1,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 1,
+      "note": "03:00 forex auto \u2014 1 evt: level_cross(GOLD gold_sweep_4721_sell_retest@4721.065). GOLD comp=-14.5 none. Entry criterion: |comp|\u226540 BULLISH extension. NOT MET (comp=-14.5 bearish). Validated alert (7 fires, 100%4h hit rate) \u2014 WATCH, arm next tick if comp flips to +40+ bullish. GBPUSD bid=1.35372 at sweep level 1.3537; comp=+53 mod counter-trigger MET; SELL LIMIT not armable (price at level, offer 1.35385<1.3537 = immediate fill = rejected); monitoring M15 bar close below 1.3537 for market SELL. BUY LIMIT@1.3506 intact. AUDUSD BUY LIMIT@0.7143 KEEP (comp=+45 mod). USDCAD SELL LIMIT@1.3675 KEEP (comp=-40 mod). BTC comp=+60 strong H4BOS@78356 dist=$858>$424 prox WATCH. OIL +32.5 weak dist=1.04 inside prox needs +40. USDJPY +3.5 none BoJ hold confirmed 0.75%. FOMC T-2d no blackout. 0 trades 0pos 3 working. attention_covered=9/9."
     }
   ]
 }
