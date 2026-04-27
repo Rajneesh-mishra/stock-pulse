@@ -2319,5 +2319,21 @@
     "scalp_status": "EURUSD+GBPUSD active AUDUSD disabled(wr=11%)",
     "regime_note": "heartbeat: USDCAD SELL@1.36106 thesis-intact mod-bear; GBPUSD LIMIT working; AUDUSD strong corr-cap-full; FOMC caution T-19h",
     "attention_covered": "9/9"
+  },
+  {
+    "tick_ts_utc": "2026-04-27T23:55Z",
+    "events": 0,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 0,
+    "positions": 1,
+    "working_orders": 1,
+    "daily_pnl": -10.52,
+    "float": -2.11,
+    "broker_balance": 979.01,
+    "binary_event": "FOMC T-42.1h (caution @18:00Z Apr28)",
+    "scalp_status": "EURUSD+GBPUSD active AUDUSD disabled(wr=11%)",
+    "regime_note": "heartbeat: USDCAD SELL@1.36106 age=10.1h thesis-intact mod-bear; GBPUSD LIMIT@1.352555 working; AUDUSD strong corr-cap-full; FOMC caution T-42.1h @18:00Z Apr28; OIL $95.47 broker; no new entries",
+    "attention_covered": "9/9"
   }
 ]
