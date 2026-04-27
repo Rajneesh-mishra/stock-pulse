@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-27T02:07Z",
+  "last_updated_by_claude": "2026-04-27T02:38Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -122,14 +122,14 @@
       "sl": 1.3545,
       "tp": 1.351,
       "rr_target": "3.4",
-      "current_price_ref": 1.35354,
+      "current_price_ref": 1.35387,
       "price_ref": {
-        "ts": "2026-04-27T02:07Z",
-        "price": 1.35354
+        "ts": "2026-04-27T02:38Z",
+        "price": 1.35387
       },
-      "last_updated": "2026-04-25T04:21:00Z",
-      "updated_utc": "2026-04-27T02:07Z",
-      "proximity": "GBPUSD@1.35354; dist=1.6p BELOW 1.3537 \u2192 inside 30p prox. |comp|=+48 mod bullish (counter-trigger \u226540 MET). Execution conflict with active LIMIT BUY@1.3506. WATCH \u2014 arm after BUY resolves."
+      "last_updated": "2026-04-27T02:38:00Z",
+      "updated_utc": "2026-04-27T02:38Z",
+      "proximity": "GBPUSD@1.35387; level_cross fired 02:37Z at price=1.353715. |comp|=+48 mod bullish (counter-trigger \u226540 MET). Cannot arm SELL LIMIT at 1.35370 \u2014 price above level, would fill immediately (API rejects SELL LIMIT below current offer). Monitoring for M15 close back below 1.35370 with rejection wick \u22652p \u2014 market entry on confirmation. Conflict: LIMIT BUY@1.3506 still active. WATCH."
     },
     {
       "id": "audusd_m15fvg_buy_7143",

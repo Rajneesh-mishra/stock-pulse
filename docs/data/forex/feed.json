@@ -1,13 +1,6 @@
 {
-  "generated_at": "2026-04-27T02:08:18.517302Z",
+  "generated_at": "2026-04-27T02:44:10.955595Z",
   "ticks": [
-    {
-      "ts": "2026-04-23T07:14:00Z",
-      "events_processed": 10,
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "summary": "3 liq_sweep readiness=none NOT-ACTIONABLE + 7 bar_close; 3 KEEP carried"
-    },
     {
       "ts": "2026-04-23T08:09:00Z",
       "events_processed": 1,
@@ -595,6 +588,26 @@
       "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "binary_event": "none",
       "notes": "heartbeat 0-evt. 3 LIMITs working: GBPUSD BUY@1.3506, AUDUSD BUY@0.7143, USDCAD SELL@1.3675. FOMC T-2d 99%hold. Hormuz ceasefire extended, standoff ongoing. GOLD comp=-19.5 none. BTC comp=+60 strong H4BOS watch. OIL comp=+37.5 weak."
+    },
+    {
+      "tick_ts_utc": "2026-04-27T02:38Z",
+      "events_processed": 1,
+      "events": [
+        {
+          "id": "evt_1777257467753_level_cross",
+          "type": "level_cross",
+          "instrument": "GBPUSD",
+          "alert_id": "gbpusd_sweep_135370_sell_watch"
+        }
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "positions_after": 0,
+      "working_orders_after": 3,
+      "balance": 987.93,
+      "decisions": "GBPUSD level_cross at 1.35370: |comp|=+48 mod, counter-trigger MET. SELL LIMIT not armable (price above level). Monitoring for M15 rejection close. GBPUSD BUY@1.3506 KEEP. AUDUSD BUY@0.7143 KEEP. USDCAD SELL@1.3675 KEEP.",
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "attention_covered": "9/9"
     }
   ]
 }
