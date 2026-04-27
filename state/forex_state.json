@@ -1,26 +1,10 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-27T01:00Z",
-  "state_ts_utc": "2026-04-27T01:00Z",
-  "regime_note": "01:00 forex auto \u2014 1 evt: level_cross(BTCUSD btcusd_sweep_78914_sell_watch \u2014 LIMIT SELL@78914 filled 00:53 UTC). BTC SELL 0.013 @ 78914.65 OPEN (SL=79300 TP=77600 R:R=3.4; comp=+60 strong bullish extension corroborates counter-trend fade; thesis=validated_sweep_retest; 4h time-stop 04:54 UTC; UPL=-$1.17 at fill). USDCAD LIMIT SELL@1.3675 NEW (comp=-40.0 mod bearish 4/4 TF; size=3000; SL=1.3695 TP=1.3595 R:R=4.0; risk~$4.4). GBPUSD LIMIT BUY@1.3506 KEEP (comp=+48 mod bullish; bid=1.35257; 22p above limit). btcusd_day_fvg_buy REMOVED (stale: dist=$2281 > 3\u00d7H4ATR=$1994). btcusd_h4bos_78356_buy ADDED (H4 BOS 78356 structural support, trend-aligned). FOMC T-2d cal no blackout. 1 trade 1pos 2 working. attention_covered=9/9.",
-  "regime_note_prev": "00:09 forex auto \u2014 20 evt: 1 level_cross(AUDUSD audusd_m15fvg_buy_7143 \u2014 price at zone 0.7143-0.7146) + 19 bar_close. NO ENTRY AUDUSD: comp=+21.5 none (need \u226540). H1+H4 bear FVGs now mitigated \u2014 cleaner structure. GBPUSD LIMIT BUY@1.3506 KEEP (comp=+27.5 weak, degraded from +45.5 mod; thesis not invalidated \u2014 Day+H4 bullish). BTC LIMIT SELL@78914 KEEP (comp=+60 strong bullish extension; dist=$212 < $323 prox = ARMED counter-trend). OIL comp=+40 mod; both buy levels outside prox (93.23 dist=$1.88, 90.30 dist=$4.82). GOLD comp=-22 none; H1 FVG sell zone 4685-4705 dist=$6 below (needs retracement). USDCAD comp=-37.5 weak; price=1.36772 AT level 1.3675; 2.5pts from arming (need \u2264-40). FOMC T-2d calendar, no blackout. 0 trades 0pos 2 working. attention_covered=9/9.",
-  "open_positions": [
-    {
-      "deal_id": "00000000-4e76-58eb-044a-beb40055311e",
-      "instrument": "BTCUSD",
-      "direction": "SELL",
-      "size": 0.013,
-      "entry_price": 78914.65,
-      "sl": 79300.0,
-      "tp": 77600.0,
-      "opened_at": "2026-04-27T00:53:57Z",
-      "thesis_type": "validated_sweep_retest",
-      "time_exit_utc": "2026-04-27T04:53:57Z",
-      "alert_id": "btcusd_sweep_78914_sell_watch",
-      "readiness_at_entry": "strong (counter-trend: |comp|=60)",
-      "note": "Counter-trend SELL at Asia session high 78914. comp=+60 STRONG bullish extension corroborates fade. 4h time-stop."
-    }
-  ],
+  "tick_ts_utc": "2026-04-27T02:07Z",
+  "state_ts_utc": "2026-04-27T02:07Z",
+  "regime_note": "02:07 forex auto \u2014 0 evt heartbeat. GBPUSD LIMIT BUY@1.3506 KEEP (comp=+48 mod 4/4, bid=1.35354, 29p prox). AUDUSD LIMIT BUY@0.7143 KEEP (comp=+45 mod 4/4, bid=0.71677, 25p prox). USDCAD LIMIT SELL@1.3675 KEEP (comp=-40 mod 4/4, bid=1.36617, 13p prox). GOLD comp=-19.5 none; gold_h1fvg_sell_4695 WATCH (price=4704.51, comp\u2264-40 not met); gold_sweep_4721 WATCH (|comp|\u226540 bullish not met). BTC comp=+60 strong; H4BOS@78356 WATCH (dist=$852>prox$437). OIL comp=+37.5 weak (need \u226540 for oil_sweep_9323 arming). News: FOMC T-2d 99%hold; Hormuz ceasefire extended, standoff/seizures ongoing \u2014 gold/oil bid intact. 0 trades 0pos 3 working. attention_covered=9/9.",
+  "regime_note_prev": "06:35 forex auto \u2014 3 evt: position_closed(BTCUSD SL@79300 pnl=-$5.01; counter-trend fade failed; BTC cont +1.5% to 79374); level_cross(GOLD gold_h1fvg_sell_4695 price=4696.57 \u2014 comp=-19.5 none, NO ENTRY; price continued to 4709). AUDUSD LIMIT BUY@0.7143 NEW (comp=+40 mod 4/4; retest H4 FVG break 0.7146; size=3500; SL=0.7130 TP=0.7187 R:R=3.4; risk=$4.55=0.46%). btcusd_sweep_78914_sell_watch REMOVED (trade stopped, price $460 above level). GBPUSD LIMIT BUY@1.3506 KEEP (comp=+48 mod 4/4; bid=1.35293). USDCAD LIMIT SELL@1.3675 KEEP (comp=-40 mod 4/4; bid=1.3666). GOLD@4709 inside 4721 prox ($12<$30 floor) \u2014 comp=-19.5 none (need |comp|>=40 bullish for gold_sweep_4721) WATCH. FOMC T-2d cal no blackout. 0 pos 3 working. attention_covered=9/9.",
+  "open_positions": [],
   "watchlist": [
     {
       "instrument": "AUDUSD",
@@ -216,6 +200,25 @@
       "alert_id": "btcusd_sweep_78369_sell_retest",
       "confluence_at_entry": "+60 STRONG bull (corroborates counter-trend fade)",
       "result": "win"
+    },
+    {
+      "trade_id": "btcusd_sweep_78914_sell_20260427",
+      "instrument": "BTCUSD",
+      "direction": "SELL",
+      "entry": 78914.65,
+      "close": 79300.0,
+      "size": 0.013,
+      "sl": 79300.0,
+      "tp": 77600.0,
+      "opened_at": "2026-04-27T00:53:57Z",
+      "closed_at": "2026-04-27T00:55:38Z",
+      "hold_min": 1.7,
+      "thesis_type": "validated_sweep_retest",
+      "exit_reason": "SL_hit (BTC broke above 79300 within 2min; counter-trend fade failed; price reached 79374)",
+      "pnl_usd": -5.01,
+      "alert_id": "btcusd_sweep_78914_sell_watch",
+      "confluence_at_entry": "+60 STRONG bull (corroborates counter-trend fade)",
+      "result": "loss"
     }
   ],
   "consecutive_losses": 1,

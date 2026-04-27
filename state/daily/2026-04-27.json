@@ -332,5 +332,32 @@
     "positions_open": 1,
     "working_orders": 2,
     "note": "BTC LIMIT SELL@78914 filled via btcusd_sweep_78914_sell_watch level_cross. USDCAD LIMIT SELL@1.3675 armed (comp=-40 mod-bearish threshold reached)."
+  },
+  {
+    "tick_ts_utc": "2026-04-27T01:20Z",
+    "events_processed": [
+      "position_opened(BTCUSD SELL@78914.65)",
+      "position_closed(BTCUSD SL\u224879300 pnl\u2248-$5.01)",
+      "level_cross(GOLD gold_h1fvg_sell_4695@4696.57 comp=-22 NO_ENTRY)"
+    ],
+    "trades_opened": 0,
+    "trades_closed": 1,
+    "positions_after": 0,
+    "working_orders": 3,
+    "balance": 987.93,
+    "notes": "BTC sell LIMIT filled then SL hit within 2min. btcusd_sweep_78914_sell_watch REMOVED. 3 LIMITs working: AUDUSD BUY@0.7143 USDCAD SELL@1.3675 GBPUSD BUY@1.3506. FOMC T-2d."
+  },
+  {
+    "tick_ts_utc": "2026-04-27T02:07Z",
+    "events": 0,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "positions_open": 0,
+    "working_orders": 3,
+    "balance_usd": 987.93,
+    "daily_pnl_usd": 0.0,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "none",
+    "notes": "heartbeat 0-evt. 3 LIMITs working: GBPUSD BUY@1.3506, AUDUSD BUY@0.7143, USDCAD SELL@1.3675. FOMC T-2d 99%hold. Hormuz ceasefire extended, standoff ongoing. GOLD comp=-19.5 none. BTC comp=+60 strong H4BOS watch. OIL comp=+37.5 weak."
   }
 ]

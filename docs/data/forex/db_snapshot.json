@@ -1,14 +1,35 @@
 {
-  "generated_at": "2026-04-27T01:00:48.170522+00:00",
+  "generated_at": "2026-04-27T02:06:08.752621+00:00",
   "counts": {
-    "trades": 16,
-    "events": 4050,
+    "trades": 17,
+    "events": 4100,
     "ticks": 59,
-    "regime_snapshots": 66,
+    "regime_snapshots": 69,
     "broker_positions": 0,
     "counterfactuals": 55
   },
   "trades_last_50": [
+    {
+      "id": 458890,
+      "source": "swing",
+      "epic": "BTCUSD",
+      "direction": "SELL",
+      "size": 0.013,
+      "entry_price": null,
+      "sl": 79300.0,
+      "tp": 77600.0,
+      "exit_price": null,
+      "opened_at": "2026-04-27T00:53:57Z",
+      "closed_at": "2026-04-27T00:55:38Z",
+      "open_reason": null,
+      "close_reason": "loss",
+      "thesis_type": null,
+      "realized_pnl_usd": null,
+      "realized_pnl_pips": null,
+      "held_minutes": null,
+      "shadow": 0,
+      "broker_deal_id": null
+    },
     {
       "id": 416777,
       "source": "swing",
@@ -349,6 +370,30 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-27T01:20Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "01:20 forex auto \u2014 3 evt: position_opened(BTCUSD SELL@78914.65 filled via prior LIMIT), position_closed(BTCUSD SELL@78914.65 SL\u224879300 pnl\u2248-$5.01; BTC continued past SL within 2min), level_cross(GOLD gold_h1fvg_sell_4695@4696.57 \u2014 comp=-22 none, NO ENTRY; price back at 4692.92). btcusd_sweep_78914_sell_watch REMOVED (thesis invalidated, SL hit, BTC $225 above level). BTC H4BOS buy@78356 WATCH (dist=$784>prox $409). AUDUSD LIMIT BUY@0.7143 KEEP (comp=+40 mod 4/4, price=0.71618 above level). USDCAD LIMIT SELL@1.3675 KEEP (comp=-40 mod 4/4, H1 bear FVG at level, 8p below). GBPUSD LIMIT BUY@1.3506 KEEP (comp=+48 mod 4/4, price=1.35299 above level). GOLD@4692.92 on H4 bull OB top: sell FVG@4695 WATCH (comp=-22 none, need \u2264-40); 4721 sweep sell WATCH (need |comp|\u226540 bull). OIL comp=+40 mod; sweep 93.23 dist=$1.66 outside prox. FOMC T-2d cal no blackout. 0 pos 3 working. attention_covered=9/9.",
+      "binary_event_name": "FOMC_2026-04-29",
+      "binary_event_active": 0,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
+      "ts_utc": "2026-04-27T06:35Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "06:35 forex auto \u2014 3 evt: position_closed(BTCUSD SL@79300 pnl=-$5.01; counter-trend fade failed; BTC cont +1.5% to 79374); level_cross(GOLD gold_h1fvg_sell_4695 price=4696.57 \u2014 comp=-19.5 none, NO ENTRY; price continued to 4709). AUDUSD LIMIT BUY@0.7143 NEW (comp=+40 mod 4/4; retest H4 FVG break 0.7146; size=3500; SL=0.7130 TP=0.7187 R:R=3.4; risk=$4.55=0.46%). btcusd_sweep_78914_sell_watch REMOVED (trade stopped, price $460 above level). GBPUSD LIMIT BUY@1.3506 KEEP (comp=+48 mod 4/4; bid=1.35293). USDCAD LIMIT SELL@1.3675 KEEP (comp=-40 mod 4/4; bid=1.3666). GOLD@4709 inside 4721 prox ($12<$30 floor) \u2014 comp=-19.5 none (need |comp|>=40 bullish for gold_sweep_4721) WATCH. FOMC T-2d cal no blackout. 0 pos 3 working. attention_covered=9/9.",
+      "binary_event_name": "FOMC_2026-04-29",
+      "binary_event_active": 0,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
+      "ts_utc": "2026-04-27T01:00Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "01:00 forex auto \u2014 1 evt: level_cross(BTCUSD btcusd_sweep_78914_sell_watch \u2014 LIMIT SELL@78914 filled 00:53 UTC). BTC SELL 0.013 @ 78914.65 OPEN (SL=79300 TP=77600 R:R=3.4; comp=+60 strong bullish extension corroborates counter-trend fade; thesis=validated_sweep_retest; 4h time-stop 04:54 UTC; UPL=-$1.17 at fill). USDCAD LIMIT SELL@1.3675 NEW (comp=-40.0 mod bearish 4/4 TF; size=3000; SL=1.3695 TP=1.3595 R:R=4.0; risk~$4.4). GBPUSD LIMIT BUY@1.3506 KEEP (comp=+48 mod bullish; bid=1.35257; 22p above limit). btcusd_day_fvg_buy REMOVED (stale: dist=$2281 > 3\u00d7H4ATR=$1994). btcusd_h4bos_78356_buy ADDED (H4 BOS 78356 structural support, trend-aligned). FOMC T-2d cal no blackout. 1 trade 1pos 2 working. attention_covered=9/9.",
+      "binary_event_name": "FOMC_2026-04-29",
+      "binary_event_active": 0,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
       "ts_utc": "2026-04-27T00:09Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "00:09 forex auto \u2014 20 evt: 1 level_cross(AUDUSD audusd_m15fvg_buy_7143 \u2014 price at zone 0.7143-0.7146) + 19 bar_close. NO ENTRY AUDUSD: comp=+21.5 none (need \u226540). H1+H4 bear FVGs now mitigated \u2014 cleaner structure. GBPUSD LIMIT BUY@1.3506 KEEP (comp=+27.5 weak, degraded from +45.5 mod; thesis not invalidated \u2014 Day+H4 bullish). BTC LIMIT SELL@78914 KEEP (comp=+60 strong bullish extension; dist=$212 < $323 prox = ARMED counter-trend). OIL comp=+40 mod; both buy levels outside prox (93.23 dist=$1.88, 90.30 dist=$4.82). GOLD comp=-22 none; H1 FVG sell zone 4685-4705 dist=$6 below (needs retracement). USDCAD comp=-37.5 weak; price=1.36772 AT level 1.3675; 2.5pts from arming (need \u2264-40). FOMC T-2d calendar, no blackout. 0 trades 0pos 2 working. attention_covered=9/9.",
@@ -400,30 +445,6 @@
       "ts_utc": "2026-04-26T20:02Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "20:02 forex auto \u2014 1 evt news_flash(fed_fomc) \u2014 GoldSilver Apr-23 FOMC preview (stale republish), non-altering, consumed. Market CLOSED weekend (FX opens ~22:00 UTC; BTC@78270 live). BOJ Apr 27-28 T-0d meeting underway \u2014 hold consensus intact (confirmed news). USDJPY@159.384 dist=61.6p from 160 intervention zone; comp=+19.5 none. FOMC Apr 29-30 T-2d(UTC) cal, no blackout. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP(dist=20.6p ARMED; BOJ hold = USD neutral/weak). BTCUSD LIMIT SELL@78369 comp=+60 STRONG counter-trend fade KEEP(dist=99p; 24/7 market). GOLD none(-10.5) @4710.6 WATCH(val sell@4721 not armed: |comp|=10.5<40; buy@4775 too far). OIL weak(+29.5) sweep_9323 dist=$0.97 WATCH(val 6f/100%4h; comp needs\u2192moderate). AUDUSD weak(+29) M15FVG@0.71426 dist=5.9p WATCH(comp needs\u2192moderate). USDCAD weak(-29) FVG@1.3675 dist=6.4p WATCH. 10 alerts all KEEP. 0 trades 0pos. attention_covered=9/9.",
-      "binary_event_name": "iran_ceasefire_indefinite_extension",
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-04-26T19:40Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "19:40 forex auto \u2014 1 evt liquidity_sweep(BTCUSD H1 up-sweep 78369.4 \u2192 sell). Market CLOSED weekend (BTC 24/7). BOJ Apr 27-28 T-0d (hold confirmed, USDJPY@159.38 dist=66p from 160). FOMC Apr 29-30 T-3d cal. BTCUSD: H1 up-sweep 78369.4 (wick 154p, close 78091). LIMIT SELL@78369 armed, SL=78524, TP=77700, R:R=4.3, 0.5% risk. BTC conf=+60 STRONG bull \u2014 extension corroborates counter-trend fade. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP(dist=27p ARMED). GOLD none(-10.5) @4710 inside 4695-4715 zone WATCH(val). OIL weak(+29.5) sweep_9323 dist=$0.97 WATCH(val 6f/100%4h). USDJPY none(+19.5) intervention@160.05 dist=66p WATCH. 9 alerts KEEP+1 ADD. 0 trades 0pos. attention_covered=9/9.",
-      "binary_event_name": "iran_ceasefire_indefinite_extension",
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-04-26T19:28Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "2026-04-26T19:28Z tick: 0 evt heartbeat. Market CLOSED weekend(BTC@78264). BOJ T-0d started(announcement expected Apr27~14UTC, hold consensus). USDJPY@159.38 dist=66p from 160.05(intervention zone). FOMC T-3d (Apr29-30). GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP(dist=27.1p ARMED). BTC STRONG(+60) FVG@76960 dist=$1304 WATCH. GOLD none(-10.5) @4710.6 inside 4695-4715 zone WATCH(val). OIL weak(+29.5) sweep_9323 dist=$0.97 WATCH(val). AUDUSD weak(+29) FVG@0.7143 dist=7.3p WATCH. USDCAD weak(-29) FVG@1.3675 dist=6.4p WATCH. 8 alerts KEEP. 0 trades 0pos. attention_covered=9/9.",
-      "binary_event_name": "iran_ceasefire_indefinite_extension",
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-04-26T18:19:22Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "18:19 forex auto \u2014 0 evt heartbeat. Market CLOSED weekend (BTC@78102). BOJ Apr 27-28 T-0d (hold confirmed per news; USDJPY@159.34, intervention zone 160 dist=66p \u2014 approach risk elevated Mon open). FOMC Apr 29-30 T-3d \u2014 calendar only, no blackout. Regime ACTIVE_ESCALATION confirmed (Hormuz blockade persists, oil/gold supply-risk thesis intact). GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP (dist=20.6p ARMED; BOJ hold may strengthen USD \u2192 higher fill probability). BTC comp=+60 STRONG FVG@76960 dist=$1142 WATCH. GOLD none(-10.5) between 4700-4721 WATCH (val buy 80%4h, val sell 100%4h). OIL weak(+29.5) sweep_9323 dist=$0.93 WATCH (val 6f/100%4h; Hormuz supply-risk bid). AUDUSD weak(+29) M15FVG@0.7143 dist=6.4p WATCH. USDCAD weak(-29) FVG@1.3675 dist=10.4p WATCH. USDJPY none(+19.5) intervention@160.05 dist=66p WATCH (BOJ hold \u2192 JPY drift higher; fade alert armed for Mon). 8 alerts all KEEP (no staleness, no counterfactual prune). 0 trades 0pos. scalp halt={}. attention_covered=9/9.",
       "binary_event_name": "iran_ceasefire_indefinite_extension",
       "binary_event_active": 0,
       "binary_event_deadline": null
