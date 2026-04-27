@@ -2062,5 +2062,59 @@
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
     "binary_event": "FOMC T-49h",
     "note": "Heartbeat tick. bar_close noise only. USDCAD SELL thesis intact (-43.5 moderate). GBPUSD LIMIT@1.352555 working. AUDUSD strong (+68.5) but corr cap full. News: FOMC hold priced, Canada trade headwinds persist."
+  },
+  {
+    "tick_ts_utc": "2026-04-27T17:44Z",
+    "events_processed": 1,
+    "events": [
+      "level_cross:GOLD:gold_sweep_4682_buy_watch@4681.19 cross_down \u2014 comp=-25 weak bearish (<+40 threshold) \u2192 NO TRADE, watchlist only"
+    ],
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "open_positions": [
+      {
+        "epic": "USDCAD",
+        "dir": "SELL",
+        "entry": 1.36106,
+        "size": 2000,
+        "upl": -1.42,
+        "age_h": 4.0,
+        "bid": 1.36183
+      }
+    ],
+    "working_orders": [
+      {
+        "epic": "GBPUSD",
+        "dir": "BUY",
+        "type": "LIMIT",
+        "level": 1.352555,
+        "sl": 1.3515,
+        "tp": 1.36,
+        "bid": 1.354015,
+        "dist_p": 14.6
+      }
+    ],
+    "prices": {
+      "GOLD": 4681.28,
+      "EURUSD": 1.17262,
+      "GBPUSD": 1.35402,
+      "AUDUSD": 0.71916,
+      "USDCAD": 1.36187,
+      "USDJPY": 159.366
+    },
+    "confluence": {
+      "GOLD": "-25 WEAK",
+      "USDCAD": "-43.5 MOD",
+      "GBPUSD": "+50.5 MOD",
+      "AUDUSD": "+71.0 STRONG"
+    },
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "FOMC T-48h (caution activates T-24h ~18:00Z Apr28)",
+    "watchlist_changes": "2 alerts modified (proximity/note update): audusd_m15fvg_buy_7143 corr-cap note corrected; gold_sweep_4682_buy_watch proximity updated after level_cross",
+    "scalp_halts": "none",
+    "daily_pnl": -10.52,
+    "float_pnl": -1.42,
+    "attention_covered": "9/9",
+    "note": "1 evt GOLD level_cross; no trade (comp insufficient); all positions HOLD; FOMC caution T-24h tomorrow"
   }
 ]

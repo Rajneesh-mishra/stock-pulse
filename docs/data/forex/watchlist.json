@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes — daemon picks up within one tick. No numeric cap on alert count — every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-27T16:01Z",
+  "last_updated_by_claude": "2026-04-27T17:44Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 — strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -93,9 +93,9 @@
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "ENTRY: M15 bar closes ABOVE H4 bear FVG top 0.7146; enter on retest of 0.7143–0.7146 from above with bullish rejection wick ≥2p from the low. VALIDATED — naked LIMIT at readiness ≥ moderate (comp ≥40 bullish). No M15 rejection confirmation required.\n\nCONTEXT: AUDUSD comp=+71 strong (4/4 TFs). VALIDATED: 3 fires, 4h hit_rate=100% per Rule 3. Correlation cap CLEARED 2026-04-27T14:56Z (GBPUSD BUY closed at +$6.30 trailing SL). Price at 0.71919 — 49p ABOVE level (outside 30p proximity threshold). Arm LIMIT@0.7143 immediately when price retraces within 30p of level.\n\nSL: 0.7130  TP: 0.7187  R:R target: 2.4\n\nupdated 2026-04-27T15:09Z — correlation cap cleared; price outside proximity; waiting for retracement to 0.7143 zone.",
+      "note": "ENTRY: M15 bar closes ABOVE H4 bear FVG top 0.7146; enter on retest of 0.7143–0.7146 from above with bullish rejection wick ≥2p from the low. VALIDATED — naked LIMIT at readiness ≥ moderate (comp ≥40 bullish). No M15 rejection confirmation required.\n\nCONTEXT: AUDUSD comp=+71 strong (4/4 TFs). VALIDATED: 3 fires, 4h hit_rate=100% per Rule 3. Correlation cap 2/2 (USDCAD SELL + GBPUSD LIMIT@1.352555 placed 16:01Z Apr27). Price at 0.71916 — 49p ABOVE level (outside 30p proximity threshold). Arm LIMIT@0.7143 when price retraces within 30p AND corr cap opens (one position closes).\n\nSL: 0.7130  TP: 0.7187  R:R target: 2.4\n\nupdated 2026-04-27T17:44Z — corr cap restored to 2/2 after GBPUSD LIMIT placed 16:01Z; AUDUSD still blocked.",
       "entry_criterion": "M15 bar closes ABOVE H4 bear FVG top 0.7146; enter on retest of 0.7143–0.7146 from above with bullish rejection wick ≥2p. VALIDATED — naked LIMIT at comp ≥40 bullish.",
-      "regime_context": "AUDUSD comp=+71 strong (4/4 TFs). 3 fires, 4h=100% → Rule 3 validated. Correlation cap cleared 14:56Z Apr27 (GBPUSD closed). Price 49p above level. Arm LIMIT when price retraces to 0.7143.",
+      "regime_context": "AUDUSD comp=+71 strong (4/4 TFs). 3 fires, 4h=100% → Rule 3 validated. Correlation cap 2/2 (USDCAD SELL + GBPUSD LIMIT@1.352555 placed 16:01Z Apr27). Price 49p above level. Arm LIMIT when price retraces to 0.7143 AND corr cap opens.",
       "sl": 0.713,
       "tp": 0.7187,
       "rr_target": "2.4",
@@ -106,7 +106,7 @@
       },
       "last_updated": "2026-04-27T15:09Z",
       "updated_utc": "2026-04-27T15:09Z",
-      "proximity": "AUDUSD@0.71919; 49p ABOVE level (threshold=30p, outside). comp=+71 strong. VALIDATED (3f 4h=100%). Correlation cap CLEARED. Arm LIMIT when price returns to 0.7143.",
+      "proximity": "AUDUSD@0.71916; 49p ABOVE level (threshold=30p, outside). comp=+71 strong. VALIDATED (3f 4h=100%). Corr cap 2/2 (USDCAD+GBPUSD LIMIT). WATCH — arm LIMIT@0.7143 when price in proximity AND corr cap opens.",
       "validated": true
     },
     {
@@ -271,7 +271,8 @@
       },
       "last_updated": "2026-04-27T14:57Z",
       "updated_utc": "2026-04-27T14:57Z",
-      "proximity": "GOLD@4682.3; at new swept zone 4682-4686. comp=-25 weak (below 40 threshold). WATCHLIST ONLY until |comp|≥40 bullish."
+      "proximity": "GOLD@4681.3; 1p BELOW 4682.3 (level_cross event 17:39Z). comp=-25 weak bearish (need +40 bull). WATCHLIST ONLY — M15 bull FVG at 4678.6-4679.58 below; level barely breached. Wait for M15 close AT or ABOVE 4682 with rejection wick.",
+      "updated_utc": "2026-04-27T17:44Z"
     },
     {
       "id": "usdchf_m15sweep_7832_buy_watch",

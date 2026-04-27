@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T17:10:14.183540Z",
+  "generated_at": "2026-04-27T17:46:59.433894Z",
   "ticks": [
     {
       "ts_utc": "2026-04-24T14:10:00Z",
@@ -80,44 +80,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "tick_ts_utc": "2026-04-27T05:10Z",
-      "events_count": 1,
-      "events": [
-        "daily_pnl_threshold(warn)"
-      ],
-      "positions_opened": 0,
-      "positions_closed": 0,
-      "open_positions": [
-        {
-          "epic": "BTCUSD",
-          "direction": "BUY",
-          "entry": 79024.5,
-          "size": 0.04,
-          "sl": 78700,
-          "tp": 80500,
-          "upl_approx": -12.0
-        }
-      ],
-      "working_orders": [
-        {
-          "epic": "AUDUSD",
-          "direction": "BUY",
-          "level": 0.7143,
-          "type": "LIMIT"
-        },
-        {
-          "epic": "USDCAD",
-          "direction": "SELL",
-          "level": 1.3675,
-          "type": "LIMIT"
-        }
-      ],
-      "pnl_note": "daily_pnl warn -$10.64 (-1.09%). Conservative posture. BTC 26p from SL.",
-      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "binary_event": "FOMC_2026-04-29 T-2d no blackout",
-      "attention_covered": "9/9"
     },
     {
       "tick_ts_utc": "2026-04-27T05:20Z",
@@ -1495,6 +1457,60 @@
       "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "binary_event": "FOMC T-49h",
       "note": "Heartbeat tick. bar_close noise only. USDCAD SELL thesis intact (-43.5 moderate). GBPUSD LIMIT@1.352555 working. AUDUSD strong (+68.5) but corr cap full. News: FOMC hold priced, Canada trade headwinds persist."
+    },
+    {
+      "tick_ts_utc": "2026-04-27T17:44Z",
+      "events_processed": 1,
+      "events": [
+        "level_cross:GOLD:gold_sweep_4682_buy_watch@4681.19 cross_down \u2014 comp=-25 weak bearish (<+40 threshold) \u2192 NO TRADE, watchlist only"
+      ],
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "open_positions": [
+        {
+          "epic": "USDCAD",
+          "dir": "SELL",
+          "entry": 1.36106,
+          "size": 2000,
+          "upl": -1.42,
+          "age_h": 4.0,
+          "bid": 1.36183
+        }
+      ],
+      "working_orders": [
+        {
+          "epic": "GBPUSD",
+          "dir": "BUY",
+          "type": "LIMIT",
+          "level": 1.352555,
+          "sl": 1.3515,
+          "tp": 1.36,
+          "bid": 1.354015,
+          "dist_p": 14.6
+        }
+      ],
+      "prices": {
+        "GOLD": 4681.28,
+        "EURUSD": 1.17262,
+        "GBPUSD": 1.35402,
+        "AUDUSD": 0.71916,
+        "USDCAD": 1.36187,
+        "USDJPY": 159.366
+      },
+      "confluence": {
+        "GOLD": "-25 WEAK",
+        "USDCAD": "-43.5 MOD",
+        "GBPUSD": "+50.5 MOD",
+        "AUDUSD": "+71.0 STRONG"
+      },
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "binary_event": "FOMC T-48h (caution activates T-24h ~18:00Z Apr28)",
+      "watchlist_changes": "2 alerts modified (proximity/note update): audusd_m15fvg_buy_7143 corr-cap note corrected; gold_sweep_4682_buy_watch proximity updated after level_cross",
+      "scalp_halts": "none",
+      "daily_pnl": -10.52,
+      "float_pnl": -1.42,
+      "attention_covered": "9/9",
+      "note": "1 evt GOLD level_cross; no trade (comp insufficient); all positions HOLD; FOMC caution T-24h tomorrow"
     }
   ]
 }
