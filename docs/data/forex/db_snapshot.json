@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-27T00:15:35.294359+00:00",
+  "generated_at": "2026-04-27T01:00:48.170522+00:00",
   "counts": {
     "trades": 16,
-    "events": 4022,
+    "events": 4050,
     "ticks": 59,
     "regime_snapshots": 66,
     "broker_positions": 0,
-    "counterfactuals": 53
+    "counterfactuals": 55
   },
   "trades_last_50": [
     {
@@ -933,6 +933,32 @@
   ],
   "counterfactuals_last_50": [
     {
+      "alert_id": "gold_h1fvg_sell_4695",
+      "instrument": "GOLD",
+      "direction": "sell",
+      "trigger_price": 4696.565,
+      "fired_at": "2026-04-27T00:59:15.487489+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
+    {
+      "alert_id": "btcusd_sweep_78914_sell_watch",
+      "instrument": "BTCUSD",
+      "direction": "sell",
+      "trigger_price": 78922.4,
+      "fired_at": "2026-04-27T00:53:40.023113+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
+    {
       "alert_id": "audusd_m15fvg_buy_7143",
       "instrument": "AUDUSD",
       "direction": "buy",
@@ -1555,32 +1581,6 @@
       "pips_1h": 43.7,
       "pips_4h": 180.5,
       "pips_24h": -1006.6
-    },
-    {
-      "alert_id": "gold_escalation_buy_zone",
-      "instrument": "GOLD",
-      "direction": "buy",
-      "trigger_price": 4808.57,
-      "fired_at": "2026-04-20T17:32:45.325197+00:00",
-      "hit_1h": 1,
-      "hit_4h": 1,
-      "hit_24h": 0,
-      "pips_1h": 58.0,
-      "pips_4h": 194.8,
-      "pips_24h": -992.3
-    },
-    {
-      "alert_id": "gold_escalation_buy_zone",
-      "instrument": "GOLD",
-      "direction": "buy",
-      "trigger_price": 4809.66,
-      "fired_at": "2026-04-20T17:12:19.914650+00:00",
-      "hit_1h": 1,
-      "hit_4h": 1,
-      "hit_24h": 0,
-      "pips_1h": 45.3,
-      "pips_4h": 183.9,
-      "pips_24h": -986.6
     }
   ]
 }

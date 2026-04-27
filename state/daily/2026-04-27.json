@@ -294,5 +294,43 @@
       "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=moderate comp=+40 (both levels outside prox)",
       "BTCUSD": "swing=ARMED scalp=N/A readiness=strong comp=+60 (LIMIT SELL@78914 working)"
     }
+  },
+  {
+    "tick_ts_utc": "2026-04-27T01:00Z",
+    "events": 1,
+    "events_detail": [
+      "level_cross(BTCUSD btcusd_sweep_78914_sell_watch \u2014 LIMIT SELL@78914 filled)"
+    ],
+    "new_positions": [
+      {
+        "instrument": "BTCUSD",
+        "direction": "SELL",
+        "entry": 78914.65,
+        "sl": 79300,
+        "tp": 77600,
+        "size": 0.013,
+        "thesis": "validated_sweep_retest",
+        "comp_at_entry": 60.0
+      }
+    ],
+    "new_orders": [
+      {
+        "instrument": "USDCAD",
+        "direction": "SELL",
+        "limit": 1.3675,
+        "sl": 1.3695,
+        "tp": 1.3595,
+        "size": 3000
+      }
+    ],
+    "closed_positions": [],
+    "watchlist_changes": [
+      "REMOVED btcusd_day_fvg_buy (stale dist=$2281>3xH4ATR=$1994)",
+      "ADDED btcusd_h4bos_78356_buy (H4 BOS structural support)"
+    ],
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "positions_open": 1,
+    "working_orders": 2,
+    "note": "BTC LIMIT SELL@78914 filled via btcusd_sweep_78914_sell_watch level_cross. USDCAD LIMIT SELL@1.3675 armed (comp=-40 mod-bearish threshold reached)."
   }
 ]

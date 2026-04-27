@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T00:15:39.406569+00:00",
+  "generated_at": "2026-04-27T01:02:54.263254+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -424,16 +424,16 @@
       "fires": 3,
       "by_horizon": {
         "1h": {
-          "filled": 2,
-          "favorable": 2,
-          "avg_pips": 5.8,
+          "filled": 3,
+          "favorable": 3,
+          "avg_pips": 10.2,
           "hit_rate": 1.0
         },
         "4h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 34.2,
+          "hit_rate": 1.0
         },
         "24h": {
           "filled": 0,
@@ -456,6 +456,32 @@
           "hit_rate": 0.0
         },
         "4h": {
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 13.8,
+          "hit_rate": 1.0
+        },
+        "24h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        }
+      }
+    },
+    {
+      "alert_id": "gold_sweep_4679_buy_retest",
+      "instrument": "GOLD",
+      "direction": "buy",
+      "fires": 1,
+      "by_horizon": {
+        "1h": {
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 6.9,
+          "hit_rate": 1.0
+        },
+        "4h": {
           "filled": 0,
           "favorable": 0,
           "avg_pips": null,
@@ -470,9 +496,35 @@
       }
     },
     {
-      "alert_id": "gold_sweep_4679_buy_retest",
+      "alert_id": "btcusd_sweep_78914_sell_watch",
+      "instrument": "BTCUSD",
+      "direction": "sell",
+      "fires": 1,
+      "by_horizon": {
+        "1h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "4h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "24h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        }
+      }
+    },
+    {
+      "alert_id": "gold_h1fvg_sell_4695",
       "instrument": "GOLD",
-      "direction": "buy",
+      "direction": "sell",
       "fires": 1,
       "by_horizon": {
         "1h": {
