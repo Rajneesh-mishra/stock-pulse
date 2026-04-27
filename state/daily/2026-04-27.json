@@ -261,5 +261,38 @@
     "broker_balance": 992.97,
     "daily_pnl": 0.0,
     "note": "1 evt level_cross GOLD (buy invalidated, REMOVED); GBPUSD LIMIT KEEP; OIL comp\u2192mod; 0pos 1 working"
+  },
+  {
+    "tick_ts_utc": "2026-04-27T00:09Z",
+    "events_processed": 20,
+    "events_actionable": 1,
+    "event_summary": "level_cross AUDUSD audusd_m15fvg_buy_7143",
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "orders_cancelled": 0,
+    "open_positions": 0,
+    "working_orders": 2,
+    "working_order_detail": [
+      "GBPUSD LIMIT BUY@1.3506 (comp=+27.5 weak, KEEP)",
+      "BTC LIMIT SELL@78914 (comp=+60 strong extension, ARMED)"
+    ],
+    "balance": 992.97,
+    "daily_pnl": 0.0,
+    "decisions": {
+      "AUDUSD": "level_cross fired audusd_m15fvg_buy_7143; comp=+21.5 none \u2014 NO ENTRY. H1+H4 bear FVGs mitigated. WATCH.",
+      "GBPUSD": "LIMIT BUY@1.3506 KEEP \u2014 comp dropped +45.5\u2192+27.5 weak, thesis intact (Day+H4 bullish)",
+      "BTCUSD": "LIMIT SELL@78914 KEEP \u2014 comp=+60 strong counter-trend extension, dist=$212 inside prox"
+    },
+    "attention_matrix": {
+      "EURUSD": "swing=NONE scalp=ACTIVE readiness=none comp=+5",
+      "GBPUSD": "swing=ARMED scalp=ACTIVE readiness=weak comp=+27.5 (working LIMIT BUY@1.3506)",
+      "AUDUSD": "swing=WATCH scalp=ACTIVE readiness=none comp=+21.5 (level_cross fired, no entry)",
+      "USDJPY": "swing=WATCH scalp=OFF readiness=weak comp=+35 (dist=48p from 160)",
+      "USDCAD": "swing=WATCH scalp=OFF readiness=weak comp=-37.5 (2.5pts from arming)",
+      "USDCHF": "swing=WATCH scalp=OFF readiness=none comp=+8",
+      "GOLD": "swing=WATCH scalp=N/A readiness=none comp=-22",
+      "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=moderate comp=+40 (both levels outside prox)",
+      "BTCUSD": "swing=ARMED scalp=N/A readiness=strong comp=+60 (LIMIT SELL@78914 working)"
+    }
   }
 ]
