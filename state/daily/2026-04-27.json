@@ -1146,5 +1146,36 @@
       "proximity notes refreshed"
     ],
     "summary": "1 evt: GOLD level_cross gold_sweep_4701_buy_retest fire#1@09:54Z price=4701.27 \u2014 NO TRADE (comp=-19.5 none, |comp|<25 threshold). REMOVED oil_crude_retest_90_buy (stale, price at $95.39). AUDUSD BUY@0.7143 + USDCAD SELL@1.3675 LIMITs active. OIL daily low=$93.88 tested sweep_9323 zone. FOMC T-2d caution."
+  },
+  {
+    "tick_ts_utc": "2026-04-27T10:53Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "id": "evt_1777287022022_level_cross",
+        "type": "level_cross",
+        "instrument": "EURUSD",
+        "alert_id": "eurusd_sweep_117454_sell_watch"
+      }
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "trades_skipped": 1,
+    "skip_reasons": [
+      "eurusd_sweep_117454_sell_watch fire#3: comp=+23.5 none (<40), H4 FVG unmitigated, FOMC caution"
+    ],
+    "alerts_added": [
+      "eurusd_h4fvg_buy_117328"
+    ],
+    "alerts_modified": [
+      "eurusd_sweep_117454_sell_watch (fire#3; H4 FVG reference updated)",
+      "gold_sweep_4701_buy_retest (TP 4708\u21924718; H1 FVG mitigated)"
+    ],
+    "alerts_removed": [],
+    "open_positions": 0,
+    "working_limits": 2,
+    "daily_pnl": -16.82,
+    "binary_event": "FOMC T-31.1h",
+    "scalp_status": "3 pairs active (EU/GU/AU), 0 halted, shadow=false"
   }
 ]
