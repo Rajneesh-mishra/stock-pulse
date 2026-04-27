@@ -1052,5 +1052,40 @@
     ],
     "scalp_status": "EURUSD/GBPUSD/AUDUSD active no-halt",
     "attention_covered": "9/9"
+  },
+  {
+    "tick_ts_utc": "2026-04-27T08:30Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "id": "evt_1777278309514_level_cross",
+        "type": "level_cross",
+        "instrument": "EURUSD",
+        "alert_id": "eurusd_sweep_117454_sell_watch",
+        "action": "NO_TRADE",
+        "reason": "comp=+23.5 none (<40 required); H4 FVG 1.17298-1.17393 unmitigated; wick noise-level 1.2p"
+      }
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "working_orders": [
+      {
+        "id": "00000000-4e76-6275-044a-beb40055311e",
+        "epic": "AUDUSD",
+        "dir": "BUY",
+        "level": 0.7143
+      },
+      {
+        "id": "00000000-4e76-5ddd-044a-beb40055311e",
+        "epic": "USDCAD",
+        "dir": "SELL",
+        "level": 1.3675
+      }
+    ],
+    "daily_pnl": -16.82,
+    "balance": 974.9,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "scalp_status": "EURUSD/GBPUSD/AUDUSD active no-halt",
+    "attention_covered": "9/9"
   }
 ]

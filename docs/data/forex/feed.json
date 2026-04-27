@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-27T08:16:56.863025Z",
+  "generated_at": "2026-04-27T08:30:31.931657Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T11:28:00Z",
-      "events_in": 1,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 1,
-      "note": "11:28 forex auto \u2014 1 evt (GBPUSD level_cross gbpusd_sweep_134928_sell_retest at 1.349555 cross_up; comp=+21.5 none bullish OPPOSES sell; readiness=none (need \u2264-40); SKIP trade KEEP WATCH). USDJPY 159.408 +30.0 weak (DOWNGRADE from +43 mod) dist=59.2p OUTSIDE 30p \u2192 WATCH (BOJ T-3d). GOLD 4706.49 -32.5 weak; sweep_4721 dist=15.2$ INSIDE prox 30$ NEAR-ARM (need -40); safehaven_4775 dist=68.5$ dormant. OIL 93.999 +35.5 weak; sweep_9323 dist=0.76$ INSIDE prox 1.17$ NEAR-ARM (need +40; gap=4.5pts); pullback=false-alarm (Tehran military drill). BTCUSD 78255 +34.5 weak fvg_76960 dist=1295$ WATCH. EURUSD -8 none GBPUSD +21.5 none AUDUSD +18.5 none USDCAD -21.5 none USDCHF -10.5 none \u2014 all swing=NONE/WATCH. 9 alerts proximity-refreshed (all KEEP). 9 SW KEEP. Scalp halt={}. 0 trades 0pos. BOJ T-3d FOMC T-5d. attention_covered=9/9."
-    },
     {
       "ts_utc": "2026-04-24T12:46:00Z",
       "events_in": 2,
@@ -1156,6 +1148,41 @@
       "alerts_modified": [
         "eurusd_sweep_117186_buy_watch (proximity update)"
       ],
+      "scalp_status": "EURUSD/GBPUSD/AUDUSD active no-halt",
+      "attention_covered": "9/9"
+    },
+    {
+      "tick_ts_utc": "2026-04-27T08:30Z",
+      "events_processed": 1,
+      "events": [
+        {
+          "id": "evt_1777278309514_level_cross",
+          "type": "level_cross",
+          "instrument": "EURUSD",
+          "alert_id": "eurusd_sweep_117454_sell_watch",
+          "action": "NO_TRADE",
+          "reason": "comp=+23.5 none (<40 required); H4 FVG 1.17298-1.17393 unmitigated; wick noise-level 1.2p"
+        }
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "working_orders": [
+        {
+          "id": "00000000-4e76-6275-044a-beb40055311e",
+          "epic": "AUDUSD",
+          "dir": "BUY",
+          "level": 0.7143
+        },
+        {
+          "id": "00000000-4e76-5ddd-044a-beb40055311e",
+          "epic": "USDCAD",
+          "dir": "SELL",
+          "level": 1.3675
+        }
+      ],
+      "daily_pnl": -16.82,
+      "balance": 974.9,
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "scalp_status": "EURUSD/GBPUSD/AUDUSD active no-halt",
       "attention_covered": "9/9"
     }

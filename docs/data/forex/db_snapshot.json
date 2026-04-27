@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-27T08:15:14.561497+00:00",
+  "generated_at": "2026-04-27T08:30:17.603534+00:00",
   "counts": {
     "trades": 18,
-    "events": 4376,
+    "events": 4394,
     "ticks": 59,
-    "regime_snapshots": 86,
+    "regime_snapshots": 88,
     "broker_positions": 0,
-    "counterfactuals": 65
+    "counterfactuals": 66
   },
   "trades_last_50": [
     {
@@ -391,6 +391,22 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-27T08:30Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "2026-04-27T08:30Z forex auto \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#1@08:25Z bid=1.174565 at 1.17454 zone \u2014 NO TRADE (comp=+23.5 none <40 required; H4 bull FVG 1.17298-1.17393 unmitigated blocks TP path; wick noise-level 1.2p <1\u00d7ATR 5.4p). GBPUSD@1.354845 AT dual resistance 1.3537/1.3548 \u2014 comp=+53 mod bullish extension ARMED for counter-trend sell on M15 rejection close below 1.3537 (no close yet). AUDUSD BUY@0.7143 KEEP (comp=+45 mod 4/4TF, 3f/100%4h validated). USDCAD SELL@1.3675 KEEP (comp=-46 mod 4/4TF). GOLD@4709.82 comp=-14.5 none (need +40 bullish ext for 4721 sell \u2014 WATCH). OIL@95.56 comp=+45 mod bullish (sweep_9323 dist=$2.33>prox$1.04 \u2014 WATCH). BTC@77616 comp=+30.5 weak (same-loss skip until 2026-04-28). FOMC T-2d (Apr 29 18:00Z) \u2014 elevated caution, readiness>=moderate required for new entries. Regime ACTIVE_ESCALATION stable. daily_pnl=-$16.82. 0 pos 2 working. attention_covered=9/9.",
+      "binary_event_name": "FOMC_2026-04-29",
+      "binary_event_active": 0,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
+      "ts_utc": "2026-04-27T08:15Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "2026-04-27T08:15Z forex auto \u2014 1 evt: EURUSD liquidity_sweep M15@1.17454 wick=1.2p (0.22\u00d7ATR=5.4p) up-sweep sell-bias. comp=+23.5 none (<25 counter-trend watchlist threshold). Wick noise-level. H4 bull FVG 1.17298-1.17406 unmitigated blocks TP path. WATCH-ONLY. ADD eurusd_sweep_117454_sell_watch WATCH. AUDUSD BUY@0.7143 KEEP (LIMIT active, validated 3f/100%4h, comp=+45 mod). USDCAD SELL@1.3675 KEEP (LIMIT active, comp=-40 mod). FOMC T-2d (Apr 29) \u2014 no blackout (>24h). Regime ACTIVE_ESCALATION stable. daily_pnl=-$16.82. 0 pos 2 working. attention_covered=9/9.",
+      "binary_event_name": "FOMC_2026-04-29",
+      "binary_event_active": 0,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
       "ts_utc": "2026-04-27T08:11Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-27T08:11Z forex auto \u2014 1 evt: AUDUSD liquidity_sweep M15@0.71784 wick=1.0p (0.22\u00d7ATR) up-sweep sell-bias. comp=+45 mod bullish (counter-trend |comp|\u226540 extension MET) BUT wick<1\u00d7ATR + bull FVG obstacle at 0.71732-0.71742 + entry window passed (0.71756 < offer) \u2192 WATCH-ONLY. ADD audusd_sweep_71784_sell_watch WATCH. AUDUSD BUY@0.7143 KEEP (validated 100%4h, comp=+45 mod). USDCAD SELL@1.3675 KEEP (comp=-40 mod). GBPUSD pullback note MODIFIED (stale LIMIT claim). BTCUSD sweep_78369 note MODIFIED (stale LIMIT claim, comp=+30.5 weak \u2192 WATCH-ONLY). daily_pnl=-$16.82. 0 pos 2 working. attention_covered=9/9.",
@@ -450,22 +466,6 @@
       "ts_utc": "2026-04-27T05:10Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-27T05:10Z forex auto \u2014 1 evt: daily_pnl_threshold(warn, pnl=-$10.64 -1.09% of $977.29, conservative posture). BTCUSD BUY@79024.5 LIVE bid=78726.75 SL=78700 (26p from SL, UPL=-$12) \u2014 trend thesis intact, 15min old, no time exit. AUDUSD BUY@0.7143 ARMED (comp=+45 mod, 3f/100%4h, 26.5p above limit). USDCAD SELL@1.3675 ARMED (comp=-40 mod, 10.4p below level). GBPUSD@1.35401 AT 1.3537 dual-resistance \u2014 monitoring M15 rejection close; comp=+53 mod (|comp|>=40 MET, waiting confirmation). GOLD@4720.27 AT 4721 sell-retest level \u2014 comp=-12 none (|comp|<40 bullish ext NOT MET). OIL@94.69 dist=$1.47 above sweep_9323, comp=+34.5 weak (need >=40). FOMC T-2d no blackout. 1 pos open 2 working. attention_covered=9/9.",
-      "binary_event_name": "FOMC_2026-04-29",
-      "binary_event_active": 0,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-04-27T04:52Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "2026-04-27T04:52Z forex auto \u2014 2 evt: level_cross(btcusd_h4fvg_79025_buy@79011.45) + position_opened(BTCUSD BUY@79024.5). BTCUSD BUY@79024.5 LIVE (size=0.04 SL=78700 TP=80500 R:R=4.55 UPL=-$2.70 time_exit=2026-04-28T04:50Z). comp=+57.5 mod 4/4TF bullish; H4 FVG 78939-79025 filled; thesis=trend, 24h max hold. AUDUSD BUY@0.7143 ARMED (comp=+45 mod, 3f/100%4h validated, dist=26p above limit). USDCAD SELL@1.3675 ARMED (comp=-40 mod, dist=10.4p below level). GBPUSD@1.354035 AT 1.3537 dual-resistance (|comp|=53 mod), monitoring M15 rejection close below 1.3537. GOLD@4724.1 comp=-4.5 none; gold_sweep_4721 needs |comp|>=40 bullish NOT MET; gold_buy@4775 dist=51pts. OIL@94.21 comp=+27 weak; oil_sweep_9323 inside prox but comp<40. USDJPY@159.229 dist=77.1p from 160 red-line; comp=+3.5 none. USDCHF@0.78472 comp=-5.0 none. FOMC T-2d no blackout. BoJ 0.75% hold confirmed. 1 pos open 2 working. attention_covered=9/9.",
-      "binary_event_name": "FOMC_2026-04-29",
-      "binary_event_active": 0,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-04-27T04:41Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "04:41 forex auto \u2014 1 evt news_flash(fed_fomc: GoldSilver Apr-23 pre-FOMC preview, stale, non-altering; FOMC T-2d active=false). AUDUSD BUY@0.7143 KEEP(comp=+45 mod, bid=0.71739, dist=30p, validated 3f/100%4h). USDCAD SELL@1.3675 KEEP(comp=-40 mod, bid=1.36607, dist=12p inside prox). BTCUSD BUY@79025 KEEP(comp=+60 strong, bid=79073, dist=$48 inside prox, H4 FVG). GBPUSD@1.35446 AT dual resistance 1.3537/1.3548 (|comp|=53 mod ext); monitoring M15 rejection close <1.3537 for MARKET SELL. GOLD@4726 comp=-4.5 none; gold_sweep_4721 dist=5pts |comp|<40 NOT MET; gold_buy@4775 dist=49pts. OIL@94.10 oil_sweep_9323 dist=$0.87 inside prox but comp=+27 weak (<40); day low=93.884. USDJPY@159.196 dist=80p to 160 WATCH; BoJ 0.75% hold confirmed. USDCHF@0.78491 dist=25.9p to 0.7875 inside prox but comp=-12.5 none. EURUSD comp=+23.5 none. FOMC T-2d no blackout. Regime ACTIVE_ESCALATION stable. 0 trades 0pos 3 working. attention_covered=9/9.",
       "binary_event_name": "FOMC_2026-04-29",
       "binary_event_active": 0,
       "binary_event_deadline": "2026-04-29T18:00Z"
@@ -974,6 +974,19 @@
     }
   ],
   "counterfactuals_last_50": [
+    {
+      "alert_id": "eurusd_sweep_117454_sell_watch",
+      "instrument": "EURUSD",
+      "direction": "sell",
+      "trigger_price": 1.174565,
+      "fired_at": "2026-04-27T08:25:09.514145+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
     {
       "alert_id": "gbpusd_sweep_135370_sell_watch",
       "instrument": "GBPUSD",
@@ -1610,19 +1623,6 @@
       "pips_1h": 30.7,
       "pips_4h": -18.4,
       "pips_24h": -236.7
-    },
-    {
-      "alert_id": "usdcad_short_fvg_retest",
-      "instrument": "USDCAD",
-      "direction": "sell",
-      "trigger_price": 1.36506,
-      "fired_at": "2026-04-21T07:35:04.279546+00:00",
-      "hit_1h": 0,
-      "hit_4h": 0,
-      "hit_24h": 1,
-      "pips_1h": -10.2,
-      "pips_4h": -0.8,
-      "pips_24h": 3.5
     }
   ]
 }
