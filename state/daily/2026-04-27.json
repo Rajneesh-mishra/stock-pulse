@@ -540,5 +540,67 @@
     "scalp_status": "EURUSD/GBPUSD/AUDUSD active no-halt",
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
     "notes": "BTC LIMIT BUY at H4 FVG 79025: risk_guard approved, size=0.04, risk=1.32%. Gold h1fvg 4695 alert removed (invalidated). GBPUSD SL updated above new sweep high 1.3548."
+  },
+  {
+    "tick_ts_utc": "2026-04-27T04:41Z",
+    "events": 8,
+    "events_detail": "1 news_flash(fed_fomc stale GoldSilver Apr-23 pre-FOMC), 7 bar_close auto-consumed",
+    "trades": 0,
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "working_orders": 3,
+    "orders": [
+      {
+        "id": "00000000-4e76-6275-044a-beb40055311e",
+        "epic": "AUDUSD",
+        "dir": "BUY",
+        "level": 0.7143,
+        "sl": 0.713,
+        "tp": 0.7187
+      },
+      {
+        "id": "00000000-4e76-5ddd-044a-beb40055311e",
+        "epic": "USDCAD",
+        "dir": "SELL",
+        "level": 1.3675,
+        "sl": 1.3695,
+        "tp": 1.3595
+      },
+      {
+        "id": "00000000-4e76-892b-044a-beb40055311e",
+        "epic": "BTCUSD",
+        "dir": "BUY",
+        "level": 79025.0,
+        "sl": 78700,
+        "tp": 80500
+      }
+    ],
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "FOMC_2026-04-29 active=false T-2d no_blackout",
+    "boj": "0.75% hold confirmed",
+    "fomc": "T-2d Apr29 active=false",
+    "prices": {
+      "GBPUSD": 1.35446,
+      "BTCUSD": 79073.55,
+      "GOLD": 4726.07,
+      "OIL_CRUDE": 94.104,
+      "USDJPY": 159.196,
+      "AUDUSD": 0.71739,
+      "USDCAD": 1.36607
+    },
+    "confluence": {
+      "EURUSD": "comp=23.5 none",
+      "GBPUSD": "comp=53.0 moderate",
+      "AUDUSD": "comp=45.0 moderate",
+      "USDJPY": "comp=-6.5 none",
+      "USDCAD": "comp=-40.0 moderate",
+      "USDCHF": "comp=-12.5 none",
+      "GOLD": "comp=-4.5 none",
+      "OIL_CRUDE": "comp=27.0 weak",
+      "BTCUSD": "comp=60.0 strong"
+    },
+    "scalp": "EURUSD/GBPUSD/AUDUSD active no halts",
+    "attention_covered": "9/9",
+    "note": "Heartbeat. news_flash fed_fomc: GoldSilver Apr-23 FOMC preview stale, non-altering. GBPUSD at dual resistance 1.3537/1.3548 monitoring M15 rejection. OIL day_low=93.884 approaching 93.23 zone (dist=$0.87 inside prox) but comp=+27 weak."
   }
 ]
