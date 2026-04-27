@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-27T03:36:33.307640+00:00",
+  "generated_at": "2026-04-27T04:01:45.342187+00:00",
   "counts": {
     "trades": 17,
-    "events": 4160,
+    "events": 4180,
     "ticks": 59,
-    "regime_snapshots": 73,
+    "regime_snapshots": 74,
     "broker_positions": 0,
     "counterfactuals": 58
   },
@@ -370,6 +370,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-27T03:39Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "03:39 forex auto \u2014 1 evt: level_cross(GOLD gold_sweep_4721_sell_retest@4721.26). comp=-12 bearish (readiness=none); counter-trend sell requires |comp|\u226540 BULLISH extension NOT MET; 8th fire, 100%4h validated \u2014 WATCH ONLY, no LIMIT armed. AUDUSD BUY@0.7143 KEEP (comp=+45 mod, 4/4 TF, validated 3f/100%4h). USDCAD SELL@1.3675 KEEP (comp=-40 mod, 4/4 TF). GBPUSD@1.35408 above sweep 1.3537 \u2014 monitoring M15 rejection close (|comp|=+53 met, no bar yet). BTC@79216 dist=$860 H4BOS@78356 WATCH (comp=+60 strong but outside prox). FOMC T-2d (Apr 29 18:00Z, active=false, no blackout). Hormuz blockade ACTIVE_ESCALATION stable. 0 trades 0pos 2 working. attention_covered=9/9.",
+      "binary_event_name": "FOMC_2026-04-29",
+      "binary_event_active": 0,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
       "ts_utc": "2026-04-27T03:15Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "03:15 forex auto \u2014 0 evt heartbeat. GBPUSD BUY LIMIT@1.3506 CANCELLED (58h no approach, price at 1.35408 \u2192 TP=1.3531 superseded, 3-correlated cap: AUDUSD BUY+USDCAD SELL+GBPUSD BUY > 2-correlated max). 2 active LIMITs: AUDUSD BUY@0.7143 ARMED (comp=+45 mod, 30p prox) + USDCAD SELL@1.3675 ARMED (comp=-40 mod, 11p prox). GOLD@4720.6 = AT 4721 sweep level (7th tag) but comp=-14.5 none bearish \u2014 bullish extension not present, NO SELL entry. BTCUSD comp=+60 strong but dist=$860 > prox $267 from H4BOS@78356 \u2014 WATCH. USDJPY dist=68p from 160 fade + comp=+3.5 none \u2014 WATCH. OIL comp=+27 weak, sweep_9323 dist=$1.44 outside prox \u2014 WATCH. FOMC T-2d 99%hold; BoJ 0.75% hold confirmed; Hormuz standoff ongoing. 0 trades 0pos 2 working. attention_covered=9/9.",
@@ -440,14 +448,6 @@
       "binary_event_name": "FOMC_2026-04-29",
       "binary_event_active": 0,
       "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-04-27T04:43Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "04:43 forex auto \u2014 12 evt: 1 liquidity_sweep(GOLD M15 down-sweep@4679.96 buy-bias, comp=-21 none \u2192 WATCH alert added), 11 bar_close(consumed). Market OPEN Asia. BOJ T-0d hold confirmed 0.75%. FOMC T-2d cal, no blackout. binary_event.active=false. GBPUSD LIMIT BUY@1.3506 KEEP (bid=1.3516 1.0p above; comp=+27.5 weak, dropped from mod; thesis intact no struct-break). GOLD comp=-21 none; new sweep alert gold_sweep_4679_buy_retest added (WATCH, prox dist=$3.23, needs comp\u226525 bull). gold_sweep_4721 KEEP (dist=$37.5, 3\u00d7H4ATR=$107.7 not stale; 6f/100%4h validated). gold_safehaven_4775 KEEP (dist=$91.5 < $107.7 not stale). OIL comp=+40 mod (dist=$1.9>prox$1.22 WATCH). BTC comp=+60 strong (FVG dist=$1406 WATCH, sweep78914 dist=$548 WATCH). USDJPY@159.525 comp=+29.5 weak (need |40| for counter-trend WATCH). USDCAD@1.36764 comp=-37.5 weak (AT level 1.3675 but need -40 mod; 1.4p off threshold WATCH). AUDUSD@0.71453 comp=+21.5 none (inside 0.7143-0.7146 zone, need close >0.7146 + comp\u226540 WATCH). USDCHF@0.78624 comp=+8 none (dist=12.6p from sell, need \u2264-40 WATCH). EURUSD comp=+2.5 none, no alert. 0 trades 0pos 1 working. attention_covered=9/9.",
-      "binary_event_name": "iran_ceasefire_indefinite_extension",
-      "binary_event_active": 0,
-      "binary_event_deadline": null
     }
   ],
   "ticks_last_50": [

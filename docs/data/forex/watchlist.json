@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-27T03:39Z",
+  "last_updated_by_claude": "2026-04-27T03:58Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -118,7 +118,7 @@
       "direction": "sell",
       "note": "ENTRY: price retests 1.35370 from below on M15; bar closes back below with rejection wick \u22652p from the high. Counter-trend entry \u2014 requires readiness \u2265moderate (|comp|\u226540 bullish extension) to arm.\n\nCONTEXT: M15 up-sweep Apr 24 20:45 UTC, wick=2.2p beyond 1.35370, closed back at 1.35331. Bullish +48 mod = counter-trend extension signal. Active LIMIT BUY at 1.35060 is bullish primary; this sell at 1.35370 is range upper boundary.\n\nSL: 1.35450  TP: 1.35100  R:R target: 3.4\n\nadded 2026-04-25T04:21Z \u2014 liquidity_sweep event, counter-trend WATCH pending Mon open retest.",
       "entry_criterion": "price retests 1.35370 from below; M15 bar closes back below with rejection wick \u22652p. Requires |comp|\u226540 bullish extension to arm.",
-      "regime_context": "M15 up-sweep Apr 24 20:45 UTC; bullish +48 mod = extension gauge for counter-trend fade. Compatible with active LIMIT BUY at 1.35060 (range upper/lower boundary pair).",
+      "regime_context": "M15 up-sweep Apr 24 20:45 UTC (1.3537) + NEW M15 up-sweep Apr 27 03:45Z (1.354705, 1.6p wick). Double resistance at 1.3537/1.3547. comp=+53 mod bullish = extension gauge for counter-trend fade. M15 rejection close below 1.3537 is the entry trigger.",
       "sl": 1.3545,
       "tp": 1.351,
       "rr_target": "3.4",
@@ -129,7 +129,7 @@
       },
       "last_updated": "2026-04-27T03:15Z",
       "updated_utc": "2026-04-27T03:39Z",
-      "proximity": "GBPUSD@1.35408; dist=3.8p ABOVE 1.3537 \u2014 price above sweep level. |comp|=+53 mod bullish (counter-trigger MET). Waiting for M15 close BELOW 1.35370 with rejection wick \u22652p \u2014 no bar yet. WATCH."
+      "proximity": "GBPUSD@1.354525; price above 1.3537 zone. NEW M15 up-sweep at 1.354705 (1.6p wick, 03:45Z) creates higher resistance \u2014 entry@1.354465 passed (already below current price). |comp|=+53 mod bullish (counter-trigger MET). Dual resistance: 1.3537 (original sweep) + 1.3547 (new sweep). Monitor M15 rejection close BELOW 1.35370 with wick \u22652p. WATCH."
     },
     {
       "id": "audusd_m15fvg_buy_7143",
@@ -151,7 +151,7 @@
       },
       "last_updated": "2026-04-27T03:16:00Z",
       "updated_utc": "2026-04-27T03:39Z",
-      "proximity": "AUDUSD@0.71735; dist=30.5p ABOVE limit 0.7143 \u2192 inside 30p prox. comp=+45 mod bullish (4/4 TFs). LIMIT BUY@0.7143 ARMED (dealId=00000000-4e76-6275-044a-beb40055311e). 3 fires 100%4h VALIDATED. KEEP."
+      "proximity": "AUDUSD@0.71741; dist=31p ABOVE limit 0.7143. NEW M15 up-sweep at 0.7176 (1.6p wick, 03:45Z) = overhead resistance. comp=+45 mod bullish (4/4 TFs). Counter-sell entry@0.7174 passed (bid=0.71741 near level). Primary thesis: LIMIT BUY@0.7143 ARMED (dealId=00000000-4e76-6275-044a-beb40055311e). 3f/100%4h VALIDATED. KEEP."
     },
     {
       "id": "oil_sweep_9323_buy_retest",

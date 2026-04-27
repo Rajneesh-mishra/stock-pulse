@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T03:39:48.442159+00:00",
+  "generated_at": "2026-04-27T04:05:28.871044+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -242,10 +242,10 @@
       "fires": 8,
       "by_horizon": {
         "1h": {
-          "filled": 6,
+          "filled": 7,
           "favorable": 4,
-          "avg_pips": 21.5,
-          "hit_rate": 0.67
+          "avg_pips": 14.3,
+          "hit_rate": 0.57
         },
         "4h": {
           "filled": 6,
@@ -430,9 +430,9 @@
           "hit_rate": 1.0
         },
         "4h": {
-          "filled": 2,
-          "favorable": 2,
-          "avg_pips": 29.2,
+          "filled": 3,
+          "favorable": 3,
+          "avg_pips": 29.8,
           "hit_rate": 1.0
         },
         "24h": {

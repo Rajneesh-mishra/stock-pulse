@@ -440,5 +440,61 @@
     "binary_event": "FOMC_2026-04-29 T-2d active=false no_blackout",
     "scalp_status": "EURUSD/GBPUSD/AUDUSD ACTIVE no_halts",
     "attention_covered": "9/9"
+  },
+  {
+    "tick_ts_utc": "2026-04-27T03:58Z",
+    "events_processed": 11,
+    "events": {
+      "liquidity_sweep": 4,
+      "bar_close": 7
+    },
+    "sweep_decisions": {
+      "AUDUSD_0.7176": "WATCH \u2014 entry@0.7174 passed; primary LIMIT BUY@0.7143 ARMED",
+      "USDJPY_159.203": "SKIP \u2014 readiness=none comp=-1.5, scalp disabled",
+      "EURUSD_1.17318": "SKIP \u2014 readiness=none comp=+23.5 < 40 threshold",
+      "GBPUSD_1.35471": "WATCH \u2014 entry@1.354465 passed; dual resistance 1.3537/1.3547 noted; monitoring M15 reject"
+    },
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "working_orders": {
+      "AUDUSD_BUY_7143": "KEEP (ARMED, dealId=00000000-4e76-6275-044a-beb40055311e)",
+      "USDCAD_SELL_13675": "KEEP (ARMED, dealId=00000000-4e76-5ddd-044a-beb40055311e)"
+    },
+    "confluence": {
+      "AUDUSD": {
+        "comp": 45,
+        "readiness": "moderate"
+      },
+      "GBPUSD": {
+        "comp": 53,
+        "readiness": "moderate"
+      },
+      "EURUSD": {
+        "comp": 23.5,
+        "readiness": "none"
+      },
+      "USDJPY": {
+        "comp": -1.5,
+        "readiness": "none"
+      },
+      "GOLD": {
+        "comp": -4.5,
+        "readiness": "none"
+      }
+    },
+    "prices": {
+      "GOLD": 4724.17,
+      "OIL": 94.258,
+      "BTC": 79083.9,
+      "AUDUSD": 0.71741,
+      "GBPUSD": 1.354525,
+      "USDJPY": 159.2295,
+      "USDCAD": 1.36623
+    },
+    "scalp": "EURUSD/GBPUSD/AUDUSD ACTIVE no halts; USDJPY/CHF/CAD pip-conv-pending; GOLD/OIL/BTC spread-blocked",
+    "binary_event": "FOMC Apr29 T-2d active=false no-blackout; BOJ 0.75% hold confirmed",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "attention_covered": "9/9",
+    "account_balance": 987.93
   }
 ]
