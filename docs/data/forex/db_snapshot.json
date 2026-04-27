@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-27T08:30:17.603534+00:00",
+  "generated_at": "2026-04-27T09:30:48.023173+00:00",
   "counts": {
     "trades": 18,
-    "events": 4394,
+    "events": 4436,
     "ticks": 59,
     "regime_snapshots": 88,
     "broker_positions": 0,
-    "counterfactuals": 66
+    "counterfactuals": 67
   },
   "trades_last_50": [
     {
@@ -978,6 +978,19 @@
       "alert_id": "eurusd_sweep_117454_sell_watch",
       "instrument": "EURUSD",
       "direction": "sell",
+      "trigger_price": 1.174545,
+      "fired_at": "2026-04-27T09:24:36.026223+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
+    {
+      "alert_id": "eurusd_sweep_117454_sell_watch",
+      "instrument": "EURUSD",
+      "direction": "sell",
       "trigger_price": 1.174565,
       "fired_at": "2026-04-27T08:25:09.514145+00:00",
       "hit_1h": null,
@@ -1610,19 +1623,6 @@
       "pips_1h": -0.7,
       "pips_4h": 8.7,
       "pips_24h": 13.0
-    },
-    {
-      "alert_id": "gold_escalation_buy_zone",
-      "instrument": "GOLD",
-      "direction": "buy",
-      "trigger_price": 4780.75,
-      "fired_at": "2026-04-21T08:09:22.071903+00:00",
-      "hit_1h": 1,
-      "hit_4h": 0,
-      "hit_24h": 0,
-      "pips_1h": 30.7,
-      "pips_4h": -18.4,
-      "pips_24h": -236.7
     }
   ]
 }

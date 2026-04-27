@@ -1087,5 +1087,17 @@
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
     "scalp_status": "EURUSD/GBPUSD/AUDUSD active no-halt",
     "attention_covered": "9/9"
+  },
+  {
+    "ts_utc": "2026-04-27T09:26Z",
+    "events_in": 1,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 0,
+    "daily_pnl": -16.82,
+    "positions": 0,
+    "working_orders": 2,
+    "alerts_active": 12,
+    "note": "1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE. REMOVED gbpusd_sweep_135370_sell_watch (thesis invalidated). OIL comp +40 mod. 2 LIMITs: AUDUSD BUY@0.7143, USDCAD SELL@1.3675. attention_covered=9/9."
   }
 ]

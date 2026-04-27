@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T08:30:32.930070+00:00",
+  "generated_at": "2026-04-27T09:33:04.588744+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -248,9 +248,9 @@
           "hit_rate": 0.56
         },
         "4h": {
-          "filled": 8,
-          "favorable": 8,
-          "avg_pips": 148.7,
+          "filled": 9,
+          "favorable": 9,
+          "avg_pips": 147.9,
           "hit_rate": 1.0
         },
         "24h": {
@@ -560,10 +560,10 @@
           "hit_rate": 0.4
         },
         "4h": {
-          "filled": 1,
+          "filled": 2,
           "favorable": 1,
-          "avg_pips": 5.6,
-          "hit_rate": 1.0
+          "avg_pips": -6.1,
+          "hit_rate": 0.5
         },
         "24h": {
           "filled": 0,
@@ -586,10 +586,10 @@
           "hit_rate": 0.0
         },
         "4h": {
-          "filled": 0,
+          "filled": 1,
           "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "avg_pips": -1268.3,
+          "hit_rate": 0.0
         },
         "24h": {
           "filled": 0,
@@ -612,10 +612,10 @@
           "hit_rate": 0.0
         },
         "4h": {
-          "filled": 0,
+          "filled": 1,
           "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "avg_pips": -378.8,
+          "hit_rate": 0.0
         },
         "24h": {
           "filled": 0,
@@ -629,13 +629,13 @@
       "alert_id": "eurusd_sweep_117454_sell_watch",
       "instrument": "EURUSD",
       "direction": "sell",
-      "fires": 1,
+      "fires": 2,
       "by_horizon": {
         "1h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 0.2,
+          "hit_rate": 1.0
         },
         "4h": {
           "filled": 0,
