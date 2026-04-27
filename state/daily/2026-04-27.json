@@ -1852,5 +1852,129 @@
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
     "attention_covered": "9/9",
     "notes": "GBPUSD +3R trail to +1.5R; TP 9.1p away. BoE hike pricing 50% supports. USDCAD running +0.3R toward TP. Hormuz escalation unchanged. AUDUSD validated (3f 4h=100%) but correlation cap. FOMC T\u224849.6h."
+  },
+  {
+    "tick_ts_utc": "2026-04-27T14:47Z",
+    "events_processed": 5,
+    "events_actionable": 1,
+    "events": [
+      {
+        "id": "evt_1777301064690_liquidity_sweep",
+        "type": "liquidity_sweep",
+        "instrument": "GOLD",
+        "decision": "WATCHLIST-ONLY \u2014 |comp|=25 < 40 threshold. ADD gold_sweep_4686_buy_retest alert."
+      },
+      {
+        "id": "evt_1777301072008_bar_close",
+        "type": "bar_close",
+        "instrument": "OIL_CRUDE",
+        "decision": "INFO \u2014 comp upgraded +39.5\u2192+45 moderate; price too far from levels."
+      },
+      {
+        "id": "evt_1777301076565_bar_close",
+        "type": "bar_close",
+        "instrument": "USDCAD",
+        "decision": "INFO \u2014 FVG mitigated, trend unknown."
+      },
+      {
+        "id": "evt_1777301078989_bar_close",
+        "type": "bar_close",
+        "instrument": "EURUSD",
+        "decision": "INFO \u2014 comp=+23.5 none."
+      },
+      {
+        "id": "evt_1777301083961_bar_close",
+        "type": "bar_close",
+        "instrument": "USDCHF",
+        "decision": "INFO \u2014 bearish BOS confirmed."
+      }
+    ],
+    "trades": [],
+    "positions_open": [
+      {
+        "epic": "GBPUSD",
+        "dir": "BUY",
+        "entry": 1.35421,
+        "sl": 1.35491,
+        "tp": 1.3564,
+        "upl": 14.04,
+        "R": "+3.3R"
+      },
+      {
+        "epic": "USDCAD",
+        "dir": "SELL",
+        "entry": 1.36106,
+        "sl": 1.3642,
+        "tp": 1.355,
+        "upl": 0.72,
+        "R": "+0.22R"
+      }
+    ],
+    "watchlist_changes": [
+      "ADD gold_sweep_4686_buy_retest (level=4686.16, watchlist-only)",
+      "UPDATE OIL proximities (comp+45)",
+      "UPDATE AUDUSD/EURUSD/GOLD proximities"
+    ],
+    "attention_matrix": {
+      "EURUSD": {
+        "swing": "WATCH",
+        "scalp": "ACTIVE",
+        "readiness": "none",
+        "reason": "comp=+23.5 none; alert at 1.17186 is 25p away, needs comp\u226540 to arm"
+      },
+      "GBPUSD": {
+        "swing": "ARMED",
+        "scalp": "ACTIVE",
+        "readiness": "moderate",
+        "reason": "position running BUY@1.35421 +3.3R, time_exit=17:50Z"
+      },
+      "AUDUSD": {
+        "swing": "WATCH",
+        "scalp": "ACTIVE",
+        "readiness": "strong",
+        "reason": "comp=+71 strong but correlation cap (2 USD-bearish) + price 55p above 0.7143 level"
+      },
+      "USDJPY": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "alert at 160.0; current ~159.26 (74p below); comp=none; pip-conv pending"
+      },
+      "USDCAD": {
+        "swing": "ARMED",
+        "scalp": "OFF",
+        "readiness": "moderate",
+        "reason": "position running SELL@1.36106 +0.22R; comp=-46 moderate bearish"
+      },
+      "USDCHF": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "weak",
+        "reason": "alert at 0.7875; current 0.7834 (41p below level); comp=weak-bear; pip-conv pending"
+      },
+      "GOLD": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "weak",
+        "reason": "comp=-25 weak; sweep alert 4686 + escalation 4700 both need comp\u226540 bull; spread 5p"
+      },
+      "OIL_CRUDE": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "moderate",
+        "reason": "comp=+45 moderate but price 1.47 above 93.51 level (outside 0.5\u00d7H4ATR=1.09 proximity); spread 4p"
+      },
+      "BTCUSD": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "weak",
+        "reason": "comp=+37 weak; same-loss skip until Apr28; spread 50p"
+      }
+    },
+    "scalp_audit": "EURUSD=KEEP(no halts) GBPUSD=KEEP(bias=bull, comp moderate) AUDUSD=KEEP(bias=bull, comp strong) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
+    "news": "BoE 2 hikes priced in \u2014 GBP bid intact. BoC expected hold 2.25% Apr29 (positive USDCAD SELL). No regime change.",
+    "binary_event": "FOMC 2026-04-29T18:00Z T\u224851.2h. BoC Apr29 expected hold.",
+    "daily_pnl_realized": -16.82,
+    "float_upl": 14.76
   }
 ]

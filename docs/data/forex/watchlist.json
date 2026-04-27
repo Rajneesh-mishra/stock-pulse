@@ -106,8 +106,8 @@
         "price": null
       },
       "last_updated": "2026-04-27T14:25Z",
-      "updated_utc": "2026-04-27T14:25Z",
-      "proximity": "AUDUSD@0.7193; 50p ABOVE level (H4ATR=20.8p, 3\u00d7H4ATR=62.4p \u2192 within range). comp=+71 strong. VALIDATED (3f 4h=100%). UNARMABLE \u2014 correlation cap (2 USD-bearish). Arm immediately when GBPUSD or USDCAD closes.",
+      "updated_utc": "2026-04-27T14:47Z",
+      "proximity": "AUDUSD@0.71983; 55p ABOVE level (H4ATR=21p, 3\u00d7H4ATR=63p \u2192 within range). comp=+71 strong. VALIDATED (3f 4h=100%). UNARMABLE \u2014 correlation cap (GBPUSD BUY + USDCAD SELL = 2 USD-bearish). Arm LIMIT@0.7143 immediately when GBPUSD or USDCAD closes.",
       "validated": true
     },
     {
@@ -129,8 +129,8 @@
         "price": null
       },
       "last_updated": "2026-04-26T06:00:00Z",
-      "updated_utc": "2026-04-27T13:51Z",
-      "proximity": "OIL@94.81; 1.58 ABOVE level (3\u00d7H4ATR=6.52). comp=+39.5 weak. VALIDATED (6f 4h=100%). WATCH."
+      "updated_utc": "2026-04-27T14:47Z",
+      "proximity": "OIL@94.98; dist=1.75 ABOVE level (0.5\u00d7H4ATR=1.09 \u2192 outside proximity). comp=+45 moderate. VALIDATED (6f 4h=100%). WATCH \u2014 arm LIMIT when price retraces to within 1.09 of 93.23."
     },
     {
       "id": "gold_sweep_4721_sell_retest",
@@ -151,8 +151,8 @@
         "price": null
       },
       "last_updated": "2026-04-26T17:11Z",
-      "updated_utc": "2026-04-27T13:51Z",
-      "proximity": "GOLD@4692; 28.6pts BELOW 4721 (3\u00d7H4ATR=102.6). comp=-25 weak. VALIDATED (9f 4h=100%). WATCH \u2014 arm if GOLD rallies to zone.",
+      "updated_utc": "2026-04-27T14:47Z",
+      "proximity": "GOLD@4691.5; 29.5pts BELOW 4721 (3\u00d7H4ATR=103.5). comp=-25 weak bearish \u2014 need |comp|\u226540 bull extension to arm sell. VALIDATED (9f 4h=100%). WATCH.",
       "validated": true
     },
     {
@@ -196,8 +196,8 @@
         "price": null
       },
       "last_updated": "2026-04-27T06:30Z",
-      "updated_utc": "2026-04-27T13:51Z",
-      "proximity": "EURUSD@1.1738; dist=19p ABOVE 1.17186. comp=+21 none. WATCH \u2014 primary EU buy zone."
+      "updated_utc": "2026-04-27T14:47Z",
+      "proximity": "EURUSD@1.1744; dist=25p ABOVE 1.17186. comp=+23.5 none. WATCH \u2014 arm LIMIT only if comp\u226540 bullish."
     },
     {
       "id": "gbpusd_sweep_135255_buy_watch",
@@ -240,8 +240,8 @@
         "price": null
       },
       "last_updated": "2026-04-27T11:43Z",
-      "updated_utc": "2026-04-27T13:51Z",
-      "proximity": "OIL@94.81; 1.30 ABOVE level (3\u00d7H4ATR=6.52). comp=+39.5 weak. WATCH."
+      "updated_utc": "2026-04-27T14:47Z",
+      "proximity": "OIL@94.98; dist=1.47 ABOVE level (0.5\u00d7H4ATR=1.09 \u2192 outside proximity). comp=+45 moderate (upgraded from +39.5 weak). WATCH \u2014 arm LIMIT BUY@93.51 when price retraces to within 1.09 of level."
     },
     {
       "id": "gold_escalation_buy_zone",
@@ -263,8 +263,30 @@
         "price": null
       },
       "last_updated": "2026-04-27T11:43Z",
-      "updated_utc": "2026-04-27T13:51Z",
-      "proximity": "GOLD@4692; 8pts BELOW 4700 (IN zone). comp=-25 weak (<+40 threshold). VALIDATED (12f 4h=80%). NO TRADE until comp\u2265+40 bull. WATCH."
+      "updated_utc": "2026-04-27T14:47Z",
+      "proximity": "GOLD@4691.5; 8.5pts BELOW 4700 (in zone). comp=-25 weak (<+40 threshold). VALIDATED (12f 4h=80%). NO TRADE until comp\u226540 bull. WATCH."
+    },
+    {
+      "id": "gold_sweep_4686_buy_retest",
+      "instrument": "GOLD",
+      "level": 4686.16,
+      "emit_on": "cross_down",
+      "cooldown_sec": 1800,
+      "direction": "buy",
+      "note": "ENTRY: price retests 4686-4694 swept zone; M15 bar closes AT or ABOVE 4686.16 with bullish rejection wick \u22652pts from the low. Arm LIMIT BUY@4693.76 when |comp| \u226540 bullish.\n\nCONTEXT: M15 down-sweep 14:30Z 2026-04-27 \u2014 wicked 24.4pts below 4686.16, closed back inside at 4693.76. Fresh structural support. comp=-25 weak bearish (|comp|=25, below 40 arming threshold). Overlaps with gold_escalation_buy_zone (4700); provides lower entry on deeper retest.\n\nSL: 4683.72  TP: 4721  R:R target: 2.7\n\nadded 2026-04-27T14:47Z \u2014 M15 down-sweep event created fresh structural level at 4686.16; watchlist-only until |comp|\u226540 bullish.",
+      "entry_criterion": "M15 retest of 4686-4694 with bullish rejection wick \u22652pts. Arm LIMIT BUY@4693.76 when |comp|\u226540 bullish.",
+      "regime_context": "M15 down-sweep 14:30Z. wick=24.4pts (3\u00d7M15ATR). comp=-25 weak. |comp|\u226540 required for arming. 4h time-stop if entered (escalation-zone type).",
+      "sl": 4683.72,
+      "tp": 4721.0,
+      "rr_target": "2.7",
+      "current_price_ref": 4691.5,
+      "price_ref": {
+        "ts": "2026-04-27T14:47Z",
+        "price": null
+      },
+      "last_updated": "2026-04-27T14:47Z",
+      "updated_utc": "2026-04-27T14:47Z",
+      "proximity": "GOLD@4691.5; at swept zone 4686-4694. comp=-25 weak (|comp|=25, below 40 threshold). WATCHLIST ONLY until |comp|\u226540 bullish."
     }
   ],
   "structure_watch": [
