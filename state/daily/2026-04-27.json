@@ -647,5 +647,43 @@
     "binary": "none (FOMC T-2d no blackout)",
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
     "summary": "2 evt: BTCUSD LIMIT BUY@79025 filled @ 79024.5 (comp=+57.5 mod, H4 FVG, thesis=trend). AUDUSD BUY@0.7143 ARMED. USDCAD SELL@1.3675 ARMED. GBPUSD@1.3540 AT dual-resistance monitoring M15 rejection. GOLD/OIL/USDJPY/USDCHF WATCH. attention_covered=9/9"
+  },
+  {
+    "tick_ts_utc": "2026-04-27T05:10Z",
+    "events_count": 1,
+    "events": [
+      "daily_pnl_threshold(warn)"
+    ],
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "open_positions": [
+      {
+        "epic": "BTCUSD",
+        "direction": "BUY",
+        "entry": 79024.5,
+        "size": 0.04,
+        "sl": 78700,
+        "tp": 80500,
+        "upl_approx": -12.0
+      }
+    ],
+    "working_orders": [
+      {
+        "epic": "AUDUSD",
+        "direction": "BUY",
+        "level": 0.7143,
+        "type": "LIMIT"
+      },
+      {
+        "epic": "USDCAD",
+        "direction": "SELL",
+        "level": 1.3675,
+        "type": "LIMIT"
+      }
+    ],
+    "pnl_note": "daily_pnl warn -$10.64 (-1.09%). Conservative posture. BTC 26p from SL.",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "FOMC_2026-04-29 T-2d no blackout",
+    "attention_covered": "9/9"
   }
 ]

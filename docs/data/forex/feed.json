@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-27T04:57:09.084736Z",
+  "generated_at": "2026-04-27T05:10:55.092603Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T02:47:00Z",
-      "events_in": 0,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 0,
-      "summary": "02:47 forex auto \u2014 0 evt heartbeat. USDJPY 159.772 +45 mod 4/4 bull dist=22.8p INSIDE 30p swing=ARMED (BOJ T-3d). GOLD 4682.17 -40 mod 3/4 bear sweep_4721 dist=39.51$ OUTSIDE 30$ swing=WATCH (DOWNGRADE; price dropped 4695\u21924682). safehaven_4775 dist=92.83$ opp-watch far. OIL 95.804 +40.5 mod sweep_9323 dist=256.75p WATCH; retest_90 dist=550p dormant. BTC 78436.85 +55 mod day_fvg_buy dist=1476.85$ WATCH (price UP from 78062). EURUSD -32 weak GBPUSD none AUDUSD none USDCAD none USDCHF none swing=NONE. 6 alerts KEEP 9 SW KEEP. Scalp 3 FX ACTIVE halt={}. BOJ T-3d FOMC T-5d. web_search skipped (0 pos + last search 64m ago + no events). attention_covered=9/9."
-    },
     {
       "ts_utc": "2026-04-24T03:47:00Z",
       "events_in": 13,
@@ -825,6 +817,44 @@
       "binary": "none (FOMC T-2d no blackout)",
       "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "summary": "2 evt: BTCUSD LIMIT BUY@79025 filled @ 79024.5 (comp=+57.5 mod, H4 FVG, thesis=trend). AUDUSD BUY@0.7143 ARMED. USDCAD SELL@1.3675 ARMED. GBPUSD@1.3540 AT dual-resistance monitoring M15 rejection. GOLD/OIL/USDJPY/USDCHF WATCH. attention_covered=9/9"
+    },
+    {
+      "tick_ts_utc": "2026-04-27T05:10Z",
+      "events_count": 1,
+      "events": [
+        "daily_pnl_threshold(warn)"
+      ],
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "open_positions": [
+        {
+          "epic": "BTCUSD",
+          "direction": "BUY",
+          "entry": 79024.5,
+          "size": 0.04,
+          "sl": 78700,
+          "tp": 80500,
+          "upl_approx": -12.0
+        }
+      ],
+      "working_orders": [
+        {
+          "epic": "AUDUSD",
+          "direction": "BUY",
+          "level": 0.7143,
+          "type": "LIMIT"
+        },
+        {
+          "epic": "USDCAD",
+          "direction": "SELL",
+          "level": 1.3675,
+          "type": "LIMIT"
+        }
+      ],
+      "pnl_note": "daily_pnl warn -$10.64 (-1.09%). Conservative posture. BTC 26p from SL.",
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "binary_event": "FOMC_2026-04-29 T-2d no blackout",
+      "attention_covered": "9/9"
     }
   ]
 }
