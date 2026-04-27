@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-27T14:57Z",
+  "last_updated_by_claude": "2026-04-27T15:09Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -94,9 +94,9 @@
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "ENTRY: M15 bar closes ABOVE H4 bear FVG top 0.7146; enter on retest of 0.7143\u20130.7146 from above with bullish rejection wick \u22652p from the low. VALIDATED \u2014 naked LIMIT at readiness \u2265 moderate (comp \u226540 bullish). No M15 rejection confirmation required.\n\nCONTEXT: AUDUSD comp=+71 strong (4/4 TFs). VALIDATED: 3 fires, 4h hit_rate=100% per Rule 3. Unarmable while 2 USD-bearish positions at correlation cap (GBPUSD BUY + USDCAD SELL). Arm LIMIT@0.7143 immediately when correlation cap clears.\n\nSL: 0.7130  TP: 0.7187  R:R target: 2.4\n\nvalidated 2026-04-27T14:25Z \u2014 3f 4h=100% meets Rule 3; note updated to naked LIMIT eligibility; correlation cap prevents arming until one USD-bearish position closes.",
+      "note": "ENTRY: M15 bar closes ABOVE H4 bear FVG top 0.7146; enter on retest of 0.7143\u20130.7146 from above with bullish rejection wick \u22652p from the low. VALIDATED \u2014 naked LIMIT at readiness \u2265 moderate (comp \u226540 bullish). No M15 rejection confirmation required.\n\nCONTEXT: AUDUSD comp=+71 strong (4/4 TFs). VALIDATED: 3 fires, 4h hit_rate=100% per Rule 3. Correlation cap CLEARED 2026-04-27T14:56Z (GBPUSD BUY closed at +$6.30 trailing SL). Price at 0.71919 \u2014 49p ABOVE level (outside 30p proximity threshold). Arm LIMIT@0.7143 immediately when price retraces within 30p of level.\n\nSL: 0.7130  TP: 0.7187  R:R target: 2.4\n\nupdated 2026-04-27T15:09Z \u2014 correlation cap cleared; price outside proximity; waiting for retracement to 0.7143 zone.",
       "entry_criterion": "M15 bar closes ABOVE H4 bear FVG top 0.7146; enter on retest of 0.7143\u20130.7146 from above with bullish rejection wick \u22652p. VALIDATED \u2014 naked LIMIT at comp \u226540 bullish.",
-      "regime_context": "AUDUSD comp=+71 strong (4/4 TFs). 3 fires, 4h=100% \u2192 Rule 3 validated. Correlation cap: 2 USD-bearish at cap (GBPUSD BUY + USDCAD SELL). Arm LIMIT on cap release.",
+      "regime_context": "AUDUSD comp=+71 strong (4/4 TFs). 3 fires, 4h=100% \u2192 Rule 3 validated. Correlation cap cleared 14:56Z Apr27 (GBPUSD closed). Price 49p above level. Arm LIMIT when price retraces to 0.7143.",
       "sl": 0.713,
       "tp": 0.7187,
       "rr_target": "2.4",
@@ -105,9 +105,9 @@
         "ts": "2026-04-27T14:18Z",
         "price": null
       },
-      "last_updated": "2026-04-27T14:25Z",
-      "updated_utc": "2026-04-27T14:47Z",
-      "proximity": "AUDUSD@0.71983; 55p ABOVE level (H4ATR=21p, 3\u00d7H4ATR=63p \u2192 within range). comp=+71 strong. VALIDATED (3f 4h=100%). UNARMABLE \u2014 correlation cap (GBPUSD BUY + USDCAD SELL = 2 USD-bearish). Arm LIMIT@0.7143 immediately when GBPUSD or USDCAD closes.",
+      "last_updated": "2026-04-27T15:09Z",
+      "updated_utc": "2026-04-27T15:09Z",
+      "proximity": "AUDUSD@0.71919; 49p ABOVE level (threshold=30p, outside). comp=+71 strong. VALIDATED (3f 4h=100%). Correlation cap CLEARED. Arm LIMIT when price returns to 0.7143.",
       "validated": true
     },
     {
@@ -287,6 +287,28 @@
       "last_updated": "2026-04-27T14:57Z",
       "updated_utc": "2026-04-27T14:57Z",
       "proximity": "GOLD@4682.3; at new swept zone 4682-4686. comp=-25 weak (below 40 threshold). WATCHLIST ONLY until |comp|\u226540 bullish."
+    },
+    {
+      "id": "usdchf_m15sweep_7832_buy_watch",
+      "instrument": "USDCHF",
+      "level": 0.7832,
+      "emit_on": "cross_down",
+      "cooldown_sec": 1800,
+      "direction": "buy",
+      "note": "ENTRY: price retests 0.7832 swept zone; M15 bar closes AT or ABOVE 0.7832 with bullish rejection wick \u22653p from the low. WATCHLIST ONLY \u2014 arm LIMIT BUY when |comp| \u2265 40 bearish extension (counter-trend fade: bearish composite is the extension that creates the buy edge).\n\nCONTEXT: M15 down-sweep 2026-04-27T14:45Z, wick=1.1p at 0.78320, close=0.784285. comp=-26 weak bearish (need \u2264-40 to arm). USDCHF scalp disabled (pip-conv). 4h time-stop if entered. TP at 0.7875 (existing sell zone, usdchf_sweep_h1_sell_retest).\n\nSL: 0.7820  TP: 0.7875  R:R target: 3.6\n\nadded 2026-04-27T15:09Z \u2014 M15 liquidity_sweep down; counter-trend fade watchlist; arm at |comp|\u226540 bearish.",
+      "entry_criterion": "M15 retest of 0.7832 with bullish rejection wick \u22653p. WATCHLIST ONLY \u2014 arm at |comp|\u226540 bearish extension.",
+      "regime_context": "M15 down-sweep 14:45Z Apr27, wick=1.1p. comp=-26 weak bearish. Scalp disabled (pip-conv). 4h time-stop if entered. TP at 0.7875 sell zone.",
+      "sl": 0.782,
+      "tp": 0.7875,
+      "rr_target": "3.6",
+      "current_price_ref": 0.784225,
+      "price_ref": {
+        "ts": "2026-04-27T15:09Z",
+        "price": 0.784225
+      },
+      "last_updated": "2026-04-27T15:09Z",
+      "proximity": "USDCHF@0.78425; price 10.5p ABOVE 0.7832 (just created, still close). comp=-26 weak. WATCHLIST ONLY until |comp|\u2264-40 bearish extension.",
+      "updated_utc": "2026-04-27T15:09Z"
     }
   ],
   "structure_watch": [
@@ -357,5 +379,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-27T14:25Z"
+  "last_updated_utc": "2026-04-27T15:09Z"
 }

@@ -2000,5 +2000,13 @@
     "float_usd": 11.3,
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
     "note": "GOLD 4686 sweep level SL breached; replaced with 4682 watchlist-only; no new trades; FOMC T~50h"
+  },
+  {
+    "ts_utc": "2026-04-27T15:09Z",
+    "events_in": 2,
+    "opened": 0,
+    "closed": 1,
+    "skipped": 0,
+    "note": "15:09 UTC \u2014 2 evt: (1) GBPUSD position_closed SL@1.35491 trailing (+1.5R lock) pnl=+$6.30. (2) USDCHF M15 down-sweep@0.78320 wick=1.1p comp=-26 weak \u2192 ADD usdchf_m15sweep_7832_buy_watch WATCHLIST (no arming, |comp|<40). AUDUSD: correlation cap cleared, price 49p above 0.7143 (outside 30p proximity) \u2014 WATCH, arm LIMIT on retracement. USDCAD SELL@1.36106 open, age=71min, UPL\u2248-$0.90. Scalp: EURUSD/GBPUSD/AUDUSD ACTIVE no halts. News skip (<20min). daily_pnl=-$10.52. FOMC T\u224850h. attention_covered=9/9."
   }
 ]
