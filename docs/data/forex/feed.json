@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T16:02:59.615901Z",
+  "generated_at": "2026-04-27T17:10:14.183540Z",
   "ticks": [
     {
       "ts_utc": "2026-04-24T14:10:00Z",
@@ -80,51 +80,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "tick_ts_utc": "2026-04-27T04:52Z",
-      "events": 2,
-      "event_types": [
-        "level_cross(btcusd_h4fvg_79025_buy)",
-        "position_opened(BTCUSD)"
-      ],
-      "trades_opened": 0,
-      "positions_filled": 1,
-      "positions_closed": 0,
-      "open_positions": 1,
-      "working_orders": [
-        {
-          "epic": "USDCAD",
-          "direction": "SELL",
-          "level": 1.3675
-        },
-        {
-          "epic": "AUDUSD",
-          "direction": "BUY",
-          "level": 0.7143
-        }
-      ],
-      "skipped": 0,
-      "broker_balance": 985.32,
-      "upl": -2.7,
-      "positions": [
-        {
-          "epic": "BTCUSD",
-          "direction": "BUY",
-          "size": 0.04,
-          "entry": 79024.5,
-          "sl": 78700.0,
-          "tp": 80500.0,
-          "deal_id": "00000000-4e76-8da6-044a-beb40055311e",
-          "opened_at": "2026-04-27T04:50:06Z",
-          "thesis_type": "trend",
-          "upl": -2.7,
-          "time_exit_utc": "2026-04-28T04:50Z"
-        }
-      ],
-      "binary": "none (FOMC T-2d no blackout)",
-      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "summary": "2 evt: BTCUSD LIMIT BUY@79025 filled @ 79024.5 (comp=+57.5 mod, H4 FVG, thesis=trend). AUDUSD BUY@0.7143 ARMED. USDCAD SELL@1.3675 ARMED. GBPUSD@1.3540 AT dual-resistance monitoring M15 rejection. GOLD/OIL/USDJPY/USDCHF WATCH. attention_covered=9/9"
     },
     {
       "tick_ts_utc": "2026-04-27T05:10Z",
@@ -1524,6 +1479,22 @@
       "float_usd": -0.84,
       "binary_event": "FOMC T-49h",
       "attention_covered": "9/9"
+    },
+    {
+      "tick_ts_utc": "2026-04-27T17:06Z",
+      "events_processed": 1,
+      "events_actionable": 0,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "trades_skipped": 0,
+      "working_orders": 1,
+      "open_positions": 1,
+      "daily_pnl_realized": -10.52,
+      "float_upl": -1.64,
+      "balance": 979.56,
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "binary_event": "FOMC T-49h",
+      "note": "Heartbeat tick. bar_close noise only. USDCAD SELL thesis intact (-43.5 moderate). GBPUSD LIMIT@1.352555 working. AUDUSD strong (+68.5) but corr cap full. News: FOMC hold priced, Canada trade headwinds persist."
     }
   ]
 }

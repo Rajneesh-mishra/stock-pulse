@@ -2046,5 +2046,21 @@
     "float_usd": -0.84,
     "binary_event": "FOMC T-49h",
     "attention_covered": "9/9"
+  },
+  {
+    "tick_ts_utc": "2026-04-27T17:06Z",
+    "events_processed": 1,
+    "events_actionable": 0,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "trades_skipped": 0,
+    "working_orders": 1,
+    "open_positions": 1,
+    "daily_pnl_realized": -10.52,
+    "float_upl": -1.64,
+    "balance": 979.56,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "FOMC T-49h",
+    "note": "Heartbeat tick. bar_close noise only. USDCAD SELL thesis intact (-43.5 moderate). GBPUSD LIMIT@1.352555 working. AUDUSD strong (+68.5) but corr cap full. News: FOMC hold priced, Canada trade headwinds persist."
   }
 ]
