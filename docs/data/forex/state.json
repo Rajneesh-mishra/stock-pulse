@@ -1,10 +1,27 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-27T04:41Z",
-  "state_ts_utc": "2026-04-27T04:41Z",
-  "regime_note": "04:41 forex auto \u2014 1 evt news_flash(fed_fomc: GoldSilver Apr-23 pre-FOMC preview, stale, non-altering; FOMC T-2d active=false). AUDUSD BUY@0.7143 KEEP(comp=+45 mod, bid=0.71739, dist=30p, validated 3f/100%4h). USDCAD SELL@1.3675 KEEP(comp=-40 mod, bid=1.36607, dist=12p inside prox). BTCUSD BUY@79025 KEEP(comp=+60 strong, bid=79073, dist=$48 inside prox, H4 FVG). GBPUSD@1.35446 AT dual resistance 1.3537/1.3548 (|comp|=53 mod ext); monitoring M15 rejection close <1.3537 for MARKET SELL. GOLD@4726 comp=-4.5 none; gold_sweep_4721 dist=5pts |comp|<40 NOT MET; gold_buy@4775 dist=49pts. OIL@94.10 oil_sweep_9323 dist=$0.87 inside prox but comp=+27 weak (<40); day low=93.884. USDJPY@159.196 dist=80p to 160 WATCH; BoJ 0.75% hold confirmed. USDCHF@0.78491 dist=25.9p to 0.7875 inside prox but comp=-12.5 none. EURUSD comp=+23.5 none. FOMC T-2d no blackout. Regime ACTIVE_ESCALATION stable. 0 trades 0pos 3 working. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-27T04:52Z",
+  "state_ts_utc": "2026-04-27T04:52Z",
+  "regime_note": "2026-04-27T04:52Z forex auto \u2014 2 evt: level_cross(btcusd_h4fvg_79025_buy@79011.45) + position_opened(BTCUSD BUY@79024.5). BTCUSD BUY@79024.5 LIVE (size=0.04 SL=78700 TP=80500 R:R=4.55 UPL=-$2.70 time_exit=2026-04-28T04:50Z). comp=+57.5 mod 4/4TF bullish; H4 FVG 78939-79025 filled; thesis=trend, 24h max hold. AUDUSD BUY@0.7143 ARMED (comp=+45 mod, 3f/100%4h validated, dist=26p above limit). USDCAD SELL@1.3675 ARMED (comp=-40 mod, dist=10.4p below level). GBPUSD@1.354035 AT 1.3537 dual-resistance (|comp|=53 mod), monitoring M15 rejection close below 1.3537. GOLD@4724.1 comp=-4.5 none; gold_sweep_4721 needs |comp|>=40 bullish NOT MET; gold_buy@4775 dist=51pts. OIL@94.21 comp=+27 weak; oil_sweep_9323 inside prox but comp<40. USDJPY@159.229 dist=77.1p from 160 red-line; comp=+3.5 none. USDCHF@0.78472 comp=-5.0 none. FOMC T-2d no blackout. BoJ 0.75% hold confirmed. 1 pos open 2 working. attention_covered=9/9.",
   "regime_note_prev": "04:25 forex auto \u2014 0 evt heartbeat. AUDUSD BUY@0.7143 KEEP (comp=+45 mod 4/4TF, bid=0.71736). USDCAD SELL@1.3675 KEEP (comp=-40 mod 4/4TF, bid=1.36627). GBPUSD@1.35447 day-high=1.3548 (dual resistance confirmed 1.3537/1.3548); SL updated 1.3545\u21921.3558 (above sweep high); TP 1.3510\u21921.3505; R:R=1.52 valid; monitoring M15 reject below 1.3537 MARKET. BTC H4 FVG bars_ago=1 unmitigated (78939-79025) + comp=+60 strong 4/4TF \u2192 LIMIT BUY@79025 ARMED (dealId=00000000-4e76-892b-044a-beb40055311e, size=0.04, SL=78700, TP=80500, R:R=4.5). GOLD@4726 comp=-4.5 none (need +40 bull ext for 4721 sell \u2014 NOT met). gold_h1fvg_sell_4695 REMOVED (price rallied 4677\u21924727 through FVG zone, thesis void). OIL@94.20 dist=$0.97 near prox of 93.23 but comp=+27 weak (<40). BOJ Apr27-28 meeting today (USDJPY 159.18, intervention level 160.0). FOMC T-2d Apr29 active=false. Regime ACTIVE_ESCALATION stable. 1 trade (BTC LIMIT) 0 pos 3 working. attention_covered=9/9.",
-  "open_positions": [],
+  "open_positions": [
+    {
+      "deal_id": "00000000-4e76-8da6-044a-beb40055311e",
+      "epic": "BTCUSD",
+      "direction": "BUY",
+      "size": 0.04,
+      "entry": 79024.5,
+      "sl": 78700.0,
+      "tp": 80500.0,
+      "opened_at": "2026-04-27T04:50:06Z",
+      "thesis_type": "trend",
+      "alert_id": "btcusd_h4fvg_79025_buy",
+      "time_exit_utc": "2026-04-28T04:50Z",
+      "risk_usd": 12.98,
+      "rr": 4.55,
+      "note": "H4 bull FVG 78939-79025 filled at 79024.5. comp=+57.5 mod 4/4TF bullish. H4 BOS bull at 78356. trend thesis, 24h max hold."
+    }
+  ],
   "watchlist": [
     {
       "instrument": "AUDUSD",
@@ -228,7 +245,7 @@
   "total_trades": 2,
   "wins": 1,
   "losses": 0,
-  "broker_balance": 987.93,
+  "broker_balance": 985.32,
   "effective_capital_usd": 987.93,
   "capital_base_note": "Demo account reset to $1k on 2026-04-20 (topUp -$8849.07). Broker balance and effective capital are now aligned.",
   "loop_config": {
@@ -821,7 +838,7 @@
     ],
     "note": "Resolved 2026-04-22 11:38 UTC (indefinite extension, 4-source). UPDATED 12:54 UTC: Hormuz friction ESCALATED from fire-on-ship to SEIZURE of 2 ships (MSC Francesca + Epaminondas, CNN/ABC live Apr 22) + 3rd ship bridge-damage fire. Trump re-affirms blockade. No deadline anchor; each rung is spike-fade-or-continuation \u2014 gold alert catalyst upgraded for 4775 break. | 2026-04-22 19:57 UTC: BOJ policy meeting Apr 27-28 T-5d noted as calendar (not blackout \u2014 >24h). | 2026-04-23 20:05 UTC tick: BOJ Apr 27-28 T-3d, FOMC T-4d \u2014 still calendar, no blackout. | 2026-04-23 20:30 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-3d \u2014 still calendar, no blackout. | 2026-04-23 21:10 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. Half-size caution on elevated-event week. | 2026-04-24 03:45 UTC tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. | 2026-04-23T23:25:00Z ESCALATION: Trump 'shoot to kill' order on Iranian mine boats. 3rd tanker seized. Regime shifted to ACTIVE_ESCALATION. BOJ T-3d FOMC T-5d no blackout. | 2026-04-24T00:52Z tick: BOJ Apr 27-28 T-3d, FOMC Apr 29 T-5d \u2014 still calendar, no blackout. | 2026-04-24T16:10Z tick: 'After collapse of Islamabad talks, US-Iran naval showdown escalates' (Arab Weekly 08:33 UTC). Escalation confirmed. Regime stays ACTIVE_ESCALATION. No blackout (no deadline). BOJ Apr 27-28 T-3d. FOMC Apr 29 T-5d. | 2026-04-25T04:17Z tick: BOJ Apr 27-28 T-2d, FOMC Apr 29 T-4d \u2014 still calendar, no blackout. Hormuz Fortune article = historical retrospective, no escalation change. | 2026-04-25T05:41Z tick: BOJ Apr 27-28 T-2d, FOMC Apr 29 T-4d \u2014 calendar only, no blackout. Regime stable ACTIVE_ESCALATION. | 2026-04-25T05:55Z tick: BOJ Apr 27-28 T-2d, FOMC Apr 29 T-4d \u2014 calendar only, no blackout. GoldSilver FOMC-preview (Apr-23) consumed \u2014 non-thesis-altering. Regime stable ACTIVE_ESCALATION. | 2026-04-25T06:33Z tick: news_flash iran_ceasefire \u2014 Tehran skips Islamabad round 2, calls US demands 'childish' (MSN Apr 24). Escalation persists, no de-escalation. Regime ACTIVE_ESCALATION intact. Gold/oil safe-haven/supply-risk thesis strengthened. AUDUSD invalidation clause (Iran deal fails Apr 22) \u2014 ceasefire extended indefinitely; Tehran skipping talks \u2260 deal failure. AUDUSD thesis valid. BOJ Apr 27-28 T-2d, FOMC Apr 29 T-4d \u2014 calendar only, no blackout. | 2026-04-25T06:50Z tick: BOJ Apr 27-28 T-2d, FOMC Apr 29 T-4d \u2014 calendar only, no blackout. Market closed weekend. Regime stable ACTIVE_ESCALATION. Tehran skips Islamabad round 2 \u2014 escalation persists. | 2026-04-25T07:50Z tick: BOJ Apr 27-28 T-2d, FOMC Apr 29 T-4d \u2014 calendar only, no blackout. 0 evt heartbeat. Market closed weekend. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP. | 2026-04-25T10:05Z tick: 0 evt heartbeat. Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP. BOJ T-2d FOMC T-4d cal. GOLD none(-10.5) inside 4695-4715 WATCH(validated). OIL_CRUDE weak(+29.5) sweep_9323 dist=$0.97 WATCH(validated). oil_sweep_9208 REMOVED(stale dist=205p>3\u00d7H4ATR=171p). AUDUSD weak(+29) pullback_buy@0.7085 WATCH. 0 trades 0pos. attention_covered=9/9. | 2026-04-25T11:15Z tick: BOJ Apr 27-28 T-2d, FOMC Apr 29 T-4d \u2014 calendar only, no blackout. Market closed weekend. Regime stable ACTIVE_ESCALATION. 0 evt heartbeat. | 2026-04-25T13:41Z tick: BOJ Apr 27-28 T-2d, FOMC Apr 29 T-4d \u2014 calendar only, no blackout. Market closed weekend. Regime stable ACTIVE_ESCALATION. 0 evt heartbeat. | 2026-04-25T17:57Z tick: 1 evt news_flash(iran_ceasefire) \u2014 Trump cancels envoys trip to Islamabad, hopes fade for breakthrough. Escalatory: confirms ceasefire talks stalling further. Regime stays ACTIVE_ESCALATION. Gold/oil safe-haven/supply-risk thesis strengthened. No deadline (binary_event.active=false). BOJ Apr 27-28 T-2d, FOMC Apr 29 T-4d \u2014 calendar only, no blackout. Market closed weekend. | 2026-04-25T18:22Z tick: 0 evt heartbeat. Market closed weekend. Regime stable ACTIVE_ESCALATION. BOJ Apr 27-28 T-2d, FOMC Apr 29 T-4d \u2014 calendar only, no blackout. AUDUSD level alert added (pullback buy 0.7085). GBPUSD LIMIT BUY@1.3506 KEEP. | 2026-04-25T19:20Z tick: 1 evt news_flash(fed_fomc) \u2014 Warsh Fed Chair nomination committee vote set Apr 29 (CoinGape). Hawkish/crypto-friendly nominee. No change to Apr 29 FOMC decision (Powell still chairs). Mildly USD-bullish signal: increases USDJPY rally toward 160 probability and GBPUSD pullback probability. Regime ACTIVE_ESCALATION intact. BOJ Apr 27-28 T-2d, FOMC Apr 29 T-4d \u2014 calendar only, no blackout. | 2026-04-25T20:42Z tick: 0 evt heartbeat. Market CLOSED weekend. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP (dist=20.6p within 30p ARM). BOJ T-1d FOMC T-4d cal. GOLD none(0) inside 4695-4715 zone 4710.25 WATCH(validated 10f/80%4h). OIL weak(0) dist=$0.93 WATCH(validated 6f/100%4h). AUDUSD weak(0) dist=64p WATCH. USDCAD weak(0) dist=10.4p WATCH. 0 trades 0pos. attention_covered=9/9. | 2026-04-26T06:00Z tick: BOJ Apr 27-28 T-1d (intervention risk elevated, USDJPY 159.38). FOMC Apr 29-30 T-3d. No blackout (no deadline). Market closed weekend. Regime stable ACTIVE_ESCALATION. | 2026-04-26T06:20Z tick: 1 evt news_flash(iran_ceasefire) \u2014 Trump cancels Pakistan envoys trip (Reuters Apr 25). Same event processed at 17:57Z Apr 25 \u2014 escalation confirmed, regime ACTIVE_ESCALATION intact. Gold/oil safe-haven/supply-risk thesis strengthened. No deadline. BOJ Apr 27-28 T-1d, FOMC Apr 29-30 T-3d \u2014 calendar only, no blackout. | 2026-04-26T07:05Z tick: 0 evt heartbeat. Market CLOSED weekend. Regime ACTIVE_ESCALATION stable. BOJ Apr 27-28 T-1d (USDJPY 159.34, intervention zone 160 = 71p above). FOMC Apr 29-30 T-3d \u2014 no blackout. GBPUSD LIMIT BUY@1.3506 KEEP. | 2026-04-26T08:35Z tick: 1 evt news_flash(hormuz_strait) \u2014 Times of Israel 'The US protected Hormuz shipping from Iranian attacks in the \\u201980s. Could it again?' (Apr 25 historical analysis). NON-ALTERING: retrospective piece, no live escalation signal. Regime ACTIVE_ESCALATION intact. BOJ Apr 27-28 T-1d (intervention risk elevated). FOMC Apr 29-30 T-3d. Calendar only, no blackout. | 2026-04-26T09:14Z tick: 0 evt heartbeat. Market CLOSED weekend. BOJ Apr 27-28 T-1d (hold expected, intervention risk at 160 elevated). BTC comp upgraded +44\u2192+60 strong (ETF inflows $411M/day, DXY corr=-0.90). Regime ACTIVE_ESCALATION stable. | 2026-04-26T09:38Z tick: 1 evt news_flash(us_iran_military) \u2014 Indian Express 'US Navy hunting for Iranian mines, reopening Hormuz could take 6 months' (Apr 25, matched kw=mines). NON-ALTERING: mine-clearance-timeline analysis, not a new escalation rung. Confirms 6-month Hormuz blockade timeline = sustained supply disruption. Oil and gold safe-haven/supply-risk thesis strengthened. Regime ACTIVE_ESCALATION intact. BOJ Apr 27-28 T-1d (hold expected, intervention zone 160 dist=62p). FOMC Apr 29-30 T-3d. No blackout. | 2026-04-26T11:35:00Z tick: 0 evt heartbeat. Market CLOSED weekend. BOJ Apr 27-28 T-1d (USDJPY 159.384, intervention zone 160 dist=61.6p). FOMC Apr 29-30 T-3d \u2014 calendar only, no blackout. Regime ACTIVE_ESCALATION stable. | 2026-04-26T12:45Z tick: 0 evt heartbeat. Market CLOSED weekend. BOJ Apr 27-28 T-1d (hold expected, intervention risk elevated at 160; USDJPY@159.38 dist=62p). FOMC Apr 29-30 T-3d. Calendar only, no blackout. GBPUSD LIMIT BUY@1.3506 KEEP. | 2026-04-26T14:51Z tick: 0 evt heartbeat. Market CLOSED weekend. BOJ Apr 27-28 T-0d (USDJPY@159.384, intervention zone 160 dist=61.6p, intervention risk ELEVATED Monday open). FOMC Apr 29-30 T-3d \u2014 calendar only, no blackout. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP(dist=27.3p ARMED). BTC comp=+60 STRONG(FVG@76960 dist=$1075 WATCH). Regime ACTIVE_ESCALATION stable. | 2026-04-26T15:54Z tick: 0 evt heartbeat. Market CLOSED weekend. BOJ Apr 27-28 T-0d (USDJPY@159.384, intervention zone 160 dist=61.6p). FOMC Apr 29-30 T-3d. Calendar only, no blackout. GBPUSD LIMIT BUY@1.3506 comp=+48 mod KEEP. | 2026-04-26T17:11Z tick: 0 evt heartbeat. Market CLOSED weekend. BOJ T-0d (Apr 27-28 hold expected). FOMC Apr 29-30 T-3d. Calendar only, no blackout. GBPUSD LIMIT BUY@1.3506 KEEP. BTC comp=+57.5 mod (\u2193from +60). gold_sweep_4721 Rule3-promoted. | 2026-04-26T18:19Z tick: 0 evt heartbeat. BOJ Apr 27-28 T-0d \u2014 hold confirmed (news). USDJPY@159.34 dist=66p from intervention 160.05. FOMC Apr 29-30 T-3d. Hormuz blockade persists \u2014 escalation regime ACTIVE_ESCALATION intact. No blackout. | 2026-04-26T20:02Z tick: 1 evt news_flash(fed_fomc) \u2014 GoldSilver Apr-23 FOMC preview, non-altering. Market CLOSED (opens ~22:00 UTC). BOJ Apr 27-28 T-0d meeting underway, hold consensus intact. FOMC Apr 29-30 T-2d cal. No blackout. GBPUSD LIMIT BUY@1.3506 KEEP (dist=20.6p). BTCUSD LIMIT SELL@78369 KEEP (counter-trend fade, dist=99p). 10 alerts KEEP. 0 pos. attention_covered=9/9. | 2026-04-27T23:14Z tick: 0 new escalation events. Lebanon/Israel strikes headline (stale +20h) \u2014 general ME escalation backdrop, no specific Hormuz thesis change. BOJ T-0d hold confirmed at 0.75%. FOMC T-2d no blackout. Regime ACTIVE_ESCALATION stable. | 2026-04-27T03:00Z tick: BoJ hold confirmed 0.75% (Apr 27-28 concluded). FOMC Apr 29 T-2d cal no blackout. Regime ACTIVE_ESCALATION stable. GBPUSD at 1.3537 sweep level monitoring M15 rejection."
   },
-  "balance": 992.97,
+  "balance": 985.32,
   "level_alerts": [
     {
       "alert_id": "gold_escalation_buy_zone",
@@ -1099,6 +1116,32 @@
         "HOUR_4",
         "HOUR"
       ]
+    }
+  ],
+  "working_orders": [
+    {
+      "deal_id": "00000000-4e76-5ddd-044a-beb40055311e",
+      "epic": "USDCAD",
+      "direction": "SELL",
+      "size": 3000.0,
+      "limit_price": 1.3675,
+      "sl": 1.3695,
+      "tp": 1.3595,
+      "alert_id": "usdcad_sell_fvg_13675",
+      "armed_at": "2026-04-27T01:00:44Z",
+      "note": "USDCAD SELL@1.3675 LIMIT. comp=-40 mod bearish 4/4TF. dist=10.4p below level."
+    },
+    {
+      "deal_id": "00000000-4e76-6275-044a-beb40055311e",
+      "epic": "AUDUSD",
+      "direction": "BUY",
+      "size": 3500.0,
+      "limit_price": 0.7143,
+      "sl": 0.713,
+      "tp": 0.7187,
+      "alert_id": "audusd_m15fvg_buy_7143",
+      "armed_at": "2026-04-27T01:12:24Z",
+      "note": "AUDUSD BUY@0.7143 LIMIT. comp=+45 mod bullish. 3f/100%4h validated. dist=26p above limit."
     }
   ]
 }

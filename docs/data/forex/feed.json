@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-27T04:49:53.186924Z",
+  "generated_at": "2026-04-27T04:57:09.084736Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T01:41:00Z",
-      "events_in": 0,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 0,
-      "summary": "01:41 forex auto \u2014 0 evt heartbeat. WEB SEARCH: shoot-to-kill confirmed 4 sources; IEA '13M bpd lost' OIL bid reinforced. USDJPY 159.79 +45 mod dist=21p ARMED (BOJ T-3d). GOLD 4695 -40 mod 26.68$ INSIDE 30$ ARMED (KEEP: -40 mod restored vs -37.5 weak 06:00 IST). OIL 96.92 +43 mod sweep_9323 dist=368p WATCH; retest_90 dist=662p dormant. BTC 78062 +52.5 mod (3/4 bull) day_fvg_buy dist=1102$ WATCH. EURUSD -32 weak others none. 6 alerts KEEP 9 SW KEEP. Scalp 3 FX ACTIVE halt={}. BOJ T-3d FOMC T-5d. 0 trades $1000/0pos. attention_covered=9/9."
-    },
     {
       "ts_utc": "2026-04-24T02:47:00Z",
       "events_in": 0,
@@ -788,6 +780,51 @@
       "scalp": "EURUSD/GBPUSD/AUDUSD active no halts",
       "attention_covered": "9/9",
       "note": "Heartbeat. news_flash fed_fomc: GoldSilver Apr-23 FOMC preview stale, non-altering. GBPUSD at dual resistance 1.3537/1.3548 monitoring M15 rejection. OIL day_low=93.884 approaching 93.23 zone (dist=$0.87 inside prox) but comp=+27 weak."
+    },
+    {
+      "tick_ts_utc": "2026-04-27T04:52Z",
+      "events": 2,
+      "event_types": [
+        "level_cross(btcusd_h4fvg_79025_buy)",
+        "position_opened(BTCUSD)"
+      ],
+      "trades_opened": 0,
+      "positions_filled": 1,
+      "positions_closed": 0,
+      "open_positions": 1,
+      "working_orders": [
+        {
+          "epic": "USDCAD",
+          "direction": "SELL",
+          "level": 1.3675
+        },
+        {
+          "epic": "AUDUSD",
+          "direction": "BUY",
+          "level": 0.7143
+        }
+      ],
+      "skipped": 0,
+      "broker_balance": 985.32,
+      "upl": -2.7,
+      "positions": [
+        {
+          "epic": "BTCUSD",
+          "direction": "BUY",
+          "size": 0.04,
+          "entry": 79024.5,
+          "sl": 78700.0,
+          "tp": 80500.0,
+          "deal_id": "00000000-4e76-8da6-044a-beb40055311e",
+          "opened_at": "2026-04-27T04:50:06Z",
+          "thesis_type": "trend",
+          "upl": -2.7,
+          "time_exit_utc": "2026-04-28T04:50Z"
+        }
+      ],
+      "binary": "none (FOMC T-2d no blackout)",
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "summary": "2 evt: BTCUSD LIMIT BUY@79025 filled @ 79024.5 (comp=+57.5 mod, H4 FVG, thesis=trend). AUDUSD BUY@0.7143 ARMED. USDCAD SELL@1.3675 ARMED. GBPUSD@1.3540 AT dual-resistance monitoring M15 rejection. GOLD/OIL/USDJPY/USDCHF WATCH. attention_covered=9/9"
     }
   ]
 }

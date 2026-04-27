@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T04:49:29.660542+00:00",
+  "generated_at": "2026-04-27T04:56:48.461278+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -508,10 +508,10 @@
           "hit_rate": 0.0
         },
         "4h": {
-          "filled": 0,
+          "filled": 1,
           "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "avg_pips": -50.4,
+          "hit_rate": 0.0
         },
         "24h": {
           "filled": 0,
@@ -558,6 +558,32 @@
           "favorable": 0,
           "avg_pips": -7.9,
           "hit_rate": 0.0
+        },
+        "4h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "24h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        }
+      }
+    },
+    {
+      "alert_id": "btcusd_h4fvg_79025_buy",
+      "instrument": "BTCUSD",
+      "direction": "buy",
+      "fires": 1,
+      "by_horizon": {
+        "1h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
         },
         "4h": {
           "filled": 0,
