@@ -1760,5 +1760,45 @@
     "binary_event": "FOMC T=50h",
     "scalp_status": "no_halts",
     "attention_covered": "9/9"
+  },
+  {
+    "tick_ts_utc": "2026-04-27T14:18Z",
+    "events_processed": 1,
+    "events": [
+      "trail_candidate GBPUSD +2.04R \u2192 SL\u21921.35444 (+0.5R lock)"
+    ],
+    "trades": [],
+    "alerts_removed": [
+      "eurusd_h4fvg_buy_117328 (FVG mitigated)",
+      "gbpusd_liqsweep_135421_buy (filled)",
+      "usdcad_h4fvg_sell_retest (filled)"
+    ],
+    "positions": [
+      {
+        "epic": "GBPUSD",
+        "dir": "BUY",
+        "entry": 1.35421,
+        "sl": 1.35444,
+        "tp": 1.3564,
+        "upl_usd": 7.83,
+        "r": 2.04
+      },
+      {
+        "epic": "USDCAD",
+        "dir": "SELL",
+        "entry": 1.36106,
+        "sl": 1.3642,
+        "tp": 1.355,
+        "upl_usd": 0.76,
+        "r": 0.17
+      }
+    ],
+    "daily_pnl_realized_usd": -16.82,
+    "float_usd": 8.59,
+    "net_pnl_usd": -8.23,
+    "binary_event": "FOMC+BoC 2026-04-29T18:00Z T=50h",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "attention_covered": "9/9",
+    "scalp_status": "EURUSD/GBPUSD/AUDUSD active, no halts, daily_pnl=$0"
   }
 ]

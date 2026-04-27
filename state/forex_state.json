@@ -1,9 +1,9 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-27T14:02Z",
-  "state_ts_utc": "2026-04-27T14:02Z",
-  "regime_note": "2026-04-27T14:02Z forex auto \u2014 4 evt: GBPUSD level_cross gbpusd_liqsweep_135421_buy FILLED BUY@1.35421 SL=1.353745 TP=1.3564 R:R=4.7 (thesis=validated_sweep_retest, time_exit=17:50Z); USDCAD level_cross usdcad_h4fvg_sell_retest FILLED SELL@1.36106 SL=1.3642 TP=1.355 R:R=1.93 (thesis=trend, time_exit=Apr28 13:50Z). CANCEL AUDUSD BUY LIMIT@0.7143 \u2014 3 correlated USD-bearish would breach 2-correlated cap. AUDIT: REMOVE gold_sweep_4701_buy_retest (stale/SL breached); REMOVE usdcad_h4fvg_sell_retest (filled); MODIFY gold_safehaven_continuation_buy (note restructured, SELL@4775 fade overhead). BROKER: 2 pos (GBPUSD +1.17 UPL, USDCAD -0.03 UPL) 0 working. FOMC T=52h caution activates T<24h. Iran escalation regime unchanged. daily_pnl=-$16.82 (positions live, float +$1.14). 2 pos 0 working. attention_covered=9/9.",
-  "regime_note_prev": "2026-04-27T13:51Z forex auto \u2014 heartbeat tick, 0 events. AUDIT: REMOVE gold_sweep_4701_buy_retest (SL=4699.59 breached, GOLD@4690.3); REMOVE eurusd_sweep_117454_sell_watch (Rule2 fires=5 4h=0% \u2014 was flagged last tick, now cleaned). BROKER: 0 pos 3 working (USDCAD SELL LIMIT@1.36103 bid=1.36089 FILL IMMINENT 1.4p; GBPUSD BUY@1.354215 bid=1.3545 16p; AUDUSD BUY@0.7143 bid=0.71867 43p). GOLD: comp=-25 weak, price=4690.3 IN escalation zone (SL=4680), needs +40 bull comp to arm. OIL: comp=+39.5 (0.5 below +40 arm threshold). FOMC T=50.1h (caution activates T<24h ~18:00Z Apr28). Iran escalation regime unchanged. daily_pnl=-$16.82. 0 pos 3 working. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-27T14:18Z",
+  "state_ts_utc": "2026-04-27T14:18Z",
+  "regime_note": "2026-04-27T14:18Z forex auto \u2014 1 evt: GBPUSD trail_candidate +2.04R \u2192 SL 1.353745\u21921.35444 (+0.5R lock). No time exits (GBPUSD age=28m, exits 17:50Z; USDCAD age=28m, exits Apr28 13:50Z). BROKER: GBPUSD BUY@1.35421 UPL=+$7.83; USDCAD SELL@1.36106 UPL=+$0.76. AUDIT: REMOVE eurusd_h4fvg_buy_117328 (H4FVG mitigated bars_ago=2, covered by sweep_117186); REMOVE gbpusd_liqsweep_135421_buy + usdcad_h4fvg_sell_retest from watchlist (positions filled). gold_safehaven_continuation_buy direction corrected to BUY (cross_up breakout). NEWS: No major UK data today; BoC decision Apr29 adds USDCAD binary risk (noted). AUDUSD comp=+71 strong but unarmable (2 USD-bearish at cap). OIL comp=+39.5 (0.5 below moderate). daily_pnl=-$16.82 realized float=+$8.59. 2 pos 0 working. attention_covered=9/9.",
+  "regime_note_prev": "2026-04-27T14:02Z forex auto \u2014 4 evt: GBPUSD level_cross gbpusd_liqsweep_135421_buy FILLED BUY@1.35421 SL=1.353745 TP=1.3564 R:R=4.7 (thesis=validated_sweep_retest, time_exit=17:50Z); USDCAD level_cross usdcad_h4fvg_sell_retest FILLED SELL@1.36106 SL=1.3642 TP=1.355 R:R=1.93 (thesis=trend, time_exit=Apr28 13:50Z). CANCEL AUDUSD BUY LIMIT@0.7143 \u2014 3 correlated USD-bearish would breach 2-correlated cap. AUDIT: REMOVE gold_sweep_4701_buy_retest (stale/SL breached); REMOVE usdcad_h4fvg_sell_retest (filled); MODIFY gold_safehaven_continuation_buy (note restructured, SELL@4775 fade overhead). BROKER: 2 pos (GBPUSD +1.17 UPL, USDCAD -0.03 UPL) 0 working. FOMC T=52h caution activates T<24h. Iran escalation regime unchanged. daily_pnl=-$16.82 (positions live, float +$1.14). 2 pos 0 working. attention_covered=9/9.",
   "open_positions": [
     {
       "dealId": "00000000-4e77-61f9-044a-beb40055311e",
@@ -11,7 +11,7 @@
       "direction": "BUY",
       "size": 9000.0,
       "entry": 1.35421,
-      "sl": 1.353745,
+      "sl": 1.35444,
       "tp": 1.3564,
       "opened_at": "2026-04-27T13:50:13Z",
       "thesis_type": "validated_sweep_retest",
@@ -873,7 +873,7 @@
     "t_minus_hours": 50.1,
     "blackout": false,
     "caution": false,
-    "note": "FOMC decision Apr 29 18:00Z. T=50.1h: no blackout, no caution yet. Elevated caution (readiness\u2265moderate, half size) activates at T<24h (~18:00Z Apr 28).",
+    "note": "FOMC decision 2026-04-29T18:00Z + BoC decision 2026-04-29 (time TBC). T=50h: no blackout, caution activates T<24h (~18:00Z Apr28). BoC adds USDCAD binary risk \u2014 CAD could strengthen on BoC hold vs cut expectation.",
     "verified": true,
     "sources": [
       "FedReserve.gov calendar",
@@ -891,7 +891,7 @@
     },
     {
       "alert_id": "gold_safehaven_continuation_buy",
-      "direction": "SELL",
+      "direction": "BUY",
       "level": 4775.0,
       "active": true,
       "instrument": "GOLD",
@@ -958,13 +958,6 @@
       "level": 1.352555,
       "active": null,
       "instrument": "GBPUSD"
-    },
-    {
-      "alert_id": "eurusd_h4fvg_buy_117328",
-      "direction": "BUY",
-      "level": 1.17328,
-      "active": null,
-      "instrument": "EURUSD"
     },
     {
       "alert_id": "oil_sweep_9351_buy_retest",

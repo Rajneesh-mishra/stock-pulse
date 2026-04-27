@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T14:10:21.878931Z",
+  "generated_at": "2026-04-27T14:20:23.346367Z",
   "ticks": [
     {
       "ts_utc": "2026-04-24T14:10:00Z",
@@ -80,14 +80,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "ts_utc": "2026-04-27T03:00Z",
-      "events_in": 1,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 1,
-      "note": "03:00 forex auto \u2014 1 evt: level_cross(GOLD gold_sweep_4721_sell_retest@4721.065). GOLD comp=-14.5 none. Entry criterion: |comp|\u226540 BULLISH extension. NOT MET (comp=-14.5 bearish). Validated alert (7 fires, 100%4h hit rate) \u2014 WATCH, arm next tick if comp flips to +40+ bullish. GBPUSD bid=1.35372 at sweep level 1.3537; comp=+53 mod counter-trigger MET; SELL LIMIT not armable (price at level, offer 1.35385<1.3537 = immediate fill = rejected); monitoring M15 bar close below 1.3537 for market SELL. BUY LIMIT@1.3506 intact. AUDUSD BUY LIMIT@0.7143 KEEP (comp=+45 mod). USDCAD SELL LIMIT@1.3675 KEEP (comp=-40 mod). BTC comp=+60 strong H4BOS@78356 dist=$858>$424 prox WATCH. OIL +32.5 weak dist=1.04 inside prox needs +40. USDJPY +3.5 none BoJ hold confirmed 0.75%. FOMC T-2d no blackout. 0 trades 0pos 3 working. attention_covered=9/9."
     },
     {
       "ts_utc": "2026-04-27T03:15Z",
@@ -1461,6 +1453,46 @@
       "binary_event": "FOMC T=50h",
       "scalp_status": "no_halts",
       "attention_covered": "9/9"
+    },
+    {
+      "tick_ts_utc": "2026-04-27T14:18Z",
+      "events_processed": 1,
+      "events": [
+        "trail_candidate GBPUSD +2.04R \u2192 SL\u21921.35444 (+0.5R lock)"
+      ],
+      "trades": [],
+      "alerts_removed": [
+        "eurusd_h4fvg_buy_117328 (FVG mitigated)",
+        "gbpusd_liqsweep_135421_buy (filled)",
+        "usdcad_h4fvg_sell_retest (filled)"
+      ],
+      "positions": [
+        {
+          "epic": "GBPUSD",
+          "dir": "BUY",
+          "entry": 1.35421,
+          "sl": 1.35444,
+          "tp": 1.3564,
+          "upl_usd": 7.83,
+          "r": 2.04
+        },
+        {
+          "epic": "USDCAD",
+          "dir": "SELL",
+          "entry": 1.36106,
+          "sl": 1.3642,
+          "tp": 1.355,
+          "upl_usd": 0.76,
+          "r": 0.17
+        }
+      ],
+      "daily_pnl_realized_usd": -16.82,
+      "float_usd": 8.59,
+      "net_pnl_usd": -8.23,
+      "binary_event": "FOMC+BoC 2026-04-29T18:00Z T=50h",
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "attention_covered": "9/9",
+      "scalp_status": "EURUSD/GBPUSD/AUDUSD active, no halts, daily_pnl=$0"
     }
   ]
 }
