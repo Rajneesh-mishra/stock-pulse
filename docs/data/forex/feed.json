@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T17:46:59.433894Z",
+  "generated_at": "2026-04-27T18:17:18.590395Z",
   "ticks": [
     {
       "ts_utc": "2026-04-24T14:10:00Z",
@@ -80,39 +80,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "tick_ts_utc": "2026-04-27T05:20Z",
-      "events": [
-        {
-          "id": "evt_1777266469264_level_cross",
-          "type": "level_cross",
-          "instrument": "GOLD",
-          "alert_id": "gold_sweep_4721_sell_retest",
-          "action": "WATCH (comp=-12 bearish, need +40 bullish ext, NOT MET)"
-        },
-        {
-          "id": "evt_1777266544438_position_closed",
-          "type": "position_closed",
-          "instrument": "BTCUSD",
-          "action": "SL_HIT: entry=79024.5, sl=78700, pnl=-$12.98, thesis=trend H4 FVG invalidated"
-        }
-      ],
-      "positions_opened": 0,
-      "positions_closed": 1,
-      "working_orders": 2,
-      "pnl_usd_this_tick": -12.98,
-      "daily_pnl_usd": -16.82,
-      "balance_usd": 974.9,
-      "decisions": {
-        "GOLD": "WATCH \u2014 level_cross #9 at 4721.39, comp=-12 not met (need |comp|>=40 bullish ext). No LIMIT armed. H4 FVG 4710.9-4719.5 unmitigated just below.",
-        "BTCUSD": "SL_HIT pnl=-$12.98. btcusd_h4bos_78356_buy on watch. Same-loss skip this tick.",
-        "GBPUSD": "ARMED \u2014 comp=+53 mod, |comp|>=40 counter-trigger MET. Monitoring M15 rejection close below 1.3537 for MARKET SELL.",
-        "AUDUSD": "KEEP \u2014 LIMIT@0.7143 live (3f/100%4h validated).",
-        "USDCAD": "KEEP \u2014 LIMIT@1.3675 live (comp=-40 mod)."
-      },
-      "scalp": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=ACTIVE USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
-      "attention_covered": "9/9"
     },
     {
       "tick_ts_utc": "2026-04-27T05:28Z",
@@ -1511,6 +1478,38 @@
       "float_pnl": -1.42,
       "attention_covered": "9/9",
       "note": "1 evt GOLD level_cross; no trade (comp insufficient); all positions HOLD; FOMC caution T-24h tomorrow"
+    },
+    {
+      "tick_ts_utc": "2026-04-27T18:14Z",
+      "events": 0,
+      "event_types": [],
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "positions_after": [
+        {
+          "epic": "USDCAD",
+          "direction": "SELL",
+          "entry": 1.36106,
+          "upl_usd": -1.48,
+          "age_h": 4.4
+        }
+      ],
+      "working_orders": [
+        {
+          "epic": "GBPUSD",
+          "direction": "BUY",
+          "limit": 1.352555,
+          "dist_p": 12.1
+        }
+      ],
+      "daily_pnl_usd": -16.82,
+      "float_usd": -1.48,
+      "binary": "FOMC T-47.8h",
+      "scalp": "EURUSD/GBPUSD/AUDUSD active, no halts",
+      "attention_covered": "9/9",
+      "audit": "REMOVED btcusd_h4bos_78356_buy; SYNCED gold_sweep_4682_buy_watch + usdchf_m15sweep_7832_buy_watch; De-escalation risk noted for gold.",
+      "note": "heartbeat \u2014 no actionable events; USDCAD thesis intact; GBPUSD LIMIT 12.1p above; gold at 4682 sweep level, watchlist-only."
     }
   ]
 }

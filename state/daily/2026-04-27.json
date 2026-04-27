@@ -2116,5 +2116,37 @@
     "float_pnl": -1.42,
     "attention_covered": "9/9",
     "note": "1 evt GOLD level_cross; no trade (comp insufficient); all positions HOLD; FOMC caution T-24h tomorrow"
+  },
+  {
+    "tick_ts_utc": "2026-04-27T18:14Z",
+    "events": 0,
+    "event_types": [],
+    "opened": 0,
+    "closed": 0,
+    "skipped": 0,
+    "positions_after": [
+      {
+        "epic": "USDCAD",
+        "direction": "SELL",
+        "entry": 1.36106,
+        "upl_usd": -1.48,
+        "age_h": 4.4
+      }
+    ],
+    "working_orders": [
+      {
+        "epic": "GBPUSD",
+        "direction": "BUY",
+        "limit": 1.352555,
+        "dist_p": 12.1
+      }
+    ],
+    "daily_pnl_usd": -16.82,
+    "float_usd": -1.48,
+    "binary": "FOMC T-47.8h",
+    "scalp": "EURUSD/GBPUSD/AUDUSD active, no halts",
+    "attention_covered": "9/9",
+    "audit": "REMOVED btcusd_h4bos_78356_buy; SYNCED gold_sweep_4682_buy_watch + usdchf_m15sweep_7832_buy_watch; De-escalation risk noted for gold.",
+    "note": "heartbeat \u2014 no actionable events; USDCAD thesis intact; GBPUSD LIMIT 12.1p above; gold at 4682 sweep level, watchlist-only."
   }
 ]
