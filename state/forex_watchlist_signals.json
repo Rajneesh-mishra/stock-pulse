@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-27T05:28Z",
+  "last_updated_by_claude": "2026-04-27T05:48Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -122,14 +122,14 @@
       "sl": 1.3558,
       "tp": 1.3505,
       "rr_target": "1.52",
-      "current_price_ref": 1.35357,
+      "current_price_ref": 1.35367,
       "price_ref": {
-        "ts": "2026-04-27T05:28Z",
-        "price": 1.35357
+        "ts": "2026-04-27T05:48Z",
+        "price": 1.35367
       },
       "last_updated": "2026-04-27T04:25Z",
-      "updated_utc": "2026-04-27T05:28Z",
-      "proximity": "GBPUSD@1.35357; fire #2 at 05:15Z \u2014 M15 rejection close below 1.3537 confirmed (|comp|=45.5 mod, counter-trigger MET). R:R=1.38 from entry@1.35357 (<1.5 floor) \u2014 NO TRADE this tick. Monitor for price bounce to 1.3537 for clean market entry where R:R=1.52. SL=1.3558, TP=1.3505. WATCH."
+      "updated_utc": "2026-04-27T05:48Z",
+      "proximity": "GBPUSD@1.35367 bid; fire #3 at 05:47Z \u2014 price bounced to 1.3537 zone (bid=1.35367, offer=1.3538). M15 05:45 close=1.353725 (ABOVE 1.3537 \u2014 criterion NOT MET). R:R at bid=1.49 (<1.5 floor). NO TRADE. 06:00 M15 bar in progress \u2014 if closes below 1.3537 with wick \u22652p from high, MARKET SELL next tick. comp=+48 mod (bullish extension, counter-fade trigger MET). SL=1.3558 TP=1.3505 R:R@level=1.52. ARMED-PENDING."
     },
     {
       "id": "audusd_m15fvg_buy_7143",
@@ -166,14 +166,14 @@
       "sl": 92.5,
       "tp": 95.5,
       "rr_target": "3.1",
-      "current_price_ref": 94.21,
+      "current_price_ref": 94.85,
       "price_ref": {
-        "ts": "2026-04-27T04:52Z",
-        "price": 94.21
+        "ts": "2026-04-27T05:48Z",
+        "price": 94.85
       },
       "last_updated": "2026-04-26T06:00:00Z",
-      "updated_utc": "2026-04-27T04:52Z",
-      "proximity": "OIL@94.21; dist=$0.98 ABOVE 93.23 \u2014 INSIDE prox (H1ATR~$1.00). comp=+27 weak (need >=40). 6f/100%4h VALIDATED. Comp too weak to arm. WATCH."
+      "updated_utc": "2026-04-27T05:48Z",
+      "proximity": "OIL@94.85; dist=$1.62 ABOVE 93.23 \u2014 OUTSIDE prox (max(H1ATR=$0.99, 0.5\u00d7H4ATR=$1.08)=$1.08). comp=+40 moderate (UPGRADED from +27 weak). 6f/100%4h VALIDATED. Comp now MET for arming \u2014 arm LIMIT BUY@93.23 if price pulls back to within $1.08 of level. Not arming yet (outside prox). WATCH."
     },
     {
       "id": "usdcad_sell_fvg_13675",
@@ -227,20 +227,20 @@
       "emit_on": "cross_down",
       "cooldown_sec": 3600,
       "direction": "buy",
-      "note": "ENTRY: price reclaims 78356 on M15 close above with bullish wick >=100p from low (requires comp>=40 bullish to arm LIMIT). Alternative: if Day FVG 77897-78419 holds (M15 close above 78000 with wick >=100p from low, comp>=40), arm LIMIT BUY@78000 SL=77600 TP=80500. Same-loss skip this tick \u2014 reassess next tick.\n\nCONTEXT: btcusd_h4fvg_79025 SL-hit (pnl=-$12.98). H4 BOS 78356 violated: H4 last close=78272.2, price=78046.7 (309p below). Day FVG 77897-78419 is last major support zone. comp=+52.5 mod bullish (Day/H4 trend intact). If price closes below 77897 (Day FVG bottom), thesis void \u2014 remove alert. Next tick: assess Day FVG hold or H4 BOS reclaim.\n\nSL: 77600  TP: 80500  R:R target: 3.5\n\nupdated 2026-04-27T05:28Z \u2014 H4 BOS 78356 violated; entry updated to reclaim OR Day FVG hold; same-loss skip.",
-      "entry_criterion": "Price reclaims 78356 on M15 close above with wick >=100p from low, comp>=40 bullish to arm LIMIT. OR: M15 close above 78000 within Day FVG 77897-78419 with wick >=100p, comp>=40, arm LIMIT@78000. Same-loss skip this tick.",
-      "regime_context": "H4 BOS 78356 violated (H4 close=78272.2, price=78046.7). Day FVG 77897-78419 unmitigated = last major support. comp=+52.5 mod bullish. Remove if price closes below 77897. BTC SL loss today \u2014 same-loss skip this tick.",
-      "sl": 77600.0,
-      "tp": 80500.0,
-      "rr_target": "3.5",
-      "current_price_ref": 78046.7,
+      "note": "ENTRY: price reclaims H4 BOS 78356 \u2014 M15 bar closes ABOVE 78356 with bullish impulse candle and no bearish engulf on the follow-through bar. Requires readiness \u2265 moderate (comp \u226540 bullish).\n\nCONTEXT: H4 BOS at 78356 was violated bearishly 2026-04-27T05:16Z (H4 close=78272, price reached 77795). Original bull FVG thesis (77897-78419) also breached. Wait for full reclaim candle before re-entering. Same-instrument loss <24h (BUY@79024.5 SL@78700 -$12.98) \u2014 no arming until 2026-04-28.\n\nSL: 77550  TP: 79500  R:R target: 2.4\n\nmodified 2026-04-27T05:48Z \u2014 BOS violated bearishly; thesis updated to reclaim/choch pattern; same-loss skip.",
+      "entry_criterion": "M15 close ABOVE 78356 with bullish impulse; no bearish engulf follow-through. comp \u226540 required.",
+      "regime_context": "H4 BOS 78356 violated 05:16Z. FVG zone 77897-78419 also breached. Price at 77795. comp=+40 moderate bullish. Same-loss skip until 2026-04-28.",
+      "sl": 77550,
+      "tp": 79500,
+      "rr_target": "2.4",
+      "current_price_ref": 77795.0,
       "price_ref": {
-        "ts": "2026-04-27T05:28Z",
-        "price": 78046.7
+        "ts": "2026-04-27T05:48Z",
+        "price": 77795.0
       },
-      "last_updated": "2026-04-27T05:28Z",
-      "updated_utc": "2026-04-27T05:28Z",
-      "proximity": "BTC@78046.7; H4 BOS 78356 VIOLATED (H4 close=78272.2, price=78046.7 \u2014 309p below). Day FVG 77897-78419 is key support zone (price inside at 78046). comp=+52.5 mod bullish. Same-loss skip this tick. WATCH \u2014 reassess next tick if price holds above 77897 or reclaims 78356."
+      "last_updated": "2026-04-27T05:48Z",
+      "updated_utc": "2026-04-27T05:48Z",
+      "proximity": "BTC@77795; H4 BOS 78356 violated bearishly (price closed below). comp=+40 moderate bullish. Same-loss skip <24h. WATCH \u2014 no LIMIT arming until 2026-04-28."
     }
   ],
   "structure_watch": [

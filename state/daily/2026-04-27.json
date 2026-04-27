@@ -810,5 +810,43 @@
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
     "binary_event": "FOMC_2026-04-29 T-2d (active=false, no blackout)",
     "summary": "2 evt processed: GBPUSD M15 reject close confirmed R:R too low; BTCUSD H4 BOS broken same-loss skip. 0 trades. 2 LIMITs active."
+  },
+  {
+    "tick_ts_utc": "2026-04-27T05:48Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "type": "level_cross",
+        "instrument": "GBPUSD",
+        "alert_id": "gbpusd_sweep_135370_sell_watch",
+        "fired_at": "2026-04-27T05:47:37",
+        "action": "NO_TRADE",
+        "reason": "M15 05:45 close=1.353725 ABOVE 1.3537 (criterion not met). R:R at bid=1.49 <1.5 floor. comp=+48 mod counter-fade MET. Awaiting 06:00 M15 close."
+      }
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "positions_after": 0,
+    "working_orders_after": 2,
+    "working_orders": [
+      {
+        "epic": "AUDUSD",
+        "direction": "BUY",
+        "level": 0.7143,
+        "dealId": "00000000-4e76-6275-044a-beb40055311e"
+      },
+      {
+        "epic": "USDCAD",
+        "direction": "SELL",
+        "level": 1.3675,
+        "dealId": "00000000-4e76-5ddd-044a-beb40055311e"
+      }
+    ],
+    "daily_pnl_usd": -16.82,
+    "account_balance": 974.9,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "FOMC_2026-04-29 T-2d active=false",
+    "attention_covered": "9/9",
+    "note": "GBPUSD fire#3 at 1.3537 dual-resistance zone: M15 criterion not met (05:45 close above level), R:R=1.49 below floor. Live retest \u2014 06:00 M15 bar pending. BTC alert modified to reclaim-thesis (BOS 78356 violated bearishly). OIL comp upgraded +27\u2192+40 moderate. 2 working LIMITs intact (AUDUSD/USDCAD)."
   }
 ]
