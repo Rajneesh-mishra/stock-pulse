@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-27T11:51:47.544918+00:00",
+  "generated_at": "2026-04-27T12:11:54.723772+00:00",
   "counts": {
     "trades": 18,
-    "events": 4540,
+    "events": 4563,
     "ticks": 59,
-    "regime_snapshots": 96,
+    "regime_snapshots": 97,
     "broker_positions": 0,
-    "counterfactuals": 70
+    "counterfactuals": 72
   },
   "trades_last_50": [
     {
@@ -391,6 +391,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-27T11:52Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "2026-04-27T11:52Z forex auto \u2014 1 evt: GOLD level_cross gold_sweep_4701_buy_retest fire#3@11:52Z @4701.33 \u2014 NO TRADE (comp=-25 weak; |comp|=25<40 threshold for LIMIT; M15 wick=0.89pts<2pts required; note requires comp\u2264-40). 3 fires today all NO TRADE (comp peaked -25, needs -40). AUDUSD BUY@0.7143 KEEP. USDCAD SELL@1.3675 KEEP. BoJ meeting today \u2014 USDJPY@159.16 dist=84p from 160 red line. FOMC T-54.1h (caution at T<24h ~Apr 28 18:00Z). daily_pnl=-$16.82. 0 pos 2 working. attention_covered=9/9.",
+      "binary_event_name": "FOMC",
+      "binary_event_active": 1,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
       "ts_utc": "2026-04-27T11:43Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-27T11:43Z forex auto \u2014 1 evt: OIL_CRUDE liquidity_sweep M15@93.51 wick=6.9pts (1.74\u00d7ATR) fire@11:37Z \u2014 WATCH (comp=+27 weak, needs +40 for LIMIT; H1 bear FVG 94.33\u201395.007 overhead). ADD oil_sweep_9351_buy_retest WATCH. ADD gold_escalation_buy_zone restored to watchlist_signals (10f/80%4h validated, was missing). REMOVE audusd_sweep_71784_sell_watch (price 0.71849 broke above swept high 0.71784 \u2014 thesis invalidated). GOLD@4702 comp=-25 weak \u2014 gold_sweep_4701 and gold_escalation_buy_zone both at level, needs comp\u2264-40 for 4701 LIMIT / \u2265+40 for 4700 BUY LIMIT. OIL@94.04 comp=+27 weak \u2014 oil_sweep_9323 and oil_sweep_9351 both WATCH (needs comp\u226540). AUDUSD BUY@0.7143 LIMIT KEEP (comp=+51 mod). USDCAD SELL@1.3675 LIMIT KEEP (comp=-46 mod). BoJ Apr 27-28 meeting today \u2014 USDJPY 159.16 dist=84p from 160 red line (caution zone). FOMC T-54.3h (caution window at T-24h ~Apr 28 18:00Z). daily_pnl=-$16.82. 0 pos 2 working. attention_covered=9/9.",
@@ -458,14 +466,6 @@
       "ts_utc": "2026-04-27T08:30Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-27T08:30Z forex auto \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#1@08:25Z bid=1.174565 at 1.17454 zone \u2014 NO TRADE (comp=+23.5 none <40 required; H4 bull FVG 1.17298-1.17393 unmitigated blocks TP path; wick noise-level 1.2p <1\u00d7ATR 5.4p). GBPUSD@1.354845 AT dual resistance 1.3537/1.3548 \u2014 comp=+53 mod bullish extension ARMED for counter-trend sell on M15 rejection close below 1.3537 (no close yet). AUDUSD BUY@0.7143 KEEP (comp=+45 mod 4/4TF, 3f/100%4h validated). USDCAD SELL@1.3675 KEEP (comp=-46 mod 4/4TF). GOLD@4709.82 comp=-14.5 none (need +40 bullish ext for 4721 sell \u2014 WATCH). OIL@95.56 comp=+45 mod bullish (sweep_9323 dist=$2.33>prox$1.04 \u2014 WATCH). BTC@77616 comp=+30.5 weak (same-loss skip until 2026-04-28). FOMC T-2d (Apr 29 18:00Z) \u2014 elevated caution, readiness>=moderate required for new entries. Regime ACTIVE_ESCALATION stable. daily_pnl=-$16.82. 0 pos 2 working. attention_covered=9/9.",
-      "binary_event_name": "FOMC_2026-04-29",
-      "binary_event_active": 0,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-04-27T08:15Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "2026-04-27T08:15Z forex auto \u2014 1 evt: EURUSD liquidity_sweep M15@1.17454 wick=1.2p (0.22\u00d7ATR=5.4p) up-sweep sell-bias. comp=+23.5 none (<25 counter-trend watchlist threshold). Wick noise-level. H4 bull FVG 1.17298-1.17406 unmitigated blocks TP path. WATCH-ONLY. ADD eurusd_sweep_117454_sell_watch WATCH. AUDUSD BUY@0.7143 KEEP (LIMIT active, validated 3f/100%4h, comp=+45 mod). USDCAD SELL@1.3675 KEEP (LIMIT active, comp=-40 mod). FOMC T-2d (Apr 29) \u2014 no blackout (>24h). Regime ACTIVE_ESCALATION stable. daily_pnl=-$16.82. 0 pos 2 working. attention_covered=9/9.",
       "binary_event_name": "FOMC_2026-04-29",
       "binary_event_active": 0,
       "binary_event_deadline": "2026-04-29T18:00Z"
@@ -974,6 +974,32 @@
     }
   ],
   "counterfactuals_last_50": [
+    {
+      "alert_id": "eurusd_sweep_117454_sell_watch",
+      "instrument": "EURUSD",
+      "direction": "sell",
+      "trigger_price": 1.174665,
+      "fired_at": "2026-04-27T12:06:28.477594+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
+    {
+      "alert_id": "gold_sweep_4701_buy_retest",
+      "instrument": "GOLD",
+      "direction": "buy",
+      "trigger_price": 4701.33,
+      "fired_at": "2026-04-27T11:52:13.339805+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
     {
       "alert_id": "gold_sweep_4701_buy_retest",
       "instrument": "GOLD",
@@ -1597,32 +1623,6 @@
       "pips_1h": -34.2,
       "pips_4h": 123.2,
       "pips_24h": 405.5
-    },
-    {
-      "alert_id": "oil_crude_retest_90_buy",
-      "instrument": "OIL_CRUDE",
-      "direction": "buy",
-      "trigger_price": 90.172,
-      "fired_at": "2026-04-21T21:20:50.088558+00:00",
-      "hit_1h": 1,
-      "hit_4h": 0,
-      "hit_24h": 1,
-      "pips_1h": 1.1,
-      "pips_4h": -90.3,
-      "pips_24h": 241.8
-    },
-    {
-      "alert_id": "oil_crude_retest_90_buy",
-      "instrument": "OIL_CRUDE",
-      "direction": "buy",
-      "trigger_price": 89.459,
-      "fired_at": "2026-04-21T18:13:24.715503+00:00",
-      "hit_1h": 1,
-      "hit_4h": 1,
-      "hit_24h": 1,
-      "pips_1h": 217.9,
-      "pips_4h": 72.4,
-      "pips_24h": 320.4
     }
   ]
 }

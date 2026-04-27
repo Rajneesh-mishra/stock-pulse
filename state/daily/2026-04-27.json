@@ -1310,5 +1310,96 @@
     "scalp_audit": "EURUSD=KEEP(no trades today) GBPUSD=KEEP(no trades today) AUDUSD=KEEP(no trades today) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked",
     "watchlist_audit": "all 15 alerts KEEP; no staleness (GOLD H4ATR=34.94 3x=104.8; gold_4775 dist=70.4 not stale); no Rule-2 prunes (all fired alerts in watchlist have fires<3 or 4h null or >40%); gold_sweep_4701 fire#3 noted",
     "regime_note": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED; FOMC T-54.1h"
+  },
+  {
+    "tick_ts_utc": "2026-04-27T12:07Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "id": "evt_1777291588477_level_cross",
+        "type": "level_cross",
+        "instrument": "EURUSD",
+        "alert_id": "eurusd_sweep_117454_sell_watch",
+        "fire_num": 4,
+        "decision": "NO TRADE",
+        "reason": "comp=+23.5 none (<+40 required); H4 bull FVG 1.17328-1.17379 bars_ago=2 unmitigated (blocks TP 1.1729)"
+      }
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "positions_open": 0,
+    "working_orders": 2,
+    "working_order_details": [
+      {
+        "epic": "AUDUSD",
+        "dir": "BUY",
+        "level": 0.7143,
+        "size": 3500,
+        "deal": "...6275"
+      },
+      {
+        "epic": "USDCAD",
+        "dir": "SELL",
+        "level": 1.3675,
+        "size": 3000,
+        "deal": "...5ddd"
+      }
+    ],
+    "audit": {
+      "REMOVED": [
+        "usdcad_sell_fvg_13675 (Rule1 stale: 71.8p > 3\u00d7H4ATR=59.7p; broker LIMIT@1.3675 kept)"
+      ],
+      "ADDED": [
+        "usdcad_h4fvg_sell_retest (H4 bear FVG 1.36103-1.36348, bars_ago=1)"
+      ],
+      "MODIFIED": [
+        "eurusd_sweep_117454_sell_watch (fire#4 NO TRADE; note updated)",
+        "gold_sweep_4701_buy_retest (TP 4718\u21924705.5; new H4 bear FVG 4706.4-4708.72 overhead)",
+        "audusd_m15fvg_buy_7143 (comp +51\u2192+71 STRONG upgrade noted)"
+      ]
+    },
+    "confluence_snapshot": {
+      "EURUSD": {
+        "comp": 23.5,
+        "readiness": "none"
+      },
+      "GBPUSD": {
+        "comp": 53.0,
+        "readiness": "moderate"
+      },
+      "AUDUSD": {
+        "comp": 71.0,
+        "readiness": "strong"
+      },
+      "USDJPY": {
+        "comp": -4.0,
+        "readiness": "none"
+      },
+      "USDCAD": {
+        "comp": -46.0,
+        "readiness": "moderate"
+      },
+      "USDCHF": {
+        "comp": -28.5,
+        "readiness": "weak"
+      },
+      "GOLD": {
+        "comp": -25.0,
+        "readiness": "weak"
+      },
+      "OIL_CRUDE": {
+        "comp": 27.0,
+        "readiness": "weak"
+      },
+      "BTCUSD": {
+        "comp": 30.5,
+        "readiness": "weak"
+      }
+    },
+    "daily_pnl_usd": -16.82,
+    "account_balance": 974.9,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "none",
+    "scalp_status": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=ACTIVE USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL/BTC=spread-blocked"
   }
 ]
