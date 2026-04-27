@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T14:51:52.875933Z",
+  "generated_at": "2026-04-27T15:00:02.438052Z",
   "ticks": [
     {
       "ts_utc": "2026-04-24T14:10:00Z",
@@ -80,62 +80,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "tick_ts_utc": "2026-04-27T03:58Z",
-      "events_processed": 11,
-      "events": {
-        "liquidity_sweep": 4,
-        "bar_close": 7
-      },
-      "sweep_decisions": {
-        "AUDUSD_0.7176": "WATCH \u2014 entry@0.7174 passed; primary LIMIT BUY@0.7143 ARMED",
-        "USDJPY_159.203": "SKIP \u2014 readiness=none comp=-1.5, scalp disabled",
-        "EURUSD_1.17318": "SKIP \u2014 readiness=none comp=+23.5 < 40 threshold",
-        "GBPUSD_1.35471": "WATCH \u2014 entry@1.354465 passed; dual resistance 1.3537/1.3547 noted; monitoring M15 reject"
-      },
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "working_orders": {
-        "AUDUSD_BUY_7143": "KEEP (ARMED, dealId=00000000-4e76-6275-044a-beb40055311e)",
-        "USDCAD_SELL_13675": "KEEP (ARMED, dealId=00000000-4e76-5ddd-044a-beb40055311e)"
-      },
-      "confluence": {
-        "AUDUSD": {
-          "comp": 45,
-          "readiness": "moderate"
-        },
-        "GBPUSD": {
-          "comp": 53,
-          "readiness": "moderate"
-        },
-        "EURUSD": {
-          "comp": 23.5,
-          "readiness": "none"
-        },
-        "USDJPY": {
-          "comp": -1.5,
-          "readiness": "none"
-        },
-        "GOLD": {
-          "comp": -4.5,
-          "readiness": "none"
-        }
-      },
-      "prices": {
-        "GOLD": 4724.17,
-        "OIL": 94.258,
-        "BTC": 79083.9,
-        "AUDUSD": 0.71741,
-        "GBPUSD": 1.354525,
-        "USDJPY": 159.2295,
-        "USDCAD": 1.36623
-      },
-      "scalp": "EURUSD/GBPUSD/AUDUSD ACTIVE no halts; USDJPY/CHF/CAD pip-conv-pending; GOLD/OIL/BTC spread-blocked",
-      "binary_event": "FOMC Apr29 T-2d active=false no-blackout; BOJ 0.75% hold confirmed",
-      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "attention_covered": "9/9",
-      "account_balance": 987.93
     },
     {
       "tick_ts_utc": "2026-04-27T04:25Z",
@@ -1616,6 +1560,30 @@
       "binary_event": "FOMC 2026-04-29T18:00Z T\u224851.2h. BoC Apr29 expected hold.",
       "daily_pnl_realized": -16.82,
       "float_upl": 14.76
+    },
+    {
+      "tick_ts_utc": "2026-04-27T14:57Z",
+      "events_consumed": 1,
+      "events": [
+        "level_cross/gold_sweep_4686_buy_retest"
+      ],
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "positions_modified": 0,
+      "orders_placed": 0,
+      "orders_cancelled": 0,
+      "watchlist_changes": [
+        "REMOVE gold_sweep_4686_buy_retest (SL breached 4682.3<4683.72)",
+        "ADD gold_sweep_4682_buy_watch WATCHLIST"
+      ],
+      "open_positions": [
+        "GBPUSD BUY@1.35421 SL=1.35491(+1.5R) bid=1.35549 UPL\u2248+$11.5 time_exit=17:50Z",
+        "USDCAD SELL@1.36106 SL=1.3642 TP=1.355 bid=1.36097 UPL\u2248-$0.16"
+      ],
+      "daily_pnl_usd": -16.82,
+      "float_usd": 11.3,
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note": "GOLD 4686 sweep level SL breached; replaced with 4682 watchlist-only; no new trades; FOMC T~50h"
     }
   ]
 }

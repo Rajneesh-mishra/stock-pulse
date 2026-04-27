@@ -1976,5 +1976,29 @@
     "binary_event": "FOMC 2026-04-29T18:00Z T\u224851.2h. BoC Apr29 expected hold.",
     "daily_pnl_realized": -16.82,
     "float_upl": 14.76
+  },
+  {
+    "tick_ts_utc": "2026-04-27T14:57Z",
+    "events_consumed": 1,
+    "events": [
+      "level_cross/gold_sweep_4686_buy_retest"
+    ],
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "positions_modified": 0,
+    "orders_placed": 0,
+    "orders_cancelled": 0,
+    "watchlist_changes": [
+      "REMOVE gold_sweep_4686_buy_retest (SL breached 4682.3<4683.72)",
+      "ADD gold_sweep_4682_buy_watch WATCHLIST"
+    ],
+    "open_positions": [
+      "GBPUSD BUY@1.35421 SL=1.35491(+1.5R) bid=1.35549 UPL\u2248+$11.5 time_exit=17:50Z",
+      "USDCAD SELL@1.36106 SL=1.3642 TP=1.355 bid=1.36097 UPL\u2248-$0.16"
+    ],
+    "daily_pnl_usd": -16.82,
+    "float_usd": 11.3,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "note": "GOLD 4686 sweep level SL breached; replaced with 4682 watchlist-only; no new trades; FOMC T~50h"
   }
 ]

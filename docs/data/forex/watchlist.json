@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-27T14:25Z",
+  "last_updated_by_claude": "2026-04-27T14:57Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -267,26 +267,26 @@
       "proximity": "GOLD@4691.5; 8.5pts BELOW 4700 (in zone). comp=-25 weak (<+40 threshold). VALIDATED (12f 4h=80%). NO TRADE until comp\u226540 bull. WATCH."
     },
     {
-      "id": "gold_sweep_4686_buy_retest",
+      "id": "gold_sweep_4682_buy_watch",
       "instrument": "GOLD",
-      "level": 4686.16,
+      "level": 4682.3,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "ENTRY: price retests 4686-4694 swept zone; M15 bar closes AT or ABOVE 4686.16 with bullish rejection wick \u22652pts from the low. Arm LIMIT BUY@4693.76 when |comp| \u226540 bullish.\n\nCONTEXT: M15 down-sweep 14:30Z 2026-04-27 \u2014 wicked 24.4pts below 4686.16, closed back inside at 4693.76. Fresh structural support. comp=-25 weak bearish (|comp|=25, below 40 arming threshold). Overlaps with gold_escalation_buy_zone (4700); provides lower entry on deeper retest.\n\nSL: 4683.72  TP: 4721  R:R target: 2.7\n\nadded 2026-04-27T14:47Z \u2014 M15 down-sweep event created fresh structural level at 4686.16; watchlist-only until |comp|\u226540 bullish.",
-      "entry_criterion": "M15 retest of 4686-4694 with bullish rejection wick \u22652pts. Arm LIMIT BUY@4693.76 when |comp|\u226540 bullish.",
-      "regime_context": "M15 down-sweep 14:30Z. wick=24.4pts (3\u00d7M15ATR). comp=-25 weak. |comp|\u226540 required for arming. 4h time-stop if entered (escalation-zone type).",
-      "sl": 4683.72,
+      "note": "ENTRY: price retests 4682-4686 zone; M15 bar closes AT or ABOVE 4682 with bullish rejection wick \u22652pts from the low. WATCHLIST ONLY \u2014 arm LIMIT BUY when |comp| \u226540 bullish.\n\nCONTEXT: Price broke through prior 4686.16 swept wick (SL=4683.72 breached) creating a deeper structural level at 4682. comp=-25 weak bearish \u2014 below arming threshold. Overlaps with gold_escalation_buy_zone (4700) which acts as resistance on recovery. FOMC T\u224850h (no caution yet). 4h time-stop if entered.\n\nSL: 4672  TP: 4721  R:R target: 3.7\n\nadded 2026-04-27T14:57Z \u2014 gold_sweep_4686 SL breached (price 4682.3 < 4683.72); new deeper support noted at 4682; watchlist-only.",
+      "entry_criterion": "M15 retest of 4682-4686 with bullish rejection wick \u22652pts. WATCHLIST ONLY \u2014 arm at |comp|\u226540 bullish.",
+      "regime_context": "Prior 4686 sweep invalidated (SL breached). New support at 4682. comp=-25 weak bearish. FOMC T\u224850h. 4h time-stop if entered.",
+      "sl": 4672.0,
       "tp": 4721.0,
-      "rr_target": "2.7",
-      "current_price_ref": 4691.5,
+      "rr_target": "3.7",
+      "current_price_ref": 4682.3,
       "price_ref": {
-        "ts": "2026-04-27T14:47Z",
+        "ts": "2026-04-27T14:57Z",
         "price": null
       },
-      "last_updated": "2026-04-27T14:47Z",
-      "updated_utc": "2026-04-27T14:47Z",
-      "proximity": "GOLD@4691.5; at swept zone 4686-4694. comp=-25 weak (|comp|=25, below 40 threshold). WATCHLIST ONLY until |comp|\u226540 bullish."
+      "last_updated": "2026-04-27T14:57Z",
+      "updated_utc": "2026-04-27T14:57Z",
+      "proximity": "GOLD@4682.3; at new swept zone 4682-4686. comp=-25 weak (below 40 threshold). WATCHLIST ONLY until |comp|\u226540 bullish."
     }
   ],
   "structure_watch": [
