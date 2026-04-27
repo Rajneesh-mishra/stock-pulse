@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T10:55:44.590788Z",
+  "generated_at": "2026-04-27T11:23:26.951545Z",
   "ticks": [
     {
       "ts_utc": "2026-04-24T14:10:00Z",
@@ -80,28 +80,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "tick_ts_utc": "2026-04-27T03:04:00Z",
-      "events": 0,
-      "type": "heartbeat",
-      "opened": 0,
-      "closed": 0,
-      "skipped": 0,
-      "actions": [
-        "BTCUSD LIMIT SELL@78369 PLACED (counter-trend fade, comp=+55.5 mod, R:R=4.3, risk=$4.65)",
-        "GBPUSD LIMIT BUY@1.3506 KEEP (active broker order, comp=+27.5 weak)",
-        "GBPUSD scalp bias bull\u2192neutral (comp degraded)"
-      ],
-      "alerts_keep": 9,
-      "alerts_add": 0,
-      "alerts_remove": 0,
-      "positions": 0,
-      "working_orders": 2,
-      "binary_event": "none_active",
-      "regime": "ACTIVE_ESCALATION",
-      "summary": "Heartbeat. BTCUSD LIMIT SELL@78369 placed (previously watchlisted, now armed on broker). GBPUSD LIMIT BUY@1.3506 KEEP. BOJ T-0d underway hold confirmed. FOMC T-3d. 9/9 attention covered.",
-      "scalp_halts": {}
     },
     {
       "tick_ts_utc": "2026-04-27T03:16Z",
@@ -1149,6 +1127,30 @@
       "daily_pnl": -16.82,
       "binary_event": "FOMC T-31.1h",
       "scalp_status": "3 pairs active (EU/GU/AU), 0 halted, shadow=false"
+    },
+    {
+      "tick_ts": "2026-04-27T11:19Z",
+      "events_processed": 1,
+      "events": [
+        {
+          "id": "evt_1777288596359_level_cross",
+          "type": "level_cross",
+          "instrument": "GOLD",
+          "alert_id": "gold_sweep_4701_buy_retest",
+          "fire_number": 2,
+          "decision": "NO TRADE",
+          "reason": "comp=-25 weak (|comp|=25 < 40 for counter-trend LIMIT); M15 close 4701.105 below level 4701.76; FOMC caution"
+        }
+      ],
+      "trades": [],
+      "open_positions": 0,
+      "working_orders": 2,
+      "daily_pnl_usd": -16.82,
+      "balance": 974.9,
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "binary_event": "FOMC T-30.7h",
+      "attention_covered": "9/9",
+      "notes": "GOLD fire#2 NO TRADE \u2014 comp threshold corrected -25\u2192-40 in alert. OIL approaching sweep level ($0.84 away). AUDUSD LIMIT@0.7143 + USDCAD LIMIT@1.3675 both live on broker."
     }
   ]
 }

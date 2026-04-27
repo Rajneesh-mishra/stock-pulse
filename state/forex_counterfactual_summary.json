@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T10:55:23.342478+00:00",
+  "generated_at": "2026-04-27T11:23:06.743313+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -560,10 +560,10 @@
           "hit_rate": 0.4
         },
         "4h": {
-          "filled": 4,
+          "filled": 5,
           "favorable": 1,
-          "avg_pips": -10.9,
-          "hit_rate": 0.25
+          "avg_pips": -12.9,
+          "hit_rate": 0.2
         },
         "24h": {
           "filled": 0,
@@ -655,7 +655,7 @@
       "alert_id": "gold_sweep_4701_buy_retest",
       "instrument": "GOLD",
       "direction": "buy",
-      "fires": 1,
+      "fires": 2,
       "by_horizon": {
         "1h": {
           "filled": 1,

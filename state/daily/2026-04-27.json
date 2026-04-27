@@ -1177,5 +1177,29 @@
     "daily_pnl": -16.82,
     "binary_event": "FOMC T-31.1h",
     "scalp_status": "3 pairs active (EU/GU/AU), 0 halted, shadow=false"
+  },
+  {
+    "tick_ts": "2026-04-27T11:19Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "id": "evt_1777288596359_level_cross",
+        "type": "level_cross",
+        "instrument": "GOLD",
+        "alert_id": "gold_sweep_4701_buy_retest",
+        "fire_number": 2,
+        "decision": "NO TRADE",
+        "reason": "comp=-25 weak (|comp|=25 < 40 for counter-trend LIMIT); M15 close 4701.105 below level 4701.76; FOMC caution"
+      }
+    ],
+    "trades": [],
+    "open_positions": 0,
+    "working_orders": 2,
+    "daily_pnl_usd": -16.82,
+    "balance": 974.9,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "FOMC T-30.7h",
+    "attention_covered": "9/9",
+    "notes": "GOLD fire#2 NO TRADE \u2014 comp threshold corrected -25\u2192-40 in alert. OIL approaching sweep level ($0.84 away). AUDUSD LIMIT@0.7143 + USDCAD LIMIT@1.3675 both live on broker."
   }
 ]
