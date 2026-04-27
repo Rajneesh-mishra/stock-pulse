@@ -40,7 +40,9 @@
       "regime_context": "160 is the MoF/BoJ verbal-intervention red line (Katayama G7 'bold action', prior intervention at 159.23 Jan 2026). BoJ held at 0.75% Apr 27 as expected; hawkish June signal keeps weak-JPY thesis alive. Escalation USD safe-haven bid also supports USDJPY at range. Rate differential intact \u2014 160 red line still a live trigger.",
       "sl": 160.5,
       "tp": 158.5,
-      "rr_target": "3.0"
+      "rr_target": "3.0",
+      "alert_id": "usdjpy_intervention_sell_160",
+      "active": true
     },
     {
       "id": "gold_safehaven_continuation_buy",
@@ -62,7 +64,9 @@
       "regime_context": "Safe-haven bid thesis now UPGRADED: Trump ordered US Navy to attack Iranian mine-laying boats (Apr 23), 3rd tanker seized, Brent $105+. Hormuz remains blocked. Thesis invalidates only if BTC >+5% day (pure risk-on) while gold rolls AND Iran-US de-escalates. Currently comp bears suppress, but escalation ladder could flip that quickly.",
       "sl": 4730,
       "tp": 4810,
-      "rr_target": "2.0+"
+      "rr_target": "2.0+",
+      "alert_id": "gold_escalation_buy_4775",
+      "active": true
     },
     {
       "id": "usdchf_sweep_h1_sell_retest",
@@ -84,7 +88,9 @@
       "sl": 0.7885,
       "tp": 0.784,
       "rr_target": "3.1",
-      "proximity": "USDCHF@0.785495; 19.8p BELOW 0.7875 (within 30p threshold). comp=+3 none (need \u2264-40 bearish). 3\u00d7H4ATR=55.2p. WATCH."
+      "proximity": "USDCHF@0.785495; 19.8p BELOW 0.7875 (within 30p threshold). comp=+3 none (need \u2264-40 bearish). 3\u00d7H4ATR=55.2p. WATCH.",
+      "alert_id": "usdchf_sweep_sell_7875",
+      "active": true
     },
     {
       "id": "audusd_m15fvg_buy_7143",
@@ -107,7 +113,9 @@
       "last_updated": "2026-04-27T15:09Z",
       "updated_utc": "2026-04-27T19:40Z",
       "proximity": "AUDUSD@0.71864; 48.9p ABOVE 0.7143 (threshold=30p, outside). comp=+37.5 weak (was +62.5 strong; need \u226540 bull). VALIDATED (3f 4h=100%). Corr cap 2/2 (USDCAD+GBPUSD LIMIT). WATCH \u2014 arm LIMIT@0.7143 when price retraces to within 30p AND corr cap opens AND comp\u226540.",
-      "validated": true
+      "validated": true,
+      "alert_id": "audusd_fvg_buy_7143",
+      "active": true
     },
     {
       "id": "oil_sweep_9323_buy_retest",
@@ -129,7 +137,9 @@
       },
       "last_updated": "2026-04-26T06:00:00Z",
       "updated_utc": "2026-04-27T19:40Z",
-      "proximity": "OIL@95.042; dist=1.812 ABOVE 93.23 (0.5\u00d7H4ATR=1.10, outside proximity). comp=+28.5 weak. VALIDATED (6f 4h=100%). WATCH \u2014 arm when price retraces within 1.10 of level."
+      "proximity": "OIL@95.042; dist=1.812 ABOVE 93.23 (0.5\u00d7H4ATR=1.10, outside proximity). comp=+28.5 weak. VALIDATED (6f 4h=100%). WATCH \u2014 arm when price retraces within 1.10 of level.",
+      "alert_id": "oil_sweep_9323_buy_retest",
+      "active": true
     },
     {
       "id": "gold_sweep_4721_sell_retest",
@@ -152,7 +162,9 @@
       "last_updated": "2026-04-26T17:11Z",
       "updated_utc": "2026-04-27T19:40Z",
       "proximity": "GOLD@4676.91; 44.1pts BELOW 4721 (3\u00d7H4ATR=103.5). comp=-25 bearish \u2014 need |comp|\u226540 BULLISH extension to arm counter-trend sell. VALIDATED (9f 4h=100%). WATCH.",
-      "validated": true
+      "validated": true,
+      "alert_id": "gold_sweep_4721_sell_retest",
+      "active": true
     },
     {
       "id": "eurusd_sweep_117186_buy_watch",
@@ -174,7 +186,9 @@
       },
       "last_updated": "2026-04-27T06:30Z",
       "updated_utc": "2026-04-27T19:40Z",
-      "proximity": "EURUSD@1.172265; 4.1p ABOVE 1.17186 (within 30p threshold). comp=+10.5 none (need \u226540 bull). H4 bear FVG 1.17341-1.17379 overhead (unmitigated). WATCH."
+      "proximity": "EURUSD@1.172265; 4.1p ABOVE 1.17186 (within 30p threshold). comp=+10.5 none (need \u226540 bull). H4 bear FVG 1.17341-1.17379 overhead (unmitigated). WATCH.",
+      "alert_id": "eurusd_sweep_117186_buy_retest",
+      "active": true
     },
     {
       "id": "gbpusd_sweep_135255_buy_watch",
@@ -204,7 +218,9 @@
         "sl": 1.3515,
         "tp": 1.36,
         "size": 5000
-      }
+      },
+      "alert_id": "gbpusd_sweep_152555_buy_retest",
+      "active": true
     },
     {
       "id": "oil_sweep_9351_buy_retest",
@@ -226,7 +242,9 @@
       },
       "last_updated": "2026-04-27T11:43Z",
       "updated_utc": "2026-04-27T19:40Z",
-      "proximity": "OIL@95.042; dist=1.532 ABOVE 93.51 (0.5\u00d7H4ATR=1.10, outside proximity). comp=+28.5 weak (need +40). WATCH."
+      "proximity": "OIL@95.042; dist=1.532 ABOVE 93.51 (0.5\u00d7H4ATR=1.10, outside proximity). comp=+28.5 weak (need +40). WATCH.",
+      "alert_id": "oil_sweep_93511_buy_retest",
+      "active": true
     },
     {
       "id": "gold_escalation_buy_zone",
@@ -249,7 +267,9 @@
       },
       "last_updated": "2026-04-27T11:43Z",
       "updated_utc": "2026-04-27T19:40Z",
-      "proximity": "GOLD@4676.91; 23.1pts BELOW 4700. H4 bear FVG 4686.16-4699.59 overhead (unmitigated, effectively caps 4700 entry). comp=-25 none (need +40 bull). VALIDATED (12f 4h=67%). WATCH \u2014 arm when comp\u2265+40 bull."
+      "proximity": "GOLD@4676.91; 23.1pts BELOW 4700. H4 bear FVG 4686.16-4699.59 overhead (unmitigated, effectively caps 4700 entry). comp=-25 none (need +40 bull). VALIDATED (12f 4h=67%). WATCH \u2014 arm when comp\u2265+40 bull.",
+      "alert_id": "gold_safehaven_buy_4700",
+      "active": true
     },
     {
       "id": "usdchf_m15sweep_7832_buy_watch",
@@ -271,7 +291,9 @@
       },
       "last_updated": "2026-04-27T15:09Z",
       "proximity": "USDCHF@0.785495; 23.2p ABOVE 0.7832. comp=+3 none (need |comp|\u2264-40 bearish extension). WATCH.",
-      "updated_utc": "2026-04-27T19:40Z"
+      "updated_utc": "2026-04-27T19:40Z",
+      "alert_id": "usdchf_reclaim_buy_7832",
+      "active": true
     }
   ],
   "structure_watch": [

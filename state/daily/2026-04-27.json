@@ -2303,5 +2303,21 @@
     "scalp_status": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=OFF(wr=11%)",
     "attention_covered": "9/9",
     "note": "heartbeat tick \u2014 0 events, 1 pos 1 working, thesis intact. FOMC caution activates ~18:00Z Apr28 (T<24h)."
+  },
+  {
+    "tick_ts_utc": "2026-04-27T22:45Z",
+    "events": 0,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 0,
+    "positions": 1,
+    "working_orders": 1,
+    "daily_pnl": -10.52,
+    "float": -2.0,
+    "broker_balance": 979.11,
+    "binary_event": "FOMC T-43.2h",
+    "scalp_status": "EURUSD+GBPUSD active AUDUSD disabled(wr=11%)",
+    "regime_note": "heartbeat: USDCAD SELL@1.36106 thesis-intact mod-bear; GBPUSD LIMIT working; AUDUSD strong corr-cap-full; FOMC caution T-19h",
+    "attention_covered": "9/9"
   }
 ]
