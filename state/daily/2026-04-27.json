@@ -2148,5 +2148,30 @@
     "attention_covered": "9/9",
     "audit": "REMOVED btcusd_h4bos_78356_buy; SYNCED gold_sweep_4682_buy_watch + usdchf_m15sweep_7832_buy_watch; De-escalation risk noted for gold.",
     "note": "heartbeat \u2014 no actionable events; USDCAD thesis intact; GBPUSD LIMIT 12.1p above; gold at 4682 sweep level, watchlist-only."
+  },
+  {
+    "tick_ts_utc": "2026-04-27T18:32Z",
+    "events_processed": 8,
+    "events_actionable": 1,
+    "events_consumed": [
+      "gold_sweep_4682_buy_watch_level_cross_20260427T181120",
+      "bar_close_USDJPY_M15",
+      "bar_close_GOLD_M15",
+      "bar_close_OIL_M15",
+      "bar_close_USDCAD_M15",
+      "bar_close_EURUSD_M15",
+      "bar_close_GBPUSD_M15",
+      "bar_close_USDCHF_M15"
+    ],
+    "positions_open": 1,
+    "orders_working": 1,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "daily_pnl_usd": -10.52,
+    "float_usd": -1.25,
+    "balance_usd": 979.95,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "FOMC T-47.5h",
+    "summary": "1 evt (GOLD level_cross gold_sweep_4682_buy_watch): comp=-22.5 none, H4 bear FVG 4686-4699 overhead, WATCH. USDCAD SELL@1.36106 age=4.7h UPL=-$1.25 thesis-intact mod-bear 4/4. GBPUSD LIMIT@1.352555 working bid 9.4p above, H1 FVG overhead may push to limit. AUDUSD comp=+62.5 strong corr-cap-full. No new trades."
   }
 ]

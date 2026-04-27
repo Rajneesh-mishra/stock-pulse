@@ -1,8 +1,8 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-27T18:14Z",
-  "state_ts_utc": "2026-04-27T18:14Z",
-  "regime_note": "2026-04-27T18:14Z forex auto \u2014 0 evt: heartbeat. USDCAD SELL@1.36106 bid=1.3618 UPL=-$1.48 (age=4.4h, thesis=trend, max_hold=24h, time_exit=13:50Z Apr28). comp=-43.5 moderate bearish 4/4 TFs, thesis intact. Trail needs +31.4p at 1.35792 \u2014 currently -7.4p. GBPUSD LIMIT@1.352555 WORKING size=5k SL=1.3515 TP=1.360 R:R=7.1 \u2014 bid=1.35376, 12.1p above limit, thesis intact (comp=+45.5 mod bull; BoE hike bets 2\u00d72026 support direction). H1 bear FVG 1.35393-1.35417 unmitigated \u2014 may push price toward limit. AUDUSD comp=+65 strong bull, corr cap 2/2 full (USDCAD+GBPUSD LIMIT) \u2014 blocked. GOLD bid=4682.19, right at gold_sweep_4682_buy_watch level; comp=-25 weak bearish \u2014 below arming threshold (+40 bull). De-escalation risk: Iranian FM Islamabad visit signals possible US-Iran breakthrough (CNBC Apr22). gold_escalation_buy_zone@4700 and gold_safehaven_continuation_buy@4775 remain WATCH \u2014 comp must flip +40 bull to arm. USDCHF comp=-6 none; usdchf_sweep_h1_sell_retest@0.7875 price 19.9p below (within 30p), WATCH. USDJPY comp=+24 none; intervention fade@160.0, price 60p below, WATCH. EURUSD comp=+3 none; sweep buy@1.17186, price 5.1p above, WATCH (readiness=none). OIL comp=+36 weak; sweep buy@93.23 and 93.51 with price 236p and 208p above, WATCH. Audit: REMOVED btcusd_h4bos_78356_buy (BTCUSD not in instruments). SYNCED gold_sweep_4682_buy_watch and usdchf_m15sweep_7832_buy_watch from watchlist_signals. FOMC T\u224847.8h (caution T<24h @18:00Z Apr28). BoC Apr29 expected hold 2.25%. 1 pos 1 working. daily_pnl=-$16.82 float=-$1.48. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-27T18:32Z",
+  "state_ts_utc": "2026-04-27T18:32Z",
+  "regime_note": "2026-04-27T18:32Z forex auto \u2014 1 evt (GOLD level_cross gold_sweep_4682_buy_watch): comp=-22.5 none, H4 bear FVG 4686.16-4699.59 overhead unmitigated, WATCH (need +40 bull to arm). USDCAD SELL@1.36106 age=4.7h UPL=-$1.25 (improved from -$1.48) thesis-intact comp=-43.5 mod-bear 4/4 TFs; trail needs 1.35792 (40p move) \u2014 bid=1.36171 (6.5p against). GBPUSD LIMIT@1.352555 working (bid 9.4p above 1.35349); H1 bear FVG 1.35397-1.35417 formed overhead \u2014 may push toward limit; comp=+44 mod bull. AUDUSD comp=+62.5 strong bull, corr-cap-full 2/2. FOMC T-47.5h. 1 pos 1 working. daily_pnl=-$10.52 float=-$1.25. attention_covered=9/9.",
   "regime_note_prev": "2026-04-27T16:01Z forex auto \u2014 heartbeat tick. 0 events. USDCAD SELL@1.36106 bid=1.36146 UPL=-$0.84 (age=2h11m, thesis=trend, max_hold=24h, time_exit=13:50Z Apr28). comp=-43.5 moderate bearish, thesis intact. No trail needed. GBPUSD LIMIT ARMED @ 1.352555 size=5000 SL=1.3515 TP=1.360 R:R=7.1 (corrected from prior TP=1.35393 which gave R:R 1.31 < floor; H1 FVG fully mitigated). comp=+50.5 moderate. FOMC Apr29 T-49h hold-94%. AUDUSD outside proximity (48.8p > 30p), LIMIT deferred. Correlation now at 2 (USDCAD SELL + GBPUSD LIMIT); AUDUSD would exceed cap if both active. GOLD comp=-30 weak bearish; escalation_buy_zone 29p below 4700 (in zone) but comp < +40 threshold. OIL comp=+45 moderate; 93.23/93.51 alerts outside proximity (1.7-2.0 pts > 1.12 threshold). News: FOMC Apr28-29 decision, 94% hold; oil at $95 Hormuz-premium intact. 1 pos 1 working. daily_pnl=-$10.52 float=-$0.84. FOMC T-49h. attention_covered=9/9.",
   "open_positions": [
     {
@@ -19,7 +19,7 @@
       "time_exit_utc": "2026-04-28T13:50Z",
       "rr": 1.93,
       "risk_usd": 6.28,
-      "upl_usd": -1.48
+      "upl_usd": -1.25
     }
   ],
   "watchlist": [
@@ -875,7 +875,7 @@
     "active": true,
     "name": "FOMC",
     "deadline_utc": "2026-04-29T18:00Z",
-    "t_minus_hours": 47.8,
+    "t_minus_hours": 47.5,
     "blackout": false,
     "caution": false,
     "note": "FOMC decision 2026-04-29T18:00Z + BoC decision 2026-04-29 (expected hold at 2.25% per TD Securities). T\u224851.2h: no blackout, caution activates T<24h (~18:00Z Apr28). FOMC 99.9% hold at 3.5-3.75%. BoC expected hold at 2.25% (mildly positive for USDCAD SELL \u2014 CAD not weakened by cut).",
