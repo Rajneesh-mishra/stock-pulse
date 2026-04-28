@@ -1,9 +1,9 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-28T08:27Z",
-  "state_ts_utc": "2026-04-28T08:27Z",
-  "regime_note": "2026-04-28T08:27Z forex auto \u2014 1 evt: pos_opened GBPUSD BUY scalp@1.35117 SL=1.35061 TP=1.35204 (scalp engine, cap 09:26Z). AUDUSD LIMIT@0.7143 GTC working. USDCHF FVG@0.7875 swept (dipped 0.78344) \u2192 level updated 0.7840. OIL alerts KEEP (dist<3\u00d7H4ATR=5.81). GOLD@4622 bear comp=-67; 4700/4721 SELL WATCH. FOMC caution starts 18:00Z today (T-9.5h) \u2014 normal ops now. daily_pnl=-$21.12. attention_covered=9/9.",
-  "regime_note_prev": "2026-04-28T08:18Z forex auto \u2014 3 evt: 3 pos_closed (729f/7345 GBPUSD BUY SL -$0.35/-$0.26; 7616 EURUSD SELL SL -$0.34). 0 pos open. AUDUSD LIMIT@0.7143 GTC working (comp=+49.5 mod, 35p above, within 3xH4ATR). GOLD@4621 strong bear comp=-67; 4700/4721 SELL WATCH (need +40 bull ext). EURUSD@1.1707 comp=-10.5 none; GBPUSD@1.3512 comp=+25.5 weak; OIL@97.56 comp=+45 mod (sweep levels 4+pts away). FOMC caution activates 18:00Z today (T-9.8h) \u2014 normal ops until then. daily_pnl=-$21.12. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-28T08:35Z",
+  "state_ts_utc": "2026-04-28T08:35Z",
+  "regime_note": "2026-04-28T08:35Z forex auto \u2014 1 evt: pos_opened GBPUSD BUY scalp@1.35099 logged (7c6b, engine). TRAIL: 7c6b SL\u2192BE=1.35099 (was 1.35061; passed +1R@1.35137 w/bid=1.35145). 7bf5 still running (entry=1.35117, +1R@1.35173 not yet reached). AUDUSD LIMIT@0.7143 GTC working (comp=+54.5 mod, 38p above, ARMED). GOLD@4622 bear comp=-67; 4721 SELL WATCH (99p below trigger). FOMC caution 18:00Z T-9.4h \u2014 normal ops. daily_pnl=-$21.12 + 2 scalp open UPL\u2248+$0.74. attention_covered=9/9.",
+  "regime_note_prev": "2026-04-28T08:27Z forex auto \u2014 1 evt: pos_opened GBPUSD BUY scalp@1.35117 SL=1.35061 TP=1.35204 (scalp engine, cap 09:26Z). AUDUSD LIMIT@0.7143 GTC working. USDCHF FVG@0.7875 swept (dipped 0.78344) \u2192 level updated 0.7840. OIL alerts KEEP (dist<3\u00d7H4ATR=5.81). GOLD@4622 bear comp=-67; 4700/4721 SELL WATCH. FOMC caution starts 18:00Z today (T-9.5h) \u2014 normal ops now. daily_pnl=-$21.12. attention_covered=9/9.",
   "open_positions": [
     {
       "deal_id": "00000000-4e79-7bf5-044a-beb40055311e",
@@ -16,6 +16,19 @@
       "opened_at": "2026-04-28T08:25:57Z",
       "thesis_type": "scalp_entry",
       "time_cap_utc": "2026-04-28T09:25:57Z",
+      "source": "scalp_engine"
+    },
+    {
+      "deal_id": "00000000-4e79-7c6b-044a-beb40055311e",
+      "instrument": "GBPUSD",
+      "direction": "BUY",
+      "size": 1000.0,
+      "entry": 1.35099,
+      "sl": 1.35099,
+      "tp": 1.35155,
+      "opened_at": "2026-04-28T08:26:57Z",
+      "thesis_type": "scalp_entry",
+      "time_cap_utc": "2026-04-28T09:26:57Z",
       "source": "scalp_engine"
     }
   ],

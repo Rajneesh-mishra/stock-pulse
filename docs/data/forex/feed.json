@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-28T08:32:47.975331Z",
+  "generated_at": "2026-04-28T08:39:15.890833Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T12:46:00Z",
-      "events_in": 2,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 2,
-      "note": "12:46 forex auto \u2014 2 evt (AUDUSD level_cross audusd_sweep_71379_sell_retest comp=+18.5 NONE bullish OPPOSES sell SKIP; GBPUSD level_cross gbpusd_sweep_134928_sell_retest comp=+21.5 NONE bullish OPPOSES sell SKIP). USDJPY 159.56 comp=+30 weak dist=44.2p OUTSIDE 30p WATCH (BOJ T-2d FOMC T-4d). GOLD 4700.4 sweep_4721 dist=21.3$ INSIDE prox comp=-18 none NEAR-ARM (need -40). OIL 95.24 sweep_9323 dist=2.0$ OUTSIDE prox comp=+30 weak WATCH. BTC 78229 LIMIT ARMED 78056 H4 FVG comp=+55 mod 4/4 bull (dealId=00000000-4e72-1a54-044a-beb40055311e). USDCHF 0.786 comp=+3.5 none sweep WATCH. EURUSD -8 none AUDUSD +18.5 none GBPUSD +21.5 none USDCAD -21.5 none. 10 alerts KEEP. 0 trades 1 LIMIT 0 pos. attention_covered=9/9."
-    },
     {
       "ts_utc": "2026-04-24T12:57:00Z",
       "events_in": 1,
@@ -1109,6 +1101,14 @@
       "regime": "ACTIVE_ESCALATION",
       "binary_event": "FOMC_APR2026 deadline=2026-04-29T18:00Z caution_from=2026-04-28T18:00Z",
       "note": "Scalp engine opened GBPUSD BUY@1.35117. USDCHF FVG swept, level updated. All OIL alerts KEEP (dist<3xH4ATR). FOMC caution T-9.5h, normal ops."
+    },
+    {
+      "ts_utc": "2026-04-28T08:35Z",
+      "events_in": 1,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "note": "08:35 forex auto \u2014 1 evt: pos_opened GBPUSD BUY 7c6b@1.35099 SL=1.35061 TP=1.35155 (scalp_engine). TRAIL 7c6b SL\u2192BE=1.35099 (bid=1.35145 passed +1R@1.35137). 7bf5 pos (entry=1.35117) at +28p, +1R@1.35173 not yet. Both caps ~09:26Z. AUDUSD LIMIT@0.7143 GTC ARMED (comp=+54.5 mod). GBPUSD comp=+25.5 weak; EURUSD comp=-13 none; GOLD comp=-67 strong bear; OIL comp=+45 mod. FOMC 18:00Z T-9.4h. daily_pnl=-$21.12. scalp: EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=OFF(wr 11%). attention_covered=9/9."
     }
   ]
 }
