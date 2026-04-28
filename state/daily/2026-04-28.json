@@ -1312,5 +1312,56 @@
         "reason": "comp=+55 mod bull; 93.23 validated KEPT dist=6.19pts; spread 3-4p blocks scalp"
       }
     }
+  },
+  {
+    "tick_ts_utc": "2026-04-28T14:07Z",
+    "events_processed": 0,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "trades_skipped": 0,
+    "open_positions": 0,
+    "working_orders": [
+      {
+        "epic": "GOLD",
+        "direction": "SELL",
+        "type": "LIMIT",
+        "level": 4603.0,
+        "sl": 4625.0,
+        "tp": 4519.0,
+        "size": 0.2
+      },
+      {
+        "epic": "AUDUSD",
+        "direction": "BUY",
+        "type": "LIMIT",
+        "level": 0.7143,
+        "sl": 0.713,
+        "tp": 0.7187,
+        "size": 3500
+      }
+    ],
+    "prices": {
+      "EURUSD": 1.16957,
+      "GBPUSD": 1.34958,
+      "AUDUSD": 0.71696,
+      "USDJPY": 159.581,
+      "USDCAD": 1.36705,
+      "USDCHF": 0.79048,
+      "GOLD": 4572.79,
+      "OIL_CRUDE": 98.475
+    },
+    "composite_scores": {
+      "EURUSD": -23,
+      "GBPUSD": 17,
+      "AUDUSD": 49.5,
+      "USDJPY": 43,
+      "USDCAD": -14.5,
+      "USDCHF": 29,
+      "GOLD": -65,
+      "OIL_CRUDE": 55
+    },
+    "daily_pnl_usd": -21.06,
+    "balance": 969.98,
+    "notes": "Heartbeat tick. 0 events. FOMC Apr29@18:00Z T-27.9h. 2 LIMITs intact: GOLD SELL@4603 + AUDUSD BUY@0.7143. USDCHF alert updated to H4 FVG. News queries date-rolled. Caution window opens 18:00Z today (T-24h FOMC)."
   }
 ]
