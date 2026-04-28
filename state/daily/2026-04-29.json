@@ -1,0 +1,28 @@
+[
+  {
+    "tick_ts_utc": "2026-04-28T18:46Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "event_id": "evt_1777401923075_level_cross",
+        "type": "level_cross",
+        "instrument": "EURUSD",
+        "alert_id": "eurusd_upsweep_117159_sell_watch",
+        "decision": "SKIP+WATCH",
+        "reason": "comp=+2.0 none (need \u2265+30 bullish for counter-trend arm); H4 bull FVG 1.17034-1.17057 conflicts; FOMC caution T-23.2h"
+      }
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "open_positions": 0,
+    "working_orders": 2,
+    "working_order_detail": [
+      "GOLD LIMIT SELL@4603 (dist=4.4pts, ARMED)",
+      "AUDUSD LIMIT BUY@0.7143 (dist=43p, WATCH)"
+    ],
+    "daily_pnl_usd": -21.06,
+    "balance_usd": 969.98,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "FOMC_APR2026 T-23.2h caution_active"
+  }
+]
