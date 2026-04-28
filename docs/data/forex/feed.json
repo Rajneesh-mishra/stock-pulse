@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T09:27:00.918779Z",
+  "generated_at": "2026-04-28T09:38:44.754112Z",
   "ticks": [
     {
       "ts_utc": "2026-04-24T14:10:00Z",
@@ -80,47 +80,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "tick_ts_utc": "2026-04-28T00:13Z",
-      "events": [
-        {
-          "id": "evt_1777335193022_level_cross",
-          "type": "level_cross",
-          "instrument": "GOLD",
-          "alert_id": "gold_escalation_buy_zone",
-          "action": "WATCH \u2014 comp=-20.5 none, need \u2265+40 bull to arm"
-        }
-      ],
-      "opened": [],
-      "closed": [],
-      "skipped": [
-        "GOLD buy@4700 \u2014 comp=-20.5 none (threshold +40)"
-      ],
-      "positions": [
-        {
-          "epic": "USDCAD",
-          "dir": "SELL",
-          "entry": 1.36106,
-          "upl": -0.84,
-          "age_h": 10.4,
-          "thesis": "trend"
-        },
-        {
-          "epic": "GBPUSD",
-          "type": "LIMIT",
-          "level": 1.352555,
-          "bid_dist_p": 3.3
-        }
-      ],
-      "account": {
-        "balance": 980.41,
-        "daily_pnl": -10.52,
-        "float_upl": -0.84
-      },
-      "binary": "FOMC 2026-04-29T18:00Z T\u224841.8h (caution T<24h ~18:00Z Apr28)",
-      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "attention_covered": "9/9"
     },
     {
       "tick_ts_utc": "2026-04-28T00:46Z",
@@ -1147,6 +1106,14 @@
         "OIL_CRUDE": "scalp=N/A spread, swing=WATCH comp=+55 mod; BUY@93.23/93.51 4.8p away"
       },
       "notes": "EURUSD scalp engine opened 2 SELL positions (scalp_entry, self-managing). AUDUSD LIMIT@0.7143 GTC intact. GOLD 4721 SELL validated (5f 4h=100%) KEEP despite dist>3\u00d7H4ATR. FOMC caution activates 18:00Z today."
+    },
+    {
+      "ts_utc": "2026-04-28T09:35Z",
+      "events_in": 1,
+      "opened": 0,
+      "closed": 2,
+      "skipped": 0,
+      "note": "09:35 forex auto \u2014 2 evt: pos_closed EURUSD 4ead-a1b5 TP+$0.44 + 4ead-a1e3 TP+$0.65. 0 pos open. AUDUSD LIMIT@0.7143 GTC working (comp=+47 mod, validated 3f/4h=100%). GOLD comp=-67 strong bear; 4721 SELL WATCH (validated, Rule2 KEEP, dist=106p). 4700 SELL resistance WATCH. OIL comp=+55 mod bull; 93.23/93.51 BUY WATCH extending. USDCHF alert REMOVED (Rule1: dist=59p>3xH4ATR=57.9p). FOMC caution@18:00Z T-8.4h \u2014 normal ops. daily_pnl=-$20.59. Scalp audit: EURUSD=KEEP GBPUSD=KEEP AUDUSD=DISABLED(wr=11%). attention_covered=9/9."
     }
   ]
 }

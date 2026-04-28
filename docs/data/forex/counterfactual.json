@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T09:26:12.284417+00:00",
+  "generated_at": "2026-04-28T09:38:36.406261+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -846,10 +846,10 @@
           "hit_rate": 0.0
         },
         "4h": {
-          "filled": 2,
+          "filled": 3,
           "favorable": 1,
-          "avg_pips": -2.1,
-          "hit_rate": 0.5
+          "avg_pips": -13.2,
+          "hit_rate": 0.33
         },
         "24h": {
           "filled": 0,
@@ -876,6 +876,32 @@
           "favorable": 0,
           "avg_pips": -437.7,
           "hit_rate": 0.0
+        },
+        "24h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        }
+      }
+    },
+    {
+      "alert_id": "eurusd_m15sweep_116871_buy_watch",
+      "instrument": "EURUSD",
+      "direction": "buy",
+      "fires": 1,
+      "by_horizon": {
+        "1h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "4h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
         },
         "24h": {
           "filled": 0,

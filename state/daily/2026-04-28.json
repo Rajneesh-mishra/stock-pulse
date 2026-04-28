@@ -1065,5 +1065,13 @@
       "OIL_CRUDE": "scalp=N/A spread, swing=WATCH comp=+55 mod; BUY@93.23/93.51 4.8p away"
     },
     "notes": "EURUSD scalp engine opened 2 SELL positions (scalp_entry, self-managing). AUDUSD LIMIT@0.7143 GTC intact. GOLD 4721 SELL validated (5f 4h=100%) KEEP despite dist>3\u00d7H4ATR. FOMC caution activates 18:00Z today."
+  },
+  {
+    "ts_utc": "2026-04-28T09:35Z",
+    "events_in": 1,
+    "opened": 0,
+    "closed": 2,
+    "skipped": 0,
+    "note": "09:35 forex auto \u2014 2 evt: pos_closed EURUSD 4ead-a1b5 TP+$0.44 + 4ead-a1e3 TP+$0.65. 0 pos open. AUDUSD LIMIT@0.7143 GTC working (comp=+47 mod, validated 3f/4h=100%). GOLD comp=-67 strong bear; 4721 SELL WATCH (validated, Rule2 KEEP, dist=106p). 4700 SELL resistance WATCH. OIL comp=+55 mod bull; 93.23/93.51 BUY WATCH extending. USDCHF alert REMOVED (Rule1: dist=59p>3xH4ATR=57.9p). FOMC caution@18:00Z T-8.4h \u2014 normal ops. daily_pnl=-$20.59. Scalp audit: EURUSD=KEEP GBPUSD=KEEP AUDUSD=DISABLED(wr=11%). attention_covered=9/9."
   }
 ]
