@@ -1,9 +1,9 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-28T04:05Z",
-  "state_ts_utc": "2026-04-28T04:05Z",
-  "regime_note": "2026-04-28T04:05Z forex auto \u2014 1 evt: OIL level_cross oil_sweep_9579_sell_retest @96.244 (3rd cross, position already open \u2014 no action). GBPUSD BUY@1.35254 age=2h11min UPL=+$3.2 (bid=1.35318) thesis-intact BoE-hawkish; time_exit=05:53Z. OIL SELL@96.226 age=1h41min UPL=-$0.79 (bid=96.247) fade hovering at entry; Hormuz still restricted structural-bull comp=+43. GOLD@4668 approaching 4669 sweep (1.1pts, comp=-28 weak \u2014 need \u2264-40 to arm counter-buy). AUDUSD@0.7184 comp=+54.5 moderate-bull (41p above 0.7143 level, outside proximity; corr-cap=1/2). FOMC T\u224838h caution-window starts 18:00Z Apr28 (14h from now). News: ceasefire holding, Hormuz restricted (validates OIL structural bull bias); GBP BoE 2-hikes priced thesis intact. 2 pos 0 working. daily_pnl=-$16.82 float\u2248+$2.4. attention_covered=9/9.",
-  "regime_note_prev": "2026-04-28T03:10Z forex auto \u2014 0 evt: heartbeat. GBPUSD BUY@1.35254 age=1.3h UPL=+$1.90 thesis-intact BoE-hawkish bid=1.35292. OIL SELL@96.226 age=0.8h UPL=+$2.26 fade working bid=96.012; ceasefire-fragility risk noted SL@96.6. GOLD 4672.9 approaching 4721 sell zone (48p, readiness=weak). USDJPY 159.28 approaching intervention 160.0 (72p, readiness=none). AUDUSD 0.71792 moderate-bull, 36p above BUY@0.7143 (threshold 30p, just outside; GBPUSD correlated). FOMC T\u224839h (>24h window, normal ops). 2 pos 0 working. daily_pnl=-$16.82 float\u2248+$4.16. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-28T04:10Z",
+  "state_ts_utc": "2026-04-28T04:10Z",
+  "regime_note": "2026-04-28T04:10Z forex auto \u2014 1 evt: GOLD level_cross gold_sweep_4669_buy_retest @4668 (comp=-28 weak, need \u2264-40 bearish to arm BUY LIMIT \u2014 WATCH). GBPUSD BUY@1.35254 age=2h17min UPL=+$2.25 (bid=1.35299) thesis-intact; time_exit=05:53Z. OIL SELL@96.226 age=1h47min UPL=-$3.61 (bid=96.472) bear OB 96.218-96.5705 intact (SL=96.6); time_exit corrected to 06:23Z (4h cap per note). AUDUSD@0.7183 comp=+52 moderate-bull (39.6p above 0.7143 level, outside proximity; corr-cap 1/2). FOMC T\u224813.8h caution-window starts 18:00Z Apr28. 2 pos 0 working. daily_pnl=-$16.82 float\u2248-$1.36. attention_covered=9/9.",
+  "regime_note_prev": "2026-04-28T04:05Z forex auto \u2014 1 evt: OIL level_cross oil_sweep_9579_sell_retest @96.244 (3rd cross, position already open \u2014 no action). GBPUSD BUY@1.35254 age=2h11min UPL=+$3.2 (bid=1.35318) thesis-intact BoE-hawkish; time_exit=05:53Z. OIL SELL@96.226 age=1h41min UPL=-$0.79 (bid=96.247) fade hovering at entry; Hormuz still restricted structural-bull comp=+43. GOLD@4668 approaching 4669 sweep (1.1pts, comp=-28 weak \u2014 need \u2264-40 to arm counter-buy). AUDUSD@0.7184 comp=+54.5 moderate-bull (41p above 0.7143 level, outside proximity; corr-cap=1/2). FOMC T\u224838h caution-window starts 18:00Z Apr28 (14h from now). News: ceasefire holding, Hormuz restricted (validates OIL structural bull bias); GBP BoE 2-hikes priced thesis intact. 2 pos 0 working. daily_pnl=-$16.82 float\u2248+$2.4. attention_covered=9/9.",
   "open_positions": [
     {
       "dealId": "00000000-4e78-f95b-044a-beb40055311e",
@@ -19,8 +19,8 @@
       "time_exit_utc": "2026-04-28T05:53Z",
       "rr": 7.1,
       "risk_usd": 5.2,
-      "upl_usd": 3.2,
-      "upl": 3.2
+      "upl_usd": 2.25,
+      "upl": 2.25
     },
     {
       "dealId": "00000000-4e79-04ea-044a-beb40055311e",
@@ -32,12 +32,12 @@
       "tp": 94.4,
       "opened_at": "2026-04-28T02:23:30Z",
       "thesis_type": "counter_trend_fade",
-      "time_exit_utc": "2026-04-28T10:23Z",
+      "time_exit_utc": "2026-04-28T06:23Z",
       "rr": 4.76,
       "risk_usd": 4.97,
       "note": "Counter-trend fade OIL SELL: bear OB 96.218-96.5705; comp=+43 mod bullish extension; Hormuz ceasefire proposal driving oil lower. 4h time-stop: 06:23Z. Cancel if OIL closes above 96.60 (bear OB top).",
-      "upl_usd": -0.793,
-      "upl": -0.793
+      "upl_usd": -3.61,
+      "upl": -3.61
     }
   ],
   "watchlist": [
