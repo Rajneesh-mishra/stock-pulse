@@ -964,5 +964,22 @@
     "regime": "GOLD strong bear comp=-67; EURUSD none comp=-23; GBPUSD weak comp=+25.5; AUDUSD moderate comp=+47",
     "binary_event": "FOMC_APR2026 caution@18:00Z today T-9.8h",
     "summary": "Scalp engine very active: 4 GBPUSD BUY (2 SL), 5 EURUSD SELL (4 SL). Net -.87 closures this tick. 3 pos open within 1h caps."
+  },
+  {
+    "tick_ts_utc": "2026-04-28T08:18Z",
+    "events_processed": 3,
+    "events": [
+      "position_closed GBPUSD 729f BUY SL -$0.35",
+      "position_closed GBPUSD 7345 BUY SL -$0.26",
+      "position_closed EURUSD 7616 SELL SL -$0.34"
+    ],
+    "positions_opened": 0,
+    "positions_closed": 3,
+    "open_positions": 0,
+    "working_orders": [
+      "AUDUSD LIMIT@0.7143 GTC"
+    ],
+    "daily_pnl": -21.12,
+    "notes": "3 scalp SL hits. 0 positions open. AUDUSD LIMIT@0.7143 working. FOMC caution activates 18:00Z today. GOLD strong bear comp=-67, 4700/4721 sell WATCH. No new swing entries."
   }
 ]

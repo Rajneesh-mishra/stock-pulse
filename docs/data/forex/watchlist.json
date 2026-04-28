@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-28T07:30Z",
+  "last_updated_by_claude": "2026-04-28T08:18Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -40,7 +40,7 @@
       },
       "last_updated": "2026-04-27T15:09Z",
       "updated_utc": "2026-04-28T06:07Z",
-      "proximity": "AUDUSD@0.71703; 27.3p ABOVE 0.7143 (within 30p threshold). comp=+47 moderate-bull. VALIDATED (3f 4h=100%). LIMIT@0.7143 WORKING GTC. 2026-04-28T07:30Z",
+      "proximity": "AUDUSD@0.71782; 35.2p ABOVE 0.7143. comp=+49.5 moderate-bull. VALIDATED (3f 4h=100%). LIMIT@0.7143 WORKING GTC. 2026-04-28T08:18Z",
       "validated": true,
       "alert_id": "audusd_fvg_buy_7143",
       "active": true
@@ -65,7 +65,7 @@
       },
       "last_updated": "2026-04-26T06:00:00Z",
       "updated_utc": "2026-04-28T06:07Z",
-      "proximity": "OIL@97.34; 4.11pts ABOVE 93.23 (outside proximity). comp=+45 moderate-bull. VALIDATED (6f 4h=100%). WATCH. 2026-04-28T07:27Z",
+      "proximity": "OIL@97.56; 4.33pts ABOVE 93.23 (outside proximity). comp=+45 moderate-bull. VALIDATED (6f 4h=100%). WATCH. 2026-04-28T08:18Z",
       "alert_id": "oil_sweep_9323_buy_retest",
       "active": true
     },
@@ -89,7 +89,7 @@
       },
       "last_updated": "2026-04-26T17:11Z",
       "updated_utc": "2026-04-28T06:07Z",
-      "proximity": "GOLD@4632; 89pts BELOW 4721.0 (3xH4ATR~103, within). comp=-67 strong-bear (need +40 BULLISH ext). VALIDATED (9f 4h=100%). WATCH. 2026-04-28T07:27Z",
+      "proximity": "GOLD@4621.6; 99.4pts BELOW 4721.0 (3xH4ATR~100.5, borderline). comp=-67 strong-bear (need +40 BULLISH ext). VALIDATED (9f 4h=100%). WATCH. 2026-04-28T08:18Z",
       "validated": true,
       "alert_id": "gold_sweep_4721_sell_retest",
       "active": true
@@ -114,7 +114,7 @@
       },
       "last_updated": "2026-04-27T11:43Z",
       "updated_utc": "2026-04-28T06:07Z",
-      "proximity": "OIL@97.34; 3.83pts ABOVE 93.51 (outside proximity). comp=+45 moderate-bull. WATCH. 2026-04-28T07:27Z",
+      "proximity": "OIL@97.56; 4.05pts ABOVE 93.51 (outside proximity). comp=+45 moderate-bull. WATCH. 2026-04-28T08:18Z",
       "alert_id": "oil_sweep_93511_buy_retest",
       "active": true
     },
@@ -134,7 +134,7 @@
       "current_price_ref": 4632,
       "last_updated": "2026-04-28T06:07Z",
       "updated_utc": "2026-04-28T06:07Z",
-      "proximity": "GOLD@4632; 68pts BELOW 4700.0 (3xH4ATR~103, within). comp=-67 strong-bear (need +40 BULLISH ext). WATCH. 2026-04-28T07:27Z",
+      "proximity": "GOLD@4621.6; 78.4pts BELOW 4700.0 (3xH4ATR~100.5). comp=-67 strong-bear (need +40 BULLISH ext). WATCH. 2026-04-28T08:18Z",
       "alert_id": "gold_4700_sell_resistance",
       "active": true
     },
@@ -154,7 +154,7 @@
       "current_price_ref": 1.1696,
       "last_updated": "2026-04-28T07:27Z",
       "updated_utc": "2026-04-28T07:27Z",
-      "proximity": "EURUSD@1.1696; 8.9p ABOVE 1.16871. comp=-23 none (need \u2264-40 bearish ext). WATCH. 2026-04-28T07:30Z",
+      "proximity": "EURUSD@1.1707; 19.7p ABOVE 1.16871 (within 30p). comp=-10.5 none (need \u2264-40 bearish ext). WATCH. 2026-04-28T08:18Z",
       "alert_id": "eurusd_m15sweep_116871_buy_watch",
       "active": true
     },
@@ -174,7 +174,7 @@
       "current_price_ref": 1.3641,
       "last_updated": "2026-04-28T07:30Z",
       "updated_utc": "2026-04-28T07:30Z",
-      "proximity": "USDCAD@1.3641; 9.7p ABOVE 1.36313. comp=-22 none (need \u2264-40 bearish ext). WATCH. 2026-04-28T07:30Z",
+      "proximity": "USDCAD@1.36387; 7.4p ABOVE 1.36313 (within 30p). comp=-22 none (need \u2264-40 bearish ext). WATCH. 2026-04-28T08:18Z",
       "alert_id": "usdcad_m15sweep_136313_buy_watch",
       "active": true
     },
@@ -194,7 +194,7 @@
       "current_price_ref": 0.7887,
       "last_updated": "2026-04-28T07:30Z",
       "updated_utc": "2026-04-28T07:30Z",
-      "proximity": "USDCHF@0.78870; 12p ABOVE 0.78750. comp=+23 none (need +40 bullish). WATCH. 2026-04-28T07:30Z",
+      "proximity": "USDCHF@0.78859; 10.9p ABOVE 0.78750 (within 30p). comp=+23 none (need +40 bullish). WATCH. 2026-04-28T08:18Z",
       "alert_id": "usdchf_h1fvg_buy_78750",
       "active": true
     }
@@ -260,6 +260,6 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-28T07:30Z",
-  "last_updated": "2026-04-28T07:30Z"
+  "last_updated_utc": "2026-04-28T08:18Z",
+  "last_updated": "2026-04-28T08:18Z"
 }

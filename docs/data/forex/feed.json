@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-28T08:14:59.908012Z",
+  "generated_at": "2026-04-28T08:21:28.575755Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T11:18:00Z",
-      "events_in": 2,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 2,
-      "note": "11:18 forex auto \u2014 2 evt (GBPUSD M15 up-sweep 1.34927 wick=8.8p 1.29\u00d7ATR comp=+29.0 weak-bull OPPOSES sell \u2192 ADD WATCH gbpusd_sweep_134928; GOLD level_cross gold_sweep_4695_sell_retest cross_up 4702.9>SL 4697.65 \u2192 REMOVE invalid). USDJPY 159.54 +30.0 weak dist=46.4p OUTSIDE 30p \u2192 WATCH (dropping from +43 mod). GOLD 4698.59 -32.5 weak; sweep_4721 dist=23.1$ INSIDE 30$ prox WATCH (need -40 mod); safehaven_4775 dist=76.4$ WATCH. OIL 94.56 +35.5 weak; sweep_9323 dist=1.32$ barely OUTSIDE prox 1.16$; pullback live 96.97\u219294.56 Day-FVG 93.42-94.18 below. GBPUSD scalp ghost at 1.346775+1.168965 engine-managed. 0 swing trades 0 swing pos. BOJ T-3d FOMC T-5d. attention_covered=9/9."
-    },
     {
       "ts_utc": "2026-04-24T11:28:00Z",
       "events_in": 1,
@@ -1086,6 +1078,23 @@
       "regime": "GOLD strong bear comp=-67; EURUSD none comp=-23; GBPUSD weak comp=+25.5; AUDUSD moderate comp=+47",
       "binary_event": "FOMC_APR2026 caution@18:00Z today T-9.8h",
       "summary": "Scalp engine very active: 4 GBPUSD BUY (2 SL), 5 EURUSD SELL (4 SL). Net -.87 closures this tick. 3 pos open within 1h caps."
+    },
+    {
+      "tick_ts_utc": "2026-04-28T08:18Z",
+      "events_processed": 3,
+      "events": [
+        "position_closed GBPUSD 729f BUY SL -$0.35",
+        "position_closed GBPUSD 7345 BUY SL -$0.26",
+        "position_closed EURUSD 7616 SELL SL -$0.34"
+      ],
+      "positions_opened": 0,
+      "positions_closed": 3,
+      "open_positions": 0,
+      "working_orders": [
+        "AUDUSD LIMIT@0.7143 GTC"
+      ],
+      "daily_pnl": -21.12,
+      "notes": "3 scalp SL hits. 0 positions open. AUDUSD LIMIT@0.7143 working. FOMC caution activates 18:00Z today. GOLD strong bear comp=-67, 4700/4721 sell WATCH. No new swing entries."
     }
   ]
 }
