@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-28T08:52Z",
+  "last_updated_by_claude": "2026-04-28T12:09Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -95,26 +95,6 @@
       "active": true
     },
     {
-      "id": "gold_4700_sell_resistance",
-      "instrument": "GOLD",
-      "level": 4700.0,
-      "emit_on": "cross_up",
-      "cooldown_sec": 1800,
-      "direction": "sell",
-      "note": "ENTRY: arm LIMIT SELL at 4700 when |comp| \u2265 40 bullish extension; M15 bar closes back below 4700 with rejection wick \u22652pts from high (resistance-flip sell at broken support).\n\nCONTEXT: GOLD broke below 4700 on 2026-04-28 (comp=-67 strong bear, day high=4701.02 then collapsed to 4623.73). 4700 = major psychological support now flipped to resistance. Ceasefire extended indef but peace talks stalled; gold sold off on reduced safe-haven premium + inflation risk reassessment. Apply 4h time-stop if entered.\n\nSL: 4715  TP: 4635  R:R target: 4.3\n\nadded 2026-04-28T06:07Z \u2014 gold broke below 4700 comp=-67 strong bear; resistance-flip sell WATCH.",
-      "entry_criterion": "arm LIMIT SELL at 4700 when |comp| \u2265 40 bullish extension; M15 bar closes below 4700 with rejection wick \u22652pts.",
-      "regime_context": "Gold broke below 4700 comp=-67 strong bear on 2026-04-28. 4700 now resistance. Ceasefire extended but talks stalled. 4h time-stop if entered.",
-      "sl": 4715.0,
-      "tp": 4635.0,
-      "rr_target": "4.3",
-      "current_price_ref": 4632,
-      "last_updated": "2026-04-28T06:07Z",
-      "updated_utc": "2026-04-28T06:07Z",
-      "proximity": "GOLD@4627.3; 72.7pts BELOW 4700.0 (need bull ext +40 to arm). comp=-67 strong-bear. WATCH. 2026-04-28T08:52Z",
-      "alert_id": "gold_4700_sell_resistance",
-      "active": true
-    },
-    {
       "id": "eurusd_m15sweep_116871_buy_watch",
       "instrument": "EURUSD",
       "level": 1.16871,
@@ -127,10 +107,10 @@
       "sl": 1.1675,
       "tp": 1.1727,
       "rr_target": "2.2",
-      "current_price_ref": 1.1696,
+      "current_price_ref": 1.1679,
       "last_updated": "2026-04-28T07:27Z",
       "updated_utc": "2026-04-28T07:27Z",
-      "proximity": "EURUSD@1.17022; 15.1p ABOVE 1.16871 (within 30p). comp=-13 none (need <=-40 bearish ext). WATCH. 2026-04-28T08:52Z",
+      "proximity": "EURUSD@1.16790; price NOW BELOW level 1.16871 (level_cross 11:49Z). comp=-23 none (need <=-40 bearish ext). WATCH only. 2026-04-28T12:09Z",
       "alert_id": "eurusd_m15sweep_116871_buy_watch",
       "active": true
     },
@@ -183,15 +163,35 @@
       "direction": "sell",
       "note": "ENTRY: price tags 159.90-160.10 zone; arm anticipation LIMIT SELL@160.00 when counter-trend comp |composite| >= 40 bullish extension (bullish ext = extension creating the fade edge). VALIDATED concept: counter-trend fade at intervention red line.\n\nCONTEXT: MoF/BoJ intervention red line at 160.00-160.20. Japan intervened at 159.23 Jan 2026. MoF Katayama 'high sense of urgency'. BoJ hold Apr 28. Fade on bullish extension reaching 160. 4h time-stop on entered trade.\n\nSL: 160.50  TP: 158.50  R:R target: 3.0\n\nadded 2026-04-28T08:52Z \u2014 intervention fade level missing from daemon watch; added to enable level_enter event on price approach.",
       "entry_criterion": "Arm LIMIT SELL@160.00 when |comp| >= 40 bullish extension (counter-trend). No M15 confirmation required if comp >= 40.",
-      "regime_context": "MoF intervention red line 160.00-160.20. comp=+32 weak (need +40 to arm). FOMC caution T-9.1h. 4h time-stop on entered trade.",
+      "regime_context": "MoF intervention red line 160.00-160.20. comp=+44 moderate (MEETS +40 threshold for counter-trend arm). BoJ held Apr28. JPY pip-val bug blocks risk_guard \u2014 cannot place trade. dist=26.9p WITHIN 30p proximity. FOMC Apr29 caution. 4h time-stop on entered trade.",
       "sl": 160.5,
       "tp": 158.5,
       "rr_target": "3.0",
-      "current_price_ref": 159.529,
+      "current_price_ref": 159.731,
       "last_updated": "2026-04-28T08:52Z",
       "updated_utc": "2026-04-28T08:52Z",
-      "proximity": "USDJPY@159.529; 47.1p BELOW 160.00 (outside 30p prox). comp=+32 weak (need +40 bullish ext). WATCH. 2026-04-28T08:52Z",
+      "proximity": "USDJPY@159.731; 26.9p BELOW 160.00 (WITHIN 30p prox). comp=+44 moderate-bull ext MEETS threshold. TECHNICALLY ARMED but JPY pip-val bug blocks risk_guard entry. WATCH/BLOCKED. News: intervention risk live per FXStreet/EBC (Apr28). 2026-04-28T12:09Z",
       "alert_id": "usdjpy_intervention_fade_160",
+      "active": true
+    },
+    {
+      "id": "gold_h1fvg_sell_4603",
+      "instrument": "GOLD",
+      "level": 4603.31,
+      "emit_on": "cross_up",
+      "cooldown_sec": 1800,
+      "direction": "sell",
+      "note": "ENTRY: price retraces to H1 bear FVG top 4603; M15 bar closes BELOW 4603 with bearish rejection wick \u22652pts from the high. Trend-aligned SELL \u2014 comp=-67 strong bear (all 4 TFs). Arm anticipation LIMIT SELL at 4603 when readiness strong (comp \u2264 -40 already met). Cancel if M15 closes above H4 FVG top 4620.65 + wick.\n\nCONTEXT: H1 bear FVG (4569.81-4603.31, unmitigated, 1 bar ago). H4 bear FVG (4570.26-4620.65, unmitigated). Price inside FVG bottom \u2014 retest of FVG top = sell zone. GOLD comp=-67 strong bear, all TFs aligned. FOMC Apr29 caution. Apply 4h time-stop on entered trade.\n\nSL: 4625  TP: 4520  R:R target: 3.8\n\nadded 2026-04-28T12:09Z \u2014 replacement for stale gold_4700 (dist>3\u00d7H4ATR); anchored to fresh H1/H4 bear FVG resistance band.",
+      "entry_criterion": "M15 retest of H1 bear FVG top 4603 with bearish rejection wick \u22652pts. Trend-aligned sell; arm LIMIT SELL at 4603 when readiness strong (comp already \u2264-40).",
+      "regime_context": "H1 bear FVG 4569.81-4603.31 unmitigated. H4 bear FVG 4570.26-4620.65. comp=-67 strong bear all TFs. FOMC Apr29 caution. 4h time-stop.",
+      "sl": 4625.0,
+      "tp": 4520.0,
+      "rr_target": "3.8",
+      "current_price_ref": 4571.53,
+      "last_updated": "2026-04-28T12:09Z",
+      "updated_utc": "2026-04-28T12:09Z",
+      "proximity": "GOLD@4571.53; price INSIDE FVG (4569.81-4603.31); 31.8pts BELOW alert level 4603.31. comp=-67 strong bear. Need price to rebound to 4603 to fire. WATCH. 2026-04-28T12:09Z",
+      "alert_id": "gold_h1fvg_sell_4603",
       "active": true
     }
   ],
@@ -257,5 +257,5 @@
     }
   ],
   "last_updated_utc": "2026-04-28T08:52Z",
-  "last_updated": "2026-04-28T08:52Z"
+  "last_updated": "2026-04-28T12:09Z"
 }

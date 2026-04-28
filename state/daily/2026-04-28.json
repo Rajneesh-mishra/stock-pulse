@@ -1249,5 +1249,68 @@
     "alerts_removed": [],
     "scalp_status": "EURUSD=OFF(desync) GBPUSD=ACTIVE AUDUSD=OFF(wr=11%)",
     "note": "USDCAD M15 up-sweep@1.36674 (3.5p) reinforces H4FVG+sweep sell zone 1.36643-1.36693. Readiness=none, WATCH. USDJPY fade@160 dist=30.3p (just outside 30p threshold; risk_guard JPY pip-val bug). AUDUSD LIMIT@0.7143 GTC intact."
+  },
+  {
+    "tick_ts_utc": "2026-04-28T12:09Z",
+    "events_processed": 1,
+    "bar_closes": 12,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "events_skipped": 0,
+    "summary": "1 evt: EURUSD level_cross@1.16871 (eurusd_m15sweep_116871). comp=-23 none (need \u2264-40), NO TRADE. AUDUSD LIMIT@0.7143 GTC intact. gold_4700 AUTO-REMOVED (Rule1 stale); gold_h1fvg_sell_4603 ADDED. USDJPY@159.731 fade@160 TECHNICALLY ARMED but JPY pip-val bug blocks. daily_pnl=-$21.06. attention_covered=9/9.",
+    "open_positions": 0,
+    "working_orders": 1,
+    "daily_pnl_usd": -21.06,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "attention_matrix": {
+      "EURUSD": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "comp=-23; need \u2264-40 for CT arm; scalp engine_desync disabled"
+      },
+      "GBPUSD": {
+        "swing": "NONE",
+        "scalp": "ACTIVE",
+        "readiness": "none",
+        "reason": "comp=+4.5 neutral; no alert; scalp enabled (no trades)"
+      },
+      "AUDUSD": {
+        "swing": "ARMED",
+        "scalp": "OFF",
+        "readiness": "weak",
+        "reason": "LIMIT@0.7143 GTC working; comp=+39.5 borderline; scalp wr=11% disabled"
+      },
+      "USDJPY": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "moderate",
+        "reason": "dist=26.9p WITHIN prox, comp=+44 MEETS threshold, JPY pip-val bug blocks risk_guard"
+      },
+      "USDCAD": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "comp=-14.5; dist=44.6p from level; scalp CAD quote pending"
+      },
+      "USDCHF": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "weak",
+        "reason": "comp=+29; dist=32.6p (just outside 30p); scalp pip-conv pending"
+      },
+      "GOLD": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "strong",
+        "reason": "comp=-67 strong bear; 4721 validated KEPT (dist 149.5>3\u00d7H4ATR Rule2); 4603 FVG sell ADDED"
+      },
+      "OIL_CRUDE": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "moderate",
+        "reason": "comp=+55 mod bull; 93.23 validated KEPT dist=6.19pts; spread 3-4p blocks scalp"
+      }
+    }
   }
 ]
