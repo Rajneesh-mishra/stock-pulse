@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T23:09:38.313978+00:00",
+  "generated_at": "2026-04-28T23:19:51.854172+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -915,7 +915,7 @@
       "alert_id": "eurusd_upsweep_117159_sell_watch",
       "instrument": "EURUSD",
       "direction": "sell",
-      "fires": 4,
+      "fires": 5,
       "by_horizon": {
         "1h": {
           "filled": 3,

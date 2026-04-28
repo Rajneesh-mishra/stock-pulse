@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T23:10:35.994735Z",
+  "generated_at": "2026-04-28T23:20:20.600788Z",
   "ticks": [
     {
       "ts_utc": "2026-04-24T14:10:00Z",
@@ -80,31 +80,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "ts_utc": "2026-04-28T07:32Z",
-      "events": 3,
-      "event_ids": [
-        "evt_1777360887126_position_opened",
-        "evt_1777361183525_liquidity_sweep",
-        "evt_1777361279144_position_closed"
-      ],
-      "actions": [
-        "trail_sl 62fa EURUSD SELL breakeven (1.4R)",
-        "log_close 631b EURUSD SELL TP hit +$0.34",
-        "add_alert usdcad_m15sweep_136313_buy_watch",
-        "remove_alert usdchf_sweep_h1_sell_retest (auto-remove Rule1)",
-        "remove_alert usdchf_m15sweep_7832_buy_watch (auto-remove Rule1)",
-        "add_alert usdchf_h1fvg_buy_78750",
-        "log_new_scalp 65d0 EURUSD SELL",
-        "log_new_scalp 660d GBPUSD BUY",
-        "close 65dd GBPUSD BUY (max_per_pair violation -$0.16)"
-      ],
-      "open_positions": 3,
-      "working_orders": 1,
-      "daily_pnl": -17.54,
-      "binary": "FOMC_APR2026 T-35.5h caution_from_18:00Z_today",
-      "regime": "GOLD_strong_bear EURUSD_bear_none AUDUSD_mod_bull OIL_mod_bull USDCAD_bear_none FOMC_caution_pre"
     },
     {
       "tick_ts_utc": "2026-04-28T07:47Z",
@@ -1009,6 +984,45 @@
       "attention_covered": "9/9",
       "regime": "FOMC_caution; ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "summary": "heartbeat \u2014 FOMC T-18.8h; GOLD SELL LIMIT@4603 ARMED; AUDUSD BUY LIMIT@0.7143 WATCH(dist>prox); 0 positions; all 11 alerts KEEP"
+    },
+    {
+      "tick_ts_utc": "2026-04-28T23:19Z",
+      "events": 1,
+      "events_processed": [
+        {
+          "id": "evt_1777418158735_level_cross",
+          "type": "level_cross",
+          "instrument": "EURUSD",
+          "alert_id": "eurusd_upsweep_117159_sell_watch",
+          "action": "SKIP (comp=+12.5 <+40 counter-trend threshold, SKIP #5)"
+        }
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "pending_limits": [
+        {
+          "epic": "GOLD",
+          "direction": "SELL",
+          "level": 4603.0,
+          "size": 0.2,
+          "sl": 4625,
+          "tp": 4519,
+          "status": "ARMED (dist=10.7pts)"
+        },
+        {
+          "epic": "AUDUSD",
+          "direction": "BUY",
+          "level": 0.7143,
+          "size": 3500,
+          "sl": 0.713,
+          "tp": 0.7187,
+          "status": "GTC (dist=43.3p)"
+        }
+      ],
+      "daily_pnl_usd": -21.06,
+      "account_balance": 969.98,
+      "regime_note": "FOMC T-18.7h caution; EURUSD SKIP #5; GOLD LIMIT@4603 ARMED; AUDUSD LIMIT@0.7143 WATCH; all 11 alerts KEEP",
+      "attention_covered": "9/9"
     }
   ]
 }
