@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T10:05:34.819283Z",
+  "generated_at": "2026-04-28T10:46:09.652461Z",
   "ticks": [
     {
       "ts_utc": "2026-04-24T14:10:00Z",
@@ -80,82 +80,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "tick_ts_utc": "2026-04-28T01:13Z",
-      "events_consumed": 2,
-      "events": [
-        {
-          "id": "evt_1777338104975_level_cross",
-          "type": "level_cross",
-          "instrument": "OIL_CRUDE",
-          "alert_id": "oil_sweep_9579_sell_retest",
-          "action": "WATCH \u2014 comp=+37 < +40 threshold; level updated 95.789\u219295.928 (old SL 95.92 breached)"
-        },
-        {
-          "id": "evt_1777338510573_level_cross",
-          "type": "level_cross",
-          "instrument": "GBPUSD",
-          "alert_id": "gbpusd_sweep_135255_buy_watch",
-          "action": "KEEP LIMIT working@1.352555 \u2014 price at bid, Day bull FVG demand intact, H4/Day bullish, cancel-criteria not met (>1.3505)"
-        }
-      ],
-      "positions": [
-        {
-          "epic": "USDCAD",
-          "direction": "SELL",
-          "entry": 1.36106,
-          "bid": 1.36292,
-          "sl": 1.3642,
-          "tp": 1.355,
-          "upl": -3.02,
-          "age_h": 11.4,
-          "status": "HOLD \u2014 comp=-43.5 mod-bear, time_exit=13:50Z Apr28"
-        }
-      ],
-      "working_orders": [
-        {
-          "epic": "GBPUSD",
-          "direction": "BUY",
-          "limit": 1.352555,
-          "bid": 1.35255,
-          "sl": 1.3515,
-          "tp": 1.36,
-          "status": "AT BID \u2014 may fill this session; Day bull FVG demand at 1.35235-1.35257"
-        }
-      ],
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "watchlist_changes": {
-        "removed": [
-          "eurusd_sweep_117186_buy_watch (M15 close below 1.17186 at 1.17148, comp=+3 none)"
-        ],
-        "modified": [
-          "oil_sweep_9579_sell_retest: level 95.789\u219295.928, SL 95.92\u219296.05 (old SL breached)"
-        ]
-      },
-      "confluence": {
-        "OIL_CRUDE": {
-          "composite": 37,
-          "readiness": "weak"
-        },
-        "GBPUSD": {
-          "composite": 35,
-          "readiness": "weak"
-        },
-        "USDCAD": {
-          "composite": -43.5,
-          "readiness": "moderate"
-        },
-        "AUDUSD": {
-          "composite": 63.5,
-          "readiness": "strong"
-        }
-      },
-      "news": "FOMC Apr29 94% hold at 3.50-3.75%; USD near-term strength Q2; USDCAD fundamental outlook bearish (1.3400 yr-end). No regime change.",
-      "daily_pnl_realized": -10.52,
-      "float_pnl": -3.02,
-      "scalp_status": "EURUSD/GBPUSD active; AUDUSD disabled wr=11%; no open scalps; daily_pnl_usd=$0"
     },
     {
       "tick_ts_utc": "2026-04-28T02:20Z",
@@ -1080,6 +1004,20 @@
         "OIL_CRUDE": "swing=WATCH scalp=N/A(spread-4p) readiness=moderate(comp=+55)"
       },
       "note": "Heartbeat tick; 1 event (pos_opened confirm). Scalp SELLs running. All swing levels in WATCH."
+    },
+    {
+      "tick_ts_utc": "2026-04-28T10:44Z",
+      "events_consumed": 0,
+      "events_pending": 0,
+      "opened": 0,
+      "closed": 2,
+      "skipped": 0,
+      "action": "TIME_EXIT EURUSD scalp \u00d72 (b55d+b59c): engine desync, manually closed at 49/48min. pnl=-$0.16.",
+      "positions_after": 0,
+      "daily_pnl": -20.63,
+      "binary": "FOMC Apr29@18:00Z T-31h (normal ops)",
+      "scalp_status": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=OFF(wr<20t) \u2014 engine desync noted",
+      "attention_covered": "9/9"
     }
   ]
 }

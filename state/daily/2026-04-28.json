@@ -1144,5 +1144,19 @@
       "OIL_CRUDE": "swing=WATCH scalp=N/A(spread-4p) readiness=moderate(comp=+55)"
     },
     "note": "Heartbeat tick; 1 event (pos_opened confirm). Scalp SELLs running. All swing levels in WATCH."
+  },
+  {
+    "tick_ts_utc": "2026-04-28T10:44Z",
+    "events_consumed": 0,
+    "events_pending": 0,
+    "opened": 0,
+    "closed": 2,
+    "skipped": 0,
+    "action": "TIME_EXIT EURUSD scalp \u00d72 (b55d+b59c): engine desync, manually closed at 49/48min. pnl=-$0.16.",
+    "positions_after": 0,
+    "daily_pnl": -20.63,
+    "binary": "FOMC Apr29@18:00Z T-31h (normal ops)",
+    "scalp_status": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=OFF(wr<20t) \u2014 engine desync noted",
+    "attention_covered": "9/9"
   }
 ]

@@ -1,37 +1,10 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-28T10:03Z",
-  "state_ts_utc": "2026-04-28T10:03Z",
-  "regime_note": "2026-04-28T10:03Z forex auto \u2014 1 evt: pos_opened EURUSD b59c consumed (scalp_entry). 2 scalp pos open (b55d+b59c, age~10min, UPL+$0.20). AUDUSD LIMIT@0.7143 GTC intact (comp=+47 mod, dist=30.5p, ARMED). GOLD@4610 comp=-67 strong bear; 4721 SELL WATCH (dist=111p, 3\u00d7H4ATR=102p, Rule2 override\u20149f/4h=100%). OIL@98.19 comp=+55 mod bull; 93.23/93.51 BUY WATCH (dist>4.9pts outside prox). GBPUSD comp=+25.5 weak no alert. USDJPY@159.55 comp=+32 weak; fade@160 WATCH dist=44.5p. USDCAD comp=-14.5 none; m15sweep@1.36313 WATCH dist=23.5p. USDCHF comp=+29 weak; H1FVG@0.78750 WATCH dist=22p. FOMC Apr29@18:00Z T-8h normal ops. daily_pnl=-$20.47. attention_covered=9/9.",
-  "regime_note_prev": "2026-04-28T09:58Z forex auto \u2014 3 evt: eurusd_scalp b4fe TP +$0.12, b55d+b59c opened (engine SELL \u00d72 @1.1695/1.16936). 2 scalp pos open (b55d+b59c, age<15min). AUDUSD LIMIT@0.7143 GTC intact (comp=+47 mod, dist=31.4p). GOLD@4611 comp=-67 strong; 4721 SELL WATCH (dist=109p, 3\u00d7H4ATR=102p, Rule2 override\u20149f/4h=100%). OIL@98.19 comp=+55 mod; 93.23/93.51 BUY WATCH (validated, dist<3xATR). GBPUSD comp=+25.5 weak 135203 BUY dist=28p WATCH. USDJPY@159.56 comp=+32 weak dist=44p WATCH. USDCAD comp=-14.5 none; H4 FVG@1.36693 dist=15p, m15sweep@1.36313 dist=23p\u2014both WATCH. USDCHF comp=+23 none. FOMC Apr29@18:00Z caution T-8.1h \u2014 normal ops. daily_pnl=-$20.47. attention_covered=9/9.",
-  "open_positions": [
-    {
-      "deal_id": "00000000-4ead-b55d-044a-beb40055311e",
-      "instrument": "EURUSD",
-      "direction": "SELL",
-      "size": 1000,
-      "entry": 1.1695,
-      "sl": 1.16988,
-      "tp": 1.16888,
-      "opened_at": "2026-04-28T09:53:49Z",
-      "thesis_type": "scalp_entry",
-      "alert_id": "eurusd_scalp_ema_pullback",
-      "source": "scalp_engine"
-    },
-    {
-      "deal_id": "00000000-4ead-b59c-044a-beb40055311e",
-      "instrument": "EURUSD",
-      "direction": "SELL",
-      "size": 1000,
-      "entry": 1.16936,
-      "sl": 1.16988,
-      "tp": 1.1684,
-      "opened_at": "2026-04-28T09:54:50Z",
-      "thesis_type": "scalp_entry",
-      "alert_id": "eurusd_scalp_ema_pullback",
-      "source": "scalp_engine"
-    }
-  ],
+  "tick_ts_utc": "2026-04-28T10:44Z",
+  "state_ts_utc": "2026-04-28T10:44Z",
+  "regime_note": "2026-04-28T10:44Z forex auto \u2014 0 evt (heartbeat). TIME_EXIT EURUSD scalp \u00d72 (b55d@1.1695+b59c@1.16936 \u2192 1.16951): engine desync (open={}), closed manually at 49/48min. combined_pnl=-0.16. 0 pos open. AUDUSD LIMIT@0.7143 GTC intact (comp=+39.5 weak, dist=22p, LIMIT in place). GOLD@4610 comp=-67 strong bear; 4721 SELL WATCH (dist=111p, Rule2 override\u20149f/4h=100%). OIL@98.19 comp=+55 mod bull; 93.23 BUY WATCH (validated, dist far). GBPUSD comp=+14.5 none. USDJPY@159.52 comp=+33 weak; fade@160 WATCH dist=48p. USDCAD comp=-14.5 none. USDCHF comp=+29 weak; H1FVG@0.78750 WATCH dist=22p. FOMC Apr29@18:00Z T-31h normal ops. daily_pnl=$-20.63. attention_covered=9/9.",
+  "regime_note_prev": "2026-04-28T10:03Z forex auto \u2014 1 evt: pos_opened EURUSD b59c consumed (scalp_entry). 2 scalp pos open (b55d+b59c, age~10min, UPL+$0.20). AUDUSD LIMIT@0.7143 GTC intact (comp=+47 mod, dist=30.5p, ARMED). GOLD@4610 comp=-67 strong bear; 4721 SELL WATCH (dist=111p, 3\u00d7H4ATR=102p, Rule2 override\u20149f/4h=100%). OIL@98.19 comp=+55 mod bull; 93.23/93.51 BUY WATCH (dist>4.9pts outside prox). GBPUSD comp=+25.5 weak no alert. USDJPY@159.55 comp=+32 weak; fade@160 WATCH dist=44.5p. USDCAD comp=-14.5 none; m15sweep@1.36313 WATCH dist=23.5p. USDCHF comp=+29 weak; H1FVG@0.78750 WATCH dist=22p. FOMC Apr29@18:00Z T-8h normal ops. daily_pnl=-$20.47. attention_covered=9/9.",
+  "open_positions": [],
   "watchlist": [
     {
       "instrument": "AUDUSD",
@@ -610,7 +583,7 @@
       "closed_at": "2026-04-28T09:54:04Z",
       "hold_min": 1.3,
       "thesis_type": "scalp_entry",
-      "exit_reason": "TP_hit (bid 1.16952 crossed below TP=1.16955; daemon inferred sl_hit incorrectly — bid well below SL=1.16997)",
+      "exit_reason": "TP_hit (bid 1.16952 crossed below TP=1.16955; daemon inferred sl_hit incorrectly \u2014 bid well below SL=1.16997)",
       "pnl_usd": 0.12,
       "alert_id": "eurusd_scalp_ema_pullback",
       "result": "win"
@@ -632,6 +605,42 @@
       "pnl_usd": 0.65,
       "alert_id": "eurusd_scalp_ema_pullback",
       "result": "win"
+    },
+    {
+      "trade_id": "eurusd_scalp_b55d_20260428_timexit",
+      "instrument": "EURUSD",
+      "direction": "SELL",
+      "entry": 1.1695,
+      "close": 1.16951,
+      "size": 1000,
+      "sl": 1.16988,
+      "tp": 1.16888,
+      "opened_at": "2026-04-28T09:53:49Z",
+      "closed_at": "2026-04-28T10:43Z",
+      "hold_min": 49.2,
+      "thesis_type": "scalp_entry",
+      "exit_reason": "manual_time_exit: engine lost track (open={}) at 45min; closed at 49min to honor engine time limit",
+      "pnl_usd": -0.01,
+      "alert_id": "eurusd_scalp_ema_pullback",
+      "result": "loss"
+    },
+    {
+      "trade_id": "eurusd_scalp_b59c_20260428_timexit",
+      "instrument": "EURUSD",
+      "direction": "SELL",
+      "entry": 1.16936,
+      "close": 1.16951,
+      "size": 1000,
+      "sl": 1.16988,
+      "tp": 1.1684,
+      "opened_at": "2026-04-28T09:54:50Z",
+      "closed_at": "2026-04-28T10:43Z",
+      "hold_min": 48.2,
+      "thesis_type": "scalp_entry",
+      "exit_reason": "manual_time_exit: engine lost track (open={}) at 45min; closed at 48min",
+      "pnl_usd": -0.15,
+      "alert_id": "eurusd_scalp_ema_pullback",
+      "result": "loss"
     }
   ],
   "consecutive_losses": 0,
