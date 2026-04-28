@@ -858,5 +858,13 @@
     ],
     "summary": "EURUSD M15 liq_sweep@1.16871 (wick 1.1p, comp=-23 counter-trend <25 threshold). Watch added, no entry. Watchlist audit: 4 removed (2 invalidated directions, 1 auto-stale, 1 wick-breached), 2 added. GOLD strong bear comp=-67 all TFs. AUDUSD LIMIT@0.7143 GTC. FOMC caution T-10.8h.",
     "binary_event": "FOMC_APR2026 (deadline 2026-04-29T18:00Z, caution from 18:00Z today)"
+  },
+  {
+    "ts_utc": "2026-04-28T07:27Z",
+    "events_in": 1,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 0,
+    "note": "07:27 UTC tick \u2014 1 evt: position_opened EURUSD SELL (scalp engine ema_pullback, size=1000 units, entry=1.1699, SL=1.17017, TP=1.16946, risk=$0.27). Engine logged open_failed (unparseable broker response at 07:20:17Z and 07:21:17Z) but position confirmed real via position_sync. Added to state open_positions. EURUSD comp=-23 none bearish 3/4TF \u2014 direction aligned with scalp SELL. AUDUSD LIMIT@0.7143 working GTC (comp=+47 mod-bull, 30.5p above level). GOLD@4632 comp=-67 strong bear; sell alerts at 4700/4721 KEEP (within 3xH4ATR=103pts). USDCHF@0.78847 (now 9.7p above 0.7875 sell fade level); comp=+23 none \u2014 need +40 bullish, WATCH. ADD eurusd_m15sweep_116871_buy_watch (WATCH only, comp=-23 < -40 threshold). 7 existing alerts KEEP (proximity notes refreshed). FOMC caution activates 18:00Z today, deadline 2026-04-29T18:00Z. No new swing entries this tick. 1 pos 1 working. daily_pnl=-$17.72. attention_covered=9/9."
   }
 ]
