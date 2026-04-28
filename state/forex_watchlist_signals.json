@@ -95,30 +95,6 @@
       "active": true
     },
     {
-      "id": "oil_sweep_9351_buy_retest",
-      "instrument": "OIL_CRUDE",
-      "level": 93.5115,
-      "emit_on": "cross_down",
-      "cooldown_sec": 1800,
-      "direction": "buy",
-      "note": "ENTRY: price pulls back to 93.51 swept extreme; M15 bar closes AT or ABOVE 93.51 with bullish rejection wick \u22652pts. Arm LIMIT BUY@93.51 when comp \u2265+40 bullish.\n\nCONTEXT: M15 down-sweep 2026-04-27T11:30Z \u2014 wick 6.9pts (1.74\u00d7H1ATR), close_inside=93.98. Fresh structural support at 93.51. comp=+27 weak (needs +40 for arming). Existing oil_sweep_9323 at 93.23 provides deeper validated support. H1 bear FVG overhead 94.33\u201395.007 (unmitigated). Apply 4h time-stop if entered.\n\nSL: 93.20  TP: 95.50  R:R target: 6.4\n\nadded 2026-04-27T11:43Z \u2014 new M15 down-sweep created fresh structural support at 93.51; WATCH until comp\u226540.",
-      "entry_criterion": "M15 retest of 93.51 with bullish rejection wick \u22652pts. Arm LIMIT when comp \u2265+40 bullish.",
-      "regime_context": "M15 down-sweep 11:30Z 2026-04-27, wick=6.9pts. comp=+27 weak. H1 FVG overhead 94.33\u201395.007. 4h time-stop on entered trade.",
-      "sl": 93.2,
-      "tp": 95.5,
-      "rr_target": "6.4",
-      "current_price_ref": 97.34,
-      "price_ref": {
-        "ts": "2026-04-27T14:18Z",
-        "price": null
-      },
-      "last_updated": "2026-04-27T11:43Z",
-      "updated_utc": "2026-04-28T06:07Z",
-      "proximity": "OIL@97.72; 4.21pts ABOVE 93.51 (outside proximity). comp=+45 moderate-bull. WATCH. 2026-04-28T08:52Z",
-      "alert_id": "oil_sweep_93511_buy_retest",
-      "active": true
-    },
-    {
       "id": "gold_4700_sell_resistance",
       "instrument": "GOLD",
       "level": 4700.0,

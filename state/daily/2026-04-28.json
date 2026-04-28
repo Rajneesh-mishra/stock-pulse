@@ -1207,5 +1207,27 @@
     "binary_event": "FOMC_APR2026 T-32h normal ops",
     "usdcad_sweep_note": "M15 up-sweep 1.36654 (1.5p), close 1.36643 \u2014 WATCH only comp=-14.5 none",
     "news_macro": "AUDUSD macro bullish: RBA hike bets, Aus CPI Wed +4.7%e, FOMC hold expected. AUD at 4yr high."
+  },
+  {
+    "tick_ts_utc": "2026-04-28T11:02Z",
+    "events": 1,
+    "events_detail": "pos_closed EURUSD e208 SL -$0.19",
+    "opened": 0,
+    "closed": 1,
+    "skipped": 0,
+    "scalp": "EURUSD disabled, GBPUSD active",
+    "open_positions": [],
+    "pending_orders": [
+      {
+        "epic": "AUDUSD",
+        "dir": "BUY",
+        "level": 0.7143,
+        "type": "LIMIT_GTC"
+      }
+    ],
+    "binary": "FOMC Apr29@18:00Z T-31h caution@18:00Z today",
+    "daily_pnl": -21.06,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "attention_covered": "9/9"
   }
 ]
