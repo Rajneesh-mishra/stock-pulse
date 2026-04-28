@@ -1011,5 +1011,13 @@
     "closed": 0,
     "skipped": 0,
     "note": "08:35 forex auto \u2014 1 evt: pos_opened GBPUSD BUY 7c6b@1.35099 SL=1.35061 TP=1.35155 (scalp_engine). TRAIL 7c6b SL\u2192BE=1.35099 (bid=1.35145 passed +1R@1.35137). 7bf5 pos (entry=1.35117) at +28p, +1R@1.35173 not yet. Both caps ~09:26Z. AUDUSD LIMIT@0.7143 GTC ARMED (comp=+54.5 mod). GBPUSD comp=+25.5 weak; EURUSD comp=-13 none; GOLD comp=-67 strong bear; OIL comp=+45 mod. FOMC 18:00Z T-9.4h. daily_pnl=-$21.12. scalp: EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=OFF(wr 11%). attention_covered=9/9."
+  },
+  {
+    "ts_utc": "2026-04-28T08:52Z",
+    "events_in": 2,
+    "opened": 0,
+    "closed": 2,
+    "skipped": 0,
+    "note": "08:52Z tick \u2014 2 evt: GBPUSD 7c6b BE SL $0.00 (opened 08:26Z, 10.9min); 7bf5 SL -$0.56 (opened 08:25Z, 14min). 0 pos open. AUDUSD LIMIT@0.7143 GTC working (comp=+47 mod, 34p away). GOLD@4627 comp=-67 strong bear; 4721 SELL WATCH (94p, need bull ext). USDJPY@159.53 fade@160 WATCH (47p, comp=+32 need 40). scalp audit: EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=OFF(wr<threshold). FOMC Apr29@18:00Z caution starts today 18:00Z T-9.1h. daily_pnl=-$21.68. attention_covered=9/9."
   }
 ]

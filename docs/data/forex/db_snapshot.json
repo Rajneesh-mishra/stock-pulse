@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-28T08:21:38.706380+00:00",
+  "generated_at": "2026-04-28T08:55:06.011641+00:00",
   "counts": {
     "trades": 28,
-    "events": 5456,
+    "events": 5484,
     "ticks": 59,
-    "regime_snapshots": 149,
+    "regime_snapshots": 151,
     "broker_positions": 0,
     "counterfactuals": 98
   },
@@ -601,6 +601,22 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-28T08:35Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "2026-04-28T08:35Z forex auto \u2014 1 evt: pos_opened GBPUSD BUY scalp@1.35099 logged (7c6b, engine). TRAIL: 7c6b SL\u2192BE=1.35099 (was 1.35061; passed +1R@1.35137 w/bid=1.35145). 7bf5 still running (entry=1.35117, +1R@1.35173 not yet reached). AUDUSD LIMIT@0.7143 GTC working (comp=+54.5 mod, 38p above, ARMED). GOLD@4622 bear comp=-67; 4721 SELL WATCH (99p below trigger). FOMC caution 18:00Z T-9.4h \u2014 normal ops. daily_pnl=-$21.12 + 2 scalp open UPL\u2248+$0.74. attention_covered=9/9.",
+      "binary_event_name": "FOMC_APR2026",
+      "binary_event_active": 1,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
+      "ts_utc": "2026-04-28T08:27Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "2026-04-28T08:27Z forex auto \u2014 1 evt: pos_opened GBPUSD BUY scalp@1.35117 SL=1.35061 TP=1.35204 (scalp engine, cap 09:26Z). AUDUSD LIMIT@0.7143 GTC working. USDCHF FVG@0.7875 swept (dipped 0.78344) \u2192 level updated 0.7840. OIL alerts KEEP (dist<3\u00d7H4ATR=5.81). GOLD@4622 bear comp=-67; 4700/4721 SELL WATCH. FOMC caution starts 18:00Z today (T-9.5h) \u2014 normal ops now. daily_pnl=-$21.12. attention_covered=9/9.",
+      "binary_event_name": "FOMC_APR2026",
+      "binary_event_active": 1,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
       "ts_utc": "2026-04-28T08:18Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-28T08:18Z forex auto \u2014 3 evt: 3 pos_closed (729f/7345 GBPUSD BUY SL -$0.35/-$0.26; 7616 EURUSD SELL SL -$0.34). 0 pos open. AUDUSD LIMIT@0.7143 GTC working (comp=+49.5 mod, 35p above, within 3xH4ATR). GOLD@4621 strong bear comp=-67; 4700/4721 SELL WATCH (need +40 bull ext). EURUSD@1.1707 comp=-10.5 none; GBPUSD@1.3512 comp=+25.5 weak; OIL@97.56 comp=+45 mod (sweep levels 4+pts away). FOMC caution activates 18:00Z today (T-9.8h) \u2014 normal ops until then. daily_pnl=-$21.12. attention_covered=9/9.",
@@ -660,22 +676,6 @@
       "ts_utc": "2026-04-28T07:14Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-28T07:14Z forex auto \u2014 1 evt: EURUSD M15 liq_sweep@1.16871 (down-wick 1.1p, close@1.16935; counter-trend buy bias; comp=-23 <25 threshold \u2192 WATCH, no entry added). Watchlist audit: REMOVE usdchf_sweep_h1_sell_retest (price broke above sell level@0.787505), eurusd_sweep_117186_buy_watch (H4 bear FVG, 0% hit rate), usdchf_m15sweep_7832_buy_watch (AUTO-REMOVE: dist=6.06p>3xH4ATR=5.88p), audusd_h1sweep_71731_buy_watch (wick breached, price 0.71683<0.71731). ADD eurusd_m15sweep_116871_buy_watch (watch only), usdchf_h1fvg_78750_buy_watch (H1 FVG support). GOLD@4633 strong bear (comp=-67 all TFs); 4700/4721 SELL alerts KEEP. AUDUSD LIMIT@0.7143 working GTC (comp=+47 mod-bull). OIL@97.22 mod-bull (comp=+45). FOMC caution activates 18:00Z today (T-10.8h). 0 pos 1 working. daily_pnl=-$17.72. attention_covered=9/9.",
-      "binary_event_name": "FOMC_APR2026",
-      "binary_event_active": 1,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-04-28T06:37Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "2026-04-28T06:37Z forex auto \u2014 0 evt heartbeat. AUDUSD LIMIT@0.7143 working GTC (comp=+47 mod-bull; H4 FVG zone intact; price@0.7175, 32p above). GOLD@4631.78 strong bear (comp=-67 all TFs); 4700/4721 SELL alerts KEEP (dist=68/89p vs 3xH4ATR=103p, not stale). GBPUSD@1.3514 weak bull (comp=+25.5); sweep-sell@1.35203 WATCH (comp<40, not armed). USDCHF@0.7878 sweep-sell@0.7875 WATCH (comp=+23<40 counter-trend threshold). OIL@96.6 mod-bull (comp=+45); buy-retest zones 93.23/93.51 WATCH ($3.09/$3.37 below, near 3.00 proximity). FOMC caution activates 18:00Z today (T-11.5h). 0 pos 1 working. daily_pnl=-$17.72. attention_covered=9/9.",
-      "binary_event_name": "FOMC_APR2026",
-      "binary_event_active": 1,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-04-28T06:16Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "2026-04-28T06:16Z forex auto \u2014 1 evt: AUDUSD H1 liquidity_sweep@0.71731 (down-wick 2.3p, close@0.71771, bias BUY). AUDUSD comp=+47 moderate-bull \u2014 sweep alert ADDED (audusd_h1sweep_71731_buy_watch) but NO entry armed (wick 2.3p < H1ATR 7.9p; with ATR stop R:R=0.62 < 1.5 threshold; with tight 3.6p stop SL below ATR noise). Existing LIMIT@0.7143 WORKING (GTC). GOLD@4634.69 comp=-67 strong bear; 4721 sell alert KEEP (86p gap < 3xH4ATR=$103); gold_4700_sell_resistance WATCH. GBPUSD@1.35155 comp=+25.5 weak, 4.8p below 1.35203 sweep alert \u2014 not armed. FOMC caution activates 18:00Z today (now T-11.8h). 0 pos 1 working (AUDUSD@0.7143). daily_pnl=-$17.72. attention_covered=9/9.",
       "binary_event_name": "FOMC_APR2026",
       "binary_event_active": 1,
       "binary_event_deadline": "2026-04-29T18:00Z"

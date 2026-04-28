@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-28T08:39:15.890833Z",
+  "generated_at": "2026-04-28T08:57:22.389357Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T12:57:00Z",
-      "events_in": 1,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 1,
-      "note": "12:57 forex auto \u2014 1 evt (fed_fomc news_flash GoldSilver FOMC-preview Apr-23 20:56 GMT 'What to Watch Before April 29 FOMC' NON-THESIS-ALTERING market-preview, consumed). USDJPY 159.604 comp=+32.5 weak dist=39.6p OUTSIDE 30p WATCH (BOJ T-3d FOMC T-5d). GOLD 4692.845 sweep_4721 dist=28.8$ INSIDE prox comp=-34.5 weak NEAR-ARM (need -40). OIL 95.729 sweep_9323 dist=2.49$ OUTSIDE prox comp=+32.5 weak WATCH. BTC 78068 H4 FVG LIMIT ARMED @ 78056 comp=+55 mod 4/4 bull dealId=00000000-4e72-1a54-044a-beb40055311e (bid=78044 near fill). AUDUSD +11 none GBPUSD +21.5 none EURUSD -8 none USDCAD -21.5 none USDCHF +18.5 none. 10 alerts KEEP. 0 trades 1 LIMIT 0 pos. attention_covered=9/9."
-    },
     {
       "ts_utc": "2026-04-24T13:43:00Z",
       "events_in": 0,
@@ -1109,6 +1101,14 @@
       "closed": 0,
       "skipped": 0,
       "note": "08:35 forex auto \u2014 1 evt: pos_opened GBPUSD BUY 7c6b@1.35099 SL=1.35061 TP=1.35155 (scalp_engine). TRAIL 7c6b SL\u2192BE=1.35099 (bid=1.35145 passed +1R@1.35137). 7bf5 pos (entry=1.35117) at +28p, +1R@1.35173 not yet. Both caps ~09:26Z. AUDUSD LIMIT@0.7143 GTC ARMED (comp=+54.5 mod). GBPUSD comp=+25.5 weak; EURUSD comp=-13 none; GOLD comp=-67 strong bear; OIL comp=+45 mod. FOMC 18:00Z T-9.4h. daily_pnl=-$21.12. scalp: EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=OFF(wr 11%). attention_covered=9/9."
+    },
+    {
+      "ts_utc": "2026-04-28T08:52Z",
+      "events_in": 2,
+      "opened": 0,
+      "closed": 2,
+      "skipped": 0,
+      "note": "08:52Z tick \u2014 2 evt: GBPUSD 7c6b BE SL $0.00 (opened 08:26Z, 10.9min); 7bf5 SL -$0.56 (opened 08:25Z, 14min). 0 pos open. AUDUSD LIMIT@0.7143 GTC working (comp=+47 mod, 34p away). GOLD@4627 comp=-67 strong bear; 4721 SELL WATCH (94p, need bull ext). USDJPY@159.53 fade@160 WATCH (47p, comp=+32 need 40). scalp audit: EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=OFF(wr<threshold). FOMC Apr29@18:00Z caution starts today 18:00Z T-9.1h. daily_pnl=-$21.68. attention_covered=9/9."
     }
   ]
 }
