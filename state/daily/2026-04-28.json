@@ -1390,5 +1390,29 @@
       "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=moderate"
     },
     "note": "Heartbeat. FOMC caution window opens 18:00Z today. Both LIMITs intact. No new entries. 4 stale state alerts pruned."
+  },
+  {
+    "tick_ts_utc": "2026-04-28T16:12Z",
+    "events_processed": 1,
+    "events_noise": 2,
+    "events_total": 3,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "alerts_added": [
+      "eurusd_upsweep_117159_sell_watch"
+    ],
+    "alerts_removed": [],
+    "alerts_kept": 8,
+    "open_positions": 0,
+    "working_orders": [
+      "GOLD SELL LIMIT@4603",
+      "AUDUSD BUY LIMIT@0.7143"
+    ],
+    "daily_pnl": -21.06,
+    "balance": 969.98,
+    "binary_event": "FOMC_APR2026 T-25.8h caution@18:00Z today",
+    "regime": "GOLD ARMED(sell@4603) AUDUSD WATCH(buy@0.7143) EURUSD WATCH(up-sweep@1.17159 added)",
+    "scalp": "GBPUSD=ACTIVE EURUSD=OFF AUDUSD=OFF",
+    "note": "EURUSD M15 up-sweep@1.17159 (wick=1.2p, comp=-5.5 none) SKIP; ADD watch alert. No trades. FOMC caution opens 18:00Z."
   }
 ]

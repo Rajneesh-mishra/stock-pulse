@@ -1,8 +1,8 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-28T15:30Z",
-  "state_ts_utc": "2026-04-28T15:30Z",
-  "regime_note": "2026-04-28T15:30Z forex auto \u2014 0 evt (heartbeat): FOMC Apr29@18:00Z T-26.5h; caution window opens 18:00Z today (~2.5h). GOLD LIMIT SELL@4603 intact (comp=-67 strong bear, all 4 TFs, H1/H4 FVGs unmitigated). AUDUSD LIMIT BUY@0.7143 intact (comp=+49.5 moderate, dist=25.6p WITHIN 30p prox \u2014 ARMED). USDJPY@159.67 fade@160 comp=+43 moderate (extension MET), dist=33p OUTSIDE 30p prox \u2014 WATCH; JPY pip-val still blocks. USDCHF comp=+26.5 weak, H4 FVG@0.78689 watch (need moderate+ for arm). OIL comp=+55 moderate bull; validated BUY@93.23 (6f/100%4h) 5pts away \u2014 WATCH. State: pruned 4 stale/dup level_alerts (oil_9351_dup, gold_4700_stale-Rule1, usdcad_h4fvg_armable-moot, usdcad-dir-fix). daily_pnl=-$21.06. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-28T16:12Z",
+  "state_ts_utc": "2026-04-28T16:12Z",
+  "regime_note": "2026-04-28T16:12Z forex auto \u2014 1 evt: EURUSD up-sweep@1.17159 (wick=1.2p, 16:00Z bar) comp=-5.5 none \u2192 SKIP TRADE (need comp\u2265+40 for counter-trend sell); ADD eurusd_upsweep_117159_sell_watch (WATCH, arm@comp\u2265+30). GOLD LIMIT SELL@4603 ARMED (dist=19.8pts, comp=-55 mod bear). AUDUSD LIMIT BUY@0.7143 intact (comp=54.5 mod, dist=40.3p WATCH). USDJPY@159.55 comp=37.5 weak (need\u226540 for fade@160, JPY pip-val blocks). USDCHF comp=26.5 weak; OIL comp=55 mod (94.23 level 5.31pts away). FOMC Apr29@18:00Z T-25.8h; caution window opens 18:00Z today. daily_pnl=$-21.06. attention_covered=9/9.",
   "regime_note_prev": "2026-04-28T12:09Z forex auto \u2014 1 evt: EURUSD level_cross@1.16871 (eurusd_m15sweep_116871); comp=-23 none (need \u2264-40 for counter-trend BUY arm); NO TRADE. AUDUSD LIMIT@0.7143 GTC intact (comp=+39.5 weak; RBA hawkish thesis confirmed; dist=9.8p). GOLD@4571.53 comp=-67 strong bear; gold_4700 AUTO-REMOVED (dist=128.5pts > 3\u00d7H4ATR=108.8 Rule1); gold_h1fvg_sell_4603 ADDED (H1/H4 bear FVG resist 4569-4603, 3.8RR). gold_4721 KEPT per Rule2 (9f/100%4h validated; dist=149.5pts now technically stale but Rule2 overrides). OIL@99.42 comp=+55 mod; 93.23 WATCH (dist=6.19pts, Rule2 validated 6f/100%4h). USDJPY@159.731 comp=+44 mod; fade@160 dist=26.9p WITHIN 30p prox, +44 MEETS threshold, TECHNICALLY ARMED but JPY pip-val bug blocks risk_guard. EURUSD scalp disabled (engine_desync_loop). GBPUSD scalp ACTIVE (no trades). FOMC Apr29@18:00Z T-29.9h. daily_pnl=-$21.06. attention_covered=9/9.",
   "open_positions": [],
   "watchlist": [
@@ -1302,7 +1302,7 @@
     "name": "FOMC_APR2026",
     "active": true,
     "deadline_utc": "2026-04-29T18:00Z",
-    "t_minus_h": 31.0,
+    "t_minus_h": 25.8,
     "verified": true,
     "sources": [
       "https://www.forex.com/en/news-and-analysis/fomc-outlook-usdcad-usdjpy-hold-at-key-support-levels/",

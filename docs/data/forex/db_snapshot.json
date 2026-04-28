@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-28T15:17:50.374954+00:00",
+  "generated_at": "2026-04-28T16:18:10.709075+00:00",
   "counts": {
     "trades": 36,
-    "events": 5774,
+    "events": 5811,
     "ticks": 59,
-    "regime_snapshots": 164,
+    "regime_snapshots": 165,
     "broker_positions": 0,
     "counterfactuals": 100
   },
@@ -769,6 +769,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-28T15:30Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "2026-04-28T15:30Z forex auto \u2014 0 evt (heartbeat): FOMC Apr29@18:00Z T-26.5h; caution window opens 18:00Z today (~2.5h). GOLD LIMIT SELL@4603 intact (comp=-67 strong bear, all 4 TFs, H1/H4 FVGs unmitigated). AUDUSD LIMIT BUY@0.7143 intact (comp=+49.5 moderate, dist=25.6p WITHIN 30p prox \u2014 ARMED). USDJPY@159.67 fade@160 comp=+43 moderate (extension MET), dist=33p OUTSIDE 30p prox \u2014 WATCH; JPY pip-val still blocks. USDCHF comp=+26.5 weak, H4 FVG@0.78689 watch (need moderate+ for arm). OIL comp=+55 moderate bull; validated BUY@93.23 (6f/100%4h) 5pts away \u2014 WATCH. State: pruned 4 stale/dup level_alerts (oil_9351_dup, gold_4700_stale-Rule1, usdcad_h4fvg_armable-moot, usdcad-dir-fix). daily_pnl=-$21.06. attention_covered=9/9.",
+      "binary_event_name": "FOMC_APR2026",
+      "binary_event_active": 1,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
       "ts_utc": "2026-04-28T14:07Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-28T14:07Z forex auto \u2014 0 evt (heartbeat): FOMC Apr29@18:00Z T-27.9h (normal ops; caution window opens 18:00Z today). GOLD LIMIT SELL@4603 intact (comp=-65 strong bear, H1/H4 FVGs unmitigated, range $4585-$4708 per news \u2014 thesis confirmed). AUDUSD LIMIT BUY@0.7143 intact (comp=+49.5 moderate, dist=25.3p within 30p prox). USDJPY@159.581 fade@160 dist=41.9p OUTSIDE 30p prox (moved away from 160); comp=+43 moderate MEETS but JPY pip-val blocks. USDCHF alert updated (H1 FVG mitigated; H4 FVG 0.78689-0.78824 fresh; comp=+29 weak). OIL@98.475 comp=+55 mod bull; 93.23 WATCH (dist=5.25pts, 3xH4ATR=6.51 \u2014 not stale). News: Iran diplomatic efforts pushing gold down toward level; BoJ hold confirmed; FOMC hold 100% priced. daily_pnl=-$21.06. attention_covered=9/9.",
@@ -836,14 +844,6 @@
       "ts_utc": "2026-04-28T09:58Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-28T09:58Z forex auto \u2014 3 evt: eurusd_scalp b4fe TP +$0.12, b55d+b59c opened (engine SELL \u00d72 @1.1695/1.16936). 2 scalp pos open (b55d+b59c, age<15min). AUDUSD LIMIT@0.7143 GTC intact (comp=+47 mod, dist=31.4p). GOLD@4611 comp=-67 strong; 4721 SELL WATCH (dist=109p, 3\u00d7H4ATR=102p, Rule2 override\u20149f/4h=100%). OIL@98.19 comp=+55 mod; 93.23/93.51 BUY WATCH (validated, dist<3xATR). GBPUSD comp=+25.5 weak 135203 BUY dist=28p WATCH. USDJPY@159.56 comp=+32 weak dist=44p WATCH. USDCAD comp=-14.5 none; H4 FVG@1.36693 dist=15p, m15sweep@1.36313 dist=23p\u2014both WATCH. USDCHF comp=+23 none. FOMC Apr29@18:00Z caution T-8.1h \u2014 normal ops. daily_pnl=-$20.47. attention_covered=9/9.",
-      "binary_event_name": "FOMC_APR2026",
-      "binary_event_active": 1,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-04-28T09:42Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "2026-04-28T09:42Z forex auto \u2014 2 evt: pos_closed EURUSD 4ead-a1e3 TP +$0.56 consumed; level_cross EURUSD eurusd_m15sweep_116871_buy_watch cross_down@1.16867 \u2014 WATCH (comp=-23 none, need \u2264-40 to arm). 0 pos open. AUDUSD LIMIT@0.7143 GTC armed (comp=+47 mod, dist=28.5p, validated). GOLD@4609 comp=-67 strong bear; 4721 SELL WATCH (Rule2 KEEP, 9f/4h=100%). OIL@98.23 comp=+55 mod bull; 93.23/93.51 BUY WATCH (validated, dist<3xATR). EURUSD comp=-23 none; GBPUSD comp=+25.5 weak. USDJPY@159.59 comp=+32 weak dist=40.9p. FOMC Apr29@18:00Z caution T-8.3h \u2014 normal ops. USDCAD H4 FVG sell watch ADDED@1.36693. daily_pnl=-$20.59. attention_covered=9/9.",
       "binary_event_name": "FOMC_APR2026",
       "binary_event_active": 1,
       "binary_event_deadline": "2026-04-29T18:00Z"
