@@ -1435,5 +1435,38 @@
       "eurusd_upsweep_117159: SL widened 1.17171\u21921.17189, R:R 2.3\u21924.4",
       "Proximity notes refreshed for all 9 alerts"
     ]
+  },
+  {
+    "tick_ts_utc": "2026-04-28T17:35Z",
+    "events": 0,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 0,
+    "binary": "FOMC_APR2026",
+    "caution_starts": "2026-04-28T18:00Z",
+    "scalp_status": "GBPUSD=active EURUSD=disabled(desync) AUDUSD=disabled(wr11%)",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "orders": [
+      {
+        "epic": "GOLD",
+        "dir": "SELL",
+        "level": 4603.0,
+        "status": "ARMED",
+        "comp": -52.5,
+        "readiness": "moderate"
+      },
+      {
+        "epic": "AUDUSD",
+        "dir": "BUY",
+        "level": 0.7143,
+        "status": "WATCH_dist37.8p",
+        "comp": 60.0,
+        "readiness": "strong"
+      }
+    ],
+    "daily_pnl": -21.06,
+    "balance": 969.98,
+    "attention_covered": "9/9",
+    "note": "Heartbeat. FOMC caution window opens 18:00Z. GOLD SELL LIMIT@4603 armed in broker (H4 FVG confirms). AUDUSD BUY LIMIT@0.7143 GTC, dist=37.8p. USDJPY comp=+40.5 meets fade threshold but dist=43.4p>proximity. No new trades."
   }
 ]

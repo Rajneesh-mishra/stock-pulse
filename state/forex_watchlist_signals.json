@@ -39,8 +39,8 @@
         "price": null
       },
       "last_updated": "2026-04-28T15:30Z",
-      "updated_utc": "2026-04-28T16:32Z",
-      "proximity": "AUDUSD@0.71776; 34.2p ABOVE 0.7143 (LIMIT GTC in broker). comp=+54.5 moderate bull. WATCH (dist>30p). 2026-04-28T16:32Z",
+      "updated_utc": "2026-04-28T17:35Z",
+      "proximity": "AUDUSD@0.71808; 37.8p ABOVE 0.7143 limit. comp=+60.0 strong bull. GTC LIMIT BUY@0.7143 in broker (dist>30p proximity \u2192 WATCH). Day FVG 0.71486-0.71510 unmitigated bullish. FOMC caution starts 18:00Z. 2026-04-28T17:35Z",
       "validated": true,
       "alert_id": "audusd_fvg_buy_7143",
       "active": true
@@ -88,8 +88,8 @@
         "price": null
       },
       "last_updated": "2026-04-26T17:11Z",
-      "updated_utc": "2026-04-28T16:32Z",
-      "proximity": "GOLD@4582; 139pts BELOW 4721. comp=-55 mod bear. Rule1 met (dist>3\u00d7H4ATR) but Rule2 OVERRIDES (9f/100%4h). KEEP. 2026-04-28T16:32Z",
+      "updated_utc": "2026-04-28T17:35Z",
+      "proximity": "GOLD@4595.8; 125.2pts BELOW 4721. comp=-52.5 mod bear (all 4TFs). Rule1 met (dist=125.2pts > 3\u00d7H4ATR=110.8pts) but Rule2 OVERRIDES (9f/100%4h validated). KEEP. 2026-04-28T17:35Z",
       "validated": true,
       "alert_id": "gold_sweep_4721_sell_retest",
       "active": true
@@ -109,8 +109,8 @@
       "rr_target": "2.2",
       "current_price_ref": 1.16957,
       "last_updated": "2026-04-28T16:32Z",
-      "updated_utc": "2026-04-28T16:32Z",
-      "proximity": "EURUSD@1.17083; 21.2p ABOVE 1.16871. comp=-5.5 none (need <=-40 bearish ext). VALIDATED (2f/100%4h). WATCH. 2026-04-28T16:32Z",
+      "updated_utc": "2026-04-28T17:35Z",
+      "proximity": "EURUSD@1.17110; 23.9p ABOVE 1.16871. Within 30p proximity but readiness=none (comp=0, conflicting TFs). VALIDATED 2f/100%4h \u2014 will arm at moderate+. FOMC caution from 18:00Z. 2026-04-28T17:35Z",
       "alert_id": "eurusd_m15sweep_116871_buy_watch",
       "active": true,
       "validated": true
@@ -150,8 +150,8 @@
       "rr_target": "3.7",
       "current_price_ref": 0.79048,
       "last_updated": "2026-04-28T14:07Z",
-      "updated_utc": "2026-04-28T16:32Z",
-      "proximity": "USDCHF@0.78933; 24.4p ABOVE 0.78689. comp=+26.5 weak (need >=+40). H4FVG unmitigated. WATCH. 2026-04-28T16:32Z",
+      "updated_utc": "2026-04-28T17:35Z",
+      "proximity": "USDCHF@0.7894; 25.1p above 0.78689 FVG. comp=26.5 weak \u2014 needs \u2265+40 to arm. Within proximity. WATCH. 2026-04-28T17:35Z",
       "alert_id": "usdchf_h1fvg_buy_78750",
       "active": true
     },
@@ -170,8 +170,8 @@
       "rr_target": "3.0",
       "current_price_ref": 159.581,
       "last_updated": "2026-04-28T08:52Z",
-      "updated_utc": "2026-04-28T16:32Z",
-      "proximity": "USDJPY@159.583; dist=41.7p from 160. comp=+43 MEETS fade threshold (>=40 bull ext). dist>30p floor \u2192 NOT ARMED. JPY pip-val blocks exec. WATCH. 2026-04-28T16:32Z",
+      "updated_utc": "2026-04-28T17:35Z",
+      "proximity": "USDJPY@159.566; 43.4p BELOW 160 level. comp=+40.5 mod bull \u2014 fade threshold MET (\u2265+40) but dist=43.4p > 30p proximity \u2192 WATCH. pip-val blocks scalp. 2026-04-28T17:35Z",
       "alert_id": "usdjpy_intervention_fade_160",
       "active": true
     },
@@ -189,9 +189,9 @@
       "tp": 4520.0,
       "rr_target": "3.8",
       "current_price_ref": 4572.79,
-      "last_updated": "2026-04-28T12:09Z",
-      "updated_utc": "2026-04-28T16:32Z",
-      "proximity": "GOLD@4582; 21pts BELOW 4603 (LIMIT SELL GTC ARMED). comp=-55 moderate bear. ARMED. FOMC caution T-1.5h. 2026-04-28T16:32Z",
+      "last_updated": "2026-04-28T17:35Z",
+      "updated_utc": "2026-04-28T17:35Z",
+      "proximity": "GOLD@4595.8; 7.5pts BELOW 4603 \u2192 price needs +7.5pts rally. comp=-52.5 mod bear. GTC LIMIT SELL@4603 ARMED in broker. H4 bear FVG 4600.28-4620.65 unmitigated confirms zone. 2026-04-28T17:35Z",
       "alert_id": "gold_h1fvg_sell_4603",
       "active": true
     },
@@ -210,8 +210,8 @@
       "rr_target": "4.4",
       "current_price_ref": 1.17142,
       "last_updated": "2026-04-28T16:32Z",
-      "updated_utc": "2026-04-28T16:32Z",
-      "proximity": "EURUSD@1.17083; 7.6p BELOW 1.17159 (level near). comp=-5.5 none (need >=+30 bull ext). WATCH. 2026-04-28T16:32Z",
+      "updated_utc": "2026-04-28T17:35Z",
+      "proximity": "EURUSD@1.17110; 4.9p BELOW 1.17159 \u2192 very near. comp=0 neutral (need \u2265+30 bull ext for counter-trend sell). WATCH; arm rapidly if comp turns +30+. 2026-04-28T17:35Z",
       "alert_id": "eurusd_upsweep_117159_sell_watch",
       "active": true
     }
