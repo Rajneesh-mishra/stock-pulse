@@ -369,5 +369,126 @@
       "OIL_CRUDE": "swing=ARMED scalp=N/A readiness=moderate comp=+44 position_open time_exit=10:23Z"
     },
     "scalp_audit": "EURUSD=KEEP(active/off-session) GBPUSD=KEEP(bull-bias/off-session) AUDUSD=KEEP_DISABLED(wr=11%/19t) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
+  },
+  {
+    "tick_ts_utc": "2026-04-28T03:10Z",
+    "events_processed": 0,
+    "opened": [],
+    "closed": [],
+    "modified": [],
+    "positions": [
+      {
+        "epic": "GBPUSD",
+        "direction": "BUY",
+        "entry": 1.35254,
+        "sl": 1.3515,
+        "tp": 1.36,
+        "upl": 1.9
+      },
+      {
+        "epic": "OIL_CRUDE",
+        "direction": "SELL",
+        "entry": 96.226,
+        "sl": 96.6,
+        "tp": 94.4,
+        "upl": 2.262
+      }
+    ],
+    "daily_pnl_usd": -16.82,
+    "float_usd": 4.162,
+    "note": "heartbeat. GBPUSD BUY UPL=+$1.90 thesis intact. OIL SELL UPL=+$2.26 fade working, ceasefire-fragility risk. FOMC T\u224839h. Audit: GBPUSD alert note updated (LIMIT filled). AUDUSD alert inactive (correlation block). attention_covered=9/9"
+  },
+  {
+    "tick_ts_utc": "2026-04-28T04:05Z",
+    "events": 1,
+    "events_detail": [
+      "level_cross oil_sweep_9579_sell_retest (3rd cross, position open \u2014 consumed, no action)"
+    ],
+    "opened": 0,
+    "closed": 0,
+    "skipped": 1,
+    "skip_reasons": [
+      "OIL level_cross: position already open, cannot add 2nd OIL position"
+    ],
+    "positions_open": 2,
+    "positions": [
+      {
+        "epic": "GBPUSD",
+        "dir": "BUY",
+        "entry": 1.35254,
+        "sl": 1.3515,
+        "tp": 1.36,
+        "upl": 3.2,
+        "age_h": 2.18,
+        "time_exit": "05:53Z"
+      },
+      {
+        "epic": "OIL_CRUDE",
+        "dir": "SELL",
+        "entry": 96.226,
+        "sl": 96.6,
+        "tp": 94.4,
+        "upl": -0.793,
+        "age_h": 1.69,
+        "time_exit": "10:23Z"
+      }
+    ],
+    "daily_pnl_realized": -16.82,
+    "float_upl": 2.407,
+    "balance": 979.31,
+    "attention_matrix": {
+      "EURUSD": {
+        "swing": "NONE",
+        "scalp": "ACTIVE",
+        "readiness": "none",
+        "reason": "comp=3 none, no armed alert"
+      },
+      "GBPUSD": {
+        "swing": "ARMED",
+        "scalp": "ACTIVE",
+        "readiness": "weak",
+        "reason": "position open @1.35254 BUY, time_exit=05:53Z"
+      },
+      "AUDUSD": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "moderate",
+        "reason": "comp=+54.5 mod-bull; 41p above 0.7143 level (outside 30p proximity); scalp wr=11%"
+      },
+      "USDJPY": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "comp=-1.5 none; 93p below 160.0 trigger; pip-conv pending"
+      },
+      "USDCAD": {
+        "swing": "NONE",
+        "scalp": "OFF",
+        "readiness": "weak",
+        "reason": "comp=-27 weak-bear, no armed alert; pip-conv pending"
+      },
+      "USDCHF": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "comp=+23 none; 8.7p below 0.7875 (proximity OK but need \u2264-40 bearish)"
+      },
+      "GOLD": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "weak",
+        "reason": "comp=-28 weak-bear; 4669 sweep 1.1pts away but need \u2264-40 to arm counter-buy"
+      },
+      "OIL_CRUDE": {
+        "swing": "ARMED",
+        "scalp": "N/A",
+        "readiness": "moderate",
+        "reason": "position open @96.226 SELL, comp=+43 mod-bull (fade corroboration)"
+      }
+    },
+    "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP(bias=bull) AUDUSD=OFF(wr=11% on ~19 trades) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
+    "binary_event": "FOMC Apr29 18:00Z (T\u224838h); caution window starts 18:00Z Apr28 (14h from now)",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "news_check": "OIL: ceasefire holding, Hormuz restricted naval blockade both sides \u2014 structural bullish bias intact (validates OIL fade SL@96.6 OB-top). GBP: BoE 2+ hikes priced, USD cuts expected \u2014 GBPUSD bull thesis intact."
   }
 ]

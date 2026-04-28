@@ -1,9 +1,9 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-28T02:52Z",
-  "state_ts_utc": "2026-04-28T02:52Z",
-  "regime_note": "2026-04-28T02:52Z forex auto \u2014 1 evt: GOLD level_cross gold_sweep_4669_buy_retest @4669.59 (comp=-28 weak-bear, need \u2264-40 to arm counter-BUY; WATCH). USDCAD SELL closed@1.36397 H4-FVG-premise consumed (mitigated), M15 bullish, pnl\u2248-$4.27. GBPUSD BUY@1.35254 age=59min UPL\u2248-$2.0 narrative time_exit=05:53Z. OIL SELL@96.226 age=28min UPL=+$2.33 fade working. FOMC T\u224839.1h caution@18:00Z Apr28. 2 pos 0 working. daily_pnl=-$14.79 float\u2248+$0.33. attention_covered=9/9.",
-  "regime_note_prev": "2026-04-28T02:28Z forex auto \u2014 2 evt: OIL position_opened SELL@96.226 (LIMIT filled); OIL level_cross oil_sweep_9579 informational. USDCAD HIGH-RISK FVG broken. GBPUSD BUY age=0.6h. 3 pos 0 working. daily_pnl=-$10.52.",
+  "tick_ts_utc": "2026-04-28T04:05Z",
+  "state_ts_utc": "2026-04-28T04:05Z",
+  "regime_note": "2026-04-28T04:05Z forex auto \u2014 1 evt: OIL level_cross oil_sweep_9579_sell_retest @96.244 (3rd cross, position already open \u2014 no action). GBPUSD BUY@1.35254 age=2h11min UPL=+$3.2 (bid=1.35318) thesis-intact BoE-hawkish; time_exit=05:53Z. OIL SELL@96.226 age=1h41min UPL=-$0.79 (bid=96.247) fade hovering at entry; Hormuz still restricted structural-bull comp=+43. GOLD@4668 approaching 4669 sweep (1.1pts, comp=-28 weak \u2014 need \u2264-40 to arm counter-buy). AUDUSD@0.7184 comp=+54.5 moderate-bull (41p above 0.7143 level, outside proximity; corr-cap=1/2). FOMC T\u224838h caution-window starts 18:00Z Apr28 (14h from now). News: ceasefire holding, Hormuz restricted (validates OIL structural bull bias); GBP BoE 2-hikes priced thesis intact. 2 pos 0 working. daily_pnl=-$16.82 float\u2248+$2.4. attention_covered=9/9.",
+  "regime_note_prev": "2026-04-28T03:10Z forex auto \u2014 0 evt: heartbeat. GBPUSD BUY@1.35254 age=1.3h UPL=+$1.90 thesis-intact BoE-hawkish bid=1.35292. OIL SELL@96.226 age=0.8h UPL=+$2.26 fade working bid=96.012; ceasefire-fragility risk noted SL@96.6. GOLD 4672.9 approaching 4721 sell zone (48p, readiness=weak). USDJPY 159.28 approaching intervention 160.0 (72p, readiness=none). AUDUSD 0.71792 moderate-bull, 36p above BUY@0.7143 (threshold 30p, just outside; GBPUSD correlated). FOMC T\u224839h (>24h window, normal ops). 2 pos 0 working. daily_pnl=-$16.82 float\u2248+$4.16. attention_covered=9/9.",
   "open_positions": [
     {
       "dealId": "00000000-4e78-f95b-044a-beb40055311e",
@@ -19,8 +19,8 @@
       "time_exit_utc": "2026-04-28T05:53Z",
       "rr": 7.1,
       "risk_usd": 5.2,
-      "upl_usd": -0.95,
-      "upl": -0.95
+      "upl_usd": 3.2,
+      "upl": 3.2
     },
     {
       "dealId": "00000000-4e79-04ea-044a-beb40055311e",
@@ -35,7 +35,9 @@
       "time_exit_utc": "2026-04-28T10:23Z",
       "rr": 4.76,
       "risk_usd": 4.97,
-      "note": "Counter-trend fade OIL SELL: bear OB 96.218-96.5705; comp=+43 mod bullish extension; Hormuz ceasefire proposal driving oil lower. 4h time-stop: 06:23Z. Cancel if OIL closes above 96.60 (bear OB top)."
+      "note": "Counter-trend fade OIL SELL: bear OB 96.218-96.5705; comp=+43 mod bullish extension; Hormuz ceasefire proposal driving oil lower. 4h time-stop: 06:23Z. Cancel if OIL closes above 96.60 (bear OB top).",
+      "upl_usd": -0.793,
+      "upl": -0.793
     }
   ],
   "watchlist": [
@@ -963,13 +965,13 @@
       "level": 0.7143,
       "active": false,
       "instrument": "AUDUSD",
-      "entry_criterion": "M15 FVG retest at 0.7143; LIMIT BUY at level SL=0.713 TP=0.7187",
-      "regime_context": "AUDUSD comp=+51 moderate bullish; FVG unmitigated. LIMIT cancelled 2026-04-27T14:02Z due to correlation cap (2 USD-bearish live). Re-arm when GBPUSD or USDCAD closes.",
+      "entry_criterion": "LIMIT BUY at 0.7143; arm after GBPUSD position closes (correlation)",
+      "regime_context": "AUDUSD moderate bull. Blocked by 2-correlated limit with GBPUSD BUY",
       "sl": 0.713,
-      "tp": 0.7187,
-      "rr_target": 3.4,
-      "last_updated": "2026-04-27T14:02Z",
-      "note": "ENTRY: LIMIT BUY at 0.7143 (M15 FVG level); SL below FVG at 0.713\n\nCONTEXT: AUDUSD comp=+51 moderate bullish, FVG fires=3 4h=100% validated. INACTIVE: LIMIT cancelled 2026-04-27T14:02Z \u2014 2 correlated USD-bearish positions live (GBPUSD BUY + USDCAD SELL). Re-arm on next tick after one closes.\n\nSL: 0.7130  TP: 0.7187  R:R target: 3.4\n\nRestructured 2026-04-27T14:02Z"
+      "tp": 0.728,
+      "rr_target": 2.1,
+      "last_updated": "2026-04-28T03:10Z",
+      "note": "ENTRY: LIMIT BUY at 0.7143 (M15 FVG level); M15 rejection wick or close at/above 0.7143. INACTIVE \u2014 correlated block: GBPUSD BUY open (2-correlated limit reached). Arm when GBPUSD position closes.\n\nCONTEXT: VALIDATED (fires=3, 4h=100%). AUDUSD readiness=moderate bull. Current price=0.71792 (36p above level, just outside 30p proximity threshold).\n\nSL: 0.713  TP: 0.728  R:R target: 2.1\n\nModified 2026-04-28T03:10Z: correlation block noted, price 36p above level."
     },
     {
       "alert_id": "oil_sweep_9323_buy_retest",
@@ -1019,13 +1021,13 @@
       "level": 1.352555,
       "active": null,
       "instrument": "GBPUSD",
-      "entry_criterion": "BUY LIMIT at 1.352555 (swept zone; active working order placed 2026-04-27T16:00Z)",
-      "regime_context": "GBPUSD comp=+40 moderate bullish. Working LIMIT order at broker. Bid=1.35322, limit 6.65p below.",
+      "entry_criterion": "Position open at 1.35254 \u2014 no new entry",
+      "regime_context": "GBPUSD BUY active, BoE hawkish, swept zone confirmed",
       "sl": 1.3515,
       "tp": 1.36,
-      "rr_target": 2.8,
-      "last_updated": "2026-04-27T20:34Z",
-      "note": "ENTRY: LIMIT BUY at 1.352555 \u2014 ACTIVE working order on broker since 2026-04-27T16:00Z\n\nCONTEXT: Swept zone at 1.352555. comp=+40 moderate bullish. Bid=1.35322; limit 6.65p below current. Do not cancel unless thesis invalidated.\n\nSL: 1.3515  TP: 1.3600  R:R target: 2.8\n\nNote added 2026-04-27T20:28Z (was bare)"
+      "rr_target": 7.1,
+      "last_updated": "2026-04-28T03:10Z",
+      "note": "ENTRY: N/A \u2014 LIMIT filled 2026-04-28T01:54Z; position open GBPUSD BUY@1.35254.\n\nCONTEXT: Swept zone at 1.352555. Position active. Monitoring time_exit=05:53Z. BoE hawkish supporting GBP.\n\nSL: 1.3515  TP: 1.36  R:R target: 7.1\n\nModified 2026-04-28T03:10Z: LIMIT filled, position open."
     },
     {
       "alert_id": "oil_sweep_9351_buy_retest",
