@@ -1,8 +1,8 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-28T09:35Z",
-  "state_ts_utc": "2026-04-28T09:35Z",
-  "regime_note": "2026-04-28T09:35Z forex auto \u2014 2 evt: pos_closed EURUSD 4ead-a1b5 TP hit +$0.44 (09:30Z) + 4ead-a1e3 TP hit +$0.65 (09:35Z). 0 pos open. AUDUSD LIMIT@0.7143 GTC working (comp=+47 mod, 29p above). GOLD@4615 comp=-67 strong bear; 4721 SELL WATCH (validated 9f/4h=100%, dist=106p>3xH4ATR=101p, Rule2 KEEP). 4700 SELL resistance WATCH (dist=85p). OIL@98.23 comp=+55 mod bull; 93.23/93.51 BUY WATCH (validated, extending). EURUSD comp=-23 none, GBPUSD comp=+25.5 weak, USDJPY comp=+32 weak dist=44.7p. USDCHF alert REMOVED (Rule1: dist=59p>3xH4ATR=57.9p). FOMC caution@18:00Z today T-8.4h \u2014 normal ops. daily_pnl=-20.59. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-28T09:42Z",
+  "state_ts_utc": "2026-04-28T09:42Z",
+  "regime_note": "2026-04-28T09:42Z forex auto \u2014 2 evt: pos_closed EURUSD 4ead-a1e3 TP +$0.56 consumed; level_cross EURUSD eurusd_m15sweep_116871_buy_watch cross_down@1.16867 \u2014 WATCH (comp=-23 none, need \u2264-40 to arm). 0 pos open. AUDUSD LIMIT@0.7143 GTC armed (comp=+47 mod, dist=28.5p, validated). GOLD@4609 comp=-67 strong bear; 4721 SELL WATCH (Rule2 KEEP, 9f/4h=100%). OIL@98.23 comp=+55 mod bull; 93.23/93.51 BUY WATCH (validated, dist<3xATR). EURUSD comp=-23 none; GBPUSD comp=+25.5 weak. USDJPY@159.59 comp=+32 weak dist=40.9p. FOMC Apr29@18:00Z caution T-8.3h \u2014 normal ops. USDCAD H4 FVG sell watch ADDED@1.36693. daily_pnl=-$20.59. attention_covered=9/9.",
   "regime_note_prev": "2026-04-28T09:25Z forex auto \u2014 2 evt: pos_opened EURUSD SELL scalp \u00d72 (4ead-a1b5@1.16996 + 4ead-a1e3@1.16986, SL=1.17028, engine). Both in profit (+$0.40 UPL). AUDUSD LIMIT@0.7143 GTC working (comp=+47 mod, 31p above). GOLD@4613 comp=-67 strong bear; 4721 SELL WATCH (validated, dist=107p, 3\u00d7H4ATR=100.9p, KEEP). OIL@98.04 comp=+55 mod bull; BUY levels 93.23/93.51 intact (dist<5.88=3\u00d7H4ATR). FOMC caution starts 18:00Z today (T-8.6h) \u2014 normal ops. daily_pnl=-$21.68 realized, UPL+$0.40. attention_covered=9/9.",
   "open_positions": [],
   "watchlist": [
@@ -1300,13 +1300,13 @@
       "instrument": "EURUSD",
       "direction": "BUY",
       "level": 1.16871,
-      "entry_criterion": "Second retest of 1.16871 swept zone; M15 bullish rejection wick at level. WATCHLIST ONLY \u2014 arm LIMIT BUY when |comp| >= 25 bullish extension.",
-      "regime_context": "M15 down-sweep 07:00Z Apr28 (wick 1.1p). comp=-23 bearish (none). Counter-trend \u2014 below arming threshold. FOMC Apr29.",
-      "sl": 1.168,
-      "tp": 1.1715,
-      "rr_target": 1.8,
-      "note": "ENTRY: Second retest of 1.16871 with M15 bullish rejection wick. WATCHLIST ONLY \u2014 arm when |comp| >= 25 bullish.\n\nCONTEXT: M15 down-sweep 07:00Z Apr28, wick 1.1p (0.23x ATR). EURUSD comp=-23 (bearish, below arming threshold). H1 bear FVG at 1.16924-1.17054 unmitigated directly above. Counter-trend only if extension flips to bull. FOMC Apr29 adds caution.\n\nSL: 1.1680  TP: 1.1715  R:R target: 1.8\n\nadded 2026-04-28T07:14Z \u2014 liquidity_sweep event per protocol; no entry (|comp|<25).",
-      "last_updated": "2026-04-28T07:14Z",
+      "entry_criterion": "M15 close at/above 1.16871 with bullish rejection wick \u22652p; comp\u2264-40",
+      "regime_context": "M15 sweep 07:14Z Apr28; second retest at 09:37Z; comp=-23 none, WATCH",
+      "sl": 1.1675,
+      "tp": 1.1727,
+      "rr_target": 2.2,
+      "note": "ENTRY: Second retest of 1.16871 swept extreme; M15 bar closes AT or ABOVE 1.16871 with bullish rejection wick \u22652p from the low. Arm LIMIT BUY when comp \u2264 -40 (bearish extension confirms counter-trend fade edge).\n\nCONTEXT: M15 down-sweep 07:14Z Apr28, wick to 1.16871 (1.1p), closed above. Counter-trend buy at swept sell-side liquidity. Second retest at 09:37Z: price crossed down to 1.16867, current comp=-23 (none \u2014 need \u2264-40 to arm). 4h time-stop on entry per counter-trend rule.\n\nSL: 1.1675  TP: 1.1727  R:R target: 2.2\n\nrewritten 2026-04-28T09:42Z \u2014 proper ENTRY/CONTEXT structure; arm condition clarified as comp\u2264-40 counter-trend (was ambiguous).",
+      "last_updated": "2026-04-28T09:42Z",
       "active": null
     },
     {
@@ -1322,6 +1322,20 @@
       "rr_target": 1.8,
       "last_updated": "2026-04-28T07:46Z",
       "note": "ENTRY: Retest of 1.36313 sweep level; M15 bearish rejection wick on approach from below.\n\nCONTEXT: M15 down-sweep@1.36313 (07:30Z Apr28), wick=0.9p. USDCAD comp=-22 (none). WATCHLIST only \u2014 arm if comp reaches bearish moderate (\u2264-40).\n\nSL: 1.3645  TP: 1.3590  R:R target: 1.8\n\nAdded back 07:42Z Apr28 (was in previous tick's regime_note but missing from level_alerts)."
+    },
+    {
+      "alert_id": "usdcad_h4fvg_sell_13669",
+      "instrument": "USDCAD",
+      "direction": "SELL",
+      "level": 1.36693,
+      "active": true,
+      "note": "ENTRY: Price retests H4 bear FVG top at 1.36693 from below; M15 bearish rejection close confirms. WATCHLIST ONLY \u2014 arm when readiness \u2265 moderate (current: none, comp=-14.5).\n\nCONTEXT: H4 unmitigated bear FVG (1.36693-1.36580, 1 bar ago as of 09:42Z Apr28). USDCAD comp=-14.5 none, M15 BOS bull trending up toward FVG. Current price 1.36558 \u2014 13.5p below FVG top. Natural sell-side absorption zone.\n\nSL: 1.3715  TP: 1.3600  R:R target: 1.5\n\nadded 2026-04-28T09:42Z \u2014 fresh H4 bear FVG, unmitigated, proximity watch.",
+      "entry_criterion": "H4 FVG top 1.36693 retest with M15 bearish rejection close; readiness \u2265 moderate",
+      "regime_context": "H4 unmitigated bear FVG 1 bar old; USDCAD comp=-14.5 none, watch for mod+ before arming",
+      "sl": 1.3715,
+      "tp": 1.36,
+      "rr_target": 1.5,
+      "last_updated": "2026-04-28T09:42Z"
     }
   ],
   "structure_watch": [

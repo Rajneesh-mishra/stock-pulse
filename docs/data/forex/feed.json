@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T09:38:44.754112Z",
+  "generated_at": "2026-04-28T09:48:53.824230Z",
   "ticks": [
     {
       "ts_utc": "2026-04-24T14:10:00Z",
@@ -80,51 +80,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "tick_ts_utc": "2026-04-28T00:46Z",
-      "events": [
-        {
-          "id": "evt_1777336895485_liquidity_sweep",
-          "type": "liquidity_sweep",
-          "instrument": "OIL_CRUDE",
-          "timeframe": "MINUTE_15",
-          "action": "ADD watchlist oil_sweep_9579_sell_retest WATCH \u2014 comp=+37 (need \u226540 bullish for counter-trend arm); wick=13p at 95.789, close=95.718"
-        }
-      ],
-      "opened": [],
-      "closed": [],
-      "skipped": [
-        "OIL_CRUDE sell@95.789 \u2014 comp=+37 weak (threshold \u226540 bullish for counter-trend); alert added to watchlist as WATCH"
-      ],
-      "positions": [
-        {
-          "epic": "USDCAD",
-          "dir": "SELL",
-          "entry": 1.36106,
-          "upl": -1.81,
-          "age_h": 10.9,
-          "thesis": "trend",
-          "time_exit_utc": "2026-04-28T13:50Z"
-        },
-        {
-          "epic": "GBPUSD",
-          "type": "LIMIT",
-          "level": 1.352555,
-          "bid_dist_p": 8.5
-        }
-      ],
-      "watchlist_changes": [
-        "ADD oil_sweep_9579_sell_retest (OIL SELL@95.789 retest, SL=95.92, TP=94.40, R:R=10.6)"
-      ],
-      "account": {
-        "balance": 979.3,
-        "daily_pnl": -10.52,
-        "float_upl": -1.81
-      },
-      "binary": "FOMC 2026-04-29T18:00Z T\u224841.2h (caution T<24h ~18:00Z Apr28)",
-      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "attention_covered": "9/9"
     },
     {
       "tick_ts_utc": "2026-04-28T01:00Z",
@@ -1114,6 +1069,41 @@
       "closed": 2,
       "skipped": 0,
       "note": "09:35 forex auto \u2014 2 evt: pos_closed EURUSD 4ead-a1b5 TP+$0.44 + 4ead-a1e3 TP+$0.65. 0 pos open. AUDUSD LIMIT@0.7143 GTC working (comp=+47 mod, validated 3f/4h=100%). GOLD comp=-67 strong bear; 4721 SELL WATCH (validated, Rule2 KEEP, dist=106p). 4700 SELL resistance WATCH. OIL comp=+55 mod bull; 93.23/93.51 BUY WATCH extending. USDCHF alert REMOVED (Rule1: dist=59p>3xH4ATR=57.9p). FOMC caution@18:00Z T-8.4h \u2014 normal ops. daily_pnl=-$20.59. Scalp audit: EURUSD=KEEP GBPUSD=KEEP AUDUSD=DISABLED(wr=11%). attention_covered=9/9."
+    },
+    {
+      "tick_ts_utc": "2026-04-28T09:42Z",
+      "events": [
+        {
+          "id": "evt_1777368764560_position_closed",
+          "type": "position_closed",
+          "instrument": "EURUSD",
+          "action": "consumed \u2014 TP hit 4ead-a1e3 +$0.56 (already in daily_pnl from prev tick)"
+        },
+        {
+          "id": "evt_1777369043157_level_cross",
+          "type": "level_cross",
+          "instrument": "EURUSD",
+          "alert_id": "eurusd_m15sweep_116871_buy_watch",
+          "action": "WATCH \u2014 cross_down@1.16867, comp=-23 none, arm condition (\u2264-40) not met"
+        }
+      ],
+      "trades": [],
+      "alerts_modified": [
+        "eurusd_m15sweep_116871_buy_watch (note rewritten, arm condition clarified)"
+      ],
+      "alerts_added": [
+        "usdcad_h4fvg_sell_13669 (H4 bear FVG top 1.36693, proximity watch)"
+      ],
+      "alerts_removed": [],
+      "open_positions": 0,
+      "working_orders": 1,
+      "daily_pnl_usd": -20.59,
+      "balance_usd": 970.61,
+      "binary_event": "FOMC_APR2026 deadline=2026-04-29T18:00Z caution_from=2026-04-28T18:00Z T-8.3h normal_ops",
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "scalp_engine": "running shadow=false daily_pnl=0 EURUSD/GBPUSD active AUDUSD disabled(wr=11%)",
+      "news": "FOMC Apr28-29 hold confirmed (94%); Hormuz closure ongoing; OIL inf fears; USD higher-for-longer",
+      "attention_covered": "9/9"
     }
   ]
 }
