@@ -1229,5 +1229,25 @@
     "daily_pnl": -21.06,
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
     "attention_covered": "9/9"
+  },
+  {
+    "tick_ts_utc": "2026-04-28T11:23Z",
+    "events_processed": 4,
+    "events_actionable": 1,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "trades_skipped": 1,
+    "pending_limits": 1,
+    "daily_pnl": -21.06,
+    "open_positions": 0,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "FOMC_APR2026 T-30.6h (caution from 18:00Z Apr28)",
+    "alerts_modified": [
+      "usdcad_h4fvg_sell_13669"
+    ],
+    "alerts_added": [],
+    "alerts_removed": [],
+    "scalp_status": "EURUSD=OFF(desync) GBPUSD=ACTIVE AUDUSD=OFF(wr=11%)",
+    "note": "USDCAD M15 up-sweep@1.36674 (3.5p) reinforces H4FVG+sweep sell zone 1.36643-1.36693. Readiness=none, WATCH. USDJPY fade@160 dist=30.3p (just outside 30p threshold; risk_guard JPY pip-val bug). AUDUSD LIMIT@0.7143 GTC intact."
   }
 ]
