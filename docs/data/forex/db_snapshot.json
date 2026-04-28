@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-28T17:33:50.939783+00:00",
+  "generated_at": "2026-04-28T17:48:58.702837+00:00",
   "counts": {
     "trades": 36,
-    "events": 5859,
+    "events": 5871,
     "ticks": 59,
-    "regime_snapshots": 167,
+    "regime_snapshots": 168,
     "broker_positions": 0,
-    "counterfactuals": 100
+    "counterfactuals": 101
   },
   "trades_last_50": [
     {
@@ -769,6 +769,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-28T17:35Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "2026-04-28T17:35Z forex auto \u2014 0 evt (heartbeat): GOLD LIMIT SELL@4603 ARMED (GTC in broker, dist=7.5pts, comp=-52.5 mod bear, H4 FVG 4600-4621 unmitigated); AUDUSD LIMIT BUY@0.7143 WATCH (GTC in broker, dist=37.8p > 30p proximity, comp=+60.0 strong bull \u2014 valid FVG support); USDJPY comp=+40.5 mod bull MEETS fade threshold \u2265+40 BUT dist=43.4p > 30p AND pip-val blocks \u2192 WATCH (usdjpy_intervention_fade_160); EURUSD comp=0 none (Day bull / H4 bear conflict) \u2014 eurusd_m15sweep_116871 validated within 23.9p but readiness=none, eurusd_upsweep_117159 4.9p away watch; gold_sweep_4721 Rule2 KEEP (9f/100%4h, dist=125.2pts Rule1 met but Rule2 overrides); FOMC caution window opens 18:00Z TODAY (~30min); OIL comp=55 mod bull 93.23 level far (5.4pts). No new trades (FOMC caution imminent, 0 open positions). daily_pnl=-$21.06. attention_covered=9/9.",
+      "binary_event_name": "FOMC_APR2026",
+      "binary_event_active": 1,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
       "ts_utc": "2026-04-28T16:32Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-28T16:32Z forex auto \u2014 0 evt (heartbeat): GOLD LIMIT SELL@4603 ARMED (dist=21pts < 30p, comp=-55 mod bear); AUDUSD LIMIT BUY@0.7143 WATCH (dist=34.2p GTC intact, comp=+54.5 mod bull); USDJPY comp=+43 NOW MEETS fade threshold (>=40 bull ext) but dist=41.7p > 30p + JPY pip-val blocks \u2014 WATCH; eurusd_m15sweep_116871 PROMOTED VALIDATED (2f/100%4h, naked LIMIT at comp<=-40); eurusd_upsweep_117159 SL fixed 1.17171\u21921.17189 (3p buffer); FOMC Apr29@18:00Z caution window opens in T-1.5h (18:00Z today); no new trades (no open positions). daily_pnl=-$21.06. attention_covered=9/9.",
@@ -836,14 +844,6 @@
       "ts_utc": "2026-04-28T10:44Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-28T10:44Z forex auto \u2014 0 evt (heartbeat). TIME_EXIT EURUSD scalp \u00d72 (b55d@1.1695+b59c@1.16936 \u2192 1.16951): engine desync (open={}), closed manually at 49/48min. combined_pnl=-0.16. 0 pos open. AUDUSD LIMIT@0.7143 GTC intact (comp=+39.5 weak, dist=22p, LIMIT in place). GOLD@4610 comp=-67 strong bear; 4721 SELL WATCH (dist=111p, Rule2 override\u20149f/4h=100%). OIL@98.19 comp=+55 mod bull; 93.23 BUY WATCH (validated, dist far). GBPUSD comp=+14.5 none. USDJPY@159.52 comp=+33 weak; fade@160 WATCH dist=48p. USDCAD comp=-14.5 none. USDCHF comp=+29 weak; H1FVG@0.78750 WATCH dist=22p. FOMC Apr29@18:00Z T-31h normal ops. daily_pnl=$-20.63. attention_covered=9/9.",
-      "binary_event_name": "FOMC_APR2026",
-      "binary_event_active": 1,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-04-28T10:44Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "2026-04-28T10:44Z forex auto \u2014 0 evt (heartbeat). TIME_EXIT EURUSD scalp \u00d72 (b55d@1.1695+b59c@1.16936 \u2192 1.16951): engine desync (open={}), closed manually at 49/48min. pnl=-1.60. 0 pos open. AUDUSD LIMIT@0.7143 GTC intact (comp=+39.5 weak, dist=22p, LIMIT in place). GOLD@4610 comp=-67 strong bear; 4721 SELL WATCH (dist=111p, Rule2 override\u20149f/4h=100%). OIL@98.19 comp=+55 mod bull; 93.23 BUY WATCH (validated, dist far). GBPUSD comp=+14.5 none. USDJPY@159.52 comp=+33 weak; fade@160 WATCH dist=48p (need |comp|\u226540 for arm). USDCAD comp=-14.5 none. USDCHF comp=+29 weak; H1FVG@0.78750 WATCH dist=22p. FOMC Apr29@18:00Z T-31h normal ops. daily_pnl=-22.07. attention_covered=9/9.",
       "binary_event_name": "FOMC_APR2026",
       "binary_event_active": 1,
       "binary_event_deadline": "2026-04-29T18:00Z"
@@ -1352,6 +1352,19 @@
     }
   ],
   "counterfactuals_last_50": [
+    {
+      "alert_id": "eurusd_upsweep_117159_sell_watch",
+      "instrument": "EURUSD",
+      "direction": "sell",
+      "trigger_price": 1.171595,
+      "fired_at": "2026-04-28T17:48:06.741875+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
     {
       "alert_id": "eurusd_m15sweep_116871_buy_watch",
       "instrument": "EURUSD",
@@ -1982,19 +1995,6 @@
       "direction": "buy",
       "trigger_price": 4679.93,
       "fired_at": "2026-04-26T23:28:58.849563+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
-    },
-    {
-      "alert_id": "audusd_m15fvg_buy_7143",
-      "instrument": "AUDUSD",
-      "direction": "buy",
-      "trigger_price": 0.71429,
-      "fired_at": "2026-04-26T21:43:38.917956+00:00",
       "hit_1h": null,
       "hit_4h": null,
       "hit_24h": null,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T17:35:44.917855Z",
+  "generated_at": "2026-04-28T17:53:48.498197Z",
   "ticks": [
     {
       "ts_utc": "2026-04-24T14:10:00Z",
@@ -80,35 +80,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "tick_ts_utc": "2026-04-28T05:26Z",
-      "events": 0,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 0,
-      "binary": "FOMC_APR2026",
-      "scalp": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=OFF(wr=11%/19t)",
-      "positions": [
-        {
-          "epic": "GBPUSD",
-          "dir": "BUY",
-          "entry": 1.35254,
-          "upl": 1.25,
-          "time_exit": "05:53Z"
-        },
-        {
-          "epic": "OIL_CRUDE",
-          "dir": "SELL",
-          "entry": 96.226,
-          "upl": 1.37,
-          "time_exit": "10:23Z"
-        }
-      ],
-      "daily_pnl": -14.79,
-      "float_upl": 2.62,
-      "regime_note": "2026-04-28T05:26Z forex auto \u2014 0 evt heartbeat. GBPUSD BUY@1.35254 age=3h32min UPL=+$1.25 (bid=1.35279) time_exit=05:53Z (~27min). OIL SELL@96.226 age=3h02min UPL=+$1.37 (bid=96.081) bear OB 96.22-96.57 held; time_exit=10:23Z. Hormuz peace proposal (Tehran conditional on blockade lift) \u2014 WTI futures $97.03; bearish drift favours SELL. FOMC Apr28-29 starts today; decision 18:00Z Apr29; caution@18:00Z Apr28 (~12.6h). 99.9% hold priced. AUDUSD comp=+47 moderate-bull; 36p above 0.7143, outside proximity; corr cap opens 05:53Z. GOLD comp=-30 weak-bear; neither 4700 buy nor 4721 sell meets arming threshold. 2 pos 0 working. daily_pnl=-$14.79 float~+$2.62. attention_covered=9/9.",
-      "news": "Hormuz peace proposal (Tehran conditional). WTI $97.03. FOMC starts today Apr28, decision Apr29 18:00Z, 99.9% hold."
     },
     {
       "tick_ts_utc": "2026-04-28T06:00Z",
@@ -863,6 +834,29 @@
       "balance": 969.98,
       "attention_covered": "9/9",
       "note": "Heartbeat. FOMC caution window opens 18:00Z. GOLD SELL LIMIT@4603 armed in broker (H4 FVG confirms). AUDUSD BUY LIMIT@0.7143 GTC, dist=37.8p. USDJPY comp=+40.5 meets fade threshold but dist=43.4p>proximity. No new trades."
+    },
+    {
+      "tick_ts_utc": "2026-04-28T17:48Z",
+      "events_consumed": 1,
+      "events": [
+        "evt_1777398486741_level_cross (EURUSD level_cross@1.17159 eurusd_upsweep_117159_sell_watch)"
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "trades_skipped": 1,
+      "skip_reasons": [
+        "eurusd_upsweep_117159_sell_watch: comp=0 (need \u2265+30 counter-trend), FOMC caution T-12min"
+      ],
+      "open_positions_count": 0,
+      "pending_limits": [
+        "GOLD SELL@4603 ARMED (GTC)",
+        "AUDUSD BUY@0.7143 WATCH (GTC)"
+      ],
+      "daily_pnl": -21.06,
+      "binary_event": "FOMC_APR2026 (Apr29@18:00Z, T-24.2h, caution active from 18:00Z today)",
+      "scalp_status": "GBPUSD=active; EURUSD/AUDUSD=disabled; USDJPY/CHF/CAD=pip-conv-pending; GOLD/OIL=spread-blocked",
+      "attention_covered": "9/9",
+      "regime_note": "EURUSD level_cross@1.17159 SKIP+WATCH (comp=0). GOLD ARMED@4603. AUDUSD LIMIT@0.7143 WATCH. FOMC caution active."
     }
   ]
 }

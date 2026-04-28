@@ -1468,5 +1468,28 @@
     "balance": 969.98,
     "attention_covered": "9/9",
     "note": "Heartbeat. FOMC caution window opens 18:00Z. GOLD SELL LIMIT@4603 armed in broker (H4 FVG confirms). AUDUSD BUY LIMIT@0.7143 GTC, dist=37.8p. USDJPY comp=+40.5 meets fade threshold but dist=43.4p>proximity. No new trades."
+  },
+  {
+    "tick_ts_utc": "2026-04-28T17:48Z",
+    "events_consumed": 1,
+    "events": [
+      "evt_1777398486741_level_cross (EURUSD level_cross@1.17159 eurusd_upsweep_117159_sell_watch)"
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "trades_skipped": 1,
+    "skip_reasons": [
+      "eurusd_upsweep_117159_sell_watch: comp=0 (need \u2265+30 counter-trend), FOMC caution T-12min"
+    ],
+    "open_positions_count": 0,
+    "pending_limits": [
+      "GOLD SELL@4603 ARMED (GTC)",
+      "AUDUSD BUY@0.7143 WATCH (GTC)"
+    ],
+    "daily_pnl": -21.06,
+    "binary_event": "FOMC_APR2026 (Apr29@18:00Z, T-24.2h, caution active from 18:00Z today)",
+    "scalp_status": "GBPUSD=active; EURUSD/AUDUSD=disabled; USDJPY/CHF/CAD=pip-conv-pending; GOLD/OIL=spread-blocked",
+    "attention_covered": "9/9",
+    "regime_note": "EURUSD level_cross@1.17159 SKIP+WATCH (comp=0). GOLD ARMED@4603. AUDUSD LIMIT@0.7143 WATCH. FOMC caution active."
   }
 ]

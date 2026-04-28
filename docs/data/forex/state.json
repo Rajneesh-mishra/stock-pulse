@@ -1,9 +1,9 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-28T17:35Z",
-  "state_ts_utc": "2026-04-28T17:35Z",
-  "regime_note": "2026-04-28T17:35Z forex auto \u2014 0 evt (heartbeat): GOLD LIMIT SELL@4603 ARMED (GTC in broker, dist=7.5pts, comp=-52.5 mod bear, H4 FVG 4600-4621 unmitigated); AUDUSD LIMIT BUY@0.7143 WATCH (GTC in broker, dist=37.8p > 30p proximity, comp=+60.0 strong bull \u2014 valid FVG support); USDJPY comp=+40.5 mod bull MEETS fade threshold \u2265+40 BUT dist=43.4p > 30p AND pip-val blocks \u2192 WATCH (usdjpy_intervention_fade_160); EURUSD comp=0 none (Day bull / H4 bear conflict) \u2014 eurusd_m15sweep_116871 validated within 23.9p but readiness=none, eurusd_upsweep_117159 4.9p away watch; gold_sweep_4721 Rule2 KEEP (9f/100%4h, dist=125.2pts Rule1 met but Rule2 overrides); FOMC caution window opens 18:00Z TODAY (~30min); OIL comp=55 mod bull 93.23 level far (5.4pts). No new trades (FOMC caution imminent, 0 open positions). daily_pnl=-$21.06. attention_covered=9/9.",
-  "regime_note_prev": "2026-04-28T16:32Z forex auto \u2014 0 evt (heartbeat): GOLD LIMIT SELL@4603 ARMED (dist=21pts < 30p, comp=-55 mod bear); AUDUSD LIMIT BUY@0.7143 WATCH (dist=34.2p GTC intact, comp=+54.5 mod bull); USDJPY comp=+43 NOW MEETS fade threshold (>=40 bull ext) but dist=41.7p > 30p + JPY pip-val blocks \u2014 WATCH; eurusd_m15sweep_116871 PROMOTED VALIDATED (2f/100%4h, naked LIMIT at comp<=-40); eurusd_upsweep_117159 SL fixed 1.17171\u21921.17189 (3p buffer); FOMC Apr29@18:00Z caution window opens in T-1.5h (18:00Z today); no new trades (no open positions). daily_pnl=-$21.06. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-28T17:48Z",
+  "state_ts_utc": "2026-04-28T17:48Z",
+  "regime_note": "2026-04-28T17:48Z forex auto \u2014 1 evt: EURUSD level_cross@1.17159 (eurusd_upsweep_117159_sell_watch) SKIP+WATCH (comp=0 neutral, need \u2265+30 for counter-trend arm; FOMC caution window opens 18:00Z T-12min); GOLD LIMIT SELL@4603 ARMED (GTC, dist=4.7pts, H4 bear FVG 4600-4621 unmitigated, comp=-52.5 mod bear); AUDUSD LIMIT BUY@0.7143 WATCH (GTC, dist=42.5p>30p prox, comp=+60 strong bull); USDJPY fade@160 WATCH (comp=+40.5 mod, dist=46.8p>30p+pip-val blocks); USDCHF@0.78912 25.1p above H4FVG 0.78689 comp=+26.5 weak WATCH; FOMC Apr29@18:00Z caution NOW ACTIVE (T-24.2h, no new entries until FOMC resolves). daily_pnl=-$21.06. attention_covered=9/9.",
+  "regime_note_prev": "2026-04-28T17:35Z forex auto \u2014 0 evt (heartbeat): GOLD LIMIT SELL@4603 ARMED (GTC in broker, dist=7.5pts, comp=-52.5 mod bear, H4 FVG 4600-4621 unmitigated); AUDUSD LIMIT BUY@0.7143 WATCH (GTC in broker, dist=37.8p > 30p proximity, comp=+60.0 strong bull \u2014 valid FVG support); USDJPY comp=+40.5 mod bull MEETS fade threshold \u2265+40 BUT dist=43.4p > 30p AND pip-val blocks \u2192 WATCH (usdjpy_intervention_fade_160); EURUSD comp=0 none (Day bull / H4 bear conflict) \u2014 eurusd_m15sweep_116871 validated within 23.9p but readiness=none, eurusd_upsweep_117159 4.9p away watch; gold_sweep_4721 Rule2 KEEP (9f/100%4h, dist=125.2pts Rule1 met but Rule2 overrides); FOMC caution window opens 18:00Z TODAY (~30min); OIL comp=55 mod bull 93.23 level far (5.4pts). No new trades (FOMC caution imminent, 0 open positions). daily_pnl=-$21.06. attention_covered=9/9.",
   "open_positions": [],
   "watchlist": [
     {
@@ -1302,7 +1302,7 @@
     "name": "FOMC_APR2026",
     "active": true,
     "deadline_utc": "2026-04-29T18:00Z",
-    "t_minus_h": 25.5,
+    "t_minus_h": 24.2,
     "verified": true,
     "sources": [
       "https://www.forex.com/en/news-and-analysis/fomc-outlook-usdcad-usdjpy-hold-at-key-support-levels/",
