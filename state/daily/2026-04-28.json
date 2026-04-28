@@ -833,5 +833,30 @@
     "working_orders_after": 1,
     "daily_pnl": -17.72,
     "summary": "heartbeat: 0 events. AUDUSD LIMIT@0.7143 working. FOMC caution T-11.5h. All 7 watchlist alerts KEEP. 9/9 attention covered."
+  },
+  {
+    "tick_ts_utc": "2026-04-28T07:14Z",
+    "events_processed": 4,
+    "events_actionable": 1,
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "working_orders": 1,
+    "daily_pnl": -17.72,
+    "account_balance": 972.44,
+    "alerts_removed": [
+      "usdchf_sweep_h1_sell_retest",
+      "eurusd_sweep_117186_buy_watch",
+      "usdchf_m15sweep_7832_buy_watch",
+      "audusd_h1sweep_71731_buy_watch"
+    ],
+    "alerts_added": [
+      "eurusd_m15sweep_116871_buy_watch",
+      "usdchf_h1fvg_78750_buy_watch"
+    ],
+    "alerts_modified": [
+      "gold_sweep_4721_sell_retest"
+    ],
+    "summary": "EURUSD M15 liq_sweep@1.16871 (wick 1.1p, comp=-23 counter-trend <25 threshold). Watch added, no entry. Watchlist audit: 4 removed (2 invalidated directions, 1 auto-stale, 1 wick-breached), 2 added. GOLD strong bear comp=-67 all TFs. AUDUSD LIMIT@0.7143 GTC. FOMC caution T-10.8h.",
+    "binary_event": "FOMC_APR2026 (deadline 2026-04-29T18:00Z, caution from 18:00Z today)"
   }
 ]

@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-28T06:37:19.881252Z",
+  "generated_at": "2026-04-28T07:18:44.393443Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T05:25:00Z",
-      "events_in": 12,
-      "opened": 0,
-      "closed": 2,
-      "skipped": 10,
-      "note": "05:25 forex auto \u2014 12 evt (2 position_opened USDJPY rogue-scalp already closed at BE per 05:06 tick; 2 position_closed USDJPY same; 1 OIL_CRUDE liquidity_sweep M15 05:00 UTC sweep=95.319 wick=5.6p 0.16\u00d7ATR SKIP-trade (wick too small, SL 5.6p vs OIL spread 4p kills R:R at entry; LIMIT at swept level 95.319 gives R:R 4.1 before spread but wick magnitude too minor for conviction); ADD oil_sweep_9519_buy_retest anchored 95.319 SL=95.263 TP=95.550 R:R=4.1 (monitor 2 ticks, remove if no approach); 7 bar_close routine). USDJPY 159.792 +43 mod 4/4 bull dist=20.8p INSIDE 30p swing=ARMED (counter-trend fade; BOJ T-3d). GOLD 4674.02 -37.5 weak 3/4 bear sweep_4721 dist=47.7$ OUTSIDE 18$ prox swing=WATCH; safehaven_4775 dist=101$ dormant. OIL 95.386 +42.5 mod 4/4 bull sweep_9519 dist=6.7p WATCH; sweep_9323 dist=2.15$ WATCH; retest_90 dist=5.09$ dormant. BTCUSD ~77707 +27 weak day_fvg_buy 76960 dist=747$ WATCH. EURUSD 1.1679 weak -29.5 swing=NONE GBPUSD 1.3463 none swing=NONE AUDUSD ~0.715 none swing=NONE USDCAD 1.3709 none swing=NONE USDCHF 0.7870 none swing=NONE. 7 level_alerts (6 KEEP +1 ADD sweep_9519) 9 SW KEEP. 8 queries KEEP. Scalp 3 FX ACTIVE halt={}. web_search skipped (0 pos + regime stable 4h+). BOJ T-3d FOMC T-5d. binary=inactive. attention_covered=9/9."
-    },
     {
       "ts_utc": "2026-04-24T05:35:00Z",
       "events_in": 1,
@@ -1003,6 +995,31 @@
       "working_orders_after": 1,
       "daily_pnl": -17.72,
       "summary": "heartbeat: 0 events. AUDUSD LIMIT@0.7143 working. FOMC caution T-11.5h. All 7 watchlist alerts KEEP. 9/9 attention covered."
+    },
+    {
+      "tick_ts_utc": "2026-04-28T07:14Z",
+      "events_processed": 4,
+      "events_actionable": 1,
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "working_orders": 1,
+      "daily_pnl": -17.72,
+      "account_balance": 972.44,
+      "alerts_removed": [
+        "usdchf_sweep_h1_sell_retest",
+        "eurusd_sweep_117186_buy_watch",
+        "usdchf_m15sweep_7832_buy_watch",
+        "audusd_h1sweep_71731_buy_watch"
+      ],
+      "alerts_added": [
+        "eurusd_m15sweep_116871_buy_watch",
+        "usdchf_h1fvg_78750_buy_watch"
+      ],
+      "alerts_modified": [
+        "gold_sweep_4721_sell_retest"
+      ],
+      "summary": "EURUSD M15 liq_sweep@1.16871 (wick 1.1p, comp=-23 counter-trend <25 threshold). Watch added, no entry. Watchlist audit: 4 removed (2 invalidated directions, 1 auto-stale, 1 wick-breached), 2 added. GOLD strong bear comp=-67 all TFs. AUDUSD LIMIT@0.7143 GTC. FOMC caution T-10.8h.",
+      "binary_event": "FOMC_APR2026 (deadline 2026-04-29T18:00Z, caution from 18:00Z today)"
     }
   ]
 }

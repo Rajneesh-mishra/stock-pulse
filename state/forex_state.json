@@ -1,8 +1,8 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-28T06:37Z",
-  "state_ts_utc": "2026-04-28T06:37Z",
-  "regime_note": "2026-04-28T06:37Z forex auto \u2014 0 evt heartbeat. AUDUSD LIMIT@0.7143 working GTC (comp=+47 mod-bull; H4 FVG zone intact; price@0.7175, 32p above). GOLD@4631.78 strong bear (comp=-67 all TFs); 4700/4721 SELL alerts KEEP (dist=68/89p vs 3xH4ATR=103p, not stale). GBPUSD@1.3514 weak bull (comp=+25.5); sweep-sell@1.35203 WATCH (comp<40, not armed). USDCHF@0.7878 sweep-sell@0.7875 WATCH (comp=+23<40 counter-trend threshold). OIL@96.6 mod-bull (comp=+45); buy-retest zones 93.23/93.51 WATCH ($3.09/$3.37 below, near 3.00 proximity). FOMC caution activates 18:00Z today (T-11.5h). 0 pos 1 working. daily_pnl=-$17.72. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-28T07:14Z",
+  "state_ts_utc": "2026-04-28T07:14Z",
+  "regime_note": "2026-04-28T07:14Z forex auto \u2014 1 evt: EURUSD M15 liq_sweep@1.16871 (down-wick 1.1p, close@1.16935; counter-trend buy bias; comp=-23 <25 threshold \u2192 WATCH, no entry added). Watchlist audit: REMOVE usdchf_sweep_h1_sell_retest (price broke above sell level@0.787505), eurusd_sweep_117186_buy_watch (H4 bear FVG, 0% hit rate), usdchf_m15sweep_7832_buy_watch (AUTO-REMOVE: dist=6.06p>3xH4ATR=5.88p), audusd_h1sweep_71731_buy_watch (wick breached, price 0.71683<0.71731). ADD eurusd_m15sweep_116871_buy_watch (watch only), usdchf_h1fvg_78750_buy_watch (H1 FVG support). GOLD@4633 strong bear (comp=-67 all TFs); 4700/4721 SELL alerts KEEP. AUDUSD LIMIT@0.7143 working GTC (comp=+47 mod-bull). OIL@97.22 mod-bull (comp=+45). FOMC caution activates 18:00Z today (T-10.8h). 0 pos 1 working. daily_pnl=-$17.72. attention_covered=9/9.",
   "regime_note_prev": "2026-04-28T06:16Z forex auto \u2014 1 evt: AUDUSD H1 liquidity_sweep@0.71731 (down-wick 2.3p, close@0.71771, bias BUY). AUDUSD comp=+47 moderate-bull \u2014 sweep alert ADDED (audusd_h1sweep_71731_buy_watch) but NO entry armed (wick 2.3p < H1ATR 7.9p; with ATR stop R:R=0.62 < 1.5 threshold; with tight 3.6p stop SL below ATR noise). Existing LIMIT@0.7143 WORKING (GTC). GOLD@4634.69 comp=-67 strong bear; 4721 sell alert KEEP (86p gap < 3xH4ATR=$103); gold_4700_sell_resistance WATCH. GBPUSD@1.35155 comp=+25.5 weak, 4.8p below 1.35203 sweep alert \u2014 not armed. FOMC caution activates 18:00Z today (now T-11.8h). 0 pos 1 working (AUDUSD@0.7143). daily_pnl=-$17.72. attention_covered=9/9.",
   "open_positions": [],
   "watchlist": [
@@ -933,20 +933,6 @@
       "note": "ENTRY: SELL LIMIT at 160.05 when price approaches 160.00-160.10; M15 rejection wick confirmation preferred\n\nCONTEXT: MoF intervention red line. Japan intervened at 159.23 in Jan 2026; 160.00 is widely watched. BoJ hold Apr27-28 leaves MoF to jawbone.\n\nSL: 160.50  TP: 158.50  R:R target: 3.0\n\nNote added 2026-04-27T20:28Z (was bare)"
     },
     {
-      "alert_id": "usdchf_sweep_h1_sell_retest",
-      "direction": "SELL",
-      "level": 0.787505,
-      "active": null,
-      "instrument": "USDCHF",
-      "entry_criterion": "M15 close at or above 0.7875; or retest of 0.787505 swept level with rejection wick",
-      "regime_context": "H1 sweep above 0.7875 sell zone. Counter-trend fade. comp=3 neutral currently \u2014 arm at |comp|>=40.",
-      "sl": 0.789,
-      "tp": 0.7832,
-      "rr_target": 2.2,
-      "last_updated": "2026-04-27T20:34Z",
-      "note": "ENTRY: Retest of 0.787505 swept zone; M15 rejection wick at level after sweep\n\nCONTEXT: H1 bullish sweep above 0.787505. Counter-trend sell. comp=3 neutral \u2014 need |comp|>=40 bearish extension to arm.\n\nSL: 0.7890  TP: 0.7832  R:R target: 2.2\n\nNote added 2026-04-27T20:28Z (was bare)"
-    },
-    {
       "alert_id": "audusd_m15fvg_buy_7143",
       "direction": "BUY",
       "level": 0.7143,
@@ -981,26 +967,12 @@
       "active": null,
       "instrument": "GOLD",
       "entry_criterion": "Price retests 4721 from below; M15 close at/below 4721 with rejection wick; or SELL LIMIT at 4721",
-      "regime_context": "VALIDATED: 9 fires, 4h=100%. Gold swept above 4721 then rejected. Comp=-25 bearish background. Sell the retest.",
+      "regime_context": "VALIDATED: 9 fires, 4h=100%. GOLD strong bear comp=-67 all TFs. H4 bear OB 4798-4890 above.",
       "sl": 4740.0,
       "tp": 4660.0,
       "rr_target": 3.2,
-      "last_updated": "2026-04-27T20:34Z",
-      "note": "ENTRY: SELL LIMIT at 4721; M15 rejection close back below 4721 confirms. Validated alert \u2014 no extra confirmation required.\n\nCONTEXT: VALIDATED (9 fires, 4h hit_rate=100%). Gold swept this level then reverted. comp=-25 bearish supports. H4 bear OB 4686-4699 overhead.\n\nSL: 4740  TP: 4660  R:R target: 3.2\n\nNote added 2026-04-27T20:28Z (was bare)"
-    },
-    {
-      "alert_id": "eurusd_sweep_117186_buy_watch",
-      "direction": "BUY",
-      "level": 1.17186,
-      "active": null,
-      "instrument": "EURUSD",
-      "entry_criterion": "Price retests 1.17186 from above; M15 bullish rejection wick at level; BUY LIMIT at 1.17186",
-      "regime_context": "Bullish sweep low created at 1.17186. EURUSD comp=3 neutral \u2014 arm at readiness>=moderate (|comp|>=40 bullish).",
-      "sl": 1.17,
-      "tp": 1.178,
-      "rr_target": 3.1,
-      "last_updated": "2026-04-27T20:34Z",
-      "note": "ENTRY: BUY LIMIT at 1.17186 on retest; M15 rejection wick confirmation. Arm only when readiness>=moderate.\n\nCONTEXT: Swept zone. comp=3 neutral currently \u2014 watchlist only. Price within proximity (3.5p < 30p threshold) but need readiness improvement.\n\nSL: 1.1700  TP: 1.1780  R:R target: 3.1\n\nNote added 2026-04-27T20:28Z (was bare)"
+      "last_updated": "2026-04-28T07:14Z",
+      "note": "ENTRY: SELL LIMIT at 4721; M15 rejection close back below 4721 confirms. Validated alert \u2014 no extra confirmation required.\n\nCONTEXT: VALIDATED (9 fires, 4h hit_rate=100%). Strong bear all TFs (comp=-67). H4 bear FVG at 4671-4677 and H1 bear BOS@4657 confirm trend. Price 4633, if rallies to 4721 it faces H4 bear OB 4798-4890 overhead.\n\nSL: 4740  TP: 4660  R:R target: 3.2\n\nupdated 2026-04-28T07:14Z \u2014 comp updated -25 \u2192 -67 (strong bear now all TFs)"
     },
     {
       "alert_id": "oil_sweep_9351_buy_retest",
@@ -1015,19 +987,6 @@
       "rr_target": 2.8,
       "last_updated": "2026-04-27T20:34Z",
       "note": "ENTRY: BUY LIMIT at 93.5115 (swept zone); M15 rejection wick on approach confirms.\n\nCONTEXT: Swept extreme below 93.5115. Secondary to oil_sweep_9323. OIL comp=+36 weak. No counterfactual data yet.\n\nSL: 92.80  TP: 95.50  R:R target: 2.8\n\nNote added 2026-04-27T20:28Z (was bare)"
-    },
-    {
-      "alert_id": "usdchf_m15sweep_7832_buy_watch",
-      "instrument": "USDCHF",
-      "direction": "buy",
-      "level": 0.7832,
-      "note": "ENTRY: price retests 0.7832 swept zone; M15 bar closes AT or ABOVE 0.7832 with bullish rejection wick \u22653p from the low. WATCHLIST ONLY \u2014 arm LIMIT BUY when |comp| \u226540 bearish extension (counter-trend fade).\n\nCONTEXT: M15 down-sweep 2026-04-27T14:45Z, wick=1.1p at 0.78320. comp=-6 neutral \u2014 below arming threshold. USDCHF scalp disabled (pip-conv). TP at 0.7875 sell zone.\n\nSL: 0.7820  TP: 0.7875  R:R target: 3.6\n\nsynced from watchlist_signals 2026-04-27T18:14Z",
-      "entry_criterion": "M15 retest of 0.7832 with bullish rejection wick \u22653p. WATCHLIST ONLY \u2014 arm at |comp|\u226540 bearish extension.",
-      "regime_context": "M15 down-sweep 14:45Z Apr27. comp=-6 neutral. Scalp disabled (pip-conv). 4h time-stop if entered. TP at 0.7875 existing sell zone.",
-      "sl": 0.782,
-      "tp": 0.7875,
-      "rr_target": "3.6",
-      "last_updated": "2026-04-27T18:14Z"
     },
     {
       "alert_id": "gold_4700_sell_resistance_watch",
@@ -1056,17 +1015,32 @@
       "last_updated": "2026-04-28T06:00Z"
     },
     {
-      "alert_id": "audusd_h1sweep_71731_buy_watch",
-      "instrument": "AUDUSD",
+      "alert_id": "eurusd_m15sweep_116871_buy_watch",
+      "instrument": "EURUSD",
       "direction": "BUY",
-      "level": 0.71731,
-      "note": "ENTRY: BUY LIMIT on retest of 0.71731 swept zone; M15 bullish rejection wick at level required.\n\nCONTEXT: H1 down-sweep at 0.71731 (wick 2.3p, close at 0.71771, bar 06:00Z Apr28). Day bull bias comp=+47 moderate. Bear FVG at 0.7178-0.7182 is immediate resistance. NOTE: wick shallow (2.3p < H1ATR 7.9p); with ATR-appropriate stop R:R=0.62 \u2014 WATCHLIST ONLY until deeper re-sweep creates viable SL room.\n\nSL: 0.71695  TP: 0.71785  R:R target: 1.5\n\nAdded 2026-04-28T06:16Z auto: liquidity_sweep event; no entry armed, R:R<1.5 with ATR stop",
-      "entry_criterion": "BUY LIMIT on retest of 0.71731 swept zone; M15 bullish rejection wick at level",
-      "regime_context": "H1 down-sweep at 0.71731 (wick 2.3p). Day bull bias comp=+47 moderate. Bear FVG at 0.7178-0.7182 caps TP.",
-      "sl": 0.71695,
-      "tp": 0.71785,
-      "rr_target": 1.5,
-      "last_updated": "2026-04-28T06:16Z"
+      "level": 1.16871,
+      "entry_criterion": "Second retest of 1.16871 swept zone; M15 bullish rejection wick at level. WATCHLIST ONLY \u2014 arm LIMIT BUY when |comp| >= 25 bullish extension.",
+      "regime_context": "M15 down-sweep 07:00Z Apr28 (wick 1.1p). comp=-23 bearish (none). Counter-trend \u2014 below arming threshold. FOMC Apr29.",
+      "sl": 1.168,
+      "tp": 1.1715,
+      "rr_target": 1.8,
+      "note": "ENTRY: Second retest of 1.16871 with M15 bullish rejection wick. WATCHLIST ONLY \u2014 arm when |comp| >= 25 bullish.\n\nCONTEXT: M15 down-sweep 07:00Z Apr28, wick 1.1p (0.23x ATR). EURUSD comp=-23 (bearish, below arming threshold). H1 bear FVG at 1.16924-1.17054 unmitigated directly above. Counter-trend only if extension flips to bull. FOMC Apr29 adds caution.\n\nSL: 1.1680  TP: 1.1715  R:R target: 1.8\n\nadded 2026-04-28T07:14Z \u2014 liquidity_sweep event per protocol; no entry (|comp|<25).",
+      "last_updated": "2026-04-28T07:14Z",
+      "active": null
+    },
+    {
+      "alert_id": "usdchf_h1fvg_78750_buy_watch",
+      "instrument": "USDCHF",
+      "direction": "BUY",
+      "level": 0.7875,
+      "entry_criterion": "Pullback to 0.78750-0.78817 H1 FVG zone; M15 bullish rejection wick at level. WATCHLIST ONLY \u2014 arm at readiness >= moderate.",
+      "regime_context": "H1 FVG unmitigated at 0.78750-0.78906. USDCHF comp=+23 (none). Bull M15 BOS@0.78601. Replaced invalidated sell alert. FOMC context.",
+      "sl": 0.786,
+      "tp": 0.792,
+      "rr_target": 3.0,
+      "note": "ENTRY: Pullback to H1 FVG bottom 0.78750; M15 bullish rejection wick confirms. WATCHLIST ONLY \u2014 arm when readiness >= moderate.\n\nCONTEXT: H1 bull FVG unmitigated 0.78750-0.78906 (formed 07:00Z Apr28). M15 bull BOS@0.78601. comp=+23 (none). Previous sell at 0.787505 invalidated \u2014 price broke above. Scalp disabled (pip-conv). FOMC caution@18:00Z Apr28.\n\nSL: 0.78600  TP: 0.79200  R:R target: 3.0\n\nadded 2026-04-28T07:14Z \u2014 replaces invalidated usdchf_sweep_h1_sell_retest; anchored to H1 FVG support.",
+      "last_updated": "2026-04-28T07:14Z",
+      "active": null
     }
   ],
   "structure_watch": [

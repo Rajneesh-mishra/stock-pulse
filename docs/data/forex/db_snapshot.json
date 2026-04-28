@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-28T06:35:51.907391+00:00",
+  "generated_at": "2026-04-28T07:16:07.342151+00:00",
   "counts": {
     "trades": 22,
-    "events": 5357,
+    "events": 5383,
     "ticks": 59,
-    "regime_snapshots": 140,
+    "regime_snapshots": 141,
     "broker_positions": 0,
     "counterfactuals": 98
   },
@@ -475,6 +475,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-28T06:37Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "2026-04-28T06:37Z forex auto \u2014 0 evt heartbeat. AUDUSD LIMIT@0.7143 working GTC (comp=+47 mod-bull; H4 FVG zone intact; price@0.7175, 32p above). GOLD@4631.78 strong bear (comp=-67 all TFs); 4700/4721 SELL alerts KEEP (dist=68/89p vs 3xH4ATR=103p, not stale). GBPUSD@1.3514 weak bull (comp=+25.5); sweep-sell@1.35203 WATCH (comp<40, not armed). USDCHF@0.7878 sweep-sell@0.7875 WATCH (comp=+23<40 counter-trend threshold). OIL@96.6 mod-bull (comp=+45); buy-retest zones 93.23/93.51 WATCH ($3.09/$3.37 below, near 3.00 proximity). FOMC caution activates 18:00Z today (T-11.5h). 0 pos 1 working. daily_pnl=-$17.72. attention_covered=9/9.",
+      "binary_event_name": "FOMC_APR2026",
+      "binary_event_active": 1,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
       "ts_utc": "2026-04-28T06:16Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-28T06:16Z forex auto \u2014 1 evt: AUDUSD H1 liquidity_sweep@0.71731 (down-wick 2.3p, close@0.71771, bias BUY). AUDUSD comp=+47 moderate-bull \u2014 sweep alert ADDED (audusd_h1sweep_71731_buy_watch) but NO entry armed (wick 2.3p < H1ATR 7.9p; with ATR stop R:R=0.62 < 1.5 threshold; with tight 3.6p stop SL below ATR noise). Existing LIMIT@0.7143 WORKING (GTC). GOLD@4634.69 comp=-67 strong bear; 4721 sell alert KEEP (86p gap < 3xH4ATR=$103); gold_4700_sell_resistance WATCH. GBPUSD@1.35155 comp=+25.5 weak, 4.8p below 1.35203 sweep alert \u2014 not armed. FOMC caution activates 18:00Z today (now T-11.8h). 0 pos 1 working (AUDUSD@0.7143). daily_pnl=-$17.72. attention_covered=9/9.",
@@ -542,14 +550,6 @@
       "ts_utc": "2026-04-28T04:10Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-28T04:10Z forex auto \u2014 1 evt: GOLD level_cross gold_sweep_4669_buy_retest @4668 (comp=-28 weak, need \u2264-40 bearish to arm BUY LIMIT \u2014 WATCH). GBPUSD BUY@1.35254 age=2h17min UPL=+$2.25 (bid=1.35299) thesis-intact; time_exit=05:53Z. OIL SELL@96.226 age=1h47min UPL=-$3.61 (bid=96.472) bear OB 96.218-96.5705 intact (SL=96.6); time_exit corrected to 06:23Z (4h cap per note). AUDUSD@0.7183 comp=+52 moderate-bull (39.6p above 0.7143 level, outside proximity; corr-cap 1/2). FOMC T\u224813.8h caution-window starts 18:00Z Apr28. 2 pos 0 working. daily_pnl=-$16.82 float\u2248-$1.36. attention_covered=9/9.",
-      "binary_event_name": "FOMC_APR2026",
-      "binary_event_active": 1,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-04-28T04:05Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "2026-04-28T04:05Z forex auto \u2014 1 evt: OIL level_cross oil_sweep_9579_sell_retest @96.244 (3rd cross, position already open \u2014 no action). GBPUSD BUY@1.35254 age=2h11min UPL=+$3.2 (bid=1.35318) thesis-intact BoE-hawkish; time_exit=05:53Z. OIL SELL@96.226 age=1h41min UPL=-$0.79 (bid=96.247) fade hovering at entry; Hormuz still restricted structural-bull comp=+43. GOLD@4668 approaching 4669 sweep (1.1pts, comp=-28 weak \u2014 need \u2264-40 to arm counter-buy). AUDUSD@0.7184 comp=+54.5 moderate-bull (41p above 0.7143 level, outside proximity; corr-cap=1/2). FOMC T\u224838h caution-window starts 18:00Z Apr28 (14h from now). News: ceasefire holding, Hormuz restricted (validates OIL structural bull bias); GBP BoE 2-hikes priced thesis intact. 2 pos 0 working. daily_pnl=-$16.82 float\u2248+$2.4. attention_covered=9/9.",
       "binary_event_name": "FOMC_APR2026",
       "binary_event_active": 1,
       "binary_event_deadline": "2026-04-29T18:00Z"
