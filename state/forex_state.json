@@ -1,8 +1,8 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-28T07:27Z",
-  "state_ts_utc": "2026-04-28T07:27Z",
-  "regime_note": "2026-04-28T07:27Z forex auto \u2014 1 evt: position_opened EURUSD SELL (scalp engine ema_pullback, size=1000, entry=1.1699, SL=1.17017, TP=1.16946). Engine logged open_failed (unparseable broker response) but position confirmed on broker. comp=-23 none bearish 3/4TF \u2014 direction aligned with scalp SELL. AUDUSD LIMIT@0.7143 working GTC (comp=+47 mod-bull; 30.5p above level). GOLD@4632 strong bear comp=-67 all TFs; sell alerts at 4700/4721 KEEP (both within 3xH4ATR). USDCHF@0.78847 (10p above 0.7875 sell alert); comp=+23 none \u2014 below +40 threshold for fade entry \u2014 WATCH. FOMC caution activates 18:00Z today (T-10.6h), deadline 2026-04-29T18:00Z. 1 pos 1 working. daily_pnl=-$17.72. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-28T07:32Z",
+  "state_ts_utc": "2026-04-28T07:32Z",
+  "regime_note": "2026-04-28T07:32Z forex auto \u2014 3 evt processed: pos_opened EURUSD 631b (scalp TP hit +$0.34), USDCAD M15 sweep@1.36313 (wick=0.9p, comp=-22 none \u2192 WATCH alert added), pos_closed EURUSD 631b. Scalp engine also opened 3 new scalps (65d0 EURUSD SELL, 65dd+660d GBPUSD BUY): 65dd closed (max_per_pair=1 violation, pnl=-$0.16). 3 open: 62fa EURUSD SELL@1.1699 SL=breakeven TP=0.1p away; 65d0 EURUSD SELL@1.16956 SL=1.17014 TP=1.16853; 660d GBPUSD BUY@1.35111 SL=1.35061 TP=1.35197. AUDUSD LIMIT@0.7143 GTC (comp=+47 mod). GOLD comp=-67 strong bear. FOMC caution activates 18:00Z today. daily_pnl=-$17.54. attention_covered=9/9.",
   "regime_note_prev": "2026-04-28T07:14Z forex auto \u2014 1 evt: EURUSD M15 liq_sweep@1.16871 (down-wick 1.1p, close@1.16935; counter-trend buy bias; comp=-23 <25 threshold \u2192 WATCH, no entry added). Watchlist audit: REMOVE usdchf_sweep_h1_sell_retest (price broke above sell level@0.787505), eurusd_sweep_117186_buy_watch (H4 bear FVG, 0% hit rate), usdchf_m15sweep_7832_buy_watch (AUTO-REMOVE: dist=6.06p>3xH4ATR=5.88p), audusd_h1sweep_71731_buy_watch (wick breached, price 0.71683<0.71731). ADD eurusd_m15sweep_116871_buy_watch (watch only), usdchf_h1fvg_78750_buy_watch (H1 FVG support). GOLD@4633 strong bear (comp=-67 all TFs); 4700/4721 SELL alerts KEEP. AUDUSD LIMIT@0.7143 working GTC (comp=+47 mod-bull). OIL@97.22 mod-bull (comp=+45). FOMC caution activates 18:00Z today (T-10.8h). 0 pos 1 working. daily_pnl=-$17.72. attention_covered=9/9.",
   "open_positions": [
     {
@@ -11,12 +11,38 @@
       "direction": "SELL",
       "size": 1000,
       "entry": 1.1699,
-      "sl": 1.17017,
+      "sl": 1.1699,
       "tp": 1.16946,
       "opened_at": "2026-04-28T07:20:16Z",
       "thesis_type": "scalp_entry",
       "alert_id": "eurusd_scalp_ema_pullback",
-      "note": "Scalp engine ema_pullback SELL. Engine logged open_failed (unparseable response) but position confirmed on broker via position_sync. SL/TP set, self-managing. 1h time cap: close by 08:20Z if not hit."
+      "note": "Scalp engine ema_pullback SELL. SL trailed to breakeven at +1.4R (07:30Z). TP=1.16946. 1h time cap: close by 08:20Z."
+    },
+    {
+      "id": "00000000-4e79-65d0-044a-beb40055311e",
+      "instrument": "EURUSD",
+      "direction": "SELL",
+      "size": 1000,
+      "entry": 1.16956,
+      "sl": 1.17014,
+      "tp": 1.16853,
+      "opened_at": "2026-04-28T07:30:24Z",
+      "thesis_type": "scalp_entry",
+      "alert_id": "eurusd_scalp_ema_pullback",
+      "note": "Scalp engine ema_pullback SELL. Entry=1.16956 SL=1.17014 TP=1.16853. 1h time cap: close by 08:30Z."
+    },
+    {
+      "id": "00000000-4e79-660d-044a-beb40055311e",
+      "instrument": "GBPUSD",
+      "direction": "BUY",
+      "size": 1000,
+      "entry": 1.35111,
+      "sl": 1.35061,
+      "tp": 1.35197,
+      "opened_at": "2026-04-28T07:31:28Z",
+      "thesis_type": "scalp_entry",
+      "alert_id": "gbpusd_scalp_session_break",
+      "note": "Scalp engine session_open_break BUY. Entry=1.35111 SL=1.35061 TP=1.35197. 1h time cap: close by 08:31Z."
     }
   ],
   "watchlist": [
@@ -320,10 +346,46 @@
       "pnl_usd": -3.58,
       "alert_id": "oil_sweep_9579_sell_retest",
       "result": "loss"
+    },
+    {
+      "trade_id": "eurusd_scalp_631b_20260428_close",
+      "instrument": "EURUSD",
+      "direction": "SELL",
+      "entry": 1.16995,
+      "close": 1.16961,
+      "size": 1000,
+      "sl": 1.17017,
+      "tp": 1.16961,
+      "opened_at": "2026-04-28T07:21:17Z",
+      "closed_at": "2026-04-28T07:27:59Z",
+      "hold_min": 6.7,
+      "thesis_type": "scalp_entry",
+      "exit_reason": "TP hit (last_bid=1.16959 \u2248 TP=1.16961; daemon inferred sl_hit incorrectly)",
+      "pnl_usd": 0.34,
+      "alert_id": "eurusd_scalp_ema_pullback",
+      "result": "win"
+    },
+    {
+      "trade_id": "gbpusd_scalp_65dd_20260428_close",
+      "instrument": "GBPUSD",
+      "direction": "BUY",
+      "entry": 1.35101,
+      "close": 1.35085,
+      "size": 1000,
+      "sl": 1.35061,
+      "tp": 1.35162,
+      "opened_at": "2026-04-28T07:30:30Z",
+      "closed_at": "2026-04-28T07:32Z",
+      "hold_min": 1.5,
+      "thesis_type": "scalp_entry",
+      "exit_reason": "Closed by Claude: max_per_pair=1 violated (engine opened 2\u00d7GBPUSD BUY). Spread/slippage loss.",
+      "pnl_usd": -0.16,
+      "alert_id": "gbpusd_scalp_session_break",
+      "result": "loss"
     }
   ],
   "consecutive_losses": 1,
-  "daily_pnl": -17.72,
+  "daily_pnl": -17.54,
   "weekly_pnl": 0,
   "total_pnl": 2.04,
   "total_trades": 2,

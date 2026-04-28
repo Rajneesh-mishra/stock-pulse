@@ -866,5 +866,30 @@
     "closed": 0,
     "skipped": 0,
     "note": "07:27 UTC tick \u2014 1 evt: position_opened EURUSD SELL (scalp engine ema_pullback, size=1000 units, entry=1.1699, SL=1.17017, TP=1.16946, risk=$0.27). Engine logged open_failed (unparseable broker response at 07:20:17Z and 07:21:17Z) but position confirmed real via position_sync. Added to state open_positions. EURUSD comp=-23 none bearish 3/4TF \u2014 direction aligned with scalp SELL. AUDUSD LIMIT@0.7143 working GTC (comp=+47 mod-bull, 30.5p above level). GOLD@4632 comp=-67 strong bear; sell alerts at 4700/4721 KEEP (within 3xH4ATR=103pts). USDCHF@0.78847 (now 9.7p above 0.7875 sell fade level); comp=+23 none \u2014 need +40 bullish, WATCH. ADD eurusd_m15sweep_116871_buy_watch (WATCH only, comp=-23 < -40 threshold). 7 existing alerts KEEP (proximity notes refreshed). FOMC caution activates 18:00Z today, deadline 2026-04-29T18:00Z. No new swing entries this tick. 1 pos 1 working. daily_pnl=-$17.72. attention_covered=9/9."
+  },
+  {
+    "ts_utc": "2026-04-28T07:32Z",
+    "events": 3,
+    "event_ids": [
+      "evt_1777360887126_position_opened",
+      "evt_1777361183525_liquidity_sweep",
+      "evt_1777361279144_position_closed"
+    ],
+    "actions": [
+      "trail_sl 62fa EURUSD SELL breakeven (1.4R)",
+      "log_close 631b EURUSD SELL TP hit +$0.34",
+      "add_alert usdcad_m15sweep_136313_buy_watch",
+      "remove_alert usdchf_sweep_h1_sell_retest (auto-remove Rule1)",
+      "remove_alert usdchf_m15sweep_7832_buy_watch (auto-remove Rule1)",
+      "add_alert usdchf_h1fvg_buy_78750",
+      "log_new_scalp 65d0 EURUSD SELL",
+      "log_new_scalp 660d GBPUSD BUY",
+      "close 65dd GBPUSD BUY (max_per_pair violation -$0.16)"
+    ],
+    "open_positions": 3,
+    "working_orders": 1,
+    "daily_pnl": -17.54,
+    "binary": "FOMC_APR2026 T-35.5h caution_from_18:00Z_today",
+    "regime": "GOLD_strong_bear EURUSD_bear_none AUDUSD_mod_bull OIL_mod_bull USDCAD_bear_none FOMC_caution_pre"
   }
 ]

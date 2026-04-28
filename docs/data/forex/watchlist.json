@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-28T05:05Z",
+  "last_updated_by_claude": "2026-04-28T07:30Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -21,30 +21,6 @@
   },
   "level_alerts": [
     {
-      "id": "usdchf_sweep_h1_sell_retest",
-      "instrument": "USDCHF",
-      "level": 0.787505,
-      "emit_on": "cross_up",
-      "cooldown_sec": 1800,
-      "direction": "sell",
-      "note": "ENTRY: arm LIMIT SELL at 0.7875 when |comp| \u2265 40 bullish extension (counter-trend fade at H1 up-sweep level). M15 bar closes back below 0.7875 with rejection wick \u22653p from high.\n\nCONTEXT: H1 up-sweep wick=1.7p at 0.787505 (2026-04-24T07:00Z). Counter-trend fade: bullish composite toward the sweep is the extension creating the rejection edge. Event fired 2026-04-28T06:00Z at 0.787515; price pulled back to 0.78745. comp=+23 today (none; need \u226540 bullish for arming). USDCHF scalp disabled (pip-conv). 4h time-stop if entered.\n\nSL: 0.7885  TP: 0.7840  R:R target: 3.1\n\nupdated 2026-04-28T06:07Z \u2014 fixed comp requirement to bullish \u226540 per counter-trend framework; event fired comp=+23 below threshold, WATCH.",
-      "current_price_ref": 0.78847,
-      "price_ref": {
-        "ts": "2026-04-27T14:18Z",
-        "price": null
-      },
-      "last_updated": "2026-04-24T07:17:00Z",
-      "updated_utc": "2026-04-28T06:07Z",
-      "entry_criterion": "arm LIMIT SELL at 0.7875 when |comp| \u2265 40 bullish extension (counter-trend: bullish = extension creating fade edge). M15 bar closes below 0.7875 with rejection wick \u22653p.",
-      "regime_context": "H1 up-sweep 2026-04-24T07:00Z wick=1.7p. comp=+23 (none; need \u226540 bullish for arming). USDCHF scalp disabled (pip-conv). 4h time-stop if entered.",
-      "sl": 0.7885,
-      "tp": 0.784,
-      "rr_target": "3.1",
-      "proximity": "USDCHF@0.78847; 9.7p ABOVE 0.7875 (comp=+23 none; need +40 bullish for arming). WATCH. 2026-04-28T07:27Z",
-      "alert_id": "usdchf_sweep_sell_7875",
-      "active": true
-    },
-    {
       "id": "audusd_m15fvg_buy_7143",
       "instrument": "AUDUSD",
       "level": 0.7143,
@@ -57,14 +33,14 @@
       "sl": 0.713,
       "tp": 0.7187,
       "rr_target": "2.4",
-      "current_price_ref": 0.71738,
+      "current_price_ref": 0.71703,
       "price_ref": {
         "ts": "2026-04-27T14:18Z",
         "price": null
       },
       "last_updated": "2026-04-27T15:09Z",
       "updated_utc": "2026-04-28T06:07Z",
-      "proximity": "AUDUSD@0.71738; 30.5p ABOVE 0.7143 (just outside 30p threshold). comp=+47 moderate-bull. VALIDATED (3f 4h=100%). LIMIT@0.7143 WORKING GTC. 2026-04-28T07:27Z",
+      "proximity": "AUDUSD@0.71703; 27.3p ABOVE 0.7143 (within 30p threshold). comp=+47 moderate-bull. VALIDATED (3f 4h=100%). LIMIT@0.7143 WORKING GTC. 2026-04-28T07:30Z",
       "validated": true,
       "alert_id": "audusd_fvg_buy_7143",
       "active": true
@@ -143,30 +119,6 @@
       "active": true
     },
     {
-      "id": "usdchf_m15sweep_7832_buy_watch",
-      "instrument": "USDCHF",
-      "level": 0.7832,
-      "emit_on": "cross_down",
-      "cooldown_sec": 1800,
-      "direction": "buy",
-      "note": "ENTRY: price retests 0.7832 swept zone; M15 bar closes AT or ABOVE 0.7832 with bullish rejection wick \u22653p from the low. WATCHLIST ONLY \u2014 arm LIMIT BUY when |comp| \u2265 40 bearish extension (counter-trend fade: bearish composite is the extension that creates the buy edge).\n\nCONTEXT: M15 down-sweep 2026-04-27T14:45Z, wick=1.1p at 0.78320, close=0.784285. comp=-26 weak bearish (need \u2264-40 to arm). USDCHF scalp disabled (pip-conv). 4h time-stop if entered. TP at 0.7875 (existing sell zone, usdchf_sweep_h1_sell_retest).\n\nSL: 0.7820  TP: 0.7875  R:R target: 3.6\n\nadded 2026-04-27T15:09Z \u2014 M15 liquidity_sweep down; counter-trend fade watchlist; arm at |comp|\u226540 bearish.",
-      "entry_criterion": "M15 retest of 0.7832 with bullish rejection wick \u22653p. WATCHLIST ONLY \u2014 arm at |comp|\u226540 bearish extension.",
-      "regime_context": "M15 down-sweep 14:45Z Apr27, wick=1.1p. comp=-26 weak bearish. Scalp disabled (pip-conv). 4h time-stop if entered. TP at 0.7875 sell zone.",
-      "sl": 0.782,
-      "tp": 0.7875,
-      "rr_target": "3.6",
-      "current_price_ref": 0.78847,
-      "price_ref": {
-        "ts": "2026-04-27T15:09Z",
-        "price": 0.784225
-      },
-      "last_updated": "2026-04-27T15:09Z",
-      "proximity": "USDCHF@0.78847; 54.7p ABOVE 0.7832 (3xH4ATR~58.8p, barely within). comp=+23 none (need \u2264-40 bearish ext). WATCH. 2026-04-28T07:27Z",
-      "updated_utc": "2026-04-28T06:07Z",
-      "alert_id": "usdchf_reclaim_buy_7832",
-      "active": true
-    },
-    {
       "id": "gold_4700_sell_resistance",
       "instrument": "GOLD",
       "level": 4700.0,
@@ -199,11 +151,51 @@
       "sl": 1.1675,
       "tp": 1.1727,
       "rr_target": "2.2",
-      "current_price_ref": 1.1699,
+      "current_price_ref": 1.1696,
       "last_updated": "2026-04-28T07:27Z",
       "updated_utc": "2026-04-28T07:27Z",
-      "proximity": "EURUSD@1.1699; 11.9p ABOVE 1.16871. comp=-23 none (need \u2264-40 bearish ext). WATCH. 2026-04-28T07:27Z",
+      "proximity": "EURUSD@1.1696; 8.9p ABOVE 1.16871. comp=-23 none (need \u2264-40 bearish ext). WATCH. 2026-04-28T07:30Z",
       "alert_id": "eurusd_m15sweep_116871_buy_watch",
+      "active": true
+    },
+    {
+      "id": "usdcad_m15sweep_136313_buy_watch",
+      "instrument": "USDCAD",
+      "level": 1.36313,
+      "emit_on": "cross_down",
+      "cooldown_sec": 1800,
+      "direction": "buy",
+      "note": "ENTRY: price retests 1.36313 swept extreme; M15 bar closes AT or ABOVE 1.36313 with bullish rejection wick \u22653p. Arm LIMIT BUY when |comp| \u2264 -40 bearish extension (counter-trend: bearish composite = extension creating the bounce edge).\n\nCONTEXT: M15 down-sweep 2026-04-28T07:15Z, wick=0.9p (small), close_inside=1.36386. comp=-22 none bearish (need \u2264-40 to arm). USDCAD scalp disabled (CAD quote). 4h time-stop if entered.\n\nSL: 1.36250  TP: 1.36967  R:R target: 10.2\n\nadded 2026-04-28T07:30Z \u2014 M15 down-sweep created fresh buy level; WATCH until comp\u2264-40 bearish extension.",
+      "entry_criterion": "M15 retest of 1.36313 with bullish rejection wick \u22653p. Arm at |comp| \u2264 -40 bearish extension.",
+      "regime_context": "M15 down-sweep 07:15Z Apr28, wick=0.9p. comp=-22 none. Scalp disabled (CAD quote). 4h time-stop.",
+      "sl": 1.3625,
+      "tp": 1.36967,
+      "rr_target": "10.2",
+      "current_price_ref": 1.3641,
+      "last_updated": "2026-04-28T07:30Z",
+      "updated_utc": "2026-04-28T07:30Z",
+      "proximity": "USDCAD@1.3641; 9.7p ABOVE 1.36313. comp=-22 none (need \u2264-40 bearish ext). WATCH. 2026-04-28T07:30Z",
+      "alert_id": "usdcad_m15sweep_136313_buy_watch",
+      "active": true
+    },
+    {
+      "id": "usdchf_h1fvg_buy_78750",
+      "instrument": "USDCHF",
+      "level": 0.7875,
+      "emit_on": "cross_down",
+      "cooldown_sec": 1800,
+      "direction": "buy",
+      "note": "ENTRY: price pulls back to 0.78750 H1 FVG zone (0.78750-0.78842 unmitigated); M15 bar closes AT or ABOVE 0.78750 with bullish rejection wick \u22652p. Arm LIMIT BUY when comp \u2265 +40 bullish (moderate+).\n\nCONTEXT: H1 FVG bull at 0.78750-0.78842 unmitigated (1 bar ago). USDCHF trending up: comp=+23 none, M15 BOS bull@0.78601. Two stale sell alerts removed (dist>3\u00d7H4ATR). Scalp disabled (pip-conv). 4h time-stop if entered.\n\nSL: 0.78620  TP: 0.79200  R:R target: 3.5\n\nadded 2026-04-28T07:30Z \u2014 replaced stale USDCHF sell alerts; H1 FVG buy zone anchored to fresh structure.",
+      "entry_criterion": "M15 retest of 0.78750 H1 FVG with bullish wick \u22652p. Arm at comp \u2265 +40 bullish.",
+      "regime_context": "H1 FVG bull 0.78750-0.78842 unmitigated. comp=+23 none (need +40). Scalp disabled. 4h time-stop.",
+      "sl": 0.7862,
+      "tp": 0.792,
+      "rr_target": "3.5",
+      "current_price_ref": 0.7887,
+      "last_updated": "2026-04-28T07:30Z",
+      "updated_utc": "2026-04-28T07:30Z",
+      "proximity": "USDCHF@0.78870; 12p ABOVE 0.78750. comp=+23 none (need +40 bullish). WATCH. 2026-04-28T07:30Z",
+      "alert_id": "usdchf_h1fvg_buy_78750",
       "active": true
     }
   ],
@@ -268,6 +260,6 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-28T06:07Z",
-  "last_updated": "2026-04-28T06:07Z"
+  "last_updated_utc": "2026-04-28T07:30Z",
+  "last_updated": "2026-04-28T07:30Z"
 }
