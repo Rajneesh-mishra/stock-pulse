@@ -1,11 +1,17 @@
 {
   "pid": 80301,
-  "last_step_utc": "2026-04-28T07:37:57.438514+00:00",
-  "heartbeat": 50550,
+  "last_step_utc": "2026-04-28T07:47:34.683931+00:00",
+  "heartbeat": 51030,
   "reason": "ok",
   "shadow": false,
   "daily_pnl_usd": 0.0,
   "open": {},
   "halted": {},
-  "actions": []
+  "actions": [
+    {
+      "epic": "EURUSD",
+      "status": "rejected",
+      "detail": "REJECT: Already 4 positions open (max 4); REJECT: Already 2 positions in 'dollar_macro' theme (max 2)"
+    }
+  ]
 }

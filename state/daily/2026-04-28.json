@@ -891,5 +891,39 @@
     "daily_pnl": -17.54,
     "binary": "FOMC_APR2026 T-35.5h caution_from_18:00Z_today",
     "regime": "GOLD_strong_bear EURUSD_bear_none AUDUSD_mod_bull OIL_mod_bull USDCAD_bear_none FOMC_caution_pre"
+  },
+  {
+    "tick_ts_utc": "2026-04-28T07:47Z",
+    "events_processed": 9,
+    "events": [
+      "position_opened EURUSD 65d0 (confirming)",
+      "position_opened GBPUSD 65dd (opened/closed same tick)",
+      "position_opened GBPUSD 660d (confirming)",
+      "position_closed GBPUSD 65dd SL_hit pnl=-$0.21",
+      "position_opened GBPUSD 682a",
+      "position_closed GBPUSD 660d SL_hit pnl=-$0.45",
+      "position_closed EURUSD 62fa TP_hit pnl=+$0.38",
+      "position_opened EURUSD 6874",
+      "position_opened GBPUSD 6890"
+    ],
+    "trades_opened": 3,
+    "trades_closed": 3,
+    "net_pnl_this_tick": -0.28,
+    "daily_pnl": -17.82,
+    "open_positions": 4,
+    "working_orders": 1,
+    "binary_event": "FOMC_APR2026 T-10.3h (caution@18:00Z)",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "attention": {
+      "EURUSD": "2 scalps SELL (65d0+6874), comp=-23 none",
+      "GBPUSD": "2 scalps BUY (682a+6890), comp=+13.5 none",
+      "AUDUSD": "LIMIT@0.7143 GTC, comp=+47 moderate",
+      "USDJPY": "WATCH @160.0 fade, comp=+26.5 weak",
+      "USDCAD": "NONE, comp=-22 none",
+      "USDCHF": "WATCH@0.7875 FVG, comp=+23 none",
+      "GOLD": "ARMED@4721 SELL blocked (pos cap=4), comp=-67 strong",
+      "OIL": "WATCH@93.23 buy, comp=+45 moderate"
+    },
+    "scalp_status": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=OFF(wr11%) JPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
   }
 ]
