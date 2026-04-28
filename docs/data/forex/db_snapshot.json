@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-28T06:10:41.060920+00:00",
+  "generated_at": "2026-04-28T06:20:44.974250+00:00",
   "counts": {
     "trades": 22,
-    "events": 5335,
+    "events": 5350,
     "ticks": 59,
-    "regime_snapshots": 138,
+    "regime_snapshots": 139,
     "broker_positions": 0,
     "counterfactuals": 98
   },
@@ -475,6 +475,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-28T06:07Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "2026-04-28T06:07Z forex auto \u2014 1 evt: USDCHF level_cross usdchf_sweep_h1_sell_retest@0.787515 (comp=+23 bullish; |comp|=23 < 25 counter-trend threshold \u2192 WATCH, no entry). GOLD@4639 comp=-67 strong bear: gold_escalation_buy_zone REMOVED (4700 buy thesis invalidated by breakdown). gold_4700_sell_resistance ADDED (resistance-flip sell, WATCH, outside proximity). gbpusd_sweep_135255_buy_watch REMOVED (stale, position closed). usdchf_sweep_h1_sell_retest note FIXED (counter-trend: need bullish \u2265+40, was wrongly set to bearish \u2264-40). AUDUSD LIMIT@0.7143 WORKING (broker confirmed; price@0.7174 comp=+47 moderate). OIL@96.69 comp=+45 moderate-bull; buy alerts 93.23/93.51 intact (pullback zones). FOMC CAUTION activates 18:00Z today (~11.9h). Ceasefire extended indef, peace talks STALLED; gold sold off on reduced safe-haven + inflation risk reassessment. 0 pos 1 working (AUDUSD@0.7143). daily_pnl=-$17.72. attention_covered=9/9.",
+      "binary_event_name": "FOMC_APR2026",
+      "binary_event_active": 1,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
       "ts_utc": "2026-04-28T06:00Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-28T06:00Z forex auto \u2014 5 evt: OIL/GBPUSD position_closed confirmed (both logged prev tick: OIL pnl=-$3.58, GBPUSD pnl=+$0.65). GBPUSD level_cross cross_down 1.35255 (old alert stale, REMOVED). GBPUSD liq_sweep 1.35203 M15 (new watchlist added; readiness weak comp=+25.5). AUDUSD liq_sweep 0.71740 M15 0.9p wick (shallow; existing LIMIT@0.7143 covers thesis, no new entry). ACCOUNT FLAT: 0 pos 1 working (AUDUSD LIMIT@0.7143 GTC, broker confirmed). GOLD strong bear (comp=-67 all TF agree); broke below 4700; gold_escalation_buy_zone REMOVED, gold_4700_sell_resistance_watch ADDED. gold_safehaven_4775 REMOVED (142p away, Rule1 staleness). GBPUSD scalp bias reset neutral (comp=+25.5 weak). FOMC Apr28-29: caution activates 18:00Z today (~12h). OIL comp=+45 mod bull at 96.97; buy_retest alerts 93.23/93.51 maintained as pullback zones. USDCHF SELL retest 0.787505 within 1.85p \u2014 watchlist. daily_pnl=-$17.72 float=0. attention_covered=9/9.",
@@ -542,14 +550,6 @@
       "ts_utc": "2026-04-28T03:10Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-28T03:10Z forex auto \u2014 0 evt: heartbeat. GBPUSD BUY@1.35254 age=1.3h UPL=+$1.90 thesis-intact BoE-hawkish bid=1.35292. OIL SELL@96.226 age=0.8h UPL=+$2.26 fade working bid=96.012; ceasefire-fragility risk noted SL@96.6. GOLD 4672.9 approaching 4721 sell zone (48p, readiness=weak). USDJPY 159.28 approaching intervention 160.0 (72p, readiness=none). AUDUSD 0.71792 moderate-bull, 36p above BUY@0.7143 (threshold 30p, just outside; GBPUSD correlated). FOMC T\u224839h (>24h window, normal ops). 2 pos 0 working. daily_pnl=-$16.82 float\u2248+$4.16. attention_covered=9/9.",
-      "binary_event_name": "FOMC_APR2026",
-      "binary_event_active": 1,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-04-28T02:52Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "2026-04-28T02:52Z forex auto \u2014 1 evt: GOLD level_cross gold_sweep_4669_buy_retest @4669.59 (comp=-28 weak-bear, need \u2264-40 to arm counter-BUY; WATCH). USDCAD SELL closed@1.36397 H4-FVG-premise consumed (mitigated), M15 bullish, pnl\u2248-$4.27. GBPUSD BUY@1.35254 age=59min UPL\u2248-$2.0 narrative time_exit=05:53Z. OIL SELL@96.226 age=28min UPL=+$2.33 fade working. FOMC T\u224839.1h caution@18:00Z Apr28. 2 pos 0 working. daily_pnl=-$14.79 float\u2248+$0.33. attention_covered=9/9.",
       "binary_event_name": "FOMC_APR2026",
       "binary_event_active": 1,
       "binary_event_deadline": "2026-04-29T18:00Z"

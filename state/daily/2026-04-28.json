@@ -789,5 +789,36 @@
     "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=DISABLED(wr=11%/19t) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
     "news": "Ceasefire extended indef, US-Iran peace talks STALLED (Apr26 Bloomberg). Gold sold off on inflation risk + reduced safe-haven. FOMC Apr29 18:00Z T-35.9h, 94% hold priced.",
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED"
+  },
+  {
+    "tick_ts_utc": "2026-04-28T06:16Z",
+    "events_processed": 12,
+    "events_actionable": 1,
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "working_orders": 1,
+    "daily_pnl": -17.72,
+    "account_balance": 972.44,
+    "binary_event": "FOMC_APR2026 (caution@18:00Z today, blackout@17:30Z Apr29)",
+    "actions": [
+      "AUDUSD H1 liquidity_sweep@0.71731 processed: wick 2.3p (< H1ATR 7.9p), R:R<1.5 with ATR stop \u2192 NO entry armed",
+      "ADD alert: audusd_h1sweep_71731_buy_watch (watchlist, not armed)",
+      "KEEP: audusd_m15fvg_buy_7143 LIMIT@0.7143 working (GTC)",
+      "KEEP: gold_sweep_4721_sell_retest (gap 86p < 3xH4ATR=$103, KEEP)",
+      "11 bar_close events consumed (noise)"
+    ],
+    "attention_matrix": {
+      "EURUSD": "WATCH/ACTIVE/none: comp=-13; sweep@1.17186, 15.8p away, readiness none",
+      "GBPUSD": "WATCH/ACTIVE/weak: comp=+25.5; sweep@1.35203, 4.8p away, need moderate",
+      "AUDUSD": "ARMED/OFF/moderate: LIMIT@0.7143 working; comp=+47 bull; scalp off wr=11%",
+      "USDJPY": "WATCH/OFF/none: comp=-1.5; intervention fade@160.0, 79.3p away; pip-conv",
+      "USDCAD": "NONE/OFF/none: comp=-22; no alert; pip-conv",
+      "USDCHF": "WATCH/OFF/none: comp=+23; counter-trend sell@0.787505 needs +40 bull",
+      "GOLD": "WATCH/N/A/strong: comp=-67 bear; 4700/4721 sell alerts, price 65-86p below; spread 5p",
+      "OIL_CRUDE": "WATCH/N/A/moderate: comp=+45; buy@93.23/93.51, price 96.67 (3.1-3.5 away); spread 4p"
+    },
+    "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "notes": "FOMC caution activates ~T-11.8h. No open positions. 1 working LIMIT (AUDUSD@0.7143). GOLD strong bear (-67), OIL moderate bull (+45). Sweep at 0.71731 added to AUDUSD watchlist (shallow wick, watchlist only)."
   }
 ]

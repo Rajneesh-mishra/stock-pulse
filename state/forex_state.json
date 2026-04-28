@@ -1,8 +1,8 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-28T06:07Z",
-  "state_ts_utc": "2026-04-28T06:07Z",
-  "regime_note": "2026-04-28T06:07Z forex auto \u2014 1 evt: USDCHF level_cross usdchf_sweep_h1_sell_retest@0.787515 (comp=+23 bullish; |comp|=23 < 25 counter-trend threshold \u2192 WATCH, no entry). GOLD@4639 comp=-67 strong bear: gold_escalation_buy_zone REMOVED (4700 buy thesis invalidated by breakdown). gold_4700_sell_resistance ADDED (resistance-flip sell, WATCH, outside proximity). gbpusd_sweep_135255_buy_watch REMOVED (stale, position closed). usdchf_sweep_h1_sell_retest note FIXED (counter-trend: need bullish \u2265+40, was wrongly set to bearish \u2264-40). AUDUSD LIMIT@0.7143 WORKING (broker confirmed; price@0.7174 comp=+47 moderate). OIL@96.69 comp=+45 moderate-bull; buy alerts 93.23/93.51 intact (pullback zones). FOMC CAUTION activates 18:00Z today (~11.9h). Ceasefire extended indef, peace talks STALLED; gold sold off on reduced safe-haven + inflation risk reassessment. 0 pos 1 working (AUDUSD@0.7143). daily_pnl=-$17.72. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-28T06:16Z",
+  "state_ts_utc": "2026-04-28T06:16Z",
+  "regime_note": "2026-04-28T06:16Z forex auto \u2014 1 evt: AUDUSD H1 liquidity_sweep@0.71731 (down-wick 2.3p, close@0.71771, bias BUY). AUDUSD comp=+47 moderate-bull \u2014 sweep alert ADDED (audusd_h1sweep_71731_buy_watch) but NO entry armed (wick 2.3p < H1ATR 7.9p; with ATR stop R:R=0.62 < 1.5 threshold; with tight 3.6p stop SL below ATR noise). Existing LIMIT@0.7143 WORKING (GTC). GOLD@4634.69 comp=-67 strong bear; 4721 sell alert KEEP (86p gap < 3xH4ATR=$103); gold_4700_sell_resistance WATCH. GBPUSD@1.35155 comp=+25.5 weak, 4.8p below 1.35203 sweep alert \u2014 not armed. FOMC caution activates 18:00Z today (now T-11.8h). 0 pos 1 working (AUDUSD@0.7143). daily_pnl=-$17.72. attention_covered=9/9.",
   "regime_note_prev": "2026-04-28T06:00Z forex auto \u2014 5 evt: OIL/GBPUSD position_closed confirmed (both logged prev tick: OIL pnl=-$3.58, GBPUSD pnl=+$0.65). GBPUSD level_cross cross_down 1.35255 (old alert stale, REMOVED). GBPUSD liq_sweep 1.35203 M15 (new watchlist added; readiness weak comp=+25.5). AUDUSD liq_sweep 0.71740 M15 0.9p wick (shallow; existing LIMIT@0.7143 covers thesis, no new entry). ACCOUNT FLAT: 0 pos 1 working (AUDUSD LIMIT@0.7143 GTC, broker confirmed). GOLD strong bear (comp=-67 all TF agree); broke below 4700; gold_escalation_buy_zone REMOVED, gold_4700_sell_resistance_watch ADDED. gold_safehaven_4775 REMOVED (142p away, Rule1 staleness). GBPUSD scalp bias reset neutral (comp=+25.5 weak). FOMC Apr28-29: caution activates 18:00Z today (~12h). OIL comp=+45 mod bull at 96.97; buy_retest alerts 93.23/93.51 maintained as pullback zones. USDCHF SELL retest 0.787505 within 1.85p \u2014 watchlist. daily_pnl=-$17.72 float=0. attention_covered=9/9.",
   "open_positions": [],
   "watchlist": [
@@ -1054,6 +1054,19 @@
       "rr_target": 4.5,
       "note": "ENTRY: BUY LIMIT at 1.35203 on pullback retest; M15 bullish rejection wick confirms. WATCHLIST ONLY \u2014 arm when readiness >= moderate (current: weak, comp=+25.5).\n\nCONTEXT: Fresh tape-created bounce point: M15 down-sweep 1.35203 at 05:45Z Apr28 (wick 1.0p, close inside 1.35210). Prior gbpusd_sweep_135255 position closed. Cross_down through 1.35255 confirmed structure weakness. Level at 1.35203 = tape fresh support. FOMC Apr28-29 elevates caution; half-size if armed during caution window.\n\nSL: 1.3505  TP: 1.3575  R:R target: 4.5\n\nadded 2026-04-28T06:00Z \u2014 new sweep event, replacing stale 1.35255 alert.",
       "last_updated": "2026-04-28T06:00Z"
+    },
+    {
+      "alert_id": "audusd_h1sweep_71731_buy_watch",
+      "instrument": "AUDUSD",
+      "direction": "BUY",
+      "level": 0.71731,
+      "note": "ENTRY: BUY LIMIT on retest of 0.71731 swept zone; M15 bullish rejection wick at level required.\n\nCONTEXT: H1 down-sweep at 0.71731 (wick 2.3p, close at 0.71771, bar 06:00Z Apr28). Day bull bias comp=+47 moderate. Bear FVG at 0.7178-0.7182 is immediate resistance. NOTE: wick shallow (2.3p < H1ATR 7.9p); with ATR-appropriate stop R:R=0.62 \u2014 WATCHLIST ONLY until deeper re-sweep creates viable SL room.\n\nSL: 0.71695  TP: 0.71785  R:R target: 1.5\n\nAdded 2026-04-28T06:16Z auto: liquidity_sweep event; no entry armed, R:R<1.5 with ATR stop",
+      "entry_criterion": "BUY LIMIT on retest of 0.71731 swept zone; M15 bullish rejection wick at level",
+      "regime_context": "H1 down-sweep at 0.71731 (wick 2.3p). Day bull bias comp=+47 moderate. Bear FVG at 0.7178-0.7182 caps TP.",
+      "sl": 0.71695,
+      "tp": 0.71785,
+      "rr_target": 1.5,
+      "last_updated": "2026-04-28T06:16Z"
     }
   ],
   "structure_watch": [
