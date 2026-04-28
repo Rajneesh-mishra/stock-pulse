@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-28T02:20Z",
+  "last_updated_by_claude": "2026-04-28T02:52Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -42,30 +42,6 @@
       "tp": 158.5,
       "rr_target": "3.0",
       "alert_id": "usdjpy_intervention_sell_160",
-      "active": true
-    },
-    {
-      "id": "gold_safehaven_continuation_buy",
-      "instrument": "GOLD",
-      "level": 4775.0,
-      "emit_on": "cross_up",
-      "cooldown_sec": 1800,
-      "direction": "buy",
-      "note": "ENTRY: price breaks above 4775 with an M15 close above + bullish FVG on the breakout bar. Structural continuation, entry on the break.\n\nCONTEXT: Safe-haven bid persists on Hormuz/Iran escalation backdrop. Thesis invalidates if BTC pushes above +5% day (pure risk-on) while gold rolls.\n\nSL: 4730  TP: 4810  R:R target: 2.0+\n\nrewritten 2026-04-23T19:34:33+00:00 to separate entry criterion (technical, sufficient) from regime context (narrative, not gating).",
-      "current_price_ref": 4698.12,
-      "price_ref": {
-        "ts": "2026-04-27T14:18Z",
-        "price": null
-      },
-      "last_updated": "2026-04-23T19:34:33+00:00",
-      "proximity": "GOLD@4698.12; dist=76.9pts BELOW 4775 (3\u00d7H4ATR=94.8). comp=-20.5 none (trending away). WATCH \u2014 arm on cross_up above 4775 + comp\u2265+40 bull.",
-      "updated_utc": "2026-04-28T00:13Z",
-      "entry_criterion": "price breaks above 4775 with an M15 close above + bullish FVG on the breakout bar. Structural continuation, entry on the break.",
-      "regime_context": "Safe-haven bid thesis now UPGRADED: Trump ordered US Navy to attack Iranian mine-laying boats (Apr 23), 3rd tanker seized, Brent $105+. Hormuz remains blocked. Thesis invalidates only if BTC >+5% day (pure risk-on) while gold rolls AND Iran-US de-escalates. Currently comp bears suppress, but escalation ladder could flip that quickly.",
-      "sl": 4730,
-      "tp": 4810,
-      "rr_target": "2.0+",
-      "alert_id": "gold_escalation_buy_4775",
       "active": true
     },
     {
@@ -111,8 +87,8 @@
         "price": null
       },
       "last_updated": "2026-04-27T15:09Z",
-      "updated_utc": "2026-04-28T00:13Z",
-      "proximity": "AUDUSD@0.71918; 48.8p ABOVE 0.7143 (3\u00d7H4ATR=57.9p, within threshold). comp=+66 strong-bull. Corr-cap 2/2 (USDCAD SELL + GBPUSD LIMIT). VALIDATED (3f 4h=100%). WATCH \u2014 arm LIMIT when price retraces within 30p AND corr-cap opens AND comp\u2265+40.",
+      "updated_utc": "2026-04-28T02:52Z",
+      "proximity": "AUDUSD@0.7179; 36.0p ABOVE 0.7143 (>30p threshold). comp=+47 moderate-bull. VALIDATED (3f 4h=100%). Corr cap: 1/2 (GBPUSD BUY only, USDCAD closed). Arm LIMIT when price retraces within 30p AND comp\u226540. 2026-04-28T02:52Z",
       "validated": true,
       "alert_id": "audusd_fvg_buy_7143",
       "active": true
@@ -185,8 +161,8 @@
         "price": 1.35508
       },
       "last_updated": "2026-04-27T16:01Z",
-      "updated_utc": "2026-04-28T02:20Z",
-      "proximity": "POSITION OPEN @1.35254 BUY. UPL=-$0.95. Time exit 05:53Z Apr28. comp=+33 weak-bull. 2026-04-28T02:20Z",
+      "updated_utc": "2026-04-28T02:52Z",
+      "proximity": "POSITION OPEN @1.35254 BUY. UPL\u2248-$2.0. Time exit 05:53Z Apr28. comp=+33 weak-bull. 2026-04-28T02:52Z",
       "alert_id": "gbpusd_sweep_152555_buy_retest",
       "active": true
     },
@@ -234,8 +210,8 @@
         "price": null
       },
       "last_updated": "2026-04-27T11:43Z",
-      "updated_utc": "2026-04-28T01:06Z",
-      "proximity": "GOLD@4687; dist=12.97pts BELOW 4700 (3xH4ATR=95.6pts). comp=-28 weak-bear; need |comp|\u226540 bull extension for counter-trend BUY arm. WATCH. 2026-04-28T01:06Z",
+      "updated_utc": "2026-04-28T02:52Z",
+      "proximity": "GOLD@4669.29; 30.7pts BELOW level 4700 (3\u00d7H4ATR=100.2). comp=-28 weak-bear; need +40 bull ext to arm counter-buy. Price swept through 4700 \u2014 4669 cluster is the fresh demand. WATCH. 2026-04-28T02:52Z",
       "alert_id": "gold_safehaven_buy_4700",
       "active": true
     },
@@ -246,18 +222,18 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "ENTRY: LIMIT SELL WORKING @ 96.218 (bear OB bottom, placed 2026-04-28T02:09Z). comp=+43 moderate bullish extension \u226540 threshold \u2014 counter-trend fade ARMED. Cancel if OIL closes above SL 96.60 (bear OB top broken).\n\nCONTEXT: M15 up-sweep 00:30Z Apr28 at 95.789; price extended to 95.928 (01:01Z); now at 96.022. Bear OB bottom=96.218, top=96.5705. Fade entry at OB bottom. Daily/H4/H1/M15 all bullish (comp=+43). Counter-trend \u2014 bullish extension IS the corroboration. Hormuz risk keeps oil bid; 4h time-stop on fill. R:R = (96.218-94.4)/(96.6-96.218) = 4.76:1.\n\nSL: 96.60  TP: 94.40  R:R target: 4.76\n\nupdated 2026-04-28T02:20Z \u2014 LIMIT SELL ARMED @ 96.218 (bear OB); comp=+43 counter-threshold met; dealId 00000000-4e79-017d-044a-beb40055311e.",
-      "entry_criterion": "LIMIT SELL WORKING @ 96.218. Cancel if OIL closes above 96.60 (OB top).",
+      "note": "ENTRY: POSITION OPEN \u2014 SELL 13 lots OIL @ 96.226 (filled from LIMIT, 2026-04-28T02:23Z). Time exit 10:23Z Apr28 (8h counter_trend_fade cap). Close at market on time exit OR if OIL closes ABOVE 96.60 (SL \u2014 bear OB top broken). Fade working: bid=96.064 as of 02:28Z.\n\nCONTEXT: M15 up-sweep 00:30Z Apr28 @95.789; extended to 96.26 (bear OB bottom=96.218). Iran ceasefire proposal 2026-04-28 driving oil lower. Hormuz still closed \u2014 bullish structural bias, but near-term fade into OB at +43 comp extension. Bear OB: bottom=96.218, top=96.5705. SL beyond OB top.\n\nSL: 96.60  TP: 94.40  R:R target: 4.76\n\nupdated 2026-04-28T02:28Z \u2014 position open, fade working +$1.59",
+      "entry_criterion": "position open - time exit 10:23Z or SL 96.60",
       "regime_context": "comp=+43 moderate bullish (counter-threshold met). Bear OB 96.218-96.5705. All TFs bullish. Counter-fade. 4h time-stop on fill.",
       "sl": 96.6,
       "tp": 94.4,
-      "rr_target": "4.76",
+      "rr_target": 4.76,
       "current_price_ref": 95.87,
-      "last_updated": "2026-04-28T01:13Z",
-      "proximity": "OIL@96.022; LIMIT SELL working @96.218 (16cts above). comp=+43 counter-threshold met. bear OB bottom. 2026-04-28T02:20Z",
+      "last_updated": "2026-04-28T02:28Z",
+      "proximity": "POSITION OPEN @96.226 SELL. UPL=+$2.33 (bid=96.007). comp=+44 mod-bull extension, fade working. Time exit 10:23Z Apr28. 2026-04-28T02:52Z",
       "alert_id": "oil_sweep_9579_sell_retest",
       "active": true,
-      "updated_utc": "2026-04-28T02:20Z",
+      "updated_utc": "2026-04-28T02:52Z",
       "limit_order": {
         "dealId": "00000000-4e79-017d-044a-beb40055311e",
         "placed_utc": "2026-04-28T02:09Z",
@@ -306,8 +282,8 @@
       "rr_target": "3.5",
       "current_price_ref": 4677.39,
       "last_updated": "2026-04-28T02:20Z",
-      "updated_utc": "2026-04-28T02:20Z",
-      "proximity": "GOLD@4677; dist=7.8pts ABOVE 4669.59 (within 3\u00d7H4ATR=100.2). comp=-28 weak-bear (need \u2264-40 to arm counter-BUY). WATCH. 2026-04-28T02:20Z",
+      "updated_utc": "2026-04-28T02:52Z",
+      "proximity": "GOLD@4669.29; AT level 4669.59 (dist=-0.3pts). comp=-28 weak-bear (need \u2264-40 for counter-BUY). H1 bear FVG 4679.89-4690.5 overhead. WATCH \u2014 not arming. 2026-04-28T02:52Z",
       "alert_id": "gold_sweep_4669_buy_retest",
       "active": true
     }
@@ -373,5 +349,6 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-28T02:20Z"
+  "last_updated_utc": "2026-04-28T02:20Z",
+  "last_updated": "2026-04-28T02:52Z"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T02:19:43.297813Z",
+  "generated_at": "2026-04-28T02:55:15.454855Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -511,6 +511,101 @@
       "binary_event": "FOMC_APR2026 T-39.7h (caution@18:00Z Apr28)",
       "attention_covered": "9/9",
       "notes": "GBPUSD LIMIT filled at 1.35254 (prev tick armed @1.352555). OIL SELL LIMIT @96.218 (bear OB bottom) confirmed working \u2014 comp=+43 counter-threshold met. USDCAD SL 3.1p away; H4 bear FVG resistance at 1.36384 holding. GOLD down-sweep 4669.59 added to watchlist. USDJPY up-sweep 159.555 tiny wick, no action."
+    },
+    {
+      "tick_ts_utc": "2026-04-28T02:28Z",
+      "events_processed": 2,
+      "events": [
+        "position_opened OIL_CRUDE SELL@96.226",
+        "level_cross oil_sweep_9579_sell_retest cross_up"
+      ],
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "trades_modified": 0,
+      "open_positions": [
+        {
+          "epic": "USDCAD",
+          "dir": "SELL",
+          "entry": 1.36106,
+          "upl": -5.7,
+          "sl": 1.3642,
+          "time_exit": "13:50Z",
+          "note": "2.9p from SL HIGH-RISK"
+        },
+        {
+          "epic": "GBPUSD",
+          "dir": "BUY",
+          "entry": 1.35254,
+          "upl": -0.8,
+          "sl": 1.3515,
+          "time_exit": "05:53Z"
+        },
+        {
+          "epic": "OIL_CRUDE",
+          "dir": "SELL",
+          "entry": 96.226,
+          "upl": 1.59,
+          "sl": 96.6,
+          "time_exit": "10:23Z",
+          "note": "fade working"
+        }
+      ],
+      "working_orders": 0,
+      "daily_pnl_locked": -10.52,
+      "float_pnl": -4.91,
+      "account_balance": 975.72,
+      "audit": {
+        "alerts_removed": [
+          "gold_safehaven_continuation_buy"
+        ],
+        "alerts_modified": [
+          "oil_sweep_9579_sell_retest"
+        ],
+        "alerts_kept": 10,
+        "news": "Hormuz closed, Iran ceasefire proposal\u2192oil falling; FOMC Apr29 hold 99.9%"
+      },
+      "attention_matrix": {
+        "EURUSD": "swing=NONE scalp=OFF readiness=none; no setup, USD flat pre-FOMC",
+        "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=weak; position open narrative thesis",
+        "AUDUSD": "swing=WATCH scalp=ACTIVE readiness=moderate; correlation cap (3 USD-short pos)",
+        "USDJPY": "swing=WATCH scalp=OFF readiness=weak; 160 intervention zone 49.9p away",
+        "USDCAD": "swing=WATCH scalp=OFF readiness=weak; position open 2.9p from SL HIGH-RISK",
+        "USDCHF": "swing=WATCH scalp=OFF readiness=none; 0.7875 sell zone 0.9p away, readiness<mod",
+        "GOLD": "swing=WATCH scalp=N/A readiness=weak; escalation zone 4700 (24p below), wait comp\u226540",
+        "OIL_CRUDE": "swing=ARMED scalp=N/A readiness=moderate; position open SELL@96.226 fade working"
+      }
+    },
+    {
+      "tick_ts_utc": "2026-04-28T02:52Z",
+      "events_processed": 2,
+      "events": [
+        "GOLD level_cross gold_sweep_4669_buy_retest @4669.59 \u2014 comp=-28 weak, need \u2264-40 to arm; WATCH",
+        "USDCAD position_closed (daemon event) \u2014 confirmed closed"
+      ],
+      "actions": [
+        "CLOSED USDCAD SELL@1.36106 \u2014 H4 FVG premise consumed (mitigated), M15 bullish, 2.3p from SL. pnl\u2248-$4.27"
+      ],
+      "positions_open": [
+        "GBPUSD BUY@1.35254 UPL\u2248-$2.0 time_exit=05:53Z",
+        "OIL SELL@96.226 UPL=+$2.33 time_exit=10:23Z"
+      ],
+      "working_orders": [],
+      "daily_pnl_realized": -14.79,
+      "float_approx": 0.33,
+      "account_balance": 976.87,
+      "fomc_t_minus_h": 39.1,
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "attention_matrix": {
+        "EURUSD": "swing=NONE scalp=ACTIVE readiness=none comp=+3",
+        "GBPUSD": "swing=ARMED scalp=ACTIVE readiness=weak comp=+33 position_open time_exit=05:53Z",
+        "AUDUSD": "swing=WATCH scalp=OFF readiness=moderate comp=+47 VALIDATED 36p above level corr-cap=1/2",
+        "USDJPY": "swing=WATCH scalp=OFF readiness=weak comp=+29 65p below 160.0",
+        "USDCAD": "swing=NONE scalp=OFF readiness=weak comp=-27 position_closed",
+        "USDCHF": "swing=WATCH scalp=OFF readiness=none comp=+23 need bearish to arm alerts",
+        "GOLD": "swing=WATCH scalp=N/A readiness=weak comp=-28 AT 4669 level need -40 to arm",
+        "OIL_CRUDE": "swing=ARMED scalp=N/A readiness=moderate comp=+44 position_open time_exit=10:23Z"
+      },
+      "scalp_audit": "EURUSD=KEEP(active/off-session) GBPUSD=KEEP(bull-bias/off-session) AUDUSD=KEEP_DISABLED(wr=11%/19t) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
     }
   ]
 }

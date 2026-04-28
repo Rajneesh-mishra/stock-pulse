@@ -1,28 +1,10 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-28T02:20Z",
-  "state_ts_utc": "2026-04-28T02:20Z",
-  "regime_note": "2026-04-28T02:20Z forex auto \u2014 6 evt: GBPUSD LIMIT filled @1.35254 (position_opened); OIL level_cross oil_sweep_9579 (comp=+43\u226540 counter-threshold met, SELL LIMIT working @96.218 bear OB); USDJPY liq_sweep 159.555 (wick=1.6p tiny, comp=+29<40 WATCH); GOLD liq_sweep 4669.59 (wick=30.9p, comp=-28<40 WATCH, added watchlist); GBPUSD liq_sweep 1.352315 (wick=0.7p noise, pos open). USDCAD SELL@1.36106 age=12.5h UPL=-$4.15 SL-3.1p comp=-27 weak-bear H4-FVG-resist 1.36384 holds; time_exit=13:50Z Apr28. GBPUSD BUY@1.35254 age=0.4h UPL=-$0.95 thesis-narrative time_exit=05:53Z Apr28 comp=+33 weak-bull. OIL SELL LIMIT@96.218 SL=96.6 TP=94.4 R:R=4.76 counter-fade (comp=+43) working. FOMC T\u224839.7h caution@18:00Z Apr28. 2 pos 1 working. daily_pnl=-$10.52 float\u2248-$5.10. attention_covered=9/9.",
-  "regime_note_prev": "2026-04-28T01:06Z forex auto \u2014 0 evt: heartbeat. USDCAD SELL@1.36106 age=11.5h UPL=-$2.28 comp=-43.5 mod-bear; DAY FVG bear bottom=1.36244 acting as resistance; SL=1.3642 (1.59p from offer); time_exit 13:50Z Apr28 (pre-FOMC). GBPUSD LIMIT@1.352555 working (bid 7.4p above); comp=+35 weak-bull \u2014 M15 bearish Asia session but H4/Day bullish; limit in Day bull FVG (1.35235-1.35315) \u2014 KEEP. AUDUSD comp=+66 strong-bull corr-cap-full. OIL oil_sweep_9579 SELL level=95.789 dist=0.15pts (comp=+37 weak, need +40 to arm). FOMC 2026-04-29T18:00Z T\u224840.9h; caution activates ~18:00Z Apr28 (~17h away). 1 pos 1 working. daily_pnl=-$10.52 float=-$2.28. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-28T02:52Z",
+  "state_ts_utc": "2026-04-28T02:52Z",
+  "regime_note": "2026-04-28T02:52Z forex auto \u2014 1 evt: GOLD level_cross gold_sweep_4669_buy_retest @4669.59 (comp=-28 weak-bear, need \u2264-40 to arm counter-BUY; WATCH). USDCAD SELL closed@1.36397 H4-FVG-premise consumed (mitigated), M15 bullish, pnl\u2248-$4.27. GBPUSD BUY@1.35254 age=59min UPL\u2248-$2.0 narrative time_exit=05:53Z. OIL SELL@96.226 age=28min UPL=+$2.33 fade working. FOMC T\u224839.1h caution@18:00Z Apr28. 2 pos 0 working. daily_pnl=-$14.79 float\u2248+$0.33. attention_covered=9/9.",
+  "regime_note_prev": "2026-04-28T02:28Z forex auto \u2014 2 evt: OIL position_opened SELL@96.226 (LIMIT filled); OIL level_cross oil_sweep_9579 informational. USDCAD HIGH-RISK FVG broken. GBPUSD BUY age=0.6h. 3 pos 0 working. daily_pnl=-$10.52.",
   "open_positions": [
-    {
-      "dealId": "00000000-4e77-6243-044a-beb40055311e",
-      "epic": "USDCAD",
-      "direction": "SELL",
-      "size": 2000.0,
-      "entry": 1.36106,
-      "sl": 1.3642,
-      "tp": 1.355,
-      "opened_at": "2026-04-27T13:50:22Z",
-      "thesis_type": "trend",
-      "alert_id": "usdcad_h4fvg_sell_retest",
-      "time_exit_utc": "2026-04-28T13:50Z",
-      "rr": 1.93,
-      "risk_usd": 6.28,
-      "upl_usd": -4.15,
-      "upl": -4.15,
-      "upl_approx": -4.15
-    },
     {
       "dealId": "00000000-4e78-f95b-044a-beb40055311e",
       "epic": "GBPUSD",
@@ -39,6 +21,21 @@
       "risk_usd": 5.2,
       "upl_usd": -0.95,
       "upl": -0.95
+    },
+    {
+      "dealId": "00000000-4e79-04ea-044a-beb40055311e",
+      "epic": "OIL_CRUDE",
+      "direction": "SELL",
+      "size": 13.0,
+      "entry": 96.226,
+      "sl": 96.6,
+      "tp": 94.4,
+      "opened_at": "2026-04-28T02:23:30Z",
+      "thesis_type": "counter_trend_fade",
+      "time_exit_utc": "2026-04-28T10:23Z",
+      "rr": 4.76,
+      "risk_usd": 4.97,
+      "note": "Counter-trend fade OIL SELL: bear OB 96.218-96.5705; comp=+43 mod bullish extension; Hormuz ceasefire proposal driving oil lower. 4h time-stop: 06:23Z. Cancel if OIL closes above 96.60 (bear OB top)."
     }
   ],
   "watchlist": [
@@ -293,10 +290,23 @@
       "alert_id": "gbpusd_liqsweep_135421_buy",
       "confluence_at_entry": "+50.5 mod (liqsweep_135421_buy)",
       "result": "win"
+    },
+    {
+      "instrument": "USDCAD",
+      "direction": "SELL",
+      "entry_price": 1.36106,
+      "exit_price": 1.36397,
+      "size": 2000.0,
+      "pnl_usd": -4.27,
+      "result": "loss",
+      "opened_at": "2026-04-27T13:50:22Z",
+      "closed_at": "2026-04-28T02:52Z",
+      "exit_reason": "Thesis invalidated: H4 FVG (entry premise) mitigated; M15 flipped bullish (price>EMA); 2.3p from SL. Closed early to protect capital.",
+      "alert_id": "usdcad_h4fvg_sell_retest"
     }
   ],
   "consecutive_losses": 1,
-  "daily_pnl": -10.52,
+  "daily_pnl": -14.79,
   "weekly_pnl": 0,
   "total_pnl": 2.04,
   "total_trades": 2,
@@ -894,7 +904,7 @@
     "name": "FOMC_APR2026",
     "active": true,
     "deadline_utc": "2026-04-29T18:00Z",
-    "t_minus_h": 39.7,
+    "t_minus_h": 39.1,
     "verified": true,
     "sources": [
       "https://www.forex.com/en/news-and-analysis/fomc-outlook-usdcad-usdjpy-hold-at-key-support-levels/",
@@ -1119,27 +1129,7 @@
       ]
     }
   ],
-  "working_orders": [
-    {
-      "dealId": "00000000-4e79-017d-044a-beb40055311e",
-      "epic": "OIL_CRUDE",
-      "direction": "SELL",
-      "size": 13.0,
-      "level": 96.218,
-      "type": "LIMIT",
-      "stopLevel": 96.6,
-      "profitLevel": 94.4,
-      "status": "working",
-      "placed_utc": "2026-04-28T02:09Z",
-      "current_offer": 96.054,
-      "pts_to_fill": 0.164,
-      "thesis_type": "validated_sweep_retest",
-      "time_exit_utc": "2026-04-28T06:09Z",
-      "rr": 4.76,
-      "risk_usd": 4.97,
-      "note": "Counter-trend fade OIL sell at bear OB bottom (96.218-96.5705). comp=+43 moderate bullish extension corroborates fade. Cancel if OIL closes above 96.6 (OB top)."
-    }
-  ],
+  "working_orders": [],
   "daily_pnl_usd": -16.82,
   "news_last_searched_utc": "2026-04-27T20:34Z"
 }

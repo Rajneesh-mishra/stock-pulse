@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T02:19:41.024253+00:00",
+  "generated_at": "2026-04-28T02:54:40.909026+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -254,10 +254,10 @@
           "hit_rate": 1.0
         },
         "24h": {
-          "filled": 5,
-          "favorable": 3,
-          "avg_pips": 41.8,
-          "hit_rate": 0.6
+          "filled": 6,
+          "favorable": 4,
+          "avg_pips": 119.3,
+          "hit_rate": 0.67
         }
       }
     },
@@ -566,10 +566,10 @@
           "hit_rate": 0.2
         },
         "24h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 14.9,
+          "hit_rate": 1.0
         }
       }
     },
@@ -811,12 +811,12 @@
       "alert_id": "oil_sweep_9579_sell_retest",
       "instrument": "OIL_CRUDE",
       "direction": "sell",
-      "fires": 2,
+      "fires": 3,
       "by_horizon": {
         "1h": {
-          "filled": 1,
+          "filled": 2,
           "favorable": 0,
-          "avg_pips": -15.6,
+          "avg_pips": -13.6,
           "hit_rate": 0.0
         },
         "4h": {
@@ -840,10 +840,36 @@
       "fires": 2,
       "by_horizon": {
         "1h": {
-          "filled": 1,
+          "filled": 2,
           "favorable": 0,
-          "avg_pips": -2.2,
+          "avg_pips": -2.6,
           "hit_rate": 0.0
+        },
+        "4h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "24h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        }
+      }
+    },
+    {
+      "alert_id": "gold_sweep_4669_buy_retest",
+      "instrument": "GOLD",
+      "direction": "buy",
+      "fires": 1,
+      "by_horizon": {
+        "1h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
         },
         "4h": {
           "filled": 0,
