@@ -1491,5 +1491,84 @@
     "scalp_status": "GBPUSD=active; EURUSD/AUDUSD=disabled; USDJPY/CHF/CAD=pip-conv-pending; GOLD/OIL=spread-blocked",
     "attention_covered": "9/9",
     "regime_note": "EURUSD level_cross@1.17159 SKIP+WATCH (comp=0). GOLD ARMED@4603. AUDUSD LIMIT@0.7143 WATCH. FOMC caution active."
+  },
+  {
+    "tick_ts_utc": "2026-04-28T19:37Z",
+    "events": 0,
+    "event_types": [],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "trades_skipped": 0,
+    "open_positions": 0,
+    "pending_orders": 2,
+    "pending_order_detail": [
+      {
+        "epic": "GOLD",
+        "direction": "SELL",
+        "type": "LIMIT",
+        "level": 4603.0,
+        "size": 0.2
+      },
+      {
+        "epic": "AUDUSD",
+        "direction": "BUY",
+        "type": "LIMIT",
+        "level": 0.7143,
+        "size": 3500
+      }
+    ],
+    "daily_pnl_usd": -21.06,
+    "binary_event": "FOMC_APR2026 T-22.4h CAUTION",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "fomc_t_minus_h": 22.4,
+    "tick_type": "heartbeat",
+    "alerts_added": [
+      "eurusd_upsweep_117159_sell_watch"
+    ],
+    "alerts_removed": [],
+    "alerts_modified": [
+      "audusd_m15fvg_buy_7143"
+    ],
+    "scalp_status": {
+      "GBPUSD": "ACTIVE",
+      "EURUSD": "OFF_desync",
+      "AUDUSD": "OFF_wr11pct_19trades"
+    },
+    "attention_covered": "9/9",
+    "confluence": {
+      "EURUSD": {
+        "comp": -0.5,
+        "readiness": "none"
+      },
+      "GBPUSD": {
+        "comp": 27.5,
+        "readiness": "weak"
+      },
+      "AUDUSD": {
+        "comp": 60.0,
+        "readiness": "strong"
+      },
+      "USDJPY": {
+        "comp": 43.0,
+        "readiness": "moderate"
+      },
+      "USDCAD": {
+        "comp": -8.5,
+        "readiness": "none"
+      },
+      "USDCHF": {
+        "comp": 27.0,
+        "readiness": "weak"
+      },
+      "GOLD": {
+        "comp": -52.5,
+        "readiness": "moderate"
+      },
+      "OIL_CRUDE": {
+        "comp": 55.0,
+        "readiness": "moderate"
+      }
+    },
+    "notes": "Heartbeat. FOMC T-22.4h caution active. GOLD LIMIT SELL@4603 ARMED (dist=5.73pts, mod bear). AUDUSD LIMIT BUY@0.7143 GTC (36.9p away, strong bull, validated). USDJPY comp=+43 mod \u2014 fade@160 WATCH (FOMC blocks). OIL +3.07% to 98.38; oil_9323 BUY valid (dist<3xH4ATR). Added eurusd_upsweep_117159 SELL WATCH. No new trades."
   }
 ]
