@@ -1570,5 +1570,28 @@
       }
     },
     "notes": "Heartbeat. FOMC T-22.4h caution active. GOLD LIMIT SELL@4603 ARMED (dist=5.73pts, mod bear). AUDUSD LIMIT BUY@0.7143 GTC (36.9p away, strong bull, validated). USDJPY comp=+43 mod \u2014 fade@160 WATCH (FOMC blocks). OIL +3.07% to 98.38; oil_9323 BUY valid (dist<3xH4ATR). Added eurusd_upsweep_117159 SELL WATCH. No new trades."
+  },
+  {
+    "tick_ts_utc": "2026-04-28T20:52Z",
+    "events_processed": 0,
+    "events": [],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "alerts_changed": 0,
+    "daily_pnl": -21.06,
+    "balance": 969.98,
+    "binary_event": "FOMC_APR2026 T-21.1h",
+    "attention_matrix": {
+      "EURUSD": "swing=WATCH scalp=OFF readiness=none",
+      "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=weak",
+      "AUDUSD": "swing=ARMED scalp=OFF readiness=strong",
+      "USDJPY": "swing=WATCH scalp=OFF readiness=moderate",
+      "USDCAD": "swing=NONE scalp=OFF readiness=none",
+      "USDCHF": "swing=WATCH scalp=OFF readiness=none",
+      "GOLD": "swing=ARMED scalp=N/A readiness=moderate",
+      "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=moderate"
+    },
+    "scalp_status": "EURUSD=OFF(desync) GBPUSD=ACTIVE(0W/8L<20trades) AUDUSD=OFF(wr=11%)",
+    "note": "Heartbeat \u2014 FOMC caution, 0 events, 2 LIMITs armed"
   }
 ]

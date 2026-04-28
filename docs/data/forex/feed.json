@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T19:45:46.578252Z",
+  "generated_at": "2026-04-28T20:55:17.161308Z",
   "ticks": [
     {
       "ts_utc": "2026-04-24T14:10:00Z",
@@ -80,38 +80,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "tick_ts_utc": "2026-04-28T06:07Z",
-      "events_processed": 1,
-      "events": [
-        "evt_1777356005469_level_cross \u2014 USDCHF level_cross usdchf_sweep_h1_sell_retest@0.787515, comp=+23 < threshold, WATCH"
-      ],
-      "positions_opened": 0,
-      "positions_closed": 0,
-      "working_orders": 1,
-      "working_order_detail": "AUDUSD LIMIT BUY@0.7143 SL=0.7130 TP=0.7187 size=3500",
-      "daily_pnl": -17.72,
-      "broker_balance": 972.44,
-      "watchlist_changes": [
-        "REMOVED gold_escalation_buy_zone (4700 buy \u2014 GOLD broke below comp=-67 strong bear)",
-        "REMOVED gbpusd_sweep_135255_buy_watch (stale \u2014 position closed)",
-        "MODIFIED usdchf_sweep_h1_sell_retest (fixed counter-trend comp: need bullish \u2265+40 not bearish \u2264-40)",
-        "ADDED gold_4700_sell_resistance (SELL@4700 resistance-flip, WATCH)"
-      ],
-      "attention_matrix": {
-        "EURUSD": "swing=NONE scalp=ACTIVE readiness=none comp=-13 \u2014 no alerts at current price 1.17061",
-        "GBPUSD": "swing=NONE scalp=ACTIVE readiness=none comp=+13.5 \u2014 stale alert removed, no fresh setup at 1.35185",
-        "AUDUSD": "swing=ARMED scalp=OFF readiness=moderate comp=+47 \u2014 LIMIT@0.7143 working, VALIDATED (3f 100%4h)",
-        "USDJPY": "swing=NONE scalp=OFF readiness=none comp=-1.5 \u2014 no alerts, pip-conv pending, USDJPY@159.16",
-        "USDCAD": "swing=NONE scalp=OFF readiness=none comp=-22 \u2014 no alerts at 1.36361",
-        "USDCHF": "swing=WATCH scalp=OFF readiness=none comp=+23 \u2014 SELL@0.7875 event fired, comp below threshold (need \u226540 bull), WATCH",
-        "GOLD": "swing=WATCH scalp=N/A readiness=strong-BEAR comp=-67 \u2014 4700 buy REMOVED; 4700 SELL resistance ADDED (WATCH); 4721 SELL WATCH (need bull ext)",
-        "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=moderate-bull comp=+45 \u2014 buy alerts at 93.23/93.51, price@96.69 outside proximity"
-      },
-      "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=DISABLED(wr=11%/19t) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
-      "news": "Ceasefire extended indef, US-Iran peace talks STALLED (Apr26 Bloomberg). Gold sold off on inflation risk + reduced safe-haven. FOMC Apr29 18:00Z T-35.9h, 94% hold priced.",
-      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED"
     },
     {
       "tick_ts_utc": "2026-04-28T06:16Z",
@@ -893,6 +861,29 @@
         }
       },
       "notes": "Heartbeat. FOMC T-22.4h caution active. GOLD LIMIT SELL@4603 ARMED (dist=5.73pts, mod bear). AUDUSD LIMIT BUY@0.7143 GTC (36.9p away, strong bull, validated). USDJPY comp=+43 mod \u2014 fade@160 WATCH (FOMC blocks). OIL +3.07% to 98.38; oil_9323 BUY valid (dist<3xH4ATR). Added eurusd_upsweep_117159 SELL WATCH. No new trades."
+    },
+    {
+      "tick_ts_utc": "2026-04-28T20:52Z",
+      "events_processed": 0,
+      "events": [],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "alerts_changed": 0,
+      "daily_pnl": -21.06,
+      "balance": 969.98,
+      "binary_event": "FOMC_APR2026 T-21.1h",
+      "attention_matrix": {
+        "EURUSD": "swing=WATCH scalp=OFF readiness=none",
+        "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=weak",
+        "AUDUSD": "swing=ARMED scalp=OFF readiness=strong",
+        "USDJPY": "swing=WATCH scalp=OFF readiness=moderate",
+        "USDCAD": "swing=NONE scalp=OFF readiness=none",
+        "USDCHF": "swing=WATCH scalp=OFF readiness=none",
+        "GOLD": "swing=ARMED scalp=N/A readiness=moderate",
+        "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=moderate"
+      },
+      "scalp_status": "EURUSD=OFF(desync) GBPUSD=ACTIVE(0W/8L<20trades) AUDUSD=OFF(wr=11%)",
+      "note": "Heartbeat \u2014 FOMC caution, 0 events, 2 LIMITs armed"
     }
   ]
 }
