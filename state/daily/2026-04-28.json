@@ -1743,5 +1743,25 @@
       "GOLD": "swing=ARMED(LIMIT@4603) readiness=moderate comp=-47.5 scalp=N/A(spread5p)",
       "OIL_CRUDE": "swing=WATCH readiness=moderate comp=+50.5 outside-proximity scalp=N/A(spread4p)"
     }
+  },
+  {
+    "tick_ts_utc": "2026-04-28T22:46Z",
+    "events_processed": 1,
+    "events": [
+      "evt_1777415724346_level_cross:EURUSD_level_cross_SKIP(comp+12.5<+40_FOMC_caution)"
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "active_orders": [
+      "GOLD_SELL_LIMIT@4603_GTC",
+      "AUDUSD_BUY_LIMIT@0.7143_GTC"
+    ],
+    "daily_pnl": -21.06,
+    "binary_event": "FOMC_APR2026_T-19.2h_caution",
+    "attention_covered": "9/9",
+    "regime": "FOMC_caution_gold_sell_armed_audusd_buy_armed",
+    "scalp": "GBPUSD_active; EURUSD_disabled(desync); AUDUSD_disabled(wr11pct)",
+    "alerts_kept": 11,
+    "alerts_changed": 0
   }
 ]

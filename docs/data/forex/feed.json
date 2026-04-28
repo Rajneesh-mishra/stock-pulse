@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T22:43:20.000060Z",
+  "generated_at": "2026-04-28T22:47:15.360379Z",
   "ticks": [
     {
       "ts_utc": "2026-04-24T14:10:00Z",
@@ -80,31 +80,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "tick_ts_utc": "2026-04-28T07:14Z",
-      "events_processed": 4,
-      "events_actionable": 1,
-      "positions_opened": 0,
-      "positions_closed": 0,
-      "working_orders": 1,
-      "daily_pnl": -17.72,
-      "account_balance": 972.44,
-      "alerts_removed": [
-        "usdchf_sweep_h1_sell_retest",
-        "eurusd_sweep_117186_buy_watch",
-        "usdchf_m15sweep_7832_buy_watch",
-        "audusd_h1sweep_71731_buy_watch"
-      ],
-      "alerts_added": [
-        "eurusd_m15sweep_116871_buy_watch",
-        "usdchf_h1fvg_78750_buy_watch"
-      ],
-      "alerts_modified": [
-        "gold_sweep_4721_sell_retest"
-      ],
-      "summary": "EURUSD M15 liq_sweep@1.16871 (wick 1.1p, comp=-23 counter-trend <25 threshold). Watch added, no entry. Watchlist audit: 4 removed (2 invalidated directions, 1 auto-stale, 1 wick-breached), 2 added. GOLD strong bear comp=-67 all TFs. AUDUSD LIMIT@0.7143 GTC. FOMC caution T-10.8h.",
-      "binary_event": "FOMC_APR2026 (deadline 2026-04-29T18:00Z, caution from 18:00Z today)"
     },
     {
       "ts_utc": "2026-04-28T07:27Z",
@@ -990,6 +965,26 @@
         "GOLD": "swing=ARMED(LIMIT@4603) readiness=moderate comp=-47.5 scalp=N/A(spread5p)",
         "OIL_CRUDE": "swing=WATCH readiness=moderate comp=+50.5 outside-proximity scalp=N/A(spread4p)"
       }
+    },
+    {
+      "tick_ts_utc": "2026-04-28T22:46Z",
+      "events_processed": 1,
+      "events": [
+        "evt_1777415724346_level_cross:EURUSD_level_cross_SKIP(comp+12.5<+40_FOMC_caution)"
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "active_orders": [
+        "GOLD_SELL_LIMIT@4603_GTC",
+        "AUDUSD_BUY_LIMIT@0.7143_GTC"
+      ],
+      "daily_pnl": -21.06,
+      "binary_event": "FOMC_APR2026_T-19.2h_caution",
+      "attention_covered": "9/9",
+      "regime": "FOMC_caution_gold_sell_armed_audusd_buy_armed",
+      "scalp": "GBPUSD_active; EURUSD_disabled(desync); AUDUSD_disabled(wr11pct)",
+      "alerts_kept": 11,
+      "alerts_changed": 0
     }
   ]
 }
