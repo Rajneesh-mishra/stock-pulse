@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-28T05:11:56.848220Z",
+  "generated_at": "2026-04-28T05:31:33.187908Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-23T21:40:00Z",
-      "events_in": 1,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 1,
-      "note": "21:40 forex auto \u2014 1 evt us_iran_military Reuters Mar-1-2026 STALE 54d non-thesis-altering. USDJPY 159.685 +45 mod 4/4 bull dist=31.5p OUTSIDE 30p swing=WATCH (downgrade from ARMED-on-tag). GOLD 4694.08 -40 mod 3/4 bear gold_sweep_4721 dist=27.6$ INSIDE 30$ swing=ARMED (upgrade from WATCH); gold_safehaven_4775 dist=80.9$ opp-watch. OIL 96.446 +44 mod 4/4 bull sweep_9323 dist=321p WATCH; retest_90 dist=615p dormant. AUDUSD USDCAD GBPUSD USDCHF none swing=NONE. EURUSD -33 weak BTCUSD +35 weak no alert. 5 level_alerts KEEP 9 SW KEEP. us_iran_military+iran_ceasefire+us_tariff queries TUNED (date-window). Scalp 3 FX shadow halt={}. BOJ T-3d FOMC T-5d. web_search skipped (0 pos + regime stable 4h+). attention_covered=9/9."
-    },
     {
       "ts": "2026-04-24T06:00:00Z",
       "summary": "2026-04-24T06:00:00Z 06:00 forex auto \u2014 0 evt heartbeat. REGIME: ACTIVE_ESCALATION_SHOOT_TO_KILL. USDJPY 159.705 +45 mod 4/4 bull dist=29.5p INSIDE 30p swing=ARMED (counter-trend fade live; BOJ T-3d). GOLD 4705.06 -37.5 weak 3/4 bear dist=16.6$ INSIDE 30$ swing=WATCH (readiness=weak, need |comp|\u226540 for ARMED; H4 FVG 4703-4716 resistance). OIL 96.13 +43 mod 4/4 bull sweep_9323 dist=289p WATCH; retest_90 dist=583p dormant. BTCUSD 78462 +55 mod 4/4 bull day_fvg_buy dist=1502$ WATCH. EURUSD -29.5 weak GBPUSD none AUDUSD none swing=NONE. 6 level_alerts KEEP 8 news_queries (4 TUNE date-roll +1d, 4 KEEP). Scalp 3 FX ACTIVE halt={}. BOJ T-3d FOMC T-5d. web_search skipped (0 pos + regime stable 6h+). attention_covered=9/9."
@@ -891,6 +883,35 @@
       "scalp": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
       "gold_note": "GOLD@4651.72 broke below 4669 sweep \u2014 4669 alert removed. comp=-30 weak. 4700 buy zone and 4721 sell zone intact.",
       "oil_note": "OIL SELL@96.226 holding \u2014 bear OB 96.218-96.5705 being retested. comp=+43 fade active."
+    },
+    {
+      "tick_ts_utc": "2026-04-28T05:26Z",
+      "events": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "binary": "FOMC_APR2026",
+      "scalp": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=OFF(wr=11%/19t)",
+      "positions": [
+        {
+          "epic": "GBPUSD",
+          "dir": "BUY",
+          "entry": 1.35254,
+          "upl": 1.25,
+          "time_exit": "05:53Z"
+        },
+        {
+          "epic": "OIL_CRUDE",
+          "dir": "SELL",
+          "entry": 96.226,
+          "upl": 1.37,
+          "time_exit": "10:23Z"
+        }
+      ],
+      "daily_pnl": -14.79,
+      "float_upl": 2.62,
+      "regime_note": "2026-04-28T05:26Z forex auto \u2014 0 evt heartbeat. GBPUSD BUY@1.35254 age=3h32min UPL=+$1.25 (bid=1.35279) time_exit=05:53Z (~27min). OIL SELL@96.226 age=3h02min UPL=+$1.37 (bid=96.081) bear OB 96.22-96.57 held; time_exit=10:23Z. Hormuz peace proposal (Tehran conditional on blockade lift) \u2014 WTI futures $97.03; bearish drift favours SELL. FOMC Apr28-29 starts today; decision 18:00Z Apr29; caution@18:00Z Apr28 (~12.6h). 99.9% hold priced. AUDUSD comp=+47 moderate-bull; 36p above 0.7143, outside proximity; corr cap opens 05:53Z. GOLD comp=-30 weak-bear; neither 4700 buy nor 4721 sell meets arming threshold. 2 pos 0 working. daily_pnl=-$14.79 float~+$2.62. attention_covered=9/9.",
+      "news": "Hormuz peace proposal (Tehran conditional). WTI $97.03. FOMC starts today Apr28, decision Apr29 18:00Z, 99.9% hold."
     }
   ]
 }
