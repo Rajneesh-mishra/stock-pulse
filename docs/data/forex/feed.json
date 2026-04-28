@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T00:18:46.693127Z",
+  "generated_at": "2026-04-28T00:47:58.947099Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -274,6 +274,51 @@
         "float_upl": -0.84
       },
       "binary": "FOMC 2026-04-29T18:00Z T\u224841.8h (caution T<24h ~18:00Z Apr28)",
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "attention_covered": "9/9"
+    },
+    {
+      "tick_ts_utc": "2026-04-28T00:46Z",
+      "events": [
+        {
+          "id": "evt_1777336895485_liquidity_sweep",
+          "type": "liquidity_sweep",
+          "instrument": "OIL_CRUDE",
+          "timeframe": "MINUTE_15",
+          "action": "ADD watchlist oil_sweep_9579_sell_retest WATCH \u2014 comp=+37 (need \u226540 bullish for counter-trend arm); wick=13p at 95.789, close=95.718"
+        }
+      ],
+      "opened": [],
+      "closed": [],
+      "skipped": [
+        "OIL_CRUDE sell@95.789 \u2014 comp=+37 weak (threshold \u226540 bullish for counter-trend); alert added to watchlist as WATCH"
+      ],
+      "positions": [
+        {
+          "epic": "USDCAD",
+          "dir": "SELL",
+          "entry": 1.36106,
+          "upl": -1.81,
+          "age_h": 10.9,
+          "thesis": "trend",
+          "time_exit_utc": "2026-04-28T13:50Z"
+        },
+        {
+          "epic": "GBPUSD",
+          "type": "LIMIT",
+          "level": 1.352555,
+          "bid_dist_p": 8.5
+        }
+      ],
+      "watchlist_changes": [
+        "ADD oil_sweep_9579_sell_retest (OIL SELL@95.789 retest, SL=95.92, TP=94.40, R:R=10.6)"
+      ],
+      "account": {
+        "balance": 979.3,
+        "daily_pnl": -10.52,
+        "float_upl": -1.81
+      },
+      "binary": "FOMC 2026-04-29T18:00Z T\u224841.2h (caution T<24h ~18:00Z Apr28)",
       "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "attention_covered": "9/9"
     }

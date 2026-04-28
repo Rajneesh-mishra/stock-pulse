@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-28T00:13Z",
+  "last_updated_by_claude": "2026-04-28T00:46Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -137,7 +137,8 @@
       },
       "last_updated": "2026-04-26T06:00:00Z",
       "updated_utc": "2026-04-28T00:13Z",
-      "proximity": "OIL@95.237; dist=2.007 ABOVE 93.23 (0.5\u00d7H4ATR=1.04, outside proximity). comp=+34.5 weak (need +40). VALIDATED (6f 4h=100%). WATCH \u2014 arm when comp\u2265+40.",
+      "proximity": "OIL@95.78; dist=2.55 ABOVE 93.23 (0.5\u00d7H4ATR=1.00, outside proximity). comp=+37 weak (need +40). VALIDATED (6f 4h=100%). WATCH \u2014 arm when comp\u2265+40.",
+      "updated_utc": "2026-04-28T00:46Z",
       "alert_id": "oil_sweep_9323_buy_retest",
       "active": true
     },
@@ -210,7 +211,7 @@
       },
       "last_updated": "2026-04-27T16:01Z",
       "updated_utc": "2026-04-28T00:13Z",
-      "proximity": "GBPUSD bid=1.353845; 3.3p above limit 1.352555. LIMIT ARMED (working order active). comp=+47.5 mod-bull. FOMC T\u224841.8h (caution activates T<24h ~18:00Z Apr28).",
+      "proximity": "GBPUSD bid=1.3534; 8.5p above limit 1.352555. LIMIT ARMED (working order active). comp=+47.5 mod-bull. FOMC T\u224839.2h (caution activates T<24h ~18:00Z Apr28).",
       "limit_order": {
         "dealId": "00000000-4e77-b253-044a-beb40055311e",
         "placed_utc": "2026-04-27T16:01Z",
@@ -242,7 +243,8 @@
       },
       "last_updated": "2026-04-27T11:43Z",
       "updated_utc": "2026-04-27T23:55Z",
-      "proximity": "OIL@95.477; dist=1.966 ABOVE 93.511 (0.5\u00d7H4ATR=1.04, outside proximity). comp=+37 weak (need +40). WATCH.",
+      "proximity": "OIL@95.78; dist=2.27 ABOVE 93.511 (0.5\u00d7H4ATR=1.00, outside proximity). comp=+37 weak (need +40). WATCH.",
+      "updated_utc": "2026-04-28T00:46Z",
       "alert_id": "oil_sweep_93511_buy_retest",
       "active": true
     },
@@ -269,6 +271,25 @@
       "updated_utc": "2026-04-28T00:13Z",
       "proximity": "GOLD@4698.12; 1.9pts BELOW 4700 (at zone). comp=-20.5 none (need \u2265+40 bull to arm). VALIDATED (13f 4h=67%). WATCH \u2014 price AT level but comp not armed.",
       "alert_id": "gold_safehaven_buy_4700",
+      "active": true
+    },
+    {
+      "id": "oil_sweep_9579_sell_retest",
+      "instrument": "OIL_CRUDE",
+      "level": 95.789,
+      "emit_on": "cross_up",
+      "cooldown_sec": 1800,
+      "direction": "sell",
+      "note": "ENTRY: price retests 95.789 swept extreme; M15 bar closes AT or BELOW 95.789 with bearish rejection wick \u22652pts from the high. Arm LIMIT SELL when |composite| \u2265 40 bullish extension (counter-trend fade).\n\nCONTEXT: M15 up-sweep 2026-04-28T00:30Z, wick=13p at 95.789, close=95.718. comp=+37 weak bullish (need \u226540 to arm). Daily/H4/H1 in bull trend (EMA alignment). M15 ChoCh bear at 93.904. Counter-trend fade \u2014 bullish extension is the corroborating signal. Hormuz escalation keeps oil bid; high-risk fade. Apply 4h time-stop if entered.\n\nSL: 95.92  TP: 94.40  R:R target: 10.6\n\nadded 2026-04-28T00:46Z \u2014 M15 liquidity_sweep up (wick=13p); counter-trend sell retest; WATCH until comp \u226540 bullish.",
+      "entry_criterion": "M15 retest of 95.789 with bearish rejection wick \u22652pts from high. Arm LIMIT SELL when |comp| \u226540 bullish extension (counter-trend).",
+      "regime_context": "M15 up-sweep 00:30Z Apr28, wick=13p beyond 95.789, close=95.718. comp=+37 weak (need \u226540). Daily/H4/H1 bull trend intact; M15 ChoCh bear 93.904. Hormuz escalation = oil bid (risk). 4h time-stop on entry.",
+      "sl": 95.92,
+      "tp": 94.4,
+      "rr_target": "10.6",
+      "current_price_ref": 95.78,
+      "last_updated": "2026-04-28T00:46Z",
+      "proximity": "OIL@95.78; at swept level 95.789 (dist=0.9p). comp=+37 weak bullish (need \u226540 for counter-trend arm). WATCH.",
+      "alert_id": "oil_sweep_9579_sell_retest",
       "active": true
     },
     {
@@ -357,5 +378,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-28T00:13Z"
+  "last_updated_utc": "2026-04-28T00:46Z"
 }
