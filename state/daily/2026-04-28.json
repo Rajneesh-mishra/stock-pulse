@@ -820,5 +820,18 @@
     "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
     "notes": "FOMC caution activates ~T-11.8h. No open positions. 1 working LIMIT (AUDUSD@0.7143). GOLD strong bear (-67), OIL moderate bull (+45). Sweep at 0.71731 added to AUDUSD watchlist (shallow wick, watchlist only)."
+  },
+  {
+    "tick_ts_utc": "2026-04-28T06:37Z",
+    "events": 0,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 0,
+    "binary_event": "FOMC_APR2026",
+    "scalp_status": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=OFF(wr11pct) others=disabled",
+    "positions_after": 0,
+    "working_orders_after": 1,
+    "daily_pnl": -17.72,
+    "summary": "heartbeat: 0 events. AUDUSD LIMIT@0.7143 working. FOMC caution T-11.5h. All 7 watchlist alerts KEEP. 9/9 attention covered."
   }
 ]
