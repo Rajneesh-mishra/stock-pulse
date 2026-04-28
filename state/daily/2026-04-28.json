@@ -103,5 +103,46 @@
     "binary_event": "FOMC 2026-04-29T18:00Z T\u224841h",
     "scalp_status": "EURUSD/GBPUSD active; AUDUSD disabled (wr<20%); no halts",
     "attention_covered": "9/9"
+  },
+  {
+    "tick_ts_utc": "2026-04-28T01:06Z",
+    "events": 0,
+    "event_ids": [],
+    "opened": [],
+    "closed": [],
+    "modified": [],
+    "positions_after": [
+      {
+        "dealId": "00000000-4e77-6243-044a-beb40055311e",
+        "epic": "USDCAD",
+        "direction": "SELL",
+        "size": 2000.0,
+        "entry": 1.36106,
+        "sl": 1.3642,
+        "tp": 1.355,
+        "upl": -2.28,
+        "age_hours": 11.5,
+        "thesis_type": "trend",
+        "time_exit_utc": "2026-04-28T13:50Z"
+      }
+    ],
+    "orders_after": [
+      {
+        "dealId": "00000000-4e77-b253-044a-beb40055311e",
+        "epic": "GBPUSD",
+        "direction": "BUY",
+        "level": 1.352555,
+        "type": "LIMIT",
+        "sl": 1.3515,
+        "tp": 1.36,
+        "status": "working_7.4p_above"
+      }
+    ],
+    "daily_pnl": -10.52,
+    "float": -2.28,
+    "account_balance": 978.82,
+    "regime": "heartbeat",
+    "notes": "0 events heartbeat. USDCAD SELL thesis intact (DAY FVG bear bottom=1.36244 resistance). GBPUSD LIMIT retained (comp dropped weak but limit in Day FVG zone, not structurally invalidated). OIL sweep_9579 sell level 0.15pts away (comp=+37, need +40). FOMC T\u224840.9h.",
+    "audit": "12 level_alerts all KEEP (dist<3xH4ATR, counterfactual clean). scalp: EURUSD+GBPUSD ACTIVE, AUDUSD DISABLED (wr=11%)"
   }
 ]

@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-28T01:00Z",
+  "last_updated_by_claude": "2026-04-28T01:06Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -136,9 +136,8 @@
         "price": null
       },
       "last_updated": "2026-04-26T06:00:00Z",
-      "updated_utc": "2026-04-28T00:13Z",
-      "proximity": "OIL@95.78; dist=2.55 ABOVE 93.23 (0.5\u00d7H4ATR=1.00, outside proximity). comp=+37 weak (need +40). VALIDATED (6f 4h=100%). WATCH \u2014 arm when comp\u2265+40.",
       "updated_utc": "2026-04-28T00:46Z",
+      "proximity": "OIL@95.78; dist=2.55 ABOVE 93.23 (0.5\u00d7H4ATR=1.00, outside proximity). comp=+37 weak (need +40). VALIDATED (6f 4h=100%). WATCH \u2014 arm when comp\u2265+40.",
       "alert_id": "oil_sweep_9323_buy_retest",
       "active": true
     },
@@ -186,9 +185,8 @@
         "price": null
       },
       "last_updated": "2026-04-27T06:30Z",
-      "updated_utc": "2026-04-28T00:13Z",
-      "proximity": "EURUSD@1.17185; AT level 1.17186 (0p). comp=+3 none (need \u2265+40 bull to arm). level_cross fired 01:00Z Apr28 \u2014 WATCH; DAY FVG 1.17139-1.17186 fresh but H4+M15 bearish, composite below threshold.",
       "updated_utc": "2026-04-28T01:00Z",
+      "proximity": "EURUSD@1.17185; AT level 1.17186 (0p). comp=+3 none (need \u2265+40 bull to arm). level_cross fired 01:00Z Apr28 \u2014 WATCH; DAY FVG 1.17139-1.17186 fresh but H4+M15 bearish, composite below threshold.",
       "alert_id": "eurusd_sweep_117186_buy_retest",
       "active": true
     },
@@ -211,8 +209,8 @@
         "price": 1.35508
       },
       "last_updated": "2026-04-27T16:01Z",
-      "updated_utc": "2026-04-28T00:13Z",
-      "proximity": "GBPUSD bid=1.3534; 8.5p above limit 1.352555. LIMIT ARMED (working order active). comp=+47.5 mod-bull. FOMC T\u224839.2h (caution activates T<24h ~18:00Z Apr28).",
+      "updated_utc": "2026-04-28T01:06Z",
+      "proximity": "GBPUSD@1.35329 bid; LIMIT working @1.352555 (7.4p above). comp=+35 weak-bull (M15 bearish Asia session; H4+Day bullish). Limit in Day bull FVG 1.35235-1.35315. KEEP working order. 2026-04-28T01:06Z",
       "limit_order": {
         "dealId": "00000000-4e77-b253-044a-beb40055311e",
         "placed_utc": "2026-04-27T16:01Z",
@@ -243,9 +241,8 @@
         "price": null
       },
       "last_updated": "2026-04-27T11:43Z",
-      "updated_utc": "2026-04-27T23:55Z",
-      "proximity": "OIL@95.78; dist=2.27 ABOVE 93.511 (0.5\u00d7H4ATR=1.00, outside proximity). comp=+37 weak (need +40). WATCH.",
       "updated_utc": "2026-04-28T00:46Z",
+      "proximity": "OIL@95.78; dist=2.27 ABOVE 93.511 (0.5\u00d7H4ATR=1.00, outside proximity). comp=+37 weak (need +40). WATCH.",
       "alert_id": "oil_sweep_93511_buy_retest",
       "active": true
     },
@@ -269,8 +266,8 @@
         "price": null
       },
       "last_updated": "2026-04-27T11:43Z",
-      "updated_utc": "2026-04-28T00:13Z",
-      "proximity": "GOLD@4698.12; 1.9pts BELOW 4700 (at zone). comp=-20.5 none (need \u2265+40 bull to arm). VALIDATED (13f 4h=67%). WATCH \u2014 price AT level but comp not armed.",
+      "updated_utc": "2026-04-28T01:06Z",
+      "proximity": "GOLD@4687; dist=12.97pts BELOW 4700 (3xH4ATR=95.6pts). comp=-28 weak-bear; need |comp|\u226540 bull extension for counter-trend BUY arm. WATCH. 2026-04-28T01:06Z",
       "alert_id": "gold_safehaven_buy_4700",
       "active": true
     },
@@ -289,9 +286,10 @@
       "rr_target": "10.6",
       "current_price_ref": 95.78,
       "last_updated": "2026-04-28T00:46Z",
-      "proximity": "OIL@95.78; at swept level 95.789 (dist=0.9p). comp=+37 weak bullish (need \u226540 for counter-trend arm). WATCH.",
+      "proximity": "OIL@95.941; dist=0.152pts ABOVE 95.789 (3xH4ATR=5.99pts). comp=+37 weak-bull; need comp\u2265+40 bull extension to arm counter-trend SELL. WATCH \u2014 3pts from arming threshold. 2026-04-28T01:06Z",
       "alert_id": "oil_sweep_9579_sell_retest",
-      "active": true
+      "active": true,
+      "updated_utc": "2026-04-28T01:06Z"
     },
     {
       "id": "usdchf_m15sweep_7832_buy_watch",
