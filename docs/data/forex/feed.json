@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T22:47:15.360379Z",
+  "generated_at": "2026-04-28T23:10:35.994735Z",
   "ticks": [
     {
       "ts_utc": "2026-04-24T14:10:00Z",
@@ -80,14 +80,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "ts_utc": "2026-04-28T07:27Z",
-      "events_in": 1,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 0,
-      "note": "07:27 UTC tick \u2014 1 evt: position_opened EURUSD SELL (scalp engine ema_pullback, size=1000 units, entry=1.1699, SL=1.17017, TP=1.16946, risk=$0.27). Engine logged open_failed (unparseable broker response at 07:20:17Z and 07:21:17Z) but position confirmed real via position_sync. Added to state open_positions. EURUSD comp=-23 none bearish 3/4TF \u2014 direction aligned with scalp SELL. AUDUSD LIMIT@0.7143 working GTC (comp=+47 mod-bull, 30.5p above level). GOLD@4632 comp=-67 strong bear; sell alerts at 4700/4721 KEEP (within 3xH4ATR=103pts). USDCHF@0.78847 (now 9.7p above 0.7875 sell fade level); comp=+23 none \u2014 need +40 bullish, WATCH. ADD eurusd_m15sweep_116871_buy_watch (WATCH only, comp=-23 < -40 threshold). 7 existing alerts KEEP (proximity notes refreshed). FOMC caution activates 18:00Z today, deadline 2026-04-29T18:00Z. No new swing entries this tick. 1 pos 1 working. daily_pnl=-$17.72. attention_covered=9/9."
     },
     {
       "ts_utc": "2026-04-28T07:32Z",
@@ -985,6 +977,38 @@
       "scalp": "GBPUSD_active; EURUSD_disabled(desync); AUDUSD_disabled(wr11pct)",
       "alerts_kept": 11,
       "alerts_changed": 0
+    },
+    {
+      "tick_ts_utc": "2026-04-28T23:10Z",
+      "events": 0,
+      "event_type": "heartbeat",
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "binary": "FOMC_APR2026 T-18.8h caution active",
+      "daily_pnl_usd": -21.06,
+      "broker_balance": 969.98,
+      "working_orders": [
+        {
+          "epic": "GOLD",
+          "dir": "SELL",
+          "level": 4603,
+          "size": 0.2,
+          "status": "ARMED dist=9.5pts"
+        },
+        {
+          "epic": "AUDUSD",
+          "dir": "BUY",
+          "level": 0.7143,
+          "size": 3500,
+          "status": "WATCH dist=43.7p>prox"
+        }
+      ],
+      "alert_changes": "all 11 KEEP; gold_h1fvg_sell_4603 note updated (H4 FVG mitigated \u2192 structural resistance thesis)",
+      "scalp": "GBPUSD=ON(neutral) EURUSD=OFF(desync) AUDUSD=OFF(wr11%)",
+      "attention_covered": "9/9",
+      "regime": "FOMC_caution; ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "summary": "heartbeat \u2014 FOMC T-18.8h; GOLD SELL LIMIT@4603 ARMED; AUDUSD BUY LIMIT@0.7143 WATCH(dist>prox); 0 positions; all 11 alerts KEEP"
     }
   ]
 }

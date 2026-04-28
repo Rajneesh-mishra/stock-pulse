@@ -1763,5 +1763,37 @@
     "scalp": "GBPUSD_active; EURUSD_disabled(desync); AUDUSD_disabled(wr11pct)",
     "alerts_kept": 11,
     "alerts_changed": 0
+  },
+  {
+    "tick_ts_utc": "2026-04-28T23:10Z",
+    "events": 0,
+    "event_type": "heartbeat",
+    "opened": 0,
+    "closed": 0,
+    "skipped": 0,
+    "binary": "FOMC_APR2026 T-18.8h caution active",
+    "daily_pnl_usd": -21.06,
+    "broker_balance": 969.98,
+    "working_orders": [
+      {
+        "epic": "GOLD",
+        "dir": "SELL",
+        "level": 4603,
+        "size": 0.2,
+        "status": "ARMED dist=9.5pts"
+      },
+      {
+        "epic": "AUDUSD",
+        "dir": "BUY",
+        "level": 0.7143,
+        "size": 3500,
+        "status": "WATCH dist=43.7p>prox"
+      }
+    ],
+    "alert_changes": "all 11 KEEP; gold_h1fvg_sell_4603 note updated (H4 FVG mitigated \u2192 structural resistance thesis)",
+    "scalp": "GBPUSD=ON(neutral) EURUSD=OFF(desync) AUDUSD=OFF(wr11%)",
+    "attention_covered": "9/9",
+    "regime": "FOMC_caution; ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "summary": "heartbeat \u2014 FOMC T-18.8h; GOLD SELL LIMIT@4603 ARMED; AUDUSD BUY LIMIT@0.7143 WATCH(dist>prox); 0 positions; all 11 alerts KEEP"
   }
 ]

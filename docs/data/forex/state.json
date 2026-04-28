@@ -1,9 +1,9 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-28T22:46Z",
-  "state_ts_utc": "2026-04-28T22:46Z",
-  "regime_note": "2026-04-28T22:46Z forex auto \u2014 1 evt: EURUSD level_cross@1.17160 SKIP (eurusd_upsweep_117159_sell_watch validated 4f/100%4h, comp=+12.5 <+40 counter-trend threshold; FOMC T-19.2h caution); GOLD SELL LIMIT@4603 GTC ARMED (bid=4593.5, dist=9.5pts, comp=-50 mod bear); AUDUSD BUY LIMIT@0.7143 GTC ARMED (dist=39p, comp=+60 strong); GBPUSD AT sweep 1.35203 (comp=+29 weak, need +40); USDJPY fade@160 comp=+43 dist=42.4p>30p pip-val blocked WATCH; all 11 alerts KEEP. daily_pnl=-$21.06. attention_covered=9/9.",
-  "regime_note_prev": "2026-04-28T22:03Z forex auto \u2014 0 evt (heartbeat): FOMC_APR2026 T-20.0h caution ACTIVE (readiness\u2265moderate only, half size). GOLD SELL LIMIT@4603 GTC ARMED (dist=5.34pts from 4597.66, comp=-47.5 mod bear, H4 FVG 4600-4621). AUDUSD BUY LIMIT@0.7143 GTC ARMED (dist=39.1p from 0.71821, comp=+60.0 strong validated 3f/100%4h). GBPUSD AT sweep level 1.35203 (dist=0.3p, comp=+29 weak) \u2014 WATCHLIST ONLY, need readiness\u2265moderate. EURUSD upsweep_117159 SELL at 1.17159 (price 1.17156, 0.3p), comp=0 no arm. USDJPY fade@160.0 dist=40.1p (comp=+40.5 mod bull, counter-trend), FOMC blocks arm (>30p threshold). OIL comp=+50.5 mod bull, oil_9323 BUY@93.23 dist=4.84pts>proximity WATCH. USDCHF comp=+21.5 none, usdchf_h4fvg@0.7875 WATCHLIST. All 8 alerts KEEP. daily_pnl=-$21.06. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-28T23:10Z",
+  "state_ts_utc": "2026-04-28T23:10Z",
+  "regime_note": "2026-04-28T23:10Z forex auto \u2014 0 evt (heartbeat): FOMC T-18.8h caution ACTIVE (\u2265moderate only, half-size). GOLD SELL LIMIT@4603 GTC ARMED (bid=4593.5, dist=9.5pts, comp=-50 mod bear; H4 FVG mitigated \u2192 structural resistance thesis maintained). AUDUSD BUY LIMIT@0.7143 GTC KEEP (dist=43.7p>30p prox, comp=+60 strong bull, validated 3f/100%4h). GBPUSD AT sweep 1.35203 (comp=+29 weak, need +40). USDJPY fade@160 comp=+40.5 threshold MET, dist=42.6p>30p + pip-val blocked WATCH. USDCHF H4FVG@0.78689 dist=22p, comp=+21.5 none WATCH. EURUSD AT 1.17159 comp=+12.5 none SKIP. all 11 alerts KEEP. daily_pnl=-$21.06. attention_covered=9/9.",
+  "regime_note_prev": "2026-04-28T22:46Z forex auto \u2014 1 evt: EURUSD level_cross@1.17160 SKIP (eurusd_upsweep_117159_sell_watch validated 4f/100%4h, comp=+12.5 <+40 counter-trend threshold; FOMC T-19.2h caution); GOLD SELL LIMIT@4603 GTC ARMED (bid=4593.5, dist=9.5pts, comp=-50 mod bear); AUDUSD BUY LIMIT@0.7143 GTC ARMED (dist=39p, comp=+60 strong); GBPUSD AT sweep 1.35203 (comp=+29 weak, need +40); USDJPY fade@160 comp=+43 dist=42.4p>30p pip-val blocked WATCH; all 11 alerts KEEP. daily_pnl=-$21.06. attention_covered=9/9.",
   "open_positions": [],
   "watchlist": [
     {
@@ -1302,7 +1302,7 @@
     "name": "FOMC_APR2026",
     "active": true,
     "deadline_utc": "2026-04-29T18:00Z",
-    "t_minus_h": 19.2,
+    "t_minus_h": 18.8,
     "verified": true,
     "sources": [
       "https://www.forex.com/en/news-and-analysis/fomc-outlook-usdcad-usdjpy-hold-at-key-support-levels/",
