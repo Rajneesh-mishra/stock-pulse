@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-28T06:00:36.111728+00:00",
+  "generated_at": "2026-04-28T06:10:41.060920+00:00",
   "counts": {
     "trades": 22,
-    "events": 5325,
+    "events": 5335,
     "ticks": 59,
-    "regime_snapshots": 137,
+    "regime_snapshots": 138,
     "broker_positions": 0,
-    "counterfactuals": 97
+    "counterfactuals": 98
   },
   "trades_last_50": [
     {
@@ -475,6 +475,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-28T06:00Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "2026-04-28T06:00Z forex auto \u2014 5 evt: OIL/GBPUSD position_closed confirmed (both logged prev tick: OIL pnl=-$3.58, GBPUSD pnl=+$0.65). GBPUSD level_cross cross_down 1.35255 (old alert stale, REMOVED). GBPUSD liq_sweep 1.35203 M15 (new watchlist added; readiness weak comp=+25.5). AUDUSD liq_sweep 0.71740 M15 0.9p wick (shallow; existing LIMIT@0.7143 covers thesis, no new entry). ACCOUNT FLAT: 0 pos 1 working (AUDUSD LIMIT@0.7143 GTC, broker confirmed). GOLD strong bear (comp=-67 all TF agree); broke below 4700; gold_escalation_buy_zone REMOVED, gold_4700_sell_resistance_watch ADDED. gold_safehaven_4775 REMOVED (142p away, Rule1 staleness). GBPUSD scalp bias reset neutral (comp=+25.5 weak). FOMC Apr28-29: caution activates 18:00Z today (~12h). OIL comp=+45 mod bull at 96.97; buy_retest alerts 93.23/93.51 maintained as pullback zones. USDCHF SELL retest 0.787505 within 1.85p \u2014 watchlist. daily_pnl=-$17.72 float=0. attention_covered=9/9.",
+      "binary_event_name": "FOMC_APR2026",
+      "binary_event_active": 1,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
       "ts_utc": "2026-04-28T05:50Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-28T05:50Z forex auto \u2014 3 evt: OIL SELL@96.226 closed (exit~96.501 pnl=-$3.58; Hormuz peace talks FAILED, Iran/US deadlocked, geopolitical premium intact \u2014 bear thesis wrong). GBPUSD BUY@1.35254 closed (exit~1.35267 pnl=+$0.65; time exit triggered before 05:53Z cap). GBPUSD level_cross cross_down through 1.352555 \u2014 alert reset to watchlist (comp=+25.5 weak, no re-entry). Account flat. AUDUSD BUY LIMIT@0.7143 working (comp=+47 mod-bull, validated). GOLD strong bear (comp=-67 all TF agree); price at 4625, fell from 4701 today. OIL at 97.097 (+1.72%); Hormuz supply squeeze intact. FOMC hold 99.9%; caution@18:00Z Apr28 (~12h). GBPUSD scalp bias reset neutral (comp dropped +53\u2192+25). 0 pos 1 working. daily_pnl=-$17.72. attention_covered=9/9.",
@@ -542,14 +550,6 @@
       "ts_utc": "2026-04-28T02:52Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-28T02:52Z forex auto \u2014 1 evt: GOLD level_cross gold_sweep_4669_buy_retest @4669.59 (comp=-28 weak-bear, need \u2264-40 to arm counter-BUY; WATCH). USDCAD SELL closed@1.36397 H4-FVG-premise consumed (mitigated), M15 bullish, pnl\u2248-$4.27. GBPUSD BUY@1.35254 age=59min UPL\u2248-$2.0 narrative time_exit=05:53Z. OIL SELL@96.226 age=28min UPL=+$2.33 fade working. FOMC T\u224839.1h caution@18:00Z Apr28. 2 pos 0 working. daily_pnl=-$14.79 float\u2248+$0.33. attention_covered=9/9.",
-      "binary_event_name": "FOMC_APR2026",
-      "binary_event_active": 1,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-04-28T02:28Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "2026-04-28T02:28Z forex auto \u2014 2 evt: OIL position_opened SELL@96.226 (LIMIT filled, size=13, SL=96.6 TP=94.4 fade working bid=96.064 UPL=+$1.59); OIL level_cross oil_sweep_9579_sell_retest cross_up@96.258 (informational, position open). USDCAD SELL@1.36106 age=12.6h UPL=-$5.70 SL=1.3642 dist=2.9p HIGH-RISK offer=1.36391 FVG-resist broken; time_exit=13:50Z. GBPUSD BUY@1.35254 age=0.6h UPL=-$0.80 SL=1.3515 narrative time_exit=05:53Z Apr28. OIL SELL@96.226 age=0.1h UPL=+$1.59 fade working ceasefire-proposal. News: Hormuz closed, Iran ceasefire proposal\u2192oil falling; FOMC Apr29 99.9%hold T\u224839.5h Powell's last meeting. 3 pos 0 working. daily_pnl=-$10.52 float\u2248-4.91. attention_covered=9/9.",
       "binary_event_name": "FOMC_APR2026",
       "binary_event_active": 1,
       "binary_event_deadline": "2026-04-29T18:00Z"
@@ -1058,6 +1058,19 @@
     }
   ],
   "counterfactuals_last_50": [
+    {
+      "alert_id": "usdchf_sweep_h1_sell_retest",
+      "instrument": "USDCHF",
+      "direction": "sell",
+      "trigger_price": 0.787515,
+      "fired_at": "2026-04-28T06:00:05.469117+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
     {
       "alert_id": "gbpusd_sweep_135255_buy_watch",
       "instrument": "GBPUSD",
@@ -1688,19 +1701,6 @@
       "direction": "buy",
       "trigger_price": 0.71323,
       "fired_at": "2026-04-26T21:02:07.633138+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
-    },
-    {
-      "alert_id": "oil_sweep_9323_buy_retest",
-      "instrument": "OIL_CRUDE",
-      "direction": "buy",
-      "trigger_price": 93.229,
-      "fired_at": "2026-04-24T15:45:03.509755+00:00",
       "hit_1h": null,
       "hit_4h": null,
       "hit_24h": null,

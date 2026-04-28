@@ -27,20 +27,20 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "ENTRY: price retests 0.7875 zone (H1 up-sweep 2026-04-24T07:00Z); M15 bar closes back below 0.7875 with rejection wick \u22653p from high. Requires readiness\u2265moderate before arming.\n\nCONTEXT: H1 up-sweep wick=1.7p at 0.787505; comp=+7.5 neutral (readiness=none at creation). WATCH only until composite turns moderately bearish (\u2264-40).\n\nSL: 0.7885  TP: 0.7840  R:R target: 3.1\n\nadded 2026-04-24T07:17Z \u2014 liquidity_sweep event; no trade arming at readiness=none.",
-      "current_price_ref": 0.78711,
+      "note": "ENTRY: arm LIMIT SELL at 0.7875 when |comp| \u2265 40 bullish extension (counter-trend fade at H1 up-sweep level). M15 bar closes back below 0.7875 with rejection wick \u22653p from high.\n\nCONTEXT: H1 up-sweep wick=1.7p at 0.787505 (2026-04-24T07:00Z). Counter-trend fade: bullish composite toward the sweep is the extension creating the rejection edge. Event fired 2026-04-28T06:00Z at 0.787515; price pulled back to 0.78745. comp=+23 today (none; need \u226540 bullish for arming). USDCHF scalp disabled (pip-conv). 4h time-stop if entered.\n\nSL: 0.7885  TP: 0.7840  R:R target: 3.1\n\nupdated 2026-04-28T06:07Z \u2014 fixed comp requirement to bullish \u226540 per counter-trend framework; event fired comp=+23 below threshold, WATCH.",
+      "current_price_ref": 0.78745,
       "price_ref": {
         "ts": "2026-04-27T14:18Z",
         "price": null
       },
       "last_updated": "2026-04-24T07:17:00Z",
-      "updated_utc": "2026-04-28T05:26Z",
-      "entry_criterion": "price retests 0.7875; M15 bar closes back below with rejection wick \u22653p. Requires readiness\u2265moderate to arm.",
-      "regime_context": "H1 up-sweep 2026-04-24T07:00Z; wick=1.7p at 0.787505. comp=-5.0 none readiness=none. USD-CHF swing eligible (scalp disabled-pip-conv). WATCH until comp \u2264-40 moderate-bear.",
+      "updated_utc": "2026-04-28T06:07Z",
+      "entry_criterion": "arm LIMIT SELL at 0.7875 when |comp| \u2265 40 bullish extension (counter-trend: bullish = extension creating fade edge). M15 bar closes below 0.7875 with rejection wick \u22653p.",
+      "regime_context": "H1 up-sweep 2026-04-24T07:00Z wick=1.7p. comp=+23 (none; need \u226540 bullish for arming). USDCHF scalp disabled (pip-conv). 4h time-stop if entered.",
       "sl": 0.7885,
       "tp": 0.784,
       "rr_target": "3.1",
-      "proximity": "USDCHF@0.78711; 4.6p BELOW 0.7875 (within 30p). comp=+23.0 none (need \u2264-40 bearish). WATCH. 2026-04-28T05:26Z",
+      "proximity": "USDCHF@0.78745; 0.5p BELOW 0.7875 (AT level). comp=+23 bullish (need \u226540). WATCH. 2026-04-28T06:07Z",
       "alert_id": "usdchf_sweep_sell_7875",
       "active": true
     },
@@ -57,14 +57,14 @@
       "sl": 0.713,
       "tp": 0.7187,
       "rr_target": "2.4",
-      "current_price_ref": 0.71794,
+      "current_price_ref": 0.7174,
       "price_ref": {
         "ts": "2026-04-27T14:18Z",
         "price": null
       },
       "last_updated": "2026-04-27T15:09Z",
-      "updated_utc": "2026-04-28T05:26Z",
-      "proximity": "AUDUSD@0.71794; 36.4p ABOVE 0.7143 (>30p, outside proximity). comp=+47.0 moderate-bull. VALIDATED (3f 4h=100%). Corr cap opens 05:53Z (GBPUSD exits). WATCH. 2026-04-28T05:26Z",
+      "updated_utc": "2026-04-28T06:07Z",
+      "proximity": "AUDUSD@0.71740; 31.0p ABOVE 0.7143 (just outside 30p). comp=+47 moderate-bull. VALIDATED (3f 4h=100%). LIMIT@0.7143 WORKING (broker confirmed). WATCH. 2026-04-28T06:07Z",
       "validated": true,
       "alert_id": "audusd_fvg_buy_7143",
       "active": true
@@ -82,14 +82,14 @@
       "sl": 92.5,
       "tp": 95.5,
       "rr_target": "3.1",
-      "current_price_ref": 96.112,
+      "current_price_ref": 96.69,
       "price_ref": {
         "ts": "2026-04-27T14:18Z",
         "price": null
       },
       "last_updated": "2026-04-26T06:00:00Z",
-      "updated_utc": "2026-04-28T05:26Z",
-      "proximity": "OIL@96.112; dist=2.88pts ABOVE 93.23 (outside proximity). comp=+43.0 moderate-bull. VALIDATED (6f 4h=100%). OIL SELL open \u2014 wait for close. WATCH. 2026-04-28T05:26Z",
+      "updated_utc": "2026-04-28T06:07Z",
+      "proximity": "OIL@96.69; dist=3.47pts ABOVE 93.23 (outside proximity). comp=+45 moderate-bull. VALIDATED (6f 4h=100%). WATCH. 2026-04-28T06:07Z",
       "alert_id": "oil_sweep_9323_buy_retest",
       "active": true
     },
@@ -106,40 +106,16 @@
       "sl": 4755.0,
       "tp": 4640.0,
       "rr_target": "2.4",
-      "current_price_ref": 4657.43,
+      "current_price_ref": 4639.76,
       "price_ref": {
         "ts": "2026-04-27T14:18Z",
         "price": null
       },
       "last_updated": "2026-04-26T17:11Z",
-      "updated_utc": "2026-04-28T05:26Z",
-      "proximity": "GOLD@4657.43; 63.6pts BELOW 4721.0 (3xH4ATR=97.9, within). comp=-30.0 weak-bear (need |comp|\u226540 BULLISH ext). VALIDATED (9f 4h=100%). WATCH. 2026-04-28T05:26Z",
+      "updated_utc": "2026-04-28T06:07Z",
+      "proximity": "GOLD@4639.76; 81.2pts BELOW 4721.0 (3xH4ATR~97.9, within). comp=-67 strong-bear (need |comp|\u226540 BULLISH ext). VALIDATED (9f 4h=100%). WATCH. 2026-04-28T06:07Z",
       "validated": true,
       "alert_id": "gold_sweep_4721_sell_retest",
-      "active": true
-    },
-    {
-      "id": "gbpusd_sweep_135255_buy_watch",
-      "instrument": "GBPUSD",
-      "level": 1.352555,
-      "emit_on": "cross_down",
-      "cooldown_sec": 1800,
-      "direction": "buy",
-      "note": "ENTRY: LIMIT filled @ 1.35254 (2026-04-28T01:53:54Z). Position OPEN \u2014 BUY 5000 GBPUSD. Time exit 05:53Z Apr28 (4h narrative cap). Close at market if time_exit reached OR closes below 1.3515 SL.\n\nCONTEXT: M15 down-sweep 06:15Z 2026-04-27 structural support at 1.352555. H4/Day bullish; M15 bearish short-term. comp=+33 weak-bull. FOMC T-39.7h (caution 18:00Z Apr28). 4h time cap per narrative thesis.\n\nSL: 1.3515  TP: 1.3600  R:R target: 7.1\n\nupdated 2026-04-28T02:20Z \u2014 LIMIT filled, position now OPEN; monitoring for time exit at 05:53Z.",
-      "entry_criterion": "POSITION OPEN. Monitor SL=1.3515 TP=1.3600. Time exit 05:53Z Apr28.",
-      "regime_context": "GBPUSD BUY open @ 1.35254. comp=+33 weak-bull. M15 bearish micro; H4/Day bull intact. FOMC caution from 18:00Z Apr28.",
-      "sl": 1.3515,
-      "tp": 1.36,
-      "rr_target": "7.1",
-      "current_price_ref": 1.35279,
-      "price_ref": {
-        "ts": "2026-04-27T16:01Z",
-        "price": 1.35508
-      },
-      "last_updated": "2026-04-27T16:01Z",
-      "updated_utc": "2026-04-28T05:26Z",
-      "proximity": "POSITION OPEN @1.35254 BUY. UPL=+$1.25 (bid=1.35279). comp=+33.0 weak. Time exit 05:53Z Apr28 (~27min). 2026-04-28T05:26Z",
-      "alert_id": "gbpusd_sweep_152555_buy_retest",
       "active": true
     },
     {
@@ -155,40 +131,15 @@
       "sl": 93.2,
       "tp": 95.5,
       "rr_target": "6.4",
-      "current_price_ref": 96.112,
+      "current_price_ref": 96.69,
       "price_ref": {
         "ts": "2026-04-27T14:18Z",
         "price": null
       },
       "last_updated": "2026-04-27T11:43Z",
-      "updated_utc": "2026-04-28T05:26Z",
-      "proximity": "OIL@96.112; dist=2.60pts ABOVE 93.51 (outside proximity). comp=+43.0 moderate-bull. OIL SELL open \u2014 watch. 2026-04-28T05:26Z",
+      "updated_utc": "2026-04-28T06:07Z",
+      "proximity": "OIL@96.69; dist=3.18pts ABOVE 93.51 (outside proximity). comp=+45 moderate-bull. WATCH. 2026-04-28T06:07Z",
       "alert_id": "oil_sweep_93511_buy_retest",
-      "active": true
-    },
-    {
-      "id": "gold_escalation_buy_zone",
-      "instrument": "GOLD",
-      "level": 4700.0,
-      "emit_on": "cross_down",
-      "cooldown_sec": 1800,
-      "direction": "buy",
-      "note": "ENTRY: price retests 4700 zone; M15 bar closes AT or ABOVE 4700 with bullish rejection wick \u22652pts. VALIDATED \u2014 naked LIMIT at readiness \u2265moderate (comp \u2265+40 bullish). 4h hard time-stop.\n\nCONTEXT: Escalation buy zone in ACTIVE_ESCALATION_SHOOT_TO_KILL regime (Hormuz blocked, US/Iran naval conflict). 13 fires, 69%/67% 1h/4h \u2192 validated per Rule 3. comp=-28 weak; arm when comp \u2265+40 bullish. 4h time-stop per Rule 3 validated protocol.\n\nSL: 4680  TP: 4750  R:R target: 2.5\n\nstats-updated 2026-04-28T04:10Z \u2014 13f/67%4h (was 10f/80%4h); still validated (\u226560%). No level change.",
-      "entry_criterion": "M15 close AT or ABOVE 4700 with bullish rejection wick \u22652pts. VALIDATED \u2014 naked LIMIT at comp \u2265+40 bullish. 4h time-stop.",
-      "regime_context": "Escalation buy zone. 13 fires, 69%/67% 1h/4h \u2192 validated. 4h time-stop. comp=-28 weak; arm when comp \u2265+40 bullish.",
-      "sl": 4680.0,
-      "tp": 4750.0,
-      "rr_target": "2.5",
-      "validated": true,
-      "current_price_ref": 4657.43,
-      "price_ref": {
-        "ts": "2026-04-27T14:18Z",
-        "price": null
-      },
-      "last_updated": "2026-04-27T11:43Z",
-      "updated_utc": "2026-04-28T05:26Z",
-      "proximity": "GOLD@4657.43; 42.6pts BELOW 4700.0 (3xH4ATR=97.9, within). comp=-30.0 weak-bear (need +40 bullish). VALIDATED (13f 4h=62%). WATCH. 2026-04-28T05:26Z",
-      "alert_id": "gold_safehaven_buy_4700",
       "active": true
     },
     {
@@ -204,15 +155,35 @@
       "sl": 0.782,
       "tp": 0.7875,
       "rr_target": "3.6",
-      "current_price_ref": 0.78711,
+      "current_price_ref": 0.78745,
       "price_ref": {
         "ts": "2026-04-27T15:09Z",
         "price": 0.784225
       },
       "last_updated": "2026-04-27T15:09Z",
-      "proximity": "USDCHF@0.78711; 39.1p ABOVE 0.7832 (outside 30p). comp=+23.0 none (need \u2264-40 bearish ext). WATCH. 2026-04-28T05:26Z",
-      "updated_utc": "2026-04-28T05:26Z",
+      "proximity": "USDCHF@0.78745; 43.5p ABOVE 0.7832 (outside 30p). comp=+23 none (need \u2264-40 bearish ext). WATCH. 2026-04-28T06:07Z",
+      "updated_utc": "2026-04-28T06:07Z",
       "alert_id": "usdchf_reclaim_buy_7832",
+      "active": true
+    },
+    {
+      "id": "gold_4700_sell_resistance",
+      "instrument": "GOLD",
+      "level": 4700.0,
+      "emit_on": "cross_up",
+      "cooldown_sec": 1800,
+      "direction": "sell",
+      "note": "ENTRY: arm LIMIT SELL at 4700 when |comp| \u2265 40 bullish extension; M15 bar closes back below 4700 with rejection wick \u22652pts from high (resistance-flip sell at broken support).\n\nCONTEXT: GOLD broke below 4700 on 2026-04-28 (comp=-67 strong bear, day high=4701.02 then collapsed to 4623.73). 4700 = major psychological support now flipped to resistance. Ceasefire extended indef but peace talks stalled; gold sold off on reduced safe-haven premium + inflation risk reassessment. Apply 4h time-stop if entered.\n\nSL: 4715  TP: 4635  R:R target: 4.3\n\nadded 2026-04-28T06:07Z \u2014 gold broke below 4700 comp=-67 strong bear; resistance-flip sell WATCH.",
+      "entry_criterion": "arm LIMIT SELL at 4700 when |comp| \u2265 40 bullish extension; M15 bar closes below 4700 with rejection wick \u22652pts.",
+      "regime_context": "Gold broke below 4700 comp=-67 strong bear on 2026-04-28. 4700 now resistance. Ceasefire extended but talks stalled. 4h time-stop if entered.",
+      "sl": 4715.0,
+      "tp": 4635.0,
+      "rr_target": "4.3",
+      "current_price_ref": 4639.76,
+      "last_updated": "2026-04-28T06:07Z",
+      "updated_utc": "2026-04-28T06:07Z",
+      "proximity": "GOLD@4639.76; 60.2pts BELOW 4700.0 (outside proximity). comp=-67 strong-bear. ADD as WATCH. 2026-04-28T06:07Z",
+      "alert_id": "gold_4700_sell_resistance",
       "active": true
     }
   ],
@@ -277,6 +248,6 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-28T05:05Z",
-  "last_updated": "2026-04-28T05:05Z"
+  "last_updated_utc": "2026-04-28T06:07Z",
+  "last_updated": "2026-04-28T06:07Z"
 }

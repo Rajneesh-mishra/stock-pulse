@@ -757,5 +757,37 @@
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
     "binary_event": "FOMC_APR2026 caution@18:00Z Apr28",
     "notes": "Flat account. AUDUSD LIMIT@0.7143 only working order. GOLD strong bear broke 4700 support. FOMC caution T-12h."
+  },
+  {
+    "tick_ts_utc": "2026-04-28T06:07Z",
+    "events_processed": 1,
+    "events": [
+      "evt_1777356005469_level_cross \u2014 USDCHF level_cross usdchf_sweep_h1_sell_retest@0.787515, comp=+23 < threshold, WATCH"
+    ],
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "working_orders": 1,
+    "working_order_detail": "AUDUSD LIMIT BUY@0.7143 SL=0.7130 TP=0.7187 size=3500",
+    "daily_pnl": -17.72,
+    "broker_balance": 972.44,
+    "watchlist_changes": [
+      "REMOVED gold_escalation_buy_zone (4700 buy \u2014 GOLD broke below comp=-67 strong bear)",
+      "REMOVED gbpusd_sweep_135255_buy_watch (stale \u2014 position closed)",
+      "MODIFIED usdchf_sweep_h1_sell_retest (fixed counter-trend comp: need bullish \u2265+40 not bearish \u2264-40)",
+      "ADDED gold_4700_sell_resistance (SELL@4700 resistance-flip, WATCH)"
+    ],
+    "attention_matrix": {
+      "EURUSD": "swing=NONE scalp=ACTIVE readiness=none comp=-13 \u2014 no alerts at current price 1.17061",
+      "GBPUSD": "swing=NONE scalp=ACTIVE readiness=none comp=+13.5 \u2014 stale alert removed, no fresh setup at 1.35185",
+      "AUDUSD": "swing=ARMED scalp=OFF readiness=moderate comp=+47 \u2014 LIMIT@0.7143 working, VALIDATED (3f 100%4h)",
+      "USDJPY": "swing=NONE scalp=OFF readiness=none comp=-1.5 \u2014 no alerts, pip-conv pending, USDJPY@159.16",
+      "USDCAD": "swing=NONE scalp=OFF readiness=none comp=-22 \u2014 no alerts at 1.36361",
+      "USDCHF": "swing=WATCH scalp=OFF readiness=none comp=+23 \u2014 SELL@0.7875 event fired, comp below threshold (need \u226540 bull), WATCH",
+      "GOLD": "swing=WATCH scalp=N/A readiness=strong-BEAR comp=-67 \u2014 4700 buy REMOVED; 4700 SELL resistance ADDED (WATCH); 4721 SELL WATCH (need bull ext)",
+      "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=moderate-bull comp=+45 \u2014 buy alerts at 93.23/93.51, price@96.69 outside proximity"
+    },
+    "scalp_audit": "EURUSD=KEEP GBPUSD=KEEP AUDUSD=DISABLED(wr=11%/19t) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
+    "news": "Ceasefire extended indef, US-Iran peace talks STALLED (Apr26 Bloomberg). Gold sold off on inflation risk + reduced safe-haven. FOMC Apr29 18:00Z T-35.9h, 94% hold priced.",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED"
   }
 ]
