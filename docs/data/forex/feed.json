@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T09:48:53.824230Z",
+  "generated_at": "2026-04-28T09:59:41.761329Z",
   "ticks": [
     {
       "ts_utc": "2026-04-24T14:10:00Z",
@@ -80,25 +80,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "tick_ts_utc": "2026-04-28T01:00Z",
-      "events_processed": 1,
-      "events": [
-        "evt_1777337674919_level_cross (EURUSD level_cross eurusd_sweep_117186 \u2014 comp=+3 none, WATCH)"
-      ],
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "skipped": 1,
-      "skip_reason": "EURUSD level_cross: comp=+3 none, need \u2265+40 bull to arm; readiness=none",
-      "positions_open": 1,
-      "working_orders": 1,
-      "upl_usd": -2.04,
-      "daily_pnl_usd": -10.52,
-      "balance": 979.08,
-      "binary_event": "FOMC 2026-04-29T18:00Z T\u224841h",
-      "scalp_status": "EURUSD/GBPUSD active; AUDUSD disabled (wr<20%); no halts",
-      "attention_covered": "9/9"
     },
     {
       "tick_ts_utc": "2026-04-28T01:06Z",
@@ -1104,6 +1085,14 @@
       "scalp_engine": "running shadow=false daily_pnl=0 EURUSD/GBPUSD active AUDUSD disabled(wr=11%)",
       "news": "FOMC Apr28-29 hold confirmed (94%); Hormuz closure ongoing; OIL inf fears; USD higher-for-longer",
       "attention_covered": "9/9"
+    },
+    {
+      "ts_utc": "2026-04-28T09:58Z",
+      "events_in": 3,
+      "opened": 0,
+      "closed": 1,
+      "skipped": 0,
+      "note": "09:58 forex auto \u2014 3 evt: eurusd_scalp b4fe TP_hit +$0.12 (bid 1.16952 crossed TP=1.16955; daemon inferred sl_hit incorrectly); b55d opened @1.16950 SL=1.16988 TP=1.16888; b59c opened @1.16936 SL=1.16988 TP=1.16840. 2 scalp pos open (b55d+b59c EURUSD SELL, engine ema_pullback, age<15min). AUDUSD LIMIT@0.7143 GTC intact (comp=+47 mod, dist=31.4p, validated). GOLD@4611 comp=-67 strong SELL; 4721 WATCH (Rule2 override, dist=109p>3xH4ATR=102p but 9f/4h=100% KEEP). OIL@98.19 comp=+55 mod; 9323 BUY WATCH (validated, price far above). GBPUSD comp=+25.5 weak 135203 dist=28p WATCH. USDJPY comp=+32 weak dist=44p WATCH (counter-fade 160 needs +40). USDCAD comp=-14.5 none; H4 FVG@1.36693 dist=15p + m15sweep@1.36313 dist=23p \u2014 both WATCH. USDCHF comp=+23 none. FOMC caution T-8.1h normal ops. No new swing trades. daily_pnl=-$20.47. attention_covered=9/9."
     }
   ]
 }

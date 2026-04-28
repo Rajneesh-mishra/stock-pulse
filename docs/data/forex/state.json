@@ -1,10 +1,37 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-28T09:42Z",
-  "state_ts_utc": "2026-04-28T09:42Z",
-  "regime_note": "2026-04-28T09:42Z forex auto \u2014 2 evt: pos_closed EURUSD 4ead-a1e3 TP +$0.56 consumed; level_cross EURUSD eurusd_m15sweep_116871_buy_watch cross_down@1.16867 \u2014 WATCH (comp=-23 none, need \u2264-40 to arm). 0 pos open. AUDUSD LIMIT@0.7143 GTC armed (comp=+47 mod, dist=28.5p, validated). GOLD@4609 comp=-67 strong bear; 4721 SELL WATCH (Rule2 KEEP, 9f/4h=100%). OIL@98.23 comp=+55 mod bull; 93.23/93.51 BUY WATCH (validated, dist<3xATR). EURUSD comp=-23 none; GBPUSD comp=+25.5 weak. USDJPY@159.59 comp=+32 weak dist=40.9p. FOMC Apr29@18:00Z caution T-8.3h \u2014 normal ops. USDCAD H4 FVG sell watch ADDED@1.36693. daily_pnl=-$20.59. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-28T09:58Z",
+  "state_ts_utc": "2026-04-28T09:58Z",
+  "regime_note": "2026-04-28T09:58Z forex auto \u2014 3 evt: eurusd_scalp b4fe TP +$0.12, b55d+b59c opened (engine SELL \u00d72 @1.1695/1.16936). 2 scalp pos open (b55d+b59c, age<15min). AUDUSD LIMIT@0.7143 GTC intact (comp=+47 mod, dist=31.4p). GOLD@4611 comp=-67 strong; 4721 SELL WATCH (dist=109p, 3\u00d7H4ATR=102p, Rule2 override\u20149f/4h=100%). OIL@98.19 comp=+55 mod; 93.23/93.51 BUY WATCH (validated, dist<3xATR). GBPUSD comp=+25.5 weak 135203 BUY dist=28p WATCH. USDJPY@159.56 comp=+32 weak dist=44p WATCH. USDCAD comp=-14.5 none; H4 FVG@1.36693 dist=15p, m15sweep@1.36313 dist=23p\u2014both WATCH. USDCHF comp=+23 none. FOMC Apr29@18:00Z caution T-8.1h \u2014 normal ops. daily_pnl=-$20.47. attention_covered=9/9.",
   "regime_note_prev": "2026-04-28T09:25Z forex auto \u2014 2 evt: pos_opened EURUSD SELL scalp \u00d72 (4ead-a1b5@1.16996 + 4ead-a1e3@1.16986, SL=1.17028, engine). Both in profit (+$0.40 UPL). AUDUSD LIMIT@0.7143 GTC working (comp=+47 mod, 31p above). GOLD@4613 comp=-67 strong bear; 4721 SELL WATCH (validated, dist=107p, 3\u00d7H4ATR=100.9p, KEEP). OIL@98.04 comp=+55 mod bull; BUY levels 93.23/93.51 intact (dist<5.88=3\u00d7H4ATR). FOMC caution starts 18:00Z today (T-8.6h) \u2014 normal ops. daily_pnl=-$21.68 realized, UPL+$0.40. attention_covered=9/9.",
-  "open_positions": [],
+  "open_positions": [
+    {
+      "deal_id": "00000000-4ead-b55d-044a-beb40055311e",
+      "instrument": "EURUSD",
+      "direction": "SELL",
+      "size": 1000,
+      "entry": 1.1695,
+      "sl": 1.16988,
+      "tp": 1.16888,
+      "opened_at": "2026-04-28T09:53:49Z",
+      "thesis_type": "scalp_entry",
+      "alert_id": "eurusd_scalp_ema_pullback",
+      "source": "scalp_engine"
+    },
+    {
+      "deal_id": "00000000-4ead-b59c-044a-beb40055311e",
+      "instrument": "EURUSD",
+      "direction": "SELL",
+      "size": 1000,
+      "entry": 1.16936,
+      "sl": 1.16988,
+      "tp": 1.1684,
+      "opened_at": "2026-04-28T09:54:50Z",
+      "thesis_type": "scalp_entry",
+      "alert_id": "eurusd_scalp_ema_pullback",
+      "source": "scalp_engine"
+    }
+  ],
   "watchlist": [
     {
       "instrument": "AUDUSD",
@@ -571,6 +598,24 @@
       "result": "win"
     },
     {
+      "trade_id": "eurusd_scalp_b4fe_20260428_tp",
+      "instrument": "EURUSD",
+      "direction": "SELL",
+      "entry": 1.16971,
+      "close": 1.16952,
+      "size": 1000.0,
+      "sl": 1.16997,
+      "tp": 1.16955,
+      "opened_at": "2026-04-28T09:52:49Z",
+      "closed_at": "2026-04-28T09:54:04Z",
+      "hold_min": 1.3,
+      "thesis_type": "scalp_entry",
+      "exit_reason": "TP_hit (bid 1.16952 crossed below TP=1.16955; daemon inferred sl_hit incorrectly — bid well below SL=1.16997)",
+      "pnl_usd": 0.12,
+      "alert_id": "eurusd_scalp_ema_pullback",
+      "result": "win"
+    },
+    {
       "trade_id": "eurusd_scalp_a1e3_20260428_tp",
       "instrument": "EURUSD",
       "direction": "SELL",
@@ -590,7 +635,7 @@
     }
   ],
   "consecutive_losses": 0,
-  "daily_pnl": -20.59,
+  "daily_pnl": -20.47,
   "weekly_pnl": 0,
   "total_pnl": 2.04,
   "total_trades": 2,
@@ -1188,7 +1233,7 @@
     "name": "FOMC_APR2026",
     "active": true,
     "deadline_utc": "2026-04-29T18:00Z",
-    "t_minus_h": 32.4,
+    "t_minus_h": 32.1,
     "verified": true,
     "sources": [
       "https://www.forex.com/en/news-and-analysis/fomc-outlook-usdcad-usdjpy-hold-at-key-support-levels/",
