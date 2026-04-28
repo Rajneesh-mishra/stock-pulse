@@ -1414,5 +1414,26 @@
     "regime": "GOLD ARMED(sell@4603) AUDUSD WATCH(buy@0.7143) EURUSD WATCH(up-sweep@1.17159 added)",
     "scalp": "GBPUSD=ACTIVE EURUSD=OFF AUDUSD=OFF",
     "note": "EURUSD M15 up-sweep@1.17159 (wick=1.2p, comp=-5.5 none) SKIP; ADD watch alert. No trades. FOMC caution opens 18:00Z."
+  },
+  {
+    "tick_ts_utc": "2026-04-28T16:32Z",
+    "type": "heartbeat",
+    "events_consumed": 0,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "trades_skipped": 0,
+    "open_positions": 0,
+    "working_orders": 2,
+    "daily_pnl_usd": -21.06,
+    "balance_usd": 969.98,
+    "binary_event": "FOMC_APR2026 T-25.5h (caution opens 18:00Z today)",
+    "scalp_status": "GBPUSD=ACTIVE; EURUSD=OFF(desync); AUDUSD=OFF(wr=11%); others=pip-conv or spread",
+    "attention_covered": "9/9",
+    "regime_note": "GOLD LIMIT SELL@4603 ARMED; AUDUSD LIMIT BUY@0.7143 WATCH; USDJPY comp=+43 meets fade threshold dist>30p; eurusd_116871 promoted VALIDATED; SL fix eurusd_117159",
+    "changes": [
+      "eurusd_m15sweep_116871: promoted to validated (2f/100%4h Rule3)",
+      "eurusd_upsweep_117159: SL widened 1.17171\u21921.17189, R:R 2.3\u21924.4",
+      "Proximity notes refreshed for all 9 alerts"
+    ]
   }
 ]

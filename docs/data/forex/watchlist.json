@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-28T16:12Z",
+  "last_updated_by_claude": "2026-04-28T16:32Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -39,8 +39,8 @@
         "price": null
       },
       "last_updated": "2026-04-28T15:30Z",
-      "updated_utc": "2026-04-28T16:12Z",
-      "proximity": "AUDUSD@0.71783; 40.3p ABOVE 0.7143 (LIMIT placed in broker). comp=54.5 moderate bull. WATCH (dist >30p). 2026-04-28T16:12Z",
+      "updated_utc": "2026-04-28T16:32Z",
+      "proximity": "AUDUSD@0.71776; 34.2p ABOVE 0.7143 (LIMIT GTC in broker). comp=+54.5 moderate bull. WATCH (dist>30p). 2026-04-28T16:32Z",
       "validated": true,
       "alert_id": "audusd_fvg_buy_7143",
       "active": true
@@ -64,8 +64,8 @@
         "price": null
       },
       "last_updated": "2026-04-26T06:00:00Z",
-      "updated_utc": "2026-04-28T16:12Z",
-      "proximity": "OIL@98.54; 5.31pts ABOVE 93.23. comp=+55 mod bull (moving away from level). WATCH (Rule2 KEEP: 6f/100%4h). 2026-04-28T16:12Z",
+      "updated_utc": "2026-04-28T16:32Z",
+      "proximity": "OIL@98.27; 5.04pts ABOVE 93.23. comp=+55 mod bull (price extending away). Rule2 KEEP (6f/100%4h). WATCH. 2026-04-28T16:32Z",
       "alert_id": "oil_sweep_9323_buy_retest",
       "active": true
     },
@@ -88,8 +88,8 @@
         "price": null
       },
       "last_updated": "2026-04-26T17:11Z",
-      "updated_utc": "2026-04-28T16:12Z",
-      "proximity": "GOLD@4584; 137pts BELOW 4721. comp=-55 mod bear. WATCH (Rule2 KEEP: 9f/100%4h). 2026-04-28T16:12Z",
+      "updated_utc": "2026-04-28T16:32Z",
+      "proximity": "GOLD@4582; 139pts BELOW 4721. comp=-55 mod bear. Rule1 met (dist>3\u00d7H4ATR) but Rule2 OVERRIDES (9f/100%4h). KEEP. 2026-04-28T16:32Z",
       "validated": true,
       "alert_id": "gold_sweep_4721_sell_retest",
       "active": true
@@ -101,18 +101,19 @@
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "ENTRY: price retests 1.16871 swept extreme; M15 bar closes AT or ABOVE 1.16871 with bullish rejection wick \u22652p from the low. Arm LIMIT BUY when |comp| \u2264 -40 bearish extension (counter-trend: bearish composite is the extension creating the buy edge).\n\nCONTEXT: M15 down-wick to 1.16871 on 2026-04-28T07:14Z (wick=1.1p, close=1.16935). Counter-trend buy at swept extreme. comp=-23 none bearish (need \u2264-40 to arm). Current price@1.1699 above level \u2014 WATCH only. 4h time-stop if entered.\n\nSL: 1.1675  TP: 1.1727  R:R target: 2.2\n\nadded 2026-04-28T07:27Z \u2014 M15 down-wick created fresh swept support at 1.16871; WATCH until comp\u2264-40 bearish.",
-      "entry_criterion": "M15 retest of 1.16871 with bullish rejection wick \u22652p. Arm LIMIT when |comp| \u2264 -40 bearish extension.",
+      "note": "ENTRY: price retests 1.16871 swept extreme; M15 bar closes AT or ABOVE 1.16871 with bullish rejection wick \u22652p from the low. VALIDATED \u2014 naked LIMIT at comp \u2264 -40 bearish extension (no M15 rejection wick required once comp threshold met).\n\nCONTEXT: VALIDATED \u2014 2 fires, 4h hit_rate=100% per Rule 3. M15 down-wick 07:14Z Apr28, wick=1.1p. comp=-5.5 none bearish (need \u2264-40 to arm). Current price ~1.1708, 27p above level. WATCH. 4h time-stop if entered.\n\nSL: 1.1675  TP: 1.1727  R:R target: 2.2\n\npromoted 2026-04-28T16:32Z \u2014 2f/100%4h; Rule 3 validated; naked LIMIT at comp \u2264 -40 (no confirmation required).",
+      "entry_criterion": "M15 retest of 1.16871 with bullish rejection wick \u22652p. VALIDATED \u2014 naked LIMIT when comp \u2264 -40 bearish extension.",
       "regime_context": "M15 down-wick 07:14Z Apr28, wick=1.1p. comp=-23 none bearish (need \u2264-40). 4h time-stop if entered.",
       "sl": 1.1675,
       "tp": 1.1727,
       "rr_target": "2.2",
       "current_price_ref": 1.16957,
-      "last_updated": "2026-04-28T07:27Z",
-      "updated_utc": "2026-04-28T16:12Z",
-      "proximity": "EURUSD@1.17142; 27.1p ABOVE 1.16871 (price recovered). comp=-5.5 none (need <=-40 bearish ext). WATCH. 2026-04-28T16:12Z",
+      "last_updated": "2026-04-28T16:32Z",
+      "updated_utc": "2026-04-28T16:32Z",
+      "proximity": "EURUSD@1.17083; 21.2p ABOVE 1.16871. comp=-5.5 none (need <=-40 bearish ext). VALIDATED (2f/100%4h). WATCH. 2026-04-28T16:32Z",
       "alert_id": "eurusd_m15sweep_116871_buy_watch",
-      "active": true
+      "active": true,
+      "validated": true
     },
     {
       "id": "usdcad_m15sweep_136313_buy_watch",
@@ -129,8 +130,8 @@
       "rr_target": "10.2",
       "current_price_ref": 1.36705,
       "last_updated": "2026-04-28T07:30Z",
-      "updated_utc": "2026-04-28T16:12Z",
-      "proximity": "USDCAD@1.36734; 42.1p ABOVE 1.36313. comp=-8.5 none. WATCH. 2026-04-28T16:12Z",
+      "updated_utc": "2026-04-28T16:32Z",
+      "proximity": "USDCAD@1.36772; 45.9p ABOVE 1.36313. comp=-8.5 none (need <=-40). WATCH. 2026-04-28T16:32Z",
       "alert_id": "usdcad_m15sweep_136313_buy_watch",
       "active": true
     },
@@ -149,8 +150,8 @@
       "rr_target": "3.7",
       "current_price_ref": 0.79048,
       "last_updated": "2026-04-28T14:07Z",
-      "updated_utc": "2026-04-28T16:12Z",
-      "proximity": "USDCHF@0.78903; 21.4p ABOVE 0.78689. comp=26.5 weak (need moderate+). WATCH. 2026-04-28T16:12Z",
+      "updated_utc": "2026-04-28T16:32Z",
+      "proximity": "USDCHF@0.78933; 24.4p ABOVE 0.78689. comp=+26.5 weak (need >=+40). H4FVG unmitigated. WATCH. 2026-04-28T16:32Z",
       "alert_id": "usdchf_h1fvg_buy_78750",
       "active": true
     },
@@ -169,8 +170,8 @@
       "rr_target": "3.0",
       "current_price_ref": 159.581,
       "last_updated": "2026-04-28T08:52Z",
-      "updated_utc": "2026-04-28T16:12Z",
-      "proximity": "USDJPY@159.55; dist=45p from 160. comp=37.5 weak (need \u226540 for arm). JPY pip-val blocks exec. WATCH. 2026-04-28T16:12Z",
+      "updated_utc": "2026-04-28T16:32Z",
+      "proximity": "USDJPY@159.583; dist=41.7p from 160. comp=+43 MEETS fade threshold (>=40 bull ext). dist>30p floor \u2192 NOT ARMED. JPY pip-val blocks exec. WATCH. 2026-04-28T16:32Z",
       "alert_id": "usdjpy_intervention_fade_160",
       "active": true
     },
@@ -189,8 +190,8 @@
       "rr_target": "3.8",
       "current_price_ref": 4572.79,
       "last_updated": "2026-04-28T12:09Z",
-      "updated_utc": "2026-04-28T16:12Z",
-      "proximity": "GOLD@4584.0; 19.1pts BELOW 4603 (LIMIT ARMED). comp=-55.0 moderate bear. ARMED. 2026-04-28T16:12Z",
+      "updated_utc": "2026-04-28T16:32Z",
+      "proximity": "GOLD@4582; 21pts BELOW 4603 (LIMIT SELL GTC ARMED). comp=-55 moderate bear. ARMED. FOMC caution T-1.5h. 2026-04-28T16:32Z",
       "alert_id": "gold_h1fvg_sell_4603",
       "active": true
     },
@@ -201,16 +202,16 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "ENTRY: price returns to 1.17159 swept extreme; M15 retest with bearish rejection wick \u22651p from the high. Arm LIMIT SELL when comp \u2265 +30 (bullish extension at swept level confirms fade).\n\nCONTEXT: M15 up-wick to 1.17159 on 2026-04-28T16:00Z (wick=1.2p, close=1.17127). Counter-trend sell at swept resistance. comp=-5.5 none (need \u2265+30 to arm). Fresh H4 bull FVG at 1.17078-1.17128 below \u2014 obstacle for TP; set TP below 1.17028. 4h time-stop if entered. FOMC Apr29 caution window opens 18:00Z Apr28.\n\nSL: 1.17171  TP: 1.17028  R:R target: 2.3\n\nadded 2026-04-28T16:12Z \u2014 M15 up-wick created fresh swept resistance at 1.17159; WATCH until comp\u2265+30 bullish.",
+      "note": "ENTRY: price returns to 1.17159 swept extreme; M15 retest with bearish rejection wick \u22651p from the high. Arm LIMIT SELL when comp \u2265 +30 (bullish extension at swept level confirms fade).\n\nCONTEXT: M15 up-wick to 1.17159 on 2026-04-28T16:00Z (wick=1.2p, close=1.17127). Counter-trend sell at swept resistance. comp=-5.5 none (need \u2265+30 to arm). H4 bull FVG at 1.17078-1.17128 below \u2014 TP below 1.17028. 4h time-stop if entered. FOMC Apr29 caution window opens 18:00Z Apr28.\n\nSL: 1.17189  TP: 1.17028  R:R target: 4.4\n\nupdated 2026-04-28T16:32Z \u2014 SL widened to 1.17189 (3p buffer above 1.17159 wick); R:R 4.4.",
       "entry_criterion": "M15 retest of 1.17159 with bearish rejection wick \u22651p. Arm LIMIT SELL when comp \u2265 +30 bullish extension.",
       "regime_context": "M15 up-wick 16:00Z Apr28, wick=1.2p. comp=-5.5 none (need \u2265+30). H4 bull FVG 1.17078-1.17128 below \u2014 resistance to downside. 4h time-stop if entered.",
-      "sl": 1.17171,
+      "sl": 1.17189,
       "tp": 1.17028,
-      "rr_target": "2.3",
+      "rr_target": "4.4",
       "current_price_ref": 1.17142,
-      "last_updated": "2026-04-28T16:12Z",
-      "updated_utc": "2026-04-28T16:12Z",
-      "proximity": "EURUSD@1.17142; price AT swept level (1.2p below 1.17159). comp=-5.5 none. WATCH only (need comp\u2265+30). 2026-04-28T16:12Z",
+      "last_updated": "2026-04-28T16:32Z",
+      "updated_utc": "2026-04-28T16:32Z",
+      "proximity": "EURUSD@1.17083; 7.6p BELOW 1.17159 (level near). comp=-5.5 none (need >=+30 bull ext). WATCH. 2026-04-28T16:32Z",
       "alert_id": "eurusd_upsweep_117159_sell_watch",
       "active": true
     }
@@ -277,5 +278,5 @@
     }
   ],
   "last_updated_utc": "2026-04-28T08:52Z",
-  "last_updated": "2026-04-28T14:07Z"
+  "last_updated": "2026-04-28T16:32Z"
 }
