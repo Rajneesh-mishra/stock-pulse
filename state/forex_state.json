@@ -1,10 +1,37 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-28T08:52Z",
-  "state_ts_utc": "2026-04-28T08:52Z",
-  "regime_note": "2026-04-28T08:52Z forex auto \u2014 2 evt: GBPUSD 7c6b BE SL $0.00 + 7bf5 SL -$0.56. 0 pos open. AUDUSD LIMIT@0.7143 GTC working (comp=+47 mod, 38p above). GOLD@4627 comp=-67 strong bear; 4721 SELL WATCH (94p below trigger, no bull ext to arm). FOMC caution starts 18:00Z today (T-9.1h) \u2014 normal ops. daily_pnl=-$21.68. attention_covered=9/9.",
-  "regime_note_prev": "2026-04-28T08:27Z forex auto \u2014 1 evt: pos_opened GBPUSD BUY scalp@1.35117 SL=1.35061 TP=1.35204 (scalp engine, cap 09:26Z). AUDUSD LIMIT@0.7143 GTC working. USDCHF FVG@0.7875 swept (dipped 0.78344) \u2192 level updated 0.7840. OIL alerts KEEP (dist<3\u00d7H4ATR=5.81). GOLD@4622 bear comp=-67; 4700/4721 SELL WATCH. FOMC caution starts 18:00Z today (T-9.5h) \u2014 normal ops now. daily_pnl=-$21.12. attention_covered=9/9.",
-  "open_positions": [],
+  "tick_ts_utc": "2026-04-28T09:25Z",
+  "state_ts_utc": "2026-04-28T09:25Z",
+  "regime_note": "2026-04-28T09:25Z forex auto \u2014 2 evt: pos_opened EURUSD SELL scalp \u00d72 (4ead-a1b5@1.16996 + 4ead-a1e3@1.16986, SL=1.17028, engine). Both in profit (+$0.40 UPL). AUDUSD LIMIT@0.7143 GTC working (comp=+47 mod, 31p above). GOLD@4613 comp=-67 strong bear; 4721 SELL WATCH (validated, dist=107p, 3\u00d7H4ATR=100.9p, KEEP). OIL@98.04 comp=+55 mod bull; BUY levels 93.23/93.51 intact (dist<5.88=3\u00d7H4ATR). FOMC caution starts 18:00Z today (T-8.6h) \u2014 normal ops. daily_pnl=-$21.68 realized, UPL+$0.40. attention_covered=9/9.",
+  "regime_note_prev": "2026-04-28T08:52Z forex auto \u2014 2 evt: GBPUSD 7c6b BE SL $0.00 + 7bf5 SL -$0.56. 0 pos open. AUDUSD LIMIT@0.7143 GTC working (comp=+47 mod, 38p above). GOLD@4627 comp=-67 strong bear; 4721 SELL WATCH (94p below trigger, no bull ext to arm). FOMC caution starts 18:00Z today (T-9.1h) \u2014 normal ops. daily_pnl=-$21.68. attention_covered=9/9.",
+  "open_positions": [
+    {
+      "deal_id": "00000000-4ead-a1b5-044a-beb40055311e",
+      "instrument": "EURUSD",
+      "direction": "SELL",
+      "size": 1000.0,
+      "entry": 1.16996,
+      "sl": 1.17028,
+      "tp": 1.16939,
+      "opened_at": "2026-04-28T09:10:23Z",
+      "thesis_type": "scalp_entry",
+      "source": "scalp_engine",
+      "time_cap_utc": "2026-04-28T09:55Z"
+    },
+    {
+      "deal_id": "00000000-4ead-a1e3-044a-beb40055311e",
+      "instrument": "EURUSD",
+      "direction": "SELL",
+      "size": 1000.0,
+      "entry": 1.16986,
+      "sl": 1.17028,
+      "tp": 1.16921,
+      "opened_at": "2026-04-28T09:11:24Z",
+      "thesis_type": "scalp_entry",
+      "source": "scalp_engine",
+      "time_cap_utc": "2026-04-28T09:56Z"
+    }
+  ],
   "watchlist": [
     {
       "instrument": "AUDUSD",

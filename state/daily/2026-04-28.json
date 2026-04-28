@@ -1019,5 +1019,51 @@
     "closed": 2,
     "skipped": 0,
     "note": "08:52Z tick \u2014 2 evt: GBPUSD 7c6b BE SL $0.00 (opened 08:26Z, 10.9min); 7bf5 SL -$0.56 (opened 08:25Z, 14min). 0 pos open. AUDUSD LIMIT@0.7143 GTC working (comp=+47 mod, 34p away). GOLD@4627 comp=-67 strong bear; 4721 SELL WATCH (94p, need bull ext). USDJPY@159.53 fade@160 WATCH (47p, comp=+32 need 40). scalp audit: EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=OFF(wr<threshold). FOMC Apr29@18:00Z caution starts today 18:00Z T-9.1h. daily_pnl=-$21.68. attention_covered=9/9."
+  },
+  {
+    "tick_ts_utc": "2026-04-28T09:25Z",
+    "events_processed": 2,
+    "events": [
+      {
+        "type": "position_opened",
+        "instrument": "EURUSD",
+        "deal_id": "00000000-4ead-a1b5-044a-beb40055311e",
+        "direction": "SELL",
+        "entry": 1.16996,
+        "sl": 1.17028,
+        "tp": 1.16939,
+        "source": "scalp_engine"
+      },
+      {
+        "type": "position_opened",
+        "instrument": "EURUSD",
+        "deal_id": "00000000-4ead-a1e3-044a-beb40055311e",
+        "direction": "SELL",
+        "entry": 1.16986,
+        "sl": 1.17028,
+        "tp": 1.16921,
+        "source": "scalp_engine"
+      }
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "open_positions": 2,
+    "open_orders": 1,
+    "daily_pnl_realized": -21.68,
+    "daily_upl": 0.4,
+    "account_balance": 969.77,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "FOMC_APR2026@2026-04-29T18:00Z (T-8.6h, caution@18:00Z today)",
+    "attention": {
+      "EURUSD": "scalp=ACTIVE 2 SELL open (engine), swing=NONE comp=-23 none",
+      "GBPUSD": "scalp=ACTIVE, swing=WATCH comp=+26 weak; sweep@1.35203 22.7p below",
+      "AUDUSD": "scalp=OFF wr=11%, swing=ARMED LIMIT@0.7143 GTC comp=+47 mod",
+      "USDJPY": "scalp=OFF pip-conv, swing=WATCH comp=+32 weak; interv@160 52p away",
+      "USDCAD": "scalp=OFF pip-conv, swing=WATCH comp=-22 none; sweep@1.36313 16p away",
+      "USDCHF": "scalp=OFF pip-conv, swing=WATCH comp=+23 none; sweep@0.784 50p away",
+      "GOLD": "scalp=N/A spread, swing=WATCH comp=-67 strong; 4721 SELL 107p (validated KEEP)",
+      "OIL_CRUDE": "scalp=N/A spread, swing=WATCH comp=+55 mod; BUY@93.23/93.51 4.8p away"
+    },
+    "notes": "EURUSD scalp engine opened 2 SELL positions (scalp_entry, self-managing). AUDUSD LIMIT@0.7143 GTC intact. GOLD 4721 SELL validated (5f 4h=100%) KEEP despite dist>3\u00d7H4ATR. FOMC caution activates 18:00Z today."
   }
 ]
