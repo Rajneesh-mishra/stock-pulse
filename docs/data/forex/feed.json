@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T10:46:09.652461Z",
+  "generated_at": "2026-04-28T10:59:08.455635Z",
   "ticks": [
     {
       "ts_utc": "2026-04-24T14:10:00Z",
@@ -80,60 +80,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "tick_ts_utc": "2026-04-28T02:20Z",
-      "events_consumed": 6,
-      "events": [
-        "GBPUSD level_cross (LIMIT filled @1.35254)",
-        "OIL level_cross oil_sweep_9579 (comp=+43\u226540, SELL LIMIT@96.218 confirmed)",
-        "GBPUSD position_opened (BUY @1.35254)",
-        "USDJPY liq_sweep 159.555 (wick=1.6p WATCH)",
-        "GOLD liq_sweep 4669.59 (wick=30.9p WATCH, alert added)",
-        "GBPUSD liq_sweep 1.352315 (wick=0.7p noise)"
-      ],
-      "trades": {
-        "opened": 0,
-        "closed": 0,
-        "limits_placed": 0,
-        "limits_cancelled": 0
-      },
-      "positions": [
-        {
-          "epic": "USDCAD",
-          "direction": "SELL",
-          "entry": 1.36106,
-          "sl": 1.3642,
-          "tp": 1.355,
-          "upl_usd": -4.15,
-          "age_h": 12.5
-        },
-        {
-          "epic": "GBPUSD",
-          "direction": "BUY",
-          "entry": 1.35254,
-          "sl": 1.3515,
-          "tp": 1.36,
-          "upl_usd": -0.95,
-          "age_h": 0.4
-        }
-      ],
-      "working_orders": [
-        {
-          "epic": "OIL_CRUDE",
-          "direction": "SELL",
-          "level": 96.218,
-          "sl": 96.6,
-          "tp": 94.4
-        }
-      ],
-      "daily_pnl": -10.52,
-      "float_usd": -5.1,
-      "balance": 975.97,
-      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "binary_event": "FOMC_APR2026 T-39.7h (caution@18:00Z Apr28)",
-      "attention_covered": "9/9",
-      "notes": "GBPUSD LIMIT filled at 1.35254 (prev tick armed @1.352555). OIL SELL LIMIT @96.218 (bear OB bottom) confirmed working \u2014 comp=+43 counter-threshold met. USDCAD SL 3.1p away; H4 bear FVG resistance at 1.36384 holding. GOLD down-sweep 4669.59 added to watchlist. USDJPY up-sweep 159.555 tiny wick, no action."
     },
     {
       "tick_ts_utc": "2026-04-28T02:28Z",
@@ -1018,6 +964,55 @@
       "binary": "FOMC Apr29@18:00Z T-31h (normal ops)",
       "scalp_status": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=OFF(wr<20t) \u2014 engine desync noted",
       "attention_covered": "9/9"
+    },
+    {
+      "tick_ts_utc": "2026-04-28T10:55Z",
+      "events_processed": 8,
+      "events_consumed_total": 16,
+      "scalp_positions_closed": [
+        {
+          "deal_id": "e0bb",
+          "entry": 1.16939,
+          "exit_reason": "sl_hit",
+          "pnl": -0.13
+        },
+        {
+          "deal_id": "e136",
+          "entry": 1.1694,
+          "exit_reason": "sl_hit",
+          "pnl": -0.12
+        }
+      ],
+      "scalp_positions_open": [
+        {
+          "deal_id": "e208",
+          "entry": 1.16949,
+          "sl": 1.16968,
+          "tp": 1.16925
+        }
+      ],
+      "working_orders": [
+        {
+          "epic": "AUDUSD",
+          "dir": "BUY",
+          "level": 0.7143,
+          "sl": 0.713,
+          "tp": 0.7187,
+          "type": "LIMIT_GTC"
+        }
+      ],
+      "eurusd_scalp_disabled": true,
+      "reason": "engine_desync_loop 4 SL hits",
+      "daily_pnl": -20.88,
+      "actions": [
+        "disabled_eurusd_scalp",
+        "state_reconcile_e208",
+        "add_usdchf_fvg_watch",
+        "update_usdcad_sweep_note"
+      ],
+      "binary_event": "FOMC_APR2026 T-32h normal ops",
+      "usdcad_sweep_note": "M15 up-sweep 1.36654 (1.5p), close 1.36643 \u2014 WATCH only comp=-14.5 none",
+      "news_macro": "AUDUSD macro bullish: RBA hike bets, Aus CPI Wed +4.7%e, FOMC hold expected. AUD at 4yr high."
     }
   ]
 }

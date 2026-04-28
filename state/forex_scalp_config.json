@@ -14,13 +14,14 @@
   },
   "pairs": {
     "EURUSD": {
-      "enabled": true,
+      "enabled": false,
       "mode": "ema_pullback",
       "bias": "neutral",
       "sessions": [
         "london",
         "ny_overlap"
-      ]
+      ],
+      "reason": "engine_desync_loop: 4 consecutive SL hits (b55d/b59c/e0bb/e136) all ~1.8-1.9p SL. Engine unable to track own positions (open_failed misfire). Disabled 2026-04-28T10:55Z. Re-enable after confirming engine tracks positions correctly and SL sizing reviewed (min 5p EURUSD)."
     },
     "GBPUSD": {
       "enabled": true,

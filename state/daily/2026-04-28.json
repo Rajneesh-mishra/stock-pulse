@@ -1158,5 +1158,54 @@
     "binary": "FOMC Apr29@18:00Z T-31h (normal ops)",
     "scalp_status": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=OFF(wr<20t) \u2014 engine desync noted",
     "attention_covered": "9/9"
+  },
+  {
+    "tick_ts_utc": "2026-04-28T10:55Z",
+    "events_processed": 8,
+    "events_consumed_total": 16,
+    "scalp_positions_closed": [
+      {
+        "deal_id": "e0bb",
+        "entry": 1.16939,
+        "exit_reason": "sl_hit",
+        "pnl": -0.13
+      },
+      {
+        "deal_id": "e136",
+        "entry": 1.1694,
+        "exit_reason": "sl_hit",
+        "pnl": -0.12
+      }
+    ],
+    "scalp_positions_open": [
+      {
+        "deal_id": "e208",
+        "entry": 1.16949,
+        "sl": 1.16968,
+        "tp": 1.16925
+      }
+    ],
+    "working_orders": [
+      {
+        "epic": "AUDUSD",
+        "dir": "BUY",
+        "level": 0.7143,
+        "sl": 0.713,
+        "tp": 0.7187,
+        "type": "LIMIT_GTC"
+      }
+    ],
+    "eurusd_scalp_disabled": true,
+    "reason": "engine_desync_loop 4 SL hits",
+    "daily_pnl": -20.88,
+    "actions": [
+      "disabled_eurusd_scalp",
+      "state_reconcile_e208",
+      "add_usdchf_fvg_watch",
+      "update_usdcad_sweep_note"
+    ],
+    "binary_event": "FOMC_APR2026 T-32h normal ops",
+    "usdcad_sweep_note": "M15 up-sweep 1.36654 (1.5p), close 1.36643 \u2014 WATCH only comp=-14.5 none",
+    "news_macro": "AUDUSD macro bullish: RBA hike bets, Aus CPI Wed +4.7%e, FOMC hold expected. AUD at 4yr high."
   }
 ]

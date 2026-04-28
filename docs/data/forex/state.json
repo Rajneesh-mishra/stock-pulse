@@ -1,10 +1,23 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-28T10:44Z",
-  "state_ts_utc": "2026-04-28T10:44Z",
-  "regime_note": "2026-04-28T10:44Z forex auto \u2014 0 evt (heartbeat). TIME_EXIT EURUSD scalp \u00d72 (b55d@1.1695+b59c@1.16936 \u2192 1.16951): engine desync (open={}), closed manually at 49/48min. combined_pnl=-0.16. 0 pos open. AUDUSD LIMIT@0.7143 GTC intact (comp=+39.5 weak, dist=22p, LIMIT in place). GOLD@4610 comp=-67 strong bear; 4721 SELL WATCH (dist=111p, Rule2 override\u20149f/4h=100%). OIL@98.19 comp=+55 mod bull; 93.23 BUY WATCH (validated, dist far). GBPUSD comp=+14.5 none. USDJPY@159.52 comp=+33 weak; fade@160 WATCH dist=48p. USDCAD comp=-14.5 none. USDCHF comp=+29 weak; H1FVG@0.78750 WATCH dist=22p. FOMC Apr29@18:00Z T-31h normal ops. daily_pnl=$-20.63. attention_covered=9/9.",
-  "regime_note_prev": "2026-04-28T10:03Z forex auto \u2014 1 evt: pos_opened EURUSD b59c consumed (scalp_entry). 2 scalp pos open (b55d+b59c, age~10min, UPL+$0.20). AUDUSD LIMIT@0.7143 GTC intact (comp=+47 mod, dist=30.5p, ARMED). GOLD@4610 comp=-67 strong bear; 4721 SELL WATCH (dist=111p, 3\u00d7H4ATR=102p, Rule2 override\u20149f/4h=100%). OIL@98.19 comp=+55 mod bull; 93.23/93.51 BUY WATCH (dist>4.9pts outside prox). GBPUSD comp=+25.5 weak no alert. USDJPY@159.55 comp=+32 weak; fade@160 WATCH dist=44.5p. USDCAD comp=-14.5 none; m15sweep@1.36313 WATCH dist=23.5p. USDCHF comp=+29 weak; H1FVG@0.78750 WATCH dist=22p. FOMC Apr29@18:00Z T-8h normal ops. daily_pnl=-$20.47. attention_covered=9/9.",
-  "open_positions": [],
+  "tick_ts_utc": "2026-04-28T10:55Z",
+  "state_ts_utc": "2026-04-28T10:55Z",
+  "regime_note": "2026-04-28T10:55Z forex auto \u2014 7 evt: 4x EURUSD scalp SL (b55d/b59c/e0bb/e136, engine desync loop, -$0.45), 2x pos_opened (e0bb+e136, engine reopened), 1x USDCAD M15 liqsweep@1.36654 (1.5p wick, WATCH only comp=-14.5 none). 1 scalp pos open: EURUSD SELL e208@1.16949 TP@1.16925 (+$0.11, near TP). EURUSD scalp DISABLED (engine_desync_loop). AUDUSD LIMIT@0.7143 GTC intact (macro bull: RBA hike bets Apr28 news, CPI Wed, comp=+39.5 near-moderate, dist=21.5p). GOLD@4610 comp=-67 strong bear WATCH; 4721/4700 SELL levels intact. OIL@98.24 comp=+55 mod bull WATCH; 93.23/93.51 BUY levels intact. USDJPY@159.61 comp=+32 weak; fade@160 SELL WATCH dist=39p. USDCAD H4FVG+sweep zone 1.36643-1.36693 SELL WATCH (comp=-14.5 none). USDCHF@0.78963 comp=+29 weak; H4FVG BUY WATCH added at 0.78689-0.78824. FOMC Apr29@18:00Z T-32h normal ops (caution @18:00Z Apr28 T-7h). daily_pnl=-$20.88. attention_covered=9/9.",
+  "regime_note_prev": "2026-04-28T10:44Z forex auto \u2014 0 evt (heartbeat): TIME_EXIT EURUSD scalp \u00d72 (b55d+b59c, engine desync). 0 pos open.",
+  "open_positions": [
+    {
+      "deal_id": "00000000-4ead-e208-044a-beb40055311e",
+      "instrument": "EURUSD",
+      "direction": "SELL",
+      "size": 1000.0,
+      "entry": 1.16949,
+      "sl": 1.16968,
+      "tp": 1.16925,
+      "thesis_type": "scalp_entry",
+      "opened_at": "2026-04-28T10:53:26Z",
+      "note": "Scalp engine entry (ema_pullback). Engine desync \u2014 tracked manually. Max hold 1h (by 11:53Z). Monitor for TP hit."
+    }
+  ],
   "watchlist": [
     {
       "instrument": "AUDUSD",
@@ -641,10 +654,54 @@
       "pnl_usd": -0.15,
       "alert_id": "eurusd_scalp_ema_pullback",
       "result": "loss"
+    },
+    {
+      "deal_id": "00000000-4ead-b55d-044a-beb40055311e",
+      "instrument": "EURUSD",
+      "direction": "SELL",
+      "entry": 1.1695,
+      "exit": 1.16988,
+      "pnl": -0.03,
+      "reason": "sl_hit",
+      "closed_at": "2026-04-28T10:43:45Z",
+      "thesis_type": "scalp_entry"
+    },
+    {
+      "deal_id": "00000000-4ead-b59c-044a-beb40055311e",
+      "instrument": "EURUSD",
+      "direction": "SELL",
+      "entry": 1.16936,
+      "exit": 1.16988,
+      "pnl": -0.17,
+      "reason": "sl_hit",
+      "closed_at": "2026-04-28T10:43:45Z",
+      "thesis_type": "scalp_entry"
+    },
+    {
+      "deal_id": "00000000-4ead-e0bb-044a-beb40055311e",
+      "instrument": "EURUSD",
+      "direction": "SELL",
+      "entry": 1.16939,
+      "exit": 1.16957,
+      "pnl": -0.13,
+      "reason": "sl_hit",
+      "closed_at": "2026-04-28T10:53:05Z",
+      "thesis_type": "scalp_entry"
+    },
+    {
+      "deal_id": "00000000-4ead-e136-044a-beb40055311e",
+      "instrument": "EURUSD",
+      "direction": "SELL",
+      "entry": 1.1694,
+      "exit": 1.16959,
+      "pnl": -0.12,
+      "reason": "sl_hit",
+      "closed_at": "2026-04-28T10:53:05Z",
+      "thesis_type": "scalp_entry"
     }
   ],
   "consecutive_losses": 0,
-  "daily_pnl": -20.47,
+  "daily_pnl": -20.88,
   "weekly_pnl": 0,
   "total_pnl": 2.04,
   "total_trades": 2,
@@ -1383,13 +1440,25 @@
       "direction": "SELL",
       "level": 1.36693,
       "active": true,
-      "note": "ENTRY: Price retests H4 bear FVG top at 1.36693 from below; M15 bearish rejection close confirms. WATCHLIST ONLY \u2014 arm when readiness \u2265 moderate (current: none, comp=-14.5).\n\nCONTEXT: H4 unmitigated bear FVG (1.36693-1.36580, 1 bar ago as of 09:42Z Apr28). USDCAD comp=-14.5 none, M15 BOS bull trending up toward FVG. Current price 1.36558 \u2014 13.5p below FVG top. Natural sell-side absorption zone.\n\nSL: 1.3715  TP: 1.3600  R:R target: 1.5\n\nadded 2026-04-28T09:42Z \u2014 fresh H4 bear FVG, unmitigated, proximity watch.",
-      "entry_criterion": "H4 FVG top 1.36693 retest with M15 bearish rejection close; readiness \u2265 moderate",
+      "note": "ENTRY: Price retests H4 bear FVG top at 1.36693 from below (or M15 sweep retest at 1.36643-1.36654); M15 bearish rejection close confirms. WATCHLIST ONLY \u2014 arm when readiness >= moderate (current: none, comp=-14.5).\n\nCONTEXT: H4 unmitigated bear FVG top 1.36693. M15 up-sweep 10:45Z Apr28 confirmed bear zone at 1.36654 (wick 1.5p, close 1.36643). Combined sell zone: 1.36643-1.36693. USDCAD comp=-14.5 none.\n\nSL: 1.3715  TP: 1.36  R:R target: 1.5\n\nUpdated 2026-04-28T10:55Z: incorporated M15 sweep confirmation.",
+      "entry_criterion": "H4 FVG top 1.36693 OR M15 sweep retest 1.36654 with M15 bearish rejection close; readiness >= moderate",
       "regime_context": "H4 unmitigated bear FVG 1 bar old; USDCAD comp=-14.5 none, watch for mod+ before arming",
       "sl": 1.3715,
       "tp": 1.36,
       "rr_target": 1.5,
-      "last_updated": "2026-04-28T09:42Z"
+      "last_updated": "2026-04-28T10:55Z"
+    },
+    {
+      "alert_id": "usdchf_h4fvg_buy_watch",
+      "instrument": "USDCHF",
+      "direction": "BUY",
+      "level": 0.7875,
+      "note": "ENTRY: Pullback to H4 bull FVG zone 0.78689-0.78824; M15 bullish rejection wick confirms. WATCHLIST ONLY \u2014 arm when readiness >= moderate (current: weak, comp=+29).\n\nCONTEXT: USDCHF comp=+29 weak bullish. H4 unmitigated bull FVG 0.78689-0.78824. H1 ChoCH bull confirmed. Structure bullish on H1/M15. Price at 0.78963, pulling back.\n\nSL: 0.7855  TP: 0.8020  R:R target: 8.5\n\nAdded 2026-04-28T10:55Z: H4 FVG pullback watch.",
+      "entry_criterion": "Pullback to 0.78689-0.78824 H4 FVG zone; M15 bullish rejection wick. Arm LIMIT when readiness >= moderate.",
+      "sl": 0.7855,
+      "tp": 0.802,
+      "rr_target": 8.5,
+      "last_updated": "2026-04-28T10:55Z"
     }
   ],
   "structure_watch": [
