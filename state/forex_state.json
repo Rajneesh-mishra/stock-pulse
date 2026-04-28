@@ -1,8 +1,8 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-28T14:07Z",
-  "state_ts_utc": "2026-04-28T14:07Z",
-  "regime_note": "2026-04-28T14:07Z forex auto \u2014 0 evt (heartbeat): FOMC Apr29@18:00Z T-27.9h (normal ops; caution window opens 18:00Z today). GOLD LIMIT SELL@4603 intact (comp=-65 strong bear, H1/H4 FVGs unmitigated, range $4585-$4708 per news \u2014 thesis confirmed). AUDUSD LIMIT BUY@0.7143 intact (comp=+49.5 moderate, dist=25.3p within 30p prox). USDJPY@159.581 fade@160 dist=41.9p OUTSIDE 30p prox (moved away from 160); comp=+43 moderate MEETS but JPY pip-val blocks. USDCHF alert updated (H1 FVG mitigated; H4 FVG 0.78689-0.78824 fresh; comp=+29 weak). OIL@98.475 comp=+55 mod bull; 93.23 WATCH (dist=5.25pts, 3xH4ATR=6.51 \u2014 not stale). News: Iran diplomatic efforts pushing gold down toward level; BoJ hold confirmed; FOMC hold 100% priced. daily_pnl=-$21.06. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-28T15:30Z",
+  "state_ts_utc": "2026-04-28T15:30Z",
+  "regime_note": "2026-04-28T15:30Z forex auto \u2014 0 evt (heartbeat): FOMC Apr29@18:00Z T-26.5h; caution window opens 18:00Z today (~2.5h). GOLD LIMIT SELL@4603 intact (comp=-67 strong bear, all 4 TFs, H1/H4 FVGs unmitigated). AUDUSD LIMIT BUY@0.7143 intact (comp=+49.5 moderate, dist=25.6p WITHIN 30p prox \u2014 ARMED). USDJPY@159.67 fade@160 comp=+43 moderate (extension MET), dist=33p OUTSIDE 30p prox \u2014 WATCH; JPY pip-val still blocks. USDCHF comp=+26.5 weak, H4 FVG@0.78689 watch (need moderate+ for arm). OIL comp=+55 moderate bull; validated BUY@93.23 (6f/100%4h) 5pts away \u2014 WATCH. State: pruned 4 stale/dup level_alerts (oil_9351_dup, gold_4700_stale-Rule1, usdcad_h4fvg_armable-moot, usdcad-dir-fix). daily_pnl=-$21.06. attention_covered=9/9.",
   "regime_note_prev": "2026-04-28T12:09Z forex auto \u2014 1 evt: EURUSD level_cross@1.16871 (eurusd_m15sweep_116871); comp=-23 none (need \u2264-40 for counter-trend BUY arm); NO TRADE. AUDUSD LIMIT@0.7143 GTC intact (comp=+39.5 weak; RBA hawkish thesis confirmed; dist=9.8p). GOLD@4571.53 comp=-67 strong bear; gold_4700 AUTO-REMOVED (dist=128.5pts > 3\u00d7H4ATR=108.8 Rule1); gold_h1fvg_sell_4603 ADDED (H1/H4 bear FVG resist 4569-4603, 3.8RR). gold_4721 KEPT per Rule2 (9f/100%4h validated; dist=149.5pts now technically stale but Rule2 overrides). OIL@99.42 comp=+55 mod; 93.23 WATCH (dist=6.19pts, Rule2 validated 6f/100%4h). USDJPY@159.731 comp=+44 mod; fade@160 dist=26.9p WITHIN 30p prox, +44 MEETS threshold, TECHNICALLY ARMED but JPY pip-val bug blocks risk_guard. EURUSD scalp disabled (engine_desync_loop). GBPUSD scalp ACTIVE (no trades). FOMC Apr29@18:00Z T-29.9h. daily_pnl=-$21.06. attention_covered=9/9.",
   "open_positions": [],
   "watchlist": [
@@ -1370,33 +1370,6 @@
       "note": "ENTRY: SELL LIMIT at 4721; M15 rejection close back below 4721 confirms. Validated alert \u2014 no extra confirmation required.\n\nCONTEXT: VALIDATED (9 fires, 4h hit_rate=100%). Strong bear all TFs (comp=-67). H4 bear FVG at 4671-4677 and H1 bear BOS@4657 confirm trend. Price 4633, if rallies to 4721 it faces H4 bear OB 4798-4890 overhead.\n\nSL: 4740  TP: 4660  R:R target: 3.2\n\nupdated 2026-04-28T07:14Z \u2014 comp updated -25 \u2192 -67 (strong bear now all TFs)"
     },
     {
-      "alert_id": "oil_sweep_9351_buy_retest",
-      "direction": "BUY",
-      "level": 93.5115,
-      "active": null,
-      "instrument": "OIL_CRUDE",
-      "entry_criterion": "Price retests 93.5115 from above; M15 bullish rejection wick; BUY LIMIT at 93.5115",
-      "regime_context": "Swept low at 93.5115. OIL comp=+36 weak bullish. Secondary buy zone above 93.23 validated level.",
-      "sl": 92.8,
-      "tp": 95.5,
-      "rr_target": 2.8,
-      "last_updated": "2026-04-27T20:34Z",
-      "note": "ENTRY: BUY LIMIT at 93.5115 (swept zone); M15 rejection wick on approach confirms.\n\nCONTEXT: Swept extreme below 93.5115. Secondary to oil_sweep_9323. OIL comp=+36 weak. No counterfactual data yet.\n\nSL: 92.80  TP: 95.50  R:R target: 2.8\n\nNote added 2026-04-27T20:28Z (was bare)"
-    },
-    {
-      "alert_id": "gold_4700_sell_resistance_watch",
-      "instrument": "GOLD",
-      "direction": "SELL",
-      "level": 4700.0,
-      "entry_criterion": "M15 bearish rejection wick at 4700 OR close back below 4700 after approach",
-      "regime_context": "Broken support flipped to resistance. GOLD strong bear (comp=-67). Buy zone at 4700 invalidated by breakdown to 4633. If gold bounces to 4700, sell the retest.",
-      "sl": 4725.0,
-      "tp": 4575.0,
-      "rr_target": 5.0,
-      "note": "ENTRY: M15 bearish rejection close at or below 4700 after approach from below. No confirmation needed if readiness strong bearish at touch.\n\nCONTEXT: Former buy zone (gold_escalation_buy_zone, 13 fires, 4h=62%) broke down at strong bear (comp=-67). 4700 now overhead resistance. Price 4633, FOMC Apr28-29 tonight. Arm SELL LIMIT at 4700 when price within 30p of level and readiness strong.\n\nSL: 4725  TP: 4575  R:R target: 5.0\n\nadded 2026-04-28T06:00Z \u2014 gold broke below 4700, bias flipped SELL.",
-      "last_updated": "2026-04-28T06:00Z"
-    },
-    {
       "alert_id": "gbpusd_sweep_135203_buy_watch",
       "instrument": "GBPUSD",
       "direction": "BUY",
@@ -1422,34 +1395,6 @@
       "note": "ENTRY: Second retest of 1.16871 swept extreme; M15 bar closes AT or ABOVE 1.16871 with bullish rejection wick \u22652p from the low. Arm LIMIT BUY when comp \u2264 -40 (bearish extension confirms counter-trend fade edge).\n\nCONTEXT: M15 down-sweep 07:14Z Apr28, wick to 1.16871 (1.1p), closed above. Counter-trend buy at swept sell-side liquidity. Second retest at 09:37Z: price crossed down to 1.16867, current comp=-23 (none \u2014 need \u2264-40 to arm). 4h time-stop on entry per counter-trend rule.\n\nSL: 1.1675  TP: 1.1727  R:R target: 2.2\n\nrewritten 2026-04-28T09:42Z \u2014 proper ENTRY/CONTEXT structure; arm condition clarified as comp\u2264-40 counter-trend (was ambiguous).",
       "last_updated": "2026-04-28T09:42Z",
       "active": null
-    },
-    {
-      "alert_id": "usdcad_m15sweep_136313_sell_watch",
-      "instrument": "USDCAD",
-      "direction": "SELL",
-      "level": 1.36313,
-      "trigger_price": 1.36313,
-      "entry_criterion": "Retest of M15 sweep level 1.36313 with bearish rejection wick.",
-      "regime_context": "M15 wick sweep@1.36313 on 2026-04-28. Wick=0.9p (small), comp=-22 none. WATCHLIST only.",
-      "sl": 1.3645,
-      "tp": 1.359,
-      "rr_target": 1.8,
-      "last_updated": "2026-04-28T07:46Z",
-      "note": "ENTRY: Retest of 1.36313 sweep level; M15 bearish rejection wick on approach from below.\n\nCONTEXT: M15 down-sweep@1.36313 (07:30Z Apr28), wick=0.9p. USDCAD comp=-22 (none). WATCHLIST only \u2014 arm if comp reaches bearish moderate (\u2264-40).\n\nSL: 1.3645  TP: 1.3590  R:R target: 1.8\n\nAdded back 07:42Z Apr28 (was in previous tick's regime_note but missing from level_alerts)."
-    },
-    {
-      "alert_id": "usdcad_h4fvg_sell_13669",
-      "instrument": "USDCAD",
-      "direction": "SELL",
-      "level": 1.36693,
-      "active": true,
-      "note": "ENTRY: Price retests sell zone 1.36654-1.36693 from below; M15 bearish rejection close confirms. WATCHLIST ONLY \u2014 arm when readiness >= moderate (current: none, comp=-14.5).\n\nCONTEXT: H4 unmitigated bear FVG top 1.36693. Fresh M15 up-sweep 11:15Z Apr28 @ 1.36674 (wick 3.5p, close 1.36654). Prior sweep 10:45Z @ 1.36654 (wick 1.5p). Combined sell zone: 1.36643-1.36693. USDCAD comp=-14.5 none \u2014 FOMC caution from 18:00Z Apr28, no entry until moderate+ readiness.\n\nSL: 1.3715  TP: 1.36  R:R target: 1.5\n\nUpdated 2026-04-28T11:23Z: fresh M15 up-sweep at 1.36674 (3.5p wick) reinforces zone top.",
-      "entry_criterion": "Sell zone 1.36654-1.36693; M15 bearish rejection close; readiness >= moderate",
-      "regime_context": "H4 FVG + 2x M15 up-sweeps confirm bear zone; comp=-14.5 none; FOMC caution from 18:00Z Apr28",
-      "sl": 1.3715,
-      "tp": 1.36,
-      "rr_target": 1.5,
-      "last_updated": "2026-04-28T11:23Z"
     },
     {
       "alert_id": "usdchf_h4fvg_buy_watch",

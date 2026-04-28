@@ -1363,5 +1363,32 @@
     "daily_pnl_usd": -21.06,
     "balance": 969.98,
     "notes": "Heartbeat tick. 0 events. FOMC Apr29@18:00Z T-27.9h. 2 LIMITs intact: GOLD SELL@4603 + AUDUSD BUY@0.7143. USDCHF alert updated to H4 FVG. News queries date-rolled. Caution window opens 18:00Z today (T-24h FOMC)."
+  },
+  {
+    "tick_ts_utc": "2026-04-28T15:30Z",
+    "events": 0,
+    "events_detail": "heartbeat",
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "orders_active": 2,
+    "orders_detail": "GOLD SELL LIMIT@4603 (0.2 lot), AUDUSD BUY LIMIT@0.7143 (3500)",
+    "daily_pnl_usd": -21.06,
+    "account_balance": 969.98,
+    "binary_event": "FOMC_APR2026 T-26.5h (caution opens 18:00Z today)",
+    "scalp": "GBPUSD=ACTIVE, EURUSD=OFF(desync), AUDUSD=OFF(wr=11%)",
+    "alerts_kept": 8,
+    "alerts_removed": 4,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "attention": {
+      "EURUSD": "swing=WATCH scalp=OFF readiness=none",
+      "GBPUSD": "swing=NONE scalp=ACTIVE readiness=none",
+      "AUDUSD": "swing=ARMED scalp=OFF readiness=moderate",
+      "USDJPY": "swing=WATCH scalp=OFF readiness=moderate(extension)",
+      "USDCAD": "swing=NONE scalp=OFF readiness=none",
+      "USDCHF": "swing=WATCH scalp=OFF readiness=weak",
+      "GOLD": "swing=ARMED scalp=N/A readiness=strong",
+      "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=moderate"
+    },
+    "note": "Heartbeat. FOMC caution window opens 18:00Z today. Both LIMITs intact. No new entries. 4 stale state alerts pruned."
   }
 ]

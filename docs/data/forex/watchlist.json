@@ -27,7 +27,7 @@
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "ENTRY: M15 bar closes ABOVE H4 bear FVG top 0.7146; enter on retest of 0.7143\u20130.7146 from above with bullish rejection wick \u22652p from the low. VALIDATED \u2014 naked LIMIT at readiness \u2265 moderate (comp \u226540 bullish). No M15 rejection confirmation required.\n\nCONTEXT: AUDUSD comp=+71 strong (4/4 TFs). VALIDATED: 3 fires, 4h hit_rate=100% per Rule 3. Correlation cap 2/2 (USDCAD SELL + GBPUSD LIMIT@1.352555 placed 16:01Z Apr27). Price at 0.71916 \u2014 49p ABOVE level (outside 30p proximity threshold). Arm LIMIT@0.7143 when price retraces within 30p AND corr cap opens (one position closes).\n\nSL: 0.7130  TP: 0.7187  R:R target: 2.4\n\nupdated 2026-04-27T17:44Z \u2014 corr cap restored to 2/2 after GBPUSD LIMIT placed 16:01Z; AUDUSD still blocked.",
+      "note": "ENTRY: price retests 0.7143-0.7146 H4 bear FVG zone; M15 bar closes AT or ABOVE 0.7143 with bullish rejection wick \u22652p from the low. VALIDATED \u2014 naked LIMIT at readiness \u2265 moderate (comp \u226540 bullish). No M15 rejection confirmation required.\n\nCONTEXT: VALIDATED \u2014 3 fires, 4h hit_rate=100% per Rule 3. AUDUSD comp=+49.5 moderate bull (3/4 TFs). Day FVG 0.71486-0.71510 fresh (1 bar ago). Current price ~0.7169, LIMIT@0.7143 (dist=25.6p within 30p prox \u2014 ARMED). FOMC Apr29 caution window opens 18:00Z today \u2014 limit already placed at half-size (0.5%). Apply 4h time-stop on fill.\n\nSL: 0.7130  TP: 0.7187  R:R target: 2.4\n\nupdated 2026-04-28T15:30Z \u2014 removed stale corr-cap note; LIMIT active in broker.",
       "entry_criterion": "M15 bar closes ABOVE H4 bear FVG top 0.7146; enter on retest of 0.7143\u20130.7146 from above with bullish rejection wick \u22652p. VALIDATED \u2014 naked LIMIT at comp \u226540 bullish.",
       "regime_context": "AUDUSD comp=+37.5 weak (was +62.5 strong 2026-04-27T17:44Z; need \u226540 for armed). 3 fires, 4h=100% \u2192 Rule 3 validated. Correlation cap 2/2 (USDCAD SELL + GBPUSD LIMIT@1.352555). Price 48.9p above level. Arm LIMIT when price retraces to 0.7143 AND corr cap opens AND comp\u226540.",
       "sl": 0.713,
@@ -38,7 +38,7 @@
         "ts": "2026-04-27T14:18Z",
         "price": null
       },
-      "last_updated": "2026-04-27T15:09Z",
+      "last_updated": "2026-04-28T15:30Z",
       "updated_utc": "2026-04-28T14:07Z",
       "proximity": "AUDUSD@0.71696; 25.3p ABOVE 0.7143 (WITHIN 30p prox). comp=+49.5 moderate-bull. VALIDATED (3f 4h=100%). LIMIT@0.7143 WORKING GTC. 2026-04-28T14:07Z",
       "validated": true,

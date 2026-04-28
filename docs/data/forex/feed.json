@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T14:13:36.786632Z",
+  "generated_at": "2026-04-28T15:21:23.797113Z",
   "ticks": [
     {
       "ts_utc": "2026-04-24T14:10:00Z",
@@ -80,93 +80,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "tick_ts_utc": "2026-04-28T04:10Z",
-      "events_processed": 1,
-      "events": [
-        {
-          "id": "evt_1777348870866_level_cross",
-          "type": "level_cross",
-          "instrument": "GOLD",
-          "alert": "gold_sweep_4669_buy_retest",
-          "action": "WATCH (comp=-28, need \u2264-40 bearish)"
-        }
-      ],
-      "positions_opened": 0,
-      "positions_closed": 0,
-      "open_positions": [
-        {
-          "epic": "GBPUSD",
-          "direction": "BUY",
-          "entry": 1.35254,
-          "age_h": 2.28,
-          "upl": 2.25,
-          "time_exit": "05:53Z"
-        },
-        {
-          "epic": "OIL_CRUDE",
-          "direction": "SELL",
-          "entry": 96.226,
-          "age_h": 1.78,
-          "upl": -3.61,
-          "time_exit": "06:23Z"
-        }
-      ],
-      "daily_pnl_realized": -16.82,
-      "float_upl": -1.36,
-      "attention_matrix": {
-        "EURUSD": {
-          "swing": "NONE",
-          "scalp": "ACTIVE",
-          "readiness": "none",
-          "reason": "comp=+3 none; no active level; scalp ema_pullback enabled"
-        },
-        "GBPUSD": {
-          "swing": "ARMED",
-          "scalp": "ACTIVE",
-          "readiness": "weak",
-          "reason": "POSITION OPEN @1.35254 BUY; time_exit=05:53Z; comp=+33 weak"
-        },
-        "AUDUSD": {
-          "swing": "WATCH",
-          "scalp": "OFF",
-          "readiness": "moderate",
-          "reason": "comp=+52 moderate; 39.6p above level (outside 30p); scalp wr=11%"
-        },
-        "USDJPY": {
-          "swing": "WATCH",
-          "scalp": "OFF",
-          "readiness": "none",
-          "reason": "comp=-1.5 none; 160.0 level 96p away; pip-conv pending"
-        },
-        "USDCAD": {
-          "swing": "WATCH",
-          "scalp": "OFF",
-          "readiness": "weak",
-          "reason": "comp=-27 weak; sell level 1.381 far above 1.3634; pip-conv pending"
-        },
-        "USDCHF": {
-          "swing": "WATCH",
-          "scalp": "OFF",
-          "readiness": "none",
-          "reason": "comp=+23 none; level 0.7875 in range but need \u2264-40 bearish; pip-conv pending"
-        },
-        "GOLD": {
-          "swing": "WATCH",
-          "scalp": "N/A",
-          "readiness": "weak",
-          "reason": "comp=-28 weak; 4669 buy needs \u2264-40 bearish; 4721 sell needs \u2265+40 bullish"
-        },
-        "OIL_CRUDE": {
-          "swing": "ARMED",
-          "scalp": "N/A",
-          "readiness": "moderate",
-          "reason": "POSITION OPEN OIL SELL@96.226; bear OB intact; comp=+45 mod-bull extension"
-        }
-      },
-      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "notes": "OIL time_exit corrected to 06:23Z (4h cap per trade note; was 10:23Z). gold_escalation_buy_zone stats updated to 13f/67%4h."
     },
     {
       "ts_utc": "2026-04-28T04:21Z",
@@ -953,6 +866,33 @@
       "daily_pnl_usd": -21.06,
       "balance": 969.98,
       "notes": "Heartbeat tick. 0 events. FOMC Apr29@18:00Z T-27.9h. 2 LIMITs intact: GOLD SELL@4603 + AUDUSD BUY@0.7143. USDCHF alert updated to H4 FVG. News queries date-rolled. Caution window opens 18:00Z today (T-24h FOMC)."
+    },
+    {
+      "tick_ts_utc": "2026-04-28T15:30Z",
+      "events": 0,
+      "events_detail": "heartbeat",
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "orders_active": 2,
+      "orders_detail": "GOLD SELL LIMIT@4603 (0.2 lot), AUDUSD BUY LIMIT@0.7143 (3500)",
+      "daily_pnl_usd": -21.06,
+      "account_balance": 969.98,
+      "binary_event": "FOMC_APR2026 T-26.5h (caution opens 18:00Z today)",
+      "scalp": "GBPUSD=ACTIVE, EURUSD=OFF(desync), AUDUSD=OFF(wr=11%)",
+      "alerts_kept": 8,
+      "alerts_removed": 4,
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "attention": {
+        "EURUSD": "swing=WATCH scalp=OFF readiness=none",
+        "GBPUSD": "swing=NONE scalp=ACTIVE readiness=none",
+        "AUDUSD": "swing=ARMED scalp=OFF readiness=moderate",
+        "USDJPY": "swing=WATCH scalp=OFF readiness=moderate(extension)",
+        "USDCAD": "swing=NONE scalp=OFF readiness=none",
+        "USDCHF": "swing=WATCH scalp=OFF readiness=weak",
+        "GOLD": "swing=ARMED scalp=N/A readiness=strong",
+        "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=moderate"
+      },
+      "note": "Heartbeat. FOMC caution window opens 18:00Z today. Both LIMITs intact. No new entries. 4 stale state alerts pruned."
     }
   ]
 }
