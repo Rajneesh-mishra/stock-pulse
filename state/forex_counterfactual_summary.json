@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T05:30:57.385792+00:00",
+  "generated_at": "2026-04-28T06:01:51.179351+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -291,7 +291,7 @@
       "alert_id": "usdchf_sweep_h1_sell_retest",
       "instrument": "USDCHF",
       "direction": "sell",
-      "fires": 1,
+      "fires": 2,
       "by_horizon": {
         "1h": {
           "filled": 1,
@@ -566,9 +566,9 @@
           "hit_rate": 0.2
         },
         "24h": {
-          "filled": 2,
-          "favorable": 2,
-          "avg_pips": 12.7,
+          "filled": 3,
+          "favorable": 3,
+          "avg_pips": 14.0,
           "hit_rate": 1.0
         }
       }
@@ -820,9 +820,9 @@
           "hit_rate": 0.5
         },
         "4h": {
-          "filled": 1,
+          "filled": 2,
           "favorable": 0,
-          "avg_pips": -26.6,
+          "avg_pips": -69.2,
           "hit_rate": 0.0
         },
         "24h": {
@@ -837,7 +837,7 @@
       "alert_id": "gbpusd_sweep_135255_buy_watch",
       "instrument": "GBPUSD",
       "direction": "buy",
-      "fires": 2,
+      "fires": 3,
       "by_horizon": {
         "1h": {
           "filled": 2,
@@ -846,10 +846,10 @@
           "hit_rate": 0.0
         },
         "4h": {
-          "filled": 1,
+          "filled": 2,
           "favorable": 1,
-          "avg_pips": 1.0,
-          "hit_rate": 1.0
+          "avg_pips": -2.1,
+          "hit_rate": 0.5
         },
         "24h": {
           "filled": 0,
@@ -866,10 +866,10 @@
       "fires": 3,
       "by_horizon": {
         "1h": {
-          "filled": 2,
+          "filled": 3,
           "favorable": 1,
-          "avg_pips": -0.7,
-          "hit_rate": 0.5
+          "avg_pips": -149.0,
+          "hit_rate": 0.33
         },
         "4h": {
           "filled": 0,

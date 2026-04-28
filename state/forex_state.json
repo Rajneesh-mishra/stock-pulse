@@ -1,45 +1,10 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-28T05:26Z",
-  "state_ts_utc": "2026-04-28T05:26Z",
-  "regime_note": "2026-04-28T05:26Z forex auto \u2014 0 evt heartbeat. GBPUSD BUY@1.35254 age=3h32min UPL=+$1.25 (bid=1.35279) time_exit=05:53Z (~27min). OIL SELL@96.226 age=3h02min UPL=+$1.37 (bid=96.081) bear OB 96.22-96.57 held; time_exit=10:23Z. Hormuz peace proposal (Tehran conditional on blockade lift) \u2014 WTI futures $97.03; bearish drift favours SELL. FOMC Apr28-29 starts today; decision 18:00Z Apr29; caution@18:00Z Apr28 (~12.6h). 99.9% hold priced. AUDUSD comp=+47 moderate-bull; 36p above 0.7143, outside proximity; corr cap opens 05:53Z. GOLD comp=-30 weak-bear; neither 4700 buy nor 4721 sell meets arming threshold. 2 pos 0 working. daily_pnl=-$14.79 float~+$2.62. attention_covered=9/9.",
-  "regime_note_prev": "2026-04-28T05:05Z forex auto \u2014 1 evt: OIL level_cross oil_sweep_9579_sell_retest (4th fire, Rule2 REMOVE 4h=0.0; position HOLDS \u2014 bear OB 96.218-96.5705 intact, comp=+43 moderate-bull fade active). GBPUSD BUY@1.35254 age=3h11min UPL=+$2.65 (bid=1.35307) time_exit=05:53Z (~48min). OIL SELL@96.226 age=2h42min UPL=+$0.01 (offer=96.225) bear OB retest; time_exit=10:23Z. GOLD@4651.72 broke below sweep 4669 (17.5pts below) \u2014 gold_sweep_4669 REMOVED (invalidated). comp=-30 weak-bear. AUDUSD@0.71809 comp=+52 moderate-bull (38p above 0.7143, outside proximity; corr cap opens 05:53Z). FOMC T~36.9h, caution@18:00Z Apr28 (~13h away). 2 pos 0 working. daily_pnl=-$14.79 float~+$2.66. attention_covered=9/9.",
-  "open_positions": [
-    {
-      "dealId": "00000000-4e78-f95b-044a-beb40055311e",
-      "epic": "GBPUSD",
-      "direction": "BUY",
-      "size": 5000.0,
-      "entry": 1.35254,
-      "sl": 1.3515,
-      "tp": 1.36,
-      "opened_at": "2026-04-28T01:53:54Z",
-      "thesis_type": "narrative",
-      "alert_id": "gbpusd_sweep_152555_buy_retest",
-      "time_exit_utc": "2026-04-28T05:53Z",
-      "rr": 7.1,
-      "risk_usd": 5.2,
-      "upl_usd": 3.95,
-      "upl": 3.95
-    },
-    {
-      "dealId": "00000000-4e79-04ea-044a-beb40055311e",
-      "epic": "OIL_CRUDE",
-      "direction": "SELL",
-      "size": 13.0,
-      "entry": 96.226,
-      "sl": 96.6,
-      "tp": 94.4,
-      "opened_at": "2026-04-28T02:23:30Z",
-      "thesis_type": "counter_trend_fade",
-      "time_exit_utc": "2026-04-28T06:23Z",
-      "rr": 4.76,
-      "risk_usd": 4.97,
-      "note": "Counter-trend fade OIL SELL: bear OB 96.218-96.5705; comp=+43 mod bullish extension; Hormuz ceasefire proposal driving oil lower. 4h time-stop: 06:23Z. Cancel if OIL closes above 96.60 (bear OB top).",
-      "upl_usd": 1.47,
-      "upl": 1.47
-    }
-  ],
+  "tick_ts_utc": "2026-04-28T06:00Z",
+  "state_ts_utc": "2026-04-28T06:00Z",
+  "regime_note": "2026-04-28T06:00Z forex auto \u2014 5 evt: OIL/GBPUSD position_closed confirmed (both logged prev tick: OIL pnl=-$3.58, GBPUSD pnl=+$0.65). GBPUSD level_cross cross_down 1.35255 (old alert stale, REMOVED). GBPUSD liq_sweep 1.35203 M15 (new watchlist added; readiness weak comp=+25.5). AUDUSD liq_sweep 0.71740 M15 0.9p wick (shallow; existing LIMIT@0.7143 covers thesis, no new entry). ACCOUNT FLAT: 0 pos 1 working (AUDUSD LIMIT@0.7143 GTC, broker confirmed). GOLD strong bear (comp=-67 all TF agree); broke below 4700; gold_escalation_buy_zone REMOVED, gold_4700_sell_resistance_watch ADDED. gold_safehaven_4775 REMOVED (142p away, Rule1 staleness). GBPUSD scalp bias reset neutral (comp=+25.5 weak). FOMC Apr28-29: caution activates 18:00Z today (~12h). OIL comp=+45 mod bull at 96.97; buy_retest alerts 93.23/93.51 maintained as pullback zones. USDCHF SELL retest 0.787505 within 1.85p \u2014 watchlist. daily_pnl=-$17.72 float=0. attention_covered=9/9.",
+  "regime_note_prev": "2026-04-28T05:26Z forex auto \u2014 0 evt heartbeat. GBPUSD BUY@1.35254 age=3h32min UPL=+$1.25 (bid=1.35279) time_exit=05:53Z (~27min). OIL SELL@96.226 age=3h02min UPL=+$1.37 (bid=96.081) bear OB 96.22-96.57 held; time_exit=10:23Z. Hormuz peace proposal (Tehran conditional on blockade lift) \u2014 WTI futures $97.03; bearish drift favours SELL. FOMC Apr28-29 starts today; decision 18:00Z Apr29; caution@18:00Z Apr28 (~12.6h). 99.9% hold priced. AUDUSD comp=+47 moderate-bull; 36p above 0.7143, outside proximity; corr cap opens 05:53Z. GOLD comp=-30 weak-bear; neither 4700 buy nor 4721 sell meets arming threshold. 2 pos 0 working. daily_pnl=-$14.79 float~+$2.62. attention_covered=9/9.",
+  "open_positions": [],
   "watchlist": [
     {
       "instrument": "AUDUSD",
@@ -305,10 +270,46 @@
       "closed_at": "2026-04-28T02:52Z",
       "exit_reason": "Thesis invalidated: H4 FVG (entry premise) mitigated; M15 flipped bullish (price>EMA); 2.3p from SL. Closed early to protect capital.",
       "alert_id": "usdcad_h4fvg_sell_retest"
+    },
+    {
+      "trade_id": "gbpusd_sweep_152555_buy_20260428_close",
+      "instrument": "GBPUSD",
+      "direction": "BUY",
+      "entry": 1.35254,
+      "close": 1.35267,
+      "size": 5000.0,
+      "sl": 1.3515,
+      "tp": 1.36,
+      "opened_at": "2026-04-28T01:53:54Z",
+      "closed_at": "2026-04-28T05:35:27Z",
+      "hold_min": 221.6,
+      "thesis_type": "narrative",
+      "exit_reason": "position_sync_closed \u2014 closed before 05:53Z time cap; last_bid=1.35267 pnl=+$0.65",
+      "pnl_usd": 0.65,
+      "alert_id": "gbpusd_sweep_152555_buy_retest",
+      "result": "win"
+    },
+    {
+      "trade_id": "oil_sell_96226_20260428_close",
+      "instrument": "OIL_CRUDE",
+      "direction": "SELL",
+      "entry": 96.226,
+      "close": 96.501,
+      "size": 13.0,
+      "sl": 96.6,
+      "tp": 94.4,
+      "opened_at": "2026-04-28T02:23:30Z",
+      "closed_at": "2026-04-28T05:32:59Z",
+      "hold_min": 189.5,
+      "thesis_type": "counter_trend_fade",
+      "exit_reason": "position_sync_closed \u2014 Hormuz peace proposal FAILED; Iran/US deadlocked; oil rallied to 97; bear OB 96.22-96.57 violated. pnl=-$3.58",
+      "pnl_usd": -3.58,
+      "alert_id": "oil_sweep_9579_sell_retest",
+      "result": "loss"
     }
   ],
   "consecutive_losses": 1,
-  "daily_pnl": -14.79,
+  "daily_pnl": -17.72,
   "weekly_pnl": 0,
   "total_pnl": 2.04,
   "total_trades": 2,
@@ -906,7 +907,7 @@
     "name": "FOMC_APR2026",
     "active": true,
     "deadline_utc": "2026-04-29T18:00Z",
-    "t_minus_h": 36.6,
+    "t_minus_h": 36.2,
     "verified": true,
     "sources": [
       "https://www.forex.com/en/news-and-analysis/fomc-outlook-usdcad-usdjpy-hold-at-key-support-levels/",
@@ -932,20 +933,6 @@
       "note": "ENTRY: SELL LIMIT at 160.05 when price approaches 160.00-160.10; M15 rejection wick confirmation preferred\n\nCONTEXT: MoF intervention red line. Japan intervened at 159.23 in Jan 2026; 160.00 is widely watched. BoJ hold Apr27-28 leaves MoF to jawbone.\n\nSL: 160.50  TP: 158.50  R:R target: 3.0\n\nNote added 2026-04-27T20:28Z (was bare)"
     },
     {
-      "alert_id": "gold_safehaven_continuation_buy",
-      "direction": "SELL",
-      "level": 4775.0,
-      "active": true,
-      "instrument": "GOLD",
-      "entry_criterion": "M15 bearish rejection close at/above 4775 or wick spike above 4775 closing back below",
-      "regime_context": "GOLD comp=-25 weak bearish. This is a counter-trend fade of an escalation overshoot spike.",
-      "sl": 4800.0,
-      "tp": 4720.0,
-      "rr_target": 2.2,
-      "last_updated": "2026-04-27T20:34Z",
-      "note": "ENTRY: M15 bearish rejection close at or above 4775; OR wick spike above 4775 closing back below\n\nCONTEXT: Counter-trend sell zone at overhead extreme. If gold spikes above 4775 on escalation headline, fade the overshoot. comp=-25 weak bearish background supports eventual fade.\n\nSL: 4800  TP: 4720  R:R target: 2.2\n\nFixed direction BUY\u2192SELL 2026-04-27T20:28Z (note said counter-trend SELL but direction field was wrong)"
-    },
-    {
       "alert_id": "usdchf_sweep_h1_sell_retest",
       "direction": "SELL",
       "level": 0.787505,
@@ -968,10 +955,10 @@
       "entry_criterion": "LIMIT BUY at 0.7143; arm after GBPUSD position closes (correlation)",
       "regime_context": "AUDUSD moderate bull. Blocked by 2-correlated limit with GBPUSD BUY",
       "sl": 0.713,
-      "tp": 0.728,
+      "tp": 0.7187,
       "rr_target": 2.1,
-      "last_updated": "2026-04-28T03:10Z",
-      "note": "ENTRY: LIMIT BUY at 0.7143 (M15 FVG level); M15 rejection wick or close at/above 0.7143. INACTIVE \u2014 correlated block: GBPUSD BUY open (2-correlated limit reached). Arm when GBPUSD position closes.\n\nCONTEXT: VALIDATED (fires=3, 4h=100%). AUDUSD readiness=moderate bull. Current price=0.71792 (36p above level, just outside 30p proximity threshold).\n\nSL: 0.713  TP: 0.728  R:R target: 2.1\n\nModified 2026-04-28T03:10Z: correlation block noted, price 36p above level."
+      "last_updated": "2026-04-28T06:00Z",
+      "note": "ENTRY: LIMIT BUY at 0.7143 (M15 FVG bottom). LIMIT WORKING on broker (GTC).\n\nCONTEXT: VALIDATED (3 fires, 4h=100%). Day FVG 0.71486-0.71731 unmitigated. AUDUSD comp=+47 moderate-bull. FOMC caution@18:00Z Apr28 \u2014 LIMIT rests GTC, monitor for fill. GBPUSD position closed; correlated cap cleared.\n\nSL: 0.7130  TP: 0.7187  R:R target: 3.5\n\nupdated 2026-04-28T06:00Z \u2014 GBPUSD closed, correlated block cleared; LIMIT active."
     },
     {
       "alert_id": "oil_sweep_9323_buy_retest",
@@ -1016,20 +1003,6 @@
       "note": "ENTRY: BUY LIMIT at 1.17186 on retest; M15 rejection wick confirmation. Arm only when readiness>=moderate.\n\nCONTEXT: Swept zone. comp=3 neutral currently \u2014 watchlist only. Price within proximity (3.5p < 30p threshold) but need readiness improvement.\n\nSL: 1.1700  TP: 1.1780  R:R target: 3.1\n\nNote added 2026-04-27T20:28Z (was bare)"
     },
     {
-      "alert_id": "gbpusd_sweep_135255_buy_watch",
-      "direction": "BUY",
-      "level": 1.352555,
-      "active": null,
-      "instrument": "GBPUSD",
-      "entry_criterion": "Position open at 1.35254 \u2014 no new entry",
-      "regime_context": "GBPUSD BUY active, BoE hawkish, swept zone confirmed",
-      "sl": 1.3515,
-      "tp": 1.36,
-      "rr_target": 7.1,
-      "last_updated": "2026-04-28T03:10Z",
-      "note": "ENTRY: N/A \u2014 LIMIT filled 2026-04-28T01:54Z; position open GBPUSD BUY@1.35254.\n\nCONTEXT: Swept zone at 1.352555. Position active. Monitoring time_exit=05:53Z. BoE hawkish supporting GBP.\n\nSL: 1.3515  TP: 1.36  R:R target: 7.1\n\nModified 2026-04-28T03:10Z: LIMIT filled, position open."
-    },
-    {
       "alert_id": "oil_sweep_9351_buy_retest",
       "direction": "BUY",
       "level": 93.5115,
@@ -1044,20 +1017,6 @@
       "note": "ENTRY: BUY LIMIT at 93.5115 (swept zone); M15 rejection wick on approach confirms.\n\nCONTEXT: Swept extreme below 93.5115. Secondary to oil_sweep_9323. OIL comp=+36 weak. No counterfactual data yet.\n\nSL: 92.80  TP: 95.50  R:R target: 2.8\n\nNote added 2026-04-27T20:28Z (was bare)"
     },
     {
-      "alert_id": "gold_escalation_buy_zone",
-      "direction": "BUY",
-      "level": 4700.0,
-      "active": null,
-      "instrument": "GOLD",
-      "entry_criterion": "Price retests 4700 from below; M15 bullish close at/above 4700. VALIDATED \u2014 no extra confirmation required.",
-      "regime_context": "VALIDATED: 12 fires, 4h=67%. Escalation buy zone. Price currently 4679 (below). Active when gold returns to 4700.",
-      "sl": 4680.0,
-      "tp": 4760.0,
-      "rr_target": 3.0,
-      "last_updated": "2026-04-27T20:34Z",
-      "note": "ENTRY: BUY at 4700 retest; M15 close at/above 4700 confirms. VALIDATED \u2014 naked LIMIT at moderate+ readiness.\n\nCONTEXT: VALIDATED (12 fires, 4h=67%). Escalation regime buy zone. comp=-25 bearish \u2014 price needs to return to 4700. 4h time-stop applies.\n\nSL: 4680  TP: 4760  R:R target: 3.0\n\nNote added 2026-04-27T20:28Z (was bare)"
-    },
-    {
       "alert_id": "usdchf_m15sweep_7832_buy_watch",
       "instrument": "USDCHF",
       "direction": "buy",
@@ -1069,6 +1028,32 @@
       "tp": 0.7875,
       "rr_target": "3.6",
       "last_updated": "2026-04-27T18:14Z"
+    },
+    {
+      "alert_id": "gold_4700_sell_resistance_watch",
+      "instrument": "GOLD",
+      "direction": "SELL",
+      "level": 4700.0,
+      "entry_criterion": "M15 bearish rejection wick at 4700 OR close back below 4700 after approach",
+      "regime_context": "Broken support flipped to resistance. GOLD strong bear (comp=-67). Buy zone at 4700 invalidated by breakdown to 4633. If gold bounces to 4700, sell the retest.",
+      "sl": 4725.0,
+      "tp": 4575.0,
+      "rr_target": 5.0,
+      "note": "ENTRY: M15 bearish rejection close at or below 4700 after approach from below. No confirmation needed if readiness strong bearish at touch.\n\nCONTEXT: Former buy zone (gold_escalation_buy_zone, 13 fires, 4h=62%) broke down at strong bear (comp=-67). 4700 now overhead resistance. Price 4633, FOMC Apr28-29 tonight. Arm SELL LIMIT at 4700 when price within 30p of level and readiness strong.\n\nSL: 4725  TP: 4575  R:R target: 5.0\n\nadded 2026-04-28T06:00Z \u2014 gold broke below 4700, bias flipped SELL.",
+      "last_updated": "2026-04-28T06:00Z"
+    },
+    {
+      "alert_id": "gbpusd_sweep_135203_buy_watch",
+      "instrument": "GBPUSD",
+      "direction": "BUY",
+      "level": 1.352035,
+      "entry_criterion": "Retest of 1.35203 swept zone; M15 bullish rejection wick at level. Arm LIMIT when readiness >= moderate.",
+      "regime_context": "Fresh M15 down-sweep at 1.35203 (1.0p wick, closed back 1.35210). Prior position time-exited. GBPUSD comp=+25.5 weak-bull. FOMC caution@18:00Z Apr28.",
+      "sl": 1.3505,
+      "tp": 1.3575,
+      "rr_target": 4.5,
+      "note": "ENTRY: BUY LIMIT at 1.35203 on pullback retest; M15 bullish rejection wick confirms. WATCHLIST ONLY \u2014 arm when readiness >= moderate (current: weak, comp=+25.5).\n\nCONTEXT: Fresh tape-created bounce point: M15 down-sweep 1.35203 at 05:45Z Apr28 (wick 1.0p, close inside 1.35210). Prior gbpusd_sweep_135255 position closed. Cross_down through 1.35255 confirmed structure weakness. Level at 1.35203 = tape fresh support. FOMC Apr28-29 elevates caution; half-size if armed during caution window.\n\nSL: 1.3505  TP: 1.3575  R:R target: 4.5\n\nadded 2026-04-28T06:00Z \u2014 new sweep event, replacing stale 1.35255 alert.",
+      "last_updated": "2026-04-28T06:00Z"
     }
   ],
   "structure_watch": [
@@ -1131,7 +1116,22 @@
       ]
     }
   ],
-  "working_orders": [],
+  "working_orders": [
+    {
+      "dealId": "00000000-4e79-44c4-044a-beb40055311e",
+      "instrument": "AUDUSD",
+      "direction": "BUY",
+      "size": 3500.0,
+      "level": 0.7143,
+      "stop_level": 0.713,
+      "profit_level": 0.7187,
+      "type": "LIMIT",
+      "thesis_type": "validated_sweep_retest",
+      "alert_id": "audusd_m15fvg_buy_7143",
+      "created_utc": "2026-04-28T05:41:34Z",
+      "time_in_force": "GOOD_TILL_CANCELLED"
+    }
+  ],
   "daily_pnl_usd": -16.82,
   "news_last_searched_utc": "2026-04-27T20:34Z"
 }

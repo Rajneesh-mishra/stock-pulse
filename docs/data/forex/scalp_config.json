@@ -25,12 +25,12 @@
     "GBPUSD": {
       "enabled": true,
       "mode": "session_open_break",
-      "bias": "bull",
+      "bias": "neutral",
       "sessions": [
         "london",
         "ny"
       ],
-      "reason": "bias neutral\u2192bull: comp=+53 moderate bullish, H1 ChoCh bull 2026-04-23. Prior LIMIT@1.3506 no longer on broker."
+      "reason": "bias reset neutral: comp=+25.5 weak (was bull@+53). Below moderate threshold. Reset 2026-04-28T06:00Z."
     },
     "AUDUSD": {
       "enabled": false,
