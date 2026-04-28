@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-28T08:16:38.113136+00:00",
+  "generated_at": "2026-04-28T08:21:38.706380+00:00",
   "counts": {
     "trades": 28,
-    "events": 5454,
+    "events": 5456,
     "ticks": 59,
-    "regime_snapshots": 148,
+    "regime_snapshots": 149,
     "broker_positions": 0,
     "counterfactuals": 98
   },
@@ -601,6 +601,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-28T08:18Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "2026-04-28T08:18Z forex auto \u2014 3 evt: 3 pos_closed (729f/7345 GBPUSD BUY SL -$0.35/-$0.26; 7616 EURUSD SELL SL -$0.34). 0 pos open. AUDUSD LIMIT@0.7143 GTC working (comp=+49.5 mod, 35p above, within 3xH4ATR). GOLD@4621 strong bear comp=-67; 4700/4721 SELL WATCH (need +40 bull ext). EURUSD@1.1707 comp=-10.5 none; GBPUSD@1.3512 comp=+25.5 weak; OIL@97.56 comp=+45 mod (sweep levels 4+pts away). FOMC caution activates 18:00Z today (T-9.8h) \u2014 normal ops until then. daily_pnl=-$21.12. attention_covered=9/9.",
+      "binary_event_name": "FOMC_APR2026",
+      "binary_event_active": 1,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
       "ts_utc": "2026-04-28T08:12Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-28T08:12Z forex auto \u2014 33 evt: scalp engine very active. GBPUSD: 4 opens/closes (7011/7140 SL; 729f/7345 open). EURUSD: 4 opens/3 closes (6874/65d0/74d5/75b0 SL; 7616 open +$0.10). 3 pos open: 729f+7345 GBPUSD BUY (caps 09:03/09:04Z), 7616 EURUSD SELL (cap 09:09Z). AUDUSD LIMIT@0.7143 GTC (comp=+47 moderate, validated, price now 29.3p above). GOLD@4622 strong bear comp=-67; 4721/4700 SELL WATCH (need +40 bull ext). EURUSD comp=-23 none (engine still active). GBPUSD comp=+25.5 weak. FOMC caution activates 18:00Z today (T-9.8h). daily_pnl=-$20.17. attention_covered=9/9.",
@@ -668,14 +676,6 @@
       "ts_utc": "2026-04-28T06:16Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-28T06:16Z forex auto \u2014 1 evt: AUDUSD H1 liquidity_sweep@0.71731 (down-wick 2.3p, close@0.71771, bias BUY). AUDUSD comp=+47 moderate-bull \u2014 sweep alert ADDED (audusd_h1sweep_71731_buy_watch) but NO entry armed (wick 2.3p < H1ATR 7.9p; with ATR stop R:R=0.62 < 1.5 threshold; with tight 3.6p stop SL below ATR noise). Existing LIMIT@0.7143 WORKING (GTC). GOLD@4634.69 comp=-67 strong bear; 4721 sell alert KEEP (86p gap < 3xH4ATR=$103); gold_4700_sell_resistance WATCH. GBPUSD@1.35155 comp=+25.5 weak, 4.8p below 1.35203 sweep alert \u2014 not armed. FOMC caution activates 18:00Z today (now T-11.8h). 0 pos 1 working (AUDUSD@0.7143). daily_pnl=-$17.72. attention_covered=9/9.",
-      "binary_event_name": "FOMC_APR2026",
-      "binary_event_active": 1,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-04-28T06:07Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "2026-04-28T06:07Z forex auto \u2014 1 evt: USDCHF level_cross usdchf_sweep_h1_sell_retest@0.787515 (comp=+23 bullish; |comp|=23 < 25 counter-trend threshold \u2192 WATCH, no entry). GOLD@4639 comp=-67 strong bear: gold_escalation_buy_zone REMOVED (4700 buy thesis invalidated by breakdown). gold_4700_sell_resistance ADDED (resistance-flip sell, WATCH, outside proximity). gbpusd_sweep_135255_buy_watch REMOVED (stale, position closed). usdchf_sweep_h1_sell_retest note FIXED (counter-trend: need bullish \u2265+40, was wrongly set to bearish \u2264-40). AUDUSD LIMIT@0.7143 WORKING (broker confirmed; price@0.7174 comp=+47 moderate). OIL@96.69 comp=+45 moderate-bull; buy alerts 93.23/93.51 intact (pullback zones). FOMC CAUTION activates 18:00Z today (~11.9h). Ceasefire extended indef, peace talks STALLED; gold sold off on reduced safe-haven + inflation risk reassessment. 0 pos 1 working (AUDUSD@0.7143). daily_pnl=-$17.72. attention_covered=9/9.",
       "binary_event_name": "FOMC_APR2026",
       "binary_event_active": 1,
       "binary_event_deadline": "2026-04-29T18:00Z"

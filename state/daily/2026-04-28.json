@@ -981,5 +981,27 @@
     ],
     "daily_pnl": -21.12,
     "notes": "3 scalp SL hits. 0 positions open. AUDUSD LIMIT@0.7143 working. FOMC caution activates 18:00Z today. GOLD strong bear comp=-67, 4700/4721 sell WATCH. No new swing entries."
+  },
+  {
+    "tick_ts_utc": "2026-04-28T08:27Z",
+    "events_processed": 1,
+    "events": [
+      "position_opened GBPUSD BUY@1.35117 (scalp_engine)"
+    ],
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "working_orders": [
+      "AUDUSD LIMIT@0.7143 GTC"
+    ],
+    "open_positions": [
+      "GBPUSD BUY@1.35117 SL=1.35061 TP=1.35204 cap=09:26Z"
+    ],
+    "alerts_modified": [
+      "usdchf_h1fvg_78750_buy_watch \u2192 usdchf_swept_78344_buy_watch level=0.7840"
+    ],
+    "daily_pnl_usd": -21.12,
+    "regime": "ACTIVE_ESCALATION",
+    "binary_event": "FOMC_APR2026 deadline=2026-04-29T18:00Z caution_from=2026-04-28T18:00Z",
+    "note": "Scalp engine opened GBPUSD BUY@1.35117. USDCHF FVG swept, level updated. All OIL alerts KEEP (dist<3xH4ATR). FOMC caution T-9.5h, normal ops."
   }
 ]

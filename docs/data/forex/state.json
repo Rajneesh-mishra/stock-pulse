@@ -1,10 +1,24 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-28T08:18Z",
-  "state_ts_utc": "2026-04-28T08:18Z",
-  "regime_note": "2026-04-28T08:18Z forex auto \u2014 3 evt: 3 pos_closed (729f/7345 GBPUSD BUY SL -$0.35/-$0.26; 7616 EURUSD SELL SL -$0.34). 0 pos open. AUDUSD LIMIT@0.7143 GTC working (comp=+49.5 mod, 35p above, within 3xH4ATR). GOLD@4621 strong bear comp=-67; 4700/4721 SELL WATCH (need +40 bull ext). EURUSD@1.1707 comp=-10.5 none; GBPUSD@1.3512 comp=+25.5 weak; OIL@97.56 comp=+45 mod (sweep levels 4+pts away). FOMC caution activates 18:00Z today (T-9.8h) \u2014 normal ops until then. daily_pnl=-$21.12. attention_covered=9/9.",
-  "regime_note_prev": "2026-04-28T07:46Z forex auto \u2014 9 evt processed: 3 pos_closed (65dd GBPUSD SL -$0.21; 660d GBPUSD SL -$0.45; 62fa EURUSD TP +$0.38). 3 new scalps opened (682a GBPUSD BUY@1.35081; 6874 EURUSD SELL@1.16943; 6890 GBPUSD BUY@1.35081). 4 scalp positions: 65d0+6874 EURUSD SELL, 682a+6890 GBPUSD BUY \u2014 1h caps 08:30-08:40Z. AUDUSD LIMIT@0.7143 GTC (comp=+47 mod). GOLD comp=-67 strong bear@4629; 4721 SELL ARMED but blocked (pos cap=4). EURUSD comp=-23 none; GBPUSD comp=+13.5 none. FOMC caution activates 18:00Z today (T-10.3h). daily_pnl=-$17.82. attention_covered=9/9.",
-  "open_positions": [],
+  "tick_ts_utc": "2026-04-28T08:27Z",
+  "state_ts_utc": "2026-04-28T08:27Z",
+  "regime_note": "2026-04-28T08:27Z forex auto \u2014 1 evt: pos_opened GBPUSD BUY scalp@1.35117 SL=1.35061 TP=1.35204 (scalp engine, cap 09:26Z). AUDUSD LIMIT@0.7143 GTC working. USDCHF FVG@0.7875 swept (dipped 0.78344) \u2192 level updated 0.7840. OIL alerts KEEP (dist<3\u00d7H4ATR=5.81). GOLD@4622 bear comp=-67; 4700/4721 SELL WATCH. FOMC caution starts 18:00Z today (T-9.5h) \u2014 normal ops now. daily_pnl=-$21.12. attention_covered=9/9.",
+  "regime_note_prev": "2026-04-28T08:18Z forex auto \u2014 3 evt: 3 pos_closed (729f/7345 GBPUSD BUY SL -$0.35/-$0.26; 7616 EURUSD SELL SL -$0.34). 0 pos open. AUDUSD LIMIT@0.7143 GTC working (comp=+49.5 mod, 35p above, within 3xH4ATR). GOLD@4621 strong bear comp=-67; 4700/4721 SELL WATCH (need +40 bull ext). EURUSD@1.1707 comp=-10.5 none; GBPUSD@1.3512 comp=+25.5 weak; OIL@97.56 comp=+45 mod (sweep levels 4+pts away). FOMC caution activates 18:00Z today (T-9.8h) \u2014 normal ops until then. daily_pnl=-$21.12. attention_covered=9/9.",
+  "open_positions": [
+    {
+      "deal_id": "00000000-4e79-7bf5-044a-beb40055311e",
+      "instrument": "GBPUSD",
+      "direction": "BUY",
+      "size": 1000.0,
+      "entry": 1.35117,
+      "sl": 1.35061,
+      "tp": 1.35204,
+      "opened_at": "2026-04-28T08:25:57Z",
+      "thesis_type": "scalp_entry",
+      "time_cap_utc": "2026-04-28T09:25:57Z",
+      "source": "scalp_engine"
+    }
+  ],
   "watchlist": [
     {
       "instrument": "AUDUSD",
@@ -1238,17 +1252,17 @@
       "active": null
     },
     {
-      "alert_id": "usdchf_h1fvg_78750_buy_watch",
+      "alert_id": "usdchf_swept_78344_buy_watch",
       "instrument": "USDCHF",
       "direction": "BUY",
-      "level": 0.7875,
-      "entry_criterion": "Pullback to 0.78750-0.78817 H1 FVG zone; M15 bullish rejection wick at level. WATCHLIST ONLY \u2014 arm at readiness >= moderate.",
-      "regime_context": "H1 FVG unmitigated at 0.78750-0.78906. USDCHF comp=+23 (none). Bull M15 BOS@0.78601. Replaced invalidated sell alert. FOMC context.",
-      "sl": 0.786,
+      "level": 0.784,
+      "entry_criterion": "Retest of 0.7840-0.7845 with rejection wick or M15 close above zone",
+      "regime_context": "USDCHF swept FVG at 0.7875, dipped to 0.78344, rebounded \u2014 new support created",
+      "sl": 0.782,
       "tp": 0.792,
-      "rr_target": 3.0,
-      "note": "ENTRY: Pullback to H1 FVG bottom 0.78750; M15 bullish rejection wick confirms. WATCHLIST ONLY \u2014 arm when readiness >= moderate.\n\nCONTEXT: H1 bull FVG unmitigated 0.78750-0.78906 (formed 07:00Z Apr28). M15 bull BOS@0.78601. comp=+23 (none). Previous sell at 0.787505 invalidated \u2014 price broke above. Scalp disabled (pip-conv). FOMC caution@18:00Z Apr28.\n\nSL: 0.78600  TP: 0.79200  R:R target: 3.0\n\nadded 2026-04-28T07:14Z \u2014 replaces invalidated usdchf_sweep_h1_sell_retest; anchored to H1 FVG support.",
-      "last_updated": "2026-04-28T07:14Z",
+      "rr_target": 2.7,
+      "note": "ENTRY: BUY on retest of 0.7840-0.7845 zone with rejection wick / M15 close above\n\nCONTEXT: H1 FVG at 0.7875 was swept through on 2026-04-28 (dipped to 0.78344). Rebounded to 0.7885. Swept low at 0.78344 becomes new structural buy zone.\n\nSL: 0.7820  TP: 0.7920  R:R target: 2.7\n\nMODIFIED 2026-04-28T08:27Z: FVG mitigated, level updated to swept-low zone.",
+      "last_updated": "2026-04-28T08:27Z",
       "active": null
     },
     {
@@ -1342,6 +1356,6 @@
       "time_in_force": "GOOD_TILL_CANCELLED"
     }
   ],
-  "daily_pnl_usd": -16.82,
+  "daily_pnl_usd": -21.12,
   "news_last_searched_utc": "2026-04-27T20:34Z"
 }

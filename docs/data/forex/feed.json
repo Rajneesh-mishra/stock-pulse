@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-28T08:21:28.575755Z",
+  "generated_at": "2026-04-28T08:32:47.975331Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T11:28:00Z",
-      "events_in": 1,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 1,
-      "note": "11:28 forex auto \u2014 1 evt (GBPUSD level_cross gbpusd_sweep_134928_sell_retest at 1.349555 cross_up; comp=+21.5 none bullish OPPOSES sell; readiness=none (need \u2264-40); SKIP trade KEEP WATCH). USDJPY 159.408 +30.0 weak (DOWNGRADE from +43 mod) dist=59.2p OUTSIDE 30p \u2192 WATCH (BOJ T-3d). GOLD 4706.49 -32.5 weak; sweep_4721 dist=15.2$ INSIDE prox 30$ NEAR-ARM (need -40); safehaven_4775 dist=68.5$ dormant. OIL 93.999 +35.5 weak; sweep_9323 dist=0.76$ INSIDE prox 1.17$ NEAR-ARM (need +40; gap=4.5pts); pullback=false-alarm (Tehran military drill). BTCUSD 78255 +34.5 weak fvg_76960 dist=1295$ WATCH. EURUSD -8 none GBPUSD +21.5 none AUDUSD +18.5 none USDCAD -21.5 none USDCHF -10.5 none \u2014 all swing=NONE/WATCH. 9 alerts proximity-refreshed (all KEEP). 9 SW KEEP. Scalp halt={}. 0 trades 0pos. BOJ T-3d FOMC T-5d. attention_covered=9/9."
-    },
     {
       "ts_utc": "2026-04-24T12:46:00Z",
       "events_in": 2,
@@ -1095,6 +1087,28 @@
       ],
       "daily_pnl": -21.12,
       "notes": "3 scalp SL hits. 0 positions open. AUDUSD LIMIT@0.7143 working. FOMC caution activates 18:00Z today. GOLD strong bear comp=-67, 4700/4721 sell WATCH. No new swing entries."
+    },
+    {
+      "tick_ts_utc": "2026-04-28T08:27Z",
+      "events_processed": 1,
+      "events": [
+        "position_opened GBPUSD BUY@1.35117 (scalp_engine)"
+      ],
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "working_orders": [
+        "AUDUSD LIMIT@0.7143 GTC"
+      ],
+      "open_positions": [
+        "GBPUSD BUY@1.35117 SL=1.35061 TP=1.35204 cap=09:26Z"
+      ],
+      "alerts_modified": [
+        "usdchf_h1fvg_78750_buy_watch \u2192 usdchf_swept_78344_buy_watch level=0.7840"
+      ],
+      "daily_pnl_usd": -21.12,
+      "regime": "ACTIVE_ESCALATION",
+      "binary_event": "FOMC_APR2026 deadline=2026-04-29T18:00Z caution_from=2026-04-28T18:00Z",
+      "note": "Scalp engine opened GBPUSD BUY@1.35117. USDCHF FVG swept, level updated. All OIL alerts KEEP (dist<3xH4ATR). FOMC caution T-9.5h, normal ops."
     }
   ]
 }
