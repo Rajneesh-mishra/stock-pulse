@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T00:47:58.947099Z",
+  "generated_at": "2026-04-28T00:58:08.457815Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -320,6 +320,25 @@
       },
       "binary": "FOMC 2026-04-29T18:00Z T\u224841.2h (caution T<24h ~18:00Z Apr28)",
       "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "attention_covered": "9/9"
+    },
+    {
+      "tick_ts_utc": "2026-04-28T01:00Z",
+      "events_processed": 1,
+      "events": [
+        "evt_1777337674919_level_cross (EURUSD level_cross eurusd_sweep_117186 \u2014 comp=+3 none, WATCH)"
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "skipped": 1,
+      "skip_reason": "EURUSD level_cross: comp=+3 none, need \u2265+40 bull to arm; readiness=none",
+      "positions_open": 1,
+      "working_orders": 1,
+      "upl_usd": -2.04,
+      "daily_pnl_usd": -10.52,
+      "balance": 979.08,
+      "binary_event": "FOMC 2026-04-29T18:00Z T\u224841h",
+      "scalp_status": "EURUSD/GBPUSD active; AUDUSD disabled (wr<20%); no halts",
       "attention_covered": "9/9"
     }
   ]

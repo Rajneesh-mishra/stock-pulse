@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-28T00:46Z",
+  "last_updated_by_claude": "2026-04-28T01:00Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -187,7 +187,8 @@
       },
       "last_updated": "2026-04-27T06:30Z",
       "updated_utc": "2026-04-28T00:13Z",
-      "proximity": "EURUSD@1.172375; 5.15p ABOVE 1.17186 (within 30p threshold). comp=+13 none (need \u2265+40 bull). WATCH.",
+      "proximity": "EURUSD@1.17185; AT level 1.17186 (0p). comp=+3 none (need \u2265+40 bull to arm). level_cross fired 01:00Z Apr28 \u2014 WATCH; DAY FVG 1.17139-1.17186 fresh but H4+M15 bearish, composite below threshold.",
+      "updated_utc": "2026-04-28T01:00Z",
       "alert_id": "eurusd_sweep_117186_buy_retest",
       "active": true
     },
