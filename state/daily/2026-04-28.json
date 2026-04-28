@@ -220,5 +220,59 @@
     "daily_pnl_realized": -10.52,
     "float_pnl": -3.02,
     "scalp_status": "EURUSD/GBPUSD active; AUDUSD disabled wr=11%; no open scalps; daily_pnl_usd=$0"
+  },
+  {
+    "tick_ts_utc": "2026-04-28T02:20Z",
+    "events_consumed": 6,
+    "events": [
+      "GBPUSD level_cross (LIMIT filled @1.35254)",
+      "OIL level_cross oil_sweep_9579 (comp=+43\u226540, SELL LIMIT@96.218 confirmed)",
+      "GBPUSD position_opened (BUY @1.35254)",
+      "USDJPY liq_sweep 159.555 (wick=1.6p WATCH)",
+      "GOLD liq_sweep 4669.59 (wick=30.9p WATCH, alert added)",
+      "GBPUSD liq_sweep 1.352315 (wick=0.7p noise)"
+    ],
+    "trades": {
+      "opened": 0,
+      "closed": 0,
+      "limits_placed": 0,
+      "limits_cancelled": 0
+    },
+    "positions": [
+      {
+        "epic": "USDCAD",
+        "direction": "SELL",
+        "entry": 1.36106,
+        "sl": 1.3642,
+        "tp": 1.355,
+        "upl_usd": -4.15,
+        "age_h": 12.5
+      },
+      {
+        "epic": "GBPUSD",
+        "direction": "BUY",
+        "entry": 1.35254,
+        "sl": 1.3515,
+        "tp": 1.36,
+        "upl_usd": -0.95,
+        "age_h": 0.4
+      }
+    ],
+    "working_orders": [
+      {
+        "epic": "OIL_CRUDE",
+        "direction": "SELL",
+        "level": 96.218,
+        "sl": 96.6,
+        "tp": 94.4
+      }
+    ],
+    "daily_pnl": -10.52,
+    "float_usd": -5.1,
+    "balance": 975.97,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "FOMC_APR2026 T-39.7h (caution@18:00Z Apr28)",
+    "attention_covered": "9/9",
+    "notes": "GBPUSD LIMIT filled at 1.35254 (prev tick armed @1.352555). OIL SELL LIMIT @96.218 (bear OB bottom) confirmed working \u2014 comp=+43 counter-threshold met. USDCAD SL 3.1p away; H4 bear FVG resistance at 1.36384 holding. GOLD down-sweep 4669.59 added to watchlist. USDJPY up-sweep 159.555 tiny wick, no action."
   }
 ]

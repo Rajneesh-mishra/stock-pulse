@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-28T01:13Z",
+  "last_updated_by_claude": "2026-04-28T02:20Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -173,9 +173,9 @@
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "ENTRY: LIMIT BUY @ 1.352555 armed (WORKING ORDER placed 2026-04-27T16:01Z). Fills on pullback to level. No additional confirmation required at readiness >= moderate.\n\nCONTEXT: M15 down-sweep 06:15Z 2026-04-27 created structural support at 1.352555. Prior H1 bear FVG 1.35336-1.35393 fully mitigated (price at 1.355). comp=+50.5 moderate bullish (4/4 TFs). USDCAD SELL working (2 correlated USD-short within cap). FOMC T-49h (outside 24h elevated caution). Prior TP at 1.35393 gave R:R 1.31 \u2014 corrected to 1.360 for R:R 7:1. Cancel LIMIT if GBPUSD closes below 1.3505 (bull OB base).\n\nSL: 1.3515  TP: 1.3600  R:R target: 7.1\n\nupdated 2026-04-27T16:01Z \u2014 LIMIT ARMED @ 1.352555; TP corrected 1.35393->1.3600 (prior TP was at mitigated FVG, R:R was 1.31 < 1.5 floor); dealId 00000000-4e77-b253-044a-beb40055311e.",
-      "entry_criterion": "LIMIT BUY @ 1.352555 ARMED (working order active). Fills on pullback. Cancel if price closes below 1.3505.",
-      "regime_context": "M15 down-sweep 06:15Z 2026-04-27, structural support. comp=+50.5 moderate bullish. USDCAD SELL open (2 correlated max, within cap). FOMC T-49h. H1 FVG 1.35336-1.35393 fully mitigated. Next resistance clear to 1.360.",
+      "note": "ENTRY: LIMIT filled @ 1.35254 (2026-04-28T01:53:54Z). Position OPEN \u2014 BUY 5000 GBPUSD. Time exit 05:53Z Apr28 (4h narrative cap). Close at market if time_exit reached OR closes below 1.3515 SL.\n\nCONTEXT: M15 down-sweep 06:15Z 2026-04-27 structural support at 1.352555. H4/Day bullish; M15 bearish short-term. comp=+33 weak-bull. FOMC T-39.7h (caution 18:00Z Apr28). 4h time cap per narrative thesis.\n\nSL: 1.3515  TP: 1.3600  R:R target: 7.1\n\nupdated 2026-04-28T02:20Z \u2014 LIMIT filled, position now OPEN; monitoring for time exit at 05:53Z.",
+      "entry_criterion": "POSITION OPEN. Monitor SL=1.3515 TP=1.3600. Time exit 05:53Z Apr28.",
+      "regime_context": "GBPUSD BUY open @ 1.35254. comp=+33 weak-bull. M15 bearish micro; H4/Day bull intact. FOMC caution from 18:00Z Apr28.",
       "sl": 1.3515,
       "tp": 1.36,
       "rr_target": "7.1",
@@ -185,16 +185,8 @@
         "price": 1.35508
       },
       "last_updated": "2026-04-27T16:01Z",
-      "updated_utc": "2026-04-28T01:06Z",
-      "proximity": "GBPUSD@1.35329 bid; LIMIT working @1.352555 (7.4p above). comp=+35 weak-bull (M15 bearish Asia session; H4+Day bullish). Limit in Day bull FVG 1.35235-1.35315. KEEP working order. 2026-04-28T01:06Z",
-      "limit_order": {
-        "dealId": "00000000-4e77-b253-044a-beb40055311e",
-        "placed_utc": "2026-04-27T16:01Z",
-        "limit_price": 1.352555,
-        "sl": 1.3515,
-        "tp": 1.36,
-        "size": 5000
-      },
+      "updated_utc": "2026-04-28T02:20Z",
+      "proximity": "POSITION OPEN @1.35254 BUY. UPL=-$0.95. Time exit 05:53Z Apr28. comp=+33 weak-bull. 2026-04-28T02:20Z",
       "alert_id": "gbpusd_sweep_152555_buy_retest",
       "active": true
     },
@@ -250,22 +242,30 @@
     {
       "id": "oil_sweep_9579_sell_retest",
       "instrument": "OIL_CRUDE",
-      "level": 95.928,
+      "level": 96.218,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "ENTRY: price retests 95.928 (updated up-sweep extreme, 2026-04-28T01:01Z); M15 bar closes AT or BELOW 95.928 with bearish rejection wick \u22652pts from the high. Arm LIMIT SELL when |composite| \u2265 40 bullish extension (counter-trend fade).\n\nCONTEXT: Original M15 up-sweep 00:30Z Apr28 wick at 95.789; price then crossed above 95.789 to 95.928 at 01:01Z Apr28, invalidating old SL (95.92). New swept extreme = 95.928. comp=+37 weak bullish (need \u226540 to arm). Daily/H4/H1 in bull trend (EMA alignment). M15 ChoCh bear at 93.904. Counter-trend fade \u2014 bullish extension is the corroborating signal. Hormuz escalation keeps oil bid; high-risk fade. Apply 4h time-stop if entered.\n\nSL: 96.05  TP: 94.40  R:R target: 10.0\n\nupdated 2026-04-28T01:13Z \u2014 price breached old SL 95.92 (hit 95.928); level updated to new wick high; SL widened to 96.05.",
-      "entry_criterion": "M15 retest of 95.928 (new up-sweep extreme) with bearish rejection wick \u22652pts from high. Arm LIMIT SELL when |comp| \u226540 bullish extension (counter-trend).",
-      "regime_context": "New up-sweep extreme 95.928 (01:01Z Apr28). comp=+37 weak (need \u226540). Daily/H4/H1 bull trend intact; M15 ChoCh bear 93.904. Hormuz escalation = oil bid (risk). 4h time-stop on entry.",
-      "sl": 96.05,
+      "note": "ENTRY: LIMIT SELL WORKING @ 96.218 (bear OB bottom, placed 2026-04-28T02:09Z). comp=+43 moderate bullish extension \u226540 threshold \u2014 counter-trend fade ARMED. Cancel if OIL closes above SL 96.60 (bear OB top broken).\n\nCONTEXT: M15 up-sweep 00:30Z Apr28 at 95.789; price extended to 95.928 (01:01Z); now at 96.022. Bear OB bottom=96.218, top=96.5705. Fade entry at OB bottom. Daily/H4/H1/M15 all bullish (comp=+43). Counter-trend \u2014 bullish extension IS the corroboration. Hormuz risk keeps oil bid; 4h time-stop on fill. R:R = (96.218-94.4)/(96.6-96.218) = 4.76:1.\n\nSL: 96.60  TP: 94.40  R:R target: 4.76\n\nupdated 2026-04-28T02:20Z \u2014 LIMIT SELL ARMED @ 96.218 (bear OB); comp=+43 counter-threshold met; dealId 00000000-4e79-017d-044a-beb40055311e.",
+      "entry_criterion": "LIMIT SELL WORKING @ 96.218. Cancel if OIL closes above 96.60 (OB top).",
+      "regime_context": "comp=+43 moderate bullish (counter-threshold met). Bear OB 96.218-96.5705. All TFs bullish. Counter-fade. 4h time-stop on fill.",
+      "sl": 96.6,
       "tp": 94.4,
-      "rr_target": "10.0",
+      "rr_target": "4.76",
       "current_price_ref": 95.87,
       "last_updated": "2026-04-28T01:13Z",
-      "proximity": "OIL@95.87; dist=0.06pts BELOW 95.928 (3\u00d7H4ATR=6.03). comp=+37 weak-bull; need comp\u2265+40 bull extension to arm counter-trend SELL. Old SL 95.92 breached at 95.928 \u2192 level updated. WATCH. 2026-04-28T01:13Z",
+      "proximity": "OIL@96.022; LIMIT SELL working @96.218 (16cts above). comp=+43 counter-threshold met. bear OB bottom. 2026-04-28T02:20Z",
       "alert_id": "oil_sweep_9579_sell_retest",
       "active": true,
-      "updated_utc": "2026-04-28T01:13Z"
+      "updated_utc": "2026-04-28T02:20Z",
+      "limit_order": {
+        "dealId": "00000000-4e79-017d-044a-beb40055311e",
+        "placed_utc": "2026-04-28T02:09Z",
+        "limit_price": 96.218,
+        "sl": 96.6,
+        "tp": 94.4,
+        "size": 13
+      }
     },
     {
       "id": "usdchf_m15sweep_7832_buy_watch",
@@ -289,6 +289,26 @@
       "proximity": "USDCHF@0.7851; 19.3p ABOVE 0.7832. comp=-2.5 none (need |comp|\u2264-40 bearish extension). WATCH.",
       "updated_utc": "2026-04-28T00:13Z",
       "alert_id": "usdchf_reclaim_buy_7832",
+      "active": true
+    },
+    {
+      "id": "gold_sweep_4669_buy_retest",
+      "instrument": "GOLD",
+      "level": 4669.59,
+      "emit_on": "cross_down",
+      "cooldown_sec": 1800,
+      "direction": "buy",
+      "note": "ENTRY: price retests 4669.59 (M15 down-sweep extreme, 2026-04-28T02:00Z); M15 bar closes AT or ABOVE 4669.59 with bullish rejection wick \u22652pts from the low. Arm LIMIT BUY when |composite| \u2265 40 bearish extension (counter-trend fade).\n\nCONTEXT: M15 down-sweep 02:00Z Apr28, wick=30.9pts beyond to 4669.59, close inside at 4672.4. Fresh structural support. comp=-28 weak bearish (need \u2264-40 to arm). Escalation regime = gold bid; this could be a fast-spike reset zone. gold_escalation_buy_zone validated (13f 67%4h) supports the 4669-4700 demand cluster. Apply 4h time-stop if entered.\n\nSL: 4655  TP: 4720  R:R target: 3.5\n\nadded 2026-04-28T02:20Z \u2014 M15 down-sweep event; wick=30.9pts significant; WATCH until comp\u2264-40 bearish.",
+      "entry_criterion": "M15 retest of 4669.59 with bullish rejection wick \u22652pts. Arm LIMIT BUY when |comp| \u2265 40 bearish extension (counter-trend).",
+      "regime_context": "M15 down-sweep 02:00Z Apr28, wick=30.9pts. comp=-28 weak. Escalation regime gold bid. 4h time-stop on entry.",
+      "sl": 4655.0,
+      "tp": 4720.0,
+      "rr_target": "3.5",
+      "current_price_ref": 4677.39,
+      "last_updated": "2026-04-28T02:20Z",
+      "updated_utc": "2026-04-28T02:20Z",
+      "proximity": "GOLD@4677; dist=7.8pts ABOVE 4669.59 (within 3\u00d7H4ATR=100.2). comp=-28 weak-bear (need \u2264-40 to arm counter-BUY). WATCH. 2026-04-28T02:20Z",
+      "alert_id": "gold_sweep_4669_buy_retest",
       "active": true
     }
   ],
@@ -353,5 +373,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-28T01:13Z"
+  "last_updated_utc": "2026-04-28T02:20Z"
 }
