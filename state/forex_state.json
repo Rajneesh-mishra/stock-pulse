@@ -1,9 +1,9 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-27T23:55Z",
-  "state_ts_utc": "2026-04-27T23:55Z",
-  "regime_note": "2026-04-27T23:55Z forex auto \u2014 0 evt: heartbeat. USDCAD SELL@1.36106 age=10.1h UPL=-$2.11 thesis-intact comp=-46 mod-bear; SL=1.3642 (18p away), TP=1.355 (69p), trail@\u22641.35792 (43p off). GBPUSD LIMIT@1.352555 working (bid 10.2p above) comp=+40 mod-bull; FOMC T-42.1h caution@18:00Z Apr28. AUDUSD comp=+66 strong-bull corr-cap-full (2 USD-bear). GOLD comp=-20.5 none; sell@4721 needs |comp|\u226540 bull; buy@4700 needs comp\u2265+40 (both n/a). EURUSD comp=+3 none; buy@1.17186 watchlist-only. USDJPY comp=+26.5 weak; sell@160 61.6p away, needs |comp|\u226540 bull extension. USDCHF comp=+5 none. OIL comp=+37 weak; buys@93.23+93.51 need comp\u2265+40; $95.47 broker. 1 pos 1 working. daily_pnl=-$10.52 float=-$2.11. attention_covered=9/9.",
-  "regime_note_prev": "2026-04-27T22:45Z forex auto \u2014 0 evt: heartbeat. USDCAD SELL@1.36106 age=8.9h UPL=-$2.00 thesis-intact comp=-46 mod-bear; SL=1.3642 (14p away), TP=1.355 (67p), no trail yet (needs bid\u22641.35792). GBPUSD LIMIT@1.352555 working (bid 10.3p above) comp=+40 mod-bull; FOMC caution T-19h. AUDUSD comp=+63.5 strong-bull corr-cap-full (2 USD-bear). GOLD comp=-25.5 weak-bear; BUY@4700 within 13p but no bullish conf. EURUSD comp=3 none; BUY@1.17186 within 3.5p. USDJPY comp=+29 weak; SELL@160.0 57.8p away trending toward. OIL comp=+34.5 weak-bull; BUY levels 200p below price. FOMC T-43.2h (caution @18:00Z Apr28). 1 pos 1 working. daily_pnl=-$10.52 float=-$2.00. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-28T00:13Z",
+  "state_ts_utc": "2026-04-28T00:13Z",
+  "regime_note": "2026-04-28T00:13Z forex auto \u2014 1 evt (GOLD level_cross gold_escalation_buy_zone \u2014 comp=-20.5 none, NOT armed; WATCH). USDCAD SELL@1.36106 age=10.4h UPL=$-0.84 thesis-intact comp=-46 mod-bear; SL=1.3642, TP=1.355; 24h time-exit ~13:50Z Apr28 (before FOMC). GBPUSD LIMIT@1.352555 working (bid 3.3p above) comp=+47.5 mod-bull. AUDUSD comp=+66 strong-bull corr-cap-full. GOLD comp=-20.5 none; 4700 zone watched, need comp\u2265+40 bull to arm. EURUSD comp=+13 none. USDJPY comp=+14 none; 160 fade 65.4p away. USDCHF comp=-2.5 none. OIL comp=+34.5 weak; 93.23+93.51 need +40. FOMC 2026-04-29T18:00Z T\u224841.8h (caution activates ~18:00Z Apr28). 1 pos 1 working. daily_pnl=-$10.52 float=$-0.84. attention_covered=9/9.",
+  "regime_note_prev": "2026-04-27T23:55Z forex auto \u2014 0 evt: heartbeat. USDCAD SELL@1.36106 age=10.1h UPL=-$2.11 thesis-intact comp=-46 mod-bear; SL=1.3642 (18p away), TP=1.355 (69p), trail@\u22641.35792 (43p off). GBPUSD LIMIT@1.352555 working (bid 10.2p above) comp=+40 mod-bull; FOMC T-42.1h caution@18:00Z Apr28. AUDUSD comp=+66 strong-bull corr-cap-full (2 USD-bear). GOLD comp=-20.5 none; sell@4721 needs |comp|\u226540 bull; buy@4700 needs comp\u2265+40 (both n/a). EURUSD comp=+3 none; buy@1.17186 watchlist-only. USDJPY comp=+26.5 weak; sell@160 61.6p away, needs |comp|\u226540 bull extension. USDCHF comp=+5 none. OIL comp=+37 weak; buys@93.23+93.51 need comp\u2265+40; $95.47 broker. 1 pos 1 working. daily_pnl=-$10.52 float=-$2.11. attention_covered=9/9.",
   "open_positions": [
     {
       "dealId": "00000000-4e77-6243-044a-beb40055311e",
@@ -20,7 +20,8 @@
       "rr": 1.93,
       "risk_usd": 6.28,
       "upl_usd": -2.11,
-      "upl": -2.11
+      "upl": -2.11,
+      "upl_approx": -0.84
     }
   ],
   "watchlist": [
@@ -876,10 +877,10 @@
     "active": true,
     "name": "FOMC",
     "deadline_utc": "2026-04-29T18:00Z",
-    "t_minus_hours": 42.1,
+    "t_minus_hours": 41.8,
     "blackout": false,
     "caution": false,
-    "note": "FOMC decision 2026-04-29T18:00Z + BoC decision 2026-04-29 (expected hold at 2.25% per TD Securities). T\u224842.1h: no blackout, caution activates T<24h (~18:00Z Apr28). FOMC 99.9% hold at 3.5-3.75%; Powell tone key on oil/inflation (uncertainty, minimal guidance). Powell's final meeting before Warsh. BoC expected hold at 2.25% (mildly positive for USDCAD SELL).",
+    "note": "FOMC decision 2026-04-29T18:00Z + BoC decision 2026-04-29 (expected hold at 2.25%). T\u224841.8h: no blackout, caution activates T<24h (~18:00Z Apr28). FOMC 99.9% hold at 3.5-3.75%; Powell tone key on oil/inflation. USDCAD 24h time-exit at ~13:50Z Apr28, before FOMC.",
     "verified": true,
     "sources": [
       "FedReserve.gov calendar",

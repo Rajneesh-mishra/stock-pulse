@@ -1,0 +1,43 @@
+[
+  {
+    "tick_ts_utc": "2026-04-28T00:13Z",
+    "events": [
+      {
+        "id": "evt_1777335193022_level_cross",
+        "type": "level_cross",
+        "instrument": "GOLD",
+        "alert_id": "gold_escalation_buy_zone",
+        "action": "WATCH \u2014 comp=-20.5 none, need \u2265+40 bull to arm"
+      }
+    ],
+    "opened": [],
+    "closed": [],
+    "skipped": [
+      "GOLD buy@4700 \u2014 comp=-20.5 none (threshold +40)"
+    ],
+    "positions": [
+      {
+        "epic": "USDCAD",
+        "dir": "SELL",
+        "entry": 1.36106,
+        "upl": -0.84,
+        "age_h": 10.4,
+        "thesis": "trend"
+      },
+      {
+        "epic": "GBPUSD",
+        "type": "LIMIT",
+        "level": 1.352555,
+        "bid_dist_p": 3.3
+      }
+    ],
+    "account": {
+      "balance": 980.41,
+      "daily_pnl": -10.52,
+      "float_upl": -0.84
+    },
+    "binary": "FOMC 2026-04-29T18:00Z T\u224841.8h (caution T<24h ~18:00Z Apr28)",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "attention_covered": "9/9"
+  }
+]

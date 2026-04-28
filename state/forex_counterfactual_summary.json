@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T23:58:10.079159+00:00",
+  "generated_at": "2026-04-28T00:18:40.528725+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -57,7 +57,7 @@
       "alert_id": "gold_escalation_buy_zone",
       "instrument": "GOLD",
       "direction": "buy",
-      "fires": 12,
+      "fires": 13,
       "by_horizon": {
         "1h": {
           "filled": 12,
@@ -436,8 +436,8 @@
           "hit_rate": 1.0
         },
         "24h": {
-          "filled": 2,
-          "favorable": 2,
+          "filled": 3,
+          "favorable": 3,
           "avg_pips": 48.2,
           "hit_rate": 1.0
         }
