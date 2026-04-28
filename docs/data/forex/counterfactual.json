@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T04:51:45.063626+00:00",
+  "generated_at": "2026-04-28T05:11:23.672691+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -254,10 +254,10 @@
           "hit_rate": 1.0
         },
         "24h": {
-          "filled": 7,
-          "favorable": 5,
-          "avg_pips": 171.4,
-          "hit_rate": 0.71
+          "filled": 8,
+          "favorable": 6,
+          "avg_pips": 236.5,
+          "hit_rate": 0.75
         }
       }
     },
@@ -794,10 +794,10 @@
           "hit_rate": 0.0
         },
         "4h": {
-          "filled": 0,
+          "filled": 1,
           "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "avg_pips": -3.9,
+          "hit_rate": 0.0
         },
         "24h": {
           "filled": 0,
@@ -811,19 +811,19 @@
       "alert_id": "oil_sweep_9579_sell_retest",
       "instrument": "OIL_CRUDE",
       "direction": "sell",
-      "fires": 4,
+      "fires": 5,
       "by_horizon": {
         "1h": {
-          "filled": 3,
-          "favorable": 1,
-          "avg_pips": 1.0,
-          "hit_rate": 0.33
+          "filled": 4,
+          "favorable": 2,
+          "avg_pips": 2.1,
+          "hit_rate": 0.5
         },
         "4h": {
-          "filled": 0,
+          "filled": 1,
           "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "avg_pips": -26.6,
+          "hit_rate": 0.0
         },
         "24h": {
           "filled": 0,
@@ -846,10 +846,10 @@
           "hit_rate": 0.0
         },
         "4h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 1.0,
+          "hit_rate": 1.0
         },
         "24h": {
           "filled": 0,
@@ -866,10 +866,10 @@
       "fires": 3,
       "by_horizon": {
         "1h": {
-          "filled": 1,
+          "filled": 2,
           "favorable": 1,
-          "avg_pips": 23.8,
-          "hit_rate": 1.0
+          "avg_pips": -0.7,
+          "hit_rate": 0.5
         },
         "4h": {
           "filled": 0,

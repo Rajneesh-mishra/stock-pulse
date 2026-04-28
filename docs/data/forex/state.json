@@ -1,9 +1,9 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-28T04:46Z",
-  "state_ts_utc": "2026-04-28T04:46Z",
-  "regime_note": "2026-04-28T04:46Z forex auto \u2014 1 evt: GOLD level_cross gold_sweep_4669_buy_retest (comp=-25.0 weak, need |comp|\u226540 bearish \u2014 WATCH). GBPUSD BUY@1.35254 age=2h52min UPL=+$3.95 (bid=1.35333) time_exit=05:53Z (1h7min). OIL SELL@96.226 age=2h23min UPL=+$1.47 (bid=96.073) comp=+43 moderate-bull (counter-fade intact, bear OB 96.22-96.57 holding); time_exit=10:23Z. AUDUSD comp=+60.5 moderate-bull (43p above 0.7143 validated level, outside 30p proximity; GBPUSD BUY exits 05:53Z then corr cap opens). GOLD@4668.54 AT sweep level 4669.59 (comp=-25 weak, need -40 to arm). FOMC T\u224837.1h caution@18:00Z Apr28. 2 pos 0 working. daily_pnl=-$14.79 float\u2248+$5.42. attention_covered=9/9.",
-  "regime_note_prev": "2026-04-28T04:21Z forex auto \u2014 0 evt (heartbeat). GBPUSD BUY@1.35254 age=2h27min UPL=+$2.25 (bid=1.35311) comp=+35.5 weak; time_exit=05:53Z. OIL SELL@96.226 age=1h58min UPL=+$0.17 (bid=96.171) comp=+43 moderate-bull (fade premise intact); time_exit=10:23Z (8h counter_trend_fade cap \u2014 corrected from prior 06:23Z). GOLD@4669 at sweep level 4669.59 (comp=-28 weak, need -40 to arm BUY). AUDUSD@0.7185 comp=+54.5 moderate-bull (42p above 0.7143 level, outside proximity). USDJPY alert removed: dist=95.1p > 3xH4ATR=78.9p, no catalyst 24h, not trending toward 160. FOMC T~37.6h (caution starts 18:00Z Apr28). 2 pos 0 working. daily_pnl=-$14.79 float~+$2.42. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-28T05:05Z",
+  "state_ts_utc": "2026-04-28T05:05Z",
+  "regime_note": "2026-04-28T05:05Z forex auto \u2014 1 evt: OIL level_cross oil_sweep_9579_sell_retest (4th fire, Rule2 REMOVE 4h=0.0; position HOLDS \u2014 bear OB 96.218-96.5705 intact, comp=+43 moderate-bull fade active). GBPUSD BUY@1.35254 age=3h11min UPL=+$2.65 (bid=1.35307) time_exit=05:53Z (~48min). OIL SELL@96.226 age=2h42min UPL=+$0.01 (offer=96.225) bear OB retest; time_exit=10:23Z. GOLD@4651.72 broke below sweep 4669 (17.5pts below) \u2014 gold_sweep_4669 REMOVED (invalidated). comp=-30 weak-bear. AUDUSD@0.71809 comp=+52 moderate-bull (38p above 0.7143, outside proximity; corr cap opens 05:53Z). FOMC T~36.9h, caution@18:00Z Apr28 (~13h away). 2 pos 0 working. daily_pnl=-$14.79 float~+$2.66. attention_covered=9/9.",
+  "regime_note_prev": "2026-04-28T04:46Z forex auto \u2014 1 evt: GOLD level_cross gold_sweep_4669_buy_retest (comp=-25.0 weak, need |comp|\u226540 bearish \u2014 WATCH). GBPUSD BUY@1.35254 age=2h52min UPL=+$3.95 (bid=1.35333) time_exit=05:53Z (1h7min). OIL SELL@96.226 age=2h23min UPL=+$1.47 (bid=96.073) comp=+43 moderate-bull (counter-fade intact, bear OB 96.22-96.57 holding); time_exit=10:23Z. AUDUSD comp=+60.5 moderate-bull (43p above 0.7143 validated level, outside 30p proximity; GBPUSD BUY exits 05:53Z then corr cap opens). GOLD@4668.54 AT sweep level 4669.59 (comp=-25 weak, need -40 to arm). FOMC T\u224837.1h caution@18:00Z Apr28. 2 pos 0 working. daily_pnl=-$14.79 float\u2248+$5.42. attention_covered=9/9.",
   "open_positions": [
     {
       "dealId": "00000000-4e78-f95b-044a-beb40055311e",
@@ -906,7 +906,7 @@
     "name": "FOMC_APR2026",
     "active": true,
     "deadline_utc": "2026-04-29T18:00Z",
-    "t_minus_h": 37.6,
+    "t_minus_h": 36.9,
     "verified": true,
     "sources": [
       "https://www.forex.com/en/news-and-analysis/fomc-outlook-usdcad-usdjpy-hold-at-key-support-levels/",

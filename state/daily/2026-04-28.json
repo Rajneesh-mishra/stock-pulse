@@ -641,5 +641,49 @@
     },
     "binary_event": "FOMC_APR2026 T=37.1h caution@18:00Z Apr28",
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED"
+  },
+  {
+    "tick_ts_utc": "2026-04-28T05:05Z",
+    "events": 1,
+    "events_detail": [
+      {
+        "type": "level_cross",
+        "instrument": "OIL_CRUDE",
+        "alert_id": "oil_sweep_9579_sell_retest",
+        "action": "HOLD position \u2014 Rule2 alert removed (fires=4, 4h=0.0)"
+      }
+    ],
+    "positions_open": [
+      {
+        "epic": "GBPUSD",
+        "direction": "BUY",
+        "entry": 1.35254,
+        "upl": 2.65,
+        "time_exit_utc": "2026-04-28T05:53Z"
+      },
+      {
+        "epic": "OIL_CRUDE",
+        "direction": "SELL",
+        "entry": 96.226,
+        "upl": 0.01,
+        "time_exit_utc": "2026-04-28T10:23Z"
+      }
+    ],
+    "positions_count": 2,
+    "working_orders": 0,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "alerts_removed": [
+      "oil_sweep_9579_sell_retest (Rule2: 4f/0.0 4h)",
+      "gold_sweep_4669_buy_retest (invalidated: price broke below 4669.59)"
+    ],
+    "alerts_added": [],
+    "daily_pnl": -14.79,
+    "float_pnl": 2.66,
+    "binary_event": "FOMC_APR2026 T~36.9h caution@18:00Z Apr28",
+    "attention_covered": "9/9",
+    "scalp": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
+    "gold_note": "GOLD@4651.72 broke below 4669 sweep \u2014 4669 alert removed. comp=-30 weak. 4700 buy zone and 4721 sell zone intact.",
+    "oil_note": "OIL SELL@96.226 holding \u2014 bear OB 96.218-96.5705 being retested. comp=+43 fade active."
   }
 ]
