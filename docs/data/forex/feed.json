@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-28T08:07:03.642215Z",
+  "generated_at": "2026-04-28T08:14:59.908012Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T10:30:00Z",
-      "events_in": 0,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 0,
-      "summary": "10:30 forex auto \u2014 0 evt heartbeat. USDJPY 159.726 +40.5 mod 4/4 bull dist=27.4p INSIDE 30p swing=ARMED (counter-fade SELL 160.00, BOJ T-3d; api.py market-only entry waits price\u2265159.97). GOLD 4681.69 -36.0 weak sweep_4695 dist=13.7$ INSIDE prox readiness=weak WATCH; sweep_4721 dist=40.0$ OUTSIDE. OIL 96.817 +43.0 mod sweep_9323 dist=3.58 extending WATCH. EURUSD -8 none GBPUSD +18.5 none AUDUSD +8 none USDCAD -21.5 none USDCHF +5 none. BTC 77692 +27 weak fvg_76960 dist=732 WATCH. Scalp engine GBPUSD+EURUSD ghost vs broker=0 (known carry). 8 alerts KEEP. 0 trades 0pos. BOJ T-3d FOMC T-5d. news_search SKIP(last_scan 10min ago). attention_covered=9/9."
-    },
     {
       "ts_utc": "2026-04-24T11:18:00Z",
       "events_in": 2,
@@ -1072,6 +1064,28 @@
       "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "binary_event": "FOMC_APR2026 T-34h (caution from 18:00Z today)",
       "note": "682a GBPUSD BUY SL hit -$0.15 (event). 6890 GBPUSD BUY SL hit -$0.33 (broker reconcile). Scalp engine opened 7011 GBPUSD BUY@1.35062. 3 pos: 65d0+6874 EURUSD SELL (1h caps), 7011 GBPUSD BUY. AUDUSD LIMIT@0.7143 GTC."
+    },
+    {
+      "tick_ts_utc": "2026-04-28T08:12Z",
+      "events_processed": 33,
+      "positions_opened": 4,
+      "positions_closed": 6,
+      "daily_pnl_usd": -20.17,
+      "open_count": 3,
+      "open_positions": [
+        "729f GBPUSD BUY@1.3505",
+        "7345 GBPUSD BUY@1.35041",
+        "7616 EURUSD SELL@1.17024"
+      ],
+      "working_orders": [
+        "AUDUSD LIMIT@0.7143 GTC (validated, comp=+47 moderate)"
+      ],
+      "skipped": 0,
+      "scalp_status": "EURUSD=ACTIVE(4 SLs this session) GBPUSD=ACTIVE AUDUSD=OFF USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
+      "attention_covered": "9/9",
+      "regime": "GOLD strong bear comp=-67; EURUSD none comp=-23; GBPUSD weak comp=+25.5; AUDUSD moderate comp=+47",
+      "binary_event": "FOMC_APR2026 caution@18:00Z today T-9.8h",
+      "summary": "Scalp engine very active: 4 GBPUSD BUY (2 SL), 5 EURUSD SELL (4 SL). Net -.87 closures this tick. 3 pos open within 1h caps."
     }
   ]
 }

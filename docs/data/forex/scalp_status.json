@@ -1,17 +1,11 @@
 {
   "pid": 80301,
-  "last_step_utc": "2026-04-28T08:06:48.147426+00:00",
-  "heartbeat": 51976,
+  "last_step_utc": "2026-04-28T08:14:30.062580+00:00",
+  "heartbeat": 52350,
   "reason": "ok",
   "shadow": false,
   "daily_pnl_usd": 0.0,
   "open": {},
   "halted": {},
-  "actions": [
-    {
-      "epic": "EURUSD",
-      "status": "open_failed",
-      "detail": "unparseable_response: {\n  \"dealReference\": \"o_d3a1c74d-7004-409e-b077-01b936e58ded\",\n  \"http_status\": 200,\n  \"timestamp\": \"2026-04-28T08:06:46.274093+00:00\"\n}\n\n{\"verified\": false, \"warning\": \"Position not found after placement\"}\n"
-    }
-  ]
+  "actions": []
 }
