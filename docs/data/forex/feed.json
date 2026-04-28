@@ -1,13 +1,6 @@
 {
-  "generated_at": "2026-04-28T04:11:02.659896Z",
+  "generated_at": "2026-04-28T04:24:55.107411Z",
   "ticks": [
-    {
-      "ts": "2026-04-23T17:14:22Z",
-      "summary": "2026-04-23T17:14:22Z \u2014 17:07 forex auto \u2014 21 evt gap since 12:34 (4.5h): 6 usdjpy_audits (iran_ceasefire 'extension' kw from Reuters/Al-Jazeera/Detroit-News/Caspian/Daily-Pioneer/WaPo \u2014 ALL iteration of indefinite-extension regime NOT thesis-altering) + 3 oil_audits (ship-traffic + extension-coverage NOT altering) + 4 liquidity_sweeps (USDCHF 0.78602 up-sell readiness=none skip / GBPUSD 1.35133 up",
-      "events_processed": 38,
-      "trades_opened": 0,
-      "trades_closed": 0
-    },
     {
       "ts": "2026-04-23T19:14:00Z",
       "events": 2,
@@ -807,6 +800,24 @@
       },
       "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "notes": "OIL time_exit corrected to 06:23Z (4h cap per trade note; was 10:23Z). gold_escalation_buy_zone stats updated to 13f/67%4h."
+    },
+    {
+      "ts_utc": "2026-04-28T04:21Z",
+      "events": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "actions": [],
+      "binary": "FOMC_APR2026 (T=37.6h, caution@18:00Z Apr28)",
+      "scalp": "EURUSD/GBPUSD active; AUDUSD disabled(wr11%); JPY/CHF/CAD pip-conv; GOLD/OIL spread",
+      "regime_note": "0 evt heartbeat. GBPUSD BUY@1.35254 time_exit=05:53Z UPL=+$2.25. OIL SELL@96.226 time_exit=10:23Z UPL=+$0.17. USDJPY alert removed Rule1. GOLD@4669 at sweep level comp=-28 WATCH.",
+      "daily_pnl": -14.79,
+      "float": 2.42,
+      "positions": 2,
+      "watchlist_changes": [
+        "REMOVED usdjpy_intervention_fade_zone (Rule1: dist=95.1p > 3xH4ATR=78.9p, no catalyst, not trending)"
+      ],
+      "attention_covered": "9/9"
     }
   ]
 }
