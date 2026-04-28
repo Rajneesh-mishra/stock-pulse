@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T09:59:41.761329Z",
+  "generated_at": "2026-04-28T10:05:34.819283Z",
   "ticks": [
     {
       "ts_utc": "2026-04-24T14:10:00Z",
@@ -80,47 +80,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "tick_ts_utc": "2026-04-28T01:06Z",
-      "events": 0,
-      "event_ids": [],
-      "opened": [],
-      "closed": [],
-      "modified": [],
-      "positions_after": [
-        {
-          "dealId": "00000000-4e77-6243-044a-beb40055311e",
-          "epic": "USDCAD",
-          "direction": "SELL",
-          "size": 2000.0,
-          "entry": 1.36106,
-          "sl": 1.3642,
-          "tp": 1.355,
-          "upl": -2.28,
-          "age_hours": 11.5,
-          "thesis_type": "trend",
-          "time_exit_utc": "2026-04-28T13:50Z"
-        }
-      ],
-      "orders_after": [
-        {
-          "dealId": "00000000-4e77-b253-044a-beb40055311e",
-          "epic": "GBPUSD",
-          "direction": "BUY",
-          "level": 1.352555,
-          "type": "LIMIT",
-          "sl": 1.3515,
-          "tp": 1.36,
-          "status": "working_7.4p_above"
-        }
-      ],
-      "daily_pnl": -10.52,
-      "float": -2.28,
-      "account_balance": 978.82,
-      "regime": "heartbeat",
-      "notes": "0 events heartbeat. USDCAD SELL thesis intact (DAY FVG bear bottom=1.36244 resistance). GBPUSD LIMIT retained (comp dropped weak but limit in Day FVG zone, not structurally invalidated). OIL sweep_9579 sell level 0.15pts away (comp=+37, need +40). FOMC T\u224840.9h.",
-      "audit": "12 level_alerts all KEEP (dist<3xH4ATR, counterfactual clean). scalp: EURUSD+GBPUSD ACTIVE, AUDUSD DISABLED (wr=11%)"
     },
     {
       "tick_ts_utc": "2026-04-28T01:13Z",
@@ -1093,6 +1052,34 @@
       "closed": 1,
       "skipped": 0,
       "note": "09:58 forex auto \u2014 3 evt: eurusd_scalp b4fe TP_hit +$0.12 (bid 1.16952 crossed TP=1.16955; daemon inferred sl_hit incorrectly); b55d opened @1.16950 SL=1.16988 TP=1.16888; b59c opened @1.16936 SL=1.16988 TP=1.16840. 2 scalp pos open (b55d+b59c EURUSD SELL, engine ema_pullback, age<15min). AUDUSD LIMIT@0.7143 GTC intact (comp=+47 mod, dist=31.4p, validated). GOLD@4611 comp=-67 strong SELL; 4721 WATCH (Rule2 override, dist=109p>3xH4ATR=102p but 9f/4h=100% KEEP). OIL@98.19 comp=+55 mod; 9323 BUY WATCH (validated, price far above). GBPUSD comp=+25.5 weak 135203 dist=28p WATCH. USDJPY comp=+32 weak dist=44p WATCH (counter-fade 160 needs +40). USDCAD comp=-14.5 none; H4 FVG@1.36693 dist=15p + m15sweep@1.36313 dist=23p \u2014 both WATCH. USDCHF comp=+23 none. FOMC caution T-8.1h normal ops. No new swing trades. daily_pnl=-$20.47. attention_covered=9/9."
+    },
+    {
+      "tick_ts_utc": "2026-04-28T10:03Z",
+      "events_processed": 1,
+      "events": [
+        "pos_opened EURUSD b59c (confirm scalp_entry, consumed)"
+      ],
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "positions_open": 2,
+      "trades": [],
+      "alerts_changed": [],
+      "daily_pnl_usd": -20.47,
+      "upl_usd": 0.2,
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "binary_event": "FOMC Apr29@18:00Z caution T-8h normal ops",
+      "scalp_status": "EURUSD 2 live (b55d+b59c age~10min, UPL+$0.20). No halts.",
+      "attention_matrix": {
+        "EURUSD": "swing=NONE scalp=ACTIVE readiness=none(comp=-23)",
+        "GBPUSD": "swing=NONE scalp=ACTIVE readiness=weak(comp=+25.5)",
+        "AUDUSD": "swing=ARMED scalp=OFF(wr<threshold) readiness=moderate(comp=+47)",
+        "USDJPY": "swing=WATCH scalp=OFF(pip-conv) readiness=weak(comp=+32)",
+        "USDCAD": "swing=WATCH scalp=OFF(CAD-quote) readiness=none(comp=-14.5)",
+        "USDCHF": "swing=WATCH scalp=OFF(pip-conv) readiness=weak(comp=+29)",
+        "GOLD": "swing=WATCH scalp=N/A(spread-5p) readiness=strong(comp=-67)",
+        "OIL_CRUDE": "swing=WATCH scalp=N/A(spread-4p) readiness=moderate(comp=+55)"
+      },
+      "note": "Heartbeat tick; 1 event (pos_opened confirm). Scalp SELLs running. All swing levels in WATCH."
     }
   ]
 }

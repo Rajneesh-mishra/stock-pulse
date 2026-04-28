@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T09:59:17.769078+00:00",
+  "generated_at": "2026-04-28T10:05:26.732765+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -300,10 +300,10 @@
           "hit_rate": 0.5
         },
         "4h": {
-          "filled": 1,
+          "filled": 2,
           "favorable": 1,
-          "avg_pips": 18.2,
-          "hit_rate": 1.0
+          "avg_pips": -2.6,
+          "hit_rate": 0.5
         },
         "24h": {
           "filled": 1,
