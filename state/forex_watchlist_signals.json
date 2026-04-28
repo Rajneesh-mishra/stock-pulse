@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-28T01:06Z",
+  "last_updated_by_claude": "2026-04-28T01:13Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -167,30 +167,6 @@
       "active": true
     },
     {
-      "id": "eurusd_sweep_117186_buy_watch",
-      "instrument": "EURUSD",
-      "level": 1.17186,
-      "emit_on": "cross_down",
-      "cooldown_sec": 1800,
-      "direction": "buy",
-      "note": "ENTRY: price retests 1.17186 swept extreme; M15 bar closes AT or ABOVE 1.17186 with bullish rejection wick \u22652p from the low. Requires readiness \u2265 moderate (comp \u226540 bullish).\n\nCONTEXT: Down-sweep M15 06:15Z 2026-04-27 \u2014 wicked 1.8p below 1.17186, closed back at 1.17200. Fresh structural support. comp=+21 none currently (H1 bear FVG 1.17231 immediately overhead blocks TP). WATCH \u2014 arm LIMIT only if comp improves to \u226540 bullish.\n\nSL: 1.1710  TP: 1.1745  R:R target: 2.0\n\nadded 2026-04-27T06:30Z \u2014 M15 down-sweep creates buy structural level; readiness=none; WATCH only.",
-      "entry_criterion": "M15 retest of 1.17186 with bullish rejection wick \u22652p from low. comp \u226540 required before arming LIMIT.",
-      "regime_context": "Down-sweep M15 06:15Z created fresh structural support at 1.17186. H1 bear FVG 1.17231-1.17251 is overhead resistance. Arm only on comp \u226540 bullish.",
-      "sl": 1.171,
-      "tp": 1.1745,
-      "rr_target": "2.0",
-      "current_price_ref": 1.172375,
-      "price_ref": {
-        "ts": "2026-04-27T14:18Z",
-        "price": null
-      },
-      "last_updated": "2026-04-27T06:30Z",
-      "updated_utc": "2026-04-28T01:00Z",
-      "proximity": "EURUSD@1.17185; AT level 1.17186 (0p). comp=+3 none (need \u2265+40 bull to arm). level_cross fired 01:00Z Apr28 \u2014 WATCH; DAY FVG 1.17139-1.17186 fresh but H4+M15 bearish, composite below threshold.",
-      "alert_id": "eurusd_sweep_117186_buy_retest",
-      "active": true
-    },
-    {
       "id": "gbpusd_sweep_135255_buy_watch",
       "instrument": "GBPUSD",
       "level": 1.352555,
@@ -274,22 +250,22 @@
     {
       "id": "oil_sweep_9579_sell_retest",
       "instrument": "OIL_CRUDE",
-      "level": 95.789,
+      "level": 95.928,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "ENTRY: price retests 95.789 swept extreme; M15 bar closes AT or BELOW 95.789 with bearish rejection wick \u22652pts from the high. Arm LIMIT SELL when |composite| \u2265 40 bullish extension (counter-trend fade).\n\nCONTEXT: M15 up-sweep 2026-04-28T00:30Z, wick=13p at 95.789, close=95.718. comp=+37 weak bullish (need \u226540 to arm). Daily/H4/H1 in bull trend (EMA alignment). M15 ChoCh bear at 93.904. Counter-trend fade \u2014 bullish extension is the corroborating signal. Hormuz escalation keeps oil bid; high-risk fade. Apply 4h time-stop if entered.\n\nSL: 95.92  TP: 94.40  R:R target: 10.6\n\nadded 2026-04-28T00:46Z \u2014 M15 liquidity_sweep up (wick=13p); counter-trend sell retest; WATCH until comp \u226540 bullish.",
-      "entry_criterion": "M15 retest of 95.789 with bearish rejection wick \u22652pts from high. Arm LIMIT SELL when |comp| \u226540 bullish extension (counter-trend).",
-      "regime_context": "M15 up-sweep 00:30Z Apr28, wick=13p beyond 95.789, close=95.718. comp=+37 weak (need \u226540). Daily/H4/H1 bull trend intact; M15 ChoCh bear 93.904. Hormuz escalation = oil bid (risk). 4h time-stop on entry.",
-      "sl": 95.92,
+      "note": "ENTRY: price retests 95.928 (updated up-sweep extreme, 2026-04-28T01:01Z); M15 bar closes AT or BELOW 95.928 with bearish rejection wick \u22652pts from the high. Arm LIMIT SELL when |composite| \u2265 40 bullish extension (counter-trend fade).\n\nCONTEXT: Original M15 up-sweep 00:30Z Apr28 wick at 95.789; price then crossed above 95.789 to 95.928 at 01:01Z Apr28, invalidating old SL (95.92). New swept extreme = 95.928. comp=+37 weak bullish (need \u226540 to arm). Daily/H4/H1 in bull trend (EMA alignment). M15 ChoCh bear at 93.904. Counter-trend fade \u2014 bullish extension is the corroborating signal. Hormuz escalation keeps oil bid; high-risk fade. Apply 4h time-stop if entered.\n\nSL: 96.05  TP: 94.40  R:R target: 10.0\n\nupdated 2026-04-28T01:13Z \u2014 price breached old SL 95.92 (hit 95.928); level updated to new wick high; SL widened to 96.05.",
+      "entry_criterion": "M15 retest of 95.928 (new up-sweep extreme) with bearish rejection wick \u22652pts from high. Arm LIMIT SELL when |comp| \u226540 bullish extension (counter-trend).",
+      "regime_context": "New up-sweep extreme 95.928 (01:01Z Apr28). comp=+37 weak (need \u226540). Daily/H4/H1 bull trend intact; M15 ChoCh bear 93.904. Hormuz escalation = oil bid (risk). 4h time-stop on entry.",
+      "sl": 96.05,
       "tp": 94.4,
-      "rr_target": "10.6",
-      "current_price_ref": 95.78,
-      "last_updated": "2026-04-28T00:46Z",
-      "proximity": "OIL@95.941; dist=0.152pts ABOVE 95.789 (3xH4ATR=5.99pts). comp=+37 weak-bull; need comp\u2265+40 bull extension to arm counter-trend SELL. WATCH \u2014 3pts from arming threshold. 2026-04-28T01:06Z",
+      "rr_target": "10.0",
+      "current_price_ref": 95.87,
+      "last_updated": "2026-04-28T01:13Z",
+      "proximity": "OIL@95.87; dist=0.06pts BELOW 95.928 (3\u00d7H4ATR=6.03). comp=+37 weak-bull; need comp\u2265+40 bull extension to arm counter-trend SELL. Old SL 95.92 breached at 95.928 \u2192 level updated. WATCH. 2026-04-28T01:13Z",
       "alert_id": "oil_sweep_9579_sell_retest",
       "active": true,
-      "updated_utc": "2026-04-28T01:06Z"
+      "updated_utc": "2026-04-28T01:13Z"
     },
     {
       "id": "usdchf_m15sweep_7832_buy_watch",
@@ -377,5 +353,5 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-28T00:46Z"
+  "last_updated_utc": "2026-04-28T01:13Z"
 }

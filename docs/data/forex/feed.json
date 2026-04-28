@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T01:07:38.085950Z",
+  "generated_at": "2026-04-28T01:16:03.491149Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -381,6 +381,82 @@
       "regime": "heartbeat",
       "notes": "0 events heartbeat. USDCAD SELL thesis intact (DAY FVG bear bottom=1.36244 resistance). GBPUSD LIMIT retained (comp dropped weak but limit in Day FVG zone, not structurally invalidated). OIL sweep_9579 sell level 0.15pts away (comp=+37, need +40). FOMC T\u224840.9h.",
       "audit": "12 level_alerts all KEEP (dist<3xH4ATR, counterfactual clean). scalp: EURUSD+GBPUSD ACTIVE, AUDUSD DISABLED (wr=11%)"
+    },
+    {
+      "tick_ts_utc": "2026-04-28T01:13Z",
+      "events_consumed": 2,
+      "events": [
+        {
+          "id": "evt_1777338104975_level_cross",
+          "type": "level_cross",
+          "instrument": "OIL_CRUDE",
+          "alert_id": "oil_sweep_9579_sell_retest",
+          "action": "WATCH \u2014 comp=+37 < +40 threshold; level updated 95.789\u219295.928 (old SL 95.92 breached)"
+        },
+        {
+          "id": "evt_1777338510573_level_cross",
+          "type": "level_cross",
+          "instrument": "GBPUSD",
+          "alert_id": "gbpusd_sweep_135255_buy_watch",
+          "action": "KEEP LIMIT working@1.352555 \u2014 price at bid, Day bull FVG demand intact, H4/Day bullish, cancel-criteria not met (>1.3505)"
+        }
+      ],
+      "positions": [
+        {
+          "epic": "USDCAD",
+          "direction": "SELL",
+          "entry": 1.36106,
+          "bid": 1.36292,
+          "sl": 1.3642,
+          "tp": 1.355,
+          "upl": -3.02,
+          "age_h": 11.4,
+          "status": "HOLD \u2014 comp=-43.5 mod-bear, time_exit=13:50Z Apr28"
+        }
+      ],
+      "working_orders": [
+        {
+          "epic": "GBPUSD",
+          "direction": "BUY",
+          "limit": 1.352555,
+          "bid": 1.35255,
+          "sl": 1.3515,
+          "tp": 1.36,
+          "status": "AT BID \u2014 may fill this session; Day bull FVG demand at 1.35235-1.35257"
+        }
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "watchlist_changes": {
+        "removed": [
+          "eurusd_sweep_117186_buy_watch (M15 close below 1.17186 at 1.17148, comp=+3 none)"
+        ],
+        "modified": [
+          "oil_sweep_9579_sell_retest: level 95.789\u219295.928, SL 95.92\u219296.05 (old SL breached)"
+        ]
+      },
+      "confluence": {
+        "OIL_CRUDE": {
+          "composite": 37,
+          "readiness": "weak"
+        },
+        "GBPUSD": {
+          "composite": 35,
+          "readiness": "weak"
+        },
+        "USDCAD": {
+          "composite": -43.5,
+          "readiness": "moderate"
+        },
+        "AUDUSD": {
+          "composite": 63.5,
+          "readiness": "strong"
+        }
+      },
+      "news": "FOMC Apr29 94% hold at 3.50-3.75%; USD near-term strength Q2; USDCAD fundamental outlook bearish (1.3400 yr-end). No regime change.",
+      "daily_pnl_realized": -10.52,
+      "float_pnl": -3.02,
+      "scalp_status": "EURUSD/GBPUSD active; AUDUSD disabled wr=11%; no open scalps; daily_pnl_usd=$0"
     }
   ]
 }

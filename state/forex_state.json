@@ -1,9 +1,9 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-28T01:06Z",
-  "state_ts_utc": "2026-04-28T01:06Z",
-  "regime_note": "2026-04-28T01:06Z forex auto \u2014 0 evt: heartbeat. USDCAD SELL@1.36106 age=11.5h UPL=-$2.28 comp=-43.5 mod-bear; DAY FVG bear bottom=1.36244 acting as resistance; SL=1.3642 (1.59p from offer); time_exit 13:50Z Apr28 (pre-FOMC). GBPUSD LIMIT@1.352555 working (bid 7.4p above); comp=+35 weak-bull \u2014 M15 bearish Asia session but H4/Day bullish; limit in Day bull FVG (1.35235-1.35315) \u2014 KEEP. AUDUSD comp=+66 strong-bull corr-cap-full. OIL oil_sweep_9579 SELL level=95.789 dist=0.15pts (comp=+37 weak, need +40 to arm). FOMC 2026-04-29T18:00Z T\u224840.9h; caution activates ~18:00Z Apr28 (~17h away). 1 pos 1 working. daily_pnl=-$10.52 float=-$2.28. attention_covered=9/9.",
-  "regime_note_prev": "2026-04-28T01:00Z forex auto \u2014 1 evt (EURUSD level_cross eurusd_sweep_117186 \u2014 price@1.17185 AT swept level; comp=+3 none, not armed; DAY FVG 1.17139-1.17186 fresh but H4+M15 bearish; WATCH). USDCAD SELL@1.36106 age=11.2h UPL=-$2.04 thesis-intact; time-exit 13:50Z Apr28. GBPUSD LIMIT@1.352555 working (bid 7.7p above) comp=+47.5 mod-bull. AUDUSD comp=+66 strong-bull corr-cap-full. FOMC 2026-04-29T18:00Z T\u224841h (caution ~18:00Z Apr28). 1 pos 1 working. daily_pnl=-$10.52 float=-$2.04. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-28T01:13Z",
+  "state_ts_utc": "2026-04-28T01:13Z",
+  "regime_note": "2026-04-28T01:13Z forex auto \u2014 2 evt (OIL level_cross oil_sweep_9579 price=95.928 > old SL 95.92 \u2192 level updated to 95.928 SL\u219296.05 WATCH comp=+37<+40; GBPUSD level_cross bid@1.352555 = LIMIT level \u2014 LIMIT working KEEP thesis intact Day bull FVG demand). USDCAD SELL@1.36106 age=11.4h UPL\u2248-$3.02 thesis-intact comp=-43.5 mod-bear time_exit=13:50Z Apr28. GBPUSD LIMIT@1.352555 at bid \u2014 may fill this session; comp=+35 weak H4/Day bull FVG demand intact. AUDUSD comp=+63.5 strong-bull corr-cap-full (2/2). FOMC Apr29T18:00Z T\u224840.8h (94% hold; caution activates 18:00Z Apr28 ~16.8h away). Watchlist: REMOVED eurusd_sweep_117186 (M15 closed 1.17148 below 1.17186 comp=+3); OIL level updated 95.789\u219295.928. 1 pos 1 working. daily_pnl=-$10.52 float\u2248-$3.02. attention_covered=9/9.",
+  "regime_note_prev": "2026-04-28T01:06Z forex auto \u2014 0 evt: heartbeat. USDCAD SELL@1.36106 age=11.5h UPL=-$2.28 comp=-43.5 mod-bear; DAY FVG bear bottom=1.36244 acting as resistance; SL=1.3642 (1.59p from offer); time_exit 13:50Z Apr28 (pre-FOMC). GBPUSD LIMIT@1.352555 working (bid 7.4p above); comp=+35 weak-bull \u2014 M15 bearish Asia session but H4/Day bullish; limit in Day bull FVG (1.35235-1.35315) \u2014 KEEP. AUDUSD comp=+66 strong-bull corr-cap-full. OIL oil_sweep_9579 SELL level=95.789 dist=0.15pts (comp=+37 weak, need +40 to arm). FOMC 2026-04-29T18:00Z T\u224840.9h; caution activates ~18:00Z Apr28 (~17h away). 1 pos 1 working. daily_pnl=-$10.52 float=-$2.28. attention_covered=9/9.",
   "open_positions": [
     {
       "dealId": "00000000-4e77-6243-044a-beb40055311e",
@@ -19,9 +19,9 @@
       "time_exit_utc": "2026-04-28T13:50Z",
       "rr": 1.93,
       "risk_usd": 6.28,
-      "upl_usd": -2.28,
-      "upl": -2.28,
-      "upl_approx": -1.81
+      "upl_usd": -3.02,
+      "upl": -3.02,
+      "upl_approx": -3.02
     }
   ],
   "watchlist": [
@@ -874,18 +874,17 @@
     }
   ],
   "binary_event": {
+    "name": "FOMC_APR2026",
     "active": true,
-    "name": "FOMC",
     "deadline_utc": "2026-04-29T18:00Z",
-    "t_minus_hours": 40.9,
-    "blackout": false,
-    "caution": false,
-    "note": "FOMC decision 2026-04-29T18:00Z + BoC decision 2026-04-29 (expected hold at 2.25%). T\u224841.8h: no blackout, caution activates T<24h (~18:00Z Apr28). FOMC 99.9% hold at 3.5-3.75%; Powell tone key on oil/inflation. USDCAD 24h time-exit at ~13:50Z Apr28, before FOMC.",
+    "t_minus_h": 40.8,
     "verified": true,
     "sources": [
-      "FedReserve.gov calendar",
-      "Bloomberg Fed calendar"
-    ]
+      "https://www.forex.com/en/news-and-analysis/fomc-outlook-usdcad-usdjpy-hold-at-key-support-levels/",
+      "https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html"
+    ],
+    "caution_from_utc": "2026-04-28T18:00Z",
+    "note": "94% probability hold at 3.50-3.75%. Tone/guidance at press conference is key catalyst. Caution activates ~T-24h (18:00Z Apr28). No new entries within T-30min blackout."
   },
   "balance": 979.11,
   "level_alerts": [

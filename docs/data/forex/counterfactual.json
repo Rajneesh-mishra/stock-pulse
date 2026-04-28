@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T01:06:50.396445+00:00",
+  "generated_at": "2026-04-28T01:15:06.068253+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -60,10 +60,10 @@
       "fires": 13,
       "by_horizon": {
         "1h": {
-          "filled": 12,
+          "filled": 13,
           "favorable": 9,
-          "avg_pips": 10.8,
-          "hit_rate": 0.75
+          "avg_pips": 1.4,
+          "hit_rate": 0.69
         },
         "4h": {
           "filled": 12,
@@ -811,6 +811,32 @@
       "alert_id": "oil_sweep_9579_sell_retest",
       "instrument": "OIL_CRUDE",
       "direction": "sell",
+      "fires": 1,
+      "by_horizon": {
+        "1h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "4h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "24h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        }
+      }
+    },
+    {
+      "alert_id": "gbpusd_sweep_135255_buy_watch",
+      "instrument": "GBPUSD",
+      "direction": "buy",
       "fires": 1,
       "by_horizon": {
         "1h": {
