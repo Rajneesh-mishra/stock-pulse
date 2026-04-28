@@ -1,9 +1,9 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-28T07:46Z",
-  "state_ts_utc": "2026-04-28T07:46Z",
-  "regime_note": "2026-04-28T07:46Z forex auto \u2014 9 evt processed: 3 pos_closed (65dd GBPUSD SL -$0.21; 660d GBPUSD SL -$0.45; 62fa EURUSD TP +$0.38). 3 new scalps opened (682a GBPUSD BUY@1.35081; 6874 EURUSD SELL@1.16943; 6890 GBPUSD BUY@1.35081). 4 scalp positions: 65d0+6874 EURUSD SELL, 682a+6890 GBPUSD BUY \u2014 1h caps 08:30-08:40Z. AUDUSD LIMIT@0.7143 GTC (comp=+47 mod). GOLD comp=-67 strong bear@4629; 4721 SELL ARMED but blocked (pos cap=4). EURUSD comp=-23 none; GBPUSD comp=+13.5 none. FOMC caution activates 18:00Z today (T-10.3h). daily_pnl=-$17.82. attention_covered=9/9.",
-  "regime_note_prev": "2026-04-28T07:14Z forex auto \u2014 1 evt: EURUSD M15 liq_sweep@1.16871 (down-wick 1.1p, close@1.16935; counter-trend buy bias; comp=-23 <25 threshold \u2192 WATCH, no entry added). Watchlist audit: REMOVE usdchf_sweep_h1_sell_retest (price broke above sell level@0.787505), eurusd_sweep_117186_buy_watch (H4 bear FVG, 0% hit rate), usdchf_m15sweep_7832_buy_watch (AUTO-REMOVE: dist=6.06p>3xH4ATR=5.88p), audusd_h1sweep_71731_buy_watch (wick breached, price 0.71683<0.71731). ADD eurusd_m15sweep_116871_buy_watch (watch only), usdchf_h1fvg_78750_buy_watch (H1 FVG support). GOLD@4633 strong bear (comp=-67 all TFs); 4700/4721 SELL alerts KEEP. AUDUSD LIMIT@0.7143 working GTC (comp=+47 mod-bull). OIL@97.22 mod-bull (comp=+45). FOMC caution activates 18:00Z today (T-10.8h). 0 pos 1 working. daily_pnl=-$17.72. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-28T08:02Z",
+  "state_ts_utc": "2026-04-28T08:02Z",
+  "regime_note": "2026-04-28T08:02Z forex auto \u2014 1 evt: pos_closed GBPUSD 682a SL -$0.15 (+ 6890 broker-reconciled SL -$0.33). Scalp engine opened 7011 GBPUSD BUY@1.35062. 3 positions open: 65d0+6874 EURUSD SELL (1h caps 08:30/08:39Z), 7011 GBPUSD BUY (cap 09:01Z). AUDUSD LIMIT@0.7143 GTC (comp=+47 moderate-bull, validated). GOLD@4621 strong bear comp=-67; 4700/4721 SELL alerts WATCH (need +40 bull ext to arm). EURUSD comp=-23 none. GBPUSD comp=+13.5 none. FOMC caution activates 18:00Z today (T-10h). daily_pnl=-$18.30. attention_covered=9/9.",
+  "regime_note_prev": "2026-04-28T07:46Z forex auto \u2014 9 evt processed: 3 pos_closed (65dd GBPUSD SL -$0.21; 660d GBPUSD SL -$0.45; 62fa EURUSD TP +$0.38). 3 new scalps opened (682a GBPUSD BUY@1.35081; 6874 EURUSD SELL@1.16943; 6890 GBPUSD BUY@1.35081). 4 scalp positions: 65d0+6874 EURUSD SELL, 682a+6890 GBPUSD BUY \u2014 1h caps 08:30-08:40Z. AUDUSD LIMIT@0.7143 GTC (comp=+47 mod). GOLD comp=-67 strong bear@4629; 4721 SELL ARMED but blocked (pos cap=4). EURUSD comp=-23 none; GBPUSD comp=+13.5 none. FOMC caution activates 18:00Z today (T-10.3h). daily_pnl=-$17.82. attention_covered=9/9.",
   "open_positions": [
     {
       "id": "00000000-4e79-65d0-044a-beb40055311e",
@@ -19,19 +19,6 @@
       "note": "Scalp engine ema_pullback SELL. Entry=1.16956 SL=1.17014 TP=1.16853. 1h time cap: close by 08:30Z."
     },
     {
-      "id": "00000000-4e79-682a-044a-beb40055311e",
-      "instrument": "GBPUSD",
-      "direction": "BUY",
-      "size": 1000,
-      "entry": 1.35081,
-      "sl": 1.3505,
-      "tp": 1.35127,
-      "opened_at": "2026-04-28T07:37:30Z",
-      "thesis_type": "scalp_entry",
-      "alert_id": "gbpusd_scalp_session_break",
-      "note": "Scalp engine session_open_break BUY. Entry=1.35081 SL=1.3505 TP=1.35127. 1h time cap: close by 08:37Z."
-    },
-    {
       "id": "00000000-4e79-6874-044a-beb40055311e",
       "instrument": "EURUSD",
       "direction": "SELL",
@@ -45,17 +32,17 @@
       "note": "Scalp engine ema_pullback SELL. Entry=1.16943 SL=1.17011 TP=1.16805. 1h time cap: close by 08:39Z."
     },
     {
-      "id": "00000000-4e79-6890-044a-beb40055311e",
+      "id": "00000000-4e79-7011-044a-beb40055311e",
       "instrument": "GBPUSD",
       "direction": "BUY",
       "size": 1000,
-      "entry": 1.35081,
-      "sl": 1.35048,
-      "tp": 1.35125,
-      "opened_at": "2026-04-28T07:39:36Z",
+      "entry": 1.35062,
+      "sl": 1.35031,
+      "tp": 1.35108,
+      "opened_at": "2026-04-28T08:01:47Z",
       "thesis_type": "scalp_entry",
       "alert_id": "gbpusd_scalp_session_break",
-      "note": "Scalp engine session_open_break BUY. Entry=1.35081 SL=1.35048 TP=1.35125. 1h time cap: close by 08:39Z."
+      "note": "Scalp engine session_open_break BUY. Entry=1.35062 SL=1.35031 TP=1.35108. 1h time cap: close by 09:01Z."
     }
   ],
   "watchlist": [
@@ -434,10 +421,36 @@
       "closed_at": "2026-04-28T07:39:12Z",
       "exit_reason": "TP hit. Scalp engine ema_pullback SELL. SL was at breakeven; TP=1.16946 reached.",
       "thesis_type": "scalp_entry"
+    },
+    {
+      "id": "00000000-4e79-682a-044a-beb40055311e",
+      "instrument": "GBPUSD",
+      "direction": "BUY",
+      "entry_price": 1.35081,
+      "size": 1000,
+      "pnl": -0.15,
+      "result": "sl_hit",
+      "opened_at": "2026-04-28T07:37:30Z",
+      "closed_at": "2026-04-28T08:01:25Z",
+      "exit_reason": "SL hit. Scalp engine session_open_break BUY. bid=1.35066 crossed SL=1.35050.",
+      "thesis_type": "scalp_entry"
+    },
+    {
+      "id": "00000000-4e79-6890-044a-beb40055311e",
+      "instrument": "GBPUSD",
+      "direction": "BUY",
+      "entry_price": 1.35081,
+      "size": 1000,
+      "pnl": -0.33,
+      "result": "sl_hit",
+      "opened_at": "2026-04-28T07:39:36Z",
+      "closed_at": "2026-04-28T08:01:25Z",
+      "exit_reason": "SL hit. Scalp engine session_open_break BUY. Reconciled from broker (no daemon event). SL=1.35048.",
+      "thesis_type": "scalp_entry"
     }
   ],
   "consecutive_losses": 1,
-  "daily_pnl": -17.82,
+  "daily_pnl": -18.3,
   "weekly_pnl": 0,
   "total_pnl": 2.04,
   "total_trades": 2,
@@ -1035,7 +1048,7 @@
     "name": "FOMC_APR2026",
     "active": true,
     "deadline_utc": "2026-04-29T18:00Z",
-    "t_minus_h": 35.9,
+    "t_minus_h": 34.0,
     "verified": true,
     "sources": [
       "https://www.forex.com/en/news-and-analysis/fomc-outlook-usdcad-usdjpy-hold-at-key-support-levels/",

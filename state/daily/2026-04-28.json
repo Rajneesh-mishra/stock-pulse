@@ -925,5 +925,22 @@
       "OIL": "WATCH@93.23 buy, comp=+45 moderate"
     },
     "scalp_status": "EURUSD=ACTIVE GBPUSD=ACTIVE AUDUSD=OFF(wr11%) JPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
+  },
+  {
+    "tick_ts_utc": "2026-04-28T08:02Z",
+    "events_processed": 1,
+    "events": [
+      "pos_closed GBPUSD 682a SL -$0.15 (+ 6890 broker-reconciled SL -$0.33)"
+    ],
+    "positions_opened": 0,
+    "positions_closed": 2,
+    "scalp_opened": 1,
+    "scalp_closed": 2,
+    "daily_pnl": -18.3,
+    "open_positions": 3,
+    "working_orders": 1,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "FOMC_APR2026 T-34h (caution from 18:00Z today)",
+    "note": "682a GBPUSD BUY SL hit -$0.15 (event). 6890 GBPUSD BUY SL hit -$0.33 (broker reconcile). Scalp engine opened 7011 GBPUSD BUY@1.35062. 3 pos: 65d0+6874 EURUSD SELL (1h caps), 7011 GBPUSD BUY. AUDUSD LIMIT@0.7143 GTC."
   }
 ]
