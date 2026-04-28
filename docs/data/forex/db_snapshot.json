@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-28T20:55:03.617010+00:00",
+  "generated_at": "2026-04-28T22:00:29.724499+00:00",
   "counts": {
     "trades": 36,
-    "events": 6001,
+    "events": 6027,
     "ticks": 59,
-    "regime_snapshots": 171,
+    "regime_snapshots": 172,
     "broker_positions": 0,
     "counterfactuals": 102
   },
@@ -769,6 +769,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-28T20:52Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "2026-04-28T20:52Z forex auto \u2014 0 evt (heartbeat): FOMC_APR2026 T-21.1h caution ACTIVE (readiness\u2265moderate only, half size). GOLD LIMIT SELL@4603 ARMED (GTC, dist=9.4pts from 4593.0, comp=-50 mod bear, H4 FVG 4600-4621). AUDUSD LIMIT BUY@0.7143 GTC (dist=39.6p above 0.71826, comp=+60 strong validated 3f/100%4h). GBPUSD AT sweep level 1.35203 (dist=0.3p, comp=+35 weak) \u2014 WATCHLIST ONLY, readiness below moderate. USDJPY comp=+43 mod \u2014 fade@160.0 dist=39.7p, FOMC blocks arm WATCH. OIL comp=+50.5 mod \u2014 oil_9323 BUY@93.23 dist=4.92pts>proximity WATCH. EURUSD upsweep_117159 2p from SELL level, comp=none \u2014 WATCHLIST. USDCHF H4FVG@0.7875 dist=16.8p, comp=none \u2014 WATCHLIST. All 8 alerts KEEP. daily_pnl=-$21.06. attention_covered=9/9.",
+      "binary_event_name": "FOMC_APR2026",
+      "binary_event_active": 1,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
       "ts_utc": "2026-04-28T19:37Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-28T19:37Z forex auto \u2014 0 evt (heartbeat): FOMC_APR2026 T-22.4h caution ACTIVE (no new entries; readiness>=moderate only). GOLD LIMIT SELL@4603 ARMED (GTC, dist=5.73pts from 4597.27, comp=-52.5 mod bear, H4 bear FVG 4600-4621 unmitigated). AUDUSD LIMIT BUY@0.7143 GTC (dist=36.9p above 0.71799, comp=+60 strong bull, validated 3f/100%4h). USDJPY comp=+43.0 mod \u2014 fade@160.0 35.3p away, FOMC blocks arm WATCH. EURUSD 1.17091 \u2014 added eurusd_upsweep_117159_sell_watch (dist=6.8p, comp=none, watchlist). OIL surge +3.07% 98.38; oil_9323 Rule2 KEEP (dist=5.15pts<3xH4ATR=6.33pts, validated 6f/100%4h). daily_pnl=-$21.06. attention_covered=9/9.",
@@ -836,14 +844,6 @@
       "ts_utc": "2026-04-28T12:09Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-28T12:09Z forex auto \u2014 1 evt: EURUSD level_cross@1.16871 (eurusd_m15sweep_116871); comp=-23 none (need \u2264-40 for counter-trend BUY arm); NO TRADE. AUDUSD LIMIT@0.7143 GTC intact (comp=+39.5 weak; RBA hawkish thesis confirmed; dist=9.8p). GOLD@4571.53 comp=-67 strong bear; gold_4700 AUTO-REMOVED (dist=128.5pts > 3\u00d7H4ATR=108.8 Rule1); gold_h1fvg_sell_4603 ADDED (H1/H4 bear FVG resist 4569-4603, 3.8RR). gold_4721 KEPT per Rule2 (9f/100%4h validated; dist=149.5pts now technically stale but Rule2 overrides). OIL@99.42 comp=+55 mod; 93.23 WATCH (dist=6.19pts, Rule2 validated 6f/100%4h). USDJPY@159.731 comp=+44 mod; fade@160 dist=26.9p WITHIN 30p prox, +44 MEETS threshold, TECHNICALLY ARMED but JPY pip-val bug blocks risk_guard. EURUSD scalp disabled (engine_desync_loop). GBPUSD scalp ACTIVE (no trades). FOMC Apr29@18:00Z T-29.9h. daily_pnl=-$21.06. attention_covered=9/9.",
-      "binary_event_name": "FOMC_APR2026",
-      "binary_event_active": 1,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-04-28T11:23Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "2026-04-28T11:23Z forex auto \u2014 1 evt: USDCAD M15 up-sweep@1.36674 (3.5p wick, close 1.36654) \u2192 SELL zone reinforced 1.36643-1.36693 (H4FVG+2x sweep). Readiness=none, WATCH only. AUDUSD LIMIT@0.7143 GTC intact (comp=+39.5 weak, dist=20.8p). GOLD@4603 comp=-67 strong bear; sell levels 4700/4721 WATCH. OIL@99.17 comp=+55 mod bull; BUY levels@93.23/93.51 WATCH (dist 5.7-5.9). USDJPY@159.70 comp=+44 mod; intervention fade@160 dist=30.3p (just outside 30p prox threshold; risk_guard JPY pip-value bug blocks entry). FOMC Apr29@18:00Z T-30.6h, caution from 18:00Z today. daily_pnl=-$21.06. attention_covered=9/9.",
       "binary_event_name": "FOMC_APR2026",
       "binary_event_active": 1,
       "binary_event_deadline": "2026-04-29T18:00Z"

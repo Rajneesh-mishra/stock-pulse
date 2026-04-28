@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T20:55:14.382573+00:00",
+  "generated_at": "2026-04-28T22:03:58.440939+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -915,7 +915,7 @@
       "alert_id": "eurusd_upsweep_117159_sell_watch",
       "instrument": "EURUSD",
       "direction": "sell",
-      "fires": 2,
+      "fires": 3,
       "by_horizon": {
         "1h": {
           "filled": 2,
@@ -924,10 +924,10 @@
           "hit_rate": 1.0
         },
         "4h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 1.4,
+          "hit_rate": 1.0
         },
         "24h": {
           "filled": 0,
