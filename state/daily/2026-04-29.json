@@ -24,5 +24,85 @@
     "balance_usd": 969.98,
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
     "binary_event": "FOMC_APR2026 T-23.2h caution_active"
+  },
+  {
+    "tick_ts_utc": "2026-04-29T03:46Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "type": "level_cross",
+        "instrument": "EURUSD",
+        "alert_id": "eurusd_upsweep_117159_sell_watch",
+        "action": "SKIP",
+        "reason": "comp=+12.5 < +40 counter-trend threshold; FOMC T-14.2h caution"
+      }
+    ],
+    "broker": {
+      "open_positions": 0,
+      "pending_orders": 2,
+      "orders": [
+        {
+          "epic": "GOLD",
+          "direction": "SELL",
+          "level": 4603.0,
+          "bid": 4596.84,
+          "dist_pts": 6.16,
+          "status": "ARMED_GTC"
+        },
+        {
+          "epic": "AUDUSD",
+          "direction": "BUY",
+          "level": 0.7143,
+          "bid": 0.71832,
+          "dist_pips": 40.2,
+          "status": "WATCH_GTC"
+        }
+      ],
+      "balance": 969.98,
+      "daily_pnl_usd": -21.06
+    },
+    "confluence": {
+      "EURUSD": {
+        "comp": 12.5,
+        "readiness": "none"
+      },
+      "GOLD": {
+        "comp": -47.5,
+        "readiness": "moderate"
+      },
+      "AUDUSD": {
+        "comp": 60.0,
+        "readiness": "strong"
+      },
+      "GBPUSD": {
+        "comp": 29.0,
+        "readiness": "weak"
+      },
+      "USDJPY": {
+        "comp": 40.5,
+        "readiness": "moderate"
+      },
+      "OIL_CRUDE": {
+        "comp": 50.5,
+        "readiness": "moderate"
+      },
+      "USDCAD": {
+        "comp": -3.5,
+        "readiness": "none"
+      },
+      "USDCHF": {
+        "comp": 21.5,
+        "readiness": "none"
+      }
+    },
+    "binary_event": "FOMC_APR2026 T-14.2h caution active",
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "watchlist_changes": [
+      "ADD gold_sell_4658_h1bos_retest (H1 BOS bear retest at 4658, dist=62pts, comp=-47.5 mod)",
+      "ADD gbpusd_upsweep_135203_sell_watch (counter-trend sell AT 1.35203, comp=+29 weak)",
+      "FIX eurusd_upsweep_117159 threshold +30\u2192+40 (protocol alignment)"
+    ],
+    "scalp_status": "GBPUSD=ACTIVE EURUSD=OFF(engine_desync) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv GOLD/OIL=spread-blocked"
   }
 ]

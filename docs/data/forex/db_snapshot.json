@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-28T22:15:34.027804+00:00",
+  "generated_at": "2026-04-28T22:40:46.691302+00:00",
   "counts": {
     "trades": 36,
-    "events": 6044,
+    "events": 6061,
     "ticks": 59,
-    "regime_snapshots": 173,
+    "regime_snapshots": 174,
     "broker_positions": 0,
-    "counterfactuals": 103
+    "counterfactuals": 104
   },
   "trades_last_50": [
     {
@@ -769,6 +769,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-28T22:15Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "2026-04-28T22:15Z forex auto \u2014 1 evt: EURUSD level_cross@1.17159 SKIP (eurusd_upsweep_117159 validated 3f/100%4h, BUT comp=+7.5 only <25 threshold for counter-trend SELL, FOMC caution T-19.7h); GOLD SELL LIMIT@4603 ARMED (dist=7.8pts bid=4595.22, comp=-47.5 mod bear); AUDUSD BUY LIMIT@0.7143 GTC ARMED (dist=40.9p, comp=+60 strong validated); GBPUSD AT sweep 1.35203 (1.2p, comp=+29 weak) WATCHLIST \u2014 FOMC blocks arm; USDJPY fade@160.0 dist=42.3p (comp=+40.5 mod) outside proximity WATCH; OIL comp=+50.5 mod oil_9323 BUY@93.23 dist=4.75pts outside proximity WATCH; USDCHF comp=+21.5 none usdchf_h4fvg@0.7875 WATCHLIST; gold_sweep_4721 AUTO-REMOVED (dist=124>3\u00d7H4ATR=106, no catalyst, not trending); gold_sell_4658_h1bos_retest ADDED; daily_pnl=-$21.06. attention_covered=9/9.",
+      "binary_event_name": "FOMC_APR2026",
+      "binary_event_active": 1,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
       "ts_utc": "2026-04-28T22:03Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-28T22:03Z forex auto \u2014 0 evt (heartbeat): FOMC_APR2026 T-20.0h caution ACTIVE (readiness\u2265moderate only, half size). GOLD SELL LIMIT@4603 GTC ARMED (dist=5.34pts from 4597.66, comp=-47.5 mod bear, H4 FVG 4600-4621). AUDUSD BUY LIMIT@0.7143 GTC ARMED (dist=39.1p from 0.71821, comp=+60.0 strong validated 3f/100%4h). GBPUSD AT sweep level 1.35203 (dist=0.3p, comp=+29 weak) \u2014 WATCHLIST ONLY, need readiness\u2265moderate. EURUSD upsweep_117159 SELL at 1.17159 (price 1.17156, 0.3p), comp=0 no arm. USDJPY fade@160.0 dist=40.1p (comp=+40.5 mod bull, counter-trend), FOMC blocks arm (>30p threshold). OIL comp=+50.5 mod bull, oil_9323 BUY@93.23 dist=4.84pts>proximity WATCH. USDCHF comp=+21.5 none, usdchf_h4fvg@0.7875 WATCHLIST. All 8 alerts KEEP. daily_pnl=-$21.06. attention_covered=9/9.",
@@ -836,14 +844,6 @@
       "ts_utc": "2026-04-28T15:30Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-28T15:30Z forex auto \u2014 0 evt (heartbeat): FOMC Apr29@18:00Z T-26.5h; caution window opens 18:00Z today (~2.5h). GOLD LIMIT SELL@4603 intact (comp=-67 strong bear, all 4 TFs, H1/H4 FVGs unmitigated). AUDUSD LIMIT BUY@0.7143 intact (comp=+49.5 moderate, dist=25.6p WITHIN 30p prox \u2014 ARMED). USDJPY@159.67 fade@160 comp=+43 moderate (extension MET), dist=33p OUTSIDE 30p prox \u2014 WATCH; JPY pip-val still blocks. USDCHF comp=+26.5 weak, H4 FVG@0.78689 watch (need moderate+ for arm). OIL comp=+55 moderate bull; validated BUY@93.23 (6f/100%4h) 5pts away \u2014 WATCH. State: pruned 4 stale/dup level_alerts (oil_9351_dup, gold_4700_stale-Rule1, usdcad_h4fvg_armable-moot, usdcad-dir-fix). daily_pnl=-$21.06. attention_covered=9/9.",
-      "binary_event_name": "FOMC_APR2026",
-      "binary_event_active": 1,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-04-28T14:07Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "2026-04-28T14:07Z forex auto \u2014 0 evt (heartbeat): FOMC Apr29@18:00Z T-27.9h (normal ops; caution window opens 18:00Z today). GOLD LIMIT SELL@4603 intact (comp=-65 strong bear, H1/H4 FVGs unmitigated, range $4585-$4708 per news \u2014 thesis confirmed). AUDUSD LIMIT BUY@0.7143 intact (comp=+49.5 moderate, dist=25.3p within 30p prox). USDJPY@159.581 fade@160 dist=41.9p OUTSIDE 30p prox (moved away from 160); comp=+43 moderate MEETS but JPY pip-val blocks. USDCHF alert updated (H1 FVG mitigated; H4 FVG 0.78689-0.78824 fresh; comp=+29 weak). OIL@98.475 comp=+55 mod bull; 93.23 WATCH (dist=5.25pts, 3xH4ATR=6.51 \u2014 not stale). News: Iran diplomatic efforts pushing gold down toward level; BoJ hold confirmed; FOMC hold 100% priced. daily_pnl=-$21.06. attention_covered=9/9.",
       "binary_event_name": "FOMC_APR2026",
       "binary_event_active": 1,
       "binary_event_deadline": "2026-04-29T18:00Z"
@@ -1352,6 +1352,19 @@
     }
   ],
   "counterfactuals_last_50": [
+    {
+      "alert_id": "eurusd_upsweep_117159_sell_watch",
+      "instrument": "EURUSD",
+      "direction": "sell",
+      "trigger_price": 1.171595,
+      "fired_at": "2026-04-28T22:35:24.346334+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
     {
       "alert_id": "eurusd_upsweep_117159_sell_watch",
       "instrument": "EURUSD",
@@ -1982,19 +1995,6 @@
       "direction": "sell",
       "trigger_price": 4696.565,
       "fired_at": "2026-04-27T00:59:15.487489+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
-    },
-    {
-      "alert_id": "btcusd_sweep_78914_sell_watch",
-      "instrument": "BTCUSD",
-      "direction": "sell",
-      "trigger_price": 78922.4,
-      "fired_at": "2026-04-27T00:53:40.023113+00:00",
       "hit_1h": null,
       "hit_4h": null,
       "hit_24h": null,
