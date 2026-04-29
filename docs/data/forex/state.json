@@ -1,10 +1,27 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-28T23:19Z",
-  "state_ts_utc": "2026-04-28T23:19Z",
-  "regime_note": "2026-04-28T23:19Z forex auto \u2014 1 evt: EURUSD level_cross@1.17162 SKIP (eurusd_upsweep_117159_sell_watch validated 4f/100%4h, comp=+12.5 <+40 counter-trend threshold, SKIP #5); GOLD SELL LIMIT@4603 GTC ARMED (bid=4592.3, dist=10.7pts, comp=-50 mod bear); AUDUSD BUY LIMIT@0.7143 GTC KEEP (bid=0.71826, dist=43.3p>prox, comp=+60 strong bull, validated); GBPUSD AT sweep 1.35203 (comp=+29 weak, need +40); USDJPY fade@160 comp=+40.5 threshold MET dist=45.2p>30p pip-val blocked WATCH; USDCHF H4FVG@0.78689 dist=21.8p within 30p prox, comp=+21.5 none WATCH; FOMC T-18.7h caution active; all 11 alerts KEEP. daily_pnl=-$21.06. attention_covered=9/9.",
-  "regime_note_prev": "2026-04-28T23:10Z forex auto \u2014 0 evt (heartbeat): FOMC T-18.8h caution ACTIVE (\u2265moderate only, half-size). GOLD SELL LIMIT@4603 GTC ARMED (bid=4593.5, dist=9.5pts, comp=-50 mod bear; H4 FVG mitigated \u2192 structural resistance thesis maintained). AUDUSD BUY LIMIT@0.7143 GTC KEEP (dist=43.7p>30p prox, comp=+60 strong bull, validated 3f/100%4h). GBPUSD AT sweep 1.35203 (comp=+29 weak, need +40). USDJPY fade@160 comp=+40.5 threshold MET, dist=42.6p>30p + pip-val blocked WATCH. USDCHF H4FVG@0.78689 dist=22p, comp=+21.5 none WATCH. EURUSD AT 1.17159 comp=+12.5 none SKIP. all 11 alerts KEEP. daily_pnl=-$21.06. attention_covered=9/9.",
-  "open_positions": [],
+  "tick_ts_utc": "2026-04-29T05:37Z",
+  "state_ts_utc": "2026-04-29T05:37Z",
+  "regime_note": "2026-04-29T05:37Z forex auto \u2014 1 evt: GOLD SELL LIMIT@4603 FILLED (entry=4603.14 sz=0.2 SL=4625 TP=4519 R:R=3.85:1 comp=-47.5 mod bear H4FVG resist); thesis=counter_trend_fade max_hold=8h exit<=08:01Z; FOMC T-12.5h caution active (\u2265moderate only); AUDUSD BUY LIMIT@0.7143 GTC KEEP (dist=41.4p>prox, comp+60 strong validated); EURUSD comp=+12.5 none SKIP; GBPUSD comp=+29 weak SKIP; USDJPY dist=46.4p pip-val blocked WATCH; all 8 alerts KEEP. daily_pnl=-$21.06. attention_covered=9/9.",
+  "regime_note_prev": "2026-04-28T23:19Z forex auto \u2014 1 evt: EURUSD level_cross@1.17162 SKIP (comp=+12.5 <+40 counter-trend threshold, SKIP #5); GOLD SELL LIMIT@4603 GTC ARMED (bid=4592.3, dist=10.7pts, comp=-50 mod bear); AUDUSD BUY LIMIT@0.7143 GTC KEEP (bid=0.71826, dist=43.3p>prox, comp=+60 strong bull, validated); GBPUSD AT sweep 1.35203 (comp=+29 weak, need +40); USDJPY fade@160 comp=+40.5 threshold MET dist=45.2p>30p pip-val blocked WATCH; USDCHF H4FVG@0.78689 dist=21.8p within 30p prox, comp=+21.5 none WATCH; FOMC T-18.7h caution active; all 11 alerts KEEP. daily_pnl=-$21.06. attention_covered=9/9.",
+  "open_positions": [
+    {
+      "dealId": "00000000-4eaf-97cc-044a-beb40055311e",
+      "instrument": "GOLD",
+      "epic": "GOLD",
+      "direction": "SELL",
+      "size": 0.2,
+      "entry": 4603.14,
+      "sl": 4625.0,
+      "tp": 4519.0,
+      "opened_at": "2026-04-29T00:01:07Z",
+      "thesis_type": "counter_trend_fade",
+      "alert_id": "gold_h1fvg_sell_4603",
+      "confluence_at_entry": "-47.5 moderate bear (H4FVG resistance, all 4TF bear)",
+      "time_exit_utc": "2026-04-29T08:01Z",
+      "note": "H4FVG/H1FVG resistance 4600-4621. Exit before FOMC (08:01Z). FOMC T-12.5h caution."
+    }
+  ],
   "watchlist": [
     {
       "instrument": "AUDUSD",
@@ -1481,18 +1498,6 @@
     }
   ],
   "working_orders": [
-    {
-      "dealId": "00000000-4eae-34d9-044a-beb40055311e",
-      "epic": "GOLD",
-      "direction": "SELL",
-      "size": 0.2,
-      "level": 4603.0,
-      "stopLevel": 4625.0,
-      "profitLevel": 4519.0,
-      "timeInForce": "GOOD_TILL_CANCELLED",
-      "status": "ARMED",
-      "note": "H4 bear FVG 4600-4621, comp=-47.5 mod bear, FOMC half-size"
-    },
     {
       "dealId": "00000000-4e79-44c4-044a-beb40055311e",
       "epic": "AUDUSD",

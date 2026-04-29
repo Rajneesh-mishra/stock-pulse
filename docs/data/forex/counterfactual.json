@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T23:19:51.854172+00:00",
+  "generated_at": "2026-04-29T00:06:56.958626+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -918,9 +918,9 @@
       "fires": 5,
       "by_horizon": {
         "1h": {
-          "filled": 3,
-          "favorable": 3,
-          "avg_pips": 2.8,
+          "filled": 4,
+          "favorable": 4,
+          "avg_pips": 2.2,
           "hit_rate": 1.0
         },
         "4h": {
@@ -928,6 +928,32 @@
           "favorable": 2,
           "avg_pips": 0.8,
           "hit_rate": 1.0
+        },
+        "24h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        }
+      }
+    },
+    {
+      "alert_id": "gold_h1fvg_sell_4603",
+      "instrument": "GOLD",
+      "direction": "sell",
+      "fires": 1,
+      "by_horizon": {
+        "1h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "4h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
         },
         "24h": {
           "filled": 0,
