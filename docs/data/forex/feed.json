@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-29T04:20:12.904920Z",
+  "generated_at": "2026-04-29T04:41:53.715336Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-23T20:20:00Z",
-      "events_in": 1,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 1,
-      "note": "20:20 forex auto \u2014 1 evt: Open Magazine Apr-22 'Trump Teases Possible Iran Breakthrough' news_flash (kw='breakthrough') STALE-NON-THESIS-ALTERING (2d-old tease; indefinite extension 4-source verified). USDJPY 159.729 comp+45 mod 4/4 bull dist=27.1p INSIDE 30p counter-trend fade=ARMED-on-tag (M15 reject-wick required; 1 fire not-validated \u2192 note-override retained; no LIMIT until tag). GOLD 4689.55 comp-40 mod 3/4 bear gold_sweep_4721 dist=32.1p OUTSIDE 30p swing=WATCH; gold_safehaven_4775 dist=85.45p H4ATR=37.6p 3x=112.8p cond1-FALSE opp-WATCH. OIL 96.391 comp+45 mod 4/4 bull oil_retest_90 dist=609p oil_sweep_9323 dist=315p both extending. AUDUSD comp+4.5 none ChoCh-bear swing=NONE watchlist zone 0.7085 far. EURUSD comp-33 weak CANCELLED GBPUSD comp+5.5 none USDCAD comp-13.5 none USDCHF comp+16.5 none BTCUSD comp+33 weak. 5 level_alerts KEEP 9 SW KEEP. 3 queries TUNE (iran_ceasefire/hormuz_strait/us_tariff rolling Apr-24 date window). web_search skipped (0 pos + regime stable + stale-news-only event). Scalp shadow halt={}. 0 trades $1000/0 pos. BOJ T-3d FOMC T-4d. attention_covered=9/9."
-    },
     {
       "ts_utc": "2026-04-23T21:40:00Z",
       "events_in": 1,
@@ -749,6 +741,36 @@
       "alerts": "all 10 KEEP",
       "scalp": "GBPUSD=ACTIVE EURUSD=OFF(desync) AUDUSD=OFF(wr11%)",
       "daily_pnl_usd": -23.34
+    },
+    {
+      "tick_ts_utc": "2026-04-29T04:41Z",
+      "events_processed": 0,
+      "event_types": [],
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "trades_skipped": 0,
+      "alerts_modified": 0,
+      "open_positions": [
+        {
+          "instrument": "GOLD",
+          "direction": "SELL",
+          "entry": 4603.14,
+          "upl_approx": -0.04,
+          "age_h": 4.6,
+          "time_exit_utc": "2026-04-29T08:01Z"
+        }
+      ],
+      "working_orders": [
+        {
+          "instrument": "AUDUSD",
+          "direction": "BUY",
+          "level": 0.7143,
+          "dist_pips": 19.8
+        }
+      ],
+      "binary_event": "FOMC Apr29 T-13.4h (18:00Z)",
+      "regime_note": "heartbeat; all 8 alerts KEEP; GOLD hold; AUDUSD LIMIT GTC; FOMC caution",
+      "scalp_status": "GBPUSD=ACTIVE EURUSD=OFF(desync) AUDUSD=OFF(wr11%)"
     }
   ]
 }

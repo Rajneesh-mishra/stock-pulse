@@ -535,5 +535,35 @@
     "alerts": "all 10 KEEP",
     "scalp": "GBPUSD=ACTIVE EURUSD=OFF(desync) AUDUSD=OFF(wr11%)",
     "daily_pnl_usd": -23.34
+  },
+  {
+    "tick_ts_utc": "2026-04-29T04:41Z",
+    "events_processed": 0,
+    "event_types": [],
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "trades_skipped": 0,
+    "alerts_modified": 0,
+    "open_positions": [
+      {
+        "instrument": "GOLD",
+        "direction": "SELL",
+        "entry": 4603.14,
+        "upl_approx": -0.04,
+        "age_h": 4.6,
+        "time_exit_utc": "2026-04-29T08:01Z"
+      }
+    ],
+    "working_orders": [
+      {
+        "instrument": "AUDUSD",
+        "direction": "BUY",
+        "level": 0.7143,
+        "dist_pips": 19.8
+      }
+    ],
+    "binary_event": "FOMC Apr29 T-13.4h (18:00Z)",
+    "regime_note": "heartbeat; all 8 alerts KEEP; GOLD hold; AUDUSD LIMIT GTC; FOMC caution",
+    "scalp_status": "GBPUSD=ACTIVE EURUSD=OFF(desync) AUDUSD=OFF(wr11%)"
   }
 ]
