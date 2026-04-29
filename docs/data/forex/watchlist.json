@@ -70,31 +70,6 @@
       "active": true
     },
     {
-      "id": "gold_sweep_4721_sell_retest",
-      "instrument": "GOLD",
-      "level": 4721.0,
-      "emit_on": "cross_up",
-      "cooldown_sec": 1800,
-      "direction": "sell",
-      "note": "ENTRY: price tags 4720-4725 zone; arm anticipation LIMIT SELL at 4721 when |comp| \u2265 40 bullish extension (naked LIMIT \u2014 VALIDATED, no M15 rejection required). Cancel if price closes above SL 4755.\n\nCONTEXT: Validated swept-extreme retest sell (9 fires, 100%4h). GOLD sell at 4721 is the recent up-sweep high. Counter-trend fade \u2014 bullish comp extension is the corroborating signal. Apply 4h hard time-stop on entered trade. Iran escalation = gold bid \u2192 4721 may be retested; arm on |comp|\u226540 bullish.\n\nSL: 4755  TP: 4640  R:R target: 2.4\n\nrule3-promotion 2026-04-26T17:11Z \u2014 6 fires 100%4h; ENTRY upgraded to naked LIMIT at moderate+ extension; 4h time-stop added.",
-      "entry_criterion": "Arm anticipation LIMIT SELL at 4721 when |comp| \u2265 40 bullish extension. VALIDATED \u2014 naked LIMIT (9 fires, 100%4h), no M15 rejection required. Cancel if closes above SL 4755.",
-      "regime_context": "Validated sweep retest (9f/100%4h). 4721 = up-sweep high; counter-trend sell on bullish extension. Iran bid could push gold to 4721 \u2014 arm when |comp|\u226540 bullish. 4h hard time-stop.",
-      "sl": 4755.0,
-      "tp": 4640.0,
-      "rr_target": "2.4",
-      "current_price_ref": 4632,
-      "price_ref": {
-        "ts": "2026-04-27T14:18Z",
-        "price": null
-      },
-      "last_updated": "2026-04-26T17:11Z",
-      "updated_utc": "2026-04-29T01:16Z",
-      "proximity": "GOLD@4585.09; 135.9pts BELOW 4721. comp=-50 mod bear (need \u2265+40 bullish ext for CT arm). Rule2 OVERRIDES staleness (9f/100%4h). WATCH. 2026-04-29T01:16Z",
-      "validated": true,
-      "alert_id": "gold_sweep_4721_sell_retest",
-      "active": true
-    },
-    {
       "id": "eurusd_m15sweep_116871_buy_watch",
       "instrument": "EURUSD",
       "level": 1.16871,

@@ -314,5 +314,41 @@
     "fomc_utc": "2026-04-29T18:00Z",
     "attention_covered": "9/9",
     "scalp_status": "GBPUSD=ACTIVE(neutral); EURUSD=OFF(engine_desync); AUDUSD=OFF(wr=11%); others=pip-conv/spread"
+  },
+  {
+    "tick_ts_utc": "2026-04-29T02:08Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "id": "evt_1777428431190_level_cross",
+        "type": "level_cross",
+        "instrument": "EURUSD",
+        "alert_id": "eurusd_upsweep_117159_sell_watch",
+        "decision": "SKIP (CT fade, comp=+12.5 <25)"
+      }
+    ],
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "positions_modified": 0,
+    "alerts_removed": [
+      "gold_sweep_4721_sell_retest"
+    ],
+    "alerts_added": [],
+    "open_positions": [
+      {
+        "dealId": "00000000-4eaf-97cc-044a-beb40055311e",
+        "instrument": "GOLD",
+        "direction": "SELL",
+        "entry": 4603.14,
+        "sl": 4625.0,
+        "tp": 4519.0,
+        "upl": 0.38,
+        "age_minutes": 127,
+        "time_exit_utc": "2026-04-29T08:01Z"
+      }
+    ],
+    "daily_pnl_estimate": -23.34,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "regime_note_summary": "1 evt EURUSD level_cross SKIP; GOLD SELL HOLD 2.1h/8h; AUDUSD LIMIT KEEP; gold_sweep_4721 REMOVED (stale 3\u00d7ATR)"
   }
 ]
