@@ -608,5 +608,79 @@
       "GOLD": "swing=ARMED(position@4603.14 SELL) scalp=N/A readiness=moderate comp=-47.5",
       "OIL_CRUDE": "swing=WATCH(oil_sweep_9323 dist=4.65p) scalp=N/A readiness=moderate comp=+42"
     }
+  },
+  {
+    "tick_ts_utc": "2026-04-29T05:45Z",
+    "events": 0,
+    "event_detail": "heartbeat",
+    "positions_open": 1,
+    "positions_detail": "GOLD SELL@4603.14 age=5.75h/8h UPL=+$1.15 bid=4596.87 time_exit=08:01Z",
+    "orders_pending": 1,
+    "orders_detail": "AUDUSD BUY LIMIT@0.7143 GTC dist=17.8p ARMED",
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "trades_skipped": 0,
+    "skip_reason": "heartbeat, no events, FOMC T-12.2h caution",
+    "alert_changes": "eurusd_upsweep_117159 VALIDATED (7f/100%4h); gbpusd_upsweep_135203 VALIDATED (2f/100%4h)",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "FOMC Apr29T18:00Z T-12.2h",
+    "account_balance": 971.19,
+    "account_pnl": 1.21,
+    "daily_pnl_running": -20.59,
+    "confluence": {
+      "GOLD": {
+        "score": -50,
+        "readiness": "moderate"
+      },
+      "AUDUSD": {
+        "score": 39.5,
+        "readiness": "weak"
+      },
+      "GBPUSD": {
+        "score": 8.5,
+        "readiness": "none"
+      },
+      "EURUSD": {
+        "score": -18,
+        "readiness": "none"
+      },
+      "USDJPY": {
+        "score": 43,
+        "readiness": "moderate"
+      },
+      "USDCAD": {
+        "score": -8.5,
+        "readiness": "none"
+      },
+      "USDCHF": {
+        "score": 20,
+        "readiness": "none"
+      },
+      "OIL_CRUDE": {
+        "score": 44.5,
+        "readiness": "moderate"
+      }
+    },
+    "scalp": {
+      "GBPUSD": "ACTIVE(neutral)",
+      "EURUSD": "OFF(desync)",
+      "AUDUSD": "OFF(wr11%)",
+      "USDJPY": "OFF(pip-conv)",
+      "USDCHF": "OFF(pip-conv)",
+      "USDCAD": "OFF(spread+pip)",
+      "GOLD": "N/A(spread)",
+      "OIL": "N/A(spread)"
+    },
+    "attention_matrix": {
+      "EURUSD": "swing=WATCH scalp=OFF readiness=none comp=-18 eurusd_m15sweep_116871 need comp\u2264-40",
+      "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=none comp=+8.5 gbpusd_upsweep_135203 need comp\u2265+40",
+      "AUDUSD": "swing=ARMED scalp=OFF readiness=weak LIMIT@0.7143 active dist=17.8p validated 3f/100%4h comp=39.5 borderline",
+      "USDJPY": "swing=WATCH scalp=OFF readiness=moderate comp=+43 CT-fade threshold MET pip-val bug blocks",
+      "USDCAD": "swing=WATCH scalp=OFF readiness=none comp=-8.5 dist=58.4p>>prox",
+      "USDCHF": "swing=WATCH scalp=OFF readiness=none comp=+20 dist=27p prox-near but comp not met",
+      "GOLD": "swing=ARMED scalp=N/A readiness=moderate SELL open UPL=+$1.15 time_exit=08:01Z",
+      "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=moderate oil_sweep_9323 dist=4.84>>prox=0.96"
+    },
+    "note": "0 evt heartbeat; all 10 alerts KEEP; 2 validated promotions"
   }
 ]

@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-29T03:30Z",
+  "last_updated_by_claude": "2026-04-29T05:45Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -177,18 +177,19 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "ENTRY: price returns to 1.17159 swept extreme; M15 retest with bearish rejection wick \u22651p from the high. Arm LIMIT SELL when comp \u2265 +40 (bullish extension at swept level confirms fade \u2014 protocol threshold).\n\nCONTEXT: M15 up-wick to 1.17159 on 2026-04-28T16:00Z (wick=1.2p, close=1.17127). Counter-trend sell at swept resistance. comp=-5.5 none (need \u2265+30 to arm). H4 bull FVG at 1.17078-1.17128 below \u2014 TP below 1.17028. 4h time-stop if entered. FOMC Apr29 caution window opens 18:00Z Apr28.\n\nSL: 1.17189  TP: 1.17028  R:R target: 4.4\n\nupdated 2026-04-28T16:32Z \u2014 SL widened to 1.17189 (3p buffer above 1.17159 wick); R:R 4.4.",
-      "entry_criterion": "M15 retest of 1.17159 with bearish rejection wick \u22651p. Arm LIMIT SELL when comp \u2265 +40 bullish extension (protocol threshold).",
+      "note": "ENTRY: price returns to 1.17159 swept extreme; M15 retest with bearish rejection wick \u22651p from the high. VALIDATED \u2014 naked LIMIT SELL when comp \u2265 +40 bullish extension (counter-trend fade; no M15 confirmation required at comp\u226540).\n\nCONTEXT: VALIDATED \u2014 7 fires, 4h hit_rate=100% per Rule 3. M15 up-wick to 1.17159 on 2026-04-28T16:00Z. Counter-trend sell at swept resistance. comp=-18 none (need \u2265+40 to arm). H4 bull FVG at 1.17078-1.17091 just below. 4h time-stop if entered. FOMC Apr29 caution.\n\nSL: 1.17189  TP: 1.17028  R:R target: 4.4\n\npromoted VALIDATED 2026-04-29T05:45Z \u2014 7f/100%4h counterfactual Rule 3; naked LIMIT at comp\u2265+40.",
+      "entry_criterion": "M15 retest of 1.17159 with bearish rejection wick \u22651p. VALIDATED \u2014 naked LIMIT SELL when comp \u2265 +40 bullish extension (no confirmation required).",
       "regime_context": "M15 up-wick 16:00Z Apr28, wick=1.2p. comp=-5.5 none (need \u2265+30). H4 bull FVG 1.17078-1.17128 below \u2014 resistance to downside. 4h time-stop if entered.",
       "sl": 1.17189,
       "tp": 1.17028,
       "rr_target": "4.4",
       "current_price_ref": 1.17142,
-      "last_updated": "2026-04-29T03:46Z",
+      "last_updated": "2026-04-29T05:45Z",
       "updated_utc": "2026-04-29T03:30Z",
       "proximity": "EURUSD@1.17094 bid; 6.5p BELOW 1.17159. comp=-2.5 none (need \u2265+40 CT arm). Price pulled back from sweep level. WATCH. FOMC caution T-14.5h. 2026-04-29T03:30Z",
       "alert_id": "eurusd_upsweep_117159_sell_watch",
-      "active": true
+      "active": true,
+      "validated": true
     },
     {
       "id": "gold_sell_4658_h1bos_retest",
@@ -217,18 +218,19 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "ENTRY: price returns to 1.35203 up-sweep extreme; M15 retest with bearish rejection wick \u22651p. Arm LIMIT SELL when comp \u2265 +40 bullish extension (counter-trend: extension confirms fade edge).\n\nCONTEXT: GBPUSD up-wick to 1.35203 (sweep). Counter-trend sell at swept resistance. comp=+29 weak (need \u2265+40 to arm). H1 bull OB at 1.34935-1.34478 below = TP zone. FOMC Apr29 caution. 4h time-stop if entered.\n\nSL: 1.35280  TP: 1.34950  R:R target: 3.3\n\nadded 2026-04-29T03:46Z \u2014 GBPUSD sweep at 1.35203 referenced across 3+ prior ticks without formal alert; adding now to enable daemon-level detection.",
-      "entry_criterion": "M15 retest of 1.35203 with bearish rejection wick \u22651p. Arm LIMIT SELL when comp \u2265 +40 bullish extension (counter-trend protocol threshold).",
+      "note": "ENTRY: price returns to 1.35203 up-sweep extreme; M15 retest with bearish rejection wick \u22651p. VALIDATED \u2014 naked LIMIT SELL when comp \u2265 +40 bullish extension (counter-trend; no M15 confirmation required at comp\u226540).\n\nCONTEXT: VALIDATED \u2014 2 fires, 4h hit_rate=100% per Rule 3. GBPUSD up-wick to 1.35203 (sweep). comp=+8.5 none (need \u2265+40 to arm). H1 bull OB at 1.34935-1.34478 below = TP zone. FOMC Apr29 caution. 4h time-stop if entered.\n\nSL: 1.35280  TP: 1.34950  R:R target: 3.3\n\npromoted VALIDATED 2026-04-29T05:45Z \u2014 2f/100%4h counterfactual Rule 3; naked LIMIT at comp\u2265+40.",
+      "entry_criterion": "M15 retest of 1.35203 with bearish rejection wick \u22651p. VALIDATED \u2014 naked LIMIT SELL when comp \u2265 +40 bullish extension (no confirmation required).",
       "regime_context": "GBPUSD up-sweep at 1.35203. comp=+29 weak (need +40). H1 bull OB 1.34935. FOMC Apr29 caution. 4h time-stop.",
       "sl": 1.3528,
       "tp": 1.3495,
       "rr_target": "3.3",
       "current_price_ref": 1.352125,
-      "last_updated": "2026-04-29T03:46Z",
+      "last_updated": "2026-04-29T05:45Z",
       "updated_utc": "2026-04-29T03:30Z",
       "proximity": "GBPUSD@1.35151 bid; 5.2p BELOW 1.35203 sweep level. comp=+19 none (need \u2265+40 CT arm). Price pulled back from level. WATCH. 2026-04-29T03:30Z",
       "alert_id": "gbpusd_upsweep_135203_sell_watch",
-      "active": true
+      "active": true,
+      "validated": true
     }
   ],
   "structure_watch": [
@@ -292,6 +294,6 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-29T03:30Z",
-  "last_updated": "2026-04-29T03:30Z"
+  "last_updated_utc": "2026-04-29T05:45Z",
+  "last_updated": "2026-04-29T05:45Z"
 }
