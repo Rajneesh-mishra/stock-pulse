@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-29T08:27Z",
+  "last_updated_by_claude": "2026-04-29T10:35Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -27,9 +27,9 @@
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
       "direction": "buy",
-      "note": "ENTRY: price retests 0.7143-0.7146 H4 bear FVG zone; M15 bar closes AT or ABOVE 0.7143 with bullish rejection wick \u22652p from the low. VALIDATED \u2014 naked LIMIT at readiness \u2265 moderate (comp \u226540 bullish). No M15 rejection confirmation required.\n\nCONTEXT: VALIDATED \u2014 3 fires, 4h hit_rate=100% per Rule 3. AUDUSD comp=+49.5 moderate bull (3/4 TFs). Day FVG 0.71486-0.71510 fresh (1 bar ago). Current price ~0.7169, LIMIT@0.7143 (dist=25.6p within 30p prox \u2014 ARMED). FOMC Apr29 caution window opens 18:00Z today \u2014 limit already placed at half-size (0.5%). Apply 4h time-stop on fill.\n\nSL: 0.7130  TP: 0.7187  R:R target: 2.4\n\nupdated 2026-04-28T15:30Z \u2014 removed stale corr-cap note; LIMIT active in broker.",
-      "entry_criterion": "M15 bar closes ABOVE H4 bear FVG top 0.7146; enter on retest of 0.7143\u20130.7146 from above with bullish rejection wick \u22652p. VALIDATED \u2014 naked LIMIT at comp \u226540 bullish.",
-      "regime_context": "AUDUSD comp=+37.5 weak (was +62.5 strong 2026-04-27T17:44Z; need \u226540 for armed). 3 fires, 4h=100% \u2192 Rule 3 validated. Correlation cap 2/2 (USDCAD SELL + GBPUSD LIMIT@1.352555). Price 48.9p above level. Arm LIMIT when price retraces to 0.7143 AND corr cap opens AND comp\u226540.",
+      "note": "ENTRY: price retests 0.7143-0.7146 H4 bear FVG zone; M15 bar closes AT or ABOVE 0.7143 with bullish rejection wick \u22652p from the low. VALIDATED \u2014 naked LIMIT at readiness \u2265 moderate (comp \u226540 bullish).\n\nCONTEXT: VALIDATED \u2014 3 fires, 4h hit_rate=100% per Rule 3. LIMIT cancelled 2026-04-29T11:18Z \u2014 comp dropped to weak (+31, readiness=weak) under FOMC Apr29 caution window (requires moderate+). Re-arm GTC LIMIT @ 0.7143 post-18:00Z FOMC when comp returns \u226540 and binary caution lifts.\n\nSL: 0.7130  TP: 0.7187  R:R target: 2.4\n\nupdated 2026-04-29T11:18Z \u2014 LIMIT cancelled FOMC caution+weak readiness; re-arm post-18:00Z.",
+      "entry_criterion": "M15 bar closes ABOVE H4 bear FVG top 0.7146; enter on retest of 0.7143-0.7146 from above with bullish rejection wick \u22652p. VALIDATED \u2014 naked LIMIT at comp \u226540 bullish.",
+      "regime_context": "comp=+31 weak (below +40 threshold). FOMC Apr29 18:00Z caution requires moderate+. LIMIT cancelled; re-arm after FOMC resolves.",
       "sl": 0.713,
       "tp": 0.7187,
       "rr_target": "2.4",
@@ -38,9 +38,9 @@
         "ts": "2026-04-27T14:18Z",
         "price": null
       },
-      "last_updated": "2026-04-28T15:30Z",
-      "updated_utc": "2026-04-29T03:30Z",
-      "proximity": "AUDUSD@0.71639 bid; dist=20p. GTC LIMIT BUY@0.7143 active in broker. comp=+28.5 weak (below +40 mod). FOMC caution T-10h. WATCH (limit in broker, comp weak). 2026-04-29T07:53Z",
+      "last_updated": "2026-04-29T11:18Z",
+      "updated_utc": "2026-04-29T11:18Z",
+      "proximity": "LIMIT cancelled 2026-04-29T11:18Z \u2014 comp=+31 weak, FOMC caution T-6.7h. Re-arm post-18:00Z if comp>=40.",
       "validated": true,
       "alert_id": "audusd_fvg_buy_7143",
       "active": true
@@ -228,21 +228,21 @@
       "active": true
     },
     {
-      "id": "oil_sweep_10107_sell_retest",
-      "instrument": "OIL_CRUDE",
-      "level": 101.071,
+      "id": "usdcad_sweep_136924_sell_watch",
+      "instrument": "USDCAD",
+      "level": 1.36924,
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "ENTRY: SELL LIMIT at 101.07 on retest of M15 up-sweep extreme (wick 12.6p, close 100.928). GTC LIMIT armed in broker. Alert is for monitoring only \u2014 rearm if cancelled.\n\nCONTEXT: OIL surge 96\u2192101 Iran/Hormuz. M15 wick rejected at 101.07. comp=+55 mod-bull corroborates CT fade. FOMC 18:00Z \u2192 half-size. 8h time cap ~16:30Z.\n\nSL: 101.22  TP: 99.97  R:R target: 7.3\n\nadded 2026-04-29T08:27Z \u2014 CT fade SELL LIMIT armed.",
-      "entry_criterion": "Retest of 101.07 wick extreme with M15 rejection confirmation.",
-      "regime_context": "OIL at 101 post-Hormuz surge. M15 up-sweep 101.07. CT fade. FOMC T-9.6h.",
-      "sl": 101.22,
-      "tp": 99.97,
-      "rr_target": "7.3",
-      "current_price_ref": 100.993,
-      "last_updated": "2026-04-29T08:27Z",
-      "alert_id": "oil_sweep_10107_sell_retest",
+      "note": "ENTRY: price returns to 1.36924 M15 up-sweep extreme; M15 retest with bearish rejection wick \u22652p. Arm CT-fade SELL LIMIT when |comp| \u2265 40 bullish extension (extension corroborates the fade).\n\nCONTEXT: M15 up-sweep 2026-04-29T10:14Z, wick=0.9p beyond 1.36924, close_inside=1.36857. Tiny wick \u2014 low structural significance. comp=-8.5 none (need |comp|\u226540 to arm). USDCAD scalp disabled (CAD quote). 4h time-stop if entered.\n\nSL: 1.36975  TP: 1.36700  R:R target: 4.4\n\nadded 2026-04-29T10:35Z \u2014 M15 up-sweep emitted; watchlist level added per Step 4e protocol. Tiny wick, WATCH only.",
+      "entry_criterion": "M15 retest of 1.36924 with bearish wick \u22652p. Arm CT-fade SELL LIMIT at |comp|\u226540 bullish extension.",
+      "regime_context": "M15 up-sweep 10:14Z Apr29, wick=0.9p (tiny). comp=-8.5 none. No armed entry \u2014 comp wrong direction and too weak. WATCH.",
+      "sl": 1.36975,
+      "tp": 1.367,
+      "rr_target": "4.4",
+      "current_price_ref": 1.36887,
+      "last_updated": "2026-04-29T10:35Z",
+      "alert_id": "usdcad_sweep_136924_sell_watch",
       "active": true
     },
     {
@@ -325,6 +325,6 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-29T07:53Z",
-  "last_updated": "2026-04-29T07:53Z"
+  "last_updated_utc": "2026-04-29T10:35Z",
+  "last_updated": "2026-04-29T10:35Z"
 }

@@ -826,5 +826,66 @@
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
     "daily_pnl_usd": -23.34,
     "note": "OIL M15 up-sweep 101.07 (12.6p wick); CT fade SELL LIMIT armed; comp=+55 mod-bull corroborates extension; FOMC caution half-size."
+  },
+  {
+    "tick_ts_utc": "2026-04-29T10:35Z",
+    "events_processed": 1,
+    "events_total": 8,
+    "events_actioned": [
+      "evt_1777457667260_liquidity_sweep"
+    ],
+    "opened": 0,
+    "closed": 0,
+    "skipped": 1,
+    "working_orders": [
+      {
+        "epic": "GOLD",
+        "dir": "SELL",
+        "level": 4603.0,
+        "sl": 4612.0,
+        "tp": 4555.0,
+        "size": 0.5,
+        "status": "LIMIT_GTC"
+      },
+      {
+        "epic": "AUDUSD",
+        "dir": "BUY",
+        "level": 0.7143,
+        "sl": 0.713,
+        "tp": 0.7187,
+        "size": 3500,
+        "status": "LIMIT_GTC"
+      }
+    ],
+    "alerts_removed": [
+      "oil_sweep_10107_sell_retest"
+    ],
+    "alerts_added": [
+      "usdcad_sweep_136924_sell_watch"
+    ],
+    "binary_event": "FOMC Apr29 18:00Z T-7.5h",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "scalp": "GBPUSD=ACTIVE",
+    "balance": 966.6,
+    "pnl_today": 0.0,
+    "note": "USDCAD up-sweep 1.36924 (wick=0.9p tiny, comp=-8.5 none) WATCHLIST-ONLY. OIL at 101.58 \u2014 removed oil_sweep_10107 (CT-fade breached). USDJPY@159.76 comp=+40 FADE-WATCH (min-size block). GOLD SELL LIMIT + AUDUSD BUY LIMIT GTC both retained."
+  },
+  {
+    "tick_ts_utc": "2026-04-29T11:18Z",
+    "events": 0,
+    "actions": [
+      "CANCEL AUDUSD BUY LIMIT@0.7143 \u2014 comp=+31 weak, FOMC caution T-6.7h requires moderate+",
+      "GOLD SELL LIMIT@4603 KEEP \u2014 comp=-50 mod-bear validated 4f/100% bid=4569.6",
+      "USDJPY CT-fade@160 WATCH \u2014 comp=+45 mod but pip-value conversion blocks trade",
+      "audusd_fvg_buy_7143 note updated \u2014 re-arm post-FOMC"
+    ],
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "pending_orders": 1,
+    "pending_order_detail": "GOLD SELL LIMIT@4603 size=0.5",
+    "binary_event": "FOMC Apr29 18:00Z T-6.7h hold 99.9% priced",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "balance": 966.6,
+    "notes": "heartbeat tick \u2014 FOMC caution window active; AUDUSD LIMIT cancelled weak readiness; GOLD LIMIT held; BoJ verbal intervention at USDJPY 160 live"
   }
 ]

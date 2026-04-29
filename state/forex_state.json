@@ -1,9 +1,9 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-29T08:27Z",
-  "state_ts_utc": "2026-04-29T08:27Z",
-  "regime_note": "2026-04-29T08:27Z forex auto \u2014 1 evt: OIL_CRUDE up-sweep@101.071 (12.6p wick, close 100.93); comp=+55 mod-bull CORROBORATES CT-fade SELL; SELL LIMIT@101.07 SL=101.22 TP=99.97 R:R=7.3:1 half-size 0.49%; AUDUSD GTC LIMIT@0.7143 KEEP (bid=0.71602 dist=17.2p); oil_fvg_9691 KEEP (96.91 dist=408p <3\u00d7H4ATR=6.01 keep); oil_rebound_9931 KEEP (99.31 dist=168p watch); ADD oil_sweep_10107_sell_retest; FOMC 18:00Z T-9.6h caution; scalp: GBPUSD=ACTIVE. attention_covered=8/8.",
-  "regime_note_prev": "2026-04-29T08:10Z forex auto \u2014 1 evt: GOLD SELL@4603.14 position_closed +$6.64 time_exit 07:53Z (+1.52R counter_trend_fade); OIL surge 96.91\u2192100.93 (+4.0pts) oil_sweep_9924 REMOVE (thesis invalidated, price ran through 99.31 to 100.93); ADD oil_rebound_9931_buy_watch (former resistance 99.31 = support, comp=+55 mod bull, WATCH dist=162p); AUDUSD GTC LIMIT@0.7143 KEEP (bid=0.71554, dist=12.4p approaching); USDJPY comp=+40 CT-fade 160.0 dist=30.7p WATCH (pip-val bug blocks); FOMC 18:00Z T-9.9h caution; 0 open positions; news scan SKIP (0 positions); scalp: GBPUSD=ACTIVE. attention_covered=8/8.",
+  "tick_ts_utc": "2026-04-29T11:18Z",
+  "state_ts_utc": "2026-04-29T11:18Z",
+  "regime_note": "2026-04-29T11:18Z forex auto \u2014 0 evt heartbeat; GOLD SELL LIMIT@4603.0 GTC KEEP (bid=4569.6 dist=33.4 comp=-50 mod-bear validated 4f/100%); AUDUSD LIMIT@0.7143 CANCELLED (comp=+31 weak, FOMC caution T-6.7h requires moderate+); USDJPY CT-fade@160 comp=+45 mod \u2014 pip-value blocks trade WATCH; FOMC 18:00Z T-6.7h hold 99.9% priced, BoJ verbal intervention at 160 active; scalp: GBPUSD=ACTIVE; attention_covered=8/8.",
+  "regime_note_prev": "2026-04-29T10:35Z forex auto \u2014 1 evt: USDCAD up-sweep@1.36924 (wick=0.9p tiny, comp=-8.5 none) WATCHLIST-ONLY (|comp|<25, no CT-fade entry); OIL 101.58 \u2014 REMOVE oil_sweep_10107 (CT-fade level breached, price continued to 101.58); GOLD SELL LIMIT@4603 KEEP (bid=4571, comp=-47.5 mod-bear, validated 4f/100%); AUDUSD BUY LIMIT@0.7143 KEEP (bid=0.7157, comp=+28.5 weak, validated 3f/100%); USDJPY@159.76 comp=+40 mod FADE-WATCH (min-size block prevents entry, WATCH post-FOMC); ADD usdcad_sweep_136924_sell_watch; FOMC 18:00Z T-7.5h caution; scalp: GBPUSD=ACTIVE. attention_covered=8/8.",
   "open_positions": [],
   "watchlist": [
     {
@@ -1324,7 +1324,7 @@
       "Fed schedule",
       "prior ticks"
     ],
-    "caution": "moderate+ only, half-size until resolved; T-9.6h (FOMC Apr29 18:00Z)"
+    "caution": "moderate+ only, half-size until resolved; T-6.7h (FOMC Apr29 18:00Z)"
   },
   "balance": 970.61,
   "level_alerts": [
