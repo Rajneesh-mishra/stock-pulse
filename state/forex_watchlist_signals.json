@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-29T15:00Z",
+  "last_updated_by_claude": "2026-04-29T15:01Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -38,9 +38,9 @@
         "ts": "2026-04-27T14:18Z",
         "price": null
       },
-      "last_updated": "2026-04-29T14:28Z",
+      "last_updated": "2026-04-29T15:01Z",
       "updated_utc": "2026-04-29T11:18Z",
-      "proximity": "AUDUSD@0.71366; price 23p below level 0.7143 (bounced from 0.71303 low). comp=+23.5 none (need \u226540). M15 BOS bear. FOMC caution T-3.6h. WATCH \u2014 no entry. Also: H1 liq_sweep at 0.71262 adds lower demand zone below. 2026-04-29T14:28Z",
+      "proximity": "AUDUSD@0.71401; level_cross event fired 14:55:59Z \u2014 price touched 0.71425 at FVG zone. comp=25.5/weak (need \u226540 moderate); FOMC caution T-2.7h requires moderate+; daily_pnl=-$23.34 reinforces skip. SKIP. Re-arm GTC LIMIT @ 0.7143 post-18:00Z FOMC when comp returns \u226540 and binary caution lifts. 2026-04-29T15:01Z",
       "validated": true,
       "alert_id": "audusd_fvg_buy_7143",
       "active": true
@@ -380,5 +380,5 @@
     }
   ],
   "last_updated_utc": "2026-04-29T14:46Z",
-  "last_updated": "2026-04-29T15:00Z"
+  "last_updated": "2026-04-29T15:01Z"
 }

@@ -1014,5 +1014,71 @@
     "account_balance": 966.43,
     "daily_pnl_usd": 0.0,
     "attention_covered": "8/8"
+  },
+  {
+    "tick_ts_utc": "2026-04-29T15:01Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "id": "evt_1777474559579_level_cross",
+        "type": "level_cross",
+        "instrument": "AUDUSD",
+        "alert_id": "audusd_m15fvg_buy_7143",
+        "action": "SKIP",
+        "reason": "comp=25.5/weak (need >=40 moderate); FOMC caution T-2.7h requires moderate+; daily_pnl=-$23.34 reinforces skip"
+      }
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "trades_skipped": 1,
+    "open_positions": 0,
+    "working_orders": 1,
+    "daily_pnl_usd": -23.34,
+    "account_balance": 966.43,
+    "binary_event": "FOMC Apr29 @ 18:00Z (T-2.7h, hold expected)",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "notes": "AUDUSD FVG level_cross at 0.7143 \u2014 SKIP (comp=25.5/weak, FOMC caution). FOMC hold confirmed 18:00Z. Hormuz blockade active, OIL bull sustained. GOLD GTC SELL LIMIT@4603 live (bid=4538). scalp: GBPUSD=ACTIVE.",
+    "attention_matrix": {
+      "EURUSD": {
+        "swing": "WATCH",
+        "scalp": "OFF(desync)",
+        "readiness": "none"
+      },
+      "GBPUSD": {
+        "swing": "WATCH",
+        "scalp": "ACTIVE",
+        "readiness": "none"
+      },
+      "AUDUSD": {
+        "swing": "WATCH",
+        "scalp": "OFF(wr=11%)",
+        "readiness": "weak"
+      },
+      "USDJPY": {
+        "swing": "WATCH",
+        "scalp": "OFF(pip-conv)",
+        "readiness": "moderate"
+      },
+      "USDCAD": {
+        "swing": "WATCH",
+        "scalp": "OFF(CAD-quote)",
+        "readiness": "none"
+      },
+      "USDCHF": {
+        "swing": "WATCH",
+        "scalp": "OFF(pip-conv)",
+        "readiness": "weak"
+      },
+      "GOLD": {
+        "swing": "ARMED",
+        "scalp": "N/A(spread-5p)",
+        "readiness": "moderate"
+      },
+      "OIL_CRUDE": {
+        "swing": "WATCH",
+        "scalp": "N/A(spread-4p)",
+        "readiness": "moderate"
+      }
+    }
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T14:53:48.929482+00:00",
+  "generated_at": "2026-04-29T15:01:57.835934+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -421,11 +421,11 @@
       "alert_id": "audusd_m15fvg_buy_7143",
       "instrument": "AUDUSD",
       "direction": "buy",
-      "fires": 4,
+      "fires": 5,
       "by_horizon": {
         "1h": {
-          "filled": 3,
-          "favorable": 3,
+          "filled": 4,
+          "favorable": 4,
           "avg_pips": 10.2,
           "hit_rate": 1.0
         },
@@ -996,10 +996,10 @@
       "fires": 2,
       "by_horizon": {
         "1h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 16.7,
+          "hit_rate": 1.0
         },
         "4h": {
           "filled": 0,

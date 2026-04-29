@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-29T14:54:18.085325Z",
+  "generated_at": "2026-04-29T15:02:05.875833Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T11:18:00Z",
-      "events_in": 2,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 2,
-      "note": "11:18 forex auto \u2014 2 evt (GBPUSD M15 up-sweep 1.34927 wick=8.8p 1.29\u00d7ATR comp=+29.0 weak-bull OPPOSES sell \u2192 ADD WATCH gbpusd_sweep_134928; GOLD level_cross gold_sweep_4695_sell_retest cross_up 4702.9>SL 4697.65 \u2192 REMOVE invalid). USDJPY 159.54 +30.0 weak dist=46.4p OUTSIDE 30p \u2192 WATCH (dropping from +43 mod). GOLD 4698.59 -32.5 weak; sweep_4721 dist=23.1$ INSIDE 30$ prox WATCH (need -40 mod); safehaven_4775 dist=76.4$ WATCH. OIL 94.56 +35.5 weak; sweep_9323 dist=1.32$ barely OUTSIDE prox 1.16$; pullback live 96.97\u219294.56 Day-FVG 93.42-94.18 below. GBPUSD scalp ghost at 1.346775+1.168965 engine-managed. 0 swing trades 0 swing pos. BOJ T-3d FOMC T-5d. attention_covered=9/9."
-    },
     {
       "ts_utc": "2026-04-24T11:28:00Z",
       "events_in": 1,
@@ -1136,6 +1128,72 @@
       "account_balance": 966.43,
       "daily_pnl_usd": 0.0,
       "attention_covered": "8/8"
+    },
+    {
+      "tick_ts_utc": "2026-04-29T15:01Z",
+      "events_processed": 1,
+      "events": [
+        {
+          "id": "evt_1777474559579_level_cross",
+          "type": "level_cross",
+          "instrument": "AUDUSD",
+          "alert_id": "audusd_m15fvg_buy_7143",
+          "action": "SKIP",
+          "reason": "comp=25.5/weak (need >=40 moderate); FOMC caution T-2.7h requires moderate+; daily_pnl=-$23.34 reinforces skip"
+        }
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "trades_skipped": 1,
+      "open_positions": 0,
+      "working_orders": 1,
+      "daily_pnl_usd": -23.34,
+      "account_balance": 966.43,
+      "binary_event": "FOMC Apr29 @ 18:00Z (T-2.7h, hold expected)",
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "notes": "AUDUSD FVG level_cross at 0.7143 \u2014 SKIP (comp=25.5/weak, FOMC caution). FOMC hold confirmed 18:00Z. Hormuz blockade active, OIL bull sustained. GOLD GTC SELL LIMIT@4603 live (bid=4538). scalp: GBPUSD=ACTIVE.",
+      "attention_matrix": {
+        "EURUSD": {
+          "swing": "WATCH",
+          "scalp": "OFF(desync)",
+          "readiness": "none"
+        },
+        "GBPUSD": {
+          "swing": "WATCH",
+          "scalp": "ACTIVE",
+          "readiness": "none"
+        },
+        "AUDUSD": {
+          "swing": "WATCH",
+          "scalp": "OFF(wr=11%)",
+          "readiness": "weak"
+        },
+        "USDJPY": {
+          "swing": "WATCH",
+          "scalp": "OFF(pip-conv)",
+          "readiness": "moderate"
+        },
+        "USDCAD": {
+          "swing": "WATCH",
+          "scalp": "OFF(CAD-quote)",
+          "readiness": "none"
+        },
+        "USDCHF": {
+          "swing": "WATCH",
+          "scalp": "OFF(pip-conv)",
+          "readiness": "weak"
+        },
+        "GOLD": {
+          "swing": "ARMED",
+          "scalp": "N/A(spread-5p)",
+          "readiness": "moderate"
+        },
+        "OIL_CRUDE": {
+          "swing": "WATCH",
+          "scalp": "N/A(spread-4p)",
+          "readiness": "moderate"
+        }
+      }
     }
   ]
 }
