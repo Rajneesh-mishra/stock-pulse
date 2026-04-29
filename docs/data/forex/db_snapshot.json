@@ -1,14 +1,35 @@
 {
-  "generated_at": "2026-04-29T07:53:04.940294+00:00",
+  "generated_at": "2026-04-29T08:28:21.017828+00:00",
   "counts": {
-    "trades": 36,
-    "events": 6447,
+    "trades": 37,
+    "events": 6482,
     "ticks": 59,
-    "regime_snapshots": 194,
+    "regime_snapshots": 197,
     "broker_positions": 0,
     "counterfactuals": 113
   },
   "trades_last_50": [
+    {
+      "id": 1545053,
+      "source": "swing",
+      "epic": "GOLD",
+      "direction": "SELL",
+      "size": 0.2,
+      "entry_price": null,
+      "sl": null,
+      "tp": null,
+      "exit_price": null,
+      "opened_at": "2026-04-29T00:01:07Z",
+      "closed_at": "2026-04-29T07:53Z",
+      "open_reason": null,
+      "close_reason": "profit",
+      "thesis_type": null,
+      "realized_pnl_usd": 6.62,
+      "realized_pnl_pips": null,
+      "held_minutes": null,
+      "shadow": 0,
+      "broker_deal_id": null
+    },
     {
       "id": 886202,
       "source": "swing",
@@ -769,6 +790,30 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-29T08:27Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "2026-04-29T08:27Z forex auto \u2014 1 evt: OIL_CRUDE up-sweep@101.071 (12.6p wick, close 100.93); comp=+55 mod-bull CORROBORATES CT-fade SELL; SELL LIMIT@101.07 SL=101.22 TP=99.97 R:R=7.3:1 half-size 0.49%; AUDUSD GTC LIMIT@0.7143 KEEP (bid=0.71602 dist=17.2p); oil_fvg_9691 KEEP (96.91 dist=408p <3\u00d7H4ATR=6.01 keep); oil_rebound_9931 KEEP (99.31 dist=168p watch); ADD oil_sweep_10107_sell_retest; FOMC 18:00Z T-9.6h caution; scalp: GBPUSD=ACTIVE. attention_covered=8/8.",
+      "binary_event_name": "FOMC Apr29",
+      "binary_event_active": 1,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
+      "ts_utc": "2026-04-29T08:10Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "2026-04-29T08:10Z forex auto \u2014 1 evt: GOLD SELL@4603.14 position_closed +$6.64 time_exit 07:53Z (+1.52R counter_trend_fade); OIL surge 96.91\u2192100.93 (+4.0pts) oil_sweep_9924 REMOVE (thesis invalidated, price ran through 99.31 to 100.93); ADD oil_rebound_9931_buy_watch (former resistance 99.31 = support, comp=+55 mod bull, WATCH dist=162p); AUDUSD GTC LIMIT@0.7143 KEEP (bid=0.71554, dist=12.4p approaching); USDJPY comp=+40 CT-fade 160.0 dist=30.7p WATCH (pip-val bug blocks); FOMC 18:00Z T-9.9h caution; 0 open positions; news scan SKIP (0 positions); scalp: GBPUSD=ACTIVE. attention_covered=8/8.",
+      "binary_event_name": "FOMC Apr29",
+      "binary_event_active": 1,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
+      "ts_utc": "2026-04-29T07:53Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "2026-04-29T07:53Z forex auto \u2014 0 evt heartbeat; GOLD SELL@4603.14 CLOSED time_exit +$6.62 (+1.52R) age=7h52min (8h cap counter_trend_fade bid=4571.01); AUDUSD GTC LIMIT@0.7143 KEEP (dist=20p, comp=+28.5 weak, FOMC T-10h); oil_sweep_9323 REMOVED (dist=6.75>3xH4ATR=6.0); ADD oil_fvg_9691_buy (today low=96.912, comp=+55 mod bull, WATCH); eurusd_upsweep_117159 near (0.91p below) comp=-5.5 none NOT armed; usdjpy comp=+40 CT-fade met but pip-val bug blocks WATCH; FOMC 18:00Z T-10.1h caution; news_scan SKIP (0 positions, regime stable); scalp: GBPUSD=ACTIVE(neutral); attention_covered=8/8.",
+      "binary_event_name": "FOMC Apr29",
+      "binary_event_active": 1,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
       "ts_utc": "2026-04-29T07:31Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-29T07:31Z forex auto \u2014 1 evt: OIL_CRUDE liquidity_sweep@99.243 up-wick 8.4p 07:25Z close 99.146 \u2192 CT fade SELL LIMIT@99.31 SL=99.40 TP=98.59 R:R=8:1 comp=+55 mod-bull extension FOMC half-size; GOLD SELL@4603.14 SL\u2192BE 1.29R bid=4574.98 time_exit=08:01Z T-30min comp=-50 mod-bear Iran-Hormuz intact; AUDUSD LIMIT@0.7143 GTC KEEP (dist=20.2p validated 3f/100%4h); USDJPY comp=+37.5 weak (<40 CT threshold) WATCH 160.0 dist=35p; EURUSD eurusd_upsweep_117159 validated SELL@1.17159 dist=11p readiness=none WATCH; news_scan: SKIP (no daemon news_flash, budget conservation); scalp: GBPUSD=ACTIVE(neutral), EURUSD=OFF(desync), AUDUSD=OFF(wr11%); attention_covered=8/8.",
@@ -820,30 +865,6 @@
       "ts_utc": "2026-04-29T03:30Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-29T03:30Z forex auto \u2014 0 evt heartbeat; GOLD SELL@4603.14 HOLD (age=3.5h/8h bid=4599.17 UPL=+$0.69 trail@bid\u22644581 not yet time_exit=08:01Z); news: Trump rejected Iran Hormuz proposal; Iran new offer via Pakistani mediators \u2014 gold bearish thesis CONFIRMED (strong USD, no ceasefire); AUDUSD BUY LIMIT@0.7143 GTC KEEP (dist=20.7p ARMED comp=+39.5 near-mod validated 3f/100%4h); EURUSD comp=-2.5 none; GBPUSD comp=+19 none; USDJPY comp=+43 mod CT (pip-val bug blocks); USDCHF comp=+11 none; USDCAD comp=-8.5 none; OIL comp=+37 weak; FOMC 18:00Z T-14.5h caution; all 10 alerts KEEP. scalp: GBPUSD=ACTIVE, EURUSD=OFF(desync), AUDUSD=OFF(wr11%); attention_covered=9/9.",
-      "binary_event_name": "FOMC Apr29",
-      "binary_event_active": 1,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-04-29T02:27Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "2026-04-29T02:27Z forex auto \u2014 1 evt: GBPUSD level_cross@1.35203 SKIP (gbpusd_upsweep_135203_sell_watch CT fade; comp=+29 weak < 40 threshold; KEEP re-arm when comp\u226540); GOLD SELL@4603.14 HOLD (age=2.4h/8h bid=4600.39 UPL=+$0.45 trail@bid\u22644581 not yet time_exit=08:01Z); AUDUSD BUY LIMIT@0.7143 GTC KEEP (dist=28.5p ARMED comp=+52.5 mod bull); EURUSD comp=+2.5 none; eurusd_upsweep_117159 AT level comp<threshold KEEP; eurusd_m15sweep_116871 dist=22.7p KEEP; FOMC 18:00Z T-15.5h caution; all 10 alerts KEEP. scalp: GBPUSD=ACTIVE, EURUSD=OFF(desync), AUDUSD=OFF(wr11%); attention_covered=9/9.",
-      "binary_event_name": "FOMC Apr29",
-      "binary_event_active": 1,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-04-29T02:20Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "2026-04-29T02:20Z forex auto \u2014 0 evt heartbeat; GOLD SELL@4603.14 HOLD (age=2.3h/8h, bid=4603.67, UPL=-$0.21, comp=-47.5 all4TF mod bear, trail trigger bid\u22644581.28 not yet, time_exit=08:01Z T-5.7h); AUDUSD BUY LIMIT@0.7143 GTC KEEP (bid=0.71735, dist=30.5p, comp=+52.5 mod bull); GBPUSD@1.35212 comp=+29 weak CT\u2192sweep 1.35203 WATCH (need comp\u226540); USDJPY@159.587 comp=+40.5 mod CT met but dist=41.3p>30p prox\u2192WATCH; OIL@97.48 comp=+47.5 mod bull, level 93.23 dist=4.25pts not in prox\u2192WATCH; USDCAD comp=-11 none, USDCHF comp=+6 none, EURUSD comp=+12.5 none; FOMC 18:00Z T-15.7h caution; all 10 alerts KEEP. scalp: GBPUSD=ACTIVE, EURUSD=OFF(desync), AUDUSD=OFF(wr11%); attention_covered=9/9.",
-      "binary_event_name": "FOMC Apr29",
-      "binary_event_active": 1,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-04-29T02:08Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "2026-04-29T02:08Z forex auto \u2014 1 evt: EURUSD level_cross@1.17159 SKIP (alert=eurusd_upsweep_117159_sell_watch, CT sell; comp=+12.5 <25 minimum for CT fade \u2192 no setup; VALIDATED 6 fires 4h=100% \u2014 KEEP, re-arm when comp\u226540); GOLD SELL@4603.14 HOLD (age=2.1h/8h, bid=4601.19, UPL=+$0.38, comp=-47.5 all4TF bear, trail trigger bid\u22644581.28 not yet, time_exit=08:01Z T-5.9h); AUDUSD BUY LIMIT@0.7143 GTC KEEP (bid=0.71754, dist=33.4p, comp=52.5 mod bull); GBPUSD @1.352255 comp=+29 weak \u2192 sweep 1.35203 WATCH (need comp\u226540 CT); USDJPY @159.585 comp=+40.5 mod CT met but dist=41.5p>30p prox + pip-val blocks \u2192 WATCH; OIL @98.211 comp=+50 mod bull, level 93.23 dist=4.98 not in prox \u2192 WATCH; AUDIT: gold_sweep_4721 REMOVED (dist=119.81 > 3\u00d7H4ATR=106.44, all TF bear away, no catalyst); all 10 remaining alerts KEEP. attention_covered=9/9.",
       "binary_event_name": "FOMC Apr29",
       "binary_event_active": 1,
       "binary_event_deadline": "2026-04-29T18:00Z"

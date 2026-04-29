@@ -791,5 +791,40 @@
     "fomc_caution": "FOMC 18:00Z T-10.1h",
     "attention": "8/8 covered",
     "scalp_status": "GBPUSD=ACTIVE EURUSD=OFF(desync) AUDUSD=OFF(wr11%)"
+  },
+  {
+    "tick_ts_utc": "2026-04-29T08:27Z",
+    "events_processed": 1,
+    "events_consumed": 5,
+    "events_actionable": [
+      "evt_1777450848205_liquidity_sweep"
+    ],
+    "trades_opened": 0,
+    "limits_armed": 1,
+    "trades_closed": 0,
+    "skipped": 0,
+    "new_limits": [
+      {
+        "epic": "OIL_CRUDE",
+        "dir": "SELL",
+        "level": 101.07,
+        "sl": 101.22,
+        "tp": 99.97,
+        "size": 32,
+        "rr": "7.3:1",
+        "risk_pct": "0.49%",
+        "type": "counter_trend_fade"
+      }
+    ],
+    "open_positions": 0,
+    "working_orders": 2,
+    "watchlist_changes": [
+      "ADD oil_sweep_10107_sell_retest"
+    ],
+    "binary_event": "FOMC Apr29 18:00Z active T-9.6h",
+    "scalp_status": "GBPUSD=ACTIVE",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "daily_pnl_usd": -23.34,
+    "note": "OIL M15 up-sweep 101.07 (12.6p wick); CT fade SELL LIMIT armed; comp=+55 mod-bull corroborates extension; FOMC caution half-size."
   }
 ]
