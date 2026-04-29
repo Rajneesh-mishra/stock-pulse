@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T00:07:05.648825Z",
+  "generated_at": "2026-04-29T00:16:02.436855Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -368,6 +368,26 @@
         "covered": "9/9"
       },
       "regime": "ACTIVE_ESCALATION \u2014 FOMC T-12.5h caution"
+    },
+    {
+      "tick_ts_utc": "2026-04-29T00:15Z",
+      "events_processed": 1,
+      "events_consumed": 7,
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "orders_cancelled": 0,
+      "limit_orders_active": 1,
+      "open_positions": 1,
+      "daily_pnl": -21.06,
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "binary_event": "FOMC Apr29 18:00Z T-17h51m",
+      "actions": [
+        "CONSUMED: gold_h1fvg_sell_4603 level_cross (position already open, no new action)",
+        "AUDIT: audusd_m15fvg_buy_7143 \u2192 active=true, note updated (FOMC-day TP=0.7187 justified)",
+        "KEEP: all 8 level_alerts",
+        "GOLD SELL@4603 in-position (age=8min, exit<=08:01Z, comp=-47.5 mod-bear intact)"
+      ],
+      "note": "Heartbeat tick. 1 event (level_cross on existing GOLD position). All 8 alerts KEEP. AUDUSD LIMIT GTC@0.7143 live. FOMC caution T-17h51m."
     }
   ]
 }

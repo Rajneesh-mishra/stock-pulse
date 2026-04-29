@@ -1,9 +1,9 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-29T05:37Z",
-  "state_ts_utc": "2026-04-29T05:37Z",
-  "regime_note": "2026-04-29T05:37Z forex auto \u2014 1 evt: GOLD SELL LIMIT@4603 FILLED (entry=4603.14 sz=0.2 SL=4625 TP=4519 R:R=3.85:1 comp=-47.5 mod bear H4FVG resist); thesis=counter_trend_fade max_hold=8h exit<=08:01Z; FOMC T-12.5h caution active (\u2265moderate only); AUDUSD BUY LIMIT@0.7143 GTC KEEP (dist=41.4p>prox, comp+60 strong validated); EURUSD comp=+12.5 none SKIP; GBPUSD comp=+29 weak SKIP; USDJPY dist=46.4p pip-val blocked WATCH; all 8 alerts KEEP. daily_pnl=-$21.06. attention_covered=9/9.",
-  "regime_note_prev": "2026-04-28T23:19Z forex auto \u2014 1 evt: EURUSD level_cross@1.17162 SKIP (comp=+12.5 <+40 counter-trend threshold, SKIP #5); GOLD SELL LIMIT@4603 GTC ARMED (bid=4592.3, dist=10.7pts, comp=-50 mod bear); AUDUSD BUY LIMIT@0.7143 GTC KEEP (bid=0.71826, dist=43.3p>prox, comp=+60 strong bull, validated); GBPUSD AT sweep 1.35203 (comp=+29 weak, need +40); USDJPY fade@160 comp=+40.5 threshold MET dist=45.2p>30p pip-val blocked WATCH; USDCHF H4FVG@0.78689 dist=21.8p within 30p prox, comp=+21.5 none WATCH; FOMC T-18.7h caution active; all 11 alerts KEEP. daily_pnl=-$21.06. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-29T00:15Z",
+  "state_ts_utc": "2026-04-29T00:15Z",
+  "regime_note": "2026-04-29T00:15Z forex auto \u2014 1 evt: GOLD level_cross@4603 CONSUMED (position already open, entry=4603.14 sz=0.2 SL=4625 TP=4519 R:R=3.85, age=8min time_exit=08:01Z comp=-47.5 mod_bear); FOMC 18:00Z T-17h51m caution active; GOLD: in-position no action (DAY FVG resist@4607.11 supports SELL); AUDUSD: LIMIT@0.7143 GTC KEEP (44p from level, TP=0.7187@current price, FOMC-day tighter TP justified, alert active=true); GBPUSD comp=+29 weak WATCH; USDJPY comp=+40.5 mod fade@160 44.2p away WATCH; EURUSD comp=+12.5 none SKIP; USDCAD comp=-11 none SKIP; USDCHF comp=+21.5 none post-FOMC; OIL comp=+42.5 mod validated@93.23 WATCH; all 8 alerts KEEP. daily_pnl=-$21.06. attention_covered=9/9.",
+  "regime_note_prev": "2026-04-29T05:37Z forex auto \u2014 1 evt: GOLD SELL LIMIT@4603 FILLED (entry=4603.14 sz=0.2 SL=4625 TP=4519 R:R=3.85:1 comp=-47.5 mod bear H4FVG resist); thesis=counter_trend_fade max_hold=8h exit<=08:01Z; FOMC T-12.5h caution active (\u2265moderate only); AUDUSD BUY LIMIT@0.7143 GTC KEEP (dist=41.4p>prox, comp+60 strong validated); EURUSD comp=+12.5 none SKIP; GBPUSD comp=+29 weak SKIP; USDJPY dist=46.4p pip-val blocked WATCH; all 8 alerts KEEP. daily_pnl=-$21.06. attention_covered=9/9.",
   "open_positions": [
     {
       "dealId": "00000000-4eaf-97cc-044a-beb40055311e",
@@ -1346,15 +1346,15 @@
       "alert_id": "audusd_m15fvg_buy_7143",
       "direction": "BUY",
       "level": 0.7143,
-      "active": false,
+      "active": true,
       "instrument": "AUDUSD",
-      "entry_criterion": "LIMIT BUY at 0.7143; arm after GBPUSD position closes (correlation)",
-      "regime_context": "VALIDATED (3 fires, 4h=100%). comp=+60 strong bull. Day FVG 0.71486-0.71731 unmitigated above. FOMC Apr29@18:00Z caution active \u2014 existing LIMIT GTC stays.",
+      "entry_criterion": "LIMIT BUY at 0.7143 (M15 FVG bottom). GTC LIMIT live in broker.",
+      "regime_context": "VALIDATED (3 fires, 4h=100%). comp=+60 strong bull. Day BOS at 0.71874. Current price 0.71873 = AT old TP. FOMC 18:00Z caution \u2014 TP 0.7187 is the pullback-bounce target; tighter TP suited to FOMC day. Limit GTC stays.",
       "sl": 0.713,
       "tp": 0.7187,
-      "rr_target": 2.1,
-      "last_updated": "2026-04-28T19:37Z",
-      "note": "ENTRY: LIMIT BUY at 0.7143 (M15 FVG bottom). LIMIT GTC in broker \u2014 no re-arm needed.\n\nCONTEXT: VALIDATED (3 fires, 4h=100%). comp=+60 strong bull (upgraded from +47 moderate). Day FVG 0.71486-0.71731 unmitigated above. FOMC Apr29@18:00Z caution \u2014 existing LIMIT stays GTC.\n\nSL: 0.7130  TP: 0.7187  R:R target: 2.1\n\nRewritten 2026-04-28T19:37Z \u2014 comp upgraded moderate\u2192strong; FOMC caution noted."
+      "rr_target": 3.4,
+      "last_updated": "2026-04-29T00:15Z",
+      "note": "ENTRY: LIMIT BUY at 0.7143 (M15 FVG bottom). GTC LIMIT live in broker \u2014 no re-arm needed.\n\nCONTEXT: VALIDATED (3 fires, 4h=100%). comp=+60 strong bull. Day BOS at 0.71874 confirms structure. Current price 0.71873 = at original TP \u2014 trade thesis: retest of 0.7143 then bounce back to 0.7187. FOMC 18:00Z caution \u2014 tighter TP at 0.7187 is appropriate for FOMC day. Post-FOMC if confirmed dovish, extend TP to 0.7250.\n\nSL: 0.7130  TP: 0.7187  R:R target: 3.4\n\nReviewed 2026-04-29T00:15Z \u2014 active=true (GBPUSD correlation closed); TP kept at 0.7187 (FOMC caution, tighter target justified)."
     },
     {
       "alert_id": "oil_sweep_9323_buy_retest",
