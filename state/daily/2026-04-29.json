@@ -1080,5 +1080,28 @@
         "readiness": "moderate"
       }
     }
+  },
+  {
+    "tick_ts_utc": "2026-04-29T15:21Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "id": "evt_1777476088675_level_cross",
+        "type": "level_cross",
+        "instrument": "OIL_CRUDE",
+        "alert_id": "oil_sweep_103449_sell_watch",
+        "action": "SKIP_CT_FADE"
+      }
+    ],
+    "trades": [],
+    "positions_after": [],
+    "gold_limit_kept": true,
+    "watchlist_changes": [
+      "REMOVE oil_fvg_9691_buy (inactive, stale)",
+      "ADD oil_h4fvg_buy_10030 (H4 FVG 100.296-101.275)"
+    ],
+    "regime_note": "OIL CT-fade SKIP: comp=+55 bull+Hormuz+analog_0pct. GOLD SELL LIMIT@4603 KEEP. FOMC T-2.6h.",
+    "binary_event": "FOMC Apr29 18:00Z verified T-2.6h",
+    "scalp_status": "GBPUSD=ACTIVE EURUSD=OFF(desync) AUDUSD=OFF(low-wr)"
   }
 ]
