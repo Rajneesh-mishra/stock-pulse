@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T02:31:47.135411+00:00",
+  "generated_at": "2026-04-29T03:33:27.106769+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -878,10 +878,10 @@
           "hit_rate": 0.0
         },
         "24h": {
-          "filled": 0,
+          "filled": 1,
           "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "avg_pips": -710.4,
+          "hit_rate": 0.0
         }
       }
     },
@@ -918,15 +918,15 @@
       "fires": 7,
       "by_horizon": {
         "1h": {
-          "filled": 6,
-          "favorable": 5,
-          "avg_pips": 2.0,
-          "hit_rate": 0.83
+          "filled": 7,
+          "favorable": 6,
+          "avg_pips": 2.6,
+          "hit_rate": 0.86
         },
         "4h": {
-          "filled": 3,
-          "favorable": 3,
-          "avg_pips": 1.3,
+          "filled": 5,
+          "favorable": 5,
+          "avg_pips": 3.4,
           "hit_rate": 1.0
         },
         "24h": {
@@ -970,10 +970,10 @@
       "fires": 2,
       "by_horizon": {
         "1h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 2,
+          "favorable": 2,
+          "avg_pips": 5.5,
+          "hit_rate": 1.0
         },
         "4h": {
           "filled": 0,

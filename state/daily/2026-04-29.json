@@ -450,5 +450,39 @@
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
     "attention_covered": "9/9",
     "scalp_audit": "EURUSD=OFF(desync) GBPUSD=ACTIVE AUDUSD=OFF(wr11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
+  },
+  {
+    "tick_ts_utc": "2026-04-29T03:30Z",
+    "events": 0,
+    "event_types": [],
+    "opened": 0,
+    "closed": 0,
+    "skipped": 0,
+    "positions_after": [
+      {
+        "instrument": "GOLD",
+        "direction": "SELL",
+        "entry": 4603.14,
+        "bid": 4599.17,
+        "upl": 0.69,
+        "age_h": 3.5,
+        "max_h": 8
+      }
+    ],
+    "pending_orders": [
+      {
+        "instrument": "AUDUSD",
+        "type": "LIMIT",
+        "direction": "BUY",
+        "level": 0.7143,
+        "dist_p": 20.7
+      }
+    ],
+    "account_balance": 970.66,
+    "daily_pnl": 0.68,
+    "binary_event": "FOMC Apr29 18:00Z T-14.5h",
+    "scalp": "GBPUSD=ACTIVE EURUSD=OFF AUDUSD=OFF",
+    "news": "Trump rejected Iran Hormuz proposal; Iran new offer via Pakistani mediators; gold bearish thesis confirmed",
+    "note": "heartbeat; GOLD SELL HOLD age=3.5h/8h; AUDUSD LIMIT ARMED dist=20.7p; FOMC caution; all 10 alerts KEEP"
   }
 ]
