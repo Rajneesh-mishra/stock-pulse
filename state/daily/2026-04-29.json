@@ -728,5 +728,47 @@
     "account_profit_loss": 3.58,
     "news": "Iran-Hormuz blockade intact (Trump rejected ceasefire Apr28); FOMC hold 100% priced; GOLD bear thesis intact",
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED"
+  },
+  {
+    "tick_ts_utc": "2026-04-29T07:31Z",
+    "events_processed": 1,
+    "events_consumed": 5,
+    "events": [
+      "evt_1777447528023_liquidity_sweep (OIL_CRUDE liquidity_sweep@99.243)"
+    ],
+    "actions": [
+      "GOLD SELL SL trailed to 4603.14 (breakeven) at +1.29R",
+      "OIL_CRUDE SELL LIMIT armed @ 99.31 SL=99.40 TP=98.59 size=54 (CT fade up-sweep)"
+    ],
+    "alert_changes": {
+      "removed": [
+        "oil_sweep_9323_buy_retest (dist=6.0pts, 3xH4ATR=5.98pts, stale)"
+      ],
+      "added": [
+        "oil_sweep_9924_sell_retest @ 99.31 (LIMIT armed)",
+        "oil_fvg_9691_buy_retest @ 96.91 (H4 FVG replacement)"
+      ]
+    },
+    "positions": {
+      "GOLD": "SELL@4603.14 SL=4603.14(BE) TP=4519 bid=4574.98 UPL=+$5.63 1.29R time_exit=08:01Z",
+      "AUDUSD": "BUY LIMIT@0.7143 GTC pending (bid=0.71632)"
+    },
+    "open_limit_orders": {
+      "OIL_CRUDE": "SELL LIMIT@99.31 SL=99.40 TP=98.59 GTC new",
+      "AUDUSD": "BUY LIMIT@0.7143 SL=0.713 TP=0.7187 GTC existing"
+    },
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "FOMC Apr29 18:00Z T-10.5h caution",
+    "attention_matrix": {
+      "EURUSD": "swing=WATCH  scalp=OFF    readiness=none     comp=-8",
+      "GBPUSD": "swing=WATCH  scalp=ACTIVE readiness=none     comp=+8.5",
+      "AUDUSD": "swing=ARMED  scalp=OFF    readiness=weak     comp=+28.5 LIMIT@0.7143 GTC",
+      "USDJPY": "swing=WATCH  scalp=OFF    readiness=weak     comp=+37.5 dist=35p <40 CT threshold",
+      "USDCAD": "swing=NONE   scalp=OFF    readiness=none     comp=-11",
+      "USDCHF": "swing=WATCH  scalp=OFF    readiness=none     comp=+16.5",
+      "GOLD": "swing=ARMED  scalp=N/A    readiness=moderate comp=-50 SELL open SL=BE time_exit=08:01Z",
+      "OIL_CRUDE": "swing=ARMED  scalp=N/A    readiness=moderate comp=+55 SELL LIMIT@99.31 CT-fade"
+    },
+    "scalp_audit": "EURUSD=OFF(desync) GBPUSD=ACTIVE(wr-pending, neutral) AUDUSD=OFF(wr11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
   }
 ]
