@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-29T14:50:27.200705Z",
+  "generated_at": "2026-04-29T14:54:18.085325Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T10:30:00Z",
-      "events_in": 0,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 0,
-      "summary": "10:30 forex auto \u2014 0 evt heartbeat. USDJPY 159.726 +40.5 mod 4/4 bull dist=27.4p INSIDE 30p swing=ARMED (counter-fade SELL 160.00, BOJ T-3d; api.py market-only entry waits price\u2265159.97). GOLD 4681.69 -36.0 weak sweep_4695 dist=13.7$ INSIDE prox readiness=weak WATCH; sweep_4721 dist=40.0$ OUTSIDE. OIL 96.817 +43.0 mod sweep_9323 dist=3.58 extending WATCH. EURUSD -8 none GBPUSD +18.5 none AUDUSD +8 none USDCAD -21.5 none USDCHF +5 none. BTC 77692 +27 weak fvg_76960 dist=732 WATCH. Scalp engine GBPUSD+EURUSD ghost vs broker=0 (known carry). 8 alerts KEEP. 0 trades 0pos. BOJ T-3d FOMC T-5d. news_search SKIP(last_scan 10min ago). attention_covered=9/9."
-    },
     {
       "ts_utc": "2026-04-24T11:18:00Z",
       "events_in": 2,
@@ -1115,6 +1107,35 @@
       "daily_pnl_usd": -20.59,
       "binary": "FOMC Apr29 18:00Z hold expected",
       "scalp": "GBPUSD=ACTIVE, EURUSD=OFF(desync), AUDUSD=OFF(wr11%)"
+    },
+    {
+      "tick_ts_utc": "2026-04-29T15:00Z",
+      "events_processed": 1,
+      "events": [
+        {
+          "id": "evt_1777474248421_level_cross",
+          "type": "level_cross",
+          "instrument": "OIL_CRUDE",
+          "alert_id": "oil_sweep_103449_sell_watch",
+          "detail": "cross_up @103.45; comp=+55 all-TFs bull BLOCKS CT-fade arm; WATCH only"
+        }
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "orders_placed": 0,
+      "orders_cancelled": 0,
+      "open_positions": 0,
+      "working_orders": 1,
+      "working_orders_detail": [
+        "GOLD SELL LIMIT @4603 SL=4612 TP=4555 size=0.5 (bid=4534)"
+      ],
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "regime_note_short": "OIL_CRUDE level_cross @103.449 \u2014 CT-fade BLOCKED (comp=+55 bull, 0% CTF analog). GOLD SELL LIMIT @4603 KEEP. FOMC T-3h.",
+      "binary_event": "FOMC Apr29 18:00Z T-3h hold-expected",
+      "scalp_status": "GBPUSD=ACTIVE EURUSD=OFF(desync) AUDUSD=OFF(wr11%)",
+      "account_balance": 966.43,
+      "daily_pnl_usd": 0.0,
+      "attention_covered": "8/8"
     }
   ]
 }

@@ -985,5 +985,34 @@
     "daily_pnl_usd": -20.59,
     "binary": "FOMC Apr29 18:00Z hold expected",
     "scalp": "GBPUSD=ACTIVE, EURUSD=OFF(desync), AUDUSD=OFF(wr11%)"
+  },
+  {
+    "tick_ts_utc": "2026-04-29T15:00Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "id": "evt_1777474248421_level_cross",
+        "type": "level_cross",
+        "instrument": "OIL_CRUDE",
+        "alert_id": "oil_sweep_103449_sell_watch",
+        "detail": "cross_up @103.45; comp=+55 all-TFs bull BLOCKS CT-fade arm; WATCH only"
+      }
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "orders_placed": 0,
+    "orders_cancelled": 0,
+    "open_positions": 0,
+    "working_orders": 1,
+    "working_orders_detail": [
+      "GOLD SELL LIMIT @4603 SL=4612 TP=4555 size=0.5 (bid=4534)"
+    ],
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "regime_note_short": "OIL_CRUDE level_cross @103.449 \u2014 CT-fade BLOCKED (comp=+55 bull, 0% CTF analog). GOLD SELL LIMIT @4603 KEEP. FOMC T-3h.",
+    "binary_event": "FOMC Apr29 18:00Z T-3h hold-expected",
+    "scalp_status": "GBPUSD=ACTIVE EURUSD=OFF(desync) AUDUSD=OFF(wr11%)",
+    "account_balance": 966.43,
+    "daily_pnl_usd": 0.0,
+    "attention_covered": "8/8"
   }
 ]
