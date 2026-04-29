@@ -350,5 +350,49 @@
     "daily_pnl_estimate": -23.34,
     "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
     "regime_note_summary": "1 evt EURUSD level_cross SKIP; GOLD SELL HOLD 2.1h/8h; AUDUSD LIMIT KEEP; gold_sweep_4721 REMOVED (stale 3\u00d7ATR)"
+  },
+  {
+    "tick_ts_utc": "2026-04-29T02:20Z",
+    "events": 0,
+    "events_detail": "heartbeat (bar_close only)",
+    "open_positions": [
+      {
+        "instrument": "GOLD",
+        "direction": "SELL",
+        "entry": 4603.14,
+        "sl": 4625.0,
+        "tp": 4519.0,
+        "size": 0.2,
+        "age_h": 2.3,
+        "upl": -0.21,
+        "time_exit_utc": "2026-04-29T08:01Z",
+        "thesis_type": "counter_trend_fade"
+      }
+    ],
+    "pending_limits": [
+      {
+        "instrument": "AUDUSD",
+        "direction": "BUY",
+        "limit_price": 0.7143,
+        "sl": 0.713,
+        "tp": 0.7187,
+        "dist_pips": 30.5
+      }
+    ],
+    "daily_pnl": -0.25,
+    "account_balance": 969.73,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "binary_event": "FOMC Apr29 18:00Z T-15.7h caution",
+    "actions": "HOLD GOLD SELL; KEEP AUDUSD LIMIT; all 10 alerts KEEP",
+    "confluence": {
+      "GOLD": "-47.5 mod bear",
+      "AUDUSD": "+52.5 mod bull",
+      "GBPUSD": "+29 weak",
+      "EURUSD": "+12.5 none",
+      "USDJPY": "+40.5 mod bull",
+      "USDCAD": "-11 none",
+      "USDCHF": "+6 none",
+      "OIL_CRUDE": "+47.5 mod bull"
+    }
   }
 ]
