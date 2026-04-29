@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-29T11:24:59.736043+00:00",
+  "generated_at": "2026-04-29T14:27:04.886986+00:00",
   "counts": {
     "trades": 37,
-    "events": 6604,
+    "events": 6637,
     "ticks": 59,
-    "regime_snapshots": 198,
+    "regime_snapshots": 199,
     "broker_positions": 0,
-    "counterfactuals": 113
+    "counterfactuals": 116
   },
   "trades_last_50": [
     {
@@ -790,6 +790,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-04-29T11:18Z",
+      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "note_text": "2026-04-29T11:18Z forex auto \u2014 0 evt heartbeat; GOLD SELL LIMIT@4603.0 GTC KEEP (bid=4569.6 dist=33.4 comp=-50 mod-bear validated 4f/100%); AUDUSD LIMIT@0.7143 CANCELLED (comp=+31 weak, FOMC caution T-6.7h requires moderate+); USDJPY CT-fade@160 comp=+45 mod \u2014 pip-value blocks trade WATCH; FOMC 18:00Z T-6.7h hold 99.9% priced, BoJ verbal intervention at 160 active; scalp: GBPUSD=ACTIVE; attention_covered=8/8.",
+      "binary_event_name": "FOMC Apr29",
+      "binary_event_active": 1,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
       "ts_utc": "2026-04-29T10:35Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-29T10:35Z forex auto \u2014 1 evt: USDCAD up-sweep@1.36924 (wick=0.9p tiny, comp=-8.5 none) WATCHLIST-ONLY (|comp|<25, no CT-fade entry); OIL 101.58 \u2014 REMOVE oil_sweep_10107 (CT-fade level breached, price continued to 101.58); GOLD SELL LIMIT@4603 KEEP (bid=4571, comp=-47.5 mod-bear, validated 4f/100%); AUDUSD BUY LIMIT@0.7143 KEEP (bid=0.7157, comp=+28.5 weak, validated 3f/100%); USDJPY@159.76 comp=+40 mod FADE-WATCH (min-size block prevents entry, WATCH post-FOMC); ADD usdcad_sweep_136924_sell_watch; FOMC 18:00Z T-7.5h caution; scalp: GBPUSD=ACTIVE. attention_covered=8/8.",
@@ -857,14 +865,6 @@
       "ts_utc": "2026-04-29T04:41Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-29T04:41Z forex auto \u2014 0 evt heartbeat; GOLD SELL@4603.14 HOLD (age=4.6h/8h bid=4602.85 UPL\u2248-$0.04 spread-flat time_exit=08:01Z T-3.4h); AUDUSD BUY LIMIT@0.7143 GTC KEEP (dist=19.8p comp=+39.5 weak validated 3f/100%4h FOMC caution T-13.4h); news_search SKIP (last search 20min ago, daemon covers surface); FOMC 18:00Z T-13.4h caution (binary_event active); alert audit: all 8 KEEP (oil_sweep_9323 dist=$4.65 < 3\u00d7H4ATR=$5.67 validated KEEP; gold_sell_4658 dist=55pt < 3\u00d7H4ATR=100.8 KEEP); scalp: GBPUSD=ACTIVE(neutral), EURUSD=OFF(desync), AUDUSD=OFF(wr11%); attention_covered=8/8.",
-      "binary_event_name": "FOMC Apr29",
-      "binary_event_active": 1,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-04-29T04:15Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "2026-04-29T04:15Z forex auto \u2014 1 evt: GOLD level_cross@4603.33 gold_h1fvg_sell_4603 (BEARISH CONFIRMATION: price rejected 4603 resistance, back to 4598.91; thesis intact); GOLD SELL@4603.14 HOLD (age=4.2h/8h bid=4598.91 move=4.23pts=0.19R UPL\u2248+$0.65 trail@bid\u22644581 not yet time_exit=08:01Z); news: Trump rejected Iran Hormuz deal CONFIRMED, Iran new offer via Pakistan mediators (defers nuclear) \u2014 bearish gold thesis confirmed; FOMC 18:00Z T-13.7h \u2014 position exits 08:01Z pre-FOMC; AUDUSD BUY LIMIT@0.7143 GTC KEEP (dist=16.9p ARMED validated 3f/100%4h comp=+39.5 borderline weak); EURUSD comp=-8 none; GBPUSD comp=+14 none; USDJPY comp=+43 mod CT (pip-val blocks); USDCHF comp=+16 none; USDCAD comp=-8.5 none; OIL comp=+42 mod (dist=4.54>prox); all 10 alerts KEEP. scalp: GBPUSD=ACTIVE, EURUSD=OFF(desync), AUDUSD=OFF(wr11%); attention_covered=9/9.",
       "binary_event_name": "FOMC Apr29",
       "binary_event_active": 1,
       "binary_event_deadline": "2026-04-29T18:00Z"
@@ -1373,6 +1373,45 @@
     }
   ],
   "counterfactuals_last_50": [
+    {
+      "alert_id": "usdjpy_intervention_fade_160",
+      "instrument": "USDJPY",
+      "direction": "sell",
+      "trigger_price": 160.167,
+      "fired_at": "2026-04-29T14:12:31.116941+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
+    {
+      "alert_id": "usdcad_sweep_136924_sell_watch",
+      "instrument": "USDCAD",
+      "direction": "sell",
+      "trigger_price": 1.3697,
+      "fired_at": "2026-04-29T13:56:25.800295+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
+    {
+      "alert_id": "audusd_m15fvg_buy_7143",
+      "instrument": "AUDUSD",
+      "direction": "buy",
+      "trigger_price": 0.71303,
+      "fired_at": "2026-04-29T13:56:25.798067+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
     {
       "alert_id": "gold_h1fvg_sell_4603",
       "instrument": "GOLD",
@@ -1977,45 +2016,6 @@
       "direction": "sell",
       "trigger_price": 1.174545,
       "fired_at": "2026-04-27T09:24:36.026223+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
-    },
-    {
-      "alert_id": "eurusd_sweep_117454_sell_watch",
-      "instrument": "EURUSD",
-      "direction": "sell",
-      "trigger_price": 1.174565,
-      "fired_at": "2026-04-27T08:25:09.514145+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
-    },
-    {
-      "alert_id": "gbpusd_sweep_135370_sell_watch",
-      "instrument": "GBPUSD",
-      "direction": "sell",
-      "trigger_price": 1.353735,
-      "fired_at": "2026-04-27T07:21:45.551295+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
-    },
-    {
-      "alert_id": "gbpusd_sweep_135370_sell_watch",
-      "instrument": "GBPUSD",
-      "direction": "sell",
-      "trigger_price": 1.353735,
-      "fired_at": "2026-04-27T06:48:06.500029+00:00",
       "hit_1h": null,
       "hit_4h": null,
       "hit_24h": null,

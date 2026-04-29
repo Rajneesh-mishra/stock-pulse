@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-29T11:25:54.415739Z",
+  "generated_at": "2026-04-29T14:29:52.951615Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T08:28:00Z",
-      "events_in": 9,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 9,
-      "note": "08:28 forex auto \u2014 9 evt: news_flash Arab Weekly 'After collapse of Islamabad talks, US-Iran naval showdown escalates' FRESH Apr-24 08:18 GMT (regime CONFIRMED strengthened; escalation diplomatic track closed) + GOLD M15 liquidity_sweep 4695.395 wick=22.5p 2.58xATR ADD gold_sweep_4695_sell_retest WATCH readiness=weak + 7 bar_close routine. USDJPY 159.732 +43.0 mod 4/4 bull dist=26.8p INSIDE 30p swing=ARMED (counter-fade BOJ T-3d); SKIP market SELL \u2014 api.py MARKET-only, LIMIT at 160 not supported, entering 26.8p early changes thesis; alert remains ARMED, execute on next tick if price \u2265159.97. GOLD 4688 -35.5 weak sweep_4721 33.7$ WATCH; NEW sweep_4695 7.4$ WATCH (readiness=weak need -40); safehaven_4775 87$ WATCH. OIL 96.44 +43.0 mod extending sweep_9323 3.2$ WATCH. BTCUSD 77881 +29.5 weak FVG 921$ WATCH. USDCHF 0.78621 comp=none WATCH. 8 alerts (7 KEEP +1 ADD). Scalp: GBPUSD BUY 1.346775 TP=1.347515 likely TP'd (current 1.348>TP; engine-managed). halt={}. 0 swing trades $1000/0pos. BOJ T-3d FOMC T-5d. attention_covered=9/9."
-    },
     {
       "ts_utc": "2026-04-24T10:20:00Z",
       "events_in": 1,
@@ -1033,6 +1025,68 @@
       "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "balance": 966.6,
       "notes": "heartbeat tick \u2014 FOMC caution window active; AUDUSD LIMIT cancelled weak readiness; GOLD LIMIT held; BoJ verbal intervention at USDJPY 160 live"
+    },
+    {
+      "tick_ts_utc": "2026-04-29T14:28Z",
+      "events_processed": 5,
+      "events": [
+        "level_cross AUDUSD audusd_m15fvg_buy_7143 \u2014 comp=none, no entry, WATCH",
+        "level_cross USDCAD usdcad_sweep_136924_sell_watch \u2014 comp=none, no entry, WATCH",
+        "level_cross USDJPY usdjpy_intervention_fade_160 \u2014 comp=+43 mod CT-fade CONDITIONS MET but min-size=100 blocks ($41 risk > 2% limit); 3 probe positions closed -$0.17",
+        "liquidity_sweep AUDUSD H1@0.71262 wick=2.7p \u2014 comp=none, ADD watchlist alert audusd_liqsweep_71262",
+        "liquidity_sweep GBPUSD H1@1.34736 wick=2.1p \u2014 comp=none, ADD watchlist alert gbpusd_liqsweep_134736"
+      ],
+      "positions_opened": 0,
+      "positions_closed": 3,
+      "pnl_this_tick": -0.17,
+      "positions_closed_detail": [
+        {
+          "instrument": "USDJPY",
+          "size": 100,
+          "pnl": -0.05,
+          "reason": "emergency_close_min_size_probe"
+        },
+        {
+          "instrument": "USDJPY",
+          "size": 500,
+          "pnl": -0.07,
+          "reason": "emergency_close_min_size_probe"
+        },
+        {
+          "instrument": "USDJPY",
+          "size": 1000,
+          "pnl": -0.05,
+          "reason": "emergency_close_min_size_probe"
+        }
+      ],
+      "pending_orders": [
+        {
+          "instrument": "GOLD",
+          "direction": "SELL",
+          "level": 4603.0,
+          "size": 0.5,
+          "type": "GTC_LIMIT",
+          "sl": 4612,
+          "tp": 4555
+        }
+      ],
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "binary_event": "FOMC Apr29 18:00Z \u2014 T-3.6h caution active",
+      "balance_usd": 966.43,
+      "daily_pnl_usd": 0.0,
+      "scalp_status": "GBPUSD=ACTIVE EURUSD=OFF(desync) AUDUSD=OFF(wr11%)",
+      "attention_covered": "8/8",
+      "key_finding": "USDJPY broker min-size=100 units confirmed. Risk at min-size=$41=4.3%>2% hard limit. Permanently unenterable at $966 balance. USDJPY intervention fade alert demoted to WATCH-ONLY until account >$2000.",
+      "alerts_added": [
+        "audusd_liqsweep_71262_buy_watch",
+        "gbpusd_liqsweep_134736_buy_watch"
+      ],
+      "alerts_removed": [],
+      "alerts_modified": [
+        "usdjpy_intervention_fade_160 (min-size block confirmed)",
+        "audusd_m15fvg_buy_7143 (proximity update)",
+        "usdcad_sweep_136924_sell_watch (proximity update)"
+      ]
     }
   ]
 }

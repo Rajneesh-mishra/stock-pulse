@@ -1,9 +1,9 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-29T11:18Z",
-  "state_ts_utc": "2026-04-29T11:18Z",
-  "regime_note": "2026-04-29T11:18Z forex auto \u2014 0 evt heartbeat; GOLD SELL LIMIT@4603.0 GTC KEEP (bid=4569.6 dist=33.4 comp=-50 mod-bear validated 4f/100%); AUDUSD LIMIT@0.7143 CANCELLED (comp=+31 weak, FOMC caution T-6.7h requires moderate+); USDJPY CT-fade@160 comp=+45 mod \u2014 pip-value blocks trade WATCH; FOMC 18:00Z T-6.7h hold 99.9% priced, BoJ verbal intervention at 160 active; scalp: GBPUSD=ACTIVE; attention_covered=8/8.",
-  "regime_note_prev": "2026-04-29T10:35Z forex auto \u2014 1 evt: USDCAD up-sweep@1.36924 (wick=0.9p tiny, comp=-8.5 none) WATCHLIST-ONLY (|comp|<25, no CT-fade entry); OIL 101.58 \u2014 REMOVE oil_sweep_10107 (CT-fade level breached, price continued to 101.58); GOLD SELL LIMIT@4603 KEEP (bid=4571, comp=-47.5 mod-bear, validated 4f/100%); AUDUSD BUY LIMIT@0.7143 KEEP (bid=0.7157, comp=+28.5 weak, validated 3f/100%); USDJPY@159.76 comp=+40 mod FADE-WATCH (min-size block prevents entry, WATCH post-FOMC); ADD usdcad_sweep_136924_sell_watch; FOMC 18:00Z T-7.5h caution; scalp: GBPUSD=ACTIVE. attention_covered=8/8.",
+  "tick_ts_utc": "2026-04-29T14:28Z",
+  "state_ts_utc": "2026-04-29T14:28Z",
+  "regime_note": "2026-04-29T14:28Z forex auto \u2014 5 evt: AUDUSD level_cross@0.71303 (comp=+23.5 none, FOMC caution, no entry WATCH); USDCAD level_cross@1.36924 (comp=-3.5 none, not armed, WATCH); USDJPY level_cross@160.167 CT-fade \u2014 CONFIRMED BLOCKED: broker min-size=100 units \u00d7 $0.40/pip/unit \u00d7 41p SL = $41 = 4.3% > 2% hard limit \u2014 permanently unenterable at $966 balance; 3 probe positions closed -$0.17; AUDUSD liq_sweep@0.71262 (wick=2.7p, comp=none \u2192 ADD watchlist alert); GBPUSD liq_sweep@1.34736 (wick=2.1p, comp=none \u2192 ADD watchlist alert); GOLD GTC SELL LIMIT@4603 KEEP (bid=4535 comp=-50 mod-bear validated 4f/100%); FOMC 18:00Z T-3.6h caution; scalp: GBPUSD=ACTIVE, EURUSD=OFF(desync), AUDUSD=OFF(wr11%); attention_covered=8/8.",
+  "regime_note_prev": "2026-04-29T11:18Z forex auto \u2014 0 evt heartbeat; GOLD SELL LIMIT@4603.0 GTC KEEP (bid=4569.6 dist=33.4 comp=-50 mod-bear validated 4f/100%); AUDUSD LIMIT@0.7143 CANCELLED (comp=+31 weak, FOMC caution T-6.7h requires moderate+); USDJPY CT-fade@160 comp=+45 mod \u2014 pip-value blocks trade WATCH; FOMC 18:00Z T-6.7h hold 99.9% priced, BoJ verbal intervention at 160 active; scalp: GBPUSD=ACTIVE; attention_covered=8/8.",
   "open_positions": [],
   "watchlist": [
     {
@@ -718,6 +718,53 @@
       "alert_id": "gold_h1fvg_sell_4603",
       "result": "profit",
       "r_multiple": 1.52
+    },
+    {
+      "deal_id": "00000000-4eb1-3cda-044a-beb40055311e",
+      "instrument": "USDJPY",
+      "direction": "SELL",
+      "entry": 160.089,
+      "exit": 160.089,
+      "size": 100,
+      "pnl": -0.05,
+      "reason": "emergency_close_min_size_probe",
+      "opened_at": "2026-04-29T14:26:04Z",
+      "closed_at": "2026-04-29T14:27:01Z",
+      "hold_min": 1.0,
+      "thesis_type": "probe",
+      "alert_id": "usdjpy_intervention_fade_160",
+      "result": "scratch",
+      "notes": "Min-size probe \u2014 broker min=100, risk=$41=4.3%>2% hard limit. UNENTERABLE at $966 balance."
+    },
+    {
+      "deal_id": "00000000-4eb1-3cf4-044a-beb40055311e",
+      "instrument": "USDJPY",
+      "direction": "SELL",
+      "entry": 160.089,
+      "exit": 160.089,
+      "size": 500,
+      "pnl": -0.07,
+      "reason": "emergency_close_min_size_probe",
+      "opened_at": "2026-04-29T14:26:07Z",
+      "closed_at": "2026-04-29T14:27:01Z",
+      "hold_min": 1.0,
+      "thesis_type": "probe",
+      "result": "scratch"
+    },
+    {
+      "deal_id": "00000000-4eb1-3d0d-044a-beb40055311e",
+      "instrument": "USDJPY",
+      "direction": "SELL",
+      "entry": 160.089,
+      "exit": 160.089,
+      "size": 1000,
+      "pnl": -0.05,
+      "reason": "emergency_close_min_size_probe",
+      "opened_at": "2026-04-29T14:26:10Z",
+      "closed_at": "2026-04-29T14:27:01Z",
+      "hold_min": 1.0,
+      "thesis_type": "probe",
+      "result": "scratch"
     }
   ],
   "consecutive_losses": 0,
@@ -1324,7 +1371,7 @@
       "Fed schedule",
       "prior ticks"
     ],
-    "caution": "moderate+ only, half-size until resolved; T-6.7h (FOMC Apr29 18:00Z)"
+    "caution": "moderate+ only, half-size until resolved; T-3.6h (FOMC Apr29 18:00Z)"
   },
   "balance": 970.61,
   "level_alerts": [

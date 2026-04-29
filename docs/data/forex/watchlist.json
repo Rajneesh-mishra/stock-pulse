@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-29T10:35Z",
+  "last_updated_by_claude": "2026-04-29T14:28Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -38,9 +38,9 @@
         "ts": "2026-04-27T14:18Z",
         "price": null
       },
-      "last_updated": "2026-04-29T11:18Z",
+      "last_updated": "2026-04-29T14:28Z",
       "updated_utc": "2026-04-29T11:18Z",
-      "proximity": "LIMIT cancelled 2026-04-29T11:18Z \u2014 comp=+31 weak, FOMC caution T-6.7h. Re-arm post-18:00Z if comp>=40.",
+      "proximity": "AUDUSD@0.71366; price 23p below level 0.7143 (bounced from 0.71303 low). comp=+23.5 none (need \u226540). M15 BOS bear. FOMC caution T-3.6h. WATCH \u2014 no entry. Also: H1 liq_sweep at 0.71262 adds lower demand zone below. 2026-04-29T14:28Z",
       "validated": true,
       "alert_id": "audusd_fvg_buy_7143",
       "active": true
@@ -59,9 +59,9 @@
       "tp": 1.1727,
       "rr_target": "2.2",
       "current_price_ref": 1.17068,
-      "last_updated": "2026-04-28T16:32Z",
+      "last_updated": "2026-04-29T14:19Z",
       "updated_utc": "2026-04-29T03:30Z",
-      "proximity": "EURUSD@1.17068; 19.7p ABOVE 1.16871. comp=-5.5 none (need \u2264-40). WATCH. 2026-04-29T07:53Z",
+      "proximity": "EURUSD@1.16879; 0.8p ABOVE 1.16871 level \u2014 virtually AT level. comp=-18 none (need \u2264-40 bearish ext). FOMC caution. WATCH. 2026-04-29T14:19Z",
       "alert_id": "eurusd_m15sweep_116871_buy_watch",
       "active": true,
       "validated": true
@@ -113,16 +113,16 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "ENTRY: price tags 159.90-160.10 zone; arm anticipation LIMIT SELL@160.00 when counter-trend comp |composite| >= 40 bullish extension (bullish ext = extension creating the fade edge). VALIDATED concept: counter-trend fade at intervention red line.\n\nCONTEXT: MoF/BoJ intervention red line at 160.00-160.20. Japan intervened at 159.23 Jan 2026. MoF Katayama 'high sense of urgency'. BoJ hold Apr 28. Fade on bullish extension reaching 160. 4h time-stop on entered trade.\n\nSL: 160.50  TP: 158.50  R:R target: 3.0\n\nadded 2026-04-28T08:52Z \u2014 intervention fade level missing from daemon watch; added to enable level_enter event on price approach.",
+      "note": "ENTRY: price tags 159.90-160.10 zone; arm LIMIT SELL@160.00 when |comp| >= 40 bullish extension. BLOCKED: broker min-size=100 units \u00d7 ~$0.40/pip/unit \u00d7 41p SL = $41 risk = 4.3% > 2% hard limit. Permanently unenterable at $966 balance. Re-evaluate if account >$2000.\n\nCONTEXT: MoF/BoJ intervention red line 160.00-160.20. Japan intervened Jan 2026. comp=+43 mod-bull all TFs (CT-fade corroborated). FOMC T-3.6h. 4h time-stop if ever entered.\n\nSL: 160.50  TP: 158.50  R:R target: 3.0\n\nupdated 2026-04-29T14:28Z \u2014 min-size confirmed blocked via 3 probe trades (-$0.17). WATCH only.",
       "entry_criterion": "Arm LIMIT SELL@160.00 when |comp| >= 40 bullish extension (counter-trend). No M15 confirmation required if comp >= 40.",
-      "regime_context": "MoF intervention red line 160.00-160.20. comp=+44 moderate (MEETS +40 threshold for counter-trend arm). BoJ held Apr28. JPY pip-val bug blocks risk_guard \u2014 cannot place trade. dist=26.9p WITHIN 30p proximity. FOMC Apr29 caution. 4h time-stop on entered trade.",
+      "regime_context": "USDJPY@160.099; comp=+45 mod bull all TFs. CT-fade threshold MET. dist=9.9p. Broker min-size block at size\u226410. WATCH post-min-size fix. FOMC T-3.6h. 4h time-stop on entered trade.",
       "sl": 160.5,
       "tp": 158.5,
       "rr_target": "3.0",
       "current_price_ref": 159.661,
-      "last_updated": "2026-04-28T08:52Z",
+      "last_updated": "2026-04-29T14:28Z",
       "updated_utc": "2026-04-29T03:30Z",
-      "proximity": "USDJPY@159.661 bid; 33.9p BELOW 160.0. comp=+40 mod bull \u2014 CT fade threshold MET. dist=33.9p borderline prox (est prox\u224830p). pip-val bug blocks risk_guard entry \u2192 WATCH. FOMC caution T-10h. 2026-04-29T07:53Z",
+      "proximity": "USDJPY@160.089; CONFIRMED UNENTERABLE \u2014 broker min-size=100 units, risk=$41=4.3%>2% hard limit. comp=+43 mod-bull CT-fade conditions met but position sizing impossible at $966 balance. Will remain blocked until account grows to >$2000 or broker reduces min-size. FOMC caution T-3.6h. 2026-04-29T14:28Z",
       "alert_id": "usdjpy_intervention_fade_160",
       "active": true
     },
@@ -140,9 +140,9 @@
       "tp": 4520.0,
       "rr_target": "3.8",
       "current_price_ref": 4571.01,
-      "last_updated": "2026-04-28T23:10Z",
+      "last_updated": "2026-04-29T14:19Z",
       "updated_utc": "2026-04-29T03:30Z",
-      "proximity": "GOLD position CLOSED at market 07:52Z (time exit). Alert retained as re-entry zone at 4603. GOLD bid=4571.01; dist=32pts (borderline outside 30p prox). comp=-50 mod bear. WATCH for re-test. 2026-04-29T07:53Z",
+      "proximity": "GOLD bid=4531.48; dist=71.5pts below limit level 4603. GTC SELL LIMIT in broker@4603 SL=4612 TP=4555. comp=-50 mod-bear all TFs aligned. FOMC T-3.6h \u2014 LIMIT far above market. WATCH for price approach. 2026-04-29T14:19Z",
       "alert_id": "gold_h1fvg_sell_4603",
       "active": true
     },
@@ -166,26 +166,6 @@
       "alert_id": "eurusd_upsweep_117159_sell_watch",
       "active": true,
       "validated": true
-    },
-    {
-      "id": "gold_sell_4658_h1bos_retest",
-      "instrument": "GOLD",
-      "level": 4658.0,
-      "emit_on": "cross_up",
-      "cooldown_sec": 1800,
-      "direction": "sell",
-      "note": "ENTRY: price rallies to 4658 H1 BOS bear retest zone (BOS bar at 4657.85); arm LIMIT SELL at 4658 when comp \u2264 -40 (moderate+ bear). No M15 confirmation required at moderate; strong (\u2264-60) \u2192 full size.\n\nCONTEXT: H1 bearish BOS at 4657.85 (bar 63 bars ago). Trend-aligned SELL \u2014 comp=-47.5 moderate bear, all TFs aligned bearish. GOLD inside H4 bear FVG (4570-4621). Rally to BOS retest = short-entry zone. FOMC Apr29 caution. Apply 4h time-stop on entered trade.\n\nSL: 4675  TP: 4519  R:R target: 8.2\n\nadded 2026-04-29T03:46Z \u2014 announced in prior tick regime note but not written to file; now added.",
-      "entry_criterion": "Arm LIMIT SELL at 4658 when comp \u2264 -40 moderate+ bear (trend-aligned). Full size at strong (\u2264-60), half at moderate (-40 to -60). No M15 confirmation at moderate+.",
-      "regime_context": "H1 BOS bear at 4657.85. comp=-47.5 moderate bear all TFs aligned. H4 bear FVG 4570-4620 below. FOMC Apr29 caution = half size. 4h time-stop.",
-      "sl": 4675.0,
-      "tp": 4519.0,
-      "rr_target": "8.2",
-      "current_price_ref": 4571.01,
-      "last_updated": "2026-04-29T03:46Z",
-      "updated_utc": "2026-04-29T03:30Z",
-      "proximity": "GOLD@4571.01 bid; 87pts BELOW 4658. comp=-50 mod bear. WATCH (dist>>prox). 2026-04-29T07:53Z",
-      "alert_id": "gold_sell_4658_h1bos_retest",
-      "active": true
     },
     {
       "id": "gbpusd_upsweep_135203_sell_watch",
@@ -241,9 +221,10 @@
       "tp": 1.367,
       "rr_target": "4.4",
       "current_price_ref": 1.36887,
-      "last_updated": "2026-04-29T10:35Z",
+      "last_updated": "2026-04-29T14:28Z",
       "alert_id": "usdcad_sweep_136924_sell_watch",
-      "active": true
+      "active": true,
+      "proximity": "USDCAD@1.36873; 5.1p BELOW sweep level 1.36924. comp=-3.5 none (CT-fade needs |comp|\u226540 BULLISH). level_cross event at 1.3697 consumed. Not armed. WATCH. 2026-04-29T14:28Z"
     },
     {
       "id": "oil_rebound_9931_buy_watch",
@@ -261,6 +242,60 @@
       "current_price_ref": 100.993,
       "last_updated": "2026-04-29T08:27Z",
       "alert_id": "oil_rebound_9931_buy_watch",
+      "active": true
+    },
+    {
+      "id": "gold_h4ob_buy_4524",
+      "instrument": "GOLD",
+      "level": 4524.0,
+      "emit_on": "cross_down",
+      "cooldown_sec": 1800,
+      "direction": "buy",
+      "note": "ENTRY: price pulls back to H4 bull OB top 4524 (OB: 4523.94-4492.52); M15 bar closes AT or ABOVE 4524 with bullish rejection wick \u22655pts from the low. Arm LIMIT BUY only when comp \u2265 +40 bullish reversal signal.\n\nCONTEXT: Replaces stale gold_sell_4658 (dist > 3\u00d7H4ATR). H4 bull OB at 4492-4524 is the structural support below current price 4531. comp=-50 mod-bear \u2014 current trend is bearish; this is a support watch zone only. OB bounce requires comp reversal to \u2265+40. 4h time-stop if entered.\n\nSL: 4492  TP: 4603  R:R target: 2.5\n\nadded 2026-04-29T14:19Z \u2014 replaces auto-removed gold_sell_4658 (dist=126.5pts > 3\u00d7H4ATR=111.2pts).",
+      "entry_criterion": "M15 retest of H4 bull OB top 4524 with bullish wick \u22655pts. Arm BUY LIMIT at comp \u2265 +40 bullish (trend reversal confirmation required).",
+      "regime_context": "H4 bull OB 4492-4524. comp=-50 mod-bear (bearish now). Support watch zone. 4h time-stop if entered.",
+      "sl": 4492.0,
+      "tp": 4603.0,
+      "rr_target": "2.5",
+      "current_price_ref": 4531.48,
+      "last_updated": "2026-04-29T14:19Z",
+      "alert_id": "gold_h4ob_buy_4524",
+      "active": true
+    },
+    {
+      "id": "audusd_liqsweep_71262_buy_watch",
+      "instrument": "AUDUSD",
+      "level": 0.71262,
+      "emit_on": "cross_down",
+      "cooldown_sec": 1800,
+      "direction": "buy",
+      "note": "ENTRY: price retests 0.71262 H1 down-sweep extreme; M15 bar closes AT or ABOVE 0.71262 with bullish rejection wick \u22653p from the low. Arm LIMIT BUY when |comp| \u2265 40 bullish (counter-trend fade \u2014 down-sweep created demand zone on snap-back).\n\nCONTEXT: H1 down-sweep 2026-04-29T14:00Z, wick=2.7p beyond 0.71262, close_inside=0.71319. comp=+23.5 none (need \u226540 to arm). FOMC T-3.6h caution. 4h time-stop if entered.\n\nSL: 0.7120  TP: 0.7160  R:R target: 2.0\n\nadded 2026-04-29T14:28Z \u2014 H1 liq_sweep created fresh demand zone below prior FVG level.",
+      "entry_criterion": "M15 retest of 0.71262 with bullish wick \u22653p. Arm BUY LIMIT at |comp| \u2265 40 bullish (counter-trend).",
+      "regime_context": "H1 down-sweep 14:00Z Apr29, wick=2.7p. comp=+23.5 none. FOMC caution. 4h time-stop.",
+      "sl": 0.712,
+      "tp": 0.716,
+      "rr_target": "2.0",
+      "current_price_ref": 0.71366,
+      "last_updated": "2026-04-29T14:28Z",
+      "alert_id": "audusd_liqsweep_71262_buy_watch",
+      "active": true
+    },
+    {
+      "id": "gbpusd_liqsweep_134736_buy_watch",
+      "instrument": "GBPUSD",
+      "level": 1.34736,
+      "emit_on": "cross_down",
+      "cooldown_sec": 1800,
+      "direction": "buy",
+      "note": "ENTRY: price retests 1.34736 H1 down-sweep extreme; M15 bar closes AT or ABOVE 1.34736 with bullish rejection wick \u22652p from the low. Arm LIMIT BUY when |comp| \u2265 40 bullish (counter-trend fade \u2014 down-sweep created demand zone).\n\nCONTEXT: H1 down-sweep 2026-04-29T14:00Z, wick=2.1p beyond 1.34736, close_inside=1.34873. comp=+14.5 none (need \u226540 to arm). FOMC caution T-3.6h. 4h time-stop if entered.\n\nSL: 1.3468  TP: 1.3510  R:R target: 3.3\n\nadded 2026-04-29T14:28Z \u2014 H1 liq_sweep demand zone; scalp GBPUSD=ACTIVE at higher TF bias.",
+      "entry_criterion": "M15 retest of 1.34736 with bullish wick \u22652p. Arm BUY LIMIT at |comp| \u2265 40 bullish (counter-trend).",
+      "regime_context": "H1 down-sweep 14:00Z Apr29, wick=2.1p. comp=+14.5 none. FOMC caution. 4h time-stop.",
+      "sl": 1.3468,
+      "tp": 1.351,
+      "rr_target": "3.3",
+      "current_price_ref": 1.34848,
+      "last_updated": "2026-04-29T14:28Z",
+      "alert_id": "gbpusd_liqsweep_134736_buy_watch",
       "active": true
     }
   ],
@@ -325,6 +360,6 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-29T10:35Z",
-  "last_updated": "2026-04-29T10:35Z"
+  "last_updated_utc": "2026-04-29T14:28Z",
+  "last_updated": "2026-04-29T14:28Z"
 }

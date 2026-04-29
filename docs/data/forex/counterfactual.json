@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T11:24:57.112229+00:00",
+  "generated_at": "2026-04-29T14:29:11.141164+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -421,7 +421,7 @@
       "alert_id": "audusd_m15fvg_buy_7143",
       "instrument": "AUDUSD",
       "direction": "buy",
-      "fires": 3,
+      "fires": 4,
       "by_horizon": {
         "1h": {
           "filled": 3,
@@ -904,9 +904,9 @@
           "hit_rate": 1.0
         },
         "24h": {
-          "filled": 1,
-          "favorable": 1,
-          "avg_pips": 15.5,
+          "filled": 2,
+          "favorable": 2,
+          "avg_pips": 14.7,
           "hit_rate": 1.0
         }
       }
@@ -980,6 +980,58 @@
           "favorable": 2,
           "avg_pips": 18.0,
           "hit_rate": 1.0
+        },
+        "24h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        }
+      }
+    },
+    {
+      "alert_id": "usdcad_sweep_136924_sell_watch",
+      "instrument": "USDCAD",
+      "direction": "sell",
+      "fires": 1,
+      "by_horizon": {
+        "1h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "4h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "24h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        }
+      }
+    },
+    {
+      "alert_id": "usdjpy_intervention_fade_160",
+      "instrument": "USDJPY",
+      "direction": "sell",
+      "fires": 1,
+      "by_horizon": {
+        "1h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "4h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
         },
         "24h": {
           "filled": 0,
