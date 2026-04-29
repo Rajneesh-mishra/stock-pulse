@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T00:16:02.436855Z",
+  "generated_at": "2026-04-29T00:31:29.305670Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -388,6 +388,55 @@
         "GOLD SELL@4603 in-position (age=8min, exit<=08:01Z, comp=-47.5 mod-bear intact)"
       ],
       "note": "Heartbeat tick. 1 event (level_cross on existing GOLD position). All 8 alerts KEEP. AUDUSD LIMIT GTC@0.7143 live. FOMC caution T-17h51m."
+    },
+    {
+      "tick_ts_utc": "2026-04-29T00:31Z",
+      "events_in": 1,
+      "events_consumed": [
+        "evt_1777422310319_level_cross"
+      ],
+      "decisions": {
+        "eurusd_level_cross_117159": "SKIP (comp=+12.5 < +40 CT threshold for counter-trend fade; SKIP #7; alert KEEP fires=6/4h=100%)"
+      },
+      "positions_opened": [],
+      "positions_closed": [],
+      "positions_modified": [],
+      "open_positions": [
+        {
+          "epic": "GOLD",
+          "dir": "SELL",
+          "entry": 4603.14,
+          "sl": 4625.0,
+          "tp": 4519.0,
+          "age_min": 30,
+          "thesis": "counter_trend_fade",
+          "time_exit": "08:01Z"
+        }
+      ],
+      "working_orders": [
+        {
+          "epic": "AUDUSD",
+          "dir": "BUY LIMIT",
+          "level": 0.7143,
+          "sl": 0.713,
+          "tp": 0.7187,
+          "gtc": true
+        }
+      ],
+      "daily_pnl_usd": -21.06,
+      "alerts_modified": [],
+      "attention_matrix": {
+        "EURUSD": "WATCH/OFF/none \u2014 level_cross SKIP comp=+12.5<+40 CT; FOMC T-17.5h",
+        "GBPUSD": "WATCH/ACTIVE/weak \u2014 upsweep@1.35203 AT level, comp=+29<+40",
+        "AUDUSD": "ARMED/OFF/strong \u2014 BUY LIMIT@0.7143 GTC; comp=+60 strong",
+        "USDJPY": "WATCH/OFF/moderate \u2014 CT fade@160 comp=+40.5 met, 41.9p away",
+        "USDCAD": "NONE/OFF/none \u2014 comp=-8.5",
+        "USDCHF": "WATCH/OFF/none \u2014 comp=+21.5, 22p from level",
+        "GOLD": "ARMED/N/A/moderate \u2014 SELL@4603.14 open, time_exit=08:01Z",
+        "OIL_CRUDE": "WATCH/N/A/moderate \u2014 comp=+47.5, 4.38pts from 93.23"
+      },
+      "binary_event": "FOMC Apr29 18:00Z T-17h30m caution",
+      "scalp_audit": "EURUSD=DISABLED(engine_desync_4L) GBPUSD=KEEP(no trades) AUDUSD=DISABLED(wr=11%/19t) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
     }
   ]
 }
