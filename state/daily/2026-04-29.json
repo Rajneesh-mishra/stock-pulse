@@ -484,5 +484,56 @@
     "scalp": "GBPUSD=ACTIVE EURUSD=OFF AUDUSD=OFF",
     "news": "Trump rejected Iran Hormuz proposal; Iran new offer via Pakistani mediators; gold bearish thesis confirmed",
     "note": "heartbeat; GOLD SELL HOLD age=3.5h/8h; AUDUSD LIMIT ARMED dist=20.7p; FOMC caution; all 10 alerts KEEP"
+  },
+  {
+    "tick_ts_utc": "2026-04-29T04:15Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "type": "level_cross",
+        "instrument": "GOLD",
+        "alert_id": "gold_h1fvg_sell_4603",
+        "action": "HOLD \u2014 bearish confirmation, price rejected 4603 resistance, back to 4598.91"
+      }
+    ],
+    "positions": {
+      "GOLD": {
+        "direction": "SELL",
+        "entry": 4603.14,
+        "sl": 4625.0,
+        "tp": 4519.0,
+        "bid": 4598.91,
+        "move_pts": 4.23,
+        "move_r": 0.19,
+        "age_h": 4.2,
+        "time_exit_utc": "2026-04-29T08:01Z",
+        "action": "HOLD"
+      },
+      "AUDUSD_LIMIT": {
+        "direction": "BUY_LIMIT",
+        "level": 0.7143,
+        "sl": 0.713,
+        "tp": 0.7187,
+        "bid": 0.71609,
+        "dist_p": 16.9,
+        "action": "KEEP GTC"
+      }
+    },
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "news": "Trump rejected Iran Hormuz deal CONFIRMED bearish gold; Iran new Pakistan mediator offer (nuclear deferred); FOMC 18:00Z T-13.7h; rates unchanged 99.5% probability",
+    "confluence": {
+      "EURUSD": -8.0,
+      "GBPUSD": 14.0,
+      "AUDUSD": 39.5,
+      "USDJPY": 43.0,
+      "USDCAD": -8.5,
+      "USDCHF": 16.0,
+      "GOLD": -47.5,
+      "OIL": 42.0
+    },
+    "alerts": "all 10 KEEP",
+    "scalp": "GBPUSD=ACTIVE EURUSD=OFF(desync) AUDUSD=OFF(wr11%)",
+    "daily_pnl_usd": -23.34
   }
 ]
