@@ -250,8 +250,8 @@
       "rr_target": "3.3",
       "current_price_ref": 1.352125,
       "last_updated": "2026-04-29T03:46Z",
-      "updated_utc": "2026-04-29T01:16Z",
-      "proximity": "GBPUSD@1.35224; 2.1p above level. comp=+29 weak (need \u2265+40 for counter-trend arm). Near level but comp not met. FOMC caution T-18.8h. WATCHLIST. 2026-04-28T23:10Z",
+      "updated_utc": "2026-04-29T01:39Z",
+      "proximity": "GBPUSD@1.35203 AT sweep level. comp=+26.5 weak (need \u2265+40 bullish ext for CT LIMIT arm). M15 closed AT 1.35203 \u2014 no bearish wick yet. Watchlist only until comp\u226540. FOMC caution T-16.4h. 2026-04-29T01:39Z",
       "alert_id": "gbpusd_upsweep_135203_sell_watch",
       "active": true
     }
@@ -317,6 +317,6 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-28T23:10Z",
-  "last_updated": "2026-04-28T23:10Z"
+  "last_updated_utc": "2026-04-29T01:39Z",
+  "last_updated": "2026-04-29T01:39Z"
 }

@@ -1,9 +1,9 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-29T01:16Z",
-  "state_ts_utc": "2026-04-29T01:16Z",
-  "regime_note": "2026-04-29T01:16Z forex auto \u2014 0 evt heartbeat; GOLD SELL@4603.14 HOLD (age=75min/8h, bid=4585.09 move=17.80pts=0.81R UPL=+$3.51, need bid\u22644581.28 for BE trail; time_exit=08:01Z T-6.8h, thesis intact comp=-50 all4TF bear); AUDUSD BUY LIMIT@0.7143 GTC KEEP (bid=0.71797, 46.7p away, comp=+52.5 mod bull); FOMC 18:00Z T-16.8h caution; USDJPY 159.629 (CT fade 160.0, comp=+43\u226540 met but dist=37.1p>30p prox \u2192 WATCH, T-7.1p from prox); GBPUSD 1.351615 (4.2p from sweep 1.352035, comp=+21.5 none \u2192 WATCH); OIL 98.573 (comp=+50 mod bull, level 93.23 5.34pts away WATCH); all 8 alerts KEEP. daily_pnl=-$20.59. attention_covered=9/9.",
-  "regime_note_prev": "2026-04-29T00:42Z forex auto \u2014 1 evt: GOLD level_cross@4603 SKIP (2nd re-fire, position open entry=4603.14 age=41min, consumed); FOMC 18:00Z T-17h18m caution; GOLD SELL@4603.14 HOLD (age=41min/8h, UPL=-$0.40, time_exit=08:01Z, no trail bid=4604.4 1.26pts vs SL=21.86pts); AUDUSD BUY LIMIT@0.7143 GTC KEEP (46p away, comp=+60 strong); OIL comp=+42.5 price=97.59 (4.36pts from 93.23, <3\u00d7H4ATR=5.69 KEEP); all 8 alerts KEEP. daily_pnl=-$21.06. attention_covered=9/9.",
+  "tick_ts_utc": "2026-04-29T01:39Z",
+  "state_ts_utc": "2026-04-29T01:39Z",
+  "regime_note": "2026-04-29T01:39Z forex auto \u2014 1 evt: GBPUSD level_cross@1.35203 SKIP (comp=+26.5 weak; CT sell needs comp\u226540 for LIMIT; 26.5\u226525 \u2192 watchlist only, arm on rejection wick); GOLD SELL@4603.14 HOLD (age=98min/8h, bid=4585.86, move=17.28pts=0.79R UPL=+$3.31, trail trigger bid\u22644581.28 not yet; time_exit=08:01Z T-6.4h, comp=-50 all4TF bear intact); AUDUSD BUY LIMIT@0.7143 GTC KEEP (bid=0.71731, dist=26.7p<30p prox, comp=+45 mod bull, auto-fills on touch); FOMC 18:00Z T-16.4h caution; GBPUSD 1.35203 AT sweep (comp=+26.5 weak, need \u226540 to arm SELL LIMIT); USDJPY@159.603 (CT fade 160.0, comp=+43\u226540 met but dist=39.7p>30p, pip-val blocks \u2192 WATCH); EURUSD@1.17128 (CT sell 1.17159 dist=3.1p, comp=+2.5 none \u2192 WATCH); all 11 alerts KEEP. daily_pnl=-$23.34. attention_covered=9/9.",
+  "regime_note_prev": "2026-04-29T01:16Z forex auto \u2014 0 evt heartbeat; GOLD SELL@4603.14 HOLD (age=75min/8h, bid=4585.09 move=17.80pts=0.81R UPL=+$3.51, need bid\u22644581.28 for BE trail; time_exit=08:01Z T-6.8h, thesis intact comp=-50 all4TF bear); AUDUSD BUY LIMIT@0.7143 GTC KEEP (bid=0.71797, 46.7p away, comp=+52.5 mod bull); FOMC 18:00Z T-16.8h caution; USDJPY 159.629 (CT fade 160.0, comp=+43\u226540 met but dist=37.1p>30p prox \u2192 WATCH, T-7.1p from prox); GBPUSD 1.351615 (4.2p from sweep 1.352035, comp=+21.5 none \u2192 WATCH); OIL 98.573 (comp=+50 mod bull, level 93.23 5.34pts away WATCH); all 8 alerts KEEP. daily_pnl=-$20.59. attention_covered=9/9.",
   "open_positions": [
     {
       "dealId": "00000000-4eaf-97cc-044a-beb40055311e",
@@ -721,7 +721,7 @@
     }
   ],
   "consecutive_losses": 0,
-  "daily_pnl": -21.06,
+  "daily_pnl": -23.34,
   "weekly_pnl": 0,
   "total_pnl": 2.04,
   "total_trades": 2,

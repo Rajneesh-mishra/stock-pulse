@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T01:17:50.329334+00:00",
+  "generated_at": "2026-04-29T01:40:25.444845+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -918,10 +918,10 @@
       "fires": 6,
       "by_horizon": {
         "1h": {
-          "filled": 5,
-          "favorable": 4,
-          "avg_pips": 1.3,
-          "hit_rate": 0.8
+          "filled": 6,
+          "favorable": 5,
+          "avg_pips": 2.0,
+          "hit_rate": 0.83
         },
         "4h": {
           "filled": 2,
@@ -948,6 +948,32 @@
           "favorable": 1,
           "avg_pips": 130.2,
           "hit_rate": 1.0
+        },
+        "4h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "24h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        }
+      }
+    },
+    {
+      "alert_id": "gbpusd_upsweep_135203_sell_watch",
+      "instrument": "GBPUSD",
+      "direction": "sell",
+      "fires": 1,
+      "by_horizon": {
+        "1h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
         },
         "4h": {
           "filled": 0,

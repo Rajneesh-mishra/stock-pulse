@@ -290,5 +290,29 @@
     "attention_covered": "9/9",
     "scalp_status": "GBPUSD=ACTIVE(no trades) EURUSD=OFF(desync) AUDUSD=OFF(wr=11pct)",
     "note": "0 evt heartbeat. GOLD move=17.8pts=0.81R, need 3.81pts more for BE trail. All 8 alerts KEEP. FOMC caution T-16.8h."
+  },
+  {
+    "tick_ts_utc": "2026-04-29T01:39Z",
+    "events_processed": 1,
+    "events_actioned": 0,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "trades_modified": 0,
+    "open_positions": 1,
+    "pending_orders": 1,
+    "daily_pnl": -23.34,
+    "balance": 973.32,
+    "upl": 3.34,
+    "event_detail": "GBPUSD level_cross@1.35203 SKIP (comp=+26.5 weak, CT needs \u226540)",
+    "gold_sell_age_min": 98,
+    "gold_sell_upl": 3.31,
+    "gold_sell_move_pts": 17.28,
+    "gold_sell_move_R": 0.79,
+    "gold_sell_time_exit_utc": "2026-04-29T08:01Z",
+    "audusd_limit_dist_pips": 26.7,
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "fomc_utc": "2026-04-29T18:00Z",
+    "attention_covered": "9/9",
+    "scalp_status": "GBPUSD=ACTIVE(neutral); EURUSD=OFF(engine_desync); AUDUSD=OFF(wr=11%); others=pip-conv/spread"
   }
 ]
