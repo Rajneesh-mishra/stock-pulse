@@ -682,5 +682,51 @@
       "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=moderate oil_sweep_9323 dist=4.84>>prox=0.96"
     },
     "note": "0 evt heartbeat; all 10 alerts KEEP; 2 validated promotions"
+  },
+  {
+    "tick_ts": "2026-04-29T06:47Z",
+    "events": 1,
+    "events_detail": [
+      "GBPUSD liquidity_sweep@1.34963 (down-sweep 1.3p) \u2014 WATCHLIST ADD, no entry (comp=+8.5 none)"
+    ],
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "positions_skipped": 1,
+    "skip_reasons": [
+      "GBPUSD sweep: comp=+8.5 none (<25 CT threshold); FOMC caution"
+    ],
+    "open_positions": [
+      {
+        "instrument": "GOLD",
+        "dir": "SELL",
+        "entry": 4603.14,
+        "bid": 4585.04,
+        "upl": 3.52,
+        "age_h": 6.75,
+        "time_exit": "08:01Z"
+      }
+    ],
+    "open_orders": [
+      {
+        "instrument": "AUDUSD",
+        "dir": "BUY_LIMIT",
+        "level": 0.7143,
+        "bid": 0.71598,
+        "dist_p": 16.8
+      }
+    ],
+    "alerts_added": [
+      "gbpusd_downsweep_134963_buy_watch"
+    ],
+    "alerts_modified": [
+      "gbpusd_sweep_135203_buy_watch"
+    ],
+    "alerts_removed": [],
+    "binary_event": "FOMC Apr29 18:00Z (T-11.2h, caution moderate+)",
+    "scalp": "GBPUSD=ACTIVE EURUSD=OFF AUDUSD=OFF",
+    "account_balance": 973.56,
+    "account_profit_loss": 3.58,
+    "news": "Iran-Hormuz blockade intact (Trump rejected ceasefire Apr28); FOMC hold 100% priced; GOLD bear thesis intact",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED"
   }
 ]

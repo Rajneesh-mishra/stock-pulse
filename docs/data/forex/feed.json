@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-29T05:48:00.600183Z",
+  "generated_at": "2026-04-29T06:51:29.089660Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T01:41:00Z",
-      "events_in": 0,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 0,
-      "summary": "01:41 forex auto \u2014 0 evt heartbeat. WEB SEARCH: shoot-to-kill confirmed 4 sources; IEA '13M bpd lost' OIL bid reinforced. USDJPY 159.79 +45 mod dist=21p ARMED (BOJ T-3d). GOLD 4695 -40 mod 26.68$ INSIDE 30$ ARMED (KEEP: -40 mod restored vs -37.5 weak 06:00 IST). OIL 96.92 +43 mod sweep_9323 dist=368p WATCH; retest_90 dist=662p dormant. BTC 78062 +52.5 mod (3/4 bull) day_fvg_buy dist=1102$ WATCH. EURUSD -32 weak others none. 6 alerts KEEP 9 SW KEEP. Scalp 3 FX ACTIVE halt={}. BOJ T-3d FOMC T-5d. 0 trades $1000/0pos. attention_covered=9/9."
-    },
     {
       "ts_utc": "2026-04-24T02:47:00Z",
       "events_in": 0,
@@ -876,6 +868,52 @@
         "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=moderate oil_sweep_9323 dist=4.84>>prox=0.96"
       },
       "note": "0 evt heartbeat; all 10 alerts KEEP; 2 validated promotions"
+    },
+    {
+      "tick_ts": "2026-04-29T06:47Z",
+      "events": 1,
+      "events_detail": [
+        "GBPUSD liquidity_sweep@1.34963 (down-sweep 1.3p) \u2014 WATCHLIST ADD, no entry (comp=+8.5 none)"
+      ],
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "positions_skipped": 1,
+      "skip_reasons": [
+        "GBPUSD sweep: comp=+8.5 none (<25 CT threshold); FOMC caution"
+      ],
+      "open_positions": [
+        {
+          "instrument": "GOLD",
+          "dir": "SELL",
+          "entry": 4603.14,
+          "bid": 4585.04,
+          "upl": 3.52,
+          "age_h": 6.75,
+          "time_exit": "08:01Z"
+        }
+      ],
+      "open_orders": [
+        {
+          "instrument": "AUDUSD",
+          "dir": "BUY_LIMIT",
+          "level": 0.7143,
+          "bid": 0.71598,
+          "dist_p": 16.8
+        }
+      ],
+      "alerts_added": [
+        "gbpusd_downsweep_134963_buy_watch"
+      ],
+      "alerts_modified": [
+        "gbpusd_sweep_135203_buy_watch"
+      ],
+      "alerts_removed": [],
+      "binary_event": "FOMC Apr29 18:00Z (T-11.2h, caution moderate+)",
+      "scalp": "GBPUSD=ACTIVE EURUSD=OFF AUDUSD=OFF",
+      "account_balance": 973.56,
+      "account_profit_loss": 3.58,
+      "news": "Iran-Hormuz blockade intact (Trump rejected ceasefire Apr28); FOMC hold 100% priced; GOLD bear thesis intact",
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED"
     }
   ]
 }

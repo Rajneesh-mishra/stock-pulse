@@ -1,8 +1,8 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-29T05:45Z",
-  "state_ts_utc": "2026-04-29T05:45Z",
-  "regime_note": "2026-04-29T05:45Z forex auto \u2014 0 evt heartbeat; GOLD SELL@4603.14 HOLD (age=5.75h/8h bid=4596.87 UPL=+$1.15 comp=-50 mod bear, all 4TF aligned, trail@bid\u22644581 not triggered, time_exit=08:01Z T-2.2h); AUDUSD BUY LIMIT@0.7143 GTC KEEP (dist=17.8p comp=39.5 borderline-below-mod, validated 3f/100%4h, thesis intact, FOMC T-12.2h caution); USDJPY comp=+43 mod bull approaching 160 CT fade MET threshold \u2014 WATCH (pip-val bug blocks entry); OIL comp=+44.5 mod bull, oil_sweep_9323 dist=4.84pts>>prox=0.96pts WATCH; news_search SKIP (daemon 0 events, regime stable, FOMC T-12.2h, budget conservation); FOMC 18:00Z T-12.2h caution (no new entries <moderate); alert audit: all 10 KEEP; eurusd_upsweep_117159 promoted VALIDATED (7f/100%4h); gbpusd_upsweep_135203 VALIDATED (2f/100%4h); scalp: GBPUSD=ACTIVE(neutral), EURUSD=OFF(desync), AUDUSD=OFF(wr11%); attention_covered=8/8.",
+  "tick_ts_utc": "2026-04-29T06:47Z",
+  "state_ts_utc": "2026-04-29T06:47Z",
+  "regime_note": "2026-04-29T06:47Z forex auto \u2014 1 evt: GBPUSD liquidity_sweep@1.34963 (down-sweep 1.3p, close 1.350115) \u2014 comp=+8.5 none, |comp|<25 CT threshold, NO ENTRY, ADD watchlist at 1.34963; FOMC 18:00Z T-11.2h caution; GOLD SELL@4603.14 HOLD (age=6.75h/8h bid=4585.04 UPL=+$3.52 0.83R no trail, time_exit=08:01Z T-1.25h, thesis intact Iran-Hormuz blockade persists Trump rejected ceasefire Apr28 comp=-50 mod bear); AUDUSD LIMIT@0.7143 GTC KEEP (dist=16.8p validated 3f/100%4h FOMC caution); USDJPY comp=+40 mod bull all4TF 160.0 CT-fade dist=31.1p>30p prox WATCH; OIL comp=+50 mod bull oil_sweep_9323 dist=5.81pts far WATCH; news: Iran-Hormuz intact, FOMC hold 100% priced Powell exit May15; scalp: GBPUSD=ACTIVE(neutral), EURUSD=OFF(desync), AUDUSD=OFF(wr11%); attention_covered=8/8.",
   "regime_note_prev": "2026-04-29T04:47Z forex auto \u2014 1 evt: GOLD level_cross@4603.67 gold_h1fvg_sell_4603 (cross_up retest of resistance zone 4603-4621; bid now 4602.86 below entry=4603.14 UPL\u2248+$0.06 thesis intact comp=-47.5 moderate bear); GOLD SELL@4603.14 HOLD (age=4.75h/8h time_exit=08:01Z T-3.1h SL=4625 TP=4519); AUDUSD BUY LIMIT@0.7143 GTC KEEP (dist=20.3p validated 3f/100%4h FOMC caution T-13.2h); news_search SKIP (<20min since last search, daemon covers surface); FOMC 18:00Z T-13.2h caution (no new entries <moderate); USDJPY comp=+43 moderate approaching 160 intervention \u2014 WATCH (dist~48p); OIL comp=+42 moderate oil_sweep_9323 dist=4.65p not armed; alert audit: all 10 KEEP; scalp: GBPUSD=ACTIVE(neutral), EURUSD=OFF(desync), AUDUSD=OFF(wr11%); attention_covered=8/8.",
   "open_positions": [
     {
@@ -20,8 +20,8 @@
       "confluence_at_entry": "-47.5 moderate bear (H4FVG resistance, all 4TF bear)",
       "time_exit_utc": "2026-04-29T08:01Z",
       "note": "H4FVG/H1FVG resistance 4600-4621. Exit before FOMC (08:01Z). FOMC T-12.5h caution.",
-      "upl": 1.154,
-      "bid_at_last_tick": 4596.87
+      "upl": 3.52,
+      "bid_at_last_tick": 4585.04
     }
   ],
   "watchlist": [
@@ -1378,12 +1378,12 @@
       "direction": "BUY",
       "level": 1.352035,
       "entry_criterion": "Retest of 1.35203 swept zone; M15 bullish rejection wick at level. Arm LIMIT when readiness >= moderate.",
-      "regime_context": "Fresh M15 down-sweep at 1.35203 (1.0p wick, closed back 1.35210). Prior position time-exited. GBPUSD comp=+25.5 weak-bull. FOMC caution@18:00Z Apr28.",
+      "regime_context": "Up-swept level 1.352035 (Apr28). Comp now +8.5 (readiness=none, was +25.5 weak). WATCHLIST \u2014 arm when readiness\u2265moderate (comp\u226540). FOMC 18:00Z caution.",
       "sl": 1.3505,
       "tp": 1.3575,
       "rr_target": 4.5,
-      "note": "ENTRY: BUY LIMIT at 1.35203 on pullback retest; M15 bullish rejection wick confirms. WATCHLIST ONLY \u2014 arm when readiness >= moderate (current: weak, comp=+25.5).\n\nCONTEXT: Fresh tape-created bounce point: M15 down-sweep 1.35203 at 05:45Z Apr28 (wick 1.0p, close inside 1.35210). Prior gbpusd_sweep_135255 position closed. Cross_down through 1.35255 confirmed structure weakness. Level at 1.35203 = tape fresh support. FOMC Apr28-29 elevates caution; half-size if armed during caution window.\n\nSL: 1.3505  TP: 1.3575  R:R target: 4.5\n\nadded 2026-04-28T06:00Z \u2014 new sweep event, replacing stale 1.35255 alert.",
-      "last_updated": "2026-04-28T06:00Z"
+      "note": "ENTRY: BUY LIMIT at 1.35203 on pullback retest; M15 bullish rejection wick confirms.\n\nCONTEXT: Up-swept level (Apr28). Tape bounce point at 1.352035. Arm when readiness\u2265moderate (comp\u226540, currently +8.5=none). FOMC 18:00Z caution.\n\nSL: 1.349635  TP: 1.355  R:R target: 2.1\n\nMODIFIED 2026-04-29T06:47Z \u2014 comp update +25.5\u2192+8.5 (none), still WATCHLIST.",
+      "last_updated": "2026-04-29T06:47Z"
     },
     {
       "alert_id": "eurusd_m15sweep_116871_buy_watch",
@@ -1437,6 +1437,19 @@
       "rr_target": 4.6,
       "last_updated": "2026-04-28T22:15Z",
       "note": "ENTRY: M15 rejection wick back below 4658 on retest of H1 BOS zone (4657-4660).\n\nCONTEXT: GOLD H1 bear BOS at 4657.85 (confirmed bearish structure). comp=-47.5 moderate bear. Replaces gold_sweep_4721_sell_retest (auto-removed: dist=124pts > 3\u00d7H4ATR=106pts). Active SELL LIMIT@4603 is the closer entry; this alert covers a bounce to H1 BOS zone.\n\nSL: 4675  TP: 4580  R:R target: 4.6\n\nAdded 2026-04-28T22:15Z: replaced 4721 zone (auto-stale) with H1 BOS 4658 nearer resistance."
+    },
+    {
+      "alert_id": "gbpusd_downsweep_134963_buy_watch",
+      "instrument": "GBPUSD",
+      "direction": "BUY",
+      "level": 1.34963,
+      "entry_criterion": "LIMIT BUY at 1.34963 on retest; M15 bullish rejection wick \u22652p from the swept low, close back above 1.34963.",
+      "regime_context": "Down-sweep of M15 1.34963 (1.3p wick, 06:30Z Apr29). Tape created fresh bounce point. Arm when |comp|\u226525 AGAINST BUY direction (bearish, comp\u2264-25). Current comp=+8.5 (none) \u2014 WATCHLIST ONLY. FOMC 18:00Z caution.",
+      "sl": 1.349205,
+      "tp": 1.352035,
+      "rr_target": 3.3,
+      "last_updated": "2026-04-29T06:47Z",
+      "note": "ENTRY: LIMIT BUY at 1.34963 on retest; M15 bullish rejection wick \u22652p, close back above swept low.\n\nCONTEXT: Down-sweep of M15 1.34963 (1.3p wick, close 1.350115, 2026-04-29T06:30Z). Fresh tape bounce point. Arm when comp \u2264 -25 (bearish extension confirms fade). Current comp=+8.5 none \u2014 WATCHLIST. FOMC 18:00Z caution (half-size only).\n\nSL: 1.349205  TP: 1.352035  R:R target: 3.3\n\nADDED 2026-04-29T06:47Z from liquidity_sweep evt \u2014 mandatory per Step 4e."
     }
   ],
   "structure_watch": [
