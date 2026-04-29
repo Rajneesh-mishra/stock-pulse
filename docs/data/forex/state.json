@@ -1,29 +1,10 @@
 {
   "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-29T07:31Z",
-  "state_ts_utc": "2026-04-29T07:31Z",
-  "regime_note": "2026-04-29T07:31Z forex auto \u2014 1 evt: OIL_CRUDE liquidity_sweep@99.243 up-wick 8.4p 07:25Z close 99.146 \u2192 CT fade SELL LIMIT@99.31 SL=99.40 TP=98.59 R:R=8:1 comp=+55 mod-bull extension FOMC half-size; GOLD SELL@4603.14 SL\u2192BE 1.29R bid=4574.98 time_exit=08:01Z T-30min comp=-50 mod-bear Iran-Hormuz intact; AUDUSD LIMIT@0.7143 GTC KEEP (dist=20.2p validated 3f/100%4h); USDJPY comp=+37.5 weak (<40 CT threshold) WATCH 160.0 dist=35p; EURUSD eurusd_upsweep_117159 validated SELL@1.17159 dist=11p readiness=none WATCH; news_scan: SKIP (no daemon news_flash, budget conservation); scalp: GBPUSD=ACTIVE(neutral), EURUSD=OFF(desync), AUDUSD=OFF(wr11%); attention_covered=8/8.",
-  "regime_note_prev": "2026-04-29T04:47Z forex auto \u2014 1 evt: GOLD level_cross@4603.67 gold_h1fvg_sell_4603 (cross_up retest of resistance zone 4603-4621; bid now 4602.86 below entry=4603.14 UPL\u2248+$0.06 thesis intact comp=-47.5 moderate bear); GOLD SELL@4603.14 HOLD (age=4.75h/8h time_exit=08:01Z T-3.1h SL=4625 TP=4519); AUDUSD BUY LIMIT@0.7143 GTC KEEP (dist=20.3p validated 3f/100%4h FOMC caution T-13.2h); news_search SKIP (<20min since last search, daemon covers surface); FOMC 18:00Z T-13.2h caution (no new entries <moderate); USDJPY comp=+43 moderate approaching 160 intervention \u2014 WATCH (dist~48p); OIL comp=+42 moderate oil_sweep_9323 dist=4.65p not armed; alert audit: all 10 KEEP; scalp: GBPUSD=ACTIVE(neutral), EURUSD=OFF(desync), AUDUSD=OFF(wr11%); attention_covered=8/8.",
-  "open_positions": [
-    {
-      "dealId": "00000000-4eaf-97cc-044a-beb40055311e",
-      "instrument": "GOLD",
-      "epic": "GOLD",
-      "direction": "SELL",
-      "size": 0.2,
-      "entry": 4603.14,
-      "sl": 4603.14,
-      "tp": 4519.0,
-      "opened_at": "2026-04-29T00:01:07Z",
-      "thesis_type": "counter_trend_fade",
-      "alert_id": "gold_h1fvg_sell_4603",
-      "confluence_at_entry": "-47.5 moderate bear (H4FVG resistance, all 4TF bear)",
-      "time_exit_utc": "2026-04-29T08:01Z",
-      "note": "H4FVG/H1FVG resistance 4600-4621. SL trailed to breakeven @1.29R. time_exit=08:01Z. FOMC T-10.3h caution.",
-      "upl": 5.63,
-      "bid_at_last_tick": 4574.98
-    }
-  ],
+  "tick_ts_utc": "2026-04-29T07:53Z",
+  "state_ts_utc": "2026-04-29T07:53Z",
+  "regime_note": "2026-04-29T07:53Z forex auto \u2014 0 evt heartbeat; GOLD SELL@4603.14 CLOSED time_exit +$6.62 (+1.52R) age=7h52min (8h cap counter_trend_fade bid=4571.01); AUDUSD GTC LIMIT@0.7143 KEEP (dist=20p, comp=+28.5 weak, FOMC T-10h); oil_sweep_9323 REMOVED (dist=6.75>3xH4ATR=6.0); ADD oil_fvg_9691_buy (today low=96.912, comp=+55 mod bull, WATCH); eurusd_upsweep_117159 near (0.91p below) comp=-5.5 none NOT armed; usdjpy comp=+40 CT-fade met but pip-val bug blocks WATCH; FOMC 18:00Z T-10.1h caution; news_scan SKIP (0 positions, regime stable); scalp: GBPUSD=ACTIVE(neutral); attention_covered=8/8.",
+  "regime_note_prev": "2026-04-29T07:31Z forex auto \u2014 1 evt: OIL_CRUDE liquidity_sweep@99.243 up-wick 8.4p 07:25Z close 99.146 \u2192 CT fade SELL LIMIT@99.31 SL=99.40 TP=98.59 R:R=8:1 comp=+55 mod-bull extension FOMC half-size; GOLD SELL@4603.14 SL\u2192BE 1.29R bid=4574.98 time_exit=08:01Z T-30min comp=-50 mod-bear Iran-Hormuz intact; AUDUSD LIMIT@0.7143 GTC KEEP (dist=20.2p validated 3f/100%4h); USDJPY comp=+37.5 weak (<40 CT threshold) WATCH 160.0 dist=35p; EURUSD eurusd_upsweep_117159 validated SELL@1.17159 dist=11p readiness=none WATCH; news_scan: SKIP (no daemon news_flash, budget conservation); scalp: GBPUSD=ACTIVE(neutral), EURUSD=OFF(desync), AUDUSD=OFF(wr11%); attention_covered=8/8.",
+  "open_positions": [],
   "watchlist": [
     {
       "instrument": "AUDUSD",
@@ -720,6 +701,23 @@
       "thesis_type": "scalp_entry",
       "alert_id": "eurusd_scalp_ema_pullback",
       "result": "loss"
+    },
+    {
+      "deal_id": "00000000-4eaf-97cc-044a-beb40055311e",
+      "instrument": "GOLD",
+      "direction": "SELL",
+      "entry": 4603.14,
+      "exit": 4571.01,
+      "size": 0.2,
+      "pnl": 6.62,
+      "reason": "time_exit_8h",
+      "opened_at": "2026-04-29T00:01:07Z",
+      "closed_at": "2026-04-29T07:53Z",
+      "hold_hours": 7.87,
+      "thesis_type": "counter_trend_fade",
+      "alert_id": "gold_h1fvg_sell_4603",
+      "result": "profit",
+      "r_multiple": 1.52
     }
   ],
   "consecutive_losses": 0,
@@ -1326,7 +1324,7 @@
       "Fed schedule",
       "prior ticks"
     ],
-    "caution": "moderate+ only, half-size until resolved; T-10.5h"
+    "caution": "moderate+ only, half-size until resolved; T-10.1h"
   },
   "balance": 970.61,
   "level_alerts": [

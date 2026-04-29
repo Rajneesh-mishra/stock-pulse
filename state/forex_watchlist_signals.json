@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-29T05:45Z",
+  "last_updated_by_claude": "2026-04-29T07:53Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -33,40 +33,16 @@
       "sl": 0.713,
       "tp": 0.7187,
       "rr_target": "2.4",
-      "current_price_ref": 0.71696,
+      "current_price_ref": 0.71639,
       "price_ref": {
         "ts": "2026-04-27T14:18Z",
         "price": null
       },
       "last_updated": "2026-04-28T15:30Z",
       "updated_utc": "2026-04-29T03:30Z",
-      "proximity": "AUDUSD@0.71637 bid; dist=20.7p ARMED (<30p prox). GTC LIMIT BUY@0.7143 active in broker. comp=+39.5 (just below +40 mod, validated 3f/100%4h). FOMC caution T-14.5h. 2026-04-29T03:30Z",
+      "proximity": "AUDUSD@0.71639 bid; dist=20p. GTC LIMIT BUY@0.7143 active in broker. comp=+28.5 weak (below +40 mod). FOMC caution T-10h. WATCH (limit in broker, comp weak). 2026-04-29T07:53Z",
       "validated": true,
       "alert_id": "audusd_fvg_buy_7143",
-      "active": true
-    },
-    {
-      "id": "oil_sweep_9323_buy_retest",
-      "instrument": "OIL_CRUDE",
-      "level": 93.23,
-      "emit_on": "cross_down",
-      "cooldown_sec": 1800,
-      "direction": "buy",
-      "note": "ENTRY: price pulls back to 93.23 swept extreme; M15 bar closes AT or ABOVE 93.23 with bullish rejection wick \u22652 pts from the low. VALIDATED \u2014 naked LIMIT at moderate+ readiness (6 fires, 100% 4h hit rate). Cancel LIMIT if price closes below SL 92.50.\n\nCONTEXT: WTI liquidity sweep low at 93.23 (prior sweep level). Oil in bullish trend (comp=+29.5 weak, DXY weak, Hormuz supply-risk premium). 6 fires, 100% 4h hit rate \u2192 validated per Rule 3. Apply 4h hard time-stop on entered trade.\n\nSL: 92.50  TP: 95.50  R:R target: 3.1\n\nadded back 2026-04-26T06:00Z \u2014 validated alert (6f/100%4h) absent from watchlist; dist=$0.97 within H1ATR=$1.29, re-activated.",
-      "entry_criterion": "M15 bar closes at or above 93.23 with bullish rejection wick \u22652 pts from the low. VALIDATED \u2014 naked LIMIT at moderate+ readiness.",
-      "regime_context": "WTI swept low at 93.23. Oil bullish: comp=+29.5 weak, Hormuz supply-risk premium, DXY weak. 6 fires, 100%4h \u2192 Rule 3 validated. 4h time-stop on entered trade.",
-      "sl": 92.5,
-      "tp": 95.5,
-      "rr_target": "3.1",
-      "current_price_ref": 98.475,
-      "price_ref": {
-        "ts": "2026-04-27T14:18Z",
-        "price": null
-      },
-      "last_updated": "2026-04-26T06:00:00Z",
-      "updated_utc": "2026-04-29T03:30Z",
-      "proximity": "OIL@97.77; 4.54pts ABOVE 93.23. comp=+37 weak. dist=4.54<3\u00d7H4ATR=5.82 KEEP. dist>prox threshold \u2192 WATCH. Trump rejected Iran Hormuz deal; oil elevated. 2026-04-29T03:30Z",
-      "alert_id": "oil_sweep_9323_buy_retest",
       "active": true
     },
     {
@@ -82,10 +58,10 @@
       "sl": 1.1675,
       "tp": 1.1727,
       "rr_target": "2.2",
-      "current_price_ref": 1.16957,
+      "current_price_ref": 1.17068,
       "last_updated": "2026-04-28T16:32Z",
       "updated_utc": "2026-04-29T03:30Z",
-      "proximity": "EURUSD@1.17094; 22.3p ABOVE 1.16871. comp=-2.5 none (need \u2264-40 bearish ext to arm). WATCH. FOMC caution. 2026-04-29T03:30Z",
+      "proximity": "EURUSD@1.17068; 19.7p ABOVE 1.16871. comp=-5.5 none (need \u2264-40). WATCH. 2026-04-29T07:53Z",
       "alert_id": "eurusd_m15sweep_116871_buy_watch",
       "active": true,
       "validated": true
@@ -103,10 +79,10 @@
       "sl": 1.3625,
       "tp": 1.36967,
       "rr_target": "10.2",
-      "current_price_ref": 1.36705,
+      "current_price_ref": 1.36781,
       "last_updated": "2026-04-28T07:30Z",
       "updated_utc": "2026-04-29T03:30Z",
-      "proximity": "USDCAD@1.3687; 55.7p ABOVE 1.36313. comp=-8.5 none (need \u2264-40). WATCH. 2026-04-29T01:16Z",
+      "proximity": "USDCAD@1.36781; 46.8p ABOVE 1.36313. comp=-11 none. WATCH. 2026-04-29T07:53Z",
       "alert_id": "usdcad_m15sweep_136313_buy_watch",
       "active": true
     },
@@ -123,10 +99,10 @@
       "sl": 0.7855,
       "tp": 0.792,
       "rr_target": "3.7",
-      "current_price_ref": 0.79048,
+      "current_price_ref": 0.78896,
       "last_updated": "2026-04-28T14:07Z",
       "updated_utc": "2026-04-29T03:30Z",
-      "proximity": "USDCHF@0.78961; 27.2p ABOVE H4FVG bottom 0.78689. comp=+24 none (need \u2265+40). Within 30p prox but comp not met \u2192 WATCH. 2026-04-29T01:16Z",
+      "proximity": "USDCHF@0.78896; 20.7p ABOVE H4FVG bottom 0.78689. comp=+19 none (need \u2265+40). WATCH. 2026-04-29T07:53Z",
       "alert_id": "usdchf_h1fvg_buy_78750",
       "active": true
     },
@@ -143,10 +119,10 @@
       "sl": 160.5,
       "tp": 158.5,
       "rr_target": "3.0",
-      "current_price_ref": 159.581,
+      "current_price_ref": 159.661,
       "last_updated": "2026-04-28T08:52Z",
       "updated_utc": "2026-04-29T03:30Z",
-      "proximity": "USDJPY@159.606; 39.4p BELOW 160.0. comp=+43 mod bull \u2014 CT fade threshold MET (\u2265+40); dist=39.4p borderline prox (est prox\u224850p). pip-val bug blocks risk_guard entry \u2192 WATCH. FOMC caution T-14.5h. 2026-04-29T03:30Z",
+      "proximity": "USDJPY@159.661 bid; 33.9p BELOW 160.0. comp=+40 mod bull \u2014 CT fade threshold MET. dist=33.9p borderline prox (est prox\u224830p). pip-val bug blocks risk_guard entry \u2192 WATCH. FOMC caution T-10h. 2026-04-29T07:53Z",
       "alert_id": "usdjpy_intervention_fade_160",
       "active": true
     },
@@ -163,10 +139,10 @@
       "sl": 4625.0,
       "tp": 4520.0,
       "rr_target": "3.8",
-      "current_price_ref": 4572.79,
+      "current_price_ref": 4571.01,
       "last_updated": "2026-04-28T23:10Z",
       "updated_utc": "2026-04-29T03:30Z",
-      "proximity": "GOLD SELL@4603.14 OPEN (position live, bid=4599.17, UPL=+$0.69, age=3.5h/8h). trail@bid\u22644581.28. time_exit=08:01Z. news: Trump rejected Iran Hormuz deal \u2014 bearish gold CONFIRMED. 2026-04-29T03:30Z",
+      "proximity": "GOLD position CLOSED at market 07:52Z (time exit). Alert retained as re-entry zone at 4603. GOLD bid=4571.01; dist=32pts (borderline outside 30p prox). comp=-50 mod bear. WATCH for re-test. 2026-04-29T07:53Z",
       "alert_id": "gold_h1fvg_sell_4603",
       "active": true
     },
@@ -183,10 +159,10 @@
       "sl": 1.17189,
       "tp": 1.17028,
       "rr_target": "4.4",
-      "current_price_ref": 1.17142,
+      "current_price_ref": 1.17068,
       "last_updated": "2026-04-29T05:45Z",
       "updated_utc": "2026-04-29T03:30Z",
-      "proximity": "EURUSD@1.17094 bid; 6.5p BELOW 1.17159. comp=-2.5 none (need \u2265+40 CT arm). Price pulled back from sweep level. WATCH. FOMC caution T-14.5h. 2026-04-29T03:30Z",
+      "proximity": "EURUSD@1.17068 bid; 0.91p BELOW 1.17159 sweep level \u2014 VERY CLOSE. comp=-5.5 none (need \u2265+40 CT arm). Not armed; comp wrong direction. WATCH. FOMC caution T-10h. 2026-04-29T07:53Z",
       "alert_id": "eurusd_upsweep_117159_sell_watch",
       "active": true,
       "validated": true
@@ -204,10 +180,10 @@
       "sl": 4675.0,
       "tp": 4519.0,
       "rr_target": "8.2",
-      "current_price_ref": 4596.48,
+      "current_price_ref": 4571.01,
       "last_updated": "2026-04-29T03:46Z",
       "updated_utc": "2026-04-29T03:30Z",
-      "proximity": "GOLD@4599.17 bid; 58.8pts BELOW 4658. comp=-47.5 mod bear. Trend-aligned sell at H1 BOS zone. WATCH (dist>>prox). 2026-04-29T03:30Z",
+      "proximity": "GOLD@4571.01 bid; 87pts BELOW 4658. comp=-50 mod bear. WATCH (dist>>prox). 2026-04-29T07:53Z",
       "alert_id": "gold_sell_4658_h1bos_retest",
       "active": true
     },
@@ -224,13 +200,32 @@
       "sl": 1.3528,
       "tp": 1.3495,
       "rr_target": "3.3",
-      "current_price_ref": 1.352125,
+      "current_price_ref": 1.35046,
       "last_updated": "2026-04-29T05:45Z",
       "updated_utc": "2026-04-29T03:30Z",
-      "proximity": "GBPUSD@1.35151 bid; 5.2p BELOW 1.35203 sweep level. comp=+19 none (need \u2265+40 CT arm). Price pulled back from level. WATCH. 2026-04-29T03:30Z",
+      "proximity": "GBPUSD@1.35046 bid; 15.7p BELOW 1.35203 sweep level. comp=+8.5 none (need \u2265+40 CT arm). WATCH. 2026-04-29T07:53Z",
       "alert_id": "gbpusd_upsweep_135203_sell_watch",
       "active": true,
       "validated": true
+    },
+    {
+      "id": "oil_fvg_9691_buy",
+      "instrument": "OIL_CRUDE",
+      "level": 96.91,
+      "emit_on": "cross_down",
+      "cooldown_sec": 1800,
+      "direction": "buy",
+      "note": "ENTRY: price pulls back to 96.91 FVG zone (today's intraday low); M15 bar closes AT or ABOVE 96.91 with bullish rejection wick \u22651pt from the low. Arm LIMIT BUY when comp \u2265 +40 bullish (moderate+).\n\nCONTEXT: Fresh FVG at 96.912 (today's intraday low 2026-04-29). OIL comp=+55 moderate bull. OIL rallied +3.07pts from this level today. FOMC caution T-10h. 4h time-stop if entered.\n\nSL: 96.45  TP: 99.31  R:R target: 6.0\n\nadded 2026-04-29T07:53Z \u2014 fresh intraday FVG from today's 96.912 low; OIL comp=+55 mod bull.",
+      "entry_criterion": "M15 retest of 96.91 FVG with bullish rejection wick \u22651pt. Arm LIMIT BUY at comp \u2265 +40 bullish (moderate+).",
+      "regime_context": "Today's OIL intraday low 96.912 (2026-04-29). comp=+55 moderate bull. OIL bounced +3pts from level. FOMC caution. 4h time-stop.",
+      "sl": 96.45,
+      "tp": 99.31,
+      "rr_target": "6.0",
+      "current_price_ref": 99.982,
+      "last_updated": "2026-04-29T07:53Z",
+      "proximity": "OIL@99.982; 3.07pts ABOVE 96.91. comp=+55 mod bull. Within 3xH4ATR. WATCH until price retraces to level. 2026-04-29T07:53Z",
+      "alert_id": "oil_fvg_9691_buy",
+      "active": true
     }
   ],
   "structure_watch": [
@@ -294,6 +289,6 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-29T05:45Z",
-  "last_updated": "2026-04-29T05:45Z"
+  "last_updated_utc": "2026-04-29T07:53Z",
+  "last_updated": "2026-04-29T07:53Z"
 }

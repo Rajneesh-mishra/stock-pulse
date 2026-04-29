@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-29T07:34:15.186883Z",
+  "generated_at": "2026-04-29T07:57:12.925093Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T03:47:00Z",
-      "events_in": 13,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 13,
-      "summary": "03:47 forex auto \u2014 13 evt: 6 liq_sweep ALL NOT-ACTIONABLE (wick 0.26-0.61\u00d7ATR; readiness<moderate or OPPOSES sweep dir: AUDUSD 0.28\u00d7, USDJPY 0.26\u00d7, USDCAD 0.51\u00d7, EURUSD 0.61\u00d7readiness=weak-opposes-buy, GBPUSD 0.47\u00d7readiness=none, USDCHF 0.43\u00d7) + 7 bar_close routine. USDJPY 159.815 +45 mod 4/4 bull dist=18.5p INSIDE 30p swing=ARMED (BOJ T-3d). GOLD 4677.01 -40 mod 3/4 bear sweep_4721 dist=44.67$ OUTSIDE 30$ swing=WATCH (dropping); safehaven_4775 dist=97.99$ WATCH far. OIL 95.963 +40.5 mod sweep_9323 dist=273p WATCH; retest_90 dist=566p dormant. BTC 77673 day_fvg_buy: FVG zone (76937-76984) TAGGED (day low=76959.55), bounced +714$ to 77673; no daemon event (alert likely added post-low); zone respected, await next touch. dist=714$ INSIDE prox(985.7$) but price above zone. EURUSD -32 weak GBPUSD none AUDUSD none USDCAD none USDCHF none swing=NONE. 6 alerts KEEP proximity-refreshed. 9 SW KEEP. Scalp 3 FX ACTIVE halt={}. BOJ T-3d FOMC T-5d. web_search skipped (0pos+regime stable 4h+). attention_covered=9/9."
-    },
     {
       "ts_utc": "2026-04-24T05:25:00Z",
       "events_in": 12,
@@ -948,6 +940,27 @@
         "OIL_CRUDE": "swing=ARMED  scalp=N/A    readiness=moderate comp=+55 SELL LIMIT@99.31 CT-fade"
       },
       "scalp_audit": "EURUSD=OFF(desync) GBPUSD=ACTIVE(wr-pending, neutral) AUDUSD=OFF(wr11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
+    },
+    {
+      "tick_ts_utc": "2026-04-29T07:53Z",
+      "events_processed": 0,
+      "events_type": "heartbeat",
+      "positions_opened": 0,
+      "positions_closed": 1,
+      "closed_detail": "GOLD SELL@4603.14 time_exit +$6.62 +1.52R (8h counter_trend_fade cap)",
+      "positions_skipped": 0,
+      "orders_active": [
+        "AUDUSD GTC LIMIT BUY@0.7143"
+      ],
+      "watchlist_changes": [
+        "REMOVE oil_sweep_9323 (stale >3xATR)",
+        "ADD oil_fvg_9691_buy (today low 96.912)"
+      ],
+      "account_balance": 971.85,
+      "daily_pnl_note": "GOLD +$6.62 realized",
+      "fomc_caution": "FOMC 18:00Z T-10.1h",
+      "attention": "8/8 covered",
+      "scalp_status": "GBPUSD=ACTIVE EURUSD=OFF(desync) AUDUSD=OFF(wr11%)"
     }
   ]
 }

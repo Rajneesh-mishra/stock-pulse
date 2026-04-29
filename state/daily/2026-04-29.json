@@ -770,5 +770,26 @@
       "OIL_CRUDE": "swing=ARMED  scalp=N/A    readiness=moderate comp=+55 SELL LIMIT@99.31 CT-fade"
     },
     "scalp_audit": "EURUSD=OFF(desync) GBPUSD=ACTIVE(wr-pending, neutral) AUDUSD=OFF(wr11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
+  },
+  {
+    "tick_ts_utc": "2026-04-29T07:53Z",
+    "events_processed": 0,
+    "events_type": "heartbeat",
+    "positions_opened": 0,
+    "positions_closed": 1,
+    "closed_detail": "GOLD SELL@4603.14 time_exit +$6.62 +1.52R (8h counter_trend_fade cap)",
+    "positions_skipped": 0,
+    "orders_active": [
+      "AUDUSD GTC LIMIT BUY@0.7143"
+    ],
+    "watchlist_changes": [
+      "REMOVE oil_sweep_9323 (stale >3xATR)",
+      "ADD oil_fvg_9691_buy (today low 96.912)"
+    ],
+    "account_balance": 971.85,
+    "daily_pnl_note": "GOLD +$6.62 realized",
+    "fomc_caution": "FOMC 18:00Z T-10.1h",
+    "attention": "8/8 covered",
+    "scalp_status": "GBPUSD=ACTIVE EURUSD=OFF(desync) AUDUSD=OFF(wr11%)"
   }
 ]
