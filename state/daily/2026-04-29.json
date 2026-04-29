@@ -394,5 +394,61 @@
       "USDCHF": "+6 none",
       "OIL_CRUDE": "+47.5 mod bull"
     }
+  },
+  {
+    "tick_ts_utc": "2026-04-29T02:27Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "event_id": "evt_1777429627494_level_cross",
+        "type": "level_cross",
+        "instrument": "GBPUSD",
+        "alert_id": "gbpusd_upsweep_135203_sell_watch",
+        "decision": "SKIP",
+        "reason": "CT fade comp=+29 < 40 threshold; KEEP alert, re-arm when comp\u226540"
+      }
+    ],
+    "positions_open": [
+      {
+        "dealId": "00000000-4eaf-97cc-044a-beb40055311e",
+        "instrument": "GOLD",
+        "direction": "SELL",
+        "entry": 4603.14,
+        "bid": 4600.39,
+        "upl_usd": 0.45,
+        "age_h": 2.4,
+        "max_hold_h": 8,
+        "time_exit_utc": "2026-04-29T08:01Z",
+        "sl": 4625.0,
+        "tp": 4519.0,
+        "action": "HOLD"
+      }
+    ],
+    "orders_pending": [
+      {
+        "dealId": "00000000-4e79-44c4-044a-beb40055311e",
+        "instrument": "AUDUSD",
+        "direction": "BUY",
+        "size": 3500,
+        "limit": 0.7143,
+        "bid": 0.71715,
+        "dist_p": 28.5,
+        "status": "ARMED",
+        "action": "KEEP"
+      }
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "daily_pnl_usd": -20.59,
+    "account_balance": 970.35,
+    "alert_changes": {
+      "kept": 10,
+      "removed": 0,
+      "added": 0
+    },
+    "binary_event": "FOMC Apr29 18:00Z T-15.5h caution",
+    "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+    "attention_covered": "9/9",
+    "scalp_audit": "EURUSD=OFF(desync) GBPUSD=ACTIVE AUDUSD=OFF(wr11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
   }
 ]

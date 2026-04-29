@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-28T23:10Z",
+  "last_updated_by_claude": "2026-04-29T02:27Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -39,8 +39,8 @@
         "price": null
       },
       "last_updated": "2026-04-28T15:30Z",
-      "updated_utc": "2026-04-29T01:16Z",
-      "proximity": "AUDUSD@0.71797; 46.7p ABOVE 0.7143. comp=+52.5 mod bull. GTC LIMIT BUY@0.7143 pre-committed in broker. dist=46.7p>30p prox \u2192 WATCH (limit auto-fills on retest). FOMC caution. 2026-04-29T01:16Z",
+      "updated_utc": "2026-04-29T02:27Z",
+      "proximity": "AUDUSD@0.71715 bid; dist=28.5p ARMED (<30p prox). GTC LIMIT BUY@0.7143 active in broker. comp=+52.5 mod bull. FOMC caution T-15.5h. 2026-04-29T02:27Z",
       "validated": true,
       "alert_id": "audusd_fvg_buy_7143",
       "active": true
@@ -165,8 +165,8 @@
       "rr_target": "3.8",
       "current_price_ref": 4572.79,
       "last_updated": "2026-04-28T23:10Z",
-      "updated_utc": "2026-04-29T01:16Z",
-      "proximity": "GOLD SELL@4603.14 OPEN (position live, bid=4585.09, move=17.8pts=0.81R, UPL=+$3.51). time_exit=08:01Z. Alert consumed by open position. 2026-04-29T01:16Z",
+      "updated_utc": "2026-04-29T02:27Z",
+      "proximity": "GOLD SELL@4603.14 OPEN (position live, bid=4600.39, UPL=+$0.45, age=2.4h/8h). trail@bid\u22644581. time_exit=08:01Z. 2026-04-29T02:27Z",
       "alert_id": "gold_h1fvg_sell_4603",
       "active": true
     },
@@ -185,8 +185,8 @@
       "rr_target": "4.4",
       "current_price_ref": 1.17142,
       "last_updated": "2026-04-29T03:46Z",
-      "updated_utc": "2026-04-29T01:16Z",
-      "proximity": "EURUSD@1.170985; 6.0p BELOW 1.17159. comp=-2.5 none (need \u2265+40 bullish ext for CT arm). AT level zone \u2192 WATCH until comp threshold met. FOMC caution T-16.8h. 2026-04-29T01:16Z",
+      "updated_utc": "2026-04-29T02:27Z",
+      "proximity": "EURUSD@~1.171 comp=+2.5 none (need \u2265+40 CT arm). AT/near 1.17159 level. FOMC caution T-15.5h. 2026-04-29T02:27Z",
       "alert_id": "eurusd_upsweep_117159_sell_watch",
       "active": true
     },
@@ -225,8 +225,8 @@
       "rr_target": "3.3",
       "current_price_ref": 1.352125,
       "last_updated": "2026-04-29T03:46Z",
-      "updated_utc": "2026-04-29T01:39Z",
-      "proximity": "GBPUSD@1.35203 AT sweep level. comp=+26.5 weak (need \u2265+40 bullish ext for CT LIMIT arm). M15 closed AT 1.35203 \u2014 no bearish wick yet. Watchlist only until comp\u226540. FOMC caution T-16.4h. 2026-04-29T01:39Z",
+      "updated_utc": "2026-04-29T02:27Z",
+      "proximity": "GBPUSD@1.35203 AT sweep level. comp=+29 weak (need \u2265+40 CT arm). level_cross fired 2026-04-29T02:27Z \u2014 SKIP (comp below threshold). 3rd+ fire at level. FOMC caution T-15.5h. 2026-04-29T02:27Z",
       "alert_id": "gbpusd_upsweep_135203_sell_watch",
       "active": true
     }
@@ -292,6 +292,6 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-29T01:39Z",
-  "last_updated": "2026-04-29T01:39Z"
+  "last_updated_utc": "2026-04-29T02:27Z",
+  "last_updated": "2026-04-29T02:27Z"
 }
