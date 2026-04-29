@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-29T14:29:52.951615Z",
+  "generated_at": "2026-04-29T14:50:27.200705Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T10:20:00Z",
-      "events_in": 1,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 1,
-      "note": "10:20 forex auto \u2014 1 evt (CNBC news_flash 'Iran War, U.S. Court tariff ruling delays India trade deal' 09:59 GMT Apr 24 FRESH; query=us_tariff matched 'delay'; US court ruling mildly USD-neg; Iran War reinforces escalation; no alert_audit triggered; no trade changes). USDJPY 159.759 +43.0 mod dist=24.1p INSIDE 30p \u2192 ARMED BOJ T-3d. GOLD 4682.59 -36.0 weak sweep_4695 dist=12.8$ prox WATCH; sweep_4721 dist=39.1$ WATCH. OIL 96.984 +43.0 mod sweep_9323 dist=3.75$ WATCH extending. Scalp engine GBPUSD+EURUSD ghost vs broker=0pos. 8 alerts KEEP. 0 trades 0pos. BOJ T-3d FOMC T-5d. attention_covered=9/9."
-    },
     {
       "ts_utc": "2026-04-24T10:30:00Z",
       "events_in": 0,
@@ -1087,6 +1079,42 @@
         "audusd_m15fvg_buy_7143 (proximity update)",
         "usdcad_sweep_136924_sell_watch (proximity update)"
       ]
+    },
+    {
+      "tick_ts_utc": "2026-04-29T14:46Z",
+      "events_processed": 8,
+      "events": [
+        "USDJPY 3x position_opened (probe, already closed)",
+        "USDJPY 3x position_closed (probe -$0.17)",
+        "OIL_CRUDE liq_sweep@103.449 M15 \u2014 ADD alert, no live LIMIT",
+        "USDCAD level_cross@1.36945 usdcad_sweep_136924_sell_watch \u2014 WATCH comp=none"
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "trades_skipped": 1,
+      "skip_reason": "OIL CT-fade: Hormuz supply shock (comp=+55 bull), 0% counterfactual analog, FOMC caution",
+      "alerts_changed": {
+        "removed": [
+          "oil_fvg_9691_buy (auto-stale dist=6.44>3xH4ATR=6.23)"
+        ],
+        "added": [
+          "oil_sweep_103449_sell_watch (WATCH, no live LIMIT)"
+        ],
+        "kept": [
+          "gold_h1fvg_sell_4603 LIMIT@4603 GTC",
+          "usdjpy_intervention_fade_160 WATCH",
+          "all others"
+        ]
+      },
+      "open_positions": 0,
+      "pending_orders": 1,
+      "pending_orders_detail": [
+        "GOLD SELL LIMIT@4603 GTC SL=4612 TP=4555 size=0.5"
+      ],
+      "balance": 966.43,
+      "daily_pnl_usd": -20.59,
+      "binary": "FOMC Apr29 18:00Z hold expected",
+      "scalp": "GBPUSD=ACTIVE, EURUSD=OFF(desync), AUDUSD=OFF(wr11%)"
     }
   ]
 }

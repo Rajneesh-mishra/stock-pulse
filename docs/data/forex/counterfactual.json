@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T14:29:11.141164+00:00",
+  "generated_at": "2026-04-29T14:49:42.710495+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -993,7 +993,7 @@
       "alert_id": "usdcad_sweep_136924_sell_watch",
       "instrument": "USDCAD",
       "direction": "sell",
-      "fires": 1,
+      "fires": 2,
       "by_horizon": {
         "1h": {
           "filled": 0,

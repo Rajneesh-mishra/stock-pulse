@@ -1,6 +1,6 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-04-29T14:28Z",
+  "last_updated_by_claude": "2026-04-29T14:46Z",
   "pruned_at": "2026-04-23T19:34:33+00:00",
   "pruned_by": "manual rewrite 2026-04-23T19:34:33+00:00 \u2014 strip tick-REFRESH bloat, split entry-criterion (technical, sufficient) from regime-context (narrative, non-gating) per user request",
   "pruned_removed": [],
@@ -203,9 +203,9 @@
       "rr_target": "6.0",
       "current_price_ref": 99.982,
       "last_updated": "2026-04-29T07:53Z",
-      "proximity": "OIL@99.982; 3.07pts ABOVE 96.91. comp=+55 mod bull. Within 3xH4ATR. WATCH until price retraces to level. 2026-04-29T07:53Z",
+      "proximity": "AUTO-REMOVED 2026-04-29T14:46Z: OIL@103.354; dist=6.44pts > 3xH4ATR(2.078)=6.23. Price trending AWAY (up). No approach catalyst. Replaced by oil_sweep_103449_sell_watch at current sweep level.",
       "alert_id": "oil_fvg_9691_buy",
-      "active": true
+      "active": false
     },
     {
       "id": "usdcad_sweep_136924_sell_watch",
@@ -297,6 +297,24 @@
       "last_updated": "2026-04-29T14:28Z",
       "alert_id": "gbpusd_liqsweep_134736_buy_watch",
       "active": true
+    },
+    {
+      "id": "oil_sweep_103449_sell_watch",
+      "instrument": "OIL_CRUDE",
+      "level": 103.449,
+      "emit_on": "cross_up",
+      "cooldown_sec": 1800,
+      "direction": "sell",
+      "note": "ENTRY: price retests 103.449 M15 up-sweep extreme; M15 retest with bearish rejection wick ≥5p from the high. Arm CT-fade SELL LIMIT when |comp| ≥ 40 bullish extension AND OIL comp turns ≤ +40 (i.e. bull momentum waning). DO NOT arm while comp=+55 all-TFs-agree bull — fundamental driver (Hormuz closure) sustains uptrend.\n\nCONTEXT: M15 up-sweep 2026-04-29T14:30Z, wick=8.5p beyond prior high, close_inside=102.994. OIL comp=+55 moderate bull all TFs agree — Hormuz supply shock driving sustained bull. Counterfactual analog oil_sweep_9579_sell_retest: 5 fires, 4h hit_rate=0% in this bull run — do not force CT-fade in sustained supply-shock rally. WATCH only until comp drops below +40 or fundamental driver resolves.\n\nSL: 103.65  TP: 102.67  R:R target: 3.9\n\nadded 2026-04-29T14:46Z — M15 up-sweep per Step 4e; WATCH only: Hormuz bull + FOMC caution + 0% 4h analog.",
+      "entry_criterion": "M15 retest of 103.449 with bearish rejection wick ≥5p. Arm SELL LIMIT only when OIL comp drops below +40 (bull momentum fading) — not while Hormuz supply shock active.",
+      "regime_context": "M15 up-sweep 14:30Z Apr29, wick=8.5p. comp=+55 mod-bull all TFs. Hormuz closure supply shock. Counterfactual: oil CT-fade sells 0% 4h in this run. FOMC caution T-3.3h. 4h time-stop if entered.",
+      "sl": 103.65,
+      "tp": 102.67,
+      "rr_target": "3.9",
+      "current_price_ref": 103.354,
+      "last_updated": "2026-04-29T14:46Z",
+      "alert_id": "oil_sweep_103449_sell_watch",
+      "active": true
     }
   ],
   "structure_watch": [
@@ -360,6 +378,6 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-04-29T14:28Z",
-  "last_updated": "2026-04-29T14:28Z"
+  "last_updated_utc": "2026-04-29T14:46Z",
+  "last_updated": "2026-04-29T14:46Z"
 }

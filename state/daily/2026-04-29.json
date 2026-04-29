@@ -949,5 +949,41 @@
       "audusd_m15fvg_buy_7143 (proximity update)",
       "usdcad_sweep_136924_sell_watch (proximity update)"
     ]
+  },
+  {
+    "tick_ts_utc": "2026-04-29T14:46Z",
+    "events_processed": 8,
+    "events": [
+      "USDJPY 3x position_opened (probe, already closed)",
+      "USDJPY 3x position_closed (probe -$0.17)",
+      "OIL_CRUDE liq_sweep@103.449 M15 \u2014 ADD alert, no live LIMIT",
+      "USDCAD level_cross@1.36945 usdcad_sweep_136924_sell_watch \u2014 WATCH comp=none"
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "trades_skipped": 1,
+    "skip_reason": "OIL CT-fade: Hormuz supply shock (comp=+55 bull), 0% counterfactual analog, FOMC caution",
+    "alerts_changed": {
+      "removed": [
+        "oil_fvg_9691_buy (auto-stale dist=6.44>3xH4ATR=6.23)"
+      ],
+      "added": [
+        "oil_sweep_103449_sell_watch (WATCH, no live LIMIT)"
+      ],
+      "kept": [
+        "gold_h1fvg_sell_4603 LIMIT@4603 GTC",
+        "usdjpy_intervention_fade_160 WATCH",
+        "all others"
+      ]
+    },
+    "open_positions": 0,
+    "pending_orders": 1,
+    "pending_orders_detail": [
+      "GOLD SELL LIMIT@4603 GTC SL=4612 TP=4555 size=0.5"
+    ],
+    "balance": 966.43,
+    "daily_pnl_usd": -20.59,
+    "binary": "FOMC Apr29 18:00Z hold expected",
+    "scalp": "GBPUSD=ACTIVE, EURUSD=OFF(desync), AUDUSD=OFF(wr11%)"
   }
 ]
