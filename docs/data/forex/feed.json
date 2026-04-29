@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T00:46:29.833363Z",
+  "generated_at": "2026-04-29T01:17:52.388815Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -489,6 +489,44 @@
       },
       "binary_event": "FOMC Apr29 18:00Z T-17h30m caution",
       "scalp_audit": "EURUSD=DISABLED(engine_desync_4L) GBPUSD=KEEP(no trades) AUDUSD=DISABLED(wr=11%/19t) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
+    },
+    {
+      "ts": "2026-04-29T01:16Z",
+      "type": "heartbeat",
+      "events_consumed": 0,
+      "new_trades": 0,
+      "closed_trades": 0,
+      "open_positions": [
+        {
+          "instrument": "GOLD",
+          "direction": "SELL",
+          "entry": 4603.14,
+          "bid": 4585.09,
+          "move_pts": 17.8,
+          "r_progress": 0.814,
+          "upl": 3.51,
+          "time_exit_utc": "2026-04-29T08:01Z"
+        }
+      ],
+      "pending_orders": [
+        {
+          "instrument": "AUDUSD",
+          "direction": "BUY",
+          "type": "LIMIT",
+          "level": 0.7143,
+          "bid": 0.71797,
+          "distance_pips": 46.7
+        }
+      ],
+      "daily_pnl_usd": -20.59,
+      "binary_event": "FOMC Apr29 18:00Z T-16.8h",
+      "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
+      "alerts_kept": 8,
+      "alerts_removed": 0,
+      "alerts_added": 0,
+      "attention_covered": "9/9",
+      "scalp_status": "GBPUSD=ACTIVE(no trades) EURUSD=OFF(desync) AUDUSD=OFF(wr=11pct)",
+      "note": "0 evt heartbeat. GOLD move=17.8pts=0.81R, need 3.81pts more for BE trail. All 8 alerts KEEP. FOMC caution T-16.8h."
     }
   ]
 }
