@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-04-29T04:41:53.715336Z",
+  "generated_at": "2026-04-29T04:50:22.697345Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-23T21:40:00Z",
-      "events_in": 1,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 1,
-      "note": "21:40 forex auto \u2014 1 evt us_iran_military Reuters Mar-1-2026 STALE 54d non-thesis-altering. USDJPY 159.685 +45 mod 4/4 bull dist=31.5p OUTSIDE 30p swing=WATCH (downgrade from ARMED-on-tag). GOLD 4694.08 -40 mod 3/4 bear gold_sweep_4721 dist=27.6$ INSIDE 30$ swing=ARMED (upgrade from WATCH); gold_safehaven_4775 dist=80.9$ opp-watch. OIL 96.446 +44 mod 4/4 bull sweep_9323 dist=321p WATCH; retest_90 dist=615p dormant. AUDUSD USDCAD GBPUSD USDCHF none swing=NONE. EURUSD -33 weak BTCUSD +35 weak no alert. 5 level_alerts KEEP 9 SW KEEP. us_iran_military+iran_ceasefire+us_tariff queries TUNED (date-window). Scalp 3 FX shadow halt={}. BOJ T-3d FOMC T-5d. web_search skipped (0 pos + regime stable 4h+). attention_covered=9/9."
-    },
     {
       "ts": "2026-04-24T06:00:00Z",
       "summary": "2026-04-24T06:00:00Z 06:00 forex auto \u2014 0 evt heartbeat. REGIME: ACTIVE_ESCALATION_SHOOT_TO_KILL. USDJPY 159.705 +45 mod 4/4 bull dist=29.5p INSIDE 30p swing=ARMED (counter-trend fade live; BOJ T-3d). GOLD 4705.06 -37.5 weak 3/4 bear dist=16.6$ INSIDE 30$ swing=WATCH (readiness=weak, need |comp|\u226540 for ARMED; H4 FVG 4703-4716 resistance). OIL 96.13 +43 mod 4/4 bull sweep_9323 dist=289p WATCH; retest_90 dist=583p dormant. BTCUSD 78462 +55 mod 4/4 bull day_fvg_buy dist=1502$ WATCH. EURUSD -29.5 weak GBPUSD none AUDUSD none swing=NONE. 6 level_alerts KEEP 8 news_queries (4 TUNE date-roll +1d, 4 KEEP). Scalp 3 FX ACTIVE halt={}. BOJ T-3d FOMC T-5d. web_search skipped (0 pos + regime stable 6h+). attention_covered=9/9."
@@ -771,6 +763,49 @@
       "binary_event": "FOMC Apr29 T-13.4h (18:00Z)",
       "regime_note": "heartbeat; all 8 alerts KEEP; GOLD hold; AUDUSD LIMIT GTC; FOMC caution",
       "scalp_status": "GBPUSD=ACTIVE EURUSD=OFF(desync) AUDUSD=OFF(wr11%)"
+    },
+    {
+      "tick_ts_utc": "2026-04-29T04:47Z",
+      "events_processed": 1,
+      "events": [
+        "evt_1777437937936_level_cross: GOLD level_cross gold_h1fvg_sell_4603 cross_up@4603.67 \u2192 retest of resistance; HOLD thesis intact"
+      ],
+      "positions": {
+        "GOLD": {
+          "direction": "SELL",
+          "entry": 4603.14,
+          "sl": 4625.0,
+          "tp": 4519.0,
+          "size": 0.2,
+          "upl_approx": 0.06,
+          "age_h": 4.75,
+          "time_exit": "08:01Z"
+        }
+      },
+      "orders": {
+        "AUDUSD": {
+          "direction": "BUY",
+          "type": "LIMIT",
+          "level": 0.7143,
+          "sl": 0.713,
+          "tp": 0.7187,
+          "dist_p": 20.3
+        }
+      },
+      "decisions": "GOLD HOLD (resistance retest, comp=-47.5 mod bear, age 4.75h/8h); AUDUSD limit KEEP; no new entries (FOMC T-13.2h caution)",
+      "new_trades": 0,
+      "closed_trades": 0,
+      "scalp": "GBPUSD=ACTIVE(neutral) EURUSD=OFF(desync) AUDUSD=OFF(wr11%)",
+      "attention_matrix": {
+        "EURUSD": "swing=WATCH scalp=OFF(desync) readiness=none comp=-8",
+        "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=none comp=+14",
+        "AUDUSD": "swing=ARMED(limit@0.7143) scalp=OFF(wr11%) readiness=weak comp=+39.5",
+        "USDJPY": "swing=WATCH(approaching 160 intervention) scalp=OFF(pip-val) readiness=moderate comp=+43",
+        "USDCAD": "swing=WATCH scalp=OFF(pip-val) readiness=none comp=-8.5",
+        "USDCHF": "swing=NONE scalp=OFF(pip-val) readiness=none comp=+18.5",
+        "GOLD": "swing=ARMED(position@4603.14 SELL) scalp=N/A readiness=moderate comp=-47.5",
+        "OIL_CRUDE": "swing=WATCH(oil_sweep_9323 dist=4.65p) scalp=N/A readiness=moderate comp=+42"
+      }
     }
   ]
 }

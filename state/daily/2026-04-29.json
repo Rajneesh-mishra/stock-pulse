@@ -565,5 +565,48 @@
     "binary_event": "FOMC Apr29 T-13.4h (18:00Z)",
     "regime_note": "heartbeat; all 8 alerts KEEP; GOLD hold; AUDUSD LIMIT GTC; FOMC caution",
     "scalp_status": "GBPUSD=ACTIVE EURUSD=OFF(desync) AUDUSD=OFF(wr11%)"
+  },
+  {
+    "tick_ts_utc": "2026-04-29T04:47Z",
+    "events_processed": 1,
+    "events": [
+      "evt_1777437937936_level_cross: GOLD level_cross gold_h1fvg_sell_4603 cross_up@4603.67 \u2192 retest of resistance; HOLD thesis intact"
+    ],
+    "positions": {
+      "GOLD": {
+        "direction": "SELL",
+        "entry": 4603.14,
+        "sl": 4625.0,
+        "tp": 4519.0,
+        "size": 0.2,
+        "upl_approx": 0.06,
+        "age_h": 4.75,
+        "time_exit": "08:01Z"
+      }
+    },
+    "orders": {
+      "AUDUSD": {
+        "direction": "BUY",
+        "type": "LIMIT",
+        "level": 0.7143,
+        "sl": 0.713,
+        "tp": 0.7187,
+        "dist_p": 20.3
+      }
+    },
+    "decisions": "GOLD HOLD (resistance retest, comp=-47.5 mod bear, age 4.75h/8h); AUDUSD limit KEEP; no new entries (FOMC T-13.2h caution)",
+    "new_trades": 0,
+    "closed_trades": 0,
+    "scalp": "GBPUSD=ACTIVE(neutral) EURUSD=OFF(desync) AUDUSD=OFF(wr11%)",
+    "attention_matrix": {
+      "EURUSD": "swing=WATCH scalp=OFF(desync) readiness=none comp=-8",
+      "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=none comp=+14",
+      "AUDUSD": "swing=ARMED(limit@0.7143) scalp=OFF(wr11%) readiness=weak comp=+39.5",
+      "USDJPY": "swing=WATCH(approaching 160 intervention) scalp=OFF(pip-val) readiness=moderate comp=+43",
+      "USDCAD": "swing=WATCH scalp=OFF(pip-val) readiness=none comp=-8.5",
+      "USDCHF": "swing=NONE scalp=OFF(pip-val) readiness=none comp=+18.5",
+      "GOLD": "swing=ARMED(position@4603.14 SELL) scalp=N/A readiness=moderate comp=-47.5",
+      "OIL_CRUDE": "swing=WATCH(oil_sweep_9323 dist=4.65p) scalp=N/A readiness=moderate comp=+42"
+    }
   }
 ]

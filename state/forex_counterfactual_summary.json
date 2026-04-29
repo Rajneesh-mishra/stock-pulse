@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T04:41:10.675059+00:00",
+  "generated_at": "2026-04-29T04:50:28.312660+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -878,9 +878,9 @@
           "hit_rate": 0.0
         },
         "24h": {
-          "filled": 2,
+          "filled": 3,
           "favorable": 0,
-          "avg_pips": -703.8,
+          "avg_pips": -688.2,
           "hit_rate": 0.0
         }
       }
@@ -941,7 +941,7 @@
       "alert_id": "gold_h1fvg_sell_4603",
       "instrument": "GOLD",
       "direction": "sell",
-      "fires": 3,
+      "fires": 4,
       "by_horizon": {
         "1h": {
           "filled": 2,
@@ -950,9 +950,9 @@
           "hit_rate": 1.0
         },
         "4h": {
-          "filled": 1,
-          "favorable": 1,
-          "avg_pips": 55.8,
+          "filled": 2,
+          "favorable": 2,
+          "avg_pips": 33.9,
           "hit_rate": 1.0
         },
         "24h": {
