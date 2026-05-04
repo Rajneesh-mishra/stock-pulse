@@ -1165,5 +1165,27 @@
     "working_orders": 2,
     "regime": "HORMUZ_ESCORT_ACTIVE_RBA_HIKE_TOMORROW_USD_WEAK_FOMC_CLEARED",
     "note": "heartbeat: 0 evts. GBPUSD BUY +1p time-stop@19:51Z. GOLD/AUDUSD GTC limits HOLD. All 9 alerts KEEP."
+  },
+  {
+    "tick_ts_utc": "2026-05-04T16:51Z",
+    "events_processed": 9,
+    "events_actionable": 2,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "watchlist_changes": [
+      "MODIFY eurusd_m15sweep_116871_buy_watch (level 1.16871\u21921.16840)",
+      "MODIFY oil_sweep_103449_sell_watch (cross-up reflected)"
+    ],
+    "balance": 961.5,
+    "upl": -0.49,
+    "open_positions": [
+      "GBPUSD BUY@1.35282 age=61min SL=1.3495 TP=1.36"
+    ],
+    "pending_orders": [
+      "GOLD SELL LIMIT@4591 GTC",
+      "AUDUSD BUY LIMIT@0.7143 GTC"
+    ],
+    "binary_event": "RBA_May2026 2026-05-05T04:30Z (11.7h, elevated caution)",
+    "notes": "OIL crossed 103.449 up (comp=+32 bull). EURUSD sweep 1.16840 (comp=-17 none). No trades. GBPUSD time-stop 19:51Z."
   }
 ]
