@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-04T07:19:44.991688+00:00",
+  "generated_at": "2026-05-04T07:34:49.791889+00:00",
   "counts": {
     "trades": 40,
-    "events": 6921,
+    "events": 6930,
     "ticks": 59,
-    "regime_snapshots": 207,
+    "regime_snapshots": 208,
     "broker_positions": 0,
-    "counterfactuals": 144
+    "counterfactuals": 145
   },
   "trades_last_50": [
     {
@@ -853,6 +853,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-05-04T12:47Z",
+      "regime_name": "ACTIVE_ESCALATION_US_IRAN_HORMUZ_NO_DEAL_USD_WEAK",
+      "note_text": "2026-05-04T12:47Z forex auto \u2014 1 event: USDCHF level_cross at 0.78156 (CT-fade sell). SKIP \u2014 comp=-27 (need \u2265+40 bullish extension). M15 bull short-term but D+H4 bearish; no overextension to fade. 0 trades. EURUSD sell (1.17159) 10.3p away (within 30p proximity) but comp=+30 need \u226540. GBPUSD buy (1.35689) 5.1p away but comp=+24 none. AUDUSD moderate-bull comp=+48 but 51p above buy zone. GOLD comp=-29 (sell at 4603 needs \u2264-40). Balance $961.92. 0 positions.",
+      "binary_event_name": "FOMC Apr29",
+      "binary_event_active": 0,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
       "ts_utc": "2026-05-04T07:00Z",
       "regime_name": "ACTIVE_ESCALATION_US_IRAN_HORMUZ_NO_DEAL_USD_WEAK",
       "note_text": "2026-05-04T07:00Z forex auto \u2014 4 events consumed. 2 liquidity_sweeps (EURUSD M15 down-wick 0.9p @1.17226 buy-bias; USDCHF M15 up-wick 0.9p @0.78156 sell-bias). Both sub-threshold: comp \u226540 counter-trend gate not met (EURUSD=+32.5 need \u2264-40; USDCHF=-27 need \u2265+40). 0 trades. Added usdchf_m15sweep_78156_sell_watch. EURUSD comp=+32.5 weak bull (14p above 1.17159 sell zone, almost at proximity). AUDUSD comp=+48 moderate bull (54p above 0.7143 buy zone). GOLD comp=-29, 16.4pts below sell level 4603 (in proximity, need -40). OIL=100.12 comp=+11 none. Balance $961.92. 0 positions. scalp=GBPUSD active.",
@@ -920,14 +928,6 @@
       "ts_utc": "2026-04-29T11:18Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-29T11:18Z forex auto \u2014 0 evt heartbeat; GOLD SELL LIMIT@4603.0 GTC KEEP (bid=4569.6 dist=33.4 comp=-50 mod-bear validated 4f/100%); AUDUSD LIMIT@0.7143 CANCELLED (comp=+31 weak, FOMC caution T-6.7h requires moderate+); USDJPY CT-fade@160 comp=+45 mod \u2014 pip-value blocks trade WATCH; FOMC 18:00Z T-6.7h hold 99.9% priced, BoJ verbal intervention at 160 active; scalp: GBPUSD=ACTIVE; attention_covered=8/8.",
-      "binary_event_name": "FOMC Apr29",
-      "binary_event_active": 1,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-04-29T10:35Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "2026-04-29T10:35Z forex auto \u2014 1 evt: USDCAD up-sweep@1.36924 (wick=0.9p tiny, comp=-8.5 none) WATCHLIST-ONLY (|comp|<25, no CT-fade entry); OIL 101.58 \u2014 REMOVE oil_sweep_10107 (CT-fade level breached, price continued to 101.58); GOLD SELL LIMIT@4603 KEEP (bid=4571, comp=-47.5 mod-bear, validated 4f/100%); AUDUSD BUY LIMIT@0.7143 KEEP (bid=0.7157, comp=+28.5 weak, validated 3f/100%); USDJPY@159.76 comp=+40 mod FADE-WATCH (min-size block prevents entry, WATCH post-FOMC); ADD usdcad_sweep_136924_sell_watch; FOMC 18:00Z T-7.5h caution; scalp: GBPUSD=ACTIVE. attention_covered=8/8.",
       "binary_event_name": "FOMC Apr29",
       "binary_event_active": 1,
       "binary_event_deadline": "2026-04-29T18:00Z"
@@ -1436,6 +1436,19 @@
     }
   ],
   "counterfactuals_last_50": [
+    {
+      "alert_id": "gbpusd_m15sweep_135689_buy_watch",
+      "instrument": "GBPUSD",
+      "direction": "buy",
+      "trigger_price": 1.3568850000000001,
+      "fired_at": "2026-05-04T07:29:07.657000+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
     {
       "alert_id": "usdchf_m15sweep_78156_sell_watch",
       "instrument": "USDCHF",
@@ -2066,19 +2079,6 @@
       "direction": "sell",
       "trigger_price": 96.22800000000001,
       "fired_at": "2026-04-28T05:04:19.627293+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
-    },
-    {
-      "alert_id": "gold_sweep_4669_buy_retest",
-      "instrument": "GOLD",
-      "direction": "buy",
-      "trigger_price": 4669.5,
-      "fired_at": "2026-04-28T04:46:04.472848+00:00",
       "hit_1h": null,
       "hit_4h": null,
       "hit_24h": null,

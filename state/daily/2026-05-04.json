@@ -64,14 +64,54 @@
     ],
     "alerts_removed": [],
     "attention_matrix": {
-      "EURUSD": {"swing": "WATCH", "scalp": "OFF(desync)", "readiness": "weak", "comp": 32.5},
-      "GBPUSD": {"swing": "WATCH", "scalp": "ACTIVE", "readiness": "weak", "comp": 27.0},
-      "AUDUSD": {"swing": "WATCH", "scalp": "OFF(wr11%)", "readiness": "moderate", "comp": 48.0},
-      "USDJPY": {"swing": "NONE", "scalp": "OFF(pip-conv)", "readiness": "weak", "comp": -25.5},
-      "USDCAD": {"swing": "NONE", "scalp": "OFF(pip-conv)", "readiness": "weak", "comp": -37.0},
-      "USDCHF": {"swing": "WATCH", "scalp": "OFF(pip-conv)", "readiness": "weak", "comp": -27.0},
-      "GOLD": {"swing": "WATCH", "scalp": "N/A(spread 5p)", "readiness": "weak", "comp": -29.0},
-      "OIL_CRUDE": {"swing": "WATCH", "scalp": "N/A(spread 4p)", "readiness": "none", "comp": 11.0}
+      "EURUSD": {
+        "swing": "WATCH",
+        "scalp": "OFF(desync)",
+        "readiness": "weak",
+        "comp": 32.5
+      },
+      "GBPUSD": {
+        "swing": "WATCH",
+        "scalp": "ACTIVE",
+        "readiness": "weak",
+        "comp": 27.0
+      },
+      "AUDUSD": {
+        "swing": "WATCH",
+        "scalp": "OFF(wr11%)",
+        "readiness": "moderate",
+        "comp": 48.0
+      },
+      "USDJPY": {
+        "swing": "NONE",
+        "scalp": "OFF(pip-conv)",
+        "readiness": "weak",
+        "comp": -25.5
+      },
+      "USDCAD": {
+        "swing": "NONE",
+        "scalp": "OFF(pip-conv)",
+        "readiness": "weak",
+        "comp": -37.0
+      },
+      "USDCHF": {
+        "swing": "WATCH",
+        "scalp": "OFF(pip-conv)",
+        "readiness": "weak",
+        "comp": -27.0
+      },
+      "GOLD": {
+        "swing": "WATCH",
+        "scalp": "N/A(spread 5p)",
+        "readiness": "weak",
+        "comp": -29.0
+      },
+      "OIL_CRUDE": {
+        "swing": "WATCH",
+        "scalp": "N/A(spread 4p)",
+        "readiness": "none",
+        "comp": 11.0
+      }
     },
     "scalp_audit": "EURUSD=OFF(desync) GBPUSD=ACTIVE(no trades) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
   },
@@ -96,7 +136,7 @@
     "alerts_removed": [],
     "prices": {
       "EURUSD": 1.17262,
-      "GBPUSD": 1.35740,
+      "GBPUSD": 1.3574,
       "AUDUSD": 0.71941,
       "USDJPY": 156.937,
       "USDCAD": 1.35991,
@@ -105,25 +145,167 @@
       "OIL_CRUDE": 100.082
     },
     "confluence": {
-      "EURUSD": {"comp": 30.0, "readiness": "weak"},
-      "GBPUSD": {"comp": 24.0, "readiness": "none"},
-      "AUDUSD": {"comp": 48.0, "readiness": "moderate"},
-      "USDJPY": {"comp": -25.5, "readiness": "weak"},
-      "USDCAD": {"comp": -37.0, "readiness": "weak"},
-      "USDCHF": {"comp": -27.0, "readiness": "weak"},
-      "OIL_CRUDE": {"comp": 11.0, "readiness": "none"}
+      "EURUSD": {
+        "comp": 30.0,
+        "readiness": "weak"
+      },
+      "GBPUSD": {
+        "comp": 24.0,
+        "readiness": "none"
+      },
+      "AUDUSD": {
+        "comp": 48.0,
+        "readiness": "moderate"
+      },
+      "USDJPY": {
+        "comp": -25.5,
+        "readiness": "weak"
+      },
+      "USDCAD": {
+        "comp": -37.0,
+        "readiness": "weak"
+      },
+      "USDCHF": {
+        "comp": -27.0,
+        "readiness": "weak"
+      },
+      "OIL_CRUDE": {
+        "comp": 11.0,
+        "readiness": "none"
+      }
     },
     "attention_matrix": {
-      "EURUSD": {"swing": "WATCH", "scalp": "OFF(desync)", "readiness": "weak", "comp": 30.0, "reason": "sell at 1.17159; price 10.3p above (within 30p proximity); comp=+30 need ≥40"},
-      "GBPUSD": {"swing": "WATCH", "scalp": "ACTIVE", "readiness": "none", "comp": 24.0, "reason": "buy at 1.35689; price 5.1p above (within 30p proximity); comp=+24 need ≥40"},
-      "AUDUSD": {"swing": "WATCH", "scalp": "OFF(wr11%)", "readiness": "moderate", "comp": 48.0, "reason": "buy at 0.7143; price 51p above; comp=+48 moderate but not within proximity threshold"},
-      "USDJPY": {"swing": "NONE", "scalp": "OFF(pip-conv)", "readiness": "weak", "comp": -25.5, "reason": "no active level alerts; post-BoJ intervention price at 156.94; 160 trigger far"},
-      "USDCAD": {"swing": "NONE", "scalp": "OFF(pip-conv)", "readiness": "weak", "comp": -37.0, "reason": "no active level alerts; price 1.35991 far from narrative 1.38 trigger"},
-      "USDCHF": {"swing": "WATCH", "scalp": "OFF(pip-conv)", "readiness": "weak", "comp": -27.0, "reason": "CT-fade sell at 0.78156 AT level but comp=-27 need ≥+40; Day FVG sell at 0.78304 needs comp≤-40"},
-      "GOLD": {"swing": "WATCH", "scalp": "N/A(spread 5p)", "readiness": "weak", "comp": -29.0, "reason": "sell at 4603 (price 15.5pts below); comp=-29 need ≤-40; buy at 4524 needs comp≥+40"},
-      "OIL_CRUDE": {"swing": "WATCH", "scalp": "N/A(spread 4p)", "readiness": "none", "comp": 11.0, "reason": "buy at 99.31 (price 0.77 above); sell at 103.449 (level 3.37 above price); comp=+11 none"}
+      "EURUSD": {
+        "swing": "WATCH",
+        "scalp": "OFF(desync)",
+        "readiness": "weak",
+        "comp": 30.0,
+        "reason": "sell at 1.17159; price 10.3p above (within 30p proximity); comp=+30 need ≥40"
+      },
+      "GBPUSD": {
+        "swing": "WATCH",
+        "scalp": "ACTIVE",
+        "readiness": "none",
+        "comp": 24.0,
+        "reason": "buy at 1.35689; price 5.1p above (within 30p proximity); comp=+24 need ≥40"
+      },
+      "AUDUSD": {
+        "swing": "WATCH",
+        "scalp": "OFF(wr11%)",
+        "readiness": "moderate",
+        "comp": 48.0,
+        "reason": "buy at 0.7143; price 51p above; comp=+48 moderate but not within proximity threshold"
+      },
+      "USDJPY": {
+        "swing": "NONE",
+        "scalp": "OFF(pip-conv)",
+        "readiness": "weak",
+        "comp": -25.5,
+        "reason": "no active level alerts; post-BoJ intervention price at 156.94; 160 trigger far"
+      },
+      "USDCAD": {
+        "swing": "NONE",
+        "scalp": "OFF(pip-conv)",
+        "readiness": "weak",
+        "comp": -37.0,
+        "reason": "no active level alerts; price 1.35991 far from narrative 1.38 trigger"
+      },
+      "USDCHF": {
+        "swing": "WATCH",
+        "scalp": "OFF(pip-conv)",
+        "readiness": "weak",
+        "comp": -27.0,
+        "reason": "CT-fade sell at 0.78156 AT level but comp=-27 need ≥+40; Day FVG sell at 0.78304 needs comp≤-40"
+      },
+      "GOLD": {
+        "swing": "WATCH",
+        "scalp": "N/A(spread 5p)",
+        "readiness": "weak",
+        "comp": -29.0,
+        "reason": "sell at 4603 (price 15.5pts below); comp=-29 need ≤-40; buy at 4524 needs comp≥+40"
+      },
+      "OIL_CRUDE": {
+        "swing": "WATCH",
+        "scalp": "N/A(spread 4p)",
+        "readiness": "none",
+        "comp": 11.0,
+        "reason": "buy at 99.31 (price 0.77 above); sell at 103.449 (level 3.37 above price); comp=+11 none"
+      }
     },
     "scalp_audit": "EURUSD=OFF(desync) GBPUSD=ACTIVE(stats null, no trades) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
     "notes": "1 event: USDCHF level_cross at 0.78156 (CT-fade sell). SKIP — comp=-27 (need ≥+40 for bullish extension fade). M15 short-term bull (+0.4) but D+H4 bearish. No bull overextension to fade. Alert WATCH. EURUSD sell (1.17159) and GBPUSD buy (1.35689) both within 30p proximity but comp gates not met. AUDUSD moderate-bull but 51p above buy zone. Balance $961.92."
+  },
+  {
+    "tick_ts_utc": "2026-05-04T07:31Z",
+    "events_consumed": [
+      "evt_1777879747656_level_cross"
+    ],
+    "events_count": 1,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "events_skipped": [
+      {
+        "event_id": "evt_1777879747656_level_cross",
+        "alert_id": "gbpusd_m15sweep_135689_buy_watch",
+        "reason": "comp=+24 need ≥+40 for sweep-retest BUY arm; readiness=none"
+      }
+    ],
+    "alerts_modified": [
+      "all price_refs updated",
+      "oil_rebound_9931_buy_watch promoted validated (3f 4h=100%)",
+      "oil_sweep_103449_sell_watch promoted validated (5f 4h=60%)"
+    ],
+    "balance": 961.92,
+    "open_positions": 0,
+    "attention_matrix": {
+      "EURUSD": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "sell@1.17159 5.9p away comp+22.5 need+40"
+      },
+      "GBPUSD": {
+        "swing": "WATCH",
+        "scalp": "ACTIVE",
+        "readiness": "none",
+        "reason": "buy@1.35689 AT level comp+24 need+40"
+      },
+      "AUDUSD": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "moderate",
+        "reason": "buy@0.7143 48.8p away >30p prox, comp+48"
+      },
+      "USDJPY": {
+        "swing": "NONE",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "intervention zone 160.00 308p away; comp=-20 none"
+      },
+      "USDCAD": {
+        "swing": "NONE",
+        "scalp": "OFF",
+        "readiness": "weak",
+        "reason": "no active level_alert; comp=-37 weak bear"
+      },
+      "USDCHF": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "sell FVG@0.78304 8.1p below comp=-22 need-40"
+      },
+      "GOLD": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "weak",
+        "reason": "sell@4603 17.4pts away prox<30p but comp=-29 need-40"
+      },
+      "OIL_CRUDE": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "none",
+        "reason": "buy@99.31 90p away comp=+16 none"
+      }
+    }
   }
 ]

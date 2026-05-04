@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T07:20:19.053245+00:00",
+  "generated_at": "2026-05-04T07:34:42.870593+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -950,10 +950,10 @@
           "hit_rate": 0.71
         },
         "4h": {
-          "filled": 6,
-          "favorable": 5,
-          "avg_pips": 127.2,
-          "hit_rate": 0.83
+          "filled": 7,
+          "favorable": 6,
+          "avg_pips": 144.8,
+          "hit_rate": 0.86
         },
         "24h": {
           "filled": 6,
@@ -1227,6 +1227,32 @@
       "alert_id": "usdchf_m15sweep_78156_sell_watch",
       "instrument": "USDCHF",
       "direction": "sell",
+      "fires": 1,
+      "by_horizon": {
+        "1h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "4h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "24h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        }
+      }
+    },
+    {
+      "alert_id": "gbpusd_m15sweep_135689_buy_watch",
+      "instrument": "GBPUSD",
+      "direction": "buy",
       "fires": 1,
       "by_horizon": {
         "1h": {

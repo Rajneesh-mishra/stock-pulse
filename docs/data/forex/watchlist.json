@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-05-04T07:00Z",
-  "pruned_at": "2026-05-04T07:00Z",
-  "pruned_by": "claude auto-audit 2026-05-04T07:00Z \u2014 0 removed, 1 added (USDCHF M15 sweep)",
+  "last_updated_by_claude": "2026-05-04T07:31Z",
+  "pruned_at": "2026-05-04T07:31Z",
+  "pruned_by": "claude auto-audit 2026-05-04T07:31Z \u2014 0 removed, 0 added; gbpusd_m15sweep_135689 fired at level (comp=+24 SKIP need+40); oil_rebound+oil_sweep_103449 promoted to validated",
   "pruned_removed": [],
   "pruned_added": [
     "usdchf_m15sweep_78156_sell_watch (M15 liq_sweep 2026-05-04T06:45Z; swept 0.78156, close_inside=0.78121; WATCH comp\u226540 bullish for CT-fade sell)"
@@ -35,8 +35,8 @@
       "sl": 0.713,
       "tp": 0.7187,
       "rr_target": "2.4",
-      "current_price_ref": 0.71975,
-      "last_updated": "2026-05-04T06:50Z",
+      "current_price_ref": 0.71918,
+      "last_updated": "2026-05-04T07:31Z",
       "validated": true,
       "alert_id": "audusd_m15fvg_buy_7143",
       "active": true
@@ -54,8 +54,8 @@
       "sl": 1.1675,
       "tp": 1.1727,
       "rr_target": "2.2",
-      "current_price_ref": 1.172675,
-      "last_updated": "2026-05-04T06:50Z",
+      "current_price_ref": 1.172185,
+      "last_updated": "2026-05-04T07:31Z",
       "alert_id": "eurusd_m15sweep_116871_buy_watch",
       "active": true,
       "validated": true
@@ -73,8 +73,8 @@
       "sl": 1.17189,
       "tp": 1.17028,
       "rr_target": "4.4",
-      "current_price_ref": 1.172675,
-      "last_updated": "2026-05-04T06:50Z",
+      "current_price_ref": 1.172185,
+      "last_updated": "2026-05-04T07:31Z",
       "alert_id": "eurusd_upsweep_117159_sell_watch",
       "active": true,
       "validated": true
@@ -92,8 +92,8 @@
       "sl": 4625.0,
       "tp": 4520.0,
       "rr_target": "3.8",
-      "current_price_ref": 4585.53,
-      "last_updated": "2026-05-04T06:50Z",
+      "current_price_ref": 4585.64,
+      "last_updated": "2026-05-04T07:31Z",
       "alert_id": "gold_h1fvg_sell_4603",
       "active": true
     },
@@ -110,8 +110,8 @@
       "sl": 4492.0,
       "tp": 4603.0,
       "rr_target": "2.5",
-      "current_price_ref": 4585.53,
-      "last_updated": "2026-05-04T06:50Z",
+      "current_price_ref": 4585.64,
+      "last_updated": "2026-05-04T07:31Z",
       "alert_id": "gold_h4ob_buy_4524",
       "active": true
     },
@@ -128,8 +128,8 @@
       "sl": 1.3528,
       "tp": 1.3495,
       "rr_target": "3.3",
-      "current_price_ref": 1.358125,
-      "last_updated": "2026-05-04T06:50Z",
+      "current_price_ref": 1.356925,
+      "last_updated": "2026-05-04T07:31Z",
       "alert_id": "gbpusd_upsweep_135203_sell_watch",
       "active": true,
       "validated": false
@@ -147,8 +147,9 @@
       "sl": 98.9,
       "tp": 101.0,
       "rr_target": "4.1",
-      "current_price_ref": 100.023,
-      "last_updated": "2026-05-04T06:50Z",
+      "current_price_ref": 100.215,
+      "last_updated": "2026-05-04T07:31Z",
+      "validated": true,
       "alert_id": "oil_rebound_9931_buy_watch",
       "active": true
     },
@@ -165,8 +166,9 @@
       "sl": 103.65,
       "tp": 102.67,
       "rr_target": "3.9",
-      "current_price_ref": 100.023,
-      "last_updated": "2026-05-04T06:50Z",
+      "current_price_ref": 100.215,
+      "last_updated": "2026-05-04T07:31Z",
+      "validated": true,
       "alert_id": "oil_sweep_103449_sell_watch",
       "active": true
     },
@@ -183,8 +185,8 @@
       "sl": 1.3562,
       "tp": 1.361,
       "rr_target": "6.1",
-      "current_price_ref": 1.358125,
-      "last_updated": "2026-05-04T06:50Z",
+      "current_price_ref": 1.356925,
+      "last_updated": "2026-05-04T07:31Z",
       "alert_id": "gbpusd_m15sweep_135689_buy_watch",
       "active": true
     },
@@ -201,8 +203,8 @@
       "sl": 0.7844,
       "tp": 0.78,
       "rr_target": "2.2",
-      "current_price_ref": 0.781565,
-      "last_updated": "2026-05-04T06:50Z",
+      "current_price_ref": 0.78223,
+      "last_updated": "2026-05-04T07:31Z",
       "alert_id": "usdchf_d_fvg_sell_78304",
       "active": true
     },
@@ -219,8 +221,8 @@
       "sl": 0.782,
       "tp": 0.778,
       "rr_target": "8.1",
-      "current_price_ref": 0.781175,
-      "last_updated": "2026-05-04T07:00Z",
+      "current_price_ref": 0.78223,
+      "last_updated": "2026-05-04T07:31Z",
       "alert_id": "usdchf_m15sweep_78156_sell_watch",
       "active": true
     }
@@ -286,6 +288,6 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-05-04T07:00Z",
-  "last_updated": "2026-05-04T07:00Z"
+  "last_updated_utc": "2026-05-04T07:31Z",
+  "last_updated": "2026-05-04T07:31Z"
 }

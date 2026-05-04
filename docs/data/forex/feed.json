@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T07:21:17.329744Z",
+  "generated_at": "2026-05-04T07:35:31.210236Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -471,6 +471,79 @@
       },
       "scalp_audit": "EURUSD=OFF(desync) GBPUSD=ACTIVE(stats null, no trades) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
       "notes": "1 event: USDCHF level_cross at 0.78156 (CT-fade sell). SKIP \u2014 comp=-27 (need \u2265+40 for bullish extension fade). M15 short-term bull (+0.4) but D+H4 bearish. No bull overextension to fade. Alert WATCH. EURUSD sell (1.17159) and GBPUSD buy (1.35689) both within 30p proximity but comp gates not met. AUDUSD moderate-bull but 51p above buy zone. Balance $961.92."
+    },
+    {
+      "tick_ts_utc": "2026-05-04T07:31Z",
+      "events_consumed": [
+        "evt_1777879747656_level_cross"
+      ],
+      "events_count": 1,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "events_skipped": [
+        {
+          "event_id": "evt_1777879747656_level_cross",
+          "alert_id": "gbpusd_m15sweep_135689_buy_watch",
+          "reason": "comp=+24 need \u2265+40 for sweep-retest BUY arm; readiness=none"
+        }
+      ],
+      "alerts_modified": [
+        "all price_refs updated",
+        "oil_rebound_9931_buy_watch promoted validated (3f 4h=100%)",
+        "oil_sweep_103449_sell_watch promoted validated (5f 4h=60%)"
+      ],
+      "balance": 961.92,
+      "open_positions": 0,
+      "attention_matrix": {
+        "EURUSD": {
+          "swing": "WATCH",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "sell@1.17159 5.9p away comp+22.5 need+40"
+        },
+        "GBPUSD": {
+          "swing": "WATCH",
+          "scalp": "ACTIVE",
+          "readiness": "none",
+          "reason": "buy@1.35689 AT level comp+24 need+40"
+        },
+        "AUDUSD": {
+          "swing": "WATCH",
+          "scalp": "OFF",
+          "readiness": "moderate",
+          "reason": "buy@0.7143 48.8p away >30p prox, comp+48"
+        },
+        "USDJPY": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "intervention zone 160.00 308p away; comp=-20 none"
+        },
+        "USDCAD": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "weak",
+          "reason": "no active level_alert; comp=-37 weak bear"
+        },
+        "USDCHF": {
+          "swing": "WATCH",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "sell FVG@0.78304 8.1p below comp=-22 need-40"
+        },
+        "GOLD": {
+          "swing": "WATCH",
+          "scalp": "N/A",
+          "readiness": "weak",
+          "reason": "sell@4603 17.4pts away prox<30p but comp=-29 need-40"
+        },
+        "OIL_CRUDE": {
+          "swing": "WATCH",
+          "scalp": "N/A",
+          "readiness": "none",
+          "reason": "buy@99.31 90p away comp=+16 none"
+        }
+      }
     }
   ]
 }
