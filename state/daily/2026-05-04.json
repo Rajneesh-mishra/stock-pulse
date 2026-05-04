@@ -1187,5 +1187,71 @@
     ],
     "binary_event": "RBA_May2026 2026-05-05T04:30Z (11.7h, elevated caution)",
     "notes": "OIL crossed 103.449 up (comp=+32 bull). EURUSD sweep 1.16840 (comp=-17 none). No trades. GBPUSD time-stop 19:51Z."
+  },
+  {
+    "tick_ts_utc": "2026-05-04T17:44Z",
+    "type": "heartbeat",
+    "events_processed": 0,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "balance": 962.66,
+    "upl": 0.75,
+    "open_positions": [
+      {
+        "instrument": "GBPUSD",
+        "direction": "BUY",
+        "entry": 1.35282,
+        "sl": 1.3495,
+        "tp": 1.36,
+        "size": 1400,
+        "upl": 0.756,
+        "age_min": 113,
+        "note": "time-stop 19:51Z"
+      }
+    ],
+    "working_orders": [
+      {
+        "instrument": "GOLD",
+        "direction": "SELL",
+        "level": 4591,
+        "sl": 4598,
+        "tp": 4550,
+        "size": 0.7,
+        "dist_pts": 65.5,
+        "comp": -46
+      },
+      {
+        "instrument": "AUDUSD",
+        "direction": "BUY",
+        "level": 0.7143,
+        "sl": 0.713,
+        "tp": 0.7187,
+        "size": 3800,
+        "dist_pts": 0.00258,
+        "comp": 34.5,
+        "note": "RBA hike 70-86% tomorrow"
+      }
+    ],
+    "scalp_status": {
+      "EURUSD": "OFF(desync)",
+      "GBPUSD": "ACTIVE(bias=neutral)",
+      "AUDUSD": "OFF(wr=11%,19tr)"
+    },
+    "alerts_modified": [
+      "audusd_m15fvg_buy_7143",
+      "usdjpy_day_fvg_sell_15733"
+    ],
+    "alerts_kept": [
+      "eurusd_m15sweep_116871_buy_watch",
+      "eurusd_upsweep_117159_sell_watch",
+      "gold_h1fvg_sell_4603",
+      "oil_rebound_9931_buy_watch",
+      "oil_sweep_103449_sell_watch",
+      "usdchf_d_fvg_sell_78304",
+      "usdchf_sweep_78218_buy_watch"
+    ],
+    "binary_event": "RBA_May2026 deadline 2026-05-05T04:30Z (~10.7h) elevated caution",
+    "regime": "HORMUZ_ESCORT_ACTIVE_RBA_HIKE_IMMINENT_USD_WEAK_FOMC_CLEARED",
+    "note": "USDJPY 8.8p from SELL alert level 157.33 \u2014 comp=-20 none, watch for \u2264-40. AUDUSD comp dropped +50.5\u2192+34.5, LIMIT kept (RBA catalyst + VALIDATED Rule 3). GBP pulled from 1.36 high on UK Q1 GDP miss."
   }
 ]
