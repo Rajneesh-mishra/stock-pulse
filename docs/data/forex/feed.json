@@ -1,13 +1,6 @@
 {
-  "generated_at": "2026-05-04T11:28:05.255120Z",
+  "generated_at": "2026-05-04T12:29:49.524473Z",
   "ticks": [
-    {
-      "ts": "2026-04-23T08:09:00Z",
-      "events_processed": 1,
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "summary": "1 news_flash us_tariff Chatham House Feb 17 archive 'reset' solo-match non-altering; DROPPED 'reset'; 4 alerts KEEP carried; 0 trades 0pos"
-    },
     {
       "ts": "2026-04-23T17:14:22Z",
       "summary": "2026-04-23T17:14:22Z \u2014 17:07 forex auto \u2014 21 evt gap since 12:34 (4.5h): 6 usdjpy_audits (iran_ceasefire 'extension' kw from Reuters/Al-Jazeera/Detroit-News/Caspian/Daily-Pioneer/WaPo \u2014 ALL iteration of indefinite-extension regime NOT thesis-altering) + 3 oil_audits (ship-traffic + extension-coverage NOT altering) + 4 liquidity_sweeps (USDCHF 0.78602 up-sell readiness=none skip / GBPUSD 1.35133 up",
@@ -813,6 +806,34 @@
         }
       },
       "notes": "news_flash hormuz: Iran claims turning back US warship; US denies missile strike. OIL comp=+32 unchanged. No new trade entries. gold_h1fvg_sell_4603 validated. 2 GTC LIMITs active."
+    },
+    {
+      "ts_utc": "2026-05-04T12:21Z",
+      "events": 0,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "skipped": 0,
+      "active_limits": 2,
+      "balance": 961.92,
+      "daily_pnl": 0.0,
+      "summary": "heartbeat 0 evts; US-Iran ceasefire talks (14-pt proposal) OIL -$1.93 to 100.64; FOMC May hawkish hold (8-4). GOLD SELL LIMIT@4591 GTC ACTIVE (comp=-37.5). AUDUSD BUY LIMIT@0.7143 GTC ACTIVE (comp=50.5 moderate). REMOVED gbpusd_m15sweep_135689+usdchf_m15sweep_78156 (levels taken out). ADDED gbpusd_day_fvg_buy_13528.",
+      "regime": "CEASEFIRE_TALKS_US_IRAN_OIL_SELLOFF_USD_WEAK",
+      "limits_active": [
+        {
+          "epic": "GOLD",
+          "dir": "SELL",
+          "level": 4591.0,
+          "sl": 4598.0,
+          "tp": 4550.0
+        },
+        {
+          "epic": "AUDUSD",
+          "dir": "BUY",
+          "level": 0.7143,
+          "sl": 0.713,
+          "tp": 0.7187
+        }
+      ]
     }
   ]
 }
