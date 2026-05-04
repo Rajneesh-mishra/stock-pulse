@@ -507,5 +507,74 @@
       "OIL_CRUDE": "WATCH 6th fire SKIP; comp=+32 weak bull; scalp=N/A"
     },
     "scalp_summary": "EURUSD=OFF(desync) GBPUSD=ACTIVE AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
+  },
+  {
+    "tick_ts_utc": "2026-05-04T11:21Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "id": "evt_1777893655930_news_flash",
+        "type": "news_flash",
+        "instrument": "OIL_CRUDE",
+        "query": "hormuz_strait"
+      }
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "positions_open": 0,
+    "limits_active": 2,
+    "limits": [
+      {
+        "epic": "GOLD",
+        "dir": "SELL",
+        "level": 4591.0,
+        "sl": 4598.0,
+        "tp": 4550.0
+      },
+      {
+        "epic": "AUDUSD",
+        "dir": "BUY",
+        "level": 0.7143,
+        "sl": 0.713,
+        "tp": 0.7187
+      }
+    ],
+    "balance": 961.92,
+    "pnl_day": 0.0,
+    "confluence": {
+      "EURUSD": {
+        "comp": 10.5,
+        "readiness": "none"
+      },
+      "GBPUSD": {
+        "comp": 14.5,
+        "readiness": "none"
+      },
+      "AUDUSD": {
+        "comp": 40.5,
+        "readiness": "moderate"
+      },
+      "USDJPY": {
+        "comp": -23.0,
+        "readiness": "none"
+      },
+      "USDCAD": {
+        "comp": -37.0,
+        "readiness": "weak"
+      },
+      "USDCHF": {
+        "comp": -14.5,
+        "readiness": "none"
+      },
+      "GOLD": {
+        "comp": -40.0,
+        "readiness": "moderate"
+      },
+      "OIL_CRUDE": {
+        "comp": 32.0,
+        "readiness": "weak"
+      }
+    },
+    "notes": "news_flash hormuz: Iran claims turning back US warship; US denies missile strike. OIL comp=+32 unchanged. No new trade entries. gold_h1fvg_sell_4603 validated. 2 GTC LIMITs active."
   }
 ]

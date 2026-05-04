@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-04T11:01:34.053915+00:00",
+  "generated_at": "2026-05-04T11:26:46.703549+00:00",
   "counts": {
     "trades": 40,
-    "events": 7075,
+    "events": 7100,
     "ticks": 59,
-    "regime_snapshots": 213,
+    "regime_snapshots": 214,
     "broker_positions": 0,
     "counterfactuals": 149
   },
@@ -853,6 +853,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-05-04T10:11Z",
+      "regime_name": "ACTIVE_ESCALATION_US_IRAN_HORMUZ_NO_DEAL_USD_WEAK",
+      "note_text": "2026-05-04T10:11Z forex auto \u2014 1 event: OIL_CRUDE level_cross@103.574 oil_sweep_103449_sell_watch 6th fire SKIP(comp=+32 weak bull, need \u2264-40 CT-fade SELL; price already 67p below level at 102.776). GOLD comp=-43 moderate bear all 4 TFs agree; H4 FVG 4584-4591 unmitigated; SELL LIMIT@4591 GTC confirmed (price at 4562, waiting for rally to level). AUDUSD BUY LIMIT@0.7143 GTC confirmed (placed prior invocation, price=0.71851 41p above, comp=+48 moderate). EURUSD comp=+20.5 none; day low 1.16886 (1.5p above BUY alert 1.16871); SELL alert at 1.17159 (11p above current 1.17050). 0 open positions. Balance $961.92. 2 LIMITs active: GOLD SELL@4591, AUDUSD BUY@0.7143.",
+      "binary_event_name": "FOMC Apr29",
+      "binary_event_active": 0,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
       "ts_utc": "2026-05-04T08:41Z",
       "regime_name": "ACTIVE_ESCALATION_US_IRAN_HORMUZ_NO_DEAL_USD_WEAK",
       "note_text": "2026-05-04T08:41Z forex auto \u2014 1 event: news_flash opec_supply \u2014 OPEC+ agreed output hike (Jun) but impact limited by Hormuz closure. Net OIL signal: bearish-lean offset by supply disruption. OIL at 100.62, comp=24.5 none (just below watchlist threshold of 25). No alert changes. GOLD: comp=-40 moderate bear (threshold met), SELL LIMIT @4591 GTC confirmed. EURUSD: comp=22.5 none, 0.4p above sell alert 1.17159 \u2014 WATCH. AUDUSD: comp=+48 moderate bull, 54p above buy zone 0.7143 (>30p prox) \u2014 WATCH. 0 open positions. Balance $961.92. 1 LIMIT active.",
@@ -923,14 +931,6 @@
       "binary_event_name": null,
       "binary_event_active": 0,
       "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-04-29T15:21Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "2026-04-29T15:21Z forex auto \u2014 1 evt: OIL_CRUDE level_cross@103.455 on oil_sweep_103449_sell_watch (cross_up, 2nd retest of M15 up-sweep extreme 103.449); comp=+55 all-TFs bull BLOCKS CT-fade arm \u2014 Hormuz supply shock sustained, oil_sweep_9579 analog 5f/0%4h, FOMC T-2.6h caution. SKIP CT-fade. Watchlist: oil_fvg_9691_buy REMOVED (inactive\u2192deleted), ADD oil_h4fvg_buy_10030 (H4 FVG 100.296-101.275 unmitigated). GOLD GTC SELL LIMIT@4603 KEEP (bid=4543 comp=-50 mod-bear 4f/100% validated). scalp: GBPUSD=ACTIVE. attention_covered=8/8.",
-      "binary_event_name": "FOMC Apr29",
-      "binary_event_active": 1,
-      "binary_event_deadline": "2026-04-29T18:00Z"
     }
   ],
   "ticks_last_50": [
