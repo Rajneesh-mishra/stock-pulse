@@ -1,18 +1,6 @@
 {
-  "generated_at": "2026-05-04T13:35:49.328662Z",
+  "generated_at": "2026-05-04T14:37:59.144918Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-23T21:40:00Z",
-      "events_in": 1,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 1,
-      "note": "21:40 forex auto \u2014 1 evt us_iran_military Reuters Mar-1-2026 STALE 54d non-thesis-altering. USDJPY 159.685 +45 mod 4/4 bull dist=31.5p OUTSIDE 30p swing=WATCH (downgrade from ARMED-on-tag). GOLD 4694.08 -40 mod 3/4 bear gold_sweep_4721 dist=27.6$ INSIDE 30$ swing=ARMED (upgrade from WATCH); gold_safehaven_4775 dist=80.9$ opp-watch. OIL 96.446 +44 mod 4/4 bull sweep_9323 dist=321p WATCH; retest_90 dist=615p dormant. AUDUSD USDCAD GBPUSD USDCHF none swing=NONE. EURUSD -33 weak BTCUSD +35 weak no alert. 5 level_alerts KEEP 9 SW KEEP. us_iran_military+iran_ceasefire+us_tariff queries TUNED (date-window). Scalp 3 FX shadow halt={}. BOJ T-3d FOMC T-5d. web_search skipped (0 pos + regime stable 4h+). attention_covered=9/9."
-    },
-    {
-      "ts": "2026-04-24T06:00:00Z",
-      "summary": "2026-04-24T06:00:00Z 06:00 forex auto \u2014 0 evt heartbeat. REGIME: ACTIVE_ESCALATION_SHOOT_TO_KILL. USDJPY 159.705 +45 mod 4/4 bull dist=29.5p INSIDE 30p swing=ARMED (counter-trend fade live; BOJ T-3d). GOLD 4705.06 -37.5 weak 3/4 bear dist=16.6$ INSIDE 30$ swing=WATCH (readiness=weak, need |comp|\u226540 for ARMED; H4 FVG 4703-4716 resistance). OIL 96.13 +43 mod 4/4 bull sweep_9323 dist=289p WATCH; retest_90 dist=583p dormant. BTCUSD 78462 +55 mod 4/4 bull day_fvg_buy dist=1502$ WATCH. EURUSD -29.5 weak GBPUSD none AUDUSD none swing=NONE. 6 level_alerts KEEP 8 news_queries (4 TUNE date-roll +1d, 4 KEEP). Scalp 3 FX ACTIVE halt={}. BOJ T-3d FOMC T-5d. web_search skipped (0 pos + regime stable 6h+). attention_covered=9/9."
-    },
     {
       "ts_utc": "2026-04-24T01:41:00Z",
       "events_in": 0,
@@ -973,6 +961,95 @@
       },
       "scalp_summary": "EURUSD=OFF(desync) GBPUSD=ACTIVE(neutral) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
       "notes": "Heartbeat 0 evts. US Hormuz escort succeeded; RBA hike May5 expected; FOMC hawkish. GOLD SELL LIMIT@4591 GTC conf=mod-bear. AUDUSD BUY LIMIT@0.7143 GTC conf=mod-bull. ADDED usdjpy_day_fvg_sell_15733 (Day FVG 157.33, 24.3p away, comp=-25 watch). MODIFIED oil_rebound_9931 context with Hormuz escort news."
+    },
+    {
+      "tick_ts_utc": "2026-05-04T14:06Z",
+      "events_processed": 9,
+      "events_consumed": 10,
+      "news_flash_events": [
+        "hormuz_strait: UAE/Iran ADNOC tanker attack",
+        "opec_supply: OPEC+ June hike"
+      ],
+      "level_cross_events": [
+        "EURUSD eurusd_upsweep_117159 9th fire SKIP (comp=+12 < 25)",
+        "OIL oil_sweep_103449 (old level)"
+      ],
+      "liquidity_sweep_events": [
+        "OIL_CRUDE up-sweep 101.624 (08:23 UTC) \u2014 existing alert covers"
+      ],
+      "trades_opened": 0,
+      "limits_armed": [
+        {
+          "epic": "GBPUSD",
+          "direction": "BUY",
+          "level": 1.35282,
+          "sl": 1.3495,
+          "tp": 1.36,
+          "size": 1400,
+          "deal_id": "00000000-4f18-d9de-044a-beb40055311e",
+          "thesis_type": "trend"
+        }
+      ],
+      "limits_cancelled": [],
+      "positions_closed": [],
+      "active_limits": [
+        {
+          "epic": "GOLD",
+          "direction": "SELL",
+          "level": 4591.0,
+          "deal_id": "00000000-4ebc-b752-044a-beb40055311e"
+        },
+        {
+          "epic": "AUDUSD",
+          "direction": "BUY",
+          "level": 0.7143,
+          "deal_id": "00000000-4f18-77c3-044a-beb40055311e"
+        },
+        {
+          "epic": "GBPUSD",
+          "direction": "BUY",
+          "level": 1.35282,
+          "deal_id": "00000000-4f18-d9de-044a-beb40055311e"
+        }
+      ],
+      "balance": 961.92,
+      "pnl_today": 0.0,
+      "regime": "HORMUZ_ADNOC_ATTACK_CONFIRMED_RBA_HIKE_TOMORROW_OIL_VOLATILE",
+      "summary": "9 events consumed: UAE accuses Iran ADNOC tanker attack (OIL spiked to 104.549 then reversed to 99.785); EURUSD 9th upsweep fire SKIP (comp=+12); GBPUSD BUY LIMIT@1.35282 ARMED (comp=+48 mod). 3 working LIMITs. 0 open."
+    },
+    {
+      "tick_ts_utc": "2026-05-04T14:55Z",
+      "events_consumed": 1,
+      "events": [
+        "news_flash: UAE condemns Iranian attack on ADNOC tanker in Hormuz (confirmation of prior; market absorbed)"
+      ],
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "active_limits": [
+        {
+          "epic": "GOLD",
+          "dir": "SELL",
+          "level": 4591.0,
+          "sl": 4598.0,
+          "tp": 4550.0
+        },
+        {
+          "epic": "AUDUSD",
+          "dir": "BUY",
+          "level": 0.7143,
+          "sl": 0.713,
+          "tp": 0.7187
+        },
+        {
+          "epic": "GBPUSD",
+          "dir": "BUY",
+          "level": 1.35282,
+          "sl": 1.3495,
+          "tp": 1.36
+        }
+      ],
+      "balance": 961.92,
+      "notes": "Hormuz news continuation (UAE condemnation of Iran ADNOC attack). OIL absorbed 104.549\u219297\u2192100.00. GOLD -0.8%. No new setups. RBA hike tomorrow (May 5) supports AUDUSD LIMIT. GBPUSD comp dropped +48\u2192+24.5 (none) but Day FVG bottom 1.35282 structurally intact \u2014 LIMIT kept. GOLD comp -37.5 weak-bear (near -40 moderate threshold) \u2014 LIMIT kept."
     }
   ]
 }
