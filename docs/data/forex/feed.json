@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T08:07:22.030805Z",
+  "generated_at": "2026-05-04T08:44:27.095488Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -598,6 +598,101 @@
       "balance": 961.92,
       "open_positions": 0,
       "notes": "GBPUSD level_cross gbpusd_m15sweep_135689_buy_watch SKIP(comp=+22 none need+40). USDCHF level_cross usdchf_d_fvg_sell_78304 SKIP(comp=-22 none need-40, Day FVG bottom mitigated). ALERT MODIFIED: usdchf_d_fvg_sell_78304 level 0.78304\u21920.78832 (FVG top). usdchf_m15sweep_78156_sell_watch context updated. Attention: AUDUSD moderate bull comp+48 (47.4p from buy zone), GOLD weak bear comp-29 (25.5pts from sell@4603), EURUSD none comp+20.5."
+    },
+    {
+      "tick_ts_utc": "2026-05-04T08:31Z",
+      "events_processed": 4,
+      "events": [
+        "OIL_CRUDE liquidity_sweep@101.624",
+        "bar_close\u00d73 (auto)"
+      ],
+      "trades_opened": 0,
+      "limits_armed": 1,
+      "limits_details": [
+        "GOLD SELL @4591 SL=4598 TP=4550 RR=5.9 size=0.7"
+      ],
+      "trades_closed": 0,
+      "skips": 1,
+      "skip_details": [
+        "OIL_CRUDE CT fade: comp=+32<40 \u2192 watchlist only"
+      ],
+      "balance": 961.92,
+      "open_positions": 0,
+      "working_orders": 1,
+      "key_observations": [
+        "GOLD comp=-40 moderate bear (all TFs), H4 bear FVG 4581-4591 \u2192 SELL LIMIT armed",
+        "OIL_CRUDE up-sweep 101.624 (19.9p); comp=+32 weak opposing \u2192 watchlist ADD",
+        "EURUSD 3.1p from SELL watch 1.17159; comp=+10.5 none (need -40) \u2192 no action",
+        "AUDUSD comp=+48 moderate bull; level 0.7143 at 50.3p (>30p prox) \u2192 watch",
+        "USDCHF: removed stale BUY alert, added SELL watch at 0.78832 (FVG top)",
+        "Fixed stale active=true on AUDUSD and OIL GTC orders (not in broker)"
+      ]
+    },
+    {
+      "tick_ts_utc": "2026-05-04T08:41Z",
+      "events_consumed": 1,
+      "events": [
+        {
+          "event_id": "evt_1777883977135_news_flash",
+          "type": "news_flash",
+          "query_id": "opec_supply",
+          "headline": "OPEC+ agrees oil output hike but impact limited with Hormuz closure",
+          "action": "SKIP \u2014 OIL comp=24.5 none (below 25 threshold); no alert arming; WATCH oil_rebound_9931_buy_watch for comp\u226540"
+        }
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "open_positions": 0,
+      "pending_limits": 1,
+      "pending_limit_detail": "GOLD SELL @4591 SL=4598 TP=4550 size=0.7 GTC (comp=-40 moderate bear, threshold met)",
+      "balance": 961.92,
+      "daily_pnl": 0.0,
+      "confluence": {
+        "EURUSD": {
+          "comp": 22.5,
+          "readiness": "none"
+        },
+        "GBPUSD": {
+          "comp": 14.5,
+          "readiness": "none"
+        },
+        "AUDUSD": {
+          "comp": 48.0,
+          "readiness": "moderate"
+        },
+        "USDJPY": {
+          "comp": -20.0,
+          "readiness": "none"
+        },
+        "USDCAD": {
+          "comp": -37.0,
+          "readiness": "weak"
+        },
+        "USDCHF": {
+          "comp": -22.0,
+          "readiness": "none"
+        },
+        "GOLD": {
+          "comp": -40.0,
+          "readiness": "moderate"
+        },
+        "OIL_CRUDE": {
+          "comp": 24.5,
+          "readiness": "none"
+        }
+      },
+      "attention_matrix": {
+        "EURUSD": "swing=WATCH scalp=OFF readiness=none \u2014 0.4p above sell alert 1.17159; comp=22.5 need +40 CT-fade",
+        "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=none \u2014 comp=14.5 far from +40 threshold",
+        "AUDUSD": "swing=WATCH scalp=OFF readiness=moderate \u2014 comp=+48 but 54p above level 0.7143 (>30p prox)",
+        "USDJPY": "swing=NONE scalp=OFF readiness=none \u2014 no active alerts; comp=-20 none; pip-conv pending",
+        "USDCAD": "swing=NONE scalp=OFF readiness=weak \u2014 comp=-37 approaching threshold; no clean level yet",
+        "USDCHF": "swing=WATCH scalp=OFF readiness=none \u2014 2 SELL alerts (0.78832, 0.78156); comp=-22 need -40",
+        "GOLD": "swing=ARMED scalp=N/A readiness=moderate \u2014 SELL LIMIT @4591 GTC; comp=-40 threshold met",
+        "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=none \u2014 comp=24.5 just below 25; OPEC hike limited by Hormuz"
+      },
+      "scalp_audit": "EURUSD=OFF(engine_desync) GBPUSD=ACTIVE(no_trades) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
+      "news_notes": "OPEC+ Jun output hike agreed; impact limited by Hormuz closure. Mixed supply signal. OIL net: bearish-lean offset by disruption. Regime note updated."
     }
   ]
 }
