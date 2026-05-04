@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-05-04T17:51:34.572455Z",
+  "generated_at": "2026-05-04T18:27:51.650947Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T10:30:00Z",
-      "events_in": 0,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 0,
-      "summary": "10:30 forex auto \u2014 0 evt heartbeat. USDJPY 159.726 +40.5 mod 4/4 bull dist=27.4p INSIDE 30p swing=ARMED (counter-fade SELL 160.00, BOJ T-3d; api.py market-only entry waits price\u2265159.97). GOLD 4681.69 -36.0 weak sweep_4695 dist=13.7$ INSIDE prox readiness=weak WATCH; sweep_4721 dist=40.0$ OUTSIDE. OIL 96.817 +43.0 mod sweep_9323 dist=3.58 extending WATCH. EURUSD -8 none GBPUSD +18.5 none AUDUSD +8 none USDCAD -21.5 none USDCHF +5 none. BTC 77692 +27 weak fvg_76960 dist=732 WATCH. Scalp engine GBPUSD+EURUSD ghost vs broker=0 (known carry). 8 alerts KEEP. 0 trades 0pos. BOJ T-3d FOMC T-5d. news_search SKIP(last_scan 10min ago). attention_covered=9/9."
-    },
     {
       "ts_utc": "2026-04-24T11:18:00Z",
       "events_in": 2,
@@ -1383,6 +1375,35 @@
       "binary_event": "RBA_May2026 deadline 2026-05-05T04:30Z (~10.7h) elevated caution",
       "regime": "HORMUZ_ESCORT_ACTIVE_RBA_HIKE_IMMINENT_USD_WEAK_FOMC_CLEARED",
       "note": "USDJPY 8.8p from SELL alert level 157.33 \u2014 comp=-20 none, watch for \u2264-40. AUDUSD comp dropped +50.5\u2192+34.5, LIMIT kept (RBA catalyst + VALIDATED Rule 3). GBP pulled from 1.36 high on UK Q1 GDP miss."
+    },
+    {
+      "tick_ts_utc": "2026-05-04T18:24Z",
+      "events_processed": 1,
+      "events": [
+        "evt_1777918745818_level_cross (level_cross OIL_CRUDE oil_sweep_103449_sell_watch)"
+      ],
+      "trades": 0,
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "decisions": {
+        "OIL_CRUDE": "WATCHLIST HOLD \u2014 level_cross_up 103.449 (9th fire). comp=+43 CT-fade met but SELL LIMIT below offer rejected by API. Iran-UAE escalation reinforces bull OIL. Updated note.",
+        "GBPUSD": "HOLD \u2014 BUY@1.35282 age=2h33m UPL=+$0.10, time-stop 19:51Z (~1h27m). comp=5.5 none. No trail action.",
+        "GOLD": "HOLD \u2014 SELL LIMIT@4591 GTC, comp=-46 moderate-bear, bid=4515.70 (75.3pts away).",
+        "AUDUSD": "HOLD \u2014 BUY LIMIT@0.7143 GTC, comp=34.5 weak, RBA hike 70-75% 2026-05-05T04:30Z.",
+        "USDCAD": "ADD usdcad_sweep_136924_sell_watch \u2014 comp=-41.5 moderate-bear, SELL level 1.36924, watchlist (84.9p from fill)."
+      },
+      "audit": {
+        "watchlist_changes": [
+          "MODIFY oil_sweep_103449_sell_watch (comp+43, Iran escalation)",
+          "ADD usdcad_sweep_136924_sell_watch"
+        ],
+        "scalp_audit": "EURUSD=KEEP_DISABLED(engine_desync) GBPUSD=KEEP_ACTIVE(neutral) AUDUSD=KEEP_DISABLED(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
+        "halts": "none"
+      },
+      "balance": 962.0,
+      "upl": 0.1,
+      "regime": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_HIKE_IMMINENT_USD_WEAK",
+      "binary_event": "RBA_May2026 active deadline 2026-05-05T04:30Z (~10h)"
     }
   ]
 }
