@@ -856,5 +856,212 @@
     ],
     "balance": 961.92,
     "notes": "Hormuz news continuation (UAE condemnation of Iran ADNOC attack). OIL absorbed 104.549\u219297\u2192100.00. GOLD -0.8%. No new setups. RBA hike tomorrow (May 5) supports AUDUSD LIMIT. GBPUSD comp dropped +48\u2192+24.5 (none) but Day FVG bottom 1.35282 structurally intact \u2014 LIMIT kept. GOLD comp -37.5 weak-bear (near -40 moderate threshold) \u2014 LIMIT kept."
+  },
+  {
+    "tick_ts_utc": "2026-05-04T14:44Z",
+    "events_processed": 2,
+    "events": [
+      {
+        "id": "evt_1777905549368_level_cross",
+        "type": "level_cross",
+        "instrument": "EURUSD",
+        "alert_id": "eurusd_upsweep_117159_sell_watch",
+        "action": "SKIP \u2014 11th fire, comp=+12 none (need \u2265+40 CT-fade)"
+      },
+      {
+        "id": "evt_1777905732620_liquidity_sweep",
+        "type": "liquidity_sweep",
+        "instrument": "GBPUSD",
+        "action": "SKIP \u2014 wick 1.6p/16%ATR, comp=+24.5 <+25, R:R<1.5 vs BUY LIMIT@1.35282, no alert added"
+      }
+    ],
+    "bar_close_consumed": 7,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "active_limits": [
+      {
+        "epic": "GOLD",
+        "dir": "SELL",
+        "level": 4591.0,
+        "sl": 4598.0,
+        "tp": 4550.0,
+        "size": 0.7,
+        "gtc": true
+      },
+      {
+        "epic": "AUDUSD",
+        "dir": "BUY",
+        "level": 0.7143,
+        "sl": 0.713,
+        "tp": 0.7187,
+        "size": 3800.0,
+        "gtc": true
+      },
+      {
+        "epic": "GBPUSD",
+        "dir": "BUY",
+        "level": 1.35282,
+        "sl": 1.3495,
+        "tp": 1.36,
+        "size": 1400.0,
+        "gtc": true
+      }
+    ],
+    "balance_usd": 961.92,
+    "attention_matrix": {
+      "EURUSD": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "11th fire CT-fade SELL; comp=+12 <+40 threshold; WATCH for comp\u2265+40"
+      },
+      "GBPUSD": {
+        "swing": "WATCH",
+        "scalp": "ACTIVE",
+        "readiness": "none",
+        "reason": "BUY LIMIT@1.35282 GTC armed (38p away), comp=+24.5 none; M15 upsweep 1.35678 skipped (R:R<1.5)"
+      },
+      "AUDUSD": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "moderate",
+        "reason": "BUY LIMIT@0.7143 GTC armed (45.9p away), comp=+50.5; RBA hike +25bps tomorrow"
+      },
+      "USDJPY": {
+        "swing": "WATCH",
+        "scalp": "OFF(pip-conv)",
+        "readiness": "weak",
+        "reason": "Day FVG SELL@157.33 in watch, 35.4p below; comp=-30.5 (need \u2264-40)"
+      },
+      "USDCAD": {
+        "swing": "NONE",
+        "scalp": "OFF(CAD-quote)",
+        "readiness": "unknown",
+        "reason": "no active alert near trigger; not running confluence this tick"
+      },
+      "USDCHF": {
+        "swing": "WATCH",
+        "scalp": "OFF(pip-conv)",
+        "readiness": "unknown",
+        "reason": "D FVG SELL@0.78832 in watch, 47p away; comp=-22 none (need \u2264-40)"
+      },
+      "GOLD": {
+        "swing": "ARMED",
+        "scalp": "N/A(spread 5p)",
+        "readiness": "weak",
+        "reason": "SELL LIMIT@4591 GTC (11.4pts from fill), comp=-37.5 all-TF bearish; H4 FVG unmitigated"
+      },
+      "OIL_CRUDE": {
+        "swing": "WATCH",
+        "scalp": "N/A(spread 4p)",
+        "readiness": "unknown",
+        "reason": "BUY@99.31 watch (124p away), SELL@103.449 watch (244p away); Hormuz premium intact, no arming"
+      }
+    },
+    "scalp_audit": "EURUSD=OFF(desync) GBPUSD=ACTIVE(0 trades, neutral) AUDUSD=OFF(wr=11%/19) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
+    "regime_note": "2026-05-04T14:44Z forex auto \u2014 2 evts processed: (1) level_cross eurusd_upsweep_117159 (11th fire, comp=+12 none, CT-fade needs \u2265+40, SKIP); (2) liquidity_sweep GBPUSD M15 @1.35678 (wick=1.6p/16%ATR, comp=+24.5 <+25 threshold, R:R<1.5 vs BUY LIMIT@1.35282, SKIP alert-add). GOLD SELL LIMIT@4591 GTC (comp=-37.5 weak-bear, 11.4pts from fill); AUDUSD BUY LIMIT@0.7143 GTC (comp=+50.5 moderate-bull, RBA +25bps 2026-05-05 confirmed 86%); GBPUSD BUY LIMIT@1.35282 GTC (comp=+24.5 none, Day FVG bottom intact). Hormuz blockade intact, Iran threatening US Project Freedom escorts. 0 trades. Balance $961.92."
+  },
+  {
+    "tick_ts_utc": "2026-05-04T15:22Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "event_id": "evt_1777908127281_level_cross",
+        "type": "level_cross",
+        "instrument": "GOLD",
+        "alert_id": "gold_h4ob_buy_4524",
+        "decision": "SKIP_BUY \u2014 comp=-46.0 moderate-bear all 4 TFs (Day/H4/H1/M15 price<EMA stack); need comp\u2265+40 bullish to arm; OB zone 4492-4524 entered at 4514.72"
+      }
+    ],
+    "trades_executed": 0,
+    "orders_live": [
+      {
+        "epic": "GOLD",
+        "direction": "SELL",
+        "type": "LIMIT",
+        "level": 4591.0,
+        "sl": 4598.0,
+        "tp": 4550.0,
+        "size": 0.7,
+        "status": "GTC_ACTIVE",
+        "note": "comp=-46.0 moderate-bear; 73.3pts from fill"
+      },
+      {
+        "epic": "AUDUSD",
+        "direction": "BUY",
+        "type": "LIMIT",
+        "level": 0.7143,
+        "sl": 0.713,
+        "tp": 0.7187,
+        "size": 3800,
+        "status": "GTC_ACTIVE",
+        "note": "ARMED \u2014 comp=+50.5 moderate-bull; 29.1p from fill; RBA hike 2026-05-05"
+      },
+      {
+        "epic": "GBPUSD",
+        "direction": "BUY",
+        "type": "LIMIT",
+        "level": 1.35282,
+        "sl": 1.3495,
+        "tp": 1.36,
+        "size": 1400,
+        "status": "GTC_ACTIVE",
+        "note": "WATCH \u2014 comp=+24.5 none; Day FVG bottom; 7.6p from fill"
+      }
+    ],
+    "balance_usd": 961.92,
+    "attention_matrix": {
+      "EURUSD": {
+        "swing": "WATCH",
+        "scalp": "OFF(engine_desync)",
+        "readiness": "none",
+        "reason": "eurusd_upsweep@1.17159 validated 89% 4h but comp=+12 (need +40 for CT-fade); eurusd_m15sweep@1.16871 buy watch (comp=+30 weak)"
+      },
+      "GBPUSD": {
+        "swing": "WATCH",
+        "scalp": "ACTIVE",
+        "readiness": "none",
+        "reason": "BUY LIMIT@1.35282 GTC live (7.6p), comp=+24.5 below moderate; gbpusd_upsweep@1.35203 sell watch (comp+14.5 need+40)"
+      },
+      "AUDUSD": {
+        "swing": "ARMED",
+        "scalp": "OFF(wr=11%)",
+        "readiness": "moderate",
+        "reason": "BUY LIMIT@0.7143 GTC; comp=+50.5 moderate-bull; 29.1p \u2264 30p proximity; RBA hike 2026-05-05"
+      },
+      "USDJPY": {
+        "swing": "WATCH",
+        "scalp": "OFF(pip-conv)",
+        "readiness": "weak",
+        "reason": "usdjpy_day_fvg_sell@157.33; comp=-30.5 weak (need -40); 35.4p below Day FVG bottom"
+      },
+      "USDCAD": {
+        "swing": "NONE",
+        "scalp": "OFF(pip-conv+spread)",
+        "readiness": "none",
+        "reason": "no active level_alert; structure_watch active; no setup within criteria this tick"
+      },
+      "USDCHF": {
+        "swing": "WATCH",
+        "scalp": "OFF(pip-conv)",
+        "readiness": "none",
+        "reason": "usdchf_d_fvg_sell@0.78832; comp=-22 none (need -40); far from FVG top"
+      },
+      "GOLD": {
+        "swing": "WATCH",
+        "scalp": "N/A(spread 5p)",
+        "readiness": "moderate_bear",
+        "reason": "SELL LIMIT@4591 GTC ACTIVE (73.3pts above); H4 OB zone entered (4514.72); comp=-46 moderate-bear; BUY alert needs comp\u2265+40"
+      },
+      "OIL_CRUDE": {
+        "swing": "WATCH",
+        "scalp": "N/A(spread 4p)",
+        "readiness": "none",
+        "reason": "oil_rebound@99.31 far (comp=+19); oil_sweep@103.449 CT-fade (comp=+32 need\u2264-40); Hormuz escort active, geo-premium deflating"
+      }
+    },
+    "scalp_audit": "EURUSD=OFF(engine_desync_loop) GBPUSD=ACTIVE(no trades yet, london session) AUDUSD=OFF(wr=11%<40%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
+    "regime": "HORMUZ_ESCORT_ACTIVE_RBA_HIKE_TOMORROW_USD_WEAK_FOMC_CLEARED",
+    "notes": "GOLD bear acceleration confirmed (4579\u21924517, comp -37\u2192-46). H4 OB zone entered but all TFs bearish \u2014 no buy signal. SELL LIMIT@4591 thesis strengthened. AUDUSD ARMED ahead of RBA hike tomorrow. No new trades this tick."
   }
 ]

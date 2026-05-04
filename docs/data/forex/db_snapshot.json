@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-04T14:33:25.847120+00:00",
+  "generated_at": "2026-05-04T15:23:55.901166+00:00",
   "counts": {
     "trades": 40,
-    "events": 7230,
+    "events": 7265,
     "ticks": 59,
-    "regime_snapshots": 220,
+    "regime_snapshots": 223,
     "broker_positions": 0,
-    "counterfactuals": 150
+    "counterfactuals": 152
   },
   "trades_last_50": [
     {
@@ -853,6 +853,30 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-05-04T14:44Z",
+      "regime_name": "HORMUZ_ESCORT_ACTIVE_RBA_HIKE_TOMORROW_USD_WEAK_FOMC_CLEARED",
+      "note_text": "2026-05-04T14:44Z forex auto \u2014 2 evts processed: (1) level_cross eurusd_upsweep_117159 (11th fire, comp=+12 none, CT-fade needs \u2265+40, SKIP); (2) liquidity_sweep GBPUSD M15 @1.35678 (wick=1.6p/16%ATR, comp=+24.5 <+25 threshold, R:R<1.5 vs BUY LIMIT@1.35282, SKIP alert-add). GOLD SELL LIMIT@4591 GTC (comp=-37.5 weak-bear, 11.4pts from fill); AUDUSD BUY LIMIT@0.7143 GTC (comp=+50.5 moderate-bull, RBA +25bps 2026-05-05 confirmed 86%); GBPUSD BUY LIMIT@1.35282 GTC (comp=+24.5 none, Day FVG bottom intact). Hormuz blockade intact, Iran threatening US Project Freedom escorts. 0 trades. Balance $961.92.",
+      "binary_event_name": "FOMC May2026",
+      "binary_event_active": 0,
+      "binary_event_deadline": "2026-05-07T18:00Z"
+    },
+    {
+      "ts_utc": "2026-05-04T14:44Z",
+      "regime_name": "HORMUZ_ESCORT_ACTIVE_RBA_HIKE_TOMORROW_USD_WEAK_FOMC_CLEARED",
+      "note_text": "2026-05-04T14:44Z forex auto \u2014 1 evt: level_cross eurusd_upsweep_117159 (11th fire, comp=+12 none, CT-fade needs \u2265+40, SKIP). GOLD SELL LIMIT@4591 GTC active (comp=-37.5 weak-bear, 11.4pts from fill, H4 FVG unmitigated); AUDUSD BUY LIMIT@0.7143 GTC active (comp=+50.5 moderate-bull, RBA +25bps 2026-05-05 confirmed 86%); GBPUSD BUY LIMIT@1.35282 GTC active (comp=+24.5 none, Day FVG bottom intact). Hormuz blockade ongoing, Iran threatens US escort forces; geo-premium intact. 0 trades. Balance $961.92.",
+      "binary_event_name": "FOMC May2026",
+      "binary_event_active": 0,
+      "binary_event_deadline": "2026-05-07T18:00Z"
+    },
+    {
+      "ts_utc": "2026-05-04T14:55Z",
+      "regime_name": "HORMUZ_ESCORT_ACTIVE_RBA_HIKE_TOMORROW_USD_WEAK_FOMC_CLEARED",
+      "note_text": "2026-05-04T14:55Z forex auto \u2014 1 evt: news_flash hormuz (UAE condemns Iranian attack on ADNOC tanker; confirmation of prior event at 13:35 \u2014 market already absorbed, OIL 104.549\u219297\u2192100.00 range, GOLD -0.8% at 4576); no new setups. GOLD SELL LIMIT@4591 GTC ACTIVE (comp=-37.5 weak-bear, all TFs agree); AUDUSD BUY LIMIT@0.7143 GTC ACTIVE (comp=+50.5 moderate-bull, RBA hike tomorrow 2026-05-05); GBPUSD BUY LIMIT@1.35282 GTC ACTIVE (comp=+24.5 none, Day FVG bottom intact). 0 trades. Balance $961.92.",
+      "binary_event_name": "FOMC May2026",
+      "binary_event_active": 0,
+      "binary_event_deadline": "2026-05-07T18:00Z"
+    },
+    {
       "ts_utc": "2026-05-04T14:06Z",
       "regime_name": "HORMUZ_ESCORT_ACTIVE_RBA_HIKE_TOMORROW_USD_WEAK_FOMC_HAWKISH",
       "note_text": "2026-05-04T14:06Z forex auto \u2014 2 evts: news_flash hormuz (UAE accuses Iran of ADNOC tanker attack; Iranian drones confirmed Gulf News/Discovery Alert) \u2192 OIL spiked intraday high 104.549 then reversed to 99.785 -0.54%; GOLD -1.1% at 4562.96; market absorbed news. level_cross EURUSD eurusd_upsweep_117159_sell_watch 9th fire comp=+12 none \u2192 SKIP (need comp\u226540). GBPUSD BUY LIMIT@1.35282 ARMED (comp=+48 moderate bull, Day FVG bottom, size=1400, SL=1.3495, TP=1.3600, R:R=2.2). GOLD SELL LIMIT@4591 GTC ACTIVE (comp=-40 mod-bear; 28.04pts below current 4562.96). AUDUSD BUY LIMIT@0.7143 GTC ACTIVE (RBA hike tomorrow 2026-05-05 +25bps, comp=+14 none but catalyst live). OIL comp=+24.5 none; SELL alerts 101.07/101.62 above market at 99.785 \u2014 keep. EURUSD comp=+12 none; USDJPY comp=-27.5 weak (Day FVG 157.33-159.52 WATCH); USDCAD comp=-24.5 none; USDCHF comp=-39.5 weak. Scalp: GBPUSD=ACTIVE neutral; EURUSD=OFF desync; AUDUSD=OFF wr=11%. 3 working LIMITs. 0 open positions. Balance $961.92.",
@@ -904,30 +928,6 @@
       "ts_utc": "2026-05-04T10:11Z",
       "regime_name": "ACTIVE_ESCALATION_US_IRAN_HORMUZ_NO_DEAL_USD_WEAK",
       "note_text": "2026-05-04T10:11Z forex auto \u2014 1 event: OIL_CRUDE level_cross@103.574 oil_sweep_103449_sell_watch 6th fire SKIP(comp=+32 weak bull, need \u2264-40 CT-fade SELL; price already 67p below level at 102.776). GOLD comp=-43 moderate bear all 4 TFs agree; H4 FVG 4584-4591 unmitigated; SELL LIMIT@4591 GTC confirmed (price at 4562, waiting for rally to level). AUDUSD BUY LIMIT@0.7143 GTC confirmed (placed prior invocation, price=0.71851 41p above, comp=+48 moderate). EURUSD comp=+20.5 none; day low 1.16886 (1.5p above BUY alert 1.16871); SELL alert at 1.17159 (11p above current 1.17050). 0 open positions. Balance $961.92. 2 LIMITs active: GOLD SELL@4591, AUDUSD BUY@0.7143.",
-      "binary_event_name": "FOMC Apr29",
-      "binary_event_active": 0,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-05-04T08:41Z",
-      "regime_name": "ACTIVE_ESCALATION_US_IRAN_HORMUZ_NO_DEAL_USD_WEAK",
-      "note_text": "2026-05-04T08:41Z forex auto \u2014 1 event: news_flash opec_supply \u2014 OPEC+ agreed output hike (Jun) but impact limited by Hormuz closure. Net OIL signal: bearish-lean offset by supply disruption. OIL at 100.62, comp=24.5 none (just below watchlist threshold of 25). No alert changes. GOLD: comp=-40 moderate bear (threshold met), SELL LIMIT @4591 GTC confirmed. EURUSD: comp=22.5 none, 0.4p above sell alert 1.17159 \u2014 WATCH. AUDUSD: comp=+48 moderate bull, 54p above buy zone 0.7143 (>30p prox) \u2014 WATCH. 0 open positions. Balance $961.92. 1 LIMIT active.",
-      "binary_event_name": "FOMC Apr29",
-      "binary_event_active": 0,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-05-04T08:31Z",
-      "regime_name": "ACTIVE_ESCALATION_US_IRAN_HORMUZ_NO_DEAL_USD_WEAK",
-      "note_text": "2026-05-04T08:31Z forex auto \u2014 1 event: OIL_CRUDE liquidity_sweep @101.624 (up-sweep 19.9p, close 101.2, sell bias). comp=+32 weak bull (opposing CT SELL fade) \u2014 |32|>=25 but <40 \u2192 watchlist only; ADD oil_sweep_10162_sell_watch. GOLD: comp=-40 moderate bear, all 4 TFs agree, H4 bear FVG unmitigated 4581-4591 \u2192 SELL LIMIT ARMED @4591 SL=4598 TP=4550 RR=5.9 size=0.7. EURUSD SELL watch 1.17159 price=1.17190 (3.1p away, prox met) but comp=+10.5 none (need -40) \u2192 WATCHLIST. AUDUSD comp=+48 moderate bull, level=0.7143 still 50p away (>30p prox) \u2014 stale GTC cleaned. USDCHF: comp=-22 bearish, removed stale BUY alert; ADD SELL watch @0.78832 (FVG top). Balance $961.92. 1 LIMIT open.",
-      "binary_event_name": "FOMC Apr29",
-      "binary_event_active": 0,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-05-04T08:05Z",
-      "regime_name": "ACTIVE_ESCALATION_US_IRAN_HORMUZ_NO_DEAL_USD_WEAK",
-      "note_text": "2026-05-04T08:05Z forex auto \u2014 2 events: GBPUSD level_cross 1.35689 (gbpusd_m15sweep_135689_buy_watch, SKIP comp=+22 none need+40), USDCHF level_cross 0.78304 (usdchf_d_fvg_sell_78304, SKIP comp=-22 none need-40; Day FVG bottom MITIGATED \u2014 alert updated to target FVG top 0.78832). 0 trades. No open positions. Balance $961.92. AUDUSD: comp=+48 moderate bull but 47.4p above buy zone (>30p prox, WATCH). GOLD: comp=-29 weak, 25.5pts below sell@4603 (prox met, comp not at -40). USDCHF: near-term M15+H4 bullish, targeting FVG top rally; sweep level 0.78156 = primary SELL watch.",
       "binary_event_name": "FOMC Apr29",
       "binary_event_active": 0,
       "binary_event_deadline": "2026-04-29T18:00Z"
@@ -1436,6 +1436,32 @@
     }
   ],
   "counterfactuals_last_50": [
+    {
+      "alert_id": "gold_h4ob_buy_4524",
+      "instrument": "GOLD",
+      "direction": "buy",
+      "trigger_price": 4514.72,
+      "fired_at": "2026-05-04T15:22:07.281370+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
+    {
+      "alert_id": "eurusd_upsweep_117159_sell_watch",
+      "instrument": "EURUSD",
+      "direction": "sell",
+      "trigger_price": 1.171645,
+      "fired_at": "2026-05-04T14:39:09.368052+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
     {
       "alert_id": "eurusd_upsweep_117159_sell_watch",
       "instrument": "EURUSD",
@@ -2053,32 +2079,6 @@
       "direction": "sell",
       "trigger_price": 1.1716000000000002,
       "fired_at": "2026-04-28T22:00:45.710861+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
-    },
-    {
-      "alert_id": "eurusd_upsweep_117159_sell_watch",
-      "instrument": "EURUSD",
-      "direction": "sell",
-      "trigger_price": 1.171605,
-      "fired_at": "2026-04-28T18:45:23.075742+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
-    },
-    {
-      "alert_id": "eurusd_upsweep_117159_sell_watch",
-      "instrument": "EURUSD",
-      "direction": "sell",
-      "trigger_price": 1.171595,
-      "fired_at": "2026-04-28T17:48:06.741875+00:00",
       "hit_1h": null,
       "hit_4h": null,
       "hit_24h": null,
