@@ -1,12 +1,12 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-05-04T18:51Z",
-  "pruned_at": "2026-05-04T18:51Z",
-  "pruned_by": "claude auto-audit 2026-05-04T18:51Z \u2014 MODIFY oil_sweep_103449_sell_watch (10th fire, comp +43\u2192+40; CT-fade threshold still met; no retest at level; SELL LIMIT API-blocked; WATCH); all others KEEP",
-  "pruned_removed": [],
-  "pruned_added": [
-    "usdcad_sweep_136924_sell_watch"
+  "last_updated_by_claude": "2026-05-05T00:20Z",
+  "pruned_at": "2026-05-05T00:20Z",
+  "pruned_by": "claude auto-audit 2026-05-05T00:20Z \u2014 REMOVE usdchf_sweep_78218_buy_watch (USDCHF weak-bear comp=-29.5, buy-level counter-confluence, marginal 1.6p wick, price risen 20p above level with no fill; KEEP all others; Iran escalation new attacks on UAE oil ports noted; RBA 04:30Z elevated caution)",
+  "pruned_removed": [
+    "usdchf_sweep_78218_buy_watch"
   ],
+  "pruned_added": [],
   "instruments": [
     "EURUSD",
     "USDJPY",
@@ -92,7 +92,7 @@
       "sl": 4598.0,
       "tp": 4550.0,
       "rr_target": "5.9",
-      "current_price_ref": 4522.09,
+      "current_price_ref": 4514.45,
       "last_updated": "2026-05-04T15:22Z",
       "validated": true,
       "alert_id": "gold_h1fvg_sell_4603",
@@ -111,7 +111,7 @@
       "sl": 98.9,
       "tp": 101.0,
       "rr_target": "4.1",
-      "current_price_ref": 102.699,
+      "current_price_ref": 102.695,
       "last_updated": "2026-05-04T15:40Z",
       "validated": true,
       "alert_id": "oil_rebound_9931_buy_watch",
@@ -130,7 +130,7 @@
       "sl": 103.65,
       "tp": 101.55,
       "rr_target": 9.5,
-      "current_price_ref": 103.547,
+      "current_price_ref": 102.695,
       "last_updated": "2026-05-04T20:00Z",
       "validated": true,
       "alert_id": "oil_sweep_103449_sell_watch",
@@ -149,7 +149,7 @@
       "sl": 0.7905,
       "tp": 0.78,
       "rr_target": "3.8",
-      "current_price_ref": 0.78367,
+      "current_price_ref": 0.78417,
       "last_updated": "2026-05-04T08:05Z",
       "alert_id": "usdchf_d_fvg_sell_78304",
       "active": true
@@ -167,29 +167,10 @@
       "sl": 159.6,
       "tp": 153.8,
       "rr_target": "1.54",
-      "current_price_ref": 157.242,
+      "current_price_ref": 157.253,
       "last_updated": "2026-05-04T17:44Z",
       "validated": false,
       "alert_id": "usdjpy_day_fvg_sell_15733",
-      "active": true
-    },
-    {
-      "id": "usdchf_sweep_78218_buy_watch",
-      "instrument": "USDCHF",
-      "level": 0.78218,
-      "emit_on": "cross_down",
-      "cooldown_sec": 1800,
-      "direction": "buy",
-      "note": "ENTRY: price retests swept extreme 0.78218; M15 bar closes AT or ABOVE 0.78218 with bullish rejection wick \u22652p from the low. Arm BUY LIMIT when comp \u2265 40 bullish (trend-aligned) OR |comp| \u2265 40 bearish (counter-trend fade \u2014 extension confirms wick genuine).\n\nCONTEXT: M15 down-sweep 2026-05-04T15:15Z \u2014 wick 1.6p below 0.78218, close back inside at 0.78325 (24% of M15 ATR=6.6p; marginal wick). USDCHF at 0.78309. comp=-22 none \u2014 below 25 threshold; no immediate trade. H4 bear trend (price<ema21<ema50, DAY+H4+H1 bearish). M15 BOS bull from 2026-05-01 at 0.78222. Existing SELL alert usdchf_d_fvg_sell_78304 at 0.78832 (52p above). Watch for comp improvement before arming.\n\nSL: 0.78175  TP: 0.78400  R:R target: 2.4\n\nadded 2026-05-04T15:35Z \u2014 mandatory liquidity_sweep add; comp=-22 none; watchlist only.",
-      "entry_criterion": "M15 retest of 0.78218 with bullish rejection wick \u22652p. Arm when comp \u2265 40 (trend bull) OR comp \u2264 -40 (CT-fade extension).",
-      "regime_context": "USDCHF 0.78309, comp=-22 none. H4+D bearish, M15 BOS bull from 0.78222. M15 down-sweep wick 1.6p. No trade yet.",
-      "sl": 0.78175,
-      "tp": 0.784,
-      "rr_target": "2.4",
-      "current_price_ref": 0.78367,
-      "last_updated": "2026-05-04T16:25Z",
-      "validated": false,
-      "alert_id": "usdchf_sweep_78218_buy_watch",
       "active": true
     },
     {
@@ -205,7 +186,7 @@
       "sl": 1.372,
       "tp": 1.355,
       "rr_target": "5.1",
-      "current_price_ref": 1.36075,
+      "current_price_ref": 1.36229,
       "last_updated": "2026-05-04T18:24Z",
       "validated": false,
       "alert_id": "usdcad_sweep_136924_sell_watch",
@@ -222,7 +203,8 @@
       "sl": 1.344,
       "tp": 1.358,
       "rr_target": 3.8,
-      "last_updated": "2026-05-04T20:00Z"
+      "last_updated": "2026-05-04T20:00Z",
+      "current_price_ref": 1.35278
     }
   ],
   "structure_watch": [

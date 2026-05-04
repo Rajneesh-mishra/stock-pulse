@@ -1,0 +1,82 @@
+[
+  {
+    "tick_ts_utc": "2026-05-05T00:20Z",
+    "events_processed": 9,
+    "events_actionable": 1,
+    "events_noise": 8,
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "positions_confirmed": [
+      "GBPUSD_BUY_time_stop_close_entry1.35282_exit1.35376_pnl+1.09"
+    ],
+    "active_limits": [
+      {
+        "epic": "OIL_CRUDE",
+        "dir": "SELL",
+        "level": 103.449,
+        "sl": 103.65,
+        "tp": 101.55,
+        "status": "GTC_HELD"
+      },
+      {
+        "epic": "GOLD",
+        "dir": "SELL",
+        "level": 4591.0,
+        "sl": 4598.0,
+        "tp": 4550.0,
+        "status": "GTC_HELD"
+      },
+      {
+        "epic": "AUDUSD",
+        "dir": "BUY",
+        "level": 0.7143,
+        "sl": 0.713,
+        "tp": 0.7187,
+        "status": "GTC_HELD_RBA_CAUTION"
+      }
+    ],
+    "balance": 963.26,
+    "upl": 0.0,
+    "daily_pnl": 0.0,
+    "regime": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_HIKE_IMMINENT_USD_WEAK",
+    "binary_event": {
+      "name": "RBA_May2026",
+      "deadline": "2026-05-05T04:30Z",
+      "caution": "elevated"
+    },
+    "watchlist_audit": {
+      "removed": [
+        "usdchf_sweep_78218_buy_watch"
+      ],
+      "added": [],
+      "kept": 10,
+      "reason": "REMOVE usdchf_sweep_78218 (counter-confluence USDCHF weak-bear, price risen above level, marginal wick)"
+    },
+    "confluence": {
+      "GOLD": "moderate-bear comp=-46",
+      "OIL_CRUDE": "weak-bull comp=+37.5",
+      "AUDUSD": "weak-bull comp=+31.5",
+      "USDCHF": "weak-bear comp=-29.5",
+      "EURUSD": "none comp=-16.5",
+      "GBPUSD": "none comp=-14",
+      "USDCAD": "none comp=-15",
+      "USDJPY": "none comp=+3.5"
+    },
+    "scalp_status": "GBPUSD=ACTIVE(no_halt) EURUSD=OFF AUDUSD=OFF(RBA_caution) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
+    "news_highlights": [
+      "Iran attacks UAE oil port + Hormuz ships \u2014 most serious escalation since ceasefire; Brent reportedly $114",
+      "RBA hike probability 62% (mkt), big banks all predict +25bps to 4.35% at 04:30Z May 5",
+      "UAE quitting OPEC per market reports \u2014 structural shift in oil market"
+    ],
+    "attention_matrix": {
+      "EURUSD": "swing=NONE scalp=OFF readiness=none comp=-16.5",
+      "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=none liqsweep_134736_buy at 1.34736 (54p below)",
+      "AUDUSD": "swing=ARMED scalp=OFF readiness=weak BUY LIMIT@0.7143 GTC active RBA-caution",
+      "USDJPY": "swing=WATCH scalp=OFF readiness=none USDJPY=157.253 AT Day FVG 157.33 (7.7p), comp=+3.5 none",
+      "USDCAD": "swing=WATCH scalp=OFF readiness=none usdcad_sweep_136924_sell at 1.36924 (69.5p above)",
+      "USDCHF": "swing=WATCH scalp=OFF readiness=weak usdchf_d_fvg_sell@0.78832 (41.5p above)",
+      "GOLD": "swing=ARMED scalp=N/A readiness=moderate SELL LIMIT@4591 GTC active comp=-46",
+      "OIL_CRUDE": "swing=ARMED scalp=N/A readiness=weak SELL LIMIT@103.449 CT-fade GTC active"
+    }
+  }
+]
