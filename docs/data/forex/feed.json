@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T07:35:31.210236Z",
+  "generated_at": "2026-05-04T08:00:57.717367Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -543,6 +543,50 @@
           "readiness": "none",
           "reason": "buy@99.31 90p away comp=+16 none"
         }
+      }
+    },
+    {
+      "tick_ts_utc": "2026-05-04T07:58Z",
+      "events_consumed": 1,
+      "events_skipped": 1,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "positions_open": 0,
+      "balance": 961.92,
+      "daily_pnl": 0.0,
+      "regime": "ACTIVE_ESCALATION_US_IRAN_HORMUZ_NO_DEAL_USD_WEAK",
+      "decisions": [
+        {
+          "event": "eurusd_upsweep_117159_sell_watch level_cross",
+          "fire": 9,
+          "action": "SKIP",
+          "reason": "CT-fade SELL needs comp\u2265+25 (watchlist) or \u2265+40 (arm); comp=+22.5 < 25 minimum threshold"
+        }
+      ],
+      "watchlist_changes": {
+        "removed": [],
+        "added": [],
+        "modified": [
+          "eurusd_upsweep_117159 \u2014 comp ref updated to +22.5, 9th fire noted"
+        ]
+      },
+      "news_query_changes": {
+        "removed": [
+          "fed_fomc (FOMC Apr29 passed)"
+        ],
+        "tuned": [
+          "all remaining queries: match_keywords rolled to May 2-5 2026"
+        ]
+      },
+      "attention": {
+        "EURUSD": "WATCH/OFF/none \u2014 9th fire at 1.17159, comp=+22.5<25",
+        "GBPUSD": "WATCH/ACTIVE/none \u2014 comp=+22, sweep buy 3.6p away but <40",
+        "AUDUSD": "WATCH/OFF/moderate \u2014 comp=+48, 47.5p above buy zone 0.7143",
+        "USDJPY": "NONE/OFF/weak \u2014 comp=-25.5, no alerts",
+        "USDCAD": "NONE/OFF/weak \u2014 comp=-37",
+        "USDCHF": "WATCH/OFF/none \u2014 comp=-22, Day FVG sell 4.9p above",
+        "GOLD": "WATCH/N/A/weak \u2014 comp=-29, 21.9pts below sell@4603",
+        "OIL_CRUDE": "WATCH/N/A/none \u2014 comp=+16, 134.8p above buy 99.31"
       }
     }
   ]

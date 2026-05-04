@@ -1,12 +1,10 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-05-04T07:31Z",
-  "pruned_at": "2026-05-04T07:31Z",
-  "pruned_by": "claude auto-audit 2026-05-04T07:31Z \u2014 0 removed, 0 added; gbpusd_m15sweep_135689 fired at level (comp=+24 SKIP need+40); oil_rebound+oil_sweep_103449 promoted to validated",
+  "last_updated_by_claude": "2026-05-04T07:58Z",
+  "pruned_at": "2026-05-04T07:58Z",
+  "pruned_by": "claude auto-audit 2026-05-04T07:58Z \u2014 0 removed, 0 added; eurusd_upsweep_117159 9th fire SKIP(comp=+22.5<25 CT-fade min); all 11 alerts KEEP",
   "pruned_removed": [],
-  "pruned_added": [
-    "usdchf_m15sweep_78156_sell_watch (M15 liq_sweep 2026-05-04T06:45Z; swept 0.78156, close_inside=0.78121; WATCH comp\u226540 bullish for CT-fade sell)"
-  ],
+  "pruned_added": [],
   "instruments": [
     "EURUSD",
     "USDJPY",
@@ -35,8 +33,8 @@
       "sl": 0.713,
       "tp": 0.7187,
       "rr_target": "2.4",
-      "current_price_ref": 0.71918,
-      "last_updated": "2026-05-04T07:31Z",
+      "current_price_ref": 0.71905,
+      "last_updated": "2026-05-04T07:58Z",
       "validated": true,
       "alert_id": "audusd_m15fvg_buy_7143",
       "active": true
@@ -54,8 +52,8 @@
       "sl": 1.1675,
       "tp": 1.1727,
       "rr_target": "2.2",
-      "current_price_ref": 1.172185,
-      "last_updated": "2026-05-04T07:31Z",
+      "current_price_ref": 1.171785,
+      "last_updated": "2026-05-04T07:58Z",
       "alert_id": "eurusd_m15sweep_116871_buy_watch",
       "active": true,
       "validated": true
@@ -67,14 +65,14 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "ENTRY: price returns to 1.17159 swept extreme; M15 retest with bearish rejection wick \u22651p from the high. VALIDATED \u2014 naked LIMIT SELL when comp \u2265 +40 bullish extension (counter-trend fade; no M15 confirmation required at comp\u226540).\n\nCONTEXT: VALIDATED \u2014 8 fires, 4h hit_rate=88% per Rule 3. EURUSD at 1.17268 (10.9p ABOVE level \u2014 very close). comp=+30 weak (need \u2265+40 to arm). M15 bear FVG at 1.17284-1.17342 unmitigated bars_ago=1 \u2014 bearish overhead resistance. H4 bull OB 1.16551-1.16840 below as TP zone. 4h time-stop if entered.\n\nSL: 1.17189  TP: 1.17028  R:R target: 4.4\n\nupdated 2026-05-04T06:50Z \u2014 comp=+30 (need +40); 10.9p above level, almost at proximity threshold; WATCH.",
+      "note": "ENTRY: price returns to 1.17159 swept extreme; M15 retest with bearish rejection wick \u22651p from the high. VALIDATED \u2014 naked LIMIT SELL when comp \u2265 +40 bullish extension (counter-trend fade; no M15 confirmation required at comp\u226540).\n\nCONTEXT: VALIDATED \u2014 8 fires (9th fired 2026-05-04T07:54Z), 4h hit_rate=88% per Rule 3. EURUSD at 1.171785 (1.95p ABOVE level \u2014 just fired). comp=+22.5 none (need \u2265+40 to arm; \u2265+25 for watchlist-only). M15 CHoC bear 2026-05-01T06:30Z @ 1.1719; fresh M15 bear FVG 1.17199-1.17203 unmitigated bars_ago=1 \u2014 overhead resistance. H4 bull OB 1.16551-1.16840 below as TP zone. 4h time-stop if entered.\n\nSL: 1.17189  TP: 1.17028  R:R target: 4.4\n\nupdated 2026-05-04T07:58Z \u2014 9th fire; comp=+22.5 < 25 minimum CT-fade threshold; SKIP this fire; WATCH for comp\u226540.",
       "entry_criterion": "M15 retest of 1.17159 with bearish rejection wick \u22651p. VALIDATED \u2014 naked LIMIT SELL when comp \u2265 +40 bullish extension (no confirmation required).",
-      "regime_context": "EURUSD at 1.17268, 10.9p above 1.17159. M15 bear FVG 1.17284-1.17342 unmitigated. comp=+30 weak (need +40). 4h time-stop.",
+      "regime_context": "EURUSD 1.171785, 1.95p above level. comp=+22.5 none (need \u226540 to arm CT-fade SELL). M15 bear FVG 1.17199-1.17203 overhead. 9th fire.",
       "sl": 1.17189,
       "tp": 1.17028,
       "rr_target": "4.4",
-      "current_price_ref": 1.172185,
-      "last_updated": "2026-05-04T07:31Z",
+      "current_price_ref": 1.171785,
+      "last_updated": "2026-05-04T07:58Z",
       "alert_id": "eurusd_upsweep_117159_sell_watch",
       "active": true,
       "validated": true
@@ -92,8 +90,8 @@
       "sl": 4625.0,
       "tp": 4520.0,
       "rr_target": "3.8",
-      "current_price_ref": 4585.64,
-      "last_updated": "2026-05-04T07:31Z",
+      "current_price_ref": 4581.42,
+      "last_updated": "2026-05-04T07:58Z",
       "alert_id": "gold_h1fvg_sell_4603",
       "active": true
     },
@@ -110,8 +108,8 @@
       "sl": 4492.0,
       "tp": 4603.0,
       "rr_target": "2.5",
-      "current_price_ref": 4585.64,
-      "last_updated": "2026-05-04T07:31Z",
+      "current_price_ref": 4581.42,
+      "last_updated": "2026-05-04T07:58Z",
       "alert_id": "gold_h4ob_buy_4524",
       "active": true
     },
@@ -128,8 +126,8 @@
       "sl": 1.3528,
       "tp": 1.3495,
       "rr_target": "3.3",
-      "current_price_ref": 1.356925,
-      "last_updated": "2026-05-04T07:31Z",
+      "current_price_ref": 1.35653,
+      "last_updated": "2026-05-04T07:58Z",
       "alert_id": "gbpusd_upsweep_135203_sell_watch",
       "active": true,
       "validated": false
@@ -147,8 +145,8 @@
       "sl": 98.9,
       "tp": 101.0,
       "rr_target": "4.1",
-      "current_price_ref": 100.215,
-      "last_updated": "2026-05-04T07:31Z",
+      "current_price_ref": 100.658,
+      "last_updated": "2026-05-04T07:58Z",
       "validated": true,
       "alert_id": "oil_rebound_9931_buy_watch",
       "active": true
@@ -166,8 +164,8 @@
       "sl": 103.65,
       "tp": 102.67,
       "rr_target": "3.9",
-      "current_price_ref": 100.215,
-      "last_updated": "2026-05-04T07:31Z",
+      "current_price_ref": 100.658,
+      "last_updated": "2026-05-04T07:58Z",
       "validated": true,
       "alert_id": "oil_sweep_103449_sell_watch",
       "active": true
@@ -185,8 +183,8 @@
       "sl": 1.3562,
       "tp": 1.361,
       "rr_target": "6.1",
-      "current_price_ref": 1.356925,
-      "last_updated": "2026-05-04T07:31Z",
+      "current_price_ref": 1.35653,
+      "last_updated": "2026-05-04T07:58Z",
       "alert_id": "gbpusd_m15sweep_135689_buy_watch",
       "active": true
     },
@@ -203,8 +201,8 @@
       "sl": 0.7844,
       "tp": 0.78,
       "rr_target": "2.2",
-      "current_price_ref": 0.78223,
-      "last_updated": "2026-05-04T07:31Z",
+      "current_price_ref": 0.78255,
+      "last_updated": "2026-05-04T07:58Z",
       "alert_id": "usdchf_d_fvg_sell_78304",
       "active": true
     },
@@ -215,14 +213,14 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "ENTRY: price retests 0.78156 M15 up-sweep extreme (close_inside=0.78121); M15 bar closes AT or BELOW 0.78156 with bearish rejection wick ≥1p. Arm CT-fade SELL LIMIT when comp ≥ +40 bullish extension.\n\nCONTEXT: M15 up-sweep 2026-05-04T06:45Z, wick=0.9p beyond 0.78156, close_inside=0.78121. Fresh supply zone below Day FVG (0.78304). Tighter sell trigger. comp=-27 weak bear (need ≥+40 bullish extension to arm CT-fade). Day bear FVG 0.78304-0.78832 unmitigated above. USD weak (DXY~98). 4h time-stop if entered.\n\nSL: 0.78200  TP: 0.77800  R:R target: 8.1\n\nadded 2026-05-04T07:00Z — M15 liq_sweep Step 4e protocol; WATCH at comp=-27 (need ≥+40 bullish extension).",
-      "entry_criterion": "M15 retest of 0.78156 with bearish wick ≥1p. Arm CT-fade SELL LIMIT at comp ≥+40 bullish extension.",
+      "note": "ENTRY: price retests 0.78156 M15 up-sweep extreme (close_inside=0.78121); M15 bar closes AT or BELOW 0.78156 with bearish rejection wick \u22651p. Arm CT-fade SELL LIMIT when comp \u2265 +40 bullish extension.\n\nCONTEXT: M15 up-sweep 2026-05-04T06:45Z, wick=0.9p beyond 0.78156, close_inside=0.78121. Fresh supply zone below Day FVG (0.78304). Tighter sell trigger. comp=-27 weak bear (need \u2265+40 bullish extension to arm CT-fade). Day bear FVG 0.78304-0.78832 unmitigated above. USD weak (DXY~98). 4h time-stop if entered.\n\nSL: 0.78200  TP: 0.77800  R:R target: 8.1\n\nadded 2026-05-04T07:00Z \u2014 M15 liq_sweep Step 4e protocol; WATCH at comp=-27 (need \u2265+40 bullish extension).",
+      "entry_criterion": "M15 retest of 0.78156 with bearish wick \u22651p. Arm CT-fade SELL LIMIT at comp \u2265+40 bullish extension.",
       "regime_context": "M15 up-sweep May 4 06:45Z, wick=0.9p. USDCHF at 0.78118. comp=-27 weak bear. Day FVG 0.78304 above. 4h time-stop.",
       "sl": 0.782,
       "tp": 0.778,
       "rr_target": "8.1",
-      "current_price_ref": 0.78223,
-      "last_updated": "2026-05-04T07:31Z",
+      "current_price_ref": 0.78255,
+      "last_updated": "2026-05-04T07:58Z",
       "alert_id": "usdchf_m15sweep_78156_sell_watch",
       "active": true
     }
@@ -289,5 +287,5 @@
     }
   ],
   "last_updated_utc": "2026-05-04T07:31Z",
-  "last_updated": "2026-05-04T07:31Z"
+  "last_updated": "2026-05-04T07:58Z"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T07:34:42.870593+00:00",
+  "generated_at": "2026-05-04T08:00:25.811207+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -915,7 +915,7 @@
       "alert_id": "eurusd_upsweep_117159_sell_watch",
       "instrument": "EURUSD",
       "direction": "sell",
-      "fires": 8,
+      "fires": 9,
       "by_horizon": {
         "1h": {
           "filled": 8,
@@ -1253,7 +1253,7 @@
       "alert_id": "gbpusd_m15sweep_135689_buy_watch",
       "instrument": "GBPUSD",
       "direction": "buy",
-      "fires": 1,
+      "fires": 2,
       "by_horizon": {
         "1h": {
           "filled": 0,
