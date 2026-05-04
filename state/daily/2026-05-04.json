@@ -1282,5 +1282,35 @@
     "upl": 0.1,
     "regime": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_HIKE_IMMINENT_USD_WEAK",
     "binary_event": "RBA_May2026 active deadline 2026-05-05T04:30Z (~10h)"
+  },
+  {
+    "tick_ts_utc": "2026-05-04T18:51Z",
+    "events": 1,
+    "events_detail": [
+      "OIL level_cross_up 103.534 oil_sweep_103449_sell_watch 10th fire"
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "trades_skipped": 1,
+    "skip_reasons": [
+      "OIL CT-fade: comp=+40 threshold met but no retest at 103.449, SELL LIMIT API-blocked, Iran-UAE bull"
+    ],
+    "positions_held": [
+      "GBPUSD BUY@1.35282 age=3h UPL=+$0.22 time-stop 19:51Z"
+    ],
+    "orders_held": [
+      "GOLD SELL LIMIT@4591 GTC (76.7pts from fill)",
+      "AUDUSD BUY LIMIT@0.7143 GTC (24p from fill, RBA tonight 04:30Z)"
+    ],
+    "balance": 962.17,
+    "upl": 0.22,
+    "binary": "RBA_May2026 2026-05-05T04:30Z elevated_caution",
+    "scalp": "GBPUSD=ACTIVE others=OFF/N/A",
+    "regime": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_HIKE_IMMINENT_USD_WEAK",
+    "alerts_modified": [
+      "oil_sweep_103449_sell_watch (10th fire, comp +43\u2192+40)"
+    ],
+    "alerts_added": [],
+    "alerts_removed": []
   }
 ]

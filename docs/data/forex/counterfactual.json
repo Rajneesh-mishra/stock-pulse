@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T18:27:32.253140+00:00",
+  "generated_at": "2026-05-04T18:55:21.262128+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -924,10 +924,10 @@
           "hit_rate": 0.73
         },
         "4h": {
-          "filled": 10,
-          "favorable": 9,
-          "avg_pips": 6.9,
-          "hit_rate": 0.9
+          "filled": 11,
+          "favorable": 10,
+          "avg_pips": 8.5,
+          "hit_rate": 0.91
         },
         "24h": {
           "filled": 8,
@@ -1045,7 +1045,7 @@
       "alert_id": "oil_sweep_103449_sell_watch",
       "instrument": "OIL_CRUDE",
       "direction": "sell",
-      "fires": 9,
+      "fires": 10,
       "by_horizon": {
         "1h": {
           "filled": 8,

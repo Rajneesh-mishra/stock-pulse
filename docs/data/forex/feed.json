@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-05-04T18:27:51.650947Z",
+  "generated_at": "2026-05-04T18:55:59.785061Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T11:18:00Z",
-      "events_in": 2,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 2,
-      "note": "11:18 forex auto \u2014 2 evt (GBPUSD M15 up-sweep 1.34927 wick=8.8p 1.29\u00d7ATR comp=+29.0 weak-bull OPPOSES sell \u2192 ADD WATCH gbpusd_sweep_134928; GOLD level_cross gold_sweep_4695_sell_retest cross_up 4702.9>SL 4697.65 \u2192 REMOVE invalid). USDJPY 159.54 +30.0 weak dist=46.4p OUTSIDE 30p \u2192 WATCH (dropping from +43 mod). GOLD 4698.59 -32.5 weak; sweep_4721 dist=23.1$ INSIDE 30$ prox WATCH (need -40 mod); safehaven_4775 dist=76.4$ WATCH. OIL 94.56 +35.5 weak; sweep_9323 dist=1.32$ barely OUTSIDE prox 1.16$; pullback live 96.97\u219294.56 Day-FVG 93.42-94.18 below. GBPUSD scalp ghost at 1.346775+1.168965 engine-managed. 0 swing trades 0 swing pos. BOJ T-3d FOMC T-5d. attention_covered=9/9."
-    },
     {
       "ts_utc": "2026-04-24T11:28:00Z",
       "events_in": 1,
@@ -1404,6 +1396,36 @@
       "upl": 0.1,
       "regime": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_HIKE_IMMINENT_USD_WEAK",
       "binary_event": "RBA_May2026 active deadline 2026-05-05T04:30Z (~10h)"
+    },
+    {
+      "tick_ts_utc": "2026-05-04T18:51Z",
+      "events": 1,
+      "events_detail": [
+        "OIL level_cross_up 103.534 oil_sweep_103449_sell_watch 10th fire"
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "trades_skipped": 1,
+      "skip_reasons": [
+        "OIL CT-fade: comp=+40 threshold met but no retest at 103.449, SELL LIMIT API-blocked, Iran-UAE bull"
+      ],
+      "positions_held": [
+        "GBPUSD BUY@1.35282 age=3h UPL=+$0.22 time-stop 19:51Z"
+      ],
+      "orders_held": [
+        "GOLD SELL LIMIT@4591 GTC (76.7pts from fill)",
+        "AUDUSD BUY LIMIT@0.7143 GTC (24p from fill, RBA tonight 04:30Z)"
+      ],
+      "balance": 962.17,
+      "upl": 0.22,
+      "binary": "RBA_May2026 2026-05-05T04:30Z elevated_caution",
+      "scalp": "GBPUSD=ACTIVE others=OFF/N/A",
+      "regime": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_HIKE_IMMINENT_USD_WEAK",
+      "alerts_modified": [
+        "oil_sweep_103449_sell_watch (10th fire, comp +43\u2192+40)"
+      ],
+      "alerts_added": [],
+      "alerts_removed": []
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-05-04T18:24Z",
-  "pruned_at": "2026-05-04T18:24Z",
-  "pruned_by": "claude auto-audit 2026-05-04T18:24Z \u2014 MODIFY oil_sweep_103449_sell_watch (comp +32\u2192+43, Iran-UAE escalation context); ADD usdcad_sweep_136924_sell_watch (comp=-41.5 moderate bear); all others KEEP",
+  "last_updated_by_claude": "2026-05-04T18:51Z",
+  "pruned_at": "2026-05-04T18:51Z",
+  "pruned_by": "claude auto-audit 2026-05-04T18:51Z \u2014 MODIFY oil_sweep_103449_sell_watch (10th fire, comp +43\u2192+40; CT-fade threshold still met; no retest at level; SELL LIMIT API-blocked; WATCH); all others KEEP",
   "pruned_removed": [],
   "pruned_added": [
     "usdcad_sweep_136924_sell_watch"
@@ -124,14 +124,14 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "ENTRY: price retests 103.449 M15 up-sweep extreme from ABOVE; M15 bar closes AT or BELOW 103.449 with bearish rejection wick \u22655p from the high. VALIDATED \u2014 naked SELL LIMIT at comp \u2264-40 (no confirmation required).\n\nCONTEXT: VALIDATED \u2014 9 fires, 4h hit_rate=67%. LEVEL_CROSS_UP SECOND TIME 2026-05-04T18:19Z \u2014 OIL at 103.575 (12.6pts above level). comp=+43.0 moderate bull (UP from +32 at 16:51Z). CT-fade threshold MET (\u226540) BUT SELL LIMIT at 103.449 cannot be placed while below current offer \u2014 Capital.com requires SELL LIMIT above current offer. ESCALATION: Iran attacked UAE today; Brent +5% ~$113.81, WTI ~$105.61 \u2014 OIL bull thesis strongly reinforced, near-term SELL retest likelihood reduced. Watchlist: arm market SELL ONLY on retest of 103.449 from above with comp shift to \u2264-40 AND M15 rejection close. 4h time-stop if entered.\n\nSL: 103.65  TP: 102.67  R:R target: 3.9\n\nupdated 2026-05-04T18:24Z \u2014 comp +32\u2192+43 CT-fade met; Iran-UAE escalation bull OIL; SELL LIMIT API-blocked; watchlist hold.",
-      "entry_criterion": "M15 retest of 103.449 from above with bearish rejection wick \u22655p. VALIDATED \u2014 arm market SELL on retest when comp \u2264-40 bear (SELL LIMIT API-blocked below offer).",
-      "regime_context": "OIL at 103.575. comp=+43.0 moderate bull (CT-fade met). Iran attacked UAE; Brent+5%; bull OIL. SELL LIMIT cannot be placed below offer. Watchlist only.",
+      "note": "ENTRY: price retests 103.449 M15 up-sweep extreme from ABOVE; M15 bar closes AT or BELOW 103.449 with bearish rejection wick \u22655p from the high. VALIDATED \u2014 arm market SELL on M15 rejection close when comp \u2264-40 bear (SELL LIMIT API-blocked below offer).\n\nCONTEXT: VALIDATED \u2014 10 fires, 4h hit_rate=67%. LEVEL_CROSS_UP 10TH FIRE 2026-05-04T18:50Z \u2014 OIL at 103.547 (9.8pts above level). comp=+40.0 moderate bull (down from +43). CT-fade threshold MET (|comp|=40\u226540) but no retest at level yet; price still above 103.449. SELL LIMIT API-blocked (103.449 < current offer 103.587). Iran-UAE escalation active; Brent+5%; bull OIL momentum. Arm market SELL ONLY when: (1) price drops back to 103.449, (2) M15 bar closes at/below with bearish wick \u22655p, AND (3) comp \u2264-40 bear. 4h time-stop if entered.\n\nSL: 103.65  TP: 102.67  R:R target: 3.9\n\nupdated 2026-05-04T18:51Z \u2014 10th fire; comp +43\u2192+40 (CT-fade still met); no retest; SELL LIMIT API-blocked; Iran-UAE bull OIL; WATCH.",
+      "entry_criterion": "M15 retest of 103.449 from above with bearish rejection wick \u22655p AND M15 close at/below 103.449. VALIDATED \u2014 arm market SELL on M15 rejection close when comp \u2264-40 bear (SELL LIMIT API-blocked below offer).",
+      "regime_context": "OIL at 103.547. comp=+40.0 moderate bull (CT-fade met, |comp|=40). Iran-UAE escalation active, Brent+5%. 10th fire. No retest at level yet. SELL LIMIT API-blocked. Watchlist only.",
       "sl": 103.65,
       "tp": 102.67,
       "rr_target": "3.9",
-      "current_price_ref": 103.575,
-      "last_updated": "2026-05-04T18:24Z",
+      "current_price_ref": 103.547,
+      "last_updated": "2026-05-04T18:51Z",
       "validated": true,
       "alert_id": "oil_sweep_103449_sell_watch",
       "active": true
