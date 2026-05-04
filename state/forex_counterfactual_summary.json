@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T15:26:33.400007+00:00",
+  "generated_at": "2026-05-04T06:56:49.502140+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -424,21 +424,21 @@
       "fires": 5,
       "by_horizon": {
         "1h": {
-          "filled": 4,
+          "filled": 5,
           "favorable": 4,
-          "avg_pips": 10.2,
-          "hit_rate": 1.0
+          "avg_pips": 5.4,
+          "hit_rate": 0.8
         },
         "4h": {
-          "filled": 3,
+          "filled": 5,
           "favorable": 3,
-          "avg_pips": 29.8,
-          "hit_rate": 1.0
+          "avg_pips": 8.5,
+          "hit_rate": 0.6
         },
         "24h": {
-          "filled": 3,
-          "favorable": 3,
-          "avg_pips": 48.2,
+          "filled": 5,
+          "favorable": 5,
+          "avg_pips": 45.0,
           "hit_rate": 1.0
         }
       }
@@ -889,24 +889,24 @@
       "alert_id": "eurusd_m15sweep_116871_buy_watch",
       "instrument": "EURUSD",
       "direction": "buy",
-      "fires": 2,
+      "fires": 4,
       "by_horizon": {
         "1h": {
-          "filled": 2,
-          "favorable": 2,
-          "avg_pips": 10.4,
-          "hit_rate": 1.0
+          "filled": 4,
+          "favorable": 3,
+          "avg_pips": 0.7,
+          "hit_rate": 0.75
         },
         "4h": {
-          "filled": 2,
-          "favorable": 2,
-          "avg_pips": 20.9,
-          "hit_rate": 1.0
+          "filled": 4,
+          "favorable": 3,
+          "avg_pips": 10.5,
+          "hit_rate": 0.75
         },
         "24h": {
-          "filled": 2,
-          "favorable": 2,
-          "avg_pips": 14.7,
+          "filled": 4,
+          "favorable": 4,
+          "avg_pips": 34.6,
           "hit_rate": 1.0
         }
       }
@@ -915,25 +915,25 @@
       "alert_id": "eurusd_upsweep_117159_sell_watch",
       "instrument": "EURUSD",
       "direction": "sell",
-      "fires": 7,
+      "fires": 8,
       "by_horizon": {
         "1h": {
-          "filled": 7,
+          "filled": 8,
           "favorable": 6,
-          "avg_pips": 2.6,
-          "hit_rate": 0.86
+          "avg_pips": 2.0,
+          "hit_rate": 0.75
         },
         "4h": {
-          "filled": 7,
+          "filled": 8,
           "favorable": 7,
-          "avg_pips": 6.0,
-          "hit_rate": 1.0
+          "avg_pips": 3.6,
+          "hit_rate": 0.88
         },
         "24h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 8,
+          "favorable": 7,
+          "avg_pips": 31.2,
+          "hit_rate": 0.88
         }
       }
     },
@@ -941,25 +941,25 @@
       "alert_id": "gold_h1fvg_sell_4603",
       "instrument": "GOLD",
       "direction": "sell",
-      "fires": 4,
+      "fires": 7,
       "by_horizon": {
         "1h": {
-          "filled": 4,
-          "favorable": 4,
-          "avg_pips": 90.6,
-          "hit_rate": 1.0
+          "filled": 7,
+          "favorable": 5,
+          "avg_pips": 23.1,
+          "hit_rate": 0.71
         },
         "4h": {
-          "filled": 4,
-          "favorable": 4,
-          "avg_pips": 193.7,
-          "hit_rate": 1.0
+          "filled": 6,
+          "favorable": 5,
+          "avg_pips": 127.2,
+          "hit_rate": 0.83
         },
         "24h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 6,
+          "favorable": 6,
+          "avg_pips": 408.6,
+          "hit_rate": 1.0
         }
       }
     },
@@ -967,25 +967,25 @@
       "alert_id": "gbpusd_upsweep_135203_sell_watch",
       "instrument": "GBPUSD",
       "direction": "sell",
-      "fires": 2,
+      "fires": 4,
       "by_horizon": {
         "1h": {
-          "filled": 2,
-          "favorable": 2,
-          "avg_pips": 5.5,
+          "filled": 4,
+          "favorable": 4,
+          "avg_pips": 8.1,
           "hit_rate": 1.0
         },
         "4h": {
-          "filled": 2,
+          "filled": 4,
           "favorable": 2,
-          "avg_pips": 18.0,
-          "hit_rate": 1.0
+          "avg_pips": -9.6,
+          "hit_rate": 0.5
         },
         "24h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 4,
+          "favorable": 2,
+          "avg_pips": -9.7,
+          "hit_rate": 0.5
         }
       }
     },
@@ -996,22 +996,22 @@
       "fires": 2,
       "by_horizon": {
         "1h": {
-          "filled": 1,
-          "favorable": 1,
-          "avg_pips": 16.7,
+          "filled": 2,
+          "favorable": 2,
+          "avg_pips": 19.1,
           "hit_rate": 1.0
         },
         "4h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 2,
+          "favorable": 2,
+          "avg_pips": 7.8,
+          "hit_rate": 1.0
         },
         "24h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 2,
+          "favorable": 2,
+          "avg_pips": 64.9,
+          "hit_rate": 1.0
         }
       }
     },
@@ -1028,10 +1028,166 @@
           "hit_rate": 0.0
         },
         "4h": {
-          "filled": 0,
+          "filled": 1,
           "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "avg_pips": -21.7,
+          "hit_rate": 0.0
+        },
+        "24h": {
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 348.9,
+          "hit_rate": 1.0
+        }
+      }
+    },
+    {
+      "alert_id": "oil_sweep_103449_sell_watch",
+      "instrument": "OIL_CRUDE",
+      "direction": "sell",
+      "fires": 5,
+      "by_horizon": {
+        "1h": {
+          "filled": 5,
+          "favorable": 2,
+          "avg_pips": 19.7,
+          "hit_rate": 0.4
+        },
+        "4h": {
+          "filled": 5,
+          "favorable": 3,
+          "avg_pips": -2.6,
+          "hit_rate": 0.6
+        },
+        "24h": {
+          "filled": 4,
+          "favorable": 4,
+          "avg_pips": 268.8,
+          "hit_rate": 1.0
+        }
+      }
+    },
+    {
+      "alert_id": "audusd_liqsweep_71262_buy_watch",
+      "instrument": "AUDUSD",
+      "direction": "buy",
+      "fires": 3,
+      "by_horizon": {
+        "1h": {
+          "filled": 3,
+          "favorable": 3,
+          "avg_pips": 5.3,
+          "hit_rate": 1.0
+        },
+        "4h": {
+          "filled": 3,
+          "favorable": 2,
+          "avg_pips": 14.9,
+          "hit_rate": 0.67
+        },
+        "24h": {
+          "filled": 3,
+          "favorable": 3,
+          "avg_pips": 72.3,
+          "hit_rate": 1.0
+        }
+      }
+    },
+    {
+      "alert_id": "gbpusd_liqsweep_134736_buy_watch",
+      "instrument": "GBPUSD",
+      "direction": "buy",
+      "fires": 3,
+      "by_horizon": {
+        "1h": {
+          "filled": 3,
+          "favorable": 3,
+          "avg_pips": 3.0,
+          "hit_rate": 1.0
+        },
+        "4h": {
+          "filled": 3,
+          "favorable": 3,
+          "avg_pips": 18.3,
+          "hit_rate": 1.0
+        },
+        "24h": {
+          "filled": 3,
+          "favorable": 3,
+          "avg_pips": 133.8,
+          "hit_rate": 1.0
+        }
+      }
+    },
+    {
+      "alert_id": "usdchf_h1fvg_buy_78750",
+      "instrument": "USDCHF",
+      "direction": "buy",
+      "fires": 1,
+      "by_horizon": {
+        "1h": {
+          "filled": 1,
+          "favorable": 0,
+          "avg_pips": -14.6,
+          "hit_rate": 0.0
+        },
+        "4h": {
+          "filled": 1,
+          "favorable": 0,
+          "avg_pips": -29.7,
+          "hit_rate": 0.0
+        },
+        "24h": {
+          "filled": 1,
+          "favorable": 0,
+          "avg_pips": -49.2,
+          "hit_rate": 0.0
+        }
+      }
+    },
+    {
+      "alert_id": "usdcad_m15sweep_136313_buy_watch",
+      "instrument": "USDCAD",
+      "direction": "buy",
+      "fires": 1,
+      "by_horizon": {
+        "1h": {
+          "filled": 1,
+          "favorable": 0,
+          "avg_pips": -0.9,
+          "hit_rate": 0.0
+        },
+        "4h": {
+          "filled": 1,
+          "favorable": 0,
+          "avg_pips": -29.8,
+          "hit_rate": 0.0
+        },
+        "24h": {
+          "filled": 1,
+          "favorable": 0,
+          "avg_pips": -41.7,
+          "hit_rate": 0.0
+        }
+      }
+    },
+    {
+      "alert_id": "oil_h4fvg_buy_10030",
+      "instrument": "OIL_CRUDE",
+      "direction": "buy",
+      "fires": 2,
+      "by_horizon": {
+        "1h": {
+          "filled": 2,
+          "favorable": 1,
+          "avg_pips": 15.4,
+          "hit_rate": 0.5
+        },
+        "4h": {
+          "filled": 2,
+          "favorable": 2,
+          "avg_pips": 23.0,
+          "hit_rate": 1.0
         },
         "24h": {
           "filled": 0,
@@ -1042,28 +1198,28 @@
       }
     },
     {
-      "alert_id": "oil_sweep_103449_sell_watch",
+      "alert_id": "oil_rebound_9931_buy_watch",
       "instrument": "OIL_CRUDE",
-      "direction": "sell",
-      "fires": 2,
+      "direction": "buy",
+      "fires": 3,
       "by_horizon": {
         "1h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 3,
+          "favorable": 3,
+          "avg_pips": 57.7,
+          "hit_rate": 1.0
         },
         "4h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 2,
+          "favorable": 2,
+          "avg_pips": 55.0,
+          "hit_rate": 1.0
         },
         "24h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 120.2,
+          "hit_rate": 1.0
         }
       }
     }

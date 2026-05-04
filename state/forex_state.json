@@ -1,8 +1,8 @@
 {
-  "regime": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-  "tick_ts_utc": "2026-04-29T15:21Z",
-  "state_ts_utc": "2026-04-29T15:21Z",
-  "regime_note": "2026-04-29T15:21Z forex auto \u2014 1 evt: OIL_CRUDE level_cross@103.455 on oil_sweep_103449_sell_watch (cross_up, 2nd retest of M15 up-sweep extreme 103.449); comp=+55 all-TFs bull BLOCKS CT-fade arm \u2014 Hormuz supply shock sustained, oil_sweep_9579 analog 5f/0%4h, FOMC T-2.6h caution. SKIP CT-fade. Watchlist: oil_fvg_9691_buy REMOVED (inactive\u2192deleted), ADD oil_h4fvg_buy_10030 (H4 FVG 100.296-101.275 unmitigated). GOLD GTC SELL LIMIT@4603 KEEP (bid=4543 comp=-50 mod-bear 4f/100% validated). scalp: GBPUSD=ACTIVE. attention_covered=8/8.",
+  "regime": "ACTIVE_ESCALATION_US_IRAN_HORMUZ_NO_DEAL_USD_WEAK",
+  "tick_ts_utc": "2026-05-04T06:55Z",
+  "state_ts_utc": "2026-05-04T06:55Z",
+  "regime_note": "2026-05-04T06:55Z forex auto \u2014 31 events consumed. US-Iran conflict ongoing; Hormuz no-deal by Jun30 consensus 70.5%; Goldman raised Brent target $90 by late 2026. FOMC Apr29 PASSED (hold 3.50-3.75%, Powell final meeting). BoJ intervened at USDJPY 160 \u2192 pulled to 156.89 (intervention fade played out). USD weak (DXY ~98). RBA hiked \u2192 AUD bull. OIL 99.73, GOLD 4591 (pulling back from 4700+). AUDUSD moderate-bull but 70p above all buy zones. 0 trades.",
   "regime_note_prev": "2026-04-29T15:01Z forex auto \u2014 1 evt: AUDUSD level_cross@0.71425 on audusd_m15fvg_buy_7143 (cross_down to 0.7143 H4-FVG zone); comp=25.5/weak (need \u226540 moderate); FOMC caution T-2.7h requires moderate+; daily_pnl=-$23.34 (46.7% of $50 stop). SKIP: comp insufficient \u2014 re-arm post-18:00Z FOMC. FOMC hold confirmed 18:00Z (3.50-3.75%, Powell final meeting). Hormuz dual blockade still active; Iran ceasefire offer unlikely accepted \u2014 OIL bull thesis sustained. GOLD GTC SELL LIMIT@4603 KEEP (bid=4538 comp=-50 mod-bear 4f/100% validated). scalp: GBPUSD=ACTIVE. attention_covered=8/8.",
   "open_positions": [],
   "watchlist": [
@@ -768,13 +768,13 @@
     }
   ],
   "consecutive_losses": 0,
-  "daily_pnl": -23.34,
+  "daily_pnl": 0.0,
   "weekly_pnl": 0,
   "total_pnl": 2.04,
   "total_trades": 2,
   "wins": 1,
   "losses": 0,
-  "broker_balance": 970.61,
+  "broker_balance": 961.92,
   "effective_capital_usd": 987.93,
   "capital_base_note": "Demo account reset to $1k on 2026-04-20 (topUp -$8849.07). Broker balance and effective capital are now aligned.",
   "loop_config": {
@@ -1364,15 +1364,9 @@
   ],
   "binary_event": {
     "name": "FOMC Apr29",
-    "active": true,
+    "active": false,
     "deadline_utc": "2026-04-29T18:00Z",
-    "verified": true,
-    "sources": [
-      "Fed schedule",
-      "prior ticks",
-      "CNBC/Kiplinger FOMC preview"
-    ],
-    "caution": "moderate+ only, half-size until resolved; hold expected (rates 3.50-3.75%); Powell final meeting; T-2.7h (FOMC Apr29 18:00Z)"
+    "note": "PASSED \u2014 Fed held at 3.50-3.75%, no hike/cut. Cleared at next tick."
   },
   "balance": 970.61,
   "level_alerts": [

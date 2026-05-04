@@ -1,0 +1,28 @@
+[
+  {
+    "tick_ts_utc": "2026-05-04T06:56Z",
+    "events_consumed": 31,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "trades_skipped": 31,
+    "regime": "ACTIVE_ESCALATION_US_IRAN_HORMUZ_NO_DEAL_USD_WEAK",
+    "binary_event": "FOMC Apr29 PASSED (cleared)",
+    "open_positions": 0,
+    "daily_pnl": 0.0,
+    "broker_balance": 961.92,
+    "alerts_removed": [
+      "usdjpy_intervention_fade_160",
+      "usdcad_sweep_136924_sell_watch",
+      "usdcad_m15sweep_136313_buy_watch",
+      "usdchf_h1fvg_buy_78750",
+      "audusd_liqsweep_71262_buy_watch",
+      "gbpusd_liqsweep_134736_buy_watch",
+      "oil_h4fvg_buy_10030"
+    ],
+    "alerts_added": [
+      "gbpusd_m15sweep_135689_buy_watch",
+      "usdchf_d_fvg_sell_78304"
+    ],
+    "notes": "31 events (Apr29-May4) consumed. 0 trades \u2014 all confluence weak/none. AUDUSD moderate-bull but buy levels 70p below current price. EURUSD sell alert 13p from level, GOLD sell 12p from zone \u2014 both need comp\u2265-40 (currently weak). BoJ intervened at USDJPY 160 \u2192 156.89. FOMC held. RBA hiked. USD weak. Iran no-deal ongoing. OIL 99.73, GOLD 4591."
+  }
+]
