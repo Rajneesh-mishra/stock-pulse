@@ -1,9 +1,9 @@
 {
   "regime": "ACTIVE_ESCALATION_US_IRAN_HORMUZ_NO_DEAL_USD_WEAK",
-  "tick_ts_utc": "2026-05-04T06:55Z",
-  "state_ts_utc": "2026-05-04T06:55Z",
-  "regime_note": "2026-05-04T06:55Z forex auto \u2014 31 events consumed. US-Iran conflict ongoing; Hormuz no-deal by Jun30 consensus 70.5%; Goldman raised Brent target $90 by late 2026. FOMC Apr29 PASSED (hold 3.50-3.75%, Powell final meeting). BoJ intervened at USDJPY 160 \u2192 pulled to 156.89 (intervention fade played out). USD weak (DXY ~98). RBA hiked \u2192 AUD bull. OIL 99.73, GOLD 4591 (pulling back from 4700+). AUDUSD moderate-bull but 70p above all buy zones. 0 trades.",
-  "regime_note_prev": "2026-04-29T15:01Z forex auto \u2014 1 evt: AUDUSD level_cross@0.71425 on audusd_m15fvg_buy_7143 (cross_down to 0.7143 H4-FVG zone); comp=25.5/weak (need \u226540 moderate); FOMC caution T-2.7h requires moderate+; daily_pnl=-$23.34 (46.7% of $50 stop). SKIP: comp insufficient \u2014 re-arm post-18:00Z FOMC. FOMC hold confirmed 18:00Z (3.50-3.75%, Powell final meeting). Hormuz dual blockade still active; Iran ceasefire offer unlikely accepted \u2014 OIL bull thesis sustained. GOLD GTC SELL LIMIT@4603 KEEP (bid=4538 comp=-50 mod-bear 4f/100% validated). scalp: GBPUSD=ACTIVE. attention_covered=8/8.",
+  "tick_ts_utc": "2026-05-04T07:00Z",
+  "state_ts_utc": "2026-05-04T07:00Z",
+  "regime_note": "2026-05-04T07:00Z forex auto \u2014 4 events consumed. 2 liquidity_sweeps (EURUSD M15 down-wick 0.9p @1.17226 buy-bias; USDCHF M15 up-wick 0.9p @0.78156 sell-bias). Both sub-threshold: comp \u226540 counter-trend gate not met (EURUSD=+32.5 need \u2264-40; USDCHF=-27 need \u2265+40). 0 trades. Added usdchf_m15sweep_78156_sell_watch. EURUSD comp=+32.5 weak bull (14p above 1.17159 sell zone, almost at proximity). AUDUSD comp=+48 moderate bull (54p above 0.7143 buy zone). GOLD comp=-29, 16.4pts below sell level 4603 (in proximity, need -40). OIL=100.12 comp=+11 none. Balance $961.92. 0 positions. scalp=GBPUSD active.",
+  "regime_note_prev": "2026-05-04T06:55Z forex auto \u2014 31 events consumed. US-Iran conflict ongoing; Hormuz no-deal by Jun30 consensus 70.5%; Goldman raised Brent target $90 by late 2026. FOMC Apr29 PASSED (hold 3.50-3.75%, Powell final meeting). BoJ intervened at USDJPY 160 \u2192 pulled to 156.89 (intervention fade played out). USD weak (DXY ~98). RBA hiked \u2192 AUD bull. OIL 99.73, GOLD 4591 (pulling back from 4700+). AUDUSD moderate-bull but 70p above all buy zones. 0 trades.",
   "open_positions": [],
   "watchlist": [
     {

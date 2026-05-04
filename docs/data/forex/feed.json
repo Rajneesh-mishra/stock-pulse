@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T06:57:21.399587Z",
+  "generated_at": "2026-05-04T07:06:39.171914Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -261,6 +261,96 @@
         "usdchf_d_fvg_sell_78304"
       ],
       "notes": "31 events (Apr29-May4) consumed. 0 trades \u2014 all confluence weak/none. AUDUSD moderate-bull but buy levels 70p below current price. EURUSD sell alert 13p from level, GOLD sell 12p from zone \u2014 both need comp\u2265-40 (currently weak). BoJ intervened at USDJPY 160 \u2192 156.89. FOMC held. RBA hiked. USD weak. Iran no-deal ongoing. OIL 99.73, GOLD 4591."
+    },
+    {
+      "tick_ts_utc": "2026-05-04T07:00Z",
+      "events_consumed": 4,
+      "events": [
+        {
+          "id": "evt_1777877876369_liquidity_sweep",
+          "type": "liquidity_sweep",
+          "instrument": "EURUSD",
+          "action": "SKIP \u2014 comp=+32.5, need \u2264-40 for CT-fade buy; 0.9p micro-wick"
+        },
+        {
+          "id": "evt_1777877878237_bar_close",
+          "type": "bar_close",
+          "instrument": "GBPUSD",
+          "action": "AUTO-CONSUME"
+        },
+        {
+          "id": "evt_1777877880222_bar_close",
+          "type": "bar_close",
+          "instrument": "USDCHF",
+          "action": "AUTO-CONSUME"
+        },
+        {
+          "id": "evt_1777877880224_liquidity_sweep",
+          "type": "liquidity_sweep",
+          "instrument": "USDCHF",
+          "action": "SKIP \u2014 comp=-27, need \u2265+40 for CT-fade sell; ADD watchlist alert usdchf_m15sweep_78156_sell_watch"
+        }
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "balance_usd": 961.92,
+      "positions_open": 0,
+      "regime": "ACTIVE_ESCALATION_US_IRAN_HORMUZ_NO_DEAL_USD_WEAK",
+      "alerts_added": [
+        "usdchf_m15sweep_78156_sell_watch"
+      ],
+      "alerts_removed": [],
+      "attention_matrix": {
+        "EURUSD": {
+          "swing": "WATCH",
+          "scalp": "OFF(desync)",
+          "readiness": "weak",
+          "comp": 32.5
+        },
+        "GBPUSD": {
+          "swing": "WATCH",
+          "scalp": "ACTIVE",
+          "readiness": "weak",
+          "comp": 27.0
+        },
+        "AUDUSD": {
+          "swing": "WATCH",
+          "scalp": "OFF(wr11%)",
+          "readiness": "moderate",
+          "comp": 48.0
+        },
+        "USDJPY": {
+          "swing": "NONE",
+          "scalp": "OFF(pip-conv)",
+          "readiness": "weak",
+          "comp": -25.5
+        },
+        "USDCAD": {
+          "swing": "NONE",
+          "scalp": "OFF(pip-conv)",
+          "readiness": "weak",
+          "comp": -37.0
+        },
+        "USDCHF": {
+          "swing": "WATCH",
+          "scalp": "OFF(pip-conv)",
+          "readiness": "weak",
+          "comp": -27.0
+        },
+        "GOLD": {
+          "swing": "WATCH",
+          "scalp": "N/A(spread 5p)",
+          "readiness": "weak",
+          "comp": -29.0
+        },
+        "OIL_CRUDE": {
+          "swing": "WATCH",
+          "scalp": "N/A(spread 4p)",
+          "readiness": "none",
+          "comp": 11.0
+        }
+      },
+      "scalp_audit": "EURUSD=OFF(desync) GBPUSD=ACTIVE(no trades) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
     }
   ]
 }

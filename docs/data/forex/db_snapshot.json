@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-04T06:54:30.910969+00:00",
+  "generated_at": "2026-05-04T07:04:38.122148+00:00",
   "counts": {
     "trades": 40,
-    "events": 6894,
+    "events": 6904,
     "ticks": 59,
-    "regime_snapshots": 205,
+    "regime_snapshots": 206,
     "broker_positions": 0,
     "counterfactuals": 143
   },
@@ -853,6 +853,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-05-04T06:55Z",
+      "regime_name": "ACTIVE_ESCALATION_US_IRAN_HORMUZ_NO_DEAL_USD_WEAK",
+      "note_text": "2026-05-04T06:55Z forex auto \u2014 31 events consumed. US-Iran conflict ongoing; Hormuz no-deal by Jun30 consensus 70.5%; Goldman raised Brent target $90 by late 2026. FOMC Apr29 PASSED (hold 3.50-3.75%, Powell final meeting). BoJ intervened at USDJPY 160 \u2192 pulled to 156.89 (intervention fade played out). USD weak (DXY ~98). RBA hiked \u2192 AUD bull. OIL 99.73, GOLD 4591 (pulling back from 4700+). AUDUSD moderate-bull but 70p above all buy zones. 0 trades.",
+      "binary_event_name": "FOMC Apr29",
+      "binary_event_active": 0,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
       "ts_utc": "2026-05-04T06:50Z",
       "regime_name": "HORMUZ_PULLBACK_WATCHLIST_MODE",
       "note_text": "2026-05-04T06:50Z forex auto \u2014 31 evt backlog consumed: OIL pulled back from Hormuz high 103+ to 100.023 (H4 FVG 100.296 violated, oil_h4fvg_buy_10030 REMOVED). GOLD GTC SELL LIMIT@4603 expired from broker; H1 bear FVG 4600-4605 fresh unmitigated \u2014 re-arm when comp\u2264-40 (currently -29 weak). USDJPY at 156.93, intervention level 160 removed (dist=307p>3\u00d7H4ATR=204p, min-size blocked). AUDUSD comp=+48 moderate bull but 52.5p from 0.7143 \u2014 WATCH. EURUSD upsweep 1.17159 at 10.9p distance, comp=+30 just below +40 threshold. No trades: no setup met all 3 Step-4c conditions. Watchlist pruned: 7 removed (stale/violated), 2 added (GBPUSD M15 sweep 1.35689, USDCHF Day FVG sell 0.78304). scalp: GBPUSD=ACTIVE, EURUSD=disabled (SL-sizing), AUDUSD=disabled (wr=11%); USDJPY/CHF/CAD=pip-conv-pending. attention_covered=8/8.",
@@ -920,14 +928,6 @@
       "ts_utc": "2026-04-29T08:27Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-29T08:27Z forex auto \u2014 1 evt: OIL_CRUDE up-sweep@101.071 (12.6p wick, close 100.93); comp=+55 mod-bull CORROBORATES CT-fade SELL; SELL LIMIT@101.07 SL=101.22 TP=99.97 R:R=7.3:1 half-size 0.49%; AUDUSD GTC LIMIT@0.7143 KEEP (bid=0.71602 dist=17.2p); oil_fvg_9691 KEEP (96.91 dist=408p <3\u00d7H4ATR=6.01 keep); oil_rebound_9931 KEEP (99.31 dist=168p watch); ADD oil_sweep_10107_sell_retest; FOMC 18:00Z T-9.6h caution; scalp: GBPUSD=ACTIVE. attention_covered=8/8.",
-      "binary_event_name": "FOMC Apr29",
-      "binary_event_active": 1,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-04-29T08:10Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "2026-04-29T08:10Z forex auto \u2014 1 evt: GOLD SELL@4603.14 position_closed +$6.64 time_exit 07:53Z (+1.52R counter_trend_fade); OIL surge 96.91\u2192100.93 (+4.0pts) oil_sweep_9924 REMOVE (thesis invalidated, price ran through 99.31 to 100.93); ADD oil_rebound_9931_buy_watch (former resistance 99.31 = support, comp=+55 mod bull, WATCH dist=162p); AUDUSD GTC LIMIT@0.7143 KEEP (bid=0.71554, dist=12.4p approaching); USDJPY comp=+40 CT-fade 160.0 dist=30.7p WATCH (pip-val bug blocks); FOMC 18:00Z T-9.9h caution; 0 open positions; news scan SKIP (0 positions); scalp: GBPUSD=ACTIVE. attention_covered=8/8.",
       "binary_event_name": "FOMC Apr29",
       "binary_event_active": 1,
       "binary_event_deadline": "2026-04-29T18:00Z"

@@ -1,20 +1,11 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-05-04T06:50Z",
-  "pruned_at": "2026-05-04T06:50Z",
-  "pruned_by": "claude auto-audit 2026-05-04T06:50Z \u2014 removed 7 stale/violated alerts, added 2 fresh levels",
-  "pruned_removed": [
-    "usdcad_m15sweep_136313_buy_watch (level violated: price at 1.35968 below 1.36313, comp bearish, 1f/0%4h)",
-    "usdchf_h1fvg_buy_78750 (H4 FVG violated: price 0.78157 far below 0.78689; Day bear FVG 0.78304-0.78832 overhead; 1f/0%4h)",
-    "usdjpy_intervention_fade_160 (dist=307p > 3\u00d7H4ATR=204p; permanently blocked by min-size; trending away from 160)",
-    "audusd_liqsweep_71262_buy_watch (dist=71.3p > 3\u00d7H4ATR=61.5p; no catalyst 24h; M15 BOS bear at 0.71977 confirms break)",
-    "gbpusd_liqsweep_134736_buy_watch (dist=107.7p > 3\u00d7H4ATR=94.8p; no catalyst 24h; GBPUSD trending up)",
-    "usdcad_sweep_136924_sell_watch (dist=95.6p > 3\u00d7H4ATR=64.2p; no catalyst 24h; trending away)",
-    "oil_h4fvg_buy_10030 (H4 FVG violated: price at 100.023 below FVG bottom 100.296; Hormuz bull fading)"
-  ],
+  "last_updated_by_claude": "2026-05-04T07:00Z",
+  "pruned_at": "2026-05-04T07:00Z",
+  "pruned_by": "claude auto-audit 2026-05-04T07:00Z \u2014 0 removed, 1 added (USDCHF M15 sweep)",
+  "pruned_removed": [],
   "pruned_added": [
-    "gbpusd_m15sweep_135689_buy_watch (M15 liq_sweep 2026-05-02T00:45Z; swept 1.35689, close back inside 1.35752; WATCH comp\u226540)",
-    "usdchf_d_fvg_sell_78304 (Day bear FVG 0.78304-0.78832 unmitigated; SELL watch on rally; comp=-27 weak currently)"
+    "usdchf_m15sweep_78156_sell_watch (M15 liq_sweep 2026-05-04T06:45Z; swept 0.78156, close_inside=0.78121; WATCH comp\u226540 bullish for CT-fade sell)"
   ],
   "instruments": [
     "EURUSD",
@@ -214,6 +205,24 @@
       "last_updated": "2026-05-04T06:50Z",
       "alert_id": "usdchf_d_fvg_sell_78304",
       "active": true
+    },
+    {
+      "id": "usdchf_m15sweep_78156_sell_watch",
+      "instrument": "USDCHF",
+      "level": 0.78156,
+      "emit_on": "cross_up",
+      "cooldown_sec": 1800,
+      "direction": "sell",
+      "note": "ENTRY: price retests 0.78156 M15 up-sweep extreme (close_inside=0.78121); M15 bar closes AT or BELOW 0.78156 with bearish rejection wick ≥1p. Arm CT-fade SELL LIMIT when comp ≥ +40 bullish extension.\n\nCONTEXT: M15 up-sweep 2026-05-04T06:45Z, wick=0.9p beyond 0.78156, close_inside=0.78121. Fresh supply zone below Day FVG (0.78304). Tighter sell trigger. comp=-27 weak bear (need ≥+40 bullish extension to arm CT-fade). Day bear FVG 0.78304-0.78832 unmitigated above. USD weak (DXY~98). 4h time-stop if entered.\n\nSL: 0.78200  TP: 0.77800  R:R target: 8.1\n\nadded 2026-05-04T07:00Z — M15 liq_sweep Step 4e protocol; WATCH at comp=-27 (need ≥+40 bullish extension).",
+      "entry_criterion": "M15 retest of 0.78156 with bearish wick ≥1p. Arm CT-fade SELL LIMIT at comp ≥+40 bullish extension.",
+      "regime_context": "M15 up-sweep May 4 06:45Z, wick=0.9p. USDCHF at 0.78118. comp=-27 weak bear. Day FVG 0.78304 above. 4h time-stop.",
+      "sl": 0.782,
+      "tp": 0.778,
+      "rr_target": "8.1",
+      "current_price_ref": 0.781175,
+      "last_updated": "2026-05-04T07:00Z",
+      "alert_id": "usdchf_m15sweep_78156_sell_watch",
+      "active": true
     }
   ],
   "structure_watch": [
@@ -277,6 +286,6 @@
       ]
     }
   ],
-  "last_updated_utc": "2026-05-04T06:50Z",
-  "last_updated": "2026-05-04T06:50Z"
+  "last_updated_utc": "2026-05-04T07:00Z",
+  "last_updated": "2026-05-04T07:00Z"
 }
