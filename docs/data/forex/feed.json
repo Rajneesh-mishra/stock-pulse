@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-05-04T16:27:09.898011Z",
+  "generated_at": "2026-05-04T16:43:26.289569Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T08:17:00Z",
-      "events_in": 0,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 0,
-      "summary": "08:17 UTC heartbeat \u2014 0 evt. USDJPY 159.695 +40.5 mod dist=30.6p OUTSIDE 30p \u2192 WATCH (was ARMED @29.8p last tick, marginal slip). GOLD 4691.1 -35.5 weak sweep_4721 dist=30.6$ OUTSIDE threshold \u2192 WATCH. OIL 96.54 +43.0 mod sweep_9323 dist=3.30$ extending away. BTC 77881 +29.5 weak FVG dist=921$. USDCHF -5.0 none sweep_h1 WATCH. 7 alerts KEEP. Scalp 3 FX ACTIVE halt={}. 0 trades $1000/0pos. BOJ T-3d FOMC T-5d."
-    },
     {
       "ts_utc": "2026-04-24T08:28:00Z",
       "events_in": 9,
@@ -1305,6 +1297,20 @@
         "GOLD": "swing=ARMED(SELL LIMIT@4591 GTC) scalp=N/A readiness=moderate comp=-46",
         "OIL_CRUDE": "swing=WATCH(comp=+32 need\u2264-40 sell or \u2265+40 buy) scalp=N/A readiness=weak"
       }
+    },
+    {
+      "tick_ts_utc": "2026-05-04T16:43Z",
+      "events_processed": 0,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "orders_placed": 0,
+      "orders_cancelled": 0,
+      "balance": 961.99,
+      "upl": 0.13,
+      "open_positions": 1,
+      "working_orders": 2,
+      "regime": "HORMUZ_ESCORT_ACTIVE_RBA_HIKE_TOMORROW_USD_WEAK_FOMC_CLEARED",
+      "note": "heartbeat: 0 evts. GBPUSD BUY +1p time-stop@19:51Z. GOLD/AUDUSD GTC limits HOLD. All 9 alerts KEEP."
     }
   ]
 }

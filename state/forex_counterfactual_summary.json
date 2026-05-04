@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T16:27:13.589538+00:00",
+  "generated_at": "2026-05-04T16:42:43.059364+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -1045,7 +1045,7 @@
       "alert_id": "oil_sweep_103449_sell_watch",
       "instrument": "OIL_CRUDE",
       "direction": "sell",
-      "fires": 7,
+      "fires": 8,
       "by_horizon": {
         "1h": {
           "filled": 6,
