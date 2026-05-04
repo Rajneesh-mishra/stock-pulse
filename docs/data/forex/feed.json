@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-05-04T18:55:59.785061Z",
+  "generated_at": "2026-05-04T20:00:53.572037Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T11:28:00Z",
-      "events_in": 1,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 1,
-      "note": "11:28 forex auto \u2014 1 evt (GBPUSD level_cross gbpusd_sweep_134928_sell_retest at 1.349555 cross_up; comp=+21.5 none bullish OPPOSES sell; readiness=none (need \u2264-40); SKIP trade KEEP WATCH). USDJPY 159.408 +30.0 weak (DOWNGRADE from +43 mod) dist=59.2p OUTSIDE 30p \u2192 WATCH (BOJ T-3d). GOLD 4706.49 -32.5 weak; sweep_4721 dist=15.2$ INSIDE prox 30$ NEAR-ARM (need -40); safehaven_4775 dist=68.5$ dormant. OIL 93.999 +35.5 weak; sweep_9323 dist=0.76$ INSIDE prox 1.17$ NEAR-ARM (need +40; gap=4.5pts); pullback=false-alarm (Tehran military drill). BTCUSD 78255 +34.5 weak fvg_76960 dist=1295$ WATCH. EURUSD -8 none GBPUSD +21.5 none AUDUSD +18.5 none USDCAD -21.5 none USDCHF -10.5 none \u2014 all swing=NONE/WATCH. 9 alerts proximity-refreshed (all KEEP). 9 SW KEEP. Scalp halt={}. 0 trades 0pos. BOJ T-3d FOMC T-5d. attention_covered=9/9."
-    },
     {
       "ts_utc": "2026-04-24T12:46:00Z",
       "events_in": 2,
@@ -1426,6 +1418,35 @@
       ],
       "alerts_added": [],
       "alerts_removed": []
+    },
+    {
+      "tick_ts_utc": "2026-05-04T20:00Z",
+      "events": 0,
+      "actions": [
+        "CLOSE GBPUSD BUY@1.35282 \u2192 1.35376 pnl=+$1.09 (4h time-stop 19:51Z)",
+        "LIMIT ARMED OIL_CRUDE SELL@103.449 SL=103.65 TP=101.55 size=20 (CT-fade validated)"
+      ],
+      "open_positions": 0,
+      "pending_limits": [
+        "GOLD SELL LIMIT@4591 SL=4598 TP=4550 (GTC)",
+        "AUDUSD BUY LIMIT@0.7143 SL=0.713 TP=0.7187 (GTC, RBA 04:30Z)",
+        "OIL_CRUDE SELL LIMIT@103.449 SL=103.65 TP=101.55 (GTC, CT-fade)"
+      ],
+      "balance": 963.26,
+      "upl": 0.0,
+      "regime": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_HIKE_IMMINENT_USD_WEAK",
+      "binary_event": "RBA_May2026 @ 2026-05-05T04:30Z (elevated caution)",
+      "attention_matrix": {
+        "EURUSD": "swing=WATCH scalp=OFF readiness=none (comp=-15, no TF agreement)",
+        "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=none (just closed; re-entry watch at 1.34736)",
+        "AUDUSD": "swing=ARMED scalp=OFF readiness=weak (BUY LIMIT@0.7143 working; scalp wr=11%)",
+        "USDJPY": "swing=WATCH scalp=OFF readiness=none (comp=-16.5; intervention level 160.00 far)",
+        "USDCAD": "swing=WATCH scalp=OFF readiness=weak (comp=-39; sweep sell@1.36924 above)",
+        "USDCHF": "swing=WATCH scalp=OFF readiness=weak (comp=-27; FVG sell@0.78832 far)",
+        "GOLD": "swing=ARMED scalp=N/A readiness=moderate (SELL LIMIT@4591 GTC; comp=-46)",
+        "OIL_CRUDE": "swing=ARMED scalp=N/A readiness=moderate (SELL LIMIT@103.449 GTC; CT-fade)"
+      },
+      "scalp_audit": "EURUSD=OFF(engine_desync) GBPUSD=KEEP(wr=n/a; no trades) AUDUSD=OFF(wr=11% on 19 trades) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
     }
   ]
 }

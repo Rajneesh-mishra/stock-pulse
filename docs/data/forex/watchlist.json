@@ -124,14 +124,14 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "ENTRY: price retests 103.449 M15 up-sweep extreme from ABOVE; M15 bar closes AT or BELOW 103.449 with bearish rejection wick \u22655p from the high. VALIDATED \u2014 arm market SELL on M15 rejection close when comp \u2264-40 bear (SELL LIMIT API-blocked below offer).\n\nCONTEXT: VALIDATED \u2014 10 fires, 4h hit_rate=67%. LEVEL_CROSS_UP 10TH FIRE 2026-05-04T18:50Z \u2014 OIL at 103.547 (9.8pts above level). comp=+40.0 moderate bull (down from +43). CT-fade threshold MET (|comp|=40\u226540) but no retest at level yet; price still above 103.449. SELL LIMIT API-blocked (103.449 < current offer 103.587). Iran-UAE escalation active; Brent+5%; bull OIL momentum. Arm market SELL ONLY when: (1) price drops back to 103.449, (2) M15 bar closes at/below with bearish wick \u22655p, AND (3) comp \u2264-40 bear. 4h time-stop if entered.\n\nSL: 103.65  TP: 102.67  R:R target: 3.9\n\nupdated 2026-05-04T18:51Z \u2014 10th fire; comp +43\u2192+40 (CT-fade still met); no retest; SELL LIMIT API-blocked; Iran-UAE bull OIL; WATCH.",
-      "entry_criterion": "M15 retest of 103.449 from above with bearish rejection wick \u22655p AND M15 close at/below 103.449. VALIDATED \u2014 arm market SELL on M15 rejection close when comp \u2264-40 bear (SELL LIMIT API-blocked below offer).",
+      "note": "ENTRY: SELL LIMIT at 103.449 (validated sweep extreme; naked LIMIT allowed). SL: 103.65 (above swept high 103.534). TP: 101.55. R:R target: 9.5:1.\n\nCONTEXT: CT-fade of Iran-UAE Hormuz war bull OIL spike. Sweep level 103.449 is a validated technical rejection point (10 fires, 71% at 4h). GTC LIMIT armed 2026-05-04T19:59Z when price pulled back to 102.877 (LIMIT now above market, valid placement).\n\nSL: 103.65  TP: 101.55  R:R target: 9.5:1\n\nPromoted to naked LIMIT 2026-05-04T20:00Z \u2014 10 fires 71%@4h validates skip-confirmation rule.",
+      "entry_criterion": "SELL LIMIT at 103.449 GTC (naked LIMIT, validated). Cancel if OIL breaks above 104.00 on close or Iran deal collapses.",
       "regime_context": "OIL at 103.547. comp=+40.0 moderate bull (CT-fade met, |comp|=40). Iran-UAE escalation active, Brent+5%. 10th fire. No retest at level yet. SELL LIMIT API-blocked. Watchlist only.",
       "sl": 103.65,
-      "tp": 102.67,
-      "rr_target": "3.9",
+      "tp": 101.55,
+      "rr_target": 9.5,
       "current_price_ref": 103.547,
-      "last_updated": "2026-05-04T18:51Z",
+      "last_updated": "2026-05-04T20:00Z",
       "validated": true,
       "alert_id": "oil_sweep_103449_sell_watch",
       "active": true
@@ -210,6 +210,19 @@
       "validated": false,
       "alert_id": "usdcad_sweep_136924_sell_watch",
       "active": true
+    },
+    {
+      "alert_id": "gbpusd_liqsweep_134736_buy_watch",
+      "instrument": "GBPUSD",
+      "direction": "buy",
+      "level": 1.34736,
+      "note": "ENTRY: BUY LIMIT at 1.34736 (validated liq-sweep extreme; naked LIMIT allowed). M15 bullish rejection wick \u22653p from low confirms retest hold. SL: 1.3440 (below H4 Bull OB bottom 1.34478). TP: 1.35800. R:R target: 3.8:1.\n\nCONTEXT: GBPUSD Day structural bull (BOS). H4 Bull OB at 1.34478-1.34939 provides demand. liqsweep_134736 is a validated level (3 fires, 4h hit_rate=1.00). Just closed GBPUSD BUY@1.35282 at time-stop \u2014 re-entry on pullback to demand zone.\n\nSL: 1.3440  TP: 1.35800  R:R target: 3.8:1\n\nAdded 2026-05-04T20:00Z \u2014 post time-stop re-entry plan; validated level.",
+      "entry_criterion": "Pullback to 1.34736 with M15 bullish wick \u22653p. BUY LIMIT (naked, validated). Arm when comp \u2265 +40 bull (moderate+).",
+      "regime_context": "Day bull structure. H4 Bull OB demand 1.34478-1.34939. Re-entry after time-stop close.",
+      "sl": 1.344,
+      "tp": 1.358,
+      "rr_target": 3.8,
+      "last_updated": "2026-05-04T20:00Z"
     }
   ],
   "structure_watch": [
