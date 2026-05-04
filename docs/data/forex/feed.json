@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-05-04T15:47:57.279139Z",
+  "generated_at": "2026-05-04T16:27:09.898011Z",
   "ticks": [
-    {
-      "ts_utc": "2026-04-24T05:35:00Z",
-      "events_in": 1,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 1,
-      "note": "05:35 forex auto \u2014 1 evt (OIL_CRUDE level_cross oil_sweep_9519_buy_retest at 95.25; price dropped through SL 95.263 before M15 close above 95.319; entry criterion NOT met (no rejection wick close); SKIP trade, REMOVE alert. wick was 0.16\u00d7ATR minor at creation). USDJPY 159.761 +40.5 mod 4/4 bull dist=23.9p INSIDE 30p ARMED (BOJ T-3d). OIL 95.22 +42.5 mod sweep_9323 dist=1.98$ WATCH; retest_90 dist=4.92$ dormant. 6 alerts (5 KEEP +1 REMOVE), 9 SW KEEP. Scalp 3 FX ACTIVE halt={}. 0 trades $1000/0pos."
-    },
     {
       "ts_utc": "2026-04-24T08:17:00Z",
       "events_in": 0,
@@ -1290,6 +1282,29 @@
       "scalp_audit": "EURUSD=OFF(engine_desync_4_SL_hits) GBPUSD=ACTIVE(no_halt,neutral_bias) AUDUSD=OFF(wr=11%,19_trades) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
       "regime": "HORMUZ_ESCORT_ACTIVE_RBA_HIKE_TOMORROW_USD_WEAK_FOMC_CLEARED",
       "binary_event": "RBA_May2026 deadline=2026-05-05T04:30Z active=True"
+    },
+    {
+      "tick_ts_utc": "2026-05-04T16:25Z",
+      "events_consumed": 10,
+      "events_actionable": 3,
+      "events_skipped_bar_close": 6,
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "pending_limits": 2,
+      "open_positions": 1,
+      "balance": 962.69,
+      "upl": 0.756,
+      "notes": "GBPUSD BUY LIMIT@1.35282 filled (4f19, size=1400); OIL cross 103.464 SKIP comp=+32 need\u2264-40; EURUSD cross 1.16869 SKIP comp=-17 need\u2264-40; GOLD SELL@4591 GTC active comp=-46; AUDUSD BUY@0.7143 GTC active comp=+40.5 RBA tomorrow; BoE hold 3.75% (8-1) GBP supportive",
+      "attention_matrix": {
+        "EURUSD": "swing=WATCH scalp=OFF readiness=none comp=-17",
+        "GBPUSD": "swing=OPEN(live BUY@1.35282 4h-stop 19:51Z) scalp=ACTIVE readiness=none comp=+3.5",
+        "AUDUSD": "swing=ARMED(BUY LIMIT@0.7143) scalp=OFF readiness=moderate comp=+40.5",
+        "USDJPY": "swing=WATCH(SELL@157.33 11.8p away comp=-25 weak) scalp=OFF readiness=weak",
+        "USDCAD": "swing=NONE scalp=OFF readiness=weak comp=-37",
+        "USDCHF": "swing=WATCH scalp=OFF readiness=none comp=-14.5",
+        "GOLD": "swing=ARMED(SELL LIMIT@4591 GTC) scalp=N/A readiness=moderate comp=-46",
+        "OIL_CRUDE": "swing=WATCH(comp=+32 need\u2264-40 sell or \u2265+40 buy) scalp=N/A readiness=weak"
+      }
     }
   ]
 }

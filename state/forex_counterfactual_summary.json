@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T15:47:12.954850+00:00",
+  "generated_at": "2026-05-04T16:27:13.589538+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -889,7 +889,7 @@
       "alert_id": "eurusd_m15sweep_116871_buy_watch",
       "instrument": "EURUSD",
       "direction": "buy",
-      "fires": 4,
+      "fires": 5,
       "by_horizon": {
         "1h": {
           "filled": 4,
@@ -1045,7 +1045,7 @@
       "alert_id": "oil_sweep_103449_sell_watch",
       "instrument": "OIL_CRUDE",
       "direction": "sell",
-      "fires": 6,
+      "fires": 7,
       "by_horizon": {
         "1h": {
           "filled": 6,
@@ -1304,6 +1304,32 @@
     {
       "alert_id": "gold_h4ob_buy_4524",
       "instrument": "GOLD",
+      "direction": "buy",
+      "fires": 1,
+      "by_horizon": {
+        "1h": {
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 78.4,
+          "hit_rate": 1.0
+        },
+        "4h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "24h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        }
+      }
+    },
+    {
+      "alert_id": "gbpusd_day_fvg_buy_13528",
+      "instrument": "GBPUSD",
       "direction": "buy",
       "fires": 1,
       "by_horizon": {
