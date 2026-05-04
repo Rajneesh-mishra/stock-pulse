@@ -1,9 +1,9 @@
 {
   "regime": "HORMUZ_ESCALATION_OIL_VOLATILE_USD_WEAK_FOMC_HAWKISH",
-  "tick_ts_utc": "2026-05-04T12:40Z",
-  "state_ts_utc": "2026-05-04T12:40Z",
-  "regime_note": "2026-05-04T12:40Z forex auto \u2014 1 evt: news_flash hormuz_strait (Iranian drones attack ADNOC tanker in Strait of Hormuz); OIL comp=+22 none \u2014 geo bullish but insufficient confluence to arm new entries; SELL alerts at 101.07/101.62 remain WATCHES (no LIMIT). GOLD comp=-40 moderate bear \u2014 SELL LIMIT@4591 GTC ACTIVE; Hormuz geo-bid vs FOMC hawkish hold \u2014 tech thesis stands, 28.9pts below fill. AUDUSD comp=+48 moderate bull \u2014 BUY LIMIT@0.7143 GTC ACTIVE (44.4p away); risk-off mixed AUD. EURUSD comp=+9.5 none; GBPUSD comp=+17 none; eurusd_upsweep_117159 at 9.6p \u2014 WATCH (validated 9fires 89%4h, comp too weak to arm). USDCAD comp=-37 weak; USDCHF comp=-24.5 none; USDJPY comp=-23 none. 0 open positions. 2 LIMITs active. 0 trades. Balance $961.92.",
-  "regime_note_prev": "2026-05-04T12:21Z forex auto \u2014 heartbeat 0 evts; US-Iran ceasefire talks (14-pt proposal under review) driving OIL sell-off to ~$100.64 (-$1.93 from last tick 102.57). FOMC May 2026 hawkish hold (8-4 vote, Powell final mtg, Warsh incoming) pressures GOLD \u2014 supports SELL LIMIT@4591 GTC ACTIVE (comp=-37.5 weak bear, was -40; FOMC confirms bear thesis). AUDUSD comp=50.5 moderate bull; BUY LIMIT@0.7143 GTC ACTIVE (45.9p away). oil_rebound_9931 within proximity 133p vs 145p threshold but comp=+22 none (need +40; ceasefire risk = don't arm). REMOVED: gbpusd_m15sweep_135689 (price 8.8p below swept low, 2 fires 0% 4h), usdchf_m15sweep_78156 (price 20.4p above supply level, taken out). ADDED: gbpusd_day_fvg_buy_13528 (BUY@1.35282 Day bull FVG bottom). Balance $961.92.",
+  "tick_ts_utc": "2026-05-04T12:51Z",
+  "state_ts_utc": "2026-05-04T12:51Z",
+  "regime_note": "2026-05-04T12:51Z forex auto \u2014 1 evt: news_flash opec_supply (OPEC+ modest output hike June; Hormuz closure limits supply impact); OIL comp=+14 none \u2014 modest bear supply news offset by Hormuz constraint; SELL alerts 101.07/101.62 slightly more supported, current ~100.30; GOLD comp=-40 moderate bear \u2014 SELL LIMIT@4591 GTC ACTIVE 22pts below fill; AUDUSD comp=+50.5 moderate bull \u2014 BUY LIMIT@0.7143 GTC ACTIVE 47.8p below current 0.71882; TP=0.7187 (Day BOS), TP2=0.7250; USDJPY 157.07 \u2014 intervention trigger 160.00 auto-removed (dist=293p > 3\u00d7H4ATR=187p, trending away); EURUSD comp=9.5 none (upsweep 117159 at 8.4p \u2014 validated 9fires 89%4h, comp<40 no arm); GBPUSD comp=+17 none; USDCAD comp=-29.5 weak; USDCHF comp=-24.5 none. 0 trades. Balance $961.92.",
+  "regime_note_prev": "2026-05-04T12:40Z forex auto \u2014 1 evt: news_flash hormuz_strait (Iranian drones attack ADNOC tanker in Strait of Hormuz); OIL comp=+22 none \u2014 geo bullish but insufficient confluence to arm new entries; SELL alerts at 101.07/101.62 remain WATCHES (no LIMIT). GOLD comp=-40 moderate bear \u2014 SELL LIMIT@4591 GTC ACTIVE; Hormuz geo-bid vs FOMC hawkish hold \u2014 tech thesis stands, 28.9pts below fill. AUDUSD comp=+48 moderate bull \u2014 BUY LIMIT@0.7143 GTC ACTIVE (44.4p away); risk-off mixed AUD. EURUSD comp=+9.5 none; GBPUSD comp=+17 none; eurusd_upsweep_117159 at 9.6p \u2014 WATCH (validated 9fires 89%4h, comp too weak to arm). USDCAD comp=-37 weak; USDCHF comp=-24.5 none; USDJPY comp=-23 none. 0 open positions. 2 LIMITs active. 0 trades. Balance $961.92.",
   "open_positions": [],
   "watchlist": [
     {
@@ -1371,32 +1371,18 @@
   "balance": 961.92,
   "level_alerts": [
     {
-      "alert_id": "usdjpy_intervention_fade_zone",
-      "direction": "SELL",
-      "level": 160.0,
-      "active": null,
-      "instrument": "USDJPY",
-      "entry_criterion": "Price rallies to 160.00-160.10; M15 close at or above with rejection wick; SELL LIMIT at 160.05",
-      "regime_context": "MoF verbal intervention active. Japan intervened at 159.23 Jan 2026; 160.00 is the red line. BoJ hold Apr27-28.",
-      "sl": 160.5,
-      "tp": 158.5,
-      "rr_target": 3.0,
-      "last_updated": "2026-04-27T20:34Z",
-      "note": "ENTRY: SELL LIMIT at 160.05 when price approaches 160.00-160.10; M15 rejection wick confirmation preferred\n\nCONTEXT: MoF intervention red line. Japan intervened at 159.23 in Jan 2026; 160.00 is widely watched. BoJ hold Apr27-28 leaves MoF to jawbone.\n\nSL: 160.50  TP: 158.50  R:R target: 3.0\n\nNote added 2026-04-27T20:28Z (was bare)"
-    },
-    {
       "alert_id": "audusd_m15fvg_buy_7143",
       "direction": "BUY",
       "level": 0.7143,
       "active": false,
       "instrument": "AUDUSD",
       "entry_criterion": "LIMIT BUY at 0.7143 (M15 FVG bottom). GTC LIMIT live in broker.",
-      "regime_context": "comp=+48 moderate bull. Level 0.7143 is 50.3p from current (0.71944) > 30p prox threshold. GTC order cleaned (not in broker). Re-arm when price within 30p of 0.7143.",
+      "regime_context": "comp=+50.5 moderate bull. LIMIT BUY@0.7143 GTC ACTIVE in broker. Current bid=0.71882 (47.8p above level). Day BOS 0.71874 confirmed bullish structure. TP=0.7187 (Day BOS retest from below); TP2=0.7250 manual target if 0.7187 breaks post-fill.",
       "sl": 0.713,
       "tp": 0.7187,
       "rr_target": 3.4,
-      "last_updated": "2026-05-04T08:31Z",
-      "note": "ENTRY: LIMIT BUY at 0.7143 (M15 FVG bottom). Re-arm when price within max(H1ATR,0.5\u00d7H4ATR,30p) of level.\n\nCONTEXT: VALIDATED (3 fires, 4h=100%). comp=+48 moderate bull. Day BOS at 0.71874 confirmed bullish structure. Level 50.3p from current (0.71944) \u2014 outside 30p proximity, no active order.\n\nSL: 0.7130  TP: 0.7187  R:R target: 3.4\n\n2026-05-04T08:31Z: GTC order cleaned (not in broker); active=false. Re-arm on pullback approach."
+      "last_updated": "2026-05-04T12:51Z",
+      "note": "ENTRY: LIMIT BUY at 0.7143 (M15 FVG bottom). GTC LIMIT ACTIVE in broker (00000000-4f18-77c3-044a-beb40055311e).\n\nCONTEXT: comp=+50.5 moderate bull (3/4 TF bullish). Day BOS confirmed at 0.71874. Level 47.8p below current bid (0.71882). TP2=0.7250 if 0.7187 breaks post-fill. R:R=3.4:1 to TP1, 8.2:1 to TP2.\n\nSL: 0.7130  TP: 0.7187  R:R target: 3.4\n\nRewritten 2026-05-04T13:00Z \u2014 updated context: TP2 reference added, distance refreshed."
     },
     {
       "alert_id": "gbpusd_sweep_135203_buy_watch",
@@ -1550,6 +1536,21 @@
       "rr_target": 5.2,
       "last_updated": "2026-05-04T08:31Z",
       "note": "ENTRY: SELL LIMIT at 0.78832 (Day FVG top, range 0.78304-0.78832). M15 rejection wick \u22652p back below confirms. Arm when comp \u2264 -40 (bearish moderate). Currently comp=-22 (none).\n\nCONTEXT: USDCHF bearish structure (Day price<ema21<ema50). Day FVG bottom mitigated (per Apr29 tick). FVG top 0.78832 is the nearest resistance level. Replaces removed usdchf_h4fvg_buy_watch (BUY thesis invalidated by bearish turn).\n\nSL: 0.7905  TP: 0.7750  R:R target: 5.2\n\nADDED 2026-05-04T08:31Z: replacing stale BUY alert; SELL thesis aligned with bearish comp."
+    },
+    {
+      "alert_id": "gbpusd_day_fvg_buy_13528",
+      "instrument": "GBPUSD",
+      "direction": "BUY",
+      "level": 1.35282,
+      "active": false,
+      "fires": 0,
+      "entry_criterion": "LIMIT BUY at 1.35282 (Day bull FVG bottom) on M15 rejection wick confirmation",
+      "regime_context": "comp=+17 none. GBPUSD at 1.35586 \u2014 30.4p above level. Day FVG zone 1.35156-1.35282. USD-weak regime supports GBPUSD; FOMC hawkish hold limits upside.",
+      "sl": 1.3495,
+      "tp": 1.36,
+      "rr_target": 2.2,
+      "last_updated": "2026-05-04T12:51Z",
+      "note": "ENTRY: M15 rejection wick confirmation at Day bull FVG bottom (1.35156-1.35282). LIMIT BUY at 1.35282 when price within 30p proximity.\n\nCONTEXT: Day bull FVG zone. comp=+17 none \u2014 arm only when readiness reaches moderate. USD-weak regime (DXY sub-98) supports GBP. FOMC hawkish hold = modest USD headwind.\n\nSL: 1.3495  TP: 1.3600  R:R target: 2.2\n\nAdded 2026-05-04T13:00Z \u2014 noted in prior tick (12:21) regime note but not in level_alerts."
     }
   ],
   "structure_watch": [

@@ -1,15 +1,6 @@
 {
-  "generated_at": "2026-05-04T12:41:10.626439Z",
+  "generated_at": "2026-05-04T12:51:14.017352Z",
   "ticks": [
-    {
-      "ts": "2026-04-23T19:14:00Z",
-      "events": 2,
-      "opened": 0,
-      "closed": 0,
-      "skipped_setups": 0,
-      "pnl": 0,
-      "note": "satire news_flash + USDJPY audit both non-thesis-altering; swing=WATCH"
-    },
     {
       "ts_utc": "2026-04-23T20:20:00Z",
       "events_in": 1,
@@ -886,6 +877,30 @@
       },
       "balance": 961.92,
       "notes": "Hormuz escalation: Iranian drones attack ADNOC tanker. OIL comp=none \u2014 no new entries. GOLD SELL LIMIT@4591 confirmed (moderate bear thesis). AUDUSD BUY LIMIT@0.7143 confirmed. eurusd_upsweep_117159 validated (9fires 89%4h) at 9.6p \u2014 watching."
+    },
+    {
+      "ts_utc": "2026-05-04T12:51Z",
+      "events_in": 1,
+      "events_processed": [
+        "evt_1777898490345_news_flash"
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "positions_open": 0,
+      "limit_orders_active": 2,
+      "alerts_changed": {
+        "removed": [
+          "usdjpy_intervention_fade_zone"
+        ],
+        "added": [
+          "gbpusd_day_fvg_buy_13528"
+        ],
+        "modified": [
+          "audusd_m15fvg_buy_7143"
+        ]
+      },
+      "balance": 961.92,
+      "summary": "1 evt opec_supply (modest hike June, Hormuz limits impact). OIL comp=+14 none. GOLD SELL LIMIT@4591 GTC mod-bear. AUDUSD BUY LIMIT@0.7143 GTC mod-bull 47.8p away. USDJPY AUTO-REMOVED staleness (157.07 vs 160.00 trigger). 0 trades."
     }
   ]
 }
