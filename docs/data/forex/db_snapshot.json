@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-04T12:47:29.820094+00:00",
+  "generated_at": "2026-05-04T13:32:55.773388+00:00",
   "counts": {
     "trades": 40,
-    "events": 7153,
+    "events": 7194,
     "ticks": 59,
-    "regime_snapshots": 217,
+    "regime_snapshots": 218,
     "broker_positions": 0,
     "counterfactuals": 149
   },
@@ -853,6 +853,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-05-04T12:51Z",
+      "regime_name": "HORMUZ_ESCALATION_OIL_VOLATILE_USD_WEAK_FOMC_HAWKISH",
+      "note_text": "2026-05-04T12:51Z forex auto \u2014 1 evt: news_flash opec_supply (OPEC+ modest output hike June; Hormuz closure limits supply impact); OIL comp=+14 none \u2014 modest bear supply news offset by Hormuz constraint; SELL alerts 101.07/101.62 slightly more supported, current ~100.30; GOLD comp=-40 moderate bear \u2014 SELL LIMIT@4591 GTC ACTIVE 22pts below fill; AUDUSD comp=+50.5 moderate bull \u2014 BUY LIMIT@0.7143 GTC ACTIVE 47.8p below current 0.71882; TP=0.7187 (Day BOS), TP2=0.7250; USDJPY 157.07 \u2014 intervention trigger 160.00 auto-removed (dist=293p > 3\u00d7H4ATR=187p, trending away); EURUSD comp=9.5 none (upsweep 117159 at 8.4p \u2014 validated 9fires 89%4h, comp<40 no arm); GBPUSD comp=+17 none; USDCAD comp=-29.5 weak; USDCHF comp=-24.5 none. 0 trades. Balance $961.92.",
+      "binary_event_name": "FOMC May2026",
+      "binary_event_active": 0,
+      "binary_event_deadline": "2026-05-07T18:00Z"
+    },
+    {
       "ts_utc": "2026-05-04T12:40Z",
       "regime_name": "HORMUZ_ESCALATION_OIL_VOLATILE_USD_WEAK_FOMC_HAWKISH",
       "note_text": "2026-05-04T12:40Z forex auto \u2014 1 evt: news_flash hormuz_strait (Iranian drones attack ADNOC tanker in Strait of Hormuz); OIL comp=+22 none \u2014 geo bullish but insufficient confluence to arm new entries; SELL alerts at 101.07/101.62 remain WATCHES (no LIMIT). GOLD comp=-40 moderate bear \u2014 SELL LIMIT@4591 GTC ACTIVE; Hormuz geo-bid vs FOMC hawkish hold \u2014 tech thesis stands, 28.9pts below fill. AUDUSD comp=+48 moderate bull \u2014 BUY LIMIT@0.7143 GTC ACTIVE (44.4p away); risk-off mixed AUD. EURUSD comp=+9.5 none; GBPUSD comp=+17 none; eurusd_upsweep_117159 at 9.6p \u2014 WATCH (validated 9fires 89%4h, comp too weak to arm). USDCAD comp=-37 weak; USDCHF comp=-24.5 none; USDJPY comp=-23 none. 0 open positions. 2 LIMITs active. 0 trades. Balance $961.92.",
@@ -920,14 +928,6 @@
       "ts_utc": "2026-05-04T07:31Z",
       "regime_name": "ACTIVE_ESCALATION_US_IRAN_HORMUZ_NO_DEAL_USD_WEAK",
       "note_text": "2026-05-04T07:31Z forex auto \u2014 1 event: GBPUSD level_cross at 1.35689 (gbpusd_m15sweep_135689_buy_watch). SKIP \u2014 comp=+24 (need \u2265+40 bullish to arm sweep-retest BUY). No wick confirmation. 0 trades. EURUSD sell (1.17159) 5.9p away comp=+22.5 need+40. AUDUSD buy (0.7143) 48.8p away comp=+48 moderate (>30p prox). GOLD sell (4603) 17.4pts away prox<30pts but comp=-29 need-40. USDCHF sell FVG (0.78304) 8.1p below comp=-22 need-40. OIL buy (99.31) 90p away comp=+16 none. oil_rebound+oil_sweep_103449 promoted validated. Balance $961.92. 0 positions.",
-      "binary_event_name": "FOMC Apr29",
-      "binary_event_active": 0,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-05-04T12:47Z",
-      "regime_name": "ACTIVE_ESCALATION_US_IRAN_HORMUZ_NO_DEAL_USD_WEAK",
-      "note_text": "2026-05-04T12:47Z forex auto \u2014 1 event: USDCHF level_cross at 0.78156 (CT-fade sell). SKIP \u2014 comp=-27 (need \u2265+40 bullish extension). M15 bull short-term but D+H4 bearish; no overextension to fade. 0 trades. EURUSD sell (1.17159) 10.3p away (within 30p proximity) but comp=+30 need \u226540. GBPUSD buy (1.35689) 5.1p away but comp=+24 none. AUDUSD moderate-bull comp=+48 but 51p above buy zone. GOLD comp=-29 (sell at 4603 needs \u2264-40). Balance $961.92. 0 positions.",
       "binary_event_name": "FOMC Apr29",
       "binary_event_active": 0,
       "binary_event_deadline": "2026-04-29T18:00Z"

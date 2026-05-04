@@ -23,7 +23,7 @@
       "gbpusd_m15sweep_135689_buy_watch",
       "usdchf_d_fvg_sell_78304"
     ],
-    "notes": "31 events (Apr29-May4) consumed. 0 trades \u2014 all confluence weak/none. AUDUSD moderate-bull but buy levels 70p below current price. EURUSD sell alert 13p from level, GOLD sell 12p from zone \u2014 both need comp\u2265-40 (currently weak). BoJ intervened at USDJPY 160 \u2192 156.89. FOMC held. RBA hiked. USD weak. Iran no-deal ongoing. OIL 99.73, GOLD 4591."
+    "notes": "31 events (Apr29-May4) consumed. 0 trades — all confluence weak/none. AUDUSD moderate-bull but buy levels 70p below current price. EURUSD sell alert 13p from level, GOLD sell 12p from zone — both need comp≥-40 (currently weak). BoJ intervened at USDJPY 160 → 156.89. FOMC held. RBA hiked. USD weak. Iran no-deal ongoing. OIL 99.73, GOLD 4591."
   },
   {
     "tick_ts_utc": "2026-05-04T07:00Z",
@@ -33,7 +33,7 @@
         "id": "evt_1777877876369_liquidity_sweep",
         "type": "liquidity_sweep",
         "instrument": "EURUSD",
-        "action": "SKIP \u2014 comp=+32.5, need \u2264-40 for CT-fade buy; 0.9p micro-wick"
+        "action": "SKIP — comp=+32.5, need ≤-40 for CT-fade buy; 0.9p micro-wick"
       },
       {
         "id": "evt_1777877878237_bar_close",
@@ -51,7 +51,7 @@
         "id": "evt_1777877880224_liquidity_sweep",
         "type": "liquidity_sweep",
         "instrument": "USDCHF",
-        "action": "SKIP \u2014 comp=-27, need \u2265+40 for CT-fade sell; ADD watchlist alert usdchf_m15sweep_78156_sell_watch"
+        "action": "SKIP — comp=-27, need ≥+40 for CT-fade sell; ADD watchlist alert usdchf_m15sweep_78156_sell_watch"
       }
     ],
     "trades_opened": 0,
@@ -124,7 +124,7 @@
         "type": "level_cross",
         "instrument": "USDCHF",
         "alert_id": "usdchf_m15sweep_78156_sell_watch",
-        "action": "SKIP \u2014 CT-fade gate not met: comp=-27 (need \u2265+40 bullish extension). Price at level 0.78156 but no bullish overextension to fade. Alert WATCH maintained."
+        "action": "SKIP — CT-fade gate not met: comp=-27 (need ≥+40 bullish extension). Price at level 0.78156 but no bullish overextension to fade. Alert WATCH maintained."
       }
     ],
     "trades_opened": 0,
@@ -180,14 +180,14 @@
         "scalp": "OFF(desync)",
         "readiness": "weak",
         "comp": 30.0,
-        "reason": "sell at 1.17159; price 10.3p above (within 30p proximity); comp=+30 need \u226540"
+        "reason": "sell at 1.17159; price 10.3p above (within 30p proximity); comp=+30 need ≥40"
       },
       "GBPUSD": {
         "swing": "WATCH",
         "scalp": "ACTIVE",
         "readiness": "none",
         "comp": 24.0,
-        "reason": "buy at 1.35689; price 5.1p above (within 30p proximity); comp=+24 need \u226540"
+        "reason": "buy at 1.35689; price 5.1p above (within 30p proximity); comp=+24 need ≥40"
       },
       "AUDUSD": {
         "swing": "WATCH",
@@ -215,14 +215,14 @@
         "scalp": "OFF(pip-conv)",
         "readiness": "weak",
         "comp": -27.0,
-        "reason": "CT-fade sell at 0.78156 AT level but comp=-27 need \u2265+40; Day FVG sell at 0.78304 needs comp\u2264-40"
+        "reason": "CT-fade sell at 0.78156 AT level but comp=-27 need ≥+40; Day FVG sell at 0.78304 needs comp≤-40"
       },
       "GOLD": {
         "swing": "WATCH",
         "scalp": "N/A(spread 5p)",
         "readiness": "weak",
         "comp": -29.0,
-        "reason": "sell at 4603 (price 15.5pts below); comp=-29 need \u2264-40; buy at 4524 needs comp\u2265+40"
+        "reason": "sell at 4603 (price 15.5pts below); comp=-29 need ≤-40; buy at 4524 needs comp≥+40"
       },
       "OIL_CRUDE": {
         "swing": "WATCH",
@@ -233,7 +233,7 @@
       }
     },
     "scalp_audit": "EURUSD=OFF(desync) GBPUSD=ACTIVE(stats null, no trades) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
-    "notes": "1 event: USDCHF level_cross at 0.78156 (CT-fade sell). SKIP \u2014 comp=-27 (need \u2265+40 for bullish extension fade). M15 short-term bull (+0.4) but D+H4 bearish. No bull overextension to fade. Alert WATCH. EURUSD sell (1.17159) and GBPUSD buy (1.35689) both within 30p proximity but comp gates not met. AUDUSD moderate-bull but 51p above buy zone. Balance $961.92."
+    "notes": "1 event: USDCHF level_cross at 0.78156 (CT-fade sell). SKIP — comp=-27 (need ≥+40 for bullish extension fade). M15 short-term bull (+0.4) but D+H4 bearish. No bull overextension to fade. Alert WATCH. EURUSD sell (1.17159) and GBPUSD buy (1.35689) both within 30p proximity but comp gates not met. AUDUSD moderate-bull but 51p above buy zone. Balance $961.92."
   },
   {
     "tick_ts_utc": "2026-05-04T07:31Z",
@@ -247,7 +247,7 @@
       {
         "event_id": "evt_1777879747656_level_cross",
         "alert_id": "gbpusd_m15sweep_135689_buy_watch",
-        "reason": "comp=+24 need \u2265+40 for sweep-retest BUY arm; readiness=none"
+        "reason": "comp=+24 need ≥+40 for sweep-retest BUY arm; readiness=none"
       }
     ],
     "alerts_modified": [
@@ -323,14 +323,14 @@
         "event": "eurusd_upsweep_117159_sell_watch level_cross",
         "fire": 9,
         "action": "SKIP",
-        "reason": "CT-fade SELL needs comp\u2265+25 (watchlist) or \u2265+40 (arm); comp=+22.5 < 25 minimum threshold"
+        "reason": "CT-fade SELL needs comp≥+25 (watchlist) or ≥+40 (arm); comp=+22.5 < 25 minimum threshold"
       }
     ],
     "watchlist_changes": {
       "removed": [],
       "added": [],
       "modified": [
-        "eurusd_upsweep_117159 \u2014 comp ref updated to +22.5, 9th fire noted"
+        "eurusd_upsweep_117159 — comp ref updated to +22.5, 9th fire noted"
       ]
     },
     "news_query_changes": {
@@ -342,14 +342,14 @@
       ]
     },
     "attention": {
-      "EURUSD": "WATCH/OFF/none \u2014 9th fire at 1.17159, comp=+22.5<25",
-      "GBPUSD": "WATCH/ACTIVE/none \u2014 comp=+22, sweep buy 3.6p away but <40",
-      "AUDUSD": "WATCH/OFF/moderate \u2014 comp=+48, 47.5p above buy zone 0.7143",
-      "USDJPY": "NONE/OFF/weak \u2014 comp=-25.5, no alerts",
-      "USDCAD": "NONE/OFF/weak \u2014 comp=-37",
-      "USDCHF": "WATCH/OFF/none \u2014 comp=-22, Day FVG sell 4.9p above",
-      "GOLD": "WATCH/N/A/weak \u2014 comp=-29, 21.9pts below sell@4603",
-      "OIL_CRUDE": "WATCH/N/A/none \u2014 comp=+16, 134.8p above buy 99.31"
+      "EURUSD": "WATCH/OFF/none — 9th fire at 1.17159, comp=+22.5<25",
+      "GBPUSD": "WATCH/ACTIVE/none — comp=+22, sweep buy 3.6p away but <40",
+      "AUDUSD": "WATCH/OFF/moderate — comp=+48, 47.5p above buy zone 0.7143",
+      "USDJPY": "NONE/OFF/weak — comp=-25.5, no alerts",
+      "USDCAD": "NONE/OFF/weak — comp=-37",
+      "USDCHF": "WATCH/OFF/none — comp=-22, Day FVG sell 4.9p above",
+      "GOLD": "WATCH/N/A/weak — comp=-29, 21.9pts below sell@4603",
+      "OIL_CRUDE": "WATCH/N/A/none — comp=+16, 134.8p above buy 99.31"
     }
   },
   {
@@ -360,14 +360,14 @@
     "events_skipped": 2,
     "balance": 961.92,
     "open_positions": 0,
-    "notes": "GBPUSD level_cross gbpusd_m15sweep_135689_buy_watch SKIP(comp=+22 none need+40). USDCHF level_cross usdchf_d_fvg_sell_78304 SKIP(comp=-22 none need-40, Day FVG bottom mitigated). ALERT MODIFIED: usdchf_d_fvg_sell_78304 level 0.78304\u21920.78832 (FVG top). usdchf_m15sweep_78156_sell_watch context updated. Attention: AUDUSD moderate bull comp+48 (47.4p from buy zone), GOLD weak bear comp-29 (25.5pts from sell@4603), EURUSD none comp+20.5."
+    "notes": "GBPUSD level_cross gbpusd_m15sweep_135689_buy_watch SKIP(comp=+22 none need+40). USDCHF level_cross usdchf_d_fvg_sell_78304 SKIP(comp=-22 none need-40, Day FVG bottom mitigated). ALERT MODIFIED: usdchf_d_fvg_sell_78304 level 0.78304→0.78832 (FVG top). usdchf_m15sweep_78156_sell_watch context updated. Attention: AUDUSD moderate bull comp+48 (47.4p from buy zone), GOLD weak bear comp-29 (25.5pts from sell@4603), EURUSD none comp+20.5."
   },
   {
     "tick_ts_utc": "2026-05-04T08:31Z",
     "events_processed": 4,
     "events": [
       "OIL_CRUDE liquidity_sweep@101.624",
-      "bar_close\u00d73 (auto)"
+      "bar_close×3 (auto)"
     ],
     "trades_opened": 0,
     "limits_armed": 1,
@@ -377,16 +377,16 @@
     "trades_closed": 0,
     "skips": 1,
     "skip_details": [
-      "OIL_CRUDE CT fade: comp=+32<40 \u2192 watchlist only"
+      "OIL_CRUDE CT fade: comp=+32<40 → watchlist only"
     ],
     "balance": 961.92,
     "open_positions": 0,
     "working_orders": 1,
     "key_observations": [
-      "GOLD comp=-40 moderate bear (all TFs), H4 bear FVG 4581-4591 \u2192 SELL LIMIT armed",
-      "OIL_CRUDE up-sweep 101.624 (19.9p); comp=+32 weak opposing \u2192 watchlist ADD",
-      "EURUSD 3.1p from SELL watch 1.17159; comp=+10.5 none (need -40) \u2192 no action",
-      "AUDUSD comp=+48 moderate bull; level 0.7143 at 50.3p (>30p prox) \u2192 watch",
+      "GOLD comp=-40 moderate bear (all TFs), H4 bear FVG 4581-4591 → SELL LIMIT armed",
+      "OIL_CRUDE up-sweep 101.624 (19.9p); comp=+32 weak opposing → watchlist ADD",
+      "EURUSD 3.1p from SELL watch 1.17159; comp=+10.5 none (need -40) → no action",
+      "AUDUSD comp=+48 moderate bull; level 0.7143 at 50.3p (>30p prox) → watch",
       "USDCHF: removed stale BUY alert, added SELL watch at 0.78832 (FVG top)",
       "Fixed stale active=true on AUDUSD and OIL GTC orders (not in broker)"
     ]
@@ -400,7 +400,7 @@
         "type": "news_flash",
         "query_id": "opec_supply",
         "headline": "OPEC+ agrees oil output hike but impact limited with Hormuz closure",
-        "action": "SKIP \u2014 OIL comp=24.5 none (below 25 threshold); no alert arming; WATCH oil_rebound_9931_buy_watch for comp\u226540"
+        "action": "SKIP — OIL comp=24.5 none (below 25 threshold); no alert arming; WATCH oil_rebound_9931_buy_watch for comp≥40"
       }
     ],
     "trades_opened": 0,
@@ -445,14 +445,14 @@
       }
     },
     "attention_matrix": {
-      "EURUSD": "swing=WATCH scalp=OFF readiness=none \u2014 0.4p above sell alert 1.17159; comp=22.5 need +40 CT-fade",
-      "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=none \u2014 comp=14.5 far from +40 threshold",
-      "AUDUSD": "swing=WATCH scalp=OFF readiness=moderate \u2014 comp=+48 but 54p above level 0.7143 (>30p prox)",
-      "USDJPY": "swing=NONE scalp=OFF readiness=none \u2014 no active alerts; comp=-20 none; pip-conv pending",
-      "USDCAD": "swing=NONE scalp=OFF readiness=weak \u2014 comp=-37 approaching threshold; no clean level yet",
-      "USDCHF": "swing=WATCH scalp=OFF readiness=none \u2014 2 SELL alerts (0.78832, 0.78156); comp=-22 need -40",
-      "GOLD": "swing=ARMED scalp=N/A readiness=moderate \u2014 SELL LIMIT @4591 GTC; comp=-40 threshold met",
-      "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=none \u2014 comp=24.5 just below 25; OPEC hike limited by Hormuz"
+      "EURUSD": "swing=WATCH scalp=OFF readiness=none — 0.4p above sell alert 1.17159; comp=22.5 need +40 CT-fade",
+      "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=none — comp=14.5 far from +40 threshold",
+      "AUDUSD": "swing=WATCH scalp=OFF readiness=moderate — comp=+48 but 54p above level 0.7143 (>30p prox)",
+      "USDJPY": "swing=NONE scalp=OFF readiness=none — no active alerts; comp=-20 none; pip-conv pending",
+      "USDCAD": "swing=NONE scalp=OFF readiness=weak — comp=-37 approaching threshold; no clean level yet",
+      "USDCHF": "swing=WATCH scalp=OFF readiness=none — 2 SELL alerts (0.78832, 0.78156); comp=-22 need -40",
+      "GOLD": "swing=ARMED scalp=N/A readiness=moderate — SELL LIMIT @4591 GTC; comp=-40 threshold met",
+      "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=none — comp=24.5 just below 25; OPEC hike limited by Hormuz"
     },
     "scalp_audit": "EURUSD=OFF(engine_desync) GBPUSD=ACTIVE(no_trades) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
     "news_notes": "OPEC+ Jun output hike agreed; impact limited by Hormuz closure. Mixed supply signal. OIL net: bearish-lean offset by disruption. Regime note updated."
@@ -469,7 +469,7 @@
         "fire_count": 6,
         "price": 103.574,
         "level": 103.449,
-        "action": "SKIP \u2014 comp=+32 weak bull (need \u2264-40 CT-fade SELL); price already 67p below level at 102.776 by tick time"
+        "action": "SKIP — comp=+32 weak bull (need ≤-40 CT-fade SELL); price already 67p below level at 102.776 by tick time"
       }
     ],
     "trades_opened": 0,
@@ -662,7 +662,7 @@
       }
     },
     "balance": 961.92,
-    "notes": "Hormuz escalation: Iranian drones attack ADNOC tanker. OIL comp=none \u2014 no new entries. GOLD SELL LIMIT@4591 confirmed (moderate bear thesis). AUDUSD BUY LIMIT@0.7143 confirmed. eurusd_upsweep_117159 validated (9fires 89%4h) at 9.6p \u2014 watching."
+    "notes": "Hormuz escalation: Iranian drones attack ADNOC tanker. OIL comp=none — no new entries. GOLD SELL LIMIT@4591 confirmed (moderate bear thesis). AUDUSD BUY LIMIT@0.7143 confirmed. eurusd_upsweep_117159 validated (9fires 89%4h) at 9.6p — watching."
   },
   {
     "ts_utc": "2026-05-04T12:51Z",
@@ -687,5 +687,85 @@
     },
     "balance": 961.92,
     "summary": "1 evt opec_supply (modest hike June, Hormuz limits impact). OIL comp=+14 none. GOLD SELL LIMIT@4591 GTC mod-bear. AUDUSD BUY LIMIT@0.7143 GTC mod-bull 47.8p away. USDJPY AUTO-REMOVED staleness (157.07 vs 160.00 trigger). 0 trades."
+  },
+  {
+    "tick_ts_utc": "2026-05-04T13:35Z",
+    "events_consumed": 0,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "positions_open": 0,
+    "limits_active": 2,
+    "limits": [
+      {
+        "epic": "GOLD",
+        "dir": "SELL",
+        "level": 4591.0,
+        "sl": 4598.0,
+        "tp": 4550.0
+      },
+      {
+        "epic": "AUDUSD",
+        "dir": "BUY",
+        "level": 0.7143,
+        "sl": 0.713,
+        "tp": 0.7187
+      }
+    ],
+    "balance": 961.92,
+    "pnl_day": 0.0,
+    "confluence": {
+      "EURUSD": {
+        "comp": 9.5,
+        "readiness": "none"
+      },
+      "GBPUSD": {
+        "comp": 14.5,
+        "readiness": "none"
+      },
+      "AUDUSD": {
+        "comp": 40.5,
+        "readiness": "moderate"
+      },
+      "USDJPY": {
+        "comp": -25.0,
+        "readiness": "weak"
+      },
+      "USDCAD": {
+        "comp": -29.5,
+        "readiness": "weak"
+      },
+      "USDCHF": {
+        "comp": -24.5,
+        "readiness": "none"
+      },
+      "GOLD": {
+        "comp": -43.0,
+        "readiness": "moderate"
+      },
+      "OIL_CRUDE": {
+        "comp": 19.0,
+        "readiness": "none"
+      }
+    },
+    "alerts_changed": {
+      "modified": [
+        "oil_rebound_9931_buy_watch"
+      ],
+      "added": [
+        "usdjpy_day_fvg_sell_15733"
+      ]
+    },
+    "attention_matrix": {
+      "EURUSD": "WATCH comp=+9.5 none; upsweep_117159 9.1p below level; scalp=OFF(desync)",
+      "GBPUSD": "WATCH comp=+14.5 none; scalp=ACTIVE(neutral)",
+      "AUDUSD": "ARMED LIMIT BUY@0.7143 GTC; comp=+40.5 moderate; RBA hike May5; scalp=OFF(wr=11%)",
+      "USDJPY": "WATCH Day FVG 157.33 ADDED (24.3p away); comp=-25 weak; scalp=OFF(pip-conv)",
+      "USDCAD": "NONE comp=-29.5 weak; no active alert; scalp=OFF(pip-conv)",
+      "USDCHF": "WATCH d_fvg_sell@0.78832 (55.5p away); comp=-24.5 none; scalp=OFF(pip-conv)",
+      "GOLD": "ARMED SELL LIMIT@4591 GTC; comp=-43 moderate; FOMC hawkish confirms; scalp=N/A",
+      "OIL_CRUDE": "WATCH comp=+19 none; Hormuz escort partial-bullish; scalp=N/A(spread 3-4p)"
+    },
+    "scalp_summary": "EURUSD=OFF(desync) GBPUSD=ACTIVE(neutral) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
+    "notes": "Heartbeat 0 evts. US Hormuz escort succeeded; RBA hike May5 expected; FOMC hawkish. GOLD SELL LIMIT@4591 GTC conf=mod-bear. AUDUSD BUY LIMIT@0.7143 GTC conf=mod-bull. ADDED usdjpy_day_fvg_sell_15733 (Day FVG 157.33, 24.3p away, comp=-25 watch). MODIFIED oil_rebound_9931 context with Hormuz escort news."
   }
 ]
