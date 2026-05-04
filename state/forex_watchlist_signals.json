@@ -1,10 +1,15 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-05-04T15:22Z",
-  "pruned_at": "2026-05-04T15:22Z",
-  "pruned_by": "claude auto-audit 2026-05-04T15:22Z \u2014 1 evt: gold_h4ob_buy_4524 level_cross (GOLD entered H4 OB at 4514.72, comp=-46 moderate-bear, SKIP BUY, need +40); gold_h1fvg_sell_4603 comp updated -37.5\u2192-46 (now clearly moderate); all other alerts KEEP",
-  "pruned_removed": [],
-  "pruned_added": [],
+  "last_updated_by_claude": "2026-05-04T15:35Z",
+  "pruned_at": "2026-05-04T15:35Z",
+  "pruned_by": "claude auto-audit 2026-05-04T15:35Z \u2014 REMOVE gold_h4ob_buy_4524 (comp=-46 bear contradicts BUY; SELL LIMIT active); REMOVE gbpusd_upsweep_135203_sell_watch (SELL@1.35203 contradicts active BUY LIMIT@1.35282, same zone, not validated); ADD usdchf_sweep_78218_buy_watch (mandatory liquidity_sweep wick 1.6p, comp=-22 none watchlist-only)",
+  "pruned_removed": [
+    "gbpusd_upsweep_135203_sell_watch",
+    "gold_h4ob_buy_4524"
+  ],
+  "pruned_added": [
+    "usdchf_sweep_78218_buy_watch"
+  ],
   "instruments": [
     "EURUSD",
     "USDJPY",
@@ -95,43 +100,6 @@
       "validated": true,
       "alert_id": "gold_h1fvg_sell_4603",
       "active": true
-    },
-    {
-      "id": "gold_h4ob_buy_4524",
-      "instrument": "GOLD",
-      "level": 4524.0,
-      "emit_on": "cross_down",
-      "cooldown_sec": 1800,
-      "direction": "buy",
-      "note": "ENTRY: price pulls back to H4 bull OB top 4524 (OB: 4523.94-4492.52); M15 bar closes AT or ABOVE 4524 with bullish rejection wick \u22655pts from the low. Arm LIMIT BUY only when comp \u2265 +40 bullish reversal signal.\n\nCONTEXT: Level_cross fired 2026-05-04T15:22Z \u2014 GOLD entered H4 bull OB zone at 4514.72 (now 4517.68). comp=-46.0 moderate-bear (all 4 TFs bearish); need comp reversal to \u2265+40 to arm BUY. OB zone (4492-4524) may slow descent but momentum is bear-dominant. DO NOT ARM until comp flips \u2265+40 bullish. GTC SELL LIMIT@4591 is primary GOLD position. 4h time-stop if entered.\n\nSL: 4492  TP: 4603  R:R target: 2.5\n\nupdated 2026-05-04T15:22Z \u2014 level_cross fired; price entered OB at 4514.72; comp=-46 moderate-bear (all TFs); SKIP BUY; WATCH for comp \u2265+40 reversal.",
-      "entry_criterion": "M15 retest of H4 bull OB top 4524 with bullish wick \u22655pts. Arm BUY LIMIT at comp \u2265 +40 bullish (trend reversal confirmation required).",
-      "regime_context": "GOLD at 4517.68, inside H4 bull OB 4492-4524. comp=-46.0 moderate-bear all 4 TFs. OB entered on level_cross 15:22Z. Need comp \u2265+40 to arm. 4h time-stop if entered.",
-      "sl": 4492.0,
-      "tp": 4603.0,
-      "rr_target": "2.5",
-      "current_price_ref": 4517.68,
-      "last_updated": "2026-05-04T15:22Z",
-      "alert_id": "gold_h4ob_buy_4524",
-      "active": true
-    },
-    {
-      "id": "gbpusd_upsweep_135203_sell_watch",
-      "instrument": "GBPUSD",
-      "level": 1.35203,
-      "emit_on": "cross_up",
-      "cooldown_sec": 1800,
-      "direction": "sell",
-      "note": "ENTRY: price returns to 1.35203 up-sweep extreme; M15 retest with bearish rejection wick \u22651p. Arm CT-fade SELL LIMIT when comp \u2265 +40 bullish extension.\n\nCONTEXT: 4 fires, 4h hit_rate=50% (not yet validated at \u226560%). GBPUSD at 1.35418 (21.5p ABOVE level). comp=+14.5 none (need +40). M15 BOS bull reversed M15 CHoC bear \u2014 structure bullish short-term. Alert valid as deep-fade target only if GBPUSD resumes up-extension to comp\u226540.\n\nSL: 1.35280  TP: 1.34950  R:R target: 3.3\n\nupdated 2026-05-04T11:21Z \u2014 price ref updated; comp=+14.5 none; still WATCH.",
-      "entry_criterion": "M15 retest of 1.35203 with bearish rejection wick \u22651p. Arm CT-fade SELL LIMIT at comp \u2265+40 bullish extension.",
-      "regime_context": "GBPUSD at 1.35418, 21.5p above level. comp=+14.5 none. M15 BOS bull active. 4h time-stop.",
-      "sl": 1.3528,
-      "tp": 1.3495,
-      "rr_target": "3.3",
-      "current_price_ref": 1.35601,
-      "last_updated": "2026-05-04T11:21Z",
-      "alert_id": "gbpusd_upsweep_135203_sell_watch",
-      "active": true,
-      "validated": false
     },
     {
       "id": "oil_rebound_9931_buy_watch",
@@ -225,6 +193,25 @@
       "last_updated": "2026-05-04T14:44Z",
       "validated": false,
       "alert_id": "usdjpy_day_fvg_sell_15733",
+      "active": true
+    },
+    {
+      "id": "usdchf_sweep_78218_buy_watch",
+      "instrument": "USDCHF",
+      "level": 0.78218,
+      "emit_on": "cross_down",
+      "cooldown_sec": 1800,
+      "direction": "buy",
+      "note": "ENTRY: price retests swept extreme 0.78218; M15 bar closes AT or ABOVE 0.78218 with bullish rejection wick \u22652p from the low. Arm BUY LIMIT when comp \u2265 40 bullish (trend-aligned) OR |comp| \u2265 40 bearish (counter-trend fade \u2014 extension confirms wick genuine).\n\nCONTEXT: M15 down-sweep 2026-05-04T15:15Z \u2014 wick 1.6p below 0.78218, close back inside at 0.78325 (24% of M15 ATR=6.6p; marginal wick). USDCHF at 0.78309. comp=-22 none \u2014 below 25 threshold; no immediate trade. H4 bear trend (price<ema21<ema50, DAY+H4+H1 bearish). M15 BOS bull from 2026-05-01 at 0.78222. Existing SELL alert usdchf_d_fvg_sell_78304 at 0.78832 (52p above). Watch for comp improvement before arming.\n\nSL: 0.78175  TP: 0.78400  R:R target: 2.4\n\nadded 2026-05-04T15:35Z \u2014 mandatory liquidity_sweep add; comp=-22 none; watchlist only.",
+      "entry_criterion": "M15 retest of 0.78218 with bullish rejection wick \u22652p. Arm when comp \u2265 40 (trend bull) OR comp \u2264 -40 (CT-fade extension).",
+      "regime_context": "USDCHF 0.78309, comp=-22 none. H4+D bearish, M15 BOS bull from 0.78222. M15 down-sweep wick 1.6p. No trade yet.",
+      "sl": 0.78175,
+      "tp": 0.784,
+      "rr_target": "2.4",
+      "current_price_ref": 0.78309,
+      "last_updated": "2026-05-04T15:35Z",
+      "validated": false,
+      "alert_id": "usdchf_sweep_78218_buy_watch",
       "active": true
     }
   ],

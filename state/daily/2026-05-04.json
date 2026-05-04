@@ -1063,5 +1063,19 @@
     "scalp_audit": "EURUSD=OFF(engine_desync_loop) GBPUSD=ACTIVE(no trades yet, london session) AUDUSD=OFF(wr=11%<40%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
     "regime": "HORMUZ_ESCORT_ACTIVE_RBA_HIKE_TOMORROW_USD_WEAK_FOMC_CLEARED",
     "notes": "GOLD bear acceleration confirmed (4579\u21924517, comp -37\u2192-46). H4 OB zone entered but all TFs bearish \u2014 no buy signal. SELL LIMIT@4591 thesis strengthened. AUDUSD ARMED ahead of RBA hike tomorrow. No new trades this tick."
+  },
+  {
+    "tick_ts_utc": "2026-05-04T15:35Z",
+    "events_processed": 1,
+    "events": [
+      "evt_1777908310064_liquidity_sweep"
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "trades_skipped": 1,
+    "balance": 961.92,
+    "open_positions": 0,
+    "pending_orders": 3,
+    "summary": "1 evt: liquidity_sweep USDCHF M15 wick=1.6p level=0.78218 comp=-22 none SKIP (|comp|<25). ADD usdchf_sweep_78218_buy_watch (watchlist). REMOVE gold_h4ob_buy_4524 (comp=-46 bear, SELL LIMIT active). REMOVE gbpusd_upsweep_135203_sell_watch (contradicts active BUY LIMIT@1.35282). GTC: GOLD SELL@4591, AUDUSD BUY@0.7143 (comp=40.5 moderate, RBA hike tmr), GBPUSD BUY@1.35282 (9p from fill). WATCH: USDJPY SELL@157.33 comp=-23 none 14.6p; OIL SELL@103.449 comp=+14 none 0.35pts. scalp: GBPUSD=ACTIVE."
   }
 ]
