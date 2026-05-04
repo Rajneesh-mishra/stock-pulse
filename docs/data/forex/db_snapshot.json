@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-04T15:34:03.157932+00:00",
+  "generated_at": "2026-05-04T15:44:06.355359+00:00",
   "counts": {
     "trades": 40,
-    "events": 7275,
+    "events": 7283,
     "ticks": 59,
-    "regime_snapshots": 224,
+    "regime_snapshots": 225,
     "broker_positions": 0,
     "counterfactuals": 152
   },
@@ -853,6 +853,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-05-04T15:35Z",
+      "regime_name": "HORMUZ_ESCORT_ACTIVE_RBA_HIKE_TOMORROW_USD_WEAK_FOMC_CLEARED",
+      "note_text": "2026-05-04T15:35Z forex auto \u2014 1 evt: liquidity_sweep USDCHF M15 (wick 1.6p below 0.78218, close inside 0.78325; comp=-22 none, |comp|=22<25 threshold; NO TRADE \u2014 add watchlist alert usdchf_sweep_78218_buy_watch). AUDIT: REMOVE gold_h4ob_buy_4524 (comp=-46 bear contradicts BUY, SELL LIMIT@4591 is active GOLD thesis); REMOVE gbpusd_upsweep_135203_sell_watch (SELL@1.35203 contradicts active BUY LIMIT@1.35282, same proximity zone); ADD usdchf_sweep_78218_buy_watch@0.78218 (watchlist-only, arm at comp\u226540). GTC orders HOLD: GOLD SELL LIMIT@4591 (comp=-46 moderate-bear, 61pts from fill); AUDUSD BUY LIMIT@0.7143 (comp=+40.5 moderate, 30p from fill, RBA hike 2026-05-05); GBPUSD BUY LIMIT@1.35282 (comp=+3.5 none, 9p from fill, Day FVG intact). USDJPY WATCH: SELL@157.33, price=157.184, comp=-23 none, 14.6p from level. OIL WATCH: SELL@103.449, price=103.097 bid, comp=+14 none, 0.35pts from trigger. 0 trades. Balance $961.92.",
+      "binary_event_name": "FOMC May2026",
+      "binary_event_active": 0,
+      "binary_event_deadline": "2026-05-07T18:00Z"
+    },
+    {
       "ts_utc": "2026-05-04T15:22Z",
       "regime_name": "HORMUZ_ESCORT_ACTIVE_RBA_HIKE_TOMORROW_USD_WEAK_FOMC_CLEARED",
       "note_text": "2026-05-04T15:22Z forex auto \u2014 1 evt: level_cross gold_h4ob_buy_4524 (GOLD entered H4 bull OB 4492-4524 at 4514.72; comp=-46.0 moderate-bear all 4 TFs; SKIP BUY \u2014 need comp\u2265+40 bullish; OB may slow descent but momentum bearish). GOLD SELL LIMIT@4591 GTC ACTIVE (comp upgraded -37.5\u2192-46, now clearly moderate-bear; GOLD at 4517.68, 73.3pts below LIMIT; thesis strengthened). AUDUSD BUY LIMIT@0.7143 GTC ARMED (comp=+50.5 moderate-bull, 29.1p from fill \u226430p proximity, RBA +25bps hike 2026-05-05). GBPUSD BUY LIMIT@1.35282 GTC WATCH (comp=+24.5 none, Day FVG bottom intact, 7.6p from fill). 0 trades. Balance $961.92.",
@@ -923,14 +931,6 @@
       "binary_event_name": "FOMC May2026",
       "binary_event_active": 0,
       "binary_event_deadline": "2026-05-07T18:00Z"
-    },
-    {
-      "ts_utc": "2026-05-04T11:21Z",
-      "regime_name": "ACTIVE_ESCALATION_US_IRAN_HORMUZ_NO_DEAL_USD_WEAK",
-      "note_text": "2026-05-04T11:21Z forex auto \u2014 1 evt: news_flash hormuz_strait (Iran claims turning back US warship; US denies missile strike) \u2014 OIL comp=+32 weak bull unchanged; no alert threshold changes; Hormuz tensions persist with contested narrative. GOLD comp=-40 moderate bear (all 4 TFs); H4 FVG 4584-4591 unmitigated; SELL LIMIT@4591 GTC ACTIVE (price=4564.95, 26pts below). AUDUSD comp=+40.5 moderate bull; BUY LIMIT@0.7143 GTC ACTIVE (price=0.7181, 38p above). EURUSD comp=+10.5 none. GBPUSD comp=+14.5 none. USDCHF comp=-14.5 none. USDCAD comp=-37 weak. USDJPY comp=-23 none. 0 open positions. 2 LIMITs active. No new trades. MODIFIED: gold_h1fvg_sell_4603 (validated+active LIMIT noted), gbpusd_upsweep_135203/oil_rebound_9931 (price refs). Balance $961.92.",
-      "binary_event_name": "FOMC Apr29",
-      "binary_event_active": 0,
-      "binary_event_deadline": "2026-04-29T18:00Z"
     }
   ],
   "ticks_last_50": [
