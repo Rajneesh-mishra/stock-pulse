@@ -1,8 +1,8 @@
 {
   "regime": "ACTIVE_ESCALATION_US_IRAN_HORMUZ_NO_DEAL_USD_WEAK",
-  "tick_ts_utc": "2026-05-04T07:00Z",
-  "state_ts_utc": "2026-05-04T07:00Z",
-  "regime_note": "2026-05-04T07:00Z forex auto \u2014 4 events consumed. 2 liquidity_sweeps (EURUSD M15 down-wick 0.9p @1.17226 buy-bias; USDCHF M15 up-wick 0.9p @0.78156 sell-bias). Both sub-threshold: comp \u226540 counter-trend gate not met (EURUSD=+32.5 need \u2264-40; USDCHF=-27 need \u2265+40). 0 trades. Added usdchf_m15sweep_78156_sell_watch. EURUSD comp=+32.5 weak bull (14p above 1.17159 sell zone, almost at proximity). AUDUSD comp=+48 moderate bull (54p above 0.7143 buy zone). GOLD comp=-29, 16.4pts below sell level 4603 (in proximity, need -40). OIL=100.12 comp=+11 none. Balance $961.92. 0 positions. scalp=GBPUSD active.",
+  "tick_ts_utc": "2026-05-04T12:47Z",
+  "state_ts_utc": "2026-05-04T12:47Z",
+  "regime_note": "2026-05-04T12:47Z forex auto \u2014 1 event: USDCHF level_cross at 0.78156 (CT-fade sell). SKIP \u2014 comp=-27 (need \u2265+40 bullish extension). M15 bull short-term but D+H4 bearish; no overextension to fade. 0 trades. EURUSD sell (1.17159) 10.3p away (within 30p proximity) but comp=+30 need \u226540. GBPUSD buy (1.35689) 5.1p away but comp=+24 none. AUDUSD moderate-bull comp=+48 but 51p above buy zone. GOLD comp=-29 (sell at 4603 needs \u2264-40). Balance $961.92. 0 positions.",
   "regime_note_prev": "2026-05-04T06:55Z forex auto \u2014 31 events consumed. US-Iran conflict ongoing; Hormuz no-deal by Jun30 consensus 70.5%; Goldman raised Brent target $90 by late 2026. FOMC Apr29 PASSED (hold 3.50-3.75%, Powell final meeting). BoJ intervened at USDJPY 160 \u2192 pulled to 156.89 (intervention fade played out). USD weak (DXY ~98). RBA hiked \u2192 AUD bull. OIL 99.73, GOLD 4591 (pulling back from 4700+). AUDUSD moderate-bull but 70p above all buy zones. 0 trades.",
   "open_positions": [],
   "watchlist": [

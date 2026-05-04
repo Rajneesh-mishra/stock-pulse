@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T07:06:39.171914Z",
+  "generated_at": "2026-05-04T07:21:17.329744Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -351,6 +351,126 @@
         }
       },
       "scalp_audit": "EURUSD=OFF(desync) GBPUSD=ACTIVE(no trades) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
+    },
+    {
+      "tick_ts_utc": "2026-05-04T12:47Z",
+      "events_consumed": 1,
+      "events": [
+        {
+          "id": "evt_1777878980042_level_cross",
+          "type": "level_cross",
+          "instrument": "USDCHF",
+          "alert_id": "usdchf_m15sweep_78156_sell_watch",
+          "action": "SKIP \u2014 CT-fade gate not met: comp=-27 (need \u2265+40 bullish extension). Price at level 0.78156 but no bullish overextension to fade. Alert WATCH maintained."
+        }
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "balance_usd": 961.92,
+      "positions_open": 0,
+      "regime": "ACTIVE_ESCALATION_US_IRAN_HORMUZ_NO_DEAL_USD_WEAK",
+      "alerts_added": [],
+      "alerts_removed": [],
+      "prices": {
+        "EURUSD": 1.17262,
+        "GBPUSD": 1.3574,
+        "AUDUSD": 0.71941,
+        "USDJPY": 156.937,
+        "USDCAD": 1.35991,
+        "USDCHF": 0.78158,
+        "GOLD": 4587.47,
+        "OIL_CRUDE": 100.082
+      },
+      "confluence": {
+        "EURUSD": {
+          "comp": 30.0,
+          "readiness": "weak"
+        },
+        "GBPUSD": {
+          "comp": 24.0,
+          "readiness": "none"
+        },
+        "AUDUSD": {
+          "comp": 48.0,
+          "readiness": "moderate"
+        },
+        "USDJPY": {
+          "comp": -25.5,
+          "readiness": "weak"
+        },
+        "USDCAD": {
+          "comp": -37.0,
+          "readiness": "weak"
+        },
+        "USDCHF": {
+          "comp": -27.0,
+          "readiness": "weak"
+        },
+        "OIL_CRUDE": {
+          "comp": 11.0,
+          "readiness": "none"
+        }
+      },
+      "attention_matrix": {
+        "EURUSD": {
+          "swing": "WATCH",
+          "scalp": "OFF(desync)",
+          "readiness": "weak",
+          "comp": 30.0,
+          "reason": "sell at 1.17159; price 10.3p above (within 30p proximity); comp=+30 need \u226540"
+        },
+        "GBPUSD": {
+          "swing": "WATCH",
+          "scalp": "ACTIVE",
+          "readiness": "none",
+          "comp": 24.0,
+          "reason": "buy at 1.35689; price 5.1p above (within 30p proximity); comp=+24 need \u226540"
+        },
+        "AUDUSD": {
+          "swing": "WATCH",
+          "scalp": "OFF(wr11%)",
+          "readiness": "moderate",
+          "comp": 48.0,
+          "reason": "buy at 0.7143; price 51p above; comp=+48 moderate but not within proximity threshold"
+        },
+        "USDJPY": {
+          "swing": "NONE",
+          "scalp": "OFF(pip-conv)",
+          "readiness": "weak",
+          "comp": -25.5,
+          "reason": "no active level alerts; post-BoJ intervention price at 156.94; 160 trigger far"
+        },
+        "USDCAD": {
+          "swing": "NONE",
+          "scalp": "OFF(pip-conv)",
+          "readiness": "weak",
+          "comp": -37.0,
+          "reason": "no active level alerts; price 1.35991 far from narrative 1.38 trigger"
+        },
+        "USDCHF": {
+          "swing": "WATCH",
+          "scalp": "OFF(pip-conv)",
+          "readiness": "weak",
+          "comp": -27.0,
+          "reason": "CT-fade sell at 0.78156 AT level but comp=-27 need \u2265+40; Day FVG sell at 0.78304 needs comp\u2264-40"
+        },
+        "GOLD": {
+          "swing": "WATCH",
+          "scalp": "N/A(spread 5p)",
+          "readiness": "weak",
+          "comp": -29.0,
+          "reason": "sell at 4603 (price 15.5pts below); comp=-29 need \u2264-40; buy at 4524 needs comp\u2265+40"
+        },
+        "OIL_CRUDE": {
+          "swing": "WATCH",
+          "scalp": "N/A(spread 4p)",
+          "readiness": "none",
+          "comp": 11.0,
+          "reason": "buy at 99.31 (price 0.77 above); sell at 103.449 (level 3.37 above price); comp=+11 none"
+        }
+      },
+      "scalp_audit": "EURUSD=OFF(desync) GBPUSD=ACTIVE(stats null, no trades) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
+      "notes": "1 event: USDCHF level_cross at 0.78156 (CT-fade sell). SKIP \u2014 comp=-27 (need \u2265+40 for bullish extension fade). M15 short-term bull (+0.4) but D+H4 bearish. No bull overextension to fade. Alert WATCH. EURUSD sell (1.17159) and GBPUSD buy (1.35689) both within 30p proximity but comp gates not met. AUDUSD moderate-bull but 51p above buy zone. Balance $961.92."
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-04T07:04:38.122148+00:00",
+  "generated_at": "2026-05-04T07:19:44.991688+00:00",
   "counts": {
     "trades": 40,
-    "events": 6904,
+    "events": 6921,
     "ticks": 59,
-    "regime_snapshots": 206,
+    "regime_snapshots": 207,
     "broker_positions": 0,
-    "counterfactuals": 143
+    "counterfactuals": 144
   },
   "trades_last_50": [
     {
@@ -853,6 +853,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-05-04T07:00Z",
+      "regime_name": "ACTIVE_ESCALATION_US_IRAN_HORMUZ_NO_DEAL_USD_WEAK",
+      "note_text": "2026-05-04T07:00Z forex auto \u2014 4 events consumed. 2 liquidity_sweeps (EURUSD M15 down-wick 0.9p @1.17226 buy-bias; USDCHF M15 up-wick 0.9p @0.78156 sell-bias). Both sub-threshold: comp \u226540 counter-trend gate not met (EURUSD=+32.5 need \u2264-40; USDCHF=-27 need \u2265+40). 0 trades. Added usdchf_m15sweep_78156_sell_watch. EURUSD comp=+32.5 weak bull (14p above 1.17159 sell zone, almost at proximity). AUDUSD comp=+48 moderate bull (54p above 0.7143 buy zone). GOLD comp=-29, 16.4pts below sell level 4603 (in proximity, need -40). OIL=100.12 comp=+11 none. Balance $961.92. 0 positions. scalp=GBPUSD active.",
+      "binary_event_name": "FOMC Apr29",
+      "binary_event_active": 0,
+      "binary_event_deadline": "2026-04-29T18:00Z"
+    },
+    {
       "ts_utc": "2026-05-04T06:55Z",
       "regime_name": "ACTIVE_ESCALATION_US_IRAN_HORMUZ_NO_DEAL_USD_WEAK",
       "note_text": "2026-05-04T06:55Z forex auto \u2014 31 events consumed. US-Iran conflict ongoing; Hormuz no-deal by Jun30 consensus 70.5%; Goldman raised Brent target $90 by late 2026. FOMC Apr29 PASSED (hold 3.50-3.75%, Powell final meeting). BoJ intervened at USDJPY 160 \u2192 pulled to 156.89 (intervention fade played out). USD weak (DXY ~98). RBA hiked \u2192 AUD bull. OIL 99.73, GOLD 4591 (pulling back from 4700+). AUDUSD moderate-bull but 70p above all buy zones. 0 trades.",
@@ -920,14 +928,6 @@
       "ts_utc": "2026-04-29T10:35Z",
       "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
       "note_text": "2026-04-29T10:35Z forex auto \u2014 1 evt: USDCAD up-sweep@1.36924 (wick=0.9p tiny, comp=-8.5 none) WATCHLIST-ONLY (|comp|<25, no CT-fade entry); OIL 101.58 \u2014 REMOVE oil_sweep_10107 (CT-fade level breached, price continued to 101.58); GOLD SELL LIMIT@4603 KEEP (bid=4571, comp=-47.5 mod-bear, validated 4f/100%); AUDUSD BUY LIMIT@0.7143 KEEP (bid=0.7157, comp=+28.5 weak, validated 3f/100%); USDJPY@159.76 comp=+40 mod FADE-WATCH (min-size block prevents entry, WATCH post-FOMC); ADD usdcad_sweep_136924_sell_watch; FOMC 18:00Z T-7.5h caution; scalp: GBPUSD=ACTIVE. attention_covered=8/8.",
-      "binary_event_name": "FOMC Apr29",
-      "binary_event_active": 1,
-      "binary_event_deadline": "2026-04-29T18:00Z"
-    },
-    {
-      "ts_utc": "2026-04-29T08:27Z",
-      "regime_name": "ACTIVE_ESCALATION_SHOOT_TO_KILL_US_IRAN_HORMUZ_BLOCKED",
-      "note_text": "2026-04-29T08:27Z forex auto \u2014 1 evt: OIL_CRUDE up-sweep@101.071 (12.6p wick, close 100.93); comp=+55 mod-bull CORROBORATES CT-fade SELL; SELL LIMIT@101.07 SL=101.22 TP=99.97 R:R=7.3:1 half-size 0.49%; AUDUSD GTC LIMIT@0.7143 KEEP (bid=0.71602 dist=17.2p); oil_fvg_9691 KEEP (96.91 dist=408p <3\u00d7H4ATR=6.01 keep); oil_rebound_9931 KEEP (99.31 dist=168p watch); ADD oil_sweep_10107_sell_retest; FOMC 18:00Z T-9.6h caution; scalp: GBPUSD=ACTIVE. attention_covered=8/8.",
       "binary_event_name": "FOMC Apr29",
       "binary_event_active": 1,
       "binary_event_deadline": "2026-04-29T18:00Z"
@@ -1436,6 +1436,19 @@
     }
   ],
   "counterfactuals_last_50": [
+    {
+      "alert_id": "usdchf_m15sweep_78156_sell_watch",
+      "instrument": "USDCHF",
+      "direction": "sell",
+      "trigger_price": 0.781585,
+      "fired_at": "2026-05-04T07:16:20.042448+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
     {
       "alert_id": "oil_rebound_9931_buy_watch",
       "instrument": "OIL_CRUDE",
@@ -2066,19 +2079,6 @@
       "direction": "buy",
       "trigger_price": 4669.5,
       "fired_at": "2026-04-28T04:46:04.472848+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
-    },
-    {
-      "alert_id": "gold_sweep_4669_buy_retest",
-      "instrument": "GOLD",
-      "direction": "buy",
-      "trigger_price": 4667.95,
-      "fired_at": "2026-04-28T04:01:10.866506+00:00",
       "hit_1h": null,
       "hit_4h": null,
       "hit_24h": null,

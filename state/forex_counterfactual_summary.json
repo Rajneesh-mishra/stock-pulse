@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T07:06:03.893036+00:00",
+  "generated_at": "2026-05-04T07:20:19.053245+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -1220,6 +1220,32 @@
           "favorable": 1,
           "avg_pips": 120.2,
           "hit_rate": 1.0
+        }
+      }
+    },
+    {
+      "alert_id": "usdchf_m15sweep_78156_sell_watch",
+      "instrument": "USDCHF",
+      "direction": "sell",
+      "fires": 1,
+      "by_horizon": {
+        "1h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "4h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "24h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
         }
       }
     }
