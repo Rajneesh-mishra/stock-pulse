@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T08:00:25.811207+00:00",
+  "generated_at": "2026-05-04T08:06:33.469525+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -1254,6 +1254,32 @@
       "instrument": "GBPUSD",
       "direction": "buy",
       "fires": 2,
+      "by_horizon": {
+        "1h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "4h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "24h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        }
+      }
+    },
+    {
+      "alert_id": "usdchf_d_fvg_sell_78304",
+      "instrument": "USDCHF",
+      "direction": "sell",
+      "fires": 1,
       "by_horizon": {
         "1h": {
           "filled": 0,
