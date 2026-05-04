@@ -604,5 +604,64 @@
         "tp": 0.7187
       }
     ]
+  },
+  {
+    "tick_ts_utc": "2026-05-04T12:40Z",
+    "events_consumed": 1,
+    "news_flash": "Iranian drones attack ADNOC tanker in Strait of Hormuz",
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "active_limits": [
+      {
+        "epic": "GOLD",
+        "dir": "SELL",
+        "level": 4591.0,
+        "sl": 4598.0,
+        "tp": 4550.0
+      },
+      {
+        "epic": "AUDUSD",
+        "dir": "BUY",
+        "level": 0.7143,
+        "sl": 0.713,
+        "tp": 0.7187
+      }
+    ],
+    "confluence": {
+      "GOLD": {
+        "comp": -40.0,
+        "readiness": "moderate"
+      },
+      "AUDUSD": {
+        "comp": 48.0,
+        "readiness": "moderate"
+      },
+      "OIL_CRUDE": {
+        "comp": 22.0,
+        "readiness": "none"
+      },
+      "EURUSD": {
+        "comp": 9.5,
+        "readiness": "none"
+      },
+      "GBPUSD": {
+        "comp": 17.0,
+        "readiness": "none"
+      },
+      "USDJPY": {
+        "comp": -23.0,
+        "readiness": "none"
+      },
+      "USDCAD": {
+        "comp": -37.0,
+        "readiness": "weak"
+      },
+      "USDCHF": {
+        "comp": -24.5,
+        "readiness": "none"
+      }
+    },
+    "balance": 961.92,
+    "notes": "Hormuz escalation: Iranian drones attack ADNOC tanker. OIL comp=none \u2014 no new entries. GOLD SELL LIMIT@4591 confirmed (moderate bear thesis). AUDUSD BUY LIMIT@0.7143 confirmed. eurusd_upsweep_117159 validated (9fires 89%4h) at 9.6p \u2014 watching."
   }
 ]
