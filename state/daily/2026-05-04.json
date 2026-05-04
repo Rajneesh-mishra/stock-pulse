@@ -456,5 +456,56 @@
     },
     "scalp_audit": "EURUSD=OFF(engine_desync) GBPUSD=ACTIVE(no_trades) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
     "news_notes": "OPEC+ Jun output hike agreed; impact limited by Hormuz closure. Mixed supply signal. OIL net: bearish-lean offset by disruption. Regime note updated."
+  },
+  {
+    "tick_ts_utc": "2026-05-04T10:11Z",
+    "events_consumed": 1,
+    "events": [
+      {
+        "event_id": "evt_1777889511854_level_cross",
+        "type": "level_cross",
+        "instrument": "OIL_CRUDE",
+        "alert_id": "oil_sweep_103449_sell_watch",
+        "fire_count": 6,
+        "price": 103.574,
+        "level": 103.449,
+        "action": "SKIP \u2014 comp=+32 weak bull (need \u2264-40 CT-fade SELL); price already 67p below level at 102.776 by tick time"
+      }
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "open_positions": 0,
+    "pending_limits": 2,
+    "pending_limit_detail": [
+      "GOLD SELL @4591 SL=4598 TP=4550 size=0.7 GTC (comp=-43 moderate bear all TFs; H4 FVG top 4584-4591 unmitigated)",
+      "AUDUSD BUY @0.7143 SL=0.713 TP=0.7187 size=3800 GTC (comp=+48 moderate bull; validated alert)"
+    ],
+    "balance": 961.92,
+    "daily_pnl": 0.0,
+    "confluence": {
+      "EURUSD": {
+        "comp": 20.5,
+        "readiness": "none"
+      },
+      "GOLD": {
+        "comp": -43.0,
+        "readiness": "moderate"
+      },
+      "OIL_CRUDE": {
+        "comp": 32.0,
+        "readiness": "weak"
+      }
+    },
+    "attention_matrix": {
+      "EURUSD": "WATCH comp=+20.5 none; day_low=1.16886 (1.5p above BUY alert 1.16871)",
+      "GBPUSD": "WATCH; comp~+14 none; scalp=ACTIVE GBPUSD",
+      "AUDUSD": "ARMED LIMIT BUY@0.7143 active in broker; comp=+48 moderate; scalp=OFF wr=11%",
+      "USDJPY": "NONE no alerts; scalp=OFF pip-conv-pending",
+      "USDCAD": "NONE no alerts; scalp=OFF",
+      "USDCHF": "WATCH SELL@0.78832 (45p above); scalp=OFF pip-conv-pending",
+      "GOLD": "ARMED SELL LIMIT@4591 GTC; comp=-43 moderate bear; scalp=N/A",
+      "OIL_CRUDE": "WATCH 6th fire SKIP; comp=+32 weak bull; scalp=N/A"
+    },
+    "scalp_summary": "EURUSD=OFF(desync) GBPUSD=ACTIVE AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
   }
 ]

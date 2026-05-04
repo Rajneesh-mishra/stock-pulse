@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-05-04T08:05Z",
-  "pruned_at": "2026-05-04T08:05Z",
-  "pruned_by": "claude auto-audit 2026-05-04T08:05Z \u2014 0 removed, 0 added; 2 MODIFIED: usdchf_d_fvg_sell_78304 (level 0.78304\u21920.78832, Day FVG bottom mitigated), usdchf_m15sweep_78156_sell_watch (context updated); GBPUSD level_cross SKIP(comp=+22 none); USDCHF level_cross SKIP(comp=-22 none, FVG mitigated)",
+  "last_updated_by_claude": "2026-05-04T10:11Z",
+  "pruned_at": "2026-05-04T10:11Z",
+  "pruned_by": "claude auto-audit 2026-05-04T10:11Z \u2014 1 MODIFIED: oil_sweep_103449_sell_watch (6th fire SKIP, M15 FVG noted); all others KEEP",
   "pruned_removed": [],
   "pruned_added": [],
   "instruments": [
@@ -158,14 +158,14 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "note": "ENTRY: price retests 103.449 M15 up-sweep extreme; M15 retest with bearish rejection wick \u22655p from the high. Arm CT-fade SELL LIMIT only when OIL comp drops to \u2264-40 (bear momentum confirmed).\n\nCONTEXT: 5 fires, 4h hit_rate=60%. M15 up-sweep 2026-04-29T14:30Z, wick=8.5p beyond prior high. OIL has since REVERSED from 103+ to 100.023 (current). Level at 103.449 is 342.6p ABOVE current price. dist=3.43 units vs 3\u00d7H4ATR=6.77 \u2014 not stale by ATR rule. CT-fade SELL would only trigger on recovery rally to 103.449. OIL comp=+11 none \u2014 fundamentally weakened. Monitor for Hormuz resolution or oil supply news. WATCH.\n\nSL: 103.65  TP: 102.67  R:R target: 3.9\n\nupdated 2026-05-04T06:50Z \u2014 OIL at 100.023, 342.6p below level; comp=+11 none; Hormuz narrative weakening; WATCH.",
-      "entry_criterion": "M15 retest of 103.449 with bearish rejection wick \u22655p. Arm SELL LIMIT when comp \u2264-40 bear (narrative fading).",
-      "regime_context": "OIL at 100.023. Hormuz bull fading. Level 342.6p above. comp=+11 none. WATCH for rally + comp reversal.",
+      "note": "ENTRY: price retests 103.449 M15 up-sweep extreme from ABOVE; M15 bar closes AT or BELOW 103.449 with bearish rejection wick \u22655p from the high. Arm CT-fade SELL LIMIT only when OIL comp drops to \u2264-40 (bear momentum confirmed).\n\nCONTEXT: 6th fire 2026-05-04T10:11Z @103.574 \u2014 SKIP (comp=+32 weak bull, need \u2264-40). Day high 104.549; OIL reversed from 104.5 \u2192 102.8. Fresh M15 bear FVG 102.9585-103.4165 (unmitigated bars_ago=1) = immediate overhead resistance. Level at 103.449 remains valid sell zone for CT-fade. comp=+32 weak bull. Monitor for bear reversal and comp \u2264-40 before arming.\n\nSL: 103.65  TP: 102.67  R:R target: 3.9\n\nupdated 2026-05-04T10:11Z \u2014 6th fire SKIP; M15 FVG 102.96-103.42 overhead; comp=+32 need \u2264-40.",
+      "entry_criterion": "M15 retest of 103.449 from above with bearish rejection wick \u22655p. Arm SELL LIMIT when comp \u2264-40 bear.",
+      "regime_context": "6th fire SKIP. OIL at 102.903, day high 104.549. M15 bear FVG 102.96-103.42 unmitigated. comp=+32 weak bull (need \u2264-40). Watch for reversal.",
       "sl": 103.65,
       "tp": 102.67,
       "rr_target": "3.9",
-      "current_price_ref": 100.658,
-      "last_updated": "2026-05-04T07:58Z",
+      "current_price_ref": 102.903,
+      "last_updated": "2026-05-04T10:11Z",
       "validated": true,
       "alert_id": "oil_sweep_103449_sell_watch",
       "active": true
@@ -287,5 +287,5 @@
     }
   ],
   "last_updated_utc": "2026-05-04T07:31Z",
-  "last_updated": "2026-05-04T07:58Z"
+  "last_updated": "2026-05-04T10:11Z"
 }

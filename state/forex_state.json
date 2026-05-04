@@ -1,8 +1,8 @@
 {
   "regime": "ACTIVE_ESCALATION_US_IRAN_HORMUZ_NO_DEAL_USD_WEAK",
-  "tick_ts_utc": "2026-05-04T08:41Z",
-  "state_ts_utc": "2026-05-04T08:41Z",
-  "regime_note": "2026-05-04T08:41Z forex auto \u2014 1 event: news_flash opec_supply \u2014 OPEC+ agreed output hike (Jun) but impact limited by Hormuz closure. Net OIL signal: bearish-lean offset by supply disruption. OIL at 100.62, comp=24.5 none (just below watchlist threshold of 25). No alert changes. GOLD: comp=-40 moderate bear (threshold met), SELL LIMIT @4591 GTC confirmed. EURUSD: comp=22.5 none, 0.4p above sell alert 1.17159 \u2014 WATCH. AUDUSD: comp=+48 moderate bull, 54p above buy zone 0.7143 (>30p prox) \u2014 WATCH. 0 open positions. Balance $961.92. 1 LIMIT active.",
+  "tick_ts_utc": "2026-05-04T10:11Z",
+  "state_ts_utc": "2026-05-04T10:11Z",
+  "regime_note": "2026-05-04T10:11Z forex auto \u2014 1 event: OIL_CRUDE level_cross@103.574 oil_sweep_103449_sell_watch 6th fire SKIP(comp=+32 weak bull, need \u2264-40 CT-fade SELL; price already 67p below level at 102.776). GOLD comp=-43 moderate bear all 4 TFs agree; H4 FVG 4584-4591 unmitigated; SELL LIMIT@4591 GTC confirmed (price at 4562, waiting for rally to level). AUDUSD BUY LIMIT@0.7143 GTC confirmed (placed prior invocation, price=0.71851 41p above, comp=+48 moderate). EURUSD comp=+20.5 none; day low 1.16886 (1.5p above BUY alert 1.16871); SELL alert at 1.17159 (11p above current 1.17050). 0 open positions. Balance $961.92. 2 LIMITs active: GOLD SELL@4591, AUDUSD BUY@0.7143.",
   "regime_note_prev": "2026-05-04T08:31Z forex auto \u2014 1 event: OIL_CRUDE liquidity_sweep @101.624 (up-sweep 19.9p, close 101.2, sell bias). comp=+32 weak bull (opposing CT SELL fade) \u2014 |32|>=25 but <40 \u2192 watchlist only; ADD oil_sweep_10162_sell_watch. GOLD: comp=-40 moderate bear, all 4 TFs agree, H4 bear FVG unmitigated 4581-4591 \u2192 SELL LIMIT ARMED @4591 SL=4598 TP=4550 RR=5.9 size=0.7. EURUSD SELL watch 1.17159 price=1.17190 (3.1p away, prox met) but comp=+10.5 none (need -40) \u2192 WATCHLIST. AUDUSD comp=+48 moderate bull, level=0.7143 still 50p away (>30p prox) \u2014 stale GTC cleaned. USDCHF: comp=-22 bearish, removed stale BUY alert; ADD SELL watch @0.78832 (FVG top). Balance $961.92. 1 LIMIT open.",
   "open_positions": [],
   "watchlist": [
@@ -1627,5 +1627,31 @@
     }
   ],
   "daily_pnl_usd": -20.59,
-  "news_last_searched_utc": "2026-04-27T20:34Z"
+  "news_last_searched_utc": "2026-04-27T20:34Z",
+  "pending_orders": [
+    {
+      "deal_id": "00000000-4ebc-b752-044a-beb40055311e",
+      "epic": "GOLD",
+      "direction": "SELL",
+      "size": 0.7,
+      "level": 4591.0,
+      "stop_level": 4598.0,
+      "profit_level": 4550.0,
+      "placed_utc": "2026-05-04T08:31Z",
+      "thesis_type": "validated_sweep_retest",
+      "note": "H4 FVG top 4584-4591 unmitigated; comp=-43 moderate bear all TFs"
+    },
+    {
+      "deal_id": "00000000-4f18-77c3-044a-beb40055311e",
+      "epic": "AUDUSD",
+      "direction": "BUY",
+      "size": 3800.0,
+      "level": 0.7143,
+      "stop_level": 0.713,
+      "profit_level": 0.7187,
+      "placed_utc": "2026-05-04T10:17Z",
+      "thesis_type": "validated_sweep_retest",
+      "note": "audusd_m15fvg_buy_7143 VALIDATED; comp=+48 moderate; 0.5% risk at moderate"
+    }
+  ]
 }
