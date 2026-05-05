@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T07:45:31.473425Z",
+  "generated_at": "2026-05-05T08:22:18.818747Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -560,6 +560,19 @@
         }
       },
       "scalp_audit": "EURUSD=OFF(engine_desync) GBPUSD=ACTIVE(no trades yet) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
+    },
+    {
+      "tick_ts_utc": "2026-05-05T08:21Z",
+      "events": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "positions_open": 0,
+      "working_orders": 2,
+      "balance": 963.26,
+      "upl": 0.0,
+      "regime": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_CLEARED_USD_WEAK",
+      "notes": "Heartbeat. USDJPY 157.264 vs sell 157.33 (5.4p, comp=-36 weak). OIL SELL@103.449 (162p away, comp=+27 weak, KEEP). GOLD SELL@4591 (39.5pts away, comp=-33 weak, KEEP). All 10 alerts KEEP. Scalp: GBPUSD active."
     }
   ]
 }
