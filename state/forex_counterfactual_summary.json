@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T20:23:32.002309+00:00",
+  "generated_at": "2026-05-05T06:12:51.378196+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -421,7 +421,7 @@
       "alert_id": "audusd_m15fvg_buy_7143",
       "instrument": "AUDUSD",
       "direction": "buy",
-      "fires": 5,
+      "fires": 6,
       "by_horizon": {
         "1h": {
           "filled": 5,
@@ -889,19 +889,19 @@
       "alert_id": "eurusd_m15sweep_116871_buy_watch",
       "instrument": "EURUSD",
       "direction": "buy",
-      "fires": 5,
+      "fires": 7,
       "by_horizon": {
         "1h": {
-          "filled": 5,
-          "favorable": 4,
-          "avg_pips": 1.0,
-          "hit_rate": 0.8
+          "filled": 6,
+          "favorable": 5,
+          "avg_pips": 2.1,
+          "hit_rate": 0.83
         },
         "4h": {
-          "filled": 5,
-          "favorable": 4,
-          "avg_pips": 9.4,
-          "hit_rate": 0.8
+          "filled": 6,
+          "favorable": 5,
+          "avg_pips": 8.1,
+          "hit_rate": 0.83
         },
         "24h": {
           "filled": 4,
@@ -956,9 +956,9 @@
           "hit_rate": 0.86
         },
         "24h": {
-          "filled": 6,
-          "favorable": 6,
-          "avg_pips": 408.6,
+          "filled": 7,
+          "favorable": 7,
+          "avg_pips": 455.7,
           "hit_rate": 1.0
         }
       }
@@ -1054,10 +1054,10 @@
           "hit_rate": 0.6
         },
         "4h": {
-          "filled": 7,
-          "favorable": 5,
-          "avg_pips": 56.4,
-          "hit_rate": 0.71
+          "filled": 10,
+          "favorable": 8,
+          "avg_pips": 62.2,
+          "hit_rate": 0.8
         },
         "24h": {
           "filled": 4,
@@ -1190,10 +1190,10 @@
           "hit_rate": 1.0
         },
         "24h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 373.9,
+          "hit_rate": 1.0
         }
       }
     },
@@ -1216,9 +1216,9 @@
           "hit_rate": 1.0
         },
         "24h": {
-          "filled": 1,
-          "favorable": 1,
-          "avg_pips": 120.2,
+          "filled": 3,
+          "favorable": 3,
+          "avg_pips": 276.7,
           "hit_rate": 1.0
         }
       }

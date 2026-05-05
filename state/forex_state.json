@@ -1,9 +1,9 @@
 {
   "regime": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_HIKE_IMMINENT_USD_WEAK",
-  "tick_ts_utc": "2026-05-05T00:20Z",
-  "state_ts_utc": "2026-05-05T00:20Z",
-  "regime_note": "2026-05-05T00:20Z forex auto \u2014 1 evt: GBPUSD position_closed (time-stop logged last tick, confirmed). 0 open positions. 3 GTC limits: OIL SELL@103.449 SL=103.65 TP=101.55 (CT-fade validated 10fires 71%@4h; price=102.695 ~75p below; Iran attacked UAE oil ports+Hormuz ships today \u2014 escalation risk HIGH; KEEP, cancel if close>104.00); GOLD SELL@4591 SL=4598 TP=4550 (comp=-46 mod-bear all TFs; price=4514.45, 76.55pts below); AUDUSD BUY@0.7143 SL=0.713 TP=0.7187 (comp=+31.5 weak; price=0.71672 24p above limit; RBA 04:30Z ~8h elevated caution, 62% hike probability). USDJPY=157.253 \u2014 AT 157.33 Day FVG level (7.7p away); comp=+3.5 none \u2192 watchlist only, no LIMIT armed. USDCHF=0.78417 \u2014 usdchf_sweep_78218_buy_watch REMOVED (counter-confluence). Watchlist: 10 alerts. GBPUSD scalp ACTIVE. Balance $963.26 UPL=$0. BINARY: RBA_May2026 2026-05-05T04:30Z (~8h) elevated caution AUDUSD.",
-  "regime_note_prev": "2026-05-04T20:00Z forex auto \u2014 heartbeat 0 evts: GBPUSD BUY closed at time-stop (entry=1.35282 exit=1.35376 pnl=+$1.09 age=4h8m). OIL SELL LIMIT armed@103.449 SL=103.65 TP=101.55 R:R=9.5:1 (CT-fade validated; 10 fires 71%@4h; price=102.877 pullback allows placement above offer). GOLD SELL LIMIT@4591 GTC HOLD (comp=-46 mod-bear, H4 FVG). AUDUSD BUY LIMIT@0.7143 GTC HOLD (comp=+34.5 weak-bull; RBA 04:30Z elevated caution). OIL comp=+40 mod-bull all-TF. USDCAD comp=-39 weak-bear. USDJPY comp=-16.5 none. EURUSD comp=-15 none. 0 market positions. 3 GTC limits. Balance $963.26 UPL=$0. BINARY: RBA_May2026 deadline 2026-05-05T04:30Z (~8.5h) elevated caution.",
+  "tick_ts_utc": "2026-05-05T06:05Z",
+  "state_ts_utc": "2026-05-05T06:05Z",
+  "regime_note": "2026-05-05T06:05Z forex auto \u2014 4 evts: (1) EURUSD level_cross eurusd_m15sweep_116871_buy_watch \u00d72 (01:27Z+05:52Z, comp=-12 none, needs \u2264-40, WATCHLIST); (2) alert_audit_request oil_rebound_9931_buy_watch (Hormuz missiles/drones US-Iran, comp=+34.5 needs \u226540, 291p above 99.31, WATCHLIST); (3) AUDUSD level_cross audusd_m15fvg_buy_7143 (05:52Z, comp=+14.5 none, needs \u226540, limit absent from broker). 0 positions. 2 GTC limits: OIL SELL@103.449 SL=103.65 TP=101.55 (CT-fade validated 10fires 71%@4h; Hormuz escalation pushes OIL toward limit; bid=102.222); GOLD SELL@4591 SL=4598 TP=4550 (comp=-43.5 mod-bear all TFs; bid=4543.77). RBA binary CLEARED (04:30Z passed; AUDUSD @0.71472 post-RBA, limit absent from broker, comp=+14.5 none). USDJPY=157.273 \u2014 AT Day FVG bottom 157.33 (5.7p away) comp=-33 weak \u2014 needs \u2264-40 to arm, WATCH. Balance $963.26 UPL=$0. Regime: Hormuz war escalating (US-Iran missiles/drones); OIL bull; GOLD pullback from highs.",
+  "regime_note_prev": "2026-05-05T00:20Z forex auto \u2014 1 evt: GBPUSD position_closed (time-stop logged last tick, confirmed). 0 open positions. 3 GTC limits: OIL SELL@103.449 SL=103.65 TP=101.55 (CT-fade validated 10fires 71%@4h; price=102.695 ~75p below; Iran attacked UAE oil ports+Hormuz ships today \u2014 escalation risk HIGH; KEEP, cancel if close>104.00); GOLD SELL@4591 SL=4598 TP=4550 (comp=-46 mod-bear all TFs; price=4514.45, 76.55pts below); AUDUSD BUY@0.7143 SL=0.713 TP=0.7187 (comp=+31.5 weak; price=0.71672 24p above limit; RBA 04:30Z ~8h elevated caution, 62% hike probability). USDJPY=157.253 \u2014 AT 157.33 Day FVG level (7.7p away); comp=+3.5 none \u2192 watchlist only, no LIMIT armed. USDCHF=0.78417 \u2014 usdchf_sweep_78218_buy_watch REMOVED (counter-confluence). Watchlist: 10 alerts. GBPUSD scalp ACTIVE. Balance $963.26 UPL=$0. BINARY: RBA_May2026 2026-05-05T04:30Z (~8h) elevated caution AUDUSD.",
   "open_positions": [],
   "watchlist": [
     {
@@ -1383,16 +1383,17 @@
   ],
   "binary_event": {
     "name": "RBA_May2026",
-    "active": true,
+    "active": false,
     "deadline_utc": "2026-05-05T04:30Z",
-    "note": "RBA interest rate decision 2026-05-05 approx 04:30 UTC; +25bps hike 86% market probability. AUDUSD BUY LIMIT@0.7143 GTC active. Elevated caution: if RBA holds/cuts, cancel AUDUSD LIMIT immediately. Within 30min of decision = blackout (no new AUDUSD entries).",
+    "resolved_utc": "2026-05-05T06:05Z",
+    "outcome": "RESOLVED - RBA deadline 04:30Z passed. AUDUSD dropped ~24p (0.71672\u21920.71433) post-event suggesting hold or sell-the-news after hike. AUDUSD BUY LIMIT@0.7143 absent from broker (not in working orders). Limit reconciled: either cancelled pre-RBA or never placed. comp=+14.5 none - will not re-arm until comp\u226540.",
+    "note": "RBA interest rate decision resolved 04:30Z. Binary cleared.",
     "sources": [
       "Capital.com AUDUSD pricing (86% hike implied)",
       "regime note ref 2026-05-04T13:35Z"
     ],
     "verified": true,
-    "deadline": "2026-05-05T04:30Z",
-    "caution_level": "elevated"
+    "caution_level": "none"
   },
   "balance": 961.92,
   "level_alerts": [

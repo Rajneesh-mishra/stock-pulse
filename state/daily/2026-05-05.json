@@ -78,5 +78,46 @@
       "GOLD": "swing=ARMED scalp=N/A readiness=moderate SELL LIMIT@4591 GTC active comp=-46",
       "OIL_CRUDE": "swing=ARMED scalp=N/A readiness=weak SELL LIMIT@103.449 CT-fade GTC active"
     }
+  },
+  {
+    "tick_ts_utc": "2026-05-05T06:05Z",
+    "events_processed": 4,
+    "events": [
+      "eurusd_m15sweep_116871_buy_watch level_cross 01:27Z \u2014 comp=-12 none, watchlist only",
+      "oil_rebound_9931_buy_watch alert_audit_request 04:30Z \u2014 Hormuz missiles/drones, comp=+34.5 watchlist",
+      "audusd_m15fvg_buy_7143 level_cross 05:52Z \u2014 comp=+14.5 none, limit absent from broker",
+      "eurusd_m15sweep_116871_buy_watch level_cross 05:52Z \u2014 comp=-12 none, watchlist only"
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "trades_skipped": 4,
+    "skip_reasons": {
+      "EURUSD": "comp=-12 none (needs \u2264-40 for CT-fade buy)",
+      "AUDUSD": "comp=+14.5 none (needs \u226540 to arm validated LIMIT)",
+      "OIL_BUY": "comp=+34.5 below \u226540 threshold; price 291p above level 99.31"
+    },
+    "limits_active": [
+      "OIL_CRUDE SELL @103.449 SL=103.65 TP=101.55 (CT-fade validated; bid=102.222)",
+      "GOLD SELL @4591 SL=4598 TP=4550 (comp=-43.5 mod-bear; bid=4543.77)"
+    ],
+    "binary_event": "RBA_May2026 CLEARED (deadline 04:30Z passed; AUDUSD limit absent from broker; comp=+14.5 none)",
+    "regime": "HORMUZ_WAR_ESCALATING_OIL_BULL_GOLD_PULLBACK_AUDUSD_POST_RBA",
+    "balance": 963.26,
+    "upl": 0.0,
+    "daily_pnl": 0.0,
+    "watchlist_changes": [
+      "MODIFY audusd_m15fvg_buy_7143 \u2014 RBA passed; limit absent from broker; comp=+14.5 none; watchlist only",
+      "MODIFY oil_rebound_9931_buy_watch \u2014 Hormuz reignited (missiles/drones); ceasefire context obsolete; comp=+34.5 watchlist"
+    ],
+    "attention_matrix": {
+      "EURUSD": "swing=WATCH scalp=OFF readiness=none (comp=-12; level 1.1684 AT price but CT-fade needs \u2264-40)",
+      "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=none (comp=+3.5; level 1.34736 far below; M15 BOS bear)",
+      "AUDUSD": "swing=WATCH scalp=OFF readiness=none (comp=+14.5; level 0.7143 AT price post-RBA; limit absent; wr=11%)",
+      "USDJPY": "swing=WATCH scalp=OFF readiness=weak (comp=-33; AT Day FVG 157.33, 5.7p away; needs \u2264-40 to arm)",
+      "USDCAD": "swing=WATCH scalp=OFF readiness=none (comp=-18.5; level 1.36924, 68p above)",
+      "USDCHF": "swing=WATCH scalp=OFF readiness=none (comp=-3.5; level 0.78832, 40p above)",
+      "GOLD": "swing=ARMED scalp=N/A readiness=moderate (comp=-43.5 all TFs; SELL LIMIT @4591 LIVE; bid=4543.77)",
+      "OIL_CRUDE": "swing=ARMED scalp=N/A readiness=weak (CT-fade SELL @103.449 LIVE; comp=+34.5 bull extension; Hormuz escalating; bid=102.222)"
+    }
   }
 ]
