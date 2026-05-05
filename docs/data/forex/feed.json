@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T06:51:33.938664Z",
+  "generated_at": "2026-05-05T07:15:31.730769Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -464,6 +464,17 @@
       "regime": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_CLEARED_USD_WEAK",
       "binary_event": "none",
       "scalp_status": "GBPUSD=active/neutral; EURUSD=disabled(engine_desync); AUDUSD=disabled(wr=11pct/19t)"
+    },
+    {
+      "tick_ts": "2026-05-05T07:10Z",
+      "events": 0,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "balance": 963.26,
+      "upl": 0.0,
+      "open_positions": 0,
+      "pending_orders": 2,
+      "summary": "heartbeat tick; 0 evts; 2 GTC limits (OIL@103.449, GOLD@4591); USDJPY comp=-35.5 approaching arm; alert audit: 3 MODIFY (usdjpy comp -20\u2192-35.5, usdcad comp -41.5\u2192-21, gold price 4517\u21924554); scalp GBPUSD active"
     }
   ]
 }

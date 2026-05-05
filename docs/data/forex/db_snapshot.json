@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-05T06:48:24.347828+00:00",
+  "generated_at": "2026-05-05T07:13:40.766014+00:00",
   "counts": {
     "trades": 41,
-    "events": 7602,
+    "events": 7626,
     "ticks": 59,
-    "regime_snapshots": 236,
+    "regime_snapshots": 237,
     "broker_positions": 0,
     "counterfactuals": 161
   },
@@ -874,6 +874,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-05-05T06:43Z",
+      "regime_name": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_CLEARED_USD_WEAK",
+      "note_text": "2026-05-05T06:43Z forex auto \u2014 1 evt: USDCAD M15 liquidity_sweep (down-sweep 1.36194 0.9p wick; buy bias; comp=-21 none, |21|<25 counter-trend threshold \u2014 SKIP entry, ADD watchlist alert). 3 bar_close auto-consumed (EURUSD/GBPUSD/USDCHF M15). 0 positions. 2 GTC limits: OIL CT-fade SELL@103.449 SL=103.65 TP=101.55 (comp=+37.5 weak, approaching +40 CT-fade; Hormuz ongoing); GOLD SELL@4591 SL=4598 TP=4550 (comp=-33 weak, approaching -40 moderate). Alert updates: REMOVED usdchf_sweep_78218 (counter-CF, no track record). MODIFIED gold_h1fvg_sell_4603 (SL fixed 4598\u21924615 above Day FVG top; TP 4550\u21924500). MODIFIED oil_sweep_103449_sell_watch (TP 102.67\u2192101.55 match broker). ADDED usdcad_m15sweep_136194_buy_watch (sweep watchlist). USDJPY @157.238 \u2014 sell alert 157.33 (9.2p above, within 30p floor); comp=-35.5 weak (need \u2264-40 for arm). AUDUSD @0.7145 AT buy alert 0.7143; comp=+14.5 none. EURUSD @1.1687 AT sweep buy 1.16871; comp=-9.5 none. News queries: match_keywords rolled to 05-08 May 2026. Balance $963.26 UPL=$0. Scalp: GBPUSD active neutral, EURUSD/AUDUSD disabled.",
+      "binary_event_name": "RBA_May2026",
+      "binary_event_active": 0,
+      "binary_event_deadline": "2026-05-05T04:30Z"
+    },
+    {
       "ts_utc": "2026-05-05T06:20Z",
       "regime_name": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_CLEARED_USD_WEAK",
       "note_text": "2026-05-05T06:20Z forex auto \u2014 1 evt: news_flash rba_hike (7NEWS archive 'hikes to 4.35%' triggered by stale 'May meeting' kw; RBA binary already CLEARED 04:30Z; AUDUSD @0.7144 post-decision; no action). 0 positions. 2 GTC limits: OIL CT-fade SELL@103.449 SL=103.65 TP=101.55 (comp=+34.5 weak, approaching CT-fade threshold +40; Hormuz missiles/drones ongoing); GOLD SELL@4591 SL=4598 TP=4550 (comp=-38.0 weak, approaching moderate -40; all higher TFs bearish). AUDUSD @0.7144 \u2014 AT H4 FVG demand zone 0.7143-0.7146 but comp=+14.5 none (need \u226540), watchlist only. USDJPY @157.29 \u2014 4p below Day FVG sell level 157.33, comp=-33 weak (need \u2264-40), watch for arm. GBPUSD @1.3526, EURUSD @1.1685 \u2014 both none-readiness, watchlist. News queries: rba_hike TUNED (removed 'May meeting' false-trigger kw; May meeting DONE). Balance $963.26 UPL=$0. Scalp: GBPUSD active (neutral bias), EURUSD/AUDUSD disabled.",
@@ -941,14 +949,6 @@
       "ts_utc": "2026-05-04T16:43Z",
       "regime_name": "HORMUZ_ESCORT_ACTIVE_RBA_HIKE_TOMORROW_USD_WEAK_FOMC_CLEARED",
       "note_text": "2026-05-04T16:43Z forex auto \u2014 heartbeat 0 evts. GBPUSD BUY @1.35282 +1p (time-stop 19:51Z, 3h14m). GOLD SELL LIMIT@4591 GTC HOLD (bid=4516, 75pts from fill, comp=-46 mod-bear, valid retest zone). AUDUSD BUY LIMIT@0.7143 GTC HOLD (bid=0.7161, 18p from fill, comp=+40.5 mod-bull, RBA 04:30Z tmr). BINARY: RBA_May2026 12h out \u2014 elevated caution. Confluence: GOLD mod-bear(-46), AUDUSD mod-bull(+40.5), EURUSD none(-17), GBPUSD none(+3.5), USDJPY weak(-25), USDCAD weak(-37), USDCHF none(-14.5), OIL weak(+32). All 9 watchlist alerts KEEP. Scalp: GBPUSD ACTIVE(bias=neutral), EURUSD/AUDUSD OFF. Balance $961.99, UPL=+$0.13.",
-      "binary_event_name": "RBA_May2026",
-      "binary_event_active": 1,
-      "binary_event_deadline": "2026-05-05T04:30Z"
-    },
-    {
-      "ts_utc": "2026-05-04T16:25Z",
-      "regime_name": "HORMUZ_ESCORT_ACTIVE_RBA_HIKE_TOMORROW_USD_WEAK_FOMC_CLEARED",
-      "note_text": "2026-05-04T16:25Z forex auto \u2014 3 evts (level_cross\u00d72, position_opened): GBPUSD BUY LIMIT@1.35282 FILLED (deal 4f19, size=1400, SL=1.3495, TP=1.36, UPL=+$0.76, 4h time-stop by 19:51Z). OIL level_cross 103.464 \u2014 comp=+32 (need \u2264-40) SKIP, WATCH. EURUSD level_cross 1.16869 \u2014 comp=-17 (need \u2264-40) SKIP, WATCH. GOLD SELL LIMIT@4591 GTC (comp=-46 mod-bear, 69pts from fill). AUDUSD BUY LIMIT@0.7143 GTC (comp=+40.5 moderate, 22.6p from fill, RBA 2026-05-05T04:30Z). BINARY: RBA_May2026 active 12h out \u2014 elevated caution. BoE hold 3.75% (8-1), UK GDP Q1=2.0% \u2014 GBP supportive. 6 bar_close consumed. 1 position open, 2 GTC orders. Balance $962.69.",
       "binary_event_name": "RBA_May2026",
       "binary_event_active": 1,
       "binary_event_deadline": "2026-05-05T04:30Z"
