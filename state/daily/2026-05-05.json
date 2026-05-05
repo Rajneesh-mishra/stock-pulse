@@ -119,5 +119,55 @@
       "GOLD": "swing=ARMED scalp=N/A readiness=moderate (comp=-43.5 all TFs; SELL LIMIT @4591 LIVE; bid=4543.77)",
       "OIL_CRUDE": "swing=ARMED scalp=N/A readiness=weak (CT-fade SELL @103.449 LIVE; comp=+34.5 bull extension; Hormuz escalating; bid=102.222)"
     }
+  },
+  {
+    "tick_ts_utc": "2026-05-05T06:20Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "id": "evt_1777961437600_news_flash",
+        "type": "news_flash",
+        "action": "NOISE - rba_hike false positive (stale 'May meeting' kw in archive article); RBA binary cleared; no action"
+      }
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "positions_managed": 0,
+    "open_positions": [],
+    "gtc_limits": [
+      {
+        "epic": "OIL_CRUDE",
+        "dir": "SELL",
+        "level": 103.449,
+        "sl": 103.65,
+        "tp": 101.55,
+        "bid": 102.296
+      },
+      {
+        "epic": "GOLD",
+        "dir": "SELL",
+        "level": 4591.0,
+        "sl": 4598,
+        "tp": 4550,
+        "bid": 4543.51
+      }
+    ],
+    "confluence": {
+      "EURUSD": -12.0,
+      "GBPUSD": 6.0,
+      "AUDUSD": 14.5,
+      "USDJPY": -33.0,
+      "USDCAD": -21.0,
+      "USDCHF": -3.5,
+      "GOLD": -38.0,
+      "OIL_CRUDE": 34.5
+    },
+    "watchlist_changes": [
+      "rba_hike query: TUNED \u2014 removed 'May meeting' false-trigger kw",
+      "gbpusd_liqsweep_134736_buy_watch: MODIFIED \u2014 added missing emit_on/cooldown_sec/id/active fields"
+    ],
+    "balance_usd": 963.26,
+    "upl_usd": 0.0,
+    "note": "1 news_flash processed (noise). AUDUSD at alert level 0.7143 but comp=+14.5 none; USDJPY 4p from sell level comp=-33 weak. Both GTC limits intact. No new trades."
   }
 ]

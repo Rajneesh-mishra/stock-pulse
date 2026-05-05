@@ -191,18 +191,23 @@
       "active": true
     },
     {
+      "id": "gbpusd_liqsweep_134736_buy_watch",
       "alert_id": "gbpusd_liqsweep_134736_buy_watch",
       "instrument": "GBPUSD",
       "direction": "buy",
       "level": 1.34736,
-      "note": "ENTRY: BUY LIMIT at 1.34736 (validated liq-sweep extreme; naked LIMIT allowed). M15 bullish rejection wick \u22653p from low confirms retest hold. SL: 1.3440 (below H4 Bull OB bottom 1.34478). TP: 1.35800. R:R target: 3.8:1.\n\nCONTEXT: GBPUSD Day structural bull (BOS). H4 Bull OB at 1.34478-1.34939 provides demand. liqsweep_134736 is a validated level (3 fires, 4h hit_rate=1.00). Just closed GBPUSD BUY@1.35282 at time-stop \u2014 re-entry on pullback to demand zone.\n\nSL: 1.3440  TP: 1.35800  R:R target: 3.8:1\n\nAdded 2026-05-04T20:00Z \u2014 post time-stop re-entry plan; validated level.",
+      "emit_on": "cross_down",
+      "cooldown_sec": 1800,
+      "active": true,
+      "note": "ENTRY: BUY LIMIT at 1.34736 (validated liq-sweep extreme; naked LIMIT allowed). M15 bullish rejection wick \u22653p from low confirms retest hold. Arm when comp \u2265 +40 bull (moderate+).\n\nCONTEXT: GBPUSD Day structural bull. H4 Bull OB demand 1.34478-1.34939. Validated level: 3 fires, 4h hit_rate=100%. Re-entry plan after time-stop close 2026-05-04T20:00Z. GBPUSD at 1.3526, 79p above level. Day FVG top 1.35801 = near-term resistance. comp=+6 none; scalp active on GBPUSD (engine running, no halt).\n\nSL: 1.3440  TP: 1.35800  R:R target: 3.8:1\n\nupdated 2026-05-05T06:20Z \u2014 fixed missing emit_on/cooldown_sec/id/active fields; comp=+6 none watchlist only.",
       "entry_criterion": "Pullback to 1.34736 with M15 bullish wick \u22653p. BUY LIMIT (naked, validated). Arm when comp \u2265 +40 bull (moderate+).",
-      "regime_context": "Day bull structure. H4 Bull OB demand 1.34478-1.34939. Re-entry after time-stop close.",
+      "regime_context": "Day bull structure. H4 Bull OB demand 1.34478-1.34939. Re-entry after time-stop close. comp=+6 none \u2014 watchlist only until comp \u2265+40.",
       "sl": 1.344,
       "tp": 1.358,
       "rr_target": 3.8,
-      "last_updated": "2026-05-04T20:00Z",
-      "current_price_ref": 1.35278
+      "last_updated": "2026-05-05T06:20Z",
+      "current_price_ref": 1.35264,
+      "validated": true
     }
   ],
   "structure_watch": [

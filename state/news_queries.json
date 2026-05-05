@@ -164,7 +164,6 @@
       "keywords_required": [
         "surprise cut",
         "surprise hike",
-        "May meeting",
         "emergency",
         "unscheduled",
         "cash rate raised",
@@ -175,12 +174,12 @@
       ],
       "cooldown_min": 240,
       "match_keywords": [
-        "02 May 2026",
-        "03 May 2026",
         "04 May 2026",
-        "05 May 2026"
+        "05 May 2026",
+        "06 May 2026",
+        "07 May 2026"
       ],
-      "note": "RE-TUNED 2026-04-23T03:33:00Z \u2014 prior keywords ['Bullock','May meeting','surprise','unexpected'] still matched Jul 23 2025 Guardian Bullock-wary-of-cutting archive (9 months stale) via solo 'Bullock' governor-name token. 'Bullock' appears in any RBA-related archive backgrounder regardless of current relevance (same failure mode as 'Katayama'/'Islamabad' in earlier tunes). STRIPPED bare 'Bullock' + single-word 'surprise'/'unexpected'; REPLACED with action-phrase required ('surprise cut','surprise hike','cash rate raised','voted to hike','emergency','unscheduled','hold rates'). Added match_keywords date filter following boj_intervention/opec_supply pattern. Cooldown 240min kept. Prior: 'RE-TUNED 2026-04-21 07:38 UTC \u2014 narrowed to action/person specific. Market pricing May hike to 4.35%; risk-off may force RBA pause \u2014 AUD bid thesis broken under blockade.'"
+      "note": "TUNED 2026-05-05T06:20Z \u2014 REMOVED 'May meeting' from keywords_required (was supposed to be stripped in Apr 23 tune but was not; fired today on old 7NEWS 'hikes to 4.35%' archive via 'May meeting' match). RBA May 2026 binary CLEARED 04:30Z \u2014 no more meeting-specific triggers needed. Remaining keywords are action-phrase-only (surprise/emergency/unscheduled/cash rate raised-lowered/voted to hike-cut). Rolled match_keywords to 04-07 May 2026. RE-TUNED 2026-04-23T03:33:00Z \u2014 prior keywords ['Bullock','May meeting','surprise','unexpected'] still matched Jul 23 2025 Guardian Bullock-wary-of-cutting archive (9 months stale). STRIPPED bare 'Bullock' + single-word 'surprise'/'unexpected'."
     },
     {
       "id": "us_tariff",
