@@ -238,5 +238,90 @@
     "open_positions": 0,
     "pending_orders": 2,
     "summary": "heartbeat tick; 0 evts; 2 GTC limits (OIL@103.449, GOLD@4591); USDJPY comp=-35.5 approaching arm; alert audit: 3 MODIFY (usdjpy comp -20\u2192-35.5, usdcad comp -41.5\u2192-21, gold price 4517\u21924554); scalp GBPUSD active"
+  },
+  {
+    "tick_ts_utc": "2026-05-05T07:43Z",
+    "events_processed": 7,
+    "events_actionable": 1,
+    "event_detail": "USDJPY M15 down-sweep 157.127 (4.1p wick, Day FVG tap) \u2014 BUY skipped (comp=-38.5 bearish, need +40 bullish)",
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "trades_skipped": 1,
+    "skip_reason": "USDJPY sweep-buy: comp=-38.5 insufficient for BUY (+40 required); SELL thesis intact at 157.33",
+    "open_positions": 0,
+    "gtc_limits": [
+      {
+        "epic": "OIL_CRUDE",
+        "direction": "SELL",
+        "level": 103.449,
+        "sl": 103.65,
+        "tp": 101.55,
+        "current": 101.174
+      },
+      {
+        "epic": "GOLD",
+        "direction": "SELL",
+        "level": 4591.0,
+        "sl": 4598.0,
+        "tp": 4550.0,
+        "current": 4555.84
+      }
+    ],
+    "watchlist_changes": "MODIFY usdjpy_day_fvg_sell_15733 (comp -35.5\u2192-38.5; M15 down-sweep 157.127 = Day FVG tap, corroborating bounce toward 157.33 SELL); price_ref updates GOLD/OIL",
+    "balance_usd": 963.26,
+    "upl_usd": 0.0,
+    "regime": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_CLEARED_USD_WEAK",
+    "news_summary": "Hormuz ceasefire cancelled (escalation live); GOLD choppy ~$4,555 (Fed hold 94.9%); OIL -1.59% on day (101.17)",
+    "attention_matrix": {
+      "EURUSD": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "comp=-4.5 none; price 1.16939 near 1.16840 buy-level but comp insufficient"
+      },
+      "GBPUSD": {
+        "swing": "WATCH",
+        "scalp": "ACTIVE",
+        "readiness": "none",
+        "reason": "comp=+11 none; BUY level 1.34736 is 70p away"
+      },
+      "AUDUSD": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "comp=+14.5 none (est); price 0.71573 near 0.7143 buy-level but comp<+40"
+      },
+      "USDJPY": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "weak",
+        "reason": "comp=-38.5 weak; SELL 157.33 in proximity (18p); arm when comp\u2264-40"
+      },
+      "USDCAD": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "comp=-21 none; SELL level 1.36924 74p away"
+      },
+      "USDCHF": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "comp=-22 none; SELL level 0.78832 50p away"
+      },
+      "GOLD": {
+        "swing": "ARMED",
+        "scalp": "N/A",
+        "readiness": "weak",
+        "reason": "GTC SELL LIMIT@4591 active; comp=-33 weak; Day bear FVG bottom at 4558.5 (price approaching)"
+      },
+      "OIL_CRUDE": {
+        "swing": "ARMED",
+        "scalp": "N/A",
+        "readiness": "none",
+        "reason": "GTC SELL LIMIT@103.449 active (Hormuz CT-fade); comp=+19.5 none; price 101.17"
+      }
+    },
+    "scalp_audit": "EURUSD=OFF(engine_desync) GBPUSD=ACTIVE(no trades yet) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
   }
 ]
