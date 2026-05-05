@@ -169,5 +169,63 @@
     "balance_usd": 963.26,
     "upl_usd": 0.0,
     "note": "1 news_flash processed (noise). AUDUSD at alert level 0.7143 but comp=+14.5 none; USDJPY 4p from sell level comp=-33 weak. Both GTC limits intact. No new trades."
+  },
+  {
+    "tick_ts_utc": "2026-05-05T06:43Z",
+    "events_processed": 4,
+    "events_actionable": 1,
+    "events_consumed": [
+      "evt_1777963350713_liquidity_sweep (USDCAD M15 down-sweep 1.36194 0.9p; skip entry comp=-21<25 CT-threshold; watchlist added)",
+      "evt_1777963352657_bar_close (EURUSD M15 auto-consume)",
+      "evt_1777963354677_bar_close (GBPUSD M15 auto-consume)",
+      "evt_1777963357296_bar_close (USDCHF M15 auto-consume)"
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "orders_placed": 0,
+    "orders_cancelled": 0,
+    "balance": 963.26,
+    "upl": 0.0,
+    "open_positions": 0,
+    "gtc_limits": [
+      {
+        "id": "00000000-4f19-842c-044a-beb40055311e",
+        "epic": "OIL_CRUDE",
+        "dir": "SELL",
+        "level": 103.449,
+        "sl": 103.65,
+        "tp": 101.55,
+        "status": "active"
+      },
+      {
+        "id": "00000000-4ebc-b752-044a-beb40055311e",
+        "epic": "GOLD",
+        "dir": "SELL",
+        "level": 4591.0,
+        "sl": 4598.0,
+        "tp": 4550.0,
+        "status": "active"
+      }
+    ],
+    "alerts_modified": [
+      "REMOVED usdchf_sweep_78218_buy_watch (counter-CF, no track record)",
+      "MODIFIED gold_h1fvg_sell_4603 (SL 4598\u21924615 above FVG top; TP 4550\u21924500)",
+      "MODIFIED oil_sweep_103449_sell_watch (TP 102.67\u2192101.55 match broker)",
+      "ADDED usdcad_m15sweep_136194_buy_watch (sweep watchlist, comp-gate)"
+    ],
+    "news_queries_updated": "Rolled match_keywords to 05-08 May 2026 (6 queries)",
+    "confluence_snapshot": {
+      "EURUSD": -9.5,
+      "GBPUSD": 6.0,
+      "AUDUSD": 14.5,
+      "USDJPY": -35.5,
+      "USDCAD": -21.0,
+      "USDCHF": -3.5,
+      "GOLD": -33.0,
+      "OIL_CRUDE": 37.5
+    },
+    "regime": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_CLEARED_USD_WEAK",
+    "binary_event": "none",
+    "scalp_status": "GBPUSD=active/neutral; EURUSD=disabled(engine_desync); AUDUSD=disabled(wr=11pct/19t)"
   }
 ]
