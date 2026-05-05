@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T14:38:27.118418Z",
+  "generated_at": "2026-05-05T14:47:52.512297Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -669,6 +669,20 @@
         "GBPUSD": "ACTIVE",
         "AUDUSD": "OFF-wr11pct"
       }
+    },
+    {
+      "tick_ts_utc": "2026-05-05T14:47Z",
+      "events_processed": 1,
+      "events_noise": 8,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "skipped": 1,
+      "open_positions": 0,
+      "gtc_limits": 3,
+      "balance": 963.26,
+      "binary": "none",
+      "scalp": "GBPUSD active, EURUSD OFF (desync), AUDUSD OFF (WR 11%)",
+      "summary": "AUDUSD level_cross@0.71857 CT-fade SKIP (sub-noise wick 2.6p, 0% CF); all 3 GTC limits KEEP"
     }
   ]
 }

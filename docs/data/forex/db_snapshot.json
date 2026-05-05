@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-05T14:37:31.086273+00:00",
+  "generated_at": "2026-05-05T14:47:36.812501+00:00",
   "counts": {
     "trades": 41,
-    "events": 7734,
+    "events": 7743,
     "ticks": 59,
-    "regime_snapshots": 241,
+    "regime_snapshots": 242,
     "broker_positions": 0,
-    "counterfactuals": 162
+    "counterfactuals": 163
   },
   "trades_last_50": [
     {
@@ -874,6 +874,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-05-05T14:37Z",
+      "regime_name": "HORMUZ_WAR_IRAN_UAE_ACTIVE_TANKER_STRIKES_OIL_REVERSAL",
+      "note_text": "2026-05-05T14:37Z forex auto \u2014 4 evts processed. USDJPY level_cross re-eval (usdjpy_day_fvg_sell_15733@157.33, price=157.755 inside Day FVG): SKIP comp=+16.5 none (need \u2264-40); price moved deeper into FVG (157.33\u2192157.755); MODIFIED alert. news_flash Hormuz (01:42Z SK vessel ablaze): already covered in 14:17Z tick; SKIP (stale headline). liquidity_sweep AUDUSD M15 (up-sweep 0.71857, wick 2.6p sub-noise): comp=+55 moderate bull; CT-fade qualifies on magnitude but wick sub-noise and sell CF poor; ADD watchlist WATCH only. liquidity_sweep EURUSD M15 (up-sweep 1.17048, wick 1.1p noise): comp=-20 none; ADD watchlist WATCH only (secondary to existing 1.17159 sell alert). 0 trades executed. 3 GTC limits: OIL SELL@103.449 (352p away, Hormuz catalyst, KEEP); GOLD SELL@4591 (9.43pts away, comp=-25.5 weak, KEEP \u2014 validated 86% at 4h); USDCAD SELL@1.36218 (14.7p away, comp=-44 moderate, KEEP). Watchlist: REMOVE usdcad_sweep_136924_sell_watch (auto-remove: dist=81.75p > 3\u00d7H4ATR=59.4p, no catalyst, trending away); ADD usdcad_dayfvg_sell_13595 (replacement: Day FVG top 1.36045); ADD 2 sweep watches. News queries: all match_keywords 05-08 May current, no rolling needed. Scalp: GBPUSD active neutral, EURUSD OFF (desync), AUDUSD OFF (WR 11%). Balance $963.26.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-05-05T14:17Z",
       "regime_name": "HORMUZ_WAR_IRAN_UAE_ACTIVE_TANKER_STRIKES_OIL_REVERSAL",
       "note_text": "2026-05-05T14:17Z forex auto \u2014 2 evts processed. USDJPY level_cross (usdjpy_day_fvg_sell_15733@157.33, price=157.712 entered Day FVG): SKIP (comp=+16.5 vs \u2264-40 gate, MODIFY alert). news_flash\u00d72 (Hormuz): SK vessel ablaze Trump says Iran fired (01:42Z); UAE drone strike on ADNOC tanker (13:10Z) \u2014 ESCALATION live. OIL spiked to 103.12 then collapsed to 99.58 (-3.14%) \u2014 bearish despite attacks. GOLD +1.31% safe-haven. 0 positions open. 3 GTC limits: OIL SELL@103.449 SL=103.65 TP=101.55 (KEEP; OIL now 100.53, 291p away); GOLD SELL@4591 SL=4598 TP=4550 (KEEP; GOLD=4570, 21pts away); USDCAD SELL@1.36218 SL=1.363 TP=1.358 size=8000 (NEW \u2014 H1 bear FVG, comp=-44 moderate bear, R:R=5.1, ARMED 14:17Z). Watchlist: REMOVED usdcad_m15sweep_136194_buy_watch (comp contradicts BUY); MODIFIED usdjpy_day_fvg_sell_15733; ADDED usdcad_h1fvg_sell_13622. News queries: date windows 05-08 May 2026 OK. Scalp: GBPUSD active neutral, EURUSD disabled, AUDUSD disabled. Balance $963.26.",
@@ -941,14 +949,6 @@
       "ts_utc": "2026-05-04T20:00Z",
       "regime_name": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_HIKE_IMMINENT_USD_WEAK",
       "note_text": "2026-05-04T20:00Z forex auto \u2014 heartbeat 0 evts: GBPUSD BUY closed at time-stop (entry=1.35282 exit=1.35376 pnl=+$1.09 age=4h8m). OIL SELL LIMIT armed@103.449 SL=103.65 TP=101.55 R:R=9.5:1 (CT-fade validated; 10 fires 71%@4h; price=102.877 pullback allows placement above offer). GOLD SELL LIMIT@4591 GTC HOLD (comp=-46 mod-bear, H4 FVG). AUDUSD BUY LIMIT@0.7143 GTC HOLD (comp=+34.5 weak-bull; RBA 04:30Z elevated caution). OIL comp=+40 mod-bull all-TF. USDCAD comp=-39 weak-bear. USDJPY comp=-16.5 none. EURUSD comp=-15 none. 0 market positions. 3 GTC limits. Balance $963.26 UPL=$0. BINARY: RBA_May2026 deadline 2026-05-05T04:30Z (~8.5h) elevated caution.",
-      "binary_event_name": "RBA_May2026",
-      "binary_event_active": 1,
-      "binary_event_deadline": "2026-05-05T04:30Z"
-    },
-    {
-      "ts_utc": "2026-05-04T18:51Z",
-      "regime_name": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_HIKE_IMMINENT_USD_WEAK",
-      "note_text": "2026-05-04T18:51Z forex auto \u2014 1 evt: OIL level_cross_up 103.534 (oil_sweep_103449_sell_watch 10th fire, comp=+40.0 moderate bull; CT-fade |comp|=40\u226540 threshold met; NO TRADE \u2014 price 9.8pts above level (103.547), no M15 rejection close at 103.449, SELL LIMIT API-blocked below offer; Iran-UAE escalation Brent+5% keeps OIL bull; WATCH for retest+rejection+comp\u2264-40). GBPUSD BUY@1.35282 age=3h bid=1.35297 UPL=+$0.22 (comp=+5.5 none, time-stop 19:51Z ~1h). GOLD SELL LIMIT@4591 GTC HOLD (comp=-46.0 moderate-bear, bid=4514.32, 76.7pts away). AUDUSD BUY LIMIT@0.7143 GTC HOLD (comp=+34.5 weak, bid=0.71682, 24p away, RBA tonight 04:30Z). 0 trades. Balance $962.17 UPL=+$0.22. BINARY: RBA_May2026 deadline 2026-05-05T04:30Z (~9.6h) elevated caution.",
       "binary_event_name": "RBA_May2026",
       "binary_event_active": 1,
       "binary_event_deadline": "2026-05-05T04:30Z"
@@ -1457,6 +1457,19 @@
     }
   ],
   "counterfactuals_last_50": [
+    {
+      "alert_id": "audusd_m15upsweep_71857_sell_watch",
+      "instrument": "AUDUSD",
+      "direction": "sell",
+      "trigger_price": 0.7187,
+      "fired_at": "2026-05-05T14:42:00.981016+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
     {
       "alert_id": "usdjpy_day_fvg_sell_15733",
       "instrument": "USDJPY",
@@ -2087,19 +2100,6 @@
       "direction": "buy",
       "trigger_price": 0.71303,
       "fired_at": "2026-04-29T13:56:25.798067+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
-    },
-    {
-      "alert_id": "gold_h1fvg_sell_4603",
-      "instrument": "GOLD",
-      "direction": "sell",
-      "trigger_price": 4603.67,
-      "fired_at": "2026-04-29T04:45:37.936419+00:00",
       "hit_1h": null,
       "hit_4h": null,
       "hit_24h": null,
