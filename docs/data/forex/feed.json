@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T08:22:18.818747Z",
+  "generated_at": "2026-05-05T14:38:27.118418Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -573,6 +573,102 @@
       "upl": 0.0,
       "regime": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_CLEARED_USD_WEAK",
       "notes": "Heartbeat. USDJPY 157.264 vs sell 157.33 (5.4p, comp=-36 weak). OIL SELL@103.449 (162p away, comp=+27 weak, KEEP). GOLD SELL@4591 (39.5pts away, comp=-33 weak, KEEP). All 10 alerts KEEP. Scalp: GBPUSD active."
+    },
+    {
+      "tick_ts_utc": "2026-05-05T14:37Z",
+      "events_processed": 4,
+      "events": [
+        "level_cross USDJPY usdjpy_day_fvg_sell_15733 \u2014 SKIP comp=+16.5 none; MODIFY alert price_ref\u2192157.755",
+        "news_flash hormuz_strait (01:42Z SK vessel) \u2014 SKIP stale/already-covered",
+        "liquidity_sweep AUDUSD M15 up-sweep 0.71857 wick 2.6p \u2014 ADD watchlist WATCH only (sub-noise, poor CF)",
+        "liquidity_sweep EURUSD M15 up-sweep 1.17048 wick 1.1p \u2014 ADD watchlist WATCH only (noise)"
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "open_positions": 0,
+      "gtc_limits": [
+        {
+          "epic": "OIL_CRUDE",
+          "dir": "SELL",
+          "level": 103.449,
+          "current": 100.155,
+          "dist_p": 329.4,
+          "status": "KEEP"
+        },
+        {
+          "epic": "GOLD",
+          "dir": "SELL",
+          "level": 4591.0,
+          "current": 4581.57,
+          "dist_pts": 9.43,
+          "status": "KEEP approaching"
+        },
+        {
+          "epic": "USDCAD",
+          "dir": "SELL",
+          "level": 1.36218,
+          "current": 1.361065,
+          "dist_p": 11.15,
+          "status": "KEEP comp=-44 moderate armed"
+        }
+      ],
+      "watchlist_changes": {
+        "removed": [
+          "usdcad_sweep_136924_sell_watch"
+        ],
+        "added": [
+          "usdcad_dayfvg_sell_13595",
+          "audusd_m15upsweep_71857_sell_watch",
+          "eurusd_m15sweep_117048_sell_watch"
+        ],
+        "modified": [
+          "usdjpy_day_fvg_sell_15733",
+          "gold_h1fvg_sell_4603",
+          "price_refs_updated_x5"
+        ]
+      },
+      "confluence": {
+        "EURUSD": {
+          "comp": -20,
+          "readiness": "none"
+        },
+        "GBPUSD": {
+          "comp": 29,
+          "readiness": "weak"
+        },
+        "AUDUSD": {
+          "comp": 55,
+          "readiness": "moderate"
+        },
+        "USDJPY": {
+          "comp": 16.5,
+          "readiness": "none"
+        },
+        "USDCAD": {
+          "comp": -44,
+          "readiness": "moderate"
+        },
+        "USDCHF": {
+          "comp": -29,
+          "readiness": "weak"
+        },
+        "GOLD": {
+          "comp": -25.5,
+          "readiness": "weak"
+        },
+        "OIL_CRUDE": {
+          "comp": 8.5,
+          "readiness": "none"
+        }
+      },
+      "balance_usd": 963.26,
+      "daily_pnl_usd": 0.0,
+      "regime": "HORMUZ_WAR_IRAN_UAE_ACTIVE_TANKER_STRIKES_OIL_REVERSAL",
+      "scalp": {
+        "EURUSD": "OFF-desync",
+        "GBPUSD": "ACTIVE",
+        "AUDUSD": "OFF-wr11pct"
+      }
     }
   ]
 }

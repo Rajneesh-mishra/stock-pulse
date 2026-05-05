@@ -1,8 +1,8 @@
 {
-  "regime": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_CLEARED_USD_WEAK",
-  "tick_ts_utc": "2026-05-05T08:21Z",
-  "state_ts_utc": "2026-05-05T08:21Z",
-  "regime_note": "2026-05-05T08:21Z forex auto \u2014 0 evts (heartbeat). 0 positions. 2 GTC limits: OIL CT-fade SELL@103.449 SL=103.65 TP=101.55 (OIL=101.83, 162p from fill, Hormuz escalation ongoing, comp=+27 weak, KEEP); GOLD SELL@4591 SL=4598 TP=4550 (GOLD=4551.47, 39.5pts from fill, comp=-33 weak, KEEP; TP=4550 is 1.5pts below current price, limit valid awaiting bounce). USDJPY WATCH: 157.264 vs sell level 157.33 \u2014 5.4p gap, comp=-36 weak bearish approaching -40 moderate arm. All 10 watchlist alerts KEEP (no staleness trigger, no counterfactual prune). Scalp: GBPUSD active neutral, EURUSD disabled (engine_desync), AUDUSD disabled (wr=11%). News: skipped (0 positions, regime stable 4+h). Balance $963.26.",
+  "regime": "HORMUZ_WAR_IRAN_UAE_ACTIVE_TANKER_STRIKES_OIL_REVERSAL",
+  "tick_ts_utc": "2026-05-05T14:37Z",
+  "state_ts_utc": "2026-05-05T14:37Z",
+  "regime_note": "2026-05-05T14:37Z forex auto \u2014 4 evts processed. USDJPY level_cross re-eval (usdjpy_day_fvg_sell_15733@157.33, price=157.755 inside Day FVG): SKIP comp=+16.5 none (need \u2264-40); price moved deeper into FVG (157.33\u2192157.755); MODIFIED alert. news_flash Hormuz (01:42Z SK vessel ablaze): already covered in 14:17Z tick; SKIP (stale headline). liquidity_sweep AUDUSD M15 (up-sweep 0.71857, wick 2.6p sub-noise): comp=+55 moderate bull; CT-fade qualifies on magnitude but wick sub-noise and sell CF poor; ADD watchlist WATCH only. liquidity_sweep EURUSD M15 (up-sweep 1.17048, wick 1.1p noise): comp=-20 none; ADD watchlist WATCH only (secondary to existing 1.17159 sell alert). 0 trades executed. 3 GTC limits: OIL SELL@103.449 (352p away, Hormuz catalyst, KEEP); GOLD SELL@4591 (9.43pts away, comp=-25.5 weak, KEEP \u2014 validated 86% at 4h); USDCAD SELL@1.36218 (14.7p away, comp=-44 moderate, KEEP). Watchlist: REMOVE usdcad_sweep_136924_sell_watch (auto-remove: dist=81.75p > 3\u00d7H4ATR=59.4p, no catalyst, trending away); ADD usdcad_dayfvg_sell_13595 (replacement: Day FVG top 1.36045); ADD 2 sweep watches. News queries: all match_keywords 05-08 May current, no rolling needed. Scalp: GBPUSD active neutral, EURUSD OFF (desync), AUDUSD OFF (WR 11%). Balance $963.26.",
   "regime_note_prev": "2026-05-05T07:43Z forex auto \u2014 1 evt: USDJPY M15 down-sweep 157.127 (4.1p wick into Day bull FVG 156.924-157.086, close 157.178); BUY SKIP (comp=-38.5 bearish, need +40 bullish for sweep-buy); SELL thesis at 157.33 INTACT (comp -35.5\u2192-38.5, 1.5 units from -40 arm). 0 positions. 2 GTC limits: OIL CT-fade SELL@103.449 SL=103.65 TP=101.55 (OIL at 101.17, high 103.12 no fill, Hormuz escalation ongoing, 'ceasefire ceased'); GOLD SELL@4591 SL=4598 TP=4550 (GOLD at 4555.84, 35.2pts from fill; Day bear FVG bottom 4558.5 just above = price in FVG approach zone; comp=-33 weak; M15 bullish bounce in progress). USDJPY alert MODIFIED: comp -35.5\u2192-38.5, M15 down-sweep 157.127 = Day FVG tap corroborating bounce to SELL level. News: Hormuz ceasefire cancelled \u2014 escalation live; GOLD choppy $4,555, Fed hold 94.9%; OIL 101.17 (down 1.59% on day). Balance $963.26 UPL=$0.",
   "open_positions": [],
   "watchlist": [
@@ -1382,18 +1382,8 @@
     }
   ],
   "binary_event": {
-    "name": "RBA_May2026",
     "active": false,
-    "deadline_utc": "2026-05-05T04:30Z",
-    "resolved_utc": "2026-05-05T06:05Z",
-    "outcome": "RESOLVED - RBA deadline 04:30Z passed. AUDUSD dropped ~24p (0.71672\u21920.71433) post-event suggesting hold or sell-the-news after hike. AUDUSD BUY LIMIT@0.7143 absent from broker (not in working orders). Limit reconciled: either cancelled pre-RBA or never placed. comp=+14.5 none - will not re-arm until comp\u226540.",
-    "note": "RBA interest rate decision resolved 04:30Z. Binary cleared.",
-    "sources": [
-      "Capital.com AUDUSD pricing (86% hike implied)",
-      "regime note ref 2026-05-04T13:35Z"
-    ],
-    "verified": true,
-    "caution_level": "none"
+    "note": "No immediate binary gate. Hormuz escalation ongoing but no deadline-specific binary. Iran vessel strikes = regime escalation, not a fixed deadline."
   },
   "balance": 961.92,
   "level_alerts": [
@@ -1502,22 +1492,25 @@
       "validated": false,
       "sl": 159.6,
       "tp": 153.8,
-      "last_updated": "2026-05-04T14:44Z"
+      "last_updated": "2026-05-05T14:17Z",
+      "note": "ENTRY: Price rallied through 157.33 FVG bottom \u2014 now inside Day bear FVG (157.33-159.52). Arm SELL LIMIT at 157.33-158.00 zone when comp \u2264 -40 (moderate bear). No entry while comp=+16.5 (bullish \u2014 extension into FVG, NOT confirmation).\n\nCONTEXT: USDJPY at 157.71, inside Day FVG (unmitigated). H4 bull FVG 157.30-157.64 (unmitigated, bars_ago=1) \u2014 price currently supported by H4 FVG. Hormuz vessel attacks (13:10 UTC) \u2192 JPY safe-haven demand = narrative for eventual USDJPY SELL. BoJ/MoF intervention risk at 160. Comp=+16.5 bullish (none) \u2014 need bearish flip to \u2264-40 for sell arm.\n\nSL: 159.60  TP: 153.80  R:R target: 1.54\n\nlevel_cross processed 2026-05-05T14:17Z \u2014 price entered Day FVG, comp gate unmet (+16.5 vs \u2264-40). WATCH until comp bearish.",
+      "entry_criterion": "Comp \u2264 -40 (moderate bear extension) AND price within Day FVG 157.33-159.52; arm SELL LIMIT at then-current price zone",
+      "regime_context": "Hormuz vessel attacks = JPY safe-haven demand = eventual SELL corroboration; H4 bull FVG 157.30-157.64 supporting near-term; comp=+16.5 blocking entry"
     },
     {
-      "alert_id": "usdcad_m15sweep_136194_buy_watch",
+      "alert_id": "usdcad_h1fvg_sell_13622",
       "instrument": "USDCAD",
-      "level": 1.36194,
-      "direction": "buy",
+      "level": 1.36218,
+      "direction": "sell",
       "active": true,
       "validated": false,
-      "sl": 1.36175,
-      "tp": 1.363,
-      "rr_target": 5.6,
-      "entry_criterion": "BUY on retest of swept level 1.36194; requires rejection wick + M15 BOS bull",
-      "regime_context": "M15 down-sweep 0.9p (sub-noise); bearish comp=-21; below counter-trend entry threshold; watchlist only",
-      "note": "ENTRY: BUY on retest of swept extreme 1.36194; M15 rejection wick + close inside required; arm only when comp\u2265-40 CT-fade threshold (currently -21, watchlist only).\n\nCONTEXT: M15 liquidity sweep 06:42Z \u2014 wick 0.9p below 1.36194, closed back inside 1.36206. Sweep sub-noise (0.9p vs H4 ATR 19.7p). Added per Step 4e mandate. Counter-trend fade: comp=-21 |21|<25 \u2192 below watchlist arm. Will arm if comp reaches \u2264-40 with price retesting 1.36194.\n\nSL: 1.36175  TP: 1.363  R:R target: 5.6\n\nAdded 2026-05-05T06:43Z \u2014 sweep level watchlist; counter-CF fires=0; comp-gate for entry.",
-      "last_updated": "2026-05-05T06:43Z"
+      "sl": 1.363,
+      "tp": 1.358,
+      "rr_target": 5.1,
+      "entry_criterion": "SELL LIMIT at H1 bear FVG bottom 1.36218; GTC limit armed (dealId pending confirm)",
+      "regime_context": "H1 bear FVG top=1.36244 bottom=1.36218 (unmitigated bars_ago=5); comp=-44 moderate bear; OIL bearish despite Iran attacks = CAD risk-off; LIMIT ARMED 14:17Z",
+      "note": "ENTRY: SELL LIMIT at 1.36218 (H1 bear FVG bottom, unmitigated); GTC LIMIT order ARMED.\n\nCONTEXT: H1 CHoC bear at 1.35977 (bars_ago=143); H1 bear FVG 1.36218-1.36244 (unmitigated, bars_ago=5); comp=-44 moderate bearish; Iran vessel attacks \u2192 OIL -3.14% on day despite news = bearish CAD. USDCAD bid=1.36135, limit 8.3p above current offer.\n\nSL: 1.36300  TP: 1.35800  R:R target: 5.1\n\nAdded + LIMIT ARMED 2026-05-05T14:17Z \u2014 H1 bear FVG, comp=-44, size=8000 (0.5% risk at fill).",
+      "last_updated": "2026-05-05T14:17Z"
     }
   ],
   "structure_watch": [
