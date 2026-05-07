@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T14:47:11.639576+00:00",
+  "generated_at": "2026-05-07T20:33:35.639327+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -436,9 +436,9 @@
           "hit_rate": 0.67
         },
         "24h": {
-          "filled": 5,
-          "favorable": 5,
-          "avg_pips": 45.0,
+          "filled": 6,
+          "favorable": 6,
+          "avg_pips": 55.8,
           "hit_rate": 1.0
         }
       }
@@ -904,9 +904,9 @@
           "hit_rate": 0.86
         },
         "24h": {
-          "filled": 4,
-          "favorable": 4,
-          "avg_pips": 34.6,
+          "filled": 7,
+          "favorable": 7,
+          "avg_pips": 34.8,
           "hit_rate": 1.0
         }
       }
@@ -915,25 +915,25 @@
       "alert_id": "eurusd_upsweep_117159_sell_watch",
       "instrument": "EURUSD",
       "direction": "sell",
-      "fires": 11,
+      "fires": 13,
       "by_horizon": {
         "1h": {
-          "filled": 11,
-          "favorable": 8,
-          "avg_pips": 2.8,
-          "hit_rate": 0.73
+          "filled": 13,
+          "favorable": 9,
+          "avg_pips": 2.3,
+          "hit_rate": 0.69
         },
         "4h": {
-          "filled": 11,
-          "favorable": 10,
-          "avg_pips": 8.5,
-          "hit_rate": 0.91
+          "filled": 13,
+          "favorable": 11,
+          "avg_pips": 6.3,
+          "hit_rate": 0.85
         },
         "24h": {
-          "filled": 11,
+          "filled": 13,
           "favorable": 10,
-          "avg_pips": 28.1,
-          "hit_rate": 0.91
+          "avg_pips": 18.6,
+          "hit_rate": 0.77
         }
       }
     },
@@ -941,25 +941,25 @@
       "alert_id": "gold_h1fvg_sell_4603",
       "instrument": "GOLD",
       "direction": "sell",
-      "fires": 7,
+      "fires": 8,
       "by_horizon": {
         "1h": {
-          "filled": 7,
+          "filled": 8,
           "favorable": 5,
-          "avg_pips": 23.1,
-          "hit_rate": 0.71
+          "avg_pips": -7.5,
+          "hit_rate": 0.62
         },
         "4h": {
-          "filled": 7,
+          "filled": 8,
           "favorable": 6,
-          "avg_pips": 144.8,
-          "hit_rate": 0.86
+          "avg_pips": 84.8,
+          "hit_rate": 0.75
         },
         "24h": {
-          "filled": 7,
+          "filled": 8,
           "favorable": 7,
-          "avg_pips": 455.7,
-          "hit_rate": 1.0
+          "avg_pips": 277.3,
+          "hit_rate": 0.88
         }
       }
     },
@@ -1060,9 +1060,9 @@
           "hit_rate": 0.8
         },
         "24h": {
-          "filled": 5,
-          "favorable": 5,
-          "avg_pips": 247.9,
+          "filled": 9,
+          "favorable": 9,
+          "avg_pips": 286.7,
           "hit_rate": 1.0
         }
       }
@@ -1201,25 +1201,25 @@
       "alert_id": "oil_rebound_9931_buy_watch",
       "instrument": "OIL_CRUDE",
       "direction": "buy",
-      "fires": 3,
+      "fires": 4,
       "by_horizon": {
         "1h": {
-          "filled": 3,
+          "filled": 4,
           "favorable": 3,
-          "avg_pips": 57.7,
-          "hit_rate": 1.0
+          "avg_pips": 41.8,
+          "hit_rate": 0.75
         },
         "4h": {
-          "filled": 3,
-          "favorable": 3,
-          "avg_pips": 90.5,
+          "filled": 4,
+          "favorable": 4,
+          "avg_pips": 71.4,
           "hit_rate": 1.0
         },
         "24h": {
-          "filled": 3,
+          "filled": 4,
           "favorable": 3,
-          "avg_pips": 276.7,
-          "hit_rate": 1.0
+          "avg_pips": 91.2,
+          "hit_rate": 0.75
         }
       }
     },
@@ -1320,10 +1320,10 @@
           "hit_rate": 1.0
         },
         "24h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 538.9,
+          "hit_rate": 1.0
         }
       }
     },
@@ -1346,10 +1346,10 @@
           "hit_rate": 1.0
         },
         "24h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 32.4,
+          "hit_rate": 1.0
         }
       }
     },
@@ -1372,10 +1372,10 @@
           "hit_rate": 0.0
         },
         "24h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 156.5,
+          "hit_rate": 1.0
         }
       }
     },
@@ -1383,25 +1383,77 @@
       "alert_id": "audusd_m15upsweep_71857_sell_watch",
       "instrument": "AUDUSD",
       "direction": "sell",
+      "fires": 2,
+      "by_horizon": {
+        "1h": {
+          "filled": 2,
+          "favorable": 0,
+          "avg_pips": -3.0,
+          "hit_rate": 0.0
+        },
+        "4h": {
+          "filled": 2,
+          "favorable": 1,
+          "avg_pips": -13.4,
+          "hit_rate": 0.5
+        },
+        "24h": {
+          "filled": 2,
+          "favorable": 0,
+          "avg_pips": -46.5,
+          "hit_rate": 0.0
+        }
+      }
+    },
+    {
+      "alert_id": "eurusd_m15sweep_117048_sell_watch",
+      "instrument": "EURUSD",
+      "direction": "sell",
       "fires": 1,
       "by_horizon": {
         "1h": {
-          "filled": 0,
+          "filled": 1,
           "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "avg_pips": -4.9,
+          "hit_rate": 0.0
         },
         "4h": {
-          "filled": 0,
+          "filled": 1,
           "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "avg_pips": -9.0,
+          "hit_rate": 0.0
         },
         "24h": {
-          "filled": 0,
+          "filled": 1,
           "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "avg_pips": -39.2,
+          "hit_rate": 0.0
+        }
+      }
+    },
+    {
+      "alert_id": "usdcad_dayfvg_sell_13595",
+      "instrument": "USDCAD",
+      "direction": "sell",
+      "fires": 1,
+      "by_horizon": {
+        "1h": {
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 0.4,
+          "hit_rate": 1.0
+        },
+        "4h": {
+          "filled": 1,
+          "favorable": 0,
+          "avg_pips": -21.7,
+          "hit_rate": 0.0
+        },
+        "24h": {
+          "filled": 1,
+          "favorable": 0,
+          "avg_pips": -22.9,
+          "hit_rate": 0.0
         }
       }
     }

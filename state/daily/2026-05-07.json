@@ -1,0 +1,64 @@
+[
+  {
+    "tick_ts": "2026-05-07T20:31Z",
+    "events_consumed": 3,
+    "events": [
+      "position_opened(USDCHF)",
+      "news_flash(hormuz_tanker)",
+      "liquidity_sweep(USDCAD_M15)"
+    ],
+    "trades": [
+      {
+        "action": "LIMIT_ARMED",
+        "epic": "AUDUSD",
+        "direction": "BUY",
+        "limit_price": 0.7208,
+        "sl": 0.7195,
+        "tp": 0.728,
+        "size": 2000,
+        "rr": 5.5,
+        "reason": "Day FVG bottom 0.7208; comp=+61.5 moderate bull"
+      }
+    ],
+    "alerts_changed": {
+      "removed": [
+        "eurusd_h1fvg_buy_117569",
+        "oil_liqsweep_88633_buy_watch",
+        "gbpusd_h4fvg_buy_13608",
+        "audusd_m15upsweep_71857_sell_watch",
+        "eurusd_m15sweep_117048_sell_watch",
+        "gold_h1fvg_sell_4603"
+      ],
+      "modified": [
+        "usdchf_dayfvg_sell_77933",
+        "audusd_dayfvg_buy_72320"
+      ],
+      "added": [
+        "usdcad_m15sweep_136540_sell_watch",
+        "audusd_dayfvg_buy_72080"
+      ]
+    },
+    "open_positions": [
+      {
+        "epic": "USDCHF",
+        "direction": "SELL",
+        "entry": 0.77933,
+        "sl": 0.781,
+        "tp": 0.775,
+        "upl": -2.1
+      }
+    ],
+    "pending_limits": [
+      {
+        "epic": "AUDUSD",
+        "direction": "BUY",
+        "limit": 0.7208,
+        "sl": 0.7195,
+        "tp": 0.728
+      }
+    ],
+    "balance": 940.36,
+    "daily_pnl_realized": 0,
+    "notes": "USDCHF SELL filled 17:30Z (UPL=-2.1). Hormuz tanker attack: CHF safe-haven bid, OIL bullish. AUDUSD LIMIT BUY placed at Day FVG bottom 0.7208. USDCAD M15 sweep 1.5p sub-noise \u2014 watchlist only."
+  }
+]

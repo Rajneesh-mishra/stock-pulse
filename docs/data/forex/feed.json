@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T14:47:52.512297Z",
+  "generated_at": "2026-05-07T20:34:11.345441Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -237,452 +237,66 @@
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
     },
     {
-      "tick_ts_utc": "2026-05-05T00:20Z",
-      "events_processed": 9,
-      "events_actionable": 1,
-      "events_noise": 8,
-      "positions_opened": 0,
-      "positions_closed": 0,
-      "positions_confirmed": [
-        "GBPUSD_BUY_time_stop_close_entry1.35282_exit1.35376_pnl+1.09"
+      "tick_ts": "2026-05-07T20:31Z",
+      "events_consumed": 3,
+      "events": [
+        "position_opened(USDCHF)",
+        "news_flash(hormuz_tanker)",
+        "liquidity_sweep(USDCAD_M15)"
       ],
-      "active_limits": [
+      "trades": [
         {
-          "epic": "OIL_CRUDE",
-          "dir": "SELL",
-          "level": 103.449,
-          "sl": 103.65,
-          "tp": 101.55,
-          "status": "GTC_HELD"
-        },
-        {
-          "epic": "GOLD",
-          "dir": "SELL",
-          "level": 4591.0,
-          "sl": 4598.0,
-          "tp": 4550.0,
-          "status": "GTC_HELD"
-        },
-        {
+          "action": "LIMIT_ARMED",
           "epic": "AUDUSD",
-          "dir": "BUY",
-          "level": 0.7143,
-          "sl": 0.713,
-          "tp": 0.7187,
-          "status": "GTC_HELD_RBA_CAUTION"
+          "direction": "BUY",
+          "limit_price": 0.7208,
+          "sl": 0.7195,
+          "tp": 0.728,
+          "size": 2000,
+          "rr": 5.5,
+          "reason": "Day FVG bottom 0.7208; comp=+61.5 moderate bull"
         }
       ],
-      "balance": 963.26,
-      "upl": 0.0,
-      "daily_pnl": 0.0,
-      "regime": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_HIKE_IMMINENT_USD_WEAK",
-      "binary_event": {
-        "name": "RBA_May2026",
-        "deadline": "2026-05-05T04:30Z",
-        "caution": "elevated"
-      },
-      "watchlist_audit": {
+      "alerts_changed": {
         "removed": [
-          "usdchf_sweep_78218_buy_watch"
-        ],
-        "added": [],
-        "kept": 10,
-        "reason": "REMOVE usdchf_sweep_78218 (counter-confluence USDCHF weak-bear, price risen above level, marginal wick)"
-      },
-      "confluence": {
-        "GOLD": "moderate-bear comp=-46",
-        "OIL_CRUDE": "weak-bull comp=+37.5",
-        "AUDUSD": "weak-bull comp=+31.5",
-        "USDCHF": "weak-bear comp=-29.5",
-        "EURUSD": "none comp=-16.5",
-        "GBPUSD": "none comp=-14",
-        "USDCAD": "none comp=-15",
-        "USDJPY": "none comp=+3.5"
-      },
-      "scalp_status": "GBPUSD=ACTIVE(no_halt) EURUSD=OFF AUDUSD=OFF(RBA_caution) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
-      "news_highlights": [
-        "Iran attacks UAE oil port + Hormuz ships \u2014 most serious escalation since ceasefire; Brent reportedly $114",
-        "RBA hike probability 62% (mkt), big banks all predict +25bps to 4.35% at 04:30Z May 5",
-        "UAE quitting OPEC per market reports \u2014 structural shift in oil market"
-      ],
-      "attention_matrix": {
-        "EURUSD": "swing=NONE scalp=OFF readiness=none comp=-16.5",
-        "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=none liqsweep_134736_buy at 1.34736 (54p below)",
-        "AUDUSD": "swing=ARMED scalp=OFF readiness=weak BUY LIMIT@0.7143 GTC active RBA-caution",
-        "USDJPY": "swing=WATCH scalp=OFF readiness=none USDJPY=157.253 AT Day FVG 157.33 (7.7p), comp=+3.5 none",
-        "USDCAD": "swing=WATCH scalp=OFF readiness=none usdcad_sweep_136924_sell at 1.36924 (69.5p above)",
-        "USDCHF": "swing=WATCH scalp=OFF readiness=weak usdchf_d_fvg_sell@0.78832 (41.5p above)",
-        "GOLD": "swing=ARMED scalp=N/A readiness=moderate SELL LIMIT@4591 GTC active comp=-46",
-        "OIL_CRUDE": "swing=ARMED scalp=N/A readiness=weak SELL LIMIT@103.449 CT-fade GTC active"
-      }
-    },
-    {
-      "tick_ts_utc": "2026-05-05T06:05Z",
-      "events_processed": 4,
-      "events": [
-        "eurusd_m15sweep_116871_buy_watch level_cross 01:27Z \u2014 comp=-12 none, watchlist only",
-        "oil_rebound_9931_buy_watch alert_audit_request 04:30Z \u2014 Hormuz missiles/drones, comp=+34.5 watchlist",
-        "audusd_m15fvg_buy_7143 level_cross 05:52Z \u2014 comp=+14.5 none, limit absent from broker",
-        "eurusd_m15sweep_116871_buy_watch level_cross 05:52Z \u2014 comp=-12 none, watchlist only"
-      ],
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "trades_skipped": 4,
-      "skip_reasons": {
-        "EURUSD": "comp=-12 none (needs \u2264-40 for CT-fade buy)",
-        "AUDUSD": "comp=+14.5 none (needs \u226540 to arm validated LIMIT)",
-        "OIL_BUY": "comp=+34.5 below \u226540 threshold; price 291p above level 99.31"
-      },
-      "limits_active": [
-        "OIL_CRUDE SELL @103.449 SL=103.65 TP=101.55 (CT-fade validated; bid=102.222)",
-        "GOLD SELL @4591 SL=4598 TP=4550 (comp=-43.5 mod-bear; bid=4543.77)"
-      ],
-      "binary_event": "RBA_May2026 CLEARED (deadline 04:30Z passed; AUDUSD limit absent from broker; comp=+14.5 none)",
-      "regime": "HORMUZ_WAR_ESCALATING_OIL_BULL_GOLD_PULLBACK_AUDUSD_POST_RBA",
-      "balance": 963.26,
-      "upl": 0.0,
-      "daily_pnl": 0.0,
-      "watchlist_changes": [
-        "MODIFY audusd_m15fvg_buy_7143 \u2014 RBA passed; limit absent from broker; comp=+14.5 none; watchlist only",
-        "MODIFY oil_rebound_9931_buy_watch \u2014 Hormuz reignited (missiles/drones); ceasefire context obsolete; comp=+34.5 watchlist"
-      ],
-      "attention_matrix": {
-        "EURUSD": "swing=WATCH scalp=OFF readiness=none (comp=-12; level 1.1684 AT price but CT-fade needs \u2264-40)",
-        "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=none (comp=+3.5; level 1.34736 far below; M15 BOS bear)",
-        "AUDUSD": "swing=WATCH scalp=OFF readiness=none (comp=+14.5; level 0.7143 AT price post-RBA; limit absent; wr=11%)",
-        "USDJPY": "swing=WATCH scalp=OFF readiness=weak (comp=-33; AT Day FVG 157.33, 5.7p away; needs \u2264-40 to arm)",
-        "USDCAD": "swing=WATCH scalp=OFF readiness=none (comp=-18.5; level 1.36924, 68p above)",
-        "USDCHF": "swing=WATCH scalp=OFF readiness=none (comp=-3.5; level 0.78832, 40p above)",
-        "GOLD": "swing=ARMED scalp=N/A readiness=moderate (comp=-43.5 all TFs; SELL LIMIT @4591 LIVE; bid=4543.77)",
-        "OIL_CRUDE": "swing=ARMED scalp=N/A readiness=weak (CT-fade SELL @103.449 LIVE; comp=+34.5 bull extension; Hormuz escalating; bid=102.222)"
-      }
-    },
-    {
-      "tick_ts_utc": "2026-05-05T06:20Z",
-      "events_processed": 1,
-      "events": [
-        {
-          "id": "evt_1777961437600_news_flash",
-          "type": "news_flash",
-          "action": "NOISE - rba_hike false positive (stale 'May meeting' kw in archive article); RBA binary cleared; no action"
-        }
-      ],
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "positions_managed": 0,
-      "open_positions": [],
-      "gtc_limits": [
-        {
-          "epic": "OIL_CRUDE",
-          "dir": "SELL",
-          "level": 103.449,
-          "sl": 103.65,
-          "tp": 101.55,
-          "bid": 102.296
-        },
-        {
-          "epic": "GOLD",
-          "dir": "SELL",
-          "level": 4591.0,
-          "sl": 4598,
-          "tp": 4550,
-          "bid": 4543.51
-        }
-      ],
-      "confluence": {
-        "EURUSD": -12.0,
-        "GBPUSD": 6.0,
-        "AUDUSD": 14.5,
-        "USDJPY": -33.0,
-        "USDCAD": -21.0,
-        "USDCHF": -3.5,
-        "GOLD": -38.0,
-        "OIL_CRUDE": 34.5
-      },
-      "watchlist_changes": [
-        "rba_hike query: TUNED \u2014 removed 'May meeting' false-trigger kw",
-        "gbpusd_liqsweep_134736_buy_watch: MODIFIED \u2014 added missing emit_on/cooldown_sec/id/active fields"
-      ],
-      "balance_usd": 963.26,
-      "upl_usd": 0.0,
-      "note": "1 news_flash processed (noise). AUDUSD at alert level 0.7143 but comp=+14.5 none; USDJPY 4p from sell level comp=-33 weak. Both GTC limits intact. No new trades."
-    },
-    {
-      "tick_ts_utc": "2026-05-05T06:43Z",
-      "events_processed": 4,
-      "events_actionable": 1,
-      "events_consumed": [
-        "evt_1777963350713_liquidity_sweep (USDCAD M15 down-sweep 1.36194 0.9p; skip entry comp=-21<25 CT-threshold; watchlist added)",
-        "evt_1777963352657_bar_close (EURUSD M15 auto-consume)",
-        "evt_1777963354677_bar_close (GBPUSD M15 auto-consume)",
-        "evt_1777963357296_bar_close (USDCHF M15 auto-consume)"
-      ],
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "orders_placed": 0,
-      "orders_cancelled": 0,
-      "balance": 963.26,
-      "upl": 0.0,
-      "open_positions": 0,
-      "gtc_limits": [
-        {
-          "id": "00000000-4f19-842c-044a-beb40055311e",
-          "epic": "OIL_CRUDE",
-          "dir": "SELL",
-          "level": 103.449,
-          "sl": 103.65,
-          "tp": 101.55,
-          "status": "active"
-        },
-        {
-          "id": "00000000-4ebc-b752-044a-beb40055311e",
-          "epic": "GOLD",
-          "dir": "SELL",
-          "level": 4591.0,
-          "sl": 4598.0,
-          "tp": 4550.0,
-          "status": "active"
-        }
-      ],
-      "alerts_modified": [
-        "REMOVED usdchf_sweep_78218_buy_watch (counter-CF, no track record)",
-        "MODIFIED gold_h1fvg_sell_4603 (SL 4598\u21924615 above FVG top; TP 4550\u21924500)",
-        "MODIFIED oil_sweep_103449_sell_watch (TP 102.67\u2192101.55 match broker)",
-        "ADDED usdcad_m15sweep_136194_buy_watch (sweep watchlist, comp-gate)"
-      ],
-      "news_queries_updated": "Rolled match_keywords to 05-08 May 2026 (6 queries)",
-      "confluence_snapshot": {
-        "EURUSD": -9.5,
-        "GBPUSD": 6.0,
-        "AUDUSD": 14.5,
-        "USDJPY": -35.5,
-        "USDCAD": -21.0,
-        "USDCHF": -3.5,
-        "GOLD": -33.0,
-        "OIL_CRUDE": 37.5
-      },
-      "regime": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_CLEARED_USD_WEAK",
-      "binary_event": "none",
-      "scalp_status": "GBPUSD=active/neutral; EURUSD=disabled(engine_desync); AUDUSD=disabled(wr=11pct/19t)"
-    },
-    {
-      "tick_ts": "2026-05-05T07:10Z",
-      "events": 0,
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "balance": 963.26,
-      "upl": 0.0,
-      "open_positions": 0,
-      "pending_orders": 2,
-      "summary": "heartbeat tick; 0 evts; 2 GTC limits (OIL@103.449, GOLD@4591); USDJPY comp=-35.5 approaching arm; alert audit: 3 MODIFY (usdjpy comp -20\u2192-35.5, usdcad comp -41.5\u2192-21, gold price 4517\u21924554); scalp GBPUSD active"
-    },
-    {
-      "tick_ts_utc": "2026-05-05T07:43Z",
-      "events_processed": 7,
-      "events_actionable": 1,
-      "event_detail": "USDJPY M15 down-sweep 157.127 (4.1p wick, Day FVG tap) \u2014 BUY skipped (comp=-38.5 bearish, need +40 bullish)",
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "trades_skipped": 1,
-      "skip_reason": "USDJPY sweep-buy: comp=-38.5 insufficient for BUY (+40 required); SELL thesis intact at 157.33",
-      "open_positions": 0,
-      "gtc_limits": [
-        {
-          "epic": "OIL_CRUDE",
-          "direction": "SELL",
-          "level": 103.449,
-          "sl": 103.65,
-          "tp": 101.55,
-          "current": 101.174
-        },
-        {
-          "epic": "GOLD",
-          "direction": "SELL",
-          "level": 4591.0,
-          "sl": 4598.0,
-          "tp": 4550.0,
-          "current": 4555.84
-        }
-      ],
-      "watchlist_changes": "MODIFY usdjpy_day_fvg_sell_15733 (comp -35.5\u2192-38.5; M15 down-sweep 157.127 = Day FVG tap, corroborating bounce toward 157.33 SELL); price_ref updates GOLD/OIL",
-      "balance_usd": 963.26,
-      "upl_usd": 0.0,
-      "regime": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_CLEARED_USD_WEAK",
-      "news_summary": "Hormuz ceasefire cancelled (escalation live); GOLD choppy ~$4,555 (Fed hold 94.9%); OIL -1.59% on day (101.17)",
-      "attention_matrix": {
-        "EURUSD": {
-          "swing": "WATCH",
-          "scalp": "OFF",
-          "readiness": "none",
-          "reason": "comp=-4.5 none; price 1.16939 near 1.16840 buy-level but comp insufficient"
-        },
-        "GBPUSD": {
-          "swing": "WATCH",
-          "scalp": "ACTIVE",
-          "readiness": "none",
-          "reason": "comp=+11 none; BUY level 1.34736 is 70p away"
-        },
-        "AUDUSD": {
-          "swing": "WATCH",
-          "scalp": "OFF",
-          "readiness": "none",
-          "reason": "comp=+14.5 none (est); price 0.71573 near 0.7143 buy-level but comp<+40"
-        },
-        "USDJPY": {
-          "swing": "WATCH",
-          "scalp": "OFF",
-          "readiness": "weak",
-          "reason": "comp=-38.5 weak; SELL 157.33 in proximity (18p); arm when comp\u2264-40"
-        },
-        "USDCAD": {
-          "swing": "WATCH",
-          "scalp": "OFF",
-          "readiness": "none",
-          "reason": "comp=-21 none; SELL level 1.36924 74p away"
-        },
-        "USDCHF": {
-          "swing": "WATCH",
-          "scalp": "OFF",
-          "readiness": "none",
-          "reason": "comp=-22 none; SELL level 0.78832 50p away"
-        },
-        "GOLD": {
-          "swing": "ARMED",
-          "scalp": "N/A",
-          "readiness": "weak",
-          "reason": "GTC SELL LIMIT@4591 active; comp=-33 weak; Day bear FVG bottom at 4558.5 (price approaching)"
-        },
-        "OIL_CRUDE": {
-          "swing": "ARMED",
-          "scalp": "N/A",
-          "readiness": "none",
-          "reason": "GTC SELL LIMIT@103.449 active (Hormuz CT-fade); comp=+19.5 none; price 101.17"
-        }
-      },
-      "scalp_audit": "EURUSD=OFF(engine_desync) GBPUSD=ACTIVE(no trades yet) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
-    },
-    {
-      "tick_ts_utc": "2026-05-05T08:21Z",
-      "events": 0,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 0,
-      "positions_open": 0,
-      "working_orders": 2,
-      "balance": 963.26,
-      "upl": 0.0,
-      "regime": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_CLEARED_USD_WEAK",
-      "notes": "Heartbeat. USDJPY 157.264 vs sell 157.33 (5.4p, comp=-36 weak). OIL SELL@103.449 (162p away, comp=+27 weak, KEEP). GOLD SELL@4591 (39.5pts away, comp=-33 weak, KEEP). All 10 alerts KEEP. Scalp: GBPUSD active."
-    },
-    {
-      "tick_ts_utc": "2026-05-05T14:37Z",
-      "events_processed": 4,
-      "events": [
-        "level_cross USDJPY usdjpy_day_fvg_sell_15733 \u2014 SKIP comp=+16.5 none; MODIFY alert price_ref\u2192157.755",
-        "news_flash hormuz_strait (01:42Z SK vessel) \u2014 SKIP stale/already-covered",
-        "liquidity_sweep AUDUSD M15 up-sweep 0.71857 wick 2.6p \u2014 ADD watchlist WATCH only (sub-noise, poor CF)",
-        "liquidity_sweep EURUSD M15 up-sweep 1.17048 wick 1.1p \u2014 ADD watchlist WATCH only (noise)"
-      ],
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "open_positions": 0,
-      "gtc_limits": [
-        {
-          "epic": "OIL_CRUDE",
-          "dir": "SELL",
-          "level": 103.449,
-          "current": 100.155,
-          "dist_p": 329.4,
-          "status": "KEEP"
-        },
-        {
-          "epic": "GOLD",
-          "dir": "SELL",
-          "level": 4591.0,
-          "current": 4581.57,
-          "dist_pts": 9.43,
-          "status": "KEEP approaching"
-        },
-        {
-          "epic": "USDCAD",
-          "dir": "SELL",
-          "level": 1.36218,
-          "current": 1.361065,
-          "dist_p": 11.15,
-          "status": "KEEP comp=-44 moderate armed"
-        }
-      ],
-      "watchlist_changes": {
-        "removed": [
-          "usdcad_sweep_136924_sell_watch"
-        ],
-        "added": [
-          "usdcad_dayfvg_sell_13595",
+          "eurusd_h1fvg_buy_117569",
+          "oil_liqsweep_88633_buy_watch",
+          "gbpusd_h4fvg_buy_13608",
           "audusd_m15upsweep_71857_sell_watch",
-          "eurusd_m15sweep_117048_sell_watch"
+          "eurusd_m15sweep_117048_sell_watch",
+          "gold_h1fvg_sell_4603"
         ],
         "modified": [
-          "usdjpy_day_fvg_sell_15733",
-          "gold_h1fvg_sell_4603",
-          "price_refs_updated_x5"
+          "usdchf_dayfvg_sell_77933",
+          "audusd_dayfvg_buy_72320"
+        ],
+        "added": [
+          "usdcad_m15sweep_136540_sell_watch",
+          "audusd_dayfvg_buy_72080"
         ]
       },
-      "confluence": {
-        "EURUSD": {
-          "comp": -20,
-          "readiness": "none"
-        },
-        "GBPUSD": {
-          "comp": 29,
-          "readiness": "weak"
-        },
-        "AUDUSD": {
-          "comp": 55,
-          "readiness": "moderate"
-        },
-        "USDJPY": {
-          "comp": 16.5,
-          "readiness": "none"
-        },
-        "USDCAD": {
-          "comp": -44,
-          "readiness": "moderate"
-        },
-        "USDCHF": {
-          "comp": -29,
-          "readiness": "weak"
-        },
-        "GOLD": {
-          "comp": -25.5,
-          "readiness": "weak"
-        },
-        "OIL_CRUDE": {
-          "comp": 8.5,
-          "readiness": "none"
+      "open_positions": [
+        {
+          "epic": "USDCHF",
+          "direction": "SELL",
+          "entry": 0.77933,
+          "sl": 0.781,
+          "tp": 0.775,
+          "upl": -2.1
         }
-      },
-      "balance_usd": 963.26,
-      "daily_pnl_usd": 0.0,
-      "regime": "HORMUZ_WAR_IRAN_UAE_ACTIVE_TANKER_STRIKES_OIL_REVERSAL",
-      "scalp": {
-        "EURUSD": "OFF-desync",
-        "GBPUSD": "ACTIVE",
-        "AUDUSD": "OFF-wr11pct"
-      }
-    },
-    {
-      "tick_ts_utc": "2026-05-05T14:47Z",
-      "events_processed": 1,
-      "events_noise": 8,
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "skipped": 1,
-      "open_positions": 0,
-      "gtc_limits": 3,
-      "balance": 963.26,
-      "binary": "none",
-      "scalp": "GBPUSD active, EURUSD OFF (desync), AUDUSD OFF (WR 11%)",
-      "summary": "AUDUSD level_cross@0.71857 CT-fade SKIP (sub-noise wick 2.6p, 0% CF); all 3 GTC limits KEEP"
+      ],
+      "pending_limits": [
+        {
+          "epic": "AUDUSD",
+          "direction": "BUY",
+          "limit": 0.7208,
+          "sl": 0.7195,
+          "tp": 0.728
+        }
+      ],
+      "balance": 940.36,
+      "daily_pnl_realized": 0,
+      "notes": "USDCHF SELL filled 17:30Z (UPL=-2.1). Hormuz tanker attack: CHF safe-haven bid, OIL bullish. AUDUSD LIMIT BUY placed at Day FVG bottom 0.7208. USDCAD M15 sweep 1.5p sub-noise \u2014 watchlist only."
     }
   ]
 }
