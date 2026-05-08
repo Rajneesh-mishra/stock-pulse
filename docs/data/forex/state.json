@@ -1,9 +1,9 @@
 {
   "regime": "USD_WEAKNESS_HORMUZ_REESCALATION",
-  "tick_ts_utc": "2026-05-08T12:45Z",
-  "state_ts_utc": "2026-05-08T12:45Z",
-  "regime_note": "2026-05-08T12:45Z \u2014 1 evt (USDCAD M15 liquidity_sweep up-sweep 1.36606). AUDUSD BUY: +3R cleared (bid=0.72468), SL trailed 0.72142\u21920.72270 (+1.5R lock), TP=0.728, UPL=+$7.82, age=15.8h/24h trend. GBPUSD LIMIT BUY @1.36071 GTC active (comp=+40 mod bull). USDCAD sweep 1.36606 comp=+8 none (<25 threshold) \u2014 WATCH only; alert updated to fresh level. EURUSD comp=+49 mod bull, SELL at 1.17159 armed but 61.9p away. USDCHF comp=-40 mod bear, SELL alert moved to H4 FVG 0.77933 (19p vs 56p). USDJPY comp=-29 weak bear, 73.8p from sell level 157.33. GOLD comp=+18 none. OIL comp=-28 weak. Watchlist: REMOVE 2 (eurusd_1684_buy 94p>3\u00d7H4ATR; usdcad_dayfvg_13595 71p>3\u00d7H4ATR M15 bull). Balance $945.07.",
-  "regime_note_prev": "2026-05-05T14:47Z forex auto \u2014 1 actionable evt (+ 8 bar_close noise). AUDUSD level_cross: audusd_m15upsweep_71857_sell_watch fired (price=0.71872 vs level=0.71857, dist=1.5p). CT-fade sell: comp=+55 mod bull (|comp|=55\u226540 qualifies on magnitude) BUT wick=2.6p sub-noise vs M15 ATR=6.6p AND audusd_sweep_71379 CF=0% at 4h (3 fires) \u2192 WATCHLIST WATCH only, no LIMIT armed. 3 GTC limits: OIL SELL@103.449 (bid=99.956, 349p away, Hormuz active KEEP); GOLD SELL@4591 (bid=4582.71, 8.3pts from fill, validated CF KEEP); USDCAD SELL@1.36218 (bid=1.36064, 15.4p away, comp=-44 mod KEEP). 0 open positions. Attention: USDCAD ARMED (comp=-44 mod), GOLD ARMED (8.3pts from fill), AUDUSD WATCH (mod bull, buy@0.7143 44p away outside 30p threshold). Scalp: GBPUSD ACTIVE, EURUSD OFF (desync), AUDUSD OFF (WR 11%). Balance $963.26.",
+  "tick_ts_utc": "2026-05-08T18:10Z",
+  "state_ts_utc": "2026-05-08T18:10Z",
+  "regime_note": "2026-05-08T18:10Z \u2014 2 evts (GBPUSD position_opened + Hormuz news_flash). GBPUSD BUY confirmed open: entry=1.36071, SL=1.36071 (BE), TP=1.37, UPL=+$5.25, age=5h, comp=+40 mod. AUDUSD BUY: SL=0.72270 (+1.5R lock), TP=0.728, UPL=+$7.58, age=21.5h \u2014 TIME EXIT at 20:37 UTC (2.45h). Hormuz escalation: US attacks Iranian vessel near Strait (13:43Z), Iran seizes oil tanker (18:03Z). OIL supply-risk premium peak. CHF/JPY safe-haven bids intensifying. USD bearish. No new entries: 2-correlated cap FULL (AUDUSD+GBPUSD both USD-weakness). USDCHF comp=-43 mod bear, level 27.4p away (within 30p prox) but blocked by corr cap. OIL watch alert added at 93.23 (validated CF 100% 4h, comp=-12.5 none). GBPUSD scalp bias updated to bull (comp=+40). Balance $950.13.",
+  "regime_note_prev": "2026-05-08T12:45Z \u2014 1 evt (USDCAD M15 liquidity_sweep up-sweep 1.36606). AUDUSD BUY: +3R cleared (bid=0.72468), SL trailed 0.72142\u21920.72270 (+1.5R lock), TP=0.728, UPL=+$7.82, age=15.8h/24h trend. GBPUSD LIMIT BUY @1.36071 GTC active (comp=+40 mod bull). USDCAD sweep 1.36606 comp=+8 none (<25 threshold) \u2014 WATCH only; alert updated to fresh level. EURUSD comp=+49 mod bull, SELL at 1.17159 armed but 61.9p away. USDCHF comp=-40 mod bear, SELL alert moved to H4 FVG 0.77933 (19p vs 56p). USDJPY comp=-29 weak bear, 73.8p from sell level 157.33. GOLD comp=+18 none. OIL comp=-28 weak. Watchlist: REMOVE 2 (eurusd_1684_buy 94p>3\u00d7H4ATR; usdcad_dayfvg_13595 71p>3\u00d7H4ATR M15 bull). Balance $945.07.",
   "open_positions": [
     {
       "dealId": "00000000-4f21-165f-044a-beb40055311e",
@@ -18,7 +18,22 @@
       "alert_id": "audusd_dayfvg_buy_72080",
       "confluence_at_entry": "comp=+61.5 moderate bull (Day FVG demand, USD weakness)",
       "rr": 5.5,
-      "sl_note": "Trail: +3R lock (price 0.72468 cleared +3R=0.72462). SL 0.72142\u21920.72270 (+1.5R lock). Original R=0.00128."
+      "sl_note": "Trail: +3R lock. SL 0.72142\u21920.72270 (+1.5R). Original R=0.00128. APPROACHING 24h TIME EXIT at 2026-05-08T20:37:51Z (~2.45h remaining)."
+    },
+    {
+      "dealId": "00000000-4f22-cdcf-044a-beb40055311e",
+      "epic": "GBPUSD",
+      "direction": "BUY",
+      "size": 2600.0,
+      "entry": 1.36071,
+      "sl": 1.36071,
+      "tp": 1.37,
+      "opened_at": "2026-05-08T13:08:37Z",
+      "thesis_type": "trend",
+      "alert_id": "gbpusd_h4fvg_buy_136071",
+      "confluence_at_entry": "comp=+40 moderate bull (H4 FVG demand 1.35905-1.36017)",
+      "rr": 5.1,
+      "sl_note": "SL at BE (1.36071 = entry). +1R cleared (20.2p vs R=18.1p). Broker confirms stopLevel=1.36071."
     }
   ],
   "watchlist": [
@@ -50,19 +65,6 @@
       "alert_id": "oil_liqsweep_88633_buy_watch"
     },
     {
-      "instrument": "GBPUSD",
-      "direction": "BUY",
-      "level": 1.36071,
-      "sl": 1.3589,
-      "tp": 1.37,
-      "status": "LIMIT_ARMED",
-      "alert_id": "gbpusd_h4fvg_buy_136071",
-      "deal_ref": "o_979ef5e7-c341-4cf6-a419-a37249349dd0",
-      "size": 2600,
-      "thesis_type": "trend",
-      "note": "H4 FVG top 1.35905-1.36071 unmitigated. comp=+40 moderate bull. LIMIT BUY armed 2026-05-08T12:31Z."
-    },
-    {
       "instrument": "USDCHF",
       "direction": "SELL",
       "level": 0.78304,
@@ -73,16 +75,16 @@
     }
   ],
   "market_context": {
-    "date": "2026-05-07",
-    "session": "LONDON/NY OVERLAP",
-    "dominant_theme": "USD BROAD WEAKNESS + HORMUZ RE-ESCALATION. Iran struck US vessels \u2192 OIL supply risk returning. CHF/JPY safe-haven bid. EURUSD at 1.17657, USDCHF at 0.77834 (CHF strengthening). AUDUSD at 0.72345 (open BUY +2R, SL trailed to +0.5R). GBPUSD LIMIT BUY ARMED at H4 FVG 1.36071. US tariff court ruling delays India-US deal (minor USD negative).",
+    "date": "2026-05-08",
+    "session": "NY SESSION",
+    "dominant_theme": "US-IRAN DIRECT MILITARY ACTION + USD WEAKNESS. US attacked Iranian vessel near Strait of Hormuz (sailors wounded). Iran seized oil tanker (18:03Z). OIL supply-risk premium at peak. CHF/JPY safe-haven bid intensifying. AUDUSD BUY active +1.5R protected. GBPUSD BUY active at BE. Regime = maximum escalation.",
     "key_events_upcoming": [
       "Iran-US formal agreement (in progress, informal peace proposal sent) \u2014 headline risk",
       "OPEC+ output increase June \u2014 supply headwind for OIL",
       "BoJ policy stance \u2014 any reversal would spike USDJPY",
       "Fed policy divergence \u2014 USD structurally weak"
     ],
-    "hormuz_status": "RE-ESCALATING. Iran forces struck US vessels in retaliation (Mehr News Agency, 2026-05-08T04:52Z). OIL supply-risk premium returning. CHF/JPY safe-haven bids active. Prior context (peace proposal, de-escalation) invalidated by this development."
+    "hormuz_status": "MILITARY ENGAGEMENT. US forces attacked Iranian vessel near Strait of Hormuz (10 sailors wounded, 5 missing per Moneycontrol 2026-05-08T13:43Z). Iran retaliated by seizing US-sanctioned oil tanker (NYT 2026-05-08T16:11Z). OIL supply-risk premium at maximum. Direct military confrontation escalates beyond prior retaliation phase."
   },
   "trade_history": [
     {

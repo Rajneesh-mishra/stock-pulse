@@ -134,5 +134,49 @@
       "GOLD": "swing=NONE scalp=N/A readiness=none(+18) no active alert",
       "OIL_CRUDE": "swing=NONE scalp=N/A readiness=weak(-28) no active alert"
     }
+  },
+  {
+    "tick_ts_utc": "2026-05-08T18:10Z",
+    "events_processed": 2,
+    "events": [
+      "evt_1778248093292_position_opened (GBPUSD BUY filled at 1.36071)",
+      "evt_1778254504386_news_flash (US attacks Iranian vessel near Hormuz)",
+      "evt_1778263422058_news_flash (Iran seizes oil tanker)"
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "new_limits": 0,
+    "open_positions": [
+      {
+        "epic": "AUDUSD",
+        "dir": "BUY",
+        "entry": 0.72078,
+        "sl": 0.7227,
+        "tp": 0.728,
+        "upl_usd": 7.58,
+        "age_h": 21.5
+      },
+      {
+        "epic": "GBPUSD",
+        "dir": "BUY",
+        "entry": 1.36071,
+        "sl": 1.36071,
+        "tp": 1.37,
+        "upl_usd": 5.25,
+        "age_h": 5.0
+      }
+    ],
+    "balance_usd": 950.13,
+    "regime": "USD_WEAKNESS_HORMUZ_MILITARY_ACTION",
+    "notes": [
+      "GBPUSD LIMIT BUY at H4 FVG 1.36071 filled (13:08 UTC). SL at BE, UPL=+$5.25.",
+      "Hormuz: US attacks Iranian vessel (sailors wounded, 5 missing). Iran seizes oil tanker.",
+      "AUDUSD approaching 24h time exit at 20:37 UTC. SL at +1.5R=0.7227, safe.",
+      "USDCHF comp=-43 mod bear, level 27.4p away \u2014 blocked by 2-correlated cap.",
+      "Added oil_sweep_9323_buy_retest watch alert @93.23 (validated CF 100% 4h).",
+      "GBPUSD scalp bias updated to bull (comp=+40).",
+      "Removed gbpusd_h1fvg_buy_13578 backup (primary filled).",
+      "Scalp: GBPUSD ACTIVE (bias=bull), EURUSD OFF (desync), AUDUSD OFF (WR 11%)."
+    ]
   }
 ]

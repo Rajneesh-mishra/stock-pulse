@@ -26,12 +26,12 @@
     "GBPUSD": {
       "enabled": true,
       "mode": "session_open_break",
-      "bias": "neutral",
+      "bias": "bull",
       "sessions": [
         "london",
         "ny"
       ],
-      "reason": "bias reset neutral: comp=+25.5 weak (was bull@+53). Below moderate threshold. Reset 2026-04-28T06:00Z."
+      "reason": "bias updated to bull: comp=+40 moderate bull (was neutral@+25.5 weak). GBPUSD swing BUY open at 1.36071, comp reinforces direction. Updated 2026-05-08T18:10Z."
     },
     "AUDUSD": {
       "enabled": false,
