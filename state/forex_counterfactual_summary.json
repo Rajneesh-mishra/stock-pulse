@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T20:33:35.639327+00:00",
+  "generated_at": "2026-05-08T07:47:45.602837+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -1454,6 +1454,58 @@
           "favorable": 0,
           "avg_pips": -22.9,
           "hit_rate": 0.0
+        }
+      }
+    },
+    {
+      "alert_id": "usdcad_m15sweep_136540_sell_watch",
+      "instrument": "USDCAD",
+      "direction": "sell",
+      "fires": 3,
+      "by_horizon": {
+        "1h": {
+          "filled": 1,
+          "favorable": 0,
+          "avg_pips": -5.2,
+          "hit_rate": 0.0
+        },
+        "4h": {
+          "filled": 1,
+          "favorable": 0,
+          "avg_pips": -0.5,
+          "hit_rate": 0.0
+        },
+        "24h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        }
+      }
+    },
+    {
+      "alert_id": "audusd_dayfvg_buy_72080",
+      "instrument": "AUDUSD",
+      "direction": "buy",
+      "fires": 2,
+      "by_horizon": {
+        "1h": {
+          "filled": 2,
+          "favorable": 2,
+          "avg_pips": 8.0,
+          "hit_rate": 1.0
+        },
+        "4h": {
+          "filled": 2,
+          "favorable": 2,
+          "avg_pips": 11.6,
+          "hit_rate": 1.0
+        },
+        "24h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
         }
       }
     }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T20:34:11.345441Z",
+  "generated_at": "2026-05-08T07:47:43.644459Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -237,66 +237,46 @@
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
     },
     {
-      "tick_ts": "2026-05-07T20:31Z",
-      "events_consumed": 3,
+      "tick_ts_utc": "2026-05-08T07:45Z",
+      "events_processed": 2,
       "events": [
-        "position_opened(USDCHF)",
-        "news_flash(hormuz_tanker)",
-        "liquidity_sweep(USDCAD_M15)"
+        "news_flash:Hormuz_missile_strike",
+        "alert_audit_request:oil_rebound_9931_buy_watch"
       ],
-      "trades": [
-        {
-          "action": "LIMIT_ARMED",
-          "epic": "AUDUSD",
-          "direction": "BUY",
-          "limit_price": 0.7208,
-          "sl": 0.7195,
-          "tp": 0.728,
-          "size": 2000,
-          "rr": 5.5,
-          "reason": "Day FVG bottom 0.7208; comp=+61.5 moderate bull"
-        }
-      ],
-      "alerts_changed": {
-        "removed": [
-          "eurusd_h1fvg_buy_117569",
-          "oil_liqsweep_88633_buy_watch",
-          "gbpusd_h4fvg_buy_13608",
-          "audusd_m15upsweep_71857_sell_watch",
-          "eurusd_m15sweep_117048_sell_watch",
-          "gold_h1fvg_sell_4603"
-        ],
-        "modified": [
-          "usdchf_dayfvg_sell_77933",
-          "audusd_dayfvg_buy_72320"
-        ],
-        "added": [
-          "usdcad_m15sweep_136540_sell_watch",
-          "audusd_dayfvg_buy_72080"
-        ]
-      },
+      "positions_opened": 0,
+      "positions_closed": 0,
       "open_positions": [
         {
-          "epic": "USDCHF",
-          "direction": "SELL",
-          "entry": 0.77933,
-          "sl": 0.781,
-          "tp": 0.775,
-          "upl": -2.1
-        }
-      ],
-      "pending_limits": [
-        {
           "epic": "AUDUSD",
-          "direction": "BUY",
-          "limit": 0.7208,
-          "sl": 0.7195,
-          "tp": 0.728
+          "dir": "BUY",
+          "entry": 0.72078,
+          "sl": 0.7208,
+          "tp": 0.728,
+          "upl": 3.24,
+          "age_h": 11
         }
       ],
-      "balance": 940.36,
-      "daily_pnl_realized": 0,
-      "notes": "USDCHF SELL filled 17:30Z (UPL=-2.1). Hormuz tanker attack: CHF safe-haven bid, OIL bullish. AUDUSD LIMIT BUY placed at Day FVG bottom 0.7208. USDCAD M15 sweep 1.5p sub-noise \u2014 watchlist only."
+      "watchlist_changes": {
+        "removed": [
+          "audusd_m15fvg_buy_7143",
+          "oil_sweep_103449_sell_watch",
+          "usdchf_d_fvg_sell_78304",
+          "gbpusd_liqsweep_134736_buy_watch",
+          "audusd_dayfvg_buy_72080"
+        ],
+        "added": [
+          "usdchf_fvg_sell_78304",
+          "gbpusd_h1fvg_buy_13578"
+        ],
+        "modified": [
+          "oil_rebound_9931_buy_watch"
+        ]
+      },
+      "regime": "USD_WEAKNESS_HORMUZ_ESCALATION_CONT",
+      "balance": 941.16,
+      "account_equity": 944.4,
+      "daily_pnl_usd": 0.0,
+      "summary": "2 evts; Hormuz missile escalation news; OIL audit: comp=-28 no arm; AUDUSD BUY hold 11h; 5 watchlist removed, 2 added"
     }
   ]
 }

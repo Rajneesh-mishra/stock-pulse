@@ -1,0 +1,44 @@
+[
+  {
+    "tick_ts_utc": "2026-05-08T07:45Z",
+    "events_processed": 2,
+    "events": [
+      "news_flash:Hormuz_missile_strike",
+      "alert_audit_request:oil_rebound_9931_buy_watch"
+    ],
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "open_positions": [
+      {
+        "epic": "AUDUSD",
+        "dir": "BUY",
+        "entry": 0.72078,
+        "sl": 0.7208,
+        "tp": 0.728,
+        "upl": 3.24,
+        "age_h": 11
+      }
+    ],
+    "watchlist_changes": {
+      "removed": [
+        "audusd_m15fvg_buy_7143",
+        "oil_sweep_103449_sell_watch",
+        "usdchf_d_fvg_sell_78304",
+        "gbpusd_liqsweep_134736_buy_watch",
+        "audusd_dayfvg_buy_72080"
+      ],
+      "added": [
+        "usdchf_fvg_sell_78304",
+        "gbpusd_h1fvg_buy_13578"
+      ],
+      "modified": [
+        "oil_rebound_9931_buy_watch"
+      ]
+    },
+    "regime": "USD_WEAKNESS_HORMUZ_ESCALATION_CONT",
+    "balance": 941.16,
+    "account_equity": 944.4,
+    "daily_pnl_usd": 0.0,
+    "summary": "2 evts; Hormuz missile escalation news; OIL audit: comp=-28 no arm; AUDUSD BUY hold 11h; 5 watchlist removed, 2 added"
+  }
+]
