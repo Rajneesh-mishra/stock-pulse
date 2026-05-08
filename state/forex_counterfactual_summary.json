@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-08T08:09:28.037523+00:00",
+  "generated_at": "2026-05-08T12:43:11.884995+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -1461,19 +1461,19 @@
       "alert_id": "usdcad_m15sweep_136540_sell_watch",
       "instrument": "USDCAD",
       "direction": "sell",
-      "fires": 3,
+      "fires": 4,
       "by_horizon": {
         "1h": {
-          "filled": 2,
-          "favorable": 0,
-          "avg_pips": -4.7,
-          "hit_rate": 0.0
+          "filled": 3,
+          "favorable": 1,
+          "avg_pips": -0.8,
+          "hit_rate": 0.33
         },
         "4h": {
-          "filled": 1,
-          "favorable": 0,
-          "avg_pips": -0.5,
-          "hit_rate": 0.0
+          "filled": 3,
+          "favorable": 2,
+          "avg_pips": 5.3,
+          "hit_rate": 0.67
         },
         "24h": {
           "filled": 0,

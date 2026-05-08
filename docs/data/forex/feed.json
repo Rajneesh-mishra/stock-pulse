@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-08T08:09:20.210384Z",
+  "generated_at": "2026-05-08T12:43:49.510182Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -306,6 +306,71 @@
       "binary": "none",
       "watchlist_changes": "REMOVE oil_rebound_9931 (thesis invalidated); MODIFY usdcad_dayfvg (stale GTC ref)",
       "scalp": "GBPUSD ACTIVE (engine SELL open); EURUSD OFF (desync); AUDUSD OFF (WR11%)"
+    },
+    {
+      "tick_ts_utc": "2026-05-08T12:31Z",
+      "events_processed": 3,
+      "events": [
+        "news_flash: Hormuz re-escalation (Iran hits US vessels)",
+        "news_flash: US tariff court ruling delays India-US deal",
+        "level_cross: USDCAD usdcad_m15sweep_136540_sell_watch (cross_up 1.36556, comp=-24 SKIP)"
+      ],
+      "actions": [
+        "AUDUSD trail SL 0.7208\u21920.72142 (+0.5R lock; price 0.72345 past +2R=0.72334)",
+        "GBPUSD LIMIT BUY @1.36071 armed size=2600 SL=1.35890 TP=1.37 (H4 FVG top, comp=+40 moderate)"
+      ],
+      "positions": [
+        {
+          "epic": "AUDUSD",
+          "direction": "BUY",
+          "entry": 0.72078,
+          "sl": 0.72142,
+          "tp": 0.728,
+          "upl": 5.34
+        }
+      ],
+      "pending_limits": [
+        {
+          "epic": "GBPUSD",
+          "direction": "BUY",
+          "limit": 1.36071,
+          "sl": 1.3589,
+          "tp": 1.37,
+          "size": 2600
+        }
+      ],
+      "regime": "USD_WEAKNESS_HORMUZ_REESCALATION",
+      "balance": 942.51,
+      "scalp": "GBPUSD=ACTIVE EURUSD=OFF AUDUSD=OFF"
+    },
+    {
+      "tick_ts_utc": "2026-05-08T12:45Z",
+      "events_processed": 1,
+      "events_skipped_bar_close": 6,
+      "actions": [
+        "AUDUSD SL trail +3R\u2192+1.5R lock: 0.72142\u21920.72270 (bid 0.72468 cleared +3R=0.72462)",
+        "GBPUSD LIMIT BUY @1.36071 GTC \u2014 KEEP (comp=+40 mod, 16.2p away)",
+        "USDCAD liquidity_sweep 1.36606: comp=+8 none \u2192 WATCH (below +25 counter-trend threshold)",
+        "Watchlist REMOVE: eurusd_m15sweep_116871_buy_watch (94.5p>3\u00d7H4ATR=67.5p, price rising)",
+        "Watchlist REMOVE: usdcad_dayfvg_sell_13595 (71.3p>3\u00d7H4ATR=60.6p, M15 BOS bull trending away)",
+        "Watchlist MODIFY: usdcad_m15sweep\u2192level 1.36606 fresh sweep",
+        "Watchlist MODIFY: usdchf_fvg\u2192level 0.77933 H4 FVG bottom (19p vs 56p)"
+      ],
+      "open_positions": 1,
+      "pending_limits": 1,
+      "balance_broker": 945.07,
+      "audusd_upl": 7.82,
+      "regime": "USD_WEAKNESS_HORMUZ_REESCALATION",
+      "attention_matrix": {
+        "EURUSD": "swing=WATCH scalp=OFF readiness=moderate(+49) sell@1.17159 armed threshold but 61.9p away",
+        "GBPUSD": "swing=ARMED scalp=ACTIVE readiness=moderate(+40) LIMIT BUY@1.36071 GTC working",
+        "AUDUSD": "swing=ARMED scalp=OFF readiness=strong(+60) BUY open@0.72078 SL trailed to 0.72270",
+        "USDJPY": "swing=WATCH scalp=OFF readiness=weak(-29) sell@157.33 73.8p above price",
+        "USDCAD": "swing=WATCH scalp=OFF readiness=none(+8) sweep@1.36606 comp below threshold",
+        "USDCHF": "swing=WATCH scalp=OFF readiness=moderate(-40) sell@0.77933 H4FVG 19p above, corr-cap blocks LIMIT",
+        "GOLD": "swing=NONE scalp=N/A readiness=none(+18) no active alert",
+        "OIL_CRUDE": "swing=NONE scalp=N/A readiness=weak(-28) no active alert"
+      }
     }
   ]
 }

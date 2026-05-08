@@ -1,8 +1,8 @@
 {
-  "regime": "USD_WEAKNESS_HORMUZ_ESCALATION_CONT",
-  "tick_ts_utc": "2026-05-08T08:02Z",
-  "state_ts_utc": "2026-05-08T08:02Z",
-  "regime_note": "2026-05-08T08:02Z \u2014 2 evts: USDCAD level_cross usdcad_m15sweep_136540_sell_watch (price=1.36547 vs level=1.3654, comp=-18.5 none \u2014 ARM requires -40, SKIP); GBPUSD position_opened (scalp engine SELL@1.35792 SL=1.35858 TP=1.35675). AUDUSD BUY open @0.72078 SL=BE(0.7208) TP=0.728 UPL=+$3.18 age=11.4h (trend cap 24h). GBPUSD SELL scalp open @1.35792 SL=1.35858 TP=1.35675 UPL=-$0.23 age=1m (max hold 1h). binary=none. Watchlist: REMOVE oil_rebound_9931 (OIL fell -2.5% on Hormuz missile strike, comp=-28, thesis invalidated); MODIFY usdcad_dayfvg (stale GTC ref removed). USDCHF comp=-40 moderate bear \u2014 FVG sell at 0.78304 armed when price approaches. Balance $940.85.",
+  "regime": "USD_WEAKNESS_HORMUZ_REESCALATION",
+  "tick_ts_utc": "2026-05-08T12:45Z",
+  "state_ts_utc": "2026-05-08T12:45Z",
+  "regime_note": "2026-05-08T12:45Z \u2014 1 evt (USDCAD M15 liquidity_sweep up-sweep 1.36606). AUDUSD BUY: +3R cleared (bid=0.72468), SL trailed 0.72142\u21920.72270 (+1.5R lock), TP=0.728, UPL=+$7.82, age=15.8h/24h trend. GBPUSD LIMIT BUY @1.36071 GTC active (comp=+40 mod bull). USDCAD sweep 1.36606 comp=+8 none (<25 threshold) \u2014 WATCH only; alert updated to fresh level. EURUSD comp=+49 mod bull, SELL at 1.17159 armed but 61.9p away. USDCHF comp=-40 mod bear, SELL alert moved to H4 FVG 0.77933 (19p vs 56p). USDJPY comp=-29 weak bear, 73.8p from sell level 157.33. GOLD comp=+18 none. OIL comp=-28 weak. Watchlist: REMOVE 2 (eurusd_1684_buy 94p>3\u00d7H4ATR; usdcad_dayfvg_13595 71p>3\u00d7H4ATR M15 bull). Balance $945.07.",
   "regime_note_prev": "2026-05-05T14:47Z forex auto \u2014 1 actionable evt (+ 8 bar_close noise). AUDUSD level_cross: audusd_m15upsweep_71857_sell_watch fired (price=0.71872 vs level=0.71857, dist=1.5p). CT-fade sell: comp=+55 mod bull (|comp|=55\u226540 qualifies on magnitude) BUT wick=2.6p sub-noise vs M15 ATR=6.6p AND audusd_sweep_71379 CF=0% at 4h (3 fires) \u2192 WATCHLIST WATCH only, no LIMIT armed. 3 GTC limits: OIL SELL@103.449 (bid=99.956, 349p away, Hormuz active KEEP); GOLD SELL@4591 (bid=4582.71, 8.3pts from fill, validated CF KEEP); USDCAD SELL@1.36218 (bid=1.36064, 15.4p away, comp=-44 mod KEEP). 0 open positions. Attention: USDCAD ARMED (comp=-44 mod), GOLD ARMED (8.3pts from fill), AUDUSD WATCH (mod bull, buy@0.7143 44p away outside 30p threshold). Scalp: GBPUSD ACTIVE, EURUSD OFF (desync), AUDUSD OFF (WR 11%). Balance $963.26.",
   "open_positions": [
     {
@@ -11,49 +11,17 @@
       "direction": "BUY",
       "size": 2000.0,
       "entry": 0.72078,
-      "sl": 0.7208,
+      "sl": 0.7227,
       "tp": 0.728,
       "opened_at": "2026-05-07T20:37:51Z",
       "thesis_type": "trend",
       "alert_id": "audusd_dayfvg_buy_72080",
       "confluence_at_entry": "comp=+61.5 moderate bull (Day FVG demand, USD weakness)",
       "rr": 5.5,
-      "sl_note": "Broker SL at 0.7208 (breakeven); original intended 0.7195 at entry. Trail rule +1R: SL moved to breakeven."
-    },
-    {
-      "dealId": "00000000-4f22-517f-044a-beb40055311e",
-      "epic": "GBPUSD",
-      "direction": "SELL",
-      "size": 1000.0,
-      "entry": 1.35792,
-      "sl": 1.35858,
-      "tp": 1.35675,
-      "opened_at": "2026-05-08T08:00:46Z",
-      "thesis_type": "scalp_entry",
-      "alert_id": "scalp_engine",
-      "confluence_at_entry": "engine: session_open_break neutral bias; comp=+26 weak (scalp mechanical)",
-      "rr": 1.77
+      "sl_note": "Trail: +3R lock (price 0.72468 cleared +3R=0.72462). SL 0.72142\u21920.72270 (+1.5R lock). Original R=0.00128."
     }
   ],
   "watchlist": [
-    {
-      "instrument": "EURUSD",
-      "direction": "BUY",
-      "level": 1.17569,
-      "sl": 1.1742,
-      "tp": 1.184,
-      "status": "LIMIT_ARMED",
-      "alert_id": "eurusd_h1fvg_buy_117569"
-    },
-    {
-      "instrument": "USDCHF",
-      "direction": "SELL",
-      "level": 0.77933,
-      "sl": 0.781,
-      "tp": 0.775,
-      "status": "LIMIT_ARMED",
-      "alert_id": "usdchf_dayfvg_sell_77933"
-    },
     {
       "instrument": "AUDUSD",
       "direction": "BUY",
@@ -84,24 +52,37 @@
     {
       "instrument": "GBPUSD",
       "direction": "BUY",
-      "level": 1.36084,
-      "sl": 1.359,
-      "tp": 1.372,
+      "level": 1.36071,
+      "sl": 1.3589,
+      "tp": 1.37,
+      "status": "LIMIT_ARMED",
+      "alert_id": "gbpusd_h4fvg_buy_136071",
+      "deal_ref": "o_979ef5e7-c341-4cf6-a419-a37249349dd0",
+      "size": 2600,
+      "thesis_type": "trend",
+      "note": "H4 FVG top 1.35905-1.36071 unmitigated. comp=+40 moderate bull. LIMIT BUY armed 2026-05-08T12:31Z."
+    },
+    {
+      "instrument": "USDCHF",
+      "direction": "SELL",
+      "level": 0.78304,
+      "sl": 0.785,
+      "tp": 0.776,
       "status": "WATCH",
-      "alert_id": "gbpusd_h4fvg_buy_13608"
+      "alert_id": "usdchf_fvg_sell_78304"
     }
   ],
   "market_context": {
     "date": "2026-05-07",
     "session": "LONDON/NY OVERLAP",
-    "dominant_theme": "USD BROAD WEAKNESS + OIL REVERSAL. OIL crashed from $125 peak to $88 (-30%) on Iran peace proposal + OPEC +188k bpd + UAE OPEC exit. BoJ intervened \u2192 USDJPY lower \u2192 broad USD sell-off. EURUSD at 1.1776, USDCHF at 0.7774, AUDUSD at 0.7255. GOLD at new high 4748 (USD-weak bid). 2 LIMIT orders armed: EURUSD BUY + USDCHF SELL.",
+    "dominant_theme": "USD BROAD WEAKNESS + HORMUZ RE-ESCALATION. Iran struck US vessels \u2192 OIL supply risk returning. CHF/JPY safe-haven bid. EURUSD at 1.17657, USDCHF at 0.77834 (CHF strengthening). AUDUSD at 0.72345 (open BUY +2R, SL trailed to +0.5R). GBPUSD LIMIT BUY ARMED at H4 FVG 1.36071. US tariff court ruling delays India-US deal (minor USD negative).",
     "key_events_upcoming": [
       "Iran-US formal agreement (in progress, informal peace proposal sent) \u2014 headline risk",
       "OPEC+ output increase June \u2014 supply headwind for OIL",
       "BoJ policy stance \u2014 any reversal would spike USDJPY",
       "Fed policy divergence \u2014 USD structurally weak"
     ],
-    "hormuz_status": "DE-ESCALATING. Iran sent peace proposal to Pakistan mediators. OIL crashed from $125 to $88. Hormuz technically still at risk but market pricing large probability of formal ceasefire soon."
+    "hormuz_status": "RE-ESCALATING. Iran forces struck US vessels in retaliation (Mehr News Agency, 2026-05-08T04:52Z). OIL supply-risk premium returning. CHF/JPY safe-haven bids active. Prior context (peace proposal, de-escalation) invalidated by this development."
   },
   "trade_history": [
     {
@@ -814,16 +795,34 @@
       "exit_reason": "closed (inferred: SL hit via offer; position_sync detected disappearance at bid=0.78044)",
       "pnl_usd": -3.15,
       "notes": "SELL entry at 0.77933 closed with bid=0.78044 (+11.1p adverse); loss likely SL via offer at 0.781 (offer=bid+spread)."
+    },
+    {
+      "trade_id": "gbpusd_scalp_517f_20260508_sl",
+      "instrument": "GBPUSD",
+      "direction": "SELL",
+      "entry": 1.35792,
+      "close": 1.35837,
+      "size": 1000.0,
+      "sl": 1.35858,
+      "tp": 1.35675,
+      "opened_at": "2026-05-08T08:00:46Z",
+      "closed_at": "2026-05-08T08:10:17Z",
+      "hold_min": 9.5,
+      "thesis_type": "scalp_entry",
+      "exit_reason": "sl_hit (last_bid=1.35837 vs SL=1.35858; engine session_open_break)",
+      "pnl_usd": -0.58,
+      "alert_id": "scalp_engine",
+      "result": "loss"
     }
   ],
-  "consecutive_losses": 2,
-  "daily_pnl": -3.15,
+  "consecutive_losses": 3,
+  "daily_pnl": -0.58,
   "weekly_pnl": 0,
   "total_pnl": 2.04,
   "total_trades": 5,
   "wins": 1,
   "losses": 0,
-  "broker_balance": 952.16,
+  "broker_balance": 940.49,
   "effective_capital_usd": 987.93,
   "capital_base_note": "Demo account reset to $1k on 2026-04-20 (topUp -$8849.07). Broker balance and effective capital are now aligned.",
   "loop_config": {

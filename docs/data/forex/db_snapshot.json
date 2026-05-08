@@ -1,14 +1,35 @@
 {
-  "generated_at": "2026-05-08T06:20:32.652997+00:00",
+  "generated_at": "2026-05-08T08:46:53.988006+00:00",
   "counts": {
-    "trades": 43,
-    "events": 7963,
+    "trades": 44,
+    "events": 8059,
     "ticks": 59,
-    "regime_snapshots": 245,
+    "regime_snapshots": 249,
     "broker_positions": 0,
-    "counterfactuals": 172
+    "counterfactuals": 174
   },
   "trades_last_50": [
+    {
+      "id": 2753315,
+      "source": "swing",
+      "epic": "USDCHF",
+      "direction": "SELL",
+      "size": 2000.0,
+      "entry_price": null,
+      "sl": 0.781,
+      "tp": 0.775,
+      "exit_price": null,
+      "opened_at": "2026-05-07T17:30:20Z",
+      "closed_at": "2026-05-07T21:41:40Z",
+      "open_reason": null,
+      "close_reason": "loss",
+      "thesis_type": null,
+      "realized_pnl_usd": null,
+      "realized_pnl_pips": null,
+      "held_minutes": null,
+      "shadow": 0,
+      "broker_deal_id": null
+    },
     {
       "id": 2699905,
       "source": "swing",
@@ -916,6 +937,38 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-05-08T13:46Z",
+      "regime_name": "USD_WEAKNESS_HORMUZ_ESCALATION_CONT",
+      "note_text": "2026-05-08T13:46Z \u2014 1 evt: GBPUSD scalp SELL@1.35792 SL hit (last_bid=1.35837, UPL=-$0.58, held 9.5min, engine: session_open_break). AUDUSD BUY@0.72078 SL=BE(0.7208) TP=0.728 bid=0.72253 UPL=+$3.28 age=17h (trend cap 24h \u2014 not at +2R=0.72334, no trail action). No new trades: USDCHF comp=-40 mod bear but level 0.78304 is 41p away (outside 30p proximity); GBPUSD comp=+26 weak (need \u226540); EURUSD comp=+28 weak; USDCAD comp=-18.5 none; GOLD/OIL comp none. Watchlist CLEAN: removed 3 stale entries (eurusd_h1fvg_buy_117569 level above current price, usdchf_dayfvg_sell_77933 position already closed 2026-05-07, gbpusd_h4fvg_buy_13608 level 1.36084 above current 1.3586). OIL at 92.675 -2.56% (within 3\u00d7H4ATR of buy level 88.633 \u2014 KEEP). USDCAD 1.36575 near sweep level 1.3654 (comp=-18.5 none, WATCH). Scalp: GBPUSD=ACTIVE(1L today, no halt); EURUSD=OFF(desync); AUDUSD=OFF(wr=11%). binary=none. Balance $940.49.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
+      "ts_utc": "2026-05-08T08:02Z",
+      "regime_name": "USD_WEAKNESS_HORMUZ_ESCALATION_CONT",
+      "note_text": "2026-05-08T08:02Z \u2014 2 evts: USDCAD level_cross usdcad_m15sweep_136540_sell_watch (price=1.36547 vs level=1.3654, comp=-18.5 none \u2014 ARM requires -40, SKIP); GBPUSD position_opened (scalp engine SELL@1.35792 SL=1.35858 TP=1.35675). AUDUSD BUY open @0.72078 SL=BE(0.7208) TP=0.728 UPL=+$3.18 age=11.4h (trend cap 24h). GBPUSD SELL scalp open @1.35792 SL=1.35858 TP=1.35675 UPL=-$0.23 age=1m (max hold 1h). binary=none. Watchlist: REMOVE oil_rebound_9931 (OIL fell -2.5% on Hormuz missile strike, comp=-28, thesis invalidated); MODIFY usdcad_dayfvg (stale GTC ref removed). USDCHF comp=-40 moderate bear \u2014 FVG sell at 0.78304 armed when price approaches. Balance $940.85.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
+      "ts_utc": "2026-05-08T07:45Z",
+      "regime_name": "USD_WEAKNESS_HORMUZ_ESCALATION_CONT",
+      "note_text": "2026-05-08T07:45Z \u2014 2 evts: news_flash Hormuz missile strike (Tehran claims strike on US naval vessels after US attacked Iranian oil tanker, 05:29 UTC); alert_audit_request oil_rebound_9931_buy_watch. AUDUSD BUY open @0.72078, bid=0.72241, SL=0.7208 (breakeven), TP=0.728, UPL=+$3.24, age=11h (24h trend cap). OIL comp=-28 weak bearish, -2.29% today despite Hormuz escalation \u2014 market pricing escalation but selling OIL. USDCHF comp=-40 moderate bear (CHF safe-haven bid). GOLD +0.49%. Watchlist: REMOVE 5 (audusd_m15fvg stale+position, oil_sweep_103449 stale, usdchf_d_fvg stale, gbpusd_liqsweep stale, audusd_dayfvg filled); ADD 2 (usdchf_fvg_sell_78304@0.78304, gbpusd_h1fvg_buy_13578@1.35779). No new trades. Balance $941.16.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
+      "ts_utc": "2026-05-08T07:07Z",
+      "regime_name": "USD_WEAKNESS_HORMUZ_ESCALATION_CONT",
+      "note_text": "2026-05-08T07:07Z \u2014 11 evts: USDCHF SELL closed -$3.15 (21:41Z, SL via offer est.); AUDUSD BUY filled 0.72078 (LIMIT 20:37Z), SL=0.7208 breakeven, TP=0.728, UPL=+$3.7 @ 0.72263 (+1.42R, trend 24h cap). News: Iranian forces strike US vessels (Hormuz escalation reignited 02:43Z). OIL at 92.56 bearish structure; CHF bid confirmed. USDCAD sweep alert fired 2\u00d7 (comp=-21 none, never reached -40 threshold \u2192 skip). 4\u00d7 trail_candidate AUDUSD (buggy R calc, actual=1.42R, SL already breakeven, hold). Watchlist: REMOVE 4 (usdchf_d_fvg auto, gbpusd_liqsweep auto, oil_rebound disc, usdcad_m15sweep disc); ADD 3 (gold_sweep_4726, gbpusd_h1fvg_buy, usdchf_h1fvg_sell). Balance equity=$941.66.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-05-07T20:31Z",
       "regime_name": "USD_BROAD_WEAKNESS_OIL_REVERSAL_HORMUZ_DEESCALATION",
       "note_text": "2026-05-07T20:31Z \u2014 3 evts: USDCHF SELL position opened (filled at 0.77933, SL=0.781, TP=0.775); news_flash Hormuz tanker attack (OIL bullish risk; CHF safe-haven bid supports USDCHF SELL); USDCAD M15 sweep 1.5p sub-noise (comp=-9.5 none, watchlist only). AUDUSD comp=+61.5 moderate bull in Day FVG zone 0.7208-0.7232 \u2192 LIMIT BUY placed at 0.7208 SL=0.7195 TP=0.7280 R:R=5.5. OIL at 93.6 (bounced from 88 lows), Hormuz attack supports oil-rebound_9931 and oil_sweep_103449 alerts. USDCHF comp=-37 weak SELL position active (3h age, 24h cap). Balance $940.36.",
@@ -959,38 +1012,6 @@
       "ts_utc": "2026-05-05T08:21Z",
       "regime_name": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_CLEARED_USD_WEAK",
       "note_text": "2026-05-05T08:21Z forex auto \u2014 0 evts (heartbeat). 0 positions. 2 GTC limits: OIL CT-fade SELL@103.449 SL=103.65 TP=101.55 (OIL=101.83, 162p from fill, Hormuz escalation ongoing, comp=+27 weak, KEEP); GOLD SELL@4591 SL=4598 TP=4550 (GOLD=4551.47, 39.5pts from fill, comp=-33 weak, KEEP; TP=4550 is 1.5pts below current price, limit valid awaiting bounce). USDJPY WATCH: 157.264 vs sell level 157.33 \u2014 5.4p gap, comp=-36 weak bearish approaching -40 moderate arm. All 10 watchlist alerts KEEP (no staleness trigger, no counterfactual prune). Scalp: GBPUSD active neutral, EURUSD disabled (engine_desync), AUDUSD disabled (wr=11%). News: skipped (0 positions, regime stable 4+h). Balance $963.26.",
-      "binary_event_name": "RBA_May2026",
-      "binary_event_active": 0,
-      "binary_event_deadline": "2026-05-05T04:30Z"
-    },
-    {
-      "ts_utc": "2026-05-05T07:43Z",
-      "regime_name": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_CLEARED_USD_WEAK",
-      "note_text": "2026-05-05T07:43Z forex auto \u2014 1 evt: USDJPY M15 down-sweep 157.127 (4.1p wick into Day bull FVG 156.924-157.086, close 157.178); BUY SKIP (comp=-38.5 bearish, need +40 bullish for sweep-buy); SELL thesis at 157.33 INTACT (comp -35.5\u2192-38.5, 1.5 units from -40 arm). 0 positions. 2 GTC limits: OIL CT-fade SELL@103.449 SL=103.65 TP=101.55 (OIL at 101.17, high 103.12 no fill, Hormuz escalation ongoing, 'ceasefire ceased'); GOLD SELL@4591 SL=4598 TP=4550 (GOLD at 4555.84, 35.2pts from fill; Day bear FVG bottom 4558.5 just above = price in FVG approach zone; comp=-33 weak; M15 bullish bounce in progress). USDJPY alert MODIFIED: comp -35.5\u2192-38.5, M15 down-sweep 157.127 = Day FVG tap corroborating bounce to SELL level. News: Hormuz ceasefire cancelled \u2014 escalation live; GOLD choppy $4,555, Fed hold 94.9%; OIL 101.17 (down 1.59% on day). Balance $963.26 UPL=$0.",
-      "binary_event_name": "RBA_May2026",
-      "binary_event_active": 0,
-      "binary_event_deadline": "2026-05-05T04:30Z"
-    },
-    {
-      "ts_utc": "2026-05-05T07:10Z",
-      "regime_name": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_CLEARED_USD_WEAK",
-      "note_text": "2026-05-05T07:10Z forex auto \u2014 0 evts (heartbeat). 0 positions. 2 GTC limits: OIL CT-fade SELL@103.449 SL=103.65 TP=101.55 (comp=+27 weak, 167.8p from fill; Hormuz active, thesis intact); GOLD SELL@4591 SL=4598 TP=4550 (comp=-33 weak, 37pts from fill; gold rallied 4517\u21924554, approaching limit). USDJPY @157.143 \u2014 comp=-35.5 approaching -40 arm; 18.7p from Day FVG sell 157.33; WATCH. Alert audit: MODIFY usdjpy (comp -20\u2192-35.5 approaching arm), MODIFY usdcad (comp -41.5\u2192-21 degraded), MODIFY gold (price ref 4517\u21924554; limit 37pts away); 7 KEEP. Balance $963.26 UPL=$0. Scalp: GBPUSD active neutral; EURUSD/AUDUSD disabled.",
-      "binary_event_name": "RBA_May2026",
-      "binary_event_active": 0,
-      "binary_event_deadline": "2026-05-05T04:30Z"
-    },
-    {
-      "ts_utc": "2026-05-05T06:43Z",
-      "regime_name": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_CLEARED_USD_WEAK",
-      "note_text": "2026-05-05T06:43Z forex auto \u2014 1 evt: USDCAD M15 liquidity_sweep (down-sweep 1.36194 0.9p wick; buy bias; comp=-21 none, |21|<25 counter-trend threshold \u2014 SKIP entry, ADD watchlist alert). 3 bar_close auto-consumed (EURUSD/GBPUSD/USDCHF M15). 0 positions. 2 GTC limits: OIL CT-fade SELL@103.449 SL=103.65 TP=101.55 (comp=+37.5 weak, approaching +40 CT-fade; Hormuz ongoing); GOLD SELL@4591 SL=4598 TP=4550 (comp=-33 weak, approaching -40 moderate). Alert updates: REMOVED usdchf_sweep_78218 (counter-CF, no track record). MODIFIED gold_h1fvg_sell_4603 (SL fixed 4598\u21924615 above Day FVG top; TP 4550\u21924500). MODIFIED oil_sweep_103449_sell_watch (TP 102.67\u2192101.55 match broker). ADDED usdcad_m15sweep_136194_buy_watch (sweep watchlist). USDJPY @157.238 \u2014 sell alert 157.33 (9.2p above, within 30p floor); comp=-35.5 weak (need \u2264-40 for arm). AUDUSD @0.7145 AT buy alert 0.7143; comp=+14.5 none. EURUSD @1.1687 AT sweep buy 1.16871; comp=-9.5 none. News queries: match_keywords rolled to 05-08 May 2026. Balance $963.26 UPL=$0. Scalp: GBPUSD active neutral, EURUSD/AUDUSD disabled.",
-      "binary_event_name": "RBA_May2026",
-      "binary_event_active": 0,
-      "binary_event_deadline": "2026-05-05T04:30Z"
-    },
-    {
-      "ts_utc": "2026-05-05T06:20Z",
-      "regime_name": "HORMUZ_WAR_IRAN_UAE_OIL_BULL_RBA_CLEARED_USD_WEAK",
-      "note_text": "2026-05-05T06:20Z forex auto \u2014 1 evt: news_flash rba_hike (7NEWS archive 'hikes to 4.35%' triggered by stale 'May meeting' kw; RBA binary already CLEARED 04:30Z; AUDUSD @0.7144 post-decision; no action). 0 positions. 2 GTC limits: OIL CT-fade SELL@103.449 SL=103.65 TP=101.55 (comp=+34.5 weak, approaching CT-fade threshold +40; Hormuz missiles/drones ongoing); GOLD SELL@4591 SL=4598 TP=4550 (comp=-38.0 weak, approaching moderate -40; all higher TFs bearish). AUDUSD @0.7144 \u2014 AT H4 FVG demand zone 0.7143-0.7146 but comp=+14.5 none (need \u226540), watchlist only. USDJPY @157.29 \u2014 4p below Day FVG sell level 157.33, comp=-33 weak (need \u2264-40), watch for arm. GBPUSD @1.3526, EURUSD @1.1685 \u2014 both none-readiness, watchlist. News queries: rba_hike TUNED (removed 'May meeting' false-trigger kw; May meeting DONE). Balance $963.26 UPL=$0. Scalp: GBPUSD active (neutral bias), EURUSD/AUDUSD disabled.",
       "binary_event_name": "RBA_May2026",
       "binary_event_active": 0,
       "binary_event_deadline": "2026-05-05T04:30Z"
@@ -1499,6 +1520,32 @@
     }
   ],
   "counterfactuals_last_50": [
+    {
+      "alert_id": "usdcad_m15sweep_136540_sell_watch",
+      "instrument": "USDCAD",
+      "direction": "sell",
+      "trigger_price": 1.36547,
+      "fired_at": "2026-05-08T07:42:28.953685+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
+    {
+      "alert_id": "usdcad_m15sweep_136540_sell_watch",
+      "instrument": "USDCAD",
+      "direction": "sell",
+      "trigger_price": 1.36543,
+      "fired_at": "2026-05-08T07:00:06.433340+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
     {
       "alert_id": "audusd_dayfvg_buy_72080",
       "instrument": "AUDUSD",
@@ -2116,32 +2163,6 @@
       "direction": "buy",
       "trigger_price": 0.71122,
       "fired_at": "2026-04-29T18:58:01.981408+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
-    },
-    {
-      "alert_id": "eurusd_m15sweep_116871_buy_watch",
-      "instrument": "EURUSD",
-      "direction": "buy",
-      "trigger_price": 1.1672150000000001,
-      "fired_at": "2026-04-29T18:58:01.977903+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
-    },
-    {
-      "alert_id": "gbpusd_liqsweep_134736_buy_watch",
-      "instrument": "GBPUSD",
-      "direction": "buy",
-      "trigger_price": 1.346605,
-      "fired_at": "2026-04-29T18:54:35.275327+00:00",
       "hit_1h": null,
       "hit_4h": null,
       "hit_24h": null,
