@@ -1,8 +1,8 @@
 {
   "_comment": "Authored by Claude. Daemon reads this on every loop. Update whenever thesis changes \u2014 daemon picks up within one tick. No numeric cap on alert count \u2014 every alert must be actively useful NOW (would you act on it with real money if it fires in the next hour?). Stale = remove. Signal-only / REMOTE / low-probability = remove.",
-  "last_updated_by_claude": "2026-05-08T07:45Z",
-  "pruned_at": "2026-05-08T07:45Z",
-  "pruned_by": "claude auto-audit 2026-05-08T07:45Z \u2014 REMOVE 5 (audusd_m15fvg stale+position, oil_sweep_103449 stale, usdchf_d_fvg stale, gbpusd_liqsweep stale, audusd_dayfvg filled); ADD 2 (usdchf_fvg_sell_78304, gbpusd_h1fvg_buy_13578); MODIFY 1 (oil_rebound audit)",
+  "last_updated_by_claude": "2026-05-08T08:02Z",
+  "pruned_at": "2026-05-08T08:02Z",
+  "pruned_by": "claude auto-audit 2026-05-08T08:02Z \u2014 REMOVE 1 (oil_rebound_9931 thesis invalidated \u2014 OIL -2.5% despite Hormuz missile strike, comp=-28 no approach); MODIFY 1 (usdcad_dayfvg stale GTC ref removed)",
   "pruned_removed": [
     "audusd_m15fvg_buy_7143",
     "oil_sweep_103449_sell_watch",
@@ -68,25 +68,6 @@
       "validated": true
     },
     {
-      "id": "oil_rebound_9931_buy_watch",
-      "instrument": "OIL_CRUDE",
-      "level": 99.31,
-      "emit_on": "cross_down",
-      "cooldown_sec": 1800,
-      "direction": "buy",
-      "note": "ENTRY: BUY LIMIT at 99.31 on pullback retest; M15 bullish rejection wick \u226510p confirms support hold. VALIDATED \u2014 naked LIMIT at comp \u2265 +40 bull (readiness moderate+).\n\nCONTEXT: Hormuz escalation CONT 2026-05-08: Tehran claims missile strike on US naval vessels. OIL-bullish narrative intact but market selling OIL (-2.29% today, bid=92.93). comp=-28 bearish (need \u2265+40 to arm). Price 638p below level. No arm. WATCHLIST ONLY.\n\nSL: 98.90  TP: 101.00  R:R target: 4.1\n\naudit 2026-05-08T07:45Z \u2014 Hormuz missile strike news; OIL bearish structure comp=-28; no arm.",
-      "entry_criterion": "Pullback to 99.31 with M15 bullish wick \u226510p. Arm BUY LIMIT at comp \u2265 +40 bull. VALIDATED.",
-      "regime_context": "OIL at 92.93, comp=-28 weak bearish (need \u2265+40). Hormuz missile strike 2026-05-08. 638p below level. No arm.",
-      "sl": 98.9,
-      "tp": 101.0,
-      "rr_target": "4.1",
-      "current_price_ref": 92.93,
-      "last_updated": "2026-05-08T07:45Z",
-      "validated": true,
-      "alert_id": "oil_rebound_9931_buy_watch",
-      "active": true
-    },
-    {
       "id": "usdjpy_day_fvg_sell_15733",
       "instrument": "USDJPY",
       "level": 157.33,
@@ -115,14 +96,14 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: price retests Day bull FVG top 1.36045 (FVG: 1.35948-1.36045, unmitigated); M15 bar closes AT or BELOW 1.36045 with bearish rejection wick \u22652p. Arm SELL LIMIT when comp \u2264-40 bear (moderate+).\n\nCONTEXT: Replacement for removed usdcad_sweep_136924_sell_watch (auto-removed 14:37Z: dist=81.75p > 3\u00d7H4_ATR=59.4p, no catalyst, trending away). USDCAD comp=-44 moderate bear. GTC SELL@1.36218 is active (primary sell). Day bull FVG 1.35948-1.36045 acts as resistance on any bounce. H4 BOS bear at 1.36314 intact. After GTC fills and TP hits ~1.358, monitor for bounce-retest of 1.36045 FVG top as secondary sell entry.\n\nSL: 1.36150  TP: 1.35500  R:R target: 5.2\n\nadded 2026-05-05T14:37Z \u2014 replacement for removed sweep alert; Day FVG top 1.36045 as structural resistance.",
+      "note": "ENTRY: price retests Day bull FVG top 1.36045 (FVG: 1.35948-1.36045, unmitigated); M15 bar closes AT or BELOW 1.36045 with bearish rejection wick \u22652p. Arm SELL LIMIT when comp \u2264-40 bear (moderate+).\n\nCONTEXT: USDCAD comp=-18.5 none (bearish structure from H4 BOS bear at 1.36314). Day bull FVG 1.35948-1.36045 acts as resistance on pullback. Previous GTC SELL@1.36218 expired/cancelled. Standalone sell watch at FVG top.\n\nSL: 1.36150  TP: 1.35500  R:R target: 5.2\n\nmodified 2026-05-08T08:02Z \u2014 removed stale GTC reference; GTC order no longer active.",
       "entry_criterion": "M15 retest of Day FVG top 1.36045 with bearish wick \u22652p. Arm SELL LIMIT when comp \u2264-40 bear.",
-      "regime_context": "USDCAD comp=-44 moderate bear. GTC SELL@1.36218 active (primary). Day FVG top 1.36045 = secondary sell resistance. Watchlist until price approaches from above and comp \u2264-40.",
+      "regime_context": "USDCAD comp=-18.5 none. H4 BOS bear 1.36314 intact. Day FVG top 1.36045 = structural resistance. Standalone sell watch; arm at comp\u2264-40.",
       "sl": 1.3615,
       "tp": 1.355,
       "rr_target": "5.2",
       "current_price_ref": 1.361065,
-      "last_updated": "2026-05-05T14:37Z"
+      "last_updated": "2026-05-08T08:02Z"
     },
     {
       "id": "usdcad_m15sweep_136540_sell_watch",

@@ -40,5 +40,34 @@
     "account_equity": 944.4,
     "daily_pnl_usd": 0.0,
     "summary": "2 evts; Hormuz missile escalation news; OIL audit: comp=-28 no arm; AUDUSD BUY hold 11h; 5 watchlist removed, 2 added"
+  },
+  {
+    "tick_ts_utc": "2026-05-08T08:02Z",
+    "events_processed": 2,
+    "events": [
+      {
+        "id": "evt_1778226148953_level_cross",
+        "type": "level_cross",
+        "instrument": "USDCAD",
+        "action": "SKIP \u2014 comp=-18.5 none, ARM requires -40"
+      },
+      {
+        "id": "evt_1778227256762_position_opened",
+        "type": "position_opened",
+        "instrument": "GBPUSD",
+        "action": "LOG scalp engine SELL@1.35792"
+      }
+    ],
+    "positions_open": [
+      "AUDUSD BUY @0.72078 SL=BE(0.7208) TP=0.728",
+      "GBPUSD SELL @1.35792 SL=1.35858 TP=1.35675"
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "skipped": 1,
+    "balance": 940.85,
+    "binary": "none",
+    "watchlist_changes": "REMOVE oil_rebound_9931 (thesis invalidated); MODIFY usdcad_dayfvg (stale GTC ref)",
+    "scalp": "GBPUSD ACTIVE (engine SELL open); EURUSD OFF (desync); AUDUSD OFF (WR11%)"
   }
 ]
