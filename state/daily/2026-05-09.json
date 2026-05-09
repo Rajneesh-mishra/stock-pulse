@@ -1,0 +1,66 @@
+[
+  {
+    "tick_ts_utc": "2026-05-09T21:53Z",
+    "events_processed": 4,
+    "events": [
+      {
+        "id": "evt_1778264850880_level_cross",
+        "type": "level_cross",
+        "instrument": "OIL_CRUDE",
+        "decision": "SKIP \u2014 comp=-12.5 none at fire time (need +40); price 93.25 briefly, fell back. WATCH."
+      },
+      {
+        "id": "evt_1778272411769_news_flash",
+        "type": "news_flash",
+        "headline": "US court blow to Trump tariffs may delay India-US trade deal",
+        "decision": "LOW_RELEVANCE \u2014 USD weakness confirmation; no regime change."
+      },
+      {
+        "id": "evt_1778299130879_alert_audit_request",
+        "type": "alert_audit_request",
+        "instrument": "USDJPY",
+        "alert_id": "usdjpy_day_fvg_sell_15733",
+        "decision": "KEEP \u2014 Chinese tanker Hormuz attack reinforces JPY bid; comp=-29 weak, WATCH; dist=66.4p from sell level 157.33."
+      },
+      {
+        "id": "evt_1778299130881_alert_audit_request",
+        "type": "alert_audit_request",
+        "instrument": "OIL_CRUDE",
+        "alert_id": "oil_sweep_9323_buy_retest",
+        "decision": "KEEP \u2014 Chinese tanker Hormuz attack reinforces OIL buy; CF 7 fires 100% 4h (VALIDATED); comp=-18 none (WATCH arm >=+40)."
+      }
+    ],
+    "positions": {
+      "AUDUSD": {
+        "status": "OPEN_TIME_EXIT_OVERDUE",
+        "age_h": 49.3,
+        "upl_usd": 7.4,
+        "sl": 0.7227,
+        "note": "Markets closed. Close Sunday 21:00Z"
+      },
+      "GBPUSD": {
+        "status": "OPEN_TIME_EXIT_OVERDUE",
+        "age_h": 32.7,
+        "upl_usd": 5.36,
+        "sl": 1.36071,
+        "note": "Markets closed. Close Sunday 21:00Z"
+      }
+    },
+    "new_trades": 0,
+    "closed_trades": 0,
+    "balance": 949.67,
+    "daily_upl": 12.76,
+    "regime": "USD_WEAKNESS_HORMUZ_TRIPLE_ESCALATION_WEEKEND",
+    "attention_matrix": {
+      "EURUSD": "swing=WATCH scalp=OFF readiness=moderate comp=+49 dist=71.2p",
+      "GBPUSD": "swing=NONE(open) scalp=ACTIVE readiness=moderate comp=+40",
+      "AUDUSD": "swing=NONE(open) scalp=OFF readiness=strong comp=+60",
+      "USDJPY": "swing=WATCH scalp=OFF readiness=weak comp=-29 dist=66.4p",
+      "USDCAD": "swing=WATCH scalp=OFF readiness=none comp=+11.5",
+      "USDCHF": "swing=ARMED(blocked-corr) scalp=OFF readiness=moderate comp=-50 dist=29.25p",
+      "GOLD": "swing=NONE scalp=N/A readiness=none comp=+15.5",
+      "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=none comp=-18"
+    },
+    "scalp_audit": "EURUSD=OFF(engine-desync) GBPUSD=KEEP(bull-bias) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
+  }
+]

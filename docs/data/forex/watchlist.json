@@ -74,14 +74,14 @@
       "direction": "sell",
       "active": true,
       "validated": true,
-      "note": "ENTRY: M15 retest of 1.17159 with bearish rejection wick >=1p. VALIDATED \u2014 naked LIMIT SELL when comp >=+40 bullish extension (no confirmation required).\n\nCONTEXT: VALIDATED \u2014 10+ fires, 4h hit_rate=89% per Rule 3. EURUSD at 1.178015 (64.2p above level). comp=+49 >=+40 CT-fade threshold MET. Cannot place LIMIT now (price above level, >30p proximity). Watch for pullback to 1.17159 zone; arm on approach within 30p. 4h time-stop if entered.\n\nSL: 1.17189  TP: 1.17028  R:R target: 4.4\n\nupdated 2026-05-08T18:10Z \u2014 comp=+49 threshold met; price 64.2p above; WATCH for return.",
+      "note": "ENTRY: M15 retest of 1.17159 with bearish rejection wick >=1p. VALIDATED \u2014 naked LIMIT SELL when comp >=+40 bullish extension (no confirmation required).\n\nCONTEXT: EURUSD at 1.17871, comp=+49 moderate bull. dist=71.2p above level (>30p proximity \u2014 not armed). CT-fade threshold met (comp=+49 >= +40) but price needs to pull back to 1.17159 before arm. VALIDATED: 10+ fires, 89% 4h per Rule 3. 4h time-stop if entered.\n\nSL: 1.17189  TP: 1.17028  R:R target: 4.4\n\nupdated 2026-05-09T21:53Z \u2014 comp=+49 threshold met; dist=71.2p (WATCH, arm when price returns within 30p).",
       "entry_criterion": "M15 retest of 1.17159 with bearish rejection wick >=1p. VALIDATED \u2014 naked LIMIT SELL when comp >=+40 bullish extension (no confirmation required).",
-      "regime_context": "EURUSD 1.178015, comp=+49 moderate bull. H4 CHoC bull 2026-04-27. 4h time-stop if entered.",
+      "regime_context": "EURUSD 1.17871, comp=+49 moderate bull. CT-fade threshold met. Price 71.2p above level \u2014 WATCH for pullback.",
       "sl": 1.17189,
       "tp": 1.17028,
       "rr_target": "4.4",
-      "current_price_ref": 1.178015,
-      "last_updated": "2026-05-08T18:10Z"
+      "current_price_ref": 1.17871,
+      "last_updated": "2026-05-09T21:53Z"
     },
     {
       "id": "usdjpy_day_fvg_sell_15733",
@@ -93,14 +93,14 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: price retests Day FVG bottom 157.33 (Day bear FVG: 157.33-159.52, unmitigated); M15 bar closes AT or BELOW 157.33 with bearish rejection wick >=5p from the high. Arm SELL LIMIT only when comp <= -40 (moderate bear).\n\nCONTEXT: USDJPY at 156.621, comp=-29 weak bear. Price 70.9p BELOW sell level. Hormuz military escalation intensifying JPY safe-haven bid (US attacks Iranian vessel 2026-05-08T13:43Z). USDJPY likely to fall further. Level 157.33 remains valid FVG demand-turned-supply. 3xH4ATR=125.8p; dist=70.9p \u2014 not auto-removed. Arm at comp <=-40.\n\nSL: 159.60  TP: 153.80  R:R target: 1.54\n\nmodified 2026-05-08T18:10Z \u2014 price update 156.621; Hormuz JPY bid reinforces bear thesis.",
+      "note": "ENTRY: price retests Day FVG bottom 157.33 (Day bear FVG: 157.33-159.52, unmitigated); M15 bar closes AT or BELOW 157.33 with bearish rejection wick >=5p from the high. Arm SELL LIMIT only when comp <= -40 (moderate bear).\n\nCONTEXT: USDJPY at 156.666, comp=-29 weak bear. Price 66.4p BELOW sell level 157.33. Chinese tanker attacked at Strait of Hormuz (Beijing confirmed, 2026-05-09T03:58Z) \u2014 JPY safe-haven bid intensifies. SELL thesis intact but comp=-29 weak (need <=-40 to arm). 3\u00d7H4ATR=120.5p; dist=66.4p \u2014 not auto-removed.\n\nSL: 159.60  TP: 153.80  R:R target: 1.54\n\nupdated 2026-05-09T21:53Z \u2014 Chinese tanker confirms JPY bid; comp=-29 weak WATCH; dist=66.4p.",
       "entry_criterion": "M15 retest of Day FVG bottom 157.33 with bearish wick >=5p. Arm SELL LIMIT at comp <=-40 moderate bear.",
-      "regime_context": "USDJPY 156.621, comp=-29 weak bear. Price below sell level by 70.9p. Hormuz safe-haven JPY bid active.",
+      "regime_context": "USDJPY 156.666, comp=-29 weak bear. Price 66.4p below sell level. Chinese tanker Hormuz attack reinforces JPY bid.",
       "sl": 159.6,
       "tp": 153.8,
       "rr_target": "1.54",
-      "current_price_ref": 156.621,
-      "last_updated": "2026-05-08T18:10Z"
+      "current_price_ref": 156.666,
+      "last_updated": "2026-05-09T21:53Z"
     },
     {
       "id": "usdcad_m15sweep_136540_sell_watch",
@@ -131,14 +131,14 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: price retests 0.77933 (H4 bear FVG bottom; FVG: 0.77933-0.77997, unmitigated); M15 bar closes AT or BELOW 0.77933 with bearish rejection wick >=2p. Arm SELL LIMIT when comp <=-40 moderate+ bear. Skip if 2+ USD-weakness positions open (correlation cap).\n\nCONTEXT: USDCHF at 0.77659, comp=-43 moderate bear. Level 0.77933 is 27.4p ABOVE current price \u2014 WITHIN 30p proximity threshold. Threshold qualifies for LIMIT arm BUT AUDUSD BUY + GBPUSD BUY = 2 USD-weakness positions = correlation cap FULL. Next available entry slot is after one USD-weakness position closes. SL above FVG top 0.77997 + buffer = 0.78047. R:R=3.8. Hormuz Hormuz CHF safe-haven bid reinforces bear bias.\n\nSL: 0.78047  TP: 0.775  R:R target: 3.8\n\nupdated 2026-05-08T18:10Z \u2014 price 0.77659 (dist=27.4p, within 30p prox); comp=-43 qualifies; blocked by 2-correlated cap.",
+      "note": "ENTRY: price retests 0.77933 (H4 bear FVG bottom; FVG: 0.77933-0.77997, unmitigated); M15 bar closes AT or BELOW 0.77933 with bearish rejection wick >=2p. Arm SELL LIMIT when comp <=-40 moderate+ bear. Skip if 2+ USD-weakness positions open (correlation cap).\n\nCONTEXT: USDCHF at 0.776405, comp=-50 moderate bear. Level 0.77933 is 29.25p ABOVE current price \u2014 WITHIN 30p proximity threshold. ARMED condition MET (comp=-50 \u2265 -40 \u2713, proximity 29.25p \u2264 30p \u2713, R:R=3.8 \u2713) BUT BLOCKED by corr cap (AUDUSD BUY + GBPUSD BUY open). Corr cap clears Sunday 21:00Z when time-exits execute. Chinese tanker Hormuz attack (May 9T03:58Z) reinforces CHF safe-haven bid. PRIMARY ENTRY CANDIDATE for Sunday open.\n\nSL: 0.78047  TP: 0.775  R:R target: 3.8\n\nupdated 2026-05-09T21:53Z \u2014 comp=-50 stronger bear; Chinese tanker CHF bid; ARMED pending corr-cap Sunday open.",
       "entry_criterion": "M15 retest of 0.77933 H4 bear FVG bottom with bearish rejection wick >=2p. Arm SELL LIMIT at comp <=-40. Skip if 2 USD-weakness positions open.",
-      "regime_context": "USDCHF 0.77659, comp=-43 moderate bear. H4 FVG 0.77933-0.77997 unmitigated, 27.4p away. Correlation cap blocks entry.",
+      "regime_context": "USDCHF 0.776405, comp=-50 moderate bear. H4 FVG 0.77933-0.77997 unmitigated, 29.25p away. ARMED but corr cap full until Sunday time-exits.",
       "sl": 0.78047,
       "tp": 0.775,
       "rr_target": 3.8,
-      "current_price_ref": 0.77659,
-      "last_updated": "2026-05-08T18:10Z"
+      "current_price_ref": 0.776405,
+      "last_updated": "2026-05-09T21:53Z"
     },
     {
       "id": "oil_sweep_9323_buy_retest",
@@ -150,14 +150,15 @@
       "direction": "buy",
       "active": true,
       "validated": true,
-      "note": "ENTRY: price retests 93.23 (swept extreme, validated 6-fire BUY pattern); M15 closes AT or ABOVE 93.23 with bullish rejection wick >=0.2 from low. Arm BUY LIMIT when comp >=+40. VALIDATED (CF: 6 fires, 83%/100% 1h/4h). 4h time-stop if entered.\n\nCONTEXT: US attacks Iranian vessel near Strait of Hormuz (2026-05-08T13:43Z); Iran seizes oil tanker (18:03Z). OIL supply-risk premium at maximum. OIL at 92.772, only 0.46 pts below level 93.23. comp=-12.5 (none) \u2014 TA bearish short-term; WATCH until comp improves to >=+40 before arming. VALIDATED pattern: once comp threshold met, arm naked LIMIT per Rule 3.\n\nSL: 92.50  TP: 95.50  R:R target: 3.1\n\nadded 2026-05-08T18:10Z \u2014 Hormuz military escalation triggers re-add; 6-fire validated CF pattern; comp=none (WATCH, arm at comp >=+40).",
+      "note": "ENTRY: price retests 93.23 (swept extreme, VALIDATED 7-fire BUY pattern); M15 closes AT or ABOVE 93.23 with bullish rejection wick >=0.2 from low. Arm BUY LIMIT when comp >=+40. VALIDATED (CF: 7 fires, 71%/100% 1h/4h). 4h time-stop if entered.\n\nCONTEXT: Beijing confirms Chinese tanker attacked at Strait of Hormuz (2026-05-09T03:58Z) \u2014 third vessel incident. US vessel (May 8T13:43Z) + Iran seizure (May 8T18:03Z) + Chinese tanker (May 9T03:58Z). OIL supply-risk premium max. OIL at 92.415 (0.82 below level 93.23). comp=-18 (none) \u2014 TA bearish short-term; WATCH until comp >=+40. VALIDATED: naked LIMIT when threshold met per Rule 3.\n\nSL: 92.50  TP: 95.50  R:R target: 3.1\n\nupdated 2026-05-09T21:53Z \u2014 Chinese tanker Hormuz confirmed; CF 7 fires 100% 4h; comp=-18 (WATCH, arm at +40).",
       "entry_criterion": "M15 retest of 93.23 with bullish wick >=0.2. Arm BUY LIMIT at comp >=+40. VALIDATED \u2014 naked LIMIT when threshold met.",
-      "regime_context": "OIL 92.772, comp=-12.5 none. Hormuz military escalation bullish for OIL. WATCH until comp >=+40.",
+      "regime_context": "OIL 92.415, comp=-18 none. Hormuz triple-escalation (US vessel+Iran seizure+Chinese tanker). WATCH until comp >=+40.",
       "sl": 92.5,
       "tp": 95.5,
       "rr_target": 3.1,
-      "current_price_ref": 92.772,
-      "last_updated": "2026-05-08T18:10Z"
+      "current_price_ref": 92.415,
+      "last_updated": "2026-05-09T21:53Z"
     }
-  ]
+  ],
+  "last_updated": "2026-05-09T21:53Z"
 }
