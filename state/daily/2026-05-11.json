@@ -1,0 +1,60 @@
+[
+  {
+    "tick_ts_utc": "2026-05-11T19:35Z",
+    "events_processed": 8,
+    "trades_opened": 0,
+    "trades_closed": 2,
+    "pending_limits": 2,
+    "balance_usd": 928.39,
+    "daily_pnl_usd": 0.0,
+    "positions_closed_today": [
+      {
+        "epic": "AUDUSD",
+        "dir": "BUY",
+        "entry": 0.72078,
+        "close": 0.72448,
+        "pnl": 7.4,
+        "reason": "time_exit"
+      },
+      {
+        "epic": "GBPUSD",
+        "dir": "BUY",
+        "entry": 1.36071,
+        "close": 1.36277,
+        "pnl": 5.36,
+        "reason": "time_exit"
+      }
+    ],
+    "active_limits": [
+      {
+        "epic": "AUDUSD",
+        "dir": "BUY",
+        "level": 0.72241,
+        "sl": 0.7215,
+        "tp": 0.7285,
+        "rr": 6.7
+      },
+      {
+        "epic": "USDCHF",
+        "dir": "SELL",
+        "level": 0.77933,
+        "sl": 0.78047,
+        "tp": 0.775,
+        "rr": 3.8
+      }
+    ],
+    "audit": {
+      "eurusd": "WATCH (comp=+49, CT-fade 1.17159, dist=61p>30p proximity)",
+      "gbpusd": "WATCH (comp=+37.5 weak, new H4 FVG alert added)",
+      "audusd": "ARMED (BUY LIMIT @0.72241, comp=+57.5 moderate)",
+      "usdjpy": "WATCH (comp=+1.5 none, 8p below level 157.33, threshold -40 not met)",
+      "usdcad": "WATCH (comp=+7.5 none, threshold -40 not met)",
+      "usdchf": "ARMED (SELL LIMIT @0.77933, comp=-42.5 moderate)",
+      "gold": "WATCH (comp=+18 none, gold_sweep_4721 re-added VALIDATED)",
+      "oil": "WATCH (comp=+13.5 none, price $95.70, level $93.23 pullback wait)"
+    },
+    "scalp_status": "GBPUSD=ACTIVE(bull,no_trades); EURUSD=DISABLED(engine_desync); AUDUSD=DISABLED(wr=11%); others=blocked",
+    "regime": "USD_WEAKNESS_HORMUZ_REESCALATION",
+    "notes": "OIL missed fire at $93.23 (correct skip, comp=-18 at time). Balance drop $949.67\u2192$928.39 = scalp engine activity."
+  }
+]

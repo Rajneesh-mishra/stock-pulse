@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-09T18:52:53.803826+00:00",
+  "generated_at": "2026-05-11T19:35:45.904428+00:00",
   "counts": {
     "trades": 45,
-    "events": 8142,
+    "events": 8151,
     "ticks": 59,
-    "regime_snapshots": 252,
+    "regime_snapshots": 253,
     "broker_positions": 0,
-    "counterfactuals": 176
+    "counterfactuals": 178
   },
   "trades_last_50": [
     {
@@ -958,6 +958,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-05-09T21:53Z",
+      "regime_name": "USD_WEAKNESS_HORMUZ_REESCALATION",
+      "note_text": "2026-05-09T21:53Z \u2014 WEEKEND TICK. 4 evts consumed. MARKETS CLOSED \u2014 weekend rollover. AUDUSD BUY: 49.3h OVERDUE time-exit (24h trend max); SL=0.7227 (+1.5R), UPL=+$7.40, bid=0.72448; execute CLOSE Sunday 21:00Z open. GBPUSD BUY: 32.7h OVERDUE time-exit; SL=1.36071 (BE), UPL=+$5.36, bid=1.36332; execute CLOSE Sunday 21:00Z open. HORMUZ ++ ESCALATION: Beijing confirms Chinese tanker attacked at Strait of Hormuz (May 9T03:58Z) \u2014 third distinct vessel incident. JPY + CHF safe-haven bids intensify. OIL supply-risk premium elevated. USDCHF comp=-50 mod bear, dist=29.25p (ARMED pending corr cap; primary Sunday entry). EURUSD comp=+49 CT-fade watch (71.2p from level). USDJPY comp=-29 weak bear (66.4p from level). OIL comp=-18 none; oil_sweep_9323 CF updated to 7 fires 100% 4h (WATCH arm >=+40). Binary=inactive. Balance $949.67.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-05-08T18:10Z",
       "regime_name": "USD_WEAKNESS_HORMUZ_REESCALATION",
       "note_text": "2026-05-08T18:10Z \u2014 2 evts (GBPUSD position_opened + Hormuz news_flash). GBPUSD BUY confirmed open: entry=1.36071, SL=1.36071 (BE), TP=1.37, UPL=+$5.25, age=5h, comp=+40 mod. AUDUSD BUY: SL=0.72270 (+1.5R lock), TP=0.728, UPL=+$7.58, age=21.5h \u2014 TIME EXIT at 20:37 UTC (2.45h). Hormuz escalation: US attacks Iranian vessel near Strait (13:43Z), Iran seizes oil tanker (18:03Z). OIL supply-risk premium peak. CHF/JPY safe-haven bids intensifying. USD bearish. No new entries: 2-correlated cap FULL (AUDUSD+GBPUSD both USD-weakness). USDCHF comp=-43 mod bear, level 27.4p away (within 30p prox) but blocked by corr cap. OIL watch alert added at 93.23 (validated CF 100% 4h, comp=-12.5 none). GBPUSD scalp bias updated to bull (comp=+40). Balance $950.13.",
@@ -1025,14 +1033,6 @@
       "ts_utc": "2026-05-07T12:55Z",
       "regime_name": "USD_BROAD_WEAKNESS_OIL_REVERSAL_HORMUZ_DEESCALATION",
       "note_text": "2026-05-07T12:55Z forex auto \u2014 20 evts consumed (14 stale, 1 oil_liqsweep, 5 bar_close). OIL crashed $125\u2192$88 (-30%) on Iran peace proposal + OPEC +188k bpd hike + UAE OPEC exit. USD broad weakness: BoJ intervened (USD/JPY lower), EUR/USD at 1.1776, USDCHF at 0.7774. 2 LIMIT orders live: EURUSD BUY@1.17569 (comp=+63 strong, R:R=5.5) + USDCHF SELL@0.77933 (comp=-65 strong, R:R=2.6). AUDUSD comp=+78.5 strong but correlated with EURUSD \u2014 watchlist at Day FVG 0.7232. USDJPY mod bear -49 with BoJ confirming \u2014 watchlist at Day FVG 156.529 (correlated, no 3rd USD-short). OIL liqsweep buy 88.633: |comp|=29<40 counter-trend threshold \u2014 watchlist only. GBPUSD mod bull +55 scalp ACTIVE. GOLD weak +29 at new highs 4748 \u2014 no setup. Prior losses: USDCAD sl_hit (May 5) + GOLD sl_hit (May 6). Balance $952.16.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-05-05T14:47Z",
-      "regime_name": "HORMUZ_WAR_IRAN_UAE_ACTIVE_TANKER_STRIKES_OIL_REVERSAL",
-      "note_text": "2026-05-05T14:47Z forex auto \u2014 1 actionable evt (+ 8 bar_close noise). AUDUSD level_cross: audusd_m15upsweep_71857_sell_watch fired (price=0.71872 vs level=0.71857, dist=1.5p). CT-fade sell: comp=+55 mod bull (|comp|=55\u226540 qualifies on magnitude) BUT wick=2.6p sub-noise vs M15 ATR=6.6p AND audusd_sweep_71379 CF=0% at 4h (3 fires) \u2192 WATCHLIST WATCH only, no LIMIT armed. 3 GTC limits: OIL SELL@103.449 (bid=99.956, 349p away, Hormuz active KEEP); GOLD SELL@4591 (bid=4582.71, 8.3pts from fill, validated CF KEEP); USDCAD SELL@1.36218 (bid=1.36064, 15.4p away, comp=-44 mod KEEP). 0 open positions. Attention: USDCAD ARMED (comp=-44 mod), GOLD ARMED (8.3pts from fill), AUDUSD WATCH (mod bull, buy@0.7143 44p away outside 30p threshold). Scalp: GBPUSD ACTIVE, EURUSD OFF (desync), AUDUSD OFF (WR 11%). Balance $963.26.",
       "binary_event_name": null,
       "binary_event_active": 0,
       "binary_event_deadline": null
@@ -1541,6 +1541,32 @@
     }
   ],
   "counterfactuals_last_50": [
+    {
+      "alert_id": "usdchf_fvg_sell_78304",
+      "instrument": "USDCHF",
+      "direction": "sell",
+      "trigger_price": 0.77938,
+      "fired_at": "2026-05-11T05:00:29.183357+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
+    {
+      "alert_id": "oil_sweep_9323_buy_retest",
+      "instrument": "OIL_CRUDE",
+      "direction": "buy",
+      "trigger_price": 95.339,
+      "fired_at": "2026-05-10T22:09:18.019603+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
     {
       "alert_id": "oil_sweep_9323_buy_retest",
       "instrument": "OIL_CRUDE",
@@ -2158,32 +2184,6 @@
       "direction": "sell",
       "trigger_price": 4617.18,
       "fired_at": "2026-04-30T08:56:51.725194+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
-    },
-    {
-      "alert_id": "audusd_liqsweep_71262_buy_watch",
-      "instrument": "AUDUSD",
-      "direction": "buy",
-      "trigger_price": 0.71211,
-      "fired_at": "2026-04-30T05:53:45.375535+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
-    },
-    {
-      "alert_id": "gbpusd_liqsweep_134736_buy_watch",
-      "instrument": "GBPUSD",
-      "direction": "buy",
-      "trigger_price": 1.346125,
-      "fired_at": "2026-04-30T04:52:50.318185+00:00",
       "hit_1h": null,
       "hit_4h": null,
       "hit_24h": null,

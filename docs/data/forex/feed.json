@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-09T21:58:57.255487Z",
+  "generated_at": "2026-05-11T19:39:06.022249Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -237,68 +237,62 @@
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
     },
     {
-      "tick_ts_utc": "2026-05-09T21:53Z",
-      "events_processed": 4,
-      "events": [
+      "tick_ts_utc": "2026-05-11T19:35Z",
+      "events_processed": 8,
+      "trades_opened": 0,
+      "trades_closed": 2,
+      "pending_limits": 2,
+      "balance_usd": 928.39,
+      "daily_pnl_usd": 0.0,
+      "positions_closed_today": [
         {
-          "id": "evt_1778264850880_level_cross",
-          "type": "level_cross",
-          "instrument": "OIL_CRUDE",
-          "decision": "SKIP \u2014 comp=-12.5 none at fire time (need +40); price 93.25 briefly, fell back. WATCH."
+          "epic": "AUDUSD",
+          "dir": "BUY",
+          "entry": 0.72078,
+          "close": 0.72448,
+          "pnl": 7.4,
+          "reason": "time_exit"
         },
         {
-          "id": "evt_1778272411769_news_flash",
-          "type": "news_flash",
-          "headline": "US court blow to Trump tariffs may delay India-US trade deal",
-          "decision": "LOW_RELEVANCE \u2014 USD weakness confirmation; no regime change."
-        },
-        {
-          "id": "evt_1778299130879_alert_audit_request",
-          "type": "alert_audit_request",
-          "instrument": "USDJPY",
-          "alert_id": "usdjpy_day_fvg_sell_15733",
-          "decision": "KEEP \u2014 Chinese tanker Hormuz attack reinforces JPY bid; comp=-29 weak, WATCH; dist=66.4p from sell level 157.33."
-        },
-        {
-          "id": "evt_1778299130881_alert_audit_request",
-          "type": "alert_audit_request",
-          "instrument": "OIL_CRUDE",
-          "alert_id": "oil_sweep_9323_buy_retest",
-          "decision": "KEEP \u2014 Chinese tanker Hormuz attack reinforces OIL buy; CF 7 fires 100% 4h (VALIDATED); comp=-18 none (WATCH arm >=+40)."
+          "epic": "GBPUSD",
+          "dir": "BUY",
+          "entry": 1.36071,
+          "close": 1.36277,
+          "pnl": 5.36,
+          "reason": "time_exit"
         }
       ],
-      "positions": {
-        "AUDUSD": {
-          "status": "OPEN_TIME_EXIT_OVERDUE",
-          "age_h": 49.3,
-          "upl_usd": 7.4,
-          "sl": 0.7227,
-          "note": "Markets closed. Close Sunday 21:00Z"
+      "active_limits": [
+        {
+          "epic": "AUDUSD",
+          "dir": "BUY",
+          "level": 0.72241,
+          "sl": 0.7215,
+          "tp": 0.7285,
+          "rr": 6.7
         },
-        "GBPUSD": {
-          "status": "OPEN_TIME_EXIT_OVERDUE",
-          "age_h": 32.7,
-          "upl_usd": 5.36,
-          "sl": 1.36071,
-          "note": "Markets closed. Close Sunday 21:00Z"
+        {
+          "epic": "USDCHF",
+          "dir": "SELL",
+          "level": 0.77933,
+          "sl": 0.78047,
+          "tp": 0.775,
+          "rr": 3.8
         }
+      ],
+      "audit": {
+        "eurusd": "WATCH (comp=+49, CT-fade 1.17159, dist=61p>30p proximity)",
+        "gbpusd": "WATCH (comp=+37.5 weak, new H4 FVG alert added)",
+        "audusd": "ARMED (BUY LIMIT @0.72241, comp=+57.5 moderate)",
+        "usdjpy": "WATCH (comp=+1.5 none, 8p below level 157.33, threshold -40 not met)",
+        "usdcad": "WATCH (comp=+7.5 none, threshold -40 not met)",
+        "usdchf": "ARMED (SELL LIMIT @0.77933, comp=-42.5 moderate)",
+        "gold": "WATCH (comp=+18 none, gold_sweep_4721 re-added VALIDATED)",
+        "oil": "WATCH (comp=+13.5 none, price $95.70, level $93.23 pullback wait)"
       },
-      "new_trades": 0,
-      "closed_trades": 0,
-      "balance": 949.67,
-      "daily_upl": 12.76,
-      "regime": "USD_WEAKNESS_HORMUZ_TRIPLE_ESCALATION_WEEKEND",
-      "attention_matrix": {
-        "EURUSD": "swing=WATCH scalp=OFF readiness=moderate comp=+49 dist=71.2p",
-        "GBPUSD": "swing=NONE(open) scalp=ACTIVE readiness=moderate comp=+40",
-        "AUDUSD": "swing=NONE(open) scalp=OFF readiness=strong comp=+60",
-        "USDJPY": "swing=WATCH scalp=OFF readiness=weak comp=-29 dist=66.4p",
-        "USDCAD": "swing=WATCH scalp=OFF readiness=none comp=+11.5",
-        "USDCHF": "swing=ARMED(blocked-corr) scalp=OFF readiness=moderate comp=-50 dist=29.25p",
-        "GOLD": "swing=NONE scalp=N/A readiness=none comp=+15.5",
-        "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=none comp=-18"
-      },
-      "scalp_audit": "EURUSD=OFF(engine-desync) GBPUSD=KEEP(bull-bias) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
+      "scalp_status": "GBPUSD=ACTIVE(bull,no_trades); EURUSD=DISABLED(engine_desync); AUDUSD=DISABLED(wr=11%); others=blocked",
+      "regime": "USD_WEAKNESS_HORMUZ_REESCALATION",
+      "notes": "OIL missed fire at $93.23 (correct skip, comp=-18 at time). Balance drop $949.67\u2192$928.39 = scalp engine activity."
     }
   ]
 }

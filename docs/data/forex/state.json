@@ -1,41 +1,10 @@
 {
   "regime": "USD_WEAKNESS_HORMUZ_REESCALATION",
-  "tick_ts_utc": "2026-05-09T21:53Z",
-  "state_ts_utc": "2026-05-09T21:53Z",
-  "regime_note": "2026-05-09T21:53Z \u2014 WEEKEND TICK. 4 evts consumed. MARKETS CLOSED \u2014 weekend rollover. AUDUSD BUY: 49.3h OVERDUE time-exit (24h trend max); SL=0.7227 (+1.5R), UPL=+$7.40, bid=0.72448; execute CLOSE Sunday 21:00Z open. GBPUSD BUY: 32.7h OVERDUE time-exit; SL=1.36071 (BE), UPL=+$5.36, bid=1.36332; execute CLOSE Sunday 21:00Z open. HORMUZ ++ ESCALATION: Beijing confirms Chinese tanker attacked at Strait of Hormuz (May 9T03:58Z) \u2014 third distinct vessel incident. JPY + CHF safe-haven bids intensify. OIL supply-risk premium elevated. USDCHF comp=-50 mod bear, dist=29.25p (ARMED pending corr cap; primary Sunday entry). EURUSD comp=+49 CT-fade watch (71.2p from level). USDJPY comp=-29 weak bear (66.4p from level). OIL comp=-18 none; oil_sweep_9323 CF updated to 7 fires 100% 4h (WATCH arm >=+40). Binary=inactive. Balance $949.67.",
-  "regime_note_prev": "2026-05-08T18:10Z \u2014 2 evts (GBPUSD position_opened + Hormuz news_flash). GBPUSD BUY confirmed open: entry=1.36071, SL=1.36071 (BE), TP=1.37, UPL=+$5.25, age=5h, comp=+40 mod. AUDUSD BUY: SL=0.72270 (+1.5R lock), TP=0.728, UPL=+$7.58, age=21.5h. Hormuz escalation: US attacks Iranian vessel near Strait (13:43Z), Iran seizes oil tanker (18:03Z). Balance $950.13.",
-  "open_positions": [
-    {
-      "dealId": "00000000-4f21-165f-044a-beb40055311e",
-      "epic": "AUDUSD",
-      "direction": "BUY",
-      "size": 2000.0,
-      "entry": 0.72078,
-      "sl": 0.7227,
-      "tp": 0.728,
-      "opened_at": "2026-05-07T20:37:51Z",
-      "thesis_type": "trend",
-      "alert_id": "audusd_dayfvg_buy_72080",
-      "confluence_at_entry": "comp=+61.5 moderate bull (Day FVG demand, USD weakness)",
-      "rr": 5.5,
-      "sl_note": "TIME_EXIT OVERDUE (49.3h > 24h trend max). Markets closed (weekend). Execute CLOSE at Sun 2026-05-10T21:00Z open. SL=0.7227 (+1.5R protected)."
-    },
-    {
-      "dealId": "00000000-4f22-cdcf-044a-beb40055311e",
-      "epic": "GBPUSD",
-      "direction": "BUY",
-      "size": 2600.0,
-      "entry": 1.36071,
-      "sl": 1.36071,
-      "tp": 1.37,
-      "opened_at": "2026-05-08T13:08:37Z",
-      "thesis_type": "trend",
-      "alert_id": "gbpusd_h4fvg_buy_136071",
-      "confluence_at_entry": "comp=+40 moderate bull (H4 FVG demand 1.35905-1.36017)",
-      "rr": 5.1,
-      "sl_note": "TIME_EXIT OVERDUE (32.7h > 24h trend max). Markets closed (weekend). Execute CLOSE at Sun 2026-05-10T21:00Z open. SL=1.36071 (BE protected)."
-    }
-  ],
+  "tick_ts_utc": "2026-05-11T19:35Z",
+  "state_ts_utc": "2026-05-11T19:35Z",
+  "regime_note": "2026-05-11T19:35Z \u2014 8 evts consumed. AUDUSD+GBPUSD TIME-EXITS executed Sun 2026-05-10T21:08Z: AUDUSD BUY @0.72078\u21920.72448 +$7.40; GBPUSD BUY @1.36071\u21921.36277 +$5.36. 2 LIMITS PENDING: AUDUSD BUY @0.72241 size=5000 SL=0.7215 TP=0.7285 (M15 OB, comp=+57.5 moderate, 24p from price); USDCHF SELL @0.77933 size=1500 SL=0.78047 TP=0.775 (H4 FVG, comp=-42.5 moderate, 11p from price). Hormuz escalation Reuters May 5: US/Iran trading strikes in Gulf \u2014 CHF/JPY safe-haven regime intact. OIL ran $93.23\u2192$95.70 (level fired Sun 22:09Z, comp=-18 at fire \u2192 correct skip; TP $95.50 hit \u2014 CF fire #8 tracked). USDJPY comp=+1.5 (none), 8p below SELL level 157.33 \u2014 insufficient bear confirmation. EURUSD comp=+49 moderate bull, CT-fade level 1.17159 (61p away, WATCH). gold_sweep_4721_sell_retest re-added to watchlist (9 fires, 100% 4h VALIDATED). Balance $928.39.",
+  "regime_note_prev": "2026-05-09T21:53Z \u2014 WEEKEND TICK. 4 evts consumed. MARKETS CLOSED \u2014 weekend rollover. AUDUSD BUY: 49.3h OVERDUE time-exit (24h trend max); SL=0.7227 (+1.5R), UPL=+$7.40, bid=0.72448; execute CLOSE Sunday 21:00Z open. GBPUSD BUY: 32.7h OVERDUE time-exit; SL=1.36071 (BE), UPL=+$5.36, bid=1.36332; execute CLOSE Sunday 21:00Z open. HORMUZ ++ ESCALATION: Beijing confirms Chinese tanker attacked at Strait of Hormuz (May 9T03:58Z) \u2014 third distinct vessel incident. JPY + CHF safe-haven bids intensify. OIL supply-risk premium elevated. USDCHF comp=-50 mod bear, dist=29.25p (ARMED pending corr cap; primary Sunday entry). EURUSD comp=+49 CT-fade watch (71.2p from level). USDJPY comp=-29 weak bear (66.4p from level). OIL comp=-18 none; oil_sweep_9323 CF updated to 7 fires 100% 4h (WATCH arm >=+40). Binary=inactive. Balance $949.67.",
+  "open_positions": [],
   "watchlist": [
     {
       "instrument": "AUDUSD",
@@ -87,6 +56,44 @@
     "hormuz_status": "MILITARY ENGAGEMENT. US forces attacked Iranian vessel near Strait of Hormuz (10 sailors wounded, 5 missing per Moneycontrol 2026-05-08T13:43Z). Iran retaliated by seizing US-sanctioned oil tanker (NYT 2026-05-08T16:11Z). OIL supply-risk premium at maximum. Direct military confrontation escalates beyond prior retaliation phase."
   },
   "trade_history": [
+    {
+      "trade_id": "audusd_dayfvg_buy_72080_20260510",
+      "instrument": "AUDUSD",
+      "direction": "BUY",
+      "entry": 0.72078,
+      "close": 0.72448,
+      "size": 2000.0,
+      "sl": 0.7227,
+      "tp": 0.728,
+      "opened_at": "2026-05-07T20:37:51Z",
+      "closed_at": "2026-05-10T21:08:17Z",
+      "hold_hours": 72.5,
+      "thesis_type": "trend",
+      "exit_reason": "time_exit (49.3h>24h trend max; overdue Sunday open close)",
+      "pnl_usd": 7.4,
+      "alert_id": "audusd_dayfvg_buy_72080",
+      "confluence_at_entry": "comp=+61.5 moderate bull (Day FVG demand, USD weakness)",
+      "result": "win"
+    },
+    {
+      "trade_id": "gbpusd_h4fvg_buy_136071_20260510",
+      "instrument": "GBPUSD",
+      "direction": "BUY",
+      "entry": 1.36071,
+      "close": 1.36277,
+      "size": 2600.0,
+      "sl": 1.36071,
+      "tp": 1.37,
+      "opened_at": "2026-05-08T13:08:37Z",
+      "closed_at": "2026-05-10T21:08:17Z",
+      "hold_hours": 56.0,
+      "thesis_type": "trend",
+      "exit_reason": "time_exit (32.7h>24h trend max; overdue Sunday open close)",
+      "pnl_usd": 5.36,
+      "alert_id": "gbpusd_h4fvg_buy_136071",
+      "confluence_at_entry": "comp=+40 moderate bull (H4 FVG demand 1.35905-1.36017)",
+      "result": "win"
+    },
     {
       "instrument": "GOLD",
       "direction": "BUY",
@@ -820,11 +827,11 @@
   "consecutive_losses": 3,
   "daily_pnl": -0.58,
   "weekly_pnl": 0,
-  "total_pnl": 2.04,
-  "total_trades": 5,
-  "wins": 1,
+  "total_pnl": 14.8,
+  "total_trades": 7,
+  "wins": 3,
   "losses": 0,
-  "broker_balance": 949.67,
+  "broker_balance": 928.39,
   "effective_capital_usd": 987.93,
   "capital_base_note": "Demo account reset to $1k on 2026-04-20 (topUp -$8849.07). Broker balance and effective capital are now aligned.",
   "loop_config": {
@@ -1416,7 +1423,7 @@
     "active": false,
     "note": "No active binary. Iran-US military confrontation ongoing (Hormuz). Now Chinese tanker attack confirmed (Beijing, May 9T03:58Z). Escalation persistent but no fixed deadline. Monitor Iran-US formal talks. CHF/JPY safe-haven bids active."
   },
-  "balance": 949.67,
+  "balance": 928.39,
   "level_alerts": [
     {
       "alert_id": "usdchf_dayfvg_sell_77933",
@@ -1542,60 +1549,60 @@
   ],
   "working_orders": [
     {
-      "dealId": "00000000-4f20-22ff-044a-beb40055311e",
-      "epic": "USDCHF",
-      "direction": "SELL",
-      "size": 2000.0,
-      "level": 0.77933,
-      "stopLevel": 0.781,
-      "profitLevel": 0.775,
+      "dealId": "00000000-4fa3-9abc-044a-beb40055311e",
+      "epic": "AUDUSD",
+      "direction": "BUY",
+      "size": 5000.0,
+      "level": 0.72241,
+      "stopLevel": 0.7215,
+      "profitLevel": 0.7285,
       "timeInForce": "GOOD_TILL_CANCELLED",
-      "createdDateUTC": "2026-05-07T12:27:55.956",
+      "createdDateUTC": "2026-05-11T19:28:34.693",
       "status": "ARMED",
-      "note": "Day bear FVG bottom 0.77933-0.78082; comp=-65 strong bear all TFs; BoJ/USD-weak regime"
+      "note": "M15 bull OB top 0.72241; comp=+57.5 moderate bull 4/4TF; half-size (moderate readiness); R:R=6.7"
     },
     {
-      "dealId": "00000000-4f20-2589-044a-beb40055311e",
-      "epic": "EURUSD",
-      "direction": "BUY",
-      "size": 6500.0,
-      "level": 1.17569,
-      "stopLevel": 1.1742,
-      "profitLevel": 1.184,
+      "dealId": "00000000-4fa3-9ad0-044a-beb40055311e",
+      "epic": "USDCHF",
+      "direction": "SELL",
+      "size": 1500.0,
+      "level": 0.77933,
+      "stopLevel": 0.78047,
+      "profitLevel": 0.775,
       "timeInForce": "GOOD_TILL_CANCELLED",
-      "createdDateUTC": "2026-05-07T12:38:03.486",
+      "createdDateUTC": "2026-05-11T19:28:39.239",
       "status": "ARMED",
-      "note": "H1 FVG bottom/M15 bull OB top 1.17569; comp=+63 strong bull all TFs; USD-weak regime"
+      "note": "H4 bear FVG bottom 0.77933; comp=-42.5 moderate bear 4/4TF; R:R=3.8; CHF safe-haven Hormuz"
     }
   ],
-  "daily_pnl_usd": -9.64,
+  "daily_pnl_usd": 0.0,
   "news_last_searched_utc": "2026-05-07T12:55Z",
   "pending_orders": [
     {
-      "deal_id": "00000000-4f20-22ff-044a-beb40055311e",
-      "epic": "USDCHF",
-      "direction": "SELL",
-      "size": 2000.0,
-      "level": 0.77933,
-      "stop_level": 0.781,
-      "profit_level": 0.775,
-      "placed_utc": "2026-05-07T12:27Z",
+      "deal_id": "00000000-4fa3-9abc-044a-beb40055311e",
+      "epic": "AUDUSD",
+      "direction": "BUY",
+      "size": 5000.0,
+      "level": 0.72241,
+      "stop_level": 0.7215,
+      "profit_level": 0.7285,
+      "placed_utc": "2026-05-11T19:28Z",
       "thesis_type": "trend",
-      "rr": 2.6,
-      "note": "Day bear FVG bottom; comp=-65 strong; BoJ+USD-weak confirms"
+      "rr": 6.7,
+      "note": "M15 OB pullback; comp=+57.5 mod bull; half-size"
     },
     {
-      "deal_id": "00000000-4f20-2589-044a-beb40055311e",
-      "epic": "EURUSD",
-      "direction": "BUY",
-      "size": 6500.0,
-      "level": 1.17569,
-      "stop_level": 1.1742,
-      "profit_level": 1.184,
-      "placed_utc": "2026-05-07T12:38Z",
+      "deal_id": "00000000-4fa3-9ad0-044a-beb40055311e",
+      "epic": "USDCHF",
+      "direction": "SELL",
+      "size": 1500.0,
+      "level": 0.77933,
+      "stop_level": 0.78047,
+      "profit_level": 0.775,
+      "placed_utc": "2026-05-11T19:28Z",
       "thesis_type": "trend",
-      "rr": 5.5,
-      "note": "H1 FVG bottom/M15 bull OB; comp=+63 strong; USD-weak regime confirmed"
+      "rr": 3.8,
+      "note": "H4 FVG retest; comp=-42.5 mod bear; CHF safe-haven bid"
     }
   ]
 }
