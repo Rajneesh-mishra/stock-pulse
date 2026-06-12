@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-12T16:19:31.674070+00:00",
+  "generated_at": "2026-06-12T16:34:36.159843+00:00",
   "counts": {
     "trades": 49,
-    "events": 8168,
+    "events": 8169,
     "ticks": 59,
-    "regime_snapshots": 257,
+    "regime_snapshots": 258,
     "broker_positions": 0,
     "counterfactuals": 187
   },
@@ -1042,6 +1042,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-06-12T16:20Z",
+      "regime_name": "USD_STRENGTH_POST_HORMUZ",
+      "note_text": "2026-06-12T16:20Z \u2014 0 evts (heartbeat). REGIME: USD_STRENGTH_POST_HORMUZ. Broker: 0 positions, 2 LIMITs intact. USDCAD BUY@1.39573 comp=+60 mod, dist=13.3p vs 3\u00d7H4ATR=71.1p \u2014 KEEP. OIL SELL@83.93 comp=-70 strong, dist=58.4p vs 3\u00d7H4ATR=611.7p \u2014 KEEP. Macro: Trump signals Iran-US peace deal 'as early as this weekend' (Jun 12-13) \u2014 OIL bear confirmed (Hormuz premium unwinding), USD safe-haven demand may soften slightly but CAD weakness (loonie weakest reserve currency) supports USDCAD BUY. GBPUSD OB SELL 1.34213: comp=-13.5 none (H1 BOS bull conflict), WATCH arm needs <=-40. GOLD SELL 4268.71: comp=-27.5 weak, dist=45.9p vs 3\u00d7H4ATR=148.2p, DAY FVG now mitigated but H1 BOS bear intact, WATCH. USDCHF +33 weak, USDJPY +14 none, EURUSD -10 none, AUDUSD -17.5 none \u2014 no setups. News queries rolled +2d to include Jun 13-14 weekend. Scalp: GBPUSD active/neutral; EURUSD disabled (desync); AUDUSD disabled (wr=11%/19T). Balance $921.75.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-06-12T15:37Z",
       "regime_name": "USD_STRENGTH_POST_HORMUZ",
       "note_text": "2026-06-12T15:37Z \u2014 1 evt consumed (boj_intervention news_flash, stale May 5 BT article, no action). REGIME: USD_STRENGTH stable. Broker: 0 positions, 2 LIMITs active (USDCAD BUY@1.39573 comp=+60 mod; OIL SELL@83.93 comp=-70 strong). USDCHF_h4ob_buy_7795 AUTO-REMOVED: dist=166.7p > 3\u00d7H4ATR=31.5p, comp=+33 bullish trending away, no approach catalyst. USDCHF WATCH \u2014 no entry until fresh level and comp>=40. GBPUSD OB SELL 1.34213: comp=-3.5 none, WATCH arm needs <=-40. GOLD FVG SELL 4268.71: comp=-27.5 weak, dist=49.3p < 74.25p (3\u00d7H4ATR), KEEP WATCH. USDJPY: 160.194, comp=+14 none, no alert. News queries rolled to Jun 10-12 (all 6 had stale May 5-8 windows). Scalp: GBPUSD active neutral, EURUSD/AUDUSD off. Balance $921.75.",
@@ -1109,14 +1117,6 @@
       "ts_utc": "2026-05-08T13:46Z",
       "regime_name": "USD_WEAKNESS_HORMUZ_ESCALATION_CONT",
       "note_text": "2026-05-08T13:46Z \u2014 1 evt: GBPUSD scalp SELL@1.35792 SL hit (last_bid=1.35837, UPL=-$0.58, held 9.5min, engine: session_open_break). AUDUSD BUY@0.72078 SL=BE(0.7208) TP=0.728 bid=0.72253 UPL=+$3.28 age=17h (trend cap 24h \u2014 not at +2R=0.72334, no trail action). No new trades: USDCHF comp=-40 mod bear but level 0.78304 is 41p away (outside 30p proximity); GBPUSD comp=+26 weak (need \u226540); EURUSD comp=+28 weak; USDCAD comp=-18.5 none; GOLD/OIL comp none. Watchlist CLEAN: removed 3 stale entries (eurusd_h1fvg_buy_117569 level above current price, usdchf_dayfvg_sell_77933 position already closed 2026-05-07, gbpusd_h4fvg_buy_13608 level 1.36084 above current 1.3586). OIL at 92.675 -2.56% (within 3\u00d7H4ATR of buy level 88.633 \u2014 KEEP). USDCAD 1.36575 near sweep level 1.3654 (comp=-18.5 none, WATCH). Scalp: GBPUSD=ACTIVE(1L today, no halt); EURUSD=OFF(desync); AUDUSD=OFF(wr=11%). binary=none. Balance $940.49.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-05-08T08:02Z",
-      "regime_name": "USD_WEAKNESS_HORMUZ_ESCALATION_CONT",
-      "note_text": "2026-05-08T08:02Z \u2014 2 evts: USDCAD level_cross usdcad_m15sweep_136540_sell_watch (price=1.36547 vs level=1.3654, comp=-18.5 none \u2014 ARM requires -40, SKIP); GBPUSD position_opened (scalp engine SELL@1.35792 SL=1.35858 TP=1.35675). AUDUSD BUY open @0.72078 SL=BE(0.7208) TP=0.728 UPL=+$3.18 age=11.4h (trend cap 24h). GBPUSD SELL scalp open @1.35792 SL=1.35858 TP=1.35675 UPL=-$0.23 age=1m (max hold 1h). binary=none. Watchlist: REMOVE oil_rebound_9931 (OIL fell -2.5% on Hormuz missile strike, comp=-28, thesis invalidated); MODIFY usdcad_dayfvg (stale GTC ref removed). USDCHF comp=-40 moderate bear \u2014 FVG sell at 0.78304 armed when price approaches. Balance $940.85.",
       "binary_event_name": null,
       "binary_event_active": 0,
       "binary_event_deadline": null
