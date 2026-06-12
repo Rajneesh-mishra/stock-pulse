@@ -343,5 +343,66 @@
       "GOLD": "swing=WATCH scalp=N/A readiness=weak \u2014 comp=-27.5, 47p below alert 4268, arm gate comp<=-40 not met",
       "OIL_CRUDE": "swing=ARMED scalp=N/A readiness=strong \u2014 SELL POSITION LIVE@83.935 SL=85.10 TP=79.50"
     }
+  },
+  {
+    "tick_ts_utc": "2026-06-12T18:06Z",
+    "events_consumed": 1,
+    "events": [
+      "evt_1781287369385_level_cross \u2014 level_cross OIL_CRUDE post-fill noise (cross_up @83.961), price recovered to 83.86, no action"
+    ],
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "new_limits": 0,
+    "cancelled_limits": 0,
+    "state_cleanup": "Removed 2 stale May-11 pending_orders (AUDUSD BUY, USDCHF SELL \u2014 not in broker)",
+    "open_positions": [
+      {
+        "instrument": "OIL_CRUDE",
+        "direction": "SELL",
+        "entry": 83.935,
+        "sl": 85.1,
+        "tp": 79.5,
+        "size": 12.0,
+        "upl": 0.52,
+        "age_min": 10,
+        "thesis": "trend 24h max \u2014 OIL bear comp=-70 strong, Iran peace deal WTI $83-87"
+      }
+    ],
+    "active_limits": [
+      {
+        "instrument": "USDCAD",
+        "direction": "BUY",
+        "level": 1.39573,
+        "dist_pips": 21.3,
+        "comp": 67.5,
+        "readiness": "moderate"
+      }
+    ],
+    "confluence": {
+      "OIL_CRUDE": "comp=-70 strong bear all-4TF",
+      "USDCAD": "comp=+67.5 moderate bull 3/4TF",
+      "USDCHF": "comp=+40.5 moderate bull all-4TF (no level to arm)",
+      "GOLD": "comp=-27.5 weak bear (arm gate <=-40 not met)",
+      "GBPUSD": "comp=-3.5 none",
+      "EURUSD": "comp=-7.5 none",
+      "AUDUSD": "comp=-17.5 none",
+      "USDJPY": "comp=+14 none"
+    },
+    "regime": "USD_STRENGTH_IRAN_PEACE_PIVOT",
+    "regime_note": "OIL bear thesis reinforced: Iran deal 60d ceasefire extension tabled, Hormuz reopening framework live, WTI $83-87 8wk low. USDCAD LIMIT intact. Balance $922.27.",
+    "balance_usd": 922.27,
+    "news": "Iran-US: 60d ceasefire extension + Hormuz reopening framework tabled (Iran denies sign-off). WTI -4% to $83-87. OIL SELL thesis strongly reinforced.",
+    "watchlist_audit": "all 4 alerts KEEP (oil deactivated/position live; usdcad LIMIT armed 21p; gbpusd WATCH comp gate; gold WATCH comp gate)",
+    "scalp_audit": "GBPUSD=KEEP(enabled neutral 0 trades) EURUSD=KEEP(disabled desync) AUDUSD=KEEP(disabled wr=11%) USDJPY/CHF/CAD=pip-conv GOLD/OIL=spread",
+    "attention_matrix": {
+      "EURUSD": "swing=NONE scalp=OFF readiness=none \u2014 comp=-7.5 no setup",
+      "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=none \u2014 comp=-3.5 H4OB arm gate comp<=-40 not met",
+      "AUDUSD": "swing=NONE scalp=OFF readiness=none \u2014 comp=-17.5 no setup scalp wr=11%",
+      "USDJPY": "swing=NONE scalp=OFF readiness=none \u2014 comp=+14 no setup pip-conv-pending",
+      "USDCAD": "swing=ARMED scalp=OFF readiness=moderate \u2014 LIMIT@1.39573 armed 21p away",
+      "USDCHF": "swing=WATCH scalp=OFF readiness=moderate \u2014 comp=+40.5 no clean level",
+      "GOLD": "swing=WATCH scalp=N/A readiness=weak \u2014 comp=-27.5 arm gate comp<=-40 not met",
+      "OIL_CRUDE": "swing=ARMED scalp=N/A readiness=strong \u2014 SELL position live comp=-70"
+    }
   }
 ]

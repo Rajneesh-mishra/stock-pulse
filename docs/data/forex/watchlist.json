@@ -12,28 +12,58 @@
   ],
   "structure_watch": {
     "EURUSD": {
-      "timeframes": ["HOUR", "MINUTE_15", "HOUR_4"]
+      "timeframes": [
+        "HOUR",
+        "MINUTE_15",
+        "HOUR_4"
+      ]
     },
     "GBPUSD": {
-      "timeframes": ["HOUR", "MINUTE_15", "HOUR_4"]
+      "timeframes": [
+        "HOUR",
+        "MINUTE_15",
+        "HOUR_4"
+      ]
     },
     "AUDUSD": {
-      "timeframes": ["HOUR", "MINUTE_15", "DAY"]
+      "timeframes": [
+        "HOUR",
+        "MINUTE_15",
+        "DAY"
+      ]
     },
     "USDCAD": {
-      "timeframes": ["HOUR", "MINUTE_15", "HOUR_4", "DAY"]
+      "timeframes": [
+        "HOUR",
+        "MINUTE_15",
+        "HOUR_4",
+        "DAY"
+      ]
     },
     "USDCHF": {
-      "timeframes": ["HOUR", "MINUTE_15"]
+      "timeframes": [
+        "HOUR",
+        "MINUTE_15"
+      ]
     },
     "USDJPY": {
-      "timeframes": ["HOUR", "MINUTE_15"]
+      "timeframes": [
+        "HOUR",
+        "MINUTE_15"
+      ]
     },
     "GOLD": {
-      "timeframes": ["HOUR", "MINUTE_15"]
+      "timeframes": [
+        "HOUR",
+        "MINUTE_15"
+      ]
     },
     "OIL_CRUDE": {
-      "timeframes": ["HOUR", "MINUTE_15", "HOUR_4"]
+      "timeframes": [
+        "HOUR",
+        "MINUTE_15",
+        "HOUR_4"
+      ]
     }
   },
   "level_alerts": [
@@ -47,13 +77,13 @@
       "direction": "sell",
       "active": false,
       "validated": false,
-      "note": "ENTRY: FILLED 2026-06-12T17:56Z @ 83.935. Position open dealId=00000000-5364-144c-044a-beb40055311e. LIMIT filled from M15 FVG bottom 83.93. Alert deactivated — position live.\n\nCONTEXT: OIL_CRUDE at 83.856, comp=-70 strong bear all-4TF. Iran 14-pt deal (Hormuz reopening 30d) strongly reinforces bear. TP=79.50 RR=3.8. thesis=trend 24h max hold.\n\nSL: 85.10  TP: 79.50  R:R target: 3.8\n\nupdated 2026-06-12T18:00Z — LIMIT filled, position live, alert deactivated.",
+      "note": "ENTRY: FILLED 2026-06-12T17:56Z @ 83.935. Position open dealId=00000000-5364-144c-044a-beb40055311e. LIMIT filled from M15 FVG bottom 83.93. Alert deactivated \u2014 position live.\n\nCONTEXT: OIL_CRUDE at 83.856, comp=-70 strong bear all-4TF. Iran 14-pt deal (Hormuz reopening 30d) strongly reinforces bear. TP=79.50 RR=3.8. thesis=trend 24h max hold.\n\nSL: 85.10  TP: 79.50  R:R target: 3.8\n\nupdated 2026-06-12T18:00Z \u2014 LIMIT filled, position live, alert deactivated.",
       "entry_criterion": "FILLED at 83.935 from LIMIT. Monitoring open position.",
       "regime_context": "OIL 83.856, comp=-70 strong bear all-4TF. Iran peace deal REINFORCES bear thesis. Position live.",
-      "sl": 85.10,
-      "tp": 79.50,
+      "sl": 85.1,
+      "tp": 79.5,
       "rr_target": "3.8",
-      "current_price_ref": 83.856,
+      "current_price_ref": 83.853,
       "last_updated": "2026-06-12T18:00Z"
     },
     {
@@ -66,13 +96,13 @@
       "direction": "buy",
       "active": true,
       "validated": false,
-      "note": "ENTRY: price retests 1.39573 (DAY bull FVG bottom; FVG: 1.39573-1.3965, unmitigated bars_ago=1); LIMIT BUY ARMED at 1.39573.\n\nCONTEXT: USDCAD at 1.39671, comp=+60 moderate bull (DAY=0.7, H4=0.9, H1=0.45 — 3/4 TFs bull). DAY choch bull 2026-03-31. H4 BOS bull 2026-05-28 at 1.38701. USD strength regime. Price 9.8p above level. LIMIT armed dealId=00000000-5325-c9c4-044a-beb40055311e.\n\nSL: 1.3894  TP: 1.415  R:R target: 3.0\n\nadded 2026-06-12T15:14Z — DAY FVG bottom, comp=+60 moderate, LIMIT already armed.",
+      "note": "ENTRY: price retests 1.39573 (DAY bull FVG bottom; FVG: 1.39573-1.3965, unmitigated bars_ago=1); LIMIT BUY ARMED at 1.39573.\n\nCONTEXT: USDCAD at 1.39671, comp=+60 moderate bull (DAY=0.7, H4=0.9, H1=0.45 \u2014 3/4 TFs bull). DAY choch bull 2026-03-31. H4 BOS bull 2026-05-28 at 1.38701. USD strength regime. Price 9.8p above level. LIMIT armed dealId=00000000-5325-c9c4-044a-beb40055311e.\n\nSL: 1.3894  TP: 1.415  R:R target: 3.0\n\nadded 2026-06-12T15:14Z \u2014 DAY FVG bottom, comp=+60 moderate, LIMIT already armed.",
       "entry_criterion": "M15 retest of DAY FVG bottom 1.39573 with bullish wick. LIMIT ARMED at 1.39573.",
       "regime_context": "USDCAD 1.39671, comp=+60 moderate bull. USD strength regime. DAY FVG 1.39573-1.3965 unmitigated.",
       "sl": 1.3894,
       "tp": 1.415,
       "rr_target": "3.0",
-      "current_price_ref": 1.39776,
+      "current_price_ref": 1.39786,
       "last_updated": "2026-06-12T18:00Z"
     },
     {
@@ -85,13 +115,13 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: M15 bearish rejection wick >=1p from inside H4 bear OB zone (1.34213-1.34855). ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GBPUSD at 1.34204, comp=-3.5 none. H4 BOS bear 1.33676 (2026-05-28) — H4 bearish. H1 BOS bull 1.34234 (2026-06-10) — H1 flipped bullish; creates conflict with sell thesis. Price now inside H4 OB zone. Wait for H1 bear flip (comp<=-40) before arming. R:R: 2.98:1 when armed.\n\nSL: 1.34955  TP: 1.32000  R:R target: 2.98\n\nupdated 2026-06-12T17:08Z — price entered OB zone; H1 bull BOS noted; arm gate unchanged comp<=-40.",
+      "note": "ENTRY: M15 bearish rejection wick >=1p from inside H4 bear OB zone (1.34213-1.34855). ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GBPUSD at 1.34204, comp=-3.5 none. H4 BOS bear 1.33676 (2026-05-28) \u2014 H4 bearish. H1 BOS bull 1.34234 (2026-06-10) \u2014 H1 flipped bullish; creates conflict with sell thesis. Price now inside H4 OB zone. Wait for H1 bear flip (comp<=-40) before arming. R:R: 2.98:1 when armed.\n\nSL: 1.34955  TP: 1.32000  R:R target: 2.98\n\nupdated 2026-06-12T17:08Z \u2014 price entered OB zone; H1 bull BOS noted; arm gate unchanged comp<=-40.",
       "entry_criterion": "M15 bearish rejection wick >=1p from inside H4 bear OB zone. ARM SELL LIMIT when comp <=-40.",
-      "regime_context": "GBPUSD 1.34204, comp=-3.5 none. H4 BOS bear confirmed. H1 BOS bull at 1.34234 conflicts — wait for comp<=-40.",
+      "regime_context": "GBPUSD 1.34204, comp=-3.5 none. H4 BOS bear confirmed. H1 BOS bull at 1.34234 conflicts \u2014 wait for comp<=-40.",
       "sl": 1.34955,
-      "tp": 1.32000,
+      "tp": 1.32,
       "rr_target": "2.98",
-      "current_price_ref": 1.34179,
+      "current_price_ref": 1.341635,
       "last_updated": "2026-06-12T18:00Z"
     },
     {
@@ -104,15 +134,15 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: price retests 4268.71 (H1 BOS bear level 2026-06-08; old DAY FVG zone 4228-4268 now cleared); M15 bearish rejection wick >=5p. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GOLD at 4211.41, comp=-27.5 weak bear. H1 BOS bear 4268.71 (2026-06-08). H4 bear choch 4366.64 (2026-05-28). Price 57.3p below retest level. GOLD crashed 4724 (May) to 4211 (Jun) = -513p. Readiness=weak — need comp <=-40 to arm.\n\nSL: 4330.00  TP: 4100.00  R:R target: 2.75\n\nadded 2026-06-12T15:14Z — H1 BOS bear retest, WATCH arm when comp <=-40.",
+      "note": "ENTRY: price retests 4268.71 (H1 BOS bear level 2026-06-08; old DAY FVG zone 4228-4268 now cleared); M15 bearish rejection wick >=5p. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GOLD at 4211.41, comp=-27.5 weak bear. H1 BOS bear 4268.71 (2026-06-08). H4 bear choch 4366.64 (2026-05-28). Price 57.3p below retest level. GOLD crashed 4724 (May) to 4211 (Jun) = -513p. Readiness=weak \u2014 need comp <=-40 to arm.\n\nSL: 4330.00  TP: 4100.00  R:R target: 2.75\n\nadded 2026-06-12T15:14Z \u2014 H1 BOS bear retest, WATCH arm when comp <=-40.",
       "entry_criterion": "M15 retest of 4268.71 H1 BOS bear level with bearish wick >=5p. ARM when comp <=-40.",
       "regime_context": "GOLD 4211.41, comp=-27.5 weak bear. H1 BOS bear 4268.71. Price 57p below. WATCH.",
-      "sl": 4330.00,
-      "tp": 4100.00,
+      "sl": 4330.0,
+      "tp": 4100.0,
       "rr_target": "2.75",
-      "current_price_ref": 4221.36,
+      "current_price_ref": 4221.3,
       "last_updated": "2026-06-12T18:00Z"
     }
   ],
-  "last_updated": "2026-06-12T18:00Z"
+  "last_updated": "2026-06-12T18:06Z"
 }

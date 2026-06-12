@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T18:01:49.229996+00:00",
+  "generated_at": "2026-06-12T18:06:59.382943+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -1572,6 +1572,32 @@
           "favorable": 1,
           "avg_pips": 10.1,
           "hit_rate": 1.0
+        },
+        "4h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "24h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        }
+      }
+    },
+    {
+      "alert_id": "oil_crude_fvg_sell_8393",
+      "instrument": "OIL_CRUDE",
+      "direction": "sell",
+      "fires": 1,
+      "by_horizon": {
+        "1h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
         },
         "4h": {
           "filled": 0,
