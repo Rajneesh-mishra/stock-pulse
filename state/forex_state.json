@@ -1,48 +1,11 @@
 {
-  "regime": "USD_WEAKNESS_HORMUZ_REESCALATION",
-  "tick_ts_utc": "2026-05-11T19:35Z",
-  "state_ts_utc": "2026-05-11T19:35Z",
-  "regime_note": "2026-05-11T19:35Z \u2014 8 evts consumed. AUDUSD+GBPUSD TIME-EXITS executed Sun 2026-05-10T21:08Z: AUDUSD BUY @0.72078\u21920.72448 +$7.40; GBPUSD BUY @1.36071\u21921.36277 +$5.36. 2 LIMITS PENDING: AUDUSD BUY @0.72241 size=5000 SL=0.7215 TP=0.7285 (M15 OB, comp=+57.5 moderate, 24p from price); USDCHF SELL @0.77933 size=1500 SL=0.78047 TP=0.775 (H4 FVG, comp=-42.5 moderate, 11p from price). Hormuz escalation Reuters May 5: US/Iran trading strikes in Gulf \u2014 CHF/JPY safe-haven regime intact. OIL ran $93.23\u2192$95.70 (level fired Sun 22:09Z, comp=-18 at fire \u2192 correct skip; TP $95.50 hit \u2014 CF fire #8 tracked). USDJPY comp=+1.5 (none), 8p below SELL level 157.33 \u2014 insufficient bear confirmation. EURUSD comp=+49 moderate bull, CT-fade level 1.17159 (61p away, WATCH). gold_sweep_4721_sell_retest re-added to watchlist (9 fires, 100% 4h VALIDATED). Balance $928.39.",
-  "regime_note_prev": "2026-05-09T21:53Z \u2014 WEEKEND TICK. 4 evts consumed. MARKETS CLOSED \u2014 weekend rollover. AUDUSD BUY: 49.3h OVERDUE time-exit (24h trend max); SL=0.7227 (+1.5R), UPL=+$7.40, bid=0.72448; execute CLOSE Sunday 21:00Z open. GBPUSD BUY: 32.7h OVERDUE time-exit; SL=1.36071 (BE), UPL=+$5.36, bid=1.36332; execute CLOSE Sunday 21:00Z open. HORMUZ ++ ESCALATION: Beijing confirms Chinese tanker attacked at Strait of Hormuz (May 9T03:58Z) \u2014 third distinct vessel incident. JPY + CHF safe-haven bids intensify. OIL supply-risk premium elevated. USDCHF comp=-50 mod bear, dist=29.25p (ARMED pending corr cap; primary Sunday entry). EURUSD comp=+49 CT-fade watch (71.2p from level). USDJPY comp=-29 weak bear (66.4p from level). OIL comp=-18 none; oil_sweep_9323 CF updated to 7 fires 100% 4h (WATCH arm >=+40). Binary=inactive. Balance $949.67.",
+  "regime": "USD_STRENGTH_POST_HORMUZ",
+  "tick_ts_utc": "2026-06-12T15:32Z",
+  "state_ts_utc": "2026-06-12T15:32Z",
+  "regime_note": "2026-06-12T15:32Z \u2014 16 evts consumed (all stale May/early-June). REGIME: USD_STRENGTH stable. Broker: 0 positions, 2 LIMITs active (USDCAD BUY@1.39573 comp=+60 mod; OIL SELL@83.93 comp=-70 strong). GBPUSD level_cross H4 OB@1.34213: comp=-3.5 none, H1 BOS bull conflict \u2192 WATCH, arm needs comp<=-40. USDCHF flipped bullish (comp=+33 weak), H4 OB demand zone 0.7795-0.7828 added as WATCH (BUY arm when comp>=40 AND price within 30p). USDJPY comp=+14 none, old sell alert removed (CF 4h=0%). GOLD comp=-27.5 weak, fvg_sell_4268 KEEP (57p from level, not stale). News_flash June 10: stale May 5/8 articles, no regime change. Scalp: GBPUSD enabled neutral, EURUSD/AUDUSD off. Balance $921.75.",
+  "regime_note_prev": "2026-05-11T19:35Z \u2014 8 evts consumed. AUDUSD+GBPUSD TIME-EXITS executed Sun 2026-05-10T21:08Z: AUDUSD BUY @0.72078\u21920.72448 +$7.40; GBPUSD BUY @1.36071\u21921.36277 +$5.36. 2 LIMITS PENDING: AUDUSD BUY @0.72241 size=5000 SL=0.7215 TP=0.7285; USDCHF SELL @0.77933 size=1500 SL=0.78047 TP=0.775. Hormuz escalation intact. Balance $928.39.",
   "open_positions": [],
-  "watchlist": [
-    {
-      "instrument": "AUDUSD",
-      "direction": "BUY",
-      "level": 0.7232,
-      "sl": 0.7202,
-      "tp": 0.728,
-      "status": "WATCH_CORRELATED",
-      "alert_id": "audusd_dayfvg_buy_72320"
-    },
-    {
-      "instrument": "USDJPY",
-      "direction": "SELL",
-      "level": 156.529,
-      "sl": 157.15,
-      "tp": 155.3,
-      "status": "WATCH_CORRELATED",
-      "alert_id": "usdjpy_dayfvg_sell_15653"
-    },
-    {
-      "instrument": "OIL_CRUDE",
-      "direction": "BUY",
-      "level": 88.633,
-      "sl": 88.53,
-      "tp": 90.2,
-      "status": "WATCH_SUB_THRESHOLD",
-      "alert_id": "oil_liqsweep_88633_buy_watch"
-    },
-    {
-      "instrument": "USDCHF",
-      "direction": "SELL",
-      "level": 0.78304,
-      "sl": 0.785,
-      "tp": 0.776,
-      "status": "WATCH",
-      "alert_id": "usdchf_fvg_sell_78304"
-    }
-  ],
+  "watchlist": [],
   "market_context": {
     "date": "2026-05-08",
     "session": "NY SESSION",
@@ -56,6 +19,44 @@
     "hormuz_status": "MILITARY ENGAGEMENT. US forces attacked Iranian vessel near Strait of Hormuz (10 sailors wounded, 5 missing per Moneycontrol 2026-05-08T13:43Z). Iran retaliated by seizing US-sanctioned oil tanker (NYT 2026-05-08T16:11Z). OIL supply-risk premium at maximum. Direct military confrontation escalates beyond prior retaliation phase."
   },
   "trade_history": [
+    {
+      "trade_id": "audusd_h4ob_buy_72239_20260512",
+      "instrument": "AUDUSD",
+      "direction": "BUY",
+      "entry": 0.72239,
+      "close": 0.72182,
+      "size": 5000.0,
+      "sl": 0.7215,
+      "tp": 0.7285,
+      "opened_at": "2026-05-12T01:41:00Z",
+      "closed_at": "2026-05-12T06:43:57Z",
+      "hold_hours": 5.05,
+      "thesis_type": "trend",
+      "exit_reason": "SL_hit (AUDUSD broke below 0.7215)",
+      "pnl_usd": -2.85,
+      "alert_id": "audusd_dayfvg_buy_72241",
+      "confluence_at_entry": "comp=+57.5 moderate bull (LIMIT fill at 72241 from last tick)",
+      "result": "loss"
+    },
+    {
+      "trade_id": "usdchf_fvg_sell_77933_20260512",
+      "instrument": "USDCHF",
+      "direction": "SELL",
+      "entry": 0.77933,
+      "close": 0.77992,
+      "size": 1500.0,
+      "sl": 0.78047,
+      "tp": 0.775,
+      "opened_at": "2026-05-12T01:26:36Z",
+      "closed_at": "2026-05-12T07:13:43Z",
+      "hold_hours": 5.78,
+      "thesis_type": "trend",
+      "exit_reason": "closed (broker close, UPL=-$1.25 at close)",
+      "pnl_usd": -1.25,
+      "alert_id": "usdchf_fvg_sell_78304",
+      "confluence_at_entry": "comp=-42.5 moderate bear (H4 FVG, CHF safe-haven bid)",
+      "result": "loss"
+    },
     {
       "trade_id": "audusd_dayfvg_buy_72080_20260510",
       "instrument": "AUDUSD",
@@ -831,7 +832,7 @@
   "total_trades": 7,
   "wins": 3,
   "losses": 0,
-  "broker_balance": 928.39,
+  "broker_balance": 921.75,
   "effective_capital_usd": 987.93,
   "capital_base_note": "Demo account reset to $1k on 2026-04-20 (topUp -$8849.07). Broker balance and effective capital are now aligned.",
   "loop_config": {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T19:39:06.022249Z",
+  "generated_at": "2026-06-12T15:34:04.912754Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -237,62 +237,12 @@
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
     },
     {
-      "tick_ts_utc": "2026-05-11T19:35Z",
-      "events_processed": 8,
-      "trades_opened": 0,
-      "trades_closed": 2,
-      "pending_limits": 2,
-      "balance_usd": 928.39,
-      "daily_pnl_usd": 0.0,
-      "positions_closed_today": [
-        {
-          "epic": "AUDUSD",
-          "dir": "BUY",
-          "entry": 0.72078,
-          "close": 0.72448,
-          "pnl": 7.4,
-          "reason": "time_exit"
-        },
-        {
-          "epic": "GBPUSD",
-          "dir": "BUY",
-          "entry": 1.36071,
-          "close": 1.36277,
-          "pnl": 5.36,
-          "reason": "time_exit"
-        }
-      ],
-      "active_limits": [
-        {
-          "epic": "AUDUSD",
-          "dir": "BUY",
-          "level": 0.72241,
-          "sl": 0.7215,
-          "tp": 0.7285,
-          "rr": 6.7
-        },
-        {
-          "epic": "USDCHF",
-          "dir": "SELL",
-          "level": 0.77933,
-          "sl": 0.78047,
-          "tp": 0.775,
-          "rr": 3.8
-        }
-      ],
-      "audit": {
-        "eurusd": "WATCH (comp=+49, CT-fade 1.17159, dist=61p>30p proximity)",
-        "gbpusd": "WATCH (comp=+37.5 weak, new H4 FVG alert added)",
-        "audusd": "ARMED (BUY LIMIT @0.72241, comp=+57.5 moderate)",
-        "usdjpy": "WATCH (comp=+1.5 none, 8p below level 157.33, threshold -40 not met)",
-        "usdcad": "WATCH (comp=+7.5 none, threshold -40 not met)",
-        "usdchf": "ARMED (SELL LIMIT @0.77933, comp=-42.5 moderate)",
-        "gold": "WATCH (comp=+18 none, gold_sweep_4721 re-added VALIDATED)",
-        "oil": "WATCH (comp=+13.5 none, price $95.70, level $93.23 pullback wait)"
-      },
-      "scalp_status": "GBPUSD=ACTIVE(bull,no_trades); EURUSD=DISABLED(engine_desync); AUDUSD=DISABLED(wr=11%); others=blocked",
-      "regime": "USD_WEAKNESS_HORMUZ_REESCALATION",
-      "notes": "OIL missed fire at $93.23 (correct skip, comp=-18 at time). Balance drop $949.67\u2192$928.39 = scalp engine activity."
+      "ts_utc": "2026-06-12T15:32Z",
+      "events_in": 16,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 16,
+      "note": "15:32Z forex auto \u2014 16 evts (all stale May/Jun10 events). BROKER: 0 pos, 2 LIMITs: USDCAD BUY@1.39573 (comp=+60 mod, thesis intact), OIL SELL@83.93 (comp=-70 strong, thesis intact). GBPUSD level_cross H4OB@1.34213 \u2014 comp=-3.5 none, arm needs <=-40, WATCH. USDCHF ADD buy_watch H4OB@0.77954 (comp=+33 weak, arm when>=40). News: June10 events = stale May articles, no regime change. REMOVE: usdjpy_dayfvg_sell_15733 (CF 4h=0%, 4 fires). news_query us_iran_military REMOVED. Scalp: GBPUSD ACTIVE, EURUSD/AUDUSD OFF. Balance $921.75. attention_covered=8/8"
     }
   ]
 }

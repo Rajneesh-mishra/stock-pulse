@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T19:38:58.562370+00:00",
+  "generated_at": "2026-06-12T15:33:28.455535+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -228,9 +228,9 @@
           "hit_rate": 1.0
         },
         "24h": {
-          "filled": 5,
-          "favorable": 5,
-          "avg_pips": 138.6,
+          "filled": 6,
+          "favorable": 6,
+          "avg_pips": 123.0,
           "hit_rate": 1.0
         }
       }
@@ -239,25 +239,25 @@
       "alert_id": "gold_sweep_4721_sell_retest",
       "instrument": "GOLD",
       "direction": "sell",
-      "fires": 9,
+      "fires": 10,
       "by_horizon": {
         "1h": {
-          "filled": 9,
-          "favorable": 5,
-          "avg_pips": 16.0,
-          "hit_rate": 0.56
+          "filled": 10,
+          "favorable": 6,
+          "avg_pips": 23.9,
+          "hit_rate": 0.6
         },
         "4h": {
-          "filled": 9,
-          "favorable": 9,
-          "avg_pips": 147.9,
+          "filled": 10,
+          "favorable": 10,
+          "avg_pips": 144.1,
           "hit_rate": 1.0
         },
         "24h": {
-          "filled": 8,
-          "favorable": 6,
-          "avg_pips": 236.5,
-          "hit_rate": 0.75
+          "filled": 9,
+          "favorable": 7,
+          "avg_pips": 219.7,
+          "hit_rate": 0.78
         }
       }
     },
@@ -915,13 +915,13 @@
       "alert_id": "eurusd_upsweep_117159_sell_watch",
       "instrument": "EURUSD",
       "direction": "sell",
-      "fires": 13,
+      "fires": 14,
       "by_horizon": {
         "1h": {
-          "filled": 13,
-          "favorable": 9,
-          "avg_pips": 2.3,
-          "hit_rate": 0.69
+          "filled": 14,
+          "favorable": 10,
+          "avg_pips": 2.9,
+          "hit_rate": 0.71
         },
         "4h": {
           "filled": 13,
@@ -1357,25 +1357,25 @@
       "alert_id": "usdjpy_day_fvg_sell_15733",
       "instrument": "USDJPY",
       "direction": "sell",
-      "fires": 1,
+      "fires": 4,
       "by_horizon": {
         "1h": {
-          "filled": 1,
+          "filled": 4,
           "favorable": 0,
-          "avg_pips": -18.9,
+          "avg_pips": -12.6,
           "hit_rate": 0.0
         },
         "4h": {
-          "filled": 1,
+          "filled": 4,
           "favorable": 0,
-          "avg_pips": -19.9,
+          "avg_pips": -12.5,
           "hit_rate": 0.0
         },
         "24h": {
-          "filled": 1,
-          "favorable": 1,
-          "avg_pips": 156.5,
-          "hit_rate": 1.0
+          "filled": 4,
+          "favorable": 2,
+          "avg_pips": 36.7,
+          "hit_rate": 0.5
         }
       }
     },
@@ -1513,19 +1513,71 @@
       "alert_id": "usdchf_fvg_sell_78304",
       "instrument": "USDCHF",
       "direction": "sell",
+      "fires": 3,
+      "by_horizon": {
+        "1h": {
+          "filled": 3,
+          "favorable": 1,
+          "avg_pips": -2.1,
+          "hit_rate": 0.33
+        },
+        "4h": {
+          "filled": 3,
+          "favorable": 2,
+          "avg_pips": 3.6,
+          "hit_rate": 0.67
+        },
+        "24h": {
+          "filled": 3,
+          "favorable": 1,
+          "avg_pips": 12.7,
+          "hit_rate": 0.33
+        }
+      }
+    },
+    {
+      "alert_id": "gbpusd_h4fvg_buy_136146",
+      "instrument": "GBPUSD",
+      "direction": "buy",
       "fires": 1,
       "by_horizon": {
         "1h": {
           "filled": 1,
-          "favorable": 1,
-          "avg_pips": 0.8,
-          "hit_rate": 1.0
+          "favorable": 0,
+          "avg_pips": -4.7,
+          "hit_rate": 0.0
         },
         "4h": {
           "filled": 1,
-          "favorable": 1,
-          "avg_pips": 3.8,
-          "hit_rate": 1.0
+          "favorable": 0,
+          "avg_pips": -18.0,
+          "hit_rate": 0.0
+        },
+        "24h": {
+          "filled": 1,
+          "favorable": 0,
+          "avg_pips": -72.9,
+          "hit_rate": 0.0
+        }
+      }
+    },
+    {
+      "alert_id": "gbpusd_h4ob_sell_134213",
+      "instrument": "GBPUSD",
+      "direction": "sell",
+      "fires": 1,
+      "by_horizon": {
+        "1h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "4h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
         },
         "24h": {
           "filled": 0,

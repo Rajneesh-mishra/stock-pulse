@@ -12,191 +12,126 @@
   ],
   "structure_watch": {
     "EURUSD": {
-      "timeframes": [
-        "HOUR",
-        "MINUTE_15",
-        "HOUR_4"
-      ]
+      "timeframes": ["HOUR", "MINUTE_15", "HOUR_4"]
     },
     "GBPUSD": {
-      "timeframes": [
-        "HOUR",
-        "MINUTE_15",
-        "HOUR_4"
-      ]
+      "timeframes": ["HOUR", "MINUTE_15", "HOUR_4"]
     },
     "AUDUSD": {
-      "timeframes": [
-        "HOUR",
-        "MINUTE_15",
-        "DAY"
-      ]
+      "timeframes": ["HOUR", "MINUTE_15", "DAY"]
     },
     "USDCAD": {
-      "timeframes": [
-        "HOUR",
-        "MINUTE_15"
-      ]
+      "timeframes": ["HOUR", "MINUTE_15", "HOUR_4", "DAY"]
     },
     "USDCHF": {
-      "timeframes": [
-        "HOUR",
-        "MINUTE_15"
-      ]
+      "timeframes": ["HOUR", "MINUTE_15"]
     },
     "USDJPY": {
-      "timeframes": [
-        "HOUR",
-        "MINUTE_15"
-      ]
+      "timeframes": ["HOUR", "MINUTE_15"]
     },
     "GOLD": {
-      "timeframes": [
-        "HOUR",
-        "MINUTE_15"
-      ]
+      "timeframes": ["HOUR", "MINUTE_15"]
     },
     "OIL_CRUDE": {
-      "timeframes": [
-        "HOUR",
-        "MINUTE_15"
-      ]
+      "timeframes": ["HOUR", "MINUTE_15", "HOUR_4"]
     }
   },
   "level_alerts": [
     {
-      "id": "eurusd_upsweep_117159_sell_watch",
-      "alert_id": "eurusd_upsweep_117159_sell_watch",
-      "instrument": "EURUSD",
-      "level": 1.17159,
-      "emit_on": "cross_up",
-      "cooldown_sec": 1800,
-      "direction": "sell",
-      "active": true,
-      "validated": true,
-      "note": "ENTRY: M15 retest of 1.17159 with bearish rejection wick >=1p. VALIDATED \u2014 naked LIMIT SELL when comp >=+40 bullish extension (no confirmation required).\n\nCONTEXT: EURUSD at 1.17871, comp=+49 moderate bull. dist=71.2p above level (>30p proximity \u2014 not armed). CT-fade threshold met (comp=+49 >= +40) but price needs to pull back to 1.17159 before arm. VALIDATED: 10+ fires, 89% 4h per Rule 3. 4h time-stop if entered.\n\nSL: 1.17189  TP: 1.17028  R:R target: 4.4\n\nupdated 2026-05-09T21:53Z \u2014 comp=+49 threshold met; dist=71.2p (WATCH, arm when price returns within 30p).",
-      "entry_criterion": "M15 retest of 1.17159 with bearish rejection wick >=1p. VALIDATED \u2014 naked LIMIT SELL when comp >=+40 bullish extension (no confirmation required).",
-      "regime_context": "EURUSD 1.17871, comp=+49 moderate bull. CT-fade threshold met. Price 71.2p above level \u2014 WATCH for pullback.",
-      "sl": 1.17189,
-      "tp": 1.17028,
-      "rr_target": "4.4",
-      "current_price_ref": 1.17871,
-      "last_updated": "2026-05-09T21:53Z"
-    },
-    {
-      "id": "usdjpy_day_fvg_sell_15733",
-      "alert_id": "usdjpy_day_fvg_sell_15733",
-      "instrument": "USDJPY",
-      "level": 157.33,
-      "emit_on": "cross_up",
-      "cooldown_sec": 1800,
-      "direction": "sell",
-      "active": true,
-      "validated": false,
-      "note": "ENTRY: price retests Day FVG bottom 157.33 (Day bear FVG: 157.33-159.52, unmitigated); M15 bar closes AT or BELOW 157.33 with bearish rejection wick >=5p from the high. Arm SELL LIMIT only when comp <= -40 (moderate bear).\n\nCONTEXT: USDJPY at 156.666, comp=-29 weak bear. Price 66.4p BELOW sell level 157.33. Chinese tanker attacked at Strait of Hormuz (Beijing confirmed, 2026-05-09T03:58Z) \u2014 JPY safe-haven bid intensifies. SELL thesis intact but comp=-29 weak (need <=-40 to arm). 3\u00d7H4ATR=120.5p; dist=66.4p \u2014 not auto-removed.\n\nSL: 159.60  TP: 153.80  R:R target: 1.54\n\nupdated 2026-05-09T21:53Z \u2014 Chinese tanker confirms JPY bid; comp=-29 weak WATCH; dist=66.4p.",
-      "entry_criterion": "M15 retest of Day FVG bottom 157.33 with bearish wick >=5p. Arm SELL LIMIT at comp <=-40 moderate bear.",
-      "regime_context": "USDJPY 156.666, comp=-29 weak bear. Price 66.4p below sell level. Chinese tanker Hormuz attack reinforces JPY bid.",
-      "sl": 159.6,
-      "tp": 153.8,
-      "rr_target": "1.54",
-      "current_price_ref": 156.666,
-      "last_updated": "2026-05-09T21:53Z"
-    },
-    {
-      "id": "usdcad_m15sweep_136540_sell_watch",
-      "alert_id": "usdcad_m15sweep_136540_sell_watch",
-      "instrument": "USDCAD",
-      "level": 1.36606,
-      "emit_on": "cross_up",
-      "cooldown_sec": 1800,
-      "direction": "sell",
-      "active": true,
-      "validated": false,
-      "note": "ENTRY: M15 close BELOW 1.36579 retest of sweep zone (up-sweep 2026-05-08T12:15Z, wick 1.8p, close_inside 1.36579); SL above 1.36624; TP 1.36218. ARM only when comp <= -40.\n\nCONTEXT: USDCAD at 1.36835, comp=+5.5 none. M15 BOS bull vs H4 BOS bear conflict. Price 22.9p ABOVE sweep level (1.36835-1.36606). Fresh M15 up-sweep 12:26Z at 1.36606. USD weakness from Hormuz escalation could push USDCAD lower. Need comp <=-40 for SELL LIMIT arm. 3xH4ATR=64.2p; dist=22.9p \u2014 not auto-removed.\n\nSL: 1.36624  TP: 1.36218  R:R target: 8.0\n\nupdated 2026-05-08T18:10Z \u2014 price update 1.36835; comp still none, WATCH only.",
-      "entry_criterion": "M15 close BELOW 1.36579 retest of swept extreme. ARM when comp <=-40.",
-      "regime_context": "USDCAD 1.36835, comp=+5.5 none. M15 BOS bull vs H4 BOS bear. Sweep at 1.36606 fresh.",
-      "sl": 1.36624,
-      "tp": 1.36218,
-      "rr_target": "8.0",
-      "current_price_ref": 1.36835,
-      "last_updated": "2026-05-08T18:10Z"
-    },
-    {
-      "id": "usdchf_fvg_sell_78304",
-      "alert_id": "usdchf_fvg_sell_78304",
-      "instrument": "USDCHF",
-      "level": 0.77933,
-      "emit_on": "cross_up",
-      "cooldown_sec": 1800,
-      "direction": "sell",
-      "active": true,
-      "validated": false,
-      "note": "ENTRY: price retests 0.77933 (H4 bear FVG bottom; FVG: 0.77933-0.77997, unmitigated); M15 bar closes AT or BELOW 0.77933 with bearish rejection wick >=2p. Arm SELL LIMIT when comp <=-40 moderate+ bear. Skip if 2+ USD-weakness positions open (correlation cap).\n\nCONTEXT: USDCHF at 0.776405, comp=-50 moderate bear. Level 0.77933 is 29.25p ABOVE current price \u2014 WITHIN 30p proximity threshold. ARMED condition MET (comp=-50 \u2265 -40 \u2713, proximity 29.25p \u2264 30p \u2713, R:R=3.8 \u2713) BUT BLOCKED by corr cap (AUDUSD BUY + GBPUSD BUY open). Corr cap clears Sunday 21:00Z when time-exits execute. Chinese tanker Hormuz attack (May 9T03:58Z) reinforces CHF safe-haven bid. PRIMARY ENTRY CANDIDATE for Sunday open.\n\nSL: 0.78047  TP: 0.775  R:R target: 3.8\n\nupdated 2026-05-09T21:53Z \u2014 comp=-50 stronger bear; Chinese tanker CHF bid; ARMED pending corr-cap Sunday open.",
-      "entry_criterion": "M15 retest of 0.77933 H4 bear FVG bottom with bearish rejection wick >=2p. Arm SELL LIMIT at comp <=-40. Skip if 2 USD-weakness positions open.",
-      "regime_context": "USDCHF 0.776405, comp=-50 moderate bear. H4 FVG 0.77933-0.77997 unmitigated, 29.25p away. ARMED but corr cap full until Sunday time-exits.",
-      "sl": 0.78047,
-      "tp": 0.775,
-      "rr_target": 3.8,
-      "current_price_ref": 0.776405,
-      "last_updated": "2026-05-09T21:53Z"
-    },
-    {
-      "id": "oil_sweep_9323_buy_retest",
-      "alert_id": "oil_sweep_9323_buy_retest",
+      "id": "oil_crude_fvg_sell_8393",
+      "alert_id": "oil_crude_fvg_sell_8393",
       "instrument": "OIL_CRUDE",
-      "level": 93.23,
+      "level": 83.93,
       "emit_on": "cross_up",
-      "cooldown_sec": 1800,
-      "direction": "buy",
-      "active": true,
-      "validated": true,
-      "note": "ENTRY: price retests 93.23 (swept extreme, VALIDATED 8-fire BUY pattern); M15 closes AT or ABOVE 93.23 with bullish rejection wick >=0.2 from low. Arm BUY LIMIT when comp >=+40. VALIDATED (CF: 8 fires, 75%/100% 1h/4h). 4h time-stop if entered.\n\nCONTEXT: Hormuz escalation (US/Iran trading strikes, May 5-11). OIL at 95.70 \u2014 BLEW past old TP 95.50 after level fired Sun 2026-05-10T22:09Z (comp=-18 at fire, correct skip). TP reset to 97.50 (next resistance). Price 2.47 above level; 3xH4ATR=6.99 \u2014 not auto-removed. WATCH for comp >=+40 on pullback.\n\nSL: 92.50  TP: 97.50  R:R target: 5.6\n\nupdated 2026-05-11T19:35Z \u2014 price ran $93.23\u2192$95.70 (correct no-entry, comp=-18 at fire); TP reset to 97.50.",
-      "entry_criterion": "M15 retest of 93.23 with bullish wick >=0.2. Arm BUY LIMIT at comp >=+40. VALIDATED \u2014 naked LIMIT when threshold met.",
-      "regime_context": "OIL 95.70, comp=+13.5 none. Hormuz US/Iran strikes ongoing. Price above level 93.23 \u2014 WATCH pullback for comp >=+40 re-arm.",
-      "sl": 92.5,
-      "tp": 97.5,
-      "rr_target": 5.6,
-      "current_price_ref": 95.7,
-      "last_updated": "2026-05-11T19:35Z"
-    },
-    {
-      "id": "gold_sweep_4721_sell_retest",
-      "alert_id": "gold_sweep_4721_sell_retest",
-      "instrument": "GOLD",
-      "level": 4721.0,
-      "emit_on": "cross_down",
       "cooldown_sec": 1800,
       "direction": "sell",
       "active": true,
-      "validated": true,
-      "note": "ENTRY: price drops back to 4721 (swept extreme); M15 retest with bearish rejection wick. VALIDATED \u2014 naked SELL LIMIT when comp >=+40 bullish extension (no confirmation required per Rule 3).\n\nCONTEXT: GOLD 4724.7, comp=+18 none. gold_sweep_4721 is a VALIDATED counter-trend fade level (CF: 9 fires, 100% 4h). Price only 3.7p above level. Need comp >=+40 to arm. 4h time-stop on entry.\n\nSL: 4731.0  TP: 4690.0  R:R target: 3.1\n\nadded 2026-05-11T19:35Z \u2014 re-added from CF data (9 fires, 100% 4h validated). comp=+18 currently (WATCH, arm at +40).",
-      "entry_criterion": "M15 retest of 4721 with bearish wick. VALIDATED \u2014 naked LIMIT SELL when comp >=+40 bullish extension.",
-      "regime_context": "GOLD 4724.7, comp=+18 none. 3.7p above level. WATCH for comp >=+40 CT-fade arm.",
-      "sl": 4731.0,
-      "tp": 4690.0,
-      "rr_target": 3.1,
-      "current_price_ref": 4724.7,
-      "last_updated": "2026-05-11T19:35Z"
+      "validated": false,
+      "note": "ENTRY: price retests 83.93 (M15 bear FVG bottom; FVG: 83.933-85.011, unmitigated bars_ago=1); SELL LIMIT ARMED at 83.93.\n\nCONTEXT: OIL_CRUDE at 83.43, comp=-70 strong bear, all 4 TFs aligned. H4 BOS bear 85.721 (2026-05-29). H1 BOS bear 84.709 (2026-06-09). M15 BOS bear 84.053 (2026-06-11). Hormuz premium gone — OIL $95.70 May to $83.43 Jun. LIMIT armed dealId=00000000-5363-3e80-044a-beb40055311e.\n\nSL: 85.10  TP: 79.50  R:R target: 3.8\n\nadded 2026-06-12T15:14Z — strong bear all-4TF, M15 FVG supply armed as LIMIT.",
+      "entry_criterion": "M15 retest of 83.93 bear FVG bottom with bearish wick. LIMIT ARMED at 83.93.",
+      "regime_context": "OIL 83.43, comp=-70 strong bear all-4TF. M15/H1/H4 BOS bear confirmed. Hormuz premium dissipated.",
+      "sl": 85.10,
+      "tp": 79.50,
+      "rr_target": "3.8",
+      "current_price_ref": 83.43,
+      "last_updated": "2026-06-12T15:14Z"
     },
     {
-      "id": "gbpusd_h4fvg_buy_136146",
-      "alert_id": "gbpusd_h4fvg_buy_136146",
-      "instrument": "GBPUSD",
-      "level": 1.36146,
+      "id": "usdcad_dayfvg_buy_139573",
+      "alert_id": "usdcad_dayfvg_buy_139573",
+      "instrument": "USDCAD",
+      "level": 1.39573,
       "emit_on": "cross_down",
       "cooldown_sec": 1800,
       "direction": "buy",
       "active": true,
       "validated": false,
-      "note": "ENTRY: price retests 1.36146 (H4 FVG bottom; FVG: 1.36146-1.36200, unmitigated, 1 bar ago); M15 close AT or ABOVE 1.36146 with bullish wick >=1p. ARM when readiness >=moderate (comp >=+40).\n\nCONTEXT: GBPUSD 1.3623, comp=+37.5 weak bull. H4 FVG formed today, price 8p above zone bottom. USD weakness + risk-on regime still intact. Need comp to strengthen to moderate for arm.\n\nSL: 1.35850  TP: 1.375  R:R target: 4.6\n\nadded 2026-05-11T19:35Z \u2014 fresh H4 FVG 1.36146-1.362 (unmitigated), proximity alert, watchlist only (readiness=weak).",
-      "entry_criterion": "M15 retest of 1.36146 H4 FVG bottom with bullish wick >=1p. ARM when comp >=+40.",
-      "regime_context": "GBPUSD 1.3623, comp=+37.5 weak. H4 FVG 1.36146-1.362 fresh unmitigated. WATCH for moderate readiness.",
-      "sl": 1.3585,
-      "tp": 1.375,
-      "rr_target": 4.6,
-      "current_price_ref": 1.3623,
-      "last_updated": "2026-05-11T19:35Z"
+      "note": "ENTRY: price retests 1.39573 (DAY bull FVG bottom; FVG: 1.39573-1.3965, unmitigated bars_ago=1); LIMIT BUY ARMED at 1.39573.\n\nCONTEXT: USDCAD at 1.39671, comp=+60 moderate bull (DAY=0.7, H4=0.9, H1=0.45 — 3/4 TFs bull). DAY choch bull 2026-03-31. H4 BOS bull 2026-05-28 at 1.38701. USD strength regime. Price 9.8p above level. LIMIT armed dealId=00000000-5325-c9c4-044a-beb40055311e.\n\nSL: 1.3894  TP: 1.415  R:R target: 3.0\n\nadded 2026-06-12T15:14Z — DAY FVG bottom, comp=+60 moderate, LIMIT already armed.",
+      "entry_criterion": "M15 retest of DAY FVG bottom 1.39573 with bullish wick. LIMIT ARMED at 1.39573.",
+      "regime_context": "USDCAD 1.39671, comp=+60 moderate bull. USD strength regime. DAY FVG 1.39573-1.3965 unmitigated.",
+      "sl": 1.3894,
+      "tp": 1.415,
+      "rr_target": "3.0",
+      "current_price_ref": 1.39671,
+      "last_updated": "2026-06-12T15:14Z"
+    },
+    {
+      "id": "gbpusd_h4ob_sell_134213",
+      "alert_id": "gbpusd_h4ob_sell_134213",
+      "instrument": "GBPUSD",
+      "level": 1.34213,
+      "emit_on": "cross_up",
+      "cooldown_sec": 1800,
+      "direction": "sell",
+      "active": true,
+      "validated": false,
+      "note": "ENTRY: price retests H4 bear OB bottom 1.34213 (OB: 1.34213-1.34855, unmitigated bars_ago=62); M15 bearish rejection wick >=1p. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GBPUSD at 1.34131, comp=-3.5 none. H4 BOS bear 1.33676 (2026-05-28). Price 8.2p below OB bottom — proximity watch. R:R: 2.98:1 when armed. Not actionable until comp <=-40.\n\nSL: 1.34955  TP: 1.32000  R:R target: 2.98\n\nadded 2026-06-12T15:14Z — H4 bear OB proximity 8.2p, WATCH arm when comp <=-40.",
+      "entry_criterion": "M15 retest of H4 bear OB bottom 1.34213 with bearish rejection wick >=1p. ARM SELL LIMIT when comp <=-40.",
+      "regime_context": "GBPUSD 1.34131, comp=-3.5 none. H4 BOS bear confirmed. 8.2p below OB.",
+      "sl": 1.34955,
+      "tp": 1.32000,
+      "rr_target": "2.98",
+      "current_price_ref": 1.34131,
+      "last_updated": "2026-06-12T15:14Z"
+    },
+    {
+      "id": "usdchf_h4ob_buy_7795",
+      "alert_id": "usdchf_h4ob_buy_7795",
+      "instrument": "USDCHF",
+      "level": 0.77954,
+      "emit_on": "cross_down",
+      "cooldown_sec": 1800,
+      "direction": "buy",
+      "active": true,
+      "validated": false,
+      "note": "ENTRY: price retests H4 bull OB bottom 0.77954 (OB: 0.77954-0.78284, bars_ago=62) with bullish wick >=2p. ARM BUY LIMIT only when comp>=40 AND price within 30p of level.\n\nCONTEXT: USDCHF 0.7960, comp=+33 weak bull. H4 choch bull 2026-05-28 at 0.78993. H4 bull OB 0.77954-0.78284 unmitigated. Price 165p above level — proximity watch only. Regime flipped from May CHF safe-haven bid to USD-strong Jun.\n\nSL: 0.77600  TP: 0.80500  R:R target: 7.2\n\nadded 2026-06-12T15:32Z — H4 bull OB demand zone, WATCH arm when comp>=40 AND price within 30p.",
+      "entry_criterion": "M15 retest of H4 bull OB bottom 0.77954 with bullish wick >=2p. ARM BUY LIMIT when comp>=40 AND price within 30p.",
+      "regime_context": "USDCHF 0.7960, comp=+33 weak bull. H4 choch bull at 0.78993. OB 0.77954-0.78284 unmitigated. USD-strong regime.",
+      "sl": 0.77600,
+      "tp": 0.80500,
+      "rr_target": "7.2",
+      "current_price_ref": 0.79597,
+      "last_updated": "2026-06-12T15:32Z"
+    },
+    {
+      "id": "gold_fvg_sell_4268",
+      "alert_id": "gold_fvg_sell_4268",
+      "instrument": "GOLD",
+      "level": 4268.71,
+      "emit_on": "cross_up",
+      "cooldown_sec": 1800,
+      "direction": "sell",
+      "active": true,
+      "validated": false,
+      "note": "ENTRY: price retests 4268.71 (H1 BOS bear level 2026-06-08; old DAY FVG zone 4228-4268 now cleared); M15 bearish rejection wick >=5p. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GOLD at 4211.41, comp=-27.5 weak bear. H1 BOS bear 4268.71 (2026-06-08). H4 bear choch 4366.64 (2026-05-28). Price 57.3p below retest level. GOLD crashed 4724 (May) to 4211 (Jun) = -513p. Readiness=weak — need comp <=-40 to arm.\n\nSL: 4330.00  TP: 4100.00  R:R target: 2.75\n\nadded 2026-06-12T15:14Z — H1 BOS bear retest, WATCH arm when comp <=-40.",
+      "entry_criterion": "M15 retest of 4268.71 H1 BOS bear level with bearish wick >=5p. ARM when comp <=-40.",
+      "regime_context": "GOLD 4211.41, comp=-27.5 weak bear. H1 BOS bear 4268.71. Price 57p below. WATCH.",
+      "sl": 4330.00,
+      "tp": 4100.00,
+      "rr_target": "2.75",
+      "current_price_ref": 4211.41,
+      "last_updated": "2026-06-12T15:14Z"
     }
   ],
-  "last_updated": "2026-05-11T19:35Z"
+  "last_updated": "2026-06-12T15:32Z"
 }
