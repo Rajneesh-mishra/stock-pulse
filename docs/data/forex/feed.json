@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T17:19:07.895627Z",
+  "generated_at": "2026-06-12T17:29:40.159757Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -469,6 +469,71 @@
           "scalp": "N/A",
           "readiness": "strong",
           "reason": "LIMIT SELL@83.93 armed (dist=18p<112p ATR threshold), comp=-70 strong, spread 4p forbids scalp"
+        }
+      }
+    },
+    {
+      "tick_ts_utc": "2026-06-12T17:27Z",
+      "events_consumed": 0,
+      "event_types": [],
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "limits_armed": 0,
+      "limits_cancelled": 0,
+      "open_positions": 0,
+      "working_orders": 2,
+      "balance": 921.75,
+      "daily_pnl": 0.0,
+      "regime": "USD_STRENGTH_POST_HORMUZ",
+      "notes": "Heartbeat tick. 0 events. USDCAD BUY LIMIT@1.39573 intact (comp=+60 mod, price 1.39747). OIL SELL LIMIT@83.93 intact (comp=-70 strong, price 83.665). GBPUSD 1.34159 below H4 OB, comp=-3.5 none, WATCH. GOLD 4219 weak, WATCH. No trades.",
+      "attention_matrix": {
+        "EURUSD": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "comp=-7.5 none, no alert; scalp disabled (engine_desync_loop)"
+        },
+        "GBPUSD": {
+          "swing": "WATCH",
+          "scalp": "ACTIVE",
+          "readiness": "none",
+          "reason": "comp=-3.5 none, inside H4 OB zone but arm gate comp<=-40 not met"
+        },
+        "AUDUSD": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "comp=-17.5 none, no alert; scalp disabled (wr=11%)"
+        },
+        "USDJPY": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "comp=+14 none, no alert; scalp pip-conv pending"
+        },
+        "USDCAD": {
+          "swing": "ARMED",
+          "scalp": "OFF",
+          "readiness": "moderate",
+          "reason": "comp=+60 moderate bull, LIMIT BUY@1.39573 armed at broker (dist=17.4p<30p threshold)"
+        },
+        "USDCHF": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "weak",
+          "reason": "comp=+33 weak, no alert at weak readiness; scalp pip-conv pending"
+        },
+        "GOLD": {
+          "swing": "WATCH",
+          "scalp": "N/A",
+          "readiness": "weak",
+          "reason": "comp=-27.5 weak, alert 4268 but 49p away and arm gate comp<=-40 not met"
+        },
+        "OIL_CRUDE": {
+          "swing": "ARMED",
+          "scalp": "N/A",
+          "readiness": "strong",
+          "reason": "comp=-70 strong bear, LIMIT SELL@83.93 armed at broker (dist=26.5p<H1ATR=1.13)"
         }
       }
     }
