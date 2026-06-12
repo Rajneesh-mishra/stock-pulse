@@ -167,5 +167,72 @@
       }
     },
     "scalp_audit": "EURUSD=OFF(engine_desync) GBPUSD=ACTIVE(neutral,no-halt) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
+  },
+  {
+    "tick_ts_utc": "2026-06-12T17:18Z",
+    "events_consumed": 1,
+    "event_types": [
+      "news_flash"
+    ],
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "limits_armed": 0,
+    "limits_cancelled": 0,
+    "open_positions": 0,
+    "working_orders": 2,
+    "balance": 921.75,
+    "daily_pnl": 0.0,
+    "regime": "USD_STRENGTH_POST_HORMUZ",
+    "notes": "news_flash: hormuz_strait (Iran declares Strait closed, hit 2 ships, Jun 11 38h stale, market dismissed). OIL SELL LIMIT@83.93 + USDCAD BUY LIMIT@1.39573 both intact. Date window rolled: hormuz_strait now [12-15 Jun 2026]. No trades.",
+    "attention_matrix": {
+      "EURUSD": {
+        "swing": "NONE",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "comp=-7.5 none, no alert, scalp engine_desync disabled"
+      },
+      "GBPUSD": {
+        "swing": "WATCH",
+        "scalp": "ACTIVE",
+        "readiness": "none",
+        "reason": "comp=-3.5 none, inside H4 OB but arm gate comp<=-40 not met; scalp session_open_break active"
+      },
+      "AUDUSD": {
+        "swing": "NONE",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "comp=-17.5 none, no active alert, scalp wr=11% disabled"
+      },
+      "USDJPY": {
+        "swing": "NONE",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "comp=+14 none, no alert, scalp pip-conv-pending"
+      },
+      "USDCAD": {
+        "swing": "ARMED",
+        "scalp": "OFF",
+        "readiness": "moderate",
+        "reason": "LIMIT BUY@1.39573 armed (dist=16p<30p), comp=+60 mod, CAD-quote scalp off"
+      },
+      "USDCHF": {
+        "swing": "NONE",
+        "scalp": "OFF",
+        "readiness": "weak",
+        "reason": "comp=+33 weak, no alert armed (need comp>=40), CHF-quote scalp off"
+      },
+      "GOLD": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "weak",
+        "reason": "comp=-27.5 weak, alert 4268 WATCH arm gate comp<=-40 not met, spread 5p forbids scalp"
+      },
+      "OIL_CRUDE": {
+        "swing": "ARMED",
+        "scalp": "N/A",
+        "readiness": "strong",
+        "reason": "LIMIT SELL@83.93 armed (dist=18p<112p ATR threshold), comp=-70 strong, spread 4p forbids scalp"
+      }
+    }
   }
 ]

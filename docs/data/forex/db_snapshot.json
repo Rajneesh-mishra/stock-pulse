@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-12T17:09:50.047847+00:00",
+  "generated_at": "2026-06-12T17:14:52.265786+00:00",
   "counts": {
     "trades": 49,
-    "events": 8170,
+    "events": 8171,
     "ticks": 59,
-    "regime_snapshots": 259,
+    "regime_snapshots": 260,
     "broker_positions": 0,
     "counterfactuals": 188
   },
@@ -1042,6 +1042,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-06-12T17:08Z",
+      "regime_name": "USD_STRENGTH_POST_HORMUZ",
+      "note_text": "2026-06-12T17:08Z \u2014 1 evt (level_cross GBPUSD gbpusd_h4ob_sell_134213: price 1.34219 crossed into H4 bear OB 1.34213-1.34855). REGIME: USD_STRENGTH_POST_HORMUZ unchanged. GBPUSD OB: price now inside H4 bear OB zone BUT H1 made bullish BOS at 1.34234 (Jun 10) \u2014 H1 structure bullish, comp=-3.5 none. Alert requires comp<=-40 to arm; no action. 0 positions, 2 LIMITs intact. USDCAD BUY@1.39573 comp=+60 mod, price 1.39705 (dist=13.2p, within 30p), KEEP. OIL SELL@83.93 comp=-70 strong, price 83.50 (dist=43p below LIMIT level), KEEP. GBPUSD WATCH (H1 bull BOS conflict, need comp<=-40). GOLD comp=-27.5 weak WATCH. EURUSD -7.5 none, AUDUSD -17.5 none, USDJPY +14 none, USDCHF +33 weak. Balance $921.75.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-06-12T16:37Z",
       "regime_name": "USD_STRENGTH_POST_HORMUZ",
       "note_text": "2026-06-12T16:37Z \u2014 1 evt (news_flash iran_ceasefire: AJ 'Are Iran, US really close to breakthrough deal?' Jun 12 13:29 GMT). REGIME: USD_STRENGTH_POST_HORMUZ. SPECULATIVE headline (question format, not confirmed deal). Confirms OIL bear thesis \u2014 Hormuz premium still unwinding. 0 positions, 2 LIMITs intact. USDCAD BUY@1.39573 comp=+60 mod 3/4TF, dist=17.3p vs 30p floor \u2014 KEEP. OIL SELL@83.93 comp=-70 strong all-4TF, dist=26.1p vs 30p floor \u2014 KEEP (LIMIT fills only if OIL bounces to 83.93; peace deal would cause further drop = limit stays unfilled = no loss). GBPUSD OB SELL 1.34213: comp=-3.5 none, price 8.9p below OB, WATCH arm needs <=-40. GOLD SELL 4268.71: comp=-27.5 weak, price 54.6p below level vs 3\u00d7H4ATR=148.2p, WATCH. EURUSD -10 none, AUDUSD -17.5 none, USDJPY +14 none, USDCHF +33 weak \u2014 no setups. Scalp: GBPUSD active/neutral (engine running, no halt); EURUSD disabled; AUDUSD disabled (wr=11%). Balance $921.75.",
@@ -1109,14 +1117,6 @@
       "ts_utc": "2026-05-08T12:45Z",
       "regime_name": "USD_WEAKNESS_HORMUZ_REESCALATION",
       "note_text": "2026-05-08T12:45Z \u2014 1 evt (USDCAD M15 liquidity_sweep up-sweep 1.36606). AUDUSD BUY: +3R cleared (bid=0.72468), SL trailed 0.72142\u21920.72270 (+1.5R lock), TP=0.728, UPL=+$7.82, age=15.8h/24h trend. GBPUSD LIMIT BUY @1.36071 GTC active (comp=+40 mod bull). USDCAD sweep 1.36606 comp=+8 none (<25 threshold) \u2014 WATCH only; alert updated to fresh level. EURUSD comp=+49 mod bull, SELL at 1.17159 armed but 61.9p away. USDCHF comp=-40 mod bear, SELL alert moved to H4 FVG 0.77933 (19p vs 56p). USDJPY comp=-29 weak bear, 73.8p from sell level 157.33. GOLD comp=+18 none. OIL comp=-28 weak. Watchlist: REMOVE 2 (eurusd_1684_buy 94p>3\u00d7H4ATR; usdcad_dayfvg_13595 71p>3\u00d7H4ATR M15 bull). Balance $945.07.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-05-08T12:31Z",
-      "regime_name": "USD_WEAKNESS_HORMUZ_REESCALATION",
-      "note_text": "2026-05-08T12:31Z \u2014 3 evts (2 news_flash + 1 level_cross). HORMUZ RE-ESCALATING: Iran struck US vessels (Mehr News Agency 04:52Z) \u2014 regime shift from de-escalating. OIL bullish, CHF/JPY safe-haven bid. US tariff news (court delays India-US deal) \u2014 USD slightly negative, minor. USDCAD level_cross usdcad_m15sweep_136540_sell_watch: price 1.36556 crossed UP through 1.3654 \u2014 comp=-24 (need\u2264-40), SKIP LIMIT, WATCH. AUDUSD BUY@0.72078 SL trail: +2R cleared (0.72345>0.72334), SL moved 0.7208\u21920.72142 (+0.5R lock), UPL=+$5.34. GBPUSD LIMIT BUY @1.36071 ARMED (H4 FVG top 1.35905-1.36071 unmitigated, comp=+40 mod, R:R=5.1, size=2600). EURUSD comp=+49 mod (upsweep sell threshold MET but price 49.8p above 1.17159 \u2014 no LIMIT possible). USDCHF comp=-40 mod bear, 47p from level \u2014 WATCH. scalp: GBPUSD=ACTIVE, EURUSD=OFF, AUDUSD=OFF. Balance $942.51.",
       "binary_event_name": null,
       "binary_event_active": 0,
       "binary_event_deadline": null

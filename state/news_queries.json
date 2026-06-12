@@ -59,12 +59,12 @@
         "missile"
       ],
       "cooldown_min": 60,
-      "note": "RE-TUNED 2026-04-23T03:25:00Z \u2014 prior filter [2026,April,Apr 22,Apr 23] too broad \u2014 Apr 7 2026 CBS archive 'Iran war throttle oil flows even if Hormuz reopens' matched via 'April' (any-month-2026) + 'reopen' kw. Tightened to current-window dates only. Bump window +1d on each tick; year-only/month-only filters are banned. RE-TUNED 2026-04-23T04:35:00Z \u2014 substring-leak bug: 'Apr 20' was matching 'Apr 2026' as substring (any 2026 article passed). Switched to 'DD Mon YYYY' tokens which align with RSS pubDate format and have unique day numbers. | 2026-04-23T20:20:00Z TUNE: rolled date window to ['22 Apr 2026', '23 Apr 2026', '24 Apr 2026'] (dropped Apr 20-21 stale, added Apr 24 current). Note: daemon bug forex_news_watcher.py:246 \u2014 match_keywords not enforced; cosmetic update. | 2026-04-24T20:30:00Z TUNE: rolled date window to ['23 Apr 2026', '24 Apr 2026', '25 Apr 2026'] (dropped Apr 22 stale, added Apr 25 upcoming). | 2026-04-24T06:00:00Z TUNE: rolled date window to ['24 Apr 2026', '25 Apr 2026', '26 Apr 2026'] (dropped 23 Apr 2026, added 26 Apr 2026). | 2026-04-26T16:41Z TUNE: rolled date window +1d, added 29 Apr 2026 (BOJ T-0d, FOMC T-3d window). | 2026-06-12T15:37Z TUNE: rolled date window to current week (10-12 Jun 2026); prior May 5-8 window was stale.",
+      "note": "RE-TUNED 2026-04-23T03:25:00Z \u2014 prior filter [2026,April,Apr 22,Apr 23] too broad \u2014 Apr 7 2026 CBS archive 'Iran war throttle oil flows even if Hormuz reopens' matched via 'April' (any-month-2026) + 'reopen' kw. Tightened to current-window dates only. Bump window +1d on each tick; year-only/month-only filters are banned. RE-TUNED 2026-04-23T04:35:00Z \u2014 substring-leak bug: 'Apr 20' was matching 'Apr 2026' as substring (any 2026 article passed). Switched to 'DD Mon YYYY' tokens which align with RSS pubDate format and have unique day numbers. | 2026-04-23T20:20:00Z TUNE: rolled date window to ['22 Apr 2026', '23 Apr 2026', '24 Apr 2026'] (dropped Apr 20-21 stale, added Apr 24 current). Note: daemon bug forex_news_watcher.py:246 \u2014 match_keywords not enforced; cosmetic update. | 2026-04-24T20:30:00Z TUNE: rolled date window to ['23 Apr 2026', '24 Apr 2026', '25 Apr 2026'] (dropped Apr 22 stale, added Apr 25 upcoming). | 2026-04-24T06:00:00Z TUNE: rolled date window to ['24 Apr 2026', '25 Apr 2026', '26 Apr 2026'] (dropped 23 Apr 2026, added 26 Apr 2026). | 2026-04-26T16:41Z TUNE: rolled date window +1d, added 29 Apr 2026 (BOJ T-0d, FOMC T-3d window). | 2026-06-12T15:37Z TUNE: rolled date window to current week (10-12 Jun 2026); prior May 5-8 window was stale. | 2026-06-12T17:18Z TUNE: dropped '11 Jun 2026' (stale, 38h, market dismissed), added '15 Jun 2026'. Window now [12,13,14,15 Jun 2026].",
       "match_keywords": [
-        "11 Jun 2026",
         "12 Jun 2026",
         "13 Jun 2026",
-        "14 Jun 2026"
+        "14 Jun 2026",
+        "15 Jun 2026"
       ]
     },
     {
@@ -137,18 +137,12 @@
       ],
       "cooldown_min": 240,
       "match_keywords": [
-        "04 May 2026",
-        "05 May 2026",
-        "06 May 2026",
-        "07 May 2026"
-      ],
-      "note": "TUNED 2026-05-05T06:20Z \u2014 REMOVED 'May meeting' from keywords_required (was supposed to be stripped in Apr 23 tune but was not; fired today on old 7NEWS 'hikes to 4.35%' archive via 'May meeting' match). RBA May 2026 binary CLEARED 04:30Z \u2014 no more meeting-specific triggers needed. Remaining keywords are action-phrase-only (surprise/emergency/unscheduled/cash rate raised-lowered/voted to hike-cut). Rolled match_keywords to 04-07 May 2026. RE-TUNED 2026-04-23T03:33:00Z \u2014 prior keywords ['Bullock','May meeting','surprise','unexpected'] still matched Jul 23 2025 Guardian Bullock-wary-of-cutting archive (9 months stale). STRIPPED bare 'Bullock' + single-word 'surprise'/'unexpected'. | 2026-06-12T15:37Z TUNE: rolled date window to current week (10-12 Jun 2026).",
-      "match_keywords": [
         "11 Jun 2026",
         "12 Jun 2026",
         "13 Jun 2026",
         "14 Jun 2026"
-      ]
+      ],
+      "note": "TUNED 2026-05-05T06:20Z \u2014 REMOVED 'May meeting' from keywords_required (was supposed to be stripped in Apr 23 tune but was not; fired today on old 7NEWS 'hikes to 4.35%' archive via 'May meeting' match). RBA May 2026 binary CLEARED 04:30Z \u2014 no more meeting-specific triggers needed. Remaining keywords are action-phrase-only (surprise/emergency/unscheduled/cash rate raised-lowered/voted to hike-cut). Rolled match_keywords to 04-07 May 2026. RE-TUNED 2026-04-23T03:33:00Z \u2014 prior keywords ['Bullock','May meeting','surprise','unexpected'] still matched Jul 23 2025 Guardian Bullock-wary-of-cutting archive (9 months stale). STRIPPED bare 'Bullock' + single-word 'surprise'/'unexpected'. | 2026-06-12T15:37Z TUNE: rolled date window to current week (10-12 Jun 2026)."
     },
     {
       "id": "us_tariff",

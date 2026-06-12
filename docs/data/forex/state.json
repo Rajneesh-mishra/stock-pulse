@@ -1,9 +1,9 @@
 {
   "regime": "USD_STRENGTH_POST_HORMUZ",
-  "tick_ts_utc": "2026-06-12T17:08Z",
-  "state_ts_utc": "2026-06-12T17:08Z",
-  "regime_note": "2026-06-12T17:08Z \u2014 1 evt (level_cross GBPUSD gbpusd_h4ob_sell_134213: price 1.34219 crossed into H4 bear OB 1.34213-1.34855). REGIME: USD_STRENGTH_POST_HORMUZ unchanged. GBPUSD OB: price now inside H4 bear OB zone BUT H1 made bullish BOS at 1.34234 (Jun 10) \u2014 H1 structure bullish, comp=-3.5 none. Alert requires comp<=-40 to arm; no action. 0 positions, 2 LIMITs intact. USDCAD BUY@1.39573 comp=+60 mod, price 1.39705 (dist=13.2p, within 30p), KEEP. OIL SELL@83.93 comp=-70 strong, price 83.50 (dist=43p below LIMIT level), KEEP. GBPUSD WATCH (H1 bull BOS conflict, need comp<=-40). GOLD comp=-27.5 weak WATCH. EURUSD -7.5 none, AUDUSD -17.5 none, USDJPY +14 none, USDCHF +33 weak. Balance $921.75.",
-  "regime_note_prev": "2026-05-11T19:35Z \u2014 8 evts consumed. AUDUSD+GBPUSD TIME-EXITS executed Sun 2026-05-10T21:08Z: AUDUSD BUY @0.72078\u21920.72448 +$7.40; GBPUSD BUY @1.36071\u21921.36277 +$5.36. 2 LIMITS PENDING: AUDUSD BUY @0.72241 size=5000 SL=0.7215 TP=0.7285; USDCHF SELL @0.77933 size=1500 SL=0.78047 TP=0.775. Hormuz escalation intact. Balance $928.39.",
+  "tick_ts_utc": "2026-06-12T17:18Z",
+  "state_ts_utc": "2026-06-12T17:18Z",
+  "regime_note": "2026-06-12T17:18Z \u2014 1 evt (news_flash hormuz_strait: Iran claims Strait of Hormuz closed, hit 2 ships \u2014 Seatrade Maritime News, published Jun 11 2026 03:15Z). NEWS ASSESSMENT: Article is 38h stale; market has had full session to respond. OIL at $83.75 (not $90+), confirming market dismissed/discounted this claim as Iranian rhetoric. Bear structure intact (comp=-70 strong all-4TF). OIL SELL LIMIT@83.93 KEEP \u2014 bear thesis unchanged, price $83.75 (dist=18p below LIMIT). USDCAD BUY LIMIT@1.39573 KEEP \u2014 comp=+60 moderate, price 1.39735 (dist=16p, within 30p threshold). GBPUSD WATCH \u2014 comp=-3.5 none, inside H4 OB 1.34213-1.34855, arm gate comp<=-40 not met. GOLD WATCH \u2014 comp=-27.5 weak, price 4217, 51p below alert 4268, arm gate comp<=-40 not met. EURUSD -7.5 none, AUDUSD -17.5 none, USDJPY +14 none, USDCHF +33 weak. 0 positions, 2 LIMITs intact. Balance $921.75.",
+  "regime_note_prev": "2026-06-12T17:08Z \u2014 1 evt (level_cross GBPUSD gbpusd_h4ob_sell_134213: price 1.34219 crossed into H4 bear OB 1.34213-1.34855). REGIME: USD_STRENGTH_POST_HORMUZ unchanged. GBPUSD OB: price now inside H4 bear OB zone BUT H1 made bullish BOS at 1.34234 (Jun 10) \u2014 H1 structure bullish, comp=-3.5 none. Alert requires comp<=-40 to arm; no action. 0 positions, 2 LIMITs intact. USDCAD BUY@1.39573 comp=+60 mod, price 1.39705 (dist=13.2p, within 30p), KEEP. OIL SELL@83.93 comp=-70 strong, price 83.50 (dist=43p below LIMIT level), KEEP. GBPUSD WATCH (H1 bull BOS conflict, need comp<=-40). GOLD comp=-27.5 weak WATCH. EURUSD -7.5 none, AUDUSD -17.5 none, USDJPY +14 none, USDCHF +33 weak. Balance $921.75.",
   "open_positions": [],
   "watchlist": [],
   "market_context": {
@@ -1424,7 +1424,7 @@
     "active": false,
     "note": "No active binary. Iran-US military confrontation ongoing (Hormuz). Now Chinese tanker attack confirmed (Beijing, May 9T03:58Z). Escalation persistent but no fixed deadline. Monitor Iran-US formal talks. CHF/JPY safe-haven bids active."
   },
-  "balance": 928.39,
+  "balance": 921.75,
   "level_alerts": [
     {
       "alert_id": "usdchf_dayfvg_sell_77933",
