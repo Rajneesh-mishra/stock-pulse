@@ -95,25 +95,6 @@
       "last_updated": "2026-06-12T15:14Z"
     },
     {
-      "id": "usdchf_h4ob_buy_7795",
-      "alert_id": "usdchf_h4ob_buy_7795",
-      "instrument": "USDCHF",
-      "level": 0.77954,
-      "emit_on": "cross_down",
-      "cooldown_sec": 1800,
-      "direction": "buy",
-      "active": true,
-      "validated": false,
-      "note": "ENTRY: price retests H4 bull OB bottom 0.77954 (OB: 0.77954-0.78284, bars_ago=62) with bullish wick >=2p. ARM BUY LIMIT only when comp>=40 AND price within 30p of level.\n\nCONTEXT: USDCHF 0.7960, comp=+33 weak bull. H4 choch bull 2026-05-28 at 0.78993. H4 bull OB 0.77954-0.78284 unmitigated. Price 165p above level — proximity watch only. Regime flipped from May CHF safe-haven bid to USD-strong Jun.\n\nSL: 0.77600  TP: 0.80500  R:R target: 7.2\n\nadded 2026-06-12T15:32Z — H4 bull OB demand zone, WATCH arm when comp>=40 AND price within 30p.",
-      "entry_criterion": "M15 retest of H4 bull OB bottom 0.77954 with bullish wick >=2p. ARM BUY LIMIT when comp>=40 AND price within 30p.",
-      "regime_context": "USDCHF 0.7960, comp=+33 weak bull. H4 choch bull at 0.78993. OB 0.77954-0.78284 unmitigated. USD-strong regime.",
-      "sl": 0.77600,
-      "tp": 0.80500,
-      "rr_target": "7.2",
-      "current_price_ref": 0.79597,
-      "last_updated": "2026-06-12T15:32Z"
-    },
-    {
       "id": "gold_fvg_sell_4268",
       "alert_id": "gold_fvg_sell_4268",
       "instrument": "GOLD",
@@ -133,5 +114,5 @@
       "last_updated": "2026-06-12T15:14Z"
     }
   ],
-  "last_updated": "2026-06-12T15:32Z"
+  "last_updated": "2026-06-12T15:37Z"
 }

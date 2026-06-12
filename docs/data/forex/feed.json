@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T15:34:04.912754Z",
+  "generated_at": "2026-06-12T16:23:36.182592Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -243,6 +243,75 @@
       "closed": 0,
       "skipped": 16,
       "note": "15:32Z forex auto \u2014 16 evts (all stale May/Jun10 events). BROKER: 0 pos, 2 LIMITs: USDCAD BUY@1.39573 (comp=+60 mod, thesis intact), OIL SELL@83.93 (comp=-70 strong, thesis intact). GBPUSD level_cross H4OB@1.34213 \u2014 comp=-3.5 none, arm needs <=-40, WATCH. USDCHF ADD buy_watch H4OB@0.77954 (comp=+33 weak, arm when>=40). News: June10 events = stale May articles, no regime change. REMOVE: usdjpy_dayfvg_sell_15733 (CF 4h=0%, 4 fires). news_query us_iran_military REMOVED. Scalp: GBPUSD ACTIVE, EURUSD/AUDUSD OFF. Balance $921.75. attention_covered=8/8"
+    },
+    {
+      "tick_ts_utc": "2026-06-12T16:20Z",
+      "events_consumed": 0,
+      "type": "heartbeat",
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "active_limits": [
+        {
+          "epic": "USDCAD",
+          "dir": "BUY",
+          "level": 1.39573,
+          "comp": 60,
+          "readiness": "moderate"
+        },
+        {
+          "epic": "OIL_CRUDE",
+          "dir": "SELL",
+          "level": 83.93,
+          "comp": -70,
+          "readiness": "strong"
+        }
+      ],
+      "balance": 921.75,
+      "open_positions": 0,
+      "regime": "USD_STRENGTH_POST_HORMUZ",
+      "key_note": "Trump signals Iran-US peace this weekend \u2014 OIL bear confirmed. USDCAD +60 mod, OIL -70 strong, all LIMITs intact. No new entries. News queries rolled to Jun 11-14.",
+      "attention_matrix": {
+        "EURUSD": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none"
+        },
+        "GBPUSD": {
+          "swing": "WATCH",
+          "scalp": "ACTIVE",
+          "readiness": "none"
+        },
+        "AUDUSD": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none"
+        },
+        "USDJPY": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none"
+        },
+        "USDCAD": {
+          "swing": "ARMED",
+          "scalp": "OFF",
+          "readiness": "moderate"
+        },
+        "USDCHF": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "weak"
+        },
+        "GOLD": {
+          "swing": "WATCH",
+          "scalp": "N/A",
+          "readiness": "weak"
+        },
+        "OIL_CRUDE": {
+          "swing": "ARMED",
+          "scalp": "N/A",
+          "readiness": "strong"
+        }
+      }
     }
   ]
 }

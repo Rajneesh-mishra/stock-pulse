@@ -1,8 +1,8 @@
 {
   "regime": "USD_STRENGTH_POST_HORMUZ",
-  "tick_ts_utc": "2026-06-12T15:32Z",
-  "state_ts_utc": "2026-06-12T15:32Z",
-  "regime_note": "2026-06-12T15:32Z \u2014 16 evts consumed (all stale May/early-June). REGIME: USD_STRENGTH stable. Broker: 0 positions, 2 LIMITs active (USDCAD BUY@1.39573 comp=+60 mod; OIL SELL@83.93 comp=-70 strong). GBPUSD level_cross H4 OB@1.34213: comp=-3.5 none, H1 BOS bull conflict \u2192 WATCH, arm needs comp<=-40. USDCHF flipped bullish (comp=+33 weak), H4 OB demand zone 0.7795-0.7828 added as WATCH (BUY arm when comp>=40 AND price within 30p). USDJPY comp=+14 none, old sell alert removed (CF 4h=0%). GOLD comp=-27.5 weak, fvg_sell_4268 KEEP (57p from level, not stale). News_flash June 10: stale May 5/8 articles, no regime change. Scalp: GBPUSD enabled neutral, EURUSD/AUDUSD off. Balance $921.75.",
+  "tick_ts_utc": "2026-06-12T16:20Z",
+  "state_ts_utc": "2026-06-12T16:20Z",
+  "regime_note": "2026-06-12T16:20Z \u2014 0 evts (heartbeat). REGIME: USD_STRENGTH_POST_HORMUZ. Broker: 0 positions, 2 LIMITs intact. USDCAD BUY@1.39573 comp=+60 mod, dist=13.3p vs 3\u00d7H4ATR=71.1p \u2014 KEEP. OIL SELL@83.93 comp=-70 strong, dist=58.4p vs 3\u00d7H4ATR=611.7p \u2014 KEEP. Macro: Trump signals Iran-US peace deal 'as early as this weekend' (Jun 12-13) \u2014 OIL bear confirmed (Hormuz premium unwinding), USD safe-haven demand may soften slightly but CAD weakness (loonie weakest reserve currency) supports USDCAD BUY. GBPUSD OB SELL 1.34213: comp=-13.5 none (H1 BOS bull conflict), WATCH arm needs <=-40. GOLD SELL 4268.71: comp=-27.5 weak, dist=45.9p vs 3\u00d7H4ATR=148.2p, DAY FVG now mitigated but H1 BOS bear intact, WATCH. USDCHF +33 weak, USDJPY +14 none, EURUSD -10 none, AUDUSD -17.5 none \u2014 no setups. News queries rolled +2d to include Jun 13-14 weekend. Scalp: GBPUSD active/neutral; EURUSD disabled (desync); AUDUSD disabled (wr=11%/19T). Balance $921.75.",
   "regime_note_prev": "2026-05-11T19:35Z \u2014 8 evts consumed. AUDUSD+GBPUSD TIME-EXITS executed Sun 2026-05-10T21:08Z: AUDUSD BUY @0.72078\u21920.72448 +$7.40; GBPUSD BUY @1.36071\u21921.36277 +$5.36. 2 LIMITS PENDING: AUDUSD BUY @0.72241 size=5000 SL=0.7215 TP=0.7285; USDCHF SELL @0.77933 size=1500 SL=0.78047 TP=0.775. Hormuz escalation intact. Balance $928.39.",
   "open_positions": [],
   "watchlist": [],
