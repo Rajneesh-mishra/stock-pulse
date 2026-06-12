@@ -85,14 +85,14 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: price retests H4 bear OB bottom 1.34213 (OB: 1.34213-1.34855, unmitigated bars_ago=62); M15 bearish rejection wick >=1p. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GBPUSD at 1.34131, comp=-3.5 none. H4 BOS bear 1.33676 (2026-05-28). Price 8.2p below OB bottom — proximity watch. R:R: 2.98:1 when armed. Not actionable until comp <=-40.\n\nSL: 1.34955  TP: 1.32000  R:R target: 2.98\n\nadded 2026-06-12T15:14Z — H4 bear OB proximity 8.2p, WATCH arm when comp <=-40.",
-      "entry_criterion": "M15 retest of H4 bear OB bottom 1.34213 with bearish rejection wick >=1p. ARM SELL LIMIT when comp <=-40.",
-      "regime_context": "GBPUSD 1.34131, comp=-3.5 none. H4 BOS bear confirmed. 8.2p below OB.",
+      "note": "ENTRY: M15 bearish rejection wick >=1p from inside H4 bear OB zone (1.34213-1.34855). ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GBPUSD at 1.34204, comp=-3.5 none. H4 BOS bear 1.33676 (2026-05-28) — H4 bearish. H1 BOS bull 1.34234 (2026-06-10) — H1 flipped bullish; creates conflict with sell thesis. Price now inside H4 OB zone. Wait for H1 bear flip (comp<=-40) before arming. R:R: 2.98:1 when armed.\n\nSL: 1.34955  TP: 1.32000  R:R target: 2.98\n\nupdated 2026-06-12T17:08Z — price entered OB zone; H1 bull BOS noted; arm gate unchanged comp<=-40.",
+      "entry_criterion": "M15 bearish rejection wick >=1p from inside H4 bear OB zone. ARM SELL LIMIT when comp <=-40.",
+      "regime_context": "GBPUSD 1.34204, comp=-3.5 none. H4 BOS bear confirmed. H1 BOS bull at 1.34234 conflicts — wait for comp<=-40.",
       "sl": 1.34955,
       "tp": 1.32000,
       "rr_target": "2.98",
-      "current_price_ref": 1.34131,
-      "last_updated": "2026-06-12T15:14Z"
+      "current_price_ref": 1.34204,
+      "last_updated": "2026-06-12T17:08Z"
     },
     {
       "id": "gold_fvg_sell_4268",
@@ -114,5 +114,5 @@
       "last_updated": "2026-06-12T15:14Z"
     }
   ],
-  "last_updated": "2026-06-12T15:37Z"
+  "last_updated": "2026-06-12T17:08Z"
 }

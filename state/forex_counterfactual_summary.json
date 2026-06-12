@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T16:37:54.830831+00:00",
+  "generated_at": "2026-06-12T17:11:11.575142+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -1565,7 +1565,7 @@
       "alert_id": "gbpusd_h4ob_sell_134213",
       "instrument": "GBPUSD",
       "direction": "sell",
-      "fires": 1,
+      "fires": 2,
       "by_horizon": {
         "1h": {
           "filled": 1,
