@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T17:29:40.159757Z",
+  "generated_at": "2026-06-12T18:02:10.582275Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -535,6 +535,50 @@
           "readiness": "strong",
           "reason": "comp=-70 strong bear, LIMIT SELL@83.93 armed at broker (dist=26.5p<H1ATR=1.13)"
         }
+      }
+    },
+    {
+      "tick_ts_utc": "2026-06-12T18:00Z",
+      "events_processed": [
+        "evt_1781287001175_position_opened"
+      ],
+      "event_summary": "position_opened OIL_CRUDE SELL@83.935 (LIMIT filled)",
+      "positions_opened": [],
+      "positions_closed": [],
+      "limits_placed": [],
+      "limits_cancelled": [],
+      "open_positions": [
+        {
+          "instrument": "OIL_CRUDE",
+          "direction": "SELL",
+          "entry": 83.935,
+          "sl": 85.1,
+          "tp": 79.5,
+          "size": 12.0,
+          "upl": 0.82
+        }
+      ],
+      "pending_orders": [
+        {
+          "instrument": "USDCAD",
+          "direction": "BUY",
+          "level": 1.39573,
+          "sl": 1.3894,
+          "tp": 1.415
+        }
+      ],
+      "balance": 922.57,
+      "regime": "USD_STRENGTH_IRAN_PEACE_PIVOT",
+      "notes": "OIL SELL LIMIT@83.93 filled@83.935. Iran 14-pt deal draft REINFORCES bear thesis (Hormuz reopening 30d). comp=-70 strong all-4TF. USDCAD LIMIT intact at 1.39573, comp=+67.5 moderate. No other actions this tick.",
+      "attention_matrix": {
+        "EURUSD": "swing=NONE scalp=OFF(engine_desync) readiness=none \u2014 comp=-7.5, no setup",
+        "GBPUSD": "swing=WATCH scalp=ACTIVE(neutral,session_break) readiness=none \u2014 comp=-3.5, inside OB zone, arm gate comp<=-40 not met",
+        "AUDUSD": "swing=NONE scalp=OFF(wr=11pct) readiness=none \u2014 comp=-17.5, no setup",
+        "USDJPY": "swing=NONE scalp=OFF(pip-conv-pending) readiness=none \u2014 comp=+14, no setup",
+        "USDCAD": "swing=ARMED scalp=OFF(spread+quote) readiness=moderate \u2014 LIMIT@1.39573 dist=20p within 30p threshold, comp=+67.5",
+        "USDCHF": "swing=WATCH scalp=OFF(pip-conv-pending) readiness=moderate \u2014 comp=+40.5, no specific level armed yet",
+        "GOLD": "swing=WATCH scalp=N/A readiness=weak \u2014 comp=-27.5, 47p below alert 4268, arm gate comp<=-40 not met",
+        "OIL_CRUDE": "swing=ARMED scalp=N/A readiness=strong \u2014 SELL POSITION LIVE@83.935 SL=85.10 TP=79.50"
       }
     }
   ]

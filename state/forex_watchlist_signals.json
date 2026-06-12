@@ -45,16 +45,16 @@
       "emit_on": "cross_up",
       "cooldown_sec": 1800,
       "direction": "sell",
-      "active": true,
+      "active": false,
       "validated": false,
-      "note": "ENTRY: price retests 83.93 (M15 bear FVG bottom; FVG: 83.933-85.011, unmitigated bars_ago=1); SELL LIMIT ARMED at 83.93.\n\nCONTEXT: OIL_CRUDE at 83.43, comp=-70 strong bear, all 4 TFs aligned. H4 BOS bear 85.721 (2026-05-29). H1 BOS bear 84.709 (2026-06-09). M15 BOS bear 84.053 (2026-06-11). Hormuz premium gone — OIL $95.70 May to $83.43 Jun. LIMIT armed dealId=00000000-5363-3e80-044a-beb40055311e.\n\nSL: 85.10  TP: 79.50  R:R target: 3.8\n\nadded 2026-06-12T15:14Z — strong bear all-4TF, M15 FVG supply armed as LIMIT.",
-      "entry_criterion": "M15 retest of 83.93 bear FVG bottom with bearish wick. LIMIT ARMED at 83.93.",
-      "regime_context": "OIL 83.43, comp=-70 strong bear all-4TF. M15/H1/H4 BOS bear confirmed. Hormuz premium dissipated.",
+      "note": "ENTRY: FILLED 2026-06-12T17:56Z @ 83.935. Position open dealId=00000000-5364-144c-044a-beb40055311e. LIMIT filled from M15 FVG bottom 83.93. Alert deactivated — position live.\n\nCONTEXT: OIL_CRUDE at 83.856, comp=-70 strong bear all-4TF. Iran 14-pt deal (Hormuz reopening 30d) strongly reinforces bear. TP=79.50 RR=3.8. thesis=trend 24h max hold.\n\nSL: 85.10  TP: 79.50  R:R target: 3.8\n\nupdated 2026-06-12T18:00Z — LIMIT filled, position live, alert deactivated.",
+      "entry_criterion": "FILLED at 83.935 from LIMIT. Monitoring open position.",
+      "regime_context": "OIL 83.856, comp=-70 strong bear all-4TF. Iran peace deal REINFORCES bear thesis. Position live.",
       "sl": 85.10,
       "tp": 79.50,
       "rr_target": "3.8",
-      "current_price_ref": 83.43,
-      "last_updated": "2026-06-12T15:14Z"
+      "current_price_ref": 83.856,
+      "last_updated": "2026-06-12T18:00Z"
     },
     {
       "id": "usdcad_dayfvg_buy_139573",
@@ -72,8 +72,8 @@
       "sl": 1.3894,
       "tp": 1.415,
       "rr_target": "3.0",
-      "current_price_ref": 1.39671,
-      "last_updated": "2026-06-12T15:14Z"
+      "current_price_ref": 1.39776,
+      "last_updated": "2026-06-12T18:00Z"
     },
     {
       "id": "gbpusd_h4ob_sell_134213",
@@ -91,8 +91,8 @@
       "sl": 1.34955,
       "tp": 1.32000,
       "rr_target": "2.98",
-      "current_price_ref": 1.34204,
-      "last_updated": "2026-06-12T17:08Z"
+      "current_price_ref": 1.34179,
+      "last_updated": "2026-06-12T18:00Z"
     },
     {
       "id": "gold_fvg_sell_4268",
@@ -110,9 +110,9 @@
       "sl": 4330.00,
       "tp": 4100.00,
       "rr_target": "2.75",
-      "current_price_ref": 4211.41,
-      "last_updated": "2026-06-12T15:14Z"
+      "current_price_ref": 4221.36,
+      "last_updated": "2026-06-12T18:00Z"
     }
   ],
-  "last_updated": "2026-06-12T17:08Z"
+  "last_updated": "2026-06-12T18:00Z"
 }

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-12T17:24:55.200072+00:00",
+  "generated_at": "2026-06-12T17:55:14.265692+00:00",
   "counts": {
     "trades": 49,
     "events": 8171,
     "ticks": 59,
-    "regime_snapshots": 261,
+    "regime_snapshots": 262,
     "broker_positions": 0,
     "counterfactuals": 188
   },
@@ -1042,6 +1042,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-06-12T17:27Z",
+      "regime_name": "USD_STRENGTH_POST_HORMUZ",
+      "note_text": "2026-06-12T17:27Z \u2014 0 evts (heartbeat). USDCAD BUY LIMIT@1.39573 INTACT (comp=+60 mod 3/4TF, price=1.39747, dist=17.4p within 30p threshold). OIL SELL LIMIT@83.93 INTACT (comp=-70 strong all-4TF, price=83.665, dist=26.5p within H1ATR=1.13). GBPUSD 1.34159 (6p below H4 OB 1.34213), comp=-3.5 none, arm gate comp<=-40 not met, WATCH. GOLD 4219.34, comp=-27.5 weak, 49p below alert 4268, WATCH. EURUSD -7.5 none, AUDUSD -17.5 none, USDJPY +14 none, USDCHF +33 weak. 0 positions, 2 LIMITs intact. No trades. Balance $921.75.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-06-12T17:18Z",
       "regime_name": "USD_STRENGTH_POST_HORMUZ",
       "note_text": "2026-06-12T17:18Z \u2014 1 evt (news_flash hormuz_strait: Iran claims Strait of Hormuz closed, hit 2 ships \u2014 Seatrade Maritime News, published Jun 11 2026 03:15Z). NEWS ASSESSMENT: Article is 38h stale; market has had full session to respond. OIL at $83.75 (not $90+), confirming market dismissed/discounted this claim as Iranian rhetoric. Bear structure intact (comp=-70 strong all-4TF). OIL SELL LIMIT@83.93 KEEP \u2014 bear thesis unchanged, price $83.75 (dist=18p below LIMIT). USDCAD BUY LIMIT@1.39573 KEEP \u2014 comp=+60 moderate, price 1.39735 (dist=16p, within 30p threshold). GBPUSD WATCH \u2014 comp=-3.5 none, inside H4 OB 1.34213-1.34855, arm gate comp<=-40 not met. GOLD WATCH \u2014 comp=-27.5 weak, price 4217, 51p below alert 4268, arm gate comp<=-40 not met. EURUSD -7.5 none, AUDUSD -17.5 none, USDJPY +14 none, USDCHF +33 weak. 0 positions, 2 LIMITs intact. Balance $921.75.",
@@ -1109,14 +1117,6 @@
       "ts_utc": "2026-05-09T21:53Z",
       "regime_name": "USD_WEAKNESS_HORMUZ_REESCALATION",
       "note_text": "2026-05-09T21:53Z \u2014 WEEKEND TICK. 4 evts consumed. MARKETS CLOSED \u2014 weekend rollover. AUDUSD BUY: 49.3h OVERDUE time-exit (24h trend max); SL=0.7227 (+1.5R), UPL=+$7.40, bid=0.72448; execute CLOSE Sunday 21:00Z open. GBPUSD BUY: 32.7h OVERDUE time-exit; SL=1.36071 (BE), UPL=+$5.36, bid=1.36332; execute CLOSE Sunday 21:00Z open. HORMUZ ++ ESCALATION: Beijing confirms Chinese tanker attacked at Strait of Hormuz (May 9T03:58Z) \u2014 third distinct vessel incident. JPY + CHF safe-haven bids intensify. OIL supply-risk premium elevated. USDCHF comp=-50 mod bear, dist=29.25p (ARMED pending corr cap; primary Sunday entry). EURUSD comp=+49 CT-fade watch (71.2p from level). USDJPY comp=-29 weak bear (66.4p from level). OIL comp=-18 none; oil_sweep_9323 CF updated to 7 fires 100% 4h (WATCH arm >=+40). Binary=inactive. Balance $949.67.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-05-08T18:10Z",
-      "regime_name": "USD_WEAKNESS_HORMUZ_REESCALATION",
-      "note_text": "2026-05-08T18:10Z \u2014 2 evts (GBPUSD position_opened + Hormuz news_flash). GBPUSD BUY confirmed open: entry=1.36071, SL=1.36071 (BE), TP=1.37, UPL=+$5.25, age=5h, comp=+40 mod. AUDUSD BUY: SL=0.72270 (+1.5R lock), TP=0.728, UPL=+$7.58, age=21.5h \u2014 TIME EXIT at 20:37 UTC (2.45h). Hormuz escalation: US attacks Iranian vessel near Strait (13:43Z), Iran seizes oil tanker (18:03Z). OIL supply-risk premium peak. CHF/JPY safe-haven bids intensifying. USD bearish. No new entries: 2-correlated cap FULL (AUDUSD+GBPUSD both USD-weakness). USDCHF comp=-43 mod bear, level 27.4p away (within 30p prox) but blocked by corr cap. OIL watch alert added at 93.23 (validated CF 100% 4h, comp=-12.5 none). GBPUSD scalp bias updated to bull (comp=+40). Balance $950.13.",
       "binary_event_name": null,
       "binary_event_active": 0,
       "binary_event_deadline": null
