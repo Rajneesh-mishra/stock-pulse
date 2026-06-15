@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T18:06:59.382943+00:00",
+  "generated_at": "2026-06-15T19:44:02.043212+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -1565,12 +1565,38 @@
       "alert_id": "gbpusd_h4ob_sell_134213",
       "instrument": "GBPUSD",
       "direction": "sell",
-      "fires": 2,
+      "fires": 3,
+      "by_horizon": {
+        "1h": {
+          "filled": 3,
+          "favorable": 3,
+          "avg_pips": 9.2,
+          "hit_rate": 1.0
+        },
+        "4h": {
+          "filled": 3,
+          "favorable": 2,
+          "avg_pips": 7.5,
+          "hit_rate": 0.67
+        },
+        "24h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        }
+      }
+    },
+    {
+      "alert_id": "oil_crude_fvg_sell_8393",
+      "instrument": "OIL_CRUDE",
+      "direction": "sell",
+      "fires": 1,
       "by_horizon": {
         "1h": {
           "filled": 1,
           "favorable": 1,
-          "avg_pips": 10.1,
+          "avg_pips": 75.5,
           "hit_rate": 1.0
         },
         "4h": {
@@ -1588,22 +1614,22 @@
       }
     },
     {
-      "alert_id": "oil_crude_fvg_sell_8393",
-      "instrument": "OIL_CRUDE",
+      "alert_id": "gold_fvg_sell_4268",
+      "instrument": "GOLD",
       "direction": "sell",
       "fires": 1,
       "by_horizon": {
         "1h": {
-          "filled": 0,
+          "filled": 1,
           "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "avg_pips": -27.7,
+          "hit_rate": 0.0
         },
         "4h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 299.5,
+          "hit_rate": 1.0
         },
         "24h": {
           "filled": 0,

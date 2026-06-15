@@ -1,27 +1,39 @@
 {
   "regime": "USD_STRENGTH_IRAN_PEACE_PIVOT",
-  "tick_ts_utc": "2026-06-12T18:06Z",
-  "state_ts_utc": "2026-06-12T18:06Z",
-  "regime_note": "2026-06-12T18:06Z \u2014 1 evt (level_cross OIL_CRUDE cross_up @83.961 \u2014 post-fill noise, price recovered to 83.86). OIL SELL LIVE entry=83.935 UPL=+$0.52 (SL=85.10 TP=79.50 RR=3.8 comp=-70 strong all-4TF). Iran deal: 60d ceasefire extension tabled, Hormuz reopening framework live, Iran denies sign-off \u2014 WTI $83-87 8wk low. BEAR THESIS REINFORCED. USDCAD BUY LIMIT@1.39573 INTACT (comp=+67.5 mod 3/4TF, price=1.39786, dist=21p within 30p). 2 stale May-11 pending_orders (AUDUSD/USDCHF) removed \u2014 not in broker. GBPUSD comp=-3.5 none WATCH (price 5p below H4 OB, arm gate comp<=-40 not met). GOLD comp=-27.5 weak WATCH (47p below 4268, arm gate comp<=-40 not met). USDCHF comp=+40.5 moderate WATCH (no clean level to arm). EURUSD/AUDUSD/USDJPY readiness=none, no setup. Balance $922.27.",
-  "regime_note_prev": "2026-06-12T18:00Z \u2014 1 evt (position_opened OIL_CRUDE SELL@83.935 LIMIT fill). OIL SELL 12@83.935 LIVE (SL=85.10 TP=79.50 R:R=3.8 UPL=+$0.82). IRAN-US 14-pt draft deal leaked (Mehr News Agency): lift oil sanctions + Hormuz reopening 30d \u2014 WTI -4%+ to $84 8-week low, STRONGLY REINFORCES OIL bear thesis. comp=-70 strong all-4TF. thesis=trend 24h max hold. USDCAD BUY LIMIT@1.39573 INTACT (comp=+67.5 moderate 3/4TF, price=1.39776, dist=20p within 30p). Peace rally mild headwind to USDCAD but DAY FVG support intact. GBPUSD comp=-3.5 none, arm gate comp<=-40 not met, WATCH. GOLD comp=-27.5 weak, 47p below 4268, WATCH. USDCHF comp=+40.5 moderate, WATCH no level armed. EURUSD -7.5 none, AUDUSD -17.5 none, USDJPY +14 none. 1 position, 1 LIMIT. Balance $922.57.",
+  "tick_ts_utc": "2026-06-15T19:39Z",
+  "state_ts_utc": "2026-06-15T19:39Z",
+  "regime_note": "2026-06-15T19:37Z \u2014 8 evts processed (3 reconcile, 2 level_cross, 2 alert_audit, 1 news_flash). STATE RECONCILED: USDCAD BUY LIVE @1.39573 (comp=+73 strong all-4TF; time cap 22:11Z today); OIL SELL LIVE @80.024 SL=83.15 TP=75.0 comp=-53 mod bear 3/4TF; old OIL@83.935 CLOSED +$10.25. GBPUSD level_cross: price probed H4 OB to 1.344675 then retreated to 1.3417; comp=+1 none, gate comp<=-40 far from met, WATCH. GOLD level_cross: price blew to 4354.05 breaching SL 4330; gold_fvg_sell_4268 REMOVED; new alert gold_h4choch_sell_4366 ADDED (arm when comp<=-40). Trump/Israel Beirut strike headline threatens Iran deal \u2014 bullish risk for OIL bear thesis, but OIL comp=-53 mod bear intact, KEEP. Hormuz reopening 'won't end shipping risks' \u2014 moderates OIL bear speed, not direction. Balance $977.38 (net +$55.11 from last state; old OIL +$10.25 + balance rollup). EURUSD=-13 none, AUDUSD=-20 none, USDJPY=+34 weak, USDCHF=+20.5 none \u2014 no new setups.",
+  "regime_note_prev": "2026-06-12T18:06Z \u2014 1 evt (level_cross OIL_CRUDE cross_up @83.961 \u2014 post-fill noise, price recovered to 83.86). OIL SELL LIVE entry=83.935 UPL=+$0.52 (SL=85.10 TP=79.50 RR=3.8 comp=-70 strong all-4TF). Iran deal: 60d ceasefire extension tabled, Hormuz reopening framework live, Iran denies sign-off \u2014 WTI $83-87 8wk low. BEAR THESIS REINFORCED. USDCAD BUY LIMIT@1.39573 INTACT (comp=+67.5 mod 3/4TF, price=1.39786, dist=21p within 30p). 2 stale May-11 pending_orders (AUDUSD/USDCHF) removed \u2014 not in broker. GBPUSD comp=-3.5 none WATCH (price 5p below H4 OB, arm gate comp<=-40 not met). GOLD comp=-27.5 weak WATCH (47p below 4268, arm gate comp<=-40 not met). USDCHF comp=+40.5 moderate WATCH (no clean level to arm). EURUSD/AUDUSD/USDJPY readiness=none, no setup. Balance $922.27.",
   "open_positions": [
     {
-      "trade_id": "oil_crude_fvg_sell_8393_20260612",
+      "trade_id": "usdcad_dayfvg_buy_139573_20260614",
+      "instrument": "USDCAD",
+      "direction": "BUY",
+      "dealId": "00000000-53a1-59d3-044a-beb40055311e",
+      "entry": 1.39573,
+      "sl": 1.3894,
+      "tp": 1.415,
+      "size": 2000.0,
+      "opened_at": "2026-06-14T22:11:19Z",
+      "thesis_type": "trend",
+      "alert_id": "usdcad_dayfvg_buy_139573",
+      "confluence_at_entry": "+73 strong all-4TF",
+      "time_cap_utc": "2026-06-15T22:11:19Z"
+    },
+    {
+      "trade_id": "oil_crude_fvg_sell_8393_20260615",
       "instrument": "OIL_CRUDE",
       "direction": "SELL",
-      "dealId": "00000000-5364-144c-044a-beb40055311e",
-      "entry": 83.935,
-      "sl": 85.1,
-      "tp": 79.5,
-      "size": 12.0,
-      "opened_at": "2026-06-12T17:56:25Z",
-      "alert_id": "oil_crude_fvg_sell_8393",
-      "confluence_at_entry": "comp=-70 strong bear all-4TF. M15/H1/H4 BOS bear. M15 FVG 83.933-85.011 supply. Iran deal REINFORCES bear (Hormuz reopening 30d).",
+      "dealId": "00000000-53a9-3192-044a-beb40055311e",
+      "entry": 80.024,
+      "sl": 83.15,
+      "tp": 75.0,
+      "size": 2.0,
+      "opened_at": "2026-06-15T19:36:19Z",
       "thesis_type": "trend",
-      "rr_target": 3.8,
-      "max_hold_hours": 24,
-      "upl_usd": 0.52,
-      "upl_updated": "2026-06-12T18:06Z"
+      "alert_id": "oil_crude_fvg_sell_8393",
+      "confluence_at_entry": "-53 moderate bear 3/4TF",
+      "time_cap_utc": "2026-06-16T19:36:19Z"
     }
   ],
   "watchlist": [],
@@ -842,6 +854,24 @@
       "pnl_usd": -0.58,
       "alert_id": "scalp_engine",
       "result": "loss"
+    },
+    {
+      "trade_id": "oil_crude_fvg_sell_8393_20260612_close",
+      "instrument": "OIL_CRUDE",
+      "direction": "SELL",
+      "entry": 83.935,
+      "exit": 83.049,
+      "size": 12.0,
+      "sl": 85.1,
+      "tp": 79.5,
+      "opened_at": "2026-06-12T17:56:25Z",
+      "closed_at": "2026-06-14T23:15:29Z",
+      "thesis_type": "trend",
+      "exit_reason": "closed (broker; last_upl=+$10.248 at sync)",
+      "pnl_usd": 10.25,
+      "alert_id": "oil_crude_fvg_sell_8393",
+      "result": "win",
+      "notes": "Iran deal Hormuz framework drove WTI from 83.94 to 83.05; closed ahead of Sunday market reopen; new SELL re-entered at 80.024 on continuation."
     }
   ],
   "consecutive_losses": 3,
@@ -851,7 +881,7 @@
   "total_trades": 7,
   "wins": 3,
   "losses": 0,
-  "broker_balance": 921.75,
+  "broker_balance": 977.38,
   "effective_capital_usd": 987.93,
   "capital_base_note": "Demo account reset to $1k on 2026-04-20 (topUp -$8849.07). Broker balance and effective capital are now aligned.",
   "loop_config": {
@@ -1443,7 +1473,7 @@
     "active": false,
     "note": "No active binary. Iran-US military confrontation ongoing (Hormuz). Now Chinese tanker attack confirmed (Beijing, May 9T03:58Z). Escalation persistent but no fixed deadline. Monitor Iran-US formal talks. CHF/JPY safe-haven bids active."
   },
-  "balance": 921.75,
+  "balance": 977.38,
   "level_alerts": [
     {
       "alert_id": "usdchf_dayfvg_sell_77933",
@@ -1567,36 +1597,9 @@
       ]
     }
   ],
-  "working_orders": [
-    {
-      "dealId": "00000000-4fa3-9abc-044a-beb40055311e",
-      "epic": "AUDUSD",
-      "direction": "BUY",
-      "size": 5000.0,
-      "level": 0.72241,
-      "stopLevel": 0.7215,
-      "profitLevel": 0.7285,
-      "timeInForce": "GOOD_TILL_CANCELLED",
-      "createdDateUTC": "2026-05-11T19:28:34.693",
-      "status": "ARMED",
-      "note": "M15 bull OB top 0.72241; comp=+57.5 moderate bull 4/4TF; half-size (moderate readiness); R:R=6.7"
-    },
-    {
-      "dealId": "00000000-4fa3-9ad0-044a-beb40055311e",
-      "epic": "USDCHF",
-      "direction": "SELL",
-      "size": 1500.0,
-      "level": 0.77933,
-      "stopLevel": 0.78047,
-      "profitLevel": 0.775,
-      "timeInForce": "GOOD_TILL_CANCELLED",
-      "createdDateUTC": "2026-05-11T19:28:39.239",
-      "status": "ARMED",
-      "note": "H4 bear FVG bottom 0.77933; comp=-42.5 moderate bear 4/4TF; R:R=3.8; CHF safe-haven Hormuz"
-    }
-  ],
+  "working_orders": [],
   "daily_pnl_usd": 0.0,
   "news_last_searched_utc": "2026-05-07T12:55Z",
   "pending_orders": [],
-  "balance_usd": 922.27
+  "balance_usd": 977.38
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T18:07:30.990279Z",
+  "generated_at": "2026-06-15T19:45:01.770766Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -237,410 +237,44 @@
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
     },
     {
-      "ts_utc": "2026-06-12T15:32Z",
-      "events_in": 16,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 16,
-      "note": "15:32Z forex auto \u2014 16 evts (all stale May/Jun10 events). BROKER: 0 pos, 2 LIMITs: USDCAD BUY@1.39573 (comp=+60 mod, thesis intact), OIL SELL@83.93 (comp=-70 strong, thesis intact). GBPUSD level_cross H4OB@1.34213 \u2014 comp=-3.5 none, arm needs <=-40, WATCH. USDCHF ADD buy_watch H4OB@0.77954 (comp=+33 weak, arm when>=40). News: June10 events = stale May articles, no regime change. REMOVE: usdjpy_dayfvg_sell_15733 (CF 4h=0%, 4 fires). news_query us_iran_military REMOVED. Scalp: GBPUSD ACTIVE, EURUSD/AUDUSD OFF. Balance $921.75. attention_covered=8/8"
-    },
-    {
-      "tick_ts_utc": "2026-06-12T16:20Z",
-      "events_consumed": 0,
-      "type": "heartbeat",
-      "positions_opened": 0,
-      "positions_closed": 0,
-      "active_limits": [
-        {
-          "epic": "USDCAD",
-          "dir": "BUY",
-          "level": 1.39573,
-          "comp": 60,
-          "readiness": "moderate"
-        },
-        {
-          "epic": "OIL_CRUDE",
-          "dir": "SELL",
-          "level": 83.93,
-          "comp": -70,
-          "readiness": "strong"
-        }
-      ],
-      "balance": 921.75,
-      "open_positions": 0,
-      "regime": "USD_STRENGTH_POST_HORMUZ",
-      "key_note": "Trump signals Iran-US peace this weekend \u2014 OIL bear confirmed. USDCAD +60 mod, OIL -70 strong, all LIMITs intact. No new entries. News queries rolled to Jun 11-14.",
-      "attention_matrix": {
-        "EURUSD": {
-          "swing": "NONE",
-          "scalp": "OFF",
-          "readiness": "none"
-        },
-        "GBPUSD": {
-          "swing": "WATCH",
-          "scalp": "ACTIVE",
-          "readiness": "none"
-        },
-        "AUDUSD": {
-          "swing": "NONE",
-          "scalp": "OFF",
-          "readiness": "none"
-        },
-        "USDJPY": {
-          "swing": "NONE",
-          "scalp": "OFF",
-          "readiness": "none"
-        },
-        "USDCAD": {
-          "swing": "ARMED",
-          "scalp": "OFF",
-          "readiness": "moderate"
-        },
-        "USDCHF": {
-          "swing": "NONE",
-          "scalp": "OFF",
-          "readiness": "weak"
-        },
-        "GOLD": {
-          "swing": "WATCH",
-          "scalp": "N/A",
-          "readiness": "weak"
-        },
-        "OIL_CRUDE": {
-          "swing": "ARMED",
-          "scalp": "N/A",
-          "readiness": "strong"
-        }
-      }
-    },
-    {
-      "ts_utc": "2026-06-12T16:37Z",
-      "events_in": 1,
-      "opened": 0,
-      "closed": 0,
-      "skipped": 0,
-      "note": "16:37 forex auto \u2014 1 evt (news_flash iran_ceasefire: AJ 'breakthrough deal?' Jun 12 13:29 GMT speculative). OIL comp=-70 strong SELL@83.93 ARMED. USDCAD comp=+60 mod BUY@1.39573 ARMED. Iran deal spec confirms OIL bear; both LIMITs intact. GBPUSD comp=-3.5 none WATCH 1.34213. GOLD comp=-27.5 weak WATCH 4268.71. No trades. Scalp GBPUSD active/no-halt. Balance $921.75. attention_covered=9/9."
-    },
-    {
-      "tick_ts_utc": "2026-06-12T17:08Z",
-      "events_consumed": 1,
+      "tick_ts_utc": "2026-06-15T19:39Z",
+      "events_processed": 8,
       "events": [
-        "level_cross GBPUSD gbpusd_h4ob_sell_134213"
+        "position_opened USDCAD @1.39573 (reconcile)",
+        "position_closed OIL@83.935 +$10.25 (reconcile)",
+        "level_cross GBPUSD gbpusd_h4ob_sell_134213 (WATCH, gate comp<=-40 not met)",
+        "level_cross GOLD gold_fvg_sell_4268 (REMOVE alert, SL 4330 breached at 4354.05)",
+        "news_flash Trump/Israel Beirut strike threatens Iran deal",
+        "alert_audit_request OIL x2 (comp=-53 mod bear, KEEP)",
+        "position_opened OIL@80.024 (reconcile)"
       ],
-      "positions_opened": 0,
-      "positions_closed": 0,
-      "trades_skipped": 1,
-      "skip_reasons": [
-        "GBPUSD H4 OB level_cross: comp=-3.5 none, H1 bull BOS conflict, arm requires comp<=-40"
-      ],
-      "limits_active": [
-        {
-          "epic": "USDCAD",
-          "dir": "BUY",
-          "level": 1.39573,
-          "comp": 60,
-          "readiness": "moderate",
-          "status": "KEEP"
-        },
-        {
-          "epic": "OIL_CRUDE",
-          "dir": "SELL",
-          "level": 83.93,
-          "comp": -70,
-          "readiness": "strong",
-          "status": "KEEP"
-        }
-      ],
-      "balance": 921.75,
-      "regime": "USD_STRENGTH_POST_HORMUZ",
-      "attention_matrix": {
-        "EURUSD": {
-          "swing": "NONE",
-          "scalp": "OFF",
-          "readiness": "none",
-          "reason": "comp=-7.5 none; engine_desync disabled"
-        },
-        "GBPUSD": {
-          "swing": "WATCH",
-          "scalp": "ACTIVE",
-          "readiness": "none",
-          "reason": "H4 OB crossed, H1 bull BOS conflicts, comp=-3.5<-40 gate"
-        },
-        "AUDUSD": {
-          "swing": "NONE",
-          "scalp": "OFF",
-          "readiness": "none",
-          "reason": "comp=-17.5 none; wr=11% scalp disabled"
-        },
-        "USDJPY": {
-          "swing": "NONE",
-          "scalp": "OFF",
-          "readiness": "none",
-          "reason": "comp=+14 none; pip-conv pending"
-        },
-        "USDCAD": {
-          "swing": "ARMED",
-          "scalp": "OFF",
-          "readiness": "moderate",
-          "reason": "LIMIT BUY@1.39573 active, comp=+60 mod, dist=13p<30p floor"
-        },
-        "USDCHF": {
-          "swing": "WATCH",
-          "scalp": "OFF",
-          "readiness": "weak",
-          "reason": "comp=+33 weak, no level armed; pip-conv pending scalp"
-        },
-        "GOLD": {
-          "swing": "WATCH",
-          "scalp": "N/A",
-          "readiness": "weak",
-          "reason": "comp=-27.5 weak, 48p from level 4268, arm needs comp<=-40"
-        },
-        "OIL_CRUDE": {
-          "swing": "ARMED",
-          "scalp": "N/A",
-          "readiness": "strong",
-          "reason": "LIMIT SELL@83.93 active, comp=-70 strong, thesis intact"
-        }
+      "positions": {
+        "open": [
+          "USDCAD BUY @1.39573 UPL=+$4.02 (21.4h, time cap 22:11Z)",
+          "OIL SELL @80.024 UPL=-$0.24 (comp=-53 mod bear)"
+        ],
+        "closed_this_tick": [
+          "OIL SELL @83.935 \u2192 closed; PnL=+$10.25"
+        ]
       },
-      "scalp_audit": "EURUSD=OFF(engine_desync) GBPUSD=ACTIVE(neutral,no-halt) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
-    },
-    {
-      "tick_ts_utc": "2026-06-12T17:18Z",
-      "events_consumed": 1,
-      "event_types": [
-        "news_flash"
-      ],
-      "positions_opened": 0,
-      "positions_closed": 0,
-      "limits_armed": 0,
-      "limits_cancelled": 0,
-      "open_positions": 0,
-      "working_orders": 2,
-      "balance": 921.75,
-      "daily_pnl": 0.0,
-      "regime": "USD_STRENGTH_POST_HORMUZ",
-      "notes": "news_flash: hormuz_strait (Iran declares Strait closed, hit 2 ships, Jun 11 38h stale, market dismissed). OIL SELL LIMIT@83.93 + USDCAD BUY LIMIT@1.39573 both intact. Date window rolled: hormuz_strait now [12-15 Jun 2026]. No trades.",
-      "attention_matrix": {
-        "EURUSD": {
-          "swing": "NONE",
-          "scalp": "OFF",
-          "readiness": "none",
-          "reason": "comp=-7.5 none, no alert, scalp engine_desync disabled"
-        },
-        "GBPUSD": {
-          "swing": "WATCH",
-          "scalp": "ACTIVE",
-          "readiness": "none",
-          "reason": "comp=-3.5 none, inside H4 OB but arm gate comp<=-40 not met; scalp session_open_break active"
-        },
-        "AUDUSD": {
-          "swing": "NONE",
-          "scalp": "OFF",
-          "readiness": "none",
-          "reason": "comp=-17.5 none, no active alert, scalp wr=11% disabled"
-        },
-        "USDJPY": {
-          "swing": "NONE",
-          "scalp": "OFF",
-          "readiness": "none",
-          "reason": "comp=+14 none, no alert, scalp pip-conv-pending"
-        },
-        "USDCAD": {
-          "swing": "ARMED",
-          "scalp": "OFF",
-          "readiness": "moderate",
-          "reason": "LIMIT BUY@1.39573 armed (dist=16p<30p), comp=+60 mod, CAD-quote scalp off"
-        },
-        "USDCHF": {
-          "swing": "NONE",
-          "scalp": "OFF",
-          "readiness": "weak",
-          "reason": "comp=+33 weak, no alert armed (need comp>=40), CHF-quote scalp off"
-        },
-        "GOLD": {
-          "swing": "WATCH",
-          "scalp": "N/A",
-          "readiness": "weak",
-          "reason": "comp=-27.5 weak, alert 4268 WATCH arm gate comp<=-40 not met, spread 5p forbids scalp"
-        },
-        "OIL_CRUDE": {
-          "swing": "ARMED",
-          "scalp": "N/A",
-          "readiness": "strong",
-          "reason": "LIMIT SELL@83.93 armed (dist=18p<112p ATR threshold), comp=-70 strong, spread 4p forbids scalp"
-        }
-      }
-    },
-    {
-      "tick_ts_utc": "2026-06-12T17:27Z",
-      "events_consumed": 0,
-      "event_types": [],
-      "positions_opened": 0,
-      "positions_closed": 0,
-      "limits_armed": 0,
-      "limits_cancelled": 0,
-      "open_positions": 0,
-      "working_orders": 2,
-      "balance": 921.75,
-      "daily_pnl": 0.0,
-      "regime": "USD_STRENGTH_POST_HORMUZ",
-      "notes": "Heartbeat tick. 0 events. USDCAD BUY LIMIT@1.39573 intact (comp=+60 mod, price 1.39747). OIL SELL LIMIT@83.93 intact (comp=-70 strong, price 83.665). GBPUSD 1.34159 below H4 OB, comp=-3.5 none, WATCH. GOLD 4219 weak, WATCH. No trades.",
-      "attention_matrix": {
-        "EURUSD": {
-          "swing": "NONE",
-          "scalp": "OFF",
-          "readiness": "none",
-          "reason": "comp=-7.5 none, no alert; scalp disabled (engine_desync_loop)"
-        },
-        "GBPUSD": {
-          "swing": "WATCH",
-          "scalp": "ACTIVE",
-          "readiness": "none",
-          "reason": "comp=-3.5 none, inside H4 OB zone but arm gate comp<=-40 not met"
-        },
-        "AUDUSD": {
-          "swing": "NONE",
-          "scalp": "OFF",
-          "readiness": "none",
-          "reason": "comp=-17.5 none, no alert; scalp disabled (wr=11%)"
-        },
-        "USDJPY": {
-          "swing": "NONE",
-          "scalp": "OFF",
-          "readiness": "none",
-          "reason": "comp=+14 none, no alert; scalp pip-conv pending"
-        },
-        "USDCAD": {
-          "swing": "ARMED",
-          "scalp": "OFF",
-          "readiness": "moderate",
-          "reason": "comp=+60 moderate bull, LIMIT BUY@1.39573 armed at broker (dist=17.4p<30p threshold)"
-        },
-        "USDCHF": {
-          "swing": "NONE",
-          "scalp": "OFF",
-          "readiness": "weak",
-          "reason": "comp=+33 weak, no alert at weak readiness; scalp pip-conv pending"
-        },
-        "GOLD": {
-          "swing": "WATCH",
-          "scalp": "N/A",
-          "readiness": "weak",
-          "reason": "comp=-27.5 weak, alert 4268 but 49p away and arm gate comp<=-40 not met"
-        },
-        "OIL_CRUDE": {
-          "swing": "ARMED",
-          "scalp": "N/A",
-          "readiness": "strong",
-          "reason": "comp=-70 strong bear, LIMIT SELL@83.93 armed at broker (dist=26.5p<H1ATR=1.13)"
-        }
-      }
-    },
-    {
-      "tick_ts_utc": "2026-06-12T18:00Z",
-      "events_processed": [
-        "evt_1781287001175_position_opened"
-      ],
-      "event_summary": "position_opened OIL_CRUDE SELL@83.935 (LIMIT filled)",
-      "positions_opened": [],
-      "positions_closed": [],
-      "limits_placed": [],
-      "limits_cancelled": [],
-      "open_positions": [
-        {
-          "instrument": "OIL_CRUDE",
-          "direction": "SELL",
-          "entry": 83.935,
-          "sl": 85.1,
-          "tp": 79.5,
-          "size": 12.0,
-          "upl": 0.82
-        }
-      ],
-      "pending_orders": [
-        {
-          "instrument": "USDCAD",
-          "direction": "BUY",
-          "level": 1.39573,
-          "sl": 1.3894,
-          "tp": 1.415
-        }
-      ],
-      "balance": 922.57,
-      "regime": "USD_STRENGTH_IRAN_PEACE_PIVOT",
-      "notes": "OIL SELL LIMIT@83.93 filled@83.935. Iran 14-pt deal draft REINFORCES bear thesis (Hormuz reopening 30d). comp=-70 strong all-4TF. USDCAD LIMIT intact at 1.39573, comp=+67.5 moderate. No other actions this tick.",
-      "attention_matrix": {
-        "EURUSD": "swing=NONE scalp=OFF(engine_desync) readiness=none \u2014 comp=-7.5, no setup",
-        "GBPUSD": "swing=WATCH scalp=ACTIVE(neutral,session_break) readiness=none \u2014 comp=-3.5, inside OB zone, arm gate comp<=-40 not met",
-        "AUDUSD": "swing=NONE scalp=OFF(wr=11pct) readiness=none \u2014 comp=-17.5, no setup",
-        "USDJPY": "swing=NONE scalp=OFF(pip-conv-pending) readiness=none \u2014 comp=+14, no setup",
-        "USDCAD": "swing=ARMED scalp=OFF(spread+quote) readiness=moderate \u2014 LIMIT@1.39573 dist=20p within 30p threshold, comp=+67.5",
-        "USDCHF": "swing=WATCH scalp=OFF(pip-conv-pending) readiness=moderate \u2014 comp=+40.5, no specific level armed yet",
-        "GOLD": "swing=WATCH scalp=N/A readiness=weak \u2014 comp=-27.5, 47p below alert 4268, arm gate comp<=-40 not met",
-        "OIL_CRUDE": "swing=ARMED scalp=N/A readiness=strong \u2014 SELL POSITION LIVE@83.935 SL=85.10 TP=79.50"
-      }
-    },
-    {
-      "tick_ts_utc": "2026-06-12T18:06Z",
-      "events_consumed": 1,
-      "events": [
-        "evt_1781287369385_level_cross \u2014 level_cross OIL_CRUDE post-fill noise (cross_up @83.961), price recovered to 83.86, no action"
-      ],
-      "positions_opened": 0,
-      "positions_closed": 0,
-      "new_limits": 0,
-      "cancelled_limits": 0,
-      "state_cleanup": "Removed 2 stale May-11 pending_orders (AUDUSD BUY, USDCHF SELL \u2014 not in broker)",
-      "open_positions": [
-        {
-          "instrument": "OIL_CRUDE",
-          "direction": "SELL",
-          "entry": 83.935,
-          "sl": 85.1,
-          "tp": 79.5,
-          "size": 12.0,
-          "upl": 0.52,
-          "age_min": 10,
-          "thesis": "trend 24h max \u2014 OIL bear comp=-70 strong, Iran peace deal WTI $83-87"
-        }
-      ],
-      "active_limits": [
-        {
-          "instrument": "USDCAD",
-          "direction": "BUY",
-          "level": 1.39573,
-          "dist_pips": 21.3,
-          "comp": 67.5,
-          "readiness": "moderate"
-        }
-      ],
-      "confluence": {
-        "OIL_CRUDE": "comp=-70 strong bear all-4TF",
-        "USDCAD": "comp=+67.5 moderate bull 3/4TF",
-        "USDCHF": "comp=+40.5 moderate bull all-4TF (no level to arm)",
-        "GOLD": "comp=-27.5 weak bear (arm gate <=-40 not met)",
-        "GBPUSD": "comp=-3.5 none",
-        "EURUSD": "comp=-7.5 none",
-        "AUDUSD": "comp=-17.5 none",
-        "USDJPY": "comp=+14 none"
+      "alerts": {
+        "removed": [
+          "gold_fvg_sell_4268 (SL breached at 4354)"
+        ],
+        "added": [
+          "gold_h4choch_sell_4366 (H4 ChoCH 4366.64, arm comp<=-40)"
+        ],
+        "modified": [
+          "gbpusd_h4ob_sell_134213 (fresh H1 FVG context)",
+          "oil_crude_fvg_sell_8393 (deactivated post-close)",
+          "usdcad_dayfvg_buy_139573 (deactivated post-fill)"
+        ]
       },
-      "regime": "USD_STRENGTH_IRAN_PEACE_PIVOT",
-      "regime_note": "OIL bear thesis reinforced: Iran deal 60d ceasefire extension tabled, Hormuz reopening framework live, WTI $83-87 8wk low. USDCAD LIMIT intact. Balance $922.27.",
-      "balance_usd": 922.27,
-      "news": "Iran-US: 60d ceasefire extension + Hormuz reopening framework tabled (Iran denies sign-off). WTI -4% to $83-87. OIL SELL thesis strongly reinforced.",
-      "watchlist_audit": "all 4 alerts KEEP (oil deactivated/position live; usdcad LIMIT armed 21p; gbpusd WATCH comp gate; gold WATCH comp gate)",
-      "scalp_audit": "GBPUSD=KEEP(enabled neutral 0 trades) EURUSD=KEEP(disabled desync) AUDUSD=KEEP(disabled wr=11%) USDJPY/CHF/CAD=pip-conv GOLD/OIL=spread",
-      "attention_matrix": {
-        "EURUSD": "swing=NONE scalp=OFF readiness=none \u2014 comp=-7.5 no setup",
-        "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=none \u2014 comp=-3.5 H4OB arm gate comp<=-40 not met",
-        "AUDUSD": "swing=NONE scalp=OFF readiness=none \u2014 comp=-17.5 no setup scalp wr=11%",
-        "USDJPY": "swing=NONE scalp=OFF readiness=none \u2014 comp=+14 no setup pip-conv-pending",
-        "USDCAD": "swing=ARMED scalp=OFF readiness=moderate \u2014 LIMIT@1.39573 armed 21p away",
-        "USDCHF": "swing=WATCH scalp=OFF readiness=moderate \u2014 comp=+40.5 no clean level",
-        "GOLD": "swing=WATCH scalp=N/A readiness=weak \u2014 comp=-27.5 arm gate comp<=-40 not met",
-        "OIL_CRUDE": "swing=ARMED scalp=N/A readiness=strong \u2014 SELL position live comp=-70"
-      }
+      "new_trades": 0,
+      "regime": "USD_STRENGTH_IRAN_PEACE_THREATENED",
+      "balance": 977.38,
+      "scalp_status": "GBPUSD=ACTIVE(session_open_break) EURUSD=DISABLED(desync) AUDUSD=DISABLED(wr=11pct) USDCAD/CHF/JPY=pip-conv-pending GOLD/OIL=spread-blocked",
+      "summary": "8 evts reconcile + GOLD alert replaced; state synced to broker. USDCAD approaching 24h time cap. OIL bear intact despite Trump/Israel escalation threat."
     }
   ]
 }
