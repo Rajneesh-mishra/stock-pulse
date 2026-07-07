@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-07T12:18:06.889358+00:00",
+  "generated_at": "2026-07-07T12:43:21.444828+00:00",
   "counts": {
     "trades": 52,
-    "events": 8216,
+    "events": 8217,
     "ticks": 59,
-    "regime_snapshots": 268,
+    "regime_snapshots": 269,
     "broker_positions": 0,
-    "counterfactuals": 192
+    "counterfactuals": 193
   },
   "trades_last_50": [
     {
@@ -1063,6 +1063,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-07-07T12:16Z",
+      "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
+      "note_text": "2026-07-07T12:16Z \u2014 1 evt: level_cross GOLD (gold_dayfvg_sell_4163, price 4162.84 crossed zone bottom 4162.83 at 12:08Z UTC). GOLD now 4169.63 \u2014 7p INSIDE DAY FVG sell zone 4162.83-4173.575 (2nd entry today). Comp=+22.0 none-bull; gate \u2264-40 UNMET \u2014 no trade. M15 bullish (ChoCH bull Jul6 22:30Z at 4168.59, price>ema21>ema50). H4 bull FVG 4141-4155 fresh below as support. Zone top 4173.575 only 4p above; bear trigger requires comp\u2264-40 + M15 rejection wick\u226510p + bearish close. USDCAD=+40.5 moderate-bull (no structural level). GBPUSD=+28 weak, alert 1.34213 (35p away). All gates unmet. Balance $991.78. 0 positions.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-07-07T17:37Z",
       "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
       "note_text": "2026-07-07T17:37Z \u2014 1 evt processed (news_flash hormuz_strait: Iran fires missiles at 2 commercial ships in Strait of Hormuz, pub 06:52Z Jul7). Event ~11h old; OIL at 69.026 (below last tick 69.461) \u2014 spike faded post-publication. GOLD at 4158.69 (4p below sell zone 4162.83-4173.575). Second Hormuz escalation reinforces supply risk/fear narrative but structural bear OIL thesis (Iran deal + OPEC surge) unchanged. OIL H1 OB sell zone 70.577 still ~155p away; comp=-11 none, gate comp\u2264-40 unmet. GOLD sell zone imminent (4p); comp=-2.5 none, gate comp\u2264-40 unmet. 4 stale May-7 level_alerts AUTO-REMOVED (USDCHF dist=268p, AUDUSD dist=260p, USDJPY dist=537p, USDCAD dist=563p; all>>3\u00d7H4ATR). CONFLUENCE: EURUSD=+2.5 none; GBPUSD=+28 weak; AUDUSD=+2.5 none; USDCAD=+40.5 moderate-bull (no fresh structural level); USDCHF=+21 none; USDJPY=+39 weak (entry blocked by risk_guard JPY bug); GOLD=-2.5 none; OIL=-11 none. No new trades. Balance $991.78. 0 positions.",
@@ -1130,14 +1138,6 @@
       "ts_utc": "2026-06-12T17:08Z",
       "regime_name": "USD_STRENGTH_POST_HORMUZ",
       "note_text": "2026-06-12T17:08Z \u2014 1 evt (level_cross GBPUSD gbpusd_h4ob_sell_134213: price 1.34219 crossed into H4 bear OB 1.34213-1.34855). REGIME: USD_STRENGTH_POST_HORMUZ unchanged. GBPUSD OB: price now inside H4 bear OB zone BUT H1 made bullish BOS at 1.34234 (Jun 10) \u2014 H1 structure bullish, comp=-3.5 none. Alert requires comp<=-40 to arm; no action. 0 positions, 2 LIMITs intact. USDCAD BUY@1.39573 comp=+60 mod, price 1.39705 (dist=13.2p, within 30p), KEEP. OIL SELL@83.93 comp=-70 strong, price 83.50 (dist=43p below LIMIT level), KEEP. GBPUSD WATCH (H1 bull BOS conflict, need comp<=-40). GOLD comp=-27.5 weak WATCH. EURUSD -7.5 none, AUDUSD -17.5 none, USDJPY +14 none, USDCHF +33 weak. Balance $921.75.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-06-12T16:37Z",
-      "regime_name": "USD_STRENGTH_POST_HORMUZ",
-      "note_text": "2026-06-12T16:37Z \u2014 1 evt (news_flash iran_ceasefire: AJ 'Are Iran, US really close to breakthrough deal?' Jun 12 13:29 GMT). REGIME: USD_STRENGTH_POST_HORMUZ. SPECULATIVE headline (question format, not confirmed deal). Confirms OIL bear thesis \u2014 Hormuz premium still unwinding. 0 positions, 2 LIMITs intact. USDCAD BUY@1.39573 comp=+60 mod 3/4TF, dist=17.3p vs 30p floor \u2014 KEEP. OIL SELL@83.93 comp=-70 strong all-4TF, dist=26.1p vs 30p floor \u2014 KEEP (LIMIT fills only if OIL bounces to 83.93; peace deal would cause further drop = limit stays unfilled = no loss). GBPUSD OB SELL 1.34213: comp=-3.5 none, price 8.9p below OB, WATCH arm needs <=-40. GOLD SELL 4268.71: comp=-27.5 weak, price 54.6p below level vs 3\u00d7H4ATR=148.2p, WATCH. EURUSD -10 none, AUDUSD -17.5 none, USDJPY +14 none, USDCHF +33 weak \u2014 no setups. Scalp: GBPUSD active/neutral (engine running, no halt); EURUSD disabled; AUDUSD disabled (wr=11%). Balance $921.75.",
       "binary_event_name": null,
       "binary_event_active": 0,
       "binary_event_deadline": null
@@ -1646,6 +1646,19 @@
     }
   ],
   "counterfactuals_last_50": [
+    {
+      "alert_id": "gold_dayfvg_sell_4163",
+      "instrument": "GOLD",
+      "direction": "sell",
+      "trigger_price": 4163.700000000001,
+      "fired_at": "2026-07-07T12:42:33.001534+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
     {
       "alert_id": "gold_dayfvg_sell_4163",
       "instrument": "GOLD",
@@ -2276,19 +2289,6 @@
       "direction": "sell",
       "trigger_price": 0.781585,
       "fired_at": "2026-05-04T07:16:20.042448+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
-    },
-    {
-      "alert_id": "oil_rebound_9931_buy_watch",
-      "instrument": "OIL_CRUDE",
-      "direction": "buy",
-      "trigger_price": 98.672,
-      "fired_at": "2026-05-04T05:34:08.867284+00:00",
       "hit_1h": null,
       "hit_4h": null,
       "hit_24h": null,

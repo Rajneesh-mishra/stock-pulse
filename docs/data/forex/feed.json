@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T12:19:22.120870Z",
+  "generated_at": "2026-07-07T12:47:04.048797Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -526,6 +526,15 @@
       "scalp_audit": "EURUSD=OFF(engine_desync) GBPUSD=ACTIVE(no_trades_no_halt) AUDUSD=OFF(wr=11%_19trades) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
       "regime": "USD_STRENGTH_OIL_BEAR_ONGOING",
       "notes": "GOLD level_cross: price entered FVG sell zone 4162.83-4173.575 at 12:08Z (2nd entry today). First entry (AM) reached 4168.44 then rejected -40p. Now price at 4169.63, zone top 4173 is 4p away. Comp=+22 none-bull \u2014 no trade until comp\u2264-40. M15 ChoCH bull Jul6 22:30Z still valid. USDCAD moderate bull (+40.5) but no structural level to anchor alert."
+    },
+    {
+      "ts_utc": "2026-07-07T12:45Z",
+      "events_in": 1,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 1,
+      "balance": 991.78,
+      "note": "18:15 IST (12:45Z) \u2014 1 evt: level_cross GOLD gold_dayfvg_sell_4163 (price 4163.70 re-entered zone 4162.83-4173.575). GOLD bid=4165.97 inside zone. Today's H=4174.98 briefly pierced zone top (+1.4p liquidity grab), rejected back. Comp=+13 none-bull; gate comp<=-40 UNMET. No trade. Alert audit: gold_dayfvg_sell_4163 KEEP (note updated, zone top test recorded). gbpusd_h4ob_sell_134213 KEEP (39p to 1.34213, promoted 4h=0.67, gate unmet). usdjpy_dayfvg_buy_161682 KEEP (blocked by JPY risk_guard bug). oil_crude_h1ob_sell_7057 KEEP (~155p to OB, gate unmet). Scalp: EURUSD=OFF(desync) GBPUSD=ACTIVE(no halt) AUDUSD=OFF(wr=11%) others=pip-conv-pending/spread-blocked. News skip: 0 open positions + regime stable 4h+. 0 trades. Balance $991.78."
     }
   ]
 }

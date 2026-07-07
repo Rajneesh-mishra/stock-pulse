@@ -115,14 +115,14 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: M15 bearish rejection wick >=10p from inside DAY bear FVG zone (4162.83-4173.575) with M15 bearish close. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GOLD 4169.63 (Jul 7 12:16Z UTC). Comp=+22.0 none-bull. Price is NOW INSIDE the FVG zone (2nd entry today). First entry ~07:08Z reached high 4168.44 then rejected -40p to 4128. Price recovered, re-entered zone at 12:08Z (now 4169.63). Zone top 4173.575 is 4p above. M15 ChoCH bull Jul6 22:30Z at 4168.59 \u2014 M15 structure bullish (price>ema21>ema50). H4 bull FVG 4141-4155 unmitigated below (support). Gate comp<=-40 unmet (+22 bull). Bear trigger requires: H4/H1 EMA stacks to invert (comp drops \u2264-40) + M15 bearish rejection wick >=10p + bearish close from inside zone.\n\nSL: 4200.00  TP: 4060.00  R:R target: 2.69\nupdated 2026-07-07T12:16Z \u2014 KEEP; price IN zone (4169.63 vs 4162.83-4173.575); comp=+22 gate unmet; M15 bullish; watch zone top 4173 for rejection + comp reversal.",
+      "note": "ENTRY: M15 bearish rejection wick >=10p from inside DAY bear FVG zone (4162.83-4173.575) with M15 bearish close. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GOLD 4165.97 bid (Jul 7 18:15 IST). Zone active: price inside 4162.83-4173.575. Today's high 4174.98 briefly pierced zone top (+1.4p liquidity grab above 4173.575), then rejected back. 3rd zone interaction today. Comp=+13 none-bull (gate comp<=-40 far unmet). H4 FVG bull 4141.41-4154.67 unmitigated below (support). M15 EMA bullish. Bear trigger requires: comp<=-40 + M15 bearish rejection wick >=10p + bearish close inside zone.\n\nSL: 4200.00  TP: 4060.00  R:R target: 2.69\nupdated 2026-07-07T18:15Z \u2014 KEEP; zone top 4173.575 tested today (H=4174.98, +1.4p pierce, rejected); comp=+13 gate unmet; watch for comp flip + M15 rejection from zone.",
       "entry_criterion": "M15 bearish rejection wick >=10p from inside DAY FVG 4162.83-4173.575. ARM when comp <=-40.",
-      "regime_context": "GOLD 4169.63 inside zone 4162.83-4173.575. 2nd zone entry today. Comp=+22 bull/none-for-sell. Gate comp<=-40 unmet. M15 ChoCH bull Jul6 22:30Z. Zone top 4173 is 4p above. Watch for rejection + comp flip.",
+      "regime_context": "GOLD 4165.97 bid, comp=+13 none. Zone top 4173.575 tested today (H=4174.98). H4 FVG bull 4141-4155 fresh below (support). M15 EMA bullish. Gate comp<=-40 unmet.",
       "sl": 4200.0,
       "tp": 4060.0,
       "rr_target": "2.69",
-      "current_price_ref": 4169.63,
-      "last_updated": "2026-07-07T12:16Z"
+      "current_price_ref": 4165.97,
+      "last_updated": "2026-07-07T18:15Z"
     },
     {
       "id": "oil_crude_h1ob_sell_7057",
@@ -144,5 +144,5 @@
       "last_updated": "2026-07-07T17:37Z"
     }
   ],
-  "last_updated": "2026-07-07T12:16Z"
+  "last_updated": "2026-07-07T18:15Z"
 }
