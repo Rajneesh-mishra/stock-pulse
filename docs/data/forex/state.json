@@ -1,9 +1,9 @@
 {
   "regime": "USD_STRENGTH_OIL_BEAR_ONGOING",
-  "tick_ts_utc": "2026-07-08T02:07Z",
-  "state_ts_utc": "2026-07-08T02:07Z",
-  "regime_note": "2026-07-08T02:07Z \u2014 3 events: news_flash (NYT Iran strikes test Hormuz cease-fire), position_closed USDCAD (SL hit 1.41954, -$3.23), level_cross OIL_CRUDE (72.252 crossed H1 OB 70.577). USDCAD BUY SL hit yesterday 14:45Z \u2014 price wicked to 1.41954 then rebounded to 1.420. OIL spiked +5.32% to 72.242 on Hormuz escalation (Iran strikes testing cease-fire per NYT). H1 OB sell zone 70.577-71.452 MITIGATED by price transit. H4 FVG bull 71.462-71.887 fresh below. GOLD dropped -58p from 4165 (inside DAY FVG) to 4107.05. H4+H1 FVG bear 4116-4136 fresh above. 0 positions open. Balance $988.44. No new entries: USDJPY blocked (JPY bug), all others comp<40.",
-  "regime_note_prev": "2026-07-07T13:25Z \u2014 heartbeat tick (0 events). USDCAD LIMIT BUY armed @1.42107 (comp=+46 moderate bull, all 4TF; SL=1.41950, TP=1.42700, R:R=3.8). GOLD 4171.59 inside DAY FVG 4162.83-4173.575 (comp=+28 weak bull; gate comp<=-40 unmet). GBPUSD 1.33805 (comp=+25.5 weak; alert SELL@1.34213 41p away). OIL 69.467 (comp=+1.5 none; level 70.577 $1.11 away). USDJPY 161.891 (comp=+39 weak; FVG buy@161.682 JPY-bug blocked). EURUSD comp=+4 none. AUDUSD comp=+18 none. USDCHF comp=+21 none. 0 trades. Balance $991.78.",
+  "tick_ts_utc": "2026-07-08T02:45Z",
+  "state_ts_utc": "2026-07-08T02:45Z",
+  "regime_note": "2026-07-08T02:45Z \u2014 2 evt: news_flash (Moneycontrol: 3rd tanker attacked Hormuz in 24h; Qatar holds Iran 'fully legally responsible') + alert_audit_request oil_crude_h1ob_sell_7057 (STALE \u2014 alert removed last tick, H1 OB mitigated). Hormuz escalation deepens: no cease-fire, new attack 14:56Z Jul7. OIL bullish context maintained but comp=+1.5 none, gate>=+40 unmet. GOLD at 4106 may catch safe-haven bid toward H4 FVG sell zone 4116-4136 (only 10p above), but comp=-26.5 weak, gate<=-40 unmet. USDJPY comp=+52 moderate 4/4TF bull (DAY FVG 161.508-161.668 fresh, 44p below) \u2014 BLOCKED by JPY risk_guard bug. 0 positions. Balance $988.44. No new entries: all gates unmet. Scalp: GBPUSD active, others disabled.",
+  "regime_note_prev": "2026-07-08T02:07Z \u2014 3 events: news_flash (NYT Iran strikes test Hormuz cease-fire), position_closed USDCAD (SL hit 1.41954, -$3.23), level_cross OIL_CRUDE (72.252 crossed H1 OB 70.577). USDCAD BUY SL hit yesterday 14:45Z \u2014 price wicked to 1.41954 then rebounded to 1.420. OIL spiked +5.32% to 72.242 on Hormuz escalation (Iran strikes testing cease-fire per NYT). H1 OB sell zone 70.577-71.452 MITIGATED by price transit. H4 FVG bull 71.462-71.887 fresh below. GOLD dropped -58p from 4165 (inside DAY FVG) to 4107.05. H4+H1 FVG bear 4116-4136 fresh above. 0 positions open. Balance $988.44. No new entries: USDJPY blocked (JPY bug), all others comp<40.",
   "open_positions": [],
   "watchlist": [],
   "market_context": {
@@ -1500,7 +1500,7 @@
   ],
   "binary_event": {
     "active": false,
-    "note": "No active binary. Hormuz escalation ongoing: Iran strikes testing cease-fire (NYT Jul 7). OIL spiked +5.32% to 72.242. No fixed deadline. Monitor cease-fire fragility. CHF/JPY safe-haven context persists."
+    "note": "No active binary. Hormuz escalation worsening: 3rd tanker attacked Jul7 14:56Z (Moneycontrol), Qatar holds Iran fully legally responsible. No fixed deadline, no cease-fire. OIL supply-risk premium sustained. CHF/JPY safe-haven context persists. GOLD safe-haven bid possible."
   },
   "balance": 991.48,
   "level_alerts": [

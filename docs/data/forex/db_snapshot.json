@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-07T20:44:37.669820+00:00",
+  "generated_at": "2026-07-07T20:49:40.305391+00:00",
   "counts": {
     "trades": 53,
     "events": 8237,
     "ticks": 59,
-    "regime_snapshots": 274,
+    "regime_snapshots": 275,
     "broker_positions": 0,
     "counterfactuals": 195
   },
@@ -1063,6 +1063,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-07-08T02:45Z",
+      "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
+      "note_text": "2026-07-08T02:45Z \u2014 2 evt: news_flash (Moneycontrol: 3rd tanker attacked Hormuz in 24h; Qatar holds Iran 'fully legally responsible') + alert_audit_request oil_crude_h1ob_sell_7057 (STALE \u2014 alert removed last tick, H1 OB mitigated). Hormuz escalation deepens: no cease-fire, new attack 14:56Z Jul7. OIL bullish context maintained but comp=+1.5 none, gate>=+40 unmet. GOLD at 4106 may catch safe-haven bid toward H4 FVG sell zone 4116-4136 (only 10p above), but comp=-26.5 weak, gate<=-40 unmet. USDJPY comp=+52 moderate 4/4TF bull (DAY FVG 161.508-161.668 fresh, 44p below) \u2014 BLOCKED by JPY risk_guard bug. 0 positions. Balance $988.44. No new entries: all gates unmet. Scalp: GBPUSD active, others disabled.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-07-08T02:07Z",
       "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
       "note_text": "2026-07-08T02:07Z \u2014 3 events: news_flash (NYT Iran strikes test Hormuz cease-fire), position_closed USDCAD (SL hit 1.41954, -$3.23), level_cross OIL_CRUDE (72.252 crossed H1 OB 70.577). USDCAD BUY SL hit yesterday 14:45Z \u2014 price wicked to 1.41954 then rebounded to 1.420. OIL spiked +5.32% to 72.242 on Hormuz escalation (Iran strikes testing cease-fire per NYT). H1 OB sell zone 70.577-71.452 MITIGATED by price transit. H4 FVG bull 71.462-71.887 fresh below. GOLD dropped -58p from 4165 (inside DAY FVG) to 4107.05. H4+H1 FVG bear 4116-4136 fresh above. 0 positions open. Balance $988.44. No new entries: USDJPY blocked (JPY bug), all others comp<40.",
@@ -1130,14 +1138,6 @@
       "ts_utc": "2026-07-07T06:58Z",
       "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
       "note_text": "2026-07-07T06:58Z \u2014 3 evts processed (position_closed OIL_CRUDE +$6.80, position_closed USDCAD +$7.85, news_flash hormuz_strait stale Jun15 no action). POSITIONS RECONCILED: both CLOSED (broker confirmed 0 positions). OIL SELL closed Jun17@76.591 +$6.80; USDCAD BUY closed Jun17@1.40123 +$7.85. NET GAIN +$14.65; balance $991.78. 3-week gap since last tick (Jun15\u2192Jul7). CONFLUENCE: USDJPY=+46.5 moderate bull (3/4TF; DAY FVG 161.508-161.682 fresh) but risk_guard REJECTS JPY pairs (pip-value conversion bug). Skip USDJPY entry, WATCH. EURUSD=-5 none; GBPUSD=+25.5 weak; AUDUSD=0 none; USDCAD=+31.5 weak; USDCHF=+23.5 none; GOLD=-17.5 none; OIL=+1.5 none. Watchlist: 3 stale alerts REMOVED (oil/usdcad deactivated; gold_4366 dist=236p>3\u00d7ATR); 3 new alerts ADDED (usdjpy_dayfvg_buy, gold_dayfvg_sell, oil_h1ob_sell). News queries rolled to Jul 7-10. No binary event active.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-06-15T19:39Z",
-      "regime_name": "USD_STRENGTH_IRAN_PEACE_PIVOT",
-      "note_text": "2026-06-15T19:37Z \u2014 8 evts processed (3 reconcile, 2 level_cross, 2 alert_audit, 1 news_flash). STATE RECONCILED: USDCAD BUY LIVE @1.39573 (comp=+73 strong all-4TF; time cap 22:11Z today); OIL SELL LIVE @80.024 SL=83.15 TP=75.0 comp=-53 mod bear 3/4TF; old OIL@83.935 CLOSED +$10.25. GBPUSD level_cross: price probed H4 OB to 1.344675 then retreated to 1.3417; comp=+1 none, gate comp<=-40 far from met, WATCH. GOLD level_cross: price blew to 4354.05 breaching SL 4330; gold_fvg_sell_4268 REMOVED; new alert gold_h4choch_sell_4366 ADDED (arm when comp<=-40). Trump/Israel Beirut strike headline threatens Iran deal \u2014 bullish risk for OIL bear thesis, but OIL comp=-53 mod bear intact, KEEP. Hormuz reopening 'won't end shipping risks' \u2014 moderates OIL bear speed, not direction. Balance $977.38 (net +$55.11 from last state; old OIL +$10.25 + balance rollup). EURUSD=-13 none, AUDUSD=-20 none, USDJPY=+34 weak, USDCHF=+20.5 none \u2014 no new setups.",
       "binary_event_name": null,
       "binary_event_active": 0,
       "binary_event_deadline": null
