@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T12:46:21.808811+00:00",
+  "generated_at": "2026-07-07T13:11:16.307083+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -1646,10 +1646,10 @@
       "fires": 2,
       "by_horizon": {
         "1h": {
-          "filled": 0,
+          "filled": 1,
           "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "avg_pips": -3.3,
+          "hit_rate": 0.0
         },
         "4h": {
           "filled": 0,

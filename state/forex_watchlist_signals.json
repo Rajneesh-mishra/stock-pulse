@@ -142,7 +142,26 @@
       "rr_target": "2.88",
       "current_price_ref": 69.026,
       "last_updated": "2026-07-07T17:37Z"
+    },
+    {
+      "id": "usdcad_h1fvg_buy_42178",
+      "alert_id": "usdcad_h1fvg_buy_42178",
+      "instrument": "USDCAD",
+      "level": 1.42107,
+      "emit_on": "cross_down",
+      "cooldown_sec": 1800,
+      "direction": "buy",
+      "active": true,
+      "validated": false,
+      "note": "ENTRY: Price pullback to M15 bull OB zone (1.42031-1.42107) with M15 bullish close. LIMIT BUY armed at 1.42107.\n\nCONTEXT: USDCAD 1.4226 (Jul 7 13:09Z). comp=+46 moderate bull, all 4 TFs agree. Fresh H1 FVG bull (1.42178-1.42185). M15 OB 1.42031-1.42107 demand. H1 bear OB 1.42304-1.42477 overhead; TP 1.42700 beyond OB. LIMIT working on broker (00000000-55dc-c18c). Thesis: USD strength + structural uptrend; OIL spike faded (Hormuz fear premium already gone).\n\nSL: 1.41950  TP: 1.42700  R:R target: 3.8\narmed 2026-07-07T13:09Z \u2014 LIMIT @ 1.42107 broker dealId 00000000-55dc-c18c",
+      "entry_criterion": "Pullback to M15 bull OB 1.42031-1.42107 with M15 bullish close. LIMIT at 1.42107.",
+      "regime_context": "comp=+46 moderate bull all 4TF. H1 FVG 1.42178-1.42185 fresh. M15 OB 1.42031-1.42107. H1 bear OB 1.42304-1.42477 overhead. OIL Hormuz spike faded.",
+      "sl": 1.4195,
+      "tp": 1.427,
+      "rr_target": "3.8",
+      "current_price_ref": 1.42256,
+      "last_updated": "2026-07-07T13:09Z"
     }
   ],
-  "last_updated": "2026-07-07T18:15Z"
+  "last_updated": "2026-07-07T13:09Z"
 }
