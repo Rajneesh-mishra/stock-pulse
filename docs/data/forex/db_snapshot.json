@@ -1,14 +1,35 @@
 {
-  "generated_at": "2026-07-07T13:35:52.227118+00:00",
+  "generated_at": "2026-07-07T20:44:37.669820+00:00",
   "counts": {
-    "trades": 52,
-    "events": 8220,
+    "trades": 53,
+    "events": 8237,
     "ticks": 59,
-    "regime_snapshots": 273,
+    "regime_snapshots": 274,
     "broker_positions": 0,
-    "counterfactuals": 194
+    "counterfactuals": 195
   },
   "trades_last_50": [
+    {
+      "id": 4609702,
+      "source": "swing",
+      "epic": "USDCAD",
+      "direction": "BUY",
+      "size": 3000.0,
+      "entry_price": null,
+      "sl": 1.4195,
+      "tp": 1.427,
+      "exit_price": null,
+      "opened_at": "2026-07-07T13:30:30.767Z",
+      "closed_at": "2026-07-07T14:45:34.725Z",
+      "open_reason": null,
+      "close_reason": "loss",
+      "thesis_type": null,
+      "realized_pnl_usd": null,
+      "realized_pnl_pips": null,
+      "held_minutes": null,
+      "shadow": 0,
+      "broker_deal_id": null
+    },
     {
       "id": 4367349,
       "source": "swing",
@@ -1037,31 +1058,18 @@
       "held_minutes": 4.514743416666667,
       "shadow": 1,
       "broker_deal_id": null
-    },
-    {
-      "id": 3,
-      "source": "swing",
-      "epic": "USDJPY",
-      "direction": "SELL",
-      "size": 1.0,
-      "entry_price": 159.775,
-      "sl": null,
-      "tp": null,
-      "exit_price": 159.775,
-      "opened_at": "2026-04-24T05:00:45+00:00",
-      "closed_at": "2026-04-24T05:06:00+00:00",
-      "open_reason": null,
-      "close_reason": "breakeven",
-      "thesis_type": null,
-      "realized_pnl_usd": 0.0,
-      "realized_pnl_pips": null,
-      "held_minutes": null,
-      "shadow": 0,
-      "broker_deal_id": null
     }
   ],
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
+    {
+      "ts_utc": "2026-07-08T02:07Z",
+      "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
+      "note_text": "2026-07-08T02:07Z \u2014 3 events: news_flash (NYT Iran strikes test Hormuz cease-fire), position_closed USDCAD (SL hit 1.41954, -$3.23), level_cross OIL_CRUDE (72.252 crossed H1 OB 70.577). USDCAD BUY SL hit yesterday 14:45Z \u2014 price wicked to 1.41954 then rebounded to 1.420. OIL spiked +5.32% to 72.242 on Hormuz escalation (Iran strikes testing cease-fire per NYT). H1 OB sell zone 70.577-71.452 MITIGATED by price transit. H4 FVG bull 71.462-71.887 fresh below. GOLD dropped -58p from 4165 (inside DAY FVG) to 4107.05. H4+H1 FVG bear 4116-4136 fresh above. 0 positions open. Balance $988.44. No new entries: USDJPY blocked (JPY bug), all others comp<40.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
     {
       "ts_utc": "2026-07-07T13:32Z",
       "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
@@ -1130,14 +1138,6 @@
       "ts_utc": "2026-06-15T19:39Z",
       "regime_name": "USD_STRENGTH_IRAN_PEACE_PIVOT",
       "note_text": "2026-06-15T19:37Z \u2014 8 evts processed (3 reconcile, 2 level_cross, 2 alert_audit, 1 news_flash). STATE RECONCILED: USDCAD BUY LIVE @1.39573 (comp=+73 strong all-4TF; time cap 22:11Z today); OIL SELL LIVE @80.024 SL=83.15 TP=75.0 comp=-53 mod bear 3/4TF; old OIL@83.935 CLOSED +$10.25. GBPUSD level_cross: price probed H4 OB to 1.344675 then retreated to 1.3417; comp=+1 none, gate comp<=-40 far from met, WATCH. GOLD level_cross: price blew to 4354.05 breaching SL 4330; gold_fvg_sell_4268 REMOVED; new alert gold_h4choch_sell_4366 ADDED (arm when comp<=-40). Trump/Israel Beirut strike headline threatens Iran deal \u2014 bullish risk for OIL bear thesis, but OIL comp=-53 mod bear intact, KEEP. Hormuz reopening 'won't end shipping risks' \u2014 moderates OIL bear speed, not direction. Balance $977.38 (net +$55.11 from last state; old OIL +$10.25 + balance rollup). EURUSD=-13 none, AUDUSD=-20 none, USDJPY=+34 weak, USDCHF=+20.5 none \u2014 no new setups.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-06-12T18:06Z",
-      "regime_name": "USD_STRENGTH_IRAN_PEACE_PIVOT",
-      "note_text": "2026-06-12T18:06Z \u2014 1 evt (level_cross OIL_CRUDE cross_up @83.961 \u2014 post-fill noise, price recovered to 83.86). OIL SELL LIVE entry=83.935 UPL=+$0.52 (SL=85.10 TP=79.50 RR=3.8 comp=-70 strong all-4TF). Iran deal: 60d ceasefire extension tabled, Hormuz reopening framework live, Iran denies sign-off \u2014 WTI $83-87 8wk low. BEAR THESIS REINFORCED. USDCAD BUY LIMIT@1.39573 INTACT (comp=+67.5 mod 3/4TF, price=1.39786, dist=21p within 30p). 2 stale May-11 pending_orders (AUDUSD/USDCHF) removed \u2014 not in broker. GBPUSD comp=-3.5 none WATCH (price 5p below H4 OB, arm gate comp<=-40 not met). GOLD comp=-27.5 weak WATCH (47p below 4268, arm gate comp<=-40 not met). USDCHF comp=+40.5 moderate WATCH (no clean level to arm). EURUSD/AUDUSD/USDJPY readiness=none, no setup. Balance $922.27.",
       "binary_event_name": null,
       "binary_event_active": 0,
       "binary_event_deadline": null
@@ -1646,6 +1646,19 @@
     }
   ],
   "counterfactuals_last_50": [
+    {
+      "alert_id": "oil_crude_h1ob_sell_7057",
+      "instrument": "OIL_CRUDE",
+      "direction": "sell",
+      "trigger_price": 72.25200000000001,
+      "fired_at": "2026-07-07T20:34:42.003178+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
     {
       "alert_id": "usdcad_h1fvg_buy_42178",
       "instrument": "USDCAD",
@@ -2276,19 +2289,6 @@
       "direction": "sell",
       "trigger_price": 1.171715,
       "fired_at": "2026-05-04T07:54:44.340799+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
-    },
-    {
-      "alert_id": "gbpusd_m15sweep_135689_buy_watch",
-      "instrument": "GBPUSD",
-      "direction": "buy",
-      "trigger_price": 1.3568850000000001,
-      "fired_at": "2026-05-04T07:29:07.657000+00:00",
       "hit_1h": null,
       "hit_4h": null,
       "hit_24h": null,

@@ -1,25 +1,10 @@
 {
   "regime": "USD_STRENGTH_OIL_BEAR_ONGOING",
-  "tick_ts_utc": "2026-07-07T13:32Z",
-  "state_ts_utc": "2026-07-07T13:32Z",
-  "regime_note": "2026-07-07T13:32Z \u2014 2 events: position_opened + level_cross USDCAD. USDCAD LIMIT BUY filled @1.42107 (size=3000, SL=1.41950, TP=1.42700, R:R=3.8). Thesis: 4-TF confluence bull (+38.5 weak at time of fill, was +46 moderate at arming \u2014 M15 pullback during fill is structural and expected). Current bid=1.42083, UPL=-$0.30 (spread noise). Trail trigger: +1R@1.42264. Max hold 24h (trend). GOLD 4167.62 inside FVG 4162.83-4173.575 (comp=+13 none, gate unmet). GBPUSD 1.33836 (comp=+15 none; sell alert @1.34213 37.7p away, gate comp<=-40 unmet; alert now VALIDATED fires=3 4h_hr=0.67). OIL 69.661 (+1.56%); Hormuz fear reversal; 91.6p from H1 OB sell 70.577. USDJPY 161.885 (comp=+41.5 moderate; FVG buy @161.682 blocked by JPY bug). Balance $991.48. 1 open position.",
+  "tick_ts_utc": "2026-07-08T02:07Z",
+  "state_ts_utc": "2026-07-08T02:07Z",
+  "regime_note": "2026-07-08T02:07Z \u2014 3 events: news_flash (NYT Iran strikes test Hormuz cease-fire), position_closed USDCAD (SL hit 1.41954, -$3.23), level_cross OIL_CRUDE (72.252 crossed H1 OB 70.577). USDCAD BUY SL hit yesterday 14:45Z \u2014 price wicked to 1.41954 then rebounded to 1.420. OIL spiked +5.32% to 72.242 on Hormuz escalation (Iran strikes testing cease-fire per NYT). H1 OB sell zone 70.577-71.452 MITIGATED by price transit. H4 FVG bull 71.462-71.887 fresh below. GOLD dropped -58p from 4165 (inside DAY FVG) to 4107.05. H4+H1 FVG bear 4116-4136 fresh above. 0 positions open. Balance $988.44. No new entries: USDJPY blocked (JPY bug), all others comp<40.",
   "regime_note_prev": "2026-07-07T13:25Z \u2014 heartbeat tick (0 events). USDCAD LIMIT BUY armed @1.42107 (comp=+46 moderate bull, all 4TF; SL=1.41950, TP=1.42700, R:R=3.8). GOLD 4171.59 inside DAY FVG 4162.83-4173.575 (comp=+28 weak bull; gate comp<=-40 unmet). GBPUSD 1.33805 (comp=+25.5 weak; alert SELL@1.34213 41p away). OIL 69.467 (comp=+1.5 none; level 70.577 $1.11 away). USDJPY 161.891 (comp=+39 weak; FVG buy@161.682 JPY-bug blocked). EURUSD comp=+4 none. AUDUSD comp=+18 none. USDCHF comp=+21 none. 0 trades. Balance $991.78.",
-  "open_positions": [
-    {
-      "deal_id": "00000000-55dc-e4f0-044a-beb40055311e",
-      "instrument": "USDCAD",
-      "epic": "USDCAD",
-      "direction": "BUY",
-      "size": 3000.0,
-      "entry": 1.42107,
-      "sl": 1.4195,
-      "tp": 1.427,
-      "opened_at": "2026-07-07T13:30:30.767Z",
-      "thesis_type": "trend",
-      "alert_id": "usdcad_h1fvg_buy_42178",
-      "note": "4-TF confluence bull: DAY+H4+H1+M15 all agree. Pullback to M15 OB 1.42031-1.42107. Entry at LIMIT 1.42107. SL=1.41950 below OB zone. TP=1.42700. R:R=3.8. Validated via risk_guard. Max hold 24h (trend type). Trail: +1R=1.42264 move SL to BE; +2R=1.42421 SL=+0.5R; +3R=1.42578 SL=+1.5R."
-    }
-  ],
+  "open_positions": [],
   "watchlist": [],
   "market_context": {
     "date": "2026-05-08",
@@ -896,6 +881,26 @@
       "exit_reason": "closed (position_sync; last_bid=1.40123, last_upl=+$7.85)",
       "pnl_usd": 7.85,
       "notes": "USD strength theme continued; price moved from 1.39573 to 1.40123 (+55p). Time cap was 24h (Jun 15 22:11Z); held past cap and closed Jun 17 14:11Z at better level."
+    },
+    {
+      "trade_id": "usdcad_h1fvg_buy_42107_20260707_sl",
+      "instrument": "USDCAD",
+      "direction": "BUY",
+      "entry": 1.42107,
+      "close": 1.41954,
+      "size": 3000.0,
+      "sl": 1.4195,
+      "tp": 1.427,
+      "opened_at": "2026-07-07T13:30:30.767Z",
+      "closed_at": "2026-07-07T14:45:34.725Z",
+      "hold_hours": 1.25,
+      "thesis_type": "trend",
+      "exit_reason": "sl_hit (bid=1.41954 touched SL=1.41950; 4-TF bull trend trade stopped by wick to 1.41950)",
+      "pnl_usd": -3.23,
+      "alert_id": "usdcad_h1fvg_buy_42178",
+      "confluence_at_entry": "+46 moderate (arming); +38.5 weak (fill \u2014 M15 pullback phase)",
+      "result": "loss",
+      "notes": "SL hit at 1.41950. Price dipped to 1.41954, stopped out, then bounced back to 1.420 area. Liquidity grab pattern \u2014 thesis not structurally invalidated but SL was clean. Daily P&L: -$3.23."
     }
   ],
   "consecutive_losses": 3,
@@ -1495,7 +1500,7 @@
   ],
   "binary_event": {
     "active": false,
-    "note": "No active binary. Iran-US military confrontation ongoing (Hormuz). Now Chinese tanker attack confirmed (Beijing, May 9T03:58Z). Escalation persistent but no fixed deadline. Monitor Iran-US formal talks. CHF/JPY safe-haven bids active."
+    "note": "No active binary. Hormuz escalation ongoing: Iran strikes testing cease-fire (NYT Jul 7). OIL spiked +5.32% to 72.242. No fixed deadline. Monitor cease-fire fragility. CHF/JPY safe-haven context persists."
   },
   "balance": 991.48,
   "level_alerts": [
