@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T07:04:41.194392Z",
+  "generated_at": "2026-07-07T07:35:20.847120Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -235,6 +235,124 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
+    },
+    {
+      "date": "2026-07-07",
+      "tick_ts_utc": "2026-07-07T06:58Z",
+      "events_processed": 3,
+      "events": [
+        {
+          "id": "evt_1781685495346_position_closed",
+          "type": "position_closed",
+          "instrument": "OIL_CRUDE",
+          "action": "logged trade +$6.80"
+        },
+        {
+          "id": "evt_1781705476470_position_closed",
+          "type": "position_closed",
+          "instrument": "USDCAD",
+          "action": "logged trade +$7.85"
+        },
+        {
+          "id": "evt_1781705629986_news_flash",
+          "type": "news_flash",
+          "instrument": "-",
+          "action": "stale Jun15 hormuz news \u2014 no action"
+        }
+      ],
+      "positions_opened": 0,
+      "positions_closed": 2,
+      "skipped": 0,
+      "pnl_today": 0.0,
+      "pnl_from_closed_positions": 14.65,
+      "balance": 991.78,
+      "open_positions": [],
+      "confluence": {
+        "EURUSD": {
+          "comp": -5.0,
+          "readiness": "none"
+        },
+        "GBPUSD": {
+          "comp": 25.5,
+          "readiness": "weak"
+        },
+        "AUDUSD": {
+          "comp": 0.0,
+          "readiness": "none"
+        },
+        "USDCAD": {
+          "comp": 31.5,
+          "readiness": "weak"
+        },
+        "USDCHF": {
+          "comp": 23.5,
+          "readiness": "none"
+        },
+        "USDJPY": {
+          "comp": 46.5,
+          "readiness": "moderate",
+          "note": "WATCH \u2014 risk_guard JPY bug blocks entry"
+        },
+        "GOLD": {
+          "comp": -17.5,
+          "readiness": "none"
+        },
+        "OIL_CRUDE": {
+          "comp": 1.5,
+          "readiness": "none"
+        }
+      },
+      "watchlist_changes": {
+        "removed": [
+          "oil_crude_fvg_sell_8393",
+          "usdcad_dayfvg_buy_139573",
+          "gold_h4choch_sell_4366"
+        ],
+        "added": [
+          "usdjpy_dayfvg_buy_161682",
+          "gold_dayfvg_sell_4163",
+          "oil_crude_h1ob_sell_7057"
+        ],
+        "modified": [
+          "gbpusd_h4ob_sell_134213"
+        ],
+        "kept": []
+      },
+      "news_queries_rolled": "all 6 queries rolled to Jul 7-10 window",
+      "regime": "USD_STRENGTH_OIL_BEAR_ONGOING",
+      "notes": "3-week gap since last tick (Jun 15\u2192Jul 7). Both positions confirmed closed by broker Jun 17. OIL SELL +$6.80 (80.024\u219276.591). USDCAD BUY +$7.85 (1.39573\u21921.40123). USDJPY moderate readiness blocked by risk_guard JPY conversion bug."
+    },
+    {
+      "tick_ts": "2026-07-07T13:00Z",
+      "events_processed": 1,
+      "events": [
+        "news_flash:hormuz_strait tanker struck ablaze Jul7 01:27Z"
+      ],
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "positions_modified": 0,
+      "limits_placed": 0,
+      "limits_cancelled": 0,
+      "balance": 991.78,
+      "open_positions": 0,
+      "confluence": {
+        "EURUSD": -12.5,
+        "GBPUSD": 25.5,
+        "AUDUSD": -2.0,
+        "USDCAD": 34.0,
+        "USDCHF": 23.5,
+        "USDJPY": 41.5,
+        "GOLD": -17.5,
+        "OIL_CRUDE": 1.5
+      },
+      "alerts_modified": [
+        "oil_crude_h1ob_sell_7057: MODIFY (Hormuz context added)",
+        "usdjpy_dayfvg_buy_161682: MODIFY (FVG intraday test noted)",
+        "gold_dayfvg_sell_4163: MODIFY (FVG zone tested today)",
+        "gbpusd_h4ob_sell_134213: MODIFY (context refresh)"
+      ],
+      "notes": "Hormuz tanker strike news_flash: OIL +1.27% (68.58\u219269.46) bouncing toward H1 OB sell zone 70.577. GOLD FVG 4162-4173 tested (high 4168.44\u21924128 rejection). USDJPY FVG 161.508-161.682 tested (low 161.661\u2192bounce). No executable trades: 0 pairs with moderate+ readiness AND no risk_guard blocks.",
+      "regime": "USD_STRENGTH_OIL_BEAR_ONGOING"
     }
   ]
 }
