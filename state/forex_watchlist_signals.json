@@ -76,15 +76,15 @@
       "cooldown_sec": 1800,
       "direction": "sell",
       "active": true,
-      "validated": false,
-      "note": "ENTRY: M15 bearish rejection wick >=1p from inside H4 bear OB zone (1.34213-1.34855), then M15 bearish close. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GBPUSD 1.33788 (Jul 7 13:00Z). Day high 1.34012 \u2014 approaching OB zone from 20p below. H1 BOS bull 1.33848 (Jul2) intact. DAY FVG bull 1.33580-1.33753 still unmitigated \u2014 support below. comp=+25.5 weak bull; gate far unmet. DAY bear OB 1.34708-1.35096 is upper cap.\n\nSL: 1.34955  TP: 1.32000  R:R target: 2.98\nupdated 2026-07-07T13:00Z \u2014 KEEP; level valid (42.5p away, < 3\u00d7H4ATR=72.6p); day high approaching zone, comp gate still unmet.",
+      "validated": true,
+      "note": "ENTRY: M15 bearish rejection wick >=1p from inside H4 bear OB zone (1.34213-1.34855), then M15 bearish close. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GBPUSD 1.33836 (Jul 7 13:32Z). DAY comp=+15 none (DAY EMA mixed, H1 BOS bull Jul2, H4 bull, M15 bearish). Sell level 37.7p away. DAY FVG bull 1.33580-1.33696 fresh below (support). Gate comp<=-40 far unmet. VALIDATED: fires=3, 4h_hr=0.67 \u2014 qualified for naked LIMIT at moderate+ if gate met.\n\nSL: 1.34955  TP: 1.32000  R:R target: 2.98\nupdated 2026-07-07T13:32Z \u2014 KEEP; validated (fires=3 4h_hr=0.67); level 37.7p away, < 3\u00d7H4ATR; gate comp<=-40 unmet; watch for comp flip + M15 rejection.",
       "entry_criterion": "M15 bearish rejection wick >=1p inside H4 bear OB (1.34213-1.34855). ARM when comp <=-40.",
-      "regime_context": "GBPUSD 1.33788, comp=+25.5 weak bull. H1 BOS bull Jul2. DAY FVG bull 1.33580-1.33753 fresh. OB zone 1.34213-1.34855 still resistance. Day high 1.34012 approaching zone.",
+      "regime_context": "GBPUSD 1.33836, comp=+15 none. H1 BOS bull Jul2@1.33848. DAY FVG bull 1.33580-1.33696 fresh. OB zone 1.34213-1.34855 resistance. Day high 1.34012. VALIDATED alert (fires=3, 4h_hr=0.67).",
       "sl": 1.34955,
       "tp": 1.32,
       "rr_target": "2.98",
-      "current_price_ref": 1.33788,
-      "last_updated": "2026-07-07T13:00Z"
+      "current_price_ref": 1.33836,
+      "last_updated": "2026-07-07T13:32Z"
     },
     {
       "id": "usdjpy_dayfvg_buy_161682",
@@ -153,15 +153,15 @@
       "direction": "buy",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Price pullback to M15 bull OB zone (1.42031-1.42107) with M15 bullish close. LIMIT BUY armed at 1.42107.\n\nCONTEXT: USDCAD 1.4226 (Jul 7 13:09Z). comp=+46 moderate bull, all 4 TFs agree. Fresh H1 FVG bull (1.42178-1.42185). M15 OB 1.42031-1.42107 demand. H1 bear OB 1.42304-1.42477 overhead; TP 1.42700 beyond OB. LIMIT working on broker (00000000-55dc-c18c). Thesis: USD strength + structural uptrend; OIL spike faded (Hormuz fear premium already gone).\n\nSL: 1.41950  TP: 1.42700  R:R target: 3.8\narmed 2026-07-07T13:09Z \u2014 LIMIT @ 1.42107 broker dealId 00000000-55dc-c18c",
-      "entry_criterion": "Pullback to M15 bull OB 1.42031-1.42107 with M15 bullish close. LIMIT at 1.42107.",
-      "regime_context": "comp=+46 moderate bull all 4TF. H1 FVG 1.42178-1.42185 fresh. M15 OB 1.42031-1.42107. H1 bear OB 1.42304-1.42477 overhead. OIL Hormuz spike faded.",
+      "note": "ENTRY: Position LIVE \u2014 filled at LIMIT 1.42107 at 2026-07-07T13:30Z. Do NOT arm another LIMIT while position is open. Monitor for trail: +1R@1.42264 (SL\u2192BE); +2R@1.42421 (SL\u2192+0.5R=1.42264); +3R@1.42578 (SL\u2192+1.5R=1.42421).\n\nCONTEXT: BUY 3000 @1.42107, SL=1.41950, TP=1.42700, R:R=3.8. 4-TF confluence bull. thesis_type=trend, max_hold=24h. DealId=00000000-55dc-e4f0-044a-beb40055311e.\n\nSL: 1.41950  TP: 1.42700  R:R target: 3.8\nupdated 2026-07-07T13:32Z \u2014 POSITION FILLED; trail-monitoring only; do not arm secondary limit in same instrument.",
+      "entry_criterion": "Position LIVE. Trail only: +1R\u2192BE, +2R\u2192+0.5R, +3R\u2192+1.5R. No new entry while open.",
+      "regime_context": "USDCAD BUY 3000 @1.42107 active. comp=+38.5 weak (M15 pullback phase, natural). 4-TF bullish: DAY+H4 price>ema21>ema50, H1 ChoCH bull Jul1. M15 OB 1.42031-1.42107 acting as support. SL=1.41950.",
       "sl": 1.4195,
       "tp": 1.427,
       "rr_target": "3.8",
-      "current_price_ref": 1.42256,
-      "last_updated": "2026-07-07T13:09Z"
+      "current_price_ref": 1.42083,
+      "last_updated": "2026-07-07T13:32Z"
     }
   ],
-  "last_updated": "2026-07-07T13:09Z"
+  "last_updated": "2026-07-07T13:32Z"
 }

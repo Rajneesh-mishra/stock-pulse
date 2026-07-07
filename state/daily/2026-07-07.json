@@ -318,5 +318,35 @@
     "pending_orders": 1,
     "pending_order_detail": "USDCAD BUY LIMIT @1.42107 (deal 00000000-55dc-c18c)",
     "summary": "heartbeat tick \u2014 0 events. USDCAD LIMIT BUY still armed @1.42107 (comp=+46 moderate). GOLD inside FVG 4162-4173 (comp=+28 weak, gate unmet). All 5 alerts KEEP. Scalp: GBPUSD ACTIVE (0 closed trades), others off. 0 trades opened/closed."
+  },
+  {
+    "tick_ts_utc": "2026-07-07T13:32Z",
+    "events": [
+      "position_opened:USDCAD",
+      "level_cross:USDCAD:usdcad_h1fvg_buy_42178"
+    ],
+    "positions_opened": [
+      {
+        "instrument": "USDCAD",
+        "direction": "BUY",
+        "size": 3000.0,
+        "entry": 1.42107,
+        "sl": 1.4195,
+        "tp": 1.427,
+        "deal_id": "00000000-55dc-e4f0-044a-beb40055311e",
+        "thesis_type": "trend",
+        "confluence_at_entry": "+46 moderate (at arming); +38.5 weak (at fill \u2014 M15 pullback expected)"
+      }
+    ],
+    "positions_closed": [],
+    "balance": 991.48,
+    "upl": -0.3,
+    "equity": 991.18,
+    "alerts_modified": [
+      "gbpusd_h4ob_sell_134213: set validated=True (fires=3, 4h_hr=0.67)",
+      "usdcad_h1fvg_buy_42178: updated note to reflect position filled"
+    ],
+    "regime": "USD_STRENGTH_OIL_BEAR_ONGOING",
+    "summary": "USDCAD LIMIT BUY filled @1.42107. 4-TF confluence trend trade. SL=1.41950, TP=1.42700, R:R=3.8. GBPUSD sell alert promoted to validated. All other pairs watching."
   }
 ]
