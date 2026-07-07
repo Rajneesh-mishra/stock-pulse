@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T19:45:01.770766Z",
+  "generated_at": "2026-07-07T07:04:41.194392Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -235,46 +235,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "tick_ts_utc": "2026-06-15T19:39Z",
-      "events_processed": 8,
-      "events": [
-        "position_opened USDCAD @1.39573 (reconcile)",
-        "position_closed OIL@83.935 +$10.25 (reconcile)",
-        "level_cross GBPUSD gbpusd_h4ob_sell_134213 (WATCH, gate comp<=-40 not met)",
-        "level_cross GOLD gold_fvg_sell_4268 (REMOVE alert, SL 4330 breached at 4354.05)",
-        "news_flash Trump/Israel Beirut strike threatens Iran deal",
-        "alert_audit_request OIL x2 (comp=-53 mod bear, KEEP)",
-        "position_opened OIL@80.024 (reconcile)"
-      ],
-      "positions": {
-        "open": [
-          "USDCAD BUY @1.39573 UPL=+$4.02 (21.4h, time cap 22:11Z)",
-          "OIL SELL @80.024 UPL=-$0.24 (comp=-53 mod bear)"
-        ],
-        "closed_this_tick": [
-          "OIL SELL @83.935 \u2192 closed; PnL=+$10.25"
-        ]
-      },
-      "alerts": {
-        "removed": [
-          "gold_fvg_sell_4268 (SL breached at 4354)"
-        ],
-        "added": [
-          "gold_h4choch_sell_4366 (H4 ChoCH 4366.64, arm comp<=-40)"
-        ],
-        "modified": [
-          "gbpusd_h4ob_sell_134213 (fresh H1 FVG context)",
-          "oil_crude_fvg_sell_8393 (deactivated post-close)",
-          "usdcad_dayfvg_buy_139573 (deactivated post-fill)"
-        ]
-      },
-      "new_trades": 0,
-      "regime": "USD_STRENGTH_IRAN_PEACE_THREATENED",
-      "balance": 977.38,
-      "scalp_status": "GBPUSD=ACTIVE(session_open_break) EURUSD=DISABLED(desync) AUDUSD=DISABLED(wr=11pct) USDCAD/CHF/JPY=pip-conv-pending GOLD/OIL=spread-blocked",
-      "summary": "8 evts reconcile + GOLD alert replaced; state synced to broker. USDCAD approaching 24h time cap. OIL bear intact despite Trump/Israel escalation threat."
     }
   ]
 }

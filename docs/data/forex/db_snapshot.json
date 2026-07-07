@@ -1,14 +1,35 @@
 {
-  "generated_at": "2026-06-15T19:19:18.476282+00:00",
+  "generated_at": "2026-07-07T07:00:46.962683+00:00",
   "counts": {
-    "trades": 49,
-    "events": 8188,
+    "trades": 50,
+    "events": 8208,
     "ticks": 59,
-    "regime_snapshots": 264,
+    "regime_snapshots": 265,
     "broker_positions": 0,
     "counterfactuals": 191
   },
   "trades_last_50": [
+    {
+      "id": 3348787,
+      "source": "swing",
+      "epic": "OIL_CRUDE",
+      "direction": "SELL",
+      "size": 12.0,
+      "entry_price": null,
+      "sl": 85.1,
+      "tp": 79.5,
+      "exit_price": null,
+      "opened_at": "2026-06-12T17:56:25Z",
+      "closed_at": "2026-06-14T23:15:29Z",
+      "open_reason": null,
+      "close_reason": "win",
+      "thesis_type": null,
+      "realized_pnl_usd": null,
+      "realized_pnl_pips": null,
+      "held_minutes": null,
+      "shadow": 0,
+      "broker_deal_id": null
+    },
     {
       "id": 3136300,
       "source": "swing",
@@ -1042,6 +1063,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-06-15T19:39Z",
+      "regime_name": "USD_STRENGTH_IRAN_PEACE_PIVOT",
+      "note_text": "2026-06-15T19:37Z \u2014 8 evts processed (3 reconcile, 2 level_cross, 2 alert_audit, 1 news_flash). STATE RECONCILED: USDCAD BUY LIVE @1.39573 (comp=+73 strong all-4TF; time cap 22:11Z today); OIL SELL LIVE @80.024 SL=83.15 TP=75.0 comp=-53 mod bear 3/4TF; old OIL@83.935 CLOSED +$10.25. GBPUSD level_cross: price probed H4 OB to 1.344675 then retreated to 1.3417; comp=+1 none, gate comp<=-40 far from met, WATCH. GOLD level_cross: price blew to 4354.05 breaching SL 4330; gold_fvg_sell_4268 REMOVED; new alert gold_h4choch_sell_4366 ADDED (arm when comp<=-40). Trump/Israel Beirut strike headline threatens Iran deal \u2014 bullish risk for OIL bear thesis, but OIL comp=-53 mod bear intact, KEEP. Hormuz reopening 'won't end shipping risks' \u2014 moderates OIL bear speed, not direction. Balance $977.38 (net +$55.11 from last state; old OIL +$10.25 + balance rollup). EURUSD=-13 none, AUDUSD=-20 none, USDJPY=+34 weak, USDCHF=+20.5 none \u2014 no new setups.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-06-12T18:06Z",
       "regime_name": "USD_STRENGTH_IRAN_PEACE_PIVOT",
       "note_text": "2026-06-12T18:06Z \u2014 1 evt (level_cross OIL_CRUDE cross_up @83.961 \u2014 post-fill noise, price recovered to 83.86). OIL SELL LIVE entry=83.935 UPL=+$0.52 (SL=85.10 TP=79.50 RR=3.8 comp=-70 strong all-4TF). Iran deal: 60d ceasefire extension tabled, Hormuz reopening framework live, Iran denies sign-off \u2014 WTI $83-87 8wk low. BEAR THESIS REINFORCED. USDCAD BUY LIMIT@1.39573 INTACT (comp=+67.5 mod 3/4TF, price=1.39786, dist=21p within 30p). 2 stale May-11 pending_orders (AUDUSD/USDCHF) removed \u2014 not in broker. GBPUSD comp=-3.5 none WATCH (price 5p below H4 OB, arm gate comp<=-40 not met). GOLD comp=-27.5 weak WATCH (47p below 4268, arm gate comp<=-40 not met). USDCHF comp=+40.5 moderate WATCH (no clean level to arm). EURUSD/AUDUSD/USDJPY readiness=none, no setup. Balance $922.27.",
@@ -1109,14 +1138,6 @@
       "ts_utc": "2026-06-12T15:32Z",
       "regime_name": "USD_STRENGTH_POST_HORMUZ",
       "note_text": "2026-06-12T15:32Z \u2014 16 evts consumed (all stale May/early-June). REGIME: USD_STRENGTH stable. Broker: 0 positions, 2 LIMITs active (USDCAD BUY@1.39573 comp=+60 mod; OIL SELL@83.93 comp=-70 strong). GBPUSD level_cross H4 OB@1.34213: comp=-3.5 none, H1 BOS bull conflict \u2192 WATCH, arm needs comp<=-40. USDCHF flipped bullish (comp=+33 weak), H4 OB demand zone 0.7795-0.7828 added as WATCH (BUY arm when comp>=40 AND price within 30p). USDJPY comp=+14 none, old sell alert removed (CF 4h=0%). GOLD comp=-27.5 weak, fvg_sell_4268 KEEP (57p from level, not stale). News_flash June 10: stale May 5/8 articles, no regime change. Scalp: GBPUSD enabled neutral, EURUSD/AUDUSD off. Balance $921.75.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-06-12T15:14Z",
-      "regime_name": "USD_STRENGTH_POST_HORMUZ",
-      "note_text": "2026-06-12T15:14Z \u2014 15 evts consumed. REGIME FLIP: Hormuz premium dissipated, full USD strength. May 12: AUDUSD BUY SL@0.72182 -$2.85; USDCHF SELL closed@0.77992 -$1.25. All FX pairs flipped USD-strong vs May highs (USDCAD +290p, USDCHF +210p, USDJPY +357p). GOLD crashed 4724\u21924211 (-513p). OIL crashed 95.70\u219283.43 (-$12.27). WATCHLIST PURGED: all 7 May alerts stale (dist 60-980p vs 3\u00d7H4ATR). NEW ARMED LIMITS: OIL SELL 83.93/85.10/79.50 (comp=-70 strong-bear all-4TF, M15 FVG supply); USDCAD BUY 1.39573/1.3894/1.415 (comp=+60 moderate bull, DAY FVG). WATCH: GBPUSD SELL 1.34213 H4 OB (comp=-3.5 none, arm at -40); GOLD SELL 4268 H1 BOS (comp=-27.5 weak, arm at -40). Balance $921.75.",
       "binary_event_name": null,
       "binary_event_active": 0,
       "binary_event_deadline": null

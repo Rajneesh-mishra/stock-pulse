@@ -1,41 +1,10 @@
 {
-  "regime": "USD_STRENGTH_IRAN_PEACE_PIVOT",
-  "tick_ts_utc": "2026-06-15T19:39Z",
-  "state_ts_utc": "2026-06-15T19:39Z",
-  "regime_note": "2026-06-15T19:37Z \u2014 8 evts processed (3 reconcile, 2 level_cross, 2 alert_audit, 1 news_flash). STATE RECONCILED: USDCAD BUY LIVE @1.39573 (comp=+73 strong all-4TF; time cap 22:11Z today); OIL SELL LIVE @80.024 SL=83.15 TP=75.0 comp=-53 mod bear 3/4TF; old OIL@83.935 CLOSED +$10.25. GBPUSD level_cross: price probed H4 OB to 1.344675 then retreated to 1.3417; comp=+1 none, gate comp<=-40 far from met, WATCH. GOLD level_cross: price blew to 4354.05 breaching SL 4330; gold_fvg_sell_4268 REMOVED; new alert gold_h4choch_sell_4366 ADDED (arm when comp<=-40). Trump/Israel Beirut strike headline threatens Iran deal \u2014 bullish risk for OIL bear thesis, but OIL comp=-53 mod bear intact, KEEP. Hormuz reopening 'won't end shipping risks' \u2014 moderates OIL bear speed, not direction. Balance $977.38 (net +$55.11 from last state; old OIL +$10.25 + balance rollup). EURUSD=-13 none, AUDUSD=-20 none, USDJPY=+34 weak, USDCHF=+20.5 none \u2014 no new setups.",
-  "regime_note_prev": "2026-06-12T18:06Z \u2014 1 evt (level_cross OIL_CRUDE cross_up @83.961 \u2014 post-fill noise, price recovered to 83.86). OIL SELL LIVE entry=83.935 UPL=+$0.52 (SL=85.10 TP=79.50 RR=3.8 comp=-70 strong all-4TF). Iran deal: 60d ceasefire extension tabled, Hormuz reopening framework live, Iran denies sign-off \u2014 WTI $83-87 8wk low. BEAR THESIS REINFORCED. USDCAD BUY LIMIT@1.39573 INTACT (comp=+67.5 mod 3/4TF, price=1.39786, dist=21p within 30p). 2 stale May-11 pending_orders (AUDUSD/USDCHF) removed \u2014 not in broker. GBPUSD comp=-3.5 none WATCH (price 5p below H4 OB, arm gate comp<=-40 not met). GOLD comp=-27.5 weak WATCH (47p below 4268, arm gate comp<=-40 not met). USDCHF comp=+40.5 moderate WATCH (no clean level to arm). EURUSD/AUDUSD/USDJPY readiness=none, no setup. Balance $922.27.",
-  "open_positions": [
-    {
-      "trade_id": "usdcad_dayfvg_buy_139573_20260614",
-      "instrument": "USDCAD",
-      "direction": "BUY",
-      "dealId": "00000000-53a1-59d3-044a-beb40055311e",
-      "entry": 1.39573,
-      "sl": 1.3894,
-      "tp": 1.415,
-      "size": 2000.0,
-      "opened_at": "2026-06-14T22:11:19Z",
-      "thesis_type": "trend",
-      "alert_id": "usdcad_dayfvg_buy_139573",
-      "confluence_at_entry": "+73 strong all-4TF",
-      "time_cap_utc": "2026-06-15T22:11:19Z"
-    },
-    {
-      "trade_id": "oil_crude_fvg_sell_8393_20260615",
-      "instrument": "OIL_CRUDE",
-      "direction": "SELL",
-      "dealId": "00000000-53a9-3192-044a-beb40055311e",
-      "entry": 80.024,
-      "sl": 83.15,
-      "tp": 75.0,
-      "size": 2.0,
-      "opened_at": "2026-06-15T19:36:19Z",
-      "thesis_type": "trend",
-      "alert_id": "oil_crude_fvg_sell_8393",
-      "confluence_at_entry": "-53 moderate bear 3/4TF",
-      "time_cap_utc": "2026-06-16T19:36:19Z"
-    }
-  ],
+  "regime": "USD_STRENGTH_OIL_BEAR_ONGOING",
+  "tick_ts_utc": "2026-07-07T06:58Z",
+  "state_ts_utc": "2026-07-07T06:58Z",
+  "regime_note": "2026-07-07T06:58Z \u2014 3 evts processed (position_closed OIL_CRUDE +$6.80, position_closed USDCAD +$7.85, news_flash hormuz_strait stale Jun15 no action). POSITIONS RECONCILED: both CLOSED (broker confirmed 0 positions). OIL SELL closed Jun17@76.591 +$6.80; USDCAD BUY closed Jun17@1.40123 +$7.85. NET GAIN +$14.65; balance $991.78. 3-week gap since last tick (Jun15\u2192Jul7). CONFLUENCE: USDJPY=+46.5 moderate bull (3/4TF; DAY FVG 161.508-161.682 fresh) but risk_guard REJECTS JPY pairs (pip-value conversion bug). Skip USDJPY entry, WATCH. EURUSD=-5 none; GBPUSD=+25.5 weak; AUDUSD=0 none; USDCAD=+31.5 weak; USDCHF=+23.5 none; GOLD=-17.5 none; OIL=+1.5 none. Watchlist: 3 stale alerts REMOVED (oil/usdcad deactivated; gold_4366 dist=236p>3\u00d7ATR); 3 new alerts ADDED (usdjpy_dayfvg_buy, gold_dayfvg_sell, oil_h1ob_sell). News queries rolled to Jul 7-10. No binary event active.",
+  "regime_note_prev": "2026-06-15T19:37Z \u2014 8 evts processed (3 reconcile, 2 level_cross, 2 alert_audit, 1 news_flash). STATE RECONCILED: USDCAD BUY LIVE @1.39573 (comp=+73 strong all-4TF; time cap 22:11Z today); OIL SELL LIVE @80.024 SL=83.15 TP=75.0 comp=-53 mod bear 3/4TF; old OIL@83.935 CLOSED +$10.25. GBPUSD level_cross: price probed H4 OB to 1.344675 then retreated to 1.3417; comp=+1 none, gate comp<=-40 far from met, WATCH. GOLD level_cross: price blew to 4354.05 breaching SL 4330; gold_fvg_sell_4268 REMOVED; new alert gold_h4choch_sell_4366 ADDED (arm when comp<=-40). Trump/Israel Beirut strike headline threatens Iran deal \u2014 bullish risk for OIL bear thesis, but OIL comp=-53 mod bear intact, KEEP. Hormuz reopening 'won't end shipping risks' \u2014 moderates OIL bear speed, not direction. Balance $977.38 (net +$55.11 from last state; old OIL +$10.25 + balance rollup). EURUSD=-13 none, AUDUSD=-20 none, USDJPY=+34 weak, USDCHF=+20.5 none \u2014 no new setups.",
+  "open_positions": [],
   "watchlist": [],
   "market_context": {
     "date": "2026-05-08",
@@ -872,6 +841,46 @@
       "alert_id": "oil_crude_fvg_sell_8393",
       "result": "win",
       "notes": "Iran deal Hormuz framework drove WTI from 83.94 to 83.05; closed ahead of Sunday market reopen; new SELL re-entered at 80.024 on continuation."
+    },
+    {
+      "trade_id": "oil_crude_fvg_sell_8393_20260615b",
+      "instrument": "OIL_CRUDE",
+      "direction": "SELL",
+      "deal_id": "00000000-53a9-3192-044a-beb40055311e",
+      "entry": 80.024,
+      "exit": 76.591,
+      "size": 2.0,
+      "sl": 83.15,
+      "tp": 75.0,
+      "opened_at": "2026-06-15T19:36:19Z",
+      "closed_at": "2026-06-17T08:38:15Z",
+      "hold_hours": 37.03,
+      "thesis_type": "trend",
+      "alert_id": "oil_crude_fvg_sell_8393",
+      "result": "win",
+      "exit_reason": "closed (position_sync; last_bid=76.591, last_upl=+$6.802)",
+      "pnl_usd": 6.8,
+      "notes": "Iran deal Hormuz framework + OPEC supply surge drove WTI from 80 to 76.59. Time cap was 24h (Jun 16 19:36Z); broker closed Jun 17 08:38Z \u2014 possible time exit via scalp engine or manual close past cap."
+    },
+    {
+      "trade_id": "usdcad_dayfvg_buy_139573_20260614b",
+      "instrument": "USDCAD",
+      "direction": "BUY",
+      "deal_id": "00000000-53a1-59d3-044a-beb40055311e",
+      "entry": 1.39573,
+      "exit": 1.40123,
+      "size": 2000.0,
+      "sl": 1.3894,
+      "tp": 1.415,
+      "opened_at": "2026-06-14T22:11:19Z",
+      "closed_at": "2026-06-17T14:11:16Z",
+      "hold_hours": 64.0,
+      "thesis_type": "trend",
+      "alert_id": "usdcad_dayfvg_buy_139573",
+      "result": "win",
+      "exit_reason": "closed (position_sync; last_bid=1.40123, last_upl=+$7.85)",
+      "pnl_usd": 7.85,
+      "notes": "USD strength theme continued; price moved from 1.39573 to 1.40123 (+55p). Time cap was 24h (Jun 15 22:11Z); held past cap and closed Jun 17 14:11Z at better level."
     }
   ],
   "consecutive_losses": 3,
@@ -1601,5 +1610,6 @@
   "daily_pnl_usd": 0.0,
   "news_last_searched_utc": "2026-05-07T12:55Z",
   "pending_orders": [],
-  "balance_usd": 977.38
+  "balance_usd": 977.38,
+  "account_balance": 991.78
 }
