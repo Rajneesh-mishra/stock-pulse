@@ -1,9 +1,9 @@
 {
   "regime": "USD_STRENGTH_OIL_BEAR_ONGOING",
-  "tick_ts_utc": "2026-07-07T13:09Z",
-  "state_ts_utc": "2026-07-07T13:09Z",
-  "regime_note": "2026-07-07T13:09Z \u2014 1 evt processed: news_flash hormuz_strait (Al Jazeera analysis 'Ships attacked in Strait of Hormuz: What that means for ongoing talks', pub 12:23Z Jul7). NOT a new attack \u2014 analysis of the Jul7 tanker+missiles events already processed in 17:37Z tick. OIL=69.372 (fear spike faded; comp=+1.5 none; structural bear intact). GOLD=4166.24 inside DAY FVG 4162.83-4173.575 (comp=+28 weak; gate comp<=-40 unmet). GBPUSD=1.33818 comp=+20.5 none. USDCAD=1.4226 comp=+46 moderate bull (all 4TF); LIMIT BUY armed @ 1.42107 (M15 OB pullback, SL=1.41950, TP=1.42700, R:R=3.8, deal 00000000-55dc-c18c). EURUSD=-5 none. AUDUSD=+15.5 none. USDJPY=+39 weak (JPY bug blocks). USDCHF=+23.5 none. 0 new positions. 1 LIMIT armed. Balance $991.78.",
-  "regime_note_prev": "2026-07-07T12:45Z \u2014 1 evt: level_cross GOLD (gold_dayfvg_sell_4163, price 4163.70 re-entered zone bottom 4162.83 at 12:42Z). GOLD bid=4165.97 inside DAY FVG sell zone 4162.83-4173.575. TODAY high=4174.98 briefly pierced zone top (+1.4p liquidity grab above 4173.575) then rejected back. Comp=+13.0 none-bull; gate comp<=-40 UNMET \u2014 no trade. M15 EMA bullish (price>ema21>ema50); H4 FVG bull 4141-4155 unmitigated below (support). GBPUSD=+25.5 weak (H4 OB sell 1.34213, 39p away, gate unmet). USDJPY=+41.5 mod-bull (FVG 161.682 blocked by JPY bug). USDCAD=+40.5 mod-bull (no active alert). OIL comp=-11 none (H1 OB 70.577 ~155p away). 0 positions. Balance $991.78. 0 trades.",
+  "tick_ts_utc": "2026-07-07T13:25Z",
+  "state_ts_utc": "2026-07-07T13:25Z",
+  "regime_note": "2026-07-07T13:25Z \u2014 heartbeat tick (0 events). USDCAD LIMIT BUY armed @1.42107 (comp=+46 moderate bull, all 4TF; SL=1.41950, TP=1.42700, R:R=3.8). GOLD 4171.59 inside DAY FVG 4162.83-4173.575 (comp=+28 weak bull; gate comp<=-40 unmet). GBPUSD 1.33805 (comp=+25.5 weak; alert SELL@1.34213 41p away). OIL 69.467 (comp=+1.5 none; level 70.577 $1.11 away). USDJPY 161.891 (comp=+39 weak; FVG buy@161.682 JPY-bug blocked). EURUSD comp=+4 none. AUDUSD comp=+18 none. USDCHF comp=+21 none. 0 trades. Balance $991.78.",
+  "regime_note_prev": "2026-07-07T13:09Z \u2014 1 evt processed: news_flash hormuz_strait (Al Jazeera analysis 'Ships attacked in Strait of Hormuz: What that means for ongoing talks', pub 12:23Z Jul7). NOT a new attack \u2014 analysis of the Jul7 tanker+missiles events already processed in 17:37Z tick. OIL=69.372 (fear spike faded; comp=+1.5 none; structural bear intact). GOLD=4166.24 inside DAY FVG 4162.83-4173.575 (comp=+28 weak; gate comp<=-40 unmet). GBPUSD=1.33818 comp=+20.5 none. USDCAD=1.4226 comp=+46 moderate bull (all 4TF); LIMIT BUY armed @ 1.42107 (M15 OB pullback, SL=1.41950, TP=1.42700, R:R=3.8, deal 00000000-55dc-c18c). EURUSD=-5 none. AUDUSD=+15.5 none. USDJPY=+39 weak (JPY bug blocks). USDCHF=+23.5 none. 0 new positions. 1 LIMIT armed. Balance $991.78.",
   "open_positions": [],
   "watchlist": [],
   "market_context": {
@@ -1609,7 +1609,20 @@
       ]
     }
   ],
-  "working_orders": [],
+  "working_orders": [
+    {
+      "dealId": "00000000-55dc-c18c-044a-beb40055311e",
+      "epic": "USDCAD",
+      "direction": "BUY",
+      "size": 3000.0,
+      "level": 1.42107,
+      "stopLevel": 1.4195,
+      "profitLevel": 1.427,
+      "type": "LIMIT",
+      "created_ts_utc": "2026-07-07T13:09Z",
+      "thesis_type": "trend"
+    }
+  ],
   "daily_pnl_usd": 0.0,
   "news_last_searched_utc": "2026-05-07T12:55Z",
   "pending_orders": [],

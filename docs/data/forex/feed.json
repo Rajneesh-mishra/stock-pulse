@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T13:11:24.184583Z",
+  "generated_at": "2026-07-07T13:25:32.041933Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -545,6 +545,16 @@
       "skipped": 0,
       "balance": 991.78,
       "note": "13:09 forex auto \u2014 1 evt (news_flash hormuz_strait: Al Jazeera analysis piece on Jul7 Hormuz attacks, pub 12:23Z; NOT new escalation \u2014 analysis of existing tanker+missiles events already processed; OIL spike faded 69.372). USDCAD LIMIT BUY armed @ 1.42107 (comp=+46 mod bull all4TF, M15 OB/H1 FVG pullback, SL=1.41950, TP=1.42700, R:R=3.8). alert usdcad_h1fvg_buy_42178 ADDED. GOLD inside DAY FVG 4162-4173 (comp=+28 weak, gate unmet). OIL comp=+1.5 none structural bear intact. 0 trades. 1 LIMIT working. balance $991.78."
+    },
+    {
+      "tick_ts_utc": "2026-07-07T13:25Z",
+      "events_processed": 0,
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "balance": 991.78,
+      "pending_orders": 1,
+      "pending_order_detail": "USDCAD BUY LIMIT @1.42107 (deal 00000000-55dc-c18c)",
+      "summary": "heartbeat tick \u2014 0 events. USDCAD LIMIT BUY still armed @1.42107 (comp=+46 moderate). GOLD inside FVG 4162-4173 (comp=+28 weak, gate unmet). All 5 alerts KEEP. Scalp: GBPUSD ACTIVE (0 closed trades), others off. 0 trades opened/closed."
     }
   ]
 }
