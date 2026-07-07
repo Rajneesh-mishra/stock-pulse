@@ -116,5 +116,91 @@
     ],
     "notes": "Hormuz tanker strike news_flash: OIL +1.27% (68.58\u219269.46) bouncing toward H1 OB sell zone 70.577. GOLD FVG 4162-4173 tested (high 4168.44\u21924128 rejection). USDJPY FVG 161.508-161.682 tested (low 161.661\u2192bounce). No executable trades: 0 pairs with moderate+ readiness AND no risk_guard blocks.",
     "regime": "USD_STRENGTH_OIL_BEAR_ONGOING"
+  },
+  {
+    "tick_ts_utc": "2026-07-07T17:37Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "event_id": "evt_1783418608839_news_flash",
+        "type": "news_flash",
+        "instrument": "OIL_CRUDE",
+        "summary": "Iran fires missiles at 2 commercial ships in Strait of Hormuz (pub 06:52Z). Second Hormuz escalation today. Spike faded \u2014 OIL at 69.026 (below last tick 69.461). OIL OB sell zone 70.577 not reached."
+      }
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "trades_skipped": 0,
+    "skip_reasons": [
+      "OIL: comp=-11 none (gate -40 unmet), 155p from sell zone",
+      "GOLD: comp=-2.5 none (gate -40 unmet), 4p below sell zone",
+      "USDCAD: comp=+40.5 moderate bull but no fresh structural level",
+      "GBPUSD/EURUSD/AUDUSD/USDCHF: comp none/weak",
+      "USDJPY: comp=+39 weak + risk_guard JPY bug blocks entry"
+    ],
+    "alerts_modified": [
+      "oil_crude_h1ob_sell_7057",
+      "gold_dayfvg_sell_4163"
+    ],
+    "alerts_removed_stale": [
+      "usdchf_dayfvg_sell_77933",
+      "audusd_dayfvg_buy_72080",
+      "usdjpy_dayfvg_sell_15653",
+      "usdcad_m15sweep_136540_sell_watch"
+    ],
+    "open_positions": 0,
+    "balance_usd": 991.78,
+    "regime": "USD_STRENGTH_OIL_BEAR_ONGOING",
+    "attention_matrix": {
+      "EURUSD": {
+        "swing": "NONE",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "comp=+2.5 none; scalp disabled (engine_desync)"
+      },
+      "GBPUSD": {
+        "swing": "WATCH",
+        "scalp": "ACTIVE",
+        "readiness": "weak",
+        "reason": "H4 OB sell 1.34213 alert; price 1.338, 32p from zone; comp=+28 weak, gate <=-40 unmet"
+      },
+      "AUDUSD": {
+        "swing": "NONE",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "comp=+2.5 none; scalp disabled (wr=11%)"
+      },
+      "USDJPY": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "weak",
+        "reason": "DAY FVG BUY 161.508-161.682 (price 161.9, 22p above zone); comp=+39 weak; entry BLOCKED by risk_guard JPY bug; pip-conv-pending"
+      },
+      "USDCAD": {
+        "swing": "NONE",
+        "scalp": "OFF",
+        "readiness": "moderate",
+        "reason": "comp=+40.5 moderate-bull but no fresh structural level (H4 FVG mitigated); WATCH for pullback OB"
+      },
+      "USDCHF": {
+        "swing": "NONE",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "comp=+21 none; pip-conv-pending"
+      },
+      "GOLD": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "none",
+        "reason": "DAY FVG SELL 4162.83-4173.575; price 4158.69 (4p below zone!); comp=-2.5 none, gate <=-40 far unmet"
+      },
+      "OIL_CRUDE": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "none",
+        "reason": "H1 OB SELL 70.577; price 69.026 (155p from zone); comp=-11 none, gate <=-40 unmet. Dual Hormuz escalation noted."
+      }
+    },
+    "scalp_audit": "EURUSD=OFF(engine_desync) GBPUSD=ACTIVE(halted:{}) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
   }
 ]

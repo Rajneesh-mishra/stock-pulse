@@ -115,14 +115,14 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: M15 bearish rejection wick >=10p from DAY bear FVG zone (4162.83-4173.575) with M15 bearish close. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GOLD 4128.19 (Jul 7 13:00Z). comp=-17.5 none bearish. FVG zone ALREADY TESTED today \u2014 intraday high 4168.44 entered zone (4162.83-4173.575), then rejected sharply to 4128 (~40p drop). M15 BOS bear at 4128.62 (Jul 6) confirmed. M15 bear OB now at 4166.18-4168.59 (inside FVG, formed on the rejection). DAY FVG partially mitigated (high 4168.44 touched bottom third). Next rally into 4162-4173 zone is the repeat entry if comp reaches \u2264-40. Bear thesis: price < DAY EMA stack, FVG overhead resistance proven by today's rejection.\n\nSL: 4200.00  TP: 4060.00  R:R target: 2.69\nupdated 2026-07-07T13:00Z \u2014 KEEP; FVG zone tested today (high 4168\u21924128 rejection, 40p), setup proven; ARM on next rally to zone when comp \u2264-40.",
+      "note": "ENTRY: M15 bearish rejection wick >=10p from DAY bear FVG zone (4162.83-4173.575) with M15 bearish close. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GOLD 4158.69 (Jul 7 17:37Z). comp=-2.5 none. FVG sell zone 4162.83-4173.575 NOW JUST 4p ABOVE CURRENT PRICE. Zone was tested Jul7 AM (high 4168.44 \u2192 rejected -40p to 4128). Price recovered to 4158.69 \u2014 second approach to zone forming. M15 BOS bear Jul6@4128.62 confirmed. M15 bear OB 4166.18-4168.59 inside FVG. H4 and H1 still slightly bull (price>ema21>ema50 on those TFs) \u2014 hence comp=-2.5, gate comp<=-40 unmet. Hormuz dual escalation provides residual safe-haven gold bid. WATCH: if price enters zone, need M15 bearish wick + close + comp<=-40 for LIMIT entry.\n\nSL: 4200.00  TP: 4060.00  R:R target: 2.69\nupdated 2026-07-07T17:37Z \u2014 CRITICAL PROXIMITY: price 4158 is 4p below zone entry. ARM on zone touch when comp<=-40.",
       "entry_criterion": "M15 bearish rejection wick >=10p from DAY FVG 4162.83-4173.575. ARM when comp <=-40.",
-      "regime_context": "GOLD 4128.19, comp=-17.5 none. FVG 4162-4173 tested today (high 4168.44 \u2192 rejected to 4128). M15 BOS bear Jul6 confirmed. M15 OB 4166-4168 formed inside FVG.",
+      "regime_context": "GOLD 4158.69, comp=-2.5 none. CRITICAL: 4p below sell zone 4162.83-4173.575. M15 BOS bear Jul6. H4/H1 slightly bull \u2014 gate comp<=-40 unmet. Monitor for zone entry + rejection.",
       "sl": 4200.0,
       "tp": 4060.0,
       "rr_target": "2.69",
-      "current_price_ref": 4128.19,
-      "last_updated": "2026-07-07T13:00Z"
+      "current_price_ref": 4158.69,
+      "last_updated": "2026-07-07T17:37Z"
     },
     {
       "id": "oil_crude_h1ob_sell_7057",
@@ -134,15 +134,15 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: M15 bearish rejection wick >=5p from H1 bear OB zone bottom (70.577-71.452) with M15 bearish close. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: OIL_CRUDE 69.461 (Jul 7 13:00Z). comp=+1.5 neutral. DAY bear intact (price<ema21<ema50). H1 BOS bull Jul3@69.246; H4 FVG bull 68.912-68.922 (fresh, unmitigated). Hormuz tanker struck Jul7 01:27Z (ablaze, Strait of Hormuz) \u2014 geopolitical fear spike driving OIL +1.27% today from low 68.58. The Hormuz event ACCELERATES the bounce toward H1 bear OB zone (70.577-71.452): fear rally is the approach mechanism. Structural bear thesis (Iran deal + OPEC supply surge) unchanged \u2014 Hormuz event is a spike catalyst, not structural supply cut. OB zone sell: wait for price to reach 70.577, confirmation wick, comp \u2264-40.\n\nSL: 71.60  TP: 67.50  R:R target: 2.88\nupdated 2026-07-07T13:00Z \u2014 MODIFY: Hormuz tanker news adds upside spike risk; OB sell zone more likely to be reached this session. Thesis intact, comp gate unchanged.",
+      "note": "ENTRY: M15 bearish rejection wick >=5p from H1 bear OB zone bottom (70.577-71.452) with M15 bearish close. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: OIL_CRUDE 69.026 (Jul 7 17:37Z). comp=-11 none. DAY bear intact (price<ema21<ema50). DUAL Hormuz escalation Jul7: (1) tanker struck ablaze 01:27Z; (2) Iran fired missiles at 2 commercial ships 06:52Z. Fear spike toward H1 OB 70.577 day high was 69.736 but spike faded \u2014 price back to 69.026 below last tick's 69.461. Structural bear thesis (Iran deal + OPEC supply surge) unchanged. Missiles event is a fear catalyst, not structural supply cut. OB sell at 70.577: wait for comp<=-40 confirmation. ~155p to zone.\n\nSL: 71.60  TP: 67.50  R:R target: 2.88\nupdated 2026-07-07T17:37Z \u2014 MODIFY: second Hormuz escalation (missiles at 2 ships). Spike faded, structural bear intact. Gate unchanged.",
       "entry_criterion": "M15 bearish rejection wick >=5p from H1 bear OB 70.577-71.452. ARM when comp <=-40.",
-      "regime_context": "OIL 69.461, comp=+1.5 neutral. DAY bear intact. Hormuz tanker struck Jul7 driving +1.27% bounce toward H1 OB 70.577-71.452. Structural bear (Iran deal, OPEC supply) unchanged.",
+      "regime_context": "OIL 69.026, comp=-11 none. DUAL Hormuz escalation Jul7 (tanker+missiles). Spike faded. DAY bear intact. H1 OB 70.577 target ~155p away. Gate comp<=-40.",
       "sl": 71.6,
       "tp": 67.5,
       "rr_target": "2.88",
-      "current_price_ref": 69.461,
-      "last_updated": "2026-07-07T13:00Z"
+      "current_price_ref": 69.026,
+      "last_updated": "2026-07-07T17:37Z"
     }
   ],
-  "last_updated": "2026-07-07T13:00Z"
+  "last_updated": "2026-07-07T17:37Z"
 }

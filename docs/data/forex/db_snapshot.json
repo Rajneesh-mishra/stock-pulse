@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-07T07:31:03.638147+00:00",
+  "generated_at": "2026-07-07T12:08:04.764122+00:00",
   "counts": {
     "trades": 52,
-    "events": 8209,
+    "events": 8215,
     "ticks": 59,
-    "regime_snapshots": 266,
+    "regime_snapshots": 267,
     "broker_positions": 0,
     "counterfactuals": 191
   },
@@ -1063,6 +1063,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-07-07T13:00Z",
+      "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
+      "note_text": "2026-07-07T13:00Z \u2014 1 evt processed (news_flash hormuz_strait: tanker struck ablaze Jul7 01:27Z). OIL+1.27% today (68.58\u219269.46), Hormuz geopolitical spike accelerates approach to H1 bear OB sell zone (70.577-71.452). OIL SELL alert note updated with Hormuz context; thesis intact (structural bear: Iran deal + OPEC supply surge). GOLD FVG zone (4162.83-4173.575) TESTED today (high 4168.44\u2192rejected to 4128, -40p); M15 BOS bear confirmed; alert KEPT for next rally attempt. USDJPY DAY FVG (161.508-161.682) tested today (low 161.661\u2192bounce to 161.95); comp=+41.5 moderate bull; entry still BLOCKED by risk_guard JPY pip-value bug. No new trades: 0 pairs with executable moderate+ readiness. CONFLUENCE: EURUSD=-12.5 none; GBPUSD=+25.5 weak; AUDUSD=-2 none; USDCAD=+34 weak; USDCHF=+23.5 none; USDJPY=+41.5 moderate (blocked); GOLD=-17.5 none; OIL=+1.5 none. Balance $991.78. 0 positions.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-07-07T06:58Z",
       "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
       "note_text": "2026-07-07T06:58Z \u2014 3 evts processed (position_closed OIL_CRUDE +$6.80, position_closed USDCAD +$7.85, news_flash hormuz_strait stale Jun15 no action). POSITIONS RECONCILED: both CLOSED (broker confirmed 0 positions). OIL SELL closed Jun17@76.591 +$6.80; USDCAD BUY closed Jun17@1.40123 +$7.85. NET GAIN +$14.65; balance $991.78. 3-week gap since last tick (Jun15\u2192Jul7). CONFLUENCE: USDJPY=+46.5 moderate bull (3/4TF; DAY FVG 161.508-161.682 fresh) but risk_guard REJECTS JPY pairs (pip-value conversion bug). Skip USDJPY entry, WATCH. EURUSD=-5 none; GBPUSD=+25.5 weak; AUDUSD=0 none; USDCAD=+31.5 weak; USDCHF=+23.5 none; GOLD=-17.5 none; OIL=+1.5 none. Watchlist: 3 stale alerts REMOVED (oil/usdcad deactivated; gold_4366 dist=236p>3\u00d7ATR); 3 new alerts ADDED (usdjpy_dayfvg_buy, gold_dayfvg_sell, oil_h1ob_sell). News queries rolled to Jul 7-10. No binary event active.",
@@ -1130,14 +1138,6 @@
       "ts_utc": "2026-06-12T16:20Z",
       "regime_name": "USD_STRENGTH_POST_HORMUZ",
       "note_text": "2026-06-12T16:20Z \u2014 0 evts (heartbeat). REGIME: USD_STRENGTH_POST_HORMUZ. Broker: 0 positions, 2 LIMITs intact. USDCAD BUY@1.39573 comp=+60 mod, dist=13.3p vs 3\u00d7H4ATR=71.1p \u2014 KEEP. OIL SELL@83.93 comp=-70 strong, dist=58.4p vs 3\u00d7H4ATR=611.7p \u2014 KEEP. Macro: Trump signals Iran-US peace deal 'as early as this weekend' (Jun 12-13) \u2014 OIL bear confirmed (Hormuz premium unwinding), USD safe-haven demand may soften slightly but CAD weakness (loonie weakest reserve currency) supports USDCAD BUY. GBPUSD OB SELL 1.34213: comp=-13.5 none (H1 BOS bull conflict), WATCH arm needs <=-40. GOLD SELL 4268.71: comp=-27.5 weak, dist=45.9p vs 3\u00d7H4ATR=148.2p, DAY FVG now mitigated but H1 BOS bear intact, WATCH. USDCHF +33 weak, USDJPY +14 none, EURUSD -10 none, AUDUSD -17.5 none \u2014 no setups. News queries rolled +2d to include Jun 13-14 weekend. Scalp: GBPUSD active/neutral; EURUSD disabled (desync); AUDUSD disabled (wr=11%/19T). Balance $921.75.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-06-12T15:37Z",
-      "regime_name": "USD_STRENGTH_POST_HORMUZ",
-      "note_text": "2026-06-12T15:37Z \u2014 1 evt consumed (boj_intervention news_flash, stale May 5 BT article, no action). REGIME: USD_STRENGTH stable. Broker: 0 positions, 2 LIMITs active (USDCAD BUY@1.39573 comp=+60 mod; OIL SELL@83.93 comp=-70 strong). USDCHF_h4ob_buy_7795 AUTO-REMOVED: dist=166.7p > 3\u00d7H4ATR=31.5p, comp=+33 bullish trending away, no approach catalyst. USDCHF WATCH \u2014 no entry until fresh level and comp>=40. GBPUSD OB SELL 1.34213: comp=-3.5 none, WATCH arm needs <=-40. GOLD FVG SELL 4268.71: comp=-27.5 weak, dist=49.3p < 74.25p (3\u00d7H4ATR), KEEP WATCH. USDJPY: 160.194, comp=+14 none, no alert. News queries rolled to Jun 10-12 (all 6 had stale May 5-8 windows). Scalp: GBPUSD active neutral, EURUSD/AUDUSD off. Balance $921.75.",
       "binary_event_name": null,
       "binary_event_active": 0,
       "binary_event_deadline": null
