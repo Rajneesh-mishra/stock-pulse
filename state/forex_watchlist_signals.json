@@ -115,14 +115,14 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: M15 bearish rejection wick >=10p from DAY bear FVG zone (4162.83-4173.575) with M15 bearish close. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GOLD 4158.69 (Jul 7 17:37Z). comp=-2.5 none. FVG sell zone 4162.83-4173.575 NOW JUST 4p ABOVE CURRENT PRICE. Zone was tested Jul7 AM (high 4168.44 \u2192 rejected -40p to 4128). Price recovered to 4158.69 \u2014 second approach to zone forming. M15 BOS bear Jul6@4128.62 confirmed. M15 bear OB 4166.18-4168.59 inside FVG. H4 and H1 still slightly bull (price>ema21>ema50 on those TFs) \u2014 hence comp=-2.5, gate comp<=-40 unmet. Hormuz dual escalation provides residual safe-haven gold bid. WATCH: if price enters zone, need M15 bearish wick + close + comp<=-40 for LIMIT entry.\n\nSL: 4200.00  TP: 4060.00  R:R target: 2.69\nupdated 2026-07-07T17:37Z \u2014 CRITICAL PROXIMITY: price 4158 is 4p below zone entry. ARM on zone touch when comp<=-40.",
-      "entry_criterion": "M15 bearish rejection wick >=10p from DAY FVG 4162.83-4173.575. ARM when comp <=-40.",
-      "regime_context": "GOLD 4158.69, comp=-2.5 none. CRITICAL: 4p below sell zone 4162.83-4173.575. M15 BOS bear Jul6. H4/H1 slightly bull \u2014 gate comp<=-40 unmet. Monitor for zone entry + rejection.",
+      "note": "ENTRY: M15 bearish rejection wick >=10p from inside DAY bear FVG zone (4162.83-4173.575) with M15 bearish close. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GOLD 4169.63 (Jul 7 12:16Z UTC). Comp=+22.0 none-bull. Price is NOW INSIDE the FVG zone (2nd entry today). First entry ~07:08Z reached high 4168.44 then rejected -40p to 4128. Price recovered, re-entered zone at 12:08Z (now 4169.63). Zone top 4173.575 is 4p above. M15 ChoCH bull Jul6 22:30Z at 4168.59 \u2014 M15 structure bullish (price>ema21>ema50). H4 bull FVG 4141-4155 unmitigated below (support). Gate comp<=-40 unmet (+22 bull). Bear trigger requires: H4/H1 EMA stacks to invert (comp drops \u2264-40) + M15 bearish rejection wick >=10p + bearish close from inside zone.\n\nSL: 4200.00  TP: 4060.00  R:R target: 2.69\nupdated 2026-07-07T12:16Z \u2014 KEEP; price IN zone (4169.63 vs 4162.83-4173.575); comp=+22 gate unmet; M15 bullish; watch zone top 4173 for rejection + comp reversal.",
+      "entry_criterion": "M15 bearish rejection wick >=10p from inside DAY FVG 4162.83-4173.575. ARM when comp <=-40.",
+      "regime_context": "GOLD 4169.63 inside zone 4162.83-4173.575. 2nd zone entry today. Comp=+22 bull/none-for-sell. Gate comp<=-40 unmet. M15 ChoCH bull Jul6 22:30Z. Zone top 4173 is 4p above. Watch for rejection + comp flip.",
       "sl": 4200.0,
       "tp": 4060.0,
       "rr_target": "2.69",
-      "current_price_ref": 4158.69,
-      "last_updated": "2026-07-07T17:37Z"
+      "current_price_ref": 4169.63,
+      "last_updated": "2026-07-07T12:16Z"
     },
     {
       "id": "oil_crude_h1ob_sell_7057",
@@ -144,5 +144,5 @@
       "last_updated": "2026-07-07T17:37Z"
     }
   ],
-  "last_updated": "2026-07-07T17:37Z"
+  "last_updated": "2026-07-07T12:16Z"
 }

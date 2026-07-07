@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T12:11:14.552274Z",
+  "generated_at": "2026-07-07T12:19:22.120870Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -439,6 +439,93 @@
         }
       },
       "scalp_audit": "EURUSD=OFF(engine_desync) GBPUSD=ACTIVE(halted:{}) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
+    },
+    {
+      "tick_ts_utc": "2026-07-07T12:16Z",
+      "events_processed": 1,
+      "events": [
+        {
+          "event_id": "evt_1783426102407_level_cross",
+          "type": "level_cross",
+          "instrument": "GOLD",
+          "alert_id": "gold_dayfvg_sell_4163",
+          "action": "zone entered (4162.84 crossed 4162.83 at 12:08Z); comp=+22 gate unmet; no trade"
+        }
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "trades_skipped": 1,
+      "skip_reasons": [
+        "GOLD level_cross: comp=+22.0 bull/none; gate comp<=-40 UNMET; M15 bullish ChoCH; no trade"
+      ],
+      "balance": 991.78,
+      "open_positions": 0,
+      "confluence": {
+        "EURUSD": 2.5,
+        "GBPUSD": 28.0,
+        "AUDUSD": 2.5,
+        "USDCAD": 40.5,
+        "USDCHF": 21.0,
+        "USDJPY": 39.0,
+        "GOLD": 22.0,
+        "OIL_CRUDE": -16.0
+      },
+      "alerts_modified": [
+        "gold_dayfvg_sell_4163: MODIFY (price now inside zone 4169.63, comp=+22 gate unmet)"
+      ],
+      "attention_matrix": {
+        "EURUSD": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "comp=+2.5 none; scalp disabled (engine_desync)"
+        },
+        "GBPUSD": {
+          "swing": "WATCH",
+          "scalp": "ACTIVE",
+          "readiness": "weak",
+          "reason": "H4 OB sell alert 1.34213; price 1.33864 (35p below); comp=+28 weak, gate <=-40 unmet"
+        },
+        "AUDUSD": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "comp=+2.5 none; scalp disabled (wr=11%)"
+        },
+        "USDJPY": {
+          "swing": "WATCH",
+          "scalp": "OFF",
+          "readiness": "weak",
+          "reason": "DAY FVG BUY 161.508-161.682; price 161.87 (18p above); comp=+39 weak; blocked by risk_guard JPY bug"
+        },
+        "USDCAD": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "moderate",
+          "reason": "comp=+40.5 moderate bull; no active structural level alert; pip-conv pending scalp"
+        },
+        "USDCHF": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "comp=+21 none; pip-conv pending"
+        },
+        "GOLD": {
+          "swing": "WATCH",
+          "scalp": "N/A",
+          "readiness": "none-for-sell",
+          "reason": "alert active; price 4169.63 NOW IN zone 4162.83-4173.575; comp=+22 bull gate <=-40 unmet; M15 bullish"
+        },
+        "OIL_CRUDE": {
+          "swing": "WATCH",
+          "scalp": "N/A",
+          "readiness": "none",
+          "reason": "H1 OB sell 70.577; price 69.032 (154p away); comp=-16 none, gate <=-40 unmet; Hormuz fear faded"
+        }
+      },
+      "scalp_audit": "EURUSD=OFF(engine_desync) GBPUSD=ACTIVE(no_trades_no_halt) AUDUSD=OFF(wr=11%_19trades) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
+      "regime": "USD_STRENGTH_OIL_BEAR_ONGOING",
+      "notes": "GOLD level_cross: price entered FVG sell zone 4162.83-4173.575 at 12:08Z (2nd entry today). First entry (AM) reached 4168.44 then rejected -40p. Now price at 4169.63, zone top 4173 is 4p away. Comp=+22 none-bull \u2014 no trade until comp\u2264-40. M15 ChoCH bull Jul6 22:30Z still valid. USDCAD moderate bull (+40.5) but no structural level to anchor alert."
     }
   ]
 }
