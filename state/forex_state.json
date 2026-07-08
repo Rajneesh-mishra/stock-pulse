@@ -1,8 +1,8 @@
 {
   "regime": "USD_STRENGTH_OIL_BEAR_ONGOING",
-  "tick_ts_utc": "2026-07-08T02:45Z",
-  "state_ts_utc": "2026-07-08T02:45Z",
-  "regime_note": "2026-07-08T02:45Z \u2014 2 evt: news_flash (Moneycontrol: 3rd tanker attacked Hormuz in 24h; Qatar holds Iran 'fully legally responsible') + alert_audit_request oil_crude_h1ob_sell_7057 (STALE \u2014 alert removed last tick, H1 OB mitigated). Hormuz escalation deepens: no cease-fire, new attack 14:56Z Jul7. OIL bullish context maintained but comp=+1.5 none, gate>=+40 unmet. GOLD at 4106 may catch safe-haven bid toward H4 FVG sell zone 4116-4136 (only 10p above), but comp=-26.5 weak, gate<=-40 unmet. USDJPY comp=+52 moderate 4/4TF bull (DAY FVG 161.508-161.668 fresh, 44p below) \u2014 BLOCKED by JPY risk_guard bug. 0 positions. Balance $988.44. No new entries: all gates unmet. Scalp: GBPUSD active, others disabled.",
+  "tick_ts_utc": "2026-07-08T14:05Z",
+  "state_ts_utc": "2026-07-08T14:05Z",
+  "regime_note": "2026-07-08T14:05Z \u2014 4 evt: level_cross GOLD (4127.32 entered H4 FVG sell 4116-4135 at 06:36Z, fell to 4070 \u2014 gate comp<=-40 unmet, opportunity passed); news_flash Hormuz (4 tankers turned back from Hormuz, supply-disruption risk deepening); alert_audit\u00d72 OIL oil_crude_h4fvg_buy_7146 (US strikes on Bahrain/Kuwait + 'Hormuz returns to crisis mode' \u2014 OIL bull thesis confirmed, comp=+25.5 weak, gate unmet). No trades: all gates unmet. Balance $988.44. 0 positions. Alert changes: REMOVE oil_crude_h1ob_sell_7057 (H1 OB mitigated), ADD gold_h4fvg_sell_4087 (fresh H4 FVG bear 4086-4114, gate<=-40), ADD oil_crude_dayfvg_buy_7168 (DAY FVG bull 71.46-71.68, gate>=+40). USDJPY comp=+67 strong but JPY bug still blocking. EURUSD comp=-47.5 moderate bear, USDCHF comp=+40 moderate bull \u2014 no levels armed.",
   "regime_note_prev": "2026-07-08T02:07Z \u2014 3 events: news_flash (NYT Iran strikes test Hormuz cease-fire), position_closed USDCAD (SL hit 1.41954, -$3.23), level_cross OIL_CRUDE (72.252 crossed H1 OB 70.577). USDCAD BUY SL hit yesterday 14:45Z \u2014 price wicked to 1.41954 then rebounded to 1.420. OIL spiked +5.32% to 72.242 on Hormuz escalation (Iran strikes testing cease-fire per NYT). H1 OB sell zone 70.577-71.452 MITIGATED by price transit. H4 FVG bull 71.462-71.887 fresh below. GOLD dropped -58p from 4165 (inside DAY FVG) to 4107.05. H4+H1 FVG bear 4116-4136 fresh above. 0 positions open. Balance $988.44. No new entries: USDJPY blocked (JPY bug), all others comp<40.",
   "open_positions": [],
   "watchlist": [],
@@ -1553,20 +1553,32 @@
       "note": "ENTRY: M15 bearish rejection wick >=10p from DAY bear FVG zone (4162.83-4173.575) with M15 bearish close. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GOLD 4128.19 (Jul 7 13:00Z). comp=-17.5 none bearish. FVG zone ALREADY TESTED today \u2014 intraday high 4168.44 entered zone (4162.83-4173.575), then rejected sharply to 4128 (~40p drop). M15 BOS bear at 4128.62 (Jul 6) confirmed. M15 bear OB now at 4166.18-4168.59 (inside FVG, formed on the rejection). DAY FVG partially mitigated (high 4168.44 touched bottom third). Next rally into 4162-4173 zone is the repeat entry if comp reaches \u2264-40. Bear thesis: price < DAY EMA stack, FVG overhead resistance proven by today's rejection.\n\nSL: 4200.00  TP: 4060.00  R:R target: 2.69\nupdated 2026-07-07T13:00Z \u2014 KEEP; FVG zone tested today (high 4168\u21924128 rejection, 40p), setup proven; ARM on next rally to zone when comp \u2264-40."
     },
     {
-      "alert_id": "oil_crude_h1ob_sell_7057",
-      "instrument": "OIL_CRUDE",
-      "level": 70.577,
+      "alert_id": "gold_h4fvg_sell_4087",
+      "instrument": "GOLD",
       "direction": "sell",
+      "level": 4086.43,
       "active": true,
-      "validated": false,
-      "status": "WATCH",
-      "sl": 71.6,
-      "tp": 67.5,
-      "rr_target": "2.88",
-      "entry_criterion": "M15 bearish rejection wick >=5p from H1 bear OB 70.577-71.452. ARM when comp <=-40.",
-      "regime_context": "OIL 69.461, comp=+1.5 neutral. DAY bear intact. Hormuz tanker struck Jul7 driving +1.27% bounce toward H1 OB 70.577-71.452. Structural bear (Iran deal, OPEC supply) unchanged.",
-      "last_updated": "2026-07-07T17:37Z",
-      "note": "ENTRY: M15 bearish rejection wick >=5p from H1 bear OB zone bottom (70.577-71.452) with M15 bearish close. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: OIL_CRUDE 69.461 (Jul 7 13:00Z). comp=+1.5 neutral. DAY bear intact (price<ema21<ema50). H1 BOS bull Jul3@69.246; H4 FVG bull 68.912-68.922 (fresh, unmitigated). Hormuz tanker struck Jul7 01:27Z (ablaze, Strait of Hormuz) \u2014 geopolitical fear spike driving OIL +1.27% today from low 68.58. The Hormuz event ACCELERATES the bounce toward H1 bear OB zone (70.577-71.452): fear rally is the approach mechanism. Structural bear thesis (Iran deal + OPEC supply surge) unchanged \u2014 Hormuz event is a spike catalyst, not structural supply cut. OB zone sell: wait for price to reach 70.577, confirmation wick, comp \u2264-40.\n\nSL: 71.60  TP: 67.50  R:R target: 2.88\nupdated 2026-07-07T13:00Z \u2014 MODIFY: Hormuz tanker news adds upside spike risk; OB sell zone more likely to be reached this session. Thesis intact, comp gate unchanged."
+      "entry_criterion": "M15 bearish rejection wick >=5p from inside H4 FVG bear zone (4086.43-4114.84) with M15 bearish close. ARM SELL LIMIT only when comp <=-40.",
+      "regime_context": "GOLD 4070.83 (Jul 8 14:05Z). Price fell from 4127 (old H4 FVG 4116-4135 traversed) to current 4070. Fresh H4 FVG bear 4086.43-4114.84 (bars_ago=1, unmitigated) formed as price dropped. comp=-28.5 weak, gate unmet. M15 BOS bear Jul7. 3/4 TF bear.",
+      "sl": 4125.0,
+      "tp": 4020.0,
+      "rr_target": 2.4,
+      "last_updated": "2026-07-08T14:05Z",
+      "note": "ENTRY: M15 bearish rejection wick >=5p from inside H4 FVG bear zone (4086.43-4114.84) with M15 bearish close. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GOLD 4070.83 (Jul 8 14:05Z). Fresh H4 FVG bear 4086.43-4114.84 (bars_ago=1, unmitigated) formed after price traversed old 4116-4135 zone and fell. comp=-28.5 weak; gate comp<=-40 unmet. Watch for bounce to zone with comp improvement.\n\nSL: 4125.00  TP: 4020.00  R:R target: 2.4\nadded 2026-07-08T14:05Z \u2014 NEW; fresh H4 bear FVG post-traverse; gate comp<=-40 unmet."
+    },
+    {
+      "alert_id": "oil_crude_dayfvg_buy_7168",
+      "instrument": "OIL_CRUDE",
+      "direction": "buy",
+      "level": 71.68,
+      "active": true,
+      "entry_criterion": "Pullback to DAY FVG bull zone top (71.46-71.68) with M15 bullish rejection wick and M15 bullish close. ARM BUY LIMIT only when comp >=+40.",
+      "regime_context": "OIL 73.68 (Jul 8 14:05Z). Hormuz crisis escalating: 4 tankers turned back, US strikes in region. H4 BOS bull confirmed (bar_ts 2026-07-03T06:00Z). DAY FVG bull 69.19-71.68 unmitigated, fresh. comp=+25.5 weak (gate comp>=+40 unmet). Bullish regime sustained by supply-risk premium.",
+      "sl": 70.5,
+      "tp": 75.5,
+      "rr_target": 3.3,
+      "last_updated": "2026-07-08T14:05Z",
+      "note": "ENTRY: Pullback to DAY FVG bull zone top (71.46-71.68) with M15 bullish rejection wick and M15 bullish close. ARM BUY LIMIT only when comp >=+40.\n\nCONTEXT: OIL 73.68 (Jul 8 14:05Z). Hormuz escalation: 4 tankers turned back, US strikes. H1 BOS bull at 69.246, DAY FVG bull 69.19-71.68 fresh/unmitigated. comp=+25.5 weak; gate comp>=+40 unmet. Watch for pullback to 71.46-71.68 zone with comp improvement.\n\nSL: 70.50  TP: 75.50  R:R target: 3.3\nadded 2026-07-08T14:05Z \u2014 NEW; replaces mitigated H1 OB sell; Hormuz crisis bull thesis; gate comp>=+40 unmet."
     }
   ],
   "structure_watch": [

@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-07T20:49:40.305391+00:00",
+  "generated_at": "2026-07-08T14:05:46.569416+00:00",
   "counts": {
     "trades": 53,
-    "events": 8237,
+    "events": 8269,
     "ticks": 59,
     "regime_snapshots": 275,
     "broker_positions": 0,
-    "counterfactuals": 195
+    "counterfactuals": 196
   },
   "trades_last_50": [
     {
@@ -1647,6 +1647,19 @@
   ],
   "counterfactuals_last_50": [
     {
+      "alert_id": "gold_h4fvg_sell_4116",
+      "instrument": "GOLD",
+      "direction": "sell",
+      "trigger_price": 4127.32,
+      "fired_at": "2026-07-08T06:36:03.867597+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
+    {
       "alert_id": "oil_crude_h1ob_sell_7057",
       "instrument": "OIL_CRUDE",
       "direction": "sell",
@@ -2276,19 +2289,6 @@
       "direction": "buy",
       "trigger_price": 1.356765,
       "fired_at": "2026-05-04T07:59:50.151195+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
-    },
-    {
-      "alert_id": "eurusd_upsweep_117159_sell_watch",
-      "instrument": "EURUSD",
-      "direction": "sell",
-      "trigger_price": 1.171715,
-      "fired_at": "2026-05-04T07:54:44.340799+00:00",
       "hit_1h": null,
       "hit_4h": null,
       "hit_24h": null,
