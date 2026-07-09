@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-09T20:28:11.599460+00:00",
+  "generated_at": "2026-07-09T20:58:22.931024+00:00",
   "counts": {
     "trades": 53,
     "events": 8294,
     "ticks": 59,
-    "regime_snapshots": 285,
+    "regime_snapshots": 286,
     "broker_positions": 0,
     "counterfactuals": 201
   },
@@ -1063,6 +1063,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-07-10T20:30Z",
+      "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
+      "note_text": "2026-07-10T20:30Z \u2014 9 events (1 level_cross OIL, 2 alert_audit_request OIL+GOLD, 6 news_flash Hormuz). MULTI-SOURCE Hormuz escalation Jul9: BBC (ship traffic falls steeply), Reuters+Straits Times (near standstill), CNBC (Iranian attacks trigger renewed US fighting), Marine Insight (4 tankers turned back), Fox News Jul7 (US claws back concession). US-Iran conflict confirmed escalating. OIL 71.65 \u2014 entered H4 FVG buy zone (71.462-71.887) at 71.72 Jul9 17:20Z; despite supply shock news, M15 BOS bear Jul9 08:30Z, comp=-17.5 none; gate +40 far unmet; SKIP. GOLD 4120.91 inside H4 FVG bear 4115.99-4135.91; US-Iran escalation = safe-haven bid anti-sell; comp=+5.5 none gate <=-40 far unmet; SKIP. GBPUSD 1.34095 \u2014 11.8p below H4 OB sell 1.34213; approaching zone but comp=+24 none gate far unmet. USDJPY 162.38 comp=+51.5 moderate bull BLOCKED (JPY bug). USDCAD 1.41701 comp=-2.5 none gate unmet. EURUSD 1.14290 comp=+8.5 none. AUDUSD 0.6940 comp=+0.5 none. USDCHF 0.80673 comp=+11.0 none. 0 trades. Balance $988.44. 0 positions. Alerts: OIL+GOLD MODIFY (notes updated); others KEEP.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-07-09T13:46Z",
       "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
       "note_text": "2026-07-09T13:46Z \u2014 heartbeat (0 evt). GOLD 4124.63 inside H4 FVG bear 4115.99-4135.91 (4th entry today); comp=+2 neutral; H4 bull (price>ema21>ema50), M15 BOS bull (bars_ago=71), fresh M15 bull FVG 4114.77-4118.72 supporting; gate comp<=-40 far unmet; SKIP. OIL 72.57; comp=-5 none; buy zone 71.46-71.89 68p below (gate comp>=+40 unmet); Hormuz ongoing. GBPUSD 1.33957; comp=+5 none; sell OB 1.34213 (25.6p above, gate comp<=-40 unmet). USDJPY 162.33; comp=+49 moderate bull BLOCKED (JPY bug); DAY FVG 161.508-161.682 (64.7p below). USDCAD 1.41768; comp=+5 none (gate comp>=+40 unmet). USDCHF 0.8072; comp=+29.5 weak (no alert). EURUSD 1.1434; comp=+13 none (no alert). AUDUSD 0.6940; comp=+5 none (no alert). 0 trades. Balance $988.44. 0 positions. All 6 alerts KEEP.",
@@ -1130,14 +1138,6 @@
       "ts_utc": "2026-07-09T07:11Z",
       "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
       "note_text": "2026-07-09T07:11Z \u2014 1 evt: level_cross GBPUSD (1.342165 entered H4 bear OB sell zone 1.34213-1.34855). SKIP: comp=+24 bullish (3/4TF bull: H4 bull, H1 ChoCH bull Jul7, M15 bull), readiness=none, gate comp\u2264-40 far unmet. Validated alert (fires=3, 4h_hr=0.67) \u2014 keep on watchlist, watch for comp flip. 0 trades. Balance $988.44. 0 positions. All watchlist alerts KEEP. USDJPY comp=+39 weak, approaching gate \u226540 \u2014 still blocked by JPY risk_guard bug. GOLD H4 FVG sell 4116 only 5p above current price (4110.65) \u2014 watch next tick if comp improves from -14.5.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-07-08T14:05Z",
-      "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
-      "note_text": "2026-07-08T14:05Z \u2014 4 evt: level_cross GOLD (4127.32 entered H4 FVG sell 4116-4135 at 06:36Z, fell to 4070 \u2014 gate comp<=-40 unmet, opportunity passed); news_flash Hormuz (4 tankers turned back from Hormuz, supply-disruption risk deepening); alert_audit\u00d72 OIL oil_crude_h4fvg_buy_7146 (US strikes on Bahrain/Kuwait + 'Hormuz returns to crisis mode' \u2014 OIL bull thesis confirmed, comp=+25.5 weak, gate unmet). No trades: all gates unmet. Balance $988.44. 0 positions. Alert changes: REMOVE oil_crude_h1ob_sell_7057 (H1 OB mitigated), ADD gold_h4fvg_sell_4087 (fresh H4 FVG bear 4086-4114, gate<=-40), ADD oil_crude_dayfvg_buy_7168 (DAY FVG bull 71.46-71.68, gate>=+40). USDJPY comp=+67 strong but JPY bug still blocking. EURUSD comp=-47.5 moderate bear, USDCHF comp=+40 moderate bull \u2014 no levels armed.",
       "binary_event_name": null,
       "binary_event_active": 0,
       "binary_event_deadline": null

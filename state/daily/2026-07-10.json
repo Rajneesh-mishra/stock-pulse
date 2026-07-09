@@ -27,5 +27,35 @@
       "gold_h4fvg_sell_4116"
     ],
     "notes": "Hormuz near-standstill confirmed 5 independent sources Jul9. US-Iran renewed fighting. OIL supply shock real \u2014 market pricing eventual truce. GOLD safe-haven elevated. All gates unmet."
+  },
+  {
+    "tick_ts_utc": "2026-07-10T20:58Z",
+    "events": 0,
+    "event_summary": "heartbeat",
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "trades_skipped": 0,
+    "positions_open": 0,
+    "balance": 988.44,
+    "daily_pnl": -0.58,
+    "regime": "USD_STRENGTH_OIL_BEAR_ONGOING",
+    "binary_event": "none",
+    "alerts_changed": [
+      "REMOVE gold_h4fvg_sell_4087 (zone 4086-4115 mitigated, price 4124)",
+      "ADD gold_h4fvg_buy_4117 (fresh H4 bull FVG 4117-4119, watchlist)",
+      "MODIFY oil_crude_dayfvg_buy_7168 (context updated: price inside zone, comp=-15.5 bearish)"
+    ],
+    "scalp_status": "GBPUSD=ACTIVE(neutral) EURUSD=DISABLED(desync) AUDUSD=DISABLED(wr11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
+    "attention_matrix": {
+      "EURUSD": "swing=NONE scalp=OFF readiness=none (comp=2.0, no alert, scalp desync-disabled)",
+      "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=none (comp=21.5 bull, OB sell 1.34213 12.6p away, gate<=-40 unmet)",
+      "AUDUSD": "swing=NONE scalp=OFF readiness=none (comp=0.5, no alert, scalp wr=11%)",
+      "USDJPY": "swing=WATCH scalp=OFF readiness=moderate (comp=56.5 bull, FVG buy 161.68 71p below, JPY bug blocks)",
+      "USDCAD": "swing=NONE scalp=OFF readiness=none (comp=-5.0, no alert, CAD pip-conv pending)",
+      "USDCHF": "swing=NONE scalp=OFF readiness=none (comp=11.0, no alert, CHF pip-conv pending)",
+      "GOLD": "swing=WATCH scalp=N/A readiness=none (DAY FVG sell 4163 39p above, H4 FVG buy 4117 6p below, comp=5.5 neutral)",
+      "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=none (inside DAY FVG buy zone 71.46-71.68, comp=-15.5 bearish, gate unmet)"
+    },
+    "note": "Heartbeat. GOLD H4 bear FVG 4086-4115 mitigated; replaced with H4 bull FVG buy at 4117. OIL inside buy zone but M15 BOS bear and comp bearish \u2014 no entry. GBPUSD approaching OB sell but bull structure contradicts. USDJPY moderate bull blocked by JPY bug."
   }
 ]
