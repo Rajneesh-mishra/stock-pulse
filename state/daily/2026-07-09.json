@@ -9,7 +9,7 @@
     "trades_closed": 0,
     "trades_skipped": 1,
     "skip_reasons": [
-      "GBPUSD sell: comp=+24 bull vs gate≤-40 (readiness=none)"
+      "GBPUSD sell: comp=+24 bull vs gate\u2264-40 (readiness=none)"
     ],
     "balance": 988.44,
     "open_positions": 0,
@@ -39,7 +39,7 @@
     "trades_skipped": 0,
     "skip_reasons": [],
     "audit_results": {
-      "oil_crude_h4fvg_buy_7146": "KEEP — comp=+5 none, gate >=40 unmet; price 72.31 above FVG zone 71.46-71.89; Hormuz LNG tanker news supports bull context; note updated"
+      "oil_crude_h4fvg_buy_7146": "KEEP \u2014 comp=+5 none, gate >=40 unmet; price 72.31 above FVG zone 71.46-71.89; Hormuz LNG tanker news supports bull context; note updated"
     },
     "balance": 988.44,
     "open_positions": 0,
@@ -48,13 +48,30 @@
     "alerts_changed": "oil_crude_h4fvg_buy_7146 MODIFY (context updated for Qatari LNG tanker); 5 others KEEP",
     "attention": {
       "EURUSD": "swing=NONE scalp=OFF readiness=none reason: no active alert; scalp disabled post-desync",
-      "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=weak reason: 3.6p below H4 OB sell zone 1.34213; comp=+27 bull, gate ≤-40 far unmet",
+      "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=weak reason: 3.6p below H4 OB sell zone 1.34213; comp=+27 bull, gate \u2264-40 far unmet",
       "AUDUSD": "swing=NONE scalp=OFF readiness=none reason: no active alert; scalp disabled wr=11pct",
       "USDJPY": "swing=WATCH scalp=OFF readiness=unknown reason: DAY FVG buy valid but ALL orders blocked by risk_guard JPY conversion bug",
       "USDCAD": "swing=WATCH scalp=OFF readiness=none reason: price 1.41852 below re-arm threshold 1.41950; comp=+5 none, gate >=40 unmet",
       "USDCHF": "swing=NONE scalp=OFF readiness=none reason: no active alert; CHF quote pip-val pending",
-      "GOLD": "swing=WATCH scalp=N/A readiness=none reason: price 4114.89 at H4 FVG sell zone 4115.99 (1.1p away); comp=-14.5 none, gate ≤-40 unmet",
+      "GOLD": "swing=WATCH scalp=N/A readiness=none reason: price 4114.89 at H4 FVG sell zone 4115.99 (1.1p away); comp=-14.5 none, gate \u2264-40 unmet",
       "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=none reason: price 72.31 above H4 FVG buy zone 71.46-71.89; comp=+5 none, gate >=40 unmet; Hormuz tanker escalation ongoing"
     }
+  },
+  {
+    "tick_ts_utc": "2026-07-09T08:35Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "type": "level_cross",
+        "instrument": "GOLD",
+        "alert_id": "gold_h4fvg_sell_4116",
+        "action": "SKIP"
+      }
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "balance": 988.44,
+    "open_positions": 0,
+    "notes": "GOLD level_cross into H4 FVG sell zone 4115.99-4135.91 (price 4116.47). comp=-14.5 none, gate <=-40 far unmet, M15 bullish BOS active. SKIP. All 6 watchlist alerts KEEP. Scalp: GBPUSD engine healthy (PID 837, no halts). Regime: Hormuz escalation ongoing (Qatari LNG Al Rekayyat damaged Jul9 08:23Z)."
   }
 ]

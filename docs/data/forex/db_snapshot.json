@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-09T08:30:20.287527+00:00",
+  "generated_at": "2026-07-09T08:35:21.087752+00:00",
   "counts": {
     "trades": 53,
-    "events": 8281,
+    "events": 8282,
     "ticks": 59,
-    "regime_snapshots": 277,
+    "regime_snapshots": 278,
     "broker_positions": 0,
-    "counterfactuals": 197
+    "counterfactuals": 198
   },
   "trades_last_50": [
     {
@@ -1063,6 +1063,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-07-09T08:26Z",
+      "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
+      "note_text": "2026-07-09T08:26Z \u2014 2 evt: news_flash (Qatari LNG tanker Al Rekayyat damaged near Hormuz, Jul9 08:23Z, explosion risk) + alert_audit_request OIL (oil_crude_h4fvg_buy_7146). OIL audit: comp=+5 none, gate >=+40 far unmet; H4 FVG buy 71.46-71.89 zone fresh (price 72.31 above zone). News confirms Hormuz escalation ongoing (4th tanker incident since Jul7). No entry. Alert KEEP with updated context. GBPUSD 1.34177 (3.6p below H4 OB zone 1.34213), comp=+27 weak, gate <=-40 unmet. GOLD 4114.89 (1.1p below H4 FVG sell zone 4116), comp=-14.5 none, gate <=-40 unmet. USDCAD 1.41852, comp=+5 none, below re-arm threshold 1.41950. 0 trades. Balance $988.44. 0 positions.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-07-09T07:11Z",
       "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
       "note_text": "2026-07-09T07:11Z \u2014 1 evt: level_cross GBPUSD (1.342165 entered H4 bear OB sell zone 1.34213-1.34855). SKIP: comp=+24 bullish (3/4TF bull: H4 bull, H1 ChoCH bull Jul7, M15 bull), readiness=none, gate comp\u2264-40 far unmet. Validated alert (fires=3, 4h_hr=0.67) \u2014 keep on watchlist, watch for comp flip. 0 trades. Balance $988.44. 0 positions. All watchlist alerts KEEP. USDJPY comp=+39 weak, approaching gate \u226540 \u2014 still blocked by JPY risk_guard bug. GOLD H4 FVG sell 4116 only 5p above current price (4110.65) \u2014 watch next tick if comp improves from -14.5.",
@@ -1130,14 +1138,6 @@
       "ts_utc": "2026-07-07T12:16Z",
       "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
       "note_text": "2026-07-07T12:16Z \u2014 1 evt: level_cross GOLD (gold_dayfvg_sell_4163, price 4162.84 crossed zone bottom 4162.83 at 12:08Z UTC). GOLD now 4169.63 \u2014 7p INSIDE DAY FVG sell zone 4162.83-4173.575 (2nd entry today). Comp=+22.0 none-bull; gate \u2264-40 UNMET \u2014 no trade. M15 bullish (ChoCH bull Jul6 22:30Z at 4168.59, price>ema21>ema50). H4 bull FVG 4141-4155 fresh below as support. Zone top 4173.575 only 4p above; bear trigger requires comp\u2264-40 + M15 rejection wick\u226510p + bearish close. USDCAD=+40.5 moderate-bull (no structural level). GBPUSD=+28 weak, alert 1.34213 (35p away). All gates unmet. Balance $991.78. 0 positions.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-07-07T17:37Z",
-      "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
-      "note_text": "2026-07-07T17:37Z \u2014 1 evt processed (news_flash hormuz_strait: Iran fires missiles at 2 commercial ships in Strait of Hormuz, pub 06:52Z Jul7). Event ~11h old; OIL at 69.026 (below last tick 69.461) \u2014 spike faded post-publication. GOLD at 4158.69 (4p below sell zone 4162.83-4173.575). Second Hormuz escalation reinforces supply risk/fear narrative but structural bear OIL thesis (Iran deal + OPEC surge) unchanged. OIL H1 OB sell zone 70.577 still ~155p away; comp=-11 none, gate comp\u2264-40 unmet. GOLD sell zone imminent (4p); comp=-2.5 none, gate comp\u2264-40 unmet. 4 stale May-7 level_alerts AUTO-REMOVED (USDCHF dist=268p, AUDUSD dist=260p, USDJPY dist=537p, USDCAD dist=563p; all>>3\u00d7H4ATR). CONFLUENCE: EURUSD=+2.5 none; GBPUSD=+28 weak; AUDUSD=+2.5 none; USDCAD=+40.5 moderate-bull (no fresh structural level); USDCHF=+21 none; USDJPY=+39 weak (entry blocked by risk_guard JPY bug); GOLD=-2.5 none; OIL=-11 none. No new trades. Balance $991.78. 0 positions.",
       "binary_event_name": null,
       "binary_event_active": 0,
       "binary_event_deadline": null
@@ -1646,6 +1646,19 @@
     }
   ],
   "counterfactuals_last_50": [
+    {
+      "alert_id": "gold_h4fvg_sell_4116",
+      "instrument": "GOLD",
+      "direction": "sell",
+      "trigger_price": 4116.469999999999,
+      "fired_at": "2026-07-09T08:31:16.195557+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
     {
       "alert_id": "gbpusd_h4ob_sell_134213",
       "instrument": "GBPUSD",
@@ -2276,19 +2289,6 @@
       "direction": "sell",
       "trigger_price": 103.574,
       "fired_at": "2026-05-04T10:11:51.854311+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
-    },
-    {
-      "alert_id": "usdchf_d_fvg_sell_78304",
-      "instrument": "USDCHF",
-      "direction": "sell",
-      "trigger_price": 0.7830550000000001,
-      "fired_at": "2026-05-04T08:00:30.156429+00:00",
       "hit_1h": null,
       "hit_4h": null,
       "hit_24h": null,

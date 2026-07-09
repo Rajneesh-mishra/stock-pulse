@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T08:31:17.327011Z",
+  "generated_at": "2026-07-09T08:36:34.381566Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -293,6 +293,23 @@
         "GOLD": "swing=WATCH scalp=N/A readiness=none reason: price 4114.89 at H4 FVG sell zone 4115.99 (1.1p away); comp=-14.5 none, gate \u2264-40 unmet",
         "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=none reason: price 72.31 above H4 FVG buy zone 71.46-71.89; comp=+5 none, gate >=40 unmet; Hormuz tanker escalation ongoing"
       }
+    },
+    {
+      "tick_ts_utc": "2026-07-09T08:35Z",
+      "events_processed": 1,
+      "events": [
+        {
+          "type": "level_cross",
+          "instrument": "GOLD",
+          "alert_id": "gold_h4fvg_sell_4116",
+          "action": "SKIP"
+        }
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "balance": 988.44,
+      "open_positions": 0,
+      "notes": "GOLD level_cross into H4 FVG sell zone 4115.99-4135.91 (price 4116.47). comp=-14.5 none, gate <=-40 far unmet, M15 bullish BOS active. SKIP. All 6 watchlist alerts KEEP. Scalp: GBPUSD engine healthy (PID 837, no halts). Regime: Hormuz escalation ongoing (Qatari LNG Al Rekayyat damaged Jul9 08:23Z)."
     }
   ]
 }
