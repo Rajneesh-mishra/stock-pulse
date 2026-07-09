@@ -134,14 +134,14 @@
       "direction": "buy",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Pullback to M15 OB zone (1.42031-1.42107) with M15 bullish rejection wick and close. ARM BUY LIMIT when comp >=40 and fresh M15 OB forms above 1.41950. PREVIOUS LIMIT AT 1.42107 WAS CLOSED AT SL (hit 1.41954 Jul7 14:45Z). Watch for re-entry.\n\nCONTEXT: USDCAD 1.42026 (Jul 8 02:07Z). DAY trend still BULL (price>ema21>ema50, comp=+17 none). H1 comp=-0.1 (choch_bull Jul1 but price below ema21 now \u2014 M15 pullback phase). M15 bear OB 1.42185-1.42264 is current resistance. M15 comp=-0.15 mixed. 4-TF bull thesis: DAY+H4 bull, H1/M15 mixed (short-term pullback after SL). Re-arm criteria: comp>=40 AND fresh M15 OB above 1.41950 with price closing above it. Current comp=+17 none \u2014 watch only, no entry.\n\nSL: 1.41850  TP: 1.42700  R:R target: 3.8\nupdated 2026-07-08T02:07Z \u2014 MODIFY; position closed at SL; now watchlist; comp=+17 none; re-arm if comp>=40 + fresh OB.",
+      "note": "ENTRY: Pullback to fresh M15 OB above 1.41950 with M15 bullish rejection wick + close. Gate comp>=40. DO NOT ARM until comp>=40 and fresh OB forms.\n\nCONTEXT: USDCAD 1.41699 (Jul 9 12:36Z). SL hit Jul7 at 1.41954; price now at 1.41699 (below SL level 1.41850 \u2014 further invalidation of bull setup). comp=-2.5 none (was +17 none Jul 8; DAY bull trend may be rolling). M15 bear structure dominant. Re-arm when comp>=40 + fresh M15 OB above 1.41950 with close above it.\n\nSL: 1.41850  TP: 1.42700  R:R target: 3.8\nupdated 2026-07-09T12:36Z \u2014 KEEP; comp=-2.5 none (deteriorated from +17); price 1.41699 below SL 1.41850; re-arm criteria far unmet; watchlist only.",
       "entry_criterion": "Pullback to fresh M15 OB above 1.41950 with M15 bullish rejection wick + close. Gate comp>=40.",
-      "regime_context": "USDCAD 1.42026. SL hit Jul7 14:45Z. DAY bull (price>ema21>ema50). H1 choch_bull Jul1 but price below ema21. M15 bear OB 1.42185-1.42264 resistance. Comp=+17 none. Watching for re-entry at comp>=40.",
+      "regime_context": "USDCAD 1.41699. SL hit Jul7 at 1.41954. Price fell to 1.41699 (below SL). comp=-2.5 none. DAY bull trend weakening. M15 bearish. Re-arm: comp>=40 + fresh OB above 1.41950.",
       "sl": 1.4185,
       "tp": 1.427,
       "rr_target": "3.8",
-      "current_price_ref": 1.42026,
-      "last_updated": "2026-07-08T02:07Z"
+      "current_price_ref": 1.41699,
+      "last_updated": "2026-07-09T12:36Z"
     },
     {
       "id": "oil_crude_h4fvg_buy_7146",
@@ -153,14 +153,14 @@
       "direction": "buy",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Price pullback into H4 FVG bull zone (71.462-71.887) with M15 bullish rejection wick >=5p and M15 bullish close. ARM BUY LIMIT at 71.887 only when comp >=+40.\n\nCONTEXT: OIL 72.31 (Jul 9 08:26Z). Hormuz escalation intensifying: Qatari LNG tanker Al Rekayyat damaged near Hormuz (Jul 9 08:23Z, ET EnergyWorld), risk of explosion cited \u2014 extends supply-risk narrative from Iran strikes Jul 8. H4 FVG bull 71.462-71.887 (bars_ago=2, unmitigated) remains key buy retest zone; price is above zone, needs pullback. H4 bear FVG 72.733-73.713 (bars_ago=1) is immediate resistance above. H1 BOS bull Jul3 at 69.246 intact. DAY comp=-0.4 (price<ema21<ema50) structurally bear. Overall comp=+5 (none) \u2014 gate >=+40 far unmet.\n\nSL: 71.162  TP: 73.80  R:R target: 2.62\nupdated 2026-07-09T08:26Z \u2014 KEEP; audit_request fired (Hormuz LNG tanker); comp=+5 none; gate >=40 unmet; H4 FVG zone 71.46-71.89 valid for pullback entry when gate met.",
+      "note": "ENTRY: Price pullback into H4 FVG bull zone (71.462-71.887) with M15 bullish rejection wick >=5p and M15 bullish close. ARM BUY LIMIT at 71.887 only when comp >=+40.\n\nCONTEXT: OIL 73.54 (Jul 9 12:36Z). Price now inside H4 bear FVG resistance (72.733-73.713) \u2014 this zone may cap upside; a rejection here could push price toward H4 bull FVG 71.46-71.89. Hormuz escalation: 3 tankers hit Jul 7 (biggest day since Apr); Al Rekayyat LNG fire; US revoked Iranian oil sale license. Supply-risk premium supports bid, but comp=+2.5 none (gate >=+40 far unmet). H1 BOS bull Jul3 at 69.246 intact. DAY bear (price<ema21<ema50).\n\nSL: 71.162  TP: 73.80  R:R target: 2.62\nupdated 2026-07-09T12:36Z \u2014 KEEP; OIL inside H4 bear FVG resistance (73.54 in 72.733-73.713); pullback to 71.46-71.89 plausible; comp=+2.5 none, gate unmet; watch for comp to reach +40.",
       "entry_criterion": "Pullback into H4 FVG bull 71.462-71.887 with M15 bullish rejection wick >=5p + bullish close. Gate comp>=+40.",
-      "regime_context": "OIL 72.31. Hormuz: Qatari LNG tanker Al Rekayyat damaged Jul9 (explosion risk); Iran strikes Jul8. H4 FVG 71.462-71.887 fresh unmitigated. H4 bear FVG 72.733-73.713 resistance above. H1 BOS bull Jul3. DAY bear (price<ema21<ema50). Comp=+5 none, gate >=40 unmet.",
+      "regime_context": "OIL 73.54. Inside H4 bear FVG 72.733-73.713 (resistance). Hormuz: 3 tankers Jul7 (biggest day), US revoked Iranian oil license. comp=+2.5 none. H4 FVG buy zone 71.46-71.89 is 165p below.",
       "sl": 71.162,
       "tp": 73.8,
       "rr_target": "2.62",
-      "current_price_ref": 72.313,
-      "last_updated": "2026-07-09T08:26Z"
+      "current_price_ref": 73.54,
+      "last_updated": "2026-07-09T12:36Z"
     },
     {
       "id": "gold_h4fvg_sell_4116",
@@ -182,5 +182,5 @@
       "last_updated": "2026-07-09T12:09Z"
     }
   ],
-  "last_updated": "2026-07-09T08:26Z"
+  "last_updated": "2026-07-09T12:36Z"
 }

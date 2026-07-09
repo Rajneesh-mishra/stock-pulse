@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-09T12:14:07.002409+00:00",
+  "generated_at": "2026-07-09T12:39:16.345652+00:00",
   "counts": {
     "trades": 53,
     "events": 8283,
     "ticks": 59,
-    "regime_snapshots": 281,
+    "regime_snapshots": 282,
     "broker_positions": 0,
     "counterfactuals": 199
   },
@@ -1063,6 +1063,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-07-09T12:09Z",
+      "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
+      "note_text": "2026-07-09T12:09Z \u2014 1 evt (level_cross GOLD H4FVG sell). GOLD 4114.73 bid \u2014 crossed into H4 FVG bear zone 4115.99-4135.91 at 4119.1 then retreated; comp=+2.0 neutral (H4 bull, M15 BOS bull flipped since Jul7); gate comp<=-40 far unmet; SKIP \u2014 readiness=none, structure no longer aligned for sell. H4 FVG lower zone 4086.43-4114.84: price now at zone top, gate still unmet. GBPUSD 1.33945 \u2014 27p below H4 OB sell 1.34213; comp=+15.5 none (gate<=-40 unmet). USDJPY 162.40 \u2014 comp=+49 moderate bull; DAY FVG buy 161.682 is 72p below; BLOCKED (JPY bug). OIL 73.65 \u2014 Hormuz premium holds; comp=+12.5 none (gate>=40 unmet); DAY FVG buy 71.68 is 197p below. 0 trades. Balance $988.44. 0 positions. Alert: gold_h4fvg_sell_4116 MODIFY (context updated M15/H4 flipped bull); others KEEP.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-07-09T11:34Z",
       "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
       "note_text": "2026-07-09T11:34Z \u2014 heartbeat (0 events). GBPUSD 1.338655 bid \u2014 retreated 34.7p below H4 OB sell 1.34213; comp=+13.5 none bullish (OB mildly approached but price pulled back). GOLD 4100.9 \u2014 inside H4 FVG bear zone 4086.43-4114.84; comp=-22.0 none bearish (gate <=-40 unmet); watching for comp to improve. DAY FVG sell 4162.83 still 61.9p above. USDJPY 162.496 \u2014 comp=+56.5 moderate bull; DAY FVG buy zone 161.508-161.682 is 81.4p below; entry BLOCKED (JPY risk_guard bug). OIL 73.88 \u2014 Hormuz rally extends; DAY FVG buy 71.46-71.68 is 2.20 below; comp=+12.5 none (gate >=40 unmet). USDCHF weak (+34.5); EURUSD bearish none (-17). 0 trades. Balance $988.44. 0 positions. All 5 alerts KEEP.",
@@ -1130,14 +1138,6 @@
       "ts_utc": "2026-07-07T13:32Z",
       "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
       "note_text": "2026-07-07T13:32Z \u2014 2 events: position_opened + level_cross USDCAD. USDCAD LIMIT BUY filled @1.42107 (size=3000, SL=1.41950, TP=1.42700, R:R=3.8). Thesis: 4-TF confluence bull (+38.5 weak at time of fill, was +46 moderate at arming \u2014 M15 pullback during fill is structural and expected). Current bid=1.42083, UPL=-$0.30 (spread noise). Trail trigger: +1R@1.42264. Max hold 24h (trend). GOLD 4167.62 inside FVG 4162.83-4173.575 (comp=+13 none, gate unmet). GBPUSD 1.33836 (comp=+15 none; sell alert @1.34213 37.7p away, gate comp<=-40 unmet; alert now VALIDATED fires=3 4h_hr=0.67). OIL 69.661 (+1.56%); Hormuz fear reversal; 91.6p from H1 OB sell 70.577. USDJPY 161.885 (comp=+41.5 moderate; FVG buy @161.682 blocked by JPY bug). Balance $991.48. 1 open position.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-07-07T13:25Z",
-      "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
-      "note_text": "2026-07-07T13:25Z \u2014 heartbeat tick (0 events). USDCAD LIMIT BUY armed @1.42107 (comp=+46 moderate bull, all 4TF; SL=1.41950, TP=1.42700, R:R=3.8). GOLD 4171.59 inside DAY FVG 4162.83-4173.575 (comp=+28 weak bull; gate comp<=-40 unmet). GBPUSD 1.33805 (comp=+25.5 weak; alert SELL@1.34213 41p away). OIL 69.467 (comp=+1.5 none; level 70.577 $1.11 away). USDJPY 161.891 (comp=+39 weak; FVG buy@161.682 JPY-bug blocked). EURUSD comp=+4 none. AUDUSD comp=+18 none. USDCHF comp=+21 none. 0 trades. Balance $991.78.",
       "binary_event_name": null,
       "binary_event_active": 0,
       "binary_event_deadline": null

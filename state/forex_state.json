@@ -1,9 +1,9 @@
 {
   "regime": "USD_STRENGTH_OIL_BEAR_ONGOING",
-  "tick_ts_utc": "2026-07-09T12:09Z",
-  "state_ts_utc": "2026-07-09T12:09Z",
-  "regime_note": "2026-07-09T12:09Z \u2014 1 evt (level_cross GOLD H4FVG sell). GOLD 4114.73 bid \u2014 crossed into H4 FVG bear zone 4115.99-4135.91 at 4119.1 then retreated; comp=+2.0 neutral (H4 bull, M15 BOS bull flipped since Jul7); gate comp<=-40 far unmet; SKIP \u2014 readiness=none, structure no longer aligned for sell. H4 FVG lower zone 4086.43-4114.84: price now at zone top, gate still unmet. GBPUSD 1.33945 \u2014 27p below H4 OB sell 1.34213; comp=+15.5 none (gate<=-40 unmet). USDJPY 162.40 \u2014 comp=+49 moderate bull; DAY FVG buy 161.682 is 72p below; BLOCKED (JPY bug). OIL 73.65 \u2014 Hormuz premium holds; comp=+12.5 none (gate>=40 unmet); DAY FVG buy 71.68 is 197p below. 0 trades. Balance $988.44. 0 positions. Alert: gold_h4fvg_sell_4116 MODIFY (context updated M15/H4 flipped bull); others KEEP.",
-  "regime_note_prev": "2026-07-09T15:05Z \u2014 heartbeat (0 events). GOLD 4106.61 bid, comp=-14.5 none; H4 FVG sell zone 4116 is 9.4p above (gate<=-40 unmet, dist narrowing); day high 4117.67 was inside zone but M15 BOS bull still active. GBPUSD 1.34141, comp=+27 weak bull; H4 OB sell zone 1.34213 only 0.72p above (gate<=-40 far unmet). USDJPY 162.41, comp=+51.5 MODERATE bull (upgraded from +39 weak last tick); DAY FVG buy 161.508-161.682 is 72.8p away; entry BLOCKED by JPY risk_guard bug \u2014 closest setup to valid entry in system. OIL 72.95, comp=+5 none (Hormuz ongoing, gate>=40 unmet). USDCAD 1.41836, comp=+5 none (re-arm gate>=40 unmet). 0 trades. Balance $988.44. 0 positions. All 6 alerts KEEP.",
+  "tick_ts_utc": "2026-07-09T12:36Z",
+  "state_ts_utc": "2026-07-09T12:36Z",
+  "regime_note": "2026-07-09T12:36Z \u2014 heartbeat (0 evt). GOLD 4120.58 \u2014 now inside H4 FVG bear zone 4115.99-4135.91; comp=+2.0 neutral (gate <=-40 far unmet, M15 BOS bull active); US-Iran airstrikes continuing (opened lower today, recovered to 4120). SKIP. GBPUSD 1.33969 \u2014 24p below H4 OB sell 1.34213; comp=+10 none (gate <=-40 far unmet). USDJPY 162.42 \u2014 comp=+49 moderate bull; DAY FVG buy 161.682 is 73p below; BLOCKED (JPY bug). OIL 73.54 \u2014 now inside H4 bear FVG resistance 72.733-73.713; comp=+2.5 none (gate >=40 unmet); Hormuz: 3 tankers hit Jul7 (biggest day since Apr), US revoked Iranian oil license. USDCAD 1.41699 \u2014 comp=-2.5 none (was +17); price below SL level 1.41850; re-arm gate far unmet. EURUSD 1.14314 comp=+13 none. AUDUSD 0.69378 comp=+5 none. USDCHF 0.80697 comp=+19.5 none. 0 trades. Balance $988.44. 0 positions. Alerts: USDCAD+OIL context MODIFY; others KEEP.",
+  "regime_note_prev": "2026-07-09T12:09Z \u2014 1 evt (level_cross GOLD H4FVG sell). GOLD 4114.73 bid \u2014 crossed into H4 FVG bear zone 4115.99-4135.91 at 4119.1 then retreated; comp=+2.0 neutral (H4 bull, M15 BOS bull flipped since Jul7); gate comp<=-40 far unmet; SKIP \u2014 readiness=none, structure no longer aligned for sell. H4 FVG lower zone 4086.43-4114.84: price now at zone top, gate still unmet. GBPUSD 1.33945 \u2014 27p below H4 OB sell 1.34213; comp=+15.5 none (gate<=-40 unmet). USDJPY 162.40 \u2014 comp=+49 moderate bull; DAY FVG buy 161.682 is 72p below; BLOCKED (JPY bug). OIL 73.65 \u2014 Hormuz premium holds; comp=+12.5 none (gate>=40 unmet); DAY FVG buy 71.68 is 197p below. 0 trades. Balance $988.44. 0 positions. Alert: gold_h4fvg_sell_4116 MODIFY (context updated M15/H4 flipped bull); others KEEP.",
   "open_positions": [],
   "watchlist": [],
   "market_context": {
@@ -910,7 +910,7 @@
   "total_trades": 7,
   "wins": 3,
   "losses": 0,
-  "broker_balance": 977.38,
+  "broker_balance": 988.44,
   "effective_capital_usd": 987.93,
   "capital_base_note": "Demo account reset to $1k on 2026-04-20 (topUp -$8849.07). Broker balance and effective capital are now aligned.",
   "loop_config": {
@@ -1500,9 +1500,9 @@
   ],
   "binary_event": {
     "active": false,
-    "note": "No active binary. Hormuz escalation worsening: 3rd tanker attacked Jul7 14:56Z (Moneycontrol), Qatar holds Iran fully legally responsible. No fixed deadline, no cease-fire. OIL supply-risk premium sustained. CHF/JPY safe-haven context persists. GOLD safe-haven bid possible."
+    "note": "No active binary. Hormuz escalation: 3 tankers hit Jul7 (biggest day since Apr); Al Rekayyat LNG fire; US revoked Iranian oil license. US-Iran airstrikes continuing. No ceasefire. Supply-risk premium in OIL sustained. GOLD safe-haven bid keeps price elevated."
   },
-  "balance": 991.48,
+  "balance": 988.44,
   "level_alerts": [
     {
       "alert_id": "gbpusd_h4ob_sell_134213",
@@ -1656,8 +1656,8 @@
     }
   ],
   "daily_pnl_usd": 0.0,
-  "news_last_searched_utc": "2026-05-07T12:55Z",
+  "news_last_searched_utc": "2026-07-09T12:36Z",
   "pending_orders": [],
-  "balance_usd": 977.38,
-  "account_balance": 991.78
+  "balance_usd": 988.44,
+  "account_balance": 988.44
 }

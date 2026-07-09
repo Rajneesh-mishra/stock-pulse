@@ -179,5 +179,17 @@
       }
     },
     "scalp_audit": "EURUSD=OFF(desync) GBPUSD=ACTIVE(no halt) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
+  },
+  {
+    "tick_ts_utc": "2026-07-09T12:36Z",
+    "events": 0,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "skipped": 0,
+    "balance": 988.44,
+    "positions": 0,
+    "summary": "heartbeat. GOLD 4120.58 inside H4 FVG bear 4116-4136 (comp=+2 none, gate unmet). GBPUSD 1.33969 (24p below OB, gate unmet). USDJPY 162.42 comp=+49 MOD bull BLOCKED (JPY bug). OIL 73.54 inside H4 bear FVG resistance (comp=+2.5 none, gate unmet); Hormuz 3-tanker day Jul7. USDCAD 1.41699 comp=-2.5 none (below SL). 0 trades.",
+    "alerts_action": "USDCAD+OIL MODIFY; GBPUSD+GOLD+USDJPY KEEP",
+    "news": "US-Iran airstrikes ongoing; GOLD opened lower recovered to 4120; Hormuz 3-tanker attack Jul7 biggest since Apr"
   }
 ]
