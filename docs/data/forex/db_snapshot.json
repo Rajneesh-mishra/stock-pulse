@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-09T09:31:44.962655+00:00",
+  "generated_at": "2026-07-09T11:33:46.016096+00:00",
   "counts": {
     "trades": 53,
     "events": 8282,
     "ticks": 59,
-    "regime_snapshots": 279,
+    "regime_snapshots": 280,
     "broker_positions": 0,
     "counterfactuals": 198
   },
@@ -1063,6 +1063,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-07-09T15:05Z",
+      "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
+      "note_text": "2026-07-09T15:05Z \u2014 heartbeat (0 events). GOLD 4106.61 bid, comp=-14.5 none; H4 FVG sell zone 4116 is 9.4p above (gate<=-40 unmet, dist narrowing); day high 4117.67 was inside zone but M15 BOS bull still active. GBPUSD 1.34141, comp=+27 weak bull; H4 OB sell zone 1.34213 only 0.72p above (gate<=-40 far unmet). USDJPY 162.41, comp=+51.5 MODERATE bull (upgraded from +39 weak last tick); DAY FVG buy 161.508-161.682 is 72.8p away; entry BLOCKED by JPY risk_guard bug \u2014 closest setup to valid entry in system. OIL 72.95, comp=+5 none (Hormuz ongoing, gate>=40 unmet). USDCAD 1.41836, comp=+5 none (re-arm gate>=40 unmet). 0 trades. Balance $988.44. 0 positions. All 6 alerts KEEP.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-07-09T08:35Z",
       "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
       "note_text": "2026-07-09T08:35Z \u2014 1 evt: level_cross GOLD gold_h4fvg_sell_4116 (price 4116.47 entered H4 FVG bear zone 4115.99-4135.91). Confluence: comp=-14.5 none (DAY-0.4, H4-0.15, H1-0.15, M15+0.9 bull BOS), readiness=NONE, gate comp<=-40 FAR UNMET. M15 bullish BOS active since Jul8 18:45Z (4091.6) \u2014 short-term structure opposing sell. Price wicked to 4117.67 high then retreated to 4113.33 bid. SKIP: no entry, gate unmet. Alert KEEP \u2014 zone fresh, watching for comp improvement. GBPUSD 1.3417, comp=+27 weak (3.7p below H4 OB zone 1.34213; gate <=-40 unmet). USDJPY 162.34, comp=+39 weak (approaching gate >=40 but JPY bug blocks). OIL 72.59, comp=+5 none (Hormuz: Qatari LNG Al Rekayyat damaged Jul9 08:23Z). 0 trades. Balance $988.44. 0 positions. All 6 alerts KEEP.",
@@ -1130,14 +1138,6 @@
       "ts_utc": "2026-07-07T13:09Z",
       "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
       "note_text": "2026-07-07T13:09Z \u2014 1 evt processed: news_flash hormuz_strait (Al Jazeera analysis 'Ships attacked in Strait of Hormuz: What that means for ongoing talks', pub 12:23Z Jul7). NOT a new attack \u2014 analysis of the Jul7 tanker+missiles events already processed in 17:37Z tick. OIL=69.372 (fear spike faded; comp=+1.5 none; structural bear intact). GOLD=4166.24 inside DAY FVG 4162.83-4173.575 (comp=+28 weak; gate comp<=-40 unmet). GBPUSD=1.33818 comp=+20.5 none. USDCAD=1.4226 comp=+46 moderate bull (all 4TF); LIMIT BUY armed @ 1.42107 (M15 OB pullback, SL=1.41950, TP=1.42700, R:R=3.8, deal 00000000-55dc-c18c). EURUSD=-5 none. AUDUSD=+15.5 none. USDJPY=+39 weak (JPY bug blocks). USDCHF=+23.5 none. 0 new positions. 1 LIMIT armed. Balance $991.78.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-07-07T12:45Z",
-      "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
-      "note_text": "2026-07-07T12:45Z \u2014 1 evt: level_cross GOLD (gold_dayfvg_sell_4163, price 4163.70 re-entered zone bottom 4162.83 at 12:42Z). GOLD bid=4165.97 inside DAY FVG sell zone 4162.83-4173.575. TODAY high=4174.98 briefly pierced zone top (+1.4p liquidity grab above 4173.575) then rejected back. Comp=+13.0 none-bull; gate comp<=-40 UNMET \u2014 no trade. M15 EMA bullish (price>ema21>ema50); H4 FVG bull 4141-4155 unmitigated below (support). GBPUSD=+25.5 weak (H4 OB sell 1.34213, 39p away, gate unmet). USDJPY=+41.5 mod-bull (FVG 161.682 blocked by JPY bug). USDCAD=+40.5 mod-bull (no active alert). OIL comp=-11 none (H1 OB 70.577 ~155p away). 0 positions. Balance $991.78. 0 trades.",
       "binary_event_name": null,
       "binary_event_active": 0,
       "binary_event_deadline": null
