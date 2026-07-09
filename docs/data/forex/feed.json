@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T11:35:24.426249Z",
+  "generated_at": "2026-07-09T12:14:56.308954Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -343,6 +343,79 @@
       "positions_open": 0,
       "balance": 988.44,
       "summary": "heartbeat 0 events; GBPUSD 1.338655 (retreated from H4 OB); GOLD 4100.9 inside H4 FVG bear zone (comp=-22 none); USDJPY 162.496 moderate bull blocked (JPY bug); OIL 73.88 Hormuz rally; all 5 alerts KEEP"
+    },
+    {
+      "tick_ts_utc": "2026-07-09T12:09Z",
+      "events_consumed": [
+        "evt_1783598957608_level_cross"
+      ],
+      "event_count": 1,
+      "events_detail": [
+        {
+          "type": "level_cross",
+          "instrument": "GOLD",
+          "alert_id": "gold_h4fvg_sell_4116",
+          "decision": "SKIP \u2014 readiness=none, comp=+2.0 (gate<=-40 far unmet), H4+M15 flipped bull, price retreated from 4119.1 to 4114.73"
+        }
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "positions_open": 0,
+      "balance": 988.44,
+      "alerts_modified": [
+        "gold_h4fvg_sell_4116"
+      ],
+      "attention_matrix": {
+        "EURUSD": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "no active level alert; comp=+13 none"
+        },
+        "GBPUSD": {
+          "swing": "WATCH",
+          "scalp": "ACTIVE",
+          "readiness": "none",
+          "reason": "H4 OB sell 1.34213 is 27p above; comp=+15.5 gate<=-40 unmet"
+        },
+        "AUDUSD": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "no alert; scalp off (wr=11% on 19 trades)"
+        },
+        "USDJPY": {
+          "swing": "WATCH",
+          "scalp": "OFF",
+          "readiness": "moderate",
+          "reason": "DAY FVG buy 161.682 is 72p below; BLOCKED by JPY risk_guard bug"
+        },
+        "USDCAD": {
+          "swing": "WATCH",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "H1 FVG buy 1.42107 is 43.5p above; comp=-2.5 gate>=40 unmet"
+        },
+        "USDCHF": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "no alert; comp=+19.5 none; pip-conv-pending scalp"
+        },
+        "GOLD": {
+          "swing": "WATCH",
+          "scalp": "N/A",
+          "readiness": "none",
+          "reason": "H4 FVG sell 4116 just fired+retreated; comp=+2.0 gate<=-40 far unmet"
+        },
+        "OIL_CRUDE": {
+          "swing": "WATCH",
+          "scalp": "N/A",
+          "readiness": "none",
+          "reason": "H4 FVG buy 71.887 is 176p below; comp=+12.5 gate>=40 unmet"
+        }
+      },
+      "scalp_audit": "EURUSD=OFF(desync) GBPUSD=ACTIVE(no halt) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
     }
   ]
 }

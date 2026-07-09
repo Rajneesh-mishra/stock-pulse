@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T11:34:25.434823+00:00",
+  "generated_at": "2026-07-09T12:14:10.825404+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -1721,7 +1721,7 @@
       "alert_id": "gold_h4fvg_sell_4116",
       "instrument": "GOLD",
       "direction": "sell",
-      "fires": 2,
+      "fires": 3,
       "by_horizon": {
         "1h": {
           "filled": 2,

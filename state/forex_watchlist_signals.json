@@ -172,14 +172,14 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: M15 bearish rejection wick >=5p from inside H4 FVG bear zone (4115.99-4135.91) with M15 bearish close. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GOLD 4107.05 (Jul 8 02:07Z). Price fell from DAY FVG zone (4163-4174 area) to 4107 today (-58p). H4 FVG bear 4115.99-4135.91 (bars_ago=1, fresh, unmitigated) is the first sell zone if price bounces. H1 FVG bear 4115.99-4125.22 overlaps at same base (double-TF confluence for the 4116-4125 band). DAY comp=-0.4 (price<ema21<ema50), H1 comp=-0.4 (price<ema21), M15 BOS bear Jul7 \u2014 3/4 TF bear. M15 ChoCH bear at 4116.71 (Jul7 05:30Z) \u2014 this zone aligns with ChoCH level. Gate comp<=-40 unmet currently (comp=-26.5 weak). Watch for bounce to 4116 and comp improvement.\n\nSL: 4141.00  TP: 4060.00  R:R target: 2.24\nadded 2026-07-08T02:07Z \u2014 NEW; closer H4+H1 FVG bear zone 4116-4136; gate comp<=-40 unmet; watch for bounce + comp confirmation.",
+      "note": "ENTRY: M15 bearish rejection wick >=5p from inside H4 FVG bear zone (4115.99-4135.91) with M15 bearish close. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GOLD 4114.73 (Jul 9 12:09Z). Price crossed into zone at 4119.1 today but retreated. H4 structure now BULL (price>ema21>ema50); M15 BOS flipped BULL since Jul7 (bars_ago=65). Composite has shifted from -26.5 (original) to +2.0 neutral \u2014 gate <=-40 remains far unmet. H1 FVG bear 4115.99-4125.22 still overlaps, but multi-TF bear confluence dissipated. Zone remains structurally valid for future re-alignment; watch for comp to flip back \u2264-40 with M15 re-ChoCH bear.\n\nSL: 4141.00  TP: 4060.00  R:R target: 2.24\nupdated 2026-07-09T12:09Z \u2014 MODIFY context; H4/M15 flipped bull since authored; comp=+2.0 neutral (was -26.5 bear); gate still far unmet; zone valid long-term.",
       "entry_criterion": "M15 bearish rejection wick >=5p from inside H4 FVG bear 4115.99-4135.91 with M15 bearish close. Gate comp<=-40.",
-      "regime_context": "GOLD 4107.05. Fell 58p from DAY FVG zone. H4 FVG bear 4115.99-4135.91 fresh. H1 FVG bear 4115.99-4125.22. M15 ChoCH bear at 4116.71 (Jul7). Comp=-26.5 weak bear. Gate <=-40 unmet.",
+      "regime_context": "GOLD 4114.73. Crossed into H4 FVG 4115.99-4135.91 at 4119.1 then retreated. H4 bull (price>ema21>ema50). M15 BOS bull (bars_ago=65). Comp=+2.0 neutral. Gate <=-40 far unmet.",
       "sl": 4141.0,
       "tp": 4060.0,
       "rr_target": "2.24",
-      "current_price_ref": 4107.05,
-      "last_updated": "2026-07-08T02:07Z"
+      "current_price_ref": 4114.73,
+      "last_updated": "2026-07-09T12:09Z"
     }
   ],
   "last_updated": "2026-07-09T08:26Z"
