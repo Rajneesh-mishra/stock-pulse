@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T08:36:34.381566Z",
+  "generated_at": "2026-07-09T09:35:59.617437Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -310,6 +310,31 @@
       "balance": 988.44,
       "open_positions": 0,
       "notes": "GOLD level_cross into H4 FVG sell zone 4115.99-4135.91 (price 4116.47). comp=-14.5 none, gate <=-40 far unmet, M15 bullish BOS active. SKIP. All 6 watchlist alerts KEEP. Scalp: GBPUSD engine healthy (PID 837, no halts). Regime: Hormuz escalation ongoing (Qatari LNG Al Rekayyat damaged Jul9 08:23Z)."
+    },
+    {
+      "tick_ts_utc": "2026-07-09T15:05Z",
+      "events": 0,
+      "events_detail": [],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "trades_skipped": 0,
+      "skip_reasons": [],
+      "balance": 988.44,
+      "open_positions": 0,
+      "pending_orders": 0,
+      "regime": "USD_STRENGTH_OIL_BEAR_ONGOING",
+      "alerts_changed": "all 6 KEEP",
+      "notes": "Heartbeat tick. USDJPY comp upgraded to +51.5 moderate bull (was +39 weak) \u2014 closest valid setup but BLOCKED by JPY risk_guard bug. GOLD H4 FVG sell zone 4116 just 9.4p above price; comp=-14.5 none, gate<=-40 unmet. GBPUSD H4 OB sell zone 0.72p above; comp=+27 bull, wrong direction. Scalp: GBPUSD engine healthy PID 837 no halts.",
+      "attention": {
+        "EURUSD": "swing=NONE scalp=OFF readiness=none reason: comp=-11 none, no active alert; engine disabled (desync)",
+        "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=weak reason: OB zone 1.34213 just 0.72p away; comp=+27 bull, gate<=-40 far unmet",
+        "AUDUSD": "swing=NONE scalp=OFF readiness=none reason: comp=-2.5 none, no alert; scalp off WR=11%",
+        "USDJPY": "swing=WATCH scalp=OFF readiness=moderate reason: comp=+51.5 mod bull matches buy alert FVG 161.68, 72.8p away; BLOCKED JPY bug",
+        "USDCAD": "swing=WATCH scalp=OFF readiness=none reason: comp=+5 none, re-arm gate>=40 unmet; SL hit Jul7",
+        "USDCHF": "swing=NONE scalp=OFF readiness=weak reason: comp=+29.5 weak, no active alert; CHF pip-val pending",
+        "GOLD": "swing=WATCH scalp=N/A readiness=none reason: comp=-14.5 none, gate<=-40 unmet; H4 FVG sell 4116 just 9.4p away",
+        "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=none reason: comp=+5 none, gate>=40 far unmet; Hormuz escalation ongoing"
+      }
     }
   ]
 }
