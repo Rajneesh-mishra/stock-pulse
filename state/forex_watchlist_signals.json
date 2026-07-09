@@ -153,14 +153,14 @@
       "direction": "buy",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Price pullback into H4 FVG bull zone (71.462-71.887) with M15 bullish rejection wick >=5p and M15 bullish close. ARM BUY LIMIT at 71.887 only when comp >=+40.\n\nCONTEXT: OIL_CRUDE 72.242 (Jul 8 02:07Z). Price spiked +5.32% yesterday on Iran strikes testing Hormuz cease-fire (NYT Jul 7). Prior H1 OB sell zone (70.577-71.452) MITIGATED \u2014 price transited through it. H4 FVG bull 71.462-71.887 formed in the last H4 bar (bars_ago=1, unmitigated). H1 BOS bull from Jul3 at 69.246 confirms bullish short-term structure. DAY still structurally bearish (price<ema21<ema50, comp=-0.4). Overall comp=+1.5 neutral \u2014 gate comp>=+40 not met. If Hormuz fear sustains and H4 alignment improves, a pullback to 71.462-71.887 is a BUY retest zone.\n\nSL: 71.162  TP: 73.80  R:R target: 2.62\nadded 2026-07-08T02:07Z \u2014 NEW; H1 OB mitigated, replacing with H4 FVG BUY watch; gate comp>=+40 unmet currently.",
+      "note": "ENTRY: Price pullback into H4 FVG bull zone (71.462-71.887) with M15 bullish rejection wick >=5p and M15 bullish close. ARM BUY LIMIT at 71.887 only when comp >=+40.\n\nCONTEXT: OIL 72.31 (Jul 9 08:26Z). Hormuz escalation intensifying: Qatari LNG tanker Al Rekayyat damaged near Hormuz (Jul 9 08:23Z, ET EnergyWorld), risk of explosion cited \u2014 extends supply-risk narrative from Iran strikes Jul 8. H4 FVG bull 71.462-71.887 (bars_ago=2, unmitigated) remains key buy retest zone; price is above zone, needs pullback. H4 bear FVG 72.733-73.713 (bars_ago=1) is immediate resistance above. H1 BOS bull Jul3 at 69.246 intact. DAY comp=-0.4 (price<ema21<ema50) structurally bear. Overall comp=+5 (none) \u2014 gate >=+40 far unmet.\n\nSL: 71.162  TP: 73.80  R:R target: 2.62\nupdated 2026-07-09T08:26Z \u2014 KEEP; audit_request fired (Hormuz LNG tanker); comp=+5 none; gate >=40 unmet; H4 FVG zone 71.46-71.89 valid for pullback entry when gate met.",
       "entry_criterion": "Pullback into H4 FVG bull 71.462-71.887 with M15 bullish rejection wick >=5p + bullish close. Gate comp>=+40.",
-      "regime_context": "OIL 72.242. Hormuz cease-fire tested (Iran strikes). H4 FVG 71.462-71.887 fresh unmitigated. H1 BOS bull Jul3. DAY structurally bear but short-term H1/H4 bull. Comp=+1.5 neutral.",
+      "regime_context": "OIL 72.31. Hormuz: Qatari LNG tanker Al Rekayyat damaged Jul9 (explosion risk); Iran strikes Jul8. H4 FVG 71.462-71.887 fresh unmitigated. H4 bear FVG 72.733-73.713 resistance above. H1 BOS bull Jul3. DAY bear (price<ema21<ema50). Comp=+5 none, gate >=40 unmet.",
       "sl": 71.162,
       "tp": 73.8,
       "rr_target": "2.62",
-      "current_price_ref": 72.242,
-      "last_updated": "2026-07-08T02:07Z"
+      "current_price_ref": 72.313,
+      "last_updated": "2026-07-09T08:26Z"
     },
     {
       "id": "gold_h4fvg_sell_4116",
@@ -182,5 +182,5 @@
       "last_updated": "2026-07-08T02:07Z"
     }
   ],
-  "last_updated": "2026-07-08T02:07Z"
+  "last_updated": "2026-07-09T08:26Z"
 }
