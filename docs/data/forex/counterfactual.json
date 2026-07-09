@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T14:06:28.283734+00:00",
+  "generated_at": "2026-07-09T08:24:29.975523+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -1565,12 +1565,12 @@
       "alert_id": "gbpusd_h4ob_sell_134213",
       "instrument": "GBPUSD",
       "direction": "sell",
-      "fires": 3,
+      "fires": 4,
       "by_horizon": {
         "1h": {
-          "filled": 3,
-          "favorable": 3,
-          "avg_pips": 9.2,
+          "filled": 4,
+          "favorable": 4,
+          "avg_pips": 8.1,
           "hit_rate": 1.0
         },
         "4h": {
@@ -1710,10 +1710,10 @@
           "hit_rate": 1.0
         },
         "24h": {
-          "filled": 0,
+          "filled": 1,
           "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "avg_pips": -233.6,
+          "hit_rate": 0.0
         }
       }
     },
@@ -1736,10 +1736,10 @@
           "hit_rate": 1.0
         },
         "24h": {
-          "filled": 0,
-          "favorable": 0,
-          "avg_pips": null,
-          "hit_rate": null
+          "filled": 1,
+          "favorable": 1,
+          "avg_pips": 214.2,
+          "hit_rate": 1.0
         }
       }
     }

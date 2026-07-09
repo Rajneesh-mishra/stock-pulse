@@ -1,0 +1,30 @@
+[
+  {
+    "tick_ts_utc": "2026-07-09T07:11Z",
+    "events": 1,
+    "events_detail": [
+      "level_cross GBPUSD gbpusd_h4ob_sell_134213"
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "trades_skipped": 1,
+    "skip_reasons": [
+      "GBPUSD sell: comp=+24 bull vs gate\u2264-40 (readiness=none)"
+    ],
+    "balance": 988.44,
+    "open_positions": 0,
+    "pending_orders": 0,
+    "regime": "USD_STRENGTH_OIL_BEAR_ONGOING",
+    "alerts_changed": "all KEEP (6 alerts)",
+    "attention": {
+      "EURUSD": "swing=NONE scalp=OFF readiness=none",
+      "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=none",
+      "AUDUSD": "swing=NONE scalp=OFF readiness=none",
+      "USDJPY": "swing=WATCH scalp=OFF readiness=weak comp=+39",
+      "USDCAD": "swing=WATCH scalp=OFF readiness=none",
+      "USDCHF": "swing=NONE scalp=OFF readiness=none",
+      "GOLD": "swing=WATCH scalp=N/A readiness=none H4FVG_5p_away",
+      "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=none"
+    }
+  }
+]
