@@ -9,7 +9,7 @@
     "trades_closed": 0,
     "trades_skipped": 1,
     "skip_reasons": [
-      "GBPUSD sell: comp=+24 bull vs gate\u2264-40 (readiness=none)"
+      "GBPUSD sell: comp=+24 bull vs gate≤-40 (readiness=none)"
     ],
     "balance": 988.44,
     "open_positions": 0,
@@ -39,7 +39,7 @@
     "trades_skipped": 0,
     "skip_reasons": [],
     "audit_results": {
-      "oil_crude_h4fvg_buy_7146": "KEEP \u2014 comp=+5 none, gate >=40 unmet; price 72.31 above FVG zone 71.46-71.89; Hormuz LNG tanker news supports bull context; note updated"
+      "oil_crude_h4fvg_buy_7146": "KEEP — comp=+5 none, gate >=40 unmet; price 72.31 above FVG zone 71.46-71.89; Hormuz LNG tanker news supports bull context; note updated"
     },
     "balance": 988.44,
     "open_positions": 0,
@@ -48,12 +48,12 @@
     "alerts_changed": "oil_crude_h4fvg_buy_7146 MODIFY (context updated for Qatari LNG tanker); 5 others KEEP",
     "attention": {
       "EURUSD": "swing=NONE scalp=OFF readiness=none reason: no active alert; scalp disabled post-desync",
-      "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=weak reason: 3.6p below H4 OB sell zone 1.34213; comp=+27 bull, gate \u2264-40 far unmet",
+      "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=weak reason: 3.6p below H4 OB sell zone 1.34213; comp=+27 bull, gate ≤-40 far unmet",
       "AUDUSD": "swing=NONE scalp=OFF readiness=none reason: no active alert; scalp disabled wr=11pct",
       "USDJPY": "swing=WATCH scalp=OFF readiness=unknown reason: DAY FVG buy valid but ALL orders blocked by risk_guard JPY conversion bug",
       "USDCAD": "swing=WATCH scalp=OFF readiness=none reason: price 1.41852 below re-arm threshold 1.41950; comp=+5 none, gate >=40 unmet",
       "USDCHF": "swing=NONE scalp=OFF readiness=none reason: no active alert; CHF quote pip-val pending",
-      "GOLD": "swing=WATCH scalp=N/A readiness=none reason: price 4114.89 at H4 FVG sell zone 4115.99 (1.1p away); comp=-14.5 none, gate \u2264-40 unmet",
+      "GOLD": "swing=WATCH scalp=N/A readiness=none reason: price 4114.89 at H4 FVG sell zone 4115.99 (1.1p away); comp=-14.5 none, gate ≤-40 unmet",
       "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=none reason: price 72.31 above H4 FVG buy zone 71.46-71.89; comp=+5 none, gate >=40 unmet; Hormuz tanker escalation ongoing"
     }
   },
@@ -87,7 +87,7 @@
     "pending_orders": 0,
     "regime": "USD_STRENGTH_OIL_BEAR_ONGOING",
     "alerts_changed": "all 6 KEEP",
-    "notes": "Heartbeat tick. USDJPY comp upgraded to +51.5 moderate bull (was +39 weak) \u2014 closest valid setup but BLOCKED by JPY risk_guard bug. GOLD H4 FVG sell zone 4116 just 9.4p above price; comp=-14.5 none, gate<=-40 unmet. GBPUSD H4 OB sell zone 0.72p above; comp=+27 bull, wrong direction. Scalp: GBPUSD engine healthy PID 837 no halts.",
+    "notes": "Heartbeat tick. USDJPY comp upgraded to +51.5 moderate bull (was +39 weak) — closest valid setup but BLOCKED by JPY risk_guard bug. GOLD H4 FVG sell zone 4116 just 9.4p above price; comp=-14.5 none, gate<=-40 unmet. GBPUSD H4 OB sell zone 0.72p above; comp=+27 bull, wrong direction. Scalp: GBPUSD engine healthy PID 837 no halts.",
     "attention": {
       "EURUSD": "swing=NONE scalp=OFF readiness=none reason: comp=-11 none, no active alert; engine disabled (desync)",
       "GBPUSD": "swing=WATCH scalp=ACTIVE readiness=weak reason: OB zone 1.34213 just 0.72p away; comp=+27 bull, gate<=-40 far unmet",
@@ -118,7 +118,7 @@
         "type": "level_cross",
         "instrument": "GOLD",
         "alert_id": "gold_h4fvg_sell_4116",
-        "decision": "SKIP \u2014 readiness=none, comp=+2.0 (gate<=-40 far unmet), H4+M15 flipped bull, price retreated from 4119.1 to 4114.73"
+        "decision": "SKIP — readiness=none, comp=+2.0 (gate<=-40 far unmet), H4+M15 flipped bull, price retreated from 4119.1 to 4114.73"
       }
     ],
     "trades_opened": 0,
@@ -191,5 +191,72 @@
     "summary": "heartbeat. GOLD 4120.58 inside H4 FVG bear 4116-4136 (comp=+2 none, gate unmet). GBPUSD 1.33969 (24p below OB, gate unmet). USDJPY 162.42 comp=+49 MOD bull BLOCKED (JPY bug). OIL 73.54 inside H4 bear FVG resistance (comp=+2.5 none, gate unmet); Hormuz 3-tanker day Jul7. USDCAD 1.41699 comp=-2.5 none (below SL). 0 trades.",
     "alerts_action": "USDCAD+OIL MODIFY; GBPUSD+GOLD+USDJPY KEEP",
     "news": "US-Iran airstrikes ongoing; GOLD opened lower recovered to 4120; Hormuz 3-tanker attack Jul7 biggest since Apr"
+  },
+  {
+    "tick_ts_utc": "2026-07-09T13:21Z",
+    "events_consumed": 2,
+    "events": [
+      {
+        "type": "level_cross",
+        "instrument": "GOLD",
+        "alert_id": "gold_h4fvg_sell_4116",
+        "action": "SKIP — comp=+2.0 none gate<=-40 far unmet; H4/M15 bull structure; alert KEEP/MODIFY"
+      },
+      {
+        "type": "news_flash",
+        "query_id": "hormuz_strait",
+        "headline": "Oil tanker traffic through Hormuz at near standstill as attacks strain Iran truce",
+        "action": "NOTE — OIL -71p on headline (truce-holding read); comp=-5.0 none; buy zone 71.46-71.89 now 94p below; OIL alert KEEP/MODIFY"
+      }
+    ],
+    "prices": {
+      "GOLD": 4119.67,
+      "OIL_CRUDE": 72.83,
+      "GBPUSD": 1.33959,
+      "EURUSD": 1.14322,
+      "AUDUSD": 0.69373,
+      "USDCAD": 1.41738,
+      "USDCHF": 0.80722,
+      "USDJPY": 162.379
+    },
+    "confluence": {
+      "GOLD": {
+        "comp": 2.0,
+        "readiness": "none"
+      },
+      "OIL_CRUDE": {
+        "comp": -5.0,
+        "readiness": "none"
+      },
+      "GBPUSD": {
+        "comp": 10.0,
+        "readiness": "none"
+      },
+      "EURUSD": {
+        "comp": 13.0,
+        "readiness": "none"
+      },
+      "AUDUSD": {
+        "comp": 5.0,
+        "readiness": "none"
+      },
+      "USDCAD": {
+        "comp": 2.5,
+        "readiness": "none"
+      },
+      "USDCHF": {
+        "comp": 29.5,
+        "readiness": "weak"
+      },
+      "USDJPY": {
+        "comp": 49.0,
+        "readiness": "moderate"
+      }
+    },
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "balance": 988.44,
+    "open_positions": 0,
+    "note": "2 evt: GOLD H4FVG 3rd entry today (SKIP gate unmet); Hormuz standstill news_flash (OIL -71p, truce-strain read). No trades. Alerts: gold/oil MODIFY context."
   }
 ]

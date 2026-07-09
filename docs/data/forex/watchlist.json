@@ -77,7 +77,7 @@
       "direction": "sell",
       "active": true,
       "validated": true,
-      "note": "ENTRY: M15 bearish rejection wick >=1p from inside H4 bear OB zone (1.34213-1.34855), then M15 bearish close. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GBPUSD 1.33836 (Jul 7 13:32Z). DAY comp=+15 none (DAY EMA mixed, H1 BOS bull Jul2, H4 bull, M15 bearish). Sell level 37.7p away. DAY FVG bull 1.33580-1.33696 fresh below (support). Gate comp<=-40 far unmet. VALIDATED: fires=3, 4h_hr=0.67 \u2014 qualified for naked LIMIT at moderate+ if gate met.\n\nSL: 1.34955  TP: 1.32000  R:R target: 2.98\nupdated 2026-07-07T13:32Z \u2014 KEEP; validated (fires=3 4h_hr=0.67); level 37.7p away, < 3\u00d7H4ATR; gate comp<=-40 unmet; watch for comp flip + M15 rejection.",
+      "note": "ENTRY: M15 bearish rejection wick >=1p from inside H4 bear OB zone (1.34213-1.34855), then M15 bearish close. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GBPUSD 1.33836 (Jul 7 13:32Z). DAY comp=+15 none (DAY EMA mixed, H1 BOS bull Jul2, H4 bull, M15 bearish). Sell level 37.7p away. DAY FVG bull 1.33580-1.33696 fresh below (support). Gate comp<=-40 far unmet. VALIDATED: fires=3, 4h_hr=0.67 — qualified for naked LIMIT at moderate+ if gate met.\n\nSL: 1.34955  TP: 1.32000  R:R target: 2.98\nupdated 2026-07-07T13:32Z — KEEP; validated (fires=3 4h_hr=0.67); level 37.7p away, < 3×H4ATR; gate comp<=-40 unmet; watch for comp flip + M15 rejection.",
       "entry_criterion": "M15 bearish rejection wick >=1p inside H4 bear OB (1.34213-1.34855). ARM when comp <=-40.",
       "regime_context": "GBPUSD 1.33836, comp=+15 none. H1 BOS bull Jul2@1.33848. DAY FVG bull 1.33580-1.33696 fresh. OB zone 1.34213-1.34855 resistance. Day high 1.34012. VALIDATED alert (fires=3, 4h_hr=0.67).",
       "sl": 1.34955,
@@ -96,7 +96,7 @@
       "direction": "buy",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Price pullback into DAY FVG bull zone (161.508-161.682) with M15 rejection wick + bullish M15 close. ARM BUY LIMIT only when risk_guard JPY conversion bug is fixed. DO NOT PLACE via current risk_guard (rejects all USDJPY: treats JPY P&L as USD face value).\n\nCONTEXT: USDJPY 161.947 (Jul 7 13:00Z). comp=+41.5 moderate bull (3/4TF: DAY ChoCH bull Apr30@160.726, H4 bull, H1 mixed; M15 slightly bearish). DAY FVG bull 161.508-161.682 TESTED today \u2014 intraday low was 161.661 (inside FVG bottom zone). Price bounced from 161.661 back to 161.95 \u2014 textbook FVG reaction. If another pullback reaches zone, it's a repeat entry opportunity (once JPY bug fixed). H1 bear OB 162.735-162.842 is still the TP target. Risk_guard bug: size \u00d7 SL_dist without JPY/USD conversion \u2192 always rejects. Fix required in risk_guard.py.\n\nSL: 161.40  TP: 162.735  R:R target: 3.73\nupdated 2026-07-07T13:00Z \u2014 KEEP; FVG tested today (low 161.661 inside 161.508-161.682), bounce confirmed; entry blocked until risk_guard JPY fixed.",
+      "note": "ENTRY: Price pullback into DAY FVG bull zone (161.508-161.682) with M15 rejection wick + bullish M15 close. ARM BUY LIMIT only when risk_guard JPY conversion bug is fixed. DO NOT PLACE via current risk_guard (rejects all USDJPY: treats JPY P&L as USD face value).\n\nCONTEXT: USDJPY 161.947 (Jul 7 13:00Z). comp=+41.5 moderate bull (3/4TF: DAY ChoCH bull Apr30@160.726, H4 bull, H1 mixed; M15 slightly bearish). DAY FVG bull 161.508-161.682 TESTED today — intraday low was 161.661 (inside FVG bottom zone). Price bounced from 161.661 back to 161.95 — textbook FVG reaction. If another pullback reaches zone, it's a repeat entry opportunity (once JPY bug fixed). H1 bear OB 162.735-162.842 is still the TP target. Risk_guard bug: size × SL_dist without JPY/USD conversion → always rejects. Fix required in risk_guard.py.\n\nSL: 161.40  TP: 162.735  R:R target: 3.73\nupdated 2026-07-07T13:00Z — KEEP; FVG tested today (low 161.661 inside 161.508-161.682), bounce confirmed; entry blocked until risk_guard JPY fixed.",
       "entry_criterion": "Pullback to DAY FVG 161.508-161.682 with M15 rejection wick + bullish close. BLOCKED: risk_guard JPY conversion bug.",
       "regime_context": "USDJPY 161.947, comp=+41.5 moderate bull. DAY ChoCH bull 160.726. FVG 161.508-161.682 tested today (low 161.661), bounce to 161.95. TP target H1 OB 162.735-162.842.",
       "sl": 161.4,
@@ -115,7 +115,7 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: M15 bearish rejection wick >=10p from inside DAY bear FVG zone (4162.83-4173.575) with M15 bearish close. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GOLD 4107.05 (Jul 8 02:07Z). Price FELL 58p from inside zone (4165 yesterday) to 4107 today. DAY FVG zone now 55p above current price. Comp=-26.5 weak bear (3/4TF: DAY price<ema21<ema50, H1 price<ema21, M15 BOS bear Jul7). H4 FVG bear 4115.99-4135.91 (fresh, bars_ago=1) and H1 FVG bear 4115.99-4125.22 are closer sell zones now (new alert added). Gate comp<=-40 unmet. If GOLD bounces from 4107 area, watch for rejection at H4 FVG (4116) first, then DAY FVG (4163) second.\n\nSL: 4200.00  TP: 4060.00  R:R target: 2.69\nupdated 2026-07-08T02:07Z \u2014 KEEP; price dropped to 4107 (55p below zone); zone valid for retest bounce; closer H4 FVG sell alert added; gate comp<=-40 unmet.",
+      "note": "ENTRY: M15 bearish rejection wick >=10p from inside DAY bear FVG zone (4162.83-4173.575) with M15 bearish close. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GOLD 4107.05 (Jul 8 02:07Z). Price FELL 58p from inside zone (4165 yesterday) to 4107 today. DAY FVG zone now 55p above current price. Comp=-26.5 weak bear (3/4TF: DAY price<ema21<ema50, H1 price<ema21, M15 BOS bear Jul7). H4 FVG bear 4115.99-4135.91 (fresh, bars_ago=1) and H1 FVG bear 4115.99-4125.22 are closer sell zones now (new alert added). Gate comp<=-40 unmet. If GOLD bounces from 4107 area, watch for rejection at H4 FVG (4116) first, then DAY FVG (4163) second.\n\nSL: 4200.00  TP: 4060.00  R:R target: 2.69\nupdated 2026-07-08T02:07Z — KEEP; price dropped to 4107 (55p below zone); zone valid for retest bounce; closer H4 FVG sell alert added; gate comp<=-40 unmet.",
       "entry_criterion": "M15 bearish rejection wick >=10p from inside DAY FVG 4162.83-4173.575. ARM when comp <=-40.",
       "regime_context": "GOLD 4107.05 bid. Price fell from 4165 (Jul7) to 4107 today. DAY FVG zone 4162.83-4173.575 now 55p above. H4 FVG bear 4115.99-4135.91 and H1 FVG bear 4115.99-4125.22 fresh (bars_ago=1). Comp=-26.5 weak bear.",
       "sl": 4200.0,
@@ -134,7 +134,7 @@
       "direction": "buy",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Pullback to fresh M15 OB above 1.41950 with M15 bullish rejection wick + close. Gate comp>=40. DO NOT ARM until comp>=40 and fresh OB forms.\n\nCONTEXT: USDCAD 1.41699 (Jul 9 12:36Z). SL hit Jul7 at 1.41954; price now at 1.41699 (below SL level 1.41850 \u2014 further invalidation of bull setup). comp=-2.5 none (was +17 none Jul 8; DAY bull trend may be rolling). M15 bear structure dominant. Re-arm when comp>=40 + fresh M15 OB above 1.41950 with close above it.\n\nSL: 1.41850  TP: 1.42700  R:R target: 3.8\nupdated 2026-07-09T12:36Z \u2014 KEEP; comp=-2.5 none (deteriorated from +17); price 1.41699 below SL 1.41850; re-arm criteria far unmet; watchlist only.",
+      "note": "ENTRY: Pullback to fresh M15 OB above 1.41950 with M15 bullish rejection wick + close. Gate comp>=40. DO NOT ARM until comp>=40 and fresh OB forms.\n\nCONTEXT: USDCAD 1.41699 (Jul 9 12:36Z). SL hit Jul7 at 1.41954; price now at 1.41699 (below SL level 1.41850 — further invalidation of bull setup). comp=-2.5 none (was +17 none Jul 8; DAY bull trend may be rolling). M15 bear structure dominant. Re-arm when comp>=40 + fresh M15 OB above 1.41950 with close above it.\n\nSL: 1.41850  TP: 1.42700  R:R target: 3.8\nupdated 2026-07-09T12:36Z — KEEP; comp=-2.5 none (deteriorated from +17); price 1.41699 below SL 1.41850; re-arm criteria far unmet; watchlist only.",
       "entry_criterion": "Pullback to fresh M15 OB above 1.41950 with M15 bullish rejection wick + close. Gate comp>=40.",
       "regime_context": "USDCAD 1.41699. SL hit Jul7 at 1.41954. Price fell to 1.41699 (below SL). comp=-2.5 none. DAY bull trend weakening. M15 bearish. Re-arm: comp>=40 + fresh OB above 1.41950.",
       "sl": 1.4185,
@@ -153,14 +153,14 @@
       "direction": "buy",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Price pullback into H4 FVG bull zone (71.462-71.887) with M15 bullish rejection wick >=5p and M15 bullish close. ARM BUY LIMIT at 71.887 only when comp >=+40.\n\nCONTEXT: OIL 73.54 (Jul 9 12:36Z). Price now inside H4 bear FVG resistance (72.733-73.713) \u2014 this zone may cap upside; a rejection here could push price toward H4 bull FVG 71.46-71.89. Hormuz escalation: 3 tankers hit Jul 7 (biggest day since Apr); Al Rekayyat LNG fire; US revoked Iranian oil sale license. Supply-risk premium supports bid, but comp=+2.5 none (gate >=+40 far unmet). H1 BOS bull Jul3 at 69.246 intact. DAY bear (price<ema21<ema50).\n\nSL: 71.162  TP: 73.80  R:R target: 2.62\nupdated 2026-07-09T12:36Z \u2014 KEEP; OIL inside H4 bear FVG resistance (73.54 in 72.733-73.713); pullback to 71.46-71.89 plausible; comp=+2.5 none, gate unmet; watch for comp to reach +40.",
+      "note": "ENTRY: Price pullback into H4 FVG bull zone (71.462-71.887) with M15 bullish rejection wick >=5p and M15 bullish close. ARM BUY LIMIT at 71.887 only when comp >=+40.\n\nCONTEXT: OIL 72.83 (Jul 9 13:21Z). Dropped 71p from 73.54 (12:36Z high). News_flash 13:20Z: 'Oil tanker traffic through Hormuz at near standstill as attacks strain Iran truce' — headline BULLISH for supply (standstill) but 'straining Iran truce' implies truce may hold/resolve, which would unwind Hormuz premium. Market moved DOWN on the headline (-71p) — interpreting it as truce-holding/de-escalation signal. Price still inside H4 bear FVG resistance zone (72.733-73.713) at 72.83. M15 FVG bear 73.138-73.683 (bars_ago=1) just formed — local rejection. Comp=-5.0 none, gate >=+40 far unmet. If Hormuz truce resolves or Iran-US deal, OIL could fall toward 71.46-71.89 buy zone where structural demand is unmitigated. Buy zone setup still valid; watch for comp to reach +40 on pullback.\n\nSL: 71.162  TP: 73.80  R:R target: 2.62\nupdated 2026-07-09T13:21Z — KEEP; OIL dropped 71p to 72.83 (Hormuz truce strain headline); M15 FVG bear 73.14-73.68 caps retrace; buy zone 71.46-71.89 now 94p below; comp=-5.0 none gate far unmet.",
       "entry_criterion": "Pullback into H4 FVG bull 71.462-71.887 with M15 bullish rejection wick >=5p + bullish close. Gate comp>=+40.",
-      "regime_context": "OIL 73.54. Inside H4 bear FVG 72.733-73.713 (resistance). Hormuz: 3 tankers Jul7 (biggest day), US revoked Iranian oil license. comp=+2.5 none. H4 FVG buy zone 71.46-71.89 is 165p below.",
+      "regime_context": "OIL 72.83. Down 71p from 73.54 high. Hormuz near-standstill news (13:20Z) interpreted as truce-holding signal; price fell. M15 FVG bear 73.138-73.683 fresh (bars_ago=1). comp=-5.0 none. H4 FVG buy zone 71.46-71.89 now 94p below. Hormuz truce resolution = OIL toward buy zone.",
       "sl": 71.162,
       "tp": 73.8,
       "rr_target": "2.62",
-      "current_price_ref": 73.54,
-      "last_updated": "2026-07-09T12:36Z"
+      "current_price_ref": 72.83,
+      "last_updated": "2026-07-09T13:21Z"
     },
     {
       "id": "gold_h4fvg_sell_4116",
@@ -172,15 +172,15 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: M15 bearish rejection wick >=5p from inside H4 FVG bear zone (4115.99-4135.91) with M15 bearish close. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GOLD 4114.73 (Jul 9 12:09Z). Price crossed into zone at 4119.1 today but retreated. H4 structure now BULL (price>ema21>ema50); M15 BOS flipped BULL since Jul7 (bars_ago=65). Composite has shifted from -26.5 (original) to +2.0 neutral \u2014 gate <=-40 remains far unmet. H1 FVG bear 4115.99-4125.22 still overlaps, but multi-TF bear confluence dissipated. Zone remains structurally valid for future re-alignment; watch for comp to flip back \u2264-40 with M15 re-ChoCH bear.\n\nSL: 4141.00  TP: 4060.00  R:R target: 2.24\nupdated 2026-07-09T12:09Z \u2014 MODIFY context; H4/M15 flipped bull since authored; comp=+2.0 neutral (was -26.5 bear); gate still far unmet; zone valid long-term.",
+      "note": "ENTRY: M15 bearish rejection wick >=5p from inside H4 FVG bear zone (4115.99-4135.91) with M15 bearish close. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GOLD 4119.67 (Jul 9 13:21Z). Third entry into H4 FVG bear zone today (12:43Z level_cross at 4116.22 → currently 4119.67). H4 structure BULL (price>ema21>ema50); M15 BOS bull still active (bars_ago=70 from Jul8 18:45Z). Fresh M15 bull FVG formed at 4114.77-4118.72 (bars_ago=1) — price bouncing off it. Comp=+2.0 neutral, gate <=-40 far unmet (42 points away). US-Iran airstrikes ongoing → GOLD safe-haven bid. Zone is structurally valid bear supply but H4/M15 bull structure dominant — no entry until comp flips to <=-40 with M15 ChoCH bear confirming reversal.\n\nSL: 4141.00  TP: 4060.00  R:R target: 2.24\nupdated 2026-07-09T13:21Z — KEEP; third zone entry today (12:43Z); comp=+2.0 none gate far unmet; M15 bull FVG 4114.77-4118.72 fresh support below; H4/M15 bull dominant; wait for comp<=-40.",
       "entry_criterion": "M15 bearish rejection wick >=5p from inside H4 FVG bear 4115.99-4135.91 with M15 bearish close. Gate comp<=-40.",
-      "regime_context": "GOLD 4114.73. Crossed into H4 FVG 4115.99-4135.91 at 4119.1 then retreated. H4 bull (price>ema21>ema50). M15 BOS bull (bars_ago=65). Comp=+2.0 neutral. Gate <=-40 far unmet.",
+      "regime_context": "GOLD 4119.67. Inside H4 FVG bear 4115.99-4135.91 (3rd entry today). H4 bull, M15 BOS bull (bars_ago=70). Fresh M15 bull FVG 4114.77-4118.72 supporting from below. Comp=+2.0 neutral. Gate <=-40 far unmet. US-Iran airstrikes supporting safe-haven bid.",
       "sl": 4141.0,
       "tp": 4060.0,
       "rr_target": "2.24",
-      "current_price_ref": 4114.73,
-      "last_updated": "2026-07-09T12:09Z"
+      "current_price_ref": 4119.67,
+      "last_updated": "2026-07-09T13:21Z"
     }
   ],
-  "last_updated": "2026-07-09T12:36Z"
+  "last_updated": "2026-07-09T13:21Z"
 }
