@@ -1,0 +1,31 @@
+[
+  {
+    "tick_ts_utc": "2026-07-10T20:30Z",
+    "events_consumed": 9,
+    "events_detail": "1 level_cross OIL, 2 alert_audit_request (OIL+GOLD), 6 news_flash (Hormuz)",
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "trades_skipped": 1,
+    "skip_reasons": [
+      "OIL comp=-17.5 gate +40 far unmet (M15 BOS bear despite Hormuz supply shock)"
+    ],
+    "balance": 988.44,
+    "positions": 0,
+    "regime": "USD_STRENGTH_OIL_BEAR_ONGOING",
+    "attention": {
+      "EURUSD": "NONE/none \u2014 no alert, comp=+8.5, DAY bearish",
+      "GBPUSD": "WATCH/none \u2014 approaching H4 OB sell 1.34213 (11.8p), comp=+24 gate unmet",
+      "AUDUSD": "NONE/none \u2014 no alert, comp=+0.5",
+      "USDJPY": "WATCH/moderate-BLOCKED \u2014 comp=+51.5 mod bull, FVG buy 161.68 (70p below), JPY bug",
+      "USDCAD": "WATCH/none \u2014 comp=-2.5 gate +40 unmet",
+      "USDCHF": "NONE/none \u2014 no alert, comp=+11.0",
+      "GOLD": "WATCH/none \u2014 2 sell alerts (H4FVG+DAY), comp=+5.5 anti-sell, gates unmet",
+      "OIL_CRUDE": "WATCH/none \u2014 in H4 FVG buy zone, comp=-17.5 gate +40 unmet"
+    },
+    "alerts_modified": [
+      "oil_crude_h4fvg_buy_7146",
+      "gold_h4fvg_sell_4116"
+    ],
+    "notes": "Hormuz near-standstill confirmed 5 independent sources Jul9. US-Iran renewed fighting. OIL supply shock real \u2014 market pricing eventual truce. GOLD safe-haven elevated. All gates unmet."
+  }
+]

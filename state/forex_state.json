@@ -1,8 +1,8 @@
 {
   "regime": "USD_STRENGTH_OIL_BEAR_ONGOING",
-  "tick_ts_utc": "2026-07-09T13:46Z",
-  "state_ts_utc": "2026-07-09T13:46Z",
-  "regime_note": "2026-07-09T13:46Z \u2014 heartbeat (0 evt). GOLD 4124.63 inside H4 FVG bear 4115.99-4135.91 (4th entry today); comp=+2 neutral; H4 bull (price>ema21>ema50), M15 BOS bull (bars_ago=71), fresh M15 bull FVG 4114.77-4118.72 supporting; gate comp<=-40 far unmet; SKIP. OIL 72.57; comp=-5 none; buy zone 71.46-71.89 68p below (gate comp>=+40 unmet); Hormuz ongoing. GBPUSD 1.33957; comp=+5 none; sell OB 1.34213 (25.6p above, gate comp<=-40 unmet). USDJPY 162.33; comp=+49 moderate bull BLOCKED (JPY bug); DAY FVG 161.508-161.682 (64.7p below). USDCAD 1.41768; comp=+5 none (gate comp>=+40 unmet). USDCHF 0.8072; comp=+29.5 weak (no alert). EURUSD 1.1434; comp=+13 none (no alert). AUDUSD 0.6940; comp=+5 none (no alert). 0 trades. Balance $988.44. 0 positions. All 6 alerts KEEP.",
+  "tick_ts_utc": "2026-07-10T20:30Z",
+  "state_ts_utc": "2026-07-10T20:30Z",
+  "regime_note": "2026-07-10T20:30Z \u2014 9 events (1 level_cross OIL, 2 alert_audit_request OIL+GOLD, 6 news_flash Hormuz). MULTI-SOURCE Hormuz escalation Jul9: BBC (ship traffic falls steeply), Reuters+Straits Times (near standstill), CNBC (Iranian attacks trigger renewed US fighting), Marine Insight (4 tankers turned back), Fox News Jul7 (US claws back concession). US-Iran conflict confirmed escalating. OIL 71.65 \u2014 entered H4 FVG buy zone (71.462-71.887) at 71.72 Jul9 17:20Z; despite supply shock news, M15 BOS bear Jul9 08:30Z, comp=-17.5 none; gate +40 far unmet; SKIP. GOLD 4120.91 inside H4 FVG bear 4115.99-4135.91; US-Iran escalation = safe-haven bid anti-sell; comp=+5.5 none gate <=-40 far unmet; SKIP. GBPUSD 1.34095 \u2014 11.8p below H4 OB sell 1.34213; approaching zone but comp=+24 none gate far unmet. USDJPY 162.38 comp=+51.5 moderate bull BLOCKED (JPY bug). USDCAD 1.41701 comp=-2.5 none gate unmet. EURUSD 1.14290 comp=+8.5 none. AUDUSD 0.6940 comp=+0.5 none. USDCHF 0.80673 comp=+11.0 none. 0 trades. Balance $988.44. 0 positions. Alerts: OIL+GOLD MODIFY (notes updated); others KEEP.",
   "regime_note_prev": "2026-07-09T12:36Z \u2014 heartbeat (0 evt). GOLD 4120.58 \u2014 now inside H4 FVG bear zone 4115.99-4135.91; comp=+2.0 neutral (gate <=-40 far unmet, M15 BOS bull active); US-Iran airstrikes continuing (opened lower today, recovered to 4120). SKIP. GBPUSD 1.33969 \u2014 24p below H4 OB sell 1.34213; comp=+10 none (gate <=-40 far unmet). USDJPY 162.42 \u2014 comp=+49 moderate bull; DAY FVG buy 161.682 is 73p below; BLOCKED (JPY bug). OIL 73.54 \u2014 now inside H4 bear FVG resistance 72.733-73.713; comp=+2.5 none (gate >=40 unmet); Hormuz: 3 tankers hit Jul7 (biggest day since Apr), US revoked Iranian oil license. USDCAD 1.41699 \u2014 comp=-2.5 none (was +17); price below SL level 1.41850; re-arm gate far unmet. EURUSD 1.14314 comp=+13 none. AUDUSD 0.69378 comp=+5 none. USDCHF 0.80697 comp=+19.5 none. 0 trades. Balance $988.44. 0 positions. Alerts: USDCAD+OIL context MODIFY; others KEEP.",
   "open_positions": [],
   "watchlist": [],
@@ -1500,7 +1500,7 @@
   ],
   "binary_event": {
     "active": false,
-    "note": "No active binary. Hormuz escalation continues: 3 tankers hit Jul7, Al Rekayyat LNG fire, US revoked Iranian oil license. News_flash Jul9 13:20Z: 'Hormuz near standstill as attacks strain Iran truce' \u2014 implies truce may be under pressure, not yet resolved. US-Iran airstrikes ongoing. No ceasefire. Supply-risk premium in OIL contested (price -71p on headline). GOLD safe-haven bid elevated."
+    "note": "No active binary. Hormuz escalation CONFIRMED Jul9: BBC/Reuters/CNBC/Marine Insight all report near-standstill + US-Iran renewed strikes; US claws back concession (Fox News Jul7). 4 tankers turned back. US-Iran airstrikes ongoing. No ceasefire. OIL supply shock is real \u2014 market pricing eventual truce resolution rather than sustained closure. GOLD safe-haven bid elevated."
   },
   "balance": 988.44,
   "level_alerts": [

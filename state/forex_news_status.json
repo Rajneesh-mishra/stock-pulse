@@ -2,12 +2,12 @@
   "status": "running",
   "pid": 831,
   "started_at": "2026-07-06T15:59:51.212943+00:00",
-  "last_poll": "2026-07-09T13:40:21.530604+00:00",
-  "polls_total": 89,
-  "events_emitted": 82,
+  "last_poll": "2026-07-09T19:22:14.150465+00:00",
+  "polls_total": 93,
+  "events_emitted": 91,
   "errors": 0,
   "last_error": null,
   "query_count": 6,
   "hourly_cap": 15,
-  "hourly_used": 1
+  "hourly_used": 6
 }
