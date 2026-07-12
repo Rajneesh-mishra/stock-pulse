@@ -153,14 +153,14 @@
       "direction": "buy",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Price pullback into H4 FVG bull zone (71.462-71.887) with M15 bullish rejection wick >=5p and M15 bullish close. Gate comp>=+40.\n\nCONTEXT: OIL 71.65 (Jul 10 20:30Z). Price crossed into H4 FVG buy zone at 71.72 on Jul9 17:20Z and remains inside. MULTI-SOURCE Hormuz escalation Jul9: BBC (\"US-Iran strikes: Strait of Hormuz ship traffic falls steeply\"), Reuters + Straits Times (\"near standstill as attacks strain Iran truce\"), CNBC (\"Iranian attacks trigger renewed fighting with U.S.\"), Marine Insight (\"4 Oil And LNG Tankers Turn Back\"). Fox News Jul7: \"US claws back key concession to Iran after fresh attacks\". Supply shock confirmed \u2014 yet M15 BOS bear (bars_ago=47, Jul9 08:30Z), comp=-17.5 none (DAY+M15 price<EMAs). Market interpreting Hormuz strain as eventual-truce scenario. No entry without comp>=+40 + M15 ChoCH bull. Watch for M15 structure flip + comp improvement; that is the trigger.\n\nSL: 71.162  TP: 73.80  R:R target: 2.62\nupdated 2026-07-10T20:30Z \u2014 KEEP; price at 71.65 inside buy zone; Hormuz near-standstill confirmed 5 sources; M15 BOS bear, comp=-17.5 none, gate +40 far unmet; skip until ChoCH bull + comp>=+40.",
+      "note": "ENTRY: Price pullback into H4 FVG bull zone (71.462-71.887) with M15 bullish rejection wick >=5p and M15 bullish close. Gate comp>=+40.\n\nCONTEXT: OIL 71.458 (Jul 13). Price slipped 0.4p below H4 FVG bottom 71.462 \u2014 effectively at zone boundary. Hormuz crisis multi-source confirmed: BBC/Telegraph India (Jul9-10 US-Iran strikes, Hormuz traffic near standstill), Qatar pauses LNG (Jul9), 5+ sources total. M15 ChoCH bear Jul10 08:00. comp=-24 none (DAY+H4+H1 bearish). Market pricing eventual truce rather than sustained closure. Gate +40 far unmet. Supply fundamentals bullish but technicals dominant \u2014 no entry without comp>=+40 + M15 ChoCH bull.\n\nSL: 71.162  TP: 73.80  R:R target: 2.62\nupdated 2026-07-13 \u2014 KEEP; price 71.458 barely below zone bottom 71.462; Hormuz 5+ sources; comp=-24 none, gate +40 far unmet; skip until M15 ChoCH bull + comp>=+40.",
       "entry_criterion": "Pullback into H4 FVG bull 71.462-71.887 with M15 bullish rejection wick >=5p + bullish close. Gate comp>=+40.",
-      "regime_context": "OIL 71.65 inside H4 FVG bull 71.462-71.887 (entered 17:20Z Jul9). Hormuz near-standstill confirmed BBC/Reuters/CNBC/Straits Times/Marine Insight Jul9 + US-Iran renewed fighting. M15 BOS bear 08:30Z Jul9. comp=-17.5 none. Gate +40 unmet.",
+      "regime_context": "OIL 71.458 at zone boundary. H4 FVG bull 71.462-71.887. Hormuz near-standstill 5+ sources Jul9-10. M15 ChoCH bear Jul10. comp=-24 none. Gate +40 far unmet.",
       "sl": 71.162,
       "tp": 73.8,
       "rr_target": "2.62",
-      "current_price_ref": 71.65,
-      "last_updated": "2026-07-10T20:30Z"
+      "current_price_ref": 71.458,
+      "last_updated": "2026-07-13T00:00Z"
     },
     {
       "id": "gold_h4fvg_sell_4116",
@@ -181,6 +181,25 @@
       "current_price_ref": 4120.91,
       "last_updated": "2026-07-10T20:30Z"
     }
+    {
+      "id": "usdchf_m15_buy_8079",
+      "alert_id": "usdchf_m15_buy_8079",
+      "instrument": "USDCHF",
+      "level": 0.8079,
+      "emit_on": "cross_down",
+      "cooldown_sec": 1800,
+      "direction": "buy",
+      "active": true,
+      "validated": false,
+      "note": "ENTRY: Pullback to M15 ChoCH bull zone ~0.8079, M15 bullish rejection wick + close. Gate comp>=+40 (already met).\n\nCONTEXT: USDCHF 0.8085 (Jul 13). comp=+43 moderate bull, all 4 TFs agree (DAY/H4/H1/M15 price>EMA). M15 ChoCH bull Jul9 22:00 @ 0.80744. BUY LIMIT working @ 0.8079 (dealId 00000000-564c-d099-044a-beb40055311e, placed Jul10). USD strength regime, USDCHF moderate bull. LIMIT is 6p below current bid — pre-commitment pullback entry. Gate met (comp=+43 >= +40).\n\nSL: 0.8060  TP: 0.8120  R:R target: 2.16\nauthored 2026-07-13 — backing live BUY LIMIT placed Jul10; comp=+43 moderate; all TFs bull; KEEP limit, fill on retest of M15 ChoCH zone.",
+      "entry_criterion": "Pullback to ~0.8079 (M15 ChoCH level) with M15 bullish rejection wick + close. Gate comp>=+40 (currently met at +43).",
+      "regime_context": "USDCHF 0.8085, comp=+43 moderate bull all TFs. M15 ChoCH bull Jul9 22:00@0.80744. BUY LIMIT @ 0.8079 live (dealId 00000000-564c-d099-044a-beb40055311e).",
+      "sl": 0.806,
+      "tp": 0.812,
+      "rr_target": "2.16",
+      "current_price_ref": 0.8085,
+      "last_updated": "2026-07-13T00:00Z"
+    }
   ],
-  "last_updated": "2026-07-10T20:30Z"
+  "last_updated": "2026-07-13T00:00Z"
 }
