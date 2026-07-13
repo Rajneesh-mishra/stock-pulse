@@ -46,5 +46,47 @@
     "news_query_audit": "ALL 6 queries KEEP \u2014 hormuz_strait producing quality results; no-filter mode active",
     "scalp_audit": "GBPUSD=KEEP(enabled, bias neutral); EURUSD=KEEP(disabled engine_desync); AUDUSD=KEEP(disabled wr<threshold); USDJPY/CHF/CAD=pip-conv-pending; GOLD/OIL=spread-blocked",
     "regime": "USD_STRENGTH_OIL_BEAR_ONGOING"
+  },
+  {
+    "tick_ts_utc": "2026-07-13T13:30Z",
+    "events_processed": 1,
+    "events": [
+      "position_opened:USDCHF"
+    ],
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "trades": [],
+    "modifications": [
+      {
+        "type": "trail_sl",
+        "epic": "USDCHF",
+        "dealId": "00000000-569f-90ee-044a-beb40055311e",
+        "old_sl": 0.806,
+        "new_sl": 0.8079,
+        "reason": "+1R breakeven"
+      }
+    ],
+    "alert_changes": [
+      {
+        "action": "REMOVE",
+        "alert_id": "gold_dayfvg_sell_4163",
+        "reason": "staleness: dist=100.8p > 3\u00d7H4ATR=91.9p, no approach"
+      },
+      {
+        "action": "REMOVE",
+        "alert_id": "gold_h4fvg_buy_4117",
+        "reason": "direction contradiction: comp=-43 bearish, BUY alert invalid"
+      },
+      {
+        "action": "ADD",
+        "alert_id": "gold_h4fvg_sell_4091",
+        "reason": "H4 bear FVG fresh unmitigated, 29p from price, R:R=3.6"
+      }
+    ],
+    "balance": 993.4,
+    "open_positions": 1,
+    "upl_usd": 4.89,
+    "regime": "USD_STRENGTH_GOLD_BEAR_ONGOING",
+    "notes": "USDCHF BUY filled 0.8079, SL\u2192breakeven (+1R). GOLD -58p to 4062 on hawkish Fed (Sep hike 60%)+USD strength. Alert housekeeping on GOLD."
   }
 ]
