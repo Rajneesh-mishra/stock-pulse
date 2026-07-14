@@ -1,0 +1,15 @@
+[
+  {
+    "ts_utc": "2026-07-15T20:56Z",
+    "events_in": 2,
+    "opened": 0,
+    "closed": 1,
+    "limits_placed": 1,
+    "skipped": 0,
+    "balance_usd": 998.61,
+    "pnl_today": 7.18,
+    "positions_open": 0,
+    "working_orders": 1,
+    "note": "2 evt: USDCHF position_closed (+$7.18, Jun13 close finally consumed), Hormuz news_flash Jul7 stale. Alert audit: REMOVE oil_crude_dayfvg_buy_7168 (price 79.70, $8 from 71.68 level, trending away), ADD+ARM usdcad_h4fvg_sell_140818 (LIMIT 1.40818, SL 1.411, TP 1.395, R:R=4.67, comp=-43 mod). GBPUSD/GOLD/USDJPY alerts KEEP. OIL no new setup (R:R <1.5 with wide FVG). News queries date window rolled to Jul 13-16 2026."
+  }
+]

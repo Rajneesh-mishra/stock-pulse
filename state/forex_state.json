@@ -1,23 +1,10 @@
 {
   "regime": "USD_STRENGTH_OIL_BEAR_ONGOING",
-  "tick_ts_utc": "2026-07-13T13:30Z",
-  "state_ts_utc": "2026-07-13T13:30Z",
-  "regime_note": "2026-07-13T13:30Z \u2014 position_opened event: USDCHF BUY 2000 @ 0.8079 filled (SL moved to breakeven +1R). GOLD dropped 4120\u21924062 on hawkish Fed (60% Sep hike odds), USD strength; heading toward $4,000. Alert audit: REMOVE gold_dayfvg_sell_4163 (dist=101p > 3\u00d7H4ATR=92p, stale), REMOVE gold_h4fvg_buy_4117 (direction contradiction comp=-43 bearish), ADD gold_h4fvg_sell_4091 (H4 bear FVG unmitigated, 29p from price, R:R=3.6). USDCHF +20p UPL=$4.89. GBPUSD/OIL readiness=none. USDJPY blocked (JPY bug).",
-  "regime_note_prev": "2026-07-09T12:36Z \u2014 heartbeat (0 evt). GOLD 4120.58 \u2014 now inside H4 FVG bear zone 4115.99-4135.91; comp=+2.0 neutral (gate <=-40 far unmet, M15 BOS bull active); US-Iran airstrikes continuing (opened lower today, recovered to 4120). SKIP. GBPUSD 1.33969 \u2014 24p below H4 OB sell 1.34213; comp=+10 none (gate <=-40 far unmet). USDJPY 162.42 \u2014 comp=+49 moderate bull; DAY FVG buy 161.682 is 73p below; BLOCKED (JPY bug). OIL 73.54 \u2014 now inside H4 bear FVG resistance 72.733-73.713; comp=+2.5 none (gate >=40 unmet); Hormuz: 3 tankers hit Jul7 (biggest day since Apr), US revoked Iranian oil license. USDCAD 1.41699 \u2014 comp=-2.5 none (was +17); price below SL level 1.41850; re-arm gate far unmet. EURUSD 1.14314 comp=+13 none. AUDUSD 0.69378 comp=+5 none. USDCHF 0.80697 comp=+19.5 none. 0 trades. Balance $988.44. 0 positions. Alerts: USDCAD+OIL context MODIFY; others KEEP.",
-  "open_positions": [
-    {
-      "dealId": "00000000-569f-90ee-044a-beb40055311e",
-      "epic": "USDCHF",
-      "direction": "BUY",
-      "size": 2000.0,
-      "entry": 0.8079,
-      "sl": 0.8079,
-      "tp": 0.812,
-      "opened_at": "2026-07-13T08:11:58Z",
-      "thesis_type": "trend",
-      "thesis_note": "USDCHF comp=+43 moderate bull all 4TFs. USD strength vs CHF. Entry at H4 bull zone 0.8079. SL moved to breakeven at +1R."
-    }
-  ],
+  "tick_ts_utc": "2026-07-15T20:56Z",
+  "state_ts_utc": "2026-07-15T20:56Z",
+  "regime_note": "2026-07-15T20:56Z \u2014 2 events consumed: USDCHF position_closed (Jul13 +$7.18, bal=$998.61), Hormuz news_flash Jul7 stale (consumed). USDCHF closed at 0.81081 (+29.1p, winner). USDCAD SELL LIMIT armed 1.40818 (H4 bear FVG, comp=-43 mod, SL=1.411, TP=1.3950, R:R=4.67). Alert audit: REMOVE oil_crude_dayfvg_buy_7168 (price 79.70 vs level 71.68, dist=$8.02, 20-M15s trending away, comp flipped bull), ADD usdcad_h4fvg_sell_140818 (ARMED). GOLD 4051 comp=-34.5 weak \u2014 sell alert at 4091 KEEP (40p below zone, valid). GBPUSD 1.33897 comp=+7 none \u2014 sell alert at 1.34213 KEEP (31.6p from zone). USDJPY 162.259 comp=+52 moderate \u2014 buy alert at 161.682 KEEP (57.7p above buy zone, not near). OIL 79.70 comp=+24 none \u2014 no armable setup (R:R fails with wide FVG). 0 positions open, 1 LIMIT armed.",
+  "regime_note_prev": "2026-07-13T13:30Z \u2014 position_opened event: USDCHF BUY 2000 @ 0.8079 filled (SL moved to breakeven +1R). GOLD dropped 4120\u21924062 on hawkish Fed (60% Sep hike odds), USD strength; heading toward $4,000. Alert audit: REMOVE gold_dayfvg_sell_4163 (dist=101p > 3\u00d7H4ATR=92p, stale), REMOVE gold_h4fvg_buy_4117 (direction contradiction comp=-43 bearish), ADD gold_h4fvg_sell_4091 (H4 bear FVG unmitigated, 29p from price, R:R=3.6). USDCHF +20p UPL=$4.89. GBPUSD/OIL readiness=none. USDJPY blocked (JPY bug).",
+  "open_positions": [],
   "watchlist": [],
   "market_context": {
     "date": "2026-05-08",
@@ -914,17 +901,38 @@
       "confluence_at_entry": "+46 moderate (arming); +38.5 weak (fill \u2014 M15 pullback phase)",
       "result": "loss",
       "notes": "SL hit at 1.41950. Price dipped to 1.41954, stopped out, then bounced back to 1.420 area. Liquidity grab pattern \u2014 thesis not structurally invalidated but SL was clean. Daily P&L: -$3.23."
+    },
+    {
+      "trade_id": "usdchf_h4bull_buy_8079_20260713_closed",
+      "instrument": "USDCHF",
+      "direction": "BUY",
+      "deal_id": "00000000-569f-90ee-044a-beb40055311e",
+      "entry": 0.8079,
+      "exit": 0.81081,
+      "size": 2000.0,
+      "sl": 0.8079,
+      "tp": 0.812,
+      "opened_at": "2026-07-13T08:11:58Z",
+      "closed_at": "2026-07-13T15:06:58Z",
+      "hold_hours": 6.92,
+      "thesis_type": "trend",
+      "exit_reason": "closed (position_sync; last_bid=0.81081, last_upl=+$7.18)",
+      "pnl_usd": 7.18,
+      "alert_id": "usdchf_h4bull_buy_8079",
+      "confluence_at_entry": "+43 moderate bull all 4TFs. USD strength vs CHF.",
+      "result": "win",
+      "notes": "Entered at H4 bull zone 0.8079. SL at breakeven. Closed naturally at 0.81081 (+29.1p). Position ran from entry to TP range."
     }
   ],
-  "consecutive_losses": 3,
-  "daily_pnl": -0.58,
+  "consecutive_losses": 0,
+  "daily_pnl": 7.18,
   "weekly_pnl": 0,
-  "total_pnl": 14.8,
+  "total_pnl": 21.98,
   "total_trades": 7,
-  "wins": 3,
+  "wins": 4,
   "losses": 0,
-  "broker_balance": 988.44,
-  "effective_capital_usd": 987.93,
+  "broker_balance": 998.61,
+  "effective_capital_usd": 998.61,
   "capital_base_note": "Demo account reset to $1k on 2026-04-20 (topUp -$8849.07). Broker balance and effective capital are now aligned.",
   "loop_config": {
     "active_market_interval": "10 min",
@@ -1307,7 +1315,7 @@
   ],
   "last_tick_summary": "tick: 2026-05-09T21:53 forex auto \u2014 4 evts; AUDUSD+GBPUSD TIME_EXIT OVERDUE (mkts closed); USDCHF ARMED pending corr-cap; Chinese tanker Hormuz confirms JPY+CHF bids; OIL CF 7fires 100%4h; balance $949.67",
   "last_scan": "2026-04-26T16:41Z",
-  "capital_base": 941.66,
+  "capital_base": 998.61,
   "tick_log": [
     {
       "utc": "2026-04-21T08:15Z",
@@ -1515,7 +1523,7 @@
     "active": false,
     "note": "No active binary. Hormuz escalation CONFIRMED Jul9: BBC/Reuters/CNBC/Marine Insight all report near-standstill + US-Iran renewed strikes; US claws back concession (Fox News Jul7). 4 tankers turned back. US-Iran airstrikes ongoing. No ceasefire. OIL supply shock is real \u2014 market pricing eventual truce resolution rather than sustained closure. GOLD safe-haven bid elevated."
   },
-  "balance": 993.4,
+  "balance": 998.61,
   "level_alerts": [
     {
       "alert_id": "gbpusd_h4ob_sell_134213",
@@ -1550,20 +1558,6 @@
       "note": "ENTRY: Price pullback into DAY FVG bull zone (161.508-161.682) with M15 rejection wick + bullish M15 close. ARM BUY LIMIT only when risk_guard JPY conversion bug is fixed. DO NOT PLACE via current risk_guard (rejects all USDJPY: treats JPY P&L as USD face value).\n\nCONTEXT: USDJPY 161.947 (Jul 7 13:00Z). comp=+41.5 moderate bull (3/4TF: DAY ChoCH bull Apr30@160.726, H4 bull, H1 mixed; M15 slightly bearish). DAY FVG bull 161.508-161.682 TESTED today \u2014 intraday low was 161.661 (inside FVG bottom zone). Price bounced from 161.661 back to 161.95 \u2014 textbook FVG reaction. If another pullback reaches zone, it's a repeat entry opportunity (once JPY bug fixed). H1 bear OB 162.735-162.842 is still the TP target. Risk_guard bug: size \u00d7 SL_dist without JPY/USD conversion \u2192 always rejects. Fix required in risk_guard.py.\n\nSL: 161.40  TP: 162.735  R:R target: 3.73\nupdated 2026-07-07T13:00Z \u2014 KEEP; FVG tested today (low 161.661 inside 161.508-161.682), bounce confirmed; entry blocked until risk_guard JPY fixed."
     },
     {
-      "alert_id": "oil_crude_dayfvg_buy_7168",
-      "instrument": "OIL_CRUDE",
-      "direction": "buy",
-      "level": 71.68,
-      "active": true,
-      "entry_criterion": "Pullback to DAY FVG bull zone top (71.46-71.68) with M15 bullish rejection wick and M15 bullish close. ARM BUY LIMIT only when comp >=+40.",
-      "regime_context": "OIL 71.623 (Jul 10). Price INSIDE DAY FVG bull zone (71.46-71.68). Hormuz near-standstill confirmed (BBC/Reuters/CNBC/Marine Insight). Despite supply-shock narrative, comp=-15.5 none (bearish flip vs +25.5 prior). M15 ChoCH bear Jul9 08:30Z at 72.203. M15 structure bearish, gate comp>=+40 far unmet. No entry until comp recovers to +40+ on M15 structure reversal or bullish BOS.",
-      "sl": 70.5,
-      "tp": 75.5,
-      "rr_target": 3.3,
-      "last_updated": "2026-07-10T20:58Z",
-      "note": "ENTRY: Pullback to DAY FVG bull zone top (71.46-71.68) with M15 bullish rejection wick >=5p and M15 bullish close. ARM BUY LIMIT only when comp >=+40.\n\nCONTEXT: OIL 71.623 (Jul 10). Price INSIDE zone \u2014 Hormuz near-standstill (multi-source) supports eventual supply bid, BUT comp=-15.5 none/bearish. M15 ChoCH bear Jul9 @72.203. Wait for M15 BOS bull + comp recovery to >=+40.\n\nSL: 70.50  TP: 75.50  R:R target: 3.3\n\n[Rewritten Jul 10 20:58Z: price inside zone, comp flipped bearish, gate unmet]"
-    },
-    {
       "alert_id": "gold_h4fvg_sell_4091",
       "instrument": "GOLD",
       "direction": "sell",
@@ -1575,6 +1569,22 @@
       "rr_target": 3.6,
       "last_updated": "2026-07-13T13:30Z",
       "note": "ENTRY: M15 bearish rejection wick >=5p from H4 bear FVG zone (4091.21-4108.43) with M15 bearish close. ARM SELL LIMIT when comp <=-40.\n\nCONTEXT: GOLD comp=-43 moderate bearish all 4TFs. Hawkish Fed (60% Sep hike), USD strength, gold heading toward $4,000. H4 FVG fresh unmitigated.\n\nSL: 4115.0  TP: 4005.0  R:R target: 3.6\n\nAdded 2026-07-13T13:30Z \u2014 replaced stale dayfvg_sell_4163 (100p from price, auto-remove) + buy_4117 (direction contradiction, comp=-43 bearish)."
+    },
+    {
+      "alert_id": "usdcad_h4fvg_sell_140818",
+      "instrument": "USDCAD",
+      "direction": "sell",
+      "level": 1.40818,
+      "active": true,
+      "validated": false,
+      "status": "ARMED",
+      "sl": 1.411,
+      "tp": 1.395,
+      "rr_target": 4.67,
+      "entry_criterion": "H4 bear FVG retest at 1.40749-1.40818. SELL LIMIT placed at FVG top 1.40818.",
+      "regime_context": "USDCAD comp=-43 moderate bearish (3/4TF). H4 BOS bear Jul2 @1.41504, H1 BOS bear Jul10 @1.41175. H4 bear FVG 1.40749-1.40818 unmitigated 2 bars ago. LIMIT armed dealId=00000000-56ad-4300.",
+      "last_updated": "2026-07-15T20:55Z",
+      "note": "ENTRY: SELL LIMIT placed at H4 bear FVG top (1.40818). ARM ACTIVE (dealId=00000000-56ad-4300).\n\nCONTEXT: USDCAD 1.40602, comp=-43 moderate bearish 3/4TF. H4 BOS bear @1.41504 (Jul2), H1 BOS bear @1.41175 (Jul10). Fresh H4 FVG 1.40749-1.40818 unmitigated. Continuaton sell thesis.\n\nSL: 1.4110  TP: 1.3950  R:R target: 4.67\n\nAdded 2026-07-15T20:55Z \u2014 moderate bearish + fresh FVG within 22p."
     }
   ],
   "structure_watch": [
@@ -1639,21 +1649,21 @@
   ],
   "working_orders": [
     {
-      "dealId": "00000000-55dc-c18c-044a-beb40055311e",
+      "dealId": "00000000-56ad-4300-044a-beb40055311e",
       "epic": "USDCAD",
-      "direction": "BUY",
-      "size": 3000.0,
-      "level": 1.42107,
-      "stopLevel": 1.4195,
-      "profitLevel": 1.427,
+      "direction": "SELL",
+      "size": 1000.0,
+      "level": 1.40818,
+      "stopLevel": 1.411,
+      "profitLevel": 1.395,
       "type": "LIMIT",
-      "created_ts_utc": "2026-07-07T13:09Z",
+      "created_ts_utc": "2026-07-15T20:55Z",
       "thesis_type": "trend"
     }
   ],
-  "daily_pnl_usd": 0.0,
-  "news_last_searched_utc": "2026-07-09T12:36Z",
+  "daily_pnl_usd": 7.18,
+  "news_last_searched_utc": "2026-07-15T20:56Z",
   "pending_orders": [],
-  "balance_usd": 988.44,
-  "account_balance": 988.44
+  "balance_usd": 998.61,
+  "account_balance": 998.61
 }

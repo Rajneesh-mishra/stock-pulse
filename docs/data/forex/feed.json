@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T13:31:01.871141Z",
+  "generated_at": "2026-07-14T20:58:42.757510Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -237,94 +237,17 @@
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
     },
     {
-      "tick_ts_utc": "2026-07-13T00:00Z",
-      "events_processed": 14,
-      "events": {
-        "level_cross": {
-          "GBPUSD": 2,
-          "USDJPY": 4,
-          "OIL_CRUDE": 2,
-          "GOLD": 1
-        },
-        "alert_audit_request": {
-          "OIL_CRUDE": 3,
-          "GOLD": 1
-        },
-        "news_flash": {
-          "hormuz_strait": 1
-        }
-      },
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "pending_limits": [
-        {
-          "epic": "USDCHF",
-          "direction": "BUY",
-          "size": 2000,
-          "level": 0.8079,
-          "sl": 0.806,
-          "tp": 0.812,
-          "dealId": "00000000-564c-d099-044a-beb40055311e"
-        }
-      ],
-      "balance": 988.44,
-      "open_positions": 0,
-      "decisions": {
-        "GBPUSD": "SKIP \u2014 comp=+8 none, gate <=-40 unmet (OB sell); level_cross \u00d7 2 consumed",
-        "USDJPY": "SKIP \u2014 comp=+33 weak, JPY risk_guard bug; level_cross \u00d7 4 consumed",
-        "GOLD": "SKIP \u2014 comp=+8 none, gate <=-40 unmet; safe-haven bid elevated (Hormuz/US-Iran); alert KEEP",
-        "OIL_CRUDE": "SKIP \u2014 comp=-24 none, gate +40 far unmet; price at zone bottom 71.458 vs 71.462; alert MODIFY context",
-        "USDCHF": "KEEP BUY LIMIT @ 0.8079 \u2014 comp=+43 moderate all TFs bull, R:R 2.16; alert ADDED to watchlist"
-      },
-      "alert_changes": [
-        "MODIFY oil_crude_h4fvg_buy_7146: updated price context 71.458, Hormuz 5+ sources Jul9-10",
-        "ADD usdchf_m15_buy_8079: BUY LIMIT @ 0.8079 formalized"
-      ],
-      "news_query_audit": "ALL 6 queries KEEP \u2014 hormuz_strait producing quality results; no-filter mode active",
-      "scalp_audit": "GBPUSD=KEEP(enabled, bias neutral); EURUSD=KEEP(disabled engine_desync); AUDUSD=KEEP(disabled wr<threshold); USDJPY/CHF/CAD=pip-conv-pending; GOLD/OIL=spread-blocked",
-      "regime": "USD_STRENGTH_OIL_BEAR_ONGOING"
-    },
-    {
-      "tick_ts_utc": "2026-07-13T13:30Z",
-      "events_processed": 1,
-      "events": [
-        "position_opened:USDCHF"
-      ],
-      "positions_opened": 0,
-      "positions_closed": 0,
-      "trades": [],
-      "modifications": [
-        {
-          "type": "trail_sl",
-          "epic": "USDCHF",
-          "dealId": "00000000-569f-90ee-044a-beb40055311e",
-          "old_sl": 0.806,
-          "new_sl": 0.8079,
-          "reason": "+1R breakeven"
-        }
-      ],
-      "alert_changes": [
-        {
-          "action": "REMOVE",
-          "alert_id": "gold_dayfvg_sell_4163",
-          "reason": "staleness: dist=100.8p > 3\u00d7H4ATR=91.9p, no approach"
-        },
-        {
-          "action": "REMOVE",
-          "alert_id": "gold_h4fvg_buy_4117",
-          "reason": "direction contradiction: comp=-43 bearish, BUY alert invalid"
-        },
-        {
-          "action": "ADD",
-          "alert_id": "gold_h4fvg_sell_4091",
-          "reason": "H4 bear FVG fresh unmitigated, 29p from price, R:R=3.6"
-        }
-      ],
-      "balance": 993.4,
-      "open_positions": 1,
-      "upl_usd": 4.89,
-      "regime": "USD_STRENGTH_GOLD_BEAR_ONGOING",
-      "notes": "USDCHF BUY filled 0.8079, SL\u2192breakeven (+1R). GOLD -58p to 4062 on hawkish Fed (Sep hike 60%)+USD strength. Alert housekeeping on GOLD."
+      "ts_utc": "2026-07-15T20:56Z",
+      "events_in": 2,
+      "opened": 0,
+      "closed": 1,
+      "limits_placed": 1,
+      "skipped": 0,
+      "balance_usd": 998.61,
+      "pnl_today": 7.18,
+      "positions_open": 0,
+      "working_orders": 1,
+      "note": "2 evt: USDCHF position_closed (+$7.18, Jun13 close finally consumed), Hormuz news_flash Jul7 stale. Alert audit: REMOVE oil_crude_dayfvg_buy_7168 (price 79.70, $8 from 71.68 level, trending away), ADD+ARM usdcad_h4fvg_sell_140818 (LIMIT 1.40818, SL 1.411, TP 1.395, R:R=4.67, comp=-43 mod). GBPUSD/GOLD/USDJPY alerts KEEP. OIL no new setup (R:R <1.5 with wide FVG). News queries date window rolled to Jul 13-16 2026."
     }
   ]
 }

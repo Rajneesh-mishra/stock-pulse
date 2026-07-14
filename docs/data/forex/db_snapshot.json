@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-13T13:19:08.443031+00:00",
+  "generated_at": "2026-07-14T20:56:57.794077+00:00",
   "counts": {
     "trades": 53,
-    "events": 8315,
+    "events": 8318,
     "ticks": 59,
-    "regime_snapshots": 288,
+    "regime_snapshots": 289,
     "broker_positions": 0,
     "counterfactuals": 210
   },
@@ -1063,6 +1063,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-07-13T13:30Z",
+      "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
+      "note_text": "2026-07-13T13:30Z \u2014 position_opened event: USDCHF BUY 2000 @ 0.8079 filled (SL moved to breakeven +1R). GOLD dropped 4120\u21924062 on hawkish Fed (60% Sep hike odds), USD strength; heading toward $4,000. Alert audit: REMOVE gold_dayfvg_sell_4163 (dist=101p > 3\u00d7H4ATR=92p, stale), REMOVE gold_h4fvg_buy_4117 (direction contradiction comp=-43 bearish), ADD gold_h4fvg_sell_4091 (H4 bear FVG unmitigated, 29p from price, R:R=3.6). USDCHF +20p UPL=$4.89. GBPUSD/OIL readiness=none. USDJPY blocked (JPY bug).",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-07-13T00:00Z",
       "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
       "note_text": "2026-07-13T00:00Z \u2014 14 events (GBPUSD level_cross \u00d72, USDJPY level_cross \u00d74, OIL level_cross \u00d72 + audit_request \u00d73, GOLD level_cross \u00d71 + audit_request \u00d71, news_flash Hormuz \u00d71). USDCHF: comp=+43 moderate bull all 4TFs \u2014 BUY LIMIT @ 0.8079 (dealId 00000000-564c-d099-044a-beb40055311e) KEPT; USDCHF alert added. GBPUSD 1.34009: 20p below OB sell 1.34213, comp=+8 none, gate <=-40 far unmet, SKIP. USDJPY 161.709: 3p above DAY FVG top 161.682, comp=+33 weak bull, BLOCKED JPY bug. GOLD 4119.51: inside H4 FVG sell 4115.99-4135.91, comp=+8 none, gate <=-40 unmet; US-Iran/Hormuz safe-haven bid elevated \u2014 no sell. OIL 71.458: 0.4p below H4 FVG bottom 71.462, comp=-24 none bearish, gate +40 far unmet; Hormuz 5+ sources Jul9-10 (Qatar LNG paused, traffic halted), supply shock real but market pricing truce resolution. 0 trades. Balance $988.44. 0 positions. 1 pending LIMIT: USDCHF BUY 2000 @ 0.8079 SL=0.806 TP=0.812. Alerts: OIL context MODIFIED; USDCHF alert ADDED.",
@@ -1130,14 +1138,6 @@
       "ts_utc": "2026-07-09T15:05Z",
       "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
       "note_text": "2026-07-09T15:05Z \u2014 heartbeat (0 events). GOLD 4106.61 bid, comp=-14.5 none; H4 FVG sell zone 4116 is 9.4p above (gate<=-40 unmet, dist narrowing); day high 4117.67 was inside zone but M15 BOS bull still active. GBPUSD 1.34141, comp=+27 weak bull; H4 OB sell zone 1.34213 only 0.72p above (gate<=-40 far unmet). USDJPY 162.41, comp=+51.5 MODERATE bull (upgraded from +39 weak last tick); DAY FVG buy 161.508-161.682 is 72.8p away; entry BLOCKED by JPY risk_guard bug \u2014 closest setup to valid entry in system. OIL 72.95, comp=+5 none (Hormuz ongoing, gate>=40 unmet). USDCAD 1.41836, comp=+5 none (re-arm gate>=40 unmet). 0 trades. Balance $988.44. 0 positions. All 6 alerts KEEP.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-07-09T08:35Z",
-      "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
-      "note_text": "2026-07-09T08:35Z \u2014 1 evt: level_cross GOLD gold_h4fvg_sell_4116 (price 4116.47 entered H4 FVG bear zone 4115.99-4135.91). Confluence: comp=-14.5 none (DAY-0.4, H4-0.15, H1-0.15, M15+0.9 bull BOS), readiness=NONE, gate comp<=-40 FAR UNMET. M15 bullish BOS active since Jul8 18:45Z (4091.6) \u2014 short-term structure opposing sell. Price wicked to 4117.67 high then retreated to 4113.33 bid. SKIP: no entry, gate unmet. Alert KEEP \u2014 zone fresh, watching for comp improvement. GBPUSD 1.3417, comp=+27 weak (3.7p below H4 OB zone 1.34213; gate <=-40 unmet). USDJPY 162.34, comp=+39 weak (approaching gate >=40 but JPY bug blocks). OIL 72.59, comp=+5 none (Hormuz: Qatari LNG Al Rekayyat damaged Jul9 08:23Z). 0 trades. Balance $988.44. 0 positions. All 6 alerts KEEP.",
       "binary_event_name": null,
       "binary_event_active": 0,
       "binary_event_deadline": null
