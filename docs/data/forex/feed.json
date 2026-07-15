@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T20:58:42.757510Z",
+  "generated_at": "2026-07-15T20:30:30.040951Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -235,19 +235,6 @@
       "closed": 0,
       "skipped": 0,
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
-    },
-    {
-      "ts_utc": "2026-07-15T20:56Z",
-      "events_in": 2,
-      "opened": 0,
-      "closed": 1,
-      "limits_placed": 1,
-      "skipped": 0,
-      "balance_usd": 998.61,
-      "pnl_today": 7.18,
-      "positions_open": 0,
-      "working_orders": 1,
-      "note": "2 evt: USDCHF position_closed (+$7.18, Jun13 close finally consumed), Hormuz news_flash Jul7 stale. Alert audit: REMOVE oil_crude_dayfvg_buy_7168 (price 79.70, $8 from 71.68 level, trending away), ADD+ARM usdcad_h4fvg_sell_140818 (LIMIT 1.40818, SL 1.411, TP 1.395, R:R=4.67, comp=-43 mod). GBPUSD/GOLD/USDJPY alerts KEEP. OIL no new setup (R:R <1.5 with wide FVG). News queries date window rolled to Jul 13-16 2026."
     }
   ]
 }

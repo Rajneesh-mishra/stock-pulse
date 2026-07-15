@@ -1,9 +1,9 @@
 {
   "regime": "USD_STRENGTH_OIL_BEAR_ONGOING",
-  "tick_ts_utc": "2026-07-15T20:56Z",
-  "state_ts_utc": "2026-07-15T20:56Z",
-  "regime_note": "2026-07-15T20:56Z \u2014 2 events consumed: USDCHF position_closed (Jul13 +$7.18, bal=$998.61), Hormuz news_flash Jul7 stale (consumed). USDCHF closed at 0.81081 (+29.1p, winner). USDCAD SELL LIMIT armed 1.40818 (H4 bear FVG, comp=-43 mod, SL=1.411, TP=1.3950, R:R=4.67). Alert audit: REMOVE oil_crude_dayfvg_buy_7168 (price 79.70 vs level 71.68, dist=$8.02, 20-M15s trending away, comp flipped bull), ADD usdcad_h4fvg_sell_140818 (ARMED). GOLD 4051 comp=-34.5 weak \u2014 sell alert at 4091 KEEP (40p below zone, valid). GBPUSD 1.33897 comp=+7 none \u2014 sell alert at 1.34213 KEEP (31.6p from zone). USDJPY 162.259 comp=+52 moderate \u2014 buy alert at 161.682 KEEP (57.7p above buy zone, not near). OIL 79.70 comp=+24 none \u2014 no armable setup (R:R fails with wide FVG). 0 positions open, 1 LIMIT armed.",
-  "regime_note_prev": "2026-07-13T13:30Z \u2014 position_opened event: USDCHF BUY 2000 @ 0.8079 filled (SL moved to breakeven +1R). GOLD dropped 4120\u21924062 on hawkish Fed (60% Sep hike odds), USD strength; heading toward $4,000. Alert audit: REMOVE gold_dayfvg_sell_4163 (dist=101p > 3\u00d7H4ATR=92p, stale), REMOVE gold_h4fvg_buy_4117 (direction contradiction comp=-43 bearish), ADD gold_h4fvg_sell_4091 (H4 bear FVG unmitigated, 29p from price, R:R=3.6). USDCHF +20p UPL=$4.89. GBPUSD/OIL readiness=none. USDJPY blocked (JPY bug).",
+  "tick_ts_utc": "2026-07-16T00:00Z",
+  "state_ts_utc": "2026-07-16T00:00Z",
+  "regime_note": "2026-07-16 tick \u2014 1 event: news_flash iran_ceasefire (Iran blames US naval blockade for Islamabad Memorandum collapse, Jul15). Escalation regime CONFIRMED: Hormuz near-standstill, no ceasefire. GOLD safe-haven bid elevated (price 4060, sell alert at 4091 valid \u2014 31p below zone). OIL supply risk (comp=+18 none, no armable setup). USDCAD SELL LIMIT 1.40818 KEEP \u2014 Iran oil rally \u2192 CAD strength confirms bearish USDCAD thesis. GBPUSD: REMOVE gbpusd_h4ob_sell_134213 (AUTO-REMOVE dist=117p > 3\u00d797.8p H4ATR, comp=+45 bull contradicts sell); ADD gbpusd_h4_buy_13480 at 1.348 (WATCH). USDJPY dayfvg_buy 161682 KEEP VALIDATED (fires=4, 4h_hr=1.0). 0 positions, 1 LIMIT ARMED (USDCAD). bal=$998.61.",
+  "regime_note_prev": "2026-07-15T20:56Z \u2014 2 events consumed: USDCHF position_closed (Jul13 +$7.18, bal=$998.61), Hormuz news_flash Jul7 stale (consumed). USDCHF closed at 0.81081 (+29.1p, winner). USDCAD SELL LIMIT armed 1.40818 (H4 bear FVG, comp=-43 mod, SL=1.411, TP=1.3950, R:R=4.67). Alert audit: REMOVE oil_crude_dayfvg_buy_7168 (price 79.70 vs level 71.68, dist=$8.02, 20-M15s trending away, comp flipped bull), ADD usdcad_h4fvg_sell_140818 (ARMED). GOLD 4051 comp=-34.5 weak \u2014 sell alert at 4091 KEEP (40p below zone, valid). GBPUSD 1.33897 comp=+7 none \u2014 sell alert at 1.34213 KEEP (31.6p from zone). USDJPY 162.259 comp=+52 moderate \u2014 buy alert at 161.682 KEEP (57.7p above buy zone, not near). OIL 79.70 comp=+24 none \u2014 no armable setup (R:R fails with wide FVG). 0 positions open, 1 LIMIT armed.",
   "open_positions": [],
   "watchlist": [],
   "market_context": {
@@ -1526,22 +1526,6 @@
   "balance": 998.61,
   "level_alerts": [
     {
-      "alert_id": "gbpusd_h4ob_sell_134213",
-      "instrument": "GBPUSD",
-      "level": 1.34213,
-      "direction": "sell",
-      "active": true,
-      "validated": false,
-      "status": "WATCH",
-      "sl": 1.34955,
-      "tp": 1.32,
-      "rr_target": "2.98",
-      "entry_criterion": "M15 bearish rejection wick >=1p inside H4 bear OB (1.34213-1.34855). ARM when comp <=-40.",
-      "regime_context": "GBPUSD 1.33788, comp=+25.5 weak bull. H1 BOS bull Jul2. DAY FVG bull 1.33580-1.33753 fresh. OB zone 1.34213-1.34855 still resistance. Day high 1.34012 approaching zone.",
-      "last_updated": "2026-07-07T17:37Z",
-      "note": "ENTRY: M15 bearish rejection wick >=1p from inside H4 bear OB zone (1.34213-1.34855), then M15 bearish close. ARM SELL LIMIT only when comp <=-40.\n\nCONTEXT: GBPUSD 1.33788 (Jul 7 13:00Z). Day high 1.34012 \u2014 approaching OB zone from 20p below. H1 BOS bull 1.33848 (Jul2) intact. DAY FVG bull 1.33580-1.33753 still unmitigated \u2014 support below. comp=+25.5 weak bull; gate far unmet. DAY bear OB 1.34708-1.35096 is upper cap.\n\nSL: 1.34955  TP: 1.32000  R:R target: 2.98\nupdated 2026-07-07T13:00Z \u2014 KEEP; level valid (42.5p away, < 3\u00d7H4ATR=72.6p); day high approaching zone, comp gate still unmet."
-    },
-    {
       "alert_id": "usdjpy_dayfvg_buy_161682",
       "instrument": "USDJPY",
       "level": 161.682,
@@ -1585,6 +1569,19 @@
       "regime_context": "USDCAD comp=-43 moderate bearish (3/4TF). H4 BOS bear Jul2 @1.41504, H1 BOS bear Jul10 @1.41175. H4 bear FVG 1.40749-1.40818 unmitigated 2 bars ago. LIMIT armed dealId=00000000-56ad-4300.",
       "last_updated": "2026-07-15T20:55Z",
       "note": "ENTRY: SELL LIMIT placed at H4 bear FVG top (1.40818). ARM ACTIVE (dealId=00000000-56ad-4300).\n\nCONTEXT: USDCAD 1.40602, comp=-43 moderate bearish 3/4TF. H4 BOS bear @1.41504 (Jul2), H1 BOS bear @1.41175 (Jul10). Fresh H4 FVG 1.40749-1.40818 unmitigated. Continuaton sell thesis.\n\nSL: 1.4110  TP: 1.3950  R:R target: 4.67\n\nAdded 2026-07-15T20:55Z \u2014 moderate bearish + fresh FVG within 22p."
+    },
+    {
+      "alert_id": "gbpusd_h4_buy_13480",
+      "instrument": "GBPUSD",
+      "direction": "buy",
+      "level": 1.348,
+      "entry_criterion": "M15 bullish rejection wick >=1p from H4 bull zone (1.3460-1.3490) with close back above zone",
+      "regime_context": "GBPUSD comp=+45 moderate bull (H4+H1+M15 all-TF aligned upward); pullback to H4 FVG/OB support; Iran escalation USD-complex",
+      "sl": 1.343,
+      "tp": 1.368,
+      "rr_target": 4.0,
+      "note": "ENTRY: M15 bullish rejection wick >=1p from H4 bull zone (1.3460-1.3490) with M15 close back above zone.\n\nCONTEXT: comp=+45 moderate bull all-TF; former H4 OB resistance (1.34213) now potential S/R flip; Iran escalation complex.\n\nSL: 1.343  TP: 1.368  R:R target: 4.0\n\nAdded 2026-07-16 tick \u2014 replaced stale gbpusd_h4ob_sell_134213 (REMOVED: dist=117p > 3\u00d7H4ATR=97.8p, comp=+45 bull contradicts sell)",
+      "last_updated": "2026-07-16T00:00Z"
     }
   ],
   "structure_watch": [

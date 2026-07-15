@@ -1,0 +1,43 @@
+[
+  {
+    "tick_ts_utc": "2026-07-16T00:00Z",
+    "events_consumed": 1,
+    "events": [
+      "evt_1784092326452_news_flash (news_flash: iran_ceasefire \u2014 Iran blames US naval blockade for Islamabad Memorandum collapse, Jul15)"
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "trades_skipped": 0,
+    "positions_open": 0,
+    "working_orders": 1,
+    "working_order_detail": "USDCAD SELL LIMIT 1000 @ 1.40818 SL=1.411 TP=1.395 (armed Jul14, thesis intact)",
+    "balance": 998.61,
+    "daily_pnl": 0.0,
+    "regime": "USD_STRENGTH_OIL_BEAR_ONGOING / Hormuz escalation CONFIRMED (Iran blames US blockade for Islamabad collapse)",
+    "alert_changes": [
+      "REMOVE gbpusd_h4ob_sell_134213 (AUTO-REMOVE: dist=117p > 3xH4ATR=97.8p, price 1.35384 trending away bullish, comp=+45 contradicts sell)",
+      "ADD gbpusd_h4_buy_13480 (BUY at 1.348, SL=1.343, TP=1.368, R:R=4.0, WATCH \u2014 H4 bull pullback zone)"
+    ],
+    "news_queries_updated": [
+      "opec_supply",
+      "boj_intervention",
+      "rba_hike",
+      "us_tariff"
+    ],
+    "scalp_changes": [
+      "GBPUSD bias neutral->bull (comp=+45 mod bull, all-TF aligned)"
+    ],
+    "attention_matrix": {
+      "EURUSD": "swing=NONE scalp=OFF(desync) readiness=weak (comp=+27, no alert, no armable setup)",
+      "GBPUSD": "swing=WATCH scalp=ACTIVE(bull-bias) readiness=moderate (buy alert 1.348, price 1.35384 54p away)",
+      "AUDUSD": "swing=NONE scalp=OFF(wr=11%) readiness=weak (comp=+29, no alert)",
+      "USDJPY": "swing=WATCH scalp=OFF(pip-conv) readiness=weak (dayfvg_buy_161682 VALIDATED fires=4 4h_hr=1.0; 52.6p above buy zone)",
+      "USDCAD": "swing=ARMED scalp=OFF(pip-conv) readiness=moderate (SELL LIMIT 1.40818 armed, comp=-40.5, Iran oil rally confirms bear thesis)",
+      "USDCHF": "swing=NONE scalp=OFF(pip-conv) readiness=none (comp=-4.5, no setup)",
+      "GOLD": "swing=WATCH scalp=N/A readiness=none (sell alert 4091, price 4060 31p below zone; Iran safe-haven bid could rally price toward zone; comp=-5.5 none, monitor)",
+      "OIL_CRUDE": "swing=NONE scalp=N/A readiness=none (comp=+18 none, Iran supply risk bullish OIL but no structural zone armable)"
+    },
+    "scalp_audit": "EURUSD=OFF(desync) GBPUSD=ACTIVE(wr=n/a new-bias-bull) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
+    "notes": "Iran ceasefire collapse headline (News18 Jul15) confirms Hormuz escalation regime. Escalation = GOLD safe-haven bid elevated (price approaching 4091 FVG sell zone). OIL comp=+18 none, no armable long setup. USDCAD SELL LIMIT valid \u2014 bearish thesis reinforced by oil rally \u2192 CAD strength."
+  }
+]
