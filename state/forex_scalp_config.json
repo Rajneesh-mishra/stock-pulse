@@ -26,12 +26,12 @@
     "GBPUSD": {
       "enabled": true,
       "mode": "session_open_break",
-      "bias": "bull",
+      "bias": "neutral",
       "sessions": [
         "london",
         "ny"
       ],
-      "reason": "bias updated to bull: comp=+45 moderate bull all-TF aligned (DAY/H4/H1/M15 all price>ema21>ema50); M15 choch_bull confirmed. Updated 2026-07-16T00:00Z. Prior: neutral since 2026-06-12 (H4 BOS bear at 1.33676, now invalidated by price at 1.35384)."
+      "reason": "bias reset to neutral: comp=+32 weak (dropped from +45), M15 BOS bear Jul16 02:15Z. DAY/H4/H1 remain bullish but M15 short-term bearish — bias neutral until M15 recovers. Updated 2026-07-16T16:00Z."
     },
     "AUDUSD": {
       "enabled": false,
