@@ -2,10 +2,10 @@
   "status": "running",
   "pid": 830,
   "started_at": "2026-07-06T16:00:11.245108+00:00",
-  "last_poll": "2026-07-15T20:29:51.929437+00:00",
-  "polls_total": 1819,
-  "events_emitted": 120,
-  "errors": 1556,
-  "last_error": null,
+  "last_poll": "2026-07-16T14:00:57.942909+00:00",
+  "polls_total": 1945,
+  "events_emitted": 124,
+  "errors": 1565,
+  "last_error": "AttributeError: 'str' object has no attribute 'get'",
   "market_active": true
 }

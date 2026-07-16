@@ -39,5 +39,40 @@
     },
     "scalp_audit": "EURUSD=OFF(desync) GBPUSD=ACTIVE(wr=n/a new-bias-bull) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
     "notes": "Iran ceasefire collapse headline (News18 Jul15) confirms Hormuz escalation regime. Escalation = GOLD safe-haven bid elevated (price approaching 4091 FVG sell zone). OIL comp=+18 none, no armable long setup. USDCAD SELL LIMIT valid \u2014 bearish thesis reinforced by oil rally \u2192 CAD strength."
+  },
+  {
+    "tick_ts_utc": "2026-07-16T13:43Z",
+    "events_processed": 1,
+    "events": [
+      "level_cross OIL_CRUDE oil_h1fvg_buy_7988"
+    ],
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "orders_placed": 0,
+    "orders_cancelled": 0,
+    "balance": 998.61,
+    "open_positions": 0,
+    "open_orders": 1,
+    "decisions": {
+      "OIL_CRUDE": "SKIP entry (comp=+21 gate +40 unmet). H1 FVG breached. MODIFY \u2192 oil_m15ob_buy_7889 (M15 BullOB 78.894).",
+      "USDCAD": "SELL LIMIT 1.40818 KEEP (70p from trigger, CAD bull intact).",
+      "GOLD": "comp=-43 mod bear. STATE SYNC: REMOVE gold_h4fvg_sell_4091 (stale 108p>3xH4ATR=98p), ADD gold_h1fvg_sell_4021 (H1 FVG, gate -50 unmet).",
+      "GBPUSD": "STATE SYNC: REMOVE gbpusd_h4_buy_13480, ADD gbpusd_dayfvg_buy_13494 (DAY FVG, comp=+29.5 weak).",
+      "USDJPY": "comp=+41 mod bull BLOCKED by risk_guard JPY bug. KEEP.",
+      "EURUSD": "comp=6 none \u2014 NONE",
+      "AUDUSD": "comp=+28 weak \u2014 NONE",
+      "USDCHF": "comp=5 none \u2014 NONE"
+    },
+    "attention_matrix": [
+      "EURUSD    swing=NONE   scalp=OFF    readiness=none    reason: comp=6, desync disabled",
+      "GBPUSD    swing=WATCH  scalp=ACTIVE readiness=weak    reason: comp=+29.5, gbpusd_dayfvg_buy_13494 at 1.34939 (15.5p), gate +40 unmet",
+      "AUDUSD    swing=NONE   scalp=OFF    readiness=weak    reason: comp=+28, no alert, scalp wr=11% disabled",
+      "USDJPY    swing=WATCH  scalp=OFF    readiness=moderate reason: comp=+41, 161.682 (55p away), BLOCKED JPY bug",
+      "USDCAD    swing=ARMED  scalp=OFF    readiness=weak    reason: live SELL LIMIT 1.40818 (70p from 1.40114)",
+      "USDCHF    swing=NONE   scalp=OFF    readiness=none    reason: comp=5, no setup",
+      "GOLD      swing=WATCH  scalp=N/A    readiness=moderate reason: comp=-43, gold_h1fvg_sell_4021 at 4021 (38p), gate -50 unmet",
+      "OIL_CRUDE swing=WATCH  scalp=N/A    readiness=none    reason: comp=+21, oil_m15ob_buy_7889 at 78.894 (79p), gate +40 unmet"
+    ],
+    "scalp_audit": "EURUSD=OFF(desync) GBPUSD=KEEP(bull bias, no trades yet) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
   }
 ]
