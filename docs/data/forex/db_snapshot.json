@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-16T16:02:11.614039+00:00",
+  "generated_at": "2026-07-16T17:50:01.931361+00:00",
   "counts": {
     "trades": 54,
-    "events": 8331,
+    "events": 8332,
     "ticks": 59,
-    "regime_snapshots": 295,
+    "regime_snapshots": 297,
     "broker_positions": 0,
-    "counterfactuals": 213
+    "counterfactuals": 214
   },
   "trades_last_50": [
     {
@@ -1063,6 +1063,22 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-07-16T22:05Z",
+      "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "note_text": "2026-07-16 tick 2026-07-16T22:05Z \u2014 1 event: level_cross OIL oil_m15ob_buy_7889 (3rd fire today, comp=+8 NONE) \u2192 SKIP, KEEP WATCH. GOLD SELL LIMIT 4021.39 KEEP (comp=-53 moderate bear, H4 FVG 4007.8-4021.39 fresh unmitigated, hawkish Fed confirmed \u2014 gold fell below $4000 on Yahoo Finance Jul16). USDCAD SELL LIMIT 1.40818 KEEP (DAY FVG unmitigated, price moved to 1.40437 toward limit, Hormuz day 6 escalation \u2014 56 incidents, CAD bull intact). OIL pullback -1.05% today (supply shock priced in). GBPUSD 1.34696 inside DAY FVG (comp weak, no limit armed). USDJPY 162.479 (JPY bug blocks entry). 0 pos, 2 LIMITs; bal=$998.61.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
+      "ts_utc": "2026-07-16T16:00Z",
+      "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "note_text": "2026-07-16 tick 2026-07-16T16:00Z \u2014 3 events: (1) news_flash hormuz_strait 'Ships Reject US Military-Guided Strait Of Hormuz Transits' (Marine Insight Jul16 12:44Z) \u2014 Hormuz escalation deepens, ships refusing escort; OIL bull thesis context confirmed; (2) level_cross GBPUSD gbpusd_dayfvg_buy_13494 (price 1.3489 entered DAY FVG zone 1.34437-1.34939) \u2014 comp=+32 WEAK, M15 BOS bear, gate +40 unmet \u2192 SKIP LIMIT, KEEP WATCH; (3) level_cross OIL oil_m15ob_buy_7889 (price 78.894 at M15 BullOB top) \u2014 comp=+13.5 NONE, gate far unmet \u2192 SKIP, KEEP WATCH. GOLD: comp=-53 moderate BEAR (strengthened), SELL LIMIT 4021.39 KEEP (R:R=2.92, 15p below level, all 4TF bear). USDCAD: comp=-21.5 NONE (degraded), SELL LIMIT 1.40818 KEEP (DAY FVG 1.40774-1.41252 fresh, no structural break, CAD bull Hormuz). USDJPY: comp=+67 STRONG bull, JPY bug blocks entry. GBPUSD scalp bias bull\u2192neutral (M15 BOS bear, comp +45\u2192+32). 0 pos, 2 LIMITs; bal=$998.61.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-07-16T14:55Z",
       "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
       "note_text": "2026-07-16 tick 2026-07-16T14:55Z \u2014 1 event: news_flash us_tariff 'US imposes new 25% tariffs on Brazil, expands exemptions list' (Reuters Jul16 03:37Z). NON-ALTERING: Brazil tariffs don't impact USDCAD/GBPUSD/GOLD/OIL thesis. Mild USD-positive but not position-changing. BROKER RECONCILE: 2 working orders confirmed \u2014 (1) GOLD SELL LIMIT 4021.39 dealId=00000000-56fc-295a [new, placed ~14:44Z]; (2) USDCAD SELL LIMIT 1.40818 dealId=00000000-56ad-4300 [existing]. GOLD: comp=-43 moderate bear all 4TFs, SELL LIMIT 4021.39 ARMED (18p above price 4003.60, H1 FVG fresh, R:R=2.92). USDCAD: comp=-26.5 WEAK (degraded from -43); DAY TF now mixed; H1/M15 bear structure intact; SELL LIMIT 1.40818 KEEP (cancel criteria not met). GBPUSD: comp=+32 weak, price 1.34976 at DAY FVG top 1.34939, gate +40 unmet, WATCH. USDJPY: comp=+67 strong bull, 162.425, validated alert (4h=100%); JPY bug blocks entry. OIL: comp=+18.5 none, M15 BullOB 78.459-78.894 alert, gate +40 unmet. 0 pos, 2 LIMITs. bal=$998.61.",
@@ -1122,22 +1138,6 @@
       "ts_utc": "2026-07-13T00:00Z",
       "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
       "note_text": "2026-07-13T00:00Z \u2014 14 events (GBPUSD level_cross \u00d72, USDJPY level_cross \u00d74, OIL level_cross \u00d72 + audit_request \u00d73, GOLD level_cross \u00d71 + audit_request \u00d71, news_flash Hormuz \u00d71). USDCHF: comp=+43 moderate bull all 4TFs \u2014 BUY LIMIT @ 0.8079 (dealId 00000000-564c-d099-044a-beb40055311e) KEPT; USDCHF alert added. GBPUSD 1.34009: 20p below OB sell 1.34213, comp=+8 none, gate <=-40 far unmet, SKIP. USDJPY 161.709: 3p above DAY FVG top 161.682, comp=+33 weak bull, BLOCKED JPY bug. GOLD 4119.51: inside H4 FVG sell 4115.99-4135.91, comp=+8 none, gate <=-40 unmet; US-Iran/Hormuz safe-haven bid elevated \u2014 no sell. OIL 71.458: 0.4p below H4 FVG bottom 71.462, comp=-24 none bearish, gate +40 far unmet; Hormuz 5+ sources Jul9-10 (Qatar LNG paused, traffic halted), supply shock real but market pricing truce resolution. 0 trades. Balance $988.44. 0 positions. 1 pending LIMIT: USDCHF BUY 2000 @ 0.8079 SL=0.806 TP=0.812. Alerts: OIL context MODIFIED; USDCHF alert ADDED.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-07-10T20:58Z",
-      "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
-      "note_text": "2026-07-10T20:58Z \u2014 Heartbeat tick (0 events). USD_STRENGTH_OIL_BEAR_ONGOING regime continues. GOLD 4123.91: H4 bull FVG 4117-4119 fresh (unmitigated), old bear FVG 4086-4115 mitigated, DAY sell at 4163 intact. comp=+5.5 none. OIL 71.623 inside DAY FVG buy zone (71.46-71.68); Hormuz near-standstill multi-source; but comp=-15.5 none/bearish, M15 ChoCH bear, gate far unmet. GBPUSD 1.34087: 12.6p below H4 OB sell 1.34213 (within 30p proximity); comp=+21.5 none bullish, gate <=-40 far unmet. USDJPY 162.394: moderate bull (56.5), 71p above DAY FVG buy 161.68; JPY bug blocks trades. 0 trades. Balance $988.44. 0 positions. Alerts: gold_h4fvg_sell_4087 REMOVED (mitigated); gold_h4fvg_buy_4117 ADDED; oil context MODIFIED.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-07-10T20:30Z",
-      "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
-      "note_text": "2026-07-10T20:30Z \u2014 9 events (1 level_cross OIL, 2 alert_audit_request OIL+GOLD, 6 news_flash Hormuz). MULTI-SOURCE Hormuz escalation Jul9: BBC (ship traffic falls steeply), Reuters+Straits Times (near standstill), CNBC (Iranian attacks trigger renewed US fighting), Marine Insight (4 tankers turned back), Fox News Jul7 (US claws back concession). US-Iran conflict confirmed escalating. OIL 71.65 \u2014 entered H4 FVG buy zone (71.462-71.887) at 71.72 Jul9 17:20Z; despite supply shock news, M15 BOS bear Jul9 08:30Z, comp=-17.5 none; gate +40 far unmet; SKIP. GOLD 4120.91 inside H4 FVG bear 4115.99-4135.91; US-Iran escalation = safe-haven bid anti-sell; comp=+5.5 none gate <=-40 far unmet; SKIP. GBPUSD 1.34095 \u2014 11.8p below H4 OB sell 1.34213; approaching zone but comp=+24 none gate far unmet. USDJPY 162.38 comp=+51.5 moderate bull BLOCKED (JPY bug). USDCAD 1.41701 comp=-2.5 none gate unmet. EURUSD 1.14290 comp=+8.5 none. AUDUSD 0.6940 comp=+0.5 none. USDCHF 0.80673 comp=+11.0 none. 0 trades. Balance $988.44. 0 positions. Alerts: OIL+GOLD MODIFY (notes updated); others KEEP.",
       "binary_event_name": null,
       "binary_event_active": 0,
       "binary_event_deadline": null
@@ -1646,6 +1646,19 @@
     }
   ],
   "counterfactuals_last_50": [
+    {
+      "alert_id": "oil_m15ob_buy_7889",
+      "instrument": "OIL_CRUDE",
+      "direction": "buy",
+      "trigger_price": 78.894,
+      "fired_at": "2026-07-16T16:32:52.559215+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
     {
       "alert_id": "oil_m15ob_buy_7889",
       "instrument": "OIL_CRUDE",
@@ -2276,19 +2289,6 @@
       "direction": "sell",
       "trigger_price": 0.72004,
       "fired_at": "2026-05-05T22:56:30.138298+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
-    },
-    {
-      "alert_id": "oil_rebound_9931_buy_watch",
-      "instrument": "OIL_CRUDE",
-      "direction": "buy",
-      "trigger_price": 98.184,
-      "fired_at": "2026-05-05T22:56:30.136192+00:00",
       "hit_1h": null,
       "hit_4h": null,
       "hit_24h": null,

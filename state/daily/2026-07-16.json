@@ -124,5 +124,54 @@
       "GBPUSD scalp bias updated bull\u2192neutral (M15 BOS bear, comp +45\u2192+32)"
     ],
     "notes": "Hormuz ships refusing US escort = escalation deepens. OIL bull context reinforced. GOLD bear momentum building (comp=-53 from -43). All events consumed, no new entries triggered."
+  },
+  {
+    "tick_ts_utc": "2026-07-16T22:05Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "event_id": "evt_1784219572559_level_cross",
+        "type": "level_cross",
+        "instrument": "OIL_CRUDE",
+        "alert_id": "oil_m15ob_buy_7889",
+        "decision": "SKIP (comp=+8 none, gate +40 unmet, 3rd fire today)"
+      }
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "orders_modified": 0,
+    "open_positions": 0,
+    "working_orders": 2,
+    "working_order_detail": [
+      {
+        "epic": "GOLD",
+        "direction": "SELL",
+        "level": 4021.39,
+        "sl": 4039.0,
+        "tp": 3970.0,
+        "dealId": "00000000-56fc-295a-044a-beb40055311e"
+      },
+      {
+        "epic": "USDCAD",
+        "direction": "SELL",
+        "level": 1.40818,
+        "sl": 1.411,
+        "tp": 1.395,
+        "dealId": "00000000-56ad-4300-044a-beb40055311e"
+      }
+    ],
+    "balance_usd": 998.61,
+    "pnl_today": 0.0,
+    "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+    "regime_note_summary": "GOLD SELL LIMIT KEEP (comp=-53 moderate, H4 FVG fresh, hawkish Fed confirmed). USDCAD SELL LIMIT KEEP (CAD bull, Hormuz day 6). OIL level_cross SKIP (comp=+8 none). 0 pos, 2 LIMITs.",
+    "alerts_modified": [
+      "gold_h1fvg_sell_4021",
+      "usdcad_h4fvg_sell_140818",
+      "gbpusd_dayfvg_buy_13494",
+      "oil_m15ob_buy_7889",
+      "usdjpy_dayfvg_buy_161682"
+    ],
+    "alerts_added": [],
+    "alerts_removed": []
   }
 ]
