@@ -173,5 +173,19 @@
     ],
     "alerts_added": [],
     "alerts_removed": []
+  },
+  {
+    "tick_ts_utc": "2026-07-16T20:35Z",
+    "events_consumed": 1,
+    "events": [
+      "evt_1784224849994_news_flash (hormuz_strait corroborates CAD bull/OIL bull)"
+    ],
+    "open_positions": 0,
+    "limit_orders": 2,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "balance": 998.61,
+    "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+    "notes": "news_flash Hormuz Jul15: 'tanker attacks slow Gulf oil exports'. Day-old, corroborates thesis. No action. GOLD SELL LIMIT 4021.39 KEEP (comp=-53, price 3973.76). USDCAD SELL LIMIT 1.40818 KEEP (price 1.40478, 34p from fill). OIL 78.919 near level, gate not met."
   }
 ]

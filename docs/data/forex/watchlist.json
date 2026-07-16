@@ -154,9 +154,9 @@
       "direction": "buy",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Pullback into M15 BullOB zone (78.459-78.894) with M15 bullish rejection wick >=3p + bullish M15 close. ARM BUY LIMIT at 78.894 when comp>=+40.\n\nCONTEXT: OIL 78.938 (Jul16 22:04Z) \u2014 testing OB top from above (3rd level_cross today). comp=+8 none (DAY -0.15, H4 +0.4, H1 +0.15, M15 -0.1). Gate +40 NOT met. OIL down -1.05% today (80.40\u219278.94): supply shock priced in, demand fears emerging despite Hormuz day 6. M15 BullOB (78.459-78.894) fresh (bars_ago=30). No entry until readiness reaches moderate. Watch for DAY/H4 alignment improving.\n\nSL: 78.25  TP: 81.5  R:R target: 4.60\n\nUpdated Jul16 22:05Z \u2014 3rd firing today; comp=+8 none, SKIP, KEEP WATCH.",
-      "entry_criterion": "Pullback into M15 BullOB zone (78.459-78.894) with M15 bullish rejection wick >=3p + bullish close. Gate comp>=+40.",
-      "regime_context": "OIL 79.683, comp=+21 none. H1 FVG 79.819-79.879 breached (price below zone). M15 BullOB 78.459-78.894 is next structural buy zone. Iran escalation tailwind intact. Gate +40 unmet.",
+      "note": "ENTRY: Bullish rejection from below M15 BullOB zone bottom (78.459) with M15 bullish wick >=3p + bullish M15 close above 78.459. ARM BUY LIMIT at 78.459 (updated from 78.894) when comp>=+40.\n\nCONTEXT: OIL 78.299 (Jul16 18:10Z). M15 ChoCH bear at 78.459 (bars_ago=36, Jul16 09:00Z) has BREACHED the OB bottom \u2014 price closed below 78.459 and is now at 78.299. Original OB entry at 78.894 is stale; updated trigger to 78.459 OB bottom as retest level. comp=+1 essentially neutral (DAY -0.15, H4 +0.4, H1 +0.15, M15 -0.8). Gate +40 NOT met. Hormuz day 7 supply disruption ongoing (World Oil Jul15) = bullish macro bias, but market discounting with price at 78.30. Need comp recovery to moderate before arming.\n\nSL: 78.05  TP: 81.5  R:R target: 5.21\n\nRewritten Jul16 18:10Z \u2014 M15 ChoCH bear breached OB bottom; updated trigger and SL.",
+      "entry_criterion": "Bullish rejection wick >=3p below M15 BullOB bottom (78.459) + bullish M15 close above 78.459. Gate comp>=+40.",
+      "regime_context": "OIL 78.299. comp=+1 neutral. M15 ChoCH bear Jul16 09:00Z@78.459 breached OB zone. Hormuz supply disruption ongoing (day 7) \u2014 bullish macro but market discounting. Next structural support ~78.05.",
       "sl": 78.25,
       "tp": 81.5,
       "rr_target": "4.60",
@@ -164,5 +164,5 @@
       "last_updated": "2026-07-16T22:05Z"
     }
   ],
-  "last_updated": "2026-07-16T13:20Z"
+  "last_updated": "2026-07-16T20:35Z"
 }
