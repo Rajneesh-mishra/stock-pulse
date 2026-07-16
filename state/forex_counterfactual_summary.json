@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T20:36:09.534099+00:00",
+  "generated_at": "2026-07-16T20:43:22.350867+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -1851,7 +1851,7 @@
       "alert_id": "oil_m15ob_buy_7889",
       "instrument": "OIL_CRUDE",
       "direction": "buy",
-      "fires": 2,
+      "fires": 3,
       "by_horizon": {
         "1h": {
           "filled": 2,

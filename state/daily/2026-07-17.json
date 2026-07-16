@@ -1,0 +1,52 @@
+[
+  {
+    "tick_ts_utc": "2026-07-17T02:11Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "event_id": "evt_1784234267595_level_cross",
+        "type": "level_cross",
+        "instrument": "OIL_CRUDE",
+        "alert_id": "oil_m15ob_buy_7889",
+        "decision": "SKIP",
+        "reason": "comp=+10.5 readiness=none gate+40 unmet (4th fire today, zone held at 78.89 but DAY TF bearish)"
+      }
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "positions_open": 0,
+    "limits_active": 2,
+    "limits": [
+      {
+        "epic": "GOLD",
+        "dir": "SELL",
+        "level": 4021.39,
+        "sl": 4039.0,
+        "tp": 3970.0,
+        "dist_p": 45.7
+      },
+      {
+        "epic": "USDCAD",
+        "dir": "SELL",
+        "level": 1.40818,
+        "sl": 1.411,
+        "tp": 1.395,
+        "dist_p": 39.0
+      }
+    ],
+    "balance_usd": 998.61,
+    "pnl_usd": 0.0,
+    "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+    "watchlist_changes": "KEEP all 5 alerts; news_queries: opec_supply/boj_intervention/rba_hike rolled [14-17 Jul 2026]",
+    "attention_matrix": {
+      "EURUSD": "swing=NONE scalp=OFF(desync) readiness=none comp=+12.5",
+      "GBPUSD": "swing=WATCH scalp=ACTIVE(neutral) readiness=none comp=+24.5 price_inside_FVG gate<+40",
+      "AUDUSD": "swing=NONE scalp=OFF(wr=11%/19t) readiness=none comp=+7.5",
+      "USDJPY": "swing=WATCH scalp=OFF(pip-conv) readiness=moderate comp=+54.5 68p_from_trigger JPY_bug_blocks",
+      "USDCAD": "swing=ARMED scalp=OFF(CAD-quote) readiness=none comp=-22.5 LIMIT@1.40818 39p_to_fill",
+      "USDCHF": "swing=NONE scalp=OFF(pip-conv) readiness=none comp=+16.5",
+      "GOLD": "swing=ARMED scalp=N/A readiness=moderate comp=-53 LIMIT@4021.39 45.7p_to_fill",
+      "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=none comp=+10.5 zone_held_gate_unmet"
+    }
+  }
+]
