@@ -1,13 +1,6 @@
 {
-  "generated_at": "2026-07-17T11:33:33.127882Z",
+  "generated_at": "2026-07-17T11:47:17.630815Z",
   "ticks": [
-    {
-      "ts": "2026-04-23T08:09:00Z",
-      "events_processed": 1,
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "summary": "1 news_flash us_tariff Chatham House Feb 17 archive 'reset' solo-match non-altering; DROPPED 'reset'; 4 alerts KEEP carried; 0 trades 0pos"
-    },
     {
       "ts": "2026-04-23T17:14:22Z",
       "summary": "2026-04-23T17:14:22Z \u2014 17:07 forex auto \u2014 21 evt gap since 12:34 (4.5h): 6 usdjpy_audits (iran_ceasefire 'extension' kw from Reuters/Al-Jazeera/Detroit-News/Caspian/Daily-Pioneer/WaPo \u2014 ALL iteration of indefinite-extension regime NOT thesis-altering) + 3 oil_audits (ship-traffic + extension-coverage NOT altering) + 4 liquidity_sweeps (USDCHF 0.78602 up-sell readiness=none skip / GBPUSD 1.35133 up",
@@ -777,6 +770,58 @@
         }
       },
       "scalp_audit": "EURUSD=OFF(engine_desync) GBPUSD=ACTIVE(bias=bull, no trades yet) AUDUSD=OFF(wr=11pct 19trades) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
+    },
+    {
+      "tick_ts_utc": "2026-07-17T11:44Z",
+      "events_processed": 1,
+      "events": [
+        {
+          "type": "level_cross",
+          "instrument": "GBPUSD",
+          "alert_id": "gbpusd_dayfvg_buy_13494",
+          "detail": "cross_down @ 1.34397 below DAY FVG bottom 1.34437. H4 BOS bull (1.34519) intact, SL 29p buffer. HOLD."
+        }
+      ],
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "limits_placed": 0,
+      "limits_cancelled": 0,
+      "open_positions": [
+        {
+          "epic": "GBPUSD",
+          "direction": "BUY",
+          "size": 1000,
+          "entry": 1.34437,
+          "sl": 1.3415,
+          "tp": 1.365,
+          "upl": -0.28,
+          "age_hours": 2.83,
+          "thesis_type": "trend"
+        }
+      ],
+      "limit_orders": [
+        {
+          "epic": "GOLD",
+          "direction": "SELL",
+          "size": 0.1,
+          "level": 4021.39,
+          "sl": 4039.0,
+          "tp": 3970.0,
+          "status": "ARMED"
+        },
+        {
+          "epic": "USDCAD",
+          "direction": "SELL",
+          "size": 1000,
+          "level": 1.40818,
+          "sl": 1.411,
+          "tp": 1.395,
+          "status": "KEEP"
+        }
+      ],
+      "balance": 998.34,
+      "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "note": "1 evt: level_cross GBPUSD FVG bottom test. HOLD. GOLD LIMIT ARMED. USDCAD LIMIT not armed. No new trades."
     }
   ]
 }

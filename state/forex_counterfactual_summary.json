@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T11:33:40.384479+00:00",
+  "generated_at": "2026-07-17T11:47:20.031385+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -1825,7 +1825,7 @@
       "alert_id": "gbpusd_dayfvg_buy_13494",
       "instrument": "GBPUSD",
       "direction": "buy",
-      "fires": 2,
+      "fires": 3,
       "by_horizon": {
         "1h": {
           "filled": 2,
