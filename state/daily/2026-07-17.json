@@ -660,5 +660,53 @@
     "balance_usd": 1000.46,
     "daily_pnl_usd": 1.85,
     "total_upl_usd": 1.829
+  },
+  {
+    "tick_ts_utc": "2026-07-17T18:22Z",
+    "events": [
+      "news_flash:iran_ceasefire:STALE_36h"
+    ],
+    "positions_open": [
+      {
+        "instrument": "GBPUSD",
+        "direction": "BUY",
+        "entry": 1.34437,
+        "bid": 1.34535,
+        "upl": 0.98,
+        "age_h": 9.5,
+        "thesis": "trend"
+      },
+      {
+        "instrument": "GOLD",
+        "direction": "SELL",
+        "entry": 4021.44,
+        "bid": 4011.86,
+        "upl": 0.928,
+        "age_h": 2.1,
+        "thesis": "trend"
+      }
+    ],
+    "orders_pending": [
+      {
+        "instrument": "USDCAD",
+        "direction": "SELL",
+        "type": "LIMIT",
+        "level": 1.40818,
+        "sl": 1.411,
+        "tp": 1.395
+      }
+    ],
+    "balance": 1000.51,
+    "daily_pnl": 1.9,
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "analysis": {
+      "event": "news_flash iran_ceasefire Jul16 Al Jazeera 'Iran peace deal voided, existential war' \u2014 STALE 36h, priced in",
+      "regime": "USD_STRENGTH_OIL_BULL_ESCALATION \u2014 unchanged",
+      "gold_comp": -33,
+      "gbpusd_comp": 21,
+      "usdcad_comp": -23,
+      "actions": "HOLD GBPUSD BUY (H4 BOS bull intact), HOLD GOLD SELL (trail not triggered), KEEP USDCAD LIMIT (Iran war confirms CAD bull). News-query windows rolled +1d."
+    }
   }
 ]

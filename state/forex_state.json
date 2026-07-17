@@ -1,9 +1,9 @@
 {
   "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
-  "tick_ts_utc": "2026-07-17T17:45Z",
-  "state_ts_utc": "2026-07-17T17:45Z",
-  "regime_note": "2026-07-17 tick 2026-07-17T17:45Z \u2014 3 evt (news_flash hormuz_strait Tanker struck Hormuz; alert_audit_request USDCAD usdcad_h4fvg_sell_140818; position_opened GOLD SELL). Hormuz: 5th corroborating escalation (TradeWinds: tanker projectile strike Jul17). OIL bull intact, CAD bull intact. GOLD safe-haven NOT materializing \u2014 USD strength dominant, GOLD at 4010.75 falling. GBPUSD BUY HOLD @ 1.34437, bid=1.34516, UPL=+$0.79, age=8.8h (trend max 24h), H4 BOS bull 1.34519 intact, SL=1.3415 10.6p buffer. comp=+21 none (H1+M15 mixed). HOLD. GOLD SELL OPEN @ 4021.44, bid=4010.75, UPL=+$1.04, age=1.4h (trend max 24h), H1 BOS bear, TP=3970 (51p away), SL=4039 (+1R at 4003.88 not reached, no trail yet). USDCAD SELL LIMIT 1.40818 KEEP \u2014 Hormuz (5th event) corroborates CAD bull; price at 1.40146 (67p below limit), FVG 1.40774-1.41252 unmitigated; GTC valid. comp=-33 weak bear. USDJPY WATCH-only (risk_guard blocked). 2 pos 1 LIMIT; bal=$1000.46.",
-  "regime_note_prev": "2026-07-17 tick 2026-07-17T12:35Z \u2014 0 evt (heartbeat). GBPUSD BUY HOLD @ 1.34437, bid=1.34278, UPL=-$1.59 deeper demand test 1.34278 SL=1.3415 12.8p buffer BoE bull intact; GOLD SELL LIMIT 4021.39 KEEP (comp=-50 mod bear dist=39.45p); USDCAD SELL LIMIT 1.40818 KEEP (dist=59.4p Hormuz intact); USDJPY comp=49 mod WATCH-only; 1 pos 2 LIMIT; bal=$997.04",
+  "tick_ts_utc": "2026-07-17T18:22Z",
+  "state_ts_utc": "2026-07-17T18:22Z",
+  "regime_note": "2026-07-17 tick 2026-07-17T18:22Z \u2014 1 evt (news_flash iran_ceasefire Jul16 'Iran peace deal voided, existential war' \u2014 STALE 36h, market priced in, confirms existing escalation regime). GOLD SELL HOLD @ 4021.44, bid=4011.86, UPL=+$0.93, comp=-33 weak bear (H4 fresh bull FVG 4002.59-4007.76 unmitigated downside target, trail +1R at 4003.88 not triggered, SL=4039). GBPUSD BUY HOLD @ 1.34437, bid=1.34535, UPL=+$0.98, age=9.5h (trend max 24h), H4 BOS bull 1.34519 intact, comp=+21 none. USDCAD SELL LIMIT 1.40818 KEEP (comp=-23 none, DAY FVG bear 1.40774-1.41252 armed, Iran war confirms CAD bull, dist=70p GTC). USDJPY WATCH-only (risk_guard blocked). 2 pos 1 LIMIT; bal=$1000.51. News-query windows rolled +1d all queries.",
+  "regime_note_prev": "2026-07-17 tick 2026-07-17T17:45Z \u2014 3 evt (news_flash hormuz_strait Tanker struck Hormuz; alert_audit_request USDCAD usdcad_h4fvg_sell_140818; position_opened GOLD SELL). Hormuz: 5th corroborating escalation (TradeWinds: tanker projectile strike Jul17). OIL bull intact, CAD bull intact. GOLD safe-haven NOT materializing \u2014 USD strength dominant, GOLD at 4010.75 falling. GBPUSD BUY HOLD @ 1.34437, bid=1.34516, UPL=+$0.79, age=8.8h (trend max 24h), H4 BOS bull 1.34519 intact, SL=1.3415 10.6p buffer. comp=+21 none (H1+M15 mixed). HOLD. GOLD SELL OPEN @ 4021.44, bid=4010.75, UPL=+$1.04, age=1.4h (trend max 24h), H1 BOS bear, TP=3970 (51p away), SL=4039 (+1R at 4003.88 not reached, no trail yet). USDCAD SELL LIMIT 1.40818 KEEP \u2014 Hormuz (5th event) corroborates CAD bull; price at 1.40146 (67p below limit), FVG 1.40774-1.41252 unmitigated; GTC valid. comp=-33 weak bear. USDJPY WATCH-only (risk_guard blocked). 2 pos 1 LIMIT; bal=$1000.46.",
   "open_positions": [
     {
       "deal_id": "00000000-5701-acfd-044a-beb40055311e",
@@ -17,7 +17,7 @@
       "thesis_type": "trend",
       "alert_id": "gbpusd_dayfvg_buy_13494",
       "confluence_at_entry": "+42 moderate bull (H4 BOS bull, DAY bull, M15 recovering). DAY FVG bottom 1.34437 anticipation LIMIT.",
-      "upl": 0.79
+      "upl": 0.98
     },
     {
       "deal_id": "00000000-5745-077d-044a-beb40055311e",
@@ -31,7 +31,7 @@
       "thesis_type": "trend",
       "alert_id": "gold_h1fvg_sell_4021",
       "confluence_at_entry": "comp=-35.7 weak bear (H1 BOS bear, H4 bear FVG, DAY price<EMA). H4 TF timeout but DAY+H1 bear confirm. LIMIT filled at 4021.44 vs 4021.39 placed.",
-      "upl": 1.039
+      "upl": 0.928
     }
   ],
   "watchlist": [],
