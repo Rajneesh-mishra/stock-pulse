@@ -93,7 +93,7 @@
     "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
     "actions": [
       "USDJPY alert usdjpy_dayfvg_buy_161682 AUTO-REMOVED (dist=75.3p>3xH4ATR=68p, trending away, JPY bug blocks)",
-      "GBPUSD alert gbpusd_dayfvg_buy_13494 MODIFIED: comp dropped +42→+37, gate not met, watchlist-only"
+      "GBPUSD alert gbpusd_dayfvg_buy_13494 MODIFIED: comp dropped +42\u2192+37, gate not met, watchlist-only"
     ],
     "summary": "Heartbeat tick. 0 events. 2 LIMITs intact (GOLD SELL@4021.39, USDCAD SELL@1.40818). USDJPY alert pruned (staleness rule). GBPUSD comp dropped to weak."
   },
@@ -105,7 +105,7 @@
         "id": "evt_1784266651419_news_flash",
         "type": "news_flash",
         "query": "hormuz_strait",
-        "headline": "U.S. military says it attacked a tanker sailing under Curaçao flag; Curaçao denies",
+        "headline": "U.S. military says it attacked a tanker sailing under Cura\u00e7ao flag; Cura\u00e7ao denies",
         "source": "NL Times Jul16",
         "action": "CORROBORATES CAD bull/OIL bull; safe-haven demand pushes GOLD toward 4008-4021 sell zone"
       }
@@ -238,9 +238,9 @@
     ],
     "alert_changes": [
       "REMOVE oil_m15ob_buy_7889 (M15 OB broken, price below zone, M15 ChoCH bear, fresh bear FVG, gate never met across 4 fires)",
-      "MODIFY usdjpy_dayfvg_buy_161682 → KEEP (validated fires=4 h4=100%, H1 OB 162.063 nearer trigger, dist=31.6p WATCH)"
+      "MODIFY usdjpy_dayfvg_buy_161682 \u2192 KEEP (validated fires=4 h4=100%, H1 OB 162.063 nearer trigger, dist=31.6p WATCH)"
     ],
-    "news": "Hormuz escalation ongoing; Hormuz→inflation→Fed hawkish→USD strength corroborates GOLD bear; BoE hike bets rising → GBPUSD bull intact",
+    "news": "Hormuz escalation ongoing; Hormuz\u2192inflation\u2192Fed hawkish\u2192USD strength corroborates GOLD bear; BoE hike bets rising \u2192 GBPUSD bull intact",
     "regime_note": "0 pos 3 LIMIT. OIL alert removed (structural break). USDJPY validated WATCH. GOLD/GBPUSD/USDCAD LIMITs armed."
   },
   {
@@ -263,7 +263,7 @@
     "balance": 998.61,
     "open_positions": 0,
     "working_orders": 3,
-    "note": "Heartbeat — 0 evt. USDJPY H1 OB watch added (risk_guard JPY bug blocks ARM). OIL alert removed from watchlist (structural break). All 3 LIMITs intact."
+    "note": "Heartbeat \u2014 0 evt. USDJPY H1 OB watch added (risk_guard JPY bug blocks ARM). OIL alert removed from watchlist (structural break). All 3 LIMITs intact."
   },
   {
     "tick_ts_utc": "2026-07-17T10:15Z",
@@ -300,21 +300,21 @@
     ],
     "balance": 998.33,
     "decisions": [
-      "GBPUSD BUY LIMIT filled @ 1.34437 08:54Z — HOLD (H4 BOS bull intact, DAY FVG demand zone, SL=1.3415)",
+      "GBPUSD BUY LIMIT filled @ 1.34437 08:54Z \u2014 HOLD (H4 BOS bull intact, DAY FVG demand zone, SL=1.3415)",
       "GOLD SELL LIMIT 4021.39 KEEP (comp=-37 weak bear, structure DAY/H4/H1 bear)",
       "USDCAD SELL LIMIT 1.40818 KEEP (comp=-40 moderate bear, CAD bull/Hormuz intact)",
-      "USDJPY WATCH H1 OB 162.063 — added usdjpy_h1ob_buy_162063 alert (can't ARM, JPY bug)",
-      "Hormuz news: British military confirms 3rd tanker attack — corroborates OIL bull/CAD bull/USD caution"
+      "USDJPY WATCH H1 OB 162.063 \u2014 added usdjpy_h1ob_buy_162063 alert (can't ARM, JPY bug)",
+      "Hormuz news: British military confirms 3rd tanker attack \u2014 corroborates OIL bull/CAD bull/USD caution"
     ],
     "attention_matrix": {
-      "EURUSD": "swing=NONE scalp=OFF readiness=none — no setup, comp=+7.5 none",
-      "GBPUSD": "swing=OPEN(1 pos) scalp=ACTIVE readiness=none(degraded) — H4 BOS bull holds, pos live at 1.34437",
-      "AUDUSD": "swing=NONE scalp=OFF readiness=none — comp=-18.5 none, wr=11%",
-      "USDJPY": "swing=WATCH scalp=OFF readiness=moderate — H1OB 162.063 dist=31p, JPY bug blocks",
-      "USDCAD": "swing=ARMED scalp=OFF readiness=moderate — SELL LIMIT 1.40818 working",
-      "USDCHF": "swing=NONE scalp=OFF readiness=none — comp=-14 none",
-      "GOLD": "swing=ARMED scalp=N/A readiness=weak — SELL LIMIT 4021.39 working (comp=-37 weak)",
-      "OIL_CRUDE": "swing=NONE scalp=N/A readiness=none — comp=+15 none, no OB alert"
+      "EURUSD": "swing=NONE scalp=OFF readiness=none \u2014 no setup, comp=+7.5 none",
+      "GBPUSD": "swing=OPEN(1 pos) scalp=ACTIVE readiness=none(degraded) \u2014 H4 BOS bull holds, pos live at 1.34437",
+      "AUDUSD": "swing=NONE scalp=OFF readiness=none \u2014 comp=-18.5 none, wr=11%",
+      "USDJPY": "swing=WATCH scalp=OFF readiness=moderate \u2014 H1OB 162.063 dist=31p, JPY bug blocks",
+      "USDCAD": "swing=ARMED scalp=OFF readiness=moderate \u2014 SELL LIMIT 1.40818 working",
+      "USDCHF": "swing=NONE scalp=OFF readiness=none \u2014 comp=-14 none",
+      "GOLD": "swing=ARMED scalp=N/A readiness=weak \u2014 SELL LIMIT 4021.39 working (comp=-37 weak)",
+      "OIL_CRUDE": "swing=NONE scalp=N/A readiness=none \u2014 comp=+15 none, no OB alert"
     }
   },
   {
@@ -330,7 +330,7 @@
     "new_alerts": 0,
     "removed_alerts": 0,
     "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
-    "summary": "Heartbeat tick — 0 events. GBPUSD BUY HOLD (H4 BOS bull intact, H1/M15 bearish, UPL=-$0.44, SL=1.3415). GOLD/USDCAD LIMITs KEEP. USDJPY WATCH-only. No new trades. bal=$998.16.",
+    "summary": "Heartbeat tick \u2014 0 events. GBPUSD BUY HOLD (H4 BOS bull intact, H1/M15 bearish, UPL=-$0.44, SL=1.3415). GOLD/USDCAD LIMITs KEEP. USDJPY WATCH-only. No new trades. bal=$998.16.",
     "attention_matrix": {
       "EURUSD": {
         "swing": "NONE",
@@ -395,7 +395,7 @@
         "type": "alert_audit_request",
         "instrument": "GBPUSD",
         "alert_id": "gbpusd_dayfvg_buy_13494",
-        "outcome": "HOLD — news corroborates bull thesis, LIMIT already filled, position held"
+        "outcome": "HOLD \u2014 news corroborates bull thesis, LIMIT already filled, position held"
       }
     ],
     "positions_opened": 0,
@@ -480,13 +480,13 @@
       }
     ],
     "watchlist_changes": [
-      "gold_h1fvg_sell_4021: note rewritten — LIMIT live, removed -50 gate (escalation=energy not safe-haven confirmed), updated regime_context"
+      "gold_h1fvg_sell_4021: note rewritten \u2014 LIMIT live, removed -50 gate (escalation=energy not safe-haven confirmed), updated regime_context"
     ],
     "news": [
-      "Burnham becomes Labour PM Jul17 — GBP political clarity bull",
-      "BoE Nov hike fully priced, Mar2027 expected — GBP yield floor",
-      "US-Iran sanctions on Iranian oil expired 04:01 GMT Jul17 — oil +12% wk (Brent $85.1), Hormuz transit -62%",
-      "GOLD fell $4165→$3993 despite escalation — USD strength dominant, safe-haven flows absent"
+      "Burnham becomes Labour PM Jul17 \u2014 GBP political clarity bull",
+      "BoE Nov hike fully priced, Mar2027 expected \u2014 GBP yield floor",
+      "US-Iran sanctions on Iranian oil expired 04:01 GMT Jul17 \u2014 oil +12% wk (Brent $85.1), Hormuz transit -62%",
+      "GOLD fell $4165\u2192$3993 despite escalation \u2014 USD strength dominant, safe-haven flows absent"
     ],
     "regime_note_summary": "0 evt heartbeat. GBP bull reinforced (Burnham PM + BoE hikes). Oil +12% wk reinforces CAD bull/USDCAD SELL LIMIT. GOLD bearish thesis confirmed by price action. No new trades.",
     "attention_matrix": {
@@ -592,5 +592,27 @@
     "balance": 998.34,
     "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
     "note": "1 evt: level_cross GBPUSD FVG bottom test. HOLD. GOLD LIMIT ARMED. USDCAD LIMIT not armed. No new trades."
+  },
+  {
+    "tick_ts_utc": "2026-07-17T12:35Z",
+    "events": 0,
+    "event_types": [
+      "heartbeat"
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "positions_held": [
+      "GBPUSD BUY 1000 @ 1.34437 UPL=-$1.59"
+    ],
+    "limit_orders": [
+      "GOLD SELL 0.1 @ 4021.39",
+      "USDCAD SELL 1000 @ 1.40818"
+    ],
+    "balance": 997.04,
+    "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+    "news_searched": true,
+    "news_summary": "GBP bull intact (BoE Nov hike priced, GDP +0.1%); GOLD bearish (below $4k, rate hike bets vs soft PPI/CPI)",
+    "actions": "heartbeat \u2014 GBPUSD HOLD, GOLD/USDCAD LIMIT KEEP, USDJPY comp improved to 49 mod WATCH-only",
+    "audit": "GBPUSD note updated (deeper demand test 1.34278, macro bull intact); USDJPY note updated comp 49 moderate"
   }
 ]
