@@ -381,5 +381,64 @@
         "reason": "comp=+15 none, no alert, sweep alert removed last tick (M15 ChoCH), spread=4p forbids scalp"
       }
     }
+  },
+  {
+    "tick_ts_utc": "2026-07-17T11:01Z",
+    "events_consumed": 2,
+    "events": [
+      {
+        "type": "news_flash",
+        "query_id": "hormuz_strait",
+        "headline": "Strait of Hormuz transits drop as US and Iran escalate attacks across Gulf - Reuters"
+      },
+      {
+        "type": "alert_audit_request",
+        "instrument": "GBPUSD",
+        "alert_id": "gbpusd_dayfvg_buy_13494",
+        "outcome": "HOLD \u2014 news corroborates bull thesis, LIMIT already filled, position held"
+      }
+    ],
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "limits_placed": 0,
+    "limits_cancelled": 0,
+    "open_positions": [
+      {
+        "instrument": "GBPUSD",
+        "direction": "BUY",
+        "size": 1000,
+        "entry": 1.34437,
+        "sl": 1.3415,
+        "tp": 1.365,
+        "upl": -1.07,
+        "age_h": 2.1
+      }
+    ],
+    "pending_limits": [
+      {
+        "instrument": "GOLD",
+        "direction": "SELL",
+        "level": 4021.39,
+        "current": 3993.72
+      },
+      {
+        "instrument": "USDCAD",
+        "direction": "SELL",
+        "level": 1.40818,
+        "current": 1.40377
+      }
+    ],
+    "balance": 997.54,
+    "attention_matrix": {
+      "EURUSD": "swing=NONE scalp=OFF(engine_desync) readiness=none",
+      "GBPUSD": "swing=WATCH scalp=ACTIVE(bull) readiness=none(comp=18.5)",
+      "AUDUSD": "swing=NONE scalp=OFF(wr_11pct) readiness=none",
+      "USDJPY": "swing=WATCH scalp=OFF(pip-conv) readiness=weak(comp=39)",
+      "USDCAD": "swing=WATCH scalp=OFF(CAD-quote) readiness=none(comp=-10.5)",
+      "USDCHF": "swing=NONE scalp=OFF(pip-conv) readiness=none",
+      "GOLD": "swing=ARMED scalp=N/A(spread5p) readiness=moderate(comp=-44.5)",
+      "OIL_CRUDE": "swing=NONE scalp=N/A(spread4p) readiness=none"
+    },
+    "summary": "2 evt: Hormuz news (Reuters) + GBPUSD audit_request. Position HELD. No new trades. 1 pos 2 LIMIT. bal=$997.54"
   }
 ]
