@@ -93,8 +93,106 @@
     "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
     "actions": [
       "USDJPY alert usdjpy_dayfvg_buy_161682 AUTO-REMOVED (dist=75.3p>3xH4ATR=68p, trending away, JPY bug blocks)",
-      "GBPUSD alert gbpusd_dayfvg_buy_13494 MODIFIED: comp dropped +42\u2192+37, gate not met, watchlist-only"
+      "GBPUSD alert gbpusd_dayfvg_buy_13494 MODIFIED: comp dropped +42→+37, gate not met, watchlist-only"
     ],
     "summary": "Heartbeat tick. 0 events. 2 LIMITs intact (GOLD SELL@4021.39, USDCAD SELL@1.40818). USDJPY alert pruned (staleness rule). GBPUSD comp dropped to weak."
+  },
+  {
+    "tick_ts_utc": "2026-07-17T05:42Z",
+    "events_processed": 1,
+    "events": [
+      {
+        "id": "evt_1784266651419_news_flash",
+        "type": "news_flash",
+        "query": "hormuz_strait",
+        "headline": "U.S. military says it attacked a tanker sailing under Curaçao flag; Curaçao denies",
+        "source": "NL Times Jul16",
+        "action": "CORROBORATES CAD bull/OIL bull; safe-haven demand pushes GOLD toward 4008-4021 sell zone"
+      }
+    ],
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "limits_placed": [
+      {
+        "epic": "GBPUSD",
+        "direction": "BUY",
+        "level": 1.34437,
+        "sl": 1.3415,
+        "tp": 1.365,
+        "size": 1000,
+        "rr": "7.2:1",
+        "dealId": "00000000-5700-bd07-044a-beb40055311e",
+        "reason": "comp=+42 moderate bull gate MET; DAY FVG bottom; H4 BOS bull intact"
+      }
+    ],
+    "limits_kept": [
+      {
+        "epic": "GOLD",
+        "direction": "SELL",
+        "level": 4021.39,
+        "dealId": "00000000-56fc-295a-044a-beb40055311e"
+      },
+      {
+        "epic": "USDCAD",
+        "direction": "SELL",
+        "level": 1.40818,
+        "dealId": "00000000-56ad-4300-044a-beb40055311e"
+      }
+    ],
+    "balance_usd": 998.61,
+    "open_positions": 0,
+    "active_limits": 3,
+    "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+    "attention_matrix": {
+      "EURUSD": {
+        "swing": "NONE",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "comp=+17.5 none, no alert; scalp desync-disabled"
+      },
+      "GBPUSD": {
+        "swing": "ARMED",
+        "scalp": "ACTIVE",
+        "readiness": "moderate",
+        "reason": "comp=+42, BUY LIMIT 1.34437 armed; scalp bias=bull"
+      },
+      "AUDUSD": {
+        "swing": "NONE",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "comp=-7.5 none, no alert; scalp wr=11% disabled"
+      },
+      "USDJPY": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "moderate",
+        "reason": "comp=+59.5 all-TF bull; H1 Bull OB 161.897-162.063 WATCH (32p); JPY scalp pip-conv pending"
+      },
+      "USDCAD": {
+        "swing": "ARMED",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "comp=-21 none but SELL LIMIT 1.40818 armed; Hormuz CAD bull intact"
+      },
+      "USDCHF": {
+        "swing": "NONE",
+        "scalp": "OFF",
+        "readiness": "weak",
+        "reason": "comp=+27.5 weak, no alert; CHF pip-conv pending"
+      },
+      "GOLD": {
+        "swing": "ARMED",
+        "scalp": "N/A",
+        "readiness": "moderate",
+        "reason": "comp=-50 mod bear all 4TFs; SELL LIMIT 4021.39 armed; spread 5p"
+      },
+      "OIL_CRUDE": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "none",
+        "reason": "comp=+7.5 none; oil_m15ob_buy_7889 gate +40 not met; spread 4p"
+      }
+    },
+    "scalp_audit": "EURUSD=OFF(desync) GBPUSD=ACTIVE(no trades yet,bias=bull) AUDUSD=OFF(wr=11%/19trades) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
   }
 ]
