@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T05:54:01.705461Z",
+  "generated_at": "2026-07-17T06:28:04.448933Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -479,6 +479,28 @@
       ],
       "news": "Hormuz escalation ongoing; Hormuz\u2192inflation\u2192Fed hawkish\u2192USD strength corroborates GOLD bear; BoE hike bets rising \u2192 GBPUSD bull intact",
       "regime_note": "0 pos 3 LIMIT. OIL alert removed (structural break). USDJPY validated WATCH. GOLD/GBPUSD/USDCAD LIMITs armed."
+    },
+    {
+      "tick_ts_utc": "2026-07-17T06:26Z",
+      "events": 0,
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "alerts_added": [
+        "usdjpy_h1ob_buy_162063"
+      ],
+      "alerts_removed": [
+        "oil_m15ob_buy_7889"
+      ],
+      "active_limits": [
+        "GOLD SELL @4021.39",
+        "GBPUSD BUY @1.34437",
+        "USDCAD SELL @1.40818"
+      ],
+      "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "balance": 998.61,
+      "open_positions": 0,
+      "working_orders": 3,
+      "note": "Heartbeat \u2014 0 evt. USDJPY H1 OB watch added (risk_guard JPY bug blocks ARM). OIL alert removed from watchlist (structural break). All 3 LIMITs intact."
     }
   ]
 }

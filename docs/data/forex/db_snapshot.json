@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-17T05:53:21.565280+00:00",
+  "generated_at": "2026-07-17T06:23:35.753237+00:00",
   "counts": {
     "trades": 54,
     "events": 8337,
     "ticks": 59,
-    "regime_snapshots": 302,
+    "regime_snapshots": 303,
     "broker_positions": 0,
     "counterfactuals": 216
   },
@@ -1063,6 +1063,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-07-17T06:47Z",
+      "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "note_text": "2026-07-17 tick 2026-07-17T06:47Z \u2014 1 evt: level_cross OIL_CRUDE oil_m15ob_buy_7889 (cross_down, comp=2 readiness=none \u2192 SKIP). OIL M15 OB zone (78.459-78.894) structurally broken: price=78.359 below OB bottom, M15 ChoCH bear at 78.459, fresh M15 bear FVG 78.429-78.959. ALERT REMOVED (structural invalidation, gate never met across 4 fires). GOLD SELL LIMIT 4021.39 KEEP (comp=-50 mod bear all 4 TFs, price=3984.7, dist=36.7p; news: Hormuz\u2192inflation\u2192Fed hawkish\u2192USD strength corroborates bear). GBPUSD BUY LIMIT 1.34437 KEEP (comp=+42 mod bull, bid=1.34636, 19.9p from fill; UK news: BoE hike bets rising, GBP above 1.35 intact). USDCAD SELL LIMIT 1.40818 KEEP (comp=-21 none, bid=1.40332, 48.6p from fill; CAD bull via Hormuz/oil intact). USDJPY comp=59.5 mod bull \u2014 alert usdjpy_dayfvg_buy_161682 MODIFIED (validated fires=4 h4=100%, KEEP per rule 2); H1 OB 162.063-161.897 nearer trigger (dist=31.6p, just outside 30p ARM zone, WATCH). 0 pos 3 LIMIT; bal=$998.61.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-07-17T05:42Z",
       "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
       "note_text": "2026-07-17 tick 2026-07-17T05:42Z \u2014 1 evt: news_flash hormuz_strait 'US military says it attacked tanker under Cura\u00e7ao flag; Cura\u00e7ao denies' (NL Times Jul16). Direct US military tanker attack \u2014 LATEST HORMUZ ESCALATION, CORROBORATES CAD bull/OIL bull, adds safe-haven demand pushing GOLD toward sell zone 4008-4021. GBPUSD comp recovered +37\u2192+42 (gate MET) \u2014 BUY LIMIT ARMED @ 1.34437 DAY FVG bottom (dealId 00000000-5700-bd07-044a-beb40055311e), SL=1.3415 TP=1.365 R:R=7.2:1. GOLD SELL LIMIT 4021.39 KEEP (comp=-50 mod bear all 4 TFs, price 3989 bid, 32.4p from fill; 3\u00d7H4ATR=93.4p; Hormuz safe-haven spike may drive fill). USDCAD SELL LIMIT 1.40818 KEEP (comp=-21 none, price 1.40319, 50p from fill; Hormuz CAD bull intact). USDJPY 162.383 comp=+59.5 mod bull all TFs \u2014 H1 Bull OB 161.897-162.063 (32p below, WATCH). OIL 78.894 comp=+7.5 none \u2014 gate +40 not met. 0 pos 3 LIMIT; bal=$998.61.",
@@ -1130,14 +1138,6 @@
       "ts_utc": "2026-07-16T14:32Z",
       "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
       "note_text": "2026-07-16 tick 2026-07-16T14:32Z \u2014 1 event: news_flash hormuz_strait 'Ships Reject US Military-Guided Strait Of Hormuz Transits After Iranian Attacks' (Marine Insight, Jul16 12:44Z). Escalation deepens: ships refusing US military escort = supply blockade risk elevated. OIL bull thesis CONFIRMED (Hormuz supply risk premium); oil_m15ob_buy_7889 KEEP (gate +40 unmet, comp=+21). USDCAD SELL LIMIT 1.40818 KEEP (CAD bull via oil confirmed, thesis intact; comp=-29 degraded from -43 but DAY FVG zone 1.40774-1.41252 fresh, live working order valid). GOLD gate comp<=-50 KEEP TIGHT (safe-haven bid risk from escalation; comp=-43 unmet; price 3997 below H1 FVG 4008-4021). GBPUSD comp=+34.5 improving (gate +40 unmet, WATCH). USDJPY comp=+57 moderate bull (BLOCKED risk_guard JPY bug). No new entries. 0 pos, 1 LIMIT. bal=$998.61.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-07-16T13:43Z",
-      "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
-      "note_text": "2026-07-16 tick 2026-07-16T13:43Z \u2014 1 event: level_cross OIL_CRUDE oil_h1fvg_buy_7988 (price 79.794 crossed below H1 FVG 79.879). OIL comp=+21 gate +40 unmet \u2192 SKIP entry. H1 FVG zone 79.819-79.879 breached (price now 79.683 below zone) \u2192 FVG mitigated. MODIFY alert \u2192 oil_m15ob_buy_7889 (M15 BullOB 78.459-78.894). GOLD: comp=-43 moderate bear, price 3983, H1 FVG bear 3996.89-4021.39 fresh (38p from level, gate -50 unmet). STATE SYNC: REMOVE gold_h4fvg_sell_4091 (stale: dist=108p > 3\u00d7H4ATR=98p, price trending bear), ADD gold_h1fvg_sell_4021 from watchlist (fresh H1 FVG, gate -50 unmet). REMOVE gbpusd_h4_buy_13480, ADD gbpusd_dayfvg_buy_13494 (DAY FVG, dist=15.5p, comp=+29.5 weak). USDCAD SELL LIMIT 1.40818 KEEP (70p from trigger, oil rally/CAD bull intact). 0 pos, 1 LIMIT. bal=$998.61.",
       "binary_event_name": null,
       "binary_event_active": 0,
       "binary_event_deadline": null
