@@ -725,5 +725,32 @@
     "balance": 1000.54,
     "open_positions": 2,
     "working_orders": 1
+  },
+  {
+    "tick_ts_utc": "2026-07-17T18:47Z",
+    "events": 0,
+    "opened": 0,
+    "closed": 0,
+    "positions": [
+      "GBPUSD BUY @ 1.34437 UPL=+$1.00",
+      "GOLD SELL @ 4021.44 UPL=+$1.185"
+    ],
+    "limits": [
+      "USDCAD SELL LIMIT @ 1.40818 GTC"
+    ],
+    "balance": 1000.8,
+    "pnl": 2.19,
+    "audit": "removed usdjpy_dayfvg_buy_161682 (staleness). Fixed usdjpy_h1ob_buy_162063 active=True.",
+    "attention": {
+      "EURUSD": "swing=NONE scalp=OFF readiness=none",
+      "GBPUSD": "swing=WATCH scalp=OFF readiness=weak",
+      "AUDUSD": "swing=NONE scalp=OFF readiness=none",
+      "USDJPY": "swing=WATCH scalp=OFF readiness=moderate",
+      "USDCAD": "swing=WATCH scalp=OFF readiness=none",
+      "USDCHF": "swing=NONE scalp=OFF readiness=none",
+      "GOLD": "swing=WATCH scalp=N/A readiness=weak",
+      "OIL_CRUDE": "swing=NONE scalp=N/A readiness=none"
+    },
+    "scalp_audit": "EURUSD=OFF(engine-desync) GBPUSD=OFF(wr=0% 31trades) AUDUSD=OFF(wr=11% 19trades) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
   }
 ]

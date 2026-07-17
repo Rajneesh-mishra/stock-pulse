@@ -1,8 +1,8 @@
 {
   "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
-  "tick_ts_utc": "2026-07-17T18:33Z",
-  "state_ts_utc": "2026-07-17T18:33Z",
-  "regime_note": "2026-07-17 tick 2026-07-17T18:33Z \u2014 1 evt (news_flash hormuz_strait CNBC 'worst case scenario' Iran attacks intensifying). 6th Hormuz corroboration: OIL bull intact, CAD bull intact. GOLD SELL HOLD @ 4021.44, bid=4012.90, UPL=+$0.824, age=2.25h (trend max 24h), comp=-33 weak bear (H4 FVG 4002.59-4007.76 unmitigated, trail 4003.88 not triggered, SL=4039). GBPUSD BUY HOLD @ 1.34437, bid=1.34548, UPL=+$1.11, age=9.6h (trend max 24h), H4 BOS bull 1.34519 intact, comp=+28.5 weak. USDCAD SELL LIMIT 1.40818 KEEP GTC (comp=-23 none, DAY FVG 1.40774-1.41252 armed, Hormuz 6th event, dist=70p). GBPUSD scalp DISABLED (0% WR on 31 trades). News-query windows rolled +1d all queries. 2 pos 1 LIMIT; bal=$1000.54.",
+  "tick_ts_utc": "2026-07-17T18:47Z",
+  "state_ts_utc": "2026-07-17T18:47Z",
+  "regime_note": "2026-07-17T18:47Z tick 2026-07-17T18:47Z \u2014 0 evt (heartbeat). GOLD SELL HOLD @ 4021.44 bid=4009.29 UPL=+$1.185 age=2.4h (trend max 24h) comp=weak bear trail@4003.88 not-hit SL=4039 TP=3970. GBPUSD BUY HOLD @ 1.34437 bid=1.34537 UPL=+$1.00 age=9.8h (trend max 24h) H4-BOS-bull-1.34519 intact comp=weak. USDCAD SELL LIMIT 1.40818 KEEP GTC (Hormuz CAD bull thesis, dist=67p, H4 FVG unmitigated). USDJPY H1OB buy 162.063 WATCH (moderate bull readiness, price 162.44 dist=37.7p vs 30p threshold \u2014 just outside proximity). AUDIT: removed usdjpy_dayfvg_buy_161682 (staleness: dist=75.8p > 3\u00d7H4ATR=67.5p, no catalyst). 2 pos 1 LIMIT; bal=$1000.80.",
   "regime_note_prev": "2026-07-17 tick 2026-07-17T17:45Z \u2014 3 evt (news_flash hormuz_strait Tanker struck Hormuz; alert_audit_request USDCAD usdcad_h4fvg_sell_140818; position_opened GOLD SELL). Hormuz: 5th corroborating escalation (TradeWinds: tanker projectile strike Jul17). OIL bull intact, CAD bull intact. GOLD safe-haven NOT materializing \u2014 USD strength dominant, GOLD at 4010.75 falling. GBPUSD BUY HOLD @ 1.34437, bid=1.34516, UPL=+$0.79, age=8.8h (trend max 24h), H4 BOS bull 1.34519 intact, SL=1.3415 10.6p buffer. comp=+21 none (H1+M15 mixed). HOLD. GOLD SELL OPEN @ 4021.44, bid=4010.75, UPL=+$1.04, age=1.4h (trend max 24h), H1 BOS bear, TP=3970 (51p away), SL=4039 (+1R at 4003.88 not reached, no trail yet). USDCAD SELL LIMIT 1.40818 KEEP \u2014 Hormuz (5th event) corroborates CAD bull; price at 1.40146 (67p below limit), FVG 1.40774-1.41252 unmitigated; GTC valid. comp=-33 weak bear. USDJPY WATCH-only (risk_guard blocked). 2 pos 1 LIMIT; bal=$1000.46.",
   "open_positions": [
     {
@@ -17,7 +17,8 @@
       "thesis_type": "trend",
       "alert_id": "gbpusd_dayfvg_buy_13494",
       "confluence_at_entry": "+42 moderate bull (H4 BOS bull, DAY bull, M15 recovering). DAY FVG bottom 1.34437 anticipation LIMIT.",
-      "upl": 1.11
+      "upl": 1.11,
+      "entry_price": 1.34437
     },
     {
       "deal_id": "00000000-5745-077d-044a-beb40055311e",
@@ -31,7 +32,8 @@
       "thesis_type": "trend",
       "alert_id": "gold_h1fvg_sell_4021",
       "confluence_at_entry": "comp=-35.7 weak bear (H1 BOS bear, H4 bear FVG, DAY price<EMA). H4 TF timeout but DAY+H1 bear confirm. LIMIT filled at 4021.44 vs 4021.39 placed.",
-      "upl": 0.824
+      "upl": 0.824,
+      "entry_price": 4021.44
     }
   ],
   "watchlist": [],
@@ -1555,22 +1557,6 @@
   "balance": 998.16,
   "level_alerts": [
     {
-      "alert_id": "usdjpy_dayfvg_buy_161682",
-      "instrument": "USDJPY",
-      "level": 161.682,
-      "direction": "buy",
-      "active": true,
-      "validated": true,
-      "status": "WATCH",
-      "sl": 161.5,
-      "tp": 163.5,
-      "rr_target": "2.70",
-      "entry_criterion": "BUY LIMIT at H1 OB top 162.063 (arm when price pulls back within 30p). Validated: arm naked LIMIT at moderate+ readiness without confirmation requirement. Secondary: DAY FVG 161.682 is structural support backup.",
-      "regime_context": "USDJPY comp=59.5 moderate bull all TFs. H1 BOS bull 162.42. USD strength dominant vs mixed JPY safe-haven. Hormuz escalation day 7.",
-      "last_updated": "2026-07-17T06:47Z",
-      "note": "ENTRY: Pullback into DAY FVG bull zone (161.508-161.682) with M15 bullish rejection wick + close above 161.682. VALIDATED alert (fires=4, h4=100% hit rate) \u2014 naked LIMIT OK at moderate+ readiness. Nearer trigger: H1 Bull OB top at 162.063 (price=162.379, dist=31.6p, just outside 30p ARM zone). Watch for pullback.\n\nCONTEXT: USDJPY comp=+59.5 moderate bull (DAY+H4+H1+M15 all bullish). H1 BOS bull at 162.42 (bars_ago=43). H1 Bull OB 162.063-161.897 (bars_ago=35) is closest entry zone. DAY FVG 161.508-161.682 remains structural support. Hormuz escalation ongoing \u2014 USD strength dominant, JPY safe-haven bid mixed. BoE/Fed hawkish from oil inflation.\n\nSL: 161.50  TP: 163.50  R:R target: 2.70\n\nUpdated 2026-07-17T06:47Z \u2014 validated alert KEEP (rule 2 override of staleness); H1 OB at 162.063 nearer trigger; price 31.6p above OB top (outside 30p ARM zone, WATCH only)."
-    },
-    {
       "alert_id": "usdcad_h4fvg_sell_140818",
       "instrument": "USDCAD",
       "direction": "sell",
@@ -1638,7 +1624,8 @@
       "tp": 163.5,
       "rr_target": 4.7,
       "last_updated": "2026-07-17T10:15Z",
-      "status": "watch"
+      "status": "watch",
+      "active": true
     }
   ],
   "structure_watch": [
