@@ -1,9 +1,9 @@
 {
   "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
-  "tick_ts_utc": "2026-07-17T10:15Z",
-  "state_ts_utc": "2026-07-17T10:15Z",
-  "regime_note": "2026-07-17 tick 2026-07-17T10:15Z \u2014 5 evt: news_flash hormuz_strait Jul17 'British military reports tanker attack in Strait of Hormuz near Oman' (NL Times/BS) \u2014 3rd corroborating Hormuz escalation event, USD caution intact, OIL bull/CAD bull confirmed; alert_audit_request x2 GBPUSD gbpusd_dayfvg_buy_13494 (hormuz_strait match, news corroborates GBP bull); position_opened GBPUSD BUY 1000 @ 1.34437 SL=1.3415 TP=1.365 dealId=00000000-5701-acfd (LIMIT filled 08:54Z); level_cross gbpusd_dayfvg_buy_13494 cross_down @ 1.344035 (3p below entry, within DAY FVG zone, SL=1.3415 intact). GBPUSD position HELD: comp degraded +42\u2192+18.5 (none) on H1/M15 short-term bearishness, BUT H4 BOS bull (1.34519) intact and DAY FVG demand zone (1.34437-1.34598) being tested. SL at 1.3415 (28.7p buffer) gives room. UPL=-$0.29. GOLD SELL LIMIT 4021.39 KEEP (comp=-37 weak bear, price=3996.7, dist=24.7p, structure DAY/H4/H1 bear intact). USDCAD SELL LIMIT 1.40818 KEEP (comp=-40 moderate bear, price=1.40277, dist=54.1p, CAD bull/Hormuz intact). USDJPY comp=52 moderate bull all 4TFs \u2014 H1 OB 161.897-162.063 dist=31.1p WATCH (risk_guard JPY bug blocks trades). Added usdjpy_h1ob_buy_162063 alert (WATCH only). 1 pos, 2 LIMIT; bal=$998.33.",
-  "regime_note_prev": "2026-07-17 tick 2026-07-17T06:26Z \u2014 0 evt (heartbeat). 0 positions, 3 LIMITs all KEEP.",
+  "tick_ts_utc": "2026-07-17T10:22Z",
+  "state_ts_utc": "2026-07-17T10:22Z",
+  "regime_note": "2026-07-17 tick 2026-07-17T10:22Z \u2014 0 evt (heartbeat). GBPUSD BUY 1000 @ 1.34437 HOLD (comp=+18.5 none, H4 BOS bull 1.34519 intact, H1/M15 short-term bearish, UPL=-$0.44, SL=1.3415 27p buffer, age=1h28m within 24h trend limit). GOLD SELL LIMIT 4021.39 KEEP (comp=-42 moderate bear, dist=24.2p, DAY FVG 4008-4017 fresh; 3\u00d7H4ATR=92.9p \u2014 not stale). USDCAD SELL LIMIT 1.40818 KEEP (comp=-18 none but H4/H1/M15 all bearish, dist=52.4p < 3\u00d7H4ATR=63.9p, CAD bull/Hormuz thesis intact). USDJPY comp=52 moderate bull all-TF, H1 OB 161.897-162.063 dist=32.9p WATCH-only (risk_guard JPY blocked). No new trades \u2014 no confluence at moderate+ for new entries outside active positions. News search skipped (last tick 7min ago). 1 pos 2 LIMIT; bal=$998.16.",
+  "regime_note_prev": "2026-07-17 tick 2026-07-17T10:15Z \u2014 5 evt: news_flash hormuz_strait Jul17 'British military reports tanker attack in Strait of Hormuz near Oman' (NL Times/BS) \u2014 3rd corroborating Hormuz escalation event, USD caution intact, OIL bull/CAD bull confirmed; alert_audit_request x2 GBPUSD gbpusd_dayfvg_buy_13494 (hormuz_strait match, news corroborates GBP bull); position_opened GBPUSD BUY 1000 @ 1.34437 SL=1.3415 TP=1.365 dealId=00000000-5701-acfd (LIMIT filled 08:54Z); level_cross gbpusd_dayfvg_buy_13494 cross_down @ 1.344035 (3p below entry, within DAY FVG zone, SL=1.3415 intact). GBPUSD position HELD: comp degraded +42\u2192+18.5 (none) on H1/M15 short-term bearishness, BUT H4 BOS bull (1.34519) intact and DAY FVG demand zone (1.34437-1.34598) being tested. SL at 1.3415 (28.7p buffer) gives room. UPL=-$0.29. GOLD SELL LIMIT 4021.39 KEEP (comp=-37 weak bear, price=3996.7, dist=24.7p, structure DAY/H4/H1 bear intact). USDCAD SELL LIMIT 1.40818 KEEP (comp=-40 moderate bear, price=1.40277, dist=54.1p, CAD bull/Hormuz intact). USDJPY comp=52 moderate bull all 4TFs \u2014 H1 OB 161.897-162.063 dist=31.1p WATCH (risk_guard JPY bug blocks trades). Added usdjpy_h1ob_buy_162063 alert (WATCH only). 1 pos, 2 LIMIT; bal=$998.33.",
   "open_positions": [
     {
       "deal_id": "00000000-5701-acfd-044a-beb40055311e",
@@ -17,7 +17,7 @@
       "thesis_type": "trend",
       "alert_id": "gbpusd_dayfvg_buy_13494",
       "confluence_at_entry": "+42 moderate bull (H4 BOS bull, DAY bull, M15 recovering). DAY FVG bottom 1.34437 anticipation LIMIT.",
-      "upl": -0.29
+      "upl": -0.44
     }
   ],
   "watchlist": [],
@@ -1538,7 +1538,7 @@
     "active": false,
     "note": "No active binary event. US-Iran escalation ONGOING (Hormuz attacks confirmed coordinated Jul16 ABC News). Sustained escalation regime \u2014 supply disruption narrative intact. No ceasefire signal. GOLD safe-haven bid still not holding (3984 despite Hormuz news = USD strength dominant)."
   },
-  "balance": 998.61,
+  "balance": 998.16,
   "level_alerts": [
     {
       "alert_id": "usdjpy_dayfvg_buy_161682",

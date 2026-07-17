@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T10:17:19.867994Z",
+  "generated_at": "2026-07-17T10:23:38.941241Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -552,6 +552,71 @@
         "USDCHF": "swing=NONE scalp=OFF readiness=none \u2014 comp=-14 none",
         "GOLD": "swing=ARMED scalp=N/A readiness=weak \u2014 SELL LIMIT 4021.39 working (comp=-37 weak)",
         "OIL_CRUDE": "swing=NONE scalp=N/A readiness=none \u2014 comp=+15 none, no OB alert"
+      }
+    },
+    {
+      "tick_ts_utc": "2026-07-17T10:22Z",
+      "events_count": 0,
+      "events_type": "heartbeat",
+      "positions_open": 1,
+      "limits_pending": 2,
+      "balance": 998.16,
+      "upl": -0.44,
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "new_alerts": 0,
+      "removed_alerts": 0,
+      "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "summary": "Heartbeat tick \u2014 0 events. GBPUSD BUY HOLD (H4 BOS bull intact, H1/M15 bearish, UPL=-$0.44, SL=1.3415). GOLD/USDCAD LIMITs KEEP. USDJPY WATCH-only. No new trades. bal=$998.16.",
+      "attention_matrix": {
+        "EURUSD": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "comp=+15 none, no alert, scalp disabled (engine desync)"
+        },
+        "GBPUSD": {
+          "swing": "ARMED",
+          "scalp": "ACTIVE",
+          "readiness": "none",
+          "reason": "position open @ 1.34437, H4 BOS bull intact, SL=1.3415"
+        },
+        "AUDUSD": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "comp=-18.5 none, no alert, scalp disabled (wr=11%)"
+        },
+        "USDJPY": {
+          "swing": "WATCH",
+          "scalp": "OFF",
+          "readiness": "moderate",
+          "reason": "comp=+52 moderate bull, H1 OB 162.063 WATCH-only, risk_guard JPY blocked"
+        },
+        "USDCAD": {
+          "swing": "ARMED",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "SELL LIMIT live @ 1.40818 (52.4p from fill), DAY FVG target, CAD bull intact"
+        },
+        "USDCHF": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "comp=-14 none, no alert, CHF pip-value conversion pending"
+        },
+        "GOLD": {
+          "swing": "ARMED",
+          "scalp": "N/A",
+          "readiness": "moderate",
+          "reason": "SELL LIMIT live @ 4021.39 (24.2p from fill), comp=-42 moderate bear"
+        },
+        "OIL_CRUDE": {
+          "swing": "NONE",
+          "scalp": "N/A",
+          "readiness": "none",
+          "reason": "comp=+15 none, no alert, sweep alert removed last tick (M15 ChoCH), spread=4p forbids scalp"
+        }
       }
     }
   ]
