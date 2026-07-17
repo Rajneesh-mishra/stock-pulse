@@ -97,14 +97,14 @@
       "direction": "buy",
       "active": true,
       "validated": false,
-      "note": "ENTRY: BUY position OPEN @ 1.34437 (DAY FVG bottom, LIMIT filled Jul17 08:54Z). H4 BOS bull (1.34519) is invalidation gate \u2014 cancel/close only on H4 close below SL 1.3415.\n\nCONTEXT: GBPUSD 1.34278 bid (Jul17 12:35Z). comp=+3.5 none (DAY bull, H4/H1/M15 mixed-bear). DAY FVG (1.34437-1.34598) now mitigated 2 bars ago; H4 bear FVG (1.34573-1.34404) unmitigated. Price has extended below FVG bottom into deeper demand test. SL 1.3415 buffer=12.8p intact. BoE Nov hike fully priced, UK GDP +0.1% May, Burnham/Mahmood political clarity \u2014 GBP bull thesis intact. thesis_type=trend, max_hold=24h, age=3.7h.\n\nSL: 1.3415  TP: 1.365  R:R target: 7.2:1\n\nUpdated 2026-07-17T12:35Z \u2014 deeper demand test below FVG bottom, SL intact, GBP macro bull confirmed by news. HOLD.",
+      "note": "ENTRY: BUY position OPEN @ 1.34437 (DAY FVG bottom, LIMIT filled Jul17 08:54Z). H4 BOS bull (1.34519) is invalidation gate \u2014 cancel/close only on H4 close below SL 1.3415.\n\nCONTEXT: GBPUSD 1.34586 (Jul18 02:15Z). comp=+39 weak bull (DAY/H4 bull, H1/M15 mixed). H4 BOS bull 1.34519 intact; price above it. BoE 75% hike priced for Jul30 MPC \u2014 GBP macro bull supportive. Age=17.3h (trend max 24h). UPL=+$1.49.\n\nSL: 1.3415  TP: 1.365  R:R target: 7.2\n\nUpdated 2026-07-18T02:15Z \u2014 H4 BOS intact, bid=1.34586, UPL=+$1.49. BoE Jul30 hike 75% priced = GBP bull. HOLD.",
       "entry_criterion": "BUY position OPEN @ 1.34437 via LIMIT fill. Management: SL=1.3415, TP=1.365. Cancel alert if H4 BOS (1.34519) structurally broken on H4 close below 1.3415.",
       "regime_context": "GBPUSD 1.34278. comp=+3.5 none. SL 1.3415 intact 12.8p buffer. BoE Nov hike priced, UK GDP +0.1%. Demand zone being tested.",
       "sl": 1.3415,
       "tp": 1.365,
       "rr_target": "7.2",
-      "current_price_ref": 1.34278,
-      "last_updated": "2026-07-17T12:35Z"
+      "current_price_ref": 1.34586,
+      "last_updated": "2026-07-18T02:15Z"
     },
     {
       "id": "gold_h1fvg_sell_4021",
@@ -116,14 +116,14 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Position OPEN @ 4021.44 (LIMIT filled 2026-07-17T16:18Z). M15 bearish rejection at H1 FVG sell zone 4008-4021 \u2014 management mode.\n\nCONTEXT: H1 BOS bear (Jul15, 55 bars ago). DAY price < EMA21 < EMA50. USD strength dominant; GOLD safe-haven NOT materializing (5th Hormuz event but GOLD falling).\n\nSL: 4039.0  TP: 3970.0  R:R target: 2.93\n\nRewritten 2026-07-17T17:45Z \u2014 LIMIT filled, position management mode. Trail at +1R (4003.88): SL \u2192 breakeven 4021.44.",
+      "note": "ENTRY: Position OPEN @ 4021.44 (LIMIT filled 2026-07-17T16:18Z). M15 bearish rejection at H1 FVG sell zone 4008-4021 \u2014 management mode.\n\nCONTEXT: GOLD bid=4013.58 (Jul18 02:15Z). comp=-33 weak bear (DAY/H4/H1 bear, M15 ChoCH bull \u2014 noise). H1 BOS bear (Jul15). DAY price<EMA21<EMA50. USD strength dominant; safe-haven paradox confirmed (gold falls despite Hormuz escalation). Trail at +1R bid=4003.88 not triggered yet. Age=9.9h (trend max 24h). UPL=+$0.79.\n\nSL: 4039.0  TP: 3970.0  R:R target: 2.93\n\nUpdated 2026-07-18T02:15Z \u2014 trail@4003.88 not hit (bid=4013.58). HOLD.",
       "entry_criterion": "Position OPEN at 4021.44 (LIMIT filled). Management: trail at +1R.",
       "regime_context": "GOLD 3984.18, comp=-50 moderate bear all TFs. H4 FVG mitigated. DAY FVG fresh 4008.97-4017.47.",
       "sl": 4039.0,
       "tp": 3970.0,
       "rr_target": 2.93,
-      "current_price_ref": 3984.18,
-      "last_updated": "2026-07-17T17:45Z"
+      "current_price_ref": 4013.58,
+      "last_updated": "2026-07-18T02:15Z"
     },
     {
       "id": "usdjpy_h1ob_buy_162063",
@@ -135,15 +135,15 @@
       "direction": "buy",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Price returns to H1 bull OB range (161.897-162.063) with M15 bullish rejection wick >=5p.\n\nCONTEXT: USDJPY 162.362 (Jul17 12:35Z). comp=+49 moderate (improved from 39 weak \u2014 DAY+H4+H1 bull, M15 recovering). H1 OB bars_ago~40, still unmitigated. Dist=29.9p above OB top (162.063). Risk_guard blocks JPY (pip-value conversion pending). WATCH only.\n\nSL: 161.870  TP: 162.450  R:R target: 2.0\n\nUpdated 2026-07-17T12:35Z \u2014 comp improved to 49 moderate but risk_guard JPY blocked. WATCH only, no trade.",
+      "note": "ENTRY: Price returns to H1 bull OB range (161.897-162.063) with M15 bullish rejection wick >=5p.\n\nCONTEXT: USDJPY 162.422 (Jul18 02:15Z). comp=+59.5 moderate (4/4 TF agree bullish \u2014 DAY ChoCH bull, H4/H1 BOS bull, M15 recovering). H1 OB bars_ago~50, unmitigated. Dist=35.9p above OB top (162.063). H4 bear OB at 162.59-162.842 is resistance target. Risk_guard blocks JPY (pip-value conversion pending). WATCH only.\n\nSL: 161.870  TP: 162.590  R:R target: 2.7\n\nUpdated 2026-07-18T02:15Z \u2014 comp upgraded to +59.5 (4/4 TF bull, near strong threshold). dist increased to 35.9p. TP set to H4 bear OB bottom 162.590. WATCH only.",
       "entry_criterion": "Price drops to H1 OB 161.897-162.063 + M15 bullish rejection wick >=5p. WATCH only \u2014 risk_guard blocks JPY until pip-value conversion fixed.",
-      "regime_context": "USDJPY 162.362. comp=+49 moderate. DAY+H4+H1 bull, M15 recovering. H1 OB 161.897-162.063 unmitigated 29.9p below. Risk_guard blocks JPY.",
+      "regime_context": "USDJPY 162.422. comp=+59.5 moderate (4/4 TF bull). DAY+H4+H1 bull. H1 OB 161.897-162.063 unmitigated 35.9p below. Risk_guard blocks JPY.",
       "sl": 161.87,
-      "tp": 162.45,
-      "rr_target": 2.0,
-      "current_price_ref": 162.362,
-      "last_updated": "2026-07-17T12:35Z"
+      "tp": 162.59,
+      "rr_target": 2.7,
+      "current_price_ref": 162.422,
+      "last_updated": "2026-07-18T02:15Z"
     }
   ],
-  "last_updated": "2026-07-17T11:44Z"
+  "last_updated": "2026-07-18T02:15Z"
 }
