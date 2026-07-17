@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T06:28:04.448933Z",
+  "generated_at": "2026-07-17T10:17:19.867994Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -501,6 +501,58 @@
       "open_positions": 0,
       "working_orders": 3,
       "note": "Heartbeat \u2014 0 evt. USDJPY H1 OB watch added (risk_guard JPY bug blocks ARM). OIL alert removed from watchlist (structural break). All 3 LIMITs intact."
+    },
+    {
+      "tick_ts_utc": "2026-07-17T10:15Z",
+      "events_processed": 5,
+      "events": [
+        "news_flash: hormuz_strait British military tanker attack Hormuz Jul17",
+        "alert_audit_request: GBPUSD gbpusd_dayfvg_buy_13494 (hormuz match x2)",
+        "position_opened: GBPUSD BUY 1000 @ 1.34437 (LIMIT filled)",
+        "level_cross: GBPUSD cross_down @ 1.344035"
+      ],
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "limits_placed": 0,
+      "limits_cancelled": 0,
+      "open_positions": [
+        {
+          "epic": "GBPUSD",
+          "dir": "BUY",
+          "entry": 1.34437,
+          "upl": -0.29
+        }
+      ],
+      "active_orders": [
+        {
+          "epic": "GOLD",
+          "dir": "SELL",
+          "level": 4021.39
+        },
+        {
+          "epic": "USDCAD",
+          "dir": "SELL",
+          "level": 1.40818
+        }
+      ],
+      "balance": 998.33,
+      "decisions": [
+        "GBPUSD BUY LIMIT filled @ 1.34437 08:54Z \u2014 HOLD (H4 BOS bull intact, DAY FVG demand zone, SL=1.3415)",
+        "GOLD SELL LIMIT 4021.39 KEEP (comp=-37 weak bear, structure DAY/H4/H1 bear)",
+        "USDCAD SELL LIMIT 1.40818 KEEP (comp=-40 moderate bear, CAD bull/Hormuz intact)",
+        "USDJPY WATCH H1 OB 162.063 \u2014 added usdjpy_h1ob_buy_162063 alert (can't ARM, JPY bug)",
+        "Hormuz news: British military confirms 3rd tanker attack \u2014 corroborates OIL bull/CAD bull/USD caution"
+      ],
+      "attention_matrix": {
+        "EURUSD": "swing=NONE scalp=OFF readiness=none \u2014 no setup, comp=+7.5 none",
+        "GBPUSD": "swing=OPEN(1 pos) scalp=ACTIVE readiness=none(degraded) \u2014 H4 BOS bull holds, pos live at 1.34437",
+        "AUDUSD": "swing=NONE scalp=OFF readiness=none \u2014 comp=-18.5 none, wr=11%",
+        "USDJPY": "swing=WATCH scalp=OFF readiness=moderate \u2014 H1OB 162.063 dist=31p, JPY bug blocks",
+        "USDCAD": "swing=ARMED scalp=OFF readiness=moderate \u2014 SELL LIMIT 1.40818 working",
+        "USDCHF": "swing=NONE scalp=OFF readiness=none \u2014 comp=-14 none",
+        "GOLD": "swing=ARMED scalp=N/A readiness=weak \u2014 SELL LIMIT 4021.39 working (comp=-37 weak)",
+        "OIL_CRUDE": "swing=NONE scalp=N/A readiness=none \u2014 comp=+15 none, no OB alert"
+      }
     }
   ]
 }
