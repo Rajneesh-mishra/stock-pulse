@@ -24,14 +24,14 @@
       "reason": "engine_desync_loop: 4 consecutive SL hits (b55d/b59c/e0bb/e136) all ~1.8-1.9p SL. Engine unable to track own positions (open_failed misfire). Disabled 2026-04-28T10:55Z. Re-enable after confirming engine tracks positions correctly and SL sizing reviewed (min 5p EURUSD)."
     },
     "GBPUSD": {
-      "enabled": true,
+      "enabled": false,
       "mode": "session_open_break",
       "bias": "bull",
       "sessions": [
         "london",
         "ny"
       ],
-      "reason": "bias updated to bull: comp=+42 moderate (recovered from +32 weak). DAY/H4/H1 bull, M15 recovering. Gate met on GBPUSD DAY FVG alert. Updated 2026-07-17T04:41Z."
+      "reason": "wr=0pct on 31 trades \u2014 disabled per rule: WR<40% on >=20 trades. Session_open_break pattern failing. Re-enable only after strategy review + confirmed WR improvement."
     },
     "AUDUSD": {
       "enabled": false,

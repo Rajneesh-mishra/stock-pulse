@@ -708,5 +708,22 @@
       "usdcad_comp": -23,
       "actions": "HOLD GBPUSD BUY (H4 BOS bull intact), HOLD GOLD SELL (trail not triggered), KEEP USDCAD LIMIT (Iran war confirms CAD bull). News-query windows rolled +1d."
     }
+  },
+  {
+    "tick_ts_utc": "2026-07-17T18:33Z",
+    "events": [
+      "news_flash hormuz_strait CNBC worst-case-scenario 6th-Hormuz-event"
+    ],
+    "decisions": {
+      "GBPUSD": "HOLD BUY @ 1.34437, bid=1.34548 UPL=+$1.11 age=9.6h",
+      "GOLD": "HOLD SELL @ 4021.44, bid=4012.90 UPL=+$0.824 age=2.25h trail@4003.88 not triggered",
+      "USDCAD": "SELL LIMIT 1.40818 KEEP GTC (dist=70p Hormuz 6th event)"
+    },
+    "trades": [],
+    "scalp_change": "GBPUSD scalp DISABLED (0% WR 31 trades)",
+    "news_roll": "All 6 query windows rolled to ['17 Jul 2026','18 Jul 2026','19 Jul 2026','20 Jul 2026']",
+    "balance": 1000.54,
+    "open_positions": 2,
+    "working_orders": 1
   }
 ]
