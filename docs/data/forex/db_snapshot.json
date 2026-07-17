@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-16T20:40:13.930144+00:00",
+  "generated_at": "2026-07-17T04:42:56.909646+00:00",
   "counts": {
     "trades": 54,
-    "events": 8334,
+    "events": 8335,
     "ticks": 59,
-    "regime_snapshots": 298,
+    "regime_snapshots": 299,
     "broker_positions": 0,
     "counterfactuals": 215
   },
@@ -1063,6 +1063,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-07-17T02:11Z",
+      "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "note_text": "2026-07-17 tick 2026-07-17T02:11Z \u2014 1 event: level_cross OIL oil_m15ob_buy_7889 (4th fire today; price crossed OB zone top 78.894; comp=+10.5 NONE gate+40 unmet) \u2192 SKIP. OIL 78.974 \u2014 zone 78.459-78.894 held (price bounced from 78.89 back to 78.97), M15 FVG 78.664-78.674 fresh unmitigated, but DAY TF still bearish (-0.15), H4 mixed (+0.4). Gate not recovered. WATCH. GOLD SELL LIMIT 4021.39 KEEP (comp=-53 mod bear, dist=45.7p, 3\u00d7H4ATR=93.9p \u2192 not stale, H4 FVG 4007.8-4021.39 unmitigated). USDCAD SELL LIMIT 1.40818 KEEP (comp=-22.5 none, dist=39p, DAY FVG 1.40774-1.41252 fresh, CAD bull intact). GBPUSD 1.34775 inside DAY FVG (comp=+24.5 none, gate<+40 not met). USDJPY 162.363 comp=+54.5 moderate bull (68p from DAY FVG trigger 161.682; JPY bug blocks). News queries: opec_supply/boj_intervention/rba_hike rolled to [14-17 Jul 2026] window. 0 pos, 2 LIMITs; bal=$998.61.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-07-16T20:35Z",
       "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
       "note_text": "2026-07-16 tick 2026-07-16T20:35Z \u2014 1 event: news_flash hormuz_strait 'Hormuz tanker attacks slow Gulf oil exports as shipping risks mount' (World Oil Jul15). CORROBORATES existing thesis \u2014 Hormuz escalation day 7+, CAD bull and OIL bull intact; no new catalyst beyond what's priced. GOLD SELL LIMIT 4021.39 KEEP (comp=-53 moderate bear unchanged, all 4 TFs bear, H4 FVG 4007.8-4021.39 unmitigated, price at 3973.76 \u2014 47.6p from fill). USDCAD SELL LIMIT 1.40818 KEEP (price 1.40478 approaching, DAY FVG 1.40774-1.41252 fresh, Hormuz confirms CAD bull). OIL 78.919 near M15 OB 78.459-78.894 but comp=+10.5 gate not met. GBPUSD 1.34776 inside DAY FVG comp=+24.5 none (gate not met). USDJPY 162.36 comp=+54.5 moderate bull (JPY bug blocks). 0 pos, 2 LIMITs; bal=$998.61.",
@@ -1130,14 +1138,6 @@
       "ts_utc": "2026-07-15T20:56Z",
       "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
       "note_text": "2026-07-15T20:56Z \u2014 2 events consumed: USDCHF position_closed (Jul13 +$7.18, bal=$998.61), Hormuz news_flash Jul7 stale (consumed). USDCHF closed at 0.81081 (+29.1p, winner). USDCAD SELL LIMIT armed 1.40818 (H4 bear FVG, comp=-43 mod, SL=1.411, TP=1.3950, R:R=4.67). Alert audit: REMOVE oil_crude_dayfvg_buy_7168 (price 79.70 vs level 71.68, dist=$8.02, 20-M15s trending away, comp flipped bull), ADD usdcad_h4fvg_sell_140818 (ARMED). GOLD 4051 comp=-34.5 weak \u2014 sell alert at 4091 KEEP (40p below zone, valid). GBPUSD 1.33897 comp=+7 none \u2014 sell alert at 1.34213 KEEP (31.6p from zone). USDJPY 162.259 comp=+52 moderate \u2014 buy alert at 161.682 KEEP (57.7p above buy zone, not near). OIL 79.70 comp=+24 none \u2014 no armable setup (R:R fails with wide FVG). 0 positions open, 1 LIMIT armed.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-07-13T13:30Z",
-      "regime_name": "USD_STRENGTH_OIL_BEAR_ONGOING",
-      "note_text": "2026-07-13T13:30Z \u2014 position_opened event: USDCHF BUY 2000 @ 0.8079 filled (SL moved to breakeven +1R). GOLD dropped 4120\u21924062 on hawkish Fed (60% Sep hike odds), USD strength; heading toward $4,000. Alert audit: REMOVE gold_dayfvg_sell_4163 (dist=101p > 3\u00d7H4ATR=92p, stale), REMOVE gold_h4fvg_buy_4117 (direction contradiction comp=-43 bearish), ADD gold_h4fvg_sell_4091 (H4 bear FVG unmitigated, 29p from price, R:R=3.6). USDCHF +20p UPL=$4.89. GBPUSD/OIL readiness=none. USDJPY blocked (JPY bug).",
       "binary_event_name": null,
       "binary_event_active": 0,
       "binary_event_deadline": null

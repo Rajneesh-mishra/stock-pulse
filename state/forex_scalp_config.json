@@ -26,12 +26,12 @@
     "GBPUSD": {
       "enabled": true,
       "mode": "session_open_break",
-      "bias": "neutral",
+      "bias": "bull",
       "sessions": [
         "london",
         "ny"
       ],
-      "reason": "bias reset to neutral: comp=+32 weak (dropped from +45), M15 BOS bear Jul16 02:15Z. DAY/H4/H1 remain bullish but M15 short-term bearish — bias neutral until M15 recovers. Updated 2026-07-16T16:00Z."
+      "reason": "bias updated to bull: comp=+42 moderate (recovered from +32 weak). DAY/H4/H1 bull, M15 recovering. Gate met on GBPUSD DAY FVG alert. Updated 2026-07-17T04:41Z."
     },
     "AUDUSD": {
       "enabled": false,

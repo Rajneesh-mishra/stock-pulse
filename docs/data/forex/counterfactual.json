@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T20:43:22.350867+00:00",
+  "generated_at": "2026-07-17T04:43:38.807204+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -1854,16 +1854,16 @@
       "fires": 3,
       "by_horizon": {
         "1h": {
-          "filled": 2,
-          "favorable": 0,
-          "avg_pips": -28.0,
-          "hit_rate": 0.0
+          "filled": 3,
+          "favorable": 1,
+          "avg_pips": -16.8,
+          "hit_rate": 0.33
         },
         "4h": {
-          "filled": 2,
-          "favorable": 1,
-          "avg_pips": -8.2,
-          "hit_rate": 0.5
+          "filled": 3,
+          "favorable": 2,
+          "avg_pips": 6.0,
+          "hit_rate": 0.67
         },
         "24h": {
           "filled": 0,

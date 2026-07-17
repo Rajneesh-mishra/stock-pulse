@@ -48,5 +48,37 @@
       "GOLD": "swing=ARMED scalp=N/A readiness=moderate comp=-53 LIMIT@4021.39 45.7p_to_fill",
       "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=none comp=+10.5 zone_held_gate_unmet"
     }
+  },
+  {
+    "tick_ts_utc": "2026-07-17T04:41Z",
+    "events_processed": 1,
+    "events": [
+      "evt_1784263027436_news_flash"
+    ],
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "trades_skipped": 0,
+    "active_limits": [
+      {
+        "epic": "GOLD",
+        "direction": "SELL",
+        "level": 4021.39,
+        "sl": 4039.0,
+        "tp": 3970.0,
+        "dealId": "00000000-56fc-295a-044a-beb40055311e"
+      },
+      {
+        "epic": "USDCAD",
+        "direction": "SELL",
+        "level": 1.40818,
+        "sl": 1.411,
+        "tp": 1.395,
+        "dealId": "00000000-56ad-4300-044a-beb40055311e"
+      }
+    ],
+    "balance": 998.61,
+    "pnl_open": 0.0,
+    "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+    "note": "Hormuz investigative piece corroborates CAD bull/OIL bull. GBPUSD gate met (comp=42). Both LIMITs kept."
   }
 ]

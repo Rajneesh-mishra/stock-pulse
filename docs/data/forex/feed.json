@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T20:44:00.531375Z",
+  "generated_at": "2026-07-17T04:44:33.254272Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -237,149 +237,65 @@
       "note": "09:26 UTC \u2014 1 evt: EURUSD level_cross eurusd_sweep_117454_sell_watch fire#2 NO TRADE (comp=+23.5 none; H4 FVG 1.17328-1.17393 unmitigated). REMOVED gbpusd_sweep_135370_sell_watch (price broke above 1.3548 dual resistance; SL 1.3558 proximity). OIL comp upgraded +40 mod. 12 alerts active. 2 working LIMITs (AUDUSD BUY@0.7143, USDCAD SELL@1.3675). daily_pnl=-$16.82. 0 trades."
     },
     {
-      "tick_ts_utc": "2026-07-16T00:00Z",
-      "events_consumed": 1,
-      "events": [
-        "evt_1784092326452_news_flash (news_flash: iran_ceasefire \u2014 Iran blames US naval blockade for Islamabad Memorandum collapse, Jul15)"
-      ],
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "trades_skipped": 0,
-      "positions_open": 0,
-      "working_orders": 1,
-      "working_order_detail": "USDCAD SELL LIMIT 1000 @ 1.40818 SL=1.411 TP=1.395 (armed Jul14, thesis intact)",
-      "balance": 998.61,
-      "daily_pnl": 0.0,
-      "regime": "USD_STRENGTH_OIL_BEAR_ONGOING / Hormuz escalation CONFIRMED (Iran blames US blockade for Islamabad collapse)",
-      "alert_changes": [
-        "REMOVE gbpusd_h4ob_sell_134213 (AUTO-REMOVE: dist=117p > 3xH4ATR=97.8p, price 1.35384 trending away bullish, comp=+45 contradicts sell)",
-        "ADD gbpusd_h4_buy_13480 (BUY at 1.348, SL=1.343, TP=1.368, R:R=4.0, WATCH \u2014 H4 bull pullback zone)"
-      ],
-      "news_queries_updated": [
-        "opec_supply",
-        "boj_intervention",
-        "rba_hike",
-        "us_tariff"
-      ],
-      "scalp_changes": [
-        "GBPUSD bias neutral->bull (comp=+45 mod bull, all-TF aligned)"
-      ],
-      "attention_matrix": {
-        "EURUSD": "swing=NONE scalp=OFF(desync) readiness=weak (comp=+27, no alert, no armable setup)",
-        "GBPUSD": "swing=WATCH scalp=ACTIVE(bull-bias) readiness=moderate (buy alert 1.348, price 1.35384 54p away)",
-        "AUDUSD": "swing=NONE scalp=OFF(wr=11%) readiness=weak (comp=+29, no alert)",
-        "USDJPY": "swing=WATCH scalp=OFF(pip-conv) readiness=weak (dayfvg_buy_161682 VALIDATED fires=4 4h_hr=1.0; 52.6p above buy zone)",
-        "USDCAD": "swing=ARMED scalp=OFF(pip-conv) readiness=moderate (SELL LIMIT 1.40818 armed, comp=-40.5, Iran oil rally confirms bear thesis)",
-        "USDCHF": "swing=NONE scalp=OFF(pip-conv) readiness=none (comp=-4.5, no setup)",
-        "GOLD": "swing=WATCH scalp=N/A readiness=none (sell alert 4091, price 4060 31p below zone; Iran safe-haven bid could rally price toward zone; comp=-5.5 none, monitor)",
-        "OIL_CRUDE": "swing=NONE scalp=N/A readiness=none (comp=+18 none, Iran supply risk bullish OIL but no structural zone armable)"
-      },
-      "scalp_audit": "EURUSD=OFF(desync) GBPUSD=ACTIVE(wr=n/a new-bias-bull) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
-      "notes": "Iran ceasefire collapse headline (News18 Jul15) confirms Hormuz escalation regime. Escalation = GOLD safe-haven bid elevated (price approaching 4091 FVG sell zone). OIL comp=+18 none, no armable long setup. USDCAD SELL LIMIT valid \u2014 bearish thesis reinforced by oil rally \u2192 CAD strength."
-    },
-    {
-      "tick_ts_utc": "2026-07-16T13:43Z",
-      "events_processed": 1,
-      "events": [
-        "level_cross OIL_CRUDE oil_h1fvg_buy_7988"
-      ],
-      "positions_opened": 0,
-      "positions_closed": 0,
-      "orders_placed": 0,
-      "orders_cancelled": 0,
-      "balance": 998.61,
-      "open_positions": 0,
-      "open_orders": 1,
-      "decisions": {
-        "OIL_CRUDE": "SKIP entry (comp=+21 gate +40 unmet). H1 FVG breached. MODIFY \u2192 oil_m15ob_buy_7889 (M15 BullOB 78.894).",
-        "USDCAD": "SELL LIMIT 1.40818 KEEP (70p from trigger, CAD bull intact).",
-        "GOLD": "comp=-43 mod bear. STATE SYNC: REMOVE gold_h4fvg_sell_4091 (stale 108p>3xH4ATR=98p), ADD gold_h1fvg_sell_4021 (H1 FVG, gate -50 unmet).",
-        "GBPUSD": "STATE SYNC: REMOVE gbpusd_h4_buy_13480, ADD gbpusd_dayfvg_buy_13494 (DAY FVG, comp=+29.5 weak).",
-        "USDJPY": "comp=+41 mod bull BLOCKED by risk_guard JPY bug. KEEP.",
-        "EURUSD": "comp=6 none \u2014 NONE",
-        "AUDUSD": "comp=+28 weak \u2014 NONE",
-        "USDCHF": "comp=5 none \u2014 NONE"
-      },
-      "attention_matrix": [
-        "EURUSD    swing=NONE   scalp=OFF    readiness=none    reason: comp=6, desync disabled",
-        "GBPUSD    swing=WATCH  scalp=ACTIVE readiness=weak    reason: comp=+29.5, gbpusd_dayfvg_buy_13494 at 1.34939 (15.5p), gate +40 unmet",
-        "AUDUSD    swing=NONE   scalp=OFF    readiness=weak    reason: comp=+28, no alert, scalp wr=11% disabled",
-        "USDJPY    swing=WATCH  scalp=OFF    readiness=moderate reason: comp=+41, 161.682 (55p away), BLOCKED JPY bug",
-        "USDCAD    swing=ARMED  scalp=OFF    readiness=weak    reason: live SELL LIMIT 1.40818 (70p from 1.40114)",
-        "USDCHF    swing=NONE   scalp=OFF    readiness=none    reason: comp=5, no setup",
-        "GOLD      swing=WATCH  scalp=N/A    readiness=moderate reason: comp=-43, gold_h1fvg_sell_4021 at 4021 (38p), gate -50 unmet",
-        "OIL_CRUDE swing=WATCH  scalp=N/A    readiness=none    reason: comp=+21, oil_m15ob_buy_7889 at 78.894 (79p), gate +40 unmet"
-      ],
-      "scalp_audit": "EURUSD=OFF(desync) GBPUSD=KEEP(bull bias, no trades yet) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
-    },
-    {
-      "tick_ts_utc": "2026-07-16T14:32Z",
-      "events_consumed": 1,
-      "events_detail": [
-        "news_flash hormuz_strait (ships reject US escort, escalation deepens)"
-      ],
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "positions_after": 0,
-      "limits_after": 1,
-      "balance": 998.61,
-      "daily_pnl": 0.0,
-      "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
-      "actions": [
-        "KEEP oil_m15ob_buy_7889 (gate +40 unmet, comp=+21, Hormuz bull confirmed)",
-        "KEEP usdcad_h4fvg_sell_140818 LIMIT (CAD bull thesis confirmed, comp=-29)",
-        "KEEP gold_h1fvg_sell_4021 (gate -50 unmet, safe-haven risk active)",
-        "KEEP gbpusd_dayfvg_buy_13494 (comp=+34.5 improving, gate +40 unmet)",
-        "KEEP usdjpy_dayfvg_buy_161682 (BLOCKED risk_guard JPY bug, comp=+57)",
-        "TUNE iran_ceasefire+hormuz_strait windows +1d (14-17 Jul 2026)"
-      ],
-      "notes": "Hormuz escalation deepens: ships refusing US military escort = elevated supply risk. No entries triggered."
-    },
-    {
-      "tick_ts_utc": "2026-07-16T16:00Z",
-      "events_consumed": 3,
-      "events_detail": [
-        "news_flash hormuz_strait: ships reject US military escort (Marine Insight Jul16 12:44Z)",
-        "level_cross GBPUSD gbpusd_dayfvg_buy_13494 (price 1.3489 entered DAY FVG zone \u2014 comp=+32 weak, gate unmet, SKIP)",
-        "level_cross OIL oil_m15ob_buy_7889 (price 78.894 at M15 BullOB top \u2014 comp=+13.5 none, gate unmet, SKIP)"
-      ],
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "positions_after": 0,
-      "limits_after": 2,
-      "balance": 998.61,
-      "daily_pnl": 0.0,
-      "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
-      "actions": [
-        "SKIP GBPUSD BUY LIMIT (comp=+32 weak, gate +40 unmet, M15 BOS bear)",
-        "SKIP OIL BUY entry (comp=+13.5 none, gate far unmet)",
-        "KEEP GOLD SELL LIMIT 4021.39 (comp=-53 moderate, strengthened)",
-        "KEEP USDCAD SELL LIMIT 1.40818 (no structural break, CAD bull thesis intact)",
-        "KEEP USDJPY WATCH 161.682 (comp=+67 strong, JPY bug blocks)",
-        "KEEP GBPUSD WATCH 1.34939 (in DAY FVG zone, comp +32 weak)",
-        "KEEP OIL WATCH 78.894 (at M15 BullOB, Hormuz news supports but comp none)",
-        "GBPUSD scalp bias updated bull\u2192neutral (M15 BOS bear, comp +45\u2192+32)"
-      ],
-      "notes": "Hormuz ships refusing US escort = escalation deepens. OIL bull context reinforced. GOLD bear momentum building (comp=-53 from -43). All events consumed, no new entries triggered."
-    },
-    {
-      "tick_ts_utc": "2026-07-16T22:05Z",
+      "tick_ts_utc": "2026-07-17T02:11Z",
       "events_processed": 1,
       "events": [
         {
-          "event_id": "evt_1784219572559_level_cross",
+          "event_id": "evt_1784234267595_level_cross",
           "type": "level_cross",
           "instrument": "OIL_CRUDE",
           "alert_id": "oil_m15ob_buy_7889",
-          "decision": "SKIP (comp=+8 none, gate +40 unmet, 3rd fire today)"
+          "decision": "SKIP",
+          "reason": "comp=+10.5 readiness=none gate+40 unmet (4th fire today, zone held at 78.89 but DAY TF bearish)"
         }
       ],
       "trades_opened": 0,
       "trades_closed": 0,
-      "orders_modified": 0,
-      "open_positions": 0,
-      "working_orders": 2,
-      "working_order_detail": [
+      "positions_open": 0,
+      "limits_active": 2,
+      "limits": [
+        {
+          "epic": "GOLD",
+          "dir": "SELL",
+          "level": 4021.39,
+          "sl": 4039.0,
+          "tp": 3970.0,
+          "dist_p": 45.7
+        },
+        {
+          "epic": "USDCAD",
+          "dir": "SELL",
+          "level": 1.40818,
+          "sl": 1.411,
+          "tp": 1.395,
+          "dist_p": 39.0
+        }
+      ],
+      "balance_usd": 998.61,
+      "pnl_usd": 0.0,
+      "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "watchlist_changes": "KEEP all 5 alerts; news_queries: opec_supply/boj_intervention/rba_hike rolled [14-17 Jul 2026]",
+      "attention_matrix": {
+        "EURUSD": "swing=NONE scalp=OFF(desync) readiness=none comp=+12.5",
+        "GBPUSD": "swing=WATCH scalp=ACTIVE(neutral) readiness=none comp=+24.5 price_inside_FVG gate<+40",
+        "AUDUSD": "swing=NONE scalp=OFF(wr=11%/19t) readiness=none comp=+7.5",
+        "USDJPY": "swing=WATCH scalp=OFF(pip-conv) readiness=moderate comp=+54.5 68p_from_trigger JPY_bug_blocks",
+        "USDCAD": "swing=ARMED scalp=OFF(CAD-quote) readiness=none comp=-22.5 LIMIT@1.40818 39p_to_fill",
+        "USDCHF": "swing=NONE scalp=OFF(pip-conv) readiness=none comp=+16.5",
+        "GOLD": "swing=ARMED scalp=N/A readiness=moderate comp=-53 LIMIT@4021.39 45.7p_to_fill",
+        "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=none comp=+10.5 zone_held_gate_unmet"
+      }
+    },
+    {
+      "tick_ts_utc": "2026-07-17T04:41Z",
+      "events_processed": 1,
+      "events": [
+        "evt_1784263027436_news_flash"
+      ],
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "trades_skipped": 0,
+      "active_limits": [
         {
           "epic": "GOLD",
           "direction": "SELL",
@@ -397,33 +313,10 @@
           "dealId": "00000000-56ad-4300-044a-beb40055311e"
         }
       ],
-      "balance_usd": 998.61,
-      "pnl_today": 0.0,
-      "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
-      "regime_note_summary": "GOLD SELL LIMIT KEEP (comp=-53 moderate, H4 FVG fresh, hawkish Fed confirmed). USDCAD SELL LIMIT KEEP (CAD bull, Hormuz day 6). OIL level_cross SKIP (comp=+8 none). 0 pos, 2 LIMITs.",
-      "alerts_modified": [
-        "gold_h1fvg_sell_4021",
-        "usdcad_h4fvg_sell_140818",
-        "gbpusd_dayfvg_buy_13494",
-        "oil_m15ob_buy_7889",
-        "usdjpy_dayfvg_buy_161682"
-      ],
-      "alerts_added": [],
-      "alerts_removed": []
-    },
-    {
-      "tick_ts_utc": "2026-07-16T20:35Z",
-      "events_consumed": 1,
-      "events": [
-        "evt_1784224849994_news_flash (hormuz_strait corroborates CAD bull/OIL bull)"
-      ],
-      "open_positions": 0,
-      "limit_orders": 2,
-      "trades_opened": 0,
-      "trades_closed": 0,
       "balance": 998.61,
+      "pnl_open": 0.0,
       "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
-      "notes": "news_flash Hormuz Jul15: 'tanker attacks slow Gulf oil exports'. Day-old, corroborates thesis. No action. GOLD SELL LIMIT 4021.39 KEEP (comp=-53, price 3973.76). USDCAD SELL LIMIT 1.40818 KEEP (price 1.40478, 34p from fill). OIL 78.919 near level, gate not met."
+      "note": "Hormuz investigative piece corroborates CAD bull/OIL bull. GBPUSD gate met (comp=42). Both LIMITs kept."
     }
   ]
 }
