@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T05:45:46.275520Z",
+  "generated_at": "2026-07-17T05:54:01.705461Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -431,6 +431,54 @@
         }
       },
       "scalp_audit": "EURUSD=OFF(desync) GBPUSD=ACTIVE(no trades yet,bias=bull) AUDUSD=OFF(wr=11%/19trades) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
+    },
+    {
+      "tick_ts_utc": "2026-07-17T06:47Z",
+      "events_consumed": 1,
+      "events": [
+        {
+          "type": "level_cross",
+          "instrument": "OIL_CRUDE",
+          "alert_id": "oil_m15ob_buy_7889",
+          "action": "SKIP (comp=2 readiness=none, OB structurally broken)"
+        }
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "limits_placed": 0,
+      "limits_cancelled": 0,
+      "positions": 0,
+      "limit_orders": 3,
+      "balance": 998.61,
+      "open_limits": [
+        {
+          "epic": "GOLD",
+          "dir": "SELL",
+          "level": 4021.39,
+          "sl": 4039.0,
+          "tp": 3970.0
+        },
+        {
+          "epic": "GBPUSD",
+          "dir": "BUY",
+          "level": 1.34437,
+          "sl": 1.3415,
+          "tp": 1.365
+        },
+        {
+          "epic": "USDCAD",
+          "dir": "SELL",
+          "level": 1.40818,
+          "sl": 1.411,
+          "tp": 1.395
+        }
+      ],
+      "alert_changes": [
+        "REMOVE oil_m15ob_buy_7889 (M15 OB broken, price below zone, M15 ChoCH bear, fresh bear FVG, gate never met across 4 fires)",
+        "MODIFY usdjpy_dayfvg_buy_161682 \u2192 KEEP (validated fires=4 h4=100%, H1 OB 162.063 nearer trigger, dist=31.6p WATCH)"
+      ],
+      "news": "Hormuz escalation ongoing; Hormuz\u2192inflation\u2192Fed hawkish\u2192USD strength corroborates GOLD bear; BoE hike bets rising \u2192 GBPUSD bull intact",
+      "regime_note": "0 pos 3 LIMIT. OIL alert removed (structural break). USDJPY validated WATCH. GOLD/GBPUSD/USDCAD LIMITs armed."
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
   "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
-  "tick_ts_utc": "2026-07-17T05:42Z",
-  "state_ts_utc": "2026-07-17T05:42Z",
-  "regime_note": "2026-07-17 tick 2026-07-17T05:42Z \u2014 1 evt: news_flash hormuz_strait 'US military says it attacked tanker under Cura\u00e7ao flag; Cura\u00e7ao denies' (NL Times Jul16). Direct US military tanker attack \u2014 LATEST HORMUZ ESCALATION, CORROBORATES CAD bull/OIL bull, adds safe-haven demand pushing GOLD toward sell zone 4008-4021. GBPUSD comp recovered +37\u2192+42 (gate MET) \u2014 BUY LIMIT ARMED @ 1.34437 DAY FVG bottom (dealId 00000000-5700-bd07-044a-beb40055311e), SL=1.3415 TP=1.365 R:R=7.2:1. GOLD SELL LIMIT 4021.39 KEEP (comp=-50 mod bear all 4 TFs, price 3989 bid, 32.4p from fill; 3\u00d7H4ATR=93.4p; Hormuz safe-haven spike may drive fill). USDCAD SELL LIMIT 1.40818 KEEP (comp=-21 none, price 1.40319, 50p from fill; Hormuz CAD bull intact). USDJPY 162.383 comp=+59.5 mod bull all TFs \u2014 H1 Bull OB 161.897-162.063 (32p below, WATCH). OIL 78.894 comp=+7.5 none \u2014 gate +40 not met. 0 pos 3 LIMIT; bal=$998.61.",
-  "regime_note_prev": "2026-07-17 tick 2026-07-17T05:12Z \u2014 0 events (heartbeat). GOLD SELL LIMIT 4021.39 KEEP (comp=-50 mod bear, DAY FVG 4008-4017 fresh, price 3979.68, dist=41.7p; 3\u00d7H4ATR=92.9p not stale). USDCAD SELL LIMIT 1.40818 KEEP (comp=-21 none, CAD bull thesis intact via Hormuz, DAY FVG bear 1.40774-1.41252 fresh, dist=46.5p). GBPUSD 1.34603 inside DAY FVG \u2014 comp dropped +42\u2192+37 (moderate\u2192weak), gate not met; scalp bias stays bull, watchlist-only. USDJPY 162.435 comp=+62 strong bull \u2014 usdjpy_dayfvg_buy_161682 AUTO-REMOVED (dist=75.3p>3\u00d7H4ATR=68p, trending away, JPY bug blocks). OIL 79.094 comp=+12.5 none \u2014 OB zone 78.459-78.894 holding, gate not met. 0 pos 2 LIMIT; bal=$998.61.",
+  "tick_ts_utc": "2026-07-17T06:47Z",
+  "state_ts_utc": "2026-07-17T06:47Z",
+  "regime_note": "2026-07-17 tick 2026-07-17T06:47Z \u2014 1 evt: level_cross OIL_CRUDE oil_m15ob_buy_7889 (cross_down, comp=2 readiness=none \u2192 SKIP). OIL M15 OB zone (78.459-78.894) structurally broken: price=78.359 below OB bottom, M15 ChoCH bear at 78.459, fresh M15 bear FVG 78.429-78.959. ALERT REMOVED (structural invalidation, gate never met across 4 fires). GOLD SELL LIMIT 4021.39 KEEP (comp=-50 mod bear all 4 TFs, price=3984.7, dist=36.7p; news: Hormuz\u2192inflation\u2192Fed hawkish\u2192USD strength corroborates bear). GBPUSD BUY LIMIT 1.34437 KEEP (comp=+42 mod bull, bid=1.34636, 19.9p from fill; UK news: BoE hike bets rising, GBP above 1.35 intact). USDCAD SELL LIMIT 1.40818 KEEP (comp=-21 none, bid=1.40332, 48.6p from fill; CAD bull via Hormuz/oil intact). USDJPY comp=59.5 mod bull \u2014 alert usdjpy_dayfvg_buy_161682 MODIFIED (validated fires=4 h4=100%, KEEP per rule 2); H1 OB 162.063-161.897 nearer trigger (dist=31.6p, just outside 30p ARM zone, WATCH). 0 pos 3 LIMIT; bal=$998.61.",
+  "regime_note_prev": "2026-07-17 tick 2026-07-17T05:42Z \u2014 1 evt: news_flash hormuz_strait 'US military says it attacked tanker under Cura\u00e7ao flag; Cura\u00e7ao denies' (NL Times Jul16). Direct US military tanker attack \u2014 LATEST HORMUZ ESCALATION, CORROBORATES CAD bull/OIL bull, adds safe-haven demand pushing GOLD toward sell zone 4008-4021. GBPUSD comp recovered +37\u2192+42 (gate MET) \u2014 BUY LIMIT ARMED @ 1.34437 DAY FVG bottom (dealId 00000000-5700-bd07-044a-beb40055311e), SL=1.3415 TP=1.365 R:R=7.2:1. GOLD SELL LIMIT 4021.39 KEEP (comp=-50 mod bear all 4 TFs, price 3989 bid, 32.4p from fill; 3\u00d7H4ATR=93.4p; Hormuz safe-haven spike may drive fill). USDCAD SELL LIMIT 1.40818 KEEP (comp=-21 none, price 1.40319, 50p from fill; Hormuz CAD bull intact). USDJPY 162.383 comp=+59.5 mod bull all TFs \u2014 H1 Bull OB 161.897-162.063 (32p below, WATCH). OIL 78.894 comp=+7.5 none \u2014 gate +40 not met. 0 pos 3 LIMIT; bal=$998.61.",
   "open_positions": [],
   "watchlist": [],
   "market_context": {
@@ -1531,15 +1531,15 @@
       "level": 161.682,
       "direction": "buy",
       "active": true,
-      "validated": false,
+      "validated": true,
       "status": "WATCH",
-      "sl": 161.4,
-      "tp": 162.735,
-      "rr_target": "3.73",
-      "entry_criterion": "Pullback to DAY FVG 161.508-161.682 with M15 rejection wick + bullish close. BLOCKED: risk_guard JPY conversion bug.",
-      "regime_context": "USDJPY 162.425 (Jul16 14:55Z), comp=+67 strong bull all 4TFs. DAY FVG bull 161.508-161.682 (74p below current price). VALIDATED: fires=4, 4h=100%. BLOCKED: risk_guard JPY conversion bug. Price trending away from zone; alert zone remains structurally valid for a pullback scenario.",
-      "last_updated": "2026-07-16T14:55Z",
-      "note": "ENTRY: Price pullback into DAY FVG bull zone (161.508-161.682) with M15 rejection wick + bullish M15 close. ARM BUY LIMIT only when risk_guard JPY conversion bug is fixed. DO NOT PLACE via current risk_guard (rejects all USDJPY: treats JPY P&L as USD face value).\n\nCONTEXT: USDJPY 161.947 (Jul 7 13:00Z). comp=+41.5 moderate bull (3/4TF: DAY ChoCH bull Apr30@160.726, H4 bull, H1 mixed; M15 slightly bearish). DAY FVG bull 161.508-161.682 TESTED today \u2014 intraday low was 161.661 (inside FVG bottom zone). Price bounced from 161.661 back to 161.95 \u2014 textbook FVG reaction. If another pullback reaches zone, it's a repeat entry opportunity (once JPY bug fixed). H1 bear OB 162.735-162.842 is still the TP target. Risk_guard bug: size \u00d7 SL_dist without JPY/USD conversion \u2192 always rejects. Fix required in risk_guard.py.\n\nSL: 161.40  TP: 162.735  R:R target: 3.73\nupdated 2026-07-07T13:00Z \u2014 KEEP; FVG tested today (low 161.661 inside 161.508-161.682), bounce confirmed; entry blocked until risk_guard JPY fixed."
+      "sl": 161.5,
+      "tp": 163.5,
+      "rr_target": "2.70",
+      "entry_criterion": "BUY LIMIT at H1 OB top 162.063 (arm when price pulls back within 30p). Validated: arm naked LIMIT at moderate+ readiness without confirmation requirement. Secondary: DAY FVG 161.682 is structural support backup.",
+      "regime_context": "USDJPY comp=59.5 moderate bull all TFs. H1 BOS bull 162.42. USD strength dominant vs mixed JPY safe-haven. Hormuz escalation day 7.",
+      "last_updated": "2026-07-17T06:47Z",
+      "note": "ENTRY: Pullback into DAY FVG bull zone (161.508-161.682) with M15 bullish rejection wick + close above 161.682. VALIDATED alert (fires=4, h4=100% hit rate) \u2014 naked LIMIT OK at moderate+ readiness. Nearer trigger: H1 Bull OB top at 162.063 (price=162.379, dist=31.6p, just outside 30p ARM zone). Watch for pullback.\n\nCONTEXT: USDJPY comp=+59.5 moderate bull (DAY+H4+H1+M15 all bullish). H1 BOS bull at 162.42 (bars_ago=43). H1 Bull OB 162.063-161.897 (bars_ago=35) is closest entry zone. DAY FVG 161.508-161.682 remains structural support. Hormuz escalation ongoing \u2014 USD strength dominant, JPY safe-haven bid mixed. BoE/Fed hawkish from oil inflation.\n\nSL: 161.50  TP: 163.50  R:R target: 2.70\n\nUpdated 2026-07-17T06:47Z \u2014 validated alert KEEP (rule 2 override of staleness); H1 OB at 162.063 nearer trigger; price 31.6p above OB top (outside 30p ARM zone, WATCH only)."
     },
     {
       "alert_id": "usdcad_h4fvg_sell_140818",
@@ -1596,25 +1596,6 @@
       "last_updated": "2026-07-16T14:55Z",
       "status": "ARMED",
       "deal_id": "00000000-56fc-295a"
-    },
-    {
-      "id": "oil_m15ob_buy_7889",
-      "alert_id": "oil_m15ob_buy_7889",
-      "instrument": "OIL_CRUDE",
-      "level": 78.894,
-      "emit_on": "cross_down",
-      "cooldown_sec": 1800,
-      "direction": "buy",
-      "active": true,
-      "validated": false,
-      "note": "ENTRY: Pullback into M15 BullOB zone (78.459-78.894) with M15 bullish rejection wick >=3p + bullish M15 close. ARM BUY LIMIT at 78.894 when comp>=+40.\n\nCONTEXT: OIL 79.683 (Jul 16). comp=+21 none (H4+H1+M15 bullish, DAY mixed). H1 FVG 79.819-79.879 breached \u2014 level_cross event fired Jul16 13:36 but gate unmet; price continued below FVG. M15 BullOB 78.459-78.894 (bars_ago=18) is next structural buy zone. US-Iran escalation tailwind intact.\n\nSL: 78.25  TP: 81.50  R:R target: 4.60\nupdated 2026-07-16 \u2014 MODIFY; H1 FVG breached; shifted to M15 BullOB 78.459-78.894; comp=+21 gate +40 unmet; WATCH for DAY TF to flip bull.",
-      "entry_criterion": "Pullback into M15 BullOB zone (78.459-78.894) with M15 bullish rejection wick >=3p + bullish close. Gate comp>=+40.",
-      "regime_context": "OIL 79.683, comp=+21 none. H1 FVG 79.819-79.879 breached (price below zone). M15 BullOB 78.459-78.894 is next structural buy zone. Iran escalation tailwind intact. Gate +40 unmet.",
-      "sl": 78.25,
-      "tp": 81.5,
-      "rr_target": "4.60",
-      "current_price_ref": 79.683,
-      "last_updated": "2026-07-16T13:43Z"
     }
   ],
   "structure_watch": [
