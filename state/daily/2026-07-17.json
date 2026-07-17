@@ -80,5 +80,21 @@
     "pnl_open": 0.0,
     "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
     "note": "Hormuz investigative piece corroborates CAD bull/OIL bull. GBPUSD gate met (comp=42). Both LIMITs kept."
+  },
+  {
+    "tick_ts_utc": "2026-07-17T05:12Z",
+    "events": 0,
+    "opened": 0,
+    "closed": 0,
+    "skipped": 0,
+    "positions": 0,
+    "working_orders": 2,
+    "balance": 998.61,
+    "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+    "actions": [
+      "USDJPY alert usdjpy_dayfvg_buy_161682 AUTO-REMOVED (dist=75.3p>3xH4ATR=68p, trending away, JPY bug blocks)",
+      "GBPUSD alert gbpusd_dayfvg_buy_13494 MODIFIED: comp dropped +42\u2192+37, gate not met, watchlist-only"
+    ],
+    "summary": "Heartbeat tick. 0 events. 2 LIMITs intact (GOLD SELL@4021.39, USDCAD SELL@1.40818). USDJPY alert pruned (staleness rule). GBPUSD comp dropped to weak."
   }
 ]

@@ -69,25 +69,6 @@
   },
   "level_alerts": [
     {
-      "id": "usdjpy_dayfvg_buy_161682",
-      "alert_id": "usdjpy_dayfvg_buy_161682",
-      "instrument": "USDJPY",
-      "level": 161.682,
-      "emit_on": "cross_down",
-      "cooldown_sec": 1800,
-      "direction": "buy",
-      "active": true,
-      "validated": false,
-      "note": "ENTRY: Pullback into DAY FVG bull zone (161.508-161.682) with M15 rejection wick + bullish M15 close. ARM BUY LIMIT only when risk_guard JPY conversion bug is fixed.\n\nCONTEXT: USDJPY 162.479 (Jul16 22:04Z, up from 162.268). 80p above alert level. comp last read +41 moderate bull (DAY ChoCH bull Apr30@160.726, H4 bull, M15 bull). DAY FVG 161.508-161.682 unmitigated. BLOCKED: risk_guard JPY conversion bug prevents execution. Watchlist only. BoJ intervention query active (at 162+ BoJ may act).\n\nSL: 161.4  TP: 162.735  R:R target: 3.73\n\nUpdated Jul16 22:05Z \u2014 price moved higher to 162.479, still watchlist-only (JPY bug).",
-      "entry_criterion": "Pullback to DAY FVG 161.508-161.682 with M15 rejection wick + bullish close. BLOCKED: risk_guard JPY conversion bug.",
-      "regime_context": "USDJPY 162.268, comp=+41 moderate bull. DAY ChoCH bull Apr30@160.726. FVG 161.508-161.682. TP target H1 OB 162.735-162.842.",
-      "sl": 161.4,
-      "tp": 162.735,
-      "rr_target": "3.73",
-      "current_price_ref": 162.268,
-      "last_updated": "2026-07-16T22:05Z"
-    },
-    {
       "id": "usdcad_h4fvg_sell_140818",
       "alert_id": "usdcad_h4fvg_sell_140818",
       "instrument": "USDCAD",
@@ -116,14 +97,14 @@
       "direction": "buy",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Pullback to DAY FVG bull zone (1.34437-1.34939) with M15 bullish rejection wick + bullish M15 close. Gate comp>=+40 NOW MET (comp=+42 moderate bull). ARM BUY LIMIT at 1.34437 (FVG bottom) on confirmation, or market on M15 bullish close above 1.34437.\n\nCONTEXT: GBPUSD 1.34604 (Jul17 04:41Z) \u2014 price inside DAY FVG (1.34437-1.34939). Gate met for first time. H4/DAY bull, M15 recovering. Awaiting M15 rejection wick + bullish close as entry trigger.\n\nSL: 1.3415  TP: 1.365  R:R target: 2.11\n\nUpdated 2026-07-17T04:41Z \u2014 gate comp>=+40 met (comp=42), price inside FVG at 1.34604, watching M15 for confirmation.",
-      "entry_criterion": "M15 rejection wick + bullish close inside DAY FVG 1.34437-1.34939. Gate comp>=+40 MET.",
-      "regime_context": "GBPUSD 1.34604, comp=+42 moderate bull. DAY FVG bull 1.34437-1.34939. Gate met Jul17.",
+      "note": "ENTRY: Pullback to DAY FVG bull zone (1.34437-1.34939) with M15 bullish rejection wick + bullish M15 close. Gate comp>=+40: NOT MET (comp=+37 weak). Watch for comp recovery to +40 before arming BUY LIMIT.\n\nCONTEXT: GBPUSD 1.34603 (Jul17 05:12Z) \u2014 price inside DAY FVG (1.34437-1.34939). Gate was met at comp=+42 last tick (04:41Z) but dropped to +37 (weak). H4/DAY bull alignment intact. Scalp engine bias=bull, session_open_break mode.\n\nSL: 1.3415  TP: 1.365  R:R target: 2.11\n\nUpdated 2026-07-17T05:12Z \u2014 comp dropped +42\u2192+37, gate not met; watchlist-only until comp recovers.",
+      "entry_criterion": "M15 rejection wick + bullish close inside DAY FVG 1.34437-1.34939. Gate comp>=+40 \u2014 currently NOT MET (comp=+37).",
+      "regime_context": "GBPUSD 1.34603, comp=+37 weak bull. DAY FVG bull 1.34437-1.34939. Gate dropped from +42 to +37. Scalp bias=bull.",
       "sl": 1.3415,
       "tp": 1.365,
       "rr_target": "2.11",
-      "current_price_ref": 1.34604,
-      "last_updated": "2026-07-17T04:41Z"
+      "current_price_ref": 1.34603,
+      "last_updated": "2026-07-17T05:12Z"
     },
     {
       "id": "gold_h1fvg_sell_4021",
@@ -164,5 +145,5 @@
       "last_updated": "2026-07-17T04:41Z"
     }
   ],
-  "last_updated": "2026-07-17T04:41Z"
+  "last_updated": "2026-07-17T05:12Z"
 }
