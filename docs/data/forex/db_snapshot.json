@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-17T10:50:56.623280+00:00",
+  "generated_at": "2026-07-17T11:10:43.481770+00:00",
   "counts": {
     "trades": 54,
-    "events": 8343,
+    "events": 8345,
     "ticks": 59,
-    "regime_snapshots": 306,
+    "regime_snapshots": 307,
     "broker_positions": 0,
     "counterfactuals": 217
   },
@@ -1063,6 +1063,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-07-17T11:01Z",
+      "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "note_text": "2026-07-17 tick 11:01Z \u2014 2 evt: news_flash hormuz_strait Reuters Jul17 'Strait of Hormuz transits drop as US and Iran escalate attacks across Gulf' (4th Hormuz corroboration, OIL bull/CAD bull intact, USD caution continues); alert_audit_request GBPUSD gbpusd_dayfvg_buy_13494 (Hormuz match, news corroborates GBP bull, LIMIT already filled \u2014 position managed). GBPUSD BUY HOLD @ 1.34437 UPL=-$1.07, comp=18.5 none (H4 BOS bull 1.34519 intact, H1/M15 ST bearish, DAY FVG demand 1.34437-1.34598, SL=1.3415 18.6p buffer, age=2h7m within 24h trend limit). GOLD SELL LIMIT 4021.39 KEEP (comp=-44.5 moderate bear, dist=27.7p within 30p ARM zone, DAY FVG 4008-4017 fresh, 3xH4ATR=92.9p not stale). USDCAD SELL LIMIT 1.40818 KEEP (comp=-10.5 none, dist=44.1p < 3xH4ATR=63.9p, H4/H1/M15 bearish, Hormuz CAD bull intact). USDJPY comp=39 weak (degraded from 52), H1 OB 162.063 WATCH-only (risk_guard JPY blocked, dist=24.5p). No new trades \u2014 no untapped moderate+ setups. 1 pos 2 LIMIT; bal=$997.54.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-07-17T10:22Z",
       "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
       "note_text": "2026-07-17 tick 2026-07-17T10:22Z \u2014 0 evt (heartbeat). GBPUSD BUY 1000 @ 1.34437 HOLD (comp=+18.5 none, H4 BOS bull 1.34519 intact, H1/M15 short-term bearish, UPL=-$0.44, SL=1.3415 27p buffer, age=1h28m within 24h trend limit). GOLD SELL LIMIT 4021.39 KEEP (comp=-42 moderate bear, dist=24.2p, DAY FVG 4008-4017 fresh; 3\u00d7H4ATR=92.9p \u2014 not stale). USDCAD SELL LIMIT 1.40818 KEEP (comp=-18 none but H4/H1/M15 all bearish, dist=52.4p < 3\u00d7H4ATR=63.9p, CAD bull/Hormuz thesis intact). USDJPY comp=52 moderate bull all-TF, H1 OB 161.897-162.063 dist=32.9p WATCH-only (risk_guard JPY blocked). No new trades \u2014 no confluence at moderate+ for new entries outside active positions. News search skipped (last tick 7min ago). 1 pos 2 LIMIT; bal=$998.16.",
@@ -1130,14 +1138,6 @@
       "ts_utc": "2026-07-16T20:35Z",
       "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
       "note_text": "2026-07-16 tick 2026-07-16T20:35Z \u2014 1 event: news_flash hormuz_strait 'Hormuz tanker attacks slow Gulf oil exports as shipping risks mount' (World Oil Jul15). CORROBORATES existing thesis \u2014 Hormuz escalation day 7+, CAD bull and OIL bull intact; no new catalyst beyond what's priced. GOLD SELL LIMIT 4021.39 KEEP (comp=-53 moderate bear unchanged, all 4 TFs bear, H4 FVG 4007.8-4021.39 unmitigated, price at 3973.76 \u2014 47.6p from fill). USDCAD SELL LIMIT 1.40818 KEEP (price 1.40478 approaching, DAY FVG 1.40774-1.41252 fresh, Hormuz confirms CAD bull). OIL 78.919 near M15 OB 78.459-78.894 but comp=+10.5 gate not met. GBPUSD 1.34776 inside DAY FVG comp=+24.5 none (gate not met). USDJPY 162.36 comp=+54.5 moderate bull (JPY bug blocks). 0 pos, 2 LIMITs; bal=$998.61.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-07-16T22:05Z",
-      "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
-      "note_text": "2026-07-16 tick 2026-07-16T22:05Z \u2014 1 event: level_cross OIL oil_m15ob_buy_7889 (3rd fire today, comp=+8 NONE) \u2192 SKIP, KEEP WATCH. GOLD SELL LIMIT 4021.39 KEEP (comp=-53 moderate bear, H4 FVG 4007.8-4021.39 fresh unmitigated, hawkish Fed confirmed \u2014 gold fell below $4000 on Yahoo Finance Jul16). USDCAD SELL LIMIT 1.40818 KEEP (DAY FVG unmitigated, price moved to 1.40437 toward limit, Hormuz day 6 escalation \u2014 56 incidents, CAD bull intact). OIL pullback -1.05% today (supply shock priced in). GBPUSD 1.34696 inside DAY FVG (comp weak, no limit armed). USDJPY 162.479 (JPY bug blocks entry). 0 pos, 2 LIMITs; bal=$998.61.",
       "binary_event_name": null,
       "binary_event_active": 0,
       "binary_event_deadline": null

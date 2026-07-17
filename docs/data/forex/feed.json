@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T11:06:06.524955Z",
+  "generated_at": "2026-07-17T11:33:33.127882Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -677,6 +677,106 @@
         "OIL_CRUDE": "swing=NONE scalp=N/A(spread4p) readiness=none"
       },
       "summary": "2 evt: Hormuz news (Reuters) + GBPUSD audit_request. Position HELD. No new trades. 1 pos 2 LIMIT. bal=$997.54"
+    },
+    {
+      "tick_ts_utc": "2026-07-17T11:32Z",
+      "events": 0,
+      "event_types": [],
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "balance": 997.74,
+      "upl": -0.84,
+      "open_positions": [
+        {
+          "instrument": "GBPUSD",
+          "direction": "BUY",
+          "size": 1000,
+          "entry": 1.34437,
+          "upl": -0.84,
+          "sl": 1.3415,
+          "tp": 1.365,
+          "age_h": 2.6
+        }
+      ],
+      "pending_orders": [
+        {
+          "instrument": "GOLD",
+          "direction": "SELL",
+          "size": 0.1,
+          "level": 4021.39,
+          "sl": 4040.0,
+          "tp": 3920.0
+        },
+        {
+          "instrument": "USDCAD",
+          "direction": "SELL",
+          "size": 1000,
+          "level": 1.40818,
+          "sl": 1.411,
+          "tp": 1.395
+        }
+      ],
+      "watchlist_changes": [
+        "gold_h1fvg_sell_4021: note rewritten \u2014 LIMIT live, removed -50 gate (escalation=energy not safe-haven confirmed), updated regime_context"
+      ],
+      "news": [
+        "Burnham becomes Labour PM Jul17 \u2014 GBP political clarity bull",
+        "BoE Nov hike fully priced, Mar2027 expected \u2014 GBP yield floor",
+        "US-Iran sanctions on Iranian oil expired 04:01 GMT Jul17 \u2014 oil +12% wk (Brent $85.1), Hormuz transit -62%",
+        "GOLD fell $4165\u2192$3993 despite escalation \u2014 USD strength dominant, safe-haven flows absent"
+      ],
+      "regime_note_summary": "0 evt heartbeat. GBP bull reinforced (Burnham PM + BoE hikes). Oil +12% wk reinforces CAD bull/USDCAD SELL LIMIT. GOLD bearish thesis confirmed by price action. No new trades.",
+      "attention_matrix": {
+        "EURUSD": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "comp~-14 mixed TFs, no alerts, engine desync disabled"
+        },
+        "GBPUSD": {
+          "swing": "OPEN",
+          "scalp": "ACTIVE",
+          "readiness": "none",
+          "reason": "position BUY @ 1.34437 UPL=-$0.84, Burnham PM + BoE bull, H4 BOS bull intact SL=1.3415"
+        },
+        "AUDUSD": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "comp mixed none, no alerts, scalp disabled wr=11pct"
+        },
+        "USDJPY": {
+          "swing": "WATCH",
+          "scalp": "OFF",
+          "readiness": "weak",
+          "reason": "2 alerts (H1OB 162.063 + DAY FVG 161.682) WATCH-only: JPY risk_guard blocked"
+        },
+        "USDCAD": {
+          "swing": "WATCH",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "SELL LIMIT 1.40818 live, CAD bull macro intact (oil +12%), readiness=none (no new limit)"
+        },
+        "USDCHF": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "no alerts, no readiness, CHF pip-conv pending"
+        },
+        "GOLD": {
+          "swing": "ARMED",
+          "scalp": "N/A",
+          "readiness": "moderate",
+          "reason": "SELL LIMIT 4021.39 live, comp=-42 moderate bear, dist=25.7p within 30p ARM"
+        },
+        "OIL_CRUDE": {
+          "swing": "WATCH",
+          "scalp": "N/A",
+          "readiness": "none",
+          "reason": "comp=21 none, oil +12% wk bull macro, no structural entry yet (watching pullback to H4 EMA/FVG)"
+        }
+      },
+      "scalp_audit": "EURUSD=OFF(engine_desync) GBPUSD=ACTIVE(bias=bull, no trades yet) AUDUSD=OFF(wr=11pct 19trades) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
     }
   ]
 }

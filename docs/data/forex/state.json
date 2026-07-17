@@ -1,8 +1,8 @@
 {
   "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
-  "tick_ts_utc": "2026-07-17T11:01Z",
-  "state_ts_utc": "2026-07-17T11:01Z",
-  "regime_note": "2026-07-17 tick 11:01Z \u2014 2 evt: news_flash hormuz_strait Reuters Jul17 'Strait of Hormuz transits drop as US and Iran escalate attacks across Gulf' (4th Hormuz corroboration, OIL bull/CAD bull intact, USD caution continues); alert_audit_request GBPUSD gbpusd_dayfvg_buy_13494 (Hormuz match, news corroborates GBP bull, LIMIT already filled \u2014 position managed). GBPUSD BUY HOLD @ 1.34437 UPL=-$1.07, comp=18.5 none (H4 BOS bull 1.34519 intact, H1/M15 ST bearish, DAY FVG demand 1.34437-1.34598, SL=1.3415 18.6p buffer, age=2h7m within 24h trend limit). GOLD SELL LIMIT 4021.39 KEEP (comp=-44.5 moderate bear, dist=27.7p within 30p ARM zone, DAY FVG 4008-4017 fresh, 3xH4ATR=92.9p not stale). USDCAD SELL LIMIT 1.40818 KEEP (comp=-10.5 none, dist=44.1p < 3xH4ATR=63.9p, H4/H1/M15 bearish, Hormuz CAD bull intact). USDJPY comp=39 weak (degraded from 52), H1 OB 162.063 WATCH-only (risk_guard JPY blocked, dist=24.5p). No new trades \u2014 no untapped moderate+ setups. 1 pos 2 LIMIT; bal=$997.54.",
+  "tick_ts_utc": "2026-07-17T11:32Z",
+  "state_ts_utc": "2026-07-17T11:32Z",
+  "regime_note": "2026-07-17 tick 2026-07-17T11:32Z \u2014 0 evt (heartbeat). News: (1) Andy Burnham confirmed Labour leader/PM Jul17 \u2192 GBP political clarity bull; (2) BoE rate hike Nov fully priced, Mar2027 expected \u2014 GBP yield floor; (3) US-Iran sanctions on Iranian oil exports EXPIRED 04:01 GMT Jul17 \u2014 fresh escalation step, oil +12% wk (Brent $85.1, WTI $79.93), Hormuz transit -62%; (4) GOLD fell from $4165\u2192$3993 despite escalation = USD strength dominant, safe-haven flows absent, SELL LIMIT thesis intact. GBPUSD BUY HOLD @ 1.34437 UPL=-$0.84, age=2h37m within 24h trend limit, BoE bull + Burnham PM reinforces thesis, SL=1.3415 22p buffer. GOLD SELL LIMIT 4021.39 KEEP (comp=-42 moderate bear, dist=25.7p ARMED within 30p, escalation=energy not safe-haven confirmed). USDCAD SELL LIMIT 1.40818 KEEP (dist=49.5p, CAD bull thesis reinforced by oil +12% + Iran sanctions expiry, readiness=none but macro bull intact). USDJPY weak (comp~25 weak, H1OB 162.063 + DAY FVG 161.682 WATCH-only, JPY risk_guard blocked). No new trades \u2014 no moderate+ confluence on any non-active pair with untapped LIMIT opportunity. 1 pos 2 LIMIT; bal=$997.74.",
   "regime_note_prev": "2026-07-17 tick 2026-07-17T10:22Z \u2014 0 evt (heartbeat). GBPUSD BUY 1000 @ 1.34437 HOLD (comp=+18.5 none, H4 BOS bull 1.34519 intact, H1/M15 short-term bearish, UPL=-$0.44, SL=1.3415 27p buffer, age=1h28m within 24h trend limit). GOLD SELL LIMIT 4021.39 KEEP (comp=-42 moderate bear, dist=24.2p, DAY FVG 4008-4017 fresh; 3\u00d7H4ATR=92.9p \u2014 not stale). USDCAD SELL LIMIT 1.40818 KEEP (comp=-18 none but H4/H1/M15 all bearish, dist=52.4p < 3\u00d7H4ATR=63.9p, CAD bull/Hormuz thesis intact). USDJPY comp=52 moderate bull all-TF, H1 OB 161.897-162.063 dist=32.9p WATCH-only (risk_guard JPY blocked). No new trades \u2014 no confluence at moderate+ for new entries outside active positions. News search skipped (last tick 7min ago). 1 pos 2 LIMIT; bal=$998.16.",
   "open_positions": [
     {
@@ -17,7 +17,7 @@
       "thesis_type": "trend",
       "alert_id": "gbpusd_dayfvg_buy_13494",
       "confluence_at_entry": "+42 moderate bull (H4 BOS bull, DAY bull, M15 recovering). DAY FVG bottom 1.34437 anticipation LIMIT.",
-      "upl": -1.07
+      "upl": -0.84
     }
   ],
   "watchlist": [],
@@ -1589,7 +1589,7 @@
       "tp": 1.365,
       "rr_target": 7.2,
       "current_price_ref": 1.35046,
-      "last_updated": "2026-07-17T10:15Z"
+      "last_updated": "2026-07-17T11:32Z"
     },
     {
       "id": "gold_h1fvg_sell_4021",
@@ -1601,14 +1601,14 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Rally into H1 FVG bear zone (3996.89-4021.39) with M15 bearish rejection wick >=5p + M15 bearish close. ARM SELL LIMIT only when comp<=-50 (tightened from standard -40 due to active escalation anti-sell catalyst).\n\nCONTEXT: GOLD 3993 (Jul 16). comp=-43 moderate bear (all 4 TFs bearish: DAY+H4+H1+M15 ChoCH bear Jul15). H1 FVG bear 3996.89-4021.39 (fresh, bars_ago=1, unmitigated). US-Iran tanker strike (NPR Jul15) is active anti-sell catalyst for gold \u2014 gate tightened to comp<=-50 to compensate. Market already pricing escalation (gold fell from 4060 to 3993 despite news = bearish signal).\n\nSL: 4040  TP: 3920  R:R target: 5.32\nupdated 2026-07-16 \u2014 ADD; fresh H1 FVG bear; comp=-43 gate -50 unmet; WATCH; escalation news tightens gate.",
-      "entry_criterion": "Rally to H1 FVG bear zone top (4021.39) with M15 bearish rejection wick >=5p + close. Gate comp<=-50 (tightened for escalation).",
-      "regime_context": "GOLD 4003.60, comp=-43 moderate bear all 4TFs. SELL LIMIT 4021.39 active (dealId=00000000-56fc-295a). H1 FVG 4008.5-4021.39 fresh (bars_ago=2, unmitigated). Price 18p below LIMIT. TP=3970 SL=4039 R:R=2.92. Gate -50 not met (comp=-43) but LIMIT already placed; bear thesis intact.",
+      "note": "ENTRY: Rally into H1 FVG bear zone (3996.89-4021.39) with M15 bearish rejection wick >=5p + M15 bearish close. SELL LIMIT ACTIVE @ 4021.39 (dealId=00000000-56fc-295a). ARM threshold comp<=-40 (standard \u2014 escalation confirmed NOT driving safe-haven premium; gold fell from 4165\u21923993 as energy inflation dominates).\n\nCONTEXT: GOLD 3995.66 (Jul17). comp=-42 moderate bear (DAY+H4+H1 bearish, M15 diverging). US-Iran escalation = energy inflation regime, not safe-haven flows. US sanctions on Iranian oil exports expired 04:01 GMT Jul17 \u2192 oil +12% wk \u2192 USD strength bid sustained. Gold failing to hold 4000 = bearish structural confirmation. DAY FVG bear 4008.97-4017.47 (fresh, bars_ago=1) layered just below LIMIT.\n\nSL: 4040  TP: 3920  R:R target: 5.32\nrewritten 2026-07-17 \u2014 LIMIT live, comp=-42 meets -40 gate, escalation\u2192energy not safe-haven confirmed by price action.",
+      "entry_criterion": "Rally to H1 FVG bear zone top (4021.39) with M15 bearish rejection wick >=5p + close. Gate comp<=-40 (standard \u2014 escalation not driving gold safe-haven).",
+      "regime_context": "GOLD 3995.66 Jul17. comp=-42 moderate bear (3/4 TFs bearish). SELL LIMIT 4021.39 active (dealId=00000000-56fc-295a). H4 FVG 4007.8-4021.39 mitigated. DAY FVG 4008.97-4017.47 fresh. Dist=25.7p within 30p ARM. Oil +12% wk (Hormuz crisis), gold falling despite it = USD strength > safe-haven. HOLD LIMIT.",
       "sl": 4040.0,
       "tp": 3920.0,
       "rr_target": "5.32",
       "current_price_ref": 3993.07,
-      "last_updated": "2026-07-16T14:55Z",
+      "last_updated": "2026-07-17T11:32Z",
       "status": "ARMED",
       "deal_id": "00000000-56fc-295a"
     },
