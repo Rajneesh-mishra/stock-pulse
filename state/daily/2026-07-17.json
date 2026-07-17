@@ -614,5 +614,51 @@
     "news_summary": "GBP bull intact (BoE Nov hike priced, GDP +0.1%); GOLD bearish (below $4k, rate hike bets vs soft PPI/CPI)",
     "actions": "heartbeat \u2014 GBPUSD HOLD, GOLD/USDCAD LIMIT KEEP, USDJPY comp improved to 49 mod WATCH-only",
     "audit": "GBPUSD note updated (deeper demand test 1.34278, macro bull intact); USDJPY note updated comp 49 moderate"
+  },
+  {
+    "tick_ts_utc": "2026-07-17T17:45Z",
+    "events_consumed": 3,
+    "events": [
+      "news_flash: hormuz_strait \u2014 tanker struck in Strait of Hormuz (5th corroboration)",
+      "alert_audit_request: USDCAD usdcad_h4fvg_sell_140818 \u2014 Hormuz tanker headline; KEEP LIMIT",
+      "position_opened: GOLD SELL @ 4021.44, SL=4039.0, TP=3970.0 \u2014 LIMIT filled"
+    ],
+    "open_positions": [
+      {
+        "instrument": "GBPUSD",
+        "direction": "BUY",
+        "entry": 1.34437,
+        "bid": 1.34516,
+        "upl": 0.79,
+        "age_h": 8.8
+      },
+      {
+        "instrument": "GOLD",
+        "direction": "SELL",
+        "entry": 4021.44,
+        "bid": 4010.75,
+        "upl": 1.039,
+        "age_h": 1.4
+      }
+    ],
+    "limit_orders": [
+      {
+        "instrument": "USDCAD",
+        "direction": "SELL",
+        "level": 1.40818,
+        "sl": 1.411,
+        "tp": 1.395
+      }
+    ],
+    "actions": [
+      "Added GOLD SELL to open_positions (LIMIT filled at 4021.44 vs 4021.39 placed)",
+      "Updated gold_h1fvg_sell_4021 note to management mode",
+      "Updated usdcad_h4fvg_sell_140818 note with Hormuz 5th corroboration",
+      "No new trades this tick"
+    ],
+    "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+    "balance_usd": 1000.46,
+    "daily_pnl_usd": 1.85,
+    "total_upl_usd": 1.829
   }
 ]

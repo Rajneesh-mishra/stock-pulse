@@ -78,14 +78,14 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Rally into DAY FVG bear zone (1.40774-1.41252) \u2014 SELL LIMIT already ARMED at 1.40818 (dealId 00000000-56ad-4300-044a-beb40055311e). Live working order on broker.\n\nCONTEXT: USDCAD 1.40437 (Jul16 22:04Z, up from 1.40194). DAY FVG 1.40774-1.41252 fresh unmitigated (bars_ago=2). comp=-20.5 none (H4+H1 bearish, M15 mixed, DAY mixed). Price trending toward LIMIT. Hormuz crisis day 6 \u2014 US-Iran 6th consecutive day of strikes, 56 incidents. CAD bull thesis intact (oil exporter). No structural break on H1/H4. CAD strengthening keeps USDCAD below FVG top.\n\nSL: 1.411  TP: 1.395  R:R target: 4.67\n\nUpdated Jul16 22:05Z \u2014 price moved to 1.40437 (toward limit), Hormuz escalation day 6 confirmed.",
-      "entry_criterion": "SELL LIMIT at 1.40818 inside DAY FVG bear 1.40774-1.41252. Live working order \u2014 no manual action needed.",
-      "regime_context": "USDCAD 1.40194. comp=-33 weak bearish. US-Iran escalation (tanker struck Jul15) confirmed CAD bull via oil rally to $80. DAY FVG bear 1.40774-1.41252 is retest zone. SELL LIMIT armed.",
+      "note": "ENTRY: Rally into DAY FVG bear zone (1.40774-1.41252) \u2014 SELL LIMIT at 1.40818 GTC ARMED. Wait for price to return to FVG; M15 bearish rejection at zone top confirms entry.\n\nCONTEXT: Hormuz 5th corroboration (Jul17 tanker struck) \u2014 CAD bull intact. H1 BOS bear (Jul16). H4 bear FVG (1.40188-1.40214) fresh. Price at 1.40146 (67p below limit); limit activates on any USD bounce.\n\nSL: 1.411  TP: 1.395  R:R target: 3.0\n\nRewritten 2026-07-17T17:45Z \u2014 Hormuz 5th corroborating event (tanker struck in Strait). CAD bull thesis strengthened. LIMIT KEEP GTC.",
+      "entry_criterion": "SELL LIMIT GTC at 1.40818 (DAY FVG top). Reject on M15 wick.",
+      "regime_context": "Hormuz 5th event (tanker struck Jul17). CAD bull via oil. USDCAD H1 BOS bear Jul16.",
       "sl": 1.411,
       "tp": 1.395,
-      "rr_target": "4.67",
+      "rr_target": 3.0,
       "current_price_ref": 1.40194,
-      "last_updated": "2026-07-16T22:05Z"
+      "last_updated": "2026-07-17T17:45Z"
     },
     {
       "id": "gbpusd_dayfvg_buy_13494",
@@ -116,14 +116,14 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Rally into sell zone (4008-4021 area) with M15 bearish rejection wick >=5p + M15 bearish close. SELL LIMIT LIVE at 4021.39 (dealId 00000000-56fc-295a-044a-beb40055311e). Gate comp<=-50: MET (comp=-50).\n\nCONTEXT: GOLD 3984.18 (Jul17 04:41Z). H4 FVG 4007.8-4021.39 now mitigated (bars_ago=4, 16h ago). DAY FVG FRESH 4008.97-4017.47 (bars_ago=1). Sell zone 4008-4021 reinforced by fresh DAY FVG. comp=-50 moderate bear (all 4 TFs bearish). Hawkish Fed + USD strength dominant. Hormuz investigative piece (Jul16) \u2014 no safe-haven spike.\n\nSL: 4039.0  TP: 3970.0  R:R target: 2.92\n\nUpdated 2026-07-17T04:41Z \u2014 H4 FVG mitigated but DAY FVG fresh 4008-4017 reinforces zone; LIMIT unchanged at 4021.39.",
-      "entry_criterion": "Rally to sell zone top 4021.39. SELL LIMIT LIVE \u2014 no manual action. DAY FVG 4008-4017 reinforces.",
+      "note": "ENTRY: Position OPEN @ 4021.44 (LIMIT filled 2026-07-17T16:18Z). M15 bearish rejection at H1 FVG sell zone 4008-4021 \u2014 management mode.\n\nCONTEXT: H1 BOS bear (Jul15, 55 bars ago). DAY price < EMA21 < EMA50. USD strength dominant; GOLD safe-haven NOT materializing (5th Hormuz event but GOLD falling).\n\nSL: 4039.0  TP: 3970.0  R:R target: 2.93\n\nRewritten 2026-07-17T17:45Z \u2014 LIMIT filled, position management mode. Trail at +1R (4003.88): SL \u2192 breakeven 4021.44.",
+      "entry_criterion": "Position OPEN at 4021.44 (LIMIT filled). Management: trail at +1R.",
       "regime_context": "GOLD 3984.18, comp=-50 moderate bear all TFs. H4 FVG mitigated. DAY FVG fresh 4008.97-4017.47.",
       "sl": 4039.0,
       "tp": 3970.0,
-      "rr_target": 2.92,
+      "rr_target": 2.93,
       "current_price_ref": 3984.18,
-      "last_updated": "2026-07-17T04:41Z"
+      "last_updated": "2026-07-17T17:45Z"
     },
     {
       "id": "usdjpy_h1ob_buy_162063",
