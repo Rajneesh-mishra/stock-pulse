@@ -1,9 +1,9 @@
 {
   "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
-  "tick_ts_utc": "2026-07-18T17:42Z",
-  "state_ts_utc": "2026-07-18T17:42Z",
-  "regime_note": "2026-07-18T17:42Z tick \u2014 heartbeat (0 events, Saturday market closure). NEWS: Hormuz escalation INTENSIFYING \u2014 12+ incidents Jul6-18, Iran attacks 3 ships/24h (CNN Jul13), US strikes Iran Jul15 (NPR). Traffic 8 vs 15 vessels/day (CNBC Jul17). Oil bull / CAD bull INTACT + strengthening. USDJPY: BoJ hiked to 1.00% hawkish, B intervention attempt Apr-May failed but pair at 40yr JPY low ~162.5. BUY thesis elevated intervention risk. risk_guard still blocks JPY (pip-conv pending). WATCH only. GBPUSD BUY age=32.8h TIME EXIT OVERDUE, market closed \u2014 CLOSE AT SUNDAY OPEN (~21:00 UTC Jul19). GOLD SELL age=25.4h TIME EXIT OVERDUE \u2014 CLOSE AT SUNDAY OPEN (~21:00 UTC Jul19). USDCAD SELL LIMIT 1.40818 GTC dist=63.9p \u2014 thesis INTACT Hormuz 12+evt. KEEP. Scalp all-OFF. 2 pos 1 LIMIT; bal=$999.46.",
-  "regime_note_prev": "2026-07-18T16:35Z tick \u2014 heartbeat (0 events, Saturday market closure). Broker: GBPUSD BUY UPL=+$0.47 age=31.7h (TIME EXIT OVERDUE, market closed); GOLD SELL UPL=+$0.40 age=24.3h (TIME EXIT OVERDUE at 16:18Z Sat, market closed). Both positions: CLOSE AT SUNDAY OPEN (~21:00 UTC Jul19). USDCAD SELL LIMIT 1.40818 GTC dist=59.9p <3\u00d7H4ATR=63p KEEP \u2014 Hormuz 12+evt: US revoked Iran oil license + tanker attacks ongoing (NBC/CNBC Jul18). CAD bull intact. GOLD ~$4,017 consolidating (expected range $3,952-$4,060 on Mon). Safe-haven paradox persists. USDJPY comp=+59.5 moderate (4/4 TF bull), OB 161.897-162.063 dist=33.2p \u2014 arm LIMIT at Sunday open if price drops to OB. Scalp all-OFF. 2 pos 1 LIMIT; bal=$999.46.",
+  "tick_ts_utc": "2026-07-18T19:47Z",
+  "state_ts_utc": "2026-07-18T19:47Z",
+  "regime_note": "2026-07-18T19:47Z tick \u2014 1 event: news_flash Hormuz (Thai-flagged vessel attacked near Hormuz, The Star Jul18). Saturday market closure. HORMUZ 13th+ escalation Jul6-18 \u2014 Thai vessel attack on top of Jul18 tanker/minefield events. CAD bull intact, USDCAD SELL LIMIT 1.40818 GTC (dist=61.9p, 3\u00d7H4ATR=63p) KEEP. GBPUSD BUY age=34.9h TIME EXIT OVERDUE \u2014 CLOSE AT SUNDAY OPEN (~21:00 UTC Jul19). GOLD SELL age=27.5h TIME EXIT OVERDUE \u2014 CLOSE AT SUNDAY OPEN (~21:00 UTC Jul19). USDJPY comp=+59.5 moderate OB 161.897-162.063 WATCH (risk_guard blocks pip-conv). Safe-haven paradox confirmed: gold flat/down through 13 Hormuz events. Scalp all-OFF. 2 pos 1 LIMIT; bal=$999.46.",
+  "regime_note_prev": "2026-07-18T17:42Z tick \u2014 heartbeat (0 events, Saturday market closure). NEWS: Hormuz escalation INTENSIFYING \u2014 12+ incidents Jul6-18, Iran attacks 3 ships/24h (CNN Jul13), US strikes Iran Jul15 (NPR). Traffic 8 vs 15 vessels/day (CNBC Jul17). Oil bull / CAD bull INTACT + strengthening. USDJPY: BoJ hiked to 1.00% hawkish, B intervention attempt Apr-May failed but pair at 40yr JPY low ~162.5. BUY thesis elevated intervention risk. risk_guard still blocks JPY (pip-conv pending). WATCH only. GBPUSD BUY age=32.8h TIME EXIT OVERDUE, market closed \u2014 CLOSE AT SUNDAY OPEN (~21:00 UTC Jul19). GOLD SELL age=25.4h TIME EXIT OVERDUE \u2014 CLOSE AT SUNDAY OPEN (~21:00 UTC Jul19). USDCAD SELL LIMIT 1.40818 GTC dist=63.9p \u2014 thesis INTACT Hormuz 12+evt. KEEP. Scalp all-OFF. 2 pos 1 LIMIT; bal=$999.46.",
   "open_positions": [
     {
       "deal_id": "00000000-5701-acfd-044a-beb40055311e",
@@ -1554,7 +1554,7 @@
   ],
   "binary_event": {
     "active": false,
-    "note": "No active binary event. US-Iran/Hormuz escalation ONGOING \u2014 11 corroborated incidents Jul6-18. CNBC Jul17: tanker traffic 8 vs 15 vessels/day; Iran attacking ships trying US-protected Oman coast route. Oil bull, CAD bull intact. GOLD safe-haven paradox persists: USD/rates dominant, gold bearish despite escalation. Sustained escalation regime."
+    "note": "No active binary event. US-Iran/Hormuz escalation ONGOING \u2014 13+ corroborated incidents Jul6-18 (latest: Thai-flagged vessel attacked near Hormuz, The Star Jul18 02:54 GMT + Iran tankers/minefield Jul18 + 11 prior). CNBC Jul17: tanker traffic 8 vs 15 vessels/day; Iran attacking ships trying US-protected Oman coast route. Oil bull, CAD bull intact. GOLD safe-haven paradox persists: USD/rates dominant, gold bearish despite escalation. Sustained escalation regime."
   },
   "balance": 999.46,
   "level_alerts": [

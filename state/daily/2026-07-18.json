@@ -747,5 +747,44 @@
     "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
     "balance": 999.46,
     "scalp": "all_OFF"
+  },
+  {
+    "tick_ts_utc": "2026-07-18T19:47Z",
+    "events_processed": 1,
+    "events": [
+      "news_flash: hormuz_strait \u2014 Thai-flagged vessel attacked near Hormuz (The Star Jul18 02:54 GMT)"
+    ],
+    "new_trades": 0,
+    "closed_trades": 0,
+    "market_status": "CLOSED (Saturday)",
+    "positions": [
+      {
+        "instrument": "GBPUSD",
+        "direction": "BUY",
+        "entry": 1.34437,
+        "upl": 0.47,
+        "age_h": 34.9,
+        "status": "TIME EXIT OVERDUE \u2014 close at Sunday open 21:00 UTC Jul19"
+      },
+      {
+        "instrument": "GOLD",
+        "direction": "SELL",
+        "entry": 4021.44,
+        "upl": 0.4,
+        "age_h": 27.5,
+        "status": "TIME EXIT OVERDUE \u2014 close at Sunday open 21:00 UTC Jul19"
+      }
+    ],
+    "orders": [
+      {
+        "instrument": "USDCAD",
+        "type": "SELL LIMIT",
+        "level": 1.40818,
+        "status": "GTC KEEP \u2014 Hormuz 13+ events, dist=61.9p <3xH4ATR=63p"
+      }
+    ],
+    "notes": "news_flash: Thai vessel attacked near Hormuz \u2014 13th+ escalation event Jul6-18. USDCAD SELL LIMIT thesis reinforced. Market closed. Both positions close at Sunday open.",
+    "balance_usd": 999.46,
+    "daily_pnl_usd": 0.0
   }
 ]
