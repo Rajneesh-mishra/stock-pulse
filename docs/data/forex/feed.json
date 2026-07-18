@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T12:22:16.949397Z",
+  "generated_at": "2026-07-18T12:34:20.972117Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -698,6 +698,111 @@
         }
       },
       "scalp_audit": "EURUSD=KEEP-OFF(desync) GBPUSD=KEEP-OFF(WR0%/31T) AUDUSD=KEEP-OFF(WR11%/19T) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
+    },
+    {
+      "tick_ts_utc": "2026-07-18T12:30Z",
+      "events_consumed": 2,
+      "events": [
+        {
+          "type": "news_flash",
+          "id": "evt_1784377733419_news_flash",
+          "summary": "11th Hormuz escalation: Iran claims tankers exploded in minefield; US denies (Marine Insight Jul18 11:19Z)"
+        },
+        {
+          "type": "alert_audit_request",
+          "id": "evt_1784377733421_alert_audit_request",
+          "instrument": "USDCAD",
+          "alert_id": "usdcad_h4fvg_sell_140818",
+          "action": "KEEP \u2014 thesis reinforced by 11th Hormuz event, FVG unmitigated, dist=61.9p < 3\u00d7ATR=63p NOT stale"
+        }
+      ],
+      "positions": [
+        {
+          "instrument": "GBPUSD",
+          "direction": "BUY",
+          "entry": 1.34437,
+          "bid": 1.34539,
+          "upl": 0.47,
+          "age_h": 27.6,
+          "status": "TIME_EXIT_PENDING_SUNDAY"
+        },
+        {
+          "instrument": "GOLD",
+          "direction": "SELL",
+          "entry": 4021.44,
+          "bid": 4017.11,
+          "upl": 0.4,
+          "age_h": 20.2,
+          "status": "TIME_EXIT_PENDING_SUNDAY"
+        }
+      ],
+      "orders": [
+        {
+          "instrument": "USDCAD",
+          "direction": "SELL",
+          "limit": 1.40818,
+          "sl": 1.411,
+          "tp": 1.395,
+          "status": "GTC_ARMED",
+          "action": "KEEP"
+        }
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "balance": 999.46,
+      "market_status": "CLOSED_SATURDAY",
+      "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "scalp_status": "all-OFF",
+      "attention_matrix": {
+        "EURUSD": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "comp=-4 none, no alert, market closed"
+        },
+        "GBPUSD": {
+          "swing": "WATCH",
+          "scalp": "OFF",
+          "readiness": "weak",
+          "reason": "position open TIME_EXIT_PENDING Sunday; WR0%/31T scalp disabled"
+        },
+        "AUDUSD": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "comp=+2 none, no alert; WR11%/19T scalp disabled"
+        },
+        "USDJPY": {
+          "swing": "WATCH",
+          "scalp": "OFF",
+          "readiness": "moderate",
+          "reason": "comp=+59.5 moderate, H1 OB 161.897-162.063, pip-conv block prevents entry"
+        },
+        "USDCAD": {
+          "swing": "WATCH",
+          "scalp": "OFF",
+          "readiness": "weak",
+          "reason": "LIMIT GTC pre-armed at 1.40818 (61.9p away); readiness=weak -39.5, thesis reinforced 11th Hormuz event"
+        },
+        "USDCHF": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "comp=-9 none, no alert, pip-conv block"
+        },
+        "GOLD": {
+          "swing": "WATCH",
+          "scalp": "N/A",
+          "readiness": "weak",
+          "reason": "position open SELL TIME_EXIT_PENDING Sunday; spread 5p forbids scalp"
+        },
+        "OIL_CRUDE": {
+          "swing": "NONE",
+          "scalp": "N/A",
+          "readiness": "none",
+          "reason": "comp=+21 none, no level set; spread 4p forbids scalp; Hormuz bull via CAD not direct OIL alert"
+        }
+      }
     }
   ]
 }

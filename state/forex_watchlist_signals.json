@@ -78,14 +78,14 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Rally into DAY FVG bear zone (1.40774-1.41252) \u2014 SELL LIMIT at 1.40818 GTC ARMED. Price must return to FVG zone top; M15 bearish rejection confirms entry.\n\nCONTEXT: 10th Hormuz escalation (Straits Times Jul18: \u2018Iran Guards say tankers exploded from Hormuz mines as US strikes continue\u2019). CAD bull thesis at maximum corroboration (Jul6\u201318: 10 incidents, Hormuz traffic 8 vs 15 vessels/day Kpler). H1 BOS bear (Jul16). H4 bear FVG (1.40774\u20131.41252) unmitigated. Current price 1.40199 (60p below LIMIT). H4 ATR=21p, 3\u00d7H4ATR=63p > dist=60p \u2014 NOT stale.\n\nSL: 1.411  TP: 1.395  R:R target: 3.0\n\nUpdated 2026-07-18T09:11Z \u2014 10th Hormuz event (Straits Times: mines + US strikes). LIMIT KEEP GTC.",
+      "note": "ENTRY: Rally into DAY FVG bear zone (1.40774-1.41252) \u2014 SELL LIMIT at 1.40818 GTC ARMED. Price must return to FVG zone top; M15 bearish rejection confirms entry.\n\nCONTEXT: 11th Hormuz escalation (Marine Insight Jul18 11:19Z: \u2018Iran Claims Two Oil Tankers Exploded, Caught Fire In Strait Of Hormuz Minefield; US Denies\u2019). US denial noted \u2014 Iranian pattern consistent with 10 prior corroborated events. CAD bull thesis at maximum corroboration (Jul6\u201318: 11 incidents, Hormuz traffic 8 vs 15 vessels/day Kpler). H1 BOS bear (Jul16). H4 bear FVG (1.40774\u20131.41252) unmitigated. Current price 1.40199 (61.9p below LIMIT). H4 ATR=21p, 3\u00d7H4ATR=63p, dist=61.9p < 63p \u2014 NOT stale. Confluence=-39.5 weak (borderline moderate).\n\nSL: 1.411  TP: 1.395  R:R target: 3.0\n\nUpdated 2026-07-18T12:30Z \u2014 11th Hormuz event (tankers + minefield + US denial). LIMIT KEEP GTC. Thesis intact.",
       "entry_criterion": "SELL LIMIT GTC at 1.40818 (DAY FVG top). Reject on M15 wick.",
-      "regime_context": "Hormuz 10th event (mines Jul18, tankers explode, US strikes continue). CAD bull via oil. USDCAD H1 BOS bear Jul16. H4 FVG 1.40774-1.41252 unmitigated.",
+      "regime_context": "Hormuz 11th event (tankers exploding Jul18, minefield, US denies). CAD bull via oil. USDCAD H1 BOS bear Jul16. H4 FVG 1.40774-1.41252 unmitigated. Confluence=-39.5 weak borderline.",
       "sl": 1.411,
       "tp": 1.395,
       "rr_target": 3.0,
       "current_price_ref": 1.40199,
-      "last_updated": "2026-07-18T09:11Z"
+      "last_updated": "2026-07-18T12:30Z"
     },
     {
       "id": "gbpusd_dayfvg_buy_13494",
@@ -116,7 +116,7 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Position OPEN @ 4021.44 (LIMIT filled 2026-07-17T16:18Z). TIME EXIT TRIGGERED \u2014 24h trend max expires at 16:18Z Sat Jul18 (during weekend closure). MARKET CLOSED (Saturday). CLOSE AT SUNDAY OPEN (~21:00 UTC Jul20).\n\nCONTEXT: bid=4017.11 at close. UPL=+$0.40. comp=-33 weak bear. Safe-haven paradox confirmed: 9+ Hormuz attacks Jul6-18 (9 corroborations), Hormuz traffic fell to 8 vessels/day vs 15 normal (Kpler data). USD/rates dominate over safe-haven demand \u2014 gold still falling. Trail at 4003.88 not triggered. Close at Sunday open regardless.\n\nSL: 4039.0  TP: 3970.0  R:R target: 2.93\n\nUpdated 2026-07-18T08:59Z \u2014 TIME EXIT pending Sunday market open.",
+      "note": "ENTRY: Position OPEN @ 4021.44 (LIMIT filled 2026-07-17T16:18Z). TIME EXIT TRIGGERED \u2014 24h trend max expires at 16:18Z Sat Jul18 (during weekend closure). MARKET CLOSED (Saturday). CLOSE AT SUNDAY OPEN (~21:00 UTC Jul20).\n\nCONTEXT: bid=4017.11 at close. UPL=+$0.40. comp=-33 weak bear. Safe-haven paradox FULLY CONFIRMED: 11 Hormuz events Jul6-18 (tankers + mines Jul18, prior 10 corroborated). Gold fell or held flat through all 11 events. USD/rates dominate safe-haven demand \u2014 GOLD bearish regime intact. Trail at 4003.88 not triggered. Close at Sunday open regardless.\n\nSL: 4039.0  TP: 3970.0  R:R target: 2.93\n\nUpdated 2026-07-18T12:30Z \u2014 11th Hormuz event confirms safe-haven paradox. TIME EXIT pending Sunday market open.",
       "entry_criterion": "Position OPEN. TIME EXIT at Sunday open 21:00 UTC \u2014 close at market unconditionally.",
       "regime_context": "GOLD 3984.18, comp=-50 moderate bear all TFs. H4 FVG mitigated. DAY FVG fresh 4008.97-4017.47.",
       "sl": 4039.0,
@@ -145,5 +145,5 @@
       "last_updated": "2026-07-18T08:59Z"
     }
   ],
-  "last_updated": "2026-07-18T09:11Z"
+  "last_updated": "2026-07-18T12:30Z"
 }
