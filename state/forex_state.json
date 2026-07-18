@@ -1,8 +1,8 @@
 {
   "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
-  "tick_ts_utc": "2026-07-18T10:08Z",
-  "state_ts_utc": "2026-07-18T10:08Z",
-  "regime_note": "2026-07-18T10:08Z tick \u2014 0 evt (heartbeat, Saturday market closure). Hormuz 10-event sustained escalation regime: OIL bull + CAD bull at max corroboration. No executions possible (weekend).\nGBPUSD BUY HOLD @ 1.34437 bid=1.34484 UPL=+$0.47 age=25.2h \u2014 24h trend max EXCEEDED. TIME EXIT PENDING: CLOSE AT SUNDAY OPEN (~21:00 UTC Jul20). BoE Jul30 hike 75% macro intact.\nGOLD SELL HOLD @ 4021.44 bid=4017.11 UPL=+$0.40 age=17.8h \u2014 time exit at 16:18Z Sat Jul18 (mkt closed). TIME EXIT PENDING: CLOSE AT SUNDAY OPEN. Safe-haven paradox: USD/rates dominant, gold still falling. Trail@4003.88 not hit.\nUSDCAD SELL LIMIT 1.40818 KEEP GTC \u2014 dist=61.9p, H4ATR=21p, 3\u00d7=63p > dist (NOT stale). readiness=weak (-39.5) 3/4 TF bear. DAY FVG 1.40774-1.41252 unmitigated. LIMIT ARMED.\nUSDJPY WATCH comp=+59.5 moderate 4/4 TF bull. H1 OB 162.063 dist=33.2p. JPY pip-conv block. After both positions close Sunday, correlation + slot may free for USDJPY if risk_guard approves.\nScalp all-OFF. 2 pos 1 LIMIT; bal=$999.46.",
+  "tick_ts_utc": "2026-07-18T12:10Z",
+  "state_ts_utc": "2026-07-18T12:10Z",
+  "regime_note": "2026-07-18T12:10Z tick \u2014 0 evt (heartbeat, Saturday market closure).\nHormuz 10-event sustained escalation regime: OIL bull + CAD bull at max corroboration. No executions possible (weekend).\nGBPUSD BUY HOLD @ 1.34437 bid=1.34484 UPL=+$0.47 age=27.3h \u2014 trend max EXCEEDED (24h). TIME EXIT PENDING: CLOSE AT SUNDAY OPEN (~21:00 UTC Jul20). BoE Jul30 hike 75% macro intact.\nGOLD SELL HOLD @ 4021.44 bid=4017.11 UPL=+$0.40 age=19.9h \u2014 TIME EXIT at 16:18Z today (mkt closed). TIME EXIT PENDING: CLOSE AT SUNDAY OPEN. Safe-haven paradox: USD/rates dominant, gold bearish. Trail@4003.88 not hit.\nUSDCAD SELL LIMIT 1.40818 KEEP GTC \u2014 dist=63.9p, H4ATR\u224821p, 3\u00d7=63p; at staleness threshold but noise-level move (+2p vs last tick). Hormuz catalyst intact. FVG 1.40774-1.41252 unmitigated. LIMIT ARMED.\nUSDJPY WATCH comp=+59.5 moderate 4/4 TF bull. H1 OB 162.063 dist=33.2p. JPY pip-conv block. After both positions close Sunday, slot may free.\nScalp all-OFF (EURUSD=desync, GBPUSD=WR0%, AUDUSD=WR11%/19-trades, rest=pip-conv/spread). 2 pos 1 LIMIT; bal=$999.46.",
   "regime_note_prev": "2026-07-18T08:59Z tick \u2014 0 evt (heartbeat, Saturday market closure). Markets closed \u2014 no executions possible. TIME EXIT PENDING (both positions): close at Sunday open ~21:00 UTC.\nGBPUSD BUY HOLD @ 1.34437 bid=1.34484 UPL\u2248+$0.47 age=24.1h \u2014 trend 24h max hit at 08:54Z; market closed. CLOSE SUNDAY OPEN. BoE Jul30 hike 75% intact; GBP bull macro confirmed.\nGOLD SELL HOLD @ 4021.44 bid=4017.11 UPL=+$0.40 age=16.7h \u2014 time exit fires at 16:18Z Sat (during closure). CLOSE SUNDAY OPEN. Safe-haven paradox confirmed: 9+ Hormuz attacks, Hormuz traffic 8 vs 15 vessels/day (Kpler), gold still falling (USD/rates dominant). Trail@4003.88 not hit.\nUSDCAD SELL LIMIT 1.40818 KEEP GTC \u2014 Hormuz escalation intensifying (CNBC Jul17: 9 ships attacked since Jul6, Hormuz largely closed); CAD bull strengthening. dist=64p.\nUSDJPY WATCH comp=+59.5 moderate, H1 OB 162.063 dist=33p. JPY pip-conv block. After GBPUSD closes correlation slot may free.\nScalp all-OFF. 2 pos 1 LIMIT; bal=$999.46.",
   "open_positions": [
     {
@@ -1571,8 +1571,8 @@
       "rr_target": 4.67,
       "entry_criterion": "H4 bear FVG retest at 1.40749-1.40818. SELL LIMIT placed at FVG top 1.40818.",
       "regime_context": "USDCAD 1.40299, comp=-26.5 weak bearish (degraded from -43 moderate). H1 ChoCH bear Jul10@1.41175 intact. M15 BOS bear Jul15@1.40249 intact. DAY FVG 1.40774-1.41252 unmitigated (supply zone). SELL LIMIT 1.40818 active (dealId=00000000-56ad-4300). Readiness degraded to weak: cancel criteria not met (no structural break, no binary flip, <24h+no-approach). CAD bull via oil (Hormuz) intact.",
-      "last_updated": "2026-07-16T14:55Z",
-      "note": "ENTRY: SELL LIMIT placed at H4 bear FVG top (1.40818). ARM ACTIVE (dealId=00000000-56ad-4300).\n\nCONTEXT: USDCAD 1.40602, comp=-43 moderate bearish 3/4TF. H4 BOS bear @1.41504 (Jul2), H1 BOS bear @1.41175 (Jul10). Fresh H4 FVG 1.40749-1.40818 unmitigated. Continuaton sell thesis.\n\nSL: 1.4110  TP: 1.3950  R:R target: 4.67\n\nAdded 2026-07-15T20:55Z \u2014 moderate bearish + fresh FVG within 22p."
+      "last_updated": "2026-07-18T12:10Z",
+      "note": "ENTRY: SELL LIMIT placed at H4 bear FVG top (1.40818). ARM ACTIVE (dealId=00000000-56ad-4300).\n\nCONTEXT: Hormuz 10-event escalation \u2192 CAD bull at max corroboration. H4 BOS bear @1.41504 (Jul2), H1 BOS bear @1.41504. DAY FVG 1.40774-1.41252 unmitigated. dist=63.9p at 3\u00d7H4ATR threshold; keeping GTC \u2014 noise-level move since last tick, escalation catalyst intact.\n\nSL: 1.411  TP: 1.395  R:R target: 4.67\n\nModified 2026-07-18 \u2014 staleness check: 63.9p vs 63p threshold, KEEP GTC per escalation."
     },
     {
       "id": "gbpusd_dayfvg_buy_13494",
@@ -1584,14 +1584,14 @@
       "direction": "buy",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Pullback to DAY FVG bull zone (1.34437-1.34939) with M15 bullish rejection wick + bullish M15 close. POSITION OPEN \u2014 BUY 1000 @ 1.34437 (dealId 00000000-5701-acfd). LIMIT FILLED 2026-07-17T08:54Z.\n\nCONTEXT: GBPUSD DAY FVG demand zone (1.34437-1.34598 mitigated, bars_ago=2). H4 BOS bull at 1.34519 (Jul10) intact. Hormuz escalation (British military confirms tanker attack Jul17) adds USD caution, supportive of GBP bull. H1/M15 short-term bearish but within H4 demand context. comp degraded to +18.5 (none) on tick \u2014 H4 structural bull still holds.\n\nSL: 1.3415  TP: 1.365  R:R target: 7.2:1\n\nUpdated 2026-07-17T10:15Z \u2014 position live, hold with SL at 1.3415. thesis_type=trend (24h cap).",
+      "note": "ENTRY: Pullback to DAY FVG bull zone (1.34437-1.34939) with M15 bullish rejection wick + bullish M15 close. POSITION OPEN \u2014 BUY 1000 @ 1.34437 (dealId 00000000-5701-acfd).\n\nCONTEXT: BoE Jul30 hike 75% probability. H4 BOS bull intact. DAY FVG bottom filled as anticipation LIMIT entry. TIME EXIT PENDING at Sunday market open (~21:00 UTC Jul20) \u2014 age=27.3h exceeds 24h trend max.\n\nSL: 1.3415  TP: 1.365  R:R target: 7.2\n\nModified 2026-07-18 \u2014 updated time-exit pending note.",
       "entry_criterion": "M15 bullish rejection wick + close above 1.34437 (DAY FVG bottom). FILLED.",
       "regime_context": "H4 BOS bull intact. Hormuz USD caution corroborates GBP bull.",
       "sl": 1.3415,
       "tp": 1.365,
       "rr_target": 7.2,
       "current_price_ref": 1.35046,
-      "last_updated": "2026-07-17T11:32Z"
+      "last_updated": "2026-07-18T12:10Z"
     },
     {
       "id": "gold_h1fvg_sell_4021",
@@ -1603,14 +1603,14 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Rally into H1 FVG bear zone (3996.89-4021.39) with M15 bearish rejection wick >=5p + M15 bearish close. SELL LIMIT ACTIVE @ 4021.39 (dealId=00000000-56fc-295a). ARM threshold comp<=-40 (standard \u2014 escalation confirmed NOT driving safe-haven premium; gold fell from 4165\u21923993 as energy inflation dominates).\n\nCONTEXT: GOLD 3995.66 (Jul17). comp=-42 moderate bear (DAY+H4+H1 bearish, M15 diverging). US-Iran escalation = energy inflation regime, not safe-haven flows. US sanctions on Iranian oil exports expired 04:01 GMT Jul17 \u2192 oil +12% wk \u2192 USD strength bid sustained. Gold failing to hold 4000 = bearish structural confirmation. DAY FVG bear 4008.97-4017.47 (fresh, bars_ago=1) layered just below LIMIT.\n\nSL: 4040  TP: 3920  R:R target: 5.32\nrewritten 2026-07-17 \u2014 LIMIT live, comp=-42 meets -40 gate, escalation\u2192energy not safe-haven confirmed by price action.",
+      "note": "ENTRY: Rally into H1 FVG bear zone (3996.89-4021.39) with M15 bearish rejection wick >=5p + M15 bearish close. POSITION OPEN \u2014 SELL 0.1 @ 4021.44 (dealId 00000000-5745-077d).\n\nCONTEXT: Safe-haven paradox: USD/rates dominant, gold falling despite geopolitical escalation. Safe-haven paradox validated through 10 Hormuz events. TIME EXIT PENDING at Sunday market open (~21:00 UTC Jul20) \u2014 24h time cap hits at 16:18Z today (market closed). Trail@4003.88 not hit.\n\nSL: 4039.0  TP: 3920.0  R:R target: 5.32\n\nModified 2026-07-18 \u2014 updated time-exit pending note, trail level.",
       "entry_criterion": "Rally to H1 FVG bear zone top (4021.39) with M15 bearish rejection wick >=5p + close. Gate comp<=-40 (standard \u2014 escalation not driving gold safe-haven).",
       "regime_context": "GOLD 3995.66 Jul17. comp=-42 moderate bear (3/4 TFs bearish). SELL LIMIT 4021.39 active (dealId=00000000-56fc-295a). H4 FVG 4007.8-4021.39 mitigated. DAY FVG 4008.97-4017.47 fresh. Dist=25.7p within 30p ARM. Oil +12% wk (Hormuz crisis), gold falling despite it = USD strength > safe-haven. HOLD LIMIT.",
       "sl": 4040.0,
       "tp": 3920.0,
       "rr_target": "5.32",
       "current_price_ref": 3993.07,
-      "last_updated": "2026-07-17T11:32Z",
+      "last_updated": "2026-07-18T12:10Z",
       "status": "ARMED",
       "deal_id": "00000000-56fc-295a"
     },
@@ -1707,6 +1707,6 @@
   "daily_pnl_usd": 7.18,
   "news_last_searched_utc": "2026-07-18T08:59Z",
   "pending_orders": [],
-  "balance_usd": 998.61,
+  "balance_usd": 999.46,
   "account_balance": 998.61
 }

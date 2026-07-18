@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T10:10:04.602091Z",
+  "generated_at": "2026-07-18T11:17:28.449786Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -584,6 +584,30 @@
         "OIL_CRUDE": "NONE/N/A/none \u2014 comp=+21 weak bull no alert, spread blocks scalp"
       },
       "scalp_audit": "EURUSD=OFF(engine_desync) GBPUSD=OFF(WR=0% 31t) AUDUSD=OFF(WR=11% 19t) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
+    },
+    {
+      "tick_ts_utc": "2026-07-18T12:10Z",
+      "events": 0,
+      "event_types": [],
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "positions_after": 2,
+      "orders_after": 1,
+      "balance": 999.46,
+      "upl": 0.87,
+      "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "summary": "0 evt heartbeat Saturday. 2 pos TIME-EXIT-PENDING (GBPUSD 27.3h, GOLD 19.9h - both close Sunday open). USDCAD SELL LIMIT 1.40818 GTC at staleness threshold KEEP. Scalp all-OFF.",
+      "attention_matrix": {
+        "EURUSD": "swing=NONE scalp=OFF readiness=none composite=-4.0",
+        "GBPUSD": "swing=WATCH scalp=OFF readiness=weak(+31.5) open-pos-time-exit-pending",
+        "AUDUSD": "swing=NONE scalp=OFF(WR=11%/19tr) readiness=none composite=+2",
+        "USDJPY": "swing=WATCH scalp=OFF readiness=moderate(+59.5) pip-conv-block dist=33.2p",
+        "USDCAD": "swing=ARMED scalp=OFF readiness=weak(-39.5) LIMIT@1.40818 GTC dist=63.9p",
+        "USDCHF": "swing=NONE scalp=OFF readiness=none composite=-9",
+        "GOLD": "swing=WATCH scalp=N/A readiness=weak(-33) open-pos-time-exit-pending",
+        "OIL_CRUDE": "swing=NONE scalp=N/A readiness=none composite=+21"
+      }
     }
   ]
 }
