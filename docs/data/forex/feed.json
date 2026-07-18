@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T09:04:58.827662Z",
+  "generated_at": "2026-07-18T09:15:11.677984Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -448,6 +448,92 @@
       "balance": 999.46,
       "news_summary": "Hormuz: 9+ ships attacked Jul6-18 (CNBC Jul17), traffic 8vs15 vessels/day, oil supply risk acute. GBPUSD: BoE 75% hike Jul30 priced, GBP bull intact. No regime-changing news.",
       "regime_note": "Saturday market closure. TIME EXIT triggered for both positions (GBPUSD 24.1h, GOLD time-max passes 16:18Z Sat). Close both at Sunday open ~21:00 UTC."
+    },
+    {
+      "tick_ts_utc": "2026-07-18T09:11Z",
+      "events_consumed": 2,
+      "events": [
+        {
+          "type": "news_flash",
+          "id": "evt_1784365685401_news_flash",
+          "summary": "Straits Times: Iran Guards say tankers exploded from Hormuz mines as US strikes continue (10th escalation)"
+        },
+        {
+          "type": "alert_audit_request",
+          "id": "evt_1784365685407_alert_audit_request",
+          "summary": "USDCAD usdcad_h4fvg_sell_140818 \u2014 KEEP (10th escalation corroborates, readiness=weak, LIMIT GTC 1.40818)"
+        }
+      ],
+      "trades_opened": 0,
+      "trades_closed": 0,
+      "positions_held": [
+        {
+          "instrument": "GBPUSD",
+          "direction": "BUY",
+          "entry": 1.34437,
+          "upl": 0.47,
+          "age_h": 24.3,
+          "status": "TIME_EXIT_PENDING_SUNDAY_OPEN"
+        },
+        {
+          "instrument": "GOLD",
+          "direction": "SELL",
+          "entry": 4021.44,
+          "upl": 0.4,
+          "age_h": 16.9,
+          "status": "TIME_EXIT_PENDING_SUNDAY_OPEN"
+        }
+      ],
+      "orders_held": [
+        {
+          "instrument": "USDCAD",
+          "direction": "SELL",
+          "limit": 1.40818,
+          "sl": 1.411,
+          "tp": 1.395,
+          "status": "GTC_ARMED",
+          "dist_p": 60
+        }
+      ],
+      "account_balance": 999.46,
+      "daily_pnl_usd": 7.18,
+      "confluence": {
+        "EURUSD": {
+          "composite": -4.0,
+          "readiness": "none"
+        },
+        "GBPUSD": {
+          "composite": 31.5,
+          "readiness": "weak"
+        },
+        "AUDUSD": {
+          "composite": 2.0,
+          "readiness": "none"
+        },
+        "USDJPY": {
+          "composite": 59.5,
+          "readiness": "moderate"
+        },
+        "USDCAD": {
+          "composite": -39.5,
+          "readiness": "weak"
+        },
+        "USDCHF": {
+          "composite": -9.0,
+          "readiness": "none"
+        },
+        "GOLD": {
+          "composite": -33.0,
+          "readiness": "weak"
+        },
+        "OIL_CRUDE": {
+          "composite": 21.0,
+          "readiness": "none"
+        }
+      },
+      "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "markets_status": "CLOSED_SATURDAY",
+      "regime_note": "10th Hormuz escalation. 2 pos TIME_EXIT_PENDING Sunday open. 1 LIMIT USDCAD GTC. Scalp all-OFF."
     }
   ]
 }

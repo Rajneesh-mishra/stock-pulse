@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-18T08:43:14.305654+00:00",
+  "generated_at": "2026-07-18T09:08:38.106128+00:00",
   "counts": {
     "trades": 54,
-    "events": 8359,
+    "events": 8361,
     "ticks": 59,
-    "regime_snapshots": 318,
+    "regime_snapshots": 319,
     "broker_positions": 0,
     "counterfactuals": 218
   },
@@ -1063,6 +1063,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-07-18T08:59Z",
+      "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "note_text": "2026-07-18T08:59Z tick \u2014 0 evt (heartbeat, Saturday market closure). Markets closed \u2014 no executions possible. TIME EXIT PENDING (both positions): close at Sunday open ~21:00 UTC.\nGBPUSD BUY HOLD @ 1.34437 bid=1.34484 UPL\u2248+$0.47 age=24.1h \u2014 trend 24h max hit at 08:54Z; market closed. CLOSE SUNDAY OPEN. BoE Jul30 hike 75% intact; GBP bull macro confirmed.\nGOLD SELL HOLD @ 4021.44 bid=4017.11 UPL=+$0.40 age=16.7h \u2014 time exit fires at 16:18Z Sat (during closure). CLOSE SUNDAY OPEN. Safe-haven paradox confirmed: 9+ Hormuz attacks, Hormuz traffic 8 vs 15 vessels/day (Kpler), gold still falling (USD/rates dominant). Trail@4003.88 not hit.\nUSDCAD SELL LIMIT 1.40818 KEEP GTC \u2014 Hormuz escalation intensifying (CNBC Jul17: 9 ships attacked since Jul6, Hormuz largely closed); CAD bull strengthening. dist=64p.\nUSDJPY WATCH comp=+59.5 moderate, H1 OB 162.063 dist=33p. JPY pip-conv block. After GBPUSD closes correlation slot may free.\nScalp all-OFF. 2 pos 1 LIMIT; bal=$999.46.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-07-18T06:47Z",
       "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
       "note_text": "2026-07-18T06:47Z tick \u2014 1 evt (news_flash hormuz_strait The Hindu: 'Iran Guards say 2 oil tankers explode after hitting mines in Hormuz'). 8th Hormuz escalation corroboration \u2014 OIL bull + CAD bull STRENGTHENED. GOLD SELL HOLD @ 4021.44 bid=4017.11 UPL=+$0.40 age=14.5h (trend max 24h, exit 16:18Z) SL=4039 TP=3970 trail@4003.88 not-hit; safe-haven paradox CONFIRMED (8 escalations, gold still bearish, USD/rates dominant). GBPUSD BUY HOLD @ 1.34437 bid=1.34539 UPL\u2248+$1.02 age=21.9h (trend max 24h, TIME EXIT 08:54Z in ~2h); H4-BOS-bull-1.34519 intact; BoE-Jul30-hike-75pct. USDCAD SELL LIMIT 1.40818 KEEP GTC (Hormuz 8th-evt mines CAD-bull FVG-unmitigated dist=62p). USDJPY comp=+59.5 mod WATCH (4/4 TF bull, H1 OB 162.063 dist=33.2p, JPY-blocked). Scalp all-OFF. 2 pos 1 LIMIT; bal=$999.46.",
@@ -1130,14 +1138,6 @@
       "ts_utc": "2026-07-17T12:35Z",
       "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
       "note_text": "2026-07-17 tick 2026-07-17T12:35Z \u2014 0 evt (heartbeat). GBPUSD BUY HOLD @ 1.34437, bid=1.34278, UPL=-$1.59, age=3.7h (trend, max 24h). DAY FVG (1.34437-1.34598) mitigated 2 bars ago; H4 bear FVG (1.34573-1.34404) unmitigated. comp=+3.5 none (degraded). SL=1.3415 buffer=12.8p intact. News: BoE Nov hike fully priced, UK GDP +0.1% May, Burnham/Mahmood political clarity \u2014 GBP bull macro intact. HOLD. GOLD SELL LIMIT 4021.39 KEEP (comp=-50 mod bear all TFs, DAY FVG 4008-4017 fresh, dist=39.45p; softer PPI/CPI minor headwind but gold below $4k bearish). USDCAD SELL LIMIT 1.40818 KEEP (comp=-18 none, dist=59.4p, DAY FVG 1.40774-1.41252 unmitigated, Hormuz thesis intact). USDJPY comp=+49 moderate bull (improved) WATCH-only JPY risk_guard blocked; H1 OB 161.897-162.063 dist=29.9p. EURUSD/AUDUSD/USDCHF comp weak/none, no setups. Scalp: GBPUSD active bull bias no halts. 1 pos 2 LIMIT; bal=$997.04.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-07-17T11:44Z",
-      "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
-      "note_text": "2026-07-17 tick 2026-07-17T11:44Z \u2014 1 evt (level_cross GBPUSD gbpusd_dayfvg_buy_13494 cross_down @ 1.34397). GBPUSD BUY HOLD @ 1.34437 UPL=-$0.28, age=2h50m within 24h trend limit; level_cross = price deviated below DAY FVG bottom (1.34437) to 1.34397 bid \u2014 standard demand-zone wick, SL=1.3415 intact 29p buffer, H4 BOS bull (1.34519) unbroken; thesis intact, HOLD. GOLD SELL LIMIT 4021.39 KEEP (comp=-44.5 moderate bear, dist=27.4p ARMED within 30p threshold, DAY FVG 4008-4017 fresh). USDCAD SELL LIMIT 1.40818 KEEP (comp=-18 none, dist=55p, CAD bull via oil+Iran intact, not armed yet). USDJPY comp=34 weak (H1 OB 162.063 WATCH-only, JPY risk_guard blocked, price at 162.313 moving away from OB). EURUSD comp=-13.5 none, AUDUSD comp=-18.5 none, USDCHF comp=-14 none \u2014 no new setups. Scalp: GBPUSD active (bull bias, no halts). 1 pos 2 LIMIT; bal=$998.34.",
       "binary_event_name": null,
       "binary_event_active": 0,
       "binary_event_deadline": null

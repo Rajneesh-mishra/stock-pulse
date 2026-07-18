@@ -78,14 +78,14 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Rally into DAY FVG bear zone (1.40774-1.41252) \u2014 SELL LIMIT at 1.40818 GTC ARMED. Price must return to FVG zone top; M15 bearish rejection confirms entry.\n\nCONTEXT: 8th Hormuz escalation (The Hindu Jul18: Iranian Guards confirm 2 tankers hit mines, explode near Hormuz). CAD bull thesis strongly corroborated (OIL bull, oil-CAD correlation). H1 BOS bear (Jul16). H4 bear FVG (1.40774-1.41252) unmitigated. Price at 1.40199 (62p below limit).\n\nSL: 1.411  TP: 1.395  R:R target: 3.0\n\nUpdated 2026-07-18T06:47Z \u2014 8th Hormuz event (mines, tankers explode). CAD bull thesis strongest corroboration yet. LIMIT KEEP GTC.",
+      "note": "ENTRY: Rally into DAY FVG bear zone (1.40774-1.41252) \u2014 SELL LIMIT at 1.40818 GTC ARMED. Price must return to FVG zone top; M15 bearish rejection confirms entry.\n\nCONTEXT: 10th Hormuz escalation (Straits Times Jul18: \u2018Iran Guards say tankers exploded from Hormuz mines as US strikes continue\u2019). CAD bull thesis at maximum corroboration (Jul6\u201318: 10 incidents, Hormuz traffic 8 vs 15 vessels/day Kpler). H1 BOS bear (Jul16). H4 bear FVG (1.40774\u20131.41252) unmitigated. Current price 1.40199 (60p below LIMIT). H4 ATR=21p, 3\u00d7H4ATR=63p > dist=60p \u2014 NOT stale.\n\nSL: 1.411  TP: 1.395  R:R target: 3.0\n\nUpdated 2026-07-18T09:11Z \u2014 10th Hormuz event (Straits Times: mines + US strikes). LIMIT KEEP GTC.",
       "entry_criterion": "SELL LIMIT GTC at 1.40818 (DAY FVG top). Reject on M15 wick.",
-      "regime_context": "Hormuz 8th event (mines Jul18, tankers explode). CAD bull via oil. USDCAD H1 BOS bear Jul16.",
+      "regime_context": "Hormuz 10th event (mines Jul18, tankers explode, US strikes continue). CAD bull via oil. USDCAD H1 BOS bear Jul16. H4 FVG 1.40774-1.41252 unmitigated.",
       "sl": 1.411,
       "tp": 1.395,
       "rr_target": 3.0,
       "current_price_ref": 1.40199,
-      "last_updated": "2026-07-18T06:47Z"
+      "last_updated": "2026-07-18T09:11Z"
     },
     {
       "id": "gbpusd_dayfvg_buy_13494",
@@ -145,5 +145,5 @@
       "last_updated": "2026-07-18T08:59Z"
     }
   ],
-  "last_updated": "2026-07-18T08:59Z"
+  "last_updated": "2026-07-18T09:11Z"
 }
