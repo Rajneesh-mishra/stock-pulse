@@ -97,14 +97,14 @@
       "direction": "buy",
       "active": true,
       "validated": false,
-      "note": "ENTRY: BUY position OPEN @ 1.34437 (DAY FVG bottom, LIMIT filled Jul17 08:54Z). H4 BOS bull (1.34519) is invalidation gate \u2014 cancel/close only on H4 close below SL 1.3415.\n\nCONTEXT: GBPUSD bid=1.34539 (Jul18 06:47Z). comp=+31.5 weak bull (DAY/H4 bull, H1/M15 mixed). H4 BOS bull 1.34519 intact. BoE 75% hike priced for Jul30 MPC \u2014 GBP macro bull supportive. Age=21.9h (trend max 24h, TIME EXIT 08:54Z in ~2h). UPL\u2248+$1.02.\n\nSL: 1.3415  TP: 1.365  R:R target: 7.2\n\nUpdated 2026-07-18T06:47Z \u2014 H4 BOS intact, bid=1.34539, UPL\u2248+$1.02. Time exit at 08:54Z. HOLD.",
-      "entry_criterion": "BUY position OPEN @ 1.34437 via LIMIT fill. Management: SL=1.3415, TP=1.365. Cancel alert if H4 BOS (1.34519) structurally broken on H4 close below 1.3415.",
+      "note": "ENTRY: BUY position OPEN @ 1.34437 (DAY FVG bottom, LIMIT filled Jul17 08:54Z). TIME EXIT TRIGGERED \u2014 24h trend max hit at ~08:54Z Sat Jul18. MARKET CLOSED (Saturday). CLOSE AT SUNDAY OPEN (~21:00 UTC Jul20).\n\nCONTEXT: bid=1.34484 at close (Sat Jul18 09:00Z). UPL\u2248+$0.47. comp=+31.5 weak bull. BoE 75% hike priced Jul30 MPC (macro bull intact). H4 BOS bull 1.34519 intact. GBPUSD held 1.3474 range per Vantage Markets Jul17; 1.354 high this week. Close at Sunday open regardless of price.\n\nSL: 1.3415  TP: 1.365  R:R target: 7.2\n\nUpdated 2026-07-18T08:59Z \u2014 TIME EXIT pending Sunday market open.",
+      "entry_criterion": "Position OPEN. TIME EXIT at Sunday open 21:00 UTC \u2014 close at market unconditionally.",
       "regime_context": "GBPUSD 1.34278. comp=+3.5 none. SL 1.3415 intact 12.8p buffer. BoE Nov hike priced, UK GDP +0.1%. Demand zone being tested.",
       "sl": 1.3415,
       "tp": 1.365,
       "rr_target": "7.2",
       "current_price_ref": 1.34539,
-      "last_updated": "2026-07-18T06:47Z"
+      "last_updated": "2026-07-18T08:59Z"
     },
     {
       "id": "gold_h1fvg_sell_4021",
@@ -116,14 +116,14 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Position OPEN @ 4021.44 (LIMIT filled 2026-07-17T16:18Z). M15 bearish rejection at H1 FVG sell zone 4008-4021 \u2014 management mode.\n\nCONTEXT: GOLD bid=4017.11 (Jul18 06:47Z). comp=-33 weak bear (DAY/H4/H1 bear, M15 bull ChoCH \u2014 noise). H1 BOS bear (Jul15). DAY price<EMA21<EMA50. 8th Hormuz event: safe-haven paradox SUSTAINED \u2014 gold still falling despite escalation (USD/rates dominant). Trail at +1R bid=4003.88 not triggered. Age=14.5h (trend max 24h, time exit 16:18Z). UPL=+$0.40.\n\nSL: 4039.0  TP: 3970.0  R:R target: 2.93\n\nUpdated 2026-07-18T06:47Z \u2014 8th Hormuz mine event, gold not pumping (safe-haven paradox confirmed). trail@4003.88 not hit. HOLD.",
-      "entry_criterion": "Position OPEN at 4021.44 (LIMIT filled). Management: trail at +1R 4003.88.",
+      "note": "ENTRY: Position OPEN @ 4021.44 (LIMIT filled 2026-07-17T16:18Z). TIME EXIT TRIGGERED \u2014 24h trend max expires at 16:18Z Sat Jul18 (during weekend closure). MARKET CLOSED (Saturday). CLOSE AT SUNDAY OPEN (~21:00 UTC Jul20).\n\nCONTEXT: bid=4017.11 at close. UPL=+$0.40. comp=-33 weak bear. Safe-haven paradox confirmed: 9+ Hormuz attacks Jul6-18 (9 corroborations), Hormuz traffic fell to 8 vessels/day vs 15 normal (Kpler data). USD/rates dominate over safe-haven demand \u2014 gold still falling. Trail at 4003.88 not triggered. Close at Sunday open regardless.\n\nSL: 4039.0  TP: 3970.0  R:R target: 2.93\n\nUpdated 2026-07-18T08:59Z \u2014 TIME EXIT pending Sunday market open.",
+      "entry_criterion": "Position OPEN. TIME EXIT at Sunday open 21:00 UTC \u2014 close at market unconditionally.",
       "regime_context": "GOLD 3984.18, comp=-50 moderate bear all TFs. H4 FVG mitigated. DAY FVG fresh 4008.97-4017.47.",
       "sl": 4039.0,
       "tp": 3970.0,
       "rr_target": 2.93,
       "current_price_ref": 4017.11,
-      "last_updated": "2026-07-18T06:47Z"
+      "last_updated": "2026-07-18T08:59Z"
     },
     {
       "id": "usdjpy_h1ob_buy_162063",
@@ -135,15 +135,15 @@
       "direction": "buy",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Price returns to H1 bull OB range (161.897-162.063) with M15 bullish rejection wick >=5p.\n\nCONTEXT: USDJPY 162.395 (Jul18 06:47Z). comp=+59.5 moderate (4/4 TF agree bullish \u2014 DAY ChoCH bull, H4/H1 BOS bull, M15 recovering). H1 OB 161.897-162.063 unmitigated. Dist=33.2p above OB top (162.063). H4 bear OB at 162.59-162.842 is resistance/target. Risk_guard blocks JPY (pip-value conversion pending). WATCH only.\n\nSL: 161.870  TP: 162.590  R:R target: 2.7\n\nUpdated 2026-07-18T06:47Z \u2014 comp=+59.5, moderate, 4/4 TF agree. dist=33.2p. Risk_guard blocks JPY. WATCH only.",
+      "note": "ENTRY: Price returns to H1 bull OB range (161.897-162.063) with M15 bullish rejection wick >=5p.\n\nCONTEXT: USDJPY ~162.395 (Jul18 close). comp=+59.5 moderate (4/4 TF agree bullish \u2014 DAY ChoCH bull, H4/H1 BOS bull, M15 recovering). H1 OB 161.897-162.063 unmitigated. Dist\u224833p above OB top. H4 bear OB at 162.59-162.842 is resistance/target. Risk_guard blocks JPY (pip-value conversion pending). WATCH only. After GBPUSD closes Sunday, correlation slot frees \u2014 monitor if risk_guard approves.\n\nSL: 161.870  TP: 162.590  R:R target: 2.7\n\nUpdated 2026-07-18T08:59Z \u2014 Saturday weekend. WATCH for Sunday open opportunity.",
       "entry_criterion": "Price drops to H1 OB 161.897-162.063 + M15 bullish rejection wick >=5p. WATCH only \u2014 risk_guard blocks JPY until pip-value conversion fixed.",
       "regime_context": "USDJPY 162.422. comp=+59.5 moderate (4/4 TF bull). DAY+H4+H1 bull. H1 OB 161.897-162.063 unmitigated 35.9p below. Risk_guard blocks JPY.",
       "sl": 161.87,
       "tp": 162.59,
       "rr_target": 2.7,
       "current_price_ref": 162.395,
-      "last_updated": "2026-07-18T06:47Z"
+      "last_updated": "2026-07-18T08:59Z"
     }
   ],
-  "last_updated": "2026-07-18T06:47Z"
+  "last_updated": "2026-07-18T08:59Z"
 }

@@ -188,5 +188,28 @@
         "reason": "comp=+21 below threshold, Hormuz bull but no technical readiness; spread=4p"
       }
     }
+  },
+  {
+    "tick_ts_utc": "2026-07-18T08:59Z",
+    "events_consumed": 0,
+    "event_summary": "0 events (heartbeat, Saturday market closure)",
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "trades": [],
+    "position_summary": {
+      "GBPUSD": "BUY HOLD age=24.1h UPL=+$0.47 TIME_EXIT_PENDING (close Sunday open)",
+      "GOLD": "SELL HOLD age=16.7h UPL=+$0.40 TIME_EXIT_PENDING (close Sunday open)",
+      "USDCAD": "SELL LIMIT 1.40818 GTC KEEP (dist=64p, Hormuz CAD bull)"
+    },
+    "alerts_modified": [
+      "gbpusd_dayfvg_buy_13494 (TIME_EXIT_PENDING note)",
+      "gold_h1fvg_sell_4021 (TIME_EXIT_PENDING note)"
+    ],
+    "alerts_added": [],
+    "alerts_removed": [],
+    "scalp_status": "all-OFF",
+    "balance": 999.46,
+    "news_summary": "Hormuz: 9+ ships attacked Jul6-18 (CNBC Jul17), traffic 8vs15 vessels/day, oil supply risk acute. GBPUSD: BoE 75% hike Jul30 priced, GBP bull intact. No regime-changing news.",
+    "regime_note": "Saturday market closure. TIME EXIT triggered for both positions (GBPUSD 24.1h, GOLD time-max passes 16:18Z Sat). Close both at Sunday open ~21:00 UTC."
   }
 ]
