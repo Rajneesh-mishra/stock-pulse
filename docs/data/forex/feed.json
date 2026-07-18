@@ -1,13 +1,6 @@
 {
-  "generated_at": "2026-07-18T15:33:53.038514Z",
+  "generated_at": "2026-07-18T16:40:28.434367Z",
   "ticks": [
-    {
-      "ts": "2026-04-23T17:14:22Z",
-      "summary": "2026-04-23T17:14:22Z \u2014 17:07 forex auto \u2014 21 evt gap since 12:34 (4.5h): 6 usdjpy_audits (iran_ceasefire 'extension' kw from Reuters/Al-Jazeera/Detroit-News/Caspian/Daily-Pioneer/WaPo \u2014 ALL iteration of indefinite-extension regime NOT thesis-altering) + 3 oil_audits (ship-traffic + extension-coverage NOT altering) + 4 liquidity_sweeps (USDCHF 0.78602 up-sell readiness=none skip / GBPUSD 1.35133 up",
-      "events_processed": 38,
-      "trades_opened": 0,
-      "trades_closed": 0
-    },
     {
       "ts": "2026-04-23T19:14:00Z",
       "events": 2,
@@ -890,6 +883,45 @@
         }
       },
       "notes": "Saturday closure heartbeat. Both positions time-exit-pending at Sunday open ~21:00Z. News confirms Hormuz crisis ongoing, gold bearish regime intact."
+    },
+    {
+      "tick_ts_utc": "2026-07-18T16:35Z",
+      "events": 0,
+      "event_types": [],
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "limits_placed": 0,
+      "skipped": 0,
+      "open_positions": [
+        {
+          "instrument": "GBPUSD",
+          "direction": "BUY",
+          "entry": 1.34437,
+          "upl": 0.47,
+          "age_h": 31.7,
+          "thesis_type": "trend",
+          "note": "TIME EXIT OVERDUE - close Sunday open ~21:00Z Jul19"
+        },
+        {
+          "instrument": "GOLD",
+          "direction": "SELL",
+          "entry": 4021.44,
+          "upl": 0.4,
+          "age_h": 24.3,
+          "thesis_type": "trend",
+          "note": "TIME EXIT OVERDUE (expired 16:18Z Sat) - close Sunday open ~21:00Z Jul19"
+        }
+      ],
+      "active_limits": [
+        {
+          "instrument": "USDCAD",
+          "direction": "SELL",
+          "level": 1.40818,
+          "dist_p": 59.9,
+          "note": "Hormuz 12+evt CAD bull; US revoked Iran oil license Jul18; H4 FVG bear zone; GTC"
+        }
+      ],
+      "summary": "0 evt heartbeat Saturday. 2 pos TIME-EXIT-OVERDUE (GBPUSD 31.7h, GOLD 24.3h - both close Sunday open). USDCAD LIMIT GTC keep. News: Hormuz 12+evt, US revoked Iran oil license. USDJPY OB WATCH. Scalp all-OFF."
     }
   ]
 }
