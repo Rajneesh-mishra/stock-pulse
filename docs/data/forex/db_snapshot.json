@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-17T20:43:35.756645+00:00",
+  "generated_at": "2026-07-18T03:31:19.276070+00:00",
   "counts": {
     "trades": 54,
     "events": 8352,
     "ticks": 59,
-    "regime_snapshots": 314,
+    "regime_snapshots": 315,
     "broker_positions": 0,
     "counterfactuals": 218
   },
@@ -1063,6 +1063,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-07-18T02:15Z",
+      "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "note_text": "2026-07-18T02:15Z tick \u2014 0 evt (heartbeat). GOLD SELL HOLD @ 4021.44 bid=4013.58 UPL=+$0.79 age=9.9h (trend max 24h) comp=-33 weak bear (DAY/H4/H1 bear, M15 ChoCH bull=noise) trail@4003.88 not-hit SL=4039 TP=3970. GBPUSD BUY HOLD @ 1.34437 bid=1.34586 UPL=+$1.49 age=17.3h (trend max 24h) comp=+39 weak bull H4-BOS-bull-1.34519 intact; BoE 75% Jul30 hike priced = GBP bull. USDCAD SELL LIMIT 1.40818 KEEP GTC (Hormuz CAD bull, H4 FVG unmitigated, dist=71.5p). USDJPY WATCH comp=+59.5 moderate (4/4 TF bull, near strong), H1 OB 161.897-162.063 dist=35.9p still outside 30p threshold. News: GOLD safe-haven paradox confirmed (USD/rates dominant, no safe-haven bid despite Hormuz). GBPUSD: BoE 75% Jul30 hike = GBP bull intact. AUDIT: usdjpy note updated (comp +49\u2192+59.5, dist 29.9p\u219235.9p, TP\u2192162.59). 2 pos 1 LIMIT; bal=$1000.78.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-07-17T18:47Z",
       "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
       "note_text": "2026-07-17T18:47Z tick 2026-07-17T18:47Z \u2014 0 evt (heartbeat). GOLD SELL HOLD @ 4021.44 bid=4009.29 UPL=+$1.185 age=2.4h (trend max 24h) comp=weak bear trail@4003.88 not-hit SL=4039 TP=3970. GBPUSD BUY HOLD @ 1.34437 bid=1.34537 UPL=+$1.00 age=9.8h (trend max 24h) H4-BOS-bull-1.34519 intact comp=weak. USDCAD SELL LIMIT 1.40818 KEEP GTC (Hormuz CAD bull thesis, dist=67p, H4 FVG unmitigated). USDJPY H1OB buy 162.063 WATCH (moderate bull readiness, price 162.44 dist=37.7p vs 30p threshold \u2014 just outside proximity). AUDIT: removed usdjpy_dayfvg_buy_161682 (staleness: dist=75.8p > 3\u00d7H4ATR=67.5p, no catalyst). 2 pos 1 LIMIT; bal=$1000.80.",
@@ -1130,14 +1138,6 @@
       "ts_utc": "2026-07-17T10:22Z",
       "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
       "note_text": "2026-07-17 tick 2026-07-17T10:22Z \u2014 0 evt (heartbeat). GBPUSD BUY 1000 @ 1.34437 HOLD (comp=+18.5 none, H4 BOS bull 1.34519 intact, H1/M15 short-term bearish, UPL=-$0.44, SL=1.3415 27p buffer, age=1h28m within 24h trend limit). GOLD SELL LIMIT 4021.39 KEEP (comp=-42 moderate bear, dist=24.2p, DAY FVG 4008-4017 fresh; 3\u00d7H4ATR=92.9p \u2014 not stale). USDCAD SELL LIMIT 1.40818 KEEP (comp=-18 none but H4/H1/M15 all bearish, dist=52.4p < 3\u00d7H4ATR=63.9p, CAD bull/Hormuz thesis intact). USDJPY comp=52 moderate bull all-TF, H1 OB 161.897-162.063 dist=32.9p WATCH-only (risk_guard JPY blocked). No new trades \u2014 no confluence at moderate+ for new entries outside active positions. News search skipped (last tick 7min ago). 1 pos 2 LIMIT; bal=$998.16.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-07-17T10:15Z",
-      "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
-      "note_text": "2026-07-17 tick 2026-07-17T10:15Z \u2014 5 evt: news_flash hormuz_strait Jul17 'British military reports tanker attack in Strait of Hormuz near Oman' (NL Times/BS) \u2014 3rd corroborating Hormuz escalation event, USD caution intact, OIL bull/CAD bull confirmed; alert_audit_request x2 GBPUSD gbpusd_dayfvg_buy_13494 (hormuz_strait match, news corroborates GBP bull); position_opened GBPUSD BUY 1000 @ 1.34437 SL=1.3415 TP=1.365 dealId=00000000-5701-acfd (LIMIT filled 08:54Z); level_cross gbpusd_dayfvg_buy_13494 cross_down @ 1.344035 (3p below entry, within DAY FVG zone, SL=1.3415 intact). GBPUSD position HELD: comp degraded +42\u2192+18.5 (none) on H1/M15 short-term bearishness, BUT H4 BOS bull (1.34519) intact and DAY FVG demand zone (1.34437-1.34598) being tested. SL at 1.3415 (28.7p buffer) gives room. UPL=-$0.29. GOLD SELL LIMIT 4021.39 KEEP (comp=-37 weak bear, price=3996.7, dist=24.7p, structure DAY/H4/H1 bear intact). USDCAD SELL LIMIT 1.40818 KEEP (comp=-40 moderate bear, price=1.40277, dist=54.1p, CAD bull/Hormuz intact). USDJPY comp=52 moderate bull all 4TFs \u2014 H1 OB 161.897-162.063 dist=31.1p WATCH (risk_guard JPY bug blocks trades). Added usdjpy_h1ob_buy_162063 alert (WATCH only). 1 pos, 2 LIMIT; bal=$998.33.",
       "binary_event_name": null,
       "binary_event_active": 0,
       "binary_event_deadline": null

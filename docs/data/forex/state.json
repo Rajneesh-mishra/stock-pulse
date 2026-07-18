@@ -1,8 +1,8 @@
 {
   "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
-  "tick_ts_utc": "2026-07-18T02:15Z",
-  "state_ts_utc": "2026-07-18T02:15Z",
-  "regime_note": "2026-07-18T02:15Z tick \u2014 0 evt (heartbeat). GOLD SELL HOLD @ 4021.44 bid=4013.58 UPL=+$0.79 age=9.9h (trend max 24h) comp=-33 weak bear (DAY/H4/H1 bear, M15 ChoCH bull=noise) trail@4003.88 not-hit SL=4039 TP=3970. GBPUSD BUY HOLD @ 1.34437 bid=1.34586 UPL=+$1.49 age=17.3h (trend max 24h) comp=+39 weak bull H4-BOS-bull-1.34519 intact; BoE 75% Jul30 hike priced = GBP bull. USDCAD SELL LIMIT 1.40818 KEEP GTC (Hormuz CAD bull, H4 FVG unmitigated, dist=71.5p). USDJPY WATCH comp=+59.5 moderate (4/4 TF bull, near strong), H1 OB 161.897-162.063 dist=35.9p still outside 30p threshold. News: GOLD safe-haven paradox confirmed (USD/rates dominant, no safe-haven bid despite Hormuz). GBPUSD: BoE 75% Jul30 hike = GBP bull intact. AUDIT: usdjpy note updated (comp +49\u2192+59.5, dist 29.9p\u219235.9p, TP\u2192162.59). 2 pos 1 LIMIT; bal=$1000.78.",
+  "tick_ts_utc": "2026-07-18T05:30Z",
+  "state_ts_utc": "2026-07-18T05:30Z",
+  "regime_note": "2026-07-18T05:30Z tick \u2014 1 evt (news_flash hormuz_strait WION: 2 tankers hit mines near Hormuz, catch fire). 7th Hormuz escalation corroboration \u2014 OIL bull + CAD bull STRENGTHENED. GOLD SELL HOLD @ 4021.44 bid=4017.11 UPL=+$0.40 age=13.2h (trend max 24h) SL=4039 TP=3970 trail@4003.88 not-hit. GBPUSD BUY HOLD @ 1.34437 bid=1.34484 UPL=+$0.47 age=20.6h (trend max 24h, TIME EXIT 08:54 UTC) H4-BOS-bull-1.34519 straddled BoE-Jul30-hike-75pct. USDCAD SELL LIMIT 1.40818 KEEP GTC (Hormuz 7th-evt CAD-bull, FVG 1.40774-1.41252 unmitigated, dist=61.9p, comp=-39.5 weak bear). USDJPY comp=59.5 moderate WATCH (4/4 TF bull, H1 OB 161.897-162.063 dist=33.2p vs 30p threshold, JPY pip-val bug blocks ARM). GOLD safe-haven paradox sustained \u2014 7 escalation events, USD/rates dominant, no safe-haven premium. 2 pos 1 LIMIT; bal=$999.46.",
   "regime_note_prev": "2026-07-17 tick 2026-07-17T17:45Z \u2014 3 evt (news_flash hormuz_strait Tanker struck Hormuz; alert_audit_request USDCAD usdcad_h4fvg_sell_140818; position_opened GOLD SELL). Hormuz: 5th corroborating escalation (TradeWinds: tanker projectile strike Jul17). OIL bull intact, CAD bull intact. GOLD safe-haven NOT materializing \u2014 USD strength dominant, GOLD at 4010.75 falling. GBPUSD BUY HOLD @ 1.34437, bid=1.34516, UPL=+$0.79, age=8.8h (trend max 24h), H4 BOS bull 1.34519 intact, SL=1.3415 10.6p buffer. comp=+21 none (H1+M15 mixed). HOLD. GOLD SELL OPEN @ 4021.44, bid=4010.75, UPL=+$1.04, age=1.4h (trend max 24h), H1 BOS bear, TP=3970 (51p away), SL=4039 (+1R at 4003.88 not reached, no trail yet). USDCAD SELL LIMIT 1.40818 KEEP \u2014 Hormuz (5th event) corroborates CAD bull; price at 1.40146 (67p below limit), FVG 1.40774-1.41252 unmitigated; GTC valid. comp=-33 weak bear. USDJPY WATCH-only (risk_guard blocked). 2 pos 1 LIMIT; bal=$1000.46.",
   "open_positions": [
     {
@@ -17,7 +17,7 @@
       "thesis_type": "trend",
       "alert_id": "gbpusd_dayfvg_buy_13494",
       "confluence_at_entry": "+42 moderate bull (H4 BOS bull, DAY bull, M15 recovering). DAY FVG bottom 1.34437 anticipation LIMIT.",
-      "upl": 1.49,
+      "upl": 0.47,
       "entry_price": 1.34437
     },
     {
@@ -32,7 +32,7 @@
       "thesis_type": "trend",
       "alert_id": "gold_h1fvg_sell_4021",
       "confluence_at_entry": "comp=-35.7 weak bear (H1 BOS bear, H4 bear FVG, DAY price<EMA). H4 TF timeout but DAY+H1 bear confirm. LIMIT filled at 4021.44 vs 4021.39 placed.",
-      "upl": 0.79,
+      "upl": 0.4,
       "entry_price": 4021.44
     }
   ],
@@ -1552,9 +1552,9 @@
   ],
   "binary_event": {
     "active": false,
-    "note": "No active binary event. US-Iran escalation ONGOING \u2014 6th corroboration: CNBC Jul17 'Oil tankers face worst case scenario in Hormuz as Iran steps up attacks'. OIL bull, CAD bull intact. GOLD not holding safe-haven premium (USD strength dominant, GOLD at $4013 vs SELL entry $4021). Sustained escalation regime."
+    "note": "No active binary event. US-Iran escalation ONGOING \u2014 7th corroboration: WION Jul18 '2 oil tankers hit mines, catch fire near Hormuz'. OIL bull, CAD bull intact and strengthening. GOLD not holding safe-haven premium (USD/rates dominant). Sustained escalation regime."
   },
-  "balance": 998.16,
+  "balance": 999.46,
   "level_alerts": [
     {
       "alert_id": "usdcad_h4fvg_sell_140818",
@@ -1617,7 +1617,7 @@
       "instrument": "USDJPY",
       "direction": "buy",
       "level": 162.063,
-      "note": "ENTRY: Pullback into H1 Bull OB zone (161.897-162.063). BUY on M15 rejection wick + M15 bullish close above 162.063. WATCH ONLY \u2014 cannot ARM until JPY pip-value conversion bug fixed in risk_guard.py.\n\nCONTEXT: USDJPY comp=52 moderate bull all 4 TFs. H1 Bull OB at 161.897-162.063 (bars_ago=40, vol=11020). Current price 162.374, OB top 162.063, dist=31.1p (just outside 30p ARM zone). Await pullback to OB zone before arming.\n\nSL: 161.85  TP: 163.5  R:R target: 4.7:1\n\nAdded 2026-07-17T10:15Z \u2014 WATCH until (a) price retraces to OB zone AND (b) JPY pip-value fix deployed.",
+      "note": "ENTRY: Pullback into H1 Bull OB zone (161.897-162.063). BUY on M15 rejection wick + M15 bullish close above 162.063. WATCH ONLY \u2014 cannot ARM until JPY pip-value conversion bug fixed in risk_guard.py.\n\nCONTEXT: USDJPY comp=59.5 moderate bull all 4 TFs (DAY ChoCH bull, H4 price>EMA, H1 BOS bull, M15 EMA mixed). H1 Bull OB at 161.897-162.063 (bars_ago=50). Current dist=33.2p (30p proximity threshold). TP=162.59 (bear OB top). SL=161.85 below OB bottom.\n\nSL: 161.85  TP: 162.59  R:R target: 4.7\n\nUpdated 2026-07-18T05:30Z \u2014 dist 35.9p\u219233.2p, comp stable +59.5, JPY bug still blocks.",
       "entry_criterion": "M15 rejection wick + close above 162.063 (H1 Bull OB top). WATCH only \u2014 JPY pip-value bug blocks.",
       "regime_context": "USDJPY comp=52 moderate bull all 4TFs. H1 OB at 161.897-162.063 structural demand.",
       "sl": 161.85,
