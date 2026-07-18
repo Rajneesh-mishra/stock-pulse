@@ -80,5 +80,113 @@
     "balance": 999.46,
     "news_check": "GOLD: bear thesis confirmed (safe-haven paradox, US naval blockade Iran, rate-hike 71% Sep). GBPUSD: BoE hike intact, Burnham PM transition minimal impact.",
     "audit": "all alerts KEEP; no staleness triggers; attention matrix 8-row emitted"
+  },
+  {
+    "tick_ts_utc": "2026-07-18T06:47Z",
+    "events_processed": 1,
+    "events": [
+      "evt_1784357186433_news_flash"
+    ],
+    "event_types": [
+      "news_flash"
+    ],
+    "positions": [
+      {
+        "instrument": "GBPUSD",
+        "direction": "BUY",
+        "size": 1000,
+        "entry": 1.34437,
+        "bid": 1.34539,
+        "upl": 1.02,
+        "sl": 1.3415,
+        "tp": 1.365,
+        "age_h": 21.9
+      },
+      {
+        "instrument": "GOLD",
+        "direction": "SELL",
+        "size": 0.1,
+        "entry": 4021.44,
+        "bid": 4017.11,
+        "upl": 0.43,
+        "sl": 4039,
+        "tp": 3970,
+        "age_h": 14.5
+      }
+    ],
+    "limit_orders": [
+      {
+        "instrument": "USDCAD",
+        "direction": "SELL",
+        "level": 1.40818,
+        "sl": 1.411,
+        "tp": 1.395,
+        "status": "GTC"
+      }
+    ],
+    "actions": [
+      "news_flash 8th Hormuz corroboration (The Hindu: 2 tankers hit mines, explode). OIL/CAD bull thesis strengthened.",
+      "USDCAD SELL LIMIT 1.40818 KEEP GTC \u2014 8th Hormuz event corroborates",
+      "GOLD SELL HOLD trail@4003.88 not hit. Safe-haven paradox confirmed (8 events, gold bearish)",
+      "GBPUSD BUY HOLD \u2014 time exit 08:54Z (~2h). H4-BOS-bull intact",
+      "USDJPY WATCH only \u2014 comp=+59.5 mod, risk_guard blocks JPY",
+      "news_queries rolled: all queries window now 18-21 Jul 2026"
+    ],
+    "new_trades": 0,
+    "closed_trades": 0,
+    "balance": 999.46,
+    "upl_total": 1.45,
+    "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+    "scalp_status": "all-OFF",
+    "attention_matrix": {
+      "EURUSD": {
+        "swing": "NONE",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "comp=-4, no setup; scalp engine disabled (desync)"
+      },
+      "GBPUSD": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "weak",
+        "reason": "Position BUY open, time exit 08:54Z; scalp wr=0% disabled"
+      },
+      "AUDUSD": {
+        "swing": "NONE",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "comp=+2, no setup; scalp wr=11% disabled"
+      },
+      "USDJPY": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "moderate",
+        "reason": "H1 OB 162.063 (dist=33.2p), risk_guard blocks JPY pip-val"
+      },
+      "USDCAD": {
+        "swing": "ARMED",
+        "scalp": "OFF",
+        "readiness": "weak*",
+        "reason": "SELL LIMIT GTC @ 1.40818 live; 8th Hormuz corroboration; scalp pip-conv pending"
+      },
+      "USDCHF": {
+        "swing": "NONE",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "comp=-9, no setup; scalp pip-val pending"
+      },
+      "GOLD": {
+        "swing": "WATCH",
+        "scalp": "N/A",
+        "readiness": "weak",
+        "reason": "SELL position open, trail 4003.88, time exit 16:18Z; safe-haven paradox sustained"
+      },
+      "OIL_CRUDE": {
+        "swing": "NONE",
+        "scalp": "N/A",
+        "readiness": "none",
+        "reason": "comp=+21 below threshold, Hormuz bull but no technical readiness; spread=4p"
+      }
+    }
   }
 ]
