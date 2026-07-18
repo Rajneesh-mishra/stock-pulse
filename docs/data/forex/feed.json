@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T11:17:28.449786Z",
+  "generated_at": "2026-07-18T12:22:16.949397Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -608,6 +608,96 @@
         "GOLD": "swing=WATCH scalp=N/A readiness=weak(-33) open-pos-time-exit-pending",
         "OIL_CRUDE": "swing=NONE scalp=N/A readiness=none composite=+21"
       }
+    },
+    {
+      "tick_ts_utc": "2026-07-18T12:21Z",
+      "events": 0,
+      "event_types": [],
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "skipped": 0,
+      "open_positions": [
+        {
+          "instrument": "GBPUSD",
+          "direction": "BUY",
+          "entry": 1.34437,
+          "upl": 0.47,
+          "age_h": 27.4,
+          "note": "TIME-EXIT PENDING Sunday open"
+        },
+        {
+          "instrument": "GOLD",
+          "direction": "SELL",
+          "entry": 4021.44,
+          "upl": 0.403,
+          "age_h": 20.0,
+          "note": "TIME-EXIT PENDING Sunday open"
+        }
+      ],
+      "pending_orders": [
+        {
+          "instrument": "USDCAD",
+          "direction": "SELL",
+          "type": "LIMIT",
+          "level": 1.40818,
+          "dist_p": 61.9,
+          "status": "KEEP GTC"
+        }
+      ],
+      "watchlist_changes": [],
+      "balance": 999.46,
+      "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "attention_matrix": {
+        "EURUSD": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "comp=-4 neutral no alert; scalp desync-disabled"
+        },
+        "GBPUSD": {
+          "swing": "ARMED",
+          "scalp": "OFF",
+          "readiness": "weak",
+          "reason": "position OPEN TIME-EXIT Sunday; scalp WR=0%/31T disabled"
+        },
+        "AUDUSD": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "comp=+2 neutral no alert; scalp WR=11%/19T disabled"
+        },
+        "USDJPY": {
+          "swing": "WATCH",
+          "scalp": "OFF",
+          "readiness": "moderate",
+          "reason": "comp=+59.5 moderate 4/4 TF bull H1-OB 33.2p away; risk_guard JPY pip-conv block"
+        },
+        "USDCAD": {
+          "swing": "ARMED",
+          "scalp": "OFF",
+          "readiness": "weak",
+          "reason": "SELL LIMIT 1.40818 GTC dist=61.9p; comp=-39.5 bearish; Hormuz CAD-bull catalyst intact"
+        },
+        "USDCHF": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "comp=-9 neutral no alert; pip-conv pending"
+        },
+        "GOLD": {
+          "swing": "ARMED",
+          "scalp": "N/A",
+          "readiness": "weak",
+          "reason": "position OPEN TIME-EXIT Sunday; spread 5p forbids scalp"
+        },
+        "OIL_CRUDE": {
+          "swing": "NONE",
+          "scalp": "N/A",
+          "readiness": "none",
+          "reason": "comp=+21 weak bull but no alert added (OIL spread 4p); scalp spread-blocked"
+        }
+      },
+      "scalp_audit": "EURUSD=KEEP-OFF(desync) GBPUSD=KEEP-OFF(WR0%/31T) AUDUSD=KEEP-OFF(WR11%/19T) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
     }
   ]
 }

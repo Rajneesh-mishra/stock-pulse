@@ -1,8 +1,8 @@
 {
   "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
-  "tick_ts_utc": "2026-07-18T12:10Z",
-  "state_ts_utc": "2026-07-18T12:10Z",
-  "regime_note": "2026-07-18T12:10Z tick \u2014 0 evt (heartbeat, Saturday market closure).\nHormuz 10-event sustained escalation regime: OIL bull + CAD bull at max corroboration. No executions possible (weekend).\nGBPUSD BUY HOLD @ 1.34437 bid=1.34484 UPL=+$0.47 age=27.3h \u2014 trend max EXCEEDED (24h). TIME EXIT PENDING: CLOSE AT SUNDAY OPEN (~21:00 UTC Jul20). BoE Jul30 hike 75% macro intact.\nGOLD SELL HOLD @ 4021.44 bid=4017.11 UPL=+$0.40 age=19.9h \u2014 TIME EXIT at 16:18Z today (mkt closed). TIME EXIT PENDING: CLOSE AT SUNDAY OPEN. Safe-haven paradox: USD/rates dominant, gold bearish. Trail@4003.88 not hit.\nUSDCAD SELL LIMIT 1.40818 KEEP GTC \u2014 dist=63.9p, H4ATR\u224821p, 3\u00d7=63p; at staleness threshold but noise-level move (+2p vs last tick). Hormuz catalyst intact. FVG 1.40774-1.41252 unmitigated. LIMIT ARMED.\nUSDJPY WATCH comp=+59.5 moderate 4/4 TF bull. H1 OB 162.063 dist=33.2p. JPY pip-conv block. After both positions close Sunday, slot may free.\nScalp all-OFF (EURUSD=desync, GBPUSD=WR0%, AUDUSD=WR11%/19-trades, rest=pip-conv/spread). 2 pos 1 LIMIT; bal=$999.46.",
+  "tick_ts_utc": "2026-07-18T12:21Z",
+  "state_ts_utc": "2026-07-18T12:21Z",
+  "regime_note": "2026-07-18T12:21Z tick \u2014 0 evt (heartbeat, Saturday market closure).\nHormuz 10-event sustained escalation regime: OIL bull + CAD bull at max corroboration. No executions possible (weekend).\nGBPUSD BUY HOLD @ 1.34437 bid=1.34539 UPL=+$0.47 age=27.4h \u2014 trend 24h TIME-EXIT EXCEEDED. TIME EXIT PENDING: CLOSE AT SUNDAY OPEN (~21:00 UTC Jul20). BoE Jul30 hike 75% macro intact.\nGOLD SELL HOLD @ 4021.44 bid=4017.26 UPL=+$0.40 age=20.0h \u2014 TIME EXIT at 16:18Z Sat passed in mkt closure. TIME EXIT PENDING: CLOSE AT SUNDAY OPEN. Safe-haven paradox: USD/rates dominant, gold bearish. Trail@4003.88 not hit.\nUSDCAD SELL LIMIT 1.40818 KEEP GTC \u2014 dist=61.9p, H4ATR\u224821p, 3\u00d7=63p; dist<3\u00d7ATR so NOT stale. Hormuz catalyst fresh (10th event today). FVG 1.40774-1.41252 unmitigated. LIMIT ARMED.\nUSDJPY WATCH comp=+59.5 moderate (4/4 TF bull). H1 OB 161.897-162.063 dist=33.2p (>30p threshold). JPY pip-conv block. After both positions close Sunday, slot may free.\nScalp all-OFF (EURUSD=desync, GBPUSD=WR0%/31T, AUDUSD=WR11%/19T, rest=pip-conv/spread). 2 pos 1 LIMIT; bal=$999.46.",
   "regime_note_prev": "2026-07-18T08:59Z tick \u2014 0 evt (heartbeat, Saturday market closure). Markets closed \u2014 no executions possible. TIME EXIT PENDING (both positions): close at Sunday open ~21:00 UTC.\nGBPUSD BUY HOLD @ 1.34437 bid=1.34484 UPL\u2248+$0.47 age=24.1h \u2014 trend 24h max hit at 08:54Z; market closed. CLOSE SUNDAY OPEN. BoE Jul30 hike 75% intact; GBP bull macro confirmed.\nGOLD SELL HOLD @ 4021.44 bid=4017.11 UPL=+$0.40 age=16.7h \u2014 time exit fires at 16:18Z Sat (during closure). CLOSE SUNDAY OPEN. Safe-haven paradox confirmed: 9+ Hormuz attacks, Hormuz traffic 8 vs 15 vessels/day (Kpler), gold still falling (USD/rates dominant). Trail@4003.88 not hit.\nUSDCAD SELL LIMIT 1.40818 KEEP GTC \u2014 Hormuz escalation intensifying (CNBC Jul17: 9 ships attacked since Jul6, Hormuz largely closed); CAD bull strengthening. dist=64p.\nUSDJPY WATCH comp=+59.5 moderate, H1 OB 162.063 dist=33p. JPY pip-conv block. After GBPUSD closes correlation slot may free.\nScalp all-OFF. 2 pos 1 LIMIT; bal=$999.46.",
   "open_positions": [
     {
@@ -33,9 +33,9 @@
       "thesis_type": "trend",
       "alert_id": "gold_h1fvg_sell_4021",
       "confluence_at_entry": "comp=-35.7 weak bear (H1 BOS bear, H4 bear FVG, DAY price<EMA). H4 TF timeout but DAY+H1 bear confirm. LIMIT filled at 4021.44 vs 4021.39 placed.",
-      "upl": 0.4,
+      "upl": 0.403,
       "entry_price": 4021.44,
-      "upl_usd": 0.4
+      "upl_usd": 0.403
     }
   ],
   "watchlist": [],
