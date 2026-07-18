@@ -297,5 +297,55 @@
     "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
     "markets_status": "CLOSED_SATURDAY",
     "regime_note": "10th Hormuz escalation. 2 pos TIME_EXIT_PENDING Sunday open. 1 LIMIT USDCAD GTC. Scalp all-OFF."
+  },
+  {
+    "tick_ts": "2026-07-18T10:08Z",
+    "events": 0,
+    "event_detail": "0 evt (heartbeat, Saturday market closure)",
+    "positions": [
+      {
+        "instrument": "GBPUSD",
+        "direction": "BUY",
+        "entry": 1.34437,
+        "bid": 1.34484,
+        "upl": 0.47,
+        "age_h": 25.2,
+        "status": "TIME_EXIT_PENDING_SUNDAY_OPEN"
+      },
+      {
+        "instrument": "GOLD",
+        "direction": "SELL",
+        "entry": 4021.44,
+        "bid": 4017.11,
+        "upl": 0.4,
+        "age_h": 17.8,
+        "status": "TIME_EXIT_PENDING_SUNDAY_OPEN"
+      }
+    ],
+    "orders": [
+      {
+        "instrument": "USDCAD",
+        "direction": "SELL",
+        "type": "LIMIT",
+        "level": 1.40818,
+        "status": "KEEP_GTC",
+        "dist_p": 61.9
+      }
+    ],
+    "actions": [],
+    "daily_pnl": 7.18,
+    "balance": 999.46,
+    "regime": "USD_STRENGTH_OIL_BULL_ESCALATION_HORMUZ_10EVT",
+    "attention": {
+      "EURUSD": "NONE/OFF/none \u2014 comp=-4 no structure, scalp disabled engine_desync",
+      "GBPUSD": "WATCH/OFF/weak \u2014 pos open BUY time-exit Sunday, scalp WR=0%",
+      "AUDUSD": "NONE/OFF/none \u2014 comp=+2 no structure, scalp WR=11% 19/20 trades",
+      "USDJPY": "WATCH/OFF/moderate \u2014 H1 OB 162.063 dist=33p comp=+59.5 mod bull, pip-conv block",
+      "USDCAD": "WATCH/OFF/weak \u2014 SELL LIMIT 1.40818 GTC in market (readiness=weak), pip-conv block scalp",
+      "USDCHF": "NONE/OFF/none \u2014 comp=-9 no structure, pip-conv block",
+      "GOLD": "WATCH/N/A/weak \u2014 pos open SELL time-exit Sunday, spread blocks scalp",
+      "OIL_CRUDE": "NONE/N/A/none \u2014 comp=+21 weak bull no alert, spread blocks scalp"
+    },
+    "scalp_audit": "EURUSD=OFF(engine_desync) GBPUSD=OFF(WR=0% 31t) AUDUSD=OFF(WR=11% 19t) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
   }
 ]
