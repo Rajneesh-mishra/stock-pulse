@@ -1,15 +1,6 @@
 {
-  "generated_at": "2026-07-18T16:40:28.434367Z",
+  "generated_at": "2026-07-18T17:45:14.474688Z",
   "ticks": [
-    {
-      "ts": "2026-04-23T19:14:00Z",
-      "events": 2,
-      "opened": 0,
-      "closed": 0,
-      "skipped_setups": 0,
-      "pnl": 0,
-      "note": "satire news_flash + USDJPY audit both non-thesis-altering; swing=WATCH"
-    },
     {
       "ts_utc": "2026-04-23T20:20:00Z",
       "events_in": 1,
@@ -922,6 +913,54 @@
         }
       ],
       "summary": "0 evt heartbeat Saturday. 2 pos TIME-EXIT-OVERDUE (GBPUSD 31.7h, GOLD 24.3h - both close Sunday open). USDCAD LIMIT GTC keep. News: Hormuz 12+evt, US revoked Iran oil license. USDJPY OB WATCH. Scalp all-OFF."
+    },
+    {
+      "tick_ts": "2026-07-18T17:42Z",
+      "events": 0,
+      "event_type": "heartbeat",
+      "market": "closed_saturday",
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "positions": [
+        {
+          "instrument": "GBPUSD",
+          "direction": "BUY",
+          "entry": 1.34437,
+          "sl": 1.3415,
+          "tp": 1.365,
+          "upl": 0.47,
+          "age_h": 32.8,
+          "status": "TIME_EXIT_PENDING_SUNDAY_OPEN"
+        },
+        {
+          "instrument": "GOLD",
+          "direction": "SELL",
+          "entry": 4021.44,
+          "sl": 4039.0,
+          "tp": 3970.0,
+          "upl": 0.4,
+          "age_h": 25.4,
+          "status": "TIME_EXIT_PENDING_SUNDAY_OPEN"
+        }
+      ],
+      "orders": [
+        {
+          "instrument": "USDCAD",
+          "direction": "SELL",
+          "type": "LIMIT",
+          "level": 1.40818,
+          "dist_p": 63.9,
+          "status": "KEEP_GTC_Hormuz12evt"
+        }
+      ],
+      "news": {
+        "Hormuz": "INTENSIFYING \u2014 Iran attacks 3 ships/24h Jul13, US strikes Jul15, traffic 8/15 vessels/day. CAD bull INTACT.",
+        "USDJPY": "BoJ hiked 1.00% hawkish, $74B intervention Apr-May failed, 40yr JPY low 162.5. Elevated intervention risk."
+      },
+      "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "balance": 999.46,
+      "scalp": "all_OFF"
     }
   ]
 }

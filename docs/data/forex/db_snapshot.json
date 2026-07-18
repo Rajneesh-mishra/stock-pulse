@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-18T15:32:48.902357+00:00",
+  "generated_at": "2026-07-18T16:40:37.764840+00:00",
   "counts": {
     "trades": 54,
     "events": 8363,
     "ticks": 59,
-    "regime_snapshots": 325,
+    "regime_snapshots": 327,
     "broker_positions": 0,
     "counterfactuals": 218
   },
@@ -1063,6 +1063,22 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-07-18T16:35Z",
+      "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "note_text": "2026-07-18T16:35Z tick \u2014 heartbeat (0 events, Saturday market closure). Broker: GBPUSD BUY UPL=+$0.47 age=31.7h (TIME EXIT OVERDUE, market closed); GOLD SELL UPL=+$0.40 age=24.3h (TIME EXIT OVERDUE at 16:18Z Sat, market closed). Both positions: CLOSE AT SUNDAY OPEN (~21:00 UTC Jul19). USDCAD SELL LIMIT 1.40818 GTC dist=59.9p <3\u00d7H4ATR=63p KEEP \u2014 Hormuz 12+evt: US revoked Iran oil license + tanker attacks ongoing (NBC/CNBC Jul18). CAD bull intact. GOLD ~$4,017 consolidating (expected range $3,952-$4,060 on Mon). Safe-haven paradox persists. USDJPY comp=+59.5 moderate (4/4 TF bull), OB 161.897-162.063 dist=33.2p \u2014 arm LIMIT at Sunday open if price drops to OB. Scalp all-OFF. 2 pos 1 LIMIT; bal=$999.46.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
+      "ts_utc": "2026-07-18T15:33Z",
+      "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "note_text": "2026-07-18T15:33Z tick \u2014 heartbeat (0 events, Saturday market closure). Broker reconciled: GBPUSD BUY UPL=+$0.47 age=30.6h (TIME EXIT OVERDUE, market closed); GOLD SELL UPL=+$0.40 age=23.2h (24h expires 16:18Z Sat, still closed); USDCAD SELL LIMIT 1.40818 GTC (dist=59.9p, 3\u00d7H4ATR=63p, Hormuz 11-evt CAD bull intact). News search confirms Hormuz crisis ongoing (CNBC: traffic 8 vs 15 vessels/day; tanker attacks persist). GOLD safe-haven paradox confirmed: gold ~$4,017, USD/rates dominate, safe-haven flows not to gold. Both time-exit positions: CLOSE AT SUNDAY OPEN (~21:00 UTC Jul19). USDJPY comp=+59.5 moderate (4/4 TF bull); H1 OB 161.897-162.063, dist=33.2p \u2014 NOT in proximity. After GBPUSD closes Sunday, correlation slot frees for USDJPY if price drops to OB. Scalp all-OFF (EURUSD=desync, GBPUSD=WR0%/31T, AUDUSD=WR11%/19T, rest=pip-conv/spread). 2 pos 1 LIMIT; bal=$999.46.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-07-18T13:35Z",
       "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
       "note_text": "2026-07-18T13:35Z tick \u2014 heartbeat (0 events, Saturday market closure).\nBroker reconciled: GBPUSD BUY UPL=+$0.47 age=28.5h (TIME EXIT OVERDUE, market closed); GOLD SELL UPL=+$0.40 age=21.1h (hits 24h at 16:18Z, still Saturday); USDCAD SELL LIMIT 1.40818 GTC (dist=61.9p < 3xH4ATR=63p, Hormuz 11-evt CAD bull intact).\nBoth positions: TIME EXIT PENDING \u2014 CLOSE AT SUNDAY OPEN (~21:00 UTC Jul20). Cannot act while market is closed.\nUSDJPY comp=+59.5 moderate (4/4 TF bull, H1 BOS bull, DAY CHoCH bull). OB at 161.897-162.063, current=162.395, dist=33.2p > 30p proximity threshold. WATCH; arm LIMIT if price drops to proximity Sunday open.\nEURUSD=none, AUDUSD=none, USDCHF=none, OIL=none \u2014 all below readiness threshold.\nScalp all-OFF (EURUSD=desync, GBPUSD=WR0%/31T, AUDUSD=WR11%/19T, rest=pip-conv/spread). 2 pos 1 LIMIT; bal=$999.46.",
@@ -1122,22 +1138,6 @@
       "ts_utc": "2026-07-18T06:47Z",
       "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
       "note_text": "2026-07-18T06:47Z tick \u2014 1 evt (news_flash hormuz_strait The Hindu: 'Iran Guards say 2 oil tankers explode after hitting mines in Hormuz'). 8th Hormuz escalation corroboration \u2014 OIL bull + CAD bull STRENGTHENED. GOLD SELL HOLD @ 4021.44 bid=4017.11 UPL=+$0.40 age=14.5h (trend max 24h, exit 16:18Z) SL=4039 TP=3970 trail@4003.88 not-hit; safe-haven paradox CONFIRMED (8 escalations, gold still bearish, USD/rates dominant). GBPUSD BUY HOLD @ 1.34437 bid=1.34539 UPL\u2248+$1.02 age=21.9h (trend max 24h, TIME EXIT 08:54Z in ~2h); H4-BOS-bull-1.34519 intact; BoE-Jul30-hike-75pct. USDCAD SELL LIMIT 1.40818 KEEP GTC (Hormuz 8th-evt mines CAD-bull FVG-unmitigated dist=62p). USDJPY comp=+59.5 mod WATCH (4/4 TF bull, H1 OB 162.063 dist=33.2p, JPY-blocked). Scalp all-OFF. 2 pos 1 LIMIT; bal=$999.46.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-07-18T06:32Z",
-      "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
-      "note_text": "2026-07-18T06:32Z tick \u2014 0 evt (heartbeat). GOLD SELL HOLD @ 4021.44 bid=4017.11 UPL=+$0.40 age=14.2h (trend max 24h, exit 16:18Z) SL=4039 TP=3970 trail@4003.88 not-hit; bear thesis CONFIRMED (news: gold -3%+ safe-haven paradox, US reinstating Iran naval blockade, rate-hike 71% Sep). GBPUSD BUY HOLD @ 1.34437 bid=1.34484 UPL=+$0.47 age=21.6h (trend max 24h, TIME EXIT 08:54Z in 2.4h); H4-BOS-bull-1.34519 intact (H4-close=1.34539); BoE hike intact; Burnham PM transition minimal macro impact. USDCAD SELL LIMIT 1.40818 KEEP GTC (Hormuz 7th-evt CAD-bull, FVG 1.40774-1.41252 unmitigated, dist=63.9p, comp=-39.5 weak bear). USDJPY comp=+59.5 moderate WATCH (4/4 TF bull, H1 OB 162.063 dist=33.2p vs 30p threshold, risk_guard blocks JPY). Scalp all-OFF. 2 pos 1 LIMIT; bal=$999.46.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-07-18T05:30Z",
-      "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
-      "note_text": "2026-07-18T05:30Z tick \u2014 1 evt (news_flash hormuz_strait WION: 2 tankers hit mines near Hormuz, catch fire). 7th Hormuz escalation corroboration \u2014 OIL bull + CAD bull STRENGTHENED. GOLD SELL HOLD @ 4021.44 bid=4017.11 UPL=+$0.40 age=13.2h (trend max 24h) SL=4039 TP=3970 trail@4003.88 not-hit. GBPUSD BUY HOLD @ 1.34437 bid=1.34484 UPL=+$0.47 age=20.6h (trend max 24h, TIME EXIT 08:54 UTC) H4-BOS-bull-1.34519 straddled BoE-Jul30-hike-75pct. USDCAD SELL LIMIT 1.40818 KEEP GTC (Hormuz 7th-evt CAD-bull, FVG 1.40774-1.41252 unmitigated, dist=61.9p, comp=-39.5 weak bear). USDJPY comp=59.5 moderate WATCH (4/4 TF bull, H1 OB 161.897-162.063 dist=33.2p vs 30p threshold, JPY pip-val bug blocks ARM). GOLD safe-haven paradox sustained \u2014 7 escalation events, USD/rates dominant, no safe-haven premium. 2 pos 1 LIMIT; bal=$999.46.",
       "binary_event_name": null,
       "binary_event_active": 0,
       "binary_event_deadline": null
