@@ -1,13 +1,6 @@
 {
-  "generated_at": "2026-07-18T12:34:20.972117Z",
+  "generated_at": "2026-07-18T15:33:53.038514Z",
   "ticks": [
-    {
-      "ts": "2026-04-23T08:09:00Z",
-      "events_processed": 1,
-      "trades_opened": 0,
-      "trades_closed": 0,
-      "summary": "1 news_flash us_tariff Chatham House Feb 17 archive 'reset' solo-match non-altering; DROPPED 'reset'; 4 alerts KEEP carried; 0 trades 0pos"
-    },
     {
       "ts": "2026-04-23T17:14:22Z",
       "summary": "2026-04-23T17:14:22Z \u2014 17:07 forex auto \u2014 21 evt gap since 12:34 (4.5h): 6 usdjpy_audits (iran_ceasefire 'extension' kw from Reuters/Al-Jazeera/Detroit-News/Caspian/Daily-Pioneer/WaPo \u2014 ALL iteration of indefinite-extension regime NOT thesis-altering) + 3 oil_audits (ship-traffic + extension-coverage NOT altering) + 4 liquidity_sweeps (USDCHF 0.78602 up-sell readiness=none skip / GBPUSD 1.35133 up",
@@ -803,6 +796,100 @@
           "reason": "comp=+21 none, no level set; spread 4p forbids scalp; Hormuz bull via CAD not direct OIL alert"
         }
       }
+    },
+    {
+      "tick_ts_utc": "2026-07-18T15:33Z",
+      "events": 0,
+      "event_types": [],
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "limits_placed": 0,
+      "skipped": 0,
+      "open_positions": [
+        {
+          "instrument": "GBPUSD",
+          "direction": "BUY",
+          "entry": 1.34437,
+          "upl": 0.47,
+          "age_h": 30.6,
+          "thesis_type": "trend",
+          "note": "TIME EXIT OVERDUE - close Sunday open"
+        },
+        {
+          "instrument": "GOLD",
+          "direction": "SELL",
+          "entry": 4021.44,
+          "upl": 0.4,
+          "age_h": 23.2,
+          "thesis_type": "trend",
+          "note": "24h expires 16:18Z Sat - close Sunday open"
+        }
+      ],
+      "active_limits": [
+        {
+          "instrument": "USDCAD",
+          "direction": "SELL",
+          "level": 1.40818,
+          "dist_p": 59.9,
+          "note": "Hormuz 11-evt CAD bull, H4 FVG intact"
+        }
+      ],
+      "balance": 999.46,
+      "pnl_today": 0.0,
+      "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "scalp_status": "all-OFF",
+      "binary_event": "none",
+      "attention_matrix": {
+        "EURUSD": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "below readiness threshold, no catalyst"
+        },
+        "GBPUSD": {
+          "swing": "WATCH",
+          "scalp": "OFF",
+          "readiness": "weak",
+          "reason": "position open, time exit Sunday open"
+        },
+        "AUDUSD": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "below readiness threshold"
+        },
+        "USDJPY": {
+          "swing": "WATCH",
+          "scalp": "OFF",
+          "readiness": "moderate",
+          "reason": "H1 OB 33.2p away (>30p floor), not in proximity; pip-conv blocks entries"
+        },
+        "USDCAD": {
+          "swing": "ARMED",
+          "scalp": "OFF",
+          "readiness": "weak",
+          "reason": "SELL LIMIT GTC 1.40818 armed, Hormuz 11-evt thesis at max corroboration"
+        },
+        "USDCHF": {
+          "swing": "NONE",
+          "scalp": "OFF",
+          "readiness": "none",
+          "reason": "below readiness threshold"
+        },
+        "GOLD": {
+          "swing": "WATCH",
+          "scalp": "N/A",
+          "readiness": "weak",
+          "reason": "position open, time exit Sunday open; safe-haven paradox confirmed"
+        },
+        "OIL_CRUDE": {
+          "swing": "NONE",
+          "scalp": "N/A",
+          "readiness": "none",
+          "reason": "no setup; spread 4p blocks scalp"
+        }
+      },
+      "notes": "Saturday closure heartbeat. Both positions time-exit-pending at Sunday open ~21:00Z. News confirms Hormuz crisis ongoing, gold bearish regime intact."
     }
   ]
 }
