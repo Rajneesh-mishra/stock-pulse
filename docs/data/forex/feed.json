@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T22:13:29.466653Z",
+  "generated_at": "2026-07-20T22:27:55.094558Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -423,6 +423,57 @@
         "USDCHF": "swing=WATCH scalp=OFF readiness=strong above-H4-FVG-zone need-pullback",
         "GOLD": "swing=ARMED scalp=N/A readiness=moderate LIMIT-4019.91-pending",
         "OIL_CRUDE": "swing=NONE scalp=N/A readiness=weak no-active-setup"
+      }
+    },
+    {
+      "tick_ts_utc": "2026-07-20T22:25Z",
+      "events_processed": 1,
+      "events": [
+        {
+          "type": "level_cross",
+          "instrument": "USDCAD",
+          "alert_id": "usdcad_h4fvg_sell_140818",
+          "decision": "HOLD \u2014 noise oscillation around entry, position intact"
+        }
+      ],
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "positions_modified": 0,
+      "open_positions": [
+        {
+          "epic": "USDCAD",
+          "direction": "SELL",
+          "size": 1000,
+          "entry": 1.40821,
+          "sl": 1.411,
+          "tp": 1.395,
+          "upl": -0.09
+        }
+      ],
+      "pending_orders": [
+        {
+          "epic": "GOLD",
+          "direction": "SELL",
+          "type": "LIMIT",
+          "level": 4019.91,
+          "size": 0.2
+        }
+      ],
+      "balance": 1001.02,
+      "watchlist_changes": [
+        "REMOVE usdcad_h4fvg_sell_140818 (LIMIT filled, pos live)",
+        "MODIFY usdjpy_h1ob_buy_162063 (price_ref updated 162.487, dist=42.4p)"
+      ],
+      "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "attention_matrix": {
+        "EURUSD": "swing=NONE scalp=OFF readiness=none",
+        "GBPUSD": "swing=WATCH scalp=OFF readiness=none",
+        "AUDUSD": "swing=NONE scalp=OFF readiness=none",
+        "USDJPY": "swing=WATCH scalp=OFF readiness=strong",
+        "USDCAD": "swing=ARMED scalp=OFF readiness=none (pos live)",
+        "USDCHF": "swing=WATCH scalp=OFF readiness=strong",
+        "GOLD": "swing=ARMED scalp=N/A readiness=moderate",
+        "OIL_CRUDE": "swing=NONE scalp=N/A readiness=unknown"
       }
     }
   ]

@@ -70,25 +70,6 @@
   },
   "level_alerts": [
     {
-      "id": "usdcad_h4fvg_sell_140818",
-      "alert_id": "usdcad_h4fvg_sell_140818",
-      "instrument": "USDCAD",
-      "level": 1.40818,
-      "emit_on": "cross_up",
-      "cooldown_sec": 1800,
-      "direction": "sell",
-      "active": true,
-      "validated": false,
-      "note": "ENTRY: Rally into DAY FVG bear zone (1.40774-1.41252) \u2014 SELL LIMIT at 1.40818 GTC ARMED (dealId 00000000-56ad-4300).\n\nCONTEXT: Hormuz MAXIMUM ESCALATION \u2014 14+ incidents Jun-Jul, US 3rd-round strikes ~140 targets (Jul19-20), Iran oil tanker attacks (Jul20) AND mine strikes on two tankers (Jul21 00:46 UTC) \u2014 escalation from projectiles to naval mines. CAD bull thesis at MAXIMUM and intensifying. H4 ChoCH bear (Jul2 at 1.41504) intact. H4 FVG bear (1.40774-1.41252) unmitigated. H4 bull FVG 1.40372-1.40511 (bars_ago=1) = fresh support below; M15 ChoCH bull (Jul19) pushing price toward LIMIT. Confluence=none technical (8.5) but fundamental dominance is the thesis driver here.\n\nSL: 1.411  TP: 1.395  R:R target: 3.0\n\nRewritten 2026-07-21T00:46Z \u2014 mine strikes on two tankers Jul21 = new escalation; LIMIT KEEP GTC; dist=22.5p<3\u00d7H4ATR=61.5p.",
-      "entry_criterion": "SELL LIMIT GTC at 1.40818 (DAY FVG bottom). Already armed in broker (dealId 00000000-56ad-4300).",
-      "regime_context": "Hormuz 14+ events + US strikes + tanker attacks + mine strikes Jul21. CAD bull max corroboration. H4 FVG bear 1.40774-1.41252 unmitigated. Confluence=none technical but fundamental dominates.",
-      "sl": 1.411,
-      "tp": 1.395,
-      "rr_target": 3.0,
-      "current_price_ref": 1.40593,
-      "last_updated": "2026-07-21T00:46Z"
-    },
-    {
       "id": "gbpusd_dayfvg_buy_13494",
       "alert_id": "gbpusd_dayfvg_buy_13494",
       "instrument": "GBPUSD",
@@ -142,8 +123,8 @@
       "sl": 161.87,
       "tp": 162.59,
       "rr_target": 2.7,
-      "current_price_ref": 162.491,
-      "last_updated": "2026-07-21T02:52Z"
+      "current_price_ref": 162.487,
+      "last_updated": "2026-07-20T22:25Z"
     },
     {
       "id": "usdchf_bull_h4fvg_watch",
@@ -165,5 +146,5 @@
       "last_updated": "2026-07-21T07:45Z"
     }
   ],
-  "last_updated": "2026-07-21T07:45Z"
+  "last_updated": "2026-07-20T22:25Z"
 }
