@@ -154,5 +154,38 @@
     "watchlist_changes": [
       "usdchf_bull_h4fvg_watch MODIFIED \u2014 H4 FVG mitigated, entry raised to H1 BOS 0.80935-0.80972"
     ]
+  },
+  {
+    "tick_ts_utc": "2026-07-20T22:12Z",
+    "events_consumed": 1,
+    "events": [
+      "position_opened USDCAD @ 1.40821"
+    ],
+    "new_positions": 1,
+    "new_orders": 0,
+    "positions_closed": 0,
+    "positions_open": 1,
+    "working_orders": 1,
+    "balance": 1000.91,
+    "daily_pnl_usd": -0.19,
+    "usdcad_sell": "OPEN 1000 @ 1.40821 SL=1.411 TP=1.395 R:R=4.73 trend 24h",
+    "gold_sell_limit": "ARMED 4019.91 GTC bid=4007.13 (-12.78pts)",
+    "regime": "USD_STRENGTH_OIL_BULL_ESCALATION intensifying",
+    "hormuz": "Brent +9.59% $83.30 \u2014 9+ tanker attacks, US-Iran trading strikes",
+    "alerts_modified": [
+      "usdcad_h4fvg_sell_140818: LIMIT filled \u2192 POSITION_OPEN",
+      "gold_h1fvg_sell_4021: ARMED (updated note, LIMIT pending not position)",
+      "gbpusd_dayfvg_buy_13494: stale position ref removed, WATCH"
+    ],
+    "attention_matrix": {
+      "EURUSD": "swing=NONE scalp=OFF readiness=none",
+      "GBPUSD": "swing=WATCH scalp=OFF readiness=none ahead-UK-CPI-Jul22",
+      "AUDUSD": "swing=NONE scalp=OFF readiness=none",
+      "USDJPY": "swing=WATCH scalp=OFF readiness=strong dist=42.6p>30p threshold",
+      "USDCAD": "swing=ARMED scalp=OFF readiness=none position-open trend",
+      "USDCHF": "swing=WATCH scalp=OFF readiness=strong above-H4-FVG-zone need-pullback",
+      "GOLD": "swing=ARMED scalp=N/A readiness=moderate LIMIT-4019.91-pending",
+      "OIL_CRUDE": "swing=NONE scalp=N/A readiness=weak no-active-setup"
+    }
   }
 ]

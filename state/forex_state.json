@@ -1,10 +1,23 @@
 {
   "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
-  "tick_ts_utc": "2026-07-21T07:45Z",
-  "state_ts_utc": "2026-07-21T07:45Z",
-  "regime_note": "2026-07-21T07:45Z tick \u2014 1 evt (level_cross USDCAD usdcad_h4fvg_sell_140818 at 21:44Z Jul20). REGIME: USD_STRENGTH_OIL_BULL_ESCALATION unchanged. GOLD SELL LIMIT 4019.91 GTC KEEP \u2014 moderate (-54.0, 4/4 TFs bear); bid=4007.65 (12.26pts below LIMIT); validated (fires=3, 1h=100%, 4h=100%); 4h time-stop on fill. USDCAD SELL LIMIT 1.40818 GTC KEEP \u2014 level_cross at 1.40835 (mid) at 21:44 UTC Jul20; LIMIT still pending (bid=1.40788, 3p below fill trigger); Hormuz mine strikes Jul21 thesis intact; confluence=none (4.5) but fundamental-driven; LIMIT GTC keep. USDCHF WATCH STRONG (62.0, UPGRADED from 59.5 moderate) \u2014 bid=0.81029, above H4 FVG zone (0.80835-0.80973); cross_down event through 0.80904 not yet fired; R:R with confirmed TP < 1.5 (H4 ChoCH at 0.81203 blocks full TP at 0.815); WATCH \u2014 arm on cross_down + M15 wick + TP clarity. USDJPY WATCH STRONG (62.5) \u2014 bid=162.501, dist=43.8p from H1 OB 162.063 (threshold 30p); approaching but not in proximity; WATCH. GBPUSD WATCH NONE (20.5) \u2014 bid=1.34253 in H1 FVG zone; readiness=none; UK-CPI Jul22 tomorrow. EURUSD/AUDUSD: readiness=none. OIL: weak (28.0). Scalp: all pairs disabled. 0 pos 2 LIMIT; bal=$1001.10.",
+  "tick_ts_utc": "2026-07-20T22:12Z",
+  "state_ts_utc": "2026-07-20T22:12Z",
+  "regime_note": "2026-07-20T22:12Z tick \u2014 1 evt (position_opened USDCAD, LIMIT 1.40818 filled @ 1.40821 at 22:05Z). REGIME: USD_STRENGTH_OIL_BULL_ESCALATION UNCHANGED, INTENSIFYING. Hormuz: US-Iran actively trading strikes (US hit ~140 Iranian military targets Jul19-20), 9+ tanker attacks Jul6-Jul20, Brent crude +9.59% to $83.30/bbl. CAD bull at MAXIMUM corroboration. USDCAD SELL 1000 @ 1.40821 OPEN (7min old, trend, 24h max-hold, R:R=4.73). GOLD SELL LIMIT 4019.91 GTC ARMED \u2014 bid=4007.13 (12.78pts below), moderate (-54.0, 4/4 TF bear), validated 10f/4h=100%. USDJPY WATCH STRONG (62.5 bull) \u2014 bid=162.489, dist=42.6p from H1 OB 162.063 (threshold 30p); approaching. USDCHF WATCH STRONG (62.0 bull) \u2014 bid=0.81022, above H4 FVG buy zone (0.80835-0.80973); need pullback. GBPUSD WATCH NONE (readiness=none) \u2014 ahead of UK CPI Jul22. EURUSD/AUDUSD: readiness=none. OIL: weak. Scalp: all OFF. 1 pos (USDCAD SELL) 1 LIMIT (GOLD SELL); bal=$1000.91.",
   "regime_note_prev": "2026-07-18T20:22Z tick \u2014 0 evt (heartbeat, Saturday market closure). NEWS: Hormuz ESCALATING \u2014 9 ships attacked Jul6-18, traffic 8 vs 15 vessels/day (trickle w/ transponders off), US-Iran peace talks ongoing but Hormuz lane dispute unresolved. CAD bull / oil bull INTACT. GOLD down 3% weekly \u2014 safe-haven paradox confirmed: escalation\u2192oil\u2192inflation fear\u2192rate-hike risk\u2192GOLD negative. GBPUSD retreating (USD strength from geopolitical inflation fears). Next week: ECB rate decision, UK inflation+labor data, global PMI prelims \u2014 key GBPUSD risk events. GBPUSD BUY age=35.5h TIME-EXIT OVERDUE \u2014 CLOSE AT SUNDAY OPEN (~21:00 UTC Jul19). GOLD SELL age=28.1h TIME-EXIT OVERDUE \u2014 CLOSE AT SUNDAY OPEN (~22:00 UTC Jul19, gold reopens 6pm EDT). USDCAD SELL LIMIT 1.40818 GTC KEEP \u2014 USD strength could push pair toward level; Hormuz 9-evt oil bull intact. USDJPY moderate readiness (OB 161.897-162.063, comp moderate) but risk_guard blocks (pip-conv pending). WATCH. Scalp all-OFF (EURUSD desync, GBPUSD WR=0%, AUDUSD WR=11%). 2 pos 1 LIMIT; bal=$999.46.",
-  "open_positions": [],
+  "open_positions": [
+    {
+      "dealId": "00000000-57ed-d7a6-044a-beb40055311e",
+      "epic": "USDCAD",
+      "direction": "SELL",
+      "size": 1000.0,
+      "entry": 1.40821,
+      "sl": 1.411,
+      "tp": 1.395,
+      "opened_at": "2026-07-20T22:05:12.945Z",
+      "thesis_type": "trend",
+      "thesis_note": "H4 bear FVG top (1.40818) entry. Hormuz escalation max-corroboration: US-Iran trading strikes, 9+ tanker attacks Jul6-20, Brent +9.59% to $83.30. CAD bull at maximum. R:R=4.73."
+    }
+  ],
   "watchlist": [],
   "market_context": {
     "date": "2026-05-08",
@@ -969,7 +982,7 @@
   "total_trades": 7,
   "wins": 4,
   "losses": 0,
-  "broker_balance": 998.61,
+  "broker_balance": 1000.91,
   "effective_capital_usd": 998.61,
   "capital_base_note": "Demo account reset to $1k on 2026-04-20 (topUp -$8849.07). Broker balance and effective capital are now aligned.",
   "loop_config": {
@@ -1351,7 +1364,7 @@
       "price": 4809.28
     }
   ],
-  "last_tick_summary": "tick: 2026-05-09T21:53 forex auto \u2014 4 evts; AUDUSD+GBPUSD TIME_EXIT OVERDUE (mkts closed); USDCHF ARMED pending corr-cap; Chinese tanker Hormuz confirms JPY+CHF bids; OIL CF 7fires 100%4h; balance $949.67",
+  "last_tick_summary": "22:12 UTC Jul20 \u2014 1 evt (position_opened USDCAD); SELL 1000 @ 1.40821 SL=1.411 TP=1.395 R:R=4.73 (trend, 24h); GOLD SELL LIMIT 4019.91 GTC KEEP (mod, validated 10f/100%4h); USDJPY dist=42.6p WATCH; USDCHF WATCH (above FVG zone); 1 pos 1 LIMIT; bal=$1000.91",
   "last_scan": "2026-04-26T16:41Z",
   "capital_base": 1001.1,
   "tick_log": [
@@ -1561,7 +1574,7 @@
     "active": false,
     "note": "No active binary event. Hormuz ESCALATING \u2014 13+ corroborated incidents Jul6-18 PLUS US 3rd-round strikes on ~140 Iranian military targets (Jul19-20) PLUS Iran attacking oil tankers (Jul20 ABC News). OIL +1.85% Monday. CAD bull/oil bull at MAXIMUM corroboration. GOLD safe-haven paradox persists: gold bearish despite escalation (USD/rates dominate). Burnham confirmed new UK Labour leader / incoming PM \u2014 UK data week (labour Jul21, CPI Jul22, BoE Jul30). Sustained escalation regime."
   },
-  "balance": 1001.1,
+  "balance": 1000.91,
   "level_alerts": [
     {
       "alert_id": "usdcad_h4fvg_sell_140818",
@@ -1570,14 +1583,15 @@
       "level": 1.40818,
       "active": true,
       "validated": false,
-      "status": "ARMED",
+      "status": "POSITION_OPEN",
       "sl": 1.411,
       "tp": 1.395,
       "rr_target": 4.67,
       "entry_criterion": "H4 bear FVG retest at 1.40749-1.40818. SELL LIMIT placed at FVG top 1.40818.",
       "regime_context": "USDCAD 1.40299, comp=-26.5 weak bearish (degraded from -43 moderate). H1 ChoCH bear Jul10@1.41175 intact. M15 BOS bear Jul15@1.40249 intact. DAY FVG 1.40774-1.41252 unmitigated (supply zone). SELL LIMIT 1.40818 active (dealId=00000000-56ad-4300). Readiness degraded to weak: cancel criteria not met (no structural break, no binary flip, <24h+no-approach). CAD bull via oil (Hormuz) intact.",
       "last_updated": "2026-07-18T12:10Z",
-      "note": "ENTRY: SELL LIMIT placed at H4 bear FVG top (1.40818). ARM ACTIVE (dealId=00000000-56ad-4300).\n\nCONTEXT: Hormuz 10-event escalation \u2192 CAD bull at max corroboration. H4 BOS bear @1.41504 (Jul2), H1 BOS bear @1.41504. DAY FVG 1.40774-1.41252 unmitigated. dist=63.9p at 3\u00d7H4ATR threshold; keeping GTC \u2014 noise-level move since last tick, escalation catalyst intact.\n\nSL: 1.411  TP: 1.395  R:R target: 4.67\n\nModified 2026-07-18 \u2014 staleness check: 63.9p vs 63p threshold, KEEP GTC per escalation."
+      "note": "ENTRY: SELL LIMIT at H4 bear FVG top (1.40818) FILLED at 1.40821. POSITION OPEN dealId=00000000-57ed-d7a6 SELL 1000 @ 1.40821 SL=1.411 TP=1.395.\n\nCONTEXT: Hormuz escalation max-corroboration \u2014 US-Iran trading strikes, 9+ tanker attacks Jul6-Jul20, Brent crude +9.59% to $83.30/bbl (Jul21). CAD bull at maximum fundamental corroboration. H4 BOS bear @1.41504, H1 FVG zone confirmed.\n\nSL: 1.411  TP: 1.395  R:R target: 4.73\n\nUpdated 2026-07-20T22:12Z: LIMIT filled, position live.",
+      "readiness": "none"
     },
     {
       "id": "gbpusd_dayfvg_buy_13494",
@@ -1589,14 +1603,16 @@
       "direction": "buy",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Pullback to DAY FVG bull zone (1.34437-1.34939) with M15 bullish rejection wick + bullish M15 close. POSITION OPEN \u2014 BUY 1000 @ 1.34437 (dealId 00000000-5701-acfd).\n\nCONTEXT: BoE Jul30 hike 75% probability. H4 BOS bull intact. DAY FVG bottom filled as anticipation LIMIT entry. TIME EXIT PENDING at Sunday market open (~21:00 UTC Jul20) \u2014 age=27.3h exceeds 24h trend max.\n\nSL: 1.3415  TP: 1.365  R:R target: 7.2\n\nModified 2026-07-18 \u2014 updated time-exit pending note.",
+      "note": "ENTRY: Pullback to DAY FVG bull zone (1.34437-1.34939) with M15 bullish rejection wick + bullish M15 close.\n\nCONTEXT: Burnham new UK Labour leader/incoming PM. UK CPI Jul22 key catalyst. Prior position closed (dealId 00000000-5701-acfd history). No active position.\n\nSL: 1.338  TP: 1.360  R:R target: 2.5\n\nUpdated 2026-07-20T22:12Z: readiness=none, WATCH ahead of UK CPI Jul22.",
       "entry_criterion": "M15 bullish rejection wick + close above 1.34437 (DAY FVG bottom). FILLED.",
       "regime_context": "H4 BOS bull intact. Hormuz USD caution corroborates GBP bull.",
       "sl": 1.3415,
       "tp": 1.365,
       "rr_target": 7.2,
       "current_price_ref": 1.35046,
-      "last_updated": "2026-07-18T12:10Z"
+      "last_updated": "2026-07-18T12:10Z",
+      "status": "watch",
+      "readiness": "none"
     },
     {
       "id": "gold_h1fvg_sell_4021",
@@ -1608,7 +1624,7 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Rally into H1 FVG bear zone (3996.89-4021.39) with M15 bearish rejection wick >=5p + M15 bearish close. POSITION OPEN \u2014 SELL 0.1 @ 4021.44 (dealId 00000000-5745-077d).\n\nCONTEXT: Safe-haven paradox: USD/rates dominant, gold falling despite geopolitical escalation. Safe-haven paradox validated through 10 Hormuz events. TIME EXIT PENDING at Sunday market open (~21:00 UTC Jul20) \u2014 24h time cap hits at 16:18Z today (market closed). Trail@4003.88 not hit.\n\nSL: 4039.0  TP: 3920.0  R:R target: 5.32\n\nModified 2026-07-18 \u2014 updated time-exit pending note, trail level.",
+      "note": "ENTRY: Rally into H1 FVG bear zone (3996.89-4021.39) with M15 bearish rejection wick >=5p + M15 bearish close. SELL LIMIT 4019.91 ARMED GTC (dealId 00000000-57ec-d7ff).\n\nCONTEXT: Safe-haven paradox \u2014 gold bearish despite Hormuz escalation; USD/rates dominate. Composite=-54.0 (moderate bear, 4/4 TFs). Validated: gold_sweep_4721_sell_retest 10fires 4h=100%. bid=4007.13 (12.78pts below LIMIT).\n\nSL: 4039.0  TP: 3970.0  R:R target: 2.61\n\nUpdated 2026-07-20T22:12Z: LIMIT at 4019.91 GTC KEEP. 4h time-stop on fill.",
       "entry_criterion": "Rally to H1 FVG bear zone top (4021.39) with M15 bearish rejection wick >=5p + close. Gate comp<=-40 (standard \u2014 escalation not driving gold safe-haven).",
       "regime_context": "GOLD 3995.66 Jul17. comp=-42 moderate bear (3/4 TFs bearish). SELL LIMIT 4021.39 active (dealId=00000000-56fc-295a). H4 FVG 4007.8-4021.39 mitigated. DAY FVG 4008.97-4017.47 fresh. Dist=25.7p within 30p ARM. Oil +12% wk (Hormuz crisis), gold falling despite it = USD strength > safe-haven. HOLD LIMIT.",
       "sl": 4040.0,
@@ -1617,7 +1633,8 @@
       "current_price_ref": 3993.07,
       "last_updated": "2026-07-18T12:10Z",
       "status": "ARMED",
-      "deal_id": "00000000-56fc-295a"
+      "deal_id": "00000000-56fc-295a",
+      "readiness": "moderate"
     },
     {
       "alert_id": "usdjpy_h1ob_buy_162063",
@@ -1697,21 +1714,23 @@
   ],
   "working_orders": [
     {
-      "dealId": "00000000-56ad-4300-044a-beb40055311e",
-      "epic": "USDCAD",
+      "dealId": "00000000-57ec-d7ff-044a-beb40055311e",
+      "epic": "GOLD",
       "direction": "SELL",
-      "size": 1000.0,
-      "level": 1.40818,
-      "stopLevel": 1.411,
-      "profitLevel": 1.395,
+      "size": 0.2,
+      "level": 4019.91,
+      "stopLevel": 4039.0,
+      "profitLevel": 3970.0,
       "type": "LIMIT",
-      "created_ts_utc": "2026-07-15T20:55Z",
-      "thesis_type": "trend"
+      "timeInForce": "GOOD_TILL_CANCELLED",
+      "created_ts_utc": "2026-07-20T18:21Z",
+      "thesis_type": "validated_sweep_retest",
+      "thesis_note": "H1 FVG bear zone sell. validated: gold_sweep_4721_sell_retest 10fires 4h=100%. Moderate composite=-54.0. 4h time-stop on fill."
     }
   ],
   "daily_pnl_usd": 7.18,
-  "news_last_searched_utc": "2026-07-18T08:59Z",
+  "news_last_searched_utc": "2026-07-20T22:12Z",
   "pending_orders": [],
-  "balance_usd": 999.46,
-  "account_balance": 998.61
+  "balance_usd": 1000.91,
+  "account_balance": 1000.91
 }
