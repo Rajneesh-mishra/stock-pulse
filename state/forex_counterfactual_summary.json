@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T18:24:14.463890+00:00",
+  "generated_at": "2026-07-20T21:13:06.799766+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -1834,10 +1834,10 @@
           "hit_rate": 0.4
         },
         "4h": {
-          "filled": 4,
-          "favorable": 3,
-          "avg_pips": 7.2,
-          "hit_rate": 0.75
+          "filled": 5,
+          "favorable": 4,
+          "avg_pips": 9.4,
+          "hit_rate": 0.8
         },
         "24h": {
           "filled": 3,
@@ -1890,6 +1890,32 @@
           "favorable": 3,
           "avg_pips": 122.5,
           "hit_rate": 1.0
+        },
+        "24h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        }
+      }
+    },
+    {
+      "alert_id": "usdcad_h4fvg_sell_140818",
+      "instrument": "USDCAD",
+      "direction": "sell",
+      "fires": 1,
+      "by_horizon": {
+        "1h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
+        },
+        "4h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
         },
         "24h": {
           "filled": 0,

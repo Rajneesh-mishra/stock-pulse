@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T18:24:08.955090Z",
+  "generated_at": "2026-07-20T21:13:21.713202Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -355,6 +355,42 @@
         "GOLD": "ARMED/SELL LIMIT GTC 4019.91 \u2014 readiness=moderate (-42.5); safe-haven paradox",
         "OIL_CRUDE": "NONE/readiness=none (17.5)"
       }
+    },
+    {
+      "tick_ts_utc": "2026-07-20T21:12Z",
+      "events_count": 5,
+      "events": [
+        "news_flash hormuz (Houthi maritime threat)",
+        "alert_audit_request USDCAD (\u00d72)",
+        "alert_audit_request GOLD (\u00d71)",
+        "level_cross USDCAD usdcad_h4fvg_sell_140818"
+      ],
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "open_positions": 0,
+      "limit_orders": 2,
+      "limits": [
+        {
+          "epic": "USDCAD",
+          "dir": "SELL",
+          "at": 1.40818,
+          "sl": 1.411,
+          "tp": 1.395
+        },
+        {
+          "epic": "GOLD",
+          "dir": "SELL",
+          "at": 4019.91,
+          "sl": 4039.0,
+          "tp": 3970.0
+        }
+      ],
+      "balance": 1001.1,
+      "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "note": "5 evt. Houthi maritime threat corroborates Hormuz escalation (14+ incidents). USDCAD level_cross 1.40821 at 21:05 UTC \u2014 SELL LIMIT 1.40818 not filled (BID ~8.5p below). GOLD readiness=moderate (-54.0), SELL LIMIT 4019.91 armed. USDCHF H4 FVG mitigated; alert updated to H1 BOS entry zone. GBPUSD 1.4p above H1 FVG zone, readiness=none. USDJPY strong (65.0), pip-conv blocked.",
+      "watchlist_changes": [
+        "usdchf_bull_h4fvg_watch MODIFIED \u2014 H4 FVG mitigated, entry raised to H1 BOS 0.80935-0.80972"
+      ]
     }
   ]
 }
