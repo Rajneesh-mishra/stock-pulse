@@ -155,15 +155,15 @@
       "direction": "buy",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Pullback deeper into H4 FVG bull zone (0.80835-0.80973) \u2014 watch for M15 bullish rejection wick \u22655p on Asia/London open. H1 BOS support (0.80935-0.80972) breached; fall into H4 FVG confirms continuation only if wick+close. readiness must remain \u2265moderate.\n\nCONTEXT: USDCHF composite=59.5 MODERATE (4/4 TF bullish). Current bid=0.80921 inside H4 FVG zone. H1 BOS zone (0.80935-0.80972) breached downward (bid 1.4p below zone bottom). TP structure above 0.8130 H4 supply NOT yet confirmed (day high=0.81068). LIMIT at H4 FVG mid ~0.80870 valid only after M15 wick confirmation at Asia/London open.\n\nSL: 0.806  TP: 0.815  R:R target: 1.88\n\nUpdated 2026-07-21T02:52Z \u2014 price in H4 FVG; H1 BOS breached; hold WATCH pending M15 wick",
-      "entry_criterion": "Pullback to H1 BOS zone 0.80935-0.80972 + M15 bullish rejection wick \u22655p + M15 bullish close. LIMIT at 0.80955. readiness \u2265moderate AND TP structure (swing high above 0.8130) required before arming.",
-      "regime_context": "USD_STRENGTH. Composite=62.0 strong, 4/4 TFs bullish. H4 FVG 0.80835-0.80973 unmitigated fresh. H1 BOS bull 0.80972. H4 ChoCH resistance 0.81203. SL below H1 OB 0.80604.",
+      "note": "ENTRY: Price drops to H4 FVG zone (0.80835-0.80973) with M15 bullish rejection wick \u22655p + M15 bullish close at Asia/London open. LIMIT arm at 0.80870 (FVG mid) once cross_down event fires AND M15 wick confirms. R:R with TP 0.815: 1.53 \u2014 meets floor ONLY if TP is achievable. With confirmed structure TP at H4 ChoCH 0.812, R:R = 0.69 \u2014 FAILS. Hold WATCH until H4 ChoCH breaks or TP confirmed above 0.813.\n\nCONTEXT: USDCHF composite=62.0 STRONG (4/4 TF bullish) \u2014 upgraded from moderate. Current bid=0.81029, above H4 FVG zone. No level_cross event fired yet (trigger is cross_down through 0.80904). TP at 0.815 is aspirational \u2014 confirmed structure cap is H4 ChoCH 0.81203 and day high 0.81068. R:R below floor with confirmed structure TP. LIMIT arm deferred to cross_down event + M15 wick + TP clarity.\n\nSL: 0.806  TP: 0.815  R:R target: 1.53 (aspirational)\n\nUpdated 2026-07-21T07:45Z \u2014 readiness upgraded STRONG (62.0); WATCH maintained; no LIMIT armed (R:R < 1.5 with confirmed TP structure)",
+      "entry_criterion": "cross_down event fires through 0.80904 AND M15 bullish rejection wick \u22655p AND M15 bullish close inside H4 FVG (0.80835-0.80973). LIMIT at 0.80870. Full size (1.5% risk) \u2014 readiness=strong. Arm only when confirmed TP structure breaks H4 ChoCH 0.81203.",
+      "regime_context": "USD_STRENGTH. Composite=62.0 STRONG, 4/4 TFs bullish. H4 FVG 0.80835-0.80973 fresh. H1 BOS 0.80972 breached (bid 1.4p below). H4 ChoCH resistance 0.81203. Day high 0.81068. TP unconfirmed above 0.813. R:R with confirmed structure < 1.5.",
       "sl": 0.806,
       "tp": 0.815,
-      "rr_target": 1.54,
-      "current_price_ref": 0.80982,
-      "last_updated": "2026-07-21T02:52Z"
+      "rr_target": 1.53,
+      "current_price_ref": 0.81029,
+      "last_updated": "2026-07-21T07:45Z"
     }
   ],
-  "last_updated": "2026-07-20T21:12Z"
+  "last_updated": "2026-07-21T07:45Z"
 }

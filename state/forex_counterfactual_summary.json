@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T21:27:35.798264+00:00",
+  "generated_at": "2026-07-20T21:51:36.464273+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -1903,7 +1903,7 @@
       "alert_id": "usdcad_h4fvg_sell_140818",
       "instrument": "USDCAD",
       "direction": "sell",
-      "fires": 1,
+      "fires": 2,
       "by_horizon": {
         "1h": {
           "filled": 0,

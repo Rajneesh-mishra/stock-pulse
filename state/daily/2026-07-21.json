@@ -21,5 +21,52 @@
       "scalp: all pairs disabled",
       "news skip: 0 positions + regime stable >4h"
     ]
+  },
+  {
+    "tick_ts_utc": "2026-07-21T07:45Z",
+    "events_consumed": 1,
+    "events": [
+      "level_cross USDCAD usdcad_h4fvg_sell_140818 @ 1.40835 (21:44Z Jul20) \u2014 LIMIT still pending (bid=1.40788, 3p below fill); KEEP GTC"
+    ],
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "limits_armed": 0,
+    "limits_cancelled": 0,
+    "open_positions": [],
+    "open_orders": [
+      {
+        "epic": "GOLD",
+        "dir": "SELL",
+        "size": 0.2,
+        "level": 4019.91,
+        "sl": 4039.0,
+        "tp": 3970.0,
+        "dealId": "00000000-57ec-d7ff-044a-beb40055311e"
+      },
+      {
+        "epic": "USDCAD",
+        "dir": "SELL",
+        "size": 1000.0,
+        "level": 1.40818,
+        "sl": 1.411,
+        "tp": 1.395,
+        "dealId": "00000000-56ad-4300-044a-beb40055311e"
+      }
+    ],
+    "balance": 1001.1,
+    "daily_pnl_usd": 0.0,
+    "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+    "attention_matrix": {
+      "EURUSD": "swing=NONE scalp=OFF(desync) readiness=none composite=-20.5",
+      "GBPUSD": "swing=WATCH scalp=OFF(wr=0%) readiness=none composite=+20.5 \u2014 in H1 FVG; needs >=moderate",
+      "AUDUSD": "swing=NONE scalp=OFF(wr=11%) readiness=none composite=+5.0",
+      "USDJPY": "swing=WATCH scalp=OFF(pip-conv) readiness=strong composite=+62.5 \u2014 dist=43.8p from H1 OB 162.063 (threshold 30p)",
+      "USDCAD": "swing=ARMED scalp=OFF(CAD-quote) readiness=none(4.5) \u2014 SELL LIMIT GTC 1.40818 pending (bid=1.40788)",
+      "USDCHF": "swing=WATCH scalp=OFF(CHF-quote) readiness=STRONG(62.0) \u2014 price 0.81029 above FVG; R:R<1.5 with confirmed TP; WATCH",
+      "GOLD": "swing=ARMED scalp=N/A(spread5p) readiness=moderate(-54.0) \u2014 SELL LIMIT GTC 4019.91 (bid=4007.65; dist=12.26pts)",
+      "OIL_CRUDE": "swing=NONE scalp=N/A(spread4p) readiness=weak(+28.0)"
+    },
+    "scalp_audit": "EURUSD=OFF(desync) GBPUSD=OFF(wr=0%) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
+    "notes": "USDCHF readiness upgraded STRONG (62.0, was 59.5 moderate) \u2014 watchlist note updated; LIMIT deferred pending cross_down event + M15 wick + TP structure confirmation (R:R < 1.5 with confirmed H4 ChoCH cap). News queries rolled to [21-24 Jul 2026]."
   }
 ]
