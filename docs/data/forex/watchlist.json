@@ -78,14 +78,14 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Rally into DAY FVG bear zone (1.40774-1.41252) \u2014 SELL LIMIT at 1.40818 GTC ARMED (dealId 00000000-56ad-4300).\n\nCONTEXT: Hormuz ESCALATING \u2014 13+ incidents Jul6-18 PLUS US 3rd-round strikes on ~140 Iranian targets (Jul19-20 weekend) PLUS Iran attacking oil tankers (Jul20 ABC News). CAD bull thesis at MAXIMUM corroboration. H4 ChoCH bear (Jul2 at 1.41504) intact. H4 FVG bear (1.40774-1.41252) unmitigated. dist=41.3p < 3\u00d7H4ATR=61.8p \u2014 NOT stale. M15 ChoCH bull (Jul19) may push price up toward LIMIT before bear takes over. Confluence=none technical (-2.5) but fundamental dominates.\n\nSL: 1.411  TP: 1.395  R:R target: 3.0\n\nUpdated 2026-07-20T13:24Z \u2014 fresh Hormuz headline confirms thesis. LIMIT KEEP GTC. No change to level/SL/TP.",
-      "entry_criterion": "SELL LIMIT GTC at 1.40818 (DAY FVG top). Reject on M15 wick.",
-      "regime_context": "Hormuz 13+ events + US 3rd-round strikes. CAD bull max corroboration. H4 FVG 1.40774-1.41252. Confluence=none but fundamental intact.",
+      "note": "ENTRY: Rally into DAY FVG bear zone (1.40774-1.41252) \u2014 SELL LIMIT at 1.40818 GTC ARMED (dealId 00000000-56ad-4300).\n\nCONTEXT: Hormuz ESCALATING \u2014 13+ incidents Jul6-18, US 3rd-round strikes ~140 targets (Jul19-20), Iran attacking oil tankers (Jul20). New headline Jul20 18:16 UTC: 'Oil Tanker Attacks Heighten Tensions in the Strait of Hormuz' (Devdiscourse) = ongoing corroboration. CAD bull thesis at MAXIMUM. H4 ChoCH bear (Jul2 at 1.41504) intact. H4 FVG bear (1.40774-1.41252) unmitigated. Current price 1.40549, dist=26.9p < 3\u00d7H4ATR=61.5p. M15 ChoCH bull (Jul19) may push toward level. Confluence=none technical (8.5) but fundamental dominates.\n\nSL: 1.411  TP: 1.395  R:R target: 3.0\n\nUpdated 2026-07-20T18:21Z \u2014 alert_audit_request from Hormuz headline; LIMIT KEEP GTC; thesis fully intact.",
+      "entry_criterion": "SELL LIMIT GTC at 1.40818 (DAY FVG bottom). Already armed in broker.",
+      "regime_context": "Hormuz 13+ events + US strikes + tanker attacks. CAD bull max corroboration. H4 FVG 1.40774-1.41252. Confluence=none but fundamental dominates.",
       "sl": 1.411,
       "tp": 1.395,
       "rr_target": 3.0,
-      "current_price_ref": 1.4042,
-      "last_updated": "2026-07-20T13:24Z"
+      "current_price_ref": 1.40549,
+      "last_updated": "2026-07-20T18:21Z"
     },
     {
       "id": "gbpusd_dayfvg_buy_13494",
@@ -97,14 +97,14 @@
       "direction": "buy",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Pullback to DAY FVG bull zone bottom 1.34437 with M15 bullish rejection wick \u22655p and M15 bullish close. readiness must reach \u2265moderate (composite \u226540) before arming LIMIT.\n\nCONTEXT: Position closed 2026-07-20T02:10Z (+$1.21). Today (Jul20): price swept to 1.34363 (7p below FVG bottom 1.34437) and recovered to 1.34554 \u2014 zone held. H1 FVG bear overhead 1.34562-1.34614 (fresh, 1 bar ago) = resistance. readiness=weak (composite=34, 3/4 TFs bull; H1 bear breaks alignment). H4 BOS bull 1.34519 intact. UK data week: labour Jul21, CPI Jul22 \u2014 data risk but BoE Jul30 hike 75% priced. Andy Burnham incoming UK PM. Range outlook 1.32-1.36 near-term.\n\nSL: 1.3415  TP: 1.365  R:R target: 7.2\n\nUpdated 2026-07-20T13:24Z \u2014 intraday sweep 1.34363 noted; H1 FVG overhead marked; still WATCH.",
-      "entry_criterion": "Pullback to 1.34437 (DAY FVG bottom) + M15 bullish rejection wick \u22655p + M15 bullish close.",
-      "regime_context": "BoE Jul30 hike 75% priced. UK labour Jul21, CPI Jul22. H4 BOS bull 1.34519. Intraday sweep 1.34363 (Jul20) bounced \u2014 zone held. H1 FVG bear 1.34562-1.34614 overhead. readiness=weak (34).",
+      "note": "ENTRY: Drop to H1 FVG bull zone 1.34236-1.34313 with M15 bullish rejection wick \u22655p and M15 bullish close. OR: break-and-close above H4 bear FVG top 1.34576 with M15 bullish confirmation. readiness must reach \u2265moderate (composite \u226540) before arming LIMIT.\n\nCONTEXT: Second sweep below DAY FVG bottom (level_cross 16:00 UTC Jul20 at 1.34186; first sweep 1.34363 earlier same day). Zone has now swept twice. Fresh H4 bear FVG 1.34376-1.34576 (bars_ago=1) = resistance overhead; price currently inside this FVG (~1.34386). M15 ChoCH bear (1.3439, bars_ago=81). H1 bull FVG 1.34236-1.34313 = next support (unmitigated). DAY bull thesis intact (price>ema21>ema50, H4 BOS bull 1.34519) but lower TFs bearish. BoE Jul30 hike 75% priced. UK labour Jul21, CPI Jul22 = data risk this week. SL at 1.3415 NOT violated by either sweep.\n\nSL: 1.3415  TP: 1.365  R:R target: 7.2\n\nUpdated 2026-07-20T18:21Z \u2014 second sweep at 1.34186; H4 bear FVG fresh overhead; entry criterion lowered to H1 FVG; readiness=none, WATCH.",
+      "entry_criterion": "Drop to H1 FVG bull zone 1.34236-1.34313 + M15 bullish rejection wick \u22655p + M15 bullish close. OR H4 bear FVG 1.34376-1.34576 broken to upside with M15 bull close.",
+      "regime_context": "BoE Jul30 75% priced. UK labour Jul21, CPI Jul22. Two sweeps below DAY FVG bottom (1.34363, 1.34186). H4 bear FVG 1.34376-1.34576 fresh overhead. H1 bull FVG 1.34236-1.34313. readiness=none (8.0).",
       "sl": 1.3415,
       "tp": 1.365,
       "rr_target": "7.2",
-      "current_price_ref": 1.3455,
-      "last_updated": "2026-07-20T13:24Z"
+      "current_price_ref": 1.343855,
+      "last_updated": "2026-07-20T18:21Z"
     },
     {
       "id": "gold_h1fvg_sell_4021",
@@ -116,14 +116,14 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Rally back to H1 FVG bear zone 4013.92-4019.91 with M15 bearish rejection wick \u22653pts and M15 bearish close. readiness must reach \u2265moderate (composite \u2265-40) before arming LIMIT.\n\nCONTEXT: SELL position closed 2026-07-20T02:10Z (+$1.464). H4 FVG (4021.39-4007.8) now MITIGATED (bars_ago=13). Fresh H1 FVG bear 4013.92-4019.91 unmitigated \u2014 new reference zone. H1 BOS bear at 4017.47 (Jul15) intact. M15 BOS bull 4023.89 (Jul17) = counter-thesis on short TF. Today: gold ranged 3982-4040; now 4011 \u2014 inside the H1 FVG zone. Safe-haven paradox CONFIRMED: 13+ Hormuz escalation events \u2014 gold fell or held flat through all (USD/rates dominate). Bearish bias intact but readiness=weak (composite=-28.5, 3/4 TFs bear).\n\nSL: 4039.0  TP: 3970.0  R:R target: 2.93\n\nUpdated 2026-07-20T13:24Z \u2014 H4 FVG mitigated; level moved to H1 FVG top 4019.91; safe-haven paradox confirmed.",
-      "entry_criterion": "Rally to H1 FVG top 4019.91 (zone 4013.92-4019.91) with M15 bearish rejection wick \u22653pts + M15 bearish close. readiness must reach moderate+ (composite \u2264-40).",
-      "regime_context": "Safe-haven paradox: GOLD bearish despite Hormuz escalation. H4 FVG mitigated. H1 BOS bear 4017.47 intact. H1 FVG bear 4013.92-4019.91 unmitigated. readiness=weak (-28.5).",
+      "note": "ENTRY: Rally to H1 FVG bear zone top 4019.91 \u2014 SELL LIMIT GTC ARMED (dealId 00000000-57ec-d7ff) at 4019.91, size=0.2, SL=4039.0, TP=3970.0.\n\nCONTEXT: SELL position closed 2026-07-20T02:10Z (+$1.464). H1 FVG bear 4013.92-4019.91 unmitigated. H1 BOS bear 4017.47 intact. Readiness upgraded to MODERATE (-42.5) this tick \u2014 all 3 Step 4c conditions met (readiness \u2265moderate, price within ~9pts of zone at 4008.09, R:R=2.61). Safe-haven paradox CONFIRMED: Hormuz 13+ events, US strikes, tanker attacks \u2014 gold bearish because USD/rates dominate (inflation fear beats safe-haven). Thesis_type=trend.\n\nSL: 4039.0  TP: 3970.0  R:R target: 2.61\n\nUpdated 2026-07-20T18:21Z \u2014 readiness upgraded moderate; LIMIT ARMED; 4h time-stop applies on fill.",
+      "entry_criterion": "SELL LIMIT GTC at 4019.91 (H1 FVG top). Already armed in broker. 4h time-stop on fill per trend thesis.",
+      "regime_context": "Safe-haven paradox: GOLD bearish despite Hormuz. H1 FVG bear 4013.92-4019.91. readiness=moderate (-42.5). Thesis: USD/rate-hike fear dominates safe-haven bid.",
       "sl": 4039.0,
       "tp": 3970.0,
-      "rr_target": 2.93,
-      "current_price_ref": 4011.03,
-      "last_updated": "2026-07-20T13:24Z"
+      "rr_target": 2.61,
+      "current_price_ref": 4008.09,
+      "last_updated": "2026-07-20T18:21Z"
     },
     {
       "id": "usdjpy_h1ob_buy_162063",
@@ -145,5 +145,5 @@
       "last_updated": "2026-07-20T12:52Z"
     }
   ],
-  "last_updated": "2026-07-20T13:24Z"
+  "last_updated": "2026-07-20T18:21Z"
 }

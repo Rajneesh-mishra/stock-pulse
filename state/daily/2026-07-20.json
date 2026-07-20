@@ -90,5 +90,33 @@
     "regime_note": "Hormuz escalation intensifying \u2014 US strikes + Iran tanker attacks Jul20. USDCAD LIMIT armed. GBPUSD FVG swept+held. GOLD FVG mitigated, level adjusted. 0 pos 1 LIMIT.",
     "scalp_audit": "EURUSD=OFF(desync) GBPUSD=OFF(WR=0%/31tr) AUDUSD=OFF(WR=11%/19tr) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked",
     "news_queries": "All windows rolled: iran_ceasefire/opec/boj/rba/tariff\u2192[20,21,22,23 Jul]; hormuz_strait\u2192[20,21,22,23 Jul]"
+  },
+  {
+    "tick_ts_utc": "2026-07-20T18:21Z",
+    "events_consumed": 3,
+    "events": [
+      "level_cross GBPUSD gbpusd_dayfvg_buy_13494",
+      "news_flash hormuz_strait",
+      "alert_audit_request USDCAD usdcad_h4fvg_sell_140818"
+    ],
+    "actions": [
+      "GOLD SELL LIMIT 4019.91 GTC ARMED (size=0.2 SL=4039 TP=3970 R:R=2.61)",
+      "GBPUSD alert MODIFIED \u2014 entry criterion lowered to H1 FVG 1.34236-1.34313 after 2nd sweep",
+      "USDCAD alert MODIFIED \u2014 note updated with new Hormuz headline corroboration"
+    ],
+    "positions": 0,
+    "limits": 2,
+    "balance": 1001.1,
+    "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+    "attention": {
+      "EURUSD": "NONE/readiness=none (-18)",
+      "GBPUSD": "WATCH/readiness=none (8.0) \u2014 H4 bear FVG overhead; 2nd sweep 1.34186; H1 FVG 1.34236 next support",
+      "AUDUSD": "NONE/readiness=none (21)",
+      "USDJPY": "WATCH/readiness=moderate (59.5) \u2014 pip-conv blocked",
+      "USDCAD": "ARMED/LIMIT GTC 1.40818 \u2014 Hormuz thesis max-corroborated",
+      "USDCHF": "WATCH/readiness=moderate (47.5) \u2014 no alert currently",
+      "GOLD": "ARMED/SELL LIMIT GTC 4019.91 \u2014 readiness=moderate (-42.5); safe-haven paradox",
+      "OIL_CRUDE": "NONE/readiness=none (17.5)"
+    }
   }
 ]
