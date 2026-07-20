@@ -1,0 +1,25 @@
+[
+  {
+    "tick_ts_utc": "2026-07-21T02:52Z",
+    "events_consumed": 0,
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "orders_placed": 0,
+    "orders_cancelled": 0,
+    "balance": 1001.1,
+    "pnl_usd": 0.0,
+    "open_positions": 0,
+    "pending_limits": 2,
+    "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+    "notes": [
+      "heartbeat tick \u2014 markets CLOSED ~03:00 UTC",
+      "GOLD SELL LIMIT 4019.91 KEEP (bearish moderate, 10 fires 100% 4h validated)",
+      "USDCAD SELL LIMIT 1.40818 KEEP (Hormuz thesis max-corroborated)",
+      "USDJPY dist=39.3p \u2192 approaching H1 OB 162.063 (30p threshold)",
+      "USDCHF price 0.80921 now in H4 FVG zone; LIMIT hold pending M15 wick",
+      "GBPUSD bid=1.34278 in H1 FVG zone; readiness=none; UK-CPI Jul22",
+      "scalp: all pairs disabled",
+      "news skip: 0 positions + regime stable >4h"
+    ]
+  }
+]
