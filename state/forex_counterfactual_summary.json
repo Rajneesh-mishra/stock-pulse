@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T20:27:05.498116+00:00",
+  "generated_at": "2026-07-20T13:17:42.831949+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -1825,19 +1825,19 @@
       "alert_id": "gbpusd_dayfvg_buy_13494",
       "instrument": "GBPUSD",
       "direction": "buy",
-      "fires": 3,
+      "fires": 4,
       "by_horizon": {
         "1h": {
-          "filled": 3,
-          "favorable": 0,
-          "avg_pips": -5.7,
-          "hit_rate": 0.0
+          "filled": 4,
+          "favorable": 1,
+          "avg_pips": -2.4,
+          "hit_rate": 0.25
         },
         "4h": {
-          "filled": 3,
-          "favorable": 2,
-          "avg_pips": 3.0,
-          "hit_rate": 0.67
+          "filled": 4,
+          "favorable": 3,
+          "avg_pips": 7.2,
+          "hit_rate": 0.75
         },
         "24h": {
           "filled": 3,
@@ -1870,6 +1870,32 @@
           "favorable": 4,
           "avg_pips": 281.0,
           "hit_rate": 1.0
+        }
+      }
+    },
+    {
+      "alert_id": "gold_h1fvg_sell_4021",
+      "instrument": "GOLD",
+      "direction": "sell",
+      "fires": 3,
+      "by_horizon": {
+        "1h": {
+          "filled": 3,
+          "favorable": 3,
+          "avg_pips": 75.9,
+          "hit_rate": 1.0
+        },
+        "4h": {
+          "filled": 2,
+          "favorable": 2,
+          "avg_pips": 101.0,
+          "hit_rate": 1.0
+        },
+        "24h": {
+          "filled": 0,
+          "favorable": 0,
+          "avg_pips": null,
+          "hit_rate": null
         }
       }
     }

@@ -1,0 +1,53 @@
+[
+  {
+    "tick_ts_utc": "2026-07-20T12:52Z",
+    "events": 6,
+    "positions_opened": 0,
+    "positions_closed": 2,
+    "skipped": 0,
+    "limit_orders_placed": 0,
+    "limit_orders_cancelled": 0,
+    "closed_trades": [
+      {
+        "instrument": "GBPUSD",
+        "direction": "BUY",
+        "entry": 1.34437,
+        "close": 1.34558,
+        "pnl_usd": 1.21,
+        "reason": "time_exit",
+        "hold_hours": 41.3
+      },
+      {
+        "instrument": "GOLD",
+        "direction": "SELL",
+        "entry": 4021.44,
+        "close": 4006.5,
+        "pnl_usd": 1.464,
+        "reason": "time_exit",
+        "hold_hours": 57.9
+      }
+    ],
+    "open_positions": 0,
+    "working_orders": 1,
+    "balance": 1001.1,
+    "daily_pnl_usd": 2.674,
+    "alert_actions": {
+      "gbpusd_dayfvg_buy_13494": "MODIFY (position closed, reset to WATCH)",
+      "gold_h1fvg_sell_4021": "MODIFY (position closed, watchlist SELL at H1 FVG 4021)",
+      "usdcad_h4fvg_sell_140818": "KEEP (Hormuz 3rd-round, dist=39.8p, LIMIT GTC)",
+      "usdjpy_h1ob_buy_162063": "KEEP (moderate readiness, risk_guard blocks pip-conv)"
+    },
+    "attention_matrix": {
+      "EURUSD": "swing=NONE scalp=OFF readiness=none",
+      "GBPUSD": "swing=WATCH scalp=OFF readiness=weak",
+      "AUDUSD": "swing=NONE scalp=OFF readiness=none",
+      "USDJPY": "swing=WATCH scalp=OFF readiness=moderate",
+      "USDCAD": "swing=ARMED scalp=OFF readiness=none",
+      "USDCHF": "swing=NONE scalp=OFF readiness=weak",
+      "GOLD": "swing=WATCH scalp=N/A readiness=weak",
+      "OIL_CRUDE": "swing=NONE scalp=N/A readiness=none"
+    },
+    "regime_note": "GBPUSD+GOLD time exits confirmed profitable. Hormuz 3rd-round US strikes. 0 pos 1 LIMIT.",
+    "scalp_audit": "EURUSD=OFF(desync) GBPUSD=OFF(wr=0%) AUDUSD=OFF(wr=11%) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
+  }
+]

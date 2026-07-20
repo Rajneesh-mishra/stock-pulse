@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-18T19:51:29.155461+00:00",
+  "generated_at": "2026-07-20T13:16:07.257122+00:00",
   "counts": {
     "trades": 54,
-    "events": 8364,
+    "events": 8370,
     "ticks": 59,
-    "regime_snapshots": 329,
+    "regime_snapshots": 330,
     "broker_positions": 0,
-    "counterfactuals": 218
+    "counterfactuals": 222
   },
   "trades_last_50": [
     {
@@ -1063,6 +1063,14 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-07-18T20:22Z",
+      "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "note_text": "2026-07-18T20:22Z tick \u2014 0 evt (heartbeat, Saturday market closure). NEWS: Hormuz ESCALATING \u2014 9 ships attacked Jul6-18, traffic 8 vs 15 vessels/day (trickle w/ transponders off), US-Iran peace talks ongoing but Hormuz lane dispute unresolved. CAD bull / oil bull INTACT. GOLD down 3% weekly \u2014 safe-haven paradox confirmed: escalation\u2192oil\u2192inflation fear\u2192rate-hike risk\u2192GOLD negative. GBPUSD retreating (USD strength from geopolitical inflation fears). Next week: ECB rate decision, UK inflation+labor data, global PMI prelims \u2014 key GBPUSD risk events. GBPUSD BUY age=35.5h TIME-EXIT OVERDUE \u2014 CLOSE AT SUNDAY OPEN (~21:00 UTC Jul19). GOLD SELL age=28.1h TIME-EXIT OVERDUE \u2014 CLOSE AT SUNDAY OPEN (~22:00 UTC Jul19, gold reopens 6pm EDT). USDCAD SELL LIMIT 1.40818 GTC KEEP \u2014 USD strength could push pair toward level; Hormuz 9-evt oil bull intact. USDJPY moderate readiness (OB 161.897-162.063, comp moderate) but risk_guard blocks (pip-conv pending). WATCH. Scalp all-OFF (EURUSD desync, GBPUSD WR=0%, AUDUSD WR=11%). 2 pos 1 LIMIT; bal=$999.46.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-07-18T19:47Z",
       "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
       "note_text": "2026-07-18T19:47Z tick \u2014 1 event: news_flash Hormuz (Thai-flagged vessel attacked near Hormuz, The Star Jul18). Saturday market closure. HORMUZ 13th+ escalation Jul6-18 \u2014 Thai vessel attack on top of Jul18 tanker/minefield events. CAD bull intact, USDCAD SELL LIMIT 1.40818 GTC (dist=61.9p, 3\u00d7H4ATR=63p) KEEP. GBPUSD BUY age=34.9h TIME EXIT OVERDUE \u2014 CLOSE AT SUNDAY OPEN (~21:00 UTC Jul19). GOLD SELL age=27.5h TIME EXIT OVERDUE \u2014 CLOSE AT SUNDAY OPEN (~21:00 UTC Jul19). USDJPY comp=+59.5 moderate OB 161.897-162.063 WATCH (risk_guard blocks pip-conv). Safe-haven paradox confirmed: gold flat/down through 13 Hormuz events. Scalp all-OFF. 2 pos 1 LIMIT; bal=$999.46.",
@@ -1130,14 +1138,6 @@
       "ts_utc": "2026-07-18T10:08Z",
       "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
       "note_text": "2026-07-18T10:08Z tick \u2014 0 evt (heartbeat, Saturday market closure). Hormuz 10-event sustained escalation regime: OIL bull + CAD bull at max corroboration. No executions possible (weekend).\nGBPUSD BUY HOLD @ 1.34437 bid=1.34484 UPL=+$0.47 age=25.2h \u2014 24h trend max EXCEEDED. TIME EXIT PENDING: CLOSE AT SUNDAY OPEN (~21:00 UTC Jul20). BoE Jul30 hike 75% macro intact.\nGOLD SELL HOLD @ 4021.44 bid=4017.11 UPL=+$0.40 age=17.8h \u2014 time exit at 16:18Z Sat Jul18 (mkt closed). TIME EXIT PENDING: CLOSE AT SUNDAY OPEN. Safe-haven paradox: USD/rates dominant, gold still falling. Trail@4003.88 not hit.\nUSDCAD SELL LIMIT 1.40818 KEEP GTC \u2014 dist=61.9p, H4ATR=21p, 3\u00d7=63p > dist (NOT stale). readiness=weak (-39.5) 3/4 TF bear. DAY FVG 1.40774-1.41252 unmitigated. LIMIT ARMED.\nUSDJPY WATCH comp=+59.5 moderate 4/4 TF bull. H1 OB 162.063 dist=33.2p. JPY pip-conv block. After both positions close Sunday, correlation + slot may free for USDJPY if risk_guard approves.\nScalp all-OFF. 2 pos 1 LIMIT; bal=$999.46.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-07-18T09:11Z",
-      "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
-      "note_text": "2026-07-18T09:11Z tick \u2014 2 evt (news_flash hormuz_strait Straits Times: Iran Guards tankers exploded from Hormuz mines Jul18; alert_audit_request USDCAD usdcad_h4fvg_sell_140818). 10th Hormuz escalation corroboration \u2014 OIL bull + CAD bull AT MAXIMUM. Markets CLOSED Saturday. No executions possible.\nGBPUSD BUY HOLD @ 1.34437 bid=1.34484 UPL\u2248+$0.47 age=24.3h \u2014 trend 24h max hit 08:54Z. TIME EXIT PENDING: CLOSE AT SUNDAY OPEN (~21:00 UTC Jul20). BoE Jul30 hike 75% macro intact.\nGOLD SELL HOLD @ 4021.44 bid=4017.11 UPL=+$0.40 age=16.9h \u2014 time exit triggers 16:18Z Sat (market closed). TIME EXIT PENDING: CLOSE AT SUNDAY OPEN. Safe-haven paradox: 10 escalations, gold still falling (USD/rates dominant). Trail@4003.88 not hit.\nUSDCAD SELL LIMIT 1.40818 KEEP GTC \u2014 10th Hormuz evt (mines, US strikes) = strongest CAD-bull corroboration. dist=60p, H4ATR=21p, 3x=63p > dist (NOT stale). readiness=weak (-39.5) 3/4 TF bear. DAY FVG 1.40774-1.41252 unmitigated. LIMIT ARMED.\nUSDJPY WATCH comp=+59.5 moderate 4/4 TF bull. H1 OB 162.063 dist=33p. JPY pip-conv block remains. After GBPUSD closes Sunday, correlation slot may free.\nScalp all-OFF. 2 pos 1 LIMIT; bal=$999.46.",
       "binary_event_name": null,
       "binary_event_active": 0,
       "binary_event_deadline": null
@@ -1646,6 +1646,58 @@
     }
   ],
   "counterfactuals_last_50": [
+    {
+      "alert_id": "gold_h1fvg_sell_4021",
+      "instrument": "GOLD",
+      "direction": "sell",
+      "trigger_price": 4026.45,
+      "fired_at": "2026-07-20T11:50:48.034332+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
+    {
+      "alert_id": "gold_h1fvg_sell_4021",
+      "instrument": "GOLD",
+      "direction": "sell",
+      "trigger_price": 4024.1,
+      "fired_at": "2026-07-20T08:23:47.093796+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
+    {
+      "alert_id": "gold_h1fvg_sell_4021",
+      "instrument": "GOLD",
+      "direction": "sell",
+      "trigger_price": 4021.65,
+      "fired_at": "2026-07-20T03:11:50.264221+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
+    {
+      "alert_id": "gbpusd_dayfvg_buy_13494",
+      "instrument": "GBPUSD",
+      "direction": "buy",
+      "trigger_price": 1.344355,
+      "fired_at": "2026-07-19T23:14:42.033799+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
     {
       "alert_id": "gbpusd_dayfvg_buy_13494",
       "instrument": "GBPUSD",
@@ -2237,58 +2289,6 @@
       "direction": "sell",
       "trigger_price": 1.36543,
       "fired_at": "2026-05-08T07:00:06.433340+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
-    },
-    {
-      "alert_id": "audusd_dayfvg_buy_72080",
-      "instrument": "AUDUSD",
-      "direction": "buy",
-      "trigger_price": 0.72075,
-      "fired_at": "2026-05-08T02:43:21.372846+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
-    },
-    {
-      "alert_id": "audusd_dayfvg_buy_72080",
-      "instrument": "AUDUSD",
-      "direction": "buy",
-      "trigger_price": 0.72056,
-      "fired_at": "2026-05-07T21:41:47.196766+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
-    },
-    {
-      "alert_id": "usdcad_m15sweep_136540_sell_watch",
-      "instrument": "USDCAD",
-      "direction": "sell",
-      "trigger_price": 1.36573,
-      "fired_at": "2026-05-07T20:41:45.687915+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
-    },
-    {
-      "alert_id": "usdcad_dayfvg_sell_13595",
-      "instrument": "USDCAD",
-      "direction": "sell",
-      "trigger_price": 1.36166,
-      "fired_at": "2026-05-06T13:07:13.213837+00:00",
       "hit_1h": null,
       "hit_4h": null,
       "hit_24h": null,

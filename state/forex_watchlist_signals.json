@@ -78,14 +78,14 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Rally into DAY FVG bear zone (1.40774-1.41252) — SELL LIMIT at 1.40818 GTC ARMED. Price must return to FVG zone top; M15 bearish rejection confirms entry.\n\nCONTEXT: 13+ Hormuz escalation (latest: Thai-flagged vessel attacked near Hormuz, The Star Jul18 02:54 GMT + Marine Insight Jul18: ‘Iran tankers/minefield, US Denies’). CAD bull thesis at maximum corroboration (Jul6–18: 13+ incidents, Hormuz traffic 8 vs 15 vessels/day Kpler). H1 BOS bear (Jul16). H4 bear FVG (1.40774–1.41252) unmitigated. Current price 1.40199 (61.9p below LIMIT). H4 ATR=21p, 3×H4ATR=63p, dist=61.9p < 63p — NOT stale. Confluence=-39.5 weak (borderline moderate).\n\nSL: 1.411  TP: 1.395  R:R target: 3.0\n\nUpdated 2026-07-18T19:47Z — 13th+ Hormuz event (Thai vessel attack). LIMIT KEEP GTC. Thesis intact.",
+      "note": "ENTRY: Rally into DAY FVG bear zone (1.40774-1.41252) — SELL LIMIT at 1.40818 GTC ARMED (dealId 00000000-56ad-4300).\n\nCONTEXT: Hormuz ESCALATING — 13+ incidents Jul6-18 PLUS US 3rd-round strikes on ~140 Iranian military targets (Jul19-20 weekend). CAD bull thesis at MAXIMUM corroboration. H1 BOS bear (Jul16) intact. H4 bear FVG (1.40774-1.41252) unmitigated. dist=39.8p < 3×H4ATR=63p — NOT stale. Confluence=none (-2.5 neutral) but fundamental catalyst (Hormuz/oil) dominates; thesis not invalidated.\n\nSL: 1.411  TP: 1.395  R:R target: 3.0\n\nUpdated 2026-07-20T12:52Z — US 3rd-round strikes on Iran confirmed. LIMIT KEEP GTC. Thesis intact.",
       "entry_criterion": "SELL LIMIT GTC at 1.40818 (DAY FVG top). Reject on M15 wick.",
-      "regime_context": "Hormuz 13+ events (Thai vessel + tankers + minefield Jul18). CAD bull via oil disruption. USDCAD H1 BOS bear Jul16. H4 FVG 1.40774-1.41252 unmitigated. Confluence=-39.5 weak borderline.",
+      "regime_context": "Hormuz 13+ events + US 3rd-round strikes. CAD bull max corroboration. H4 FVG 1.40774-1.41252. Confluence=none but fundamental intact.",
       "sl": 1.411,
       "tp": 1.395,
       "rr_target": 3.0,
-      "current_price_ref": 1.40199,
-      "last_updated": "2026-07-18T19:47Z"
+      "current_price_ref": 1.4042,
+      "last_updated": "2026-07-20T12:52Z"
     },
     {
       "id": "gbpusd_dayfvg_buy_13494",
@@ -97,14 +97,14 @@
       "direction": "buy",
       "active": true,
       "validated": false,
-      "note": "ENTRY: BUY position OPEN @ 1.34437 (DAY FVG bottom, LIMIT filled Jul17 08:54Z). TIME EXIT TRIGGERED — 24h trend max hit at ~08:54Z Sat Jul18. MARKET CLOSED (Saturday). CLOSE AT SUNDAY OPEN (~21:00 UTC Jul19).\n\nCONTEXT: bid=1.34484 at close (Sat Jul18 09:00Z). UPL≈+$0.47. comp=+31.5 weak bull. BoE 75% hike priced Jul30 MPC (macro bull intact). H4 BOS bull 1.34519 intact. GBPUSD held 1.3474 range per Vantage Markets Jul17; 1.354 high this week. Close at Sunday open regardless of price.\n\nSL: 1.3415  TP: 1.365  R:R target: 7.2\n\nUpdated 2026-07-18T08:59Z — TIME EXIT pending Sunday market open.",
-      "entry_criterion": "Position OPEN. TIME EXIT at Sunday open 21:00 UTC — close at market unconditionally.",
-      "regime_context": "GBPUSD 1.34278. comp=+3.5 none. SL 1.3415 intact 12.8p buffer. BoE Nov hike priced, UK GDP +0.1%. Demand zone being tested.",
+      "note": "ENTRY: Pullback to DAY FVG bull zone bottom 1.34437 with M15 bullish rejection wick ≥5p and M15 bullish close.\n\nCONTEXT: Position closed 2026-07-20T02:10Z (time exit, +$1.21). GBPUSD at 1.3455 (above level). BoE Jul30 hike 75% priced. UK labour Jul21 + CPI Jul22 this week — volatility risk. Andy Burnham incoming UK PM (Starmer succeeded); Chancellor pick (Mahmood frontrunner) reassuring markets. Readiness=weak (composite not yet moderate). H4 BOS bull 1.34519 intact. Range outlook 1.32-1.35 near-term. Re-arm BUY LIMIT if price pulls back to 1.34437 on dip.\n\nSL: 1.3415  TP: 1.365  R:R target: 7.2\n\nRewritten 2026-07-20T12:52Z — position closed; reset to WATCH. Political transition + UK data week.",
+      "entry_criterion": "Pullback to 1.34437 (DAY FVG bottom) + M15 bullish rejection wick ≥5p + M15 bullish close.",
+      "regime_context": "BoE Jul30 hike priced 75%. UK labour Jul21, CPI Jul22. Burnham incoming PM. H4 BOS bull 1.34519 intact. Readiness=weak.",
       "sl": 1.3415,
       "tp": 1.365,
       "rr_target": "7.2",
-      "current_price_ref": 1.34539,
-      "last_updated": "2026-07-18T17:42Z"
+      "current_price_ref": 1.3455,
+      "last_updated": "2026-07-20T12:52Z"
     },
     {
       "id": "gold_h1fvg_sell_4021",
@@ -116,14 +116,14 @@
       "direction": "sell",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Position OPEN @ 4021.44 (LIMIT filled 2026-07-17T16:18Z). TIME EXIT TRIGGERED — 24h trend max expires at 16:18Z Sat Jul18 (during weekend closure). MARKET CLOSED (Saturday). CLOSE AT SUNDAY OPEN (~21:00 UTC Jul19).\n\nCONTEXT: bid=4017.11 at close. UPL=+$0.40. comp=-33 weak bear. Safe-haven paradox FULLY CONFIRMED: 11 Hormuz events Jul6-18 (tankers + mines Jul18, prior 10 corroborated). Gold fell or held flat through all 11 events. USD/rates dominate safe-haven demand — GOLD bearish regime intact. Trail at 4003.88 not triggered. Close at Sunday open regardless.\n\nSL: 4039.0  TP: 3970.0  R:R target: 2.93\n\nUpdated 2026-07-18T12:30Z — 11th Hormuz event confirms safe-haven paradox. TIME EXIT pending Sunday market open.",
-      "entry_criterion": "Position OPEN. TIME EXIT at Sunday open 21:00 UTC — close at market unconditionally.",
-      "regime_context": "GOLD 3984.18, comp=-50 moderate bear all TFs. H4 FVG mitigated. DAY FVG fresh 4008.97-4017.47.",
+      "note": "ENTRY: Rally back to H1 FVG bear zone 4021-4025 with M15 bearish rejection wick ≥ 3 points and M15 bearish close.\n\nCONTEXT: SELL position closed 2026-07-20T02:10Z (time exit, +$1.464). Gold ranged 3982-4040 on Sunday open. Now at 4010. Safe-haven paradox CONFIRMED: 13+ Hormuz events + US 3rd-round strikes — gold fell or held flat through all. USD/rates dominate. Bearish bias intact. Readiness=weak (composite=-28.5). If gold rallies back to 4021-4025 H1 FVG zone with improved confluence (moderate+), consider fresh SELL.\n\nSL: 4039.0  TP: 3970.0  R:R target: 2.93\n\nRewritten 2026-07-20T12:52Z — position closed; watchlist SELL at H1 FVG 4021 zone. Safe-haven paradox intact.",
+      "entry_criterion": "Rally to H1 FVG 4021-4025 with M15 bearish rejection wick ≥3pts + M15 bearish close. Readiness must reach moderate+.",
+      "regime_context": "Safe-haven paradox: GOLD bearish despite Hormuz escalation (USD/rates dominate). Hormuz US 3rd-round strikes. Readiness=weak.",
       "sl": 4039.0,
       "tp": 3970.0,
       "rr_target": 2.93,
-      "current_price_ref": 4017.11,
-      "last_updated": "2026-07-18T17:42Z"
+      "current_price_ref": 4010.18,
+      "last_updated": "2026-07-20T12:52Z"
     },
     {
       "id": "usdjpy_h1ob_buy_162063",
@@ -141,9 +141,9 @@
       "sl": 161.87,
       "tp": 162.59,
       "rr_target": 2.7,
-      "current_price_ref": 162.395,
-      "last_updated": "2026-07-18T17:42Z"
+      "current_price_ref": 162.413,
+      "last_updated": "2026-07-20T12:52Z"
     }
   ],
-  "last_updated": "2026-07-18T19:47Z"
+  "last_updated": "2026-07-20T12:52Z"
 }
