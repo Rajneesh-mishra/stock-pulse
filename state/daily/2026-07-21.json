@@ -579,5 +579,33 @@
         "reason": "No active level alert; spread 3-4p"
       }
     }
+  },
+  {
+    "tick_ts_utc": "2026-07-21T18:30Z",
+    "events": 1,
+    "events_detail": [
+      "position_closed USDCAD SL hit 1.41077 \u2212$1.96"
+    ],
+    "trades_opened": 0,
+    "trades_closed": 1,
+    "closed_trades": [
+      "USDCAD SELL 1000 @ 1.40821 \u2192 SL 1.41077 pnl=\u2212$1.96 hold=20.3h"
+    ],
+    "positions_after": 1,
+    "limits_after": 0,
+    "alerts_modified": [
+      "usdcad_h4fvg_sell_140818 (POSITION_OPEN\u2192watch, 24h cool-off)",
+      "gold_h1fvg_sell_4021 (ARMED\u2192watch, SL-hit)",
+      "gbpusd_dayfvg_buy_13494 (note updated, Rule2 KEEP)",
+      "usdjpy_h1ob_buy_162063 (note updated)"
+    ],
+    "new_trades": [],
+    "management": [
+      "EURUSD SL trailed 1.1435\u21921.1419 (breakeven at +1R)"
+    ],
+    "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+    "balance": 1001.21,
+    "daily_realized_pnl": -5.72,
+    "note": "USDCAD SL hit 20.3h into trend trade (sweep above 1.411). EURUSD SELL running +$5.16, SL at B/E."
   }
 ]
