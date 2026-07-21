@@ -79,14 +79,14 @@
       "direction": "buy",
       "active": true,
       "validated": true,
-      "note": "ENTRY: Drop into H4 bull OB zone (1.33402-1.33622) with M15 bullish rejection wick >=5p + M15 bullish close. LIMIT at 1.336 (OB top), half size if readiness moderate, full if strong.\n\nCONTEXT: GBPUSD 1.34091 (Jul21 11:16Z). Readiness=none(13.5). Price has broken BELOW the prior H1 FVG zone (1.34236-1.34313) AND below H4 BOS bull 1.34519 — both invalidated as entry levels. H1 BOS bear at 1.34264 active. H4 bull OB at 1.33402-1.33622 is the next structural support. Validated alert (5 fires, 4h hit_rate=0.80). LIMIT arms only when readiness >=moderate. CPI Jul22, BoE Jul30.\n\nSL: 1.330  TP: 1.348  R:R target: 2.0\n\nUpdated 2026-07-21T11:16Z — MODIFY: price=1.34091 below FVG zone and H4 BOS; relocated to H4 bull OB 1.33622. readiness=none(13.5); WATCH",
-      "entry_criterion": "Drop into H4 bull OB 1.33402-1.33622 + M15 bullish rejection wick >=5p + M15 bullish close. LIMIT at 1.336, half size (readiness moderate), full (strong). R:R=2.0 (SL=1.330, TP=1.348).",
-      "regime_context": "H1 BOS bear at 1.34264. H4 BOS bull 1.34519 violated. H4 bull OB 1.33402-1.33622 unmitigated. readiness=none(13.5). CPI Jul22. BoE Jul30.",
-      "sl": 1.330,
+      "note": "ENTRY: Price in H4 bull OB zone (1.33402-1.33622). VALIDATED alert (6 fires, 4h HR=80%): arm LIMIT at 1.33622 (OB top) on readiness >= moderate WITHOUT requiring M15 rejection.\n\nCONTEXT: GBPUSD 1.33971 (Jul21 14:19Z). Price BOUNCED ABOVE H4 OB zone (left zone). Readiness=none (composite=10.5, H1/M15 bearish, H4/DAY bull; disagree). Next trigger: pullback to OB zone 1.33402-1.33622 again. UK CPI Jul22, BoE Jul30. 4h TIME EXIT mandatory on any entry.\n\nSL: 1.330  TP: 1.348  R:R target: 2.0\n\nUpdated 2026-07-21T14:19Z \u2014 WATCH: price bounced above OB; await next approach + readiness >= moderate.",
+      "entry_criterion": "Readiness >= moderate (validated: no M15 rejection required). LIMIT at OB top 1.33622.",
+      "regime_context": "H4 bull BOS at 1.34519 intact. M15/H1 bearish drag composite to none. UK data priced in.",
+      "sl": 1.33,
       "tp": 1.348,
       "rr_target": 2.0,
       "current_price_ref": 1.339215,
-      "last_updated": "2026-07-21T13:17Z"
+      "last_updated": "2026-07-21T14:19Z"
     },
     {
       "id": "usdjpy_h1ob_buy_162063",
@@ -98,11 +98,11 @@
       "direction": "buy",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Price drops to H4 FVG zone (162.536-162.587) with M15 bullish rejection wick >=5p + M15 bullish close. LIMIT at 162.587 (FVG top). WATCH ONLY — risk_guard blocks JPY pip-value issue.\n\nCONTEXT: USDJPY 162.729 (Jul21 11:16Z). comp=+82.0 STRONG (4/4 TF agree bullish). Fresh H4 FVG at 162.536-162.587 (bars_ago=1, unmitigated). dist=14.2p from level (within 30p proximity). Old H1 OB 161.897-162.063 now 66.6p below — obsolete, price broke above it. risk_guard blocks JPY trades (pip-value conversion pending).\n\nSL: 162.48  TP: 163.50  R:R target: 8.5\n\nUpdated 2026-07-21T11:16Z — MODIFY: relocated from H1 OB 162.063 (stale, 66.6p below) to fresh H4 FVG 162.587; dist=14.2p; WATCH (risk_guard blocks JPY)",
-      "entry_criterion": "Drop to H4 FVG 162.536-162.587 + M15 bull rejection wick >=5p. WATCH ONLY — risk_guard blocks JPY until pip-value conversion fixed.",
+      "note": "ENTRY: Price drops to H4 FVG zone (162.536-162.587) with M15 bullish rejection wick >=5p + M15 bullish close. LIMIT at 162.587 (FVG top). WATCH ONLY \u2014 risk_guard blocks JPY pip-value issue.\n\nCONTEXT: USDJPY 162.729 (Jul21 11:16Z). comp=+82.0 STRONG (4/4 TF agree bullish). Fresh H4 FVG at 162.536-162.587 (bars_ago=1, unmitigated). dist=14.2p from level (within 30p proximity). Old H1 OB 161.897-162.063 now 66.6p below \u2014 obsolete, price broke above it. risk_guard blocks JPY trades (pip-value conversion pending).\n\nSL: 162.48  TP: 163.50  R:R target: 8.5\n\nUpdated 2026-07-21T11:16Z \u2014 MODIFY: relocated from H1 OB 162.063 (stale, 66.6p below) to fresh H4 FVG 162.587; dist=14.2p; WATCH (risk_guard blocks JPY)",
+      "entry_criterion": "Drop to H4 FVG 162.536-162.587 + M15 bull rejection wick >=5p. WATCH ONLY \u2014 risk_guard blocks JPY until pip-value conversion fixed.",
       "regime_context": "USD_STRENGTH. comp=82.0 STRONG, 4/4 TFs bull. H4 FVG 162.536-162.587 fresh unmitigated. H4 BOS bull 162.708. dist=14.2p. risk_guard blocks.",
       "sl": 162.48,
-      "tp": 163.50,
+      "tp": 163.5,
       "rr_target": 8.5,
       "current_price_ref": 162.772,
       "last_updated": "2026-07-21T13:17Z"
@@ -117,7 +117,7 @@
       "direction": "buy",
       "active": true,
       "validated": false,
-      "note": "ENTRY: Price drops to H4 FVG zone (0.80835-0.80973) with M15 bullish rejection wick >=5p + M15 bullish close at Asia/London open. LIMIT at 0.80870 (FVG mid), half size if moderate, full if strong. Arm LIMIT only after H4 ChoCH 0.81203 breaks on H4 close (TP then confirmed above 0.813+).\n\nCONTEXT: USDCHF 0.811065 (Jul21 13:17Z). comp=+63.0 STRONG (4/4 TF bullish). 20.3p above H4 FVG zone level (0.80904). H4 ChoCH resistance 0.81203 at 9.65p above current price — not yet broken. R:R to 0.815 TP: (0.815-0.80870)/(0.80870-0.806)=2.33 but contingent on ChoCH break. Without ChoCH, max TP=0.81203, R:R=1.23 FAILS.\n\nSL: 0.806  TP: 0.815  R:R target: 1.53 (aspirational, contingent on ChoCH break)\n\nUpdated 2026-07-21T13:17Z — readiness STRONG(63.0); price rose to 0.811065 (20.3p above level, within 30p threshold); H4 ChoCH 0.81203 still intact 9.65p above; WATCH; LIMIT deferred until ChoCH breaks",
+      "note": "ENTRY: Price drops to H4 FVG zone (0.80835-0.80973) with M15 bullish rejection wick >=5p + M15 bullish close at Asia/London open. LIMIT at 0.80870 (FVG mid), half size if moderate, full if strong. Arm LIMIT only after H4 ChoCH 0.81203 breaks on H4 close (TP then confirmed above 0.813+).\n\nCONTEXT: USDCHF 0.811065 (Jul21 13:17Z). comp=+63.0 STRONG (4/4 TF bullish). 20.3p above H4 FVG zone level (0.80904). H4 ChoCH resistance 0.81203 at 9.65p above current price \u2014 not yet broken. R:R to 0.815 TP: (0.815-0.80870)/(0.80870-0.806)=2.33 but contingent on ChoCH break. Without ChoCH, max TP=0.81203, R:R=1.23 FAILS.\n\nSL: 0.806  TP: 0.815  R:R target: 1.53 (aspirational, contingent on ChoCH break)\n\nUpdated 2026-07-21T13:17Z \u2014 readiness STRONG(63.0); price rose to 0.811065 (20.3p above level, within 30p threshold); H4 ChoCH 0.81203 still intact 9.65p above; WATCH; LIMIT deferred until ChoCH breaks",
       "entry_criterion": "cross_down event fires through 0.80904 AND M15 bullish rejection wick >=5p AND M15 bullish close inside H4 FVG (0.80835-0.80973). LIMIT at 0.80870. Half size (readiness moderate) or full (strong). Arm only after H4 ChoCH 0.81203 breaks on H4 close to confirm TP.",
       "regime_context": "USD_STRENGTH. comp=63.0 STRONG, 4/4 TFs bullish. H4 FVG 0.80835-0.80973. bid=0.811065 (20.3p above FVG zone). H4 ChoCH 0.81203 resistance (9.65p above). R:R unconfirmed until ChoCH breaks.",
       "sl": 0.806,
@@ -125,7 +125,21 @@
       "rr_target": 1.53,
       "current_price_ref": 0.811065,
       "last_updated": "2026-07-21T13:17Z"
+    },
+    {
+      "id": "eurusd_h4fvg_sell_1419",
+      "instrument": "EURUSD",
+      "direction": "sell",
+      "level": 1.1419,
+      "active": true,
+      "sl": 1.1435,
+      "tp": 1.1362,
+      "rr_target": 3.5,
+      "entry_criterion": "Price rallies to H4 bear FVG zone (1.1419-1.1427). M15 bearish rejection wick >=5p + M15 bearish close. Readiness >= moderate.",
+      "regime_context": "Composite=-40.0 moderate bearish, 4/4 TFs agree. Mitigated H4 FVG zone. No BOS confirmed. USD_STRENGTH regime.",
+      "last_updated": "2026-07-21T14:19Z",
+      "note": "ENTRY: SELL LIMIT at H4 bear FVG zone (1.14190-1.14274) FILLED at 1.14190. POSITION OPEN dealId=00000000-5809-fc6d-044a-beb40055311e.\n\nCONTEXT: USD_STRENGTH regime. 3/4 TFs bearish (DAY/H1/M15 bearish, H4 mixed). Composite=-21.0 at fill. SL=1.1435 (above FVG top), TP=1.1362 (H4 bull OB).\n\nSL: 1.1435  TP: 1.1362  R:R target: 3.56\n\nUpdated 2026-07-21T14:19Z \u2014 POSITION OPEN; manage via open_positions."
     }
   ],
-  "last_updated": "2026-07-21T13:17Z"
+  "last_updated": "2026-07-21T14:19Z"
 }

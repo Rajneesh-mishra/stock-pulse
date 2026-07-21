@@ -315,5 +315,131 @@
       "usdchf_bull_h4fvg_watch (readiness 60.0->63.0, price ref update)"
     ],
     "decision": "HOLD USDCAD SELL; no new entries (USDJPY blocked, USDCHF ChoCH gate, others none)"
+  },
+  {
+    "tick_ts": "2026-07-21T13:45Z",
+    "events_consumed": 1,
+    "events": [
+      "level_cross gbpusd_dayfvg_buy_13494 (cross_down at 1.336095)"
+    ],
+    "open_positions": [
+      {
+        "epic": "USDCAD",
+        "dir": "SELL",
+        "size": 1000,
+        "entry": 1.40821,
+        "bid": 1.40827,
+        "upl_usd": -0.09,
+        "age_h": 15.7,
+        "thesis": "trend"
+      }
+    ],
+    "new_trades": [],
+    "closed_trades": [],
+    "limits_placed": [],
+    "limits_cancelled": [],
+    "watchlist_changes": [
+      "MODIFY gbpusd_dayfvg_buy_13494 \u2014 reflect validated status (6 fires, 4h HR=80%), update note",
+      "ADD eurusd_h4fvg_sell_1419 \u2014 SELL at H4 FVG zone 1.1419-1.1427, readiness moderate bearish"
+    ],
+    "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+    "regime_note_summary": "Hormuz traffic -66% (53 vs 157/week). USDCAD SELL thesis max corroboration. GBPUSD in H4 OB but readiness=none. EURUSD moderate bearish alert added.",
+    "balance_usd": 997.05,
+    "attention_matrix": {
+      "EURUSD": {
+        "swing": "WATCH",
+        "scalp": "OFF(desync)",
+        "readiness": "moderate",
+        "reason": "composite=-40 4/4 bearish; SELL alert added at 1.1419 FVG zone; await price rally + M15 rejection"
+      },
+      "GBPUSD": {
+        "swing": "WATCH",
+        "scalp": "OFF(WR=0%)",
+        "readiness": "none",
+        "reason": "level_cross into H4 OB 1.33622; VALIDATED(6F/4h80%); readiness=none; wait for >=moderate to arm LIMIT"
+      },
+      "AUDUSD": {
+        "swing": "NONE",
+        "scalp": "OFF(WR=11%)",
+        "readiness": "none",
+        "reason": "composite=10.5; no structural setup; no alert"
+      },
+      "USDJPY": {
+        "swing": "WATCH",
+        "scalp": "OFF(pip-conv)",
+        "readiness": "strong",
+        "reason": "strong(82.0) 4/4 bull; JPY pip-value blocks risk_guard; alert at 162.587 watch-only"
+      },
+      "USDCAD": {
+        "swing": "NONE",
+        "scalp": "OFF(CAD-quote)",
+        "readiness": "none",
+        "reason": "SELL position active (15.7h/24h trend); comp=12.5 neutral; no additional setup"
+      },
+      "USDCHF": {
+        "swing": "WATCH",
+        "scalp": "OFF(pip-conv)",
+        "readiness": "strong",
+        "reason": "strong(63.0) 4/4 bull; ChoCH gate 0.81203 not broken (price=0.81197); alert at 0.80904"
+      },
+      "GOLD": {
+        "swing": "NONE",
+        "scalp": "N/A(spread 5p)",
+        "readiness": "unknown",
+        "reason": "no alert; Hormuz safe-haven paradox burned us last week; no setup"
+      },
+      "OIL_CRUDE": {
+        "swing": "NONE",
+        "scalp": "N/A(spread 3-4p)",
+        "readiness": "unknown",
+        "reason": "spread blocked scalp; oil bull expressed via USDCAD SELL"
+      }
+    },
+    "scalp_audit": "EURUSD=OFF(desync) GBPUSD=OFF(WR=0%/31T) AUDUSD=OFF(WR=11%/19T) USDJPY/CHF/CAD=pip-conv-pending GOLD/OIL=spread-blocked"
+  },
+  {
+    "tick_ts": "2026-07-21T14:19Z",
+    "events_consumed": 1,
+    "events": [
+      "position_opened EURUSD SELL 3000 @ 1.1419 (LIMIT fill, H4 bear FVG)"
+    ],
+    "open_positions": [
+      {
+        "epic": "EURUSD",
+        "dir": "SELL",
+        "size": 3000,
+        "entry": 1.1419,
+        "bid": 1.14172,
+        "upl_usd": 0.33,
+        "age_h": 0.08,
+        "thesis": "trend"
+      },
+      {
+        "epic": "USDCAD",
+        "dir": "SELL",
+        "size": 1000,
+        "entry": 1.40821,
+        "bid": 1.40804,
+        "upl_usd": -0.02,
+        "age_h": 16.2,
+        "thesis": "trend"
+      }
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "balance": 997.6,
+    "total_upl": 0.31,
+    "confluence_summary": {
+      "EURUSD": "none(-21.0) 3/4 bear \u2014 position open at FVG fill",
+      "GBPUSD": "none(10.5) \u2014 bounced above H4 OB; WATCH",
+      "AUDUSD": "none(15.5) \u2014 no setup",
+      "USDJPY": "strong(82.0) \u2014 risk_guard blocks, WATCH",
+      "USDCAD": "none(12.5) \u2014 position open SELL, H4 bear trend",
+      "USDCHF": "strong(63.0) \u2014 ChoCH gate at 0.81203 not broken; WATCH",
+      "GOLD": "none(-9.5) \u2014 no setup",
+      "OIL_CRUDE": "weak(33.0) \u2014 oil bull Hormuz, no entry (spread)"
+    },
+    "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+    "note": "EURUSD SELL LIMIT filled at 1.1419 (H4 FVG). No new manual trades. USDCAD hold (16.2h, 24h cap). News skip: no watcher events this tick, regime unchanged 30min."
   }
 ]

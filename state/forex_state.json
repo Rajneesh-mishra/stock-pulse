@@ -1,9 +1,9 @@
 {
   "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
-  "tick_ts_utc": "2026-07-21T13:17Z",
-  "state_ts_utc": "2026-07-21T13:17Z",
-  "regime_note": "2026-07-21T13:17Z \u2014 1 event (news_flash hormuz_strait 'Iran attacks tanker in Hormuz as US strikes fail to reopen vital oil route' India Today Jul21 09:30Z). Hormuz escalation deepening: US airstrikes have NOT reopened Hormuz \u2014 another tanker attacked. Oil supply route remains constrained. Oil bull intact, regime UNCHANGED: USD_STRENGTH_OIL_BULL_ESCALATION. USDCAD SELL 1000 @ 1.40821 HOLD (age=15.2h of 24h; bid=1.40798; UPL=+$0.02; thesis=trend; Hormuz news reinforces CAD bull). No new trades: USDJPY strong(82.0) risk_guard blocks; USDCHF strong(63.0) ChoCH 0.81203 not broken (R:R fails without it); GBPUSD none(10.5) WATCH; EURUSD none(-24.0); AUDUSD none(20.5); GOLD none(-12.0) no alert; OIL N/A spread. 1 pos, 0 LIMIT, bal=$997.18.",
-  "regime_note_prev": "2026-07-21T03:41Z \u2014 1 event (news_flash hormuz_strait 'Hormuz ship crossings fall further after US-Iran strikes' Free Malaysia Today Jul21 02:42Z). Hormuz escalation deepening: ship crossings falling further \u2014 oil supply constrained, oil bull intact ($82.07). Regime UNCHANGED: USD_STRENGTH_OIL_BULL_ESCALATION. USDCAD SELL 1000 @ 1.40821 HOLD (age=5.6h of 24h; bid=1.40779; UPL=+$0.16; thesis=trend; CAD bull intact). No new trades: GBPUSD weak(26.0) no LIMIT; USDJPY strong(62.5) risk_guard blocks + dist=42.7p>30p; USDCHF moderate(59.0) R:R<1.0 with confirmed TP fails; EURUSD none(-23.5); AUDUSD none(18.0); GOLD none(-14.5) no alert; OIL weak(25.5) spread blocked. All scalps OFF. 1 pos, 0 LIMIT, bal=$997.44.",
+  "tick_ts_utc": "2026-07-21T14:19Z",
+  "state_ts_utc": "2026-07-21T14:19Z",
+  "regime_note": "2026-07-21T14:19Z \u2014 1 event (position_opened EURUSD 14:14Z). EURUSD SELL 3000 @ 1.1419 LIVE (LIMIT filled H4 bear FVG zone; bid=1.14172, UPL=+$0.33, SL=1.1435 TP=1.1362 R:R=3.56; thesis=trend, 3/4 TFs bearish composite=-21.0 none, but DAY+H1+M15 bearish, H4 mixed; holds on time exit 24h cap). USDCAD SELL 1000 @ 1.40821 HOLD (bid=1.40804, UPL=-$0.02, age=16.2h/24h, thesis=trend, Hormuz CAD bull intact; time exit at 22:05Z today). 2 pos, 0 LIMIT, bal=$997.60. Regime: USD_STRENGTH_OIL_BULL_ESCALATION unchanged.",
+  "regime_note_prev": "2026-07-21T13:45Z \u2014 1 event (level_cross gbpusd_dayfvg_buy_13494 cross_down). Hormuz tanker traffic DOWN 66% (53 vs 157 vessels/week Jul20; CNBC) \u2014 oil supply severely constrained, oil bull at maximum corroboration. USDCAD SELL 1000 @ 1.40821 HOLD (bid=1.40827, UPL~flat, age=15.7h/24h, thesis=trend, Hormuz reinforces CAD bull). GBPUSD level_cross INTO H4 OB (1.33402-1.33622) \u2014 readiness=none(0.5); M15+H1 bearish drag composite low; alert VALIDATED (6 fires, 4h HR=80%); WATCH, arm LIMIT when readiness >= moderate. UK labour data Jul21 already priced (GBP at 1.336). EURUSD moderate bearish (composite=-40.0, 4/4 agree) \u2014 added SELL alert at H4 FVG 1.1419. USDJPY strong(82.0) JPY pip-value blocks. USDCHF strong(63.0) ChoCH 0.81203 gate not broken. No new trades. 1 pos, 0 LIMIT, bal=$997.05. Regime: USD_STRENGTH_OIL_BULL_ESCALATION.",
   "open_positions": [
     {
       "dealId": "00000000-57ed-d7a6-044a-beb40055311e",
@@ -20,6 +20,22 @@
       "bid_last": 1.40761,
       "upl_last": 0.28,
       "upl_usd": 0.02
+    },
+    {
+      "dealId": "00000000-5809-fc6d-044a-beb40055311e",
+      "epic": "EURUSD",
+      "direction": "SELL",
+      "size": 3000.0,
+      "entry": 1.1419,
+      "sl": 1.1435,
+      "tp": 1.1362,
+      "opened_at": "2026-07-21T14:14:30.377Z",
+      "thesis_type": "trend",
+      "thesis_note": "H4 bear FVG zone (1.14190-1.14274) LIMIT fill at 1.1419. USD_STRENGTH regime, composite bearish 3/4 TFs. R:R=3.56. Half size (moderate confluence at entry).",
+      "deal_id": "00000000-5809-fc6d-044a-beb40055311e",
+      "bid_last": 1.14172,
+      "upl_last": 0.33,
+      "upl_usd": 0.33
     }
   ],
   "watchlist": [],
