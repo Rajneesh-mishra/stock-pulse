@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T01:44:58.409644Z",
+  "generated_at": "2026-07-21T02:44:29.044998Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -405,6 +405,40 @@
       "broker_balance": 1000.48,
       "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
       "summary": "heartbeat \u2014 0 evt; GOLD SELL @ 4019.93 bid=4024.85 UPL=-$0.94 (4h stop 04:36Z); USDCAD SELL @ 1.40821 UPL=+$0.38; USDCHF FVG swept+rejected no entry (R:R<1.5); all scalps OFF; 2 pos 0 LIMIT"
+    },
+    {
+      "tick_ts_utc": "2026-07-21T02:40Z",
+      "events": 2,
+      "events_detail": [
+        "news_flash (hormuz_deepening India Today Jul21)",
+        "position_closed GOLD SL hit @ 4039.0"
+      ],
+      "positions_opened": 0,
+      "positions_closed": 1,
+      "closed_detail": "GOLD SELL 0.2 SL hit @ 4039.0 pnl=-$3.76",
+      "positions_skipped": [],
+      "open_positions": [
+        "USDCAD SELL 1000 @ 1.40821 bid=1.40749 UPL=+$0.38 age=4.7h"
+      ],
+      "limits": [],
+      "watchlist": [
+        "gbpusd_dayfvg_buy_13494",
+        "usdjpy_h1ob_buy_162063",
+        "usdchf_bull_h4fvg_watch"
+      ],
+      "balance": 997.76,
+      "scalp_status": "all_off (EURUSD desync, GBPUSD wr=0%, AUDUSD wr=11%)",
+      "regime": "USD_STRENGTH_OIL_BULL_ESCALATION / GOLD safe-haven paradox FAILED \u2014 gold rallied to SL despite Hormuz oil bull",
+      "confluence": {
+        "EURUSD": "none (-14.0)",
+        "GBPUSD": "weak (26.0)",
+        "AUDUSD": "none (18.0)",
+        "USDCAD": "none (4.5)",
+        "USDCHF": "moderate (59.0) \u2014 R:R<1.5 confirmed TP",
+        "USDJPY": "strong (62.5) \u2014 risk_guard blocked",
+        "GOLD": "none (-22.5)",
+        "OIL_CRUDE": "weak (28.0)"
+      }
     }
   ]
 }

@@ -86,26 +86,7 @@
       "tp": 1.365,
       "rr_target": 7.2,
       "current_price_ref": 1.34285,
-      "last_updated": "2026-07-21T05:07Z"
-    },
-    {
-      "id": "gold_h1fvg_sell_4021",
-      "alert_id": "gold_h1fvg_sell_4021",
-      "instrument": "GOLD",
-      "level": 4019.91,
-      "emit_on": "cross_up",
-      "cooldown_sec": 1800,
-      "direction": "sell",
-      "active": false,
-      "validated": false,
-      "note": "ENTRY: LIMIT FILLED @ 4019.93 (2026-07-21T00:36Z). Position is now live \u2014 do NOT re-enter.\n\nCONTEXT: GOLD SELL 0.2 @ 4019.93, SL=4039.0, TP=3970.0, R:R=2.61. H1 FVG top 4019.91 was resistance. Safe-haven paradox: Hormuz Strait CLOSED \u2192 oil bull \u2192 rate-hike fear \u2192 GOLD bearish. All 4 TFs bearish, readiness=moderate (-46.5). 4h time-stop @ 2026-07-21T04:36Z.\n\nSL: 4039.0  TP: 3970.0  R:R target: 2.61\n\nRewritten 2026-07-21T00:37Z \u2014 LIMIT filled, position active, monitoring.",
-      "entry_criterion": "FILLED \u2014 position live (dealId 00000000-57ee-0e6e-044a-beb40055311e). 4h time-stop @ 04:36Z.",
-      "regime_context": "Safe-haven paradox: GOLD bearish despite Hormuz escalation. readiness=moderate (-54.0), all 4 TFs bearish. H1 BOS bear 4017.47 intact. USD/rates dominate safe-haven bid.",
-      "sl": 4039.0,
-      "tp": 3970.0,
-      "rr_target": 2.61,
-      "current_price_ref": 4003.88,
-      "last_updated": "2026-07-21T00:37Z"
+      "last_updated": "2026-07-21T02:40Z"
     },
     {
       "id": "usdjpy_h1ob_buy_162063",
@@ -123,8 +104,8 @@
       "sl": 161.87,
       "tp": 162.59,
       "rr_target": 2.7,
-      "current_price_ref": 162.496,
-      "last_updated": "2026-07-21T05:07Z"
+      "current_price_ref": 162.5,
+      "last_updated": "2026-07-21T02:40Z"
     },
     {
       "id": "usdchf_bull_h4fvg_watch",
@@ -142,8 +123,8 @@
       "sl": 0.806,
       "tp": 0.815,
       "rr_target": 1.53,
-      "current_price_ref": 0.81017,
-      "last_updated": "2026-07-21T05:07Z"
+      "current_price_ref": 0.81036,
+      "last_updated": "2026-07-21T02:40Z"
     }
   ],
   "last_updated": "2026-07-21T05:07Z"
