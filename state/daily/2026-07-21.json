@@ -202,5 +202,44 @@
       "GOLD": "none (-22.5)",
       "OIL_CRUDE": "weak (28.0)"
     }
+  },
+  {
+    "tick_ts_utc": "2026-07-21T02:47Z",
+    "events_consumed": 1,
+    "events_detail": [
+      "news_flash hormuz_strait \u2014 'Hormuz Shipping Crisis: Another Tanker Comes Under Attack' (NDTV Profit Jul21 01:37Z)"
+    ],
+    "positions_opened": 0,
+    "positions_closed": 0,
+    "orders_placed": 0,
+    "orders_cancelled": 0,
+    "open_positions": [
+      "USDCAD SELL 1000 @ 1.40821 bid=1.40761 UPL=+$0.28 age=5.0h thesis=trend 24h-cap"
+    ],
+    "open_orders": [],
+    "balance": 997.56,
+    "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+    "confluence": {
+      "EURUSD": "none(-16.5)",
+      "GBPUSD": "weak(26.0)",
+      "AUDUSD": "none(18.0)",
+      "USDCAD": "none(4.5) pos-hold oil-bull",
+      "USDCHF": "moderate(59.0) R:R=1.23 fails",
+      "USDJPY": "strong(62.5) risk_guard-blocked",
+      "GOLD": "none(-22.5) no-alert",
+      "OIL_CRUDE": "weak(28.0) spread-blocked"
+    },
+    "scalp_status": "all_off (EURUSD desync, GBPUSD wr=0%, AUDUSD wr=11%, others pip-conv/spread)",
+    "attention_matrix": {
+      "EURUSD": "swing=NONE scalp=OFF(desync) readiness=none(-16.5) \u2014 no setup, DAY bear EMA",
+      "GBPUSD": "swing=WATCH scalp=OFF(wr=0%/31t) readiness=weak(26.0) \u2014 alert at 1.34437; price=1.343355 above H1 FVG; needs moderate for LIMIT; CPI Jul22",
+      "AUDUSD": "swing=NONE scalp=OFF(wr=11%/19t) readiness=none(18.0) \u2014 no alert, no setup",
+      "USDJPY": "swing=WATCH scalp=OFF(pip-conv) readiness=strong(62.5) \u2014 dist=43.7p from H1 OB 162.063 (threshold 30p); risk_guard blocks JPY",
+      "USDCAD": "swing=ARMED scalp=OFF(CAD-quote) readiness=none(4.5) \u2014 SELL open @ 1.40821, bid=1.40761, UPL=+$0.28; oil=$82.32 bullish; thesis intact",
+      "USDCHF": "swing=WATCH scalp=OFF(CHF-quote) readiness=moderate(59.0) \u2014 dist=14.9p from FVG zone (within 30p thresh); R:R=1.23 fails 1.5 floor; no LIMIT",
+      "GOLD": "swing=NONE scalp=N/A(spread5p) readiness=none(-22.5) \u2014 no alert; SL hit prev tick; safe-haven paradox failed",
+      "OIL_CRUDE": "swing=NONE scalp=N/A(spread4p) readiness=weak(28.0) \u2014 no alert; Hormuz bull thesis but spread blocks scalp, readiness too weak for swing"
+    },
+    "notes": "Hormuz deepens; USDCAD SELL thesis reinforced; no new trades; all watchlist alerts KEEP"
   }
 ]
