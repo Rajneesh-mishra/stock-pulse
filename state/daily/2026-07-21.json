@@ -441,5 +441,60 @@
     },
     "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
     "note": "EURUSD SELL LIMIT filled at 1.1419 (H4 FVG). No new manual trades. USDCAD hold (16.2h, 24h cap). News skip: no watcher events this tick, regime unchanged 30min."
+  },
+  {
+    "tick_ts_utc": "2026-07-21T14:30Z",
+    "events_consumed": 1,
+    "events": [
+      "news_flash hormuz_strait: crew abandons vessel after projectile strike (Marine Insight Jul21 13:00Z)"
+    ],
+    "open_positions": [
+      {
+        "epic": "EURUSD",
+        "dir": "SELL",
+        "size": 3000,
+        "entry": 1.1419,
+        "bid": 1.14151,
+        "upl_usd": 0.96,
+        "age_h": 0.4,
+        "thesis": "trend"
+      },
+      {
+        "epic": "USDCAD",
+        "dir": "SELL",
+        "size": 1000,
+        "entry": 1.40821,
+        "bid": 1.40865,
+        "upl_usd": -0.45,
+        "age_h": 16.4,
+        "thesis": "trend"
+      }
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "balance": 997.77,
+    "total_upl": 0.51,
+    "confluence_summary": {
+      "EURUSD": "weak(-28.0) 3/4 bear \u2014 SELL position active, UPL=+$0.96",
+      "GBPUSD": "none(10.5) \u2014 price 29p above OB zone 1.33622; WATCH",
+      "AUDUSD": "none(15.5) \u2014 no setup",
+      "USDJPY": "strong(82.0) \u2014 risk_guard blocks JPY pip-value; WATCH",
+      "USDCAD": "none(12.5) 3/4 agree \u2014 SELL position, Hormuz CAD bull; time exit 22:05Z",
+      "USDCHF": "strong(63.0) 4/4 \u2014 ChoCH 0.81203 gate unbroken; WATCH",
+      "GOLD": "none(-9.5) \u2014 no setup after SL hit",
+      "OIL_CRUDE": "weak(33.0) \u2014 oil bull Hormuz; spread forbids entry"
+    },
+    "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+    "attention_matrix": {
+      "EURUSD": "swing=ARMED scalp=OFF readiness=weak(-28.0) \u2014 SELL position active; bid=1.14151 UPL=+$0.96",
+      "GBPUSD": "swing=WATCH scalp=OFF readiness=none(10.5) \u2014 OB zone at 1.33622, price 29p above; await pullback",
+      "AUDUSD": "swing=NONE scalp=OFF readiness=none(15.5) \u2014 no setup, scalp WR=11%/19",
+      "USDJPY": "swing=WATCH scalp=OFF(pip-conv) readiness=strong(82.0) \u2014 risk_guard blocks JPY trades",
+      "USDCAD": "swing=ARMED scalp=OFF readiness=none(12.5) \u2014 SELL position; Hormuz CAD bull; time exit 22:05Z",
+      "USDCHF": "swing=WATCH scalp=OFF(pip-conv) readiness=strong(63.0) \u2014 H4 ChoCH 0.81203 gate unbroken",
+      "GOLD": "swing=NONE scalp=N/A readiness=none(-9.5) \u2014 no setup; SL hit last tick safe-haven paradox",
+      "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=weak(33.0) \u2014 oil bull Hormuz; spread 4p blocks"
+    },
+    "note": "Hormuz vessel-burning attack (Marine Insight) confirms oil supply at maximum disruption. Both positions HOLD. News query windows rolled to 22-25 Jul. No new trades: all pairs readiness<moderate or risk_guard blocked."
   }
 ]
