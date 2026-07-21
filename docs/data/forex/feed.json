@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T02:53:05.565460Z",
+  "generated_at": "2026-07-21T03:49:33.120370Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -478,6 +478,51 @@
         "OIL_CRUDE": "swing=NONE scalp=N/A(spread4p) readiness=weak(28.0) \u2014 no alert; Hormuz bull thesis but spread blocks scalp, readiness too weak for swing"
       },
       "notes": "Hormuz deepens; USDCAD SELL thesis reinforced; no new trades; all watchlist alerts KEEP"
+    },
+    {
+      "tick_ts_utc": "2026-07-21T03:41Z",
+      "events_consumed": 1,
+      "events_detail": [
+        "news_flash hormuz_strait \u2014 'Hormuz ship crossings fall further after US-Iran strikes' (Free Malaysia Today Jul21 02:42Z)"
+      ],
+      "positions_opened": 0,
+      "positions_closed": 0,
+      "orders_placed": 0,
+      "orders_cancelled": 0,
+      "open_positions": [
+        "USDCAD SELL 1000 @ 1.40821 bid=1.40779 UPL=+$0.16 age=5.6h thesis=trend 24h-cap"
+      ],
+      "open_orders": [],
+      "balance": 997.44,
+      "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "confluence": {
+        "EURUSD": "none(-23.5)",
+        "GBPUSD": "weak(26.0)",
+        "AUDUSD": "none(18.0)",
+        "USDCAD": "none(12.5) pos-hold oil-bull",
+        "USDCHF": "moderate(59.0) R:R<1.0-confirmed-TP fails",
+        "USDJPY": "strong(62.5) risk_guard-blocked dist=42.7p",
+        "GOLD": "none(-14.5) no-alert SL-hit-prev",
+        "OIL_CRUDE": "weak(25.5) spread-blocked"
+      },
+      "scalp_status": "all_off (EURUSD desync, GBPUSD wr=0%/31t, AUDUSD wr=11%/19t, others pip-conv/spread)",
+      "attention_matrix": {
+        "EURUSD": "swing=NONE scalp=OFF(desync) readiness=none(-23.5) \u2014 bearish, no setup",
+        "GBPUSD": "swing=WATCH scalp=OFF(wr=0%/31t) readiness=weak(26.0) \u2014 alert 1.34437; price=1.343615 above H1 FVG; needs moderate for LIMIT; CPI Jul22",
+        "AUDUSD": "swing=NONE scalp=OFF(wr=11%/19t) readiness=none(18.0) \u2014 no alert, no setup",
+        "USDJPY": "swing=WATCH scalp=OFF(pip-conv) readiness=strong(62.5) \u2014 dist=42.7p from H1 OB 162.063 (threshold 30p); risk_guard blocks JPY pip-value",
+        "USDCAD": "swing=WATCH scalp=OFF(CAD-quote) readiness=none(12.5) \u2014 SELL open @ 1.40821, bid=1.40779, UPL=+$0.16; oil=$82.07 bullish; thesis intact age=5.6h",
+        "USDCHF": "swing=ARMED scalp=OFF(CHF-quote) readiness=moderate(59.0) \u2014 dist=15.95p from FVG zone (within 30p thresh); R:R<1.0 with confirmed TP blocks LIMIT",
+        "GOLD": "swing=NONE scalp=N/A(spread5p) readiness=none(-14.5) \u2014 SL hit prev tick; safe-haven paradox failed; no new alert",
+        "OIL_CRUDE": "swing=NONE scalp=N/A(spread4p) readiness=weak(25.5) \u2014 Hormuz bull but spread blocks; readiness=weak insufficient for swing"
+      },
+      "watchlist_audit": {
+        "gbpusd_dayfvg_buy_13494": "KEEP \u2014 price=1.343615 above FVG zone; readiness=weak(26.0); CPI Jul22",
+        "usdjpy_h1ob_buy_162063": "KEEP \u2014 dist=42.7p from OB; risk_guard blocks JPY; approaching slowly",
+        "usdchf_bull_h4fvg_watch": "KEEP \u2014 15.95p from zone; moderate(59.0); R:R<1.0 confirmed TP blocks LIMIT"
+      },
+      "scalp_audit": "EURUSD=KEEP(disabled desync), GBPUSD=KEEP(disabled wr=0%/31t), AUDUSD=KEEP(disabled wr=11%/19t), USDJPY/CHF/CAD=pip-conv-pending, GOLD/OIL=spread-blocked",
+      "notes": "Hormuz crossings falling further \u2014 oil bull intact; USDCAD SELL thesis reinforced; no new trades; all scalps off"
     }
   ]
 }
