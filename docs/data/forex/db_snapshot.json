@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-20T22:01:07.580833+00:00",
+  "generated_at": "2026-07-20T23:52:05.332560+00:00",
   "counts": {
     "trades": 56,
-    "events": 8389,
+    "events": 8391,
     "ticks": 59,
-    "regime_snapshots": 336,
+    "regime_snapshots": 339,
     "broker_positions": 0,
-    "counterfactuals": 225
+    "counterfactuals": 226
   },
   "trades_last_50": [
     {
@@ -1063,6 +1063,30 @@
   "broker_positions_last_20": [],
   "regime_snapshots_last_10": [
     {
+      "ts_utc": "2026-07-21T05:07Z",
+      "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "note_text": "2026-07-21T05:07Z heartbeat tick \u2014 0 events. USDCAD SELL 1000 @ 1.40821 HOLD (age=7.3h, trend max-hold=24h, bid=1.40769, UPL=+$0.23, 5.2p profit). Thesis intact: Hormuz worst-case scenario \u2014 9+ ships attacked since Jul6, US-Iran trading strikes day 6, oil +2.93% today (Brent ~$83). GOLD SELL LIMIT 4019.91 GTC KEEP \u2014 bid=4003.88 (16pts below limit), readiness=moderate (-54.0), validated 10f/4h=100%. USDJPY strong (65.0) dist=43.3p from H1OB 162.063 WATCH; risk_guard blocks JPY. USDCHF strong (62.0) 4.4p above H4 FVG top (0.80973) WATCH; R:R < 1.5 with confirmed TP. GBPUSD price in H1 FVG (1.34285 in 1.34236-1.34313), readiness=none (19.5); UK labour Jul21 data (unemployment 4.9%, wages +4.4%) neutral; CPI Jul22, BoE Jul30 \u2014 no LIMIT arm. No new entries. Scalp all-OFF. 1 pos 1 LIMIT; bal=$1001.33.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
+      "ts_utc": "2026-07-20T22:25Z",
+      "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "note_text": "2026-07-20T22:25Z tick \u2014 1 evt (level_cross USDCAD usdcad_h4fvg_sell_140818 cross_up @ 1.40825). POSITION HOLD: noise oscillation around entry 1.40821; bid=1.40814, UPL=-$0.09, thesis intact. REGIME: USD_STRENGTH_OIL_BULL_ESCALATION UNCHANGED. Hormuz: US-Iran trading strikes, 9+ tanker attacks, Brent ~$83/bbl. USDCAD SELL 1000 @ 1.40821 HOLD (20min, trend, 24h max-hold, SL=1.411 TP=1.395 R:R=4.73). GOLD SELL LIMIT 4019.91 GTC ARMED \u2014 bid=4005.44 (14.5pts below), moderate (-54.0), validated 10f/4h=100%. USDJPY WATCH strong(62.5) dist=42.4p from H1OB 162.063; USDCHF WATCH strong(62.0) 127p above FVG 0.80904. Watchlist: removed usdcad_h4fvg_sell_140818 (LIMIT filled, pos live). 1 pos 1 LIMIT; bal=$1001.02.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
+      "ts_utc": "2026-07-20T22:12Z",
+      "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "note_text": "2026-07-20T22:12Z tick \u2014 1 evt (position_opened USDCAD, LIMIT 1.40818 filled @ 1.40821 at 22:05Z). REGIME: USD_STRENGTH_OIL_BULL_ESCALATION UNCHANGED, INTENSIFYING. Hormuz: US-Iran actively trading strikes (US hit ~140 Iranian military targets Jul19-20), 9+ tanker attacks Jul6-Jul20, Brent crude +9.59% to $83.30/bbl. CAD bull at MAXIMUM corroboration. USDCAD SELL 1000 @ 1.40821 OPEN (7min old, trend, 24h max-hold, R:R=4.73). GOLD SELL LIMIT 4019.91 GTC ARMED \u2014 bid=4007.13 (12.78pts below), moderate (-54.0, 4/4 TF bear), validated 10f/4h=100%. USDJPY WATCH STRONG (62.5 bull) \u2014 bid=162.489, dist=42.6p from H1 OB 162.063 (threshold 30p); approaching. USDCHF WATCH STRONG (62.0 bull) \u2014 bid=0.81022, above H4 FVG buy zone (0.80835-0.80973); need pullback. GBPUSD WATCH NONE (readiness=none) \u2014 ahead of UK CPI Jul22. EURUSD/AUDUSD: readiness=none. OIL: weak. Scalp: all OFF. 1 pos (USDCAD SELL) 1 LIMIT (GOLD SELL); bal=$1000.91.",
+      "binary_event_name": null,
+      "binary_event_active": 0,
+      "binary_event_deadline": null
+    },
+    {
       "ts_utc": "2026-07-21T02:52Z",
       "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
       "note_text": "2026-07-21T07:45Z tick \u2014 1 evt (level_cross USDCAD usdcad_h4fvg_sell_140818 at 21:44Z Jul20). REGIME: USD_STRENGTH_OIL_BULL_ESCALATION unchanged. GOLD SELL LIMIT 4019.91 GTC KEEP \u2014 moderate (-54.0, 4/4 TFs bear); bid=4007.65 (12.26pts below LIMIT); validated (fires=3, 1h=100%, 4h=100%); 4h time-stop on fill. USDCAD SELL LIMIT 1.40818 GTC KEEP \u2014 level_cross at 1.40835 (mid) at 21:44 UTC Jul20; LIMIT still pending (bid=1.40788, 3p below fill trigger); Hormuz mine strikes Jul21 thesis intact; confluence=none (4.5) but fundamental-driven; LIMIT GTC keep. USDCHF WATCH STRONG (62.0, UPGRADED from 59.5 moderate) \u2014 bid=0.81029, above H4 FVG zone (0.80835-0.80973); cross_down event through 0.80904 not yet fired; R:R with confirmed TP < 1.5 (H4 ChoCH at 0.81203 blocks full TP at 0.815); WATCH \u2014 arm on cross_down + M15 wick + TP clarity. USDJPY WATCH STRONG (62.5) \u2014 bid=162.501, dist=43.8p from H1 OB 162.063 (threshold 30p); approaching but not in proximity; WATCH. GBPUSD WATCH NONE (20.5) \u2014 bid=1.34253 in H1 FVG zone; readiness=none; UK-CPI Jul22 tomorrow. EURUSD/AUDUSD: readiness=none. OIL: weak (28.0). Scalp: all pairs disabled. 0 pos 2 LIMIT; bal=$1001.10.",
@@ -1114,30 +1138,6 @@
       "ts_utc": "2026-07-18T20:22Z",
       "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
       "note_text": "2026-07-18T20:22Z tick \u2014 0 evt (heartbeat, Saturday market closure). NEWS: Hormuz ESCALATING \u2014 9 ships attacked Jul6-18, traffic 8 vs 15 vessels/day (trickle w/ transponders off), US-Iran peace talks ongoing but Hormuz lane dispute unresolved. CAD bull / oil bull INTACT. GOLD down 3% weekly \u2014 safe-haven paradox confirmed: escalation\u2192oil\u2192inflation fear\u2192rate-hike risk\u2192GOLD negative. GBPUSD retreating (USD strength from geopolitical inflation fears). Next week: ECB rate decision, UK inflation+labor data, global PMI prelims \u2014 key GBPUSD risk events. GBPUSD BUY age=35.5h TIME-EXIT OVERDUE \u2014 CLOSE AT SUNDAY OPEN (~21:00 UTC Jul19). GOLD SELL age=28.1h TIME-EXIT OVERDUE \u2014 CLOSE AT SUNDAY OPEN (~22:00 UTC Jul19, gold reopens 6pm EDT). USDCAD SELL LIMIT 1.40818 GTC KEEP \u2014 USD strength could push pair toward level; Hormuz 9-evt oil bull intact. USDJPY moderate readiness (OB 161.897-162.063, comp moderate) but risk_guard blocks (pip-conv pending). WATCH. Scalp all-OFF (EURUSD desync, GBPUSD WR=0%, AUDUSD WR=11%). 2 pos 1 LIMIT; bal=$999.46.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-07-18T19:47Z",
-      "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
-      "note_text": "2026-07-18T19:47Z tick \u2014 1 event: news_flash Hormuz (Thai-flagged vessel attacked near Hormuz, The Star Jul18). Saturday market closure. HORMUZ 13th+ escalation Jul6-18 \u2014 Thai vessel attack on top of Jul18 tanker/minefield events. CAD bull intact, USDCAD SELL LIMIT 1.40818 GTC (dist=61.9p, 3\u00d7H4ATR=63p) KEEP. GBPUSD BUY age=34.9h TIME EXIT OVERDUE \u2014 CLOSE AT SUNDAY OPEN (~21:00 UTC Jul19). GOLD SELL age=27.5h TIME EXIT OVERDUE \u2014 CLOSE AT SUNDAY OPEN (~21:00 UTC Jul19). USDJPY comp=+59.5 moderate OB 161.897-162.063 WATCH (risk_guard blocks pip-conv). Safe-haven paradox confirmed: gold flat/down through 13 Hormuz events. Scalp all-OFF. 2 pos 1 LIMIT; bal=$999.46.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-07-18T17:42Z",
-      "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
-      "note_text": "2026-07-18T17:42Z tick \u2014 heartbeat (0 events, Saturday market closure). NEWS: Hormuz escalation INTENSIFYING \u2014 12+ incidents Jul6-18, Iran attacks 3 ships/24h (CNN Jul13), US strikes Iran Jul15 (NPR). Traffic 8 vs 15 vessels/day (CNBC Jul17). Oil bull / CAD bull INTACT + strengthening. USDJPY: BoJ hiked to 1.00% hawkish, B intervention attempt Apr-May failed but pair at 40yr JPY low ~162.5. BUY thesis elevated intervention risk. risk_guard still blocks JPY (pip-conv pending). WATCH only. GBPUSD BUY age=32.8h TIME EXIT OVERDUE, market closed \u2014 CLOSE AT SUNDAY OPEN (~21:00 UTC Jul19). GOLD SELL age=25.4h TIME EXIT OVERDUE \u2014 CLOSE AT SUNDAY OPEN (~21:00 UTC Jul19). USDCAD SELL LIMIT 1.40818 GTC dist=63.9p \u2014 thesis INTACT Hormuz 12+evt. KEEP. Scalp all-OFF. 2 pos 1 LIMIT; bal=$999.46.",
-      "binary_event_name": null,
-      "binary_event_active": 0,
-      "binary_event_deadline": null
-    },
-    {
-      "ts_utc": "2026-07-18T16:35Z",
-      "regime_name": "USD_STRENGTH_OIL_BULL_ESCALATION",
-      "note_text": "2026-07-18T16:35Z tick \u2014 heartbeat (0 events, Saturday market closure). Broker: GBPUSD BUY UPL=+$0.47 age=31.7h (TIME EXIT OVERDUE, market closed); GOLD SELL UPL=+$0.40 age=24.3h (TIME EXIT OVERDUE at 16:18Z Sat, market closed). Both positions: CLOSE AT SUNDAY OPEN (~21:00 UTC Jul19). USDCAD SELL LIMIT 1.40818 GTC dist=59.9p <3\u00d7H4ATR=63p KEEP \u2014 Hormuz 12+evt: US revoked Iran oil license + tanker attacks ongoing (NBC/CNBC Jul18). CAD bull intact. GOLD ~$4,017 consolidating (expected range $3,952-$4,060 on Mon). Safe-haven paradox persists. USDJPY comp=+59.5 moderate (4/4 TF bull), OB 161.897-162.063 dist=33.2p \u2014 arm LIMIT at Sunday open if price drops to OB. Scalp all-OFF. 2 pos 1 LIMIT; bal=$999.46.",
       "binary_event_name": null,
       "binary_event_active": 0,
       "binary_event_deadline": null
@@ -1646,6 +1646,19 @@
     }
   ],
   "counterfactuals_last_50": [
+    {
+      "alert_id": "usdcad_h4fvg_sell_140818",
+      "instrument": "USDCAD",
+      "direction": "sell",
+      "trigger_price": 1.40825,
+      "fired_at": "2026-07-20T22:21:50.698001+00:00",
+      "hit_1h": null,
+      "hit_4h": null,
+      "hit_24h": null,
+      "pips_1h": null,
+      "pips_4h": null,
+      "pips_24h": null
+    },
     {
       "alert_id": "usdcad_h4fvg_sell_140818",
       "instrument": "USDCAD",
@@ -2276,19 +2289,6 @@
       "direction": "buy",
       "trigger_price": 95.339,
       "fired_at": "2026-05-10T22:09:18.019603+00:00",
-      "hit_1h": null,
-      "hit_4h": null,
-      "hit_24h": null,
-      "pips_1h": null,
-      "pips_4h": null,
-      "pips_24h": null
-    },
-    {
-      "alert_id": "oil_sweep_9323_buy_retest",
-      "instrument": "OIL_CRUDE",
-      "direction": "buy",
-      "trigger_price": 93.25,
-      "fired_at": "2026-05-08T18:27:30.880607+00:00",
       "hit_1h": null,
       "hit_4h": null,
       "hit_24h": null,

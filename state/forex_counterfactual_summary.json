@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T22:27:17.407401+00:00",
+  "generated_at": "2026-07-21T00:41:15.280849+00:00",
   "alerts": [
     {
       "alert_id": "TEST_CHAIN_VALIDATION",
@@ -1840,10 +1840,10 @@
           "hit_rate": 0.8
         },
         "24h": {
-          "filled": 3,
+          "filled": 4,
           "favorable": 2,
-          "avg_pips": -6.8,
-          "hit_rate": 0.67
+          "avg_pips": -8.9,
+          "hit_rate": 0.5
         }
       }
     },
@@ -1877,7 +1877,7 @@
       "alert_id": "gold_h1fvg_sell_4021",
       "instrument": "GOLD",
       "direction": "sell",
-      "fires": 3,
+      "fires": 4,
       "by_horizon": {
         "1h": {
           "filled": 3,
@@ -1906,10 +1906,10 @@
       "fires": 3,
       "by_horizon": {
         "1h": {
-          "filled": 1,
-          "favorable": 0,
-          "avg_pips": -1.7,
-          "hit_rate": 0.0
+          "filled": 3,
+          "favorable": 2,
+          "avg_pips": 2.4,
+          "hit_rate": 0.67
         },
         "4h": {
           "filled": 0,

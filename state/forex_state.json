@@ -1,8 +1,8 @@
 {
   "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
-  "tick_ts_utc": "2026-07-20T22:25Z",
-  "state_ts_utc": "2026-07-20T22:25Z",
-  "regime_note": "2026-07-20T22:25Z tick \u2014 1 evt (level_cross USDCAD usdcad_h4fvg_sell_140818 cross_up @ 1.40825). POSITION HOLD: noise oscillation around entry 1.40821; bid=1.40814, UPL=-$0.09, thesis intact. REGIME: USD_STRENGTH_OIL_BULL_ESCALATION UNCHANGED. Hormuz: US-Iran trading strikes, 9+ tanker attacks, Brent ~$83/bbl. USDCAD SELL 1000 @ 1.40821 HOLD (20min, trend, 24h max-hold, SL=1.411 TP=1.395 R:R=4.73). GOLD SELL LIMIT 4019.91 GTC ARMED \u2014 bid=4005.44 (14.5pts below), moderate (-54.0), validated 10f/4h=100%. USDJPY WATCH strong(62.5) dist=42.4p from H1OB 162.063; USDCHF WATCH strong(62.0) 127p above FVG 0.80904. Watchlist: removed usdcad_h4fvg_sell_140818 (LIMIT filled, pos live). 1 pos 1 LIMIT; bal=$1001.02.",
+  "tick_ts_utc": "2026-07-21T00:37Z",
+  "state_ts_utc": "2026-07-21T00:37Z",
+  "regime_note": "2026-07-21T00:37Z \u2014 2 events (level_cross GOLD gold_h1fvg_sell_4021 + position_opened GOLD). GOLD SELL LIMIT 4019.91 FILLED @ 4019.93 (size=0.2, SL=4039.0, TP=3970.0, R:R=2.61). Safe-haven paradox CONFIRMED: Strait of Hormuz reported CLOSED by Iran (Jul21) \u2192 oil +$10 to ~$87 \u2192 Fed rate-hike fear \u2192 GOLD bearish. Bid=4019.16, UPL=+$0.05. 4h time-stop @ 04:36Z. USDCAD SELL 1000 @ 1.40821 HOLD (age=2.5h, thesis_type=trend max=24h, bid=1.40766, UPL=+$0.25, Hormuz oil bull \u2192 CAD bull intact). USDJPY strong(65.0) bid=162.518 dist=45.5p from H1OB 162.063 WATCH; risk_guard blocks JPY. USDCHF strong(62.0) bid=0.81043, 13.9p above H4FVG zone WATCH; R:R<1.5 with confirmed TP. GBPUSD readiness=none(20.5), EURUSD none(-20.5), AUDUSD none(12.5). 2 pos 0 LIMIT; bal=$1001.10.",
   "regime_note_prev": "2026-07-18T20:22Z tick \u2014 0 evt (heartbeat, Saturday market closure). NEWS: Hormuz ESCALATING \u2014 9 ships attacked Jul6-18, traffic 8 vs 15 vessels/day (trickle w/ transponders off), US-Iran peace talks ongoing but Hormuz lane dispute unresolved. CAD bull / oil bull INTACT. GOLD down 3% weekly \u2014 safe-haven paradox confirmed: escalation\u2192oil\u2192inflation fear\u2192rate-hike risk\u2192GOLD negative. GBPUSD retreating (USD strength from geopolitical inflation fears). Next week: ECB rate decision, UK inflation+labor data, global PMI prelims \u2014 key GBPUSD risk events. GBPUSD BUY age=35.5h TIME-EXIT OVERDUE \u2014 CLOSE AT SUNDAY OPEN (~21:00 UTC Jul19). GOLD SELL age=28.1h TIME-EXIT OVERDUE \u2014 CLOSE AT SUNDAY OPEN (~22:00 UTC Jul19, gold reopens 6pm EDT). USDCAD SELL LIMIT 1.40818 GTC KEEP \u2014 USD strength could push pair toward level; Hormuz 9-evt oil bull intact. USDJPY moderate readiness (OB 161.897-162.063, comp moderate) but risk_guard blocks (pip-conv pending). WATCH. Scalp all-OFF (EURUSD desync, GBPUSD WR=0%, AUDUSD WR=11%). 2 pos 1 LIMIT; bal=$999.46.",
   "open_positions": [
     {
@@ -15,7 +15,21 @@
       "tp": 1.395,
       "opened_at": "2026-07-20T22:05:12.945Z",
       "thesis_type": "trend",
-      "thesis_note": "H4 bear FVG top (1.40818) entry. Hormuz escalation max-corroboration: US-Iran trading strikes, 9+ tanker attacks Jul6-20, Brent +9.59% to $83.30. CAD bull at maximum. R:R=4.73."
+      "thesis_note": "H4 bear FVG top (1.40818) entry. Hormuz escalation max-corroboration: US-Iran trading strikes, 9+ tanker attacks Jul6-20, Brent +9.59% to $83.30. CAD bull at maximum. R:R=4.73.",
+      "deal_id": "00000000-57ed-d7a6-044a-beb40055311e"
+    },
+    {
+      "dealId": "00000000-57ee-0e6e-044a-beb40055311e",
+      "epic": "GOLD",
+      "direction": "SELL",
+      "size": 0.2,
+      "entry": 4019.93,
+      "sl": 4039.0,
+      "tp": 3970.0,
+      "opened_at": "2026-07-21T00:36:06.727Z",
+      "thesis_type": "narrative",
+      "thesis_note": "H1 FVG top (4019.91) SELL entry. Safe-haven paradox: Hormuz escalation (Strait CLOSED per Jul21 reports) \u2192 oil +$10 \u2192 inflation \u2192 Fed rate-hike fear \u2192 GOLD bearish despite safe-haven. All 4 TFs bearish, readiness=moderate (-46.5). 4h time-stop at 04:36Z.",
+      "deal_id": "00000000-57ee-0e6e-044a-beb40055311e"
     }
   ],
   "watchlist": [],
@@ -1574,7 +1588,7 @@
     "active": false,
     "note": "No active binary event. Hormuz ESCALATING \u2014 13+ corroborated incidents Jul6-18 PLUS US 3rd-round strikes on ~140 Iranian military targets (Jul19-20) PLUS Iran attacking oil tankers (Jul20 ABC News). OIL +1.85% Monday. CAD bull/oil bull at MAXIMUM corroboration. GOLD safe-haven paradox persists: gold bearish despite escalation (USD/rates dominate). Burnham confirmed new UK Labour leader / incoming PM \u2014 UK data week (labour Jul21, CPI Jul22, BoE Jul30). Sustained escalation regime."
   },
-  "balance": 1001.02,
+  "balance": 1001.1,
   "level_alerts": [
     {
       "alert_id": "usdcad_h4fvg_sell_140818",
