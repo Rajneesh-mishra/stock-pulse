@@ -496,5 +496,88 @@
       "OIL_CRUDE": "swing=WATCH scalp=N/A readiness=weak(33.0) \u2014 oil bull Hormuz; spread 4p blocks"
     },
     "note": "Hormuz vessel-burning attack (Marine Insight) confirms oil supply at maximum disruption. Both positions HOLD. News query windows rolled to 22-25 Jul. No new trades: all pairs readiness<moderate or risk_guard blocked."
+  },
+  {
+    "tick_ts_utc": "2026-07-21T15:10Z",
+    "events": 0,
+    "event_summary": "heartbeat",
+    "positions": [
+      {
+        "epic": "USDCAD",
+        "direction": "SELL",
+        "size": 1000,
+        "entry": 1.40821,
+        "bid": 1.40911,
+        "upl": -0.78,
+        "age_h": 17.1,
+        "thesis_type": "trend"
+      },
+      {
+        "epic": "EURUSD",
+        "direction": "SELL",
+        "size": 3000,
+        "entry": 1.1419,
+        "bid": 1.14045,
+        "upl": 4.14,
+        "age_h": 0.9,
+        "thesis_type": "trend"
+      }
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "balance": 1000.61,
+    "daily_pnl": 3.33,
+    "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+    "notes": "Heartbeat. Hormuz: Houthis threaten Saudi embargo (new front). 10-day ceasefire proposed, large divisions remain. Brent $90.20+1.1%. Oil bull intact. EURUSD SELL +$4.14 near +1R. USDCAD SELL -$0.78 time exit at 22:05Z. Audit: 4 alerts KEEP, scalp no halts.",
+    "attention_matrix": {
+      "EURUSD": {
+        "swing": "ARMED",
+        "scalp": "ACTIVE",
+        "readiness": "moderate",
+        "reason": "Position open SELL +$4.14 near +1R; USD_STRENGTH intact"
+      },
+      "GBPUSD": {
+        "swing": "WATCH",
+        "scalp": "ACTIVE",
+        "readiness": "none",
+        "reason": "Alert at 1.33622 validated (80%4h); price 10.8p above zone; readiness=none"
+      },
+      "AUDUSD": {
+        "swing": "NONE",
+        "scalp": "ACTIVE",
+        "readiness": "none",
+        "reason": "No alert, no confluence"
+      },
+      "USDJPY": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "strong",
+        "reason": "Alert at 162.587 but 3rd USD-bull would breach corr cap; pip-conv pending"
+      },
+      "USDCAD": {
+        "swing": "ARMED",
+        "scalp": "OFF",
+        "readiness": "none",
+        "reason": "Position open SELL age=17.1h; time exit at 22:05Z; pip-conv pending"
+      },
+      "USDCHF": {
+        "swing": "WATCH",
+        "scalp": "OFF",
+        "readiness": "strong",
+        "reason": "Alert at 0.80904, price 35.4p above level; corr cap exceeded; pip-conv pending"
+      },
+      "GOLD": {
+        "swing": "NONE",
+        "scalp": "N/A",
+        "readiness": "none",
+        "reason": "No active level alert; spread 5p"
+      },
+      "OIL_CRUDE": {
+        "swing": "NONE",
+        "scalp": "N/A",
+        "readiness": "none",
+        "reason": "No active level alert; spread 3-4p"
+      }
+    }
   }
 ]

@@ -1,9 +1,9 @@
 {
   "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
-  "tick_ts_utc": "2026-07-21T14:30Z",
-  "state_ts_utc": "2026-07-21T14:30Z",
-  "regime_note": "2026-07-21T14:30Z \u2014 1 event (news_flash hormuz_strait crew abandons vessel projectile strike Marine Insight Jul21). Another vessel burning in Hormuz after projectile strike \u2014 crew abandoned ship. Oil bull at MAXIMUM corroboration. USDCAD SELL 1000 @ 1.40821 HOLD (bid=1.40865, UPL=-$0.45, age=16.4h/24h, thesis=trend, Hormuz CAD bull confirmed; time exit 22:05Z). EURUSD SELL 3000 @ 1.1419 HOLD (bid=1.14151, UPL=+$0.96, age=0.4h/24h, thesis=trend, USD_STRENGTH intact). No new trades (GBPUSD readiness=none 10.5; AUDUSD none 15.5; USDJPY strong 82.0 risk_guard blocks; USDCHF strong 63.0 ChoCH gate; GOLD none -9.5; OIL spread blocks). 2 pos, 0 LIMIT, bal=$997.77. Regime: USD_STRENGTH_OIL_BULL_ESCALATION unchanged.",
-  "regime_note_prev": "2026-07-21T14:19Z \u2014 1 event (position_opened EURUSD 14:14Z). EURUSD SELL 3000 @ 1.1419 LIVE (LIMIT filled H4 bear FVG zone; bid=1.14172, UPL=+$0.33, SL=1.1435 TP=1.1362 R:R=3.56; thesis=trend, 3/4 TFs bearish composite=-21.0 none, but DAY+H1+M15 bearish, H4 mixed; holds on time exit 24h cap). USDCAD SELL 1000 @ 1.40821 HOLD (bid=1.40804, UPL=-$0.02, age=16.2h/24h, thesis=trend, Hormuz CAD bull intact; time exit at 22:05Z today). 2 pos, 0 LIMIT, bal=$997.60. Regime: USD_STRENGTH_OIL_BULL_ESCALATION unchanged.",
+  "tick_ts_utc": "2026-07-21T15:10Z",
+  "state_ts_utc": "2026-07-21T15:10Z",
+  "regime_note": "2026-07-21T15:10Z \u2014 0 events (heartbeat). Hormuz crisis deepening: Houthis threatening Saudi Arabia maritime embargo (new front, ~2.5M bpd at risk); 10-day ceasefire proposed but large divisions remain, Trump hawkish. Brent Sep=$90.20 (+1.1%). Oil bull intact at MAXIMUM corroboration. USDCAD SELL 1000 @ 1.40821 HOLD (bid=1.40911, UPL=-$0.78, age=17.1h/24h, thesis=trend, CAD bull intact; time exit 22:05Z). EURUSD SELL 3000 @ 1.1419 HOLD (bid=1.14045, UPL=+$4.14, age=0.9h/24h, thesis=trend, near +1R, USD_STRENGTH intact). No new trades (0 events; GBPUSD readiness=none; AUDUSD none; USDJPY strong+corr_cap 3rd USD-bull would breach max; USDCHF strong+35p+corr_cap; GOLD none; OIL spread). 2 pos, 0 LIMIT, bal=$1000.61. Regime: USD_STRENGTH_OIL_BULL_ESCALATION unchanged.",
+  "regime_note_prev": "2026-07-21T14:30Z \u2014 1 event (news_flash hormuz_strait crew abandons vessel projectile strike Marine Insight Jul21). Another vessel burning in Hormuz after projectile strike \u2014 crew abandoned ship. Oil bull at MAXIMUM corroboration. USDCAD SELL 1000 @ 1.40821 HOLD (bid=1.40865, UPL=-$0.45, age=16.4h/24h, thesis=trend, Hormuz CAD bull confirmed; time exit 22:05Z). EURUSD SELL 3000 @ 1.1419 HOLD (bid=1.14151, UPL=+$0.96, age=0.4h/24h, thesis=trend, USD_STRENGTH intact). No new trades (GBPUSD readiness=none 10.5; AUDUSD none 15.5; USDJPY strong 82.0 risk_guard blocks; USDCHF strong 63.0 ChoCH gate; GOLD none -9.5; OIL spread blocks). 2 pos, 0 LIMIT, bal=$997.77. Regime: USD_STRENGTH_OIL_BULL_ESCALATION unchanged.",
   "open_positions": [
     {
       "dealId": "00000000-57ed-d7a6-044a-beb40055311e",
@@ -17,9 +17,9 @@
       "thesis_type": "trend",
       "thesis_note": "H4 bear FVG top (1.40818) entry. Hormuz escalation max-corroboration: US-Iran trading strikes, 9+ tanker attacks Jul6-20, Brent +9.59% to $83.30. CAD bull at maximum. R:R=4.73.",
       "deal_id": "00000000-57ed-d7a6-044a-beb40055311e",
-      "bid_last": 1.40865,
-      "upl_last": -0.45,
-      "upl_usd": -0.45
+      "bid_last": 1.40911,
+      "upl_last": -0.78,
+      "upl_usd": -0.78
     },
     {
       "dealId": "00000000-5809-fc6d-044a-beb40055311e",
@@ -33,9 +33,9 @@
       "thesis_type": "trend",
       "thesis_note": "H4 bear FVG zone (1.14190-1.14274) LIMIT fill at 1.1419. USD_STRENGTH regime, composite bearish 3/4 TFs. R:R=3.56. Half size (moderate confluence at entry).",
       "deal_id": "00000000-5809-fc6d-044a-beb40055311e",
-      "bid_last": 1.14151,
-      "upl_last": 0.96,
-      "upl_usd": 0.96
+      "bid_last": 1.14045,
+      "upl_last": 4.14,
+      "upl_usd": 4.14
     }
   ],
   "watchlist": [],
