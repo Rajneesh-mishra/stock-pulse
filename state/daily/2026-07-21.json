@@ -286,5 +286,34 @@
     },
     "scalp_audit": "EURUSD=KEEP(disabled desync), GBPUSD=KEEP(disabled wr=0%/31t), AUDUSD=KEEP(disabled wr=11%/19t), USDJPY/CHF/CAD=pip-conv-pending, GOLD/OIL=spread-blocked",
     "notes": "Hormuz crossings falling further \u2014 oil bull intact; USDCAD SELL thesis reinforced; no new trades; all scalps off"
+  },
+  {
+    "tick_ts_utc": "2026-07-21T13:17Z",
+    "events": 1,
+    "event_types": [
+      "news_flash"
+    ],
+    "event_details": "news_flash hormuz_strait: Iran attacks tanker, US strikes failed to reopen Hormuz (India Today Jul21 09:30Z)",
+    "positions": [
+      {
+        "epic": "USDCAD",
+        "direction": "SELL",
+        "size": 1000,
+        "entry": 1.40821,
+        "bid": 1.40798,
+        "upl_usd": 0.02,
+        "age_h": 15.2,
+        "thesis_type": "trend"
+      }
+    ],
+    "trades_opened": 0,
+    "trades_closed": 0,
+    "balance": 997.18,
+    "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+    "regime_note": "Hormuz escalation: US strikes failed to reopen route, another tanker attacked. Oil bull intact, CAD bull, USDCAD SELL hold.",
+    "alerts_modified": [
+      "usdchf_bull_h4fvg_watch (readiness 60.0->63.0, price ref update)"
+    ],
+    "decision": "HOLD USDCAD SELL; no new entries (USDJPY blocked, USDCHF ChoCH gate, others none)"
   }
 ]

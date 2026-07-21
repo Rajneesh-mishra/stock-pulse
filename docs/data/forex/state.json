@@ -1,9 +1,9 @@
 {
   "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
-  "tick_ts_utc": "2026-07-21T03:41Z",
-  "state_ts_utc": "2026-07-21T03:41Z",
-  "regime_note": "2026-07-21T03:41Z \u2014 1 event (news_flash hormuz_strait 'Hormuz ship crossings fall further after US-Iran strikes' Free Malaysia Today Jul21 02:42Z). Hormuz escalation deepening: ship crossings falling further \u2014 oil supply constrained, oil bull intact ($82.07). Regime UNCHANGED: USD_STRENGTH_OIL_BULL_ESCALATION. USDCAD SELL 1000 @ 1.40821 HOLD (age=5.6h of 24h; bid=1.40779; UPL=+$0.16; thesis=trend; CAD bull intact). No new trades: GBPUSD weak(26.0) no LIMIT; USDJPY strong(62.5) risk_guard blocks + dist=42.7p>30p; USDCHF moderate(59.0) R:R<1.0 with confirmed TP fails; EURUSD none(-23.5); AUDUSD none(18.0); GOLD none(-14.5) no alert; OIL weak(25.5) spread blocked. All scalps OFF. 1 pos, 0 LIMIT, bal=$997.44.",
-  "regime_note_prev": "2026-07-21T02:47Z \u2014 1 event (news_flash hormuz_strait NDTV Profit Jul21). Hormuz Shipping Crisis: another tanker attack deepens Iran-US conflict. Regime: Hormuz escalation ongoing \u2014 oil bull, CAD bull, USDCAD SELL thesis intact. USDCAD SELL 1000 @ 1.40821 HOLD (age=5.0h of 24h; bid=1.40761; UPL=+$0.28; oil=$82.32 bullish H1 BOS; thesis=trend). No new trades: GBPUSD readiness=weak(26.0) no LIMIT; USDJPY readiness=strong(62.5) risk_guard blocks; USDCHF moderate(59.0) R:R=1.23<1.5 fails; GOLD readiness=none(-22.5) no alert (SL hit prev tick, safe-haven paradox confirmed failed). All scalps OFF. 1 pos, 0 LIMIT, bal=$997.56.",
+  "tick_ts_utc": "2026-07-21T13:17Z",
+  "state_ts_utc": "2026-07-21T13:17Z",
+  "regime_note": "2026-07-21T13:17Z \u2014 1 event (news_flash hormuz_strait 'Iran attacks tanker in Hormuz as US strikes fail to reopen vital oil route' India Today Jul21 09:30Z). Hormuz escalation deepening: US airstrikes have NOT reopened Hormuz \u2014 another tanker attacked. Oil supply route remains constrained. Oil bull intact, regime UNCHANGED: USD_STRENGTH_OIL_BULL_ESCALATION. USDCAD SELL 1000 @ 1.40821 HOLD (age=15.2h of 24h; bid=1.40798; UPL=+$0.02; thesis=trend; Hormuz news reinforces CAD bull). No new trades: USDJPY strong(82.0) risk_guard blocks; USDCHF strong(63.0) ChoCH 0.81203 not broken (R:R fails without it); GBPUSD none(10.5) WATCH; EURUSD none(-24.0); AUDUSD none(20.5); GOLD none(-12.0) no alert; OIL N/A spread. 1 pos, 0 LIMIT, bal=$997.18.",
+  "regime_note_prev": "2026-07-21T03:41Z \u2014 1 event (news_flash hormuz_strait 'Hormuz ship crossings fall further after US-Iran strikes' Free Malaysia Today Jul21 02:42Z). Hormuz escalation deepening: ship crossings falling further \u2014 oil supply constrained, oil bull intact ($82.07). Regime UNCHANGED: USD_STRENGTH_OIL_BULL_ESCALATION. USDCAD SELL 1000 @ 1.40821 HOLD (age=5.6h of 24h; bid=1.40779; UPL=+$0.16; thesis=trend; CAD bull intact). No new trades: GBPUSD weak(26.0) no LIMIT; USDJPY strong(62.5) risk_guard blocks + dist=42.7p>30p; USDCHF moderate(59.0) R:R<1.0 with confirmed TP fails; EURUSD none(-23.5); AUDUSD none(18.0); GOLD none(-14.5) no alert; OIL weak(25.5) spread blocked. All scalps OFF. 1 pos, 0 LIMIT, bal=$997.44.",
   "open_positions": [
     {
       "dealId": "00000000-57ed-d7a6-044a-beb40055311e",
@@ -18,7 +18,8 @@
       "thesis_note": "H4 bear FVG top (1.40818) entry. Hormuz escalation max-corroboration: US-Iran trading strikes, 9+ tanker attacks Jul6-20, Brent +9.59% to $83.30. CAD bull at maximum. R:R=4.73.",
       "deal_id": "00000000-57ed-d7a6-044a-beb40055311e",
       "bid_last": 1.40761,
-      "upl_last": 0.28
+      "upl_last": 0.28,
+      "upl_usd": 0.02
     }
   ],
   "watchlist": [],
@@ -1594,7 +1595,7 @@
   ],
   "binary_event": {
     "active": false,
-    "note": "No active binary event. Hormuz ESCALATING \u2014 another tanker attack Jul21 (NDTV Profit). US strikes on Iranian targets ongoing. Oil bull at maximum corroboration. GOLD safe-haven paradox FAILED. USDCAD SELL thesis intact. UK: CPI Jul22, BoE Jul30."
+    "note": "No active binary event. Hormuz ESCALATING \u2014 US strikes FAILED to reopen route; tanker attacked Jul21 (India Today). Oil supply maximally constrained. USDCAD SELL thesis intact. UK: CPI Jul22, BoE Jul30."
   },
   "balance": 997.56,
   "level_alerts": [
