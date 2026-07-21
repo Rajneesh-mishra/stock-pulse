@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T00:41:37.281417Z",
+  "generated_at": "2026-07-21T01:44:58.409644Z",
   "ticks": [
     {
       "ts": "2026-04-23T08:09:00Z",
@@ -371,6 +371,40 @@
           "reason": "no alert; Hormuz escalation bull thesis but spread 4p forbids scalp"
         }
       }
+    },
+    {
+      "ts_utc": "2026-07-21T01:39Z",
+      "events": 0,
+      "opened": 0,
+      "closed": 0,
+      "skipped": 0,
+      "positions": [
+        {
+          "epic": "USDCAD",
+          "direction": "SELL",
+          "size": 1000,
+          "entry": 1.40821,
+          "bid": 1.40748,
+          "upl": 0.38,
+          "age_h": 3.5,
+          "thesis": "trend",
+          "time_cap_h": 24
+        },
+        {
+          "epic": "GOLD",
+          "direction": "SELL",
+          "size": 0.2,
+          "entry": 4019.93,
+          "bid": 4024.85,
+          "upl": -0.944,
+          "age_h": 1.05,
+          "thesis": "narrative",
+          "time_stop_utc": "2026-07-21T04:36Z"
+        }
+      ],
+      "broker_balance": 1000.48,
+      "regime": "USD_STRENGTH_OIL_BULL_ESCALATION",
+      "summary": "heartbeat \u2014 0 evt; GOLD SELL @ 4019.93 bid=4024.85 UPL=-$0.94 (4h stop 04:36Z); USDCAD SELL @ 1.40821 UPL=+$0.38; USDCHF FVG swept+rejected no entry (R:R<1.5); all scalps OFF; 2 pos 0 LIMIT"
     }
   ]
 }
